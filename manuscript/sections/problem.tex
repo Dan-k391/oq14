@@ -1,0 +1,67 @@
+\section{Frozen targets and evidence audit}\label{pr:section}
+\subsection{The source question and the quantifiers supplied here}
+Miller and Monticone~\cite{millerMonticone2026}, Sections 3.4, 3.5 and 5.6, distinguish communication operators, thickness heuristics, and electric-field concentration. Their OQ14 asks about arbitrary packing of electric hotspots and a diffraction limitation on power channels. It does not fix every normalization, threshold, geometric resource, or interpretation of a mode. The targets below make those choices explicit; they are not quotations of an already quantified theorem.
+
+\begin{assumption}[Ordinary dielectric class]\label{pr:class}
+Fix $\omega>0$, $k_0=\omega\sqrt{\eps_0\mu_0}$, and $1<\eps_+<\infty$. Use $e^{-i\omega t}$ and
+\begin{equation}\label{pr:maxwell}
+ \nabla\times E=i\omega\mu_0H,\qquad
+ \nabla\times H=-i\omega\eps_0\eps_r E,
+ \qquad 1\leq\eps_r(x)\leq\eps_+.
+\end{equation}
+The medium is real, scalar, reciprocal and nonmagnetic. There are no impressed interior sources, conductors, gain, or negative permittivities. Each geometry is piecewise smooth with finitely many pieces, but that number and all feature scales can vary. The exterior background is vacuum. Compactly supported three-dimensional dielectric perturbations form the default radiation class. Ideal leads and translationally invariant systems must instead be expressly labeled and supplied with their own exterior/port conventions.
+\end{assumption}
+The case $\eps_+=1$ is homogeneous and is excluded only from hotspot constructions that need contrast. A broader positive class fixes the \emph{same} $0<\eps_-\leq\eps_r\leq\eps_+$ for every member. Allowing $\eps_-\to0$ is a different target. Tensor permittivity requires separate statements. Losslessness here concerns one frequency; a nondispersive energy interpretation is an additional assumption.
+
+\begin{assumption}[Scattering and power]\label{pr:scattering}
+For each device specify a well-posed outgoing Maxwell scattering problem with incoming and selected outgoing Hilbert spaces $\mathcal H_{\rm in},\mathcal H_{\rm out}$. Incoming coordinates have physical power $\|a\|^2$ and delivered power is $\|Ta\|^2$. The total field depends linearly on $a$, belongs to $H_{\rm loc}(\operatorname{curl})$, and includes all feedback. The full scattering map includes reflected and unselected radiation. Thus $T^*T\leq I$. At any exceptional frequency a finite, unique limiting-absorption field must be justified separately; adding a freely chosen trapped mode is forbidden.
+\end{assumption}
+This assumption is an admissibility condition, not a theorem that arbitrary rough coefficients yield a scattering theory. Radiation channels can be normalized by incoming spherical-wave flux. An ideal waveguide uses its complete propagating-mode power form. Neither convention counts an infinite-power plane wave as a unit-power input.
+
+\begin{definition}[Counted subspaces through one physical section]\label{pr:count}
+Fix the square $D=(-L/2,L/2)^2\times\{0\}$, its orientation $+\hat z$, and $A=L^2$, together with a source-free neighborhood of $\overline D$. Fix $0<\tau<1$, $\eta>0$ and $\delta\geq0$. A linear subspace $W\subset\mathcal H_{\rm in}$ is counted if \emph{every} $a\in W$ satisfies
+\begin{align}
+ \|Ta\|^2&\geq\tau\|a\|^2,\label{pr:transmission}\\
+ P_D(a):=\tfrac12\operatorname{Re}\int_D(E_a\times\overline{H_a})\cdot\hat z\,\dd A
+ &\geq\eta\|Ta\|^2,\label{pr:passage}\\
+ \int_{\{z=0\}\setminus D}|S_z(a)|\,\dd A&\leq\delta\|a\|^2.\label{pr:bypass}
+\end{align}
+These integrals require legitimate physical traces with integrable flux. Otherwise a specified regularized measurement must replace them, with its own target. No product of arbitrary distributional tangential traces is assumed defined. The passage interpretation is operational; $D$ need not be a sole topological connection.
+\end{definition}
+Using a square freezes shape. An extension to other fixed Lipschitz sections must list shape constants. In particular one cannot replace $D$ with increasingly long thin sections of equal area while claiming a fixed-section counterexample.
+
+\begin{conjecture}[Primary channel target: OPEN]\label{pr:channel-target}
+For fixed parameters in Definition~\ref{pr:count} and Assumptions~\ref{pr:class}--\ref{pr:scattering}, there is a finite bound on $\dim W$ uniform over admissible devices. A stronger target for scaled copies of the same shape is
+\begin{equation}\label{pr:area-bound}
+ \dim W\leq C(\tau,\eta,\delta,\eps_-/\eps_+,\text{declared shape data})
+                 (1+k_0^2\eps_+A).
+\end{equation}
+Surrounding support, resonator quality factor, matching structures, port number, interface count and minimum feature size are not bounded resources of the area-only conjecture. A theorem depending on any of them must say so.
+\end{conjecture}
+Finiteness precedes the scaling question; no optimal coefficient is requested. Fixing total support is a different, possibly easier, problem. Our flux-resource result additionally needs $\delta<\eta\tau$; other parameter values are not silently discarded from the target.
+
+If $W_\tau=\Ran\mathbf1_{[\tau,1]}(T^*T)$ satisfies both passage conditions, a bound on counted subspaces bounds $\dim W_\tau$. Without that hypothesis there may be unrelated efficient channels bypassing $D$. Without compactness, the spectral projection is the definition; a discrete singular-value decomposition is not assumed. Nonzero coupling alone uses no positive threshold and answers a different question.
+
+\begin{definition}[Separate hotspot targets]\label{pr:hotspot-target}
+Fix contrast, frequency, a nonempty open patch $\mathcal P$, $N\in\N$, a localization length $\ell>0$ (as small relative to $\lambda_0=2\pi/k_0$ as desired), and a peak target $M>0$. The driven target seeks one admissible medium and one physical unit-power incident field with $N$ disjoint observation neighborhoods in $\mathcal P$, each containing a peak exceeding $M$ and having a controlled boundary below a fixed fraction of its peak. In a two-dimensional reduction power is per invariant length and localized regions are transverse, not finite three-dimensional points. A modal target instead requires a genuine mode and a defined modal normalization, for example the relevant electric-energy integral divided by local electric energy density. A driven monochromatic scattering field has infinite all-space energy and cannot be inserted into that formula.
+\end{definition}
+No $N$-independent excitation coefficient or nonvanishing fraction of total energy per hotspot is required. Such conditions would define substantially stronger problems.
+
+\subsection{Primary-source audit and earlier artifacts}
+Table~\ref{pr:prior-art} records the actual role of each primary source. The proofs below do not use a title containing ``bound'' as an assumption.
+\begin{longtable}{@{}p{.20\textwidth}p{.38\textwidth}p{.35\textwidth}@{}}
+\caption{Prior art and the hypotheses that must survive transfer.}\label{pr:prior-art}\\
+\toprule Source & Scope actually used & What remains to reach OQ14\\\midrule\endfirsthead
+\toprule Source & Scope actually used & What remains to reach OQ14\\\midrule\endhead
+Miller (2023), S2/S12~\cite{miller2023} & Uniform-medium channel counting motivates thickness estimates. S2 labels the nonuniform-index replacement conjectural; S12 distinguishes approximate aperture counting and design-specific Green operators. & A uniform estimate for actual structured interiors, including their total resonant response.\\[4pt]
+Kuang et al. (2025), II/E~\cite{kuang2025} & Background Green operators between domains separable by a spherical surface; sizes and separations enter. Power normalization adds source/receiver response factors. & Their Eq.~(1) retains the norms of those factors. Appendix E rejects general monotonicity of singular-value ratios and a step-shaped spectrum assumption.\\[4pt]
+Costabel et al. (1999)~\cite{costabel1999} & Piecewise constant positive coefficients on a bounded polyhedral partition; singular parts are linked to scalar transmission problems with stated boundary conditions. & Local singular structure alone does not prove global excitation, outgoing scattering, or simultaneous peaks.\\[4pt]
+Zhao et al. (2020)~\cite{zhao2020} & Mode-volume optimization with Maxwell constraints, refractive-index limits, minimum feature constraints and numerical dual bounds; polarization matters. & Numerical feature-size scaling is neither a packing proof nor a channel theorem. Driven fields need a different normalization.\\
+\bottomrule
+\end{longtable}
+
+The supplied 33-page report~\cite{priorreport} proves a full-vector count with an explicit local field-norm resource, and identifies Bragg amplification, evanescent local flux, and resonant-feedback obstructions. We audit and retain these with their restrictions. Its ENZ slot construction varies both the lower permittivity bound and the section shape; that observation alone excludes it as a counterexample to Conjecture~\ref{pr:channel-target}. We do not claim an independent recertification of every ENZ numerical result.
+
+The supplied HTML notes~\cite{priorhtml} concern invariant slabs and fibers, scalar compact-support scattering, and finite-dimensional formal checks. Their fixed-propagation-constant magnetic variational form is monotone in $\eps^{-1}$ on a common divergence-free domain. Converting that count to a count of all propagation constants at fixed frequency needs additional spectral arguments; the notes themselves flag that step as numerically checked only. Neither a slab count nor such a fiber comparison is a full-device section theorem. The companion file named \texttt{optical\_channel\_bounds.pdf} was absent from the supplied Downloads location. No unprovided Lean or simulation archive was reconstructed or represented as verified.
+
+A targeted search through 17 October 2026 also inspected primary recent work on metawaveguide microrings~\cite{gafsi2025}, singular dielectric cavities~\cite{mao2025}, and multi-plane communication-mode synthesis~\cite{deAngelis2026}. These concern specific confinement or wavefront-synthesis systems. None of the inspected material supplies the all-device fixed-section theorem with the quantifiers above. This is a limited search outcome, not a claim of exhaustive novelty or absence of a solution elsewhere.

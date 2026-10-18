@@ -1,14 +1,28 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{hyperref}
-\title{OQ14: Quantified Targets and Research Audit}
-\author{Research working manuscript}
-\date{17 October 2026}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{microtype}
+\input{macros}
+\setlength{\emergencystretch}{3em}
+\title{OQ14: Hotspot Packing and Power Channels\\\large Quantified Results, Proof Obstructions, and an Auditable Research Record}
+\author{AI-assisted research manuscript}
+\date{17 October 2026 (America/New\_York)}
 \begin{document}
 \maketitle
-\section{Baseline}
-This project attempts the two conjectures in Section 5.6 of Miller and Monticone, arXiv:2605.24738v1. No resolution is asserted at this baseline. The physical class has fixed positive frequency, real scalar permittivity $1\leq\varepsilon_r\leq\varepsilon_+$, and nonmagnetic reciprocal materials. The channel target fixes the physical section, exterior conventions, positive efficiency and passage thresholds, and an absolute bypass tolerance. Hotspot packing, driven versus modal normalization, and two- versus three-dimensional realizations are distinct targets.
-\section{Research plan}
-Audit the source and earlier arguments; split hotspot construction, full-device channel bounds, and physical counterexamples; prove stable auxiliary results; identify every continuum bridge; verify numerical diagnostics separately from proofs; compile and review the integrated manuscript; deliver reproducible source and Git history.
+\begin{abstract}
+We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. The primary channel target fixes frequency, positive dielectric bounds, the physical section, and power, passage, and absolute-bypass thresholds while permitting arbitrarily fine structure and unrestricted exterior support. We separate restricted hotspot theorems, full-vector field-resource estimates, and exact counterexamples to intermediate lemmas. In particular, absolute bypass control connects sharp-section passage to a smooth flux observable. No unrestricted full-Maxwell, fixed-section channel bound or admissible many-channel counterexample is claimed. Model calculations are distinguished from continuum Maxwell constructions throughout.
+\end{abstract}
+\noindent\textbf{Reading guide.} Status words refer to the precise labeled statement, not to OQ14 as a whole. Proofs are mathematical arguments, not machine certification. See the verdicts in Section~\ref{ver:verdicts}, the claim ledger, and the reproducibility record for the exact scope.
+\tableofcontents
+\clearpage
+\input{sections/problem}
+\InputIfFileExists{sections/hotspots.tex}{}{\section{Hotspots: investigation in progress}}
+\InputIfFileExists{sections/channels.tex}{}{\section{Channels: investigation in progress}}
+\InputIfFileExists{sections/counterexamples.tex}{}{\section{Counterexamples: investigation in progress}}
+\InputIfFileExists{sections/verification.tex}{}{\section{Verification: pending}\label{ver:verdicts}}
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
