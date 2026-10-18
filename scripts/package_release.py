@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import zipfile
 from pypdf import PdfReader
@@ -28,10 +29,17 @@ assert not build['dirty_worktree'] and not checks['dirty_worktree']
 assert lean['source_repository']['commit'] == commit
 assert lean['source_repository']['dirty'] is False
 assert all(c['passed'] for c in checks['checks'])
-assert lean['compiler_exit_code'] == 0 and len(lean['checked_theorems']) == 10
+formal_sources = sorted([*(ROOT/'lean').glob('*.lean'), *(ROOT/'lean/Maxwell').glob('**/*.lean')])
+expected_theorems = set()
+for source in formal_sources:
+    expected_theorems.update(re.findall(r'#print axioms (OQ14(?:\.\w+)+)', source.read_text(encoding='utf-8')))
+assert lean['compiler_exit_code'] == 0 and set(lean['checked_theorems']) == expected_theorems
 pdf = OUT / 'pdf/oq14-manuscript.pdf'
 assert hashlib.sha256(pdf.read_bytes()).hexdigest() == build['pdf_sha256']
 assert hashlib.sha256((ROOT / 'lean/OQ14.lean').read_bytes()).hexdigest() == lean['source_sha256']
+assert set(lean['source_hashes']) == {p.relative_to(ROOT/'lean').as_posix() for p in formal_sources}
+for relative, digest in lean['source_hashes'].items():
+    assert hashlib.sha256((ROOT/'lean'/relative).read_bytes()).hexdigest() == digest
 
 source_zip = OUT / 'oq14-source.zip'
 bundle = OUT / 'oq14-history.bundle'
@@ -49,7 +57,7 @@ Source commit: {commit}
 Milestone tag: {args.tag}
 Tracked and nonignored untracked working-tree changes: none.
 
-The {pages}-page manuscript, eight diagnostic groups, and ten Lean theorem
+The {pages}-page manuscript, {len(checks['checks'])} diagnostic groups, and {len(expected_theorems)} audited Lean theorem
 declarations were rebuilt from this clean source revision. TeX references,
 citations and overfull-box checks passed. Rendered layout was inspected.
 Lean used 4.19.0 and the locked mathlib revision; all nine dependency
@@ -57,11 +65,14 @@ repositories were checked against the lockfile. The proof package was
 rebuilt with an empty root build directory and retained pinned dependency
 caches. Only propext, Classical.choice and Quot.sound occur in axiom reports.
 
-The finite three-dimensional driven hotspot theorem has complete written
-proofs under its stated projected-patch and incoming-power conventions.
-The unrestricted fixed-section channel statement and modal hotspot
-interpretation remain OPEN. The continuum Maxwell arguments are NOT
-formalized in Lean. This release does not claim full OQ14 closure.
+The finite three-dimensional driven and genuinely normalized modal hotspot
+theorems have complete written proofs under their stated conventions. The
+modal theorem includes arbitrary high Q, fixed real pole frequency, common
+ordinary material bounds and actual maxima in the prescribed plane patch.
+The unrestricted fixed-section channel statement remains OPEN. Lean now
+checks actual classical and compact-test Maxwell identities and exact wave
+solutions, alongside the operator results. Full scattering, interface and
+resonance proofs are NOT yet formalized. This is not full OQ14 closure.
 
 The source/ directory contains all tracked sources, build instructions,
 proof reviews and research-stage evidence. Release artifacts and clean

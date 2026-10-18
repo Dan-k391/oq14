@@ -1,0 +1,352 @@
+\section{Analytic excitation of conical points by one genuine resonance}
+\label{hs:modal-next-section}
+
+This section proves a local bridge that the driven-field construction
+does not provide: a single analytically continued Maxwell resonance
+retains a nonzero electric singular coefficient at every member of a
+finite family of newly inserted conical points.  The contrast of the
+insertions may depend on that finite family; the bounds
+$1\leq\varepsilon_r\leq\varepsilon_+$ do not change.  A resonance here
+has a complex frequency and satisfies the analytically continued
+outgoing condition.  It is not a real-frequency driven solution.
+
+\subsection{The angular branch through a homogeneous medium}
+
+Fix an axis $e\in S^2$, a number $t\in(1/\sqrt3,1)$, and put
+\begin{equation}
+ a(\widehat x)=\mathbf1_{\{|\widehat x\cdot e|>t\}},\qquad
+ q_\eta(\widehat x)=1+\eta a(\widehat x).
+ \label{hs:modal-angular-material}
+\end{equation}
+The physical permittivity near a selected point is
+$\varepsilon_b q_\eta$, where $1<\varepsilon_b<\varepsilon_+$ is the
+permittivity of its initially homogeneous host.  The small parameter
+$\eta$ is real and positive for the physical construction.  Its
+complex extension below is only an analytic perturbation parameter.
+
+\begin{lemma}[PROVED: an analytic angular eigenbranch]
+\label{hs:modal-angular-branch}
+For sufficiently small complex $\eta$ there are holomorphic functions
+$\nu_\eta$, $\lambda_\eta$, and
+$\phi_\eta\in H^1(S^2)$ satisfying
+\begin{equation}
+ -\operatorname{div}_{S^2}(q_\eta\nabla_{S^2}\phi_\eta)
+       =\nu_\eta q_\eta\phi_\eta,\qquad
+ \nu_\eta=\lambda_\eta(\lambda_\eta+1),\qquad
+ \int_{S^2}q_\eta\phi_\eta^2\,dS=1.
+ \label{hs:modal-angular-branch-equation}
+\end{equation}
+The functions $\phi_\eta$ are axisymmetric about $e$ and odd under
+$\widehat x\cdot e\mapsto-\widehat x\cdot e$.  In particular their
+weighted means vanish.  With the continuous choice of sign,
+\begin{equation}
+ \phi_0=\sqrt{\frac{3}{4\pi}}\,\widehat x\cdot e,
+ \quad \nu_0=2,\quad \lambda_0=1,
+ \quad \nu'_0=-3t(1-t^2),\quad
+ \lambda'_0=-t(1-t^2).
+ \label{hs:modal-angular-derivative}
+\end{equation}
+For sufficiently small real $\eta>0$, all these quantities are real
+and $0<\lambda_\eta<1$.
+\end{lemma}
+
+\begin{proof}
+Work in the closed subspace of axisymmetric odd functions in
+$H^1(S^2)$.  At $\eta=0$, the eigenvalue two is simple in this
+subspace: the spherical harmonics in it have degrees
+$l=1,3,5,\ldots$, each with azimuthal index zero.  The stiffness and
+mass forms have a common domain and depend affinely on $\eta$.
+On this odd subspace the stiffness form is coercive at zero, and
+remains invertible for small complex $\eta$ by a Neumann series.
+Composing its inverse with the mass form gives a holomorphic compact
+operator on $H^1$, compactness following from
+$H^1(S^2)\hookrightarrow L^2(S^2)$.
+A small contour about its simple eigenvalue $1/2$ defines a
+holomorphic rank-one spectral projection.  Apply that projection to
+$\phi_0$ and divide by the analytic square root of its nonzero
+bilinear mass.  This constructs the displayed normalized eigenpair;
+the analytic square root of $1+4\nu_\eta$ selects
+$\lambda_\eta=(-1+\sqrt{1+4\nu_\eta})/2$ near one.
+Because $q_\eta$ is axisymmetric and even, the restricted weak
+eigenproblem is also the full-sphere weak eigenproblem.  Orthogonal
+angular symmetry sectors make the other test functions vanish.
+
+Differentiating the normalized eigenproblem at zero gives
+\begin{equation}
+ \nu'_0=\int_{S^2}a
+       \bigl(|\nabla_{S^2}\phi_0|^2-2\phi_0^2\bigr)\,dS
+       =3\int_t^1(1-3s^2)\,ds=-3t(1-t^2).
+\end{equation}
+Differentiation of $\nu=\lambda(\lambda+1)$ gives
+$\lambda'_0=\nu'_0/3$.  Reality and the strict inequality follow
+by conjugation uniqueness and this negative derivative.
+\end{proof}
+
+\subsection{A coefficient formula regular at the exponent one}
+
+The apparent difficulty at $\eta=0$ is the integral
+$\int_0^r s^{-\lambda_\eta}\,ds$ in the earlier coefficient
+formula.  Its singular denominator is removable after one subtracts
+the value of the regular curl lifting at the vertex.  The following
+argument carries out that subtraction before taking the limit.
+
+\begin{theorem}[PROVED: analytic coefficient continuation from a smooth field]
+\label{hs:modal-coefficient-continuation}
+Let $E_\eta$ be holomorphic with values in $L^2(B_{3R})^3$ for
+$\eta$ in a complex neighborhood of zero.  Suppose that, in
+$B_{3R}$, it belongs to $H_{\mathrm{loc}}(\operatorname{curl})$
+and is a weak Maxwell electric field satisfying
+\begin{equation}
+ \operatorname{curl}\operatorname{curl}E_\eta
+   =k_\eta^2\varepsilon_b q_\eta E_\eta,
+ \qquad k_\eta\ne0,
+ \label{hs:modal-local-maxwell}
+\end{equation}
+where $k_\eta$ is holomorphic and $q_\eta$ is the radially constant
+coefficient in \eqref{hs:modal-angular-material}.  Then its intrinsic
+conical coefficient for small real $\eta>0$ extends to a holomorphic
+scalar $c_\eta$ near zero, with the exact value
+\begin{equation}
+ c_0=\sqrt{\frac{4\pi}{3}}\,E_0(0)\cdot e.
+ \label{hs:modal-coefficient-limit}
+\end{equation}
+In particular, if $E_0(0)\cdot e\ne0$, then $c_\eta\ne0$ for all
+sufficiently small real positive $\eta$, and the continued electric
+field is unbounded at ordinary points approaching the vertex.
+\end{theorem}
+
+\begin{proof}
+Fix $0<\gamma<1/2$ and decrease the parameter neighborhood so that
+$\operatorname{Re}\lambda_\eta<1+\gamma/2$ and
+$\operatorname{Re}\lambda_\eta>1/2$.  The local regular
+decomposition of Lemma~\ref{hs:three-decomposition} also applies at
+complex nonzero $k_\eta$: its cutoff estimates use only bounded
+$|k_\eta|$, bounded $q_\eta$, and a positive lower bound for
+$|k_\eta|$.  More explicitly, cutoff testing of
+\eqref{hs:modal-local-maxwell} controls $\operatorname{curl}E_\eta$
+in interior $L^2$.  Its divergence is zero and its curl is
+$k_\eta^2\varepsilon_bq_\eta E_\eta$, so the constant-coefficient
+curl/div identity controls it in a smaller interior $H^1$ space.
+Apply one fixed regularized Poincare lifting from $H^1$ to $H^2$,
+and fix the mean of the remaining scalar potential.  The result is
+\begin{equation}
+ E_\eta=\nabla v_\eta+W_\eta,
+ \qquad v_\eta\in H^1(B_R),\quad W_\eta\in H^2(B_R)^3,
+ \label{hs:modal-decomposition}
+\end{equation}
+holomorphically in those spaces, using slightly larger balls for
+the estimates if necessary.  Holomorphy of the interior derivatives
+follows from their distributional holomorphy and locally uniform
+bounds; equivalently, Cauchy's integral formula in distributions
+and the same local estimates gives the formula in the stronger
+spaces.  Thus $W_\eta$ is holomorphic in $C^{0,\gamma}$ on the
+final smaller closed ball.  From now on $R$ denotes that final
+radius.
+
+Set $w_\eta=W_\eta(0)$ and
+$\widetilde W_\eta(x)=W_\eta(x)-w_\eta$.  The uniform estimate
+$|\widetilde W_\eta(r\widehat x)|\leq C r^\gamma$ holds on a
+smaller closed parameter disk.  Define
+\begin{align}
+ U_\eta(r)&=\int_{S^2}q_\eta v_\eta(r\widehat x)\phi_\eta\,dS,
+ & A_{0,\eta}&=\int_{S^2}q_\eta(w_\eta\cdot\widehat x)
+                                      \phi_\eta\,dS,\\
+ \widetilde A_\eta(r)&=\int_{S^2}q_\eta
+          (\widetilde W_\eta\cdot\widehat x)\phi_\eta\,dS,
+ &\widetilde B_\eta(r)&=\int_{S^2}q_\eta
+           \widetilde W_{\eta,t}\cdot\nabla_{S^2}\phi_\eta\,dS.
+ \label{hs:modal-subtracted-projections}
+\end{align}
+All angular pairings here are bilinear, without complex conjugation,
+as appropriate for holomorphic dependence.  The last two quantities
+are $O(r^\gamma)$ uniformly.  For the constant vector $w_\eta$,
+the eigenproblem gives the exact identity
+\begin{equation}
+ \int_{S^2}q_\eta w_{\eta,t}\cdot\nabla_{S^2}\phi_\eta\,dS
+       =\lambda_\eta(\lambda_\eta+1)A_{0,\eta}.
+ \label{hs:modal-constant-identity}
+\end{equation}
+Indeed $w_{\eta,t}=\nabla_{S^2}(w_\eta\cdot\widehat x)$.
+
+Taking the divergence of \eqref{hs:modal-local-maxwell} gives
+$\operatorname{div}(q_\eta E_\eta)=0$.  Its angular projection is
+the same radial equation as \eqref{hs:three-radial}.  A particular
+solution valid on the entire small complex parameter disk is
+\begin{align}
+ p_\eta(r)&=-rA_{0,\eta}+\widetilde p_\eta(r),\notag\\
+ \widetilde p_\eta(r)&=\frac{1}{2\lambda_\eta+1}
+ \left[r^{\lambda_\eta}\int_0^r s^{-\lambda_\eta}
+       \{\widetilde B_\eta(s)
+                 -(\lambda_\eta+1)\widetilde A_\eta(s)\}\,ds
+ \right.\notag\\[-2pt]
+ &\hspace{22mm}\left.
+ -r^{-\lambda_\eta-1}\int_0^r s^{\lambda_\eta+1}
+       \{\widetilde B_\eta(s)
+                      +\lambda_\eta\widetilde A_\eta(s)\}\,ds
+ \right].
+ \label{hs:modal-regular-particular}
+\end{align}
+We use $r^{\lambda}=\exp(\lambda\log r)$ for $r>0$.
+The integrals converge uniformly on compact parameter disks, because
+their respective small-$s$ powers have real parts greater than $-1$.
+They are holomorphic in $\eta$ by dominated integration, also after
+parameter differentiation on a smaller disk.  Direct estimates give
+\begin{equation}
+ |\widetilde p_\eta(r)|\leq C r^{1+\gamma},\qquad
+ |\widetilde p_\eta'(r)|\leq C r^\gamma.
+ \label{hs:modal-regular-particular-bound}
+\end{equation}
+The first term $-rA_{0,\eta}$ is an exact particular solution for
+the constant-vector forcing by \eqref{hs:modal-constant-identity}.
+For $\lambda_\eta\ne1$ it is also exactly the result of performing
+the two constant-vector integrals in \eqref{hs:three-exact}; thus
+no additional homogeneous term has been inserted by this
+regularization.
+
+Variation of constants now gives
+\begin{equation}
+ U_\eta(r)=c_\eta r^{\lambda_\eta}
+          +d_\eta r^{-\lambda_\eta-1}+p_\eta(r).
+\end{equation}
+Finite $H^1$ energy of $v_\eta$ excludes $d_\eta$: the radial
+derivative of the second term would have squared integral with
+weight $r^2$ proportional to
+$\int_0^R r^{-2\operatorname{Re}\lambda_\eta-2}\,dr$.
+The remaining coefficient has the annular formula
+\begin{equation}
+ c_\eta=\frac{2}{R}\int_{R/2}^R
+          r^{-\lambda_\eta}\{U_\eta(r)-p_\eta(r)\}\,dr.
+ \label{hs:modal-holomorphic-coefficient}
+\end{equation}
+The projection of $v_\eta$ on this annulus is a bounded linear
+operation in $L^2$, and all other factors were shown holomorphic.
+This proves holomorphy of $c_\eta$.  For positive real $\eta$,
+the exponent is below one, so this is exactly the intrinsic
+coefficient of Lemma~\ref{hs:three-coefficient}.
+
+At zero the medium is homogeneous, and the Maxwell field $E_0$ is
+smooth near the origin by the interior Helmholtz equation.  As
+$\nabla v_0=E_0-W_0\in C^{0,\gamma}$,
+\begin{equation}
+ v_0(r\widehat x)=v_0(0)
+        +r\{E_0(0)-w_0\}\cdot\widehat x+O(r^{1+\gamma}).
+\end{equation}
+The zero angular mean removes $v_0(0)$.  Adding $rA_{0,0}$ to its
+projection and using the bound on $\widetilde p_0$ gives
+\begin{equation}
+ c_0=\int_{S^2}(E_0(0)\cdot\widehat x)\phi_0\,dS
+     =\sqrt{\frac{4\pi}{3}}\,E_0(0)\cdot e.
+\end{equation}
+The nonvanishing and unboundedness conclusions follow from
+continuity and Lemma~\ref{hs:three-coefficient}.  In particular,
+closeness of fields in $L^2$ alone is not being used to infer
+nonvanishing of a singular coefficient; its explicit continuous
+extension has been established.
+\end{proof}
+
+\begin{corollary}[PROVED: all finitely many coefficients of one continued mode]
+\label{hs:modal-all-coefficients}
+Suppose a compact dielectric has a Maxwell resonance $k_0\ne0$
+with eigenfield $E_0$.  Let $p_1,\ldots,p_N$ have disjoint
+neighborhoods of constant permittivity $\varepsilon_b$, and choose
+axes $e_j$ such that $E_0(p_j)\cdot e_j\ne0$.
+In each neighborhood insert the angular material
+$\varepsilon_b q_\eta$ of
+\eqref{hs:modal-angular-material}, with that neighborhood's axis,
+and close the insertions outside its local conical ball.
+If the same resonance has a nonzero local-$L^2$ holomorphic
+continuation $E_\eta,k_\eta$ for this simultaneous material
+perturbation, with $E_\eta\vert_{\eta=0}=E_0$, then there is
+$\eta_N>0$ such that every $0<\eta<\eta_N$ has
+\begin{equation}
+ c_j(E_\eta)\ne0\quad\hbox{for all }1\leq j\leq N.
+ \label{hs:modal-all-coefficients-equation}
+\end{equation}
+These are coefficients of one eigenfield at one resonance, not of
+a sum of independent modes or separately selected illuminations.
+The physical material bound is respected by also requiring
+$\varepsilon_b(1+\eta)\leq\varepsilon_+$.
+\end{corollary}
+
+\begin{proof}
+Translate and rotate Theorem~\ref{hs:modal-coefficient-continuation}
+at each $p_j$ and take the minimum of the finitely many positive
+nonvanishing radii in parameter space.  Scaling a chosen eigenfield
+by any holomorphic nonzero normalization factor multiplies all its
+coefficients by that same factor and does not affect the result.
+\end{proof}
+
+\subsection{The exact remaining global hypotheses}
+
+\begin{proposition}[PROVED: transfer from a simple resonance to rounded modal peaks]
+\label{hs:modal-transfer}
+Assume a finite homogeneous dielectric sphere with permittivity
+$\varepsilon_b\in(1,\varepsilon_+)$ has a simple resonance in the
+axisymmetric TM sector, whose axial electric component is nonzero
+on an open interval of its symmetry axis.  Assume furthermore:
+\begin{enumerate}
+\item This sector's eigenpair has a holomorphic continuation under
+the finite axisymmetric cone insertions in
+Corollary~\ref{hs:modal-all-coefficients}.
+\item An explicitly specified genuine QNM normalization is finite,
+nonzero and continuous along that branch and under the rounded
+approximations below.
+\item Rounding the conical vertices while retaining the same
+material values gives a nearby resonance and normalized eigenfield
+converging locally in $L^2$, and uniformly one-sided on fixed
+smooth-interface collars away from the vertices.
+\end{enumerate}
+Then, for every finite $N$ and every $M,\ell>0$, one normalized
+resonance of a finite smooth dielectric has $N$ disjoint
+three-dimensional peak balls of diameter less than $\ell$, each
+with one-sided maximum larger than $M$ and a collar maximum smaller
+than half its peak.  Their centers may be placed on a line in a
+prescribed open plane patch, and their projections may be contained
+in that patch, provided that the chosen nonzero axial interval is
+positioned to meet the patch.  If the symmetry axis lies in that
+plane and the rounding remains axisymmetric, a maximizing point
+in each ball can itself be selected in the plane patch.  The
+surrounding resonator need not project into the patch.  A maximum
+off the symmetry axis may belong to a rotational ring inside its
+small ball; no nondegeneracy or uniqueness of a maximum is asserted.
+\end{proposition}
+
+\begin{proof}
+Choose $N$ distinct axial centers in a sufficiently short nonzero
+subinterval and choose disjoint balls and insertions as small as
+necessary.  Axisymmetric insertions preserve the indicated sector.
+Choose one small positive contrast from
+Corollary~\ref{hs:modal-all-coefficients}.  Its one normalized sharp
+resonance is unbounded at every tip and bounded on each chosen
+fixed collar.  Select an ordinary high-field point inside each ball
+whose value exceeds twice the collar bound and the target $M$, with
+strict margins.  The hypothesized normalized rounding convergence
+preserves all these finitely many strict inequalities at one
+sufficiently small rounding scale.  Smooth-interface regularity
+makes the one-sided maxima on the closed balls finite and attained;
+each peak lies inside its ball because of the collar inequality.
+This is the same final compactness step as the driven construction,
+but it is applied to a homogeneous resonance branch with its stated
+QNM normalization.
+
+For the last placement assertion, an axisymmetric vector field
+obeys $E(\mathcal R x)=\mathcal R E(x)$ under rotations about its
+axis, and therefore $|E|$ is invariant.  The same is true for its
+one-sided material traces.  A ball centered on that axis is
+rotation invariant.  Rotate any maximizing point into the specified
+plane through the axis; it stays in the same ball and retains its
+maximal value.  The projection constraint puts this representative
+in the prescribed patch.
+\end{proof}
+
+This proposition is a proved implication with explicit global
+hypotheses.  Lemmas~\ref{ms:sphere-simple}, \ref{ms:continuation},
+\ref{ms:normalization}, and~\ref{ms:rounding} supply those hypotheses
+for the finite-device construction in Theorem~\ref{ms:modal-packing}.
+Theorem~\ref{hs:modal-coefficient-continuation} and
+Corollary~\ref{hs:modal-all-coefficients} establish its local
+excitation bridge.  No resonance is inferred from a driven field,
+and no radiating mode is normalized by a divergent all-space positive
+energy integral.  A real dilation fixes the real part of the
+nonzero resonance frequency; its negative imaginary part remains
+part of the QNM statement.

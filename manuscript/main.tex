@@ -9,11 +9,11 @@
 \setlength{\emergencystretch}{3em}
 \title{OQ14: Hotspot Packing and Power Channels\\\large Quantified Results, Proof Obstructions, and an Auditable Research Record}
 \author{AI-assisted research manuscript}
-\date{17 October 2026 (America/New\_York)}
+\date{18 October 2026 (America/New\_York)}
 \begin{document}
 \maketitle
 \begin{abstract}
-We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. We prove simultaneous driven hotspot packing in an invariant two-dimensional setting and in finite three-dimensional dielectric devices, under explicit localization and incoming-power conventions. The three-dimensional result uses conical point tips and a fixed small positive contrast. The primary channel target fixes frequency, material bounds, the physical section, and power, passage, and absolute-bypass thresholds, with unrestricted external support and fine structure. We prove resource-dependent vector estimates and a local coherent-flux obstruction, but do not resolve the unrestricted physical channel target. The modal hotspot interpretation also remains open. Ten operator and integral theorems are checked in Lean; the continuum Maxwell arguments are not formalized.
+We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. We prove simultaneous driven hotspot packing in invariant two-dimensional and finite three-dimensional dielectric devices. We also prove arbitrary finite packing in one genuinely normalized quasinormal mode of a finite smooth dielectric, at fixed real frequency, common ordinary material bounds, and arbitrarily high prescribed quality factor. The modal proof combines a simple sphere pole, analytic continuation of conical coefficients, and a reciprocal residue norm stable under rounding. The primary channel target fixes frequency, material bounds, the physical section, and power, passage, and absolute-bypass thresholds, with unrestricted external support and fine structure. Resource-dependent vector estimates and additional exact obstructions are proved, but the unrestricted physical channel target remains open. Lean checks operator estimates and classical and weak Maxwell identities; the complete continuum existence and spectral arguments are not yet formalized.
 \end{abstract}
 \noindent\textbf{Reading guide.} Status words refer to the precise labeled statement, not to OQ14 as a whole. The exact Lean coverage is in Section~\ref{ver:lean}; other proofs are mathematical arguments. See Section~\ref{ver:verdicts}, the claim ledger, and the reproducibility record for the remaining scope.
 \clearpage
@@ -22,9 +22,12 @@ We investigate the two conjectures in Section 5.6 of Miller and Monticone's vers
 \input{sections/problem}
 \input{sections/hotspots}
 \input{sections/hotspot_closure_audit}
+\input{sections/modal_next}
+\input{sections/modal_spectral}
 \input{sections/channels}
 \input{sections/counterexamples}
 \input{sections/channel_closure_audit}
+\input{sections/channel_next}
 \input{sections/verification}
 \bibliographystyle{plain}
 \bibliography{references}

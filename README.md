@@ -7,10 +7,13 @@ The user's subsequent request for complete closure and Lean verification
 is tracked explicitly; proving an abstract operator implication does not
 formally establish its physical Maxwell hypotheses.
 
-The delivered results include a finite three-dimensional **driven** hotspot
-packing theorem, with one finite-power illumination and explicit projection
-constraints, and ten successfully compiled Lean theorems. The original modal
-hotspot interpretation and unrestricted channel statement remain open.
+The delivered results include finite three-dimensional driven packing and
+arbitrary finite hotspot packing in one genuinely normalized high-Q mode of
+a smooth finite dielectric. The modal construction fixes the real frequency
+and common material bounds and places actual maxima in the prescribed plane.
+Lean now includes genuine classical and weak Maxwell identities and exact
+solutions alongside the operator estimates. The unrestricted channel theorem
+and complete Lean formalization of the existence proofs remain unfinished.
 
 Canonical mathematics: `manuscript/main.tex`, `manuscript/sections/*.tex`,
 `manuscript/macros.tex`, and `manuscript/references.bib`.
@@ -67,13 +70,13 @@ is `latexmk -pdf manuscript/main.tex`; the delivered PDF is tested with Tectonic
 - `output/RELEASE.md` and `output/SHA256SUMS.json`: exact milestone and file hashes.
 
 The numerical program tests exact resonator models, corner monodromy, radial
-Bragg identities and a local Maxwell flux Gram matrix. It does not simulate
+Bragg identities, modal sphere-pole formulas and a local Maxwell flux Gram matrix. It does not simulate
 a physical many-channel dielectric device. Missing physical bypass, port and
 model-reduction certificates are recorded as null, not zero.
 
 No successful TeX or Lean build is by itself a proof of a theorem that is
-not represented in the formal source. No finite-dimensional formalization
-is promoted to a verified continuum Maxwell result.
+not represented in the formal source. No restricted formalization is promoted
+to verification of a larger theorem.
 
 ## Sources and version history
 

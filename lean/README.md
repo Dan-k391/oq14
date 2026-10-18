@@ -1,6 +1,7 @@
-# Lean verification of the stable operator core
+# Lean verification of operator estimates and Maxwell foundations
 
-The formal source is `OQ14.lean`. Ten theorems compile with Lean 4.19.0
+The formal sources are `OQ14.lean` and `Maxwell.lean`. Twenty-eight exported
+theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
 
@@ -13,6 +14,7 @@ directory, prepare dependencies using the supplied lockfile (keep
 
 ```text
 lake exe cache get Mathlib.Analysis.NormedSpace.OperatorNorm.Basic Mathlib.Analysis.Normed.Operator.LinearIsometry Mathlib.Analysis.InnerProductSpace.Basic Mathlib.LinearAlgebra.FiniteDimensional.Defs Mathlib.LinearAlgebra.Dimension.Finrank Mathlib.MeasureTheory.Integral.Bochner.Basic Mathlib.Data.Real.Sqrt Mathlib.Tactic.Linarith Mathlib.Tactic.Ring
+lake exe cache get Mathlib.Analysis.InnerProductSpace.PiL2 Mathlib.Analysis.Calculus.FDeriv.Mul Mathlib.Analysis.Calculus.FDeriv.Symmetric Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts Mathlib.Analysis.SpecialFunctions.ExpDeriv Mathlib.LinearAlgebra.CrossProduct Mathlib.Tactic.FinCases Mathlib.Tactic.LinearCombination
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -25,8 +27,8 @@ For a portable compiler outside PATH, use
 `python build.py --lake /absolute/path/to/lake` (or `lake.exe` on Windows).
 The local Windows compiler, when present, is automatically found under
 `../.tools/lean/lean-4.19.0-windows/bin`. No global installation is required.
-`build.ps1` is an additional Windows-only build entry point; `build.py`
-provides the full source-hash and theorem-by-theorem axiom audit.
+`build.ps1` delegates to the same Python audit; its `-Python` option selects
+the interpreter. There is no separate weaker PowerShell verification path.
 Use `--log-dir /absolute/output/directory` to preserve the tracked evidence
 files during a new clean-checkout build. Git is used read-only to verify
 every installed dependency HEAD against the manifest and reject changed
@@ -34,7 +36,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, runs `lake build OQ14`, and audits all ten
+compiler and mathlib revision, runs `lake build OQ14 Maxwell`, and audits all 28
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -74,16 +76,55 @@ certificate in `cx:compression`. The final group proves the analytic
 integration step underlying `cx:absolute-bypass`, in a complex inner
 product space over an arbitrary measure space.
 
-Every theorem's reported axioms are exactly `propext`, `Classical.choice`,
+## Actual differential and weak Maxwell proofs
+
+The following names have prefix `OQ14.Maxwell.`. The domain is actual
+Euclidean three-space. Partial derivatives use the real Fréchet derivative;
+the fields, curls, divergence and Lebesgue integrals are concretely defined.
+
+| Declaration | Verified statement |
+|---|---|
+| `divergence_cross` | Differential cross-product identity from the product rule. |
+| `curl_conj` | Curl commutes with complex conjugation. |
+| `complex_poynting_identity` | Complex local Poynting identity from Maxwell curl equations. |
+| `real_poynting_divergence_zero` | Zero real divergence for lossless local coefficients. |
+| `curl_gradient` | Curl of an actual C2 gradient vanishes. |
+| `divergence_curl` | Divergence of an actual C2 curl vanishes. |
+| `maxwell_superposition` | Coherent linear combinations solve the same Maxwell equations. |
+| `maxwell_curl_curl` | The homogeneous second-order electric equation follows from the two curl equations. |
+| `partial_integration_by_parts` | Coordinate integration by parts for compactly supported C1 tests. |
+| `curl_integration_by_parts` | The actual distributional curl pairing. |
+| `classical_maxwell_weak_form` | Every C1 Maxwell solution satisfies the compact-test weak equations. |
+| `vacuum_plane_wave` | An explicit nonzero propagating solution at positive frequency. |
+| `evanescent_wave` | Explicit growing and decaying Maxwell waves. |
+| `paired_evanescent_maxwell` | Their coherent pair is a Maxwell solution everywhere. |
+| `evanescent_zero_normal_power` | One wave has zero normal power at the origin. |
+| `paired_evanescent_positive_power` | The pair has power 3/4 at the origin. |
+| `evanescent_zero_normal_power_everywhere` | One wave has zero normal power everywhere. |
+| `paired_evanescent_power_everywhere` | The pair has constant power 3/4 everywhere. |
+
+All differentiability hypotheses are explicit. Compact support proves the
+integrability needed in integration by parts. The weak theorem concerns
+classical fields tested against compact functions; it is not an existence
+theorem for arbitrary weak fields. The evanescent witnesses grow in space
+and have infinite transverse extent; no finite-power physical excitation
+or unrestricted channel counterexample follows from them.
+
+The source hashes and standalone research check are in `Maxwell/`. The
+combined clean release build is recorded under `../output/lean/`.
+
+Every audited theorem's reported axioms are exactly `propext`, `Classical.choice`,
 and `Quot.sound`, the standard Lean/mathlib foundations. There are no
 project-specific axioms, admitted proofs, or assumed Maxwell conclusions.
 
 ## Explicitly outside the formalization
 
-This is **not formal verification of OQ14**. The source contains no Maxwell
-PDE, trace theorem, scattering realization, corner/Runge/rounding proof,
-or uniform rank-M approximation construction. In particular, it does not
-prove that the approximation hypothesis holds uniformly over the physical
-class. It also does not identify a measurable operator-valued flux form
-with physical Maxwell traces; that bridge remains a separate analytic
-claim. These limits are substantive, not merely implementation details.
+This is **not complete formal verification of OQ14**. Maxwell derivatives
+and weak-test identities are now represented, but the source does not yet
+construct H(curl) trace theory, outgoing scattering, the conical spectrum,
+Runge approximation, rounding, the analytic Fredholm resonance pencil or
+its reciprocal norm. The complete written modal theorem is not yet a Lean
+theorem. The unrestricted channel claim additionally still lacks a written
+proof or physical counterexample. No hypothesis or custom axiom stands in
+for either missing conclusion. The exact remaining library development is
+listed in `../reviews/maxwell_formalization.md`.

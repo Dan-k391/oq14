@@ -47,7 +47,8 @@ def main() -> int:
     lake_version = run("--version")
     manifest = project / "lake-manifest.json"
     source = project / "OQ14.lean"
-    source_text = source.read_text(encoding="utf-8")
+    sources = sorted([*project.glob("*.lean"), *project.glob("Maxwell/**/*.lean")])
+    source_text = "\n".join(path.read_text(encoding="utf-8") for path in sources)
     if re.search(r"(?m)^\s*(axiom|constant)\s|\b(sorry|admit)\b", source_text):
         raise RuntimeError("Forbidden unproved declaration found in formal source.")
     lock = json.loads(manifest.read_text(encoding="utf-8"))
@@ -88,6 +89,10 @@ def main() -> int:
         "captured": "before compilation",
     }
     initial_source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+    initial_source_hashes = {
+        path.relative_to(project).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in sources
+    }
     initial_manifest_hash = hashlib.sha256(manifest.read_bytes()).hexdigest()
 
     if not args.no_clean:
@@ -97,7 +102,7 @@ def main() -> int:
         if build.exists():
             shutil.rmtree(build)
 
-    result = run("build", "OQ14")
+    result = run("build", "OQ14", "Maxwell")
     text = result.stdout + f"\nCompiler exit code: {result.returncode}\n"
     (logs / "clean-build.txt").write_text(text, encoding="utf-8")
     print(result.stdout, end="")
@@ -106,9 +111,14 @@ def main() -> int:
     if hashlib.sha256(source.read_bytes()).hexdigest() != initial_source_hash or \
             hashlib.sha256(manifest.read_bytes()).hexdigest() != initial_manifest_hash:
         raise RuntimeError("Formal source or dependency manifest changed during compilation.")
+    for relative, digest in initial_source_hashes.items():
+        if hashlib.sha256((project / relative).read_bytes()).hexdigest() != digest:
+            raise RuntimeError(f"Formal source changed during compilation: {relative}")
 
-    expected = set(re.findall(r"#print axioms (OQ14\.\w+)", source_text))
-    reports = dict(re.findall(r"'(OQ14\.\w+)' depends on axioms: \[([^\]]*)\]", text))
+    expected = set(re.findall(r"#print axioms (OQ14(?:\.\w+)+)", source_text))
+    reports = dict(re.findall(r"'(OQ14(?:\.\w+)+)' depends on axioms: \[([^\]]*)\]", text))
+    for theorem in re.findall(r"'(OQ14(?:\.\w+)+)' does not depend on any axioms", text):
+        reports[theorem] = ""
     allowed = {"propext", "Classical.choice", "Quot.sound"}
     if set(reports) != expected:
         raise RuntimeError("Missing or unexpected theorem axiom reports.")
@@ -122,6 +132,7 @@ def main() -> int:
         "lake": lake_version.stdout.strip(),
         "mathlib_revision": mathlib["rev"],
         "source_sha256": initial_source_hash,
+        "source_hashes": initial_source_hashes,
         "manifest_sha256": initial_manifest_hash,
         "source_repository": repository_state,
         "installed_dependencies": installed_dependencies,

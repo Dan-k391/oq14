@@ -1,0 +1,519 @@
+\section{Spectral construction and normalization of the modal branch}
+\label{ms:section}
+
+This section supplies the global hypotheses used by
+Proposition~\ref{hs:modal-transfer}.  Frequencies in this section are
+complex vacuum wavenumbers.  An outgoing resonance means the
+analytic continuation of the vacuum outgoing Green function from
+$\operatorname{Im}k>0$; no decay at real spatial infinity is imposed
+when $\operatorname{Im}k<0$.  The material is still real, positive,
+scalar, nondispersive, and equal to vacuum outside a bounded set.
+The normalization below is a reciprocal Green-function residue norm.
+It is not a positive all-space energy integral.
+
+\subsection{A compact analytic pencil and continuity under rounding}
+
+Let $B$ be a ball containing all material changes, let
+$X=L^2(B;\C^3)$, and extend its elements by zero when applying
+whole-space operators.  Write $\chi=\varepsilon_r-1$.  With
+$\Phi_k(x)=e^{ik|x|}/(4\pi|x|)$, put
+\begin{equation}
+ K(k)f=\left.(k^2I+\nabla\nabla)\Phi_k*f\right|_B,
+ \qquad L_\chi(k)=I-K(k)\chi.
+ \label{ms:pencil}
+\end{equation}
+Multiplication by $\chi$ is included in the last expression.
+The static longitudinal Fourier projection, compressed to $B$, is
+denoted by $P$.  It satisfies $P=P^*$ and $0\leq P\leq I$.
+The distributional identity
+\begin{equation}
+ K(k)=-P+R(k),\qquad
+ R(k)=k^2\Phi_k I+\nabla\nabla(\Phi_k-\Phi_0),\qquad R(0)=0
+ \label{ms:compact-split}
+\end{equation}
+holds as an identity of bounded operators on $X$.
+
+\begin{lemma}[PROVED: analytic Fredholm reduction with a fixed material bound]
+\label{ms:fredholm}
+For every measurable $0\leq\chi\leq C$ supported in $B$,
+\begin{equation}
+ L_\chi(k)=A_\chi F_\chi(k),\quad
+ A_\chi=I+P\chi,\quad
+ F_\chi(k)=I-A_\chi^{-1}R(k)\chi
+ \label{ms:factorization}
+\end{equation}
+has $A_\chi$ invertible with $\|A_\chi^{-1}\|\leq1+C$.
+The operator $R(k)$ is an entire Hilbert--Schmidt family, and
+$F_\chi$ is an analytic identity-minus-compact pencil with
+$F_\chi(0)=I$.  Its noninvertible values are isolated, of finite
+algebraic multiplicity.  At $k\ne0$, its kernel is exactly the
+restriction to $B$ of the finite local-energy Maxwell resonances
+for this material, with exterior field given by \eqref{ms:pencil}.
+
+If $0\leq\chi_j\leq C$ and $\chi_j\to\chi$ almost everywhere
+in this same ball, then $F_{\chi_j}(k)\to F_\chi(k)$ in operator
+norm, locally uniformly in $k$, as do all $k$ derivatives.
+\end{lemma}
+
+\begin{proof}
+The Fourier symbol of $\nabla\nabla\Phi_0$ is
+$-\xi\xi^T/|\xi|^2$, including its distributional local term.
+Taylor expansion of $e^{ikr}$ shows that each entry of the
+remaining kernel in \eqref{ms:compact-split} is $O(1/r)$ as
+$r\downarrow0$, uniformly for $k$ in compact subsets of $\C$.
+The constant term $ik/(4\pi)$ in $\Phi_k-\Phi_0$ has zero Hessian.
+The squared kernel is locally integrable in three dimensions;
+on bounded $B\times B$ it is integrable.  Its parameter power
+series and derivatives have the same local majorants on compact
+parameter sets.  This proves the entire Hilbert--Schmidt assertion.
+
+Put $s=\sqrt\chi$.  The positive selfadjoint operator $I+sPs$
+has inverse of norm at most one, and direct multiplication gives
+\begin{equation}
+ A_\chi^{-1}=I-Ps(I+sPs)^{-1}s.
+ \label{ms:static-inverse}
+\end{equation}
+This proves the stated bound and factorization.  Analytic Fredholm
+theory applies, with the invertible value at zero fixing its
+nontrivial alternative.  This application needs no small contrast,
+smooth boundary, or uniform feature size.
+
+For completeness, the volume representation is an exact Maxwell
+equation.  In distributions,
+$(\operatorname{curl}\operatorname{curl}-k^2)K(k)f=k^2f$.
+Consequently a kernel vector extended by $E=K(k)(\chi E)$
+satisfies $\operatorname{curl}\operatorname{curl}E
+=k^2(1+\chi)E$.  Its curl is locally square integrable, by
+the first-derivative Newton-potential estimate; equivalently this
+follows from local cutoff testing.  Set $H=(ik)^{-1}\operatorname{curl}E$
+in units with vacuum impedance one.  This gives the two first-order
+Maxwell equations and the outgoing continued representation.
+Conversely, subtracting this volume field from any such resonance
+leaves an entire vacuum Maxwell field regular at the origin and
+outgoing outside a ball.  In each vector spherical harmonic its
+regular radial function and outgoing radial function have nonzero
+Wronskian for $k\ne0$, so all coefficients vanish.  Thus the
+restriction is a kernel vector.  A zero restriction gives the zero
+global field.
+
+Almost-everywhere convergence and the common bound give strong
+convergence of the multiplication operators.  The resolvent identity
+and \eqref{ms:static-inverse} give strong convergence of $A_{\chi_j}^{-1}$
+with a uniform bound.  Dominated convergence of the integral kernels
+gives $R(k)\chi_j\to R(k)\chi$ in Hilbert--Schmidt norm.
+A uniformly bounded strongly convergent operator sequence converges
+in norm after composition on the right with a fixed compact operator:
+approximate that compact operator by finite-rank operators.
+Apply this observation to $A_{\chi_j}^{-1}R(k)\chi$ and add the
+Hilbert--Schmidt difference.  Compactness in the parameter $k$ makes
+the convergence locally uniform; Cauchy's formula gives the same
+claim for derivatives.
+\end{proof}
+
+All these arguments also hold on a fixed closed symmetry sector
+preserved by $P$, $R(k)$, and the material multiplication.  We use
+the axisymmetric electric sector: $E$ has only meridional components
+and $H$ only the azimuthal component in cylindrical coordinates.
+Rotationally invariant scalar material preserves this sector.
+It is closed in $L^2$ and orthogonal to the axisymmetric magnetic
+sector, both for the Hermitian pairing and for the unconjugated
+bilinear pairing.  At the coordinate axis these statements are
+understood in the distributional and almost-everywhere sense.
+
+\begin{lemma}[PROVED: persistence of a simple resonance]
+\label{ms:continuation}
+Suppose the restriction of $F_\chi$ to such a fixed sector has an
+isolated characteristic value $k_*$ of algebraic multiplicity one.
+An analytic $L^\infty$ material perturbation has a locally
+holomorphic continued wavenumber $k_\eta$ and nonzero eigenfield
+$E_\eta\in X$.  Their values at zero are $k_*$ and a prescribed
+nonzero eigenfield.  If instead bounded nonnegative materials
+$\chi_j$ converge almost everywhere to $\chi$, and preserve this
+sector, they have unique nearby simple characteristic values
+$k_j\to k_*$ and eigenfields $E_j\to E$ in $X$, after one fixed
+nonzero linear functional fixes their scale.
+\end{lemma}
+
+\begin{proof}
+Choose closed complements of the one-dimensional kernel and
+cokernel of $F_\chi(k_*)$.  The block between those complements
+is invertible, and remains so in a small operator-norm neighborhood.
+Block elimination reduces the kernel equation to a single scalar
+analytic function $f(k)$, multiplied by invertible analytic block
+operators.  Algebraic multiplicity one is exactly
+$f(k_*)=0$, $f'(k_*)\ne0$.
+For an analytic material perturbation, $A_\chi^{-1}$ continues
+analytically by a Neumann series near the base material, so every
+block is jointly analytic.  The scalar analytic implicit-function
+theorem supplies $k_\eta$; back substitution supplies $E_\eta$.
+For almost-everywhere material convergence, Lemma~\ref{ms:fredholm}
+gives uniform convergence of the blocks and scalar functions on a
+small closed disk.  Rouch\'e's theorem gives exactly one zero,
+counting multiplicity.  It tends to $k_*$ and is simple.  Back
+substitution and a linear functional nonzero on $E$ give the stated
+field convergence.  This reduction must use $F$ for the
+almost-everywhere convergence claim: the leading multiplication
+in $L$ need not converge in operator norm.  Multiplication by $A$
+is analytic and invertible and does not alter a characteristic
+value's multiplicity or its right kernel.
+\end{proof}
+
+\subsection{A simple sphere resonance without a genericity assumption}
+
+Choose an algebraic real refractive index
+$1<n<\sqrt{\varepsilon_+}$, leaving a positive margin for the
+subsequent insertions.  Rational numbers already provide this
+choice for every $\varepsilon_+>1$.  In a sphere of radius $a$ and
+permittivity $n^2$, write $z=ka$ and
+$\psi_l(z)=zj_l(z)$, $\xi_l(z)=zh_l^{(1)}(z)$.
+Matching the tangential electric and magnetic fields of the regular
+interior electric multipole and the outgoing exterior multipole
+gives, for $l\geq1$, the determinant
+\begin{equation}
+ D_l(z)=n\psi_l(nz)\xi_l'(z)-\xi_l(z)\psi_l'(nz).
+ \label{ms:mie-denominator}
+\end{equation}
+Primes mean derivatives with respect to the displayed argument.
+For example the interior tangential electric component is
+proportional to $\psi_l'(nz)/(nz)$, and its tangential magnetic
+component to $n\psi_l(nz)/(nz)$; their exterior analogues are
+$\xi_l'(z)/z$ and $\xi_l(z)/z$.  Eliminating their two amplitudes
+gives \eqref{ms:mie-denominator}.
+
+\begin{lemma}[PROVED: simplicity and separation of electric sphere poles]
+\label{ms:sphere-simple}
+For algebraic $n>1$, every nonzero zero of $D_l$ is simple, and
+$D_l$ and $D_j$ have no common nonzero zero if $l\ne j$.
+In the axisymmetric electric sector each such zero is therefore a
+simple Maxwell characteristic value.  There are $l=1$ poles
+\begin{equation}
+ z_m=\frac{\pi(m+1/2)}{n}
+       -\frac{i}{2n}\log\frac{n+1}{n-1}+O(m^{-1}),
+ \qquad m\longrightarrow\infty.
+ \label{ms:pole-asymptotic}
+\end{equation}
+Their real parts are positive, imaginary parts negative, and
+$\operatorname{Re}z_m/(-2\operatorname{Im}z_m)\to\infty$.
+The $l=1,m_{\rm az}=0$ interior electric field has a nonzero axial
+component at the center and on a sufficiently short axial interval.
+\end{lemma}
+
+\begin{proof}
+The exact finite spherical-Hankel expansions\cite{dlmfExplicit} are
+\begin{align}
+ \xi_l(z)&=(-i)^{l+1}e^{iz}p_l(z),&
+ z h_l^{(2)}(z)&=i^{l+1}e^{-iz}\widetilde p_l(z),\\
+ p_l(z)&=\sum_{s=0}^l\frac{i^s(l+s)!}{2^s s!(l-s)!z^s},&
+ \widetilde p_l(z)&=\sum_{s=0}^l\frac{(-i)^s(l+s)!}{2^s s!(l-s)!z^s}.
+ \label{ms:hankel-polynomials}
+\end{align}
+Using $\psi_l=(\xi_l+zh_l^{(2)})/2$, the determinant, up to a
+nonzero factor independent of its zero condition, is
+\begin{equation}
+ C_{l,+}(z)e^{inz}+C_{l,-}(z)e^{-inz},
+ \label{ms:exp-polynomial}
+\end{equation}
+where, with $p=p_l$, $\widetilde p=\widetilde p_l$,
+\begin{align}
+ C_{l,+}&=(-i)^{l+1}\{i(n-1)p(z)p(nz)
+                  +np(nz)p'(z)-p(z)p'(nz)\},\\
+ C_{l,-}&=i^{l+1}\{i(n+1)p(z)\widetilde p(nz)
+             +n\widetilde p(nz)p'(z)-p(z)\widetilde p'(nz)\}.
+ \label{ms:rational-coefficients}
+\end{align}
+These are rational functions with algebraic coefficients.  They
+cannot vanish together at $z\ne0$: the two corresponding equations
+would annihilate both independent interior Riccati--Hankel
+solutions.  Their nonzero Wronskian would then force both
+$\xi_l(z)$ and $\xi_l'(z)$ to vanish, contradicting uniqueness
+for their second-order radial equation.  Thus at any zero of $D_l$
+both coefficients are nonzero and the equation is equivalently
+\begin{equation}
+ e^{2inz}=R_l(z):=-C_{l,-}(z)/C_{l,+}(z).
+ \label{ms:rational-pole}
+\end{equation}
+The expansion $p_l(z)=1+i l(l+1)/(2z)+O(z^{-2})$ gives
+\begin{equation}
+ R_l(z)=(-1)^l\frac{n+1}{n-1}
+       \left(1-\frac{i l(l+1)}{nz}+O(z^{-2})\right).
+ \label{ms:rational-asymptotic}
+\end{equation}
+For different parity the leading constants differ; for the same
+parity and distinct $l$ the coefficients of $1/z$ differ.  Hence
+$R_l-R_j$ is never identically zero when $l\ne j$.
+
+The Lindemann--Weierstrass theorem implies that $e^\alpha$ is
+transcendental for every nonzero algebraic complex
+$\alpha$\cite{bezivinRobba1989}.  If $D_l$ and $D_j$ had a common
+nonzero zero $z$, the nontrivial rational equation
+$R_l(z)=R_j(z)$ would make $z$ algebraic.  Equation
+\eqref{ms:rational-pole} would make $e^{2inz}$ algebraic, a
+contradiction.  If $D_l$ had a multiple nonzero zero, differentiation
+of \eqref{ms:rational-pole} would give
+$R_l'(z)=2inR_l(z)$.  This too is a nontrivial rational equation:
+$R_l'/R_l\to0$ at infinity, whereas $2in\ne0$.
+It again makes $z$ algebraic and yields the same contradiction.
+No division by a zero coefficient was used at a pole.
+
+Separation of variables decomposes the axisymmetric electric
+sector into the degrees $l=1,2,\ldots$, with one azimuthal mode
+at each degree.  Regularity at the origin and the outgoing condition
+leave one radial amplitude on each side of the sphere.  Locally in
+$k\ne0$, solving the inhomogeneous radial equations and matching
+them reduces each block, by analytic invertible elimination, to
+its two-by-two tangential matching matrix.  Its determinant is
+\eqref{ms:mie-denominator} times a nonzero analytic factor.
+Thus a simple zero is a one-dimensional simple characteristic
+value of that block.  Lemma~\ref{ms:fredholm} excludes accumulation
+at a finite nonzero $k$; the other angular blocks are invertible
+near the selected zero.  The proved separation across $l$ gives
+algebraic multiplicity one in the whole selected sector.
+The familiar degeneracy across the other azimuthal indices in the
+full sphere is irrelevant to this invariant-sector statement.
+
+For $l=1$ let $r_\infty=-(n+1)/(n-1)$ and choose the centers
+$z_m^0$ equal to the two leading terms in
+\eqref{ms:pole-asymptotic}.  They obey $e^{2inz_m^0}=r_\infty$.
+On the circle $|z-z_m^0|=C/m$, the modulus of
+$e^{2inz}-r_\infty$ is at least $cC/m$ for large $m$, with
+$c>0$ independent of $m$.  The rational correction
+$R_1(z)-r_\infty$ is at most $C_0/m$ there.  Taking $C$ large
+enough, Rouch\'e's theorem gives exactly one zero in this disk.
+This proves \eqref{ms:pole-asymptotic}.  Finally
+$\psi_1(u)=u^2/3+O(u^4)$.  The regular electric dipole vector
+spherical wave therefore tends to a nonzero constant axial vector
+at the center, for a nonzero radial amplitude.  The amplitude
+cannot vanish without making the whole matched eigenfield zero.
+Analyticity in the homogeneous core preserves the nonzero component
+on a short axial interval.
+\end{proof}
+
+\subsection{A genuine reciprocal mode norm}
+
+The bilinear pairing in the remainder of this section has no
+complex conjugation.  Reciprocity gives $K(k)^T=K(k)$ on $X$.
+For a simple characteristic value in the selected sector, define
+\begin{equation}
+ d(E,k,\chi)=-\int_B \chi E\cdot K'(k)(\chi E)\,dx,
+ \qquad \mathcal N(E)=-\frac{k}{2}d(E,k,\chi).
+ \label{ms:residue-norm}
+\end{equation}
+The derivative kernel is a bounded compact operator; these are
+finite integrals of locally square-integrable fields.  Their values
+are independent of which containing ball is used.
+
+\begin{lemma}[PROVED: nonzero residue norm and its stability]
+\label{ms:normalization}
+At a simple nonzero Maxwell pole in the selected sector,
+$\mathcal N(E)\ne0$.  Scaling $E$ by $a\in\C$ scales
+$\mathcal N$ by $a^2$.  The reciprocal electric Green operator for
+$\operatorname{curl}\operatorname{curl}-k^2\varepsilon_r$,
+restricted to this sector, has residue
+\begin{equation}
+ \operatorname*{Res}_{k=k_*}G(k;x,y)
+       =-\frac{E(x)\otimes E(y)}{2k_*\mathcal N(E)}.
+ \label{ms:green-residue}
+\end{equation}
+The norm is continuous along the almost-everywhere material and
+eigenfield convergence of Lemma~\ref{ms:continuation}, and
+holomorphic along its analytic branches.  A local nonzero analytic
+choice of scale makes $\mathcal N=1$.
+\end{lemma}
+
+\begin{proof}
+The functional $\ell_E(v)=\int_B\chi E\cdot v$ is nonzero:
+if $\chi E=0$, the volume equation makes $E=0$.  It lies in the
+left kernel of $L_\chi(k_*)$, since
+$\ell_E L_\chi=\langle\chi E,\cdot\rangle-
+\langle K(k_*)\chi E,\chi\,\cdot\rangle=0$.
+It is a nonzero functional also on the chosen sector, because that
+sector is closed under complex conjugation and multiplication by
+the real rotationally invariant $\chi$.  Its derivative pairing
+$\ell_E L_\chi'(k_*)E$ is exactly $d$.
+The scalar Schur reduction in Lemma~\ref{ms:continuation} shows
+that this pairing is nonzero at a simple characteristic value;
+otherwise the scalar zero would have multiplicity at least two.
+The residue of $L_\chi^{-1}$ is therefore
+$E\otimes\ell_E/d$.
+
+The vacuum electric resolvent is $G_0(k)=k^{-2}K(k)$, with its
+natural restriction when the source is supported in $B$.
+The full electric field for a compact source is
+$L_\chi(k)^{-1}G_0(k)f$ in $B$.  At the pole, reciprocity and
+$K(k_*)\chi E=E$ give
+\begin{equation}
+ \ell_E G_0(k_*)f=k_*^{-2}\int E(y)\cdot f(y)\,dy.
+\end{equation}
+The same identity for sources outside $B$ follows directly from
+the global volume representation and the symmetric kernel.
+Multiplying the two residue factors yields
+$E\otimes E/(k_*^2d)$, which is
+\eqref{ms:green-residue}.  This is a genuine pole normalization
+of a quasinormal mode, consistent with reciprocal Green-residue
+normalizations\cite{muljarov2016}; the sign reflects the displayed
+choice of Maxwell operator.  For a degenerate full-space pole the
+formula describes the selected symmetry block, not a claim that
+the entire Green residue has rank one.
+
+Under rounding, $\chi_j E_j\to\chi E$ in $L^2$: split the
+difference into the uniformly bounded multiplier times $E_j-E$
+and dominated convergence applied to $(\chi_j-\chi)E$.
+Operator-norm continuity of $K'(k)$ proves convergence of $d$
+and $\mathcal N$.  Holomorphy and quadratic scaling follow from
+the formulas.  A nonzero analytic square root of $\mathcal N$
+on a sufficiently small parameter disk normalizes the field.
+\end{proof}
+
+\begin{lemma}[PROVED: normalized resonance continuity away from rounded tips]
+\label{ms:rounding}
+Fix the finite axisymmetric conical construction and a simple
+sector pole with $\mathcal N=1$.  Round all its vertices
+axisymmetrically within balls of radius $\rho$, leaving the material
+values and all other interfaces fixed.  For sufficiently small
+$\rho$, there is a simple sector pole $k_\rho\to k_*$ and
+eigenfield with $\mathcal N(E_\rho)=1$ converging to $E$ locally
+in $L^2$.  On any fixed compact set away from the vertices,
+including either side of a fixed smooth interface, the fields
+converge uniformly one-sided.
+\end{lemma}
+
+\begin{proof}
+The rounded coefficients converge almost everywhere with fixed
+support and the same positive material bound.  Apply
+Lemmas~\ref{ms:fredholm}--\ref{ms:normalization} and choose the
+square-root scale converging to the sharp field's scale.
+The volume representation supplies local $L^2$ convergence also
+on any larger fixed ball, by the same static and compact estimates.
+For local regularity write $U_\rho=E_\rho-E$.  Its equation is
+\begin{equation}
+ \operatorname{curl}\operatorname{curl}U_\rho
+ =k_\rho^2\varepsilon_\rho U_\rho
+ +(k_\rho^2\varepsilon_\rho-k_*^2\varepsilon)E.
+\end{equation}
+The right-hand side tends to zero in local $L^2$ and $U_\rho$
+does likewise.  Cutoff testing gives
+$\operatorname{curl}U_\rho\to0$ in smaller interior $L^2$.
+The constant-coefficient curl/div estimate for
+$\operatorname{curl}U_\rho$ then gives convergence in interior
+$H^1$.  The fixed regularized curl lifting gives a difference
+$W_\rho-W\to0$ in $H^2$, and the corresponding mean-fixed
+potentials converge in $H^1$.
+On a neighborhood disjoint from the changing tips the coefficients
+are identical.  The scalar equation for the potential difference
+is $\operatorname{div}(\varepsilon\nabla(v_\rho-v))
+=-\operatorname{div}(\varepsilon(W_\rho-W))$.
+The piecewise $H^3$ scalar transmission estimate across a fixed
+smooth positive interface, used in
+Lemma~\ref{hs:three-rounding}, gives convergence of the potentials
+in smaller piecewise $H^3$ sets.  Hence the electric fields converge
+piecewise in $H^2$, and uniformly by the three-dimensional Sobolev
+embedding.  At ordinary interior points the same conclusion follows
+from the homogeneous interior estimates.
+\end{proof}
+
+\subsection{Closed modal hotspot statement}
+
+\begin{theorem}[PROVED: arbitrarily many peaks in one normalized finite-device mode]
+\label{ms:modal-packing}
+Fix $\varepsilon_+>1$, a real target wavenumber $k_0>0$, a
+nonempty open patch $\mathcal P$ of a plane, a positive integer
+$N$, and numbers $\ell,M,Q_0>0$.  There is a finite smooth
+piecewise-constant dielectric with vacuum exterior and
+$1\leq\varepsilon_r\leq\varepsilon_+$, and one nonzero outgoing
+Maxwell quasinormal mode $(E,H,k_*)$, such that
+\begin{equation}
+ \operatorname{Re}k_*=k_0,\qquad
+ \operatorname{Im}k_*<0,\qquad
+ \frac{\operatorname{Re}k_*}{-2\operatorname{Im}k_*}>Q_0,
+ \qquad \mathcal N(E)=1.
+ \label{ms:modal-parameters}
+\end{equation}
+There are $N$ disjoint three-dimensional observation balls of
+diameter less than $\ell$, centered in $\mathcal P$ and with
+orthogonal projections contained in $\mathcal P$.  In each ball
+the one-sided electric-field maximum exceeds $M$ and is more than
+twice the maximum on a fixed collar of its boundary.  A point
+attaining each maximum can be chosen in $\mathcal P$.
+Thus each peak's half-amplitude connected region stays in its
+small ball.  No uniform support-size bound, minimum feature size,
+nondegeneracy of the maximum, or positive energy fraction per peak
+is asserted.  The insertion contrast may depend on $N$; the common
+material bounds do not.
+\end{theorem}
+
+\begin{proof}
+Take an algebraic index $n$ strictly between one and
+$\sqrt{\varepsilon_+}$.  Lemma~\ref{ms:sphere-simple} gives a
+simple axisymmetric electric dipole pole with quality factor
+strictly greater than $Q_0$.  Scale the sphere initially to make
+the real part of its wavenumber $k_0$.  Put its symmetry axis in
+the target plane and its center in the open patch.  Choose $N$
+distinct points on a sufficiently short axial interval where the
+background axial component is nonzero, with ample clearance from
+the patch boundary.  Choose disjoint arbitrarily small conical
+neighborhoods and close their material insertions smoothly away
+from their vertices, inside the homogeneous sphere.
+
+Axisymmetry preserves the electric sector.  Lemma~\ref{ms:continuation}
+gives one holomorphic pole and eigenfield under simultaneous
+positive cone contrast $\eta$.  Theorem~\ref{hs:modal-coefficient-continuation}
+and Corollary~\ref{hs:modal-all-coefficients} give nonzero singular
+coefficients at all $N$ vertices for one sufficiently small
+$\eta>0$.  Choose it also so that $n^2(1+\eta)<\varepsilon_+$,
+the pole remains simple, its imaginary part remains negative, and
+its quality factor remains strictly above $Q_0$.
+Lemma~\ref{ms:normalization} fixes its genuine norm to one.
+Lemma~\ref{ms:rounding} supplies every rounding and normalization
+hypothesis of Proposition~\ref{hs:modal-transfer}.  Its high-point
+and collar argument now proves all the simultaneous strict peak
+inequalities for sufficiently small rounding radius.  The same
+axisymmetric rotation argument puts an actual maximizing point
+of each ball in the specified plane.
+
+There is one final harmless adjustment because the real pole
+frequency has shifted.  About a point in the interior of the patch,
+dilate space by $s=\operatorname{Re}k_*/k_0>0$.  Maxwell scaling
+sends the wavenumber to $k_*/s$, keeps the quality factor and
+material values unchanged, and tends to the identity as the
+insertion contrast tends to zero.  A normalized field scales as
+$E_s(x)=s^{-3/2}E(x/s)$: indeed \eqref{ms:residue-norm} and
+the scaled kernel give $\mathcal N(E(x/s))=s^3\mathcal N(E)$.
+Choose all observation-ball diameters with strict margins below
+$\ell$, their projections with strict interior clearance, and
+their pre-scaling peak targets larger than $s^{3/2}M$ for every
+$s$ in a fixed small neighborhood of one.  These choices can be
+made before the final rounding.  The dilation therefore preserves
+every desired inequality and sets the exact real frequency.
+\end{proof}
+
+\begin{corollary}[PROVED: vanishing residue-normalized localization ratios]
+\label{ms:modal-volume}
+For one fixed sharp modal construction with $N$ tips, its rounded
+normalized modes have uniformly finite nonzero residue norm, and
+the maximum in each selected ball tends to infinity.  Consequently
+\begin{equation}
+ \frac{|\mathcal N(E_\rho)|}
+ {\displaystyle\max_{x\text{ in ball }j}
+        \varepsilon_\rho(x)|E_\rho(x)|^2}\longrightarrow0
+ \quad (1\leq j\leq N).
+\end{equation}
+These are positive intensity ratios formed from the genuine
+reciprocal norm.  A directional complex mode volume uses
+$\mathcal N/[\varepsilon(u\cdot E)^2]$ instead; selecting a
+Cartesian component of size at least $|E|/\sqrt3$ gives the same
+vanishing magnitude along a subsequence with a fixed component.
+No divergent all-space positive energy is substituted for
+$\mathcal N$.
+\end{corollary}
+
+\begin{proof}
+For every finite amplitude threshold choose ordinary high points
+of the fixed sharp eigenfield at all tips, and then use the uniform
+convergence at those fixed points from Lemma~\ref{ms:rounding}.
+This proves divergence of every maximum as $\rho\downarrow0$.
+The normalized numerator is one, and the positive permittivities
+have a common lower bound.  There are only three Cartesian
+components, so the indicated subsequence exists for a directional
+volume.  The finite-frequency dilation has a finite nonzero limit
+and leaves the vanishing-ratio conclusion unchanged.
+\end{proof}

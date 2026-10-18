@@ -12,3 +12,11 @@ of the original sections for integration. The renewed disjoint assignments were:
 - Channel agent: manuscript/sections/channel_closure_audit.tex and reviews/channel_closure.md.
 - Counterexample agent: lean/ and reviews/lean.md.
 Agents could independently review the other files and send corrections to their owner.
+
+The 18 October continuation used these further disjoint assignments:
+- Root: modal_spectral.tex, integration, bibliography, ledgers and build audit.
+- Hotspot agent: modal_next.tex and its review; temporary authorized correction
+  of the F-versus-L issue in modal_spectral.tex; channel_global_attempt.md.
+- Channel agent: channel_next.tex and its review.
+- Counterexample agent: lean/Maxwell.lean, lean/Maxwell/ and its review only.
+Root alone changes Git state and packages the reviewed milestone.

@@ -20,7 +20,8 @@ The user supplied a research manual as project material. Its mathematical routes
 | Driven versus modal hotspot targets | `pr:hotspot-target`, `hs:peak-definition` |
 | 2D exact Maxwell reduction and incoming power per length | `hs:tm`, `hs:power` |
 | Finite 3D driven theorem, projected patch and finite incident power | `hs:three-packing`, `hs:three-illumination` |
-| Remaining single-resonance normalization and coefficient problem | `hs:three-modal-gap` |
+| Closed single-resonance modal packing with reciprocal norm | `ms:modal-packing`, `ms:normalization` |
+| Local modal coefficient continuation and rounding | `hs:modal-coefficient-continuation`, `ms:rounding` |
 | Internal field resource and trace compatibility | `ch:resource`, `ch:tracecompatibility` |
 | Explicit collar, shape, lower-index and amplification costs | `ch:arearesource` |
 | Growing support in Bragg example | `cx:bragg`, `cx:bragg-scope` |

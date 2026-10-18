@@ -167,12 +167,99 @@ F=np.array([[0.,1.],[1.,0.]]); v=np.array([1.,1.])/math.sqrt(2)
 assert abs(v@F@v-1)<1e-14 and np.all(np.diag(F)==0)
 checks.append({'name':'positive diagonals and zero signed bypass do not imply coherent constraints','passed':True})
 
+# Exact sphere determinant versus its rational-exponential representation.
+# These are consistency diagnostics; Lindemann--Weierstrass and the operator
+# multiplicity argument in the manuscript are not numerical assertions.
+def riccati_polynomial(ell, z, incoming=False, derivative=0):
+    sign = -1j if incoming else 1j
+    total = 0j
+    for ss in range(ell+1):
+        factor = sign**ss * math.factorial(ell+ss) / (
+            2**ss * math.factorial(ss) * math.factorial(ell-ss))
+        for order in range(derivative):
+            factor *= -(ss+order)
+        total += factor * z**(-ss-derivative)
+    return total
+
+def sphere_coefficients(ell, index, z):
+    pp = riccati_polynomial(ell,z)
+    dp = riccati_polynomial(ell,z,derivative=1)
+    pi = riccati_polynomial(ell,index*z)
+    dpi = riccati_polynomial(ell,index*z,derivative=1)
+    pm = riccati_polynomial(ell,index*z,incoming=True)
+    dpm = riccati_polynomial(ell,index*z,incoming=True,derivative=1)
+    cp = (-1j)**(ell+1)*(1j*(index-1)*pp*pi+index*pi*dp-pp*dpi)
+    cm = 1j**(ell+1)*(1j*(index+1)*pp*pm+index*pm*dp-pp*dpm)
+    return cp,cm
+
+def sphere_det(ell,index,z):
+    p = lambda zz,inc=False,der=0: riccati_polynomial(ell,zz,inc,der)
+    xi = (-1j)**(ell+1)*np.exp(1j*z)*p(z)
+    dx = (-1j)**(ell+1)*np.exp(1j*z)*(1j*p(z)+p(z,der=1))
+    xp = (-1j)**(ell+1)*np.exp(1j*index*z)*p(index*z)
+    xm = 1j**(ell+1)*np.exp(-1j*index*z)*p(index*z,True)
+    dxp = (-1j)**(ell+1)*np.exp(1j*index*z)*(1j*p(index*z)+p(index*z,der=1))
+    dxm = 1j**(ell+1)*np.exp(-1j*index*z)*(-1j*p(index*z,True)+p(index*z,True,1))
+    return index*(xp+xm)*dx/2-xi*(dxp+dxm)/2
+
+max_mie_residual = 0.
+for index in (1.1,1.5,2.):
+    for ell in range(1,9):
+        for z in (3.7-.8j,17.2-.4j,100.3-.9j):
+            cp,cm=sphere_coefficients(ell,index,z)
+            raw=(-1j)**(ell+1)*np.exp(1j*z)/2*(cp*np.exp(1j*index*z)+cm*np.exp(-1j*index*z))
+            exact=sphere_det(ell,index,z)
+            residual=abs(raw-exact)/(1+abs(raw)+abs(exact))
+            max_mie_residual=max(max_mie_residual,residual)
+            assert residual<2e-13
+        z=1e7-.9j
+        cp,cm=sphere_coefficients(ell,index,z)
+        leading=(-1)**ell*(index+1)/(index-1)
+        first=(1-(-cm/cp)/leading)*z
+        assert abs(first-1j*ell*(ell+1)/index)<.01
+checks.append({'name':'sphere TM determinant, rational coefficients and asymptotic phase',
+               'passed':True,'max_relative_residual':max_mie_residual})
+
+modal_poles=[]
+for index in (1.1,1.5,2.):
+    for radial_order in (10,40,100):
+        center=math.pi*(radial_order+.5)/index-1j/(2*index)*math.log((index+1)/(index-1))
+        z=center
+        def equation(zz):
+            cp,cm=sphere_coefficients(1,index,zz)
+            return np.exp(2j*index*zz)+cm/cp
+        for iteration in range(12):
+            h=1e-5
+            deriv=(equation(z+h)-equation(z-h))/(2*h)
+            step=equation(z)/deriv
+            z-=step
+            if abs(step)<1e-13:
+                break
+        residual=abs(equation(z))
+        assert residual<1e-9 and z.real>0 and z.imag<0
+        assert abs(z-center)*radial_order<2 and abs(deriv)>1
+        modal_poles.append({'index':index,'radial_order':radial_order,
+                            'real':float(z.real),'imag':float(z.imag),
+                            'Q':float(z.real/(-2*z.imag)),
+                            'root_residual':float(residual),
+                            'scaled_asymptotic_error':float(abs(z-center)*radial_order)})
+checks.append({'name':'simple electric dipole pole asymptotics and high-Q trend',
+               'passed':True,'samples':len(modal_poles)})
+
+# Exact cancellation of the constant lifting term through lambda=1.
+for lam in (.25,.75,.99,.9999,1.0001,1.01,1.1):
+    aa=.73
+    bb=lam*(lam+1)*aa
+    pp=((bb-(lam+1)*aa)/(1-lam)-(bb+lam*aa)/(lam+2))/(2*lam+1)
+    assert abs(pp+aa)<1e-11
+checks.append({'name':'modal constant-lifting cancellation at exponent one','passed':True})
+
 result={'kind':'diagnostics, not continuum certification','seed':140014,
         'source_commit':git('rev-parse','HEAD'),'dirty_worktree':bool(git('status','--porcelain')),
         'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'python':platform.python_version(),'numpy':np.__version__,
         'checks':checks,'pair_networks':rows,'corner_exponents':corner,'bragg':bragg,
-        'local_flux_quadrature':flux_refinement,
+        'local_flux_quadrature':flux_refinement,'modal_sphere_poles':modal_poles,
         'limitations':['No physical N-channel family was synthesized.',
         'Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.',
         'No full hotspot scattering discretization was run; Lean results are recorded separately.',
