@@ -1,0 +1,535 @@
+\section{Counterexample search and adversarial diagnostics}
+\label{cx:section}
+
+\noindent\textbf{Verdict: OPEN for the frozen Maxwell channel problem.}
+The constructions below separate exact Maxwell counterexamples to proposed
+\emph{intermediate} lemmas from exact finite-dimensional models. No model port
+is identified with a physical channel through the prescribed section without
+an additional proof. The material class throughout the physical discussion is
+the fixed, real, scalar class $1\leq\varepsilon_r\leq\varepsilon_+$ at one
+positive frequency, with vacuum exterior. The section, frequency, and
+efficiency and bypass thresholds do not vary. Support size and resonance
+lifetime may grow. The radial, local-flux, and mirror-network diagnostics
+originate in the prior report \cite{priorreport}; they are rederived here
+because their precise scope is consequential.
+
+\subsection{An exact bounded-index Maxwell amplification obstruction}
+
+\begin{proposition}[PROVED: unbounded local amplification, one reflected channel]
+\label{cx:bragg}
+For every fixed $\varepsilon_+>1$ and $k_0>0$ there are a fixed ball
+$B_{r_0}$ and finite radial dielectric structures $\varepsilon_M$, with
+$1\leq\varepsilon_M\leq\varepsilon_+$, for which a unit-power incoming
+spherical radiation channel produces electric and magnetic squared field
+norms in $B_{r_0}$ growing proportionally to $q^{2M}$, for some fixed $q>1$.
+The exterior radius grows linearly with $M$. The selected scattering
+coefficient has modulus one and the net power through every concentric
+sphere is zero.
+\end{proposition}
+
+\begin{proof}
+Choose $1<q<\sqrt{\varepsilon_+}$. Write
+$\widehat j_1(x)=xj_1(x)=\sin(x)/x-\cos(x)$. Its derivative has arbitrarily
+large positive roots: at $(m+1/2)\pi>1$ its sign alternates, since its value
+is $(-1)^m(1-x^{-2})$. Choose such a root $x_0>1$ large enough that
+$q^2+2/x_0^2\leq\varepsilon_+$, and put $r_0=x_0/k_0$.
+The root is not simultaneously a zero of $\widehat j_1$, by uniqueness for
+its second-order ordinary differential equation away from zero.
+
+For a tangential, surface-divergence-free vector spherical harmonic
+$X_{1m}$ with $\int_{S^2}|X_{1m}|^2\,d\Omega=1$, set
+\begin{equation}
+ E=\frac{u(r)}r X_{1m},\qquad
+ H=\frac1{i\omega\mu_0}\nabla\times E,
+ \qquad
+ u''+\left(k_0^2\varepsilon_M(r)-\frac2{r^2}\right)u=0.
+ \label{cx:radial-maxwell}
+\end{equation}
+This is the exact TE multipole reduction of both Maxwell curl equations.
+At radial interfaces continuity of tangential $E$ and $H$ is exactly
+continuity of $u,u'$; permeability is constant and the normal electric
+component vanishes. The integrated outgoing power is
+\begin{equation}
+ P(r)=\frac1{2\omega\mu_0}\operatorname{Im}(\overline u u').
+ \label{cx:radial-power}
+\end{equation}
+In the core take $\varepsilon_M=1$ and
+$u=C_M\widehat j_1(k_0r)$, which is regular at zero and has $u'(r_0)=0$.
+
+Append $M$ low/high shell pairs. A shell of type $n\in\{1,q\}$ has
+width $\pi/(2k_0n)$ and coefficient
+$\varepsilon_M(r)=n^2+2/(k_0r)^2$. Thus its radial equation is exactly
+$u''+(k_0n)^2u=0$. On the state $(u,u'/k_0)^T$, its transfer matrix is
+$\left(\begin{smallmatrix}0&1/n\\-n&0\end{smallmatrix}\right)$.
+A pair has transfer matrix $-\operatorname{diag}(q^{-1},q)$, so
+\begin{equation}
+ R_M=r_0+\frac{M\pi}{2k_0}(1+q^{-1}),\quad
+ u(R_M)=(-q^{-1})^M C_M\widehat j_1(x_0),\quad u'(R_M)=0.
+ \label{cx:bragg-transfer}
+\end{equation}
+All shells obey the claimed material bounds. In the vacuum exterior put
+$u=a\widehat h^{(2)}_1(k_0r)+b_M\widehat h^{(1)}_1(k_0r)$, where
+$\widehat h^{(1)}_1(x)=-e^{ix}(1+i/x)$ and
+$\widehat h^{(2)}_1=\overline{\widehat h^{(1)}_1}$ on the positive real
+axis. Direct differentiation gives the Wronskian $2i$ and
+\begin{equation}
+ |(\widehat h^{(1)}_1)'(x)|^2=1-x^{-2}+x^{-4},\quad
+ b_M=-a\frac{(\widehat h^{(2)}_1)'(k_0R_M)}
+                    {(\widehat h^{(1)}_1)'(k_0R_M)},\quad
+ u(R_M)=\frac{2ia}{(\widehat h^{(1)}_1)'(k_0R_M)}.
+ \label{cx:bragg-exterior}
+\end{equation}
+Incoming power is $k_0|a|^2/(2\omega\mu_0)$; choose
+$|a|^2=2\omega\mu_0/k_0$. Consequently
+\begin{equation}
+ |C_M|^2=
+ \frac{4q^{2M}|a|^2}{|\widehat j_1(x_0)|^2
+             |(\widehat h^{(1)}_1)'(k_0R_M)|^2}.
+ \label{cx:bragg-growth}
+\end{equation}
+For $x\geq1$ the derivative factor squared lies in $[3/4,1]$.
+The core fields are fixed nonzero profiles times $C_M$, proving the
+norm statement. A fixed interior section on which their traces are
+nonzero has the corresponding trace growth. Equation~\eqref{cx:bragg-exterior}
+gives $|b_M|=|a|$, while the core radial function is a constant times a
+real function. Equation~\eqref{cx:radial-power} and conservation then give
+zero total radial flux at every radius. No independently chosen trapped
+amplitude was inserted: $C_M$ is fixed by the incoming amplitude and
+the interface matching.
+\end{proof}
+
+\begin{remark}[DISPROVED shortcut; scope of the example]
+\label{cx:bragg-scope}
+External passivity does not uniformly bound the incident-power-to-local-field
+map over the admitted class with unrestricted support. The prior report's
+$q=2$ example required $\varepsilon_+>4$; choosing $x_0$ and $q$ as above
+extends this obstruction to every $\varepsilon_+>1$. This does not disprove
+a uniform channel count, a fixed-support estimate, or a theorem restricted
+to counted fields with positive through-power. A complete spherical
+scattering phase is not an additional transmitted channel. This exact
+construction establishes neither an increasing number of transmitted
+directions nor the required absolute bypass bound.
+\end{remark}
+
+\subsection{Evanescent pairs can carry real power locally}
+
+\begin{proposition}[PROVED: infinite positive local flux index]
+\label{cx:evanescent}
+On a fixed rectangular section $D=(0,L)\times(0,W)$ and homogeneous
+source-free collar $D\times(-h,h)$, the space of smooth local Maxwell
+solutions has positive flux subspaces of arbitrarily large finite
+dimension. This remains true if every superposition has zero real
+normal flux on the four collar sidewalls.
+\end{proposition}
+
+\begin{proof}
+Let $k^2=\omega^2\mu_0\varepsilon_0\varepsilon_c$ and take every integer
+$m$ with $q_m=m\pi/L>k$. Put $\kappa_m=\sqrt{q_m^2-k^2}$ and
+\begin{equation}
+ f_m(z)=a_m(e^{-\kappa_mz}+i e^{\kappa_mz}),\qquad
+ |a_m|^2=\frac{2\omega\mu_0}{\kappa_mLW},\qquad
+ E_m=(0,f_m\sin(q_mx),0),
+ \label{cx:evanescent-electric}
+\end{equation}
+\begin{equation}
+ H_m=\frac1{\omega\mu_0}
+       (i f'_m\sin(q_mx),0,-i q_m f_m\cos(q_mx)).
+ \label{cx:evanescent-magnetic}
+\end{equation}
+Both curl equations hold by $f_m''=(q_m^2-k^2)f_m$.
+The normal power density is
+\begin{equation}
+\frac{\operatorname{Im}(\overline f_m f'_m)\sin^2(q_mx)}{2\omega\mu_0}
+=\frac{\kappa_m|a_m|^2\sin^2(q_mx)}{\omega\mu_0}.
+\label{cx:evanescent-density}
+\end{equation}
+Sine orthogonality therefore gives, for every finite coefficient vector,
+\begin{equation}
+ P_D\left(\sum_m c_m(E_m,H_m)\right)=\sum_m|c_m|^2.
+ \label{cx:evanescent-gram}
+\end{equation}
+On the $x$ sidewalls $E$ vanishes, and on the $y$ sidewalls the normal
+Poynting component vanishes identically. Both statements hold for
+every finite superposition, not just for basis fields.
+\end{proof}
+
+\begin{remark}[DISPROVED local cutoff; OPEN global completion]
+\label{cx:evanescent-scope}
+A single decreasing exponential carries zero real normal power. Its
+coherent combination with an increasing exponential does not. Thus a
+propagating-wave count cannot be justified by discarding each evanescent
+term separately. These are exact \emph{local} vector Maxwell fields in
+ordinary material, but their norms at the collar ends grow rapidly with
+transverse order. No finite passive dielectric device producing these
+data from power-normalized external channels has been constructed.
+Zero sidewall flux is a property of the fields, not permission to install
+conducting walls. Nor does it control the field on the rest of the
+infinite section plane. Hence this proposition does not establish
+global absolute bypass or a physical counterexample.
+\end{remark}
+
+\subsection{An exact feedback diagnostic independent of mode reduction}
+
+\begin{proposition}[PROVED in lossless scattering algebra]
+\label{cx:mirror-network}
+For any $N$ and any $0<\xi_j\leq1$, reciprocal unitary two-port networks
+with isolated transmission powers $\xi_j$ can be cascaded with lossless
+phases to produce $N$ perfectly transmitted orthogonal network channels.
+\end{proposition}
+
+\begin{proof}
+For direction $j$, use two identical mirrors with
+$r_j=i\sqrt{1-\xi_j}$ and $t_j=\sqrt{\xi_j}$. The symmetric matrix
+$\left(\begin{smallmatrix}r_j&t_j\\t_j&r_j\end{smallmatrix}\right)$
+is unitary. With propagation phase $p_j=i$, the convergent reflection
+series gives
+\begin{equation}
+ t_{{\rm all},j}=\frac{t_j^2p_j}{1-r_j^2p_j^2}=i,
+ \qquad
+ r_{{\rm all},j}=r_j+
+       \frac{t_j^2r_jp_j^2}{1-r_j^2p_j^2}=0.
+ \label{cx:mirror-feedback}
+\end{equation}
+The direct sum has transmission $iI_N$. The feedback inverse is exactly
+$\operatorname{diag}(\xi_j^{-1})$, compensating arbitrarily weak isolated
+links.
+\end{proof}
+
+\noindent\textbf{What is disproved.}
+An isolated-link singular-value tail together with external passivity
+does not control the completed scattering transmission. This proposition
+is stronger as an algebraic diagnostic than a coupled-mode approximation,
+but still supplies no bounded-index synthesis through the same physical $D$.
+
+\subsection{Matched resonator pairs: energy, bandwidth, and errors}
+
+The following model uses the energy/power normalization conventional in
+temporal coupled-mode theory \cite{fan2003,suh2004}. Its equations and all
+conclusions about them are proved directly; their agreement with a
+particular Maxwell device remains an additional question.
+
+\begin{definition}[MODEL: a reciprocal resonator pair]
+\label{cx:pair-model}
+Let $x,y$ be energy-normalized resonator amplitudes, so stored model energy
+is $|x|^2+|y|^2$. Let $a,b$ be incoming amplitudes with incident power
+$|a|^2+|b|^2$. For $J,\gamma>0$, set
+\begin{align}
+ \dot x&=(-i\omega_0-\gamma)x-iJy+\sqrt{2\gamma}\,a,
+ &a_-&=-a+\sqrt{2\gamma}\,x,\notag\\
+ \dot y&=(-i\omega_0-\gamma)y-iJx+\sqrt{2\gamma}\,b,
+ &b_-&=-b+\sqrt{2\gamma}\,y.
+ \label{cx:pair-dynamics}
+\end{align}
+The $-1$ direct reflection is part of the model's port convention.
+\end{definition}
+
+\begin{proposition}[PROVED in the model: exact matching and cost]
+\label{cx:pair-solution}
+For harmonic drive at $\omega=\omega_0+\Delta$ with $a=1,b=0$, define
+$D_\Delta=(\gamma-i\Delta)^2+J^2$. Then
+\begin{align}
+ x&=\frac{\sqrt{2\gamma}(\gamma-i\Delta)}{D_\Delta},&
+ y&=\frac{-i\sqrt{2\gamma}J}{D_\Delta},\notag\\
+ t&=\frac{-2i\gamma J}{D_\Delta},&
+ r&=\frac{\gamma^2+\Delta^2-J^2}{D_\Delta}.
+ \label{cx:pair-scattering}
+\end{align}
+The model is lossless and passive. At $\Delta=0$, $\gamma=J$ it has
+$t=-i,r=0$, internal energy $J^{-1}$, and left-to-right internal current
+$1$. At this matched setting,
+\begin{equation}
+ |t(\Delta)|^2=\frac1{1+\Delta^4/(4J^4)},\qquad
+ {\rm FWHM}=2\sqrt2 J.
+ \label{cx:matched-linewidth}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Substitution of harmonic time dependence gives the linear system with
+matrix $\left(\begin{smallmatrix}\gamma-i\Delta&iJ\\
+iJ&\gamma-i\Delta\end{smallmatrix}\right)$; inversion proves
+\eqref{cx:pair-scattering}. Direct differentiation of the energy gives
+\begin{equation}
+ \frac{d}{dt}(|x|^2+|y|^2)
+ =|a|^2+|b|^2-|a_-|^2-|b_-|^2.
+ \label{cx:pair-energy-balance}
+\end{equation}
+The internal left-to-right exchange is
+$I_{L\to R}=-2J\operatorname{Im}(\overline x y)$, from the individual
+energy derivatives. At matching $x=1/\sqrt{2J}$ and $y=-ix$, giving the
+energy and current. Finally,
+$|D_\Delta|^2=(2J^2-\Delta^2)^2+4J^2\Delta^2
+=4J^4+\Delta^4$ gives the line shape and its half-power frequencies.
+The poles are at $\Delta=\pm J-i\gamma$, and hence remain strictly
+below the real axis for every member of the family.
+\end{proof}
+
+\begin{remark}[PROVED model sensitivities]
+\label{cx:pair-sensitivity}
+At $\Delta=0$, writing $s=\gamma/J$ gives
+$|t|^2=4s^2/(1+s^2)^2$. Thus $|t|^2\geq\tau$ exactly when
+\begin{equation}
+ \frac{1-\sqrt{1-\tau}}{\sqrt\tau}\leq s\leq
+ \frac{1+\sqrt{1-\tau}}{\sqrt\tau}.
+ \label{cx:rate-tolerance}
+\end{equation}
+At matching, a common frequency detuning obeys the threshold exactly when
+$|\Delta|\leq\sqrt2 J(\tau^{-1}-1)^{1/4}$.
+If both resonators instead have an additional unobserved amplitude decay
+$\kappa\geq0$, replace the diagonal rate in the equations by
+$\gamma+\kappa$ while keeping the driven/output couplings
+$\sqrt{2\gamma}$. For $\gamma=J$ and $\Delta=0$,
+\begin{equation}
+ |t|^2=\frac4{[(1+\kappa/J)^2+1]^2}.
+ \label{cx:loss-tolerance}
+\end{equation}
+Consequently fixed loss destroys the small-$J$ limit. To approach unit
+transmission it is necessary here that $\kappa/J\to0$.
+For a fixed threshold, the exact permitted ratio is
+$\kappa/J\leq\sqrt{2/\sqrt\tau-1}-1$.
+These costs cannot be suppressed by saying merely that each cavity has
+large $Q$: its leakage and errors must be compared to its weak link.
+\end{remark}
+
+\begin{theorem}[PROVED in the model: $N$ weak directions and a stable certificate]
+\label{cx:n-model}
+Let $J=\operatorname{diag}(J_1,\ldots,J_N)$ with all $J_j>0$. At the
+common frequency $\omega_0$, take $N$ independent pairs with external
+rates $J_j$. Put
+\begin{equation}
+ G=\operatorname{diag}(J^{1/2},J^{1/2}),\quad
+ B_0=\begin{pmatrix}I&iI\\iI&I\end{pmatrix},\quad
+ A_0=GB_0G,\quad
+ E_L a=(a,0)^T,\quad E_R a=(0,a)^T.
+ \label{cx:weighted-matrices}
+\end{equation}
+Their transmission and reflection are $T_0=-iI_N$, $R_0=0$; their
+internal energy matrix is $J^{-1}$ and exchange-current matrix is $I_N$.
+If the system matrix changes to $A=A_0+\mathcal E$, keeping the same
+port couplings, define
+$F=G^{-1}\mathcal E G^{-1}$ and $\rho=\|F\|$. Whenever
+$\rho<\sqrt2$, the system remains invertible and
+\begin{equation}
+ \|T-T_0\|\leq\frac{\rho}{1-\rho/\sqrt2},\qquad
+ T=2E_R^*(B_0+F)^{-1}E_L.
+ \label{cx:weighted-error}
+\end{equation}
+In particular every input is transmitted with power greater than
+$\tau$ if
+\begin{equation}
+ \rho<\frac{1-\sqrt\tau}{1+(1-\sqrt\tau)/\sqrt2}.
+ \label{cx:rho-certificate}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The unperturbed statement follows pairwise from
+Proposition~\ref{cx:pair-solution}. Also $B_0^*B_0=2I$, so
+$\|B_0^{-1}\|=1/\sqrt2$ and
+$\|(B_0+F)^{-1}\|\leq1/(\sqrt2-\rho)$ by the Neumann series.
+The resolvent identity gives
+\begin{equation}
+ \|T-T_0\|
+ \leq2\|(B_0+F)^{-1}\|\|F\|\|B_0^{-1}\|
+ \leq\frac{\sqrt2\rho}{\sqrt2-\rho}.
+ \label{cx:resolvent-proof}
+\end{equation}
+The triangle inequality gives $\|Ta\|\geq(1-\|T-T_0\|)\|a\|$.
+Solving the sufficient strict inequality
+$\rho/(1-\rho/\sqrt2)<1-\sqrt\tau$ gives
+\eqref{cx:rho-certificate}.
+\end{proof}
+
+\begin{remark}[Model generality and port errors]
+\label{cx:port-errors}
+The perturbation may mix different pairs and need not be diagonal.
+A sufficient unweighted condition is
+$\|\mathcal E\|/\min_jJ_j\to0$, since
+$\rho\leq\|\mathcal E\|/\min_jJ_j$; weighted control can be much sharper.
+If normalized input/output couplings also change to $E_L+L$ and $E_R+R$,
+and there is a direct transmission correction $D_0$, the same proof yields
+\begin{equation}
+ \|T-T_0\|\leq
+ \frac{\rho}{1-\rho/\sqrt2}
+ +\frac{2(\|L\|+\|R\|+\|L\|\|R\|)}{\sqrt2-\rho}
+ +\|D_0\|.
+ \label{cx:all-errors}
+\end{equation}
+The normalization here is relative to the original $G$; for example the
+physical input matrix in the model is $\sqrt2G(E_L+L)$.
+An arbitrary algebraic perturbation is not automatically passive or
+reciprocal. Any proposed physical realization must also establish those
+properties and the power normalization of its actual ports. The estimate
+is a sufficient matrix certificate once those facts hold.
+\end{remark}
+
+\subsection{Compression and coherent passage certification}
+
+\begin{proposition}[PROVED: physical channel certificate if its data exist]
+\label{cx:compression}
+Let $T:\mathcal H_{\rm in}\to\mathcal H_{\rm out}$ be a bounded physical
+transmission operator between power Hilbert spaces. Let $V$ and $Z$ be
+isometries from $\mathbb C^N$ into its input and output spaces, and let
+$M=Z^*TV$. If $U$ is unitary and
+$\|M-U\|\leq e<1-\sqrt\tau$, then
+$\|TVa\|^2>\tau\|a\|^2$ for every nonzero $a$.
+If $T$ is a contraction, and its physical section-flux matrix on these
+inputs obeys $Q_D\succeq\eta I_N$, then the passage inequality
+$P_D(Va)\geq\eta\|TVa\|^2$ also holds for every $a$.
+\end{proposition}
+
+\begin{proof}
+The isometry $Z$ gives $\|TVa\|\geq\|Z^*TVa\|$; the unitary comparison
+gives $\|Ma\|\geq(1-e)\|a\|$. For the second statement,
+$P_D(Va)=a^*Q_Da\geq\eta\|a\|^2\geq\eta\|TVa\|^2$.
+The exact, potentially weaker passage test is
+$Q_D-\eta V^*T^*TV\succeq0$. None of these conclusions needs compactness
+or a discrete singular-value decomposition of the full operator.
+\end{proof}
+
+\begin{lemma}[PROVED: a sufficient absolute-bypass certificate]
+\label{cx:absolute-bypass}
+Suppose actual basis fields have well-defined pointwise traces on
+$\Pi\setminus D$, where $\Pi$ is the section plane, and define the
+Hermitian matrix
+\begin{equation}
+ F_{ij}(s)=\frac14\left(E_j(s)\times\overline{H_i(s)}
+                 +\overline{E_i(s)}\times H_j(s)\right)\cdot n.
+ \label{cx:pointwise-flux}
+\end{equation}
+If these traces are regular enough that $\int_{\Pi\setminus D}\|F(s)\|\,dA$
+is defined and at most $\delta$, then every coherent vector satisfies
+\begin{equation}
+ \int_{\Pi\setminus D}|S_n(a;s)|\,dA\leq\delta\|a\|^2.
+ \label{cx:bypass-certificate}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Expansion gives $S_n(a;s)=a^*F(s)a$. Pointwise,
+$|a^*F(s)a|\leq\|F(s)\|\|a\|^2$; integrate.
+\end{proof}
+
+\begin{remark}[DISPROVED basis-only and signed-flux tests]
+\label{cx:coherent-failure}
+Let $F(s)=h(s)\left(\begin{smallmatrix}0&L\\L&0\end{smallmatrix}\right)$,
+with $\int|h|=1$. Each coordinate basis vector has zero local flux,
+but $a=(1,1)^T/\sqrt2$ has absolute integrated flux $L$. If additionally
+$\int h=0$, the full \emph{signed} integrated flux matrix vanishes while
+the same absolute bypass remains $L$. This elementary example disproves
+both inference rules for Hermitian flux data; it is not asserted to be
+a global Maxwell realization. The evanescent pair in
+Proposition~\ref{cx:evanescent} gives an actual local Maxwell instance
+of individually zero-flux exponential fields acquiring power by
+interference. Likewise a basis test for signed passage can fail:
+$Q=\left(\begin{smallmatrix}1&2\\2&1\end{smallmatrix}\right)$ has positive
+diagonal but a negative eigenvalue. Section-flux conditions require a
+full matrix inequality; absolute bypass requires additional control such
+as Lemma~\ref{cx:absolute-bypass}. Rough Maxwell traces are not silently
+assumed to have these pointwise products.
+\end{remark}
+
+\subsection{Physical realization attempts and their specific obstructions}
+
+\begin{proposition}[PROVED: a restricted radial angular-momentum obstruction]
+\label{cx:angular-obstruction}
+For a radial scalar dielectric with $\varepsilon(r)\leq\varepsilon_+$
+on $0<r\leq R$, a regular real TE radial solution of angular order
+$\ell\geq1$ obeys
+\begin{equation}
+ u''=\left(\frac{\ell(\ell+1)}{r^2}-k_0^2\varepsilon(r)\right)u.
+ \label{cx:angular-equation}
+\end{equation}
+If $\ell(\ell+1)>k_0^2\varepsilon_+R^2$ and the nonzero leading
+coefficient in $u\sim cr^{\ell+1}$ is positive, then $u,u'>0$ on
+$(0,R]$. In particular, neither $u(R)=0$ nor $u'(R)=0$ can hold.
+\end{proposition}
+
+\begin{proof}
+The regular solution also satisfies
+$u'(r)\sim(\ell+1)c r^\ell$. To justify this from the equation rather
+than differentiate an asymptotic without control, put
+$v=r^{-\ell-1}u$. Then
+$(r^{2\ell+2}v')'=-k_0^2\varepsilon(r)r^{2\ell+2}v$.
+The integration constant at zero must vanish for $v$ to have its finite
+limit $c$, so boundedness of $\varepsilon,v$ gives $v'=O(r)$.
+Thus both $u$ and $u'$ are positive for sufficiently small positive radius.
+As long as $u>0$, the displayed strict inequality gives $u''>0$, so
+$u'$ is increasing and remains positive. A first zero of either $u$
+or $u'$ is consequently impossible. Across radial interfaces $u,u'$
+are continuous; the same argument applies piecewise and hence globally.
+\end{proof}
+
+\noindent\textbf{Radial shells and partial waves.}
+Proposition~\ref{cx:bragg} proves that bounded-index reflectors can produce
+arbitrarily large internal amplitude. Repeating its exactly compensated
+shell profile for order $\ell$ would require
+$\varepsilon=n^2+\ell(\ell+1)/(k_0r)^2$. At a fixed inner radius this
+eventually violates the fixed material upper bound. Increasing the
+radius avoids that violation but does not place the high-order power
+through the original $D$. Proposition~\ref{cx:angular-obstruction}
+also blocks the particular real-core Neumann or Dirichlet tuning in a
+fixed small ball at high $\ell$. It is not a general exclusion of open
+resonances, nonspherical matching, or fields coupled from a larger
+exterior structure. The exact radial example is a one-port reflector;
+turning its stored energy into $N$ independently driven opposite-side
+ports is an unproved step.
+
+\medskip
+\noindent\textbf{Planar dielectric Bragg cavities.}
+At normal incidence, bounded-index quarter-wave layers do realize
+lossless one-dimensional mirrors; a symmetric resonant pair can realize
+the scalar feedback algebra. This statement follows by the same
+two-by-two transfer-matrix multiplication used above. Such an exact
+planar realization has infinite transverse extent and its plane waves
+are normalized per transverse area. It does not supply finite total
+incoming power with absolute flux confined to a prescribed finite $D$.
+Truncating the mirrors adds lateral leakage and diffraction. An $N$-cavity
+proposal must prove that these errors, along with off-diagonal mixing and
+detuning, satisfy the relative bounds of
+Theorem~\ref{cx:n-model} for the weakest direction. Merely increasing
+the number of mirror layers supplies no such multidimensional estimate.
+
+\medskip
+\noindent\textbf{Many small tips coupled to large remote resonators.}
+Arbitrarily fine dielectric tips or corners could create linearly
+independent local trace patterns. Linear independence does not bound
+the smallest singular value of the physical coupling matrix, and the
+field-to-output inverse is precisely where its weakness might be
+compensated. No bounded-index synthesis is established that makes all
+$N$ resonances coincide at the prescribed frequency while controlling
+leakage, parasitic coupling, and model error relative to that smallest
+coupling. Remote support growth is allowed, so its expense alone is not
+an obstruction. In contrast, assuming ideal independently tunable
+impedances or perfect conducting partitions would change the physical
+class. These routes remain candidates, not impossibility results.
+
+\medskip
+\noindent\textbf{Thin dielectric guides and broadened channels.}
+A weakly confined guide mode, when it exists, does not automatically
+satisfy the fixed-aperture bypass requirement. The prior report's
+qualified planar-guide construction explicitly changes the lower
+permittivity bound toward zero, varies the section shape with unbounded
+diameter, and uses infinite leads. It therefore cannot be transferred
+to the present fixed ordinary-dielectric, fixed-background, same-section
+problem. Counting outputs at different frequencies, adding internal
+sources, or sending the threshold $\tau$ to zero would likewise answer
+different questions.
+
+\begin{remark}[OPEN: the missing physical bridge, stated quantitatively]
+\label{cx:missing-bridge}
+For each $N$ one would need an actual finite dielectric and power
+isometries $V_N,Z_N$ at the same frequency whose completed compression
+obeys the bound in \eqref{cx:all-errors} with a fixed margin below
+$1-\sqrt\tau$, together with the physical section inequality in
+Proposition~\ref{cx:compression} and an absolute-bypass estimate such
+as \eqref{cx:bypass-certificate}. In a resonator implementation this
+requires a justified Maxwell reduction and a weighted error matrix;
+$o(\min_jJ_j)$ unweighted error is sufficient but has not been proved.
+The matrices $J^{-1}$ and $I_N$ in Theorem~\ref{cx:n-model} are model
+energy and internal-current matrices, not computed Maxwell energy or
+section-flux matrices. If this bridge were established for arbitrary
+$N$, the fixed-parameter finite channel bound would be false. Its
+absence means that neither a disproof nor a universal bound has been
+obtained by this track.
+\end{remark}
