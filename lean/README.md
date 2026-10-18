@@ -12,7 +12,9 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `GradientProjection.lean`, `HelmholtzProjection.lean`, `StaticCoefficient.lean`,
 `DyadicKernel.lean`, `ModalAlgebraicity.lean`, `ModalExistence.lean`,
 `ModalAsymptotics.lean`, `WeakPoynting/Lipschitz.lean`, and
-`WeakPoynting/Aperture.lean`. Four hundred ninety-one exported
+`WeakPoynting/Aperture.lean`, `WeakPoynting/Axial.lean`,
+`WeakPoynting/LipschitzBoundary.lean`, `ModalMatching.lean`, and
+`KernelIntegrability.lean`. Five hundred thirty-nine exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -32,6 +34,7 @@ lake exe cache get Mathlib.Analysis.Convolution Mathlib.Analysis.Calculus.BumpFu
 lake exe cache get Mathlib.Geometry.Manifold.PartitionOfUnity
 lake exe cache get Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace Mathlib.Analysis.InnerProductSpace.Positive Mathlib.Analysis.Calculus.Deriv.ZPow
 lake exe cache get Mathlib.Analysis.Distribution.FourierSchwartz Mathlib.Analysis.Calculus.Rademacher Mathlib.Topology.MetricSpace.Contracting Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv Mathlib.RingTheory.Algebraic.Integral
+lake exe cache get Mathlib.MeasureTheory.Constructions.HaarToSphere
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -53,7 +56,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all thirty-two registered modules, and audits all 491
+compiler and mathlib revision, builds all thirty-six registered modules, and audits all 539
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -377,8 +380,31 @@ assertion is inserted as a hypothesis. The eleven exports of
 `WeakPoynting/Aperture.lean` construct actual derivatives and tensor tests
 for compact Lipschitz plane apertures, then derive integrable slice
 functions, their weak derivative, continuous canonical flux and exact
-interval increments. The axial weighted endpoint theorem still has C1
-scope in the registered package.
+interval increments. Eight exports of `WeakPoynting/Axial.lean` prove
+the actual one-dimensional Lipschitz weak-test extension, product rule
+and weighted endpoint identity. Fourteen exports of
+`WeakPoynting/LipschitzBoundary.lean` combine the two: actual regional
+Maxwell fields have canonical Hermitian flux values and a finite-slab
+formula integrating the actual a.e. gradient of the tensor cutoff. Both
+aperture and axial functions may be compact globally Lipschitz functions.
+General tangential field traces and the identification of arbitrary
+bundled W1-infinity classes with Lipschitz representatives remain separate.
+
+Sixteen exports of `ModalMatching.lean` construct the actual two-amplitude
+matching map from the factorial-series entries, prove its inverse and
+determinant-zero kernel equivalence, and derive the actual punctured
+inverse-residue limit. The nonzero residue has explicitly one-dimensional
+image. The high-quality matching-pole existence theorem discharges the
+root and simplicity hypotheses using the preceding construction. Full
+vector Maxwell trace and operator identification remain separate.
+
+Ten exports of `KernelIntegrability.lean` use actual Haar polar coordinates
+to prove integrability of inverse distance and inverse squared distance
+on every finite ball in Euclidean three-space. Compact-set containment
+gives local integrability. The actual real-frequency scalar outgoing
+kernel is measurable, locally integrable, and locally L2, including the
+origin as a null set. No source distribution or convolution identity is
+supplied as a hypothesis or asserted by this module.
 
 ## Explicitly outside the formalization
 

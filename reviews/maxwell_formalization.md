@@ -361,3 +361,40 @@ This is pointwise for real k, nonzero x and |k||x|<=1, including k=0.
 The nine exports do not assume or assert local integrability or a source
 distribution. No defect was found. All 161 new selected theorem reports
 contain exactly the standard three axioms, with no proof placeholders.
+
+## Lipschitz endpoints, matching residue and singular integrability
+
+Root independently read Axial.lean and LipschitzBoundary.lean in full.
+The one-dimensional mollification uses the actual line derivative, and
+both derivative and function convergence are justified against L1 data.
+The product test is genuinely compact Lipschitz; its actual a.e.
+derivative gives the distributional product rule. Continuous representative
+uniqueness proves the weighted endpoint identity. Both tensor factors are
+differentiable on a common full-measure subset under the coordinate map,
+and their Frechet derivatives give the complete three-dimensional gradient.
+The real/imaginary decomposition, finite-slab Fubini and endpoint signs
+are consistent. The main theorem has actual regional Maxwell states and
+Lipschitz cutoffs as its data; the slice values and gradient integral are
+conclusions. It does not assert a general boundary field trace. No defect
+was found in the 8+14 exports. The identifier-only rename of the two
+Lipschitz constants preserves every mathematical statement and lets the
+strict unproved-declaration source scan remain unchanged.
+
+Root independently read ModalMatching.lean. The matching matrix and
+signed adjugate multiply in both orders to the exact determinant. The
+outgoing Wronskian guarantees a nonzero column. The actual derivative
+slope limit proves the reciprocal determinant residue and punctured
+nonvanishing, and the continuous adjugate gives the inverse limit.
+Explicit factors prove the residue has nonzero line image. The final
+existence theorem uses the previously constructed high-quality simple
+zeros, rather than assuming one. Its scope is the actual two-amplitude
+matching system, not the full vector Maxwell resolvent. No defect found
+in the 16 selected exports.
+
+KernelIntegrability.lean was independently reviewed by the channel agent;
+the details are in kernel_integrability.md. Actual polar measure transfer
+proves inverse-distance and inverse-square local integrability. The actual
+real-frequency outgoing scalar kernel is measurable and locally L1 and
+L2. The origin is restored only through the null-singleton identity.
+All ten exports compiled cleanly with standard axioms only. These results
+do not assert the missing source distribution or convolution identity.

@@ -1,6 +1,6 @@
 # Lipschitz plane aperture audit
 
-Frozen source: `lean/WeakPoynting/Aperture.lean`, SHA256 `8d34849076123befee915ec2add25a5c2d4a2fdbdfbb583cc2247627756474e3`. The 11 selected exports compile cleanly; every axiom report contains only `propext`, `Classical.choice`, and `Quot.sound`. Complete directly captured compiler output and source/dependency hashes are recorded in `aperture-verification.txt` and `aperture-provenance.json` beside the source.
+Frozen source: `lean/WeakPoynting/Aperture.lean`, SHA256 `0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f`. The 11 selected exports compile cleanly; every axiom report contains only `propext`, `Classical.choice`, and `Quot.sound`. Complete directly captured compiler output and source/dependency hashes are recorded in `aperture-verification.txt` and `aperture-provenance.json` beside the source.
 
 An aperture is an actual compact globally Lipschitz scalar on the transverse plane. Its partial derivatives are the actual Frechet derivatives, with measurability and pointwise bounds independently proved. Rademacher supplies a.e. differentiability on the plane. The coordinate measure-preserving equivalence and quasi-measure-preserving projection transport this full-measure statement to physical three-space; no unjustified evaluation on a fixed line is used.
 

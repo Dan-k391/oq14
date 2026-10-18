@@ -14,8 +14,8 @@ open scoped Topology NNReal
 
 structure Aperture where
   function : Plane → ℝ
-  constant : ℝ≥0
-  lipschitz : LipschitzWith constant function
+  lipschitzBound : ℝ≥0
+  lipschitz : LipschitzWith lipschitzBound function
   compact : HasCompactSupport function
 
 def aperturePartial (ψ : Aperture) (j : Fin 2) (q : Plane) : ℝ :=
@@ -25,7 +25,7 @@ theorem partial_measurable (ψ : Aperture) (j : Fin 2) : Measurable (aperturePar
   measurable_fderiv_apply_const ℝ ψ.function _
 
 theorem partial_bound (ψ : Aperture) (j : Fin 2) (q : Plane) :
-    ‖aperturePartial ψ j q‖ ≤ ψ.constant * ‖(Pi.single j 1 : Plane)‖ := by
+    ‖aperturePartial ψ j q‖ ≤ ψ.lipschitzBound * ‖(Pi.single j 1 : Plane)‖ := by
   exact ((fderiv ℝ ψ.function q).le_opNorm _).trans
     (mul_le_mul_of_nonneg_right (norm_fderiv_le_of_lipschitz ℝ ψ.lipschitz) (norm_nonneg _))
 
@@ -114,7 +114,7 @@ theorem densities_integrable (ψ : Aperture) (P : RealFlux)
     (hP : ∀ j, Integrable (fun x => P x j)) : Integrable (vertical ψ P) ∧ Integrable (lateral ψ P) := by
   have hp (j : Fin 2) (k : Fin 3) : Integrable (fun x => aperturePartial ψ j (transverse x) * P x k) :=
     (hP k).bdd_mul ((partial_measurable ψ j).comp transverse.continuous.measurable).aestronglyMeasurable
-      ⟨ψ.constant * ‖(Pi.single j 1 : Plane)‖, fun x => partial_bound ψ j (transverse x)⟩
+      ⟨ψ.lipschitzBound * ‖(Pi.single j 1 : Plane)‖, fun x => partial_bound ψ j (transverse x)⟩
   exact ⟨transverse_weight_integrable _ (hP 2) ψ.function ψ.lipschitz.continuous ψ.compact,
     (hp 0 0).add (hp 1 1)⟩
 

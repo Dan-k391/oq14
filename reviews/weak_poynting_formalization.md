@@ -1,6 +1,6 @@
 # Weak-field Poynting formalization audit
 
-Status: nine new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 104 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
+Status: thirteen new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 153 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
 
 ## Actual analytic content
 
@@ -66,6 +66,10 @@ Direct checks were run from `D:/oq14/lean` with the portable Lean 4.19.0 compile
 | `WeakPoynting/Representative.lean` | `bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c` |
 | `WeakPoynting/Weighted.lean` | `ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783` |
 | `WeakPoynting/Polarization.lean` | `39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740` |
+| `WeakPoynting/Lipschitz.lean` | `8b4f50968e94ffb9028822fe1fc04dbeea50dc9e11afc5e5f8e6d51bcdb7ea5c` |
+| `WeakPoynting/Aperture.lean` | `0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f` |
+| `WeakPoynting/Axial.lean` | `fdb3c0607e14cf468ce7263baa2e7a5adca7b7d8d37b1e167adccb65f11602fa` |
+| `WeakPoynting/LipschitzBoundary.lean` | `6e1ebd950ef56ea1741e2a9f8859dc734e55c4cb8a58b716fab319e57dafc377` |
 
 The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the eight matching `green-`, `poynting-`, `local-`, `conservation-`, `slices-`, `representative-`, `weighted-`, and `polarization-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers frozen roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, and the primitive proof imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper`, both already cached in this workspace.
 
@@ -100,7 +104,7 @@ F(a)=-\int_{a<z\le b}\nabla(\chi\psi)\cdot P
 
 when χ(a)=1 and χ(b)=0. The distinction between half-open and open slab endpoints does not affect a volume integral, but the formal statement currently uses the actual half-open interval. The theorem proves a canonical weighted flux value, not a tangential field trace or equality of the raw plane integral at every exceptional plane.
 
-The next substantive continuum extension is Lipschitz/W1-infinity test density, followed by the actual div-curl, compactness, and variational/scattering foundations required by the main Maxwell problem. They must be analytic proofs rather than assumed physical structures.
+The actual-function Lipschitz test extension is now proved below. A bundled W1-infinity representative theorem, followed by the remaining div-curl, compactness, and variational/scattering foundations required by the main Maxwell problem, remains separate. They must be analytic proofs rather than assumed physical structures.
 
 
 ## Hermitian cross-input extension
@@ -123,4 +127,12 @@ Complex plane slices are actual two-dimensional Lebesgue integrals of the cross 
 
 Normalization is c0=1; the manuscript's fixed real physical factor multiplies every flux expression. The aperture and axial cutoff remain compact C1. No scattering input map, scattering existence, general boundary trace, or W1-infinity density is assumed or proved in this module.
 
-The additional pin-preserving library audit found `LipschitzWith.integral_lineDeriv_mul_eq`, `locallyIntegrable_lineDeriv`, `memLp_lineDeriv`, and `ae_differentiableAt` in `Mathlib/Analysis/Calculus/Rademacher.lean`. These provide a genuine route to the Lipschitz extension: commute mollification with the actual weak directional derivative using that integration-by-parts theorem, preserve compact interior support, obtain uniform derivative bounds and a.e. convergence, then use dominated convergence against the actual L1 flux. Rademacher differentiation alone is not being treated as a weak-test density theorem. This next module is active and is not counted in the frozen result total.
+The pin-preserving library audit found `LipschitzWith.integral_lineDeriv_mul_eq`, `locallyIntegrable_lineDeriv`, `memLp_lineDeriv`, and `ae_differentiableAt` in `Mathlib/Analysis/Calculus/Rademacher.lean`. The four subsequent frozen modules complete this actual analytic route: commute mollification with the actual weak directional derivative using integration by parts, preserve compact interior support, prove uniform derivative bounds and a.e. convergence, then use dominated convergence against the actual L1 flux. Rademacher differentiation alone is not treated as a weak-test density theorem.
+
+## Actual Lipschitz aperture and axial cutoff extension
+
+`Lipschitz.lean` has 16 selected exports and proves real and Hermitian Maxwell conservation against arbitrary compact Lipschitz scalar tests supported in the open region. `Aperture.lean` has 11 selected exports and derives the actual plane weak derivative and continuous regional Maxwell flux for compact Lipschitz apertures. `Axial.lean` has eight selected exports and proves the genuine one-dimensional Lipschitz weak-test extension, multiplier product rule, and weighted endpoint law. `LipschitzBoundary.lean` has 14 selected exports and combines them into the complete actual gradient-volume identity for diagonal and Hermitian complex flux, with Lipschitz cutoffs in both directions and Hermitian symmetry at every canonical value.
+
+The strongest direct theorem is `OQ14.LipschitzBoundary.maxwell_cross_flux_gradient`. It concludes continuity, a.e. agreement with the actual plane integral, exact subinterval increments, actual gradient-pairing integrability, and the left-trace gradient-volume formula. It starts with actual regional weak Maxwell states and actual Lipschitz functions; no smooth-density, desired endpoint, or field-trace identity is assumed. Raw plane evaluations on exceptional planes remain distinct from canonical representative values. A bundled W1-infinity equivalence-class-to-Lipschitz representative theorem is still outside the formalization.
+
+Detailed proof and scope audits are recorded in `reviews/lipschitz_formalization.md`, `reviews/aperture_formalization.md`, `reviews/axial_formalization.md`, and `reviews/lipschitz_boundary_formalization.md`. The four additional source-scoped evidence pairs use prefixes `lipschitz-`, `aperture-`, `axial-`, and `lipschitz-boundary-`. All sources are frozen; the coordinator independently reviews and integrates them into the combined build.

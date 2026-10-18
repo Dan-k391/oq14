@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The thirty-two registered modules in \texttt{lean/} cover operator estimates,
+The thirty-six registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Four hundred ninety-one exported theorem declarations were compiled successfully.
+Five hundred thirty-nine exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -313,8 +313,24 @@ compact Lipschitz-test extension of real and Hermitian weak conservation,
 using Rademacher integration by parts, convolution support control and
 dominated convergence. Eleven in \texttt{OQ14.LipschitzAperture} derive
 the weak plane derivative, integrable slices, continuous scalar flux and
-exact increments for compact Lipschitz apertures. The registered weighted
-axial endpoint theorem retains its $C^1$ scope.
+exact increments for compact Lipschitz apertures. Eight declarations in
+\texttt{OQ14.LipschitzLine} prove the actual one-dimensional weak-test
+extension, product rule and weighted endpoint identity. Fourteen in
+\texttt{OQ14.LipschitzBoundary} combine these with the aperture theorem
+into the actual Hermitian finite-slab gradient formula and canonical
+endpoint values for compact Lipschitz cutoffs in both directions. This
+does not assert general tangential field traces or a representative
+theorem for arbitrary bundled $W^{1,\infty}$ classes.
+
+Sixteen declarations in \texttt{OQ14.ModalMatching} construct and invert
+the actual two-amplitude matching map, identify its nontrivial kernel
+with determinant zeros, and prove a punctured inverse-residue limit with
+nonzero one-dimensional image at the constructed high-quality simple
+zeros. Full vector Maxwell operator identification remains separate.
+Ten in \texttt{OQ14.KernelIntegrability} use actual Haar polar coordinates
+to prove local integrability of $|x|^{-1}$ and $|x|^{-2}$ in three-space,
+and local $L^1$ and $L^2$ membership of the actual real-frequency scalar
+outgoing kernel. These do not yet prove its source distribution.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice

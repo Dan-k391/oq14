@@ -82,3 +82,10 @@ agent), ModalMatching.lean (hotspot agent), WeakPoynting/Axial.lean and
 WeakPoynting/LipschitzBoundary.lean (formal agent), and
 KernelIntegrability.lean (root). Active files stay out of clean snapshots
 until reviewed; root retains registration and Git ownership.
+
+Axial.lean, LipschitzBoundary.lean, ModalMatching.lean and
+KernelIntegrability.lean are frozen and reviewed. Aperture and Axial's
+Lipschitz-bound field names were corrected together and recaptured.
+Active files are now HeatFourier.lean (channel agent), ModalDipole.lean
+(hotspot agent), WeakPoynting/Energy.lean (formal agent), and
+DynamicIntegrability.lean (root). No active file is a release claim.
