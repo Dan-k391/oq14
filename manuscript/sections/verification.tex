@@ -1,0 +1,135 @@
+\section{Verification, remaining lemmas, and separate verdicts}
+\label{ver:section}
+
+\subsection{What was checked}
+The hotspot, channel, and counterexample tracks used disjoint source-file
+ownership. A different research agent reviewed each track's key arguments,
+and the coordinator checked their equations and scope. The review found and
+corrected the direction of the bound on the real parts of the outgoing
+Dirichlet-to-Neumann multipliers, and made explicit the derivative
+asymptotic used in the radial angular-momentum obstruction. These are
+recorded in the review files and Git history. This is independent checking
+within an AI-assisted investigation, not independent human peer review or
+machine-checked continuum mathematics.
+
+The proofs use standard Hilbert-space spectral theory, Lax--Milgram,
+Fredholm theory, Sobolev compactness and local elliptic estimates. The
+scalar scattering proof supplies its own outgoing uniqueness and
+material-Runge argument. Its elementary Bessel/Hankel facts can be checked
+against the Wronskian identities and large-order formulas in
+\cite{dlmf}. None of these background facts is a substitute for a
+Maxwell-to-operator bridge in the channel problem.
+
+The reproducible script \texttt{scripts/verify.py} checks the exact pair
+model, passive reciprocal perturbations, the angular monodromy, radial
+Bragg matching, and local evanescent flux. Its fixed seed is $140014$.
+All matrix tests use singular values or Hermitian eigenvalues, not tests
+of randomly selected coherent inputs. Random numbers choose one fully
+specified perturbation matrix; its full norm and all-subspace certificate
+are then evaluated. Floating-point residuals support consistency of the
+analytic proofs; they are not interval-certified error estimates.
+
+\begin{table}[ht]
+\centering
+\caption{Exact resonator-model diagnostic family, $J_j=10^{-j}$ and
+$\gamma_j=J_j$. This is not a Maxwell device simulation.}
+\label{ver:model-table}
+\begin{tabular}{@{}rrrrr@{}}\toprule
+$N$ & $\min J_j$ & $\sigma_{\min}(T)$ & maximum model energy & narrowest FWHM\\\midrule
+2 & $10^{-2}$ & $1$ & $10^2$ & $2.82843\,10^{-2}$\\
+4 & $10^{-4}$ & $1$ & $10^4$ & $2.82843\,10^{-4}$\\
+8 & $10^{-8}$ & $1$ & $10^8$ & $2.82843\,10^{-8}$\\\bottomrule
+\end{tabular}
+\end{table}
+The ideal model's energy Gram matrix is $\operatorname{diag}(J_j^{-1})$
+and its internal exchange-current Gram matrix is $I$; common detuning is
+zero. For weighted, purely Hamiltonian perturbations of norm $\rho=0.01$,
+Theorem~\ref{cx:n-model} bounds transmission-operator error by
+$0.0100713$. This is below $1-\sqrt{0.9}$, so it certifies transmission
+above $90\%$ in the perturbed model for every coherent vector. The
+reproduced smallest powers are approximately $0.999961$, $0.999959$, and
+$0.999949$. Model power-balance and full-unitarity residuals are below
+$10^{-14}$ in the reported run.
+
+The local evanescent example has an analytically exact section Gram matrix
+$I_8$. Direct integration of its explicit trigonometric fields with
+$33$, $65$ and $129$ transverse quadrature points gives operator errors
+below $10^{-14}$. This refines quadrature of a local analytic formula; it
+is not a domain, port, or material-mesh convergence study. The Bragg
+diagnostic uses $q=2$, $k_0=1$, $x_0\simeq2.74370727$ and material upper
+bound below $4.266$. For $M=0,2,4,8$ its core amplitude squared is
+approximately $8$, $115.292$, $1824.323$, $464888.834$, while reflection
+power remains one. These tests check normalization and exact matching,
+not an increasing transmission count.
+
+No physical $N$-channel dielectric family was completed. Therefore actual
+Maxwell transmission singular values, section-flux matrices, absolute
+bypass, weakest physical coupling, and relative model-reduction errors
+for $N=2,4,8$ are \emph{unavailable}, not zero. Their fields in the
+machine-readable record are null. No rounded-hotspot scattering mesh was
+computed; that theorem rests on the analytic existence and convergence
+proof, which is nonconstructive in its illumination cost and rounding
+scale. No Lean formalization was performed. The supplied notes' claims
+about earlier finite-dimensional Lean checks were not rerun and do not
+certify any continuum result here.
+
+\subsection{Smallest remaining research bridges}
+\label{ver:gaps}
+For a channel proof, Theorem~\ref{ch:fulloutput} already controls the
+complete physical output error after all feedback. What is missing is
+a uniform estimate of the effective transmission directions with no
+uncontrolled field-resource factor. A bound on $B_*$ on the counted
+subspaces would suffice for finiteness in the stated collar class, but
+the Bragg construction shows why external passivity cannot supply a
+general input-to-field bound. It does not rule out a sharper argument
+using through-power and bypass together. The minimal abstract target is
+the uniform finite-rank approximation in Remark~\ref{ch:missing};
+its area scaling is an additional requirement.
+
+For a disproof, Remark~\ref{cx:missing-bridge} specifies a quantitative
+alternative: a power-normalized Maxwell compression close to a unitary
+at one common frequency, plus the full physical flux inequality and
+absolute-bypass certificate on every coherent vector. Resonant algebra
+proves that weak coupling alone is not an obstruction, but it gives
+neither simultaneous bounded-index synthesis nor a relative error
+estimate for finite dielectric structures.
+
+For hotspots, the restricted theorem has no remaining local-to-global
+excitation assumption. The finite-three-dimensional and modal bridges
+are those in Remark~\ref{hs:open3d}: vector scattering control under
+finite-height realization and a valid mode with all required singular
+coefficients and normalization. Infinite extrusion and freely chosen
+illumination do not discharge these bridges.
+
+\subsection{Separate scientific verdicts}
+\label{ver:verdicts}
+\begin{longtable}{@{}p{.30\textwidth}p{.15\textwidth}p{.48\textwidth}@{}}
+\toprule Target & Status & Exact conclusion\\\midrule\endfirsthead
+\toprule Target & Status & Exact conclusion\\\midrule\endhead
+Driven, invariant 2D electric hotspots & PROVED & Theorem~\ref{hs:packing}: any finite number in any open patch, one physical unit-power-per-length illumination, fixed ordinary contrast and frequency, smooth rounded binary interfaces.\\[3pt]
+Driven finite 3D point hotspots & OPEN & Extrusion is not a finite three-dimensional realization; no end-effect bridge is claimed.\\[3pt]
+Modal hotspot packing & OPEN & Bounded-region energy-to-peak ratios in Proposition~\ref{hs:regional-ratio} are not modal volume.\\[3pt]
+Scalar electric Helmholtz waves & OPEN here & The hotspot construction uses $u=H_z$ and in-plane vector $E$; it is not a singular scalar-electric-field example. Restricted scalar slab results do not settle OQ14.\\[3pt]
+Full vector, fixed-section channel finiteness and area law & OPEN & Theorem~\ref{ch:fulloutput} retains local field resource, trace compatibility, collar geometry, and $\delta<\eta\tau$. No unconditional count or physical counterexample is proved.\\[3pt]
+Resource-controlled vector channels & PROVED / CONDITIONAL & Explicit finite-rank, count, average-resource and essential-norm results hold under the listed hypotheses. Uniform area scaling requires uniform additional resources.\\[3pt]
+Ordinary dielectrics & PROVED restricted results & Both 2D hotspot existence and the Bragg/local-flux obstructions use fixed $1\leq\eps_r\leq\eps_+$. Neither uses ENZ.\\[3pt]
+Common positive lower bound below one & OPEN channel target & The local resource estimates extend; an ENZ limit does not settle this fixed-positive-bound target.\\[3pt]
+Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
+Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Scalar hotspot examples are contained in tensor classes admitting those scalar values. General vector channel closure remains open.\\[3pt]
+Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Build and provenance}
+The canonical source is \texttt{manuscript/main.tex} and its included
+sections. The documented build is \texttt{python scripts/build.py}
+with Tectonic~0.17.0, followed or preceded by
+\texttt{python scripts/verify.py}. Tectonic runs the required bibliography
+and reference passes. The build script rejects unresolved final-pass
+citations, references and overfull boxes. Rendered pages are inspected
+separately; compilation never counts as mathematical verification.
+The delivered \texttt{output/build-manifest.json} records the exact
+source commit, clean/dirty state, engine, source hashes and PDF hash;
+\texttt{output/verification.json} records the analogous diagnostic
+provenance. The release record supplies the clean-checkout build result,
+branch, tag, and Git bundle. No repository was published.

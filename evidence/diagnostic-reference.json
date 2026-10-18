@@ -1,0 +1,172 @@
+{
+  "kind": "diagnostics, not continuum certification",
+  "seed": 140014,
+  "source_commit": "77f8658c7d4960553839c08e9f7e6a1dd987a45e",
+  "dirty_worktree": true,
+  "script_sha256": "a7b619f40dc90752bfb9384de3fef731dfd5b5c1e1494002cdaf1506524cf5eb",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": [
+    {
+      "name": "N=2,4,8 pair networks and weighted passive reciprocal perturbations",
+      "passed": true
+    },
+    {
+      "name": "exact pair line shape and lossless balance",
+      "passed": true,
+      "max_residual": 6.661338147750939e-16
+    },
+    {
+      "name": "corner exponent and angular transfer relation",
+      "passed": true
+    },
+    {
+      "name": "finite-frequency radial projection sign and factors",
+      "passed": true
+    },
+    {
+      "name": "exact radial Bragg transfer and incoming-power identity",
+      "passed": true
+    },
+    {
+      "name": "local evanescent coherent flux Gram under quadrature refinement",
+      "passed": true
+    },
+    {
+      "name": "positive diagonals and zero signed bypass do not imply coherent constraints",
+      "passed": true
+    }
+  ],
+  "pair_networks": [
+    {
+      "N": 2,
+      "weakest_J": 0.01,
+      "minimum_transmission_singular_value": 1.0000000000000002,
+      "power_balance_residual": 4.440892098500626e-16,
+      "model_current_gram_residual": 2.220446049250313e-16,
+      "max_model_internal_energy": 100.00000000000001,
+      "weakest_pair_FWHM": 0.028284271247461905,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.004127216591175884,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999608224132055,
+      "full_model_unitarity_residual": 3.032802318273427e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    },
+    {
+      "N": 4,
+      "weakest_J": 0.0001,
+      "minimum_transmission_singular_value": 1.0000000000000002,
+      "power_balance_residual": 4.440892098500626e-16,
+      "model_current_gram_residual": 4.440892098500626e-16,
+      "max_model_internal_energy": 10000.0,
+      "weakest_pair_FWHM": 0.000282842712474619,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.006687607201178146,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999585355884899,
+      "full_model_unitarity_residual": 7.085293209474264e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    },
+    {
+      "N": 8,
+      "weakest_J": 1e-08,
+      "minimum_transmission_singular_value": 1.0,
+      "power_balance_residual": 8.881784197001252e-16,
+      "model_current_gram_residual": 4.440892098500626e-16,
+      "max_model_internal_energy": 100000000.0,
+      "weakest_pair_FWHM": 2.8284271247461904e-08,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.007523879624059154,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999489108263374,
+      "full_model_unitarity_residual": 7.774734376396386e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    }
+  ],
+  "corner_exponents": [
+    {
+      "eps_plus": 1.1,
+      "alpha": 0.9696733040357924,
+      "periodicity_residual": 5.315747594302368e-16
+    },
+    {
+      "eps_plus": 2.0,
+      "alpha": 0.7836531040612146,
+      "periodicity_residual": 7.134074347326007e-16
+    },
+    {
+      "eps_plus": 4.0,
+      "alpha": 0.590334470601733,
+      "periodicity_residual": 1.7084829437791018e-15
+    },
+    {
+      "eps_plus": 12.0,
+      "alpha": 0.35782475004413367,
+      "periodicity_residual": 1.0561495042945875e-15
+    }
+  ],
+  "bragg": [
+    {
+      "pairs": 0,
+      "radius": 2.743707269992269,
+      "core_amplitude_squared": 8.000000000000004,
+      "core_amplitude_squared_over_q2M": 8.000000000000004,
+      "reflection_power": 1.0000000000000004,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 2,
+      "radius": 7.456096250376959,
+      "core_amplitude_squared": 115.29189320262898,
+      "core_amplitude_squared_over_q2M": 7.2057433251643115,
+      "reflection_power": 0.9999999999999998,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 4,
+      "radius": 12.168485230761648,
+      "core_amplitude_squared": 1824.3229763418144,
+      "core_amplitude_squared_over_q2M": 7.1262616263352125,
+      "reflection_power": 0.9999999999999998,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 8,
+      "radius": 21.59326319153103,
+      "core_amplitude_squared": 464888.83375191595,
+      "core_amplitude_squared_over_q2M": 7.093640651732116,
+      "reflection_power": 1.0,
+      "eps_upper_used": 4.265677299161778
+    }
+  ],
+  "local_flux_quadrature": [
+    {
+      "quadrature_points": 33,
+      "gram_error": 5.277446420287326e-16
+    },
+    {
+      "quadrature_points": 65,
+      "gram_error": 7.398899861438361e-16
+    },
+    {
+      "quadrature_points": 129,
+      "gram_error": 5.342034526201533e-16
+    }
+  ],
+  "limitations": [
+    "No physical N-channel family was synthesized.",
+    "Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.",
+    "No full hotspot scattering discretization or formal theorem prover was run.",
+    "Floating-point identities corroborate handwritten proofs and are not certified error bounds."
+  ]
+}
