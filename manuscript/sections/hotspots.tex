@@ -1,0 +1,695 @@
+\section{Simultaneous driven hotspots in an invariant Maxwell geometry}
+\label{hs:section}
+
+\noindent\textbf{Status and scope.}
+Theorem~\ref{hs:packing} proves a driven, two-dimensional cross-sectional
+version of hotspot packing, with physical incoming power per unit invariant
+length.  It uses ordinary binary dielectrics at one fixed positive frequency,
+one incident field, and smooth rounded interfaces.  The proof includes local
+finite-frequency excitation, global illumination, and the rounding limit.
+It does not prove packing of finite-three-dimensional point hotspots or
+packing by a normalized resonator mode.  Those distinctions are essential
+when comparing with the modal question in \cite{millerMonticone2026}.
+
+\subsection{Physical reduction, normalization, and the exact target}
+\label{hs:setup}
+
+Fix $k>0$, $\omega=ck$, and $\varepsilon_+>1$.  Set
+$b=\varepsilon_+^{-1}\in(0,1)$ and $Z_0=\sqrt{\mu_0/\varepsilon_0}$.
+Every coefficient below is independent of $z$.  Put $a=1/\varepsilon_r$,
+so that $b\leq a\leq1$, and consider
+\begin{equation}
+ H=(0,0,u),\qquad
+ E=\frac{ia}{\omega\varepsilon_0}(\partial_yu,-\partial_xu,0),
+ \qquad L_a u:=\nabla\cdot(a\nabla u)+k^2u=0.
+ \label{hs:tm}
+\end{equation}
+These are the full three-dimensional Maxwell equations restricted to
+$z$-invariant fields, rather than an electrostatic approximation.
+Indeed $\nabla\times H=-i\omega\varepsilon_0\varepsilon_rE$, and
+$\nabla\times E=i\omega\mu_0H$ is exactly $L_au=0$.
+The weak scalar transmission conditions are $[u]=[a\partial_nu]=0$.
+They give continuity of tangential $H$ and $E$, and of normal displacement.
+The local electric energy is finite precisely when $\nabla u$ is locally
+square integrable, since
+\begin{equation}
+ \int_Q\varepsilon_0\varepsilon_r|E|^2\,dx\,dy
+ =\frac{1}{\omega^2\varepsilon_0}\int_Q a|\nabla u|^2\,dx\,dy.
+ \label{hs:energy}
+\end{equation}
+
+The incident field is a smooth Herglotz wave
+\begin{equation}
+ u_g^{\rm in}(x)=\left(\frac{k}{\pi Z_0}\right)^{1/2}
+   \int_{S^1}g(d)e^{ikd\cdot x}\,ds(d),\qquad g\in C^\infty(S^1).
+ \label{hs:herglotz}
+\end{equation}
+The scattered field satisfies the two-dimensional outgoing Sommerfeld
+condition.  All material lies in a bounded cross section, and the exterior
+is vacuum.  This convention specifies the incoming physical channels;
+no freely chosen homogeneous outgoing solution is added.
+Stationary phase, for $x=r\widehat x$, gives
+\begin{equation}
+ u_g^{\rm in}(r\widehat x)=
+ \left(\frac{2}{Z_0r}\right)^{1/2}
+ \left[e^{i(kr-\pi/4)}g(\widehat x)
+       +e^{-i(kr-\pi/4)}g(-\widehat x)\right]+O(r^{-3/2}).
+ \label{hs:asymptotic-input}
+\end{equation}
+An incoming radial wave has inward flux $Z_0|u|^2/2$; an outgoing
+one has outward flux $Z_0|u|^2/2$.  Therefore
+\begin{equation}
+ P_{\rm in}\text{ per unit }z\text{ length}=\|g\|_{L^2(S^1)}^2.
+ \label{hs:power}
+\end{equation}
+This is incoming, rather than net, power.  The latter vanishes for a lossless
+scatterer after the outgoing power is included.  A plane wave alone would
+not have this finite incoming-power normalization.
+
+\begin{definition}[Localized peaks used here]
+\label{hs:peak-definition}
+For a smooth-interface, piecewise homogeneous configuration, let
+$E_*(x)$ equal $|E(x)|$ off interfaces and the maximum of the finitely
+many one-sided values at an interface.  A collection of $N$
+localized peaks at length target $\ell>0$ and amplitude target $M>0$
+means $N$ pairwise disjoint closed disks $Q_j$, all of diameter below
+$\ell$, such that
+\begin{equation}
+ P_j:=\max_{\overline Q_j,\,\text{one-sided}}|E|>M,
+ \qquad
+ \max_{\partial Q_j,\,\text{one-sided}}|E|<P_j/2.
+ \label{hs:peak-test}
+\end{equation}
+We will in fact bound the field on an annular collar of each boundary.
+Consequently a connected component of the superlevel set
+$\{E_*>P_j/2\}$ containing a maximizing point stays in $Q_j$.
+Its diameter is below $\ell$.  The corresponding intensity half-maximum
+component is contained in it, since $P_j/\sqrt2>P_j/2$.
+No positive lower bound on the energy in each peak is stipulated.
+\end{definition}
+
+\begin{theorem}[PROVED: simultaneous rounded driven hotspot packing]
+\label{hs:packing}
+For every fixed $k>0$ and $\varepsilon_+>1$, every nonempty open
+patch $\mathcal P\subset\mathbb R^2$, every finite $N\geq1$, and every
+$\ell,M>0$, there exist $2N$ bounded dielectric inclusions with pairwise
+disjoint closures and $C^\infty$ boundaries, all contained in
+$\mathcal P$, and one $g\in C^\infty(S^1)$ with $\|g\|_2=1$, such that:
+\begin{enumerate}
+ \item $\varepsilon_r=\varepsilon_+$ inside the inclusions and
+       $\varepsilon_r=1$ outside them;
+ \item the unique outgoing scattering solution of \eqref{hs:tm}
+       driven by \eqref{hs:herglotz} has $N$ localized peaks in
+       $\mathcal P$ satisfying Definition~\ref{hs:peak-definition};
+ \item the same one incident field excites every peak, at the same
+       frequency and with unit incoming power per unit $z$ length.
+\end{enumerate}
+There is no uniform lower bound on the rounding radius, on any peak's
+integrated energy, or on any singular coefficient as $N$ or the target
+parameters change.  The physical construction is infinitely extruded
+in $z$ and is not a finite-volume three-dimensional device.
+\end{theorem}
+
+The strict contrast assumption matters: for $\varepsilon_+=1$ the material
+is vacuum.  Cauchy--Schwarz in \eqref{hs:herglotz} then gives a finite
+pointwise electric-field bound at fixed unit incoming power and fixed $k$,
+so the arbitrary-amplitude conclusion cannot include that endpoint.
+
+\subsection{A local singular projection at positive frequency}
+\label{hs:local}
+
+Corner and edge singularities of positive-coefficient Maxwell transmission
+problems are established in \cite{costabel1999}.  Here we give the needed
+two-dimensional construction directly.  In particular, we do not transfer
+a bounded-domain boundary condition from that paper into an unproved
+scattering claim.
+
+\begin{lemma}[PROVED: a binary checkerboard angular exponent]
+\label{hs:angular}
+Let $a(\theta)$ alternate between $1$ and $b$ in successive sectors of
+angle $\pi/2$.  There is a nonzero real periodic $\phi\in H^1(S^1)$ such
+that
+\begin{equation}
+ -(a\phi')'=\alpha^2a\phi,
+ \qquad \alpha=\frac4\pi\arctan\sqrt b\in(0,1),
+ \qquad \int_0^{2\pi}a\phi^2\,d\theta=1.
+ \label{hs:angular-eigenproblem}
+\end{equation}
+Moreover $\int a\phi=0$ and $\int a|\phi'|^2=\alpha^2$.
+\end{lemma}
+
+\begin{proof}
+In a sector with constant coefficient $a_0$, the state
+$(\phi,a_0\phi'/\alpha)^T$ propagates through angle $L$ by
+\begin{equation}
+ M_{a_0}(L)=
+ \begin{pmatrix}
+ \cos\alpha L & a_0^{-1}\sin\alpha L\\
+ -a_0\sin\alpha L & \cos\alpha L
+ \end{pmatrix}.
+ \label{hs:transfer}
+\end{equation}
+Both state components are continuous at an interface.  The half-turn
+matrix $B=M_b(\pi/2)M_1(\pi/2)$ has determinant one and trace
+$2\cos^2t-(b+b^{-1})\sin^2t$, where $t=\alpha\pi/2$.
+With $t=2\arctan\sqrt b$ its trace is $-2$.  Choose a nonzero
+eigenvector of $B$ with eigenvalue $-1$.  The resulting angular function
+is antiperiodic after a half turn and periodic after a full turn.
+It satisfies the stated weak eigenproblem.  Integrating that equation
+and then testing it against $\phi$ proves the two identities.
+\end{proof}
+
+\begin{lemma}[PROVED: continuous finite-frequency singular coefficient]
+\label{hs:coefficient}
+Suppose the checkerboard coefficient of Lemma~\ref{hs:angular} holds in
+$B_R(0)$ and $u\in H^1(B_R)$ weakly satisfies $L_au=0$ there.
+For almost every $r$, put
+\begin{equation}
+ U(r)=\int_0^{2\pi}a(\theta)u(r,\theta)\phi(\theta)\,d\theta,
+ \qquad F(r)=\int_0^{2\pi}u(r,\theta)\phi(\theta)\,d\theta.
+ \label{hs:projections}
+\end{equation}
+There is a complex number $c(u)$, linear in $u$, such that
+\begin{align}
+ U(r)&=c(u)r^\alpha+p(r),\notag\\
+ p(r)&=-\frac{k^2}{2\alpha}\left[
+ r^\alpha\int_0^r s^{1-\alpha}F(s)\,ds
+ -r^{-\alpha}\int_0^r s^{1+\alpha}F(s)\,ds\right].
+ \label{hs:exact-projection}
+\end{align}
+In particular,
+\begin{equation}
+ |p(r)|\leq C_{b,\phi,\alpha}k^2r\|u\|_{L^2(B_r)},
+ \qquad
+ |c(u)|\leq C_{R,k,b,\phi}\|u\|_{L^2(B_R)}.
+ \label{hs:projection-estimates}
+\end{equation}
+Thus $c$ is continuous even for the local $L^2$ topology on the
+space of solutions.  If $c(u)\ne0$, ordinary points strictly inside the
+homogeneous sectors have arbitrarily large $|E|$ as they approach the
+origin.
+\end{lemma}
+
+\begin{proof}
+Testing the weak equation with a product of a radial test function and
+$\phi$ gives the distributional ordinary differential equation
+\begin{equation}
+ (rU')'-\frac{\alpha^2}{r}U=-k^2rF.
+ \label{hs:radial-ode}
+\end{equation}
+Variation of constants gives the particular solution in
+\eqref{hs:exact-projection}.  The two integrals converge because
+$F\in L^2((0,R),r\,dr)$ and $\alpha<1$.  For example,
+\begin{equation}
+ \int_0^r s^{1-\alpha}|F(s)|\,ds
+ \leq\left(\int_0^r s|F(s)|^2\,ds\right)^{1/2}
+       \frac{r^{1-\alpha}}{\sqrt{2-2\alpha}}.
+ \label{hs:weighted-integral}
+\end{equation}
+The second integral is bounded in the same way, with exponent
+$1+\alpha$ and denominator $\sqrt{2+2\alpha}$.  These estimates prove
+the first bound in \eqref{hs:projection-estimates}.  With
+$I_\mp(r)=\int_0^r s^{1\mp\alpha}F(s)\,ds$, differentiation gives
+\begin{equation}
+ p'(r)=-\frac{k^2}{2}
+       \left[r^{\alpha-1}I_-(r)+r^{-\alpha-1}I_+(r)\right],
+ \qquad |p'(r)|\leq Ck^2\|u\|_{L^2(B_r)}.
+ \label{hs:particular-derivative}
+\end{equation}
+Thus $p'$ is locally square integrable with radial measure.
+The general remaining homogeneous term is $c r^\alpha+d r^{-\alpha}$.
+Since $u\in H^1$, $U'$ is square integrable with measure $r\,dr$,
+which excludes $d\ne0$.
+
+To avoid any assumption about point evaluation of an $H^1$ function,
+solve \eqref{hs:exact-projection} for $c$ and average over
+$r\in(R/2,R)$ with the probability measure $2\,dr/R$.
+The resulting formula is
+\begin{equation}
+ c(u)=\frac2R\int_{R/2}^R
+ \left\{r^{-\alpha}U(r)+\frac{k^2}{2\alpha}
+ \left[\int_0^r s^{1-\alpha}F(s)\,ds
+ -r^{-2\alpha}\int_0^r s^{1+\alpha}F(s)\,ds\right]\right\}\,dr.
+ \label{hs:coefficient-functional}
+\end{equation}
+Cauchy--Schwarz and \eqref{hs:weighted-integral} bound this expression
+by $C\|u\|_{L^2(B_R)}$.  This proves continuity without invoking a
+weighted corner-expansion theorem.
+
+For almost every radius, angular integration by parts and
+\eqref{hs:angular-eigenproblem} yield
+\begin{equation}
+ \alpha|U(r)|\leq
+ \left(\int_0^{2\pi}a|\partial_\theta u(r,\theta)|^2\,d\theta\right)^{1/2}.
+ \label{hs:gradient-lower-bound}
+\end{equation}
+Since $p(r)=o(r)$ and $\alpha<1$, $c\ne0$ implies
+$|U(r)|\geq |c|r^\alpha/2$ for sufficiently small radii.
+Consequently the essential supremum of $|\nabla u|$ on each such
+circle is at least $\alpha|c|r^{\alpha-1}/(2\sqrt{2\pi})$.
+Here $a\leq1$ was used.  Interior analyticity in each constant-coefficient
+sector permits the large values to be selected at ordinary points,
+off the interfaces.  Formula~\eqref{hs:tm} gives
+$|E|\geq b|\nabla u|/(\omega\varepsilon_0)$ there.
+\end{proof}
+
+\begin{remark}[Energy and what has actually been expanded]
+\label{hs:integrability}
+The static singular scalar field $u_0=r^\alpha\phi$ has
+\begin{equation}
+ \int_{B_R}a|\nabla u_0|^2\,dx\,dy=\alpha R^{2\alpha}.
+ \label{hs:static-energy}
+\end{equation}
+Its electric-field exponent is $\alpha-1$, and its energy is integrable.
+The finite-frequency fields above have finite local energy by membership
+in $H^1$.  Formula~\eqref{hs:exact-projection} is an exact singular
+\emph{angular projection}; no unproved pointwise expansion of all vector
+components is needed for the lower-bound argument.  In particular,
+finite local energy does not bound the peak electric field.
+\end{remark}
+
+\begin{lemma}[PROVED: a local finite-frequency solution with $c\ne0$]
+\label{hs:local-excitation}
+For every fixed $k>0$ there is $R_*>0$, depending on $k$ and $b$, such
+that for $0<R<R_*$ the checkerboard equation in $B_R$ has an $H^1$
+solution with nonzero coefficient in Lemma~\ref{hs:coefficient}.
+\end{lemma}
+
+\begin{proof}
+Scale $x=Ry$ and set $\kappa=kR$.  In the unit disk solve
+$\nabla\cdot(a\nabla v)+\kappa^2v=0$ with Dirichlet trace $\phi$.
+The static extension $v_0=|y|^\alpha\phi$ belongs to $H^1$ and has
+that trace.  Write $v=v_0+w$, $w\in H_0^1(B_1)$.  Its equation is
+\begin{equation}
+ \int_{B_1}a\nabla w\cdot\nabla\overline\psi
+       -\kappa^2w\overline\psi
+ =\kappa^2\int_{B_1}v_0\overline\psi,
+ \qquad \psi\in H_0^1(B_1).
+ \label{hs:dirichlet-perturbation}
+\end{equation}
+If $C_P$ is the unit-disk Poincare constant, choose
+$\kappa^2C_P^2<b/2$.  The left form is coercive; Lax--Milgram gives
+$\|w\|_{H^1}\leq C_b\kappa^2\|v_0\|_2$ and hence a uniform bound
+on $\|v\|_2$ for these small $\kappa$.
+Because the boundary trace has $U(1)=\int a\phi^2=1$,
+\eqref{hs:exact-projection} at $r=1$ gives
+\begin{equation}
+ c(v)=1+\frac{\kappa^2}{2\alpha}
+ \left[\int_0^1s^{1-\alpha}F_v(s)\,ds
+       -\int_0^1s^{1+\alpha}F_v(s)\,ds\right]
+       =1+O_b(\kappa^2).
+ \label{hs:nonzero-coefficient}
+\end{equation}
+The integral estimates already proved justify the last bound.
+Reduce $R_*$ until $|c(v)-1|<1/2$.
+For $u(x)=v(x/R)$ the physical coefficient is $R^{-\alpha}c(v)$,
+which is nonzero.  The frequency remained the prescribed positive $k$;
+only the local matching disk was made small.
+\end{proof}
+
+\subsection{Outgoing well-posedness and global excitation}
+\label{hs:global}
+
+We spell out the scalar scattering and Runge arguments because density
+of free-space Herglotz waves alone would not establish excitation of
+the total field in a material.  General Herglotz approximation results
+such as \cite{ochs1989} motivate the method, but are not substituted for
+the following transmission argument.
+
+\begin{lemma}[PROVED: scattering for the finite polygonal geometry]
+\label{hs:wellposed}
+Let $a$ be real, take values in $[b,1]$, equal one outside a disk, and
+be constant on a finite polygonal partition.  The outgoing scattering
+problem for \eqref{hs:tm} has a unique $H^1_{\rm loc}$ total field for
+each incident Herglotz wave.  The map from $g\in L^2(S^1)$ to $u_g$ in
+$H^1$ on any fixed bounded disk is continuous.  An outgoing solution
+also exists uniquely for any compactly supported $L^2$ forcing.
+\end{lemma}
+
+\begin{proof}
+Choose $B_L$ enclosing the material with a vacuum collar.  Let
+$\Lambda_L:H^{1/2}(\partial B_L)\to H^{-1/2}(\partial B_L)$ be the
+exact exterior outgoing Dirichlet-to-Neumann map.  Its Fourier
+multiplier on angular mode $m\in\mathbb Z$ is
+\begin{equation}
+ \lambda_m=k\frac{(H_{|m|}^{(1)})'(kL)}{H_{|m|}^{(1)}(kL)}.
+ \label{hs:dtn}
+\end{equation}
+The Hankel denominator is nonzero on the positive real axis, since
+the real Bessel functions $J_m,Y_m$ have nonzero Wronskian.
+Their large-order asymptotics give
+$\lambda_m=-|m|/L+O((1+|m|)^{-1})$ as $|m|\to\infty$.
+Thus the form
+\begin{equation}
+ B_a(v,w)=\int_{B_L}\left(a\nabla v\cdot\nabla\overline w
+                           -k^2v\overline w\right)
+        -\langle\Lambda_Lv,w\rangle_{\partial B_L}
+ \label{hs:form}
+\end{equation}
+satisfies, by the trace inequality,
+\begin{equation}
+ \operatorname{Re}B_a(v,v)+C\|v\|_{L^2(B_L)}^2
+       \geq c\|v\|_{H^1(B_L)}^2.
+ \label{hs:garding}
+\end{equation}
+The constants can be chosen using only $b,k,L$, not the positions or
+curvatures of the interfaces: a finite upper bound for the real parts
+of the multipliers suffices, and
+$\|v\|_{L^2(\partial B_L)}^2\leq
+\epsilon\|v\|_{H^1(B_L)}^2+C_\epsilon\|v\|_2^2$ absorbs it.
+The compact embedding $H^1(B_L)\hookrightarrow L^2(B_L)$ makes this
+a Fredholm form of index zero.
+
+For the homogeneous outgoing problem, take the imaginary part of
+Green's identity.  The far-field outgoing power is nonnegative and
+must vanish.  Equivalently, an exterior Hankel expansion and its
+Wronskians show that all outgoing coefficients vanish.  The solution
+is zero in the exterior vacuum.  It continues as zero across every
+open polygon edge: its value and its conormal derivative are zero
+on that edge, so extension by zero to the other side solves that
+side's constant-coefficient Helmholtz equation in a small ball.
+Interior analytic uniqueness forces it to vanish there too.
+A path can avoid the finitely many vertices, and cross only open
+edges.  Propagation along such paths proves that the solution is zero
+everywhere.  This argument also proves unique continuation through
+this particular partition in any connected open subset.
+Fredholm alternative gives existence and a bounded inverse.
+
+For scattering, the right-hand side of \eqref{hs:form} is the boundary
+functional with density
+$\partial_nu_g^{\rm in}-\Lambda_Lu_g^{\rm in}$.
+For a volume source $L_aw=f$, it is $-\int f\overline v$.
+Both are continuous functionals.  The incident field and all its
+derivatives on bounded sets are bounded by $C\|g\|_2$, directly from
+\eqref{hs:herglotz}.  The bounded inverse gives the asserted continuity.
+\end{proof}
+
+\begin{lemma}[PROVED: local Runge approximation by total scattering fields]
+\label{hs:runge}
+Under Lemma~\ref{hs:wellposed}, let $Q$ be a closed disk whose
+complement is connected.  A solution of $L_av=0$ in an open
+neighborhood of $Q$ can be approximated in $L^2(Q)$ by restrictions
+of total fields $u_g$, with $g\in C^\infty(S^1)$.
+The disk may cross material interfaces and contain a checkerboard
+vertex.  The same statement holds for a finite disjoint union of
+disks if its complement is connected.
+\end{lemma}
+
+\begin{proof}
+We use complex bilinear pairings, with conjugation absorbed into the
+annihilating function.  Suppose $f\in L^2(Q)$ satisfies
+$\int_Q f u_g=0$ for all smooth $g$.  Extend $f$ by zero and solve
+$L_aw=f$ outgoing.  For a plane-wave incidence $e^{ikd\cdot x}$,
+write $u_d=e^{ikd\cdot x}+u_d^{\rm sc}$ for its total field.
+Linearity of scattering and Fubini imply
+$\int_Qf u_d=0$ for all $d\in S^1$: the quantity is continuous in
+$d$ and its pairing with every smooth density vanishes.
+
+Green's second identity on a sufficiently large circle gives
+\begin{equation}
+ \int_Q f u_d
+ =\int_{\partial B_R}
+       (\partial_nw\,u_d-w\,\partial_nu_d)\,ds.
+ \label{hs:reciprocity-boundary}
+\end{equation}
+The part pairing $w$ with $u_d^{\rm sc}$ is zero.  For example, expand
+both in outgoing Hankel modes; bilinear angular orthogonality pairs
+$m$ with $-m$, whose equal radial Hankel functions have zero
+Wronskian.  The remaining part is the free-space incident wave paired
+with $w$.  The exterior Green representation with the fundamental
+solution $(i/4)H_0^{(1)}(k|x-y|)$ identifies this as a nonzero constant
+times $w_\infty(-d)$.  This can also be checked by the
+Jacobi--Anger expansion of $e^{ikd\cdot x}$ and the $J_m,H_m^{(1)}$
+Wronskian.  Hence $w_\infty=0$.  The outgoing Hankel expansion gives
+$w=0$ outside a sufficiently large circle.
+
+Now $L_aw=0$ in $\mathbb R^2\setminus Q$.  That set is connected,
+and the edgewise continuation proved in Lemma~\ref{hs:wellposed}
+implies $w=0$ throughout it.  Thus $w\in H_0^1(Q)$ and both its
+Dirichlet and conormal traces on $\partial Q$ vanish.  The latter
+statement is in the weak $H^{-1/2}$ sense: the global equation has
+only the volume source $f$, and no surface distribution.  Applying
+weak Green's identity to any local solution $v$ gives
+\begin{equation}
+ \int_Qfv
+ =\int_Q(L_aw)v
+ =\int_Qw(L_av)=0.
+ \label{hs:annihilator}
+\end{equation}
+For a union of disks apply the same identity on each component.
+The Hahn--Banach annihilator characterization of a closed subspace
+of $L^2(Q)$ now proves the density assertion.  No interior
+transmission-eigenvalue exception was introduced: the argument used
+the invertible outgoing source problem, not an inverse of an
+interior transmission operator.
+\end{proof}
+
+\begin{proposition}[PROVED: one incident field excites every selected corner]
+\label{hs:simultaneous}
+In a fixed finite polygonal geometry with $N$ disjoint checkerboard
+disks of the same contrast, each local coefficient $c_j(u_g)$ is a
+nonzero continuous linear functional of $g$.  There exists one
+$g\in C^\infty(S^1)$ with $\|g\|_2=1$ for which
+$c_j(u_g)\ne0$ for every $j$.
+\end{proposition}
+
+\begin{proof}
+Continuity follows from Lemmas~\ref{hs:coefficient} and
+\ref{hs:wellposed}.  Inside corner $j$ choose a sufficiently small
+disk, and then a concentric disk twice its radius still within the
+checkerboard region.  Lemma~\ref{hs:local-excitation} on the larger
+disk supplies a local finite-frequency solution with $c_j\ne0$.
+Lemma~\ref{hs:runge} approximates it on the smaller disk by total
+scattering fields.  The $L^2$ continuity of $c_j$ shows that at least
+one smooth density $g_j$ has $c_j(u_{g_j})\ne0$.
+
+Let $g(t)=\sum_{m=1}^N t^{m-1}g_m$.  For each fixed $j$,
+$c_j(u_{g(t)})$ is a polynomial in $t$ with nonzero coefficient of
+$t^{j-1}$.  It has only finitely many zeros.  Choose a real $t$
+outside the union of these finite root sets.  Then $g(t)\ne0$ and
+all the coefficients are nonzero.  Dividing by $\|g(t)\|_2$ preserves
+that property and enforces \eqref{hs:power}.  This finite-union
+argument requires no uniform quantitative lower bound on the
+coefficients and uses exactly one illumination.
+\end{proof}
+
+\subsection{Rounding without an assumed rounding power law}
+\label{hs:rounding}
+
+\begin{lemma}[PROVED: outgoing solutions converge under local rounding]
+\label{hs:rounding-convergence}
+Let $a$ be as in Lemma~\ref{hs:wellposed}.  Let $a_\rho$ equal one
+in a common exterior collar, satisfy $b\leq a_\rho\leq1$, and
+converge to $a$ almost everywhere.  Assume each $a_\rho$ defines a
+well-posed outgoing problem, as do the finite disjoint smooth binary
+inclusions used below.  For a fixed incident field,
+\begin{equation}
+ u_\rho\longrightarrow u\quad\hbox{strongly in }H^1(B_L).
+ \label{hs:h1-convergence}
+\end{equation}
+If $a_\rho=a$ in a fixed neighborhood of a compact observation set
+away from polygon vertices, convergence there is $C^1$ on each
+closed material side.  The compact set may cross a straight
+interface.  Thus both ordinary field values and one-sided field
+bounds on fixed observation circles converge.
+\end{lemma}
+
+\begin{proof}
+All forms $B_{a_\rho}$ satisfy the same G\aa rding estimate
+\eqref{hs:garding}.  Their inverse norms on
+$H^1(B_L)^*\to H^1(B_L)$ are uniformly bounded for sufficiently
+small $\rho$.  Otherwise there would exist $v_\rho$ with
+$\|v_\rho\|_{H^1}=1$ and
+$\|B_{a_\rho}v_\rho\|_{H^1{}^*}\to0$.
+Pass to a weakly convergent $H^1$ subsequence, strongly convergent
+in $L^2$.  For every fixed test $z$, dominated convergence gives
+$(a_\rho-a)\nabla z\to0$ in $L^2$, so the limit $v$ solves
+$B_av=0$.  Lemma~\ref{hs:wellposed} implies $v=0$.
+Estimate~\eqref{hs:garding} then forces
+$\|v_\rho\|_{H^1}\to0$, a contradiction.
+
+Subtracting the equations with the same boundary forcing gives
+\begin{equation}
+ B_{a_\rho}(u_\rho-u,z)
+ =\int_{B_L}(a-a_\rho)\nabla u\cdot\nabla\overline z.
+ \label{hs:rounding-difference}
+\end{equation}
+The right-hand functional tends to zero in $H^1{}^*$ because
+$(a-a_\rho)\nabla u\to0$ in $L^2$ by dominated convergence.
+The uniform inverse bound proves \eqref{hs:h1-convergence}.
+
+For completeness, the additional local regularity needed here does
+not rely on estimates uniform near the rounded tips.  In a ball
+with constant coefficient, interior elliptic estimates applied to
+$u_\rho-u$ give convergence of all derivatives on smaller balls.
+In a ball meeting one unchanged straight interface, tangential
+difference quotients preserve both transmission conditions.
+Caccioppoli estimates for these quotients, iterated to each order,
+bound tangential derivatives by the $H^1$ norm on a larger ball.
+On each side the equation
+$\partial_n^2v=-\partial_t^2v-(k^2/a_\pm)v$
+then bounds the second normal derivative.  Differentiating this
+identity on each material side inductively bounds derivatives with
+two or more normal factors by the tangential derivatives already
+controlled and lower-order derivatives.  This yields, for
+each integer $m$ and fixed nested interface balls, a piecewise
+$H^m$ estimate with a constant depending on those balls, $b,k,m$.
+Sobolev embedding with $m\geq3$ in two dimensions gives the claimed
+one-sided $C^1$ convergence.  A finite cover handles the compact
+observation set.  None of these balls contains a moving rounded tip.
+
+The well-posedness assertion for the smooth inclusions follows by
+the same Fredholm and radiation argument.  For uniqueness, zero
+exterior Cauchy data extend by zero across a smooth material boundary
+as a weak solution of that inclusion's constant-coefficient
+Helmholtz equation, so interior analyticity again applies.  Standard
+flattening and the same transmission regularity argument show that
+each fixed rounded solution has bounded, continuous one-sided
+gradients up to its smooth interfaces.  These last bounds may depend
+arbitrarily badly on $\rho$; the proof never assumes otherwise.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{hs:packing}]
+Choose distinct points $p_1,\ldots,p_N$ in $\mathcal P$ and small
+pairwise disjoint closed squares $p_j+[-s_j,s_j]^2$ contained there.
+For the sharp reference configuration, put dielectric material in
+the two opposite open squares
+\begin{equation}
+ p_j+(0,s_j)^2,
+ \qquad p_j+(-s_j,0)^2,
+ \label{hs:square-geometry}
+\end{equation}
+and vacuum elsewhere.  The coefficient near $p_j$ is the required
+four-sector checkerboard.  The two material squares initially
+touch only at $p_j$.  There is no source at this touching point;
+the problem is the global uniformly elliptic weak equation.
+
+Choose concentric observation disks $Q_j=B_{r_j}(p_j)$ with
+$2r_j<\ell$, their closures inside these reference blocks, and
+small fixed annular collars that avoid every polygon vertex.
+Proposition~\ref{hs:simultaneous} supplies one smooth unit-norm $g$
+for which every $c_j(u_g)$ is nonzero.  Keep this $g$ fixed from
+now on.  The sharp solution is piecewise smooth on the collars;
+let $B<\infty$ bound all one-sided values of $|E|$ on them.
+Choose an electric-field threshold $S>\max\{M,2B\}$.
+By Lemma~\ref{hs:coefficient}, for every $j$ one can choose an
+ordinary point $x_j\in Q_j$, strictly off the interfaces, with
+\begin{equation}
+ |E(x_j)|>4S.
+ \label{hs:selected-values}
+\end{equation}
+All these choices precede rounding.
+
+Round every vertex of every material square \emph{inwards} within
+a distance $\rho$, leaving all edge portions outside the vertex
+balls unchanged.  A smooth curve joining the shortened straight
+edges with all endpoint derivatives matched gives $C^\infty$
+boundaries.  For $\rho>0$ the two opposite inclusions have disjoint
+closures.  The resulting binary coefficient $a_\rho$ differs from
+$a$ only in the union of finitely many shrinking vertex balls, so
+$a_\rho\to a$ almost everywhere and retains exactly the original
+material bounds and exterior background.
+
+Choose one sufficiently small $\rho$ so that no changed vertex
+ball meets any selected point or collar.  Lemma~\ref{hs:rounding-convergence}
+and finiteness of $N$ then permit a further decrease of this same
+$\rho$ until simultaneously
+\begin{equation}
+ |E_\rho(x_j)|>3S\quad(1\leq j\leq N),
+ \qquad
+ \sup_{\text{all collars, one-sided}}|E_\rho|<S.
+ \label{hs:rounded-values}
+\end{equation}
+For each fixed rounded geometry the one-sided field is bounded and
+continuous on the closure of each smooth material subdomain.
+Hence its maximum $P_j$ on $\overline Q_j$ is finite and attained
+on at least one side, with $P_j>3S>M$.
+The collar values are below $S<P_j/2$.  Each maximum is therefore
+inside its disk, and its half-amplitude superlevel component cannot
+cross the collar.  This is \eqref{hs:peak-test}, with distinct
+components in distinct disks.  The inclusions remain entirely in
+$\mathcal P$, and the fixed $g$ still has the same unit incoming
+power.  This proves the theorem.
+\end{proof}
+
+\subsection{Exact scope, costs, and remaining hotspot questions}
+\label{hs:limits}
+
+The order of choices in the proof is
+\begin{equation}
+ (N,\mathcal P,\ell,k,b)\ ;\ \text{sharp geometry}\ ;\ g\ ;\
+ (S,x_1,\ldots,x_N)\ ;\ \rho.
+ \label{hs:order-of-limits}
+\end{equation}
+No interchange of the $N\to\infty$ and $\rho\to0$ limits occurs.
+Runge approximation can have arbitrarily large illumination norms
+before normalization; after normalization the nonzero coefficients
+can be arbitrarily small.  This costs a smaller rounding radius,
+which is permitted.  The proof supplies no effective rate or
+manufacturable feature-size estimate.  It also supplies no lower
+bound on the energy fraction in a peak, no independence of different
+peaks as communication channels, and no finite spectral bandwidth.
+All square dimensions can be chosen inside the given patch, so even
+the total \emph{cross-sectional} material support is small.
+
+\begin{proposition}[PROVED: bounded-region energy-to-peak ratios]
+\label{hs:regional-ratio}
+For the fixed sharp geometry and one illumination used above, along
+the rounded sequence the electromagnetic energy on any fixed bounded
+cross-sectional disk remains bounded, whereas the electric-field
+maximum in every selected corner disk tends to infinity in the
+sense that its lower limit is infinite.  Thus the ratio of that
+bounded-region energy to the maximum electric energy density in
+any one selected disk tends to zero.
+\end{proposition}
+
+\begin{proof}
+Strong $H^1$ convergence and \eqref{hs:energy} bound the electric
+energy; $H=(0,0,u)$ bounds the magnetic energy by $L^2$ convergence.
+For each arbitrary threshold, choose the finitely many high ordinary
+points in the limiting sharp field first.  Pointwise convergence at
+those fixed points then puts all sufficiently small rounding radii
+above that threshold.  The weighted density
+$\varepsilon_0\varepsilon_r|E|^2$ differs from $|E|^2$ by uniformly
+bounded positive factors.  This proves the ratio statement.
+\end{proof}
+
+This ratio is deliberately not called a modal volume.  A nonzero
+monochromatic scattering field has infinite all-space energy.  A
+fixed bounded integration region is a different normalization from
+the all-space energy of a mode.  The bounds and examples in
+\cite{zhao2020} concern dielectric-resonator mode volumes with their
+specified confinement and feature constraints; they cannot replace
+the missing modal argument here.
+
+\begin{remark}[OPEN: finite three-dimensional and modal packing]
+\label{hs:open3d}
+Two specific bridges remain unproved by this section.
+First, truncating the $z$-invariant construction to a finite height
+changes the exact scalar reduction and introduces end radiation.
+A proof of finite-three-dimensional packing would need a vector
+Maxwell local singular coefficient, a corresponding physical
+illumination density argument, and stability of that coefficient
+under finite-height realization and simultaneous rounding.  Our
+two-dimensional proof does not supply a uniform estimate that
+permits this truncation.  Second, a modal theorem would need an
+actual mode or a stated open-resonator normalization and a proof
+that the same normalized mode retains all the selected singular
+coefficients through the geometry and rounding limits.  The freely
+selected Herglotz illumination cannot be substituted for such a mode.
+Both versions remain \textbf{OPEN} here.  These missing bridges are
+additional statements, not assumptions hidden in
+Theorem~\ref{hs:packing}.
+\end{remark}
+
+\begin{remark}[Scope of material extensions]
+\label{hs:material-scope}
+The construction is an ordinary, reciprocal, nonmagnetic, scalar,
+lossless dielectric example.  It therefore also belongs to any
+larger material class that contains $1$ and some fixed
+$\varepsilon_h>1$ within its admissible bounds, by replacing
+$\varepsilon_+$ with $\varepsilon_h$.  The theorem needs neither
+near-zero permittivity nor anisotropy.  A positive-definite tensor
+class containing these scalar tensors inherits this existence
+example, but no anisotropic Runge or corner theorem is claimed.
+\end{remark}
