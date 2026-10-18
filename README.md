@@ -1,5 +1,9 @@
 # OQ14 research project
 
+For the current saved continuation state, read [RESUME.md](RESUME.md).
+It separates the verified release, newer checked sources, and archived
+unfinished proof work, with exact commands for resuming.
+
 This is an auditable mathematical investigation of Miller and Monticone,
 arXiv:2605.24738v1, Section 5.6. The manuscript's explicitly quantified
 unrestricted channel assertion is disproved for fixed delta > eta, with

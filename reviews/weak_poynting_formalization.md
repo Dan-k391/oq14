@@ -1,6 +1,6 @@
 # Weak-field Poynting formalization audit
 
-Status: thirteen new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 153 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
+Status: fifteen new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 167 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing dependency pins and repository Git state were not changed by this work. The coordinator-requested identifier correction renamed the two new cutoff bounds to `lipschitzBound`; all affected source-scoped evidence was recaptured in dependency order.
 
 ## Actual analytic content
 
@@ -47,7 +47,7 @@ The final theorem does not need an additional boundedness or measurability hypot
 
 ## Coverage boundaries
 
-This work now closes the local distributional cross-product identity, diagonal real power conservation, actual L1 plane slicing and its weak axial derivative, the unique continuous representative, and its weighted endpoint/volume formula **for compact C1 transverse apertures and compact C1 axial cutoffs**. It does **not** formalize the entire written `ch:fluxlemma`: Hermitian off-diagonal polarization is now proved as detailed below; arbitrary W1-infinity aperture/cutoff regularity remains a separate extension. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
+This work now closes the local distributional cross-product identity, diagonal and Hermitian cross-input power conservation, actual L1 plane slicing and its weak axial derivative, the unique continuous representative, and its weighted endpoint/actual gradient-volume formula **for arbitrary compact globally Lipschitz transverse apertures and axial cutoffs**. This directly covers the actual-function cutoff formulation of the canonical weak-flux lemma. A separately bundled W1-infinity equivalence class and its Lipschitz representative theorem are not formalized. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
 
 The regional theorem is suitable for fields that are locally H(curl), by applying it where the field/curl belong to regional L2. An independent bundled H(curl)-loc space, restriction functor between regions, boundary tangential traces, and a global general-domain density theorem were not added.
 
@@ -70,6 +70,8 @@ Direct checks were run from `D:/oq14/lean` with the portable Lean 4.19.0 compile
 | `WeakPoynting/Aperture.lean` | `0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f` |
 | `WeakPoynting/Axial.lean` | `fdb3c0607e14cf468ce7263baa2e7a5adca7b7d8d37b1e167adccb65f11602fa` |
 | `WeakPoynting/LipschitzBoundary.lean` | `6e1ebd950ef56ea1741e2a9f8859dc734e55c4cb8a58b716fab319e57dafc377` |
+| `WeakPoynting/Energy.lean` | `b755c84e82b73ab9892cb67616ef6adab30768463474d8e1b0e5b66ac99942d5` |
+| `WeakPoynting/EnergyLocalization.lean` | `31e508428c21f9c797af8b82c325aa7aef7d0f6a3649db24673f290aebdc4dc5` |
 
 The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the eight matching `green-`, `poynting-`, `local-`, `conservation-`, `slices-`, `representative-`, `weighted-`, and `polarization-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers frozen roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, and the primitive proof imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper`, both already cached in this workspace.
 
@@ -136,3 +138,15 @@ The pin-preserving library audit found `LipschitzWith.integral_lineDeriv_mul_eq`
 The strongest direct theorem is `OQ14.LipschitzBoundary.maxwell_cross_flux_gradient`. It concludes continuity, a.e. agreement with the actual plane integral, exact subinterval increments, actual gradient-pairing integrability, and the left-trace gradient-volume formula. It starts with actual regional weak Maxwell states and actual Lipschitz functions; no smooth-density, desired endpoint, or field-trace identity is assumed. Raw plane evaluations on exceptional planes remain distinct from canonical representative values. A bundled W1-infinity equivalence-class-to-Lipschitz representative theorem is still outside the formalization.
 
 Detailed proof and scope audits are recorded in `reviews/lipschitz_formalization.md`, `reviews/aperture_formalization.md`, `reviews/axial_formalization.md`, and `reviews/lipschitz_boundary_formalization.md`. The four additional source-scoped evidence pairs use prefixes `lipschitz-`, `aperture-`, `axial-`, and `lipschitz-boundary-`. All sources are frozen; the coordinator independently reviews and integrates them into the combined build.
+
+## Actual weak energy and Caccioppoli estimate
+
+`Energy.lean` has ten selected exports. It derives the imaginary weak Poynting identity and separately proves all L2 energy and cutoff cross-product integrability. At nonzero frequency with permeability one, the weighted electric energy is obtained as an integrable linear combination of the actual weak density and magnetic/cross-product terms. Thus its integrability is a conclusion of the Maxwell equations, not an additional assumed coefficient bound. Exact coordinate Lagrange algebra and nonnegativity of the energy of `ω m ζ E + 2 i (∇ζ × H)` supply the scaled Young inequality. Applying the actual weak law to the squared cutoff yields
+
+`∫ ζ² ε |E|² ≤ 2 ∫ ζ² |H|² + 4/(ω²m) ∫ |∇ζ|² |H|²`.
+
+`EnergyLocalization.lean` has four selected exports. Actual derivative vanishing off the cutoff support, indicator-integral comparisons, and the preceding inequality give
+
+`∫K ε |E|² ≤ [2 + 4d²/(ω²m)] ∫supp(ζ) |H|²`
+
+when ζ=1 on K, |ζ|≤1, and its actual gradient has squared norm at most d². These are actual regional Maxwell fields, a compact C1 interior scalar cutoff, nonzero real frequency, and ε≥m>0 a.e. No dielectric derivative or upper bound is required. The separate magnetic H1, flux-domination, and channel estimates remain outside these two modules. Detailed audits and hashes are in `reviews/energy_formalization.md`, `reviews/energy_localization_formalization.md`, and the `energy-` and `energy-localization-` evidence pairs.

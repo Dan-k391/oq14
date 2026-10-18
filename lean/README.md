@@ -14,7 +14,10 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `ModalAsymptotics.lean`, `WeakPoynting/Lipschitz.lean`, and
 `WeakPoynting/Aperture.lean`, `WeakPoynting/Axial.lean`,
 `WeakPoynting/LipschitzBoundary.lean`, `ModalMatching.lean`, and
-`KernelIntegrability.lean`. Five hundred thirty-nine exported
+`KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
+`NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
+`ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
+`WeakPoynting/EnergyLocalization.lean`. Six hundred forty-six exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -56,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all thirty-six registered modules, and audits all 539
+compiler and mathlib revision, builds all forty-five registered modules, and audits all 646
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -405,6 +408,41 @@ gives local integrability. The actual real-frequency scalar outgoing
 kernel is measurable, locally integrable, and locally L2, including the
 origin as a null set. No source distribution or convolution identity is
 supplied as a hypothesis or asserted by this module.
+
+Twenty-six exports of `HeatFourier.lean` prove the actual L1 convolution
+Fourier identity, Gaussian normalization and Fourier transform, and both
+Newton Gaussian scale representations. Eleven of `NewtonFourier.lean`
+prove the absolute scale-space integrability and the actual scalar Newton
+Fourier identity on Schwartz tests. Ten of `NewtonHessian.lean` derive the
+full distributional Hessian symbol, its equality with the negative
+longitudinal matrix, and the exact source identity `ΔN = -δ`. These include
+the contact term; they do not replace the distributional Hessian by its
+pointwise expression or yet identify the spatial convolution operator.
+
+Five exports of `DynamicIntegrability.lean` prove actual local L1 and L2
+membership of each dynamic dyadic remainder entry when `|k|R≤1`. Four of
+`KernelEstimates.lean` prove the exact inverse-distance and inverse-square
+ball integrals and the resulting quadratic local L1 mass bound for each
+remainder entry. An operator-norm bound is not asserted by these modules.
+
+Fourteen exports of `ModalDipole.lean` construct actual complex-frequency
+dipole fields and verify their coordinate curls from the proved Riccati
+ODE. Twenty-three of `ModalInterface.lean` identify the actual all-sphere
+electric and magnetic tangential transmission conditions with the matching
+matrix, prove both amplitudes and some exterior trace are nonzero, and
+construct matching Maxwell fields at arbitrarily high quality factor.
+The interior statement is still restricted away from the center; regular
+extension at the center and the full outgoing resolvent remain separate.
+
+Ten exports of `WeakPoynting/Energy.lean` derive the imaginary Poynting
+identity and a genuine Caccioppoli estimate for regional weak Maxwell
+fields with real nonzero frequency, permeability one, and `ε≥m>0`.
+Weighted electric energy integrability is proved, rather than assumed.
+Four exports of `WeakPoynting/EnergyLocalization.lean` give the actual
+inner-set estimate with coefficient `2+4d²/(ω²m)` against magnetic energy
+on the cutoff support. These results use a compact C1 cutoff and require
+no derivative or upper bound of ε; they do not yet give magnetic H1
+regularity or compactness.
 
 ## Explicitly outside the formalization
 

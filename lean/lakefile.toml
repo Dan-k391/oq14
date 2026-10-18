@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -79,3 +79,24 @@ name = "ModalMatching"
 
 [[lean_lib]]
 name = "KernelIntegrability"
+
+[[lean_lib]]
+name = "HeatFourier"
+
+[[lean_lib]]
+name = "ModalDipole"
+
+[[lean_lib]]
+name = "NewtonFourier"
+
+[[lean_lib]]
+name = "DynamicIntegrability"
+
+[[lean_lib]]
+name = "KernelEstimates"
+
+[[lean_lib]]
+name = "ModalInterface"
+
+[[lean_lib]]
+name = "NewtonHessian"

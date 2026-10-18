@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The thirty-six registered modules in \texttt{lean/} cover operator estimates,
+The forty-five registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Five hundred thirty-nine exported theorem declarations were compiled successfully.
+Six hundred forty-six exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -332,6 +332,35 @@ to prove local integrability of $|x|^{-1}$ and $|x|^{-2}$ in three-space,
 and local $L^1$ and $L^2$ membership of the actual real-frequency scalar
 outgoing kernel. These do not yet prove its source distribution.
 
+Twenty-six declarations in \texttt{OQ14.HeatFourier} prove the actual
+convolution Fourier identity, Gaussian normalization and both Newton
+scale representations. Eleven in \texttt{OQ14.NewtonFourier} prove
+absolute scale-space integrability and the actual Newton Fourier identity
+on Schwartz tests. Ten in \texttt{OQ14.NewtonHessian} derive the full
+distributional Hessian multiplier and the exact source identity
+$\Delta N=-\delta_0$, retaining its contact term. The spatial convolution
+operator identification is a separate remaining step.
+Five declarations in \texttt{OQ14.DynamicIntegrability} prove local
+$L^1$ and $L^2$ membership of each dynamic dyadic remainder entry.
+Four in \texttt{OQ14.KernelEstimates} give exact inverse-radius ball
+integrals and the resulting quadratic local $L^1$ mass bound per entry.
+
+Fourteen declarations in \texttt{OQ14.ModalDipole} prove actual
+complex-frequency Maxwell curl equations for the constructed regular and
+outgoing dipole fields away from the center. Twenty-three in
+\texttt{OQ14.ModalInterface} prove equivalence of their actual tangential
+transmission conditions with the matching matrix, nontriviality of both
+amplitudes and an exterior trace, and existence of such matching fields
+at arbitrarily high quality factor. Center regularity and the complete
+outgoing operator remain separate obligations.
+Ten declarations in \texttt{OQ14.WeakEnergy} prove the actual reactive
+energy identity and Caccioppoli estimate, including weighted electric
+energy integrability. Four in \texttt{OQ14.EnergyLocalization} derive
+the inner-set electric-to-magnetic estimate with coefficient
+$2+4d^2/(\omega^2m)$ for an actual compact $C^1$ cutoff. No derivative
+or upper bound of the real permittivity is required. Magnetic $H^1$
+regularity and compactness are not conclusions of these modules.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -347,7 +376,11 @@ adding its missing assertions as axioms.
 
 \subsection{Smallest remaining research bridges}
 \label{ver:gaps}
-For a channel proof, Theorem~\ref{ch:fulloutput} already controls the
+The unrestricted assertion has been disproved in
+Theorem~\ref{uc:counterexample} for every $\delta>\eta>0$ with full
+scattering output. The following resource estimates describe stronger
+restricted finiteness questions and the routes leading to that disproof.
+For a restricted channel proof, Theorem~\ref{ch:fulloutput} controls the
 complete physical output error after all feedback. What is missing is
 a uniform estimate of the effective transmission directions with no
 uncontrolled field-resource factor. A bound on $B_*$ on the counted
@@ -373,7 +406,7 @@ degeneracy in a centered homogeneous core, even with unlimited exterior
 resonant amplification and both polarizations. It leaves mixed angular
 orders and structured cores outside its scope.
 
-For a disproof, Remark~\ref{cx:missing-bridge} specifies a quantitative
+The earlier disproof criterion in Remark~\ref{cx:missing-bridge} specifies a quantitative
 alternative: a power-normalized Maxwell compression close to a unitary
 at one common frequency, plus the full physical flux inequality and
 absolute-bypass certificate on every coherent vector. Resonant algebra
@@ -442,7 +475,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three hundred thirty declarations in Section~\ref{ver:lean}: weak Maxwell and Hermitian plane flux, scalar Plancherel and outgoing-kernel calculus, modal Wronskian and finite exceptional-root sets. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Six hundred forty-six declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

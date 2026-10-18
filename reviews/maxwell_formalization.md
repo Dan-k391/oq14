@@ -398,3 +398,43 @@ real-frequency outgoing scalar kernel is measurable and locally L1 and
 L2. The origin is restored only through the null-singleton identity.
 All ten exports compiled cleanly with standard axioms only. These results
 do not assert the missing source distribution or convolution identity.
+
+## Newton distribution, actual dipole interfaces, and energy estimates
+
+Root independently read NewtonFourier and NewtonHessian in full. The actual
+inverse-radius estimates justify both absolute scale-space integrals before
+Fubini. Gaussian Fourier constants and the inverse-transform derivative sign
+give the full Hessian multiplier -xi_i xi_j/|xi|^2. Summing it gives the exact
+source identity Delta N=-delta, with the origin removed only from an
+almost-everywhere frequency identity. The physical projection statement is
+correctly limited to its frequency multiplier. The spatial weak convolution
+identity is still separate. HeatFourier and these two modules also passed
+independent cross-agent audits. Their 26+11+10 exports compile with standard
+axioms only.
+
+Root independently read ModalDipole and ModalInterface in full. Actual
+Frechet curls and the actual Riccati ODE give the complex-frequency Maxwell
+equations. The a/n interior normalization matches the determinant convention.
+The all-sphere cross-product traces give the matching equations, and the
+reverse implication is obtained at a genuine equatorial point. Wronskians
+prove both amplitudes and some exterior trace are nonzero. The final high-Q
+field construction uses the proved root-existence theorem. Center
+removability is explicitly excluded from these statements. Both modules
+also passed an independent channel-agent audit; 14+23 exports compiled.
+
+Root independently read Energy and EnergyLocalization in full. Weighted
+electric energy integrability is derived from the imaginary weak Poynting
+identity and actual L2 products. The exact complex cross-product inequality
+and squared compact C1 cutoff give Caccioppoli, with the sign of the real
+nonzero frequency correctly disappearing in its square. The unit-cutoff
+inner-set integral and actual support magnetic integral yield
+2+4d^2/(omega^2 m). The measures are consistently restricted to the open
+region; the theorem does not silently assert that an arbitrary K lies
+inside that region. No derivative or upper bound on epsilon is assumed.
+The 10+4 selected exports compiled cleanly.
+
+DynamicIntegrability5 and KernelEstimates4 also compiled and passed separate
+independent audits. The additional 107 checked exports bring the registered
+source total to 646 in 45 modules. Their complete aggregate clean-checkout
+rebuild is a separate provenance step; the preserved 539-declaration release
+remains the latest complete clean-build package until that step is recorded.
