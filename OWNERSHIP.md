@@ -36,3 +36,12 @@ The latest disjoint assignments are:
   nearby_transducer_audit.md for continuing research.
 - Counterexample agent: HCurlCutoff.lean and its evidence (now frozen);
   WeakPoynting.lean, WeakPoynting/ and its review for continuing research.
+
+Further frozen additions are channel_dual_control.tex (channel agent),
+channel_passage.tex (root, transcribed from the channel agent's independently
+reviewed derivation), and channel_transducers.tex (hotspot agent). Root has
+reviewed all three. WeakPoynting.lean and WeakPoynting/Green.lean are frozen
+and independently reviewed by root. The formal agent continues in separate
+Poynting.lean and Local.lean files. New common-stack Green convergence and
+transducer-limit sections remain with the channel and hotspot agents,
+respectively; they are not yet assertions of unrestricted closure.

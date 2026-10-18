@@ -345,7 +345,9 @@ for qq in (1.2,1.4,2.1):
     for periods in (1,2,5):
         prefix=np.eye(2)
         integral=np.zeros((2,2))
+        tm_integral=np.zeros((2,2))
         norm_integral=0.
+        tm_norm_integral=0.
         for index in [qq,1.]*periods+[1.,qq]*periods:
             length=math.pi/(2*index)
             for point,weight in zip(nodes,weights):
@@ -357,6 +359,10 @@ for qq in (1.2,1.4,2.1):
                 conjugate=np.linalg.solve(uu,yy@uu)
                 integral+=weight*length/2*conjugate
                 norm_integral+=weight*length/2*norm(conjugate)
+                tm_prefix=np.linalg.inv(uu).T
+                tm_conjugate=np.linalg.solve(tm_prefix,yy@tm_prefix)/index**2
+                tm_integral+=weight*length/2*tm_conjugate
+                tm_norm_integral+=weight*length/2*norm(tm_conjugate)
             quarter=np.array([[0.,1/index],[-index,0.]])
             prefix=quarter@prefix
         bb=math.pi*(qq**2+1/qq)/(2*(qq**2-1))*(qq**(2*periods)-1)
@@ -364,14 +370,77 @@ for qq in (1.2,1.4,2.1):
         exact=np.array([[0.,-dd],[bb,0.]])
         relative=norm(integral-exact)/(1+norm(exact))
         norm_relative=abs(norm_integral-(bb+dd))/(1+bb+dd)
+        tm_relative=norm(tm_integral+exact.T)/(1+norm(exact))
+        tm_norm_relative=abs(tm_norm_integral-(bb+dd))/(1+bb+dd)
         assert norm(prefix-np.eye(2))<1e-12
         assert relative<1e-12 and norm_relative<1e-12
+        assert tm_relative<1e-12 and tm_norm_relative<1e-12
         assert abs(dd/bb-qq**(-2*periods)/(qq**2-qq+1))<1e-14
         control_loops.append({'index':qq,'pairs_per_half':periods,
           'angular_derivative_relative_error':float(relative),
-          'integrated_norm_relative_error':float(norm_relative)})
-checks.append({'name':'radial identity-loop angular derivative and integrated norm',
+          'integrated_norm_relative_error':float(norm_relative),
+          'tm_angular_derivative_relative_error':float(tm_relative),
+          'tm_integrated_norm_relative_error':float(tm_norm_relative)})
+checks.append({'name':'paired TE/TM radial identity-loop derivatives and integrated norms',
                'passed':True,'samples':len(control_loops)})
+
+# For a fixed ordinary quarter-wave stack, compute the actual source reaction
+# coefficient from its real regular/irregular transfer matrix. This checks
+# the Green coefficient sign, both polarizations, and the large-radius limit.
+def vacuum_frame(ell, xx):
+    pp=riccati_polynomial(ell,xx)
+    dp=riccati_polynomial(ell,xx,derivative=1)
+    xi=(-1j)**(ell+1)*np.exp(1j*xx)*pp
+    dxi=(-1j)**(ell+1)*np.exp(1j*xx)*(1j*pp+dp)
+    return np.array([[xi.real,xi.imag],[dxi.real,dxi.imag]])
+
+def common_stack_transfer(ell, pol, qq, periods, radius, steps=256):
+    transfer=np.eye(2)
+    offset=0.
+    for index in [qq,1.]*periods:
+        length=math.pi/(2*index)
+        hh=length/steps
+        def generator(pos):
+            centrifugal=ell*(ell+1)/(radius+pos)**2
+            if pol=='TE':
+                return np.array([[0.,1.],[centrifugal-index**2,0.]])
+            return np.array([[0.,index**2],[centrifugal/index**2-1.,0.]])
+        for ss in range(steps):
+            pos=offset+ss*hh
+            aa=generator(pos)@transfer
+            bb=generator(pos+hh/2)@(transfer+hh*aa/2)
+            cc=generator(pos+hh/2)@(transfer+hh*bb/2)
+            dd=generator(pos+hh)@(transfer+hh*cc)
+            transfer+=hh*(aa+2*bb+2*cc+dd)/6
+        offset+=length
+    return transfer,radius+offset
+
+green_limits=[]
+for periods in (2,4):
+    qq=1.4
+    gain=qq**periods
+    for ell in (1,2,5,6):
+        for pol in ('TE','TM'):
+            previous_error=None
+            for radial_multiple in (200,800):
+                radius=2*math.pi*radial_multiple
+                uu,endpoint=common_stack_transfer(ell,pol,qq,periods,radius)
+                mm=np.linalg.solve(vacuum_frame(ell,endpoint),uu@vacuum_frame(ell,radius))
+                aa,bb=mm[0]
+                cc,dd=mm[1]
+                reaction=(dd-1j*bb)/(-cc+1j*aa)
+                amplified=(pol=='TE' and ell%2==0) or (pol=='TM' and ell%2==1)
+                expected=-1j*gain**(2 if amplified else -2)
+                error=abs(reaction-expected)/(1+abs(expected))
+                assert abs(np.linalg.det(mm)-1)<1e-8
+                assert abs(reaction.imag+1/(aa*aa+cc*cc))<1e-7
+                if previous_error is not None:
+                    assert error<.3*previous_error
+                previous_error=error
+                green_limits.append({'pairs':periods,'order':ell,'polarization':pol,
+                    'radius':radius,'relative_reaction_error':float(error)})
+checks.append({'name':'actual common-stack source Green coefficient and paired limit',
+               'passed':True,'samples':len(green_limits)})
 
 result={'kind':'diagnostics, not continuum certification','seed':140014,
         'source_commit':git('rev-parse','HEAD'),'dirty_worktree':bool(git('status','--porcelain')),
@@ -381,6 +450,7 @@ result={'kind':'diagnostics, not continuum certification','seed':140014,
         'local_flux_quadrature':flux_refinement,'modal_sphere_poles':modal_poles,
         'growing_radial_stacks':global_stacks,
         'radial_control_loops':control_loops,
+        'common_stack_green_limits':green_limits,
         'limitations':['No physical N-channel family was synthesized.',
         'Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.',
         'No full hotspot scattering discretization was run; Lean results are recorded separately.',

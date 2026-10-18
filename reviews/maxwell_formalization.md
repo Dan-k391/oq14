@@ -72,7 +72,7 @@ Targeted searches of the pinned analysis and geometry sources did not find an ex
 
 ## Missing steps for the complete research claims
 
-1. Extend the implemented whole-space H(curl) graph to local/domain spaces, and establish density, restriction, and cutoff operations. The whole-space construction now proves a.e.-class well-defined test pairings, graph closure, uniqueness of weak curl, completeness, and classical membership. Those results do not supply boundary or local-domain theory.
+1. Domain weak-curl graphs, interior cutoff/zero extension, and whole-space smooth graph-norm approximation are now implemented. Restriction, general-domain localization of the weak Green identity, and boundary theory remain separate obligations. Whole-space smoothing is proved through actual convolution and its L2 identification, not supplied as a density assumption.
 2. Establish tangential traces and interface transmission, including integration by parts on bounded Lipschitz domains and the correct normal physical flux. The present compact-test theorem has no boundary trace.
 3. Construct the outgoing homogeneous Maxwell fundamental solution as a distribution, including its singular local term. Prove the volume operator mapping estimates, its small-contrast inverse, uniqueness, far-field representation, and the scattering/incident normalization identities.
 4. Prove total-field Maxwell Runge approximation from source reciprocity and unique continuation. Abstract density or compactness alone would not discharge this step.
@@ -122,3 +122,29 @@ Finally, for a classical C1 field whose field and actual curl components lie in 
 This space is over all of R3. A radiating scattering field generally does not belong to global L2. Local H(curl), bounded-domain spaces, tangential traces, radiation conditions, material jumps, and resolvent estimates are still distinct formal obligations. The new space does not claim any of those results.
 
 The standalone HCurl check completed with exit code zero at `2026-10-18T05:02:49Z`. Source SHA256 is `b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926`; it was checked unchanged before and after compilation. All eleven exported reports contain exactly `propext`, `Classical.choice`, and `Quot.sound`. The imported Maxwell source remains at its recorded frozen hash. Raw output and provenance are `lean/HCurl/verification.txt` and `lean/HCurl/provenance.json`.
+
+## Smooth approximation and genuine weak Green identity
+
+`WeakPoynting.lean` proves actual convolution commutation with weak curl,
+strong continuity of L2 translations, norm-contracting Bochner bump
+averages, and their L2 convergence. A product-space Cauchy-Schwarz bound
+establishes absolute Fubini integrability. Compact-test separation then
+identifies the average with the smooth pointwise convolution. An explicit
+shrinking bump sequence proves smooth approximation in the existing
+whole-space graph norm. The root independently reviewed all definitions,
+quantifiers, Fubini hypotheses and the final graph convergence theorem.
+
+`WeakPoynting/Green.lean` derives the compact-test bilinear Green identity
+for two arbitrary whole-space weak-curl graph elements. It first tests the
+weak equation against a compact scalar times a smooth field, then uses
+the proved approximation and continuity of actual L2 product pairings.
+The root independently checked the sign, integral identification, compact
+product tests, and limiting argument. No classical derivative of a weak
+field or assumed Green identity enters the proof.
+
+The frozen sources have 16 and 6 audited exports respectively, with
+successful direct compiler checks and only the standard three axioms.
+Their hashes and raw output are in `lean/WeakPoynting/`. These are
+whole-space graph theorems; a general scattering field still needs a
+local-domain bridge. They do not prove outgoing existence, interface
+regularity, conical spectra or modal continuation.

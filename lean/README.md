@@ -1,7 +1,8 @@
 # Lean verification of operator estimates and Maxwell foundations
 
 The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
-`HCurlDomain.lean`, and `HCurlCutoff.lean`. Sixty-two exported
+`HCurlDomain.lean`, `HCurlCutoff.lean`, `WeakPoynting.lean`, and
+`WeakPoynting/Green.lean`. Eighty-four exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -17,6 +18,7 @@ directory, prepare dependencies using the supplied lockfile (keep
 lake exe cache get Mathlib.Analysis.NormedSpace.OperatorNorm.Basic Mathlib.Analysis.Normed.Operator.LinearIsometry Mathlib.Analysis.InnerProductSpace.Basic Mathlib.LinearAlgebra.FiniteDimensional.Defs Mathlib.LinearAlgebra.Dimension.Finrank Mathlib.MeasureTheory.Integral.Bochner.Basic Mathlib.Data.Real.Sqrt Mathlib.Tactic.Linarith Mathlib.Tactic.Ring
 lake exe cache get Mathlib.Analysis.InnerProductSpace.PiL2 Mathlib.Analysis.Calculus.FDeriv.Mul Mathlib.Analysis.Calculus.FDeriv.Symmetric Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts Mathlib.Analysis.SpecialFunctions.ExpDeriv Mathlib.LinearAlgebra.CrossProduct Mathlib.Tactic.FinCases Mathlib.Tactic.LinearCombination
 lake exe cache get Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Function.LpSpace.Indicator Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+lake exe cache get Mathlib.Analysis.Convolution Mathlib.Analysis.Calculus.BumpFunction.Convolution Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -38,7 +40,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all five registered modules, and audits all 62
+compiler and mathlib revision, builds all seven registered modules, and audits all 84
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -113,7 +115,7 @@ and have infinite transverse extent; no finite-power physical excitation
 or unrestricted channel counterexample follows from them.
 
 The source hashes and research checks are in `Maxwell/`, `HCurl/`,
-`HCurlDomain/`, and `HCurlCutoff/`. The
+`HCurlDomain/`, `HCurlCutoff/`, and `WeakPoynting/`. The
 combined clean release build is recorded under `../output/lean/`.
 
 Every audited theorem's reported axioms are exactly `propext`, `Classical.choice`,
@@ -170,12 +172,35 @@ Its eleven audited exports are `multiplier_memLp`, `mulL2_ae`,
 `extendScalar_norm`, `extendScalar_pair`, and `weakCurl_cutoff_extend`.
 Unrestricted zero extension across a boundary is not claimed.
 
+## Smooth approximation and weak Green identity
+
+The sixteen audited exports of `WeakPoynting.lean` prove actual
+convolution smoothness, commutation with weak curl, strong continuity of
+L2 translations, and strong convergence of normalized bump averages.
+Absolute product-space integrability justifies Fubini and identifies
+the Bochner L2 average with the pointwise smooth convolution. Explicit
+shrinking bumps therefore produce smooth representatives converging to
+every whole-space H(curl) field in its graph norm. No density assumption
+is used.
+
+The six audited exports of `WeakPoynting/Green.lean` prove bounded bilinear
+L2 pairings equal the actual integrals, and derive the local Green identity
+for two arbitrary whole-space H(curl) fields:
+
+`integral chi (curl E dot F - E dot curl F) + grad chi dot (E cross F) = 0`.
+
+The test chi is any compact C1 scalar. The proof first tests weak curl
+against chi times a smooth field, then passes to the proved graph-norm
+approximation. Neither nonsmooth field is differentiated classically.
+These results require global L2 field and curl; applying them to general
+scattering fields still needs the separate local-domain bridge.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
-density theory, outgoing scattering, the conical spectrum,
+general-domain density and boundary traces, outgoing scattering, the conical spectrum,
 Runge approximation, rounding, the analytic Fredholm resonance pencil or
 its reciprocal norm. The complete written modal theorem is not yet a Lean
 theorem. The unrestricted channel claim additionally still lacks a written

@@ -1,0 +1,239 @@
+\section{Paired electric and magnetic radial control}
+\label{cd:section}
+
+The distant finite-order control construction can be tracked in both
+polarizations simultaneously. Its limiting TE and TM transfers obey a
+specific inverse-transpose relation. This supplies controlled amplification
+of an electric-wall reflection sector and suppression of its opposite
+sector, within any prescribed finite band. It does not bound unselected
+partial waves or the Green operator of a perturbed device.
+
+\subsection{The same physical layers control a paired transfer graph}
+
+Retain $X,Y,J,q,\ell_M,b_M,d_M$ from Section~\ref{cc:section}.
+For TE use $v_{\rm E}=(u,u')^T$ and for TM use
+$v_{\rm M}=(u,n^{-2}u')^T$ in an index-$n$ layer. With
+$\nu=l(l+1)$ their exact dimensionless equations are
+\begin{equation}\label{cd:generators}
+ v_{\rm E}'=(X-n^2Y+\nu x^{-2}Y)v_{\rm E},\qquad
+ v_{\rm M}'=(n^2X-Y+\nu n^{-2}x^{-2}Y)v_{\rm M}.
+\end{equation}
+Both states are continuous across each material interface.
+
+\begin{lemma}[PROVED: paired angular derivatives of the identity loop]
+\label{cd:loop}
+For the high--low, then low--high loop of
+Lemma~\ref{cc:loop-derivative}, its two reference propagators satisfy
+$U_{0,{\rm M}}=U_{0,{\rm E}}^{-T}$ at every prefix.
+Their integrated angular derivatives are
+\begin{equation}\label{cd:loop-derivatives}
+ B_{{\rm E},M}=\begin{pmatrix}0&-d_M\\b_M&0\end{pmatrix},
+ \qquad
+ B_{{\rm M},M}=\begin{pmatrix}0&-b_M\\d_M&0\end{pmatrix}
+                 =-B_{{\rm E},M}^{T}.
+\end{equation}
+For both polarizations the integrated interaction-generator norm is
+$b_M+d_M\leq2b_M$. Consequently the one-loop error
+\eqref{cc:one-loop-error} and the repeated-loop error
+\eqref{cc:global-error} apply simultaneously, with the same constants.
+The limiting repeated-loop transfers are
+\begin{equation}\label{cd:shear-pair}
+ \bigl(e^{t\nu Y},e^{-t\nu X}\bigr),\qquad t\geq0.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The two reference generators are negative transposes:
+$n^2X-Y=-(X-n^2Y)^T$. Differentiating an inverse transpose proves
+the prefix identity, including across continuous state interfaces.
+Write the TE prefix as
+$U=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$.
+The TM prefix is
+$U^{-T}=\left(\begin{smallmatrix}d&-c\\-b&a\end{smallmatrix}\right)$.
+Its angular interaction matrix, including the actual factor $n^{-2}$,
+is therefore
+\begin{equation}\label{cd:tm-interaction}
+ n^{-2}U_{0,{\rm M}}^{-1}YU_{0,{\rm M}}
+   =n^{-2}\begin{pmatrix}cd&-c^2\\d^2&-cd\end{pmatrix}.
+\end{equation}
+Its norm is $(c^2+d^2)/n^2$.
+
+For completeness, in the forward half with $0\leq j<M$, the TE
+second rows during the high and low quarters, up to a common sign, are
+\[
+ (-q^{j+1}\sin\theta,q^{-j}\cos\theta),\qquad
+ (-q^{j+1}\cos\theta,-q^{-j-1}\sin\theta).
+\]
+In the reverse half with $M\geq h\geq1$, the corresponding low
+and high rows are
+\[
+ (-q^h\sin\theta,q^{-h}\cos\theta),\qquad
+ (-q^h\cos\theta,-q^{1-h}\sin\theta).
+\]
+Use $ds=d\theta/q$ in a high quarter and $ds=d\theta$ in a
+low quarter. Integrating $c^2/n^2$ gives exactly the same
+$b_M$ as the integral of $a^2$ in the TE calculation; integrating
+$d^2/n^2$ gives $d_M$. These identities follow on each quarter
+by interchanging $\sin^2\theta$ and $\cos^2\theta$.
+The integral of $cd/n^2$ in a forward pair is
+$(1-q^{-2})/2$, and in a reverse pair its negative.
+Thus its integral over the loop is zero, proving
+\eqref{cd:loop-derivatives} and the norm assertion.
+
+The TM interaction equation differs from its reference equation
+by $\nu(r+s)^{-2}$ times \eqref{cd:tm-interaction}.
+Its integrated norm and the error from freezing $(r+s)^{-2}$
+are consequently exactly bounded as in Lemma~\ref{cc:one-loop}.
+Since $B_{{\rm M},M}/b_M=-X+\kappa_qq^{-2M}Y$,
+the repeated-loop proof applies with $Y$ replaced by $-X$.
+Both square to zero and have norm one, so every constant in
+\eqref{cc:global-error} is unchanged.
+\end{proof}
+
+\begin{theorem}[PROVED: global finite-order paired TE/TM transfer control]
+\label{cd:paired-control}
+For distinct positive integers $l_1,\ldots,l_m$ and arbitrary
+$G_j\in{\rm SL}(2,\mathbb R)$, there are actual finite radial
+dielectrics with $1\leq\varepsilon\leq q^2<\varepsilon_+$ in
+$[R,R+d_R]$, $d_R=o(R)$, whose simultaneous transfers converge to
+\begin{equation}\label{cd:paired-target}
+ (G_j,G_j^{-T})\qquad(1\leq j\leq m)
+\end{equation}
+as $R\to\infty$. The first component is TE and the second TM.
+This is a constructed family of paired targets, not a universal
+identity for arbitrary physical radial structures.
+\end{theorem}
+\begin{proof}
+Define asymptotic realizability for the $2m$ transfers together,
+using the maximum of their matrix norms. Concatenation and
+closedness follow by exactly the threshold-selection proof of
+Lemma~\ref{cc:common-and-closure}.
+Every common reference transfer $G$ in that lemma is now paired
+with $G^{-T}$, since the reference generators are negative
+transposes. For a fixed layer word both angular errors are
+$O(R^{-2})$, so the common paired tuple is realizable.
+Lemma~\ref{cd:loop} supplies the weighted shear pair
+\eqref{cd:shear-pair}.
+
+The map $\iota:G\mapsto(G,G^{-T})$ is an injective continuous
+group homomorphism: $(GH)^{-T}=G^{-T}H^{-T}$. Its infinitesimal
+map is $A\mapsto(A,-A^T)$. Thus common conjugation, the product
+formulas, and the integer-frequency signed-time construction in
+Theorem~\ref{cc:global-control} all remain within this graph.
+In particular the paired shear inverses are supplied by positive
+layers through the same periodic rotation argument.
+The Vandermonde and open-subgroup proof applies to the first
+components and hence, by $\iota$, to their whole graph.
+It supplies every tuple \eqref{cd:paired-target} in the closed
+paired realizable semigroup. No step replaces TM behavior by an
+independently assumed transfer.
+\end{proof}
+
+\subsection{Reflection parity and finite-band isolation}
+
+Let $R_z(x,y,z)=(x,y,-z)$. An electric-wall field means
+\begin{equation}\label{cd:electric-wall}
+ E(R_zx)=-R_zE(x),\qquad H(R_zx)=R_zH(x).
+\end{equation}
+It has $E_t=0$ and $H_z=0$ on the plane. The opposite,
+magnetic-wall field has the reversed two signs and satisfies
+$E_z=0$ and $H_t=0$. Each sector has identically zero normal
+Poynting density on the plane, for every coherent combination.
+
+\begin{lemma}[PROVED: spherical-wave reflection sectors]
+\label{cd:parities}
+For azimuthal index $m$, a TE spherical wave is electric-wall
+exactly when $l+m$ is even; a TM wave is electric-wall exactly
+when $l+m$ is odd. On the subspace invariant under a rotation by
+$\pi$ around the $z$ axis, with the vector rotated as well, only
+even $m$ occur. Within this $C_2$-even subspace the electric-wall
+sector is precisely TE even $l$ together with TM odd $l$.
+\end{lemma}
+\begin{proof}
+The scalar identity is
+$Y_{lm}(\pi-\theta,\varphi)=(-1)^{l+m}Y_{lm}(\theta,\varphi)$.
+For $X_{lm}=\widehat r\times\nabla_{S^2}Y_{lm}/\sqrt{l(l+1)}$,
+reflection reverses the cross product, giving
+$X_{lm}(R_zx)=(-1)^{l+m+1}R_zX_{lm}(x)$.
+This is the TE electric-field parity. Taking a curl reverses
+that reflection sign, so the TM electric-field parity is
+$(-1)^{l+m}$. The Maxwell curl equation gives the opposite
+magnetic-field sign in each case. This proves the wall
+classification. Rotation by $\pi$ contributes $e^{im\pi}$ after
+the vector rotation, so its invariant sector has even $m$.
+\end{proof}
+
+\begin{theorem}[PROVED: controlled finite-band wall amplification and suppression]
+\label{cd:wall-isolation}
+Fix any finite set of angular orders and positive numbers $A_l$.
+In the $C_2$-even input band of those orders, there is a sequence
+of finite ordinary radial dielectrics with vacuum-core radius
+tending to infinity such that, after one common rephasing, the
+physical core multipliers converge to
+\begin{equation}\label{cd:wall-gains}
+ \begin{array}{c|cc}
+ &{\rm TE}&{\rm TM}\\ \hline
+ l\ {\rm even}&A_l&A_l^{-1}\\
+ l\ {\rm odd}&A_l^{-1}&A_l
+ \end{array}.
+\end{equation}
+Thus the electric-wall sector has gain $A_l$ and its opposite
+sector gain $A_l^{-1}$, for each controlled order. For a uniform
+$A_l=A>0$, the finite-band core operator converges to
+$A P_{\rm e}+A^{-1}P_{\rm m}$ after that rephasing.
+Convergence of all coherent fields and their derivatives is
+uniform on each fixed compact core subset. The wall boundary
+identities themselves hold exactly at every stage, by symmetry.
+\end{theorem}
+\begin{proof}
+Take the paired targets
+$G_l=\operatorname{diag}(A_l,A_l^{-1})$ and restrict starting
+radii to $R=2\pi n$. The regular radial state tends to
+$v_l^0=(\sin(-l\pi/2),\cos(-l\pi/2))^T$ in either polarization,
+because the inner core is vacuum. For even $l$ this is a signed
+second coordinate vector; for odd $l$ it is a signed first one.
+Thus the limiting endpoint multiplier on this real state is
+$A_l^{-1}$ for TE even and TM odd, and $A_l$ for the opposite
+two cases.
+
+At the outer endpoint $X_R$, the incoming radial coefficient
+obeys the same Wronskian formula in either polarization. The
+exterior and core are both vacuum, so their state conventions
+agree there. The Hankel calculation in
+Corollary~\ref{cc:core-gains} gives
+$e^{-iX_R}A_l^{\rm in}\to c_l/2$ when the endpoint state is
+$c_l v_l^0$. Its physical core multiplier, relative to the free
+wave with the same physical incoming amplitude, is
+$(2A_l^{\rm in})^{-1}$. After multiplication by $e^{iX_R}$ it
+therefore tends to $c_l^{-1}$, proving \eqref{cd:wall-gains}.
+This relative multiplier is valid for TM as well as TE; their
+different fixed impedance factors cancel in the free/actual
+comparison.
+
+Lemma~\ref{cd:parities} identifies these gains with the two wall
+sectors for even $m$. All azimuthal indices within an order have
+the same radial transfer. Finite-band convergence gives uniform
+compact field and derivative convergence. Radial symmetry
+preserves reflection and $C_2$ sectors exactly for every finite
+device, establishing the final assertion.
+\end{proof}
+
+\begin{remark}[What the suppression does and does not provide]
+\label{cd:scope}
+For uniform $A$ the limiting multiplier
+$D_A=A P_{\rm e}+A^{-1}P_{\rm m}$ preserves the vacuum plane
+flux form pointwise:
+\begin{equation}\label{cd:flux-cancel}
+ D_A^*Q_z^0(x)D_A=Q_z^0(x)\qquad(z=0).
+\end{equation}
+Indeed both diagonal wall blocks vanish pointwise, and the two
+real factors cancel in the remaining blocks. Amplifying the
+electric-wall background alone creates no plane passage.
+
+The theorem supplies a controlled finite set of opposite-parity
+TM and TE input responses. It supplies no uniform estimate for
+unselected angular orders, a total Green operator, a source
+inside a new inclusion, or a geometry after a nearby inclusion
+breaks the reflection symmetry. Such estimates are required
+before a proposed small-transducer construction can be claimed
+to satisfy physical positive passage and absolute bypass.
+\end{remark}

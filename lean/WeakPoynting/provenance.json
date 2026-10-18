@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-18T05:44:14.912922+00:00",
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-o",
+    ".lake/build/lib/lean/WeakPoynting.olean",
+    "WeakPoynting.lean"
+  ],
+  "cwd": "D:\\oq14\\lean",
+  "exit_code": 0,
+  "output_capture": "verification.txt is complete final compiler stdout; no warnings or errors",
+  "audited_exports": 16,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sources_sha256": {
+    "WeakPoynting.lean": "74b49995d65c7e6ef3722481c706d321f27e2f73ea0c9da2628ba65bfe44e102",
+    "HCurl.lean": "b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926",
+    "Maxwell.lean": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "ecf76f27988f72367b80b1b595f05d7151cbfe6ad70f20a596806d28290a4b11"
+  },
+  "scope": "Actual whole-space smooth graph-norm approximation for every distributional L2 H(curl) field. Local Green identity is developed separately in Green.lean and not claimed by this source."
+}

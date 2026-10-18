@@ -33,7 +33,8 @@ formal_sources = sorted([*(ROOT/'lean').glob('*.lean'),
                          *(ROOT/'lean/Maxwell').glob('**/*.lean'),
                          *(ROOT/'lean/HCurl').glob('**/*.lean'),
                          *(ROOT/'lean/HCurlDomain').glob('**/*.lean'),
-                         *(ROOT/'lean/HCurlCutoff').glob('**/*.lean')])
+                         *(ROOT/'lean/HCurlCutoff').glob('**/*.lean'),
+                         *(ROOT/'lean/WeakPoynting').glob('**/*.lean')])
 expected_theorems = set()
 for source in formal_sources:
     expected_theorems.update(re.findall(r'#print axioms (OQ14(?:\.\w+)+)', source.read_text(encoding='utf-8')))

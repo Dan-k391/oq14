@@ -1,0 +1,163 @@
+\section{Arbitrary physical passage dimension when bypass is omitted}
+\label{cp:section}
+
+The global control theorem supplies a sharper obstruction to a power-only
+channel proof. The following fields are responses of actual finite positive
+dielectrics with physically normalized incoming waves. They satisfy positive
+passage on arbitrarily large coherent subspaces. Their absolute bypass is
+not uniformly controlled.
+
+\begin{proposition}[PROVED: unbounded positive local-flux trace]
+\label{cp:trace}
+Fix $k>0$, $\varepsilon_+>1$, and the centered square $D$. In the
+finite scalar dielectric class $1\leq\varepsilon\leq\varepsilon_+$,
+the positive part of the section-flux operator has no uniform trace or
+operator-norm bound in the physical incoming-power norm. This remains
+true for radial dielectrics with a vacuum core containing $D$.
+\end{proposition}
+\begin{proof}
+Let $R_D$ be the circumradius of $D$, choose odd $l$ with
+$l(l+1)>k^2R_D^2$, and put $m=l+1$. Use real normalized axisymmetric
+spherical harmonics and set
+\[
+ c_l=\frac{\partial_\theta Y_{l0}(\pi/2)}{\sqrt{l(l+1)}},
+ \qquad d_m=Y_{m0}(\pi/2).
+\]
+These constants are nonzero. The radial positivity argument of
+Theorem~\ref{cn:radial-bypass} gives $j_l(kr),j_m(kr)>0$ for
+$0<r\leq R_D$. Hence
+\begin{equation}\label{cp:positiveconstant}
+ I_{lm}=\int_D\frac{j_l(kr)j_m(kr)}r\,dA>0,
+ \qquad K_{lm}=4k\sqrt{m(m+1)}\,|c_ld_m|I_{lm}>0.
+\end{equation}
+The apparent singularity at the origin is integrable.
+
+In the physical convention of Lemma~\ref{cg:vacuum-trace}, a free
+unit-incoming-power TE wave, with its fixed phase absorbed into the
+input basis, has electric field
+$2k\sqrt{2Z}\,j_l(kr)X_{l0}$. Denote the actual core multipliers
+by $g_l,g_m$ and the two physical incoming coefficients by $a,b$.
+On the plane, the odd TE wave has azimuthal electric field and normal
+magnetic field. The even TE wave has zero electric field and radial
+tangential magnetic field there, with
+\[
+ H_r=i\frac{2k\sqrt{2Z}}Z\,b g_m\sqrt{m(m+1)}
+             \frac{j_m(kr)}{kr}d_m.
+\]
+Since $\widehat\varphi\times\widehat r=-\widehat z$ on that plane,
+the exact section form is
+\begin{equation}\label{cp:two-mode-form}
+ P_D(a,b)=-4k\sqrt{m(m+1)}c_ld_m I_{lm}
+             \operatorname{Im}(a\overline b\,g_l\overline{g_m}).
+\end{equation}
+Its two eigenvalues are $\pm K_{lm}|g_lg_m|/2$.
+Corollary~\ref{cc:core-gains} supplies actual finite radial devices
+with $g_l,g_m$ approaching any common $G>0$, up to common phase.
+The positive eigenvalue can therefore be arbitrarily large.
+It bounds below the operator norm, the positive trace, and the
+nuclear norm whenever those traces are defined; equivalently the
+same divergence already holds on this two-dimensional compression.
+\end{proof}
+
+\begin{theorem}[PROVED: arbitrary coherent physical passage rank]
+\label{cp:rank}
+For every integer $N\geq1$ and $p_*>0$, there is a finite radial
+dielectric with the same fixed $k$, $D$, and material bounds, and an
+$N$-dimensional physical incoming space $W_N$, such that
+\begin{equation}\label{cp:passage}
+ \|Sa\|^2=\|a\|^2,\qquad P_D(a)\geq p_*\|a\|^2
+       \quad(a\in W_N).
+\end{equation}
+Here $S$ is the complete scattering map. No common absolute-bypass
+bound is asserted.
+\end{theorem}
+\begin{proof}
+First construct local target fields. Choose distinct $q_j>k$ and
+put $\alpha_j=\sqrt{q_j^2-k^2}$. In cylindrical coordinates define
+\begin{equation}\label{cp:localfields}
+ E_j=J_1(q_j\rho)
+       \left[\cosh(\alpha_jz)+i\frac{k}{\alpha_j}
+                          \sinh(\alpha_jz)\right]\widehat\varphi,
+ \qquad H_j=\frac1{i\omega\mu_0}\operatorname{curl}E_j.
+\end{equation}
+The quotient $J_1(q_j\rho)/\rho$ is an entire function of $\rho^2$,
+so the Cartesian vector field is smooth at the axis. Its divergence
+vanishes, and the order-one Bessel equation gives
+$(\Delta+k^2)E_j=0$. Both vacuum Maxwell curl equations follow.
+At $z=0$, $\partial_zE_j=ikE_j$, whence every coherent combination
+satisfies
+\begin{equation}\label{cp:positivegram}
+ S_z(a;\rho,0)=\frac1{2Z}
+                 \left|\sum_{j=1}^Na_jJ_1(q_j\rho)\right|^2.
+\end{equation}
+Its section Gram matrix is positive definite. A combination
+vanishing on $D$ vanishes on a radial interval; its Taylor series
+then gives a Vandermonde system in the distinct $q_j^2$, after
+extracting the nonzero factors $q_j$. All coefficients must vanish.
+
+Next approximate these targets by a finite regular TE band. Each
+axisymmetric azimuthal electric field in \eqref{cp:localfields} has
+a regular TE spherical expansion with azimuthal order zero.
+For the needed convergence, choose $R'>R_D$ avoiding zeros of the
+finitely many possibly oscillatory $j_l(kR')$. All sufficiently
+large orders are positive at $R'$. Expand the smooth tangential
+trace on that sphere in $X_{l0}$. Angular projection of the vector
+Helmholtz equation yields the regular radial factor $j_l(kr)$.
+The smooth trace coefficients decay faster than any fixed power
+of $l$; the large-order Bessel series gives a bound of the form
+$C(r/R')^l$ on $j_l(kr)/j_l(kR')$, with polynomial factors for
+first derivatives on any smaller ball. The expansion therefore
+converges with its first derivatives on a ball containing $D$.
+Projection of the radial equations and angular completeness
+identify its sum with the original field.
+
+Truncate all $N$ expansions at a common finite order $L$.
+Uniform convergence of $E,H$ on $D$ preserves strict positivity
+of their finite Hermitian Gram matrix once $L$ is sufficiently
+large. In the physical incoming norm, the resulting coefficient
+span $V_N$ consequently satisfies
+\[
+ \dim V_N=N,\qquad P_D^0(a)\geq p_N\|a\|^2,
+ \qquad p_N>0.
+\]
+The constant $p_N$ may depend on $N$ and may be very small.
+Apply Corollary~\ref{cc:core-gains} with a common real gain $G$
+for every TE order through $L$. After common rephasing, the
+actual finite-device section matrix converges to $G^2$ times
+the free section matrix on $V_N$. Choose $G$ with
+$G^2p_N>p_*$ and then a sufficiently accurate finite device.
+This gives the second inequality of \eqref{cp:passage} on the
+physical coefficient space $W_N=V_N$.
+The device is finite, real, positive, and radial, so its complete
+power-normalized scattering map is unitary. This gives the first
+equality. The exponentially growing local targets themselves were
+used only for compact approximation, never as physical inputs.
+\end{proof}
+
+\begin{remark}[Why this does not close the unrestricted channel target]
+\label{cp:bypass}
+For these finite angular-band devices, normal plane flux is absolutely
+integrable. It is regular on bounded regions up to the finitely many
+interfaces, and its exterior leading spherical Poynting vector is
+radial and tangent to the plane, leaving an $O(r^{-3})$ normal tail.
+Upper-half-space conservation with the physical radiation convention
+gives
+\[
+ P_\Sigma=P_{\mathrm{out,upper}}-P_{\mathrm{in,upper}},
+ \qquad |P_\Sigma(a)|\leq\|a\|^2.
+\]
+Consequently
+\begin{equation}\label{cp:returncost}
+ \int_{\Sigma\setminus D}|S_z(a)|
+       \geq |P_D(a)-P_\Sigma(a)|
+       \geq P_D(a)-\|a\|^2.
+\end{equation}
+The unbounded positive eigenvalue in Proposition~\ref{cp:trace}
+therefore entails unbounded bypass. On a subspace satisfying a fixed
+absolute-bypass bound, conservation only implies
+$\|Q_D\|\leq1+\delta$. That operator-norm estimate alone cannot
+bound the number of positive eigenvalues. The spatial information
+in the absolute-bypass condition remains essential, and
+Theorem~\ref{cb:finitecore} obstructs using the construction of
+Theorem~\ref{cp:rank} at fixed bypass for arbitrarily large $N$.
+\end{remark}

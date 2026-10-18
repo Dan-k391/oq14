@@ -23,7 +23,7 @@ Maxwell-to-operator bridge in the channel problem.
 The reproducible script \texttt{scripts/verify.py} checks the exact pair
 model, passive reciprocal perturbations, the angular monodromy, radial
 Bragg matching, the conical projection identities, and local evanescent
-flux. Its fourteen diagnostic groups use fixed seed $140014$ where
+flux. Its fifteen diagnostic groups use fixed seed $140014$ where
 random perturbations are needed.  The additional modal groups check
 the exact sphere determinant against its rational exponential form,
 the first asymptotic coefficient and nine high-$Q$ dipole poles,
@@ -32,6 +32,10 @@ The newest groups integrate the actual TE/TM radial systems for the
 growing-stack construction with step refinement, check the exact
 real-frequency dynamic-kernel bound, and independently integrate the
 conjugated angular generator through each layer of the identity loop.
+The last calculation includes both actual TE and TM interaction matrices.
+Another group computes source reaction coefficients from the actual
+regular/irregular transfer matrices of a common finite stack and checks
+their paired large-radius limit.
 They do not certify global channel
 synthesis or the continuous error bounds used in the proofs.
 All matrix tests use singular values or Hermitian eigenvalues, not tests
@@ -88,11 +92,12 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 \label{ver:lean}
 The modules \texttt{OQ14.lean}, \texttt{Maxwell.lean},
 \texttt{HCurl.lean}, \texttt{HCurlDomain.lean}, and
-\texttt{HCurlCutoff.lean} in \texttt{lean/}
+\texttt{HCurlCutoff.lean}, \texttt{WeakPoynting.lean}, and
+\texttt{WeakPoynting/Green.lean} in \texttt{lean/}
 use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Sixty-two exported theorem declarations were compiled successfully.
+Eighty-four exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -175,6 +180,26 @@ region, its field and product-rule curl extend to the whole-space
 weak-curl graph. No boundary condition on the original field or
 unrestricted zero-extension theorem is assumed.
 
+Sixteen declarations in \texttt{OQ14.WeakPoynting} construct genuine
+smooth approximation in the whole-space weak-curl graph. Convolution
+smoothness and curl commutation follow from the actual integral and
+translated compact tests. Strong continuity of $L^2$ translations gives
+convergence of their Bochner bump averages. An absolute product-space
+estimate justifies Fubini and identifies these averages with the smooth
+pointwise convolution. Explicit shrinking bumps then prove graph-norm
+convergence, without assuming a density theorem.
+
+Six declarations in \texttt{OQ14.WeakGreen} use that proved approximation
+to establish the local bilinear Green identity
+\[
+ \int \chi(\operatorname{curl}E\cdot F-E\cdot\operatorname{curl}F)
+       +\nabla\chi\cdot(E\times F)=0
+\]
+for arbitrary whole-space $H(\operatorname{curl})$ fields and compact
+$C^1$ tests. Every pairing is an actual integrable $L^2$ product.
+General open-region scattering fields still require a localization
+bridge, since they need not be globally square integrable.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -230,7 +255,12 @@ reachability or absolute-bypass theorem.
 Theorem~\ref{cc:global-control} now supplies approximate global
 reachability for every fixed finite set of TE orders, using amplified
 angular perturbations in distant positive-index layers. The complex core
-gains can be independently prescribed up to common phase. However,
+gains can be independently prescribed up to common phase.
+Theorem~\ref{cd:paired-control} also controls the paired TM transfers,
+and Theorem~\ref{cd:wall-isolation} amplifies one reflection sector while
+suppressing its opposite in a fixed $C_2$-even band. It does not estimate
+the response to a newly added inclusion or unselected angular orders.
+Separately,
 Theorem~\ref{cb:count} bounds counted dimension for any entire propagating
 Herglotz family using only its absolute bypass, without a gain bound.
 Corollary~\ref{cb:finitecore} transfers this obstruction to actual devices
@@ -239,6 +269,14 @@ Its radius threshold may depend on the band. Thus neither result controls
 nearby material or arbitrary simultaneous growth of angular band and
 radius. The bypass bridge for unrestricted physical synthesis remains
 unproved.
+Theorem~\ref{cp:rank} demonstrates why it is essential: actual
+finite positive dielectrics can have arbitrary coherent passage rank
+and unit total throughput when bypass is omitted. Section~\ref{ct:section}
+constructs a local edge-circulation profile with equal passage and return,
+and exact finite-band jets with orthonormal physical inputs. Its
+Proposition~\ref{ct:completion} retains a whole-plane $L^1$ Maxwell
+remainder as an unproved hypothesis. The static profile and illumination
+control are not substituted for that estimate.
 
 For hotspots, Theorem~\ref{hs:three-packing} supplies the finite-device
 driven construction directly, using conical points rather than an
@@ -267,7 +305,7 @@ Common positive lower bound below one & OPEN channel target & The local resource
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Scalar hotspot examples are contained in tensor classes admitting those scalar values. General vector channel closure remains open.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Sixty-two exported declarations in Section~\ref{ver:lean}, including actual differential identities, complete weak-curl graphs and interior-cutoff localization. No admitted proof or project-specific axiom. Existence, resonance, interface and scattering limits remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Eighty-four exported declarations in Section~\ref{ver:lean}, including actual differential identities, complete weak-curl graphs, cutoff localization, smooth approximation and weak Green identity. No admitted proof or project-specific axiom. Existence, resonance, interface and scattering limits remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

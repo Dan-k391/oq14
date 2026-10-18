@@ -1,0 +1,344 @@
+\section{A local edge-transducer mechanism and its remaining global bridge}
+\label{ct:section}
+
+The absolute-bypass condition permits a qualitatively different mechanism
+when $\delta>\eta$: positive circulation inside a sharp section edge may
+be accompanied by an equal negative return immediately outside it. This
+section proves an exact electrostatic cross-flux calculation and a
+finite-dimensional Maxwell jet-interpolation result for that mechanism.
+It then states the additional global estimate that would make the
+mechanism an admissible counterexample. That estimate is not proved here.
+In particular, no impressed dipole is included in the admissible material
+class and no electrostatic field is presented as an exact solution at the
+fixed nonzero frequency.
+
+\subsection{Exact local profile and physical coherent jets}
+
+Use the physical fields, the convention $e^{-i\omega t}$, and
+$Z_0=\sqrt{\mu_0/\eps_0}$. At one straight edge introduce orthonormal
+coordinates $(x,y,z)$ with the section locally $x<0$, outward normal
+$\widehat x$, tangent $\widehat y$, and
+$\widehat x\times\widehat y=\widehat z$. Fix dimensionless numbers
+$0<\rho<h$ and $1<\eps_p\leq\eps_+$. Set
+\begin{equation}\label{ct:alpha}
+ \alpha=4\pi\rho^3\frac{\eps_p-1}{\eps_p+2}>0.
+\end{equation}
+
+\begin{lemma}[PROVED: electrostatic edge cross-flux]
+\label{ct:profile}
+For $s>0$, put a dielectric sphere of radius $\rho s$ at
+$(0,0,hs)$. Its exact electrostatic exterior response to a uniform
+normal electric field $A e\widehat z$, where $A>0$ and $e\in\mathbb C$,
+has dipole moment $\eps_0\alpha s^3 A e\widehat z$.
+On the plane $z=0$ its scattered tangential electric field is
+\begin{equation}\label{ct:dipoletrace}
+ E^{\rm stat}_t(s\xi,s\upsilon,0)
+ =-\frac{3\alpha h A e}{4\pi}
+       \frac{(\xi,\upsilon)}{(\xi^2+\upsilon^2+h^2)^{5/2}}.
+\end{equation}
+Cross this field with a constant tangential magnetic jet
+$A b\widehat y$, $b\in\mathbb C$. The resulting real cross-flux
+profile is exactly
+\begin{equation}\label{ct:profileformula}
+ f_s(s\xi,s\upsilon)
+ :=\tfrac12\operatorname{Re}
+    (E^{\rm stat}_t\times A\overline b\widehat y)\cdot\widehat z
+ =-\frac{3\alpha h A^2}{8\pi}\operatorname{Re}(e\overline b)
+       \frac{\xi}{(\xi^2+\upsilon^2+h^2)^{5/2}}.
+\end{equation}
+If $q=\operatorname{Re}(e\overline b)\geq0$, then
+\begin{equation}\label{ct:profileintegrals}
+ \int_{x<0}f_s\,dx\,dy
+ =\int_{x>0}|f_s|\,dx\,dy
+ =\frac{s^2 A^2\alpha q}{4\pi h},\qquad
+ \int_{\mathbb R^2}f_s\,dx\,dy=0.
+\end{equation}
+The profile is nonnegative inside the edge and nonpositive outside.
+These are exact statements about the stated electrostatic cross-term.
+\end{lemma}
+\begin{proof}
+Center coordinates at the sphere. Write the exterior potential as
+$-Ae z+cAe(\rho s)^3z/r^3$ and the interior potential as $-dAe z$.
+Continuity of potential and normal electric displacement gives
+$d=1-c$ and $\eps_p(1-c)=1+2c$. Therefore
+$c=(\eps_p-1)/(\eps_p+2)$, proving the polarizability.
+The dipole field is
+$[3(p\cdot\widehat r)\widehat r-p]/(4\pi\eps_0 r^3)$.
+At the observation plane the center-relative vector is
+$s(\xi,\upsilon,-h)$, which gives \eqref{ct:dipoletrace}.
+Taking its cross product gives \eqref{ct:profileformula}.
+Finally,
+\[
+ \int_{\mathbb R}\frac{d\upsilon}
+ { (\xi^2+\upsilon^2+h^2)^{5/2}}
+ =\frac{4}{3(\xi^2+h^2)^2},\qquad
+ \int_{-\infty}^0\frac{-\xi\,d\xi}{(\xi^2+h^2)^2}
+ =\frac1{2h^2}.
+\]
+Together with $dx\,dy=s^2d\xi\,d\upsilon$ these prove the
+half-plane integrals. Oddness in $\xi$ proves the last identity.
+\end{proof}
+
+An electric-wall vacuum Maxwell field satisfies
+\eqref{cd:electric-wall}; in particular $E_t=H_z=0$ on the plane.
+Its normal Poynting density is identically zero there, including for
+every coherent combination of fields in that sector. We next prescribe
+the nonzero jets $E_z,H_x,H_y$ while retaining this exact cancellation.
+
+\begin{lemma}[PROVED: finite even-TE jet interpolation]
+\label{ct:jets}
+Let $p_1,\ldots,p_N$ be nonzero points of $z=0$, with
+$p_i\ne p_j$ and $p_i\ne-p_j$ for $i\ne j$. Arbitrary complex values
+of $(E_z,H_x,H_y)$ at these $N$ points can be realized by a finite
+linear combination of regular vacuum TE spherical waves with even
+angular order $l\geq2$ and even azimuthal index $m$.
+The field is electric-wall and invariant, with the vectors rotated,
+under a rotation by $\pi$ about the $z$ axis. In particular
+\begin{equation}\label{ct:partnerjets}
+ E_z(-p_j)=E_z(p_j),\qquad H_t(-p_j)=-H_t(p_j).
+\end{equation}
+The interpolating regular waves have finite physical incoming power.
+No bound uniform in the interpolation points or target jets is asserted.
+\end{lemma}
+\begin{proof}
+Consider a scalar regular Helmholtz solution $u$ that is even in $z$
+and invariant under $(x,y)\mapsto(-x,-y)$, and set
+\begin{equation}\label{ct:debye}
+ E=\nabla\times(xu)=\nabla u\times x,
+ \qquad H=\frac{\nabla\times E}{i\omega\mu_0}.
+\end{equation}
+Since $\nabla\cdot E=0$ and $(\Delta+k_0^2)E=0$, these fields
+satisfy both vacuum Maxwell equations. They have precisely the
+electric-wall and rotation symmetries just stated. Their scalar
+spherical-harmonic expansion contains only even $m$ and even $l$;
+the $l=0$ term gives zero in \eqref{ct:debye}. Thus finite truncations
+are regular TE fields of the required kind.
+
+The full tangential scalar two-jets can first be prescribed at
+$p_1,\ldots,p_N$. To see this without assuming a Runge theorem,
+write $r_t=(x,y)$ and use the entire scalar solutions
+\[
+ u_\xi(r_t,z)=\cos(\xi\cdot r_t)
+            \cos\bigl(\sqrt{k_0^2-|\xi|^2}\,z\bigr),
+ \qquad |\xi|<k_0.
+\]
+If a linear functional on those finitely many two-jets annihilates
+every $u_\xi$, its value is an exponential polynomial in $\xi$,
+vanishing on the real open disk. Its entire continuation therefore
+vanishes identically. It is the Fourier transform of the symmetrized
+finite distribution of derivatives of point masses supported at
+$p_j$ and $-p_j$. These support points are all distinct, so uniqueness
+of the Fourier transform forces every coefficient of the original
+jet functional to be zero. Finite-dimensional duality proves the
+surjectivity of the scalar jet map.
+
+For clarity, the resulting scalar jets really do prescribe the three
+Maxwell jets independently. Rotate coordinates in the plane so that
+one point is $(r,0,0)$ with $r>0$. Formula \eqref{ct:debye} gives
+\begin{equation}\label{ct:jetmap}
+ E_z=-r u_y,\qquad
+ H_x=\frac{2u_x+r u_{xx}+k_0^2r u}{i\omega\mu_0},\qquad
+ H_y=\frac{2u_y+r u_{xy}}{i\omega\mu_0}.
+\end{equation}
+Choose $u_y$ for $E_z$, then $u_{xy}$ for $H_y$, and $u_{xx}$
+for $H_x$. This gives a surjective map at each point, hence at all
+points simultaneously.
+
+Each $u_\xi$ is a finite sum of plane waves with real wavevectors
+of length $k_0$. Replace its point-supported angular measures by
+smooth, symmetrized densities on the sphere; their fields and any
+fixed finite set of derivatives converge on compact sets. Thus the
+jet map of smooth symmetric scalar Herglotz fields is onto: choose
+finitely many approximately interpolating columns close enough to
+an invertible interpolation matrix. For each of these smooth fields,
+truncate the spherical-harmonic expansion, preserving both
+symmetries. Compact derivative convergence again preserves the
+invertibility of that finite matrix. Invert it to obtain exact jets
+using one finite angular band. Its Maxwell fields are finite regular
+TE sums; their incoming spherical amplitudes have finite power.
+The parity identities give \eqref{ct:partnerjets}.
+\end{proof}
+
+\begin{lemma}[PROVED: balancing the physical input Gram matrix]
+\label{ct:gram}
+For any finite collection of target jets covered by Lemma~\ref{ct:jets},
+there are interpolants $v_1,\ldots,v_N$ in a common finite even-TE
+band whose physical incoming Gram matrix is $\lambda I_N$ for some
+$0<\lambda<\infty$. Consequently $g_j=v_j/\sqrt\lambda$ are
+orthonormal physical incoming data. All $v_j$ retain their prescribed
+jets.
+\end{lemma}
+\begin{proof}
+Start with arbitrary interpolants $u_j$ and their positive
+semidefinite incoming Gram matrix $G$. The space of finite even-TE
+regular waves has unbounded dimension, whereas the jet map has
+finite rank. Enlarge its finite band until its jet kernel contains
+an $N$-dimensional subspace orthogonal, in physical incoming power,
+to the span of the $u_j$. Choose $\lambda>\|G\|$.
+In an orthonormal basis of that kernel subspace, a matrix square
+root of $\lambda I-G$ supplies vectors $w_j$ with Gram matrix
+$\lambda I-G$. They have zero prescribed jets and are orthogonal
+to all $u_j$. Hence $v_j=u_j+w_j$ has the same jets as $u_j$ and
+Gram matrix $G+(\lambda I-G)=\lambda I$.
+\end{proof}
+
+\subsection{Finite-rank diagonal edge circulation}
+
+Choose distinct points $p_j=(L/2,y_j,0)$ on the interior of the
+right edge of the square, with $-L/2<y_j<L/2$. Their partners
+$-p_j$ lie on the left edge. Let $\ell_0=k_0^{-1}$.
+By Lemmas~\ref{ct:jets}--\ref{ct:gram}, take interpolants with jets
+\begin{equation}\label{ct:unitjets}
+ E_z^{v_j}(p_i)=\frac{\sqrt{Z_0}}{\ell_0}\delta_{ij},\qquad
+ H_t^{v_j}(p_i)=\frac{\widehat y}{\sqrt{Z_0}\ell_0}\delta_{ij},
+ \qquad \langle v_i,v_j\rangle_{\rm in}=\lambda\delta_{ij}.
+\end{equation}
+Physical field units are implicit in the unit-power normalization
+of this display. Its relevant product is exactly $1/\ell_0^2$.
+
+For each fixed amplification $A>0$, Theorem~\ref{cd:wall-isolation}
+can amplify every even TE order in this finite band by the same
+factor $A\sqrt\lambda$, up to a common phase and arbitrarily small
+compact derivative errors. Applied to the orthonormal inputs
+$g_j=v_j/\sqrt\lambda$, its ideal core jets at $p_j$ are
+\begin{equation}\label{ct:amplifiedjets}
+ E_z(c;p_j)=\frac{A\sqrt{Z_0}}{\ell_0}c_j,\qquad
+ H_t(c;p_j)=\frac{A}{\sqrt{Z_0}\ell_0}c_j\widehat y,
+ \qquad c\in\mathbb C^N.
+\end{equation}
+The original radial-device background has zero plane flux exactly,
+at every finite stage, by reflection symmetry. Compact derivative
+approximation concerns its illumination only, before adding spheres.
+
+For $a>0$ set $s=a\ell_0$ and $A=t/a$, with fixed $t>0$.
+At each of $p_j$ and $-p_j$, put the electrostatic cross-profile of
+Lemma~\ref{ct:profile}, with the local outward/tangent directions
+$(\widehat x,\widehat y)$ on the right and
+$(-\widehat x,-\widehat y)$ on the left. Use the jets
+\eqref{ct:amplifiedjets}, and denote the sum of these $2N$ profiles
+by $F_a(c;x,y)$. Thus $F_a$ is defined on the whole plane by
+explicit functions; it is quadratic in $c$ and diagonal in the
+coefficients $|c_j|^2$.
+
+\begin{proposition}[PROVED: coherent local-model passage and absolute bypass]
+\label{ct:model}
+For each fixed finite $N$, the profiles just defined obey
+\begin{equation}\label{ct:modellimits}
+ \sup_{\|c\|=1}\left|\int_D F_a(c)\,dA-p_0\right|\longrightarrow0,
+ \qquad
+ \sup_{\|c\|=1}\left|\int_{\mathbb R^2\setminus D}|F_a(c)|\,dA-p_0\right|
+       \longrightarrow0,
+ \qquad p_0=\frac{\alpha t^2}{2\pi h}.
+\end{equation}
+Also $\int_{\mathbb R^2}F_a(c)\,dA=0$ exactly. The geometric spheres
+associated with these profiles have radius $\rho a\ell_0$, lie
+strictly above the plane, are disjoint for sufficiently small $a$,
+and preserve the rotation by $\pi$ symmetry. Their contrasts remain
+in the fixed ordinary dielectric interval.
+\end{proposition}
+\begin{proof}
+For one point, the product in Lemma~\ref{ct:profile} is
+$q=|c_j|^2/\ell_0^2$, so its positive half-plane mass equals
+$\alpha t^2|c_j|^2/(4\pi h)$. Its partner has the same mass:
+both the local tangent and $H_t$ reverse at $-p_j$, leaving the
+scalar product and the orientation of positive interior flux unchanged.
+Summing gives $p_0\sum_j|c_j|^2$.
+
+Choose disjoint fixed disks about the $2N$ edge points, avoiding
+corners. Within each disk the square is exactly its interior
+half-plane. The rescaled profile has an integrable envelope bounded
+by a constant times $(1+\xi^2+\upsilon^2)^{-2}$, so its $L^1$ mass
+outside its disk tends to zero. More precisely its tail outside
+scaled radius $R$ is $O(R^{-2})$. On each disk retain only its own
+profile. The $L^1$ difference between this truncated sum and $F_a$
+tends to zero, uniformly for $\sum_j|c_j|^2=1$, since there are
+finitely many centers. The retained profiles have the required
+signs on the two sides. The inequality
+$\bigl||u|-|v|\bigr|\leq|u-v|$ proves both limits, including the
+absolute-value limit for arbitrary coherent $c$.
+Oddness gives zero total signed integral for every individual
+profile. Finally $h>\rho$ leaves a vacuum gap above the plane,
+and the fixed distinct centers ensure disjointness when $a$ is small.
+\end{proof}
+
+\begin{remark}[Why conditioning of the interpolation is not a bypass loss]
+\label{ct:conditioning}
+The number $\lambda$ in Lemma~\ref{ct:gram} can be large and depends
+on $N$ and the points. It is fixed before $a\downarrow0$ and is
+absorbed into the common core gain $A\sqrt\lambda$. The incoming
+data remain orthonormal. Thus the model's passage and bypass
+matrices are both $p_0 I_N$ in physical input coordinates, rather
+than matrices whose ratio deteriorates with an interpolation
+condition number. This is a finite-dimensional statement and does
+not supply a bound on the perturbed Maxwell Green operator.
+\end{remark}
+
+\subsection{The precise physical estimate still required}
+
+For each $a$, the finite-band control theorem permits choosing a
+finite radial background with vacuum core large enough that its
+unperturbed fields approximate \eqref{ct:amplifiedjets} and any
+prescribed finite number of derivatives as accurately as desired
+on a fixed neighborhood of all the edge points. The target gain
+$t\sqrt\lambda/a$ is finite for each $a$. This diagonal choice is
+legitimate for illumination. Add the $2N$ actual dielectric spheres
+to that background, and let $S_{z,a}(c)$ denote the plane flux of
+the resulting exact total scattering field for the same orthonormal
+incoming inputs. A background approximation theorem alone does
+not estimate this new field.
+
+\begin{proposition}[CONDITIONAL: a sufficient global completion estimate]
+\label{ct:completion}
+Fix $0<\tau<1$ and $0<\eta<\delta$. Choose $t$ so that the constant
+$p_0$ of \eqref{ct:modellimits} lies strictly between $\eta$ and
+$\delta$. Suppose that for each fixed $N$ one can choose the finite
+radial backgrounds and sphere sizes above so that the actual
+physical scattering fields have legitimate integrable plane fluxes
+and satisfy
+\begin{equation}\label{ct:missingestimate}
+ \sup_{\|c\|=1}
+ \|S_{z,a}(c)-F_a(c)\|_{L^1(\mathbb R^2)}\longrightarrow0.
+\end{equation}
+Take the selected output map to be the full unitary scattering map
+of each finite lossless dielectric. Then for sufficiently small $a$
+the span of those $N$ physical incoming data is counted under
+Definition~\ref{pr:count}, with the same fixed $\tau,\eta,\delta$.
+Consequently \emph{if} \eqref{ct:missingestimate} can be established
+for every finite $N$, the unrestricted finiteness target is false
+for this one admissible fixed threshold tuple.
+\end{proposition}
+\begin{proof}
+Orthonormality gives input power $\|c\|^2$; unitarity gives
+$\|Tc\|^2=\|c\|^2\geq\tau\|c\|^2$.
+Equations \eqref{ct:modellimits}--\eqref{ct:missingestimate} imply,
+uniformly for unit $c$, that actual passage tends to $p_0$ and
+actual absolute bypass tends to $p_0$. Their strict margins from
+$\eta$ and $\delta$ prove the other two counting inequalities.
+Homogeneity covers all $c$. For each member the sphere-to-plane
+gap is positive, so it supplies a source-free vacuum neighborhood
+of the section; its shrinking size is not a forbidden resource.
+\end{proof}
+
+\begin{remark}[OPEN: changing-background feedback and whole-plane error]
+\label{ct:gap}
+Estimate \eqref{ct:missingestimate} has not been proved. The exact
+isolated-sphere electrostatic polarizability and the exact finite-band
+illumination control do not imply it. Three issues remain coupled:
+the small-inclusion expansion in a background whose resonant
+amplification grows like $a^{-1}$, the source Green response of
+unselected angular orders, and the absolute flux of all correction
+fields across the entire plane, including the remote layers.
+A finite inverse for each separate device is insufficient unless
+its dependence on that varying background is controlled.
+
+The sphere volume is $O(a^3)$ and the amplified jet is $O(a^{-1})$,
+so a finite-dimensional same-parity feedback model suggests the
+small parameter $a^3a^{-2}=a$. This scaling is a diagnostic, not a
+resolvent estimate. Paired control suppresses opposite-wall
+\emph{incoming} responses in a prescribed finite band; it does not
+by itself bound the interior-source response in all bands.
+Likewise, compact field convergence and conservation of signed
+radiated power cannot replace the whole-plane absolute-value
+estimate in \eqref{ct:missingestimate}. The primary channel target
+therefore remains open after the proved local results of this section.
+\end{remark}

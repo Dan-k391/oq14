@@ -49,7 +49,8 @@ def main() -> int:
     source = project / "OQ14.lean"
     sources = sorted([*project.glob("*.lean"), *project.glob("Maxwell/**/*.lean"),
                       *project.glob("HCurl/**/*.lean"), *project.glob("HCurlDomain/**/*.lean"),
-                      *project.glob("HCurlCutoff/**/*.lean")])
+                      *project.glob("HCurlCutoff/**/*.lean"),
+                      *project.glob("WeakPoynting/**/*.lean")])
     source_text = "\n".join(path.read_text(encoding="utf-8") for path in sources)
     if re.search(r"(?m)^\s*(axiom|constant)\s|\b(sorry|admit)\b", source_text):
         raise RuntimeError("Forbidden unproved declaration found in formal source.")
@@ -104,7 +105,7 @@ def main() -> int:
         if build.exists():
             shutil.rmtree(build)
 
-    result = run("build", "OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff")
+    result = run("build", "OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting")
     text = result.stdout + f"\nCompiler exit code: {result.returncode}\n"
     (logs / "clean-build.txt").write_text(text, encoding="utf-8")
     print(result.stdout, end="")
