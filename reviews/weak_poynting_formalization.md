@@ -1,6 +1,6 @@
 # Weak-field Poynting formalization audit
 
-Status: five new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 39 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing sources, dependency pins, and repository Git state were not changed by this work.
+Status: eight new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 76 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
 
 ## Actual analytic content
 
@@ -47,7 +47,7 @@ The final theorem does not need an additional boundedness or measurability hypot
 
 ## Coverage boundaries
 
-This work closes the local distributional cross-product identity and diagonal real power-conservation step used inside the written `ch:fluxlemma`. It does **not** formalize that entire lemma: Hermitian off-diagonal polarization, W1,1 dependence of plane-integrated flux on the axial coordinate, the continuous representative, evaluation at a specified plane, and its weighted volume identity are still separate steps. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
+This work now closes the local distributional cross-product identity, diagonal real power conservation, actual L1 plane slicing and its weak axial derivative, the unique continuous representative, and its weighted endpoint/volume formula **for compact C1 transverse apertures and compact C1 axial cutoffs**. It does **not** formalize the entire written `ch:fluxlemma`: Hermitian off-diagonal polarization and its arbitrary W1-infinity aperture/cutoff regularity remain separate extensions. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
 
 The regional theorem is suitable for fields that are locally H(curl), by applying it where the field/curl belong to regional L2. An independent bundled H(curl)-loc space, restriction functor between regions, boundary tangential traces, and a global general-domain density theorem were not added.
 
@@ -62,7 +62,41 @@ Direct checks were run from `D:/oq14/lean` with the portable Lean 4.19.0 compile
 | `WeakPoynting/Poynting.lean` | `c419f2a94d9cb0d303ad7f5642b821047e06d596a765cc4df7955c6aa0bb6a78` |
 | `WeakPoynting/Local.lean` | `b15e9b8de4108e3ce597c1e228690300d2396ac13dbbb50cb0a00e106b9806dc` |
 | `WeakPoynting/Conservation.lean` | `e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f` |
+| `WeakPoynting/Slices.lean` | `7452cd9ff12b0072f5f7cea53bb76f134c898a1d503d2354a924bfcce52953b5` |
+| `WeakPoynting/Representative.lean` | `bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c` |
+| `WeakPoynting/Weighted.lean` | `ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783` |
 
-The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the four matching `green-`, `poynting-`, `local-`, and `conservation-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers all five roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, already cached in this workspace.
+The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the seven matching `green-`, `poynting-`, `local-`, `conservation-`, `slices-`, `representative-`, and `weighted-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers frozen roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, and the primitive proof imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper`, both already cached in this workspace.
 
-The next substantive continuum steps are a genuine axial slicing/W1,1 theorem for an L1 distributionally divergence-free flux, followed by its canonical continuous representative and weighted volume evaluation; then the actual trace and variational/scattering foundations required by the main Maxwell problem. These should be proved as analytic statements, not packaged into an assumed physical structure.
+## Actual plane slices, continuous representatives, and endpoint law
+
+`Slices.lean` uses the genuine volume-preserving measurable coordinate equivalence between Euclidean three-space and an axial real coordinate times a two-dimensional real plane. No product-volume normalization is assumed. Actual Fubini gives the plane integrals. The zero extension of the regional Poynting vector is globally L1, proved from the actual zero extensions of regional L2 field classes and L2 product integrability. Its distributional divergence is required only for tests supported inside the original open region; no unjustified conservation across the region's boundary is asserted.
+
+For a compact C1 aperture ψ and an open axial collar I with `I × tsupport ψ` inside Ω, `maxwell_flux_slices` proves actual L1 functions
+
+\[
+f(z)=\int_{\mathbb R^2}\psi P_z,\qquad
+g(z)=\int_{\mathbb R^2}\nabla_\perp\psi\cdot P_\perp
+\]
+
+and the genuine weak identity `∫ θ' f + θ g = 0` for every compact C1 test supported in I. The sign and the transverse term both follow from the explicitly proved tensor derivative rule. These are a.e. slice functions, not arbitrary evaluations of regional L2 representatives at a specified plane.
+
+`Representative.lean` does not assume the missing Sobolev representative theorem. It first proves that a locally integrable function with zero distributional derivative is a.e. constant: convolution with a normalized smooth bump has zero classical derivative; the classical mean-value theorem makes that convolution constant; actual a.e. differentiation convergence of shrinking bumps identifies the original function with a constant. An actual L1 primitive `∫(-∞,x] g` is continuous and has exact integral increments. Its compact-test integration by parts is derived using an absolutely integrable two-variable triangular kernel and Fubini. Subtracting this primitive leaves a zero-derivative distribution.
+
+The whole-line theorem is localized using a constructed smooth cutoff equal to one near the chosen closed interval. The distributional scalar product rule is proved by a test product, including its derivative term. No desired increment law is encoded as a hypothesis. Two continuous representatives that agree a.e. on a nondegenerate closed interval agree on its interior by positivity of Lebesgue measure on open sets and then at its endpoints by continuity. `maxwell_continuous_flux` applies all this directly to the actual regional Maxwell slices. This proves the substantive local W1,1 representative and increment content; no bundled library Sobolev type is used.
+
+`Weighted.lean` proves the distributional product rule for χf. The continuous representative theorem applied to χf, followed by uniqueness, identifies that representative with χF. Its increment law gives
+
+\[
+\int_a^b(\chi'f+\chi g)=\chi(b)F(b)-\chi(a)F(a).
+\]
+
+This avoids an assumed a.e. fundamental theorem or a nonexistent classical derivative of f at every point. Genuine finite-slab Fubini converts the integral into the volume integral of `volumeDensity`, whose equality to `∇(χψ)·P` and integrability are separately proved. `maxwell_weighted_flux` combines the continuous representative, exact increments, and left trace
+
+\[
+F(a)=-\int_{a<z\le b}\nabla(\chi\psi)\cdot P
+\]
+
+when χ(a)=1 and χ(b)=0. The distinction between half-open and open slab endpoints does not affect a volume integral, but the formal statement currently uses the actual half-open interval. The theorem proves a canonical weighted flux value, not a tangential field trace or equality of the raw plane integral at every exceptional plane.
+
+The next substantive continuum extensions are Hermitian off-diagonal flux and Lipschitz/W1-infinity test density, followed by the actual div-curl, compactness, and variational/scattering foundations required by the main Maxwell problem. They must be analytic proofs rather than assumed physical structures.

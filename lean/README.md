@@ -4,8 +4,10 @@ The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `HCurlDomain.lean`, `HCurlCutoff.lean`, `WeakPoynting.lean`, and
 `WeakPoynting/Green.lean`, `WeakPoynting/Poynting.lean`,
 `WeakPoynting/Local.lean`, `WeakPoynting/Conservation.lean`,
-`WeakPoynting/Slices.lean`, `ModalAlgebra.lean`, `RadialGreen.lean`,
-and `StaticVolume.lean`. One hundred seventy-six exported
+`WeakPoynting/Slices.lean`, `WeakPoynting/Representative.lean`,
+`WeakPoynting/Weighted.lean`, `ModalAlgebra.lean`, `ModalWronskian.lean`,
+`RadialGreen.lean`, `StaticVolume.lean`, and `LongitudinalProjection.lean`.
+Two hundred forty-five exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -45,7 +47,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all fourteen registered modules, and audits all 176
+compiler and mathlib revision, builds all eighteen registered modules, and audits all 245
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -232,16 +234,32 @@ to the actual weak Maxwell Poynting vector, they give the one-dimensional
 weak derivative of the plane-integrated aperture flux, including its
 transverse-gradient term. The zero extension is of an integrable flux;
 its divergence law is only asserted inside the original open region.
-Slices are a.e. integral functions, not pointwise trace evaluations or a
-continuous representative theorem yet.
+Slices initially are a.e. integral functions. The thirteen exports of
+`WeakPoynting/Representative.lean` derive their continuous representatives
+from genuine weak derivatives: convolution proves the zero-derivative
+constancy lemma, Fubini proves the actual integral primitive's test
+identity, and smooth localization gives the interval increment law.
+Continuity and a.e. equality determine endpoint values uniquely on every
+nondegenerate interval. The eight exports of `WeakPoynting/Weighted.lean`
+then prove the distributional product rule and weighted endpoint identity,
+and turn it into the actual three-dimensional slab integral of gradient
+cutoff dotted with real power. Both axial and transverse terms are kept.
+These are canonical scalar flux values for compact C1 apertures and
+cutoffs; general tangential H(curl) traces are not asserted.
 
 The twenty-five exports of `ModalAlgebra.lean` define the exact finite
 Riccati-Hankel Laurent expressions and prove their complex derivatives,
 the TM determinant's exponential factorization, rational pole equation,
 and the derivative condition forced by a hypothetical multiple pole.
 The degree-one Wronskian and matching-coefficient nonvanishing are proved
-directly. General-degree Wronskians, transcendence, pole existence, and
-identification with Fredholm multiplicity remain separate obligations.
+directly. The twenty-six exports of `ModalWronskian.lean` derive the
+factorial coefficient recurrence, actual radial ODE, and Wronskian -2i in
+every degree. Its normalization follows from an entire polynomial in the
+inverse coordinate, with no asymptotic or normalization premise. Matching
+coefficients cannot vanish together; the rational multiple-pole conditions
+therefore have their nonvanishing hypotheses discharged in every degree.
+Transcendence, pole existence, and identification with Fredholm
+multiplicity remain separate obligations.
 
 The twenty-four exports of `RadialGreen.lean` prove the exact complex
 outgoing continuation and source coefficient for a real determinant-one
@@ -258,7 +276,12 @@ An actual orthogonal projection is shown positive. A perturbation Q of
 norm below one gives invertibility, inverse bound `1/(1-norm Q)`, and an
 error bound from the actual polarization residual. Identification of P
 with the physical longitudinal Newton/Fourier operator is not assumed or
-claimed to have been proved in this module.
+claimed to have been proved in this module. The twenty-two exports of
+`LongitudinalProjection.lean` construct the actual frequency symbol
+xi xi-transpose / |xi|^2, zero at xi=0, and its genuine vector-valued L2
+multiplier. Coordinate formula, measurability, contraction, idempotence,
+self-adjointness and positivity are proved. Physical-space Fourier
+conjugation and identification with the Newton kernel remain separate.
 
 ## Explicitly outside the formalization
 

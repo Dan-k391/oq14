@@ -96,13 +96,15 @@ The modules \texttt{OQ14.lean}, \texttt{Maxwell.lean},
 \texttt{HCurlCutoff.lean}, \texttt{WeakPoynting.lean}, and
 \texttt{WeakPoynting/Green.lean}, together with its
 \texttt{Poynting.lean}, \texttt{Local.lean}, and
-\texttt{Conservation.lean} and \texttt{Slices.lean} companions,
+\texttt{Conservation.lean}, \texttt{Slices.lean},
+\texttt{Representative.lean} and \texttt{Weighted.lean} companions,
 plus \texttt{ModalAlgebra.lean}, \texttt{RadialGreen.lean}, and
-\texttt{StaticVolume.lean} in \texttt{lean/}
+\texttt{StaticVolume.lean}, \texttt{LongitudinalProjection.lean} and
+\texttt{ModalWronskian.lean} in \texttt{lean/}
 use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-One hundred seventy-six exported theorem declarations were compiled successfully.
+Two hundred forty-five exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -210,9 +212,7 @@ $L^2$ condition or boundary condition. For the actual regional weak
 Maxwell equations with real variable coefficients, the reactive term
 is purely imaginary. The real time-averaged flux therefore has zero
 distributional divergence against every compact real $C^1$ test.
-This verifies the weak conservation step in Lemma~\ref{ch:fluxlemma};
-its continuous plane-slice representatives and trace evaluations remain
-outside this formal coverage.
+This verifies the weak conservation step in Lemma~\ref{ch:fluxlemma}.
 
 Sixteen declarations in \texttt{OQ14.FluxSlices} prove the actual
 volume-preserving coordinates separating $z$ from the transverse plane,
@@ -221,14 +221,27 @@ calculation. Applied to regional weak Maxwell fields, they establish
 the one-dimensional weak derivative relation for the aperture-integrated
 flux, retaining the transverse-gradient term. The slices are a.e.
 integral functions; no representative or evaluation trace is assumed.
+Thirteen declarations in \texttt{OQ14.FluxRepresentative} then derive
+continuous representatives from actual weak derivatives, using convolution,
+Lebesgue differentiation, the integral primitive and smooth localization.
+The increment law and endpoint uniqueness are proved. Eight declarations
+in \texttt{OQ14.WeightedFlux} prove the distributional product rule,
+weighted endpoint identity and actual three-dimensional slab formula,
+including the transverse-gradient term. These give canonical scalar flux
+values for compact $C^1$ apertures and cutoffs; they do not construct
+general tangential field traces or arbitrary Lipschitz cutoffs.
 
 Twenty-five declarations in \texttt{OQ14.ModalAlgebra} define the finite
 Riccati--Hankel Laurent expressions, prove their actual complex
 derivatives, and derive the exact TM determinant factorization, rational
 pole equation and multiple-zero derivative condition. The degree-one
 Wronskian and coefficient nonvanishing are checked explicitly. The
-general-degree identities, transcendence, pole existence and Fredholm
-multiplicity identification are not thereby formalized.
+twenty-six declarations in \texttt{OQ14.ModalWronskian} derive the
+factorial coefficient recurrence, actual radial ODE and Wronskian $-2i$
+in every degree. The normalization uses an entire inverse-coordinate
+polynomial. Matching coefficients cannot vanish together, discharging the
+general nonvanishing conditions. Transcendence, pole existence and
+Fredholm multiplicity identification are not thereby formalized.
 
 Twenty-four declarations in \texttt{OQ14.RadialGreen} verify outgoing
 continuation, the complex source coefficient, its strictly negative
@@ -242,7 +255,13 @@ inverse estimates for the actual Hilbert-space block $I+S^*PS$,
 including actual orthogonal projections, perturbations of norm below one,
 and the polarization residual error bound. Identification of the
 projection with the physical longitudinal Newton operator is still an
-analytic formalization obligation.
+analytic formalization obligation. Twenty-two declarations in
+\texttt{OQ14.LongitudinalProjection} construct the actual frequency
+symbol $\xi\xi^{\mathsf T}/|\xi|^2$ and its vector-valued $L^2$ multiplier,
+including the zero frequency. Coordinate formula, measurability,
+contraction, idempotence, self-adjointness and positivity are proved.
+Physical-space Fourier conjugation and Newton-kernel identification
+remain separate obligations.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -354,7 +373,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One hundred seventy-six declarations in Section~\ref{ver:lean}: weak Maxwell and slice identities, modal determinant and radial ODE algebra, and static inverse estimates. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two hundred forty-five declarations in Section~\ref{ver:lean}: weak Maxwell and continuous weighted flux, modal Wronskian and radial ODE algebra, static inverse and longitudinal multiplier. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

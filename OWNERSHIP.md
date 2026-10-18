@@ -61,3 +61,9 @@ and independently reviewed by the channel agent. Active disjoint formal
 work continues in WeakPoynting/Representative.lean (formal agent),
 ModalWronskian.lean (hotspot agent), and LongitudinalProjection.lean
 (channel agent). Root retains build/ledger/release ownership.
+
+Representative.lean, Weighted.lean, ModalWronskian.lean and
+LongitudinalProjection.lean are frozen and independently reviewed by root.
+Active new files are WeakPoynting/Polarization.lean (formal agent),
+ModalRational.lean (hotspot agent), FourierL2.lean (channel agent), and
+GreenKernel.lean (root). They are excluded from snapshots until reviewed.

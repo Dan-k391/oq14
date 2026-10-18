@@ -212,3 +212,43 @@ interval. The hypotheses are the ODEs, continuity and nonnegative
 coefficients, not the intended monotonicity conclusion. All twenty-four
 exports have appropriate analytic/algebraic scope, without assuming
 the complete source Green convergence theorem.
+
+## Continuous flux, weighted slabs and two exact analytic constructions
+
+Root independently read all of Representative.lean and Weighted.lean.
+The zero-distribution-derivative theorem is proved using actual smooth
+convolutions and their a.e. convergence, with a common full-measure point
+fixing the constant. The primitive is the actual integral over Iic x;
+Fubini applies to an explicitly integrable triangular kernel and gives
+the compact-test integration-by-parts identity with the correct sign.
+Smooth localization proves the local increment law. Equality of continuous
+representatives on the open interval extends to both endpoints when a<b.
+The weighted identity follows by a proved distributional product rule and
+this uniqueness; neither a classical derivative of the L1 slice nor an
+endpoint evaluation is assumed. Slab Fubini uses the actual half-open slab
+a<z<=b and retains the transverse derivative term. Regional Maxwell fields
+give all integrability and weak-derivative hypotheses. This supplies scalar
+flux values for C1 apertures; it does not assert general field traces.
+No substantive defect was found in the 13+8 exports. Frozen source hashes:
+`bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c`
+and `ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783`.
+
+Root independently read LongitudinalProjection.lean. The actual singleton
+orthogonal projection gives the stated frequency symbol, including zero;
+the symbol is measurable and dominated by the input norm. Lp construction
+and a.e. representatives supply a genuine bounded linear multiplier.
+Idempotence and self-adjointness imply positivity by an actual inner-product
+identity. No Fourier equivalence or Newton-kernel conclusion is assumed.
+No substantive defect was found in its 22 exports. Source hash:
+`fb11b48e57152f5d72ce9324cd3b490d82599aef4fbd4905ffe3c63980dc1a63`.
+
+Root independently read ModalWronskian.lean. Adjacent factorial coefficients
+give the finite-sum radial ODE with its last term canceled explicitly.
+Complex differentiation gives the zero derivative of the actual Wronskian.
+Its inverse-coordinate polynomial is entire, including the separately
+proved derivative at zero. Global constancy and its value at zero give
+the normalization -2i for every degree. Nonvanishing arguments apply at
+both z and n*z with their hypotheses checked. No transcendence, pole
+existence or Fredholm identification is inferred. No substantive defect
+was found in the 26 exports. Source hash:
+`fc553bf203757c505cad71ed013c05d872b1fac683ab24c036e4903bbbfdab54`.
