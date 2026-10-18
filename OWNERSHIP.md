@@ -73,3 +73,12 @@ are now frozen and independently reviewed. Active new files are
 WeakPoynting/Lipschitz.lean (formal agent), ModalAlgebraicity.lean
 (hotspot agent), VectorFourier.lean (channel agent), and DyadicKernel.lean
 (root). Root alone controls registration, clean snapshots and Git.
+
+The vector Fourier, gradient and closed-gradient projection, actual static
+coefficient, modal algebraicity/existence/asymptotics, dyadic pointwise
+remainder, Lipschitz test and Lipschitz aperture modules are frozen and
+reviewed. Active disjoint work continues in HeatFourier.lean (channel
+agent), ModalMatching.lean (hotspot agent), WeakPoynting/Axial.lean and
+WeakPoynting/LipschitzBoundary.lean (formal agent), and
+KernelIntegrability.lean (root). Active files stay out of clean snapshots
+until reviewed; root retains registration and Git ownership.

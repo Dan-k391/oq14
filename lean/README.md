@@ -8,7 +8,11 @@ The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `WeakPoynting/Weighted.lean`, `ModalAlgebra.lean`, `ModalWronskian.lean`,
 `RadialGreen.lean`, `StaticVolume.lean`, and `LongitudinalProjection.lean`.
 Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
-`ModalRational.lean`, and `GreenKernel.lean`. Three hundred thirty exported
+`ModalRational.lean`, `GreenKernel.lean`, `VectorFourier.lean`,
+`GradientProjection.lean`, `HelmholtzProjection.lean`, `StaticCoefficient.lean`,
+`DyadicKernel.lean`, `ModalAlgebraicity.lean`, `ModalExistence.lean`,
+`ModalAsymptotics.lean`, `WeakPoynting/Lipschitz.lean`, and
+`WeakPoynting/Aperture.lean`. Four hundred ninety-one exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -27,6 +31,7 @@ lake exe cache get Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.
 lake exe cache get Mathlib.Analysis.Convolution Mathlib.Analysis.Calculus.BumpFunction.Convolution Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
 lake exe cache get Mathlib.Geometry.Manifold.PartitionOfUnity
 lake exe cache get Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace Mathlib.Analysis.InnerProductSpace.Positive Mathlib.Analysis.Calculus.Deriv.ZPow
+lake exe cache get Mathlib.Analysis.Distribution.FourierSchwartz Mathlib.Analysis.Calculus.Rademacher Mathlib.Topology.MetricSpace.Contracting Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv Mathlib.RingTheory.Algebraic.Integral
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -48,7 +53,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all twenty-two registered modules, and audits all 330
+compiler and mathlib revision, builds all thirty-two registered modules, and audits all 491
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -267,8 +272,8 @@ every degree. Its normalization follows from an entire polynomial in the
 inverse coordinate, with no asymptotic or normalization premise. Matching
 coefficients cannot vanish together; the rational multiple-pole conditions
 therefore have their nonvanishing hypotheses discharged in every degree.
-Transcendence, pole existence, and identification with Fredholm
-multiplicity remain separate obligations.
+Transcendence and identification with Fredholm multiplicity remain separate
+obligations; actual determinant-zero existence is proved below.
 
 The seventeen exports of `ModalRational.lean` represent the actual matching
 coefficients by finite inverse-coordinate polynomials. Explicit nonzero
@@ -297,7 +302,7 @@ claimed to have been proved in this module. The twenty-two exports of
 xi xi-transpose / |xi|^2, zero at xi=0, and its genuine vector-valued L2
 multiplier. Coordinate formula, measurability, contraction, idempotence,
 self-adjointness and positivity are proved. Physical-space Fourier
-conjugation and identification with the Newton kernel remain separate.
+conjugation is proved below; identification with the Newton kernel remains separate.
 
 The twenty-three exports of `FourierL2.lean` prove actual scalar Euclidean
 Plancherel. Fourier-integral Fubini and Schwartz inversion give Parseval;
@@ -313,6 +318,67 @@ Euclidean first/second derivatives of exp(i k |x|)/(4 pi |x|), smoothness
 away from zero, the three-dimensional Helmholtz equation there, and the
 radial Sommerfeld radiation limit for real k. Its distributional source
 at the origin and convolution/radiation solvability remain separate.
+
+## Physical projection, material multiplication and kernel remainder
+
+The 31 exports of `VectorFourier.lean` construct actual vector Plancherel
+from the scalar theorem and volume-preserving coordinate maps. Its
+component integral formula identifies the Fourier transform on Schwartz
+fields. Conjugating the actual longitudinal multiplier gives a positive,
+self-adjoint contractive projection on physical vector L2.
+
+The 15 exports of `GradientProjection.lean` prove Fourier differentiation
+with the correct 2 pi i factor for actual Maxwell coordinate derivatives.
+The projection fixes Schwartz gradients, kills divergence-free Schwartz
+fields and curls, and supplies the corresponding weak orthogonality laws.
+The 16 exports of `HelmholtzProjection.lean` prove that its kernel is
+exactly the annihilator of Schwartz gradients, using actual inverse Fourier
+tests and a locally integrable spectral divergence. Consequently it is
+exactly the orthogonal projection onto the closed span of those gradients.
+Its range and variational uniqueness are proved, without a density premise.
+
+The 20 exports of `StaticCoefficient.lean` construct bounded multiplication
+by the square root of an actual measurable nonnegative susceptibility.
+Self-adjointness and its square identity give the concrete positive block
+I+sqrt(chi) P sqrt(chi), its inverse bound one, and norm-small perturbation
+and residual estimates. The perturbation remains explicit abstract data;
+its identification with a dynamic Maxwell integral operator is not assumed.
+
+The nine exports of `DyadicKernel.lean` identify the actual dyadic Hessian
+and its exact difference from the static Hessian. Cancellation of constant
+and linear terms gives the pointwise component bound 14 k^2/(4 pi |x|)
+when x is nonzero and |k||x|<=1. Local integrability, the distributional
+source term and the Newton-convolution identification remain separate.
+
+## Actual modal zeros and Lipschitz flux tests
+
+The 24 exports of `ModalAlgebraicity.lean` prove algebraicity of any
+exceptional multiple or shared nonzero determinant root for algebraic n,
+by lifting the explicit matching polynomials into the actual algebraic
+closure of Q in C. Such a root would give a nonzero algebraic number with
+algebraic exponential. No full transcendence theorem is assumed or proved.
+
+The eight exports of `ModalExistence.lean` construct actual arbitrarily
+large determinant zeros by an inverse-coordinate contraction and complex
+exponential periodicity. The proved finite exceptional set gives simple
+zeros avoiding any prescribed finite point set. The eleven exports of
+`ModalAsymptotics.lean` shrink the displacement to any positive tolerance,
+compute actual exponential centers, and prove for real n>1 simple zeros
+with negative imaginary part and arbitrarily large Re(z)/(-2 Im(z)).
+Their imaginary parts approach -log((n+1)/(n-1))/(2n). Infinite-degree
+separation and identification with full Maxwell operator poles remain open.
+
+The 16 exports of `WeakPoynting/Lipschitz.lean` extend the actual real and
+Hermitian weak Maxwell conservation identities to arbitrary compact
+Lipschitz scalar tests supported inside the region. Rademacher integration
+by parts proves derivative commutation with mollification; support control,
+uniform bounds and a.e. convergence justify the L1 limit. No test-density
+assertion is inserted as a hypothesis. The eleven exports of
+`WeakPoynting/Aperture.lean` construct actual derivatives and tensor tests
+for compact Lipschitz plane apertures, then derive integrable slice
+functions, their weak derivative, continuous canonical flux and exact
+interval increments. The axial weighted endpoint theorem still has C1
+scope in the registered package.
 
 ## Explicitly outside the formalization
 

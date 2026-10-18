@@ -72,7 +72,7 @@ Targeted searches of the pinned analysis and geometry sources did not find an ex
 
 ## Missing steps for the complete research claims
 
-1. Domain weak-curl graphs, interior cutoff/zero extension, whole-space smooth graph-norm approximation, general-open-region weak Poynting localization, and weak real power conservation are now implemented. Plane-slice representatives, trace evaluations, and boundary theory remain separate obligations. Whole-space smoothing is proved through actual convolution and its L2 identification, not supplied as a density assumption.
+1. Domain weak-curl graphs, interior cutoff/zero extension, whole-space smooth graph-norm approximation, general-open-region weak Poynting localization, and weak real power conservation are implemented. Canonical scalar plane-slice representatives are proved for C1 and compact Lipschitz apertures. General tangential field traces and boundary theory remain separate obligations. Whole-space smoothing and Lipschitz test approximation are proved through actual convolution, not supplied as density assumptions.
 2. Establish tangential traces and interface transmission, including integration by parts on bounded Lipschitz domains and the correct normal physical flux. The present compact-test theorem has no boundary trace.
 3. Construct the outgoing homogeneous Maxwell fundamental solution as a distribution, including its singular local term. Prove the volume operator mapping estimates, its small-contrast inverse, uniqueness, far-field representation, and the scattering/incident normalization identities.
 4. Prove total-field Maxwell Runge approximation from source reciprocity and unique continuation. Abstract density or compactness alone would not discharge this step.
@@ -297,3 +297,67 @@ Polarization
 `39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740`.
 The separately reviewed scalar outgoing kernel is described in
 `green_kernel.md`; its distributional source term is not yet formalized.
+
+## Actual physical projection, spectral zeros and Lipschitz tests
+
+Root independently read VectorFourier.lean, GradientProjection.lean,
+HelmholtzProjection.lean and StaticCoefficient.lean in full. The actual
+volume-preserving coordinate maps and finite coordinate L2 decomposition
+give vector Plancherel, including agreement with the Fourier integral.
+Conjugation produces the actual longitudinal projection. Schwartz
+coordinate derivatives agree with Maxwell's real Frechet derivatives;
+Fourier differentiation has the positive 2 pi i sign. The gradient and
+curl consequences therefore concern actual spatial fields.
+
+For the closed-gradient characterization, the spectral divergence is
+proved locally integrable from scalar L2 components. Inverse Fourier
+transforms of actual compact smooth scalar tests convert annihilation of
+gradients into vanishing of that distribution. This proves the exact
+kernel, closed span, orthogonal projection and variational uniqueness,
+without an assumed Helmholtz decomposition. The coefficient multiplier
+uses the actual pointwise square root; its self-adjointness, square and
+norm bound instantiate the positive inverse theorem for actual chi and P.
+The dynamic perturbation Q is still explicitly abstract norm-small data.
+No Newton-convolution identity is inferred. These 31+15+16+20 exports
+passed independent source review and targeted builds.
+
+Root independently read ModalAlgebraicity.lean, ModalExistence.lean and
+ModalAsymptotics.lean in full. Actual algebraic coefficient lifting and
+restriction of scalars prove the exceptional roots' algebraicity and
+the nonzero algebraic-exponential obstruction. No full transcendence
+principle is a hypothesis. The inverse-coordinate map sends a small
+closed disk to itself and is a contraction by an explicit denominator
+lower bound. A local analytic logarithm of the actual matching quotient
+gives exact determinant zeros near periodic exponential centers.
+Shrinking that neighborhood proves arbitrarily small displacement.
+Center real/imaginary formulas have the correct signs. Finite multiple
+roots are avoided by a modulus bound, and for real n>1 the lower-half-plane
+zeros have arbitrarily large positive frequency-to-decay ratio.
+These 24+8+11 exports neither infer avoidance of a countable union of
+shared-root sets nor identify determinant zeros with full operator poles.
+The last ModalExistence docstring's word "poles" is shorthand for its
+precisely stated determinant zeros; the review and theorem scope make the
+remaining operator step explicit. No substantive defect was found.
+
+Root independently read Lipschitz.lean and Aperture.lean in full.
+Rademacher integration by parts cancels the reflection sign in the
+mollifier identity. Uniform derivative bounds, a.e. convergence and compact
+support retention justify dominated convergence against every L1 flux.
+Actual a.e. Frechet gradients give the real and Hermitian Maxwell laws.
+For a plane aperture, the a.e. differentiability set pulls back through
+the volume-preserving coordinate decomposition. Tensor derivatives and
+weighted Fubini retain both the axial and transverse terms with their
+correct signs. The existing representative theorem then gives exact
+continuous scalar flux increments. No nonsmooth chain rule at every point
+or boundary trace is assumed. The 16+11 exports passed review and targeted
+builds. The axial weighted endpoint extension is separate active work.
+
+Root's DyadicKernel.lean was independently read by the channel agent.
+The actual Hessian linkage, static subtraction and exact two-numerator
+formula are correct. Exponential Taylor cancellation bounds the transverse
+and radial numerators by 4 and 10 times |ikr| squared. Unit coordinate
+products and |exp(ikr)|=1 give the component bound 14 k squared/(4 pi r).
+This is pointwise for real k, nonzero x and |k||x|<=1, including k=0.
+The nine exports do not assume or assert local integrability or a source
+distribution. No defect was found. All 161 new selected theorem reports
+contain exactly the standard three axioms, with no proof placeholders.

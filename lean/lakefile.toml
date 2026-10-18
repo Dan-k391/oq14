@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -49,3 +49,27 @@ name = "ModalRational"
 
 [[lean_lib]]
 name = "GreenKernel"
+
+[[lean_lib]]
+name = "VectorFourier"
+
+[[lean_lib]]
+name = "ModalAlgebraicity"
+
+[[lean_lib]]
+name = "GradientProjection"
+
+[[lean_lib]]
+name = "StaticCoefficient"
+
+[[lean_lib]]
+name = "ModalExistence"
+
+[[lean_lib]]
+name = "DyadicKernel"
+
+[[lean_lib]]
+name = "HelmholtzProjection"
+
+[[lean_lib]]
+name = "ModalAsymptotics"
