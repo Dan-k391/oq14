@@ -54,3 +54,10 @@ root. The formal agent continues in WeakPoynting/Slices.lean. The hotspot
 agent continues in the separate ModalAlgebra.lean. Root owns registration,
 counts, the claim ledger, and all Git/build/release integration. Active new
 Lean work is excluded from clean snapshot builds until frozen and reviewed.
+
+Slices.lean, ModalAlgebra.lean and RadialGreen.lean are now frozen and
+independently reviewed by root. StaticVolume.lean is root-owned, compiled,
+and independently reviewed by the channel agent. Active disjoint formal
+work continues in WeakPoynting/Representative.lean (formal agent),
+ModalWronskian.lean (hotspot agent), and LongitudinalProjection.lean
+(channel agent). Root retains build/ledger/release ownership.

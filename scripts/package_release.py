@@ -74,12 +74,14 @@ The finite three-dimensional driven and genuinely normalized modal hotspot
 theorems have complete written proofs under their stated conventions. The
 modal theorem includes arbitrary high Q, fixed real pole frequency, common
 ordinary material bounds and actual maxima in the prescribed plane patch.
-The unrestricted fixed-section channel statement remains OPEN. Lean now
-checks actual classical and compact-test Maxwell identities, distributional
-curl spaces on all space and open regions, interior cutoff localization,
-and exact wave solutions,
-alongside the operator results. Full scattering, interface and
-resonance proofs are NOT yet formalized. This is not full OQ14 closure.
+The explicitly quantified unrestricted fixed-section channel assertion is
+disproved for every fixed delta>eta>0, with the complete scattering map
+selected as output. Stronger bypass or receiving-output versions remain
+separate questions. The construction is an analytic proof, not a numerical
+many-channel simulation. Lean checks the scoped declarations listed in its
+README and build provenance, including actual weak local power conservation.
+Full scattering, interface, channel construction and resonance proofs are
+NOT yet formalized. Complete formal verification remains unfinished.
 
 The source/ directory contains all tracked sources, build instructions,
 proof reviews and research-stage evidence. Release artifacts and clean

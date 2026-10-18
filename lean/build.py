@@ -105,7 +105,7 @@ def main() -> int:
         if build.exists():
             shutil.rmtree(build)
 
-    result = run("build", "OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting")
+    result = run("build")
     text = result.stdout + f"\nCompiler exit code: {result.returncode}\n"
     (logs / "clean-build.txt").write_text(text, encoding="utf-8")
     print(result.stdout, end="")

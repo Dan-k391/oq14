@@ -1,6 +1,6 @@
 # Explicit parity-kernel transducer limit
 
-New source: `manuscript/sections/channel_transducer_limit.tex`, labels `cl:*`. This is a proved transfer lemma for the explicit limiting core kernel. Its physical radial realization is being handled independently by the channel agent.
+New source: `manuscript/sections/channel_transducer_limit.tex`, labels `cl:*`. This is a proved transfer lemma for the explicit limiting core kernel. Its physical radial realization is separately proved in `radial_green_limit.tex`, theorem `rg:physical-limit`, and the final combination is `uc:counterexample`.
 
 ## Exact normalization and kernel
 
@@ -24,9 +24,9 @@ The wall reaction field has amplitude O(B^2*||P||1)=O(1), but its tangential E v
 
 All free and regular reaction fields have transverse incoming/outgoing leading spherical amplitudes. On z=0, the cross product of any two leading transverse vectors is radial and has zero normal component. Thus their normal cross-products are O(r^(-3)), with an integrable plane tail. The far-region coefficients are O(A), O(a^2), and O(1) as appropriate, giving O(a) or smaller remainder. This controls the actual absolute normal flux over the entire plane of the explicit-kernel solution.
 
-## Remaining scope
+## Scope and subsequent physical realization
 
-The conclusion is an O(a) whole-plane flux approximation to the exact local profiles, uniform over the unit coefficient sphere. It is not yet a claim about finite physical radial backgrounds. The separate proof must identify their complete source Green kernel with K_B at fixed B and control their remote annulus/exterior absolute plane flux. Constants may depend on fixed N, the interpolation geometry and Gram factor, but not on shrinking a. The order of limits matters: choose a, let the remote radius tend to infinity, then select a diagonal sequence a -> 0.
+The conclusion is an O(a) whole-plane flux approximation to the exact local profiles, uniform over the unit coefficient sphere. This section alone does not claim finite physical radial realization. The separate theorem `rg:physical-limit` identifies the complete source Green kernel at fixed B and controls the remote annulus/exterior absolute plane flux. Constants here may depend on fixed N, the interpolation geometry and Gram factor, but not on shrinking a. The final theorem `uc:counterexample` preserves the necessary order: choose a, let the remote radius tend to infinity, then select a diagonal sequence a -> 0.
 
 ## Independent audit of this section
 

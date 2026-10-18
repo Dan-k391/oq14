@@ -3,8 +3,9 @@
 The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `HCurlDomain.lean`, `HCurlCutoff.lean`, `WeakPoynting.lean`, and
 `WeakPoynting/Green.lean`, `WeakPoynting/Poynting.lean`,
-`WeakPoynting/Local.lean`, and `WeakPoynting/Conservation.lean`.
-One hundred one exported
+`WeakPoynting/Local.lean`, `WeakPoynting/Conservation.lean`,
+`WeakPoynting/Slices.lean`, `ModalAlgebra.lean`, `RadialGreen.lean`,
+and `StaticVolume.lean`. One hundred seventy-six exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -22,6 +23,7 @@ lake exe cache get Mathlib.Analysis.InnerProductSpace.PiL2 Mathlib.Analysis.Calc
 lake exe cache get Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Function.LpSpace.Indicator Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 lake exe cache get Mathlib.Analysis.Convolution Mathlib.Analysis.Calculus.BumpFunction.Convolution Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
 lake exe cache get Mathlib.Geometry.Manifold.PartitionOfUnity
+lake exe cache get Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace Mathlib.Analysis.InnerProductSpace.Positive Mathlib.Analysis.Calculus.Deriv.ZPow
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -43,7 +45,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all ten registered modules, and audits all 101
+compiler and mathlib revision, builds all fourteen registered modules, and audits all 176
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -220,6 +222,43 @@ vector has zero distributional divergence against every real compact C1
 test. No differentiability of fields or coefficients is assumed. This
 formalizes the distributional conservation step of `ch:fluxlemma`, not
 its remaining plane-slice representatives or trace evaluations.
+
+## Plane slices and exact modal/radial algebra
+
+The sixteen exports of `WeakPoynting/Slices.lean` prove the actual
+volume-preserving Euclidean-three-space coordinates `(z, x, y)`, Fubini,
+L1 slice integrability, and the compact tensor-test calculation. Applied
+to the actual weak Maxwell Poynting vector, they give the one-dimensional
+weak derivative of the plane-integrated aperture flux, including its
+transverse-gradient term. The zero extension is of an integrable flux;
+its divergence law is only asserted inside the original open region.
+Slices are a.e. integral functions, not pointwise trace evaluations or a
+continuous representative theorem yet.
+
+The twenty-five exports of `ModalAlgebra.lean` define the exact finite
+Riccati-Hankel Laurent expressions and prove their complex derivatives,
+the TM determinant's exponential factorization, rational pole equation,
+and the derivative condition forced by a hypothetical multiple pole.
+The degree-one Wronskian and matching-coefficient nonvanishing are proved
+directly. General-degree Wronskians, transcendence, pole existence, and
+identification with Fredholm multiplicity remain separate obligations.
+
+The twenty-four exports of `RadialGreen.lean` prove the exact complex
+outgoing continuation and source coefficient for a real determinant-one
+transfer, including minus its imaginary part equals squared core gain.
+The source-load Wronskian cancellation and denominator lower bound are
+proved. Actual radial ODEs imply the load/state derivative identities
+and closed-interval barrier monotonicity, without a monotonicity premise.
+The complete spherical expansion and all-order Green limit are not yet
+formalized by these algebraic and differential results.
+
+The ten exports of `StaticVolume.lean` construct the actual Hilbert-space
+block `1 + S† P S` and prove its inverse norm at most one for positive P.
+An actual orthogonal projection is shown positive. A perturbation Q of
+norm below one gives invertibility, inverse bound `1/(1-norm Q)`, and an
+error bound from the actual polarization residual. Identification of P
+with the physical longitudinal Newton/Fourier operator is not assumed or
+claimed to have been proved in this module.
 
 ## Explicitly outside the formalization
 

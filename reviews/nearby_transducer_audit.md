@@ -1,6 +1,6 @@
 # Nearby positive-dielectric transducer audit
 
-Status: exact local results proved; unrestricted physical realization remains conditional. New manuscript source: `manuscript/sections/channel_transducers.tex`. Labels use `ct:*`. No existing manuscript section was changed.
+Status: exact local results proved. The physical bridge initially isolated here was subsequently discharged in `channel_transducer_limit.tex` and `radial_green_limit.tex`; the final fixed-threshold counterexample is `uc:counterexample` in `channel_unrestricted.tex`. This review retains the chronological failure analysis below. Local manuscript source: `manuscript/sections/channel_transducers.tex`, labels `ct:*`.
 
 ## Exact edge mechanism
 
@@ -20,11 +20,11 @@ Place N centers on the interior of the right square edge and their C2 partners o
 
 For any one fixed tuple 0<tau<1 and 0<eta<delta, choose eta<p0<delta. If exact perturbed physical fields converge to that profile in whole-plane L1 flux, the full unitary scattering output map gives throughput one, and the N-dimensional space is counted. The manuscript states this as a conditional proposition with the exact missing estimate displayed.
 
-## Actual open bridge
+## Bridge originally left open, then discharged separately
 
 Finite-band incident gains are not interior-source Green bounds. The background amplification grows as 1/a while particle volume is O(a^3); an isolated finite-dimensional estimate suggests the feedback parameter volume*gain^2=O(a), but this cannot hide the dependence of a device inverse on radius, gain, and unselected angular orders. The electrostatic sphere formula does not itself control the small-inclusion expansion in such a changing background. Full-plane absolute flux, including remote material layers, must also be bounded. Neither local field convergence nor signed far-field power conservation gives that estimate.
 
-The C2-even sector prevents coupling to odd-m degeneracies at a fixed l. The new paired TE/TM construction amplifies electric-wall responses and suppresses the opposite wall sector within any controlled finite band. Uncontrolled high orders remain a separate issue. Taking an individual finite-device inverse as a generic constant would leave a circular choice of particle radius and gain.
+The C2-even sector prevents coupling to odd-m degeneracies at a fixed l. The paired TE/TM construction amplifies electric-wall responses and suppresses the opposite wall sector within any controlled finite band. Taking an individual finite-device inverse as a generic constant would leave a circular choice of particle radius and gain. The later common-stack source proof resolves the previously uncontrolled high orders by exact source-coefficient estimates, centrifugal-barrier monotonicity and factorial/geometric tails; the explicit-kernel proof resolves feedback by the positive static inverse and an O(a) perturbation.
 
 Axisymmetric electric-wall TE alone is insufficient for this particular normal-dipole mechanism: its E_z vanishes. The off-plane tangential electric jet generated to first order by a constant H_t is reactive, and the leading real cross flux cancels for an isotropic sphere. Nonaxisymmetric even-m fields avoid this restriction. An axisymmetric torus alternative spreads its response around a whole circle; the square's interior angular fraction changes only by a vanishing amount across a shrinking radial lobe, giving a vanishing useful passage/bypass ratio. Neither route supplies the needed counterexample.
 
@@ -40,6 +40,6 @@ The parent identified a useful exact triangular splitting of the long identity l
 
 The parent read the complete `channel_transducers.tex` section and independently verified the electrostatic polarizability, edge orientation, half-plane mass, scalar-jet Fourier-dual argument, Debye jet formulas, finite-TE approximation, physical Gram balancing, and uniform L1 profile limit. No substantive issue was found. The conditional completion statement correctly retains the actual whole-plane Maxwell remainder as a hypothesis. The section is frozen at this local scope.
 
-## Subsequent simplification under investigation
+## Subsequent simplification and its completed proofs
 
-Only a common wall gain is needed after Gram balancing. The parent therefore replaced the independently tunable angular control route by an ordinary finite high-low quarter-wave stack with reference transfer diag(A,A^(-1)), A=q^M. For each fixed A its thickness is O(log A), independent of its radius. Taking its radius to infinity first may give an explicit parity-modified core Green kernel, with wall reaction coefficient O(A^2) and opposite-wall coefficient O(1). In that order of limits, annulus and exterior absolute plane flux may vanish as O(C_A/R); no estimate uniform in A is required for this remote-radius step. This is being treated in separate work, not assumed by the frozen local section.
+Only a common wall gain is needed after Gram balancing. The parent therefore replaced the independently tunable angular control route by an ordinary finite high-low quarter-wave stack with reference transfer diag(A,A^(-1)), A=q^M. For each fixed A its thickness is O(log A), independent of its radius. The subsequent proved result `rg:physical-limit` identifies the explicit parity-modified core Green kernel, controls all source angular orders, and proves whole-plane physical flux convergence. The result `cl:remainder` proves the O(a) self-consistent inclusion and plane-flux error for that kernel. Their diagonal combination is `uc:counterexample`. The construction uses delta>eta and the full unitary scattering output; it does not settle a reformulated small-bypass or restricted-output claim.

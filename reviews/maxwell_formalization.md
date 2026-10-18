@@ -180,3 +180,35 @@ The three frozen hashes are respectively
 and `e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f`.
 Their 5+6+6 direct compiler reports use only the standard three axioms.
 No substantive defect was found in this independent review.
+
+## Plane slices and exact radial/modal formulas
+
+Root independently read all of `WeakPoynting/Slices.lean`. The Euclidean
+coordinate equivalence preserves actual volume. Tensor compactness and
+the aperture-collar support condition are proved, as are the three
+coordinate derivatives. Fubini identifies the resulting integrals with
+the defined plane slices. The zero extension is of the L1 real flux,
+and its divergence law is tested only inside the original open region.
+The final theorem starts with actual regional weak Maxwell fields and
+gives two genuine L1 slice functions with the correct derivative sign.
+It does not assume a continuous representative or every-plane trace.
+No substantive issue was found in the sixteen exports.
+
+Root independently read all of `ModalAlgebra.lean`. Factorial Laurent
+coefficients, actual complex derivatives, the nonzero exponential
+prefactor, pole equivalence, multiple-zero derivative condition and
+degree-one Wronskian/matching nonvanishing agree with the manuscript.
+The latter conclusion does not assume the coefficient nonvanishing that
+it is intended to prove. The general-degree and transcendence obligations
+remain explicit. All twenty-five qualified exports were built locally.
+
+Root independently read all of `RadialGreen.lean`. Real determinant-one
+transfer data produce the exact complex outgoing coefficients; the
+denominator positivity and imaginary part have the right signs. Load
+cancellation uses the actual Wronskian convention. Complex derivatives
+of the radial ODE imply nonnegative load derivative and, after the
+endpoint argument, nonincreasing squared magnitudes on a closed
+interval. The hypotheses are the ODEs, continuity and nonnegative
+coefficients, not the intended monotonicity conclusion. All twenty-four
+exports have appropriate analytic/algebraic scope, without assuming
+the complete source Green convergence theorem.
