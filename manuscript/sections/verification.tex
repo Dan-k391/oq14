@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The eighteen registered modules in \texttt{lean/} cover operator estimates,
+The twenty-two registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two hundred forty-five exported theorem declarations were compiled successfully.
+Three hundred thirty exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -224,6 +224,12 @@ weighted endpoint identity and actual three-dimensional slab formula,
 including the transverse-gradient term. These give canonical scalar flux
 values for compact $C^1$ apertures and cutoffs; they do not construct
 general tangential field traces or arbitrary Lipschitz cutoffs.
+Twenty-eight declarations in \texttt{OQ14.CrossFlux} prove actual weak
+Maxwell closure under complex combinations and the physical Hermitian
+cross-input flux formula. Its integrable complex conservation, actual
+plane integrals, continuous canonical values, increments and full
+weighted slab identity are derived. Conjugate symmetry extends to all
+canonical values, including endpoints.
 
 Twenty-five declarations in \texttt{OQ14.ModalAlgebra} define the finite
 Riccati--Hankel Laurent expressions, prove their actual complex
@@ -236,6 +242,11 @@ in every degree. The normalization uses an entire inverse-coordinate
 polynomial. Matching coefficients cannot vanish together, discharging the
 general nonvanishing conditions. Transcendence, pole existence and
 Fredholm multiplicity identification are not thereby formalized.
+Seventeen declarations in \texttt{OQ14.ModalRational} construct explicit
+inverse-coordinate polynomials. Their nonzero values or first derivatives
+prove finite exceptional sets of multiple zeros at each fixed degree and
+common zeros at each distinct degree pair, for $n\notin\{0,1,-1\}$.
+Emptiness or avoidance of a countable union is not inferred.
 
 Twenty-four declarations in \texttt{OQ14.RadialGreen} verify outgoing
 continuation, the complex source coefficient, its strictly negative
@@ -256,6 +267,17 @@ including the zero frequency. Coordinate formula, measurability,
 contraction, idempotence, self-adjointness and positivity are proved.
 Physical-space Fourier conjugation and Newton-kernel identification
 remain separate obligations.
+
+Twenty-three declarations in \texttt{OQ14.FourierL2} prove scalar
+Euclidean Plancherel from Fourier-integral Fubini and Schwartz inversion.
+Compact smooth test annihilation proves density; norm-preserving extension,
+closed range and inversion prove an onto isometry. Agreement with the
+actual integral and uniqueness are checked. Seventeen declarations in
+\texttt{OQ14.GreenKernel} derive the actual gradient, Hessian and
+three-dimensional Helmholtz equation of $e^{ik|x|}/(4\pi|x|)$ away from
+zero, smoothness there, and the radial Sommerfeld limit. The
+distributional source term and Maxwell convolution solvability are
+not thereby formalized.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -367,7 +389,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two hundred forty-five declarations in Section~\ref{ver:lean}: weak Maxwell and continuous weighted flux, modal Wronskian and radial ODE algebra, static inverse and longitudinal multiplier. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three hundred thirty declarations in Section~\ref{ver:lean}: weak Maxwell and Hermitian plane flux, scalar Plancherel and outgoing-kernel calculus, modal Wronskian and finite exceptional-root sets. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

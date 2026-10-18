@@ -1,6 +1,6 @@
 # Weak-field Poynting formalization audit
 
-Status: eight new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 76 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
+Status: nine new modules compile without warnings or errors using the existing pinned Lean 4.19.0 and mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Their 104 selected `#print axioms` reports contain only `propext`, `Classical.choice`, and `Quot.sound`. There are no admissions or custom axioms in these sources. Existing frozen sources, dependency pins, and repository Git state were not changed by this work.
 
 ## Actual analytic content
 
@@ -47,7 +47,7 @@ The final theorem does not need an additional boundedness or measurability hypot
 
 ## Coverage boundaries
 
-This work now closes the local distributional cross-product identity, diagonal real power conservation, actual L1 plane slicing and its weak axial derivative, the unique continuous representative, and its weighted endpoint/volume formula **for compact C1 transverse apertures and compact C1 axial cutoffs**. It does **not** formalize the entire written `ch:fluxlemma`: Hermitian off-diagonal polarization and its arbitrary W1-infinity aperture/cutoff regularity remain separate extensions. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
+This work now closes the local distributional cross-product identity, diagonal real power conservation, actual L1 plane slicing and its weak axial derivative, the unique continuous representative, and its weighted endpoint/volume formula **for compact C1 transverse apertures and compact C1 axial cutoffs**. It does **not** formalize the entire written `ch:fluxlemma`: Hermitian off-diagonal polarization is now proved as detailed below; arbitrary W1-infinity aperture/cutoff regularity remains a separate extension. It also does not formalize the later trace/eigenvalue/channel arguments, scattering existence, radiation conditions, Runge approximation, singular-mode excitation, resonance continuation, or the final unrestricted OQ14 claim.
 
 The regional theorem is suitable for fields that are locally H(curl), by applying it where the field/curl belong to regional L2. An independent bundled H(curl)-loc space, restriction functor between regions, boundary tangential traces, and a global general-domain density theorem were not added.
 
@@ -65,8 +65,9 @@ Direct checks were run from `D:/oq14/lean` with the portable Lean 4.19.0 compile
 | `WeakPoynting/Slices.lean` | `7452cd9ff12b0072f5f7cea53bb76f134c898a1d503d2354a924bfcce52953b5` |
 | `WeakPoynting/Representative.lean` | `bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c` |
 | `WeakPoynting/Weighted.lean` | `ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783` |
+| `WeakPoynting/Polarization.lean` | `39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740` |
 
-The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the seven matching `green-`, `poynting-`, `local-`, `conservation-`, `slices-`, `representative-`, and `weighted-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers frozen roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, and the primitive proof imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper`, both already cached in this workspace.
+The corresponding compiler stdout and dependency/source provenance are in `lean/WeakPoynting/verification.txt`, `provenance.json`, and the eight matching `green-`, `poynting-`, `local-`, `conservation-`, `slices-`, `representative-`, `weighted-`, and `polarization-` evidence pairs. These are source-hash-scoped direct compilation records. The coordinator separately registers frozen roots and runs the combined clean package build and qualified axiom audit. Dependency cache preparation uses only the existing lockfile; localization additionally imports `Mathlib.Geometry.Manifold.PartitionOfUnity`, and the primitive proof imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper`, both already cached in this workspace.
 
 ## Actual plane slices, continuous representatives, and endpoint law
 
@@ -99,4 +100,27 @@ F(a)=-\int_{a<z\le b}\nabla(\chi\psi)\cdot P
 
 when χ(a)=1 and χ(b)=0. The distinction between half-open and open slab endpoints does not affect a volume integral, but the formal statement currently uses the actual half-open interval. The theorem proves a canonical weighted flux value, not a tangential field trace or equality of the raw plane integral at every exceptional plane.
 
-The next substantive continuum extensions are Hermitian off-diagonal flux and Lipschitz/W1-infinity test density, followed by the actual div-curl, compactness, and variational/scattering foundations required by the main Maxwell problem. They must be analytic proofs rather than assumed physical structures.
+The next substantive continuum extension is Lipschitz/W1-infinity test density, followed by the actual div-curl, compactness, and variational/scattering foundations required by the main Maxwell problem. They must be analytic proofs rather than assumed physical structures.
+
+
+## Hermitian cross-input extension
+
+`Polarization.lean` proves the actual weak Maxwell equations are closed under complex combinations of regional H(curl) states. The almost-everywhere L2 representative formulas for both fields and curls are checked explicitly; no pointwise representative linearity is presumed. For two states a and b it defines the physical vector
+
+\[
+p(a,b)=\tfrac14(E_a\times\overline H_b+\overline E_b\times H_a).
+\]
+
+The source proves diagonal agreement with the real time-average power, conjugate symmetry, additivity and complex linearity in the first input, and conjugate linearity in the second. Its actual polarization formula has the checked **+i** sign:
+
+\[
+p(a,b)=\tfrac14[Q(a+b)-Q(a-b)]+\tfrac i4[Q(a+ib)-Q(a-ib)].
+\]
+
+The formula is transported to actual regional L2 classes almost everywhere. L1 integrability is proved before splitting any integral. Diagonal Maxwell conservation and actual complex linear closure yield conservation of both components and then the single genuine complex compact-test integral in `crossFlux_conservation`.
+
+Complex plane slices are actual two-dimensional Lebesgue integrals of the cross product. Their decomposition into component plane integrals holds almost everywhere by genuine product-space integrability and Fubini, not at every exceptional plane by definition. `maxwell_cross_flux` constructs the complex continuous representative, proves its exact subinterval increments, and derives the complete complex weighted volume identity. `complexVolumeDensity_gradient` identifies the density with the actual gradient of the tensor cutoff dotted with the cross flux. `canonical_hermitian_symmetry` uses proved uniqueness of continuous representatives to establish conjugate symmetry at every canonical plane value, including endpoints.
+
+Normalization is c0=1; the manuscript's fixed real physical factor multiplies every flux expression. The aperture and axial cutoff remain compact C1. No scattering input map, scattering existence, general boundary trace, or W1-infinity density is assumed or proved in this module.
+
+The additional pin-preserving library audit found `LipschitzWith.integral_lineDeriv_mul_eq`, `locallyIntegrable_lineDeriv`, `memLp_lineDeriv`, and `ae_differentiableAt` in `Mathlib/Analysis/Calculus/Rademacher.lean`. These provide a genuine route to the Lipschitz extension: commute mollification with the actual weak directional derivative using that integration-by-parts theorem, preserve compact interior support, obtain uniform derivative bounds and a.e. convergence, then use dominated convergence against the actual L1 flux. Rademacher differentiation alone is not being treated as a weak-test density theorem. This next module is active and is not counted in the frozen result total.

@@ -67,3 +67,9 @@ LongitudinalProjection.lean are frozen and independently reviewed by root.
 Active new files are WeakPoynting/Polarization.lean (formal agent),
 ModalRational.lean (hotspot agent), FourierL2.lean (channel agent), and
 GreenKernel.lean (root). They are excluded from snapshots until reviewed.
+
+Polarization.lean, FourierL2.lean, ModalRational.lean and GreenKernel.lean
+are now frozen and independently reviewed. Active new files are
+WeakPoynting/Lipschitz.lean (formal agent), ModalAlgebraicity.lean
+(hotspot agent), VectorFourier.lean (channel agent), and DyadicKernel.lean
+(root). Root alone controls registration, clean snapshots and Git.

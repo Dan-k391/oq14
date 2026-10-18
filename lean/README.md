@@ -7,7 +7,8 @@ The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `WeakPoynting/Slices.lean`, `WeakPoynting/Representative.lean`,
 `WeakPoynting/Weighted.lean`, `ModalAlgebra.lean`, `ModalWronskian.lean`,
 `RadialGreen.lean`, `StaticVolume.lean`, and `LongitudinalProjection.lean`.
-Two hundred forty-five exported
+Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
+`ModalRational.lean`, and `GreenKernel.lean`. Three hundred thirty exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -47,7 +48,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all eighteen registered modules, and audits all 245
+compiler and mathlib revision, builds all twenty-two registered modules, and audits all 330
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -247,6 +248,14 @@ cutoff dotted with real power. Both axial and transverse terms are kept.
 These are canonical scalar flux values for compact C1 apertures and
 cutoffs; general tangential H(curl) traces are not asserted.
 
+The twenty-eight exports of `WeakPoynting/Polarization.lean` prove actual
+regional weak Maxwell closure under complex combinations and the physical
+Hermitian cross-input flux formula, sesquilinearity, diagonal agreement,
+and conjugate symmetry. Integrable complex conservation yields actual
+complex plane slices, continuous canonical values, exact increments and
+the full weighted volume formula. Hermitian symmetry holds at every
+canonical plane value, including endpoints. Cutoffs still have C1 scope.
+
 The twenty-five exports of `ModalAlgebra.lean` define the exact finite
 Riccati-Hankel Laurent expressions and prove their complex derivatives,
 the TM determinant's exponential factorization, rational pole equation,
@@ -260,6 +269,13 @@ coefficients cannot vanish together; the rational multiple-pole conditions
 therefore have their nonvanishing hypotheses discharged in every degree.
 Transcendence, pole existence, and identification with Fredholm
 multiplicity remain separate obligations.
+
+The seventeen exports of `ModalRational.lean` represent the actual matching
+coefficients by finite inverse-coordinate polynomials. Explicit nonzero
+polynomial obstructions prove that the multiple nonzero zeros at each
+fixed degree form a finite set, and that the common nonzero zeros of each
+distinct degree pair form a finite set, for n outside 0,+1,-1. Neither
+emptiness nor avoidance of the countable union is inferred.
 
 The twenty-four exports of `RadialGreen.lean` prove the exact complex
 outgoing continuation and source coefficient for a real determinant-one
@@ -282,6 +298,21 @@ xi xi-transpose / |xi|^2, zero at xi=0, and its genuine vector-valued L2
 multiplier. Coordinate formula, measurability, contraction, idempotence,
 self-adjointness and positivity are proved. Physical-space Fourier
 conjugation and identification with the Newton kernel remain separate.
+
+The twenty-three exports of `FourierL2.lean` prove actual scalar Euclidean
+Plancherel. Fourier-integral Fubini and Schwartz inversion give Parseval;
+compact smooth test annihilation proves density. The norm-preserving
+extension is proved onto by inversion and closed isometric range.
+Agreement with the actual Fourier integral on Schwartz functions and
+uniqueness are checked. Its convention is exp(-2 pi i inner(x,xi)).
+Vector lifting and identification with the physical Newton kernel are
+not conclusions of the scalar module.
+
+The seventeen exports of `GreenKernel.lean` prove actual radial and
+Euclidean first/second derivatives of exp(i k |x|)/(4 pi |x|), smoothness
+away from zero, the three-dimensional Helmholtz equation there, and the
+radial Sommerfeld radiation limit for real k. Its distributional source
+at the origin and convolution/radiation solvability remain separate.
 
 ## Explicitly outside the formalization
 

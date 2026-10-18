@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -40,3 +40,12 @@ name = "LongitudinalProjection"
 
 [[lean_lib]]
 name = "ModalWronskian"
+
+[[lean_lib]]
+name = "FourierL2"
+
+[[lean_lib]]
+name = "ModalRational"
+
+[[lean_lib]]
+name = "GreenKernel"

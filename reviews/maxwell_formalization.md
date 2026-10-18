@@ -252,3 +252,48 @@ both z and n*z with their hypotheses checked. No transcendence, pole
 existence or Fredholm identification is inferred. No substantive defect
 was found in the 26 exports. Source hash:
 `fc553bf203757c505cad71ed013c05d872b1fac683ab24c036e4903bbbfdab54`.
+
+## Fourier completion, rational spectral obstructions and cross flux
+
+Root independently read FourierL2.lean in full, in addition to the hotspot
+agent's independent audit. Fourier conjugation and Fubini have the correct
+sign convention. Schwartz inversion supplies Parseval. Compact smooth
+functions are actually constructed as Schwartz functions, with bounded
+weighted derivatives, and the test annihilator theorem proves dense L2
+range. The Fourier map on that range preserves its inherited L2 norm.
+Continuous extension, dense-image inversion and closed isometric range
+prove an onto scalar L2 isometry; integral agreement and uniqueness are
+proved. There is no assumed Plancherel equivalence or density premise.
+The 23-export scope is scalar Euclidean L2. Vector lifting and physical
+Newton-kernel identification are still separate. No defect found.
+
+Root independently read ModalRational.lean. The explicit inverse-coordinate
+polynomials represent the matching coefficients with nonzero arguments.
+Differentiating the exact rational identity yields a polynomial obstruction
+for multiple zeros. Its value at zero is nonzero for n outside 0,+1,-1.
+The cross-degree separation polynomial is nonzero by its constant and first
+derivative coefficients, with l(l+1) distinct for distinct natural degrees.
+Finite polynomial root sets give the stated finite exceptional sets. This
+does not imply that the sets are empty, or that the countable union over
+all degrees avoids a chosen pole. All 17 exports preserve that distinction.
+No defect found.
+
+Root independently read Polarization.lean in full. Actual Lp representative
+identities prove weak Maxwell closure under complex combinations. The
+physical Hermitian cross product, its 1/4 normalization and +i polarization
+sign agree with linearity in the first input. Real/imaginary conservation
+and integrability give a genuine complex compact-test identity. Fubini
+decompositions are asserted a.e. where required. Component representative
+theorems give complex continuous scalar plane values, increments and the
+complete weighted volume identity. Uniqueness extends conjugate symmetry
+to canonical endpoint values. No arbitrary boundary trace or Lipschitz-test
+extension is asserted. No defect found in the 28 selected exports.
+
+Hashes: FourierL2
+`05d8ddafe4a06231e854a6d816f4b1156ff9fdcb9ee7c9a1e37c1de4af3759e7`;
+ModalRational
+`a048238309504620781a29a8ecf9aacf437ff04ff29d0f13164d4019b54fd0a9`;
+Polarization
+`39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740`.
+The separately reviewed scalar outgoing kernel is described in
+`green_kernel.md`; its distributional source term is not yet formalized.
