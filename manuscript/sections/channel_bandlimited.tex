@@ -1,0 +1,329 @@
+\section{A flux-only count for globally propagating vacuum fields}
+\label{cb:section}
+
+This section gives a second kind of restricted channel theorem: the entire
+planar fields must arise from propagating vacuum Herglotz waves. Their
+amplitudes may be arbitrarily large relative to the chosen input norm.
+Absolute bypass then supplies a finite dimension bound without an electric
+or magnetic field-resource bound. The conclusion is not an area law and
+does not apply to general dielectric fields or local evanescent solutions.
+It also identifies an obstruction to completing a remote radial-control
+construction by sending controls to infinity around a fixed regular-wave
+target.
+
+\subsection{An explicit scalar observation estimate}
+
+Use the Fourier convention
+$\widehat f(\xi)=\int f(x)e^{-i\xi\cdot x}\,dx$.
+For $\kappa,L>0$, define the explicit numbers
+\begin{equation}
+ n=2+\lceil4e\kappa L\rceil,\qquad
+ C_{\kappa,L}=2\left[1+2n(16e)^{n-1}\right].
+ \label{cb:observationconstant}
+\end{equation}
+Here $e$ in the numerical constants is the base of the natural logarithm.
+
+\begin{lemma}[PROVED: observation outside an interval]
+\label{cb:onedimensional}
+If $f\in L^1(\mathbb R)$ and
+$\operatorname{supp}\widehat f\subset[-\kappa,\kappa]$, then, for
+$I=(-L/2,L/2)$,
+\begin{equation}
+ \|f\|_{L^1(\mathbb R)}
+ \leq C_{\kappa,L}\|f\|_{L^1(\mathbb R\setminus I)}.
+ \label{cb:onedimensionalbound}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Fourier inversion applies because $\widehat f$ is bounded and compactly
+supported. In particular $f$ has a smooth representative, and
+\begin{equation}
+ \|f^{(j)}\|_\infty
+ \leq\frac{\kappa^{j+1}}{\pi(j+1)}\|f\|_1
+ \quad(j\geq0).
+ \label{cb:onedimensionalderivative}
+\end{equation}
+Write $F=\|f\|_1$ and $G=\|f\|_{L^1(\mathbb R\setminus I)}$.
+In the adjacent interval $[L/2,3L/2]$, take the $n$ subintervals
+\begin{equation}
+ J_j=\left[L/2+jL/n,\ L/2+(j+1/2)L/n\right],
+ \qquad 0\leq j<n.
+ \label{cb:nodeslots}
+\end{equation}
+Each has length $h=L/(2n)$. Averaging gives a point $x_j\in J_j$ with
+$|f(x_j)|\leq G/h=2nG/L$. For $j>i$,
+$x_j-x_i\geq(j-i)h$. Let $P$ be the polynomial of degree at most
+$n-1$ interpolating these values. For $x\in I$, all distances
+$|x-x_j|$ are at most $2L$, so its Lagrange formula gives
+\begin{align}
+ \sum_{j=0}^{n-1}
+  \left|\prod_{i\ne j}\frac{x-x_i}{x_j-x_i}\right|
+ &\leq\frac{(4n)^{n-1}2^{n-1}}{(n-1)!}
+ \leq(16e)^{n-1},\notag\\
+ |P(x)|&\leq\frac{2n}{L}(16e)^{n-1}G.
+ \label{cb:lagrangebound}
+\end{align}
+The last inequality uses $m!\geq(m/e)^m$ with $m=n-1\geq1$.
+The divided-difference integral remainder, obtained by repeated integration
+of the fundamental theorem of calculus, applies also to complex-valued $f$:
+\begin{equation}
+ |f(x)-P(x)|\leq\frac{(2L)^n}{n!}\|f^{(n)}\|_\infty.
+ \label{cb:interpolationremainder}
+\end{equation}
+It uses derivative values only on the real convex hull of the nodes and $x$;
+no complex mean-value theorem is being assumed.
+Integrating over $I$ and using \eqref{cb:onedimensionalderivative},
+\begin{equation}
+ \|f\|_{L^1(I)}
+ \leq2n(16e)^{n-1}G+
+    \frac{\kappa L}{\pi(n+1)}\frac{(2\kappa L)^n}{n!}F.
+ \label{cb:absorption}
+\end{equation}
+Our choice $n\geq4e\kappa L$ implies
+$(2\kappa L)^n/n!\leq2^{-n}$. Hence the coefficient of $F$ is
+at most $2^{-n}/(4e\pi)<1/2$. Add $G$ to both sides of
+\eqref{cb:absorption} and absorb this term to obtain
+\eqref{cb:onedimensionalbound}.
+\end{proof}
+
+\begin{corollary}[PROVED: planar observation outside the fixed square]
+\label{cb:planarobservation}
+Let $D=(-L/2,L/2)^2$. If $f\in L^1(\mathbb R^2)$ and
+$\operatorname{supp}\widehat f\subset\{\xi:|\xi|\leq\kappa\}$, then
+\begin{equation}
+ \|f\|_{L^1(\mathbb R^2)}
+ \leq C_{\kappa,L}\|f\|_{L^1(\mathbb R^2\setminus D)},\qquad
+ \|\nabla f\|_\infty
+ \leq\frac{\kappa^3}{6\pi}\|f\|_1.
+ \label{cb:planarestimates}
+\end{equation}
+\end{corollary}
+\begin{proof}
+Almost every horizontal slice is in $L^1(\mathbb R)$ and has one-dimensional
+Fourier support in $[-\kappa,\kappa]$. To justify the support statement,
+test its partial Fourier transform against a smooth function supported
+outside that interval. Fourier transformation in the second variable gives
+zero by the global support assumption; injectivity and Fubini give zero for
+almost every slice. A countable dense collection of tests suffices.
+Apply Lemma~\ref{cb:onedimensional} on these slices and integrate in the
+second variable. The observed strip $\{|x|\geq L/2\}$ is contained in
+$\mathbb R^2\setminus D$, proving the first assertion. For the second,
+Fourier inversion and $|\widehat f|\leq\|f\|_1$ give
+\begin{equation}
+ |\nabla f(x)|\leq\frac{\|f\|_1}{(2\pi)^2}
+       \int_{|\xi|\leq\kappa}|\xi|\,d\xi
+   =\frac{\kappa^3}{6\pi}\|f\|_1.
+ \label{cb:planarderivative}
+\end{equation}
+\end{proof}
+
+\subsection{Finite positive trace from actual pointwise flux}
+
+\begin{theorem}[PROVED: channel finiteness from propagating bandwidth and bypass]
+\label{cb:count}
+Let $W$ be a complex linear input space equipped with a Hilbert norm. Suppose
+its electric and magnetic fields depend linearly on the input, and are
+entire regular vacuum Maxwell Herglotz fields at real wavenumber $k>0$.
+There is no assumed bound on their Herglotz density norms in terms of
+$\|a\|$. Suppose every coherent $a\in W$ satisfies
+\begin{equation}
+ P_D(a)=\int_Ds_a\geq p\|a\|^2,\qquad
+ \int_{\mathbb R^2\setminus D}|s_a|\leq\delta\|a\|^2,
+ \quad
+ s_a=\tfrac12\operatorname{Re}(E_a\times\overline{H_a})\cdot\widehat z,
+ \label{cb:fluxhypotheses}
+\end{equation}
+where $D=(-L/2,L/2)^2$, $p>0$, and $\delta\geq0$. Set $\kappa=2k$ and
+$A=L^2$. Then
+\begin{equation}
+ \dim W\leq\frac{A\kappa^2 C_{\kappa,L}\delta}{\pi p}
+          =\frac{4Ak^2 C_{2k,L}\delta}{\pi p}.
+ \label{cb:dimension}
+\end{equation}
+If $\delta=0$, in fact $W=\{0\}$. For a counted physical subspace one
+may take $p=\eta\tau$; no condition $\delta<\eta\tau$ is needed here.
+\end{theorem}
+\begin{proof}
+On the plane each electric and magnetic component is the Fourier transform
+of a finite complex measure supported in the transverse disk of radius $k$.
+Indeed, push its spherical Herglotz density forward under
+$d\mapsto kd_\perp$; the measure is finite because $L^2(S^2)\subset L^1(S^2)$.
+Products of a component and a conjugate component correspond to convolution
+with a reflected conjugate measure. Thus
+\begin{equation}
+ \operatorname{supp}\widehat{s_a}\subset\{|\xi|\leq2k\}.
+ \label{cb:fluxbandwidth}
+\end{equation}
+The fields are continuous, hence $s_a$ is integrable on the bounded square.
+Its assumed absolute bypass implies global $L^1$ integrability. In particular,
+global flux integrability is not being inferred from an arbitrary
+$L^2$ Herglotz density alone.
+
+Corollary~\ref{cb:planarobservation} now gives
+\begin{equation}
+ \|s_a\|_1\leq C_{\kappa,L}\delta\|a\|^2,\qquad
+ |s_a(x)|\leq\frac{\kappa^2 C_{\kappa,L}\delta}{4\pi}\|a\|^2.
+ \label{cb:fluxcontrol}
+\end{equation}
+The pointwise bound follows from Fourier inversion, since the frequency
+disk has area $\pi\kappa^2$ and $|\widehat{s_a}|\leq\|s_a\|_1$.
+This controls the absolute flux \emph{inside} $D$ as well as outside it;
+the signed passage alone would not do so.
+
+Restrict to an arbitrary finite-dimensional input subspace $V\subset W$
+of dimension $N$. At each point $x$, write its Hermitian normal-flux form
+as $s_a(x)=\langle a,Q(x)a\rangle$. This form factors through the linear map
+\begin{equation}
+ a\longmapsto\bigl(E_{a,x}(x),E_{a,y}(x),H_{a,x}(x),H_{a,y}(x)\bigr)
+       \in\mathbb C^4.
+ \label{cb:pointmap}
+\end{equation}
+Consequently $\operatorname{rank}Q(x)\leq4$, and
+\eqref{cb:fluxcontrol} bounds its operator norm by
+$\kappa^2 C_{\kappa,L}\delta/(4\pi)$. Thus
+\begin{equation}
+ \operatorname{Tr}Q(x)\leq\operatorname{Tr}(Q(x))_+
+       \leq4\|Q(x)\|
+       \leq\frac{\kappa^2 C_{\kappa,L}\delta}{\pi}.
+ \label{cb:pointtrace}
+\end{equation}
+For an orthonormal basis $a_1,\ldots,a_N$ of $V$, the passage hypothesis gives
+\begin{equation}
+ pN\leq\sum_{j=1}^NP_D(a_j)
+    =\int_D\operatorname{Tr}Q(x)\,dx
+    \leq\frac{A\kappa^2 C_{\kappa,L}\delta}{\pi}.
+ \label{cb:integratedtrace}
+\end{equation}
+Only a finite sum is interchanged with integration. This proves
+\eqref{cb:dimension}, including infinite-dimensional $W$ by restriction
+to finite-dimensional subspaces.
+If $\delta=0$, \eqref{cb:fluxcontrol} gives $s_a=0$, and positive passage
+excludes every nonzero input.
+\end{proof}
+
+\begin{remark}[Scope of the explicit estimate]
+\label{cb:scope}
+This is a flux-resource estimate, not a field-energy estimate. It permits
+unbounded electric and magnetic field norms and arbitrary coherent
+interference. The explicit observation constant grows exponentially in
+$kL$, and the resulting bound is not the proposed area scaling.
+Neither local vacuum Maxwell equations nor the existence of an entire
+extension alone implies \eqref{cb:fluxbandwidth}: entire solutions with
+evanescent transverse content can grow in the normal direction and fall
+outside the propagating Herglotz class. The earlier local packet examples
+therefore do not contradict this theorem. General fields on a plane
+intersecting a dielectric also fall outside its hypotheses.
+\end{remark}
+
+\subsection{The limitation of moving controls to infinity}
+
+\begin{lemma}[PROVED: uniform tails in a fixed regular-wave band]
+\label{cb:finitetail}
+Fix a positive integer $J$, and let $\mathcal F_J$ be the real linear space
+of planar Hermitian cross-flux densities of regular vacuum vector spherical
+waves with angular orders $1\leq l\leq J$, both polarizations and all
+azimuthal indices. Then $\mathcal F_J$ is finite dimensional and contained
+in $L^1(\mathbb R^2)$. For every $\epsilon>0$ there is a finite radius
+$R_{J,\epsilon}$ such that
+\begin{equation}
+ \int_{|x|>R_{J,\epsilon}}|f(x)|\,dx
+       \leq\epsilon\|f\|_1\qquad(f\in\mathcal F_J).
+ \label{cb:uniformtail}
+\end{equation}
+\end{lemma}
+\begin{proof}
+There are finitely many vector waves, so their Hermitian cross-fluxes span
+a finite-dimensional function space. They are smooth near the origin.
+Their finite spherical Hankel formulas give, uniformly in direction,
+\begin{equation}
+ \begin{split}
+ E(r\widehat x)&=r^{-1}\bigl(e^{ikr}A_+(\widehat x)
+                         +e^{-ikr}A_-(\widehat x)\bigr)+O(r^{-2}),\\
+ H(r\widehat x)&=(Z_0r)^{-1}\widehat x\times
+                 \bigl(e^{ikr}A_+(\widehat x)
+                         -e^{-ikr}A_-(\widehat x)\bigr)+O(r^{-2}),
+ \end{split}
+ \label{cb:regularasymptotic}
+\end{equation}
+with $A_\pm\cdot\widehat x=0$. For any pair of such waves the leading
+cross-Poynting vector is radial, by
+$A\times(\widehat x\times\overline B)
+=\widehat x(A\cdot\overline B)$ for transverse $A,B$.
+On the measurement plane its normal component therefore vanishes.
+Each cross-flux is $O(r^{-3})$, which is integrable in the two-dimensional
+plane. For every fixed $f\in\mathcal F_J$ its $L^1$ tail tends to zero.
+The unit sphere of the actual function space $\mathcal F_J$, with its
+$L^1$ norm, is compact. The tail functionals are all Lipschitz with
+constant one in that norm. A finite net of the unit sphere consequently
+makes this convergence uniform, proving \eqref{cb:uniformtail}.
+\end{proof}
+
+\begin{corollary}[PROVED: finite-band control beyond a sufficiently large vacuum core]
+\label{cb:finitecore}
+Fix $J$ and choose
+$R_J\geq L/\sqrt2$ so that \eqref{cb:uniformtail} holds with
+$\epsilon=1/(2C_{2k,L})$. Consider any device whose material is outside
+the ball $B_{R_J}$ and whose fields on its counted input space, within that
+ball, are linear combinations of regular vacuum vector waves of orders
+$l\leq J$. If the actual fields satisfy \eqref{cb:fluxhypotheses}, then
+\begin{equation}
+ \dim W\leq\frac{2A(2k)^2C_{2k,L}\delta}{\pi p}.
+ \label{cb:finitecorecount}
+\end{equation}
+There is no bound on the coefficients or gains in this finite band. The
+radius threshold $R_J$ may depend on the band, while the displayed count
+does not.
+\end{corollary}
+\begin{proof}
+Extend each regular-wave combination to an entire vacuum field, and let
+$f_a\in\mathcal F_J$ be its plane flux. It agrees with the actual flux in
+the radius-$R_J$ disk. Corollary~\ref{cb:planarobservation} and the uniform
+tail estimate imply
+\begin{align}
+ \|f_a\|_1
+ &\leq C_{2k,L}\int_{\mathbb R^2\setminus D}|f_a|\notag\\
+ &\leq C_{2k,L}\int_{\{|x|\leq R_J\}\setminus D}|s_a|
+           +\tfrac12\|f_a\|_1
+ \leq C_{2k,L}\delta\|a\|^2+\tfrac12\|f_a\|_1.
+ \label{cb:tailabsorption}
+\end{align}
+Hence $\|f_a\|_1\leq2C_{2k,L}\delta\|a\|^2$.
+The pointwise Fourier and rank-four trace argument in
+\eqref{cb:pointtrace}--\eqref{cb:integratedtrace} applies with this doubled
+constant, while passage is unchanged on $D$. This proves
+\eqref{cb:finitecorecount}.
+\end{proof}
+
+\begin{corollary}[PROVED under explicit convergence: fixed-target remote-control obstruction]
+\label{cb:remotelimit}
+Let a sequence of physical devices be vacuum on balls with radii tending
+to infinity. Identify a fixed finite-dimensional normed input space $W$
+for the sequence. Assume that, for every $a\in W$, its electric and magnetic
+fields converge uniformly on compact subsets of the measurement plane
+to an entire propagating vacuum Herglotz family $(E_a^0,H_a^0)$.
+If all devices satisfy \eqref{cb:fluxhypotheses} with the same $p,\delta$, then
+their fixed input dimension obeys \eqref{cb:dimension}.
+\end{corollary}
+\begin{proof}
+Compact uniform convergence gives convergence of the flux on $D$, so
+$\int_Ds_a^0\geq p\|a\|^2$. Pointwise convergence on the complement and
+Fatou's lemma give
+$\int_{\mathbb R^2\setminus D}|s_a^0|\leq\delta\|a\|^2$.
+The limit satisfies all hypotheses of Theorem~\ref{cb:count}.
+\end{proof}
+
+\begin{remark}[OPEN: varying targets and nearby material]
+\label{cb:remotescope}
+The convergence and propagating-limit hypotheses in
+Corollary~\ref{cb:remotelimit} are essential parts of its statement.
+Finite-band transfer control, by itself, supplies no global bypass estimate.
+Allowing the angular band to grow with the remote-control radius, together
+with changing coefficients, can produce local superoscillatory limits with
+large vacuum tails beyond that radius. No uniform compactness or global
+Fourier-support claim for such sequences is made here. Changing coefficients
+alone in a fixed band does not evade Corollary~\ref{cb:finitecore} once its
+radius threshold is reached. Likewise this argument does not constrain
+devices whose material remains near the section. It proves an obstruction
+to a fixed-target remote-control completion, while the unrestricted
+ordinary-dielectric channel target remains open.
+\end{remark}

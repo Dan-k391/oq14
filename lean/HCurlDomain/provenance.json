@@ -1,0 +1,126 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "lake": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "source_sha256": "c08ecadd833685c6cf132b36268e541119c8da448f218274153be988d53b69bb",
+  "source_hashes": {
+    "HCurl.lean": "b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926",
+    "HCurlDomain.lean": "3ade27a9c21ec58e4650dc6943eb0216f99a8196a424b1569cb92e033a3978c6",
+    "Maxwell.lean": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4",
+    "OQ14.lean": "c08ecadd833685c6cf132b36268e541119c8da448f218274153be988d53b69bb"
+  },
+  "manifest_sha256": "ecf76f27988f72367b80b1b595f05d7151cbfe6ad70f20a596806d28290a4b11",
+  "source_repository": {
+    "commit": "d56306f5b94e2fd5bc3a14380fb31b26be45cb88",
+    "dirty": true,
+    "captured": "before compilation"
+  },
+  "installed_dependencies": [
+    {
+      "name": "mathlib",
+      "revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "plausible",
+      "revision": "77e08eddc486491d7b9e470926b3dbe50319451a",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "c4919189477c3221e6a204008998b0d724f49904",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "f5d04a9c4973d401c8c92500711518f7c656f034",
+      "tracked_files_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+      "tracked_files_clean": true
+    }
+  ],
+  "root_build_cleaned": true,
+  "pinned_dependency_cache_retained": true,
+  "compiler_exit_code": 0,
+  "checked_theorems": [
+    "OQ14.DomainCurl.classical_hasWeakCurl",
+    "OQ14.DomainCurl.field_projection_injective",
+    "OQ14.DomainCurl.graph_closed",
+    "OQ14.DomainCurl.graph_norm",
+    "OQ14.DomainCurl.hasWeakCurl_iff_integral",
+    "OQ14.DomainCurl.hcurl_complete",
+    "OQ14.DomainCurl.testPair_integrable",
+    "OQ14.DomainCurl.testPair_integral",
+    "OQ14.DomainCurl.tests_separate",
+    "OQ14.DomainCurl.weakCurl_limit",
+    "OQ14.DomainCurl.weakCurl_unique",
+    "OQ14.DomainCurl.weak_divergence_curl",
+    "OQ14.Maxwell.classical_maxwell_weak_form",
+    "OQ14.Maxwell.complex_poynting_identity",
+    "OQ14.Maxwell.curl_conj",
+    "OQ14.Maxwell.curl_gradient",
+    "OQ14.Maxwell.curl_integration_by_parts",
+    "OQ14.Maxwell.divergence_cross",
+    "OQ14.Maxwell.divergence_curl",
+    "OQ14.Maxwell.evanescent_wave",
+    "OQ14.Maxwell.evanescent_zero_normal_power",
+    "OQ14.Maxwell.evanescent_zero_normal_power_everywhere",
+    "OQ14.Maxwell.maxwell_curl_curl",
+    "OQ14.Maxwell.maxwell_superposition",
+    "OQ14.Maxwell.paired_evanescent_maxwell",
+    "OQ14.Maxwell.paired_evanescent_positive_power",
+    "OQ14.Maxwell.paired_evanescent_power_everywhere",
+    "OQ14.Maxwell.partial_integration_by_parts",
+    "OQ14.Maxwell.real_poynting_divergence_zero",
+    "OQ14.Maxwell.vacuum_plane_wave",
+    "OQ14.WeakCurl.classical_hasWeakCurl",
+    "OQ14.WeakCurl.field_projection_injective",
+    "OQ14.WeakCurl.graph_closed",
+    "OQ14.WeakCurl.graph_norm",
+    "OQ14.WeakCurl.hasWeakCurl_iff_integral",
+    "OQ14.WeakCurl.hcurl_complete",
+    "OQ14.WeakCurl.testPair_integrable",
+    "OQ14.WeakCurl.testPair_integral",
+    "OQ14.WeakCurl.tests_separate",
+    "OQ14.WeakCurl.weakCurl_limit",
+    "OQ14.WeakCurl.weakCurl_unique",
+    "OQ14.absolute_bypass_certificate",
+    "OQ14.approximation_injective",
+    "OQ14.approximation_kernel_trivial",
+    "OQ14.compression_power_threshold",
+    "OQ14.finiteDimensional_of_approximation",
+    "OQ14.finite_rank_channel_bound",
+    "OQ14.finite_rank_power_channel_bound",
+    "OQ14.isometry_perturbation_lower_bound",
+    "OQ14.isometry_perturbation_power_threshold",
+    "OQ14.quadratic_flux_norm_bound"
+  ],
+  "allowed_foundational_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

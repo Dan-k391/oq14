@@ -1,6 +1,6 @@
 # Maxwell formalization audit
 
-Status: a genuine continuum Maxwell foundation is implemented; the complete OQ14 theorems are **not formally verified**.
+Status: genuine continuum Maxwell calculus and an actual whole-space L2 weak-curl graph are implemented; the complete OQ14 theorems are **not formally verified**.
 
 The new source is `lean/Maxwell.lean`, in namespace `OQ14.Maxwell`. Its spatial domain is `EuclideanSpace ℝ (Fin 3)`, its fields have complex coordinate values, and every coordinate derivative is mathlib's real Fréchet derivative evaluated on a coordinate basis vector. Curl, divergence, the complex cross product, and the integrals are actual mathematical operations. `MaxwellAt` is the explicit pair of curl equations for the `exp(-i omega t)` convention. It does not package power conservation or a realization theorem as an axiom.
 
@@ -72,7 +72,7 @@ Targeted searches of the pinned analysis and geometry sources did not find an ex
 
 ## Missing steps for the complete research claims
 
-1. Define local weak derivatives and the H(curl) graph space over domains, with a.e. equivalence, distributional curl, completeness, density, restriction, and cutoff operations. The present integration-by-parts theorem is a starting lemma, not that entire theory.
+1. Extend the implemented whole-space H(curl) graph to local/domain spaces, and establish density, restriction, and cutoff operations. The whole-space construction now proves a.e.-class well-defined test pairings, graph closure, uniqueness of weak curl, completeness, and classical membership. Those results do not supply boundary or local-domain theory.
 2. Establish tangential traces and interface transmission, including integration by parts on bounded Lipschitz domains and the correct normal physical flux. The present compact-test theorem has no boundary trace.
 3. Construct the outgoing homogeneous Maxwell fundamental solution as a distribution, including its singular local term. Prove the volume operator mapping estimates, its small-contrast inverse, uniqueness, far-field representation, and the scattering/incident normalization identities.
 4. Prove total-field Maxwell Runge approximation from source reciprocity and unique continuation. Abstract density or compactness alone would not discharge this step.
@@ -90,3 +90,35 @@ The read-only review of `manuscript/sections/modal_next.tex` found the constant-
 Two precision requests were sent to the owning author: explicitly specify H(curl)_loc in the weak-field hypothesis (or prove the local graph regularity being used), and explain higher-norm holomorphy using locally uniform estimates plus weak holomorphy. The audit found no substantive local coefficient sign or convergence defect. Global resonance and normalization are separate obligations that the local calculation alone does not settle.
 
 The subsequent read-only review of `modal_spectral.tex` found no new defect in its written completion of those global obligations. The compact/static decomposition and static inverse have the stated signs; strong convergence followed by composition with the compact remainder yields the claimed norm convergence; the reciprocal derivative pairing gives the displayed Green residue; and spatial scaling gives the `s^3` mode norm factor. For algebraic refractive index, the rational-function pole equation and the nonzero algebraic-exponent transcendence theorem rule out multiple poles and shared different-degree poles as claimed. The `1/z` term separates equal-parity angular degrees. Axisymmetry removes the irrelevant azimuthal multiplicity in the chosen sector and permits rotation of a magnitude maximum into the specified plane. These mathematical reviews are not Lean proofs of the spectral construction.
+
+## H(curl) extension
+
+The new source `lean/HCurl.lean`, namespace `OQ14.WeakCurl`, keeps `Maxwell.lean` frozen. Its scalar fields are mathlib's `Lp ℂ 2 volume` on the same Euclidean three-space; vector fields are three such a.e. equivalence classes. A test consists of an actual complex C1 function with compact support.
+
+For every compact continuous function `f`, `testPair f` is constructed as the L2 inner product against the L2 class of `conj f`. The source proves both that `u*f` is integrable and that the bounded linear functional equals `integral u*f`. Thus continuity is obtained from the actual L2 inner product, with the Cauchy-Schwarz machinery already proved in mathlib. No distributional continuity is postulated.
+
+The weak curl constraint is the componentwise identity
+`integral C_j*phi = integral E_next*d_previous(phi) - integral E_previous*d_next(phi)`.
+The derivative test functions are continuous and compactly supported, so they too define bounded L2 functionals. The graph is the intersection of the kernels of these explicit continuous linear residual maps. This proves it is a closed complex subspace of the product of two three-component L2 spaces. Its inherited norm is `max(norm E, norm C)`, where the coordinate vector norm is the maximum of the three scalar L2 norms. This is a Banach graph norm; it is not a positive-energy normalization of a Maxwell mode.
+
+The complete-space instance is derived from closedness and completeness of L2. Simultaneous L2 limits preserve the weak relation. The fundamental lemma for locally integrable functions, applied to compact smooth real tests embedded into the complex test class, proves that these pairings separate scalar L2 classes. Consequently the weak curl is unique, and projection of the graph onto its field component is injective: the graph cannot carry arbitrary extra curl data.
+
+Finally, for a classical C1 field whose field and actual curl components lie in L2, `classical_hasWeakCurl` proves graph membership by the previously checked curl integration-by-parts theorem and the a.e. identities for `MemLp.toLp`. The weak law is not included among that theorem's hypotheses.
+
+| Exported declaration, prefix `OQ14.WeakCurl.` | Verified content |
+|---|---|
+| `testPair_integrable` | Products defining compact-test L2 pairings are integrable |
+| `testPair_integral` | Bounded test functional equals the actual integral |
+| `hasWeakCurl_iff_integral` | Graph predicate is exactly distributional curl |
+| `graph_closed` | Distributional graph is a closed subspace |
+| `hcurl_complete` | The graph is a complete normed space |
+| `graph_norm` | Its norm is the maximum field/curl coordinate L2 norm |
+| `weakCurl_limit` | Weak curl is preserved under simultaneous L2 limits |
+| `classical_hasWeakCurl` | C1 fields with field and curl in L2 belong to the graph |
+| `tests_separate` | Compact smooth tests separate scalar L2 classes |
+| `weakCurl_unique` | The weak curl is uniquely determined |
+| `field_projection_injective` | The graph representation has no spurious curl data |
+
+This space is over all of R3. A radiating scattering field generally does not belong to global L2. Local H(curl), bounded-domain spaces, tangential traces, radiation conditions, material jumps, and resolvent estimates are still distinct formal obligations. The new space does not claim any of those results.
+
+The standalone HCurl check completed with exit code zero at `2026-10-18T05:02:49Z`. Source SHA256 is `b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926`; it was checked unchanged before and after compilation. All eleven exported reports contain exactly `propext`, `Classical.choice`, and `Quot.sound`. The imported Maxwell source remains at its recorded frozen hash. Raw output and provenance are `lean/HCurl/verification.txt` and `lean/HCurl/provenance.json`.

@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff"]
 
 [[require]]
 name = "mathlib"
@@ -12,3 +12,12 @@ name = "OQ14"
 
 [[lean_lib]]
 name = "Maxwell"
+
+[[lean_lib]]
+name = "HCurl"
+
+[[lean_lib]]
+name = "HCurlDomain"
+
+[[lean_lib]]
+name = "HCurlCutoff"

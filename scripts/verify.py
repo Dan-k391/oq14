@@ -254,12 +254,133 @@ for lam in (.25,.75,.99,.9999,1.0001,1.01,1.1):
     assert abs(pp+aa)<1e-11
 checks.append({'name':'modal constant-lifting cancellation at exponent one','passed':True})
 
+# Integrate the actual TE and TM radial ODEs, independently of the diagonal
+# reference products, for the growing-stack finite-band construction.
+def radial_stack_state(ell, polarization, qq, periods, radius, steps):
+    p = riccati_polynomial(ell, radius)
+    dp = riccati_polynomial(ell, radius, derivative=1)
+    xi = (-1j)**(ell+1)*np.exp(1j*radius)*p
+    dxi = (-1j)**(ell+1)*np.exp(1j*radius)*(1j*p+dp)
+    state = np.array([xi.real, dxi.real])
+    offset = 0.
+    for _ in range(periods):
+        for index in (1., qq):
+            length = math.pi/(2*index)
+            hh = length/steps
+            def rhs(distance, vv):
+                xx = radius+distance
+                eps = index**2+2/xx**2
+                centrifugal = ell*(ell+1)/xx**2
+                if polarization == 'TE':
+                    return np.array([vv[1], (centrifugal-eps)*vv[0]])
+                return np.array([eps*vv[1], (centrifugal/eps-1)*vv[0]])
+            for ss in range(steps):
+                pos = offset+ss*hh
+                aa = rhs(pos, state)
+                bb = rhs(pos+hh/2, state+hh*aa/2)
+                cc = rhs(pos+hh/2, state+hh*bb/2)
+                dd = rhs(pos+hh, state+hh*cc)
+                state += hh*(aa+2*bb+2*cc+dd)/6
+            offset += length
+    return state
+
+global_stacks=[]
+qq=1.4
+band=4
+KK=1+max(sum((2+ss)*math.factorial(ell+ss)/(
+    2**ss*math.factorial(ss)*math.factorial(ell-ss))
+    for ss in range(1,ell+1)) for ell in range(1,band+1))
+for periods in (1,3):
+    length=periods*math.pi*(1+1/qq)/2
+    required=max(1.,8*KK*qq**(2*periods),
+                 math.sqrt(32*(band*(band+1)+2)*length*qq**(4*periods+4)))
+    radius=math.ceil(required/math.pi)*math.pi
+    for ell in range(1,band+1):
+        for pol in ('TE','TM'):
+            v1=radial_stack_state(ell,pol,qq,periods,radius,256)
+            vv=radial_stack_state(ell,pol,qq,periods,radius,512)
+            refinement=float(np.linalg.norm(vv-v1))
+            assert refinement<1e-8
+            initial=np.array([math.sin(radius-ell*math.pi/2),
+                              math.cos(radius-ell*math.pi/2)])
+            diag=np.array([qq**(-periods),qq**periods])
+            if pol=='TM': diag=diag[::-1]
+            reference=(-1)**periods*diag*initial
+            error=float(np.linalg.norm(vv-reference))
+            assert error<=qq**(-periods)/4
+            endpoint=radius+length
+            pp=riccati_polynomial(ell,endpoint)
+            dp=riccati_polynomial(ell,endpoint,derivative=1)
+            xi=(-1j)**(ell+1)*np.exp(1j*endpoint)*pp
+            dxi=(-1j)**(ell+1)*np.exp(1j*endpoint)*(1j*pp+dp)
+            coefficient=(vv[0]*dxi-vv[1]*xi)/(2j)
+            amplified=(pol=='TE' and ell%2==1) or (pol=='TM' and ell%2==0)
+            sigma=-1 if amplified else 1
+            scaled=abs(coefficient)/qq**(sigma*periods)
+            assert 3/(16*math.sqrt(2))<=scaled<=5*math.sqrt(2)/4
+            global_stacks.append({'periods':periods,'order':ell,'polarization':pol,
+              'inner_radius':radius,'state_error':error,
+              'step_refinement_error':refinement,'scaled_incoming_coefficient':float(scaled)})
+checks.append({'name':'actual TE/TM radial ODE refinement and finite-band gain bounds',
+               'passed':True,'samples':len(global_stacks)})
+
+# The exact dynamic dyadic kernel is normal with these radial/tangential
+# eigenvalues. The calculation checks real-frequency constants only.
+kernel_ratio=0.
+for zz in np.geomspace(1e-3,1e3,160):
+    cz=np.exp(1j*zz)*(1-1j*zz)-1
+    ratio=max(abs(zz**2*np.exp(1j*zz)-cz),abs(2*cz))/(1.5*zz**2)
+    kernel_ratio=max(kernel_ratio,float(ratio))
+    assert ratio<=1+1e-9
+checks.append({'name':'real-frequency dynamic dyadic kernel bound',
+               'passed':True,'max_bound_ratio':kernel_ratio})
+
+# Integrate the conjugated angular generator independently of its closed
+# geometric-series formula. Every layer uses its actual continuous flow,
+# with matrix products fixing the high/low order and reversal conventions.
+control_loops=[]
+nodes,weights=np.polynomial.legendre.leggauss(32)
+yy=np.array([[0.,0.],[1.,0.]])
+for qq in (1.2,1.4,2.1):
+    for periods in (1,2,5):
+        prefix=np.eye(2)
+        integral=np.zeros((2,2))
+        norm_integral=0.
+        for index in [qq,1.]*periods+[1.,qq]*periods:
+            length=math.pi/(2*index)
+            for point,weight in zip(nodes,weights):
+                distance=(point+1)*length/2
+                cc=math.cos(index*distance)
+                ss=math.sin(index*distance)
+                flow=np.array([[cc,ss/index],[-index*ss,cc]])
+                uu=flow@prefix
+                conjugate=np.linalg.solve(uu,yy@uu)
+                integral+=weight*length/2*conjugate
+                norm_integral+=weight*length/2*norm(conjugate)
+            quarter=np.array([[0.,1/index],[-index,0.]])
+            prefix=quarter@prefix
+        bb=math.pi*(qq**2+1/qq)/(2*(qq**2-1))*(qq**(2*periods)-1)
+        dd=math.pi*(1+1/qq)/(2*(qq**2-1))*(1-qq**(-2*periods))
+        exact=np.array([[0.,-dd],[bb,0.]])
+        relative=norm(integral-exact)/(1+norm(exact))
+        norm_relative=abs(norm_integral-(bb+dd))/(1+bb+dd)
+        assert norm(prefix-np.eye(2))<1e-12
+        assert relative<1e-12 and norm_relative<1e-12
+        assert abs(dd/bb-qq**(-2*periods)/(qq**2-qq+1))<1e-14
+        control_loops.append({'index':qq,'pairs_per_half':periods,
+          'angular_derivative_relative_error':float(relative),
+          'integrated_norm_relative_error':float(norm_relative)})
+checks.append({'name':'radial identity-loop angular derivative and integrated norm',
+               'passed':True,'samples':len(control_loops)})
+
 result={'kind':'diagnostics, not continuum certification','seed':140014,
         'source_commit':git('rev-parse','HEAD'),'dirty_worktree':bool(git('status','--porcelain')),
         'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'python':platform.python_version(),'numpy':np.__version__,
         'checks':checks,'pair_networks':rows,'corner_exponents':corner,'bragg':bragg,
         'local_flux_quadrature':flux_refinement,'modal_sphere_poles':modal_poles,
+        'growing_radial_stacks':global_stacks,
+        'radial_control_loops':control_loops,
         'limitations':['No physical N-channel family was synthesized.',
         'Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.',
         'No full hotspot scattering discretization was run; Lean results are recorded separately.',

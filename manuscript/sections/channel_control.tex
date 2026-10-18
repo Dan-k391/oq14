@@ -1,0 +1,337 @@
+\section{Global finite-order radial TE control with bounded positive index}
+\label{cc:section}
+
+The following construction turns the angular-momentum term in the
+actual radial Maxwell equation into a controllable finite ensemble.
+It uses only finite concentric layers with
+$1\leq\varepsilon\leq q^2<\varepsilon_+$. Its support may grow.
+The result is approximate global transfer control for every
+prescribed finite set of TE orders. It is not a bypass theorem.
+
+\subsection{An identity loop with an amplified angular derivative}
+
+Use $x=k_0r$, the electric TE state $v=(u,u')^T$, and
+\begin{equation}\label{cc:matrices}
+ X=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+ Y=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad J=X-Y.
+\end{equation}
+For $\nu=l(l+1)$ the exact equation in an index-$n$ layer is
+\begin{equation}\label{cc:actual-ode}
+ v'=(X-n^2Y+\nu x^{-2}Y)v .
+\end{equation}
+The state is continuous at dielectric interfaces. No magnetic or
+surface parameter is being varied.
+
+Fix $1<q<\sqrt{\varepsilon_+}$. A high quarter layer has index $q$
+and length $\pi/(2q)$; a low quarter layer has index one and length
+$\pi/2$. The reference equation omits $\nu x^{-2}Y$. Its quarter
+matrix is
+$T_n=\left(\begin{smallmatrix}0&1/n\\-n&0\end{smallmatrix}\right)$.
+A loop consists of $M$ high--low pairs followed by $M$ low--high
+pairs. Its length and reference endpoint are
+\begin{equation}\label{cc:loop-length}
+ \ell_M=M\pi(1+q^{-1}),\qquad U_0(\ell_M)=I.
+\end{equation}
+Indeed, the first half gives
+$(-1)^M\operatorname{diag}(q^M,q^{-M})$ and the second its inverse.
+
+\begin{lemma}[PROVED: exact angular derivative of a finite dielectric loop]
+\label{cc:loop-derivative}
+Let $B_M=\int_0^{\ell_M}U_0(s)^{-1}YU_0(s)\,ds$. Then
+\begin{align}
+ B_M&=\begin{pmatrix}0&-d_M\\b_M&0\end{pmatrix},\notag\\
+ b_M&=\frac{\pi(q^2+q^{-1})}{2(q^2-1)}(q^{2M}-1),\notag\\
+ d_M&=\frac{\pi(1+q^{-1})}{2(q^2-1)}(1-q^{-2M}),\notag\\
+ \frac{d_M}{b_M}&=\kappa_q q^{-2M},\qquad
+ \kappa_q=\frac1{q^2-q+1}<1. \label{cc:loop-derivative-formula}
+\end{align}
+Moreover
+\begin{equation}\label{cc:integrated-norm}
+ \int_0^{\ell_M}\|U_0(s)^{-1}YU_0(s)\|\,ds
+       =b_M+d_M\leq2b_M .
+\end{equation}
+\end{lemma}
+\begin{proof}
+If the first row of $U_0$ is $(a,b)$, determinant one gives
+\begin{equation}\label{cc:conjugated-y}
+ U_0^{-1}YU_0=
+ \begin{pmatrix}-ab&-b^2\\a^2&ab\end{pmatrix}.
+\end{equation}
+This rank-one matrix has norm $a^2+b^2$. In high and low layers
+use $0\leq\theta\leq\pi/2$, with $ds=d\theta/q$ and
+$ds=d\theta$, respectively. Up to an irrelevant common sign,
+the first-row pairs in the forward half, for $0\leq j<M$, are
+\begin{equation}\label{cc:forward-rows}
+ (q^j\cos\theta,q^{-j-1}\sin\theta),\qquad
+ (-q^{j+1}\sin\theta,q^{-j-1}\cos\theta).
+\end{equation}
+Those in the reverse half, for $M\geq h\geq1$, are
+\begin{equation}\label{cc:reverse-rows}
+ (q^h\cos\theta,q^{-h}\sin\theta),\qquad
+ (-q^{h-1}\sin\theta,q^{-h}\cos\theta).
+\end{equation}
+Integrating $a^2$ over these layers gives
+$b_M=\frac{\pi}{2}(q^{-1}+q^2)\sum_{j=0}^{M-1}q^{2j}$.
+Integrating $b^2$ gives
+$d_M=\frac{\pi}{2}(q^{-3}+q^{-2})\sum_{j=0}^{M-1}q^{-2j}$.
+The integral of $ab$ in each forward pair is
+$(q^{-2}-1)/2$, and in each reverse pair its negative.
+The diagonal entries therefore vanish exactly. Summing the
+geometric series gives \eqref{cc:loop-derivative-formula}.
+The rank-one norm identity gives \eqref{cc:integrated-norm}.
+\end{proof}
+
+\begin{lemma}[PROVED: finite-radius error for one actual Maxwell loop]
+\label{cc:one-loop}
+Let $U_\nu(r)$ be the actual transfer through this loop starting at
+dimensionless radius $r>0$, and let $0\leq\nu\leq V$. Then
+\begin{equation}\label{cc:one-loop-error}
+ \left\|U_\nu(r)-I-\frac{\nu}{r^2}B_M\right\|
+ \leq \frac{4\nu\ell_Mb_M}{r^3}
+       +\frac{2\nu^2b_M^2}{r^4}\exp(2\nu b_M/r^2).
+\end{equation}
+Also $\|U_\nu(r)\|\leq\exp(2\nu b_M/r^2)$.
+\end{lemma}
+\begin{proof}
+Writing the actual fundamental matrix as $U_0W$ gives
+\[
+ W'(s)=\frac{\nu}{(r+s)^2}U_0(s)^{-1}YU_0(s)W(s),
+ \qquad W(0)=I.
+\]
+The integrated coefficient norm is at most $\beta=2\nu b_M/r^2$.
+The Volterra series beyond its linear term is bounded by
+$e^\beta-1-\beta\leq\beta^2e^\beta/2$.
+Replacing $(r+s)^{-2}$ in that linear term by $r^{-2}$ costs
+at most $2\nu\ell_M(b_M+d_M)/r^3\leq4\nu\ell_Mb_M/r^3$.
+Since $U_0(\ell_M)=I$, these are the endpoint errors.
+The same series bounds $\|W(\ell_M)\|$ by $e^\beta$.
+\end{proof}
+
+\subsection{A macroscopic angular shear in a thin distant annulus}
+
+\begin{theorem}[PROVED: simultaneous angular shear from positive-index layers]
+\label{cc:angular-shear}
+Fix finitely many orders $l_1,\ldots,l_m\geq1$, put
+$\nu_j=l_j(l_j+1)$ and $V=\max_j\nu_j$, and fix $t\geq0$.
+For every sufficiently large starting radius $R$ there are finite
+layers of index one or $q$ in an annulus of dimensionless thickness
+$o(R)$ whose actual TE transfers converge simultaneously to
+\begin{equation}\label{cc:angular-shear-target}
+ \exp(t\nu_jY)=I+t\nu_jY,\qquad 1\leq j\leq m .
+\end{equation}
+The material bound is independent of $R$, $t$, and the orders.
+\end{theorem}
+\begin{proof}
+For $t=0$ use no layers. Otherwise fix $a\in(1/2,1)$ and set
+\begin{equation}\label{cc:scales}
+ M=\lfloor a\log_qR\rfloor,\quad h=b_M/R^2,\quad
+ K=\lfloor t/h\rfloor
+\end{equation}
+for sufficiently large $R$. Use $K$ consecutive loops, starting
+at $r_i=R+i\ell_M$, $0\leq i<K$. The explicit formula for $b_M$
+gives
+\[
+ h\to0,\qquad K\ell_M/R=O(R^{1-2a}\log R)\to0,\qquad
+ q^{-2M}\to0.
+\]
+Set $\epsilon_M=\kappa_qq^{-2M}$. One actual loop differs from
+$I+h\nu Y$ by at most
+\begin{equation}\label{cc:step-error}
+ \nu h\epsilon_M+\frac{2\nu hK\ell_M}{R}
+       +\frac{4\nu h\ell_M}{R}+2\nu^2h^2e^{2\nu h}.
+\end{equation}
+The first two terms compare $(\nu/r_i^2)B_M$ with $h\nu Y$,
+using $B_M/b_M=Y-\epsilon_MX$ and
+$|R^2/r_i^2-1|\leq2i\ell_M/R$. The last two terms are
+\eqref{cc:one-loop-error}.
+
+Each actual step has norm at most $e^{2Vh}$ and each ideal step
+at most $e^{Vh}$. Telescoping the $K$-fold products bounds their
+difference by $Ke^{2Vt}$ times \eqref{cc:step-error} with $\nu=V$.
+Since $Y^2=0$, the ideal product is $I+Kh\nu Y$, whose difference
+from the target is at most $Vh$. Thus the simultaneous endpoint
+error is at most
+\begin{equation}\label{cc:global-error}
+ e^{2Vt}t\left[
+ V\epsilon_M+\frac{2VK\ell_M}{R}
+       +\frac{4V\ell_M}{R}+2V^2h e^{2Vh}\right]+Vh.
+\end{equation}
+Every term tends to zero. The total thickness is $K\ell_M=o(R)$.
+Every layer has real permittivity one or $q^2$, and every
+structure at finite $R$ has finitely many interfaces.
+\end{proof}
+
+\subsection{Finite-ensemble global transfer control}
+
+\begin{definition}\label{cc:realizable}
+For the fixed finite orders, a tuple
+$(G_1,\ldots,G_m)\in{\rm SL}(2,\mathbb R)^m$ is
+\emph{asymptotically realizable} if, for every sufficiently large
+$R$, a finite radial dielectric in $[R,R+d_R]$, with
+$d_R/R\to0$ and $1\leq\varepsilon\leq q^2$, has simultaneous
+TE transfers converging to that tuple as $R\to\infty$.
+\end{definition}
+
+\begin{lemma}[PROVED: common real symplectic control and closure]
+\label{cc:common-and-closure}
+Every common tuple $(G,\ldots,G)$, $G\in{\rm SL}(2,\mathbb R)$,
+is asymptotically realizable. The realizable tuples form a closed
+multiplicative semigroup.
+\end{lemma}
+\begin{proof}
+In the reference equation a vacuum layer realizes $e^{\theta J}$
+for any real $\theta$, by adding a multiple of $2\pi$ to make the
+length nonnegative. A high--low quarter pair with adjustable high
+index $1\leq s\leq q$ realizes
+$-\operatorname{diag}(s,s^{-1})$; a vacuum half-period removes
+the sign. Products give any positive diagonal
+$\operatorname{diag}(s,s^{-1})$, $s>0$, with inverses obtained
+by interchanging layer order. The singular-value decomposition
+expresses every real determinant-one matrix as two proper
+rotations and such a diagonal. Thus finite bounded-index layers
+realize any common $G$ exactly in the reference equation.
+For this fixed sequence, the interaction estimate above bounds
+the angular correction by $O(R^{-2})$, uniformly over the finite
+orders. Its length is fixed, proving common realizability.
+
+Two realizing families concatenate: the first endpoint divided
+by $R$ tends to one, so use the second family at that endpoint.
+Total thickness remains $o(R)$ and transfers converge to the
+product. For closedness let realizable tuples $G^{(n)}\to G$.
+Choose increasing thresholds $R_n\to\infty$ so that the family
+for $G^{(n)}$, for every $R\geq R_n$, has transfer error at most
+$1/n$ and thickness at most $R/n$. On $R_n\leq R<R_{n+1}$
+use that family. Transfers converge to $G$ and relative thickness
+to zero. All tuple norms are maxima of the finitely many matrix
+norms. The same reasoning permits limits of finite products.
+\end{proof}
+
+\begin{theorem}[PROVED: global approximate finite-order TE transfer control]
+\label{cc:global-control}
+For distinct positive integers $l_1,\ldots,l_m$ and arbitrary
+$G_1,\ldots,G_m\in{\rm SL}(2,\mathbb R)$, their tuple is
+asymptotically realizable by actual finite ordinary dielectrics,
+for any fixed $1<q<\sqrt{\varepsilon_+}$. Consequently each
+prescribed accuracy is attained by a finite bounded positive
+scalar radial structure. No uniform radius, layer-count, or
+thickness bound is asserted as target or accuracy varies.
+\end{theorem}
+\begin{proof}
+In tuple notation put
+$A=(\nu_jY)_j$, $B=(-\nu_jX)_j$, and $C=A+B=(-\nu_jJ)_j$.
+Theorem~\ref{cc:angular-shear} supplies $e^{tA}$ for $t\geq0$.
+Common conjugation by $J$ supplies $e^{tB}$ for $t\geq0$,
+because $JYJ^{-1}=-X$. The finite-dimensional product formula
+\[
+ e^{tC}=\lim_{n\to\infty}(e^{tA/n}e^{tB/n})^n
+\]
+and semigroup closure supply $e^{tC}$ for $t\geq0$.
+Every $\nu_j$ is an integer, hence $e^{2\pi C}=I$.
+Reduction modulo $2\pi$ supplies $e^{tC}$ for every real $t$.
+Another product formula gives
+\[
+ e^{-tB}=e^{t(A-C)}
+       =\lim_{n\to\infty}(e^{tA/n}e^{-tC/n})^n,\qquad t\geq0.
+\]
+Common conjugation then supplies $e^{-tA}$. This explicitly
+generates inverses without negative physical layer thicknesses.
+
+Put $H=[X,Y]=\operatorname{diag}(1,-1)$. The Lie algebra
+generated by common $X,Y,H$ and $(\nu_jY)_j$ contains
+\[
+ (\nu_j^pX)_j,\quad(\nu_j^pY)_j,\quad(\nu_j^pH)_j
+       \qquad(p=0,1,2,\ldots).
+\]
+Indeed $[H,X]=2X$, $[H,Y]=-2Y$, and bracketing
+$(\nu_j^pX)_j$ with $(\nu_jY)_j$ raises the power to $p+1$.
+The distinct numbers $\nu_j=l_j(l_j+1)$ give an invertible
+Vandermonde matrix for powers $0,\ldots,m-1$. Linear combinations
+therefore isolate $X,Y,H$ in each coordinate. The generated Lie
+algebra is all of $\mathfrak{sl}(2,\mathbb R)^m$.
+
+For completeness this yields global group control as follows.
+Let $\Gamma$ be the subgroup generated by the common
+one-parameter groups and $e^{tA}$ for all real $t$.
+The span of their generators conjugated by $\Gamma$ is invariant
+under their adjoint flows. Differentiating these flows shows it
+contains the generated Lie algebra, hence the full algebra just
+computed. Select $3m$ conjugated generators forming a basis.
+The product of their one-parameter groups has invertible
+derivative at the identity, so the inverse function theorem puts
+an open identity neighborhood in $\Gamma$. It is an open
+subgroup. The singular-value decomposition also shows
+$\mathrm{SL}(2,\mathbb R)^m$ is connected, so $\Gamma$ is the
+whole group. Every generator and inverse belongs to the closed
+realizable semigroup, so all of $\Gamma$ does. This proves the
+claim using actual radial Maxwell transfer matrices.
+\end{proof}
+
+\begin{corollary}[PROVED: prescribed finite TE core gains and relative phases]
+\label{cc:core-gains}
+Fix finitely many distinct TE orders and arbitrary nonzero complex
+numbers $g_j$. There is a sequence of the finite ordinary radial
+dielectrics above, with vacuum-core radius tending to infinity,
+whose physical core multipliers converge to $g_j$ up to one
+common unit-modulus factor. This includes simultaneous large gains
+for both electric inversion parities. After removing that common
+phase, convergence of the fields and their derivatives is uniform
+on every fixed compact subset of the vacuum core, for every
+coherent input in the chosen finite angular band.
+\end{corollary}
+\begin{proof}
+Restrict the starting radius to $R=2\pi n\to\infty$.
+The origin-normalized regular solution is $\psi_l(x)=xj_l(x)$;
+its state at $R$ tends to the unit vector
+\[
+ v_l^0=(\sin(-l\pi/2),\cos(-l\pi/2))^T .
+\]
+For each order choose a nonzero real vector $w_j$ satisfying
+$w_{j,1}+iw_{j,2}=i^{l_j+1}/g_j$.
+There is a real determinant-one matrix taking $v_{l_j}^0$
+to $w_j$, for example
+\[
+ G_j=
+ \left[w_j,\frac{-Jw_j}{|w_j|^2}\right]
+ \left[v_{l_j}^0,-Jv_{l_j}^0\right]^{-1}.
+\]
+Apply Theorem~\ref{cc:global-control} to these fixed targets.
+The actual regular state at the outer endpoint $X_R=R+d_R$
+then converges to $w_j$.
+
+The exterior incoming coefficient is
+$A_j=(u\xi_{l_j}^{+\prime}-u'\xi_{l_j}^+)/(2i)$.
+The finite Hankel formula at $X_R\to\infty$ gives
+\[
+ \xi_l^+(X_R)=(-i)^{l+1}e^{iX_R}(1+o(1)),\qquad
+ \xi_l^{+\prime}(X_R)=i(-i)^{l+1}e^{iX_R}(1+o(1)).
+\]
+Consequently
+$e^{-iX_R}A_j\to1/(2g_j)$.
+A free regular wave has incoming coefficient $1/2$, so the
+physical relative core multiplier is $(2A_j)^{-1}$.
+Multiplying that multiplier by the common phase $e^{iX_R}$
+gives the asserted limit $g_j$. The selected band is finite and
+its regular vacuum basis is smooth on each compact set, which
+proves uniform coherent field and derivative convergence there.
+All azimuthal indices within an order have the same multiplier.
+\end{proof}
+
+\begin{remark}[Scope and the remaining channel requirement]
+\label{cc:scope}
+Theorem~\ref{cc:global-control} overcomes the fixed-annulus ceiling
+by proving global approximate reachability when support may grow.
+It neither assumes a circuit model nor infers global reachability
+from the earlier local inverse theorem. Only TE and finitely many
+prescribed orders are controlled; all azimuthal indices of an order
+share its transfer. Corollary~\ref{cc:core-gains} shows that the
+reciprocal-parity gain pattern of the common stack is not a
+restriction on all bounded positive radial structures.
+
+Transfer targets alone do not supply counted channels. A proposed
+subspace must additionally satisfy positive passage and absolute
+whole-plane bypass for every coherent input, in the physical input
+power norm. Fields in the many concentric layers can be large.
+No estimate of their normal plane flux follows from endpoint
+control. Neither a bypass estimate nor a qualifying many-channel
+subspace is asserted here.
+\end{remark}

@@ -1,0 +1,296 @@
+\section{A nonradial channel bound with small total material volume}
+\label{nr:section}
+
+The following result controls physical excitation without a bound on the
+diameter, location, number of pieces, or minimum feature size of the material
+support. It imposes a small \emph{total material volume}, which is an additional
+resource absent from Conjecture~\ref{pr:channel-target}. Thus it proves a new
+restricted channel theorem, not the unrestricted conjecture. All frequency
+estimates in this section are at a positive \emph{real} wavenumber $k$.
+
+\subsection{An exact real-frequency kernel estimate}
+
+Let $\chi=\varepsilon_r-1$ be supported in a bounded measurable set
+$\Omega\subset\mathbb R^3$ of volume $V>0$, with
+$0\leq\chi\leq C:=\varepsilon_+-1$. Write
+\begin{equation}
+ a=\left(\frac{3V}{4\pi}\right)^{1/3},\qquad
+ \Phi_k(x)=\frac{e^{ik|x|}}{4\pi|x|},\qquad
+ \mathsf K_k=(k^2 I+\nabla\nabla)\Phi_k.
+ \label{nr:setup}
+\end{equation}
+Distributionally on the whole space,
+\begin{equation}
+ \mathsf K_k=-\mathsf P+\mathsf R_k,\qquad
+ \mathsf R_k=k^2\Phi_k I+\nabla\nabla(\Phi_k-\Phi_0),
+ \label{nr:split}
+\end{equation}
+where $\mathsf P$ is the longitudinal orthogonal projection on
+$L^2(\mathbb R^3)^3$, with Fourier symbol
+$\xi\xi^{\mathsf T}/|\xi|^2$. In particular $\|\mathsf P\|=1$.
+The static distributional term, including its diagonal contribution, is
+entirely contained in $-\mathsf P$.
+
+\begin{lemma}[PROVED: diameter-independent dynamic kernel estimate]
+\label{nr:kernel}
+For real $k>0$ and $x\ne0$,
+\begin{equation}
+ \|\mathsf R_k(x)\|_{\mathbb C^3\to\mathbb C^3}
+ \leq\frac{3k^2}{8\pi|x|}.
+ \label{nr:kernelbound}
+\end{equation}
+If $U$ is another bounded measurable set of positive volume and
+$b=(3|U|/(4\pi))^{1/3}$, then
+\begin{equation}
+ \|\mathbf1_U\mathsf R_k\mathbf1_\Omega\|_{2\to2}
+ \leq\frac34 k^2ab.
+ \label{nr:crossR}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $r=|x|$, $z=kr$, $n=x/r$, and
+$C_z=e^{iz}(1-iz)-1$. Direct radial differentiation gives
+\begin{equation}
+ \mathsf R_k(x)
+ =\frac{z^2e^{iz}-C_z}{4\pi r^3}(I-nn^{\mathsf T})
+  +\frac{2C_z}{4\pi r^3}nn^{\mathsf T}.
+ \label{nr:radialkernel}
+\end{equation}
+Since $C_0=0$ and $C_z'=ze^{iz}$, real $z\geq0$ satisfies
+$|C_z|\leq z^2/2$. The two real orthogonal projections in
+\eqref{nr:radialkernel} give a normal matrix, whose operator norm is the
+larger modulus of its two eigenvalues. The tangential modulus is at most
+$3z^2/(8\pi r^3)$ and the radial modulus at most $z^2/(4\pi r^3)$.
+This proves \eqref{nr:kernelbound}. Near zero the difference
+$\Phi_k-\Phi_0=ik/(4\pi)+O(r)$ has a locally integrable Hessian with
+no point mass: its first derivative is bounded and its surface integral
+on a radius-$r$ sphere is $O(r^2)$. Thus this computation introduces no
+unaccounted distributional term.
+
+For any measurable set $A$ of volume $4\pi d^3/3$, and any center $x$,
+\begin{equation}
+ \int_A |x-y|^{-p}\,dy\leq\frac{4\pi d^{3-p}}{3-p}
+ \quad(0<p<3).
+ \label{nr:rearrangement}
+\end{equation}
+Indeed, remove the portion of $A$ outside the radius-$d$ ball about $x$
+and fill its equally sized missing portion inside the ball. The decreasing
+radial kernel cannot reduce the integral. Integration over the ball gives
+the stated expression; truncation justifies the argument at its singularity.
+For the kernel majorant in \eqref{nr:kernelbound}, the row integral over
+$\Omega$ is at most $3k^2a^2/4$ and the column integral over $U$ at most
+$3k^2b^2/4$. The vector-valued Schur estimate, obtained by applying the
+scalar Schur argument to the pointwise Euclidean norms, gives
+\eqref{nr:crossR}.
+\end{proof}
+
+\begin{theorem}[PROVED: real-frequency response controlled by total volume]
+\label{nr:volumeinverse}
+Suppose
+\begin{equation}
+ t:=\frac34 C(ka)^2<1.
+ \label{nr:smallvolume}
+\end{equation}
+For a physical incident Maxwell field $e^{\rm inc}$, let $e$ be its
+outgoing total electric field in the normalization
+$e=\sqrt{\varepsilon_0}E$. Then
+\begin{equation}
+ \|\sqrt\chi\,e\|_{L^2(\Omega)}
+ \leq\frac{\|\sqrt\chi\,e^{\rm inc}\|_{L^2(\Omega)}}{1-t},\qquad
+ \|\chi e\|_{L^2(\Omega)}
+ \leq\frac{\sqrt C\,\|\sqrt\chi\,e^{\rm inc}\|_{L^2(\Omega)}}{1-t}.
+ \label{nr:weightedbound}
+\end{equation}
+The inverse estimate is uniform over all supports of this volume and all
+measurable contrasts in the stated interval. No lower positive bound on
+$\chi$ is required.
+\end{theorem}
+\begin{proof}
+The outgoing volume equation is
+$e=e^{\rm inc}+\mathsf K_k(\chi e)$.
+Set $s=\sqrt\chi$ and $j=se$, with functions on $\Omega$ extended by zero
+before applying whole-space operators. Its weighted form is
+\begin{equation}
+ (I+s\mathsf P s-s\mathsf R_k s)j=se^{\rm inc}.
+ \label{nr:weightedVIE}
+\end{equation}
+The operator $B=I+s\mathsf P s$ is self-adjoint and $B\geq I$, so
+$\|B^{-1}\|\leq1$. Lemma~\ref{nr:kernel}, with $U=\Omega$, gives
+$\|s\mathsf R_k s\|\leq t$. Factor the left side as
+$B(I-B^{-1}s\mathsf R_k s)$ and invert the second factor by its norm
+convergent geometric series. This gives an inverse norm at most $(1-t)^{-1}$,
+which proves the first inequality; the second follows from
+$\|sj\|\leq\sqrt C\|j\|$.
+
+Conversely the solution $j$ reconstructs the outgoing field
+$e=e^{\rm inc}+\mathsf K_k(sj)$, and \eqref{nr:weightedVIE} gives $se=j$.
+Thus it solves the distributional Maxwell volume equation. A homogeneous
+outgoing solution has $j=0$ by the same inverse, and its volume
+representation then gives $e=0$. In the piecewise smooth physical class
+this is the ordinary unique outgoing scattering solution. The estimate
+therefore controls the actual physical field, rather than a formal Born
+approximation.
+\end{proof}
+
+\subsection{Physical incoming power and the full local field resource}
+
+Take the physical incoming space to be transverse $L^2(S^2)^3$ with
+$g(d)\cdot d=0$ and incoming power $\|g\|_2^2$. In the normalized variables
+$e=\sqrt{\varepsilon_0}E$, $h=\sqrt{\mu_0}H$,
+$c_0=(\varepsilon_0\mu_0)^{-1/2}$, use
+\begin{equation}
+ \begin{split}
+ e^{\rm inc}_g(x)&=\frac{k}{\pi\sqrt{2c_0}}
+       \int_{S^2}g(d)e^{ikd\cdot x}\,dS(d),\\
+ h^{\rm inc}_g(x)&=\frac{k}{\pi\sqrt{2c_0}}
+       \int_{S^2}d\times g(d)e^{ikd\cdot x}\,dS(d).
+ \end{split}
+ \label{nr:herglotz}
+\end{equation}
+Stationary phase for smooth $g$ gives incoming electric amplitude of modulus
+$\sqrt{2/c_0}|g(-\widehat x)|/r$. Multiplication by the flux factor
+$c_0/2$ and integration over the incoming sphere gives $\|g\|_2^2$.
+Density extends this power normalization to $L^2$ data. In particular no
+plane wave of infinite incoming power is substituted for a unit input.
+Cauchy--Schwarz gives, pointwise,
+\begin{equation}
+ |e_g^{\rm inc}(x)|,\ |h_g^{\rm inc}(x)|
+ \leq k\sqrt{\frac{2}{\pi c_0}}\,\|g\|_2.
+ \label{nr:incidentbound}
+\end{equation}
+
+\begin{theorem}[PROVED: explicit physical-power bound on local electric and magnetic fields]
+\label{nr:localresource}
+Under \eqref{nr:smallvolume}, fix a bounded measurable observation set $U$
+of positive volume, and put
+\begin{equation}
+ \begin{aligned}
+ b&=\left(\frac{3|U|}{4\pi}\right)^{1/3},&
+ I_U&=k\sqrt{\frac{2|U|}{\pi c_0}},&
+ P_V&=\frac{Ck}{1-t}\sqrt{\frac{2V}{\pi c_0}},\\
+ A_k(r)&=r+\frac{k}{2}r^2,&
+ D_E&=1+\frac34 k^2ab,&
+ D_H&=k\sqrt{A_k(a)A_k(b)}.
+ \end{aligned}
+ \label{nr:resourceconstants}
+\end{equation}
+For every physical incoming $g$,
+\begin{equation}
+ \begin{split}
+ \|\chi e_g\|_{L^2(\Omega)}&\leq P_V\|g\|_2,\\
+ \|e_g\|_{L^2(U)}&\leq(I_U+D_EP_V)\|g\|_2,\\
+ \|h_g\|_{L^2(U)}&\leq(I_U+D_HP_V)\|g\|_2.
+ \end{split}
+ \label{nr:fieldbounds}
+\end{equation}
+Consequently the complete local resource satisfies
+\begin{equation}
+ \int_U(\varepsilon_r|e_g|^2+|h_g|^2)\,dx
+ \leq B_U\|g\|_2^2,\qquad
+ B_U=\varepsilon_+(I_U+D_EP_V)^2+(I_U+D_HP_V)^2.
+ \label{nr:resourcebound}
+\end{equation}
+These bounds are independent of the distance between $U$ and the material,
+and of the diameter and fine structure of the material support.
+\end{theorem}
+\begin{proof}
+Apply \eqref{nr:weightedbound} and \eqref{nr:incidentbound} to obtain the
+first inequality. Put $p=\chi e_g$, extended by zero. The exact electric
+scattered field is $e^{\rm sc}=-\mathsf Pp+\mathsf R_kp$.
+The whole-space projection has norm one, and \eqref{nr:crossR} bounds the
+restriction of the dynamic term to $U$. Adding the incident-field bound
+gives the second inequality.
+
+Taking the curl of the volume representation and using
+$\nabla\times e=ikh$ removes the Hessian part and gives
+\begin{equation}
+ h^{\rm sc}=\frac{k}{i}\nabla\times(\Phi_k*p),\qquad
+ |\nabla\Phi_k(x)|\leq\frac1{4\pi}
+                  \left(\frac{k}{|x|}+\frac1{|x|^2}\right).
+ \label{nr:magnetickernel}
+\end{equation}
+The cross-product kernel has operator norm at most $|\nabla\Phi_k|$.
+Equation~\eqref{nr:rearrangement}, for $p=1,2$, bounds its row integral
+over $\Omega$ by $A_k(a)$ and its column integral over $U$ by $A_k(b)$.
+The Schur estimate therefore gives
+$\|h^{\rm sc}\|_{L^2(U)}\leq D_H\|p\|_2$.
+This proves the magnetic inequality. The coefficient bound
+$\varepsilon_r\leq\varepsilon_+$ proves \eqref{nr:resourcebound}.
+\end{proof}
+
+\begin{proposition}[PROVED: outgoing scattering is uniformly close to vacuum]
+\label{nr:farfield}
+With the same normalization and hypotheses, the radiated scattered power
+satisfies
+\begin{equation}
+ P_{\rm sc}(g)\leq
+ \left[\frac{Ck^3V}{2\pi(1-t)}\right]^2\|g\|_2^2.
+ \label{nr:scatteredpower}
+\end{equation}
+Equivalently, the full scattering operator differs from the vacuum scattering
+operator in power norm by at most $Ck^3V/[2\pi(1-t)]$.
+\end{proposition}
+\begin{proof}
+For $p=\chi e_g$, the normalized electric far field is
+\begin{equation}
+ e^{\rm sc}_\infty(d)=\frac{k^2}{4\pi}(I-dd^{\mathsf T})
+             \int_\Omega p(y)e^{-ikd\cdot y}\,dy.
+ \label{nr:farfieldformula}
+\end{equation}
+Cauchy--Schwarz in $\Omega$ and then integration over $S^2$ give
+$P_{\rm sc}=(c_0/2)\|e^{\rm sc}_\infty\|_2^2
+\leq c_0k^4V\|p\|_2^2/(8\pi)$.
+Insert the first bound in \eqref{nr:fieldbounds} to obtain
+\eqref{nr:scatteredpower}. The difference of the outgoing amplitudes is
+exactly the scattered outgoing amplitude; the incoming amplitudes agree.
+\end{proof}
+
+\subsection{A genuine restricted channel theorem and its remaining limit}
+
+\begin{corollary}[PROVED: uniform channel count under a small-volume cap]
+\label{nr:channelcount}
+Fix the section, real frequency, material interval, and thresholds of
+Definition~\ref{pr:count}, with $\delta<\eta\tau$. Restrict the material
+support by $|\Omega|\leq V_{\max}$, where
+\begin{equation}
+ \frac34(\varepsilon_+-1)k^2
+       \left(\frac{3V_{\max}}{4\pi}\right)^{2/3}<1.
+ \label{nr:volumecap}
+\end{equation}
+Use physical incoming amplitudes \eqref{nr:herglotz} and retain the physical
+section compatibility of Assumption~\ref{ch:tracecompatibility}. Let $B$
+be the fixed comparison box and $K,C_H$ its constants in
+\eqref{ch:constants}. Define $B_B$ by \eqref{nr:resourceconstants}--
+\eqref{nr:resourcebound}, taking $U=B$ and $V=V_{\max}$. Then every counted
+subspace satisfies
+\begin{equation}
+ \dim W\leq\frac{|B|}{2\pi^2}
+      \left(\frac{K C_H B_B}{\eta\tau-\delta}\right)^{3/2}.
+ \label{nr:channelbound}
+\end{equation}
+No enclosing radius, interface count, separation, or minimum feature size
+enters this bound.
+\end{corollary}
+\begin{proof}
+All quantities on the right side of \eqref{nr:resourcebound} are
+nondecreasing in $V$ while \eqref{nr:smallvolume} holds. Thus the common
+volume cap gives the input-to-resource estimate with constant $B_B$.
+Apply Theorem~\ref{ch:fulloutput} to any finite-dimensional subspace of $W$.
+If $W$ had larger or infinite dimension, it would contain a finite-dimensional
+subspace violating the same bound.
+\end{proof}
+
+\begin{remark}[OPEN: removal of the volume cap]
+\label{nr:scope}
+This argument excludes arbitrarily many counted channels formed solely by
+redistributing a sufficiently small amount of bounded-contrast dielectric,
+even among distant nonradial pieces. It does not exclude large remote
+resonators or matching structures: their total material volume is unrestricted
+in the primary target. If $t\geq1$, the geometric-series proof supplies no
+inverse bound; it does not assert that the scattering problem is singular.
+Likewise an $L^2$ bound does not bound pointwise electric peaks and is fully
+compatible with the conical hotspot constructions. Finally,
+\eqref{nr:kernelbound} uses $|e^{iz}|=1$ for real $z$. At complex resonance
+frequencies it gives no diameter-independent estimate, and no resonance-free
+complex neighborhood is claimed.
+\end{remark}

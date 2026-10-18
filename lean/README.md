@@ -1,6 +1,7 @@
 # Lean verification of operator estimates and Maxwell foundations
 
-The formal sources are `OQ14.lean` and `Maxwell.lean`. Twenty-eight exported
+The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
+`HCurlDomain.lean`, and `HCurlCutoff.lean`. Sixty-two exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -15,6 +16,7 @@ directory, prepare dependencies using the supplied lockfile (keep
 ```text
 lake exe cache get Mathlib.Analysis.NormedSpace.OperatorNorm.Basic Mathlib.Analysis.Normed.Operator.LinearIsometry Mathlib.Analysis.InnerProductSpace.Basic Mathlib.LinearAlgebra.FiniteDimensional.Defs Mathlib.LinearAlgebra.Dimension.Finrank Mathlib.MeasureTheory.Integral.Bochner.Basic Mathlib.Data.Real.Sqrt Mathlib.Tactic.Linarith Mathlib.Tactic.Ring
 lake exe cache get Mathlib.Analysis.InnerProductSpace.PiL2 Mathlib.Analysis.Calculus.FDeriv.Mul Mathlib.Analysis.Calculus.FDeriv.Symmetric Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts Mathlib.Analysis.SpecialFunctions.ExpDeriv Mathlib.LinearAlgebra.CrossProduct Mathlib.Tactic.FinCases Mathlib.Tactic.LinearCombination
+lake exe cache get Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Function.LpSpace.Indicator Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -36,7 +38,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, runs `lake build OQ14 Maxwell`, and audits all 28
+compiler and mathlib revision, builds all five registered modules, and audits all 62
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -110,18 +112,70 @@ theorem for arbitrary weak fields. The evanescent witnesses grow in space
 and have infinite transverse extent; no finite-power physical excitation
 or unrestricted channel counterexample follows from them.
 
-The source hashes and standalone research check are in `Maxwell/`. The
+The source hashes and research checks are in `Maxwell/`, `HCurl/`,
+`HCurlDomain/`, and `HCurlCutoff/`. The
 combined clean release build is recorded under `../output/lean/`.
 
 Every audited theorem's reported axioms are exactly `propext`, `Classical.choice`,
 and `Quot.sound`, the standard Lean/mathlib foundations. There are no
 project-specific axioms, admitted proofs, or assumed Maxwell conclusions.
 
+## Weak curl on all space and open regions
+
+`HCurl.lean`, namespace `OQ14.WeakCurl`, constructs the genuine L2 weak-curl
+graph on Euclidean three-space. `HCurlDomain.lean`, namespace
+`OQ14.DomainCurl`, uses L2 classes for Lebesgue measure restricted to a region
+and tests compactly supported inside it. Fields in the second space need
+not be globally square integrable. No zero boundary condition is imposed.
+
+Each module proves these eleven exported results:
+
+| Declaration | Verified statement |
+|---|---|
+| `testPair_integrable` | The products defining test pairings are integrable. |
+| `testPair_integral` | A bounded L2 test functional equals the actual integral. |
+| `hasWeakCurl_iff_integral` | The graph condition is exactly the weak curl equation. |
+| `graph_closed` | The graph is a closed complex subspace. |
+| `hcurl_complete` | Its inherited graph norm is complete. |
+| `graph_norm` | The norm is the maximum field/curl coordinate L2 norm. |
+| `weakCurl_limit` | Simultaneous L2 limits preserve the weak equation. |
+| `tests_separate` | Admissible compact tests separate scalar L2 classes. |
+| `weakCurl_unique` | The distributional curl is uniquely determined. |
+| `field_projection_injective` | No unconstrained curl data enter the graph. |
+| `classical_hasWeakCurl` | A C1 field with L2 field and curl belongs to the graph. |
+
+The domain separation and uniqueness results require the region to be open.
+The domain classical bridge assumes a globally C1 field but requires L2 only
+on the region. Both norms are Banach graph norms, not mode energy norms.
+
+The twelfth domain export, `weak_divergence_curl`, proves that the weak curl
+has zero distributional divergence. It tests against compact C2 functions,
+which include the usual smooth distribution tests, and derives cancellation
+from actual mixed derivatives. The field and curl need no differentiability.
+
+## Interior cutoff and localization
+
+`HCurlCutoff.lean`, namespace `OQ14.CurlCutoff`, proves multiplication by
+an actual compact C1 scalar and the weak product rule
+`curl(chi E) = chi curl E + grad chi cross E`. No differentiability of E
+is assumed. Supremum bounds A on the multiplier and B on each coordinate
+derivative give graph norm at most `(A + 2 B) norm E`. The source also
+constructs the isometric zero extension of restricted L2 classes, proves
+its integral pairing identity, and proves that the product-rule curl
+extends correctly after a cutoff supported inside the open region.
+
+Its eleven audited exports are `multiplier_memLp`, `mulL2_ae`,
+`mulL2_norm_le`, `testPair_mulL2`, `derivativePair_product`,
+`weakCurl_multiply`, `cutoff_norm_le`, `extendScalar_ae`,
+`extendScalar_norm`, `extendScalar_pair`, and `weakCurl_cutoff_extend`.
+Unrestricted zero extension across a boundary is not claimed.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
-and weak-test identities are now represented, but the source does not yet
-construct H(curl) trace theory, outgoing scattering, the conical spectrum,
+and weak-test identities, complete weak-curl graphs and weak divergence of
+curl are represented. The source does not yet construct H(curl) trace theory,
+density theory, outgoing scattering, the conical spectrum,
 Runge approximation, rounding, the analytic Fredholm resonance pencil or
 its reciprocal norm. The complete written modal theorem is not yet a Lean
 theorem. The unrestricted channel claim additionally still lacks a written

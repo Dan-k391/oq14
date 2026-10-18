@@ -29,7 +29,11 @@ assert not build['dirty_worktree'] and not checks['dirty_worktree']
 assert lean['source_repository']['commit'] == commit
 assert lean['source_repository']['dirty'] is False
 assert all(c['passed'] for c in checks['checks'])
-formal_sources = sorted([*(ROOT/'lean').glob('*.lean'), *(ROOT/'lean/Maxwell').glob('**/*.lean')])
+formal_sources = sorted([*(ROOT/'lean').glob('*.lean'),
+                         *(ROOT/'lean/Maxwell').glob('**/*.lean'),
+                         *(ROOT/'lean/HCurl').glob('**/*.lean'),
+                         *(ROOT/'lean/HCurlDomain').glob('**/*.lean'),
+                         *(ROOT/'lean/HCurlCutoff').glob('**/*.lean')])
 expected_theorems = set()
 for source in formal_sources:
     expected_theorems.update(re.findall(r'#print axioms (OQ14(?:\.\w+)+)', source.read_text(encoding='utf-8')))
@@ -70,8 +74,10 @@ theorems have complete written proofs under their stated conventions. The
 modal theorem includes arbitrary high Q, fixed real pole frequency, common
 ordinary material bounds and actual maxima in the prescribed plane patch.
 The unrestricted fixed-section channel statement remains OPEN. Lean now
-checks actual classical and compact-test Maxwell identities and exact wave
-solutions, alongside the operator results. Full scattering, interface and
+checks actual classical and compact-test Maxwell identities, distributional
+curl spaces on all space and open regions, interior cutoff localization,
+and exact wave solutions,
+alongside the operator results. Full scattering, interface and
 resonance proofs are NOT yet formalized. This is not full OQ14 closure.
 
 The source/ directory contains all tracked sources, build instructions,

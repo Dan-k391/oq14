@@ -11,8 +11,15 @@ The delivered results include finite three-dimensional driven packing and
 arbitrary finite hotspot packing in one genuinely normalized high-Q mode of
 a smooth finite dielectric. The modal construction fixes the real frequency
 and common material bounds and places actual maxima in the prescribed plane.
-Lean now includes genuine classical and weak Maxwell identities and exact
-solutions alongside the operator estimates. The unrestricted channel theorem
+Lean now includes genuine classical and weak Maxwell identities, complete
+weak-curl spaces on open regions, and exact solutions alongside the operator
+estimates. New channel bounds cover growing radial stacks in a prescribed
+angular band and dielectrics with sufficiently small total material volume.
+Global approximate radial control is proved for any finite set of TE
+orders. A separate flux-only bound excludes arbitrarily many counted
+channels in entire propagating fields and sufficiently large fixed-band
+vacuum cores, even with unrestricted core amplification.
+The unrestricted channel theorem
 and complete Lean formalization of the existence proofs remain unfinished.
 
 Canonical mathematics: `manuscript/main.tex`, `manuscript/sections/*.tex`,
