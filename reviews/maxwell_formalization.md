@@ -72,14 +72,14 @@ Targeted searches of the pinned analysis and geometry sources did not find an ex
 
 ## Missing steps for the complete research claims
 
-1. Domain weak-curl graphs, interior cutoff/zero extension, and whole-space smooth graph-norm approximation are now implemented. Restriction, general-domain localization of the weak Green identity, and boundary theory remain separate obligations. Whole-space smoothing is proved through actual convolution and its L2 identification, not supplied as a density assumption.
+1. Domain weak-curl graphs, interior cutoff/zero extension, whole-space smooth graph-norm approximation, general-open-region weak Poynting localization, and weak real power conservation are now implemented. Plane-slice representatives, trace evaluations, and boundary theory remain separate obligations. Whole-space smoothing is proved through actual convolution and its L2 identification, not supplied as a density assumption.
 2. Establish tangential traces and interface transmission, including integration by parts on bounded Lipschitz domains and the correct normal physical flux. The present compact-test theorem has no boundary trace.
 3. Construct the outgoing homogeneous Maxwell fundamental solution as a distribution, including its singular local term. Prove the volume operator mapping estimates, its small-contrast inverse, uniqueness, far-field representation, and the scattering/incident normalization identities.
 4. Prove total-field Maxwell Runge approximation from source reciprocity and unique continuation. Abstract density or compactness alone would not discharge this step.
 5. Formalize the angular conical eigenproblem, its weighted spectral theory, the regularized Poincaré decomposition, radial forcing identities and estimates, nonzero singular coefficient, and interface regularity.
 6. Prove stability under rounding and smooth-interface uniform convergence, followed by the finite peak construction and its unit incident-power normalization.
 7. For modal claims, build analytic Fredholm/resonance continuation, a genuine outgoing resonant-state normalization, and its nonvanishing and rounding continuity. Neither abstract operator perturbation nor local coefficient continuation supplies these global statements by itself.
-8. For the channel claim, identify the actual physical input/output spaces and flux forms, prove the absolute bypass condition for every coherent vector, and prove either a uniform approximation bound or a globally realizable counterexample with the prescribed fixed section. The formal local evanescent example does not meet those global conditions.
+8. For the channel counterexample, formalize the actual physical input/output spaces and flux forms, finite-band jet interpolation and Gram balancing, all-order radial source Green convergence, self-consistent small-inclusion estimate, and uniform whole-plane flux convergence in the written uc:counterexample proof. Its fixed delta>eta scope and full scattering output must be retained. The formal local evanescent example does not meet those global conditions.
 
 Replacing these steps by hypotheses named after the desired conclusions would verify only a conditional algebraic statement. No such replacement is presented here as verification of OQ14.
 
@@ -148,3 +148,35 @@ Their hashes and raw output are in `lean/WeakPoynting/`. These are
 whole-space graph theorems; a general scattering field still needs a
 local-domain bridge. They do not prove outgoing existence, interface
 regularity, conical spectra or modal continuation.
+
+## Local weak Poynting and real power conservation
+
+Root read every definition and proof in the frozen Poynting, Local, and
+Conservation modules. Conjugation is the actual real-linear isometry on
+complex L2, and the compact derivative pairing uses the proved conjugate
+derivative identity. Every complex Poynting term is an integrable L2
+product, and the combined integral is identified with the already proved
+bilinear Green functional.
+
+The localization constructs a smooth cutoff equal to one on a neighborhood
+of the test's compact support, with support inside the open region. Actual
+cutoff/product-curl zero extensions agree almost everywhere with the
+regional field and curl there. Outside that support both the test and its
+derivatives vanish. This proves the restricted integral identity and
+integrability without an assumed trace theorem or global L2 hypothesis.
+
+The real conservation module defines WeakMaxwell by the two actual weak
+curl equations almost everywhere. For real variable coefficients the
+reactive density is imaginary pointwise; projection of the proved complex
+integral gives the conventional half-scaled real Poynting law. No
+coefficient differentiability or separate integrability of each reactive
+energy term is needed: integrability of the combined density was already
+proved from regional L2 fields and curls. Its conclusion is distributional
+divergence zero, not the later W1,1 slice-representative conclusion.
+
+The three frozen hashes are respectively
+`c419f2a94d9cb0d303ad7f5642b821047e06d596a765cc4df7955c6aa0bb6a78`,
+`b15e9b8de4108e3ce597c1e228690300d2396ac13dbbb50cb0a00e106b9806dc`,
+and `e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f`.
+Their 5+6+6 direct compiler reports use only the standard three axioms.
+No substantive defect was found in this independent review.

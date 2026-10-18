@@ -77,7 +77,8 @@ approximately $8$, $115.292$, $1824.323$, $464888.834$, while reflection
 power remains one. These tests check normalization and exact matching,
 not an increasing transmission count.
 
-No physical $N$-channel dielectric family was completed. Therefore actual
+No numerical simulation of the analytic physical $N$-channel family in
+Theorem~\ref{uc:counterexample} was performed. Therefore numerical
 Maxwell transmission singular values, section-flux matrices, absolute
 bypass, weakest physical coupling, and relative model-reduction errors
 for $N=2,4,8$ are \emph{unavailable}, not zero. Their fields in the
@@ -93,11 +94,13 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 The modules \texttt{OQ14.lean}, \texttt{Maxwell.lean},
 \texttt{HCurl.lean}, \texttt{HCurlDomain.lean}, and
 \texttt{HCurlCutoff.lean}, \texttt{WeakPoynting.lean}, and
-\texttt{WeakPoynting/Green.lean} in \texttt{lean/}
+\texttt{WeakPoynting/Green.lean}, together with its
+\texttt{Poynting.lean}, \texttt{Local.lean}, and
+\texttt{Conservation.lean} companion modules in \texttt{lean/}
 use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Eighty-four exported theorem declarations were compiled successfully.
+One hundred one exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -197,8 +200,17 @@ to establish the local bilinear Green identity
 \]
 for arbitrary whole-space $H(\operatorname{curl})$ fields and compact
 $C^1$ tests. Every pairing is an actual integrable $L^2$ product.
-General open-region scattering fields still require a localization
-bridge, since they need not be globally square integrable.
+The next seventeen declarations establish conjugation of weak curl,
+the actual complex Poynting identity, and its localization to arbitrary
+open regions. A smooth interior cutoff equal to one near the test support
+is constructed explicitly, so the original fields need no global
+$L^2$ condition or boundary condition. For the actual regional weak
+Maxwell equations with real variable coefficients, the reactive term
+is purely imaginary. The real time-averaged flux therefore has zero
+distributional divergence against every compact real $C^1$ test.
+This verifies the weak conservation step in Lemma~\ref{ch:fluxlemma};
+its plane-slice representatives and trace evaluations remain outside
+this formal coverage.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -267,16 +279,21 @@ Corollary~\ref{cb:finitecore} transfers this obstruction to actual devices
 with a sufficiently large vacuum core at each fixed finite angular band.
 Its radius threshold may depend on the band. Thus neither result controls
 nearby material or arbitrary simultaneous growth of angular band and
-radius. The bypass bridge for unrestricted physical synthesis remains
-unproved.
+radius. Nearby material is essential to the subsequent counterexample.
 Theorem~\ref{cp:rank} demonstrates why it is essential: actual
 finite positive dielectrics can have arbitrary coherent passage rank
 and unit total throughput when bypass is omitted. Section~\ref{ct:section}
 constructs a local edge-circulation profile with equal passage and return,
 and exact finite-band jets with orthonormal physical inputs. Its
-Proposition~\ref{ct:completion} retains a whole-plane $L^1$ Maxwell
-remainder as an unproved hypothesis. The static profile and illumination
-control are not substituted for that estimate.
+Proposition~\ref{ct:completion} states the sufficient whole-plane $L^1$
+Maxwell remainder. Theorem~\ref{cl:remainder} proves the self-consistent
+small-inclusion estimate for the explicit limiting kernel, and
+Theorem~\ref{rg:physical-limit} proves the all-order physical Green limit
+and whole-plane convergence for finite radial backgrounds.
+Theorem~\ref{uc:counterexample} combines them in the required order
+to disprove unrestricted finiteness for every fixed $\delta>\eta>0$.
+The selected output is the full scattering map; no claim is made here
+for stronger bypass thresholds or a prescribed receiving hemisphere.
 
 For hotspots, Theorem~\ref{hs:three-packing} supplies the finite-device
 driven construction directly, using conical points rather than an
@@ -298,14 +315,14 @@ Driven, invariant 2D electric hotspots & PROVED & Theorem~\ref{hs:packing}: any 
 Driven finite 3D point hotspots & PROVED & Theorem~\ref{hs:three-packing}: one finite-power illumination, fixed small positive contrast, $2N$ smooth finite inclusions, disjoint 3D peak neighborhoods projecting into the prescribed patch.\\[3pt]
 Modal hotspot packing & PROVED & Theorem~\ref{ms:modal-packing}: one genuine normalized QNM, arbitrary finite peak count and quality factor, fixed real frequency and common ordinary bounds, actual maxima in the plane patch. Reciprocal residue normalization is explicit.\\[3pt]
 Scalar electric Helmholtz waves & OPEN here & The hotspot construction uses $u=H_z$ and in-plane vector $E$; it is not a singular scalar-electric-field example. Restricted scalar slab results do not settle OQ14.\\[3pt]
-Full vector, fixed-section channel finiteness and area law & OPEN & Theorem~\ref{ch:fulloutput} retains local field resource, trace compatibility, collar geometry, and $\delta<\eta\tau$. No unconditional count or physical counterexample is proved.\\[3pt]
+Full vector, unrestricted fixed-section finiteness and area law & DISPROVED & Theorem~\ref{uc:counterexample}: arbitrary counted dimension at every fixed $\delta>\eta>0$, with the complete scattering map selected as output and common ordinary bounds. Stricter regimes remain separate.\\[3pt]
 Resource-controlled vector channels & PROVED / CONDITIONAL & Explicit finite-rank, count, average-resource and essential-norm results hold under the listed hypotheses. Uniform area scaling requires uniform additional resources.\\[3pt]
 Ordinary dielectrics & PROVED scoped results & Driven and modal hotspot constructions and Bragg/local-flux obstructions use common positive ordinary bounds. None uses ENZ.\\[3pt]
-Common positive lower bound below one & OPEN channel target & The local resource estimates extend; an ENZ limit does not settle this fixed-positive-bound target.\\[3pt]
+Common positive lower bound below one & DISPROVED unrestricted count & Any such class admitting the scalar interval $[1,\eps_+]$ contains the counterexample of Theorem~\ref{uc:counterexample}. No ENZ limit is needed.\\[3pt]
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
-Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Scalar hotspot examples are contained in tensor classes admitting those scalar values. General vector channel closure remains open.\\[3pt]
+Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Eighty-four exported declarations in Section~\ref{ver:lean}, including actual differential identities, complete weak-curl graphs, cutoff localization, smooth approximation and weak Green identity. No admitted proof or project-specific axiom. Existence, resonance, interface and scattering limits remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One hundred one exported declarations in Section~\ref{ver:lean}, including actual differential identities, complete weak-curl graphs, smoothing, local weak Green and Poynting laws, and weak real power conservation. No admitted proof or project-specific axiom. Complete existence, resonance, interface and scattering limits remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

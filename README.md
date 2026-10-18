@@ -1,8 +1,11 @@
 # OQ14 research project
 
 This is an auditable mathematical investigation of Miller and Monticone,
-arXiv:2605.24738v1, Section 5.6. The original full channel conjecture is not
-claimed solved. Every theorem is scoped in the manuscript and CLAIMS.md.
+arXiv:2605.24738v1, Section 5.6. The manuscript's explicitly quantified
+unrestricted channel assertion is disproved for fixed delta > eta, with
+the complete scattering map selected as output. This does not settle
+stronger bypass or receiving-output formulations. Every theorem is scoped
+in the manuscript and CLAIMS.md.
 The user's subsequent request for complete closure and Lean verification
 is tracked explicitly; proving an abstract operator implication does not
 formally establish its physical Maxwell hypotheses.
@@ -19,8 +22,10 @@ Global approximate radial control is proved for any finite set of TE
 orders. A separate flux-only bound excludes arbitrarily many counted
 channels in entire propagating fields and sufficiently large fixed-band
 vacuum cores, even with unrestricted core amplification.
-The unrestricted channel theorem
-and complete Lean formalization of the existence proofs remain unfinished.
+The new counterexample combines a proved all-order common-stack source
+Green limit, a self-consistent small-inclusion expansion, and whole-plane
+absolute-flux convergence. Complete Lean formalization of these existence
+proofs and of the modal theorem remains unfinished.
 
 Canonical mathematics: `manuscript/main.tex`, `manuscript/sections/*.tex`,
 `manuscript/macros.tex`, and `manuscript/references.bib`.

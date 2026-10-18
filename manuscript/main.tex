@@ -13,7 +13,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. We prove simultaneous driven hotspot packing in invariant two-dimensional and finite three-dimensional dielectric devices. We also prove arbitrary finite packing in one genuinely normalized quasinormal mode of a finite smooth dielectric, at fixed real frequency, common ordinary material bounds, and arbitrarily high prescribed quality factor. The modal proof combines a simple sphere pole, analytic continuation of conical coefficients, and a reciprocal residue norm stable under rounding. The primary channel target fixes frequency, material bounds, the physical section, and power, passage, and absolute-bypass thresholds, with unrestricted external support and fine structure. Resource-dependent vector estimates and additional exact obstructions are proved, but the unrestricted physical channel target remains open. Lean checks operator estimates and classical and weak Maxwell identities; the complete continuum existence and spectral arguments are not yet formalized.
+We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. We prove simultaneous driven hotspot packing in invariant two-dimensional and finite three-dimensional dielectric devices. We also prove arbitrary finite packing in one genuinely normalized quasinormal mode of a finite smooth dielectric, at fixed real frequency, common ordinary material bounds, and arbitrarily high prescribed quality factor. The modal proof combines a simple sphere pole, analytic continuation of conical coefficients, and a reciprocal residue norm stable under rounding. For the explicitly quantified unrestricted channel target, we construct arbitrarily large counted subspaces at fixed frequency, material bounds, square section and thresholds whenever the allowed absolute bypass exceeds the required passage. The selected output is the complete scattering map. A distant finite radial stack amplifies independent edge jets; shrinking ordinary dielectric spheres convert them into local circulation. An all-order source Green estimate and whole-plane flux convergence justify the actual self-consistent device construction. Stronger passage/bypass and output restrictions remain separate questions. Lean checks operator estimates and classical and weak Maxwell identities; the complete continuum existence and spectral arguments are not yet formalized.
 \end{abstract}
 \noindent\textbf{Reading guide.} Status words refer to the precise labeled statement, not to OQ14 as a whole. The exact Lean coverage is in Section~\ref{ver:lean}; other proofs are mathematical arguments. See Section~\ref{ver:verdicts}, the claim ledger, and the reproducibility record for the remaining scope.
 \clearpage
@@ -35,6 +35,9 @@ We investigate the two conjectures in Section 5.6 of Miller and Monticone's vers
 \input{sections/channel_bandlimited}
 \input{sections/channel_nonradial}
 \input{sections/channel_transducers}
+\input{sections/channel_transducer_limit}
+\input{sections/radial_green_limit}
+\input{sections/channel_unrestricted}
 \input{sections/verification}
 \bibliographystyle{plain}
 \bibliography{references}

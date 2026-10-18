@@ -1,0 +1,343 @@
+\section{The small-inclusion limit for an explicit parity reaction kernel}
+\label{cl:section}
+
+We now discharge the small-inclusion and whole-plane error estimates
+for a specific limiting core Green kernel. This is a theorem about
+that explicit kernel. Its identification as the limit of physical
+finite radial backgrounds, together with control of the remote
+annulus, is proved separately in Theorem~\ref{rg:physical-limit}.
+Neither step is inferred just from finite-band incident amplification;
+their combination gives Theorem~\ref{uc:counterexample}.
+
+\subsection{The exact kernel and elementary plane estimates}
+
+Write $k=k_0$, $\Phi_k(x)=e^{ik|x|}/(4\pi|x|)$, and use the
+dimensionless electric polarization $P=\chi E$, where
+$\chi=\eps_r-1$. The free electric response is
+\begin{equation}\label{cl:free}
+ \mathcal K_0P=(k^2I+\nabla\nabla)\Phi_k*P
+       =-\mathcal P P+\mathcal D P.
+\end{equation}
+Here $\mathcal P$ is the longitudinal orthogonal projection on
+$L^2(\mathbb R^3;\mathbb C^3)$, whose Fourier multiplier is
+$\xi\xi^T/|\xi|^2$. Thus $\mathcal P\geq0$ and
+$\|\mathcal P\|=1$. The remainder $\mathcal D$ has a kernel
+bounded by $C/|x|$ on every fixed bounded set. Outside the support
+of $P$ the static kernel $-\mathcal P$ is bounded by $C/|x|^3$.
+The magnetic response is
+\begin{equation}\label{cl:magnetic}
+ \mathcal HP(x)=\frac{\nabla\times\mathcal K_0P(x)}{i\omega\mu_0}
+ =\frac{k^2}{i\omega\mu_0}
+       \int\nabla\Phi_k(x-y)\times P(y)\,dy.
+\end{equation}
+Its kernel is bounded by $C(|x|^{-2}+|x|^{-1})$.
+
+Let $R_z=\operatorname{diag}(1,1,-1)$ and define the electric-field
+wall projections
+\begin{equation}\label{cl:projections}
+ \mathcal W E(x)=-R_zE(R_zx),\qquad
+ \Pi_{\rm e}=\tfrac12(I+\mathcal W),\qquad
+ \Pi_{\rm m}=\tfrac12(I-\mathcal W).
+\end{equation}
+The first range has electric-wall parity. The entire real kernel
+\begin{equation}\label{cl:J}
+ J(x)=(k^2I+\nabla\nabla)\frac{\sin(k|x|)}{4\pi|x|}
+ =\frac{k^3}{16\pi^2}\int_{S^2}
+       (I-\theta\theta^T)e^{ik\theta\cdot x}\,d\theta
+\end{equation}
+is the imaginary part of the free electric kernel. Set
+\[
+ \mathcal R_{\rm e}P=i\Pi_{\rm e}(J*P),\qquad
+ \mathcal R_{\rm m}P=i\Pi_{\rm m}(J*P).
+\]
+For an actual core gain parameter $B>0$, define
+\begin{equation}\label{cl:kernel}
+ \mathcal K_BP=\mathcal K_0P
+       +(B^2-1)\mathcal R_{\rm e}P
+       +(B^{-2}-1)\mathcal R_{\rm m}P.
+\end{equation}
+All derivatives in these definitions are distributional where
+necessary. Away from the source support the formulas are classical.
+Both reaction fields are entire vacuum Maxwell electric fields;
+their magnetic partners are their curls divided by $i\omega\mu_0$.
+On $z=0$ the electric-wall reaction has zero tangential electric
+field, and the opposite-wall reaction has zero tangential magnetic
+field.
+
+\begin{lemma}[PROVED: uniform local and far-field kernel bounds]
+\label{cl:kernelbounds}
+Fix a ball containing all source supports under consideration.
+On each fixed observation ball, $\mathcal R_{\rm e}P$,
+$\mathcal R_{\rm m}P$, and their magnetic partners, with any fixed
+number of derivatives, are bounded by $C\|P\|_1$.
+For $|x|=r$ outside a larger fixed ball, each has an expansion
+\begin{equation}\label{cl:transverse}
+ F(x)=\frac{e^{ikr}F_+(\widehat x)+e^{-ikr}F_-(\widehat x)}r
+                +O(C\|P\|_1r^{-2}),\qquad
+ F_\pm(\widehat x)\cdot\widehat x=0,
+\end{equation}
+with $\|F_\pm\|_\infty\leq C\|P\|_1$. The free electric and
+magnetic responses have the same statement with $F_-=0$.
+For the dynamic electric response $\mathcal D P$ the same leading
+far-field statement holds. These estimates are uniform over all
+$L^1$ polarizations in that fixed source ball.
+
+If two such fields have amplitude bounds $M_1,M_2$ in this
+statement, then on the measurement plane outside the fixed larger
+disk
+\begin{equation}\label{cl:tailproduct}
+ |(F_1\times\overline{F_2})\cdot\widehat z|
+        \leq C M_1M_2r^{-3},\qquad
+ \int_{r>R}|(F_1\times\overline{F_2})\cdot\widehat z|\,dA
+        \leq C M_1M_2/R.
+\end{equation}
+The same assertions apply to any fixed finite collection of regular
+vacuum waves, with its coefficient norm replacing $\|P\|_1$.
+\end{lemma}
+\begin{proof}
+The integral in \eqref{cl:J} gives all compact derivative bounds
+directly, including after reflection. The reaction fields are
+smooth spherical Herglotz fields. Their angular amplitudes and all
+their derivatives are bounded by $C\|P\|_1$, since $y$ stays in
+a fixed ball in the factor $e^{-ik\theta\cdot y}$.
+Stationary phase at the two points $\theta=\pm\widehat x$ gives
+\eqref{cl:transverse}, uniformly in direction. The factor
+$I-\theta\theta^T$ makes the electric leading amplitudes
+transverse. A curl gives the transverse magnetic leading
+amplitudes and the same remainder order. Equivalently these
+statements follow by differentiating the explicit sine kernel.
+
+For the free responses, expand $|x-y|=r-\widehat x\cdot y+O(r^{-1})$
+and the derivatives of $\Phi_k(x-y)$ uniformly for bounded $y$.
+The electric leading matrix is
+$k^2(I-\widehat x\widehat x^T)e^{ikr}/(4\pi r)$;
+the magnetic leading vector is a cross product with $\widehat x$.
+Both are transverse. The static subtraction is $O(\|P\|_1r^{-3})$,
+so it does not change the dynamic leading terms.
+On the plane, $\widehat x\cdot\widehat z=0$. The cross product
+of two vectors transverse to $\widehat x$ is parallel to
+$\widehat x$, even with complex coefficients. Consequently every
+$r^{-2}$ leading contribution to the normal cross product is zero.
+The remainders give \eqref{cl:tailproduct}, whose radial integral
+is finite. Finite regular waves have the same transverse incoming
+and outgoing expansions.
+\end{proof}
+
+\begin{lemma}[PROVED: small-source plane estimates]
+\label{cl:planebounds}
+Let $\Omega_a$ be the union of the $2N$ radius-$\rho a\ell_0$
+balls from Proposition~\ref{ct:model}, where $N$ is fixed and
+$a\downarrow0$. They lie at distances at least
+$(h-\rho)a\ell_0$ from the plane, and $|\Omega_a|=O(a^3)$.
+For $P\in L^2(\Omega_a)$, extended by zero, and a fixed plane
+disk $K$ containing all their projections,
+\begin{align}
+ \|\mathcal P P\|_{L^1(\mathbb R^2)}
+       &\leq C a^{-1}\|P\|_1,\label{cl:staticL1}\\
+ \|\mathcal P P\|_{L^2(\mathbb R^2)}
+       &\leq C a^{-1/2}\|P\|_2,\label{cl:staticL2}\\
+ \|\mathcal D P\|_{L^1(K)}
+       &\leq C\|P\|_1,\label{cl:dynamicL1}\\
+ \|\mathcal K_0P\|_{L^2(K)}
+       &\leq C a^{-1/2}\|P\|_2,\qquad
+ \|\mathcal HP\|_{L^2(K)}
+       \leq C a^{1/2}\|P\|_2.\label{cl:nearL2}
+\end{align}
+The constants are independent of $a$ and $P$.
+\end{lemma}
+\begin{proof}
+For a source point $y$ at height $d\geq c a$,
+\[
+ \int_{\mathbb R^2}|(x,0)-y|^{-3}\,dx=2\pi/d,
+ \qquad
+ \int_{\mathbb R^2}|(x,0)-y|^{-6}\,dx=\pi/(2d^4).
+\]
+The first proves \eqref{cl:staticL1}. The second, integrated over
+$\Omega_a$, bounds the squared Hilbert--Schmidt norm by
+$C a^3a^{-4}=C a^{-1}$, proving \eqref{cl:staticL2}.
+The planar integral of $|x-y|^{-1}$ over $K$ is uniformly bounded,
+which proves \eqref{cl:dynamicL1}.
+
+For the magnetic squared kernel, the $|x-y|^{-4}$ planar
+integral is $\pi/d^2$, and the $|x-y|^{-2}$ integral over $K$
+is $O(1+|\log d|)$. Its squared Hilbert--Schmidt norm is thus
+$O(a)+O(a^3|\log a|)=O(a)$. The dynamic electric squared
+kernel has Hilbert--Schmidt norm squared $O(a^3|\log a|)$.
+Combine these with the static bound to obtain \eqref{cl:nearL2}.
+\end{proof}
+
+\subsection{Self-consistent inclusions and the complete plane remainder}
+
+Fix the interpolants $v_j$, their number $\lambda$, the physical
+incoming basis $g_j$, and the geometry from
+Lemmas~\ref{ct:jets}--\ref{ct:gram}. Let
+$(E^v(c),H^v(c))$ be the finite regular electric-wall field
+$\sum_jc_jv_j$. For fixed $t>0$ put
+\begin{equation}\label{cl:scales}
+ A_a=t/a,\qquad B_a=\sqrt\lambda A_a,\qquad
+ (E^{\rm bg}_a,H^{\rm bg}_a)=A_a(E^v(c),H^v(c)),\qquad
+ \chi_a=(\eps_p-1)\mathbf1_{\Omega_a}.
+\end{equation}
+The distinction between $A_a$ and $B_a$ is necessary: $A_a$ is
+the jet scale, whereas $B_a$ is the actual common core multiplier
+on the orthonormal physical inputs $g_j$.
+
+\begin{theorem}[PROVED: explicit-kernel small-inclusion remainder]
+\label{cl:remainder}
+For all sufficiently small $a$, the equation
+\begin{equation}\label{cl:integralequation}
+ P_a=\chi_a\bigl(E^{\rm bg}_a+\mathcal K_{B_a}P_a\bigr)
+ \quad\hbox{in }L^2(\Omega_a)
+\end{equation}
+has a unique solution. Define the auxiliary total fields by
+\[
+ E_a=E^{\rm bg}_a+\mathcal K_{B_a}P_a,
+ \qquad H_a=\frac{\nabla\times E_a}{i\omega\mu_0}.
+\]
+They solve Maxwell's equations with the actual sphere permittivities
+locally and outside the spheres, with the feedback condition encoded
+by \eqref{cl:kernel}. If $F_a(c)$ is the explicit cross-profile
+of Proposition~\ref{ct:model}, then
+\begin{equation}\label{cl:actualremainder}
+ \left\|\tfrac12\operatorname{Re}(E_a\times\overline{H_a})
+                \cdot\widehat z-F_a(c)\right\|_{L^1(\mathbb R^2)}
+       \leq C a\|c\|^2.
+\end{equation}
+All constants may depend on the fixed $N$, points, interpolants,
+$\lambda,t,k,\rho,h,\eps_p$, but not on $a$ or $c$.
+The theorem does not normalize these auxiliary fields by their own
+free-space incoming amplitude. Their use for physical unit-power
+scattering requires the separate finite-background limit.
+\end{theorem}
+\begin{proof}
+It suffices to prove estimates for $\|c\|=1$; linearity of the
+fields then gives the stated quadratic dependence. Write
+$s_a=\sqrt{\chi_a}$ and $u_a=s_aE_a$, so $P_a=s_au_a$.
+Equation \eqref{cl:integralequation} becomes
+\begin{equation}\label{cl:positiveblock}
+ \bigl(I+s_a\mathcal P s_a-s_a\mathcal D s_a
+ -(B_a^2-1)s_a\mathcal R_{\rm e}s_a
+ -(B_a^{-2}-1)s_a\mathcal R_{\rm m}s_a\bigr)u_a
+      =s_aE^{\rm bg}_a.
+\end{equation}
+The first two terms form a self-adjoint operator at least $I$,
+so its inverse has norm at most one. A Schur estimate for the
+$|x-y|^{-1}$ dynamic kernel on $\Omega_a$ is $O(a^2)$:
+within one ball integrate $|x-y|^{-1}$ over a ball of radius
+$O(a)$, and between distinct balls use their fixed separation.
+The smooth reaction kernels have operator norms $O(a^3)$.
+Since $B_a=O(a^{-1})$, the norm of the remaining perturbation
+in \eqref{cl:positiveblock} is $O(a^2)+O(B_a^2a^3)=O(a)$.
+A Neumann series after the positive inverse proves invertibility,
+with inverse norm at most two for small $a$. In particular
+\begin{equation}\label{cl:sourcebounds}
+ \|P_a\|_2\leq C a^{1/2},\qquad \|P_a\|_1\leq C a^2.
+\end{equation}
+The equation and all its kernels commute with the rotation by
+$\pi$ about $z$; the source and solution are in its invariant
+sector. No unsupported odd-$m$ extension of a core kernel is used.
+
+Let $P_a^0$ be constant on each sphere, with the isolated static
+value
+\begin{equation}\label{cl:leadingP}
+ P_a^0\big|_{\Omega_{a,j}^{\pm}}
+   =(\eps_p-1)\frac3{\eps_p+2}
+       E^{\rm bg}_a(p_j^{\pm}),\qquad p_j^+=p_j, p_j^-=-p_j.
+\end{equation}
+These vectors are normal to the plane. For one isolated sphere
+they solve the static equation exactly: the interior electric
+field of its constant polarization is $-P_a^0/3$, so
+$P_a^0=\chi(E^{\rm bg}_a-P_a^0/3)$.
+The actual background differs from its value at $p_j^{\pm}$
+by $O(A_aa)=O(1)$ throughout the corresponding sphere. Its
+$L^2$ residual is $O(a^{3/2})$.
+Static interaction between distinct spheres has operator norm
+$O(a^3)$, because their mutual distances remain positive.
+The dynamic and reaction perturbations on $P_a^0$ have norm
+$O(a)\|P_a^0\|_2=O(a^{3/2})$ by the preceding bounds.
+Applying the uniformly bounded inverse in \eqref{cl:positiveblock}
+to this residual proves
+\begin{equation}\label{cl:sourceerror}
+ \|P_a-P_a^0\|_2\leq C a^{3/2},\qquad
+ \|P_a-P_a^0\|_1\leq C a^3.
+\end{equation}
+
+It remains to estimate the whole plane, not merely a compact set.
+Abbreviate the free response by $(E^f,H^f)$, and the two full
+reaction responses, including their coefficients in
+\eqref{cl:kernel}, by $(E^e,H^e)$ and $(E^m,H^m)$.
+On the plane the wall identities give exactly
+\begin{equation}\label{cl:fluxsplit}
+ E_{a,t}=E^f_t+E^m_t,\qquad
+ H_{a,t}=H^{\rm bg}_{a,t}+H^f_t+H^e_t.
+\end{equation}
+By Lemma~\ref{cl:kernelbounds} and \eqref{cl:sourcebounds}, the
+opposite-wall reaction fields have compact and far-field amplitude
+$O(a^2)$, while the wall reaction fields have amplitude
+$O(B_a^2a^2)=O(1)$. The background fields have amplitude $O(A_a)$.
+
+First take the cross product with $H^{\rm bg}_a$ in
+\eqref{cl:fluxsplit}. Replacing the static free electric response
+of $P_a$ by that of $P_a^0$ has plane $L^1$ error at most
+$C a^{-1}\|P_a-P_a^0\|_1=O(a^2)$ by
+\eqref{cl:staticL1}. Since the background is globally bounded by
+$C A_a$, its flux error is $O(a)$. The dynamic free electric
+response has $L^1$ norm $O(a^2)$ on a fixed disk, by
+\eqref{cl:dynamicL1}; outside that disk the transverse cancellation
+\eqref{cl:tailproduct} gives a flux bound
+$O(A_a\|P_a\|_1)=O(a)$. The same compact bound and tail argument
+apply to $E^m\times\overline{H^{\rm bg}_a}$.
+
+The remaining static field of $P_a^0$ is exactly a sum of normal
+dipoles, with the polarizabilities from Lemma~\ref{ct:profile}.
+For each individual dipole, its tangential plane trace satisfies
+\begin{equation}\label{cl:firstmoment}
+ \int_{\mathbb R^2}|E^{0,j}_t(x)|\,dA\leq C a,
+ \qquad
+ \int_{\mathbb R^2}|x-p_j^{\pm}|\,|E^{0,j}_t(x)|\,dA
+          \leq C a^2.
+\end{equation}
+These follow directly by scaling \eqref{ct:dipoletrace}; the
+second radial integrand at infinity is $O(r^{-2})$ and is
+integrable. A finite regular background has global Lipschitz
+constant $C A_a$. Replacing its magnetic field in each such cross
+product by $H^{\rm bg}_a(p_j^{\pm})$ therefore costs at most
+$C A_a a^2=O(a)$. The resulting sum is exactly $F_a(c)$, including
+the coefficients and signs in \eqref{ct:profileformula}.
+
+We finally control all cross products with the two correction
+magnetic fields in \eqref{cl:fluxsplit}. On a fixed disk,
+\eqref{cl:nearL2} and \eqref{cl:sourcebounds} give
+\[
+ \|E^f\|_2\leq C,
+ \qquad \|H^f\|_2\leq Ca,
+ \qquad \|E^m\|_\infty\leq Ca^2,
+ \qquad \|H^e\|_\infty\leq C.
+\]
+Thus the free self-cross product and the product
+$E^m\times\overline{H^f}$ have $L^1$ norm $O(a)$.
+For products with $H^e$, use
+$\|\mathcal P P_a\|_{L^1}\leq C a^{-1}\|P_a\|_1=O(a)$,
+$\|\mathcal D P_a\|_{L^1(K)}=O(a^2)$, and the bounded
+opposite-wall reaction, obtaining another $O(a)$ bound.
+Outside the disk, \eqref{cl:tailproduct} applies to these products
+with amplitude pairs $(a^2,a^2)$ or $(a^2,1)$; both give $O(a)$
+or smaller. All normal products are therefore integrable, and
+their sum proves \eqref{cl:actualremainder}.
+\end{proof}
+
+\begin{remark}[What has been discharged]
+\label{cl:scope}
+For the explicit kernel \eqref{cl:kernel}, the sufficient plane
+remainder in Proposition~\ref{ct:completion} is now a conclusion,
+not an assumption. The proof uses the uniformly positive static
+block, includes every coherent input, and estimates the full
+absolute plane flux. Theorem~\ref{rg:physical-limit} supplies the
+separate physical sequence: its core source Green kernels converge
+to \eqref{cl:kernel}, and its remote-annulus and exterior plane-flux
+contributions tend to zero at each fixed $a$.
+The order is fixed $a$ first, remote radius second, then a diagonal
+sequence with $a\downarrow0$. Theorem~\ref{uc:counterexample}
+combines these independently proved limits into finite ordinary
+devices with the original physical incoming normalization.
+\end{remark}

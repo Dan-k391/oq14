@@ -1,0 +1,558 @@
+\section{An actual radial Green limit with whole-plane flux convergence}
+\label{rg:section}
+
+This section proves a source-response and whole-plane convergence
+theorem for finite ordinary dielectric stacks. The gain is fixed while
+the stack radius tends to infinity. A later diagonal choice may select
+that radius after the gain and the inclusion geometry. This order
+avoids assuming a uniform resolvent bound over unrelated devices.
+
+\subsection{The common stack and its source coefficient}
+
+Fix $1<q<\sqrt{\eps_+}$ and an integer $M\geq1$, and put
+\begin{equation}\label{rg:stack}
+ A=q^M,\quad d_A=\frac{M\pi}{2}(1+q^{-1}),\quad
+ R=2\pi n,\quad X=R+d_A.
+\end{equation}
+Radii in the radial equations below are dimensionless, $x=kr$.
+Starting at $R$, place $M$ high--low quarter-wave pairs: index $q$
+for length $\pi/(2q)$, followed by index one for length $\pi/2$.
+The core and exterior are vacuum. Every member has finite support,
+real scalar permittivity in $[1,q^2]$, and vacuum permeability.
+The reference transfers, with the angular term removed, are
+\begin{equation}\label{rg:reference}
+ U_{\rm TE}^0=(-1)^M\operatorname{diag}(A,A^{-1}),\qquad
+ U_{\rm TM}^0=(-1)^M\operatorname{diag}(A^{-1},A).
+\end{equation}
+For each fixed angular order, the actual transfers tend to these
+matrices as $n\to\infty$, by the integral equation for their
+first-order systems: the omitted angular coefficients are
+$O(l(l+1)/R^2)$ on an interval of fixed length $d_A$.
+
+Write $\nu=l(l+1)$, $\psi_l(x)=xj_l(x)$, $\chi_l(x)=xy_l(x)$, and
+\begin{equation}\label{rg:F}
+ F_l(x)=
+ \begin{pmatrix}\psi_l&\chi_l\\\psi_l'&\chi_l'\end{pmatrix},
+ \qquad \det F_l(x)=1.
+\end{equation}
+Use the continuous state $(u,u')$ for TE and
+$(u,\eps_r^{-1}u')$ for TM. They agree in the vacuum regions.
+If $U_l$ is the actual transfer from $R$ to $X$, set
+\[
+ M_l=F_l(X)^{-1}U_lF_l(R)=
+       \begin{pmatrix}a&b\\c&d\end{pmatrix}.
+\]
+All these matrices are real with determinant one.
+
+\begin{lemma}[PROVED: exact source coefficient]\label{rg:coefficient}
+The outgoing radial solution normalized to $\psi_l+i\chi_l$
+in the exterior has core continuation
+$z_l=\alpha_l\psi_l+\beta_l\chi_l$, where
+\begin{align}
+ \alpha_l&=d-ib,&\beta_l&=-c+ia,\nonumber\\
+ \gamma_l:=\alpha_l/\beta_l
+   &=\frac{-cd-ab-i}{a^2+c^2},&
+ \operatorname{Im}\gamma_l&=-\frac1{a^2+c^2}.
+ \label{rg:gamma}
+\end{align}
+In particular $\beta_l\ne0$ and
+\begin{equation}\label{rg:gammabound}
+ |\gamma_l|\leq\|M_l\|^2,\qquad
+ |1/\beta_l|^2=-\operatorname{Im}\gamma_l=|g_l|^2,
+\end{equation}
+where $g_l$ is the physical incoming-to-core multiplier.
+The reduced core Green function with derivative jump $+1$ is
+\begin{equation}\label{rg:scalarGreen}
+ G_l(x,y)=\psi_l(x_<)\chi_l(x_>)
+                     +\gamma_l\psi_l(x)\psi_l(y).
+\end{equation}
+For free outgoing vacuum $\gamma_l=-i$.
+\end{lemma}
+\begin{proof}
+The exterior coefficient vector is $(1,i)^T$, hence the core
+coefficient vector is $M_l^{-1}(1,i)^T=(d-ib,-c+ia)^T$.
+Division and $ad-bc=1$ give \eqref{rg:gamma}.
+The row norm giving $|\alpha_l|$ is at most $\|M_l^{-1}\|$,
+which equals $\|M_l\|$ for a real determinant-one $2$ by $2$
+matrix. Also $|\beta_l|=|M_le_1|\geq\|M_l\|^{-1}$.
+The exterior incoming coefficient of the origin-normalized
+regular solution is $(a+ic)/2$, giving the physical multiplier
+$g_l=1/(a+ic)$ and \eqref{rg:gammabound}.
+Finally $W(\psi_l,z_l)=\beta_l$, so the Green function
+$\psi_l(x_<)z_l(x_>)/\beta_l$ has the asserted jump.
+The weighted TM derivative equals the ordinary derivative in
+the core. The real part of $\gamma_l$ is not controlled by
+incoming gain alone; the full transfer is used here.
+\end{proof}
+
+\subsection{Uniform angular tails at fixed gain}
+
+\begin{lemma}[PROVED: low and intermediate orders]\label{rg:lowmiddle}
+Fix $0<c_0<1$. Uniformly in the low range $\nu\leq c_0^2R^2$,
+\begin{equation}\label{rg:low}
+ |\gamma_l|\leq B_A:=
+ \frac{16}{(1-c_0^2)^2}\exp(2C_0d_A),\qquad
+ C_0=q^2+c_0^2+1.
+\end{equation}
+Every partial stack transfer in that range has norm at most
+$\exp(C_0d_A)$. For sufficiently large $R$, in the intermediate
+range $c_0^2R^2<\nu\leq q^2X^2$,
+\begin{equation}\label{rg:middle}
+ |\gamma_l|\leq C_F^4\exp(4h_qR+8q^2d_A),\quad
+ C_F=4(1+2q),\quad h_q=2+2q\log(4q).
+\end{equation}
+Partial transfers in this range have norm at most
+$\exp(4q^2d_A)$.
+\end{lemma}
+\begin{proof}
+For $\xi_l=\psi_l+i\chi_l$ the outgoing energy
+\[
+ {\cal E}(x)=|\xi_l'|^2+(1-\nu/x^2)|\xi_l|^2
+\]
+satisfies $\mathcal E'=2\nu x^{-3}|\xi_l|^2\geq0$ and
+$\mathcal E(\infty)=2$. Thus, for $x\geq R$ in the low range,
+$\|F_l(x)\|,\|F_l(x)^{-1}\|\leq2/\sqrt{1-c_0^2}$.
+The TE generator is
+$\left(\begin{smallmatrix}0&1\\\nu/x^2-\eps_r&0\end{smallmatrix}\right)$;
+the TM generator is
+$\left(\begin{smallmatrix}0&\eps_r\\
+\nu/(\eps_rx^2)-1&0\end{smallmatrix}\right)$.
+Their norms are at most $C_0$. The transfer estimate and
+\eqref{rg:gammabound} prove \eqref{rg:low}.
+
+For the intermediate estimate use the finite Hankel polynomial
+\[
+ \xi_l(x)=(-i)^{l+1}e^{ix}
+  \sum_{s=0}^l i^s\frac{(l+s)!}{s!(l-s)!2^s}x^{-s}.
+\]
+If $a_l=(2l-1)!!$, reversal of its coefficients gives
+\[
+ \frac{a_{l-t}^{\rm coeff}}{a_l}
+ =\frac{2^t}{t!}\prod_{j=0}^{t-1}\frac{l-j}{2l-j}
+ \leq\frac1{t!}.
+\]
+Consequently
+\[
+ |\xi_l(x)|\leq a_lx^{-l}e^x,\qquad
+ |\xi_l'(x)|\leq(1+l/x)a_lx^{-l}e^x.
+\]
+For large $R$, $X\leq2R$ and $l\leq2qR$. At $R$ and $X$
+these inequalities, and $a_l\leq(2l)^l$, give
+$\|F_l\|,\|F_l^{-1}\|\leq C_Fe^{h_qR}$.
+Both generators have norm at most $4q^2$ on the stack.
+Combining these bounds proves \eqref{rg:middle}.
+\end{proof}
+
+\begin{lemma}[PROVED: barrier-order source estimate]\label{rg:barrier}
+For $\nu>q^2X^2$ let
+\[
+ \gamma_*=\frac{1+\sqrt{1+4(\nu-R^2)}}2,\qquad
+ \theta_q=\sqrt{1-q^{-2}}.
+\]
+Then the outgoing core load $h=z_l'(R)/z_l(R)$ has
+$\operatorname{Re}h\leq0$, and
+\begin{align}
+ |\gamma_l|&\leq
+   \frac{|\chi_l'(R)|}{\psi_l'(R)}
+       +\frac{|\chi_l(R)|}{\psi_l(R)},\label{rg:loadbound}\\
+ \psi_l(R)&\geq\frac{R^{l+1}}{(2l+1)!!}
+       \exp\left[-\frac{R^2}{2(l+\gamma_*+2)}\right].
+       \label{rg:psilower}
+\end{align}
+For fixed $s<R$, and sufficiently large $R$,
+\begin{equation}\label{rg:hightail}
+ |\gamma_l|\psi_l(s)^2
+ \leq C_q\exp\left[\left(1+\frac1{q(1+\theta_q)}\right)R\right]
+       \frac{s^{2l+2}}{(2l+1)R^{2l+1}},\qquad
+ C_q=1+\frac{1+2/q}{\theta_q}.
+\end{equation}
+Every fixed polynomial angular weight may be included in the
+sum of the right side over this range, and that sum tends to
+zero faster than every inverse power of $R$.
+\end{lemma}
+\begin{proof}
+The exact positive-coefficient identity
+\begin{equation}\label{rg:hankelpositive}
+ |\xi_l(x)|^2=
+ \sum_{s=0}^l\frac{(l+s)!}{(l-s)!}
+                \frac{\binom{2s}{s}}{4^s}x^{-2s}
+\end{equation}
+implies $\operatorname{Re}(\xi_l'\overline{\xi_l})\leq0$.
+For completeness, if $f=|\xi_l|^2$, the radial equation gives
+$f'''+4(1-\nu/x^2)f'+4\nu x^{-3}f=0$.
+Substitution of the finite even inverse-power polynomial yields
+$c_0=1$ and
+$c_{s+1}=(2s+1)[\nu-s(s+1)]c_s/[2(s+1)]$,
+which proves \eqref{rg:hankelpositive}.
+
+In the barrier stack the derivative of
+$\operatorname{Re}(p\overline u)$ is
+$|p|^2+(\nu/x^2-\eps_r)|u|^2>0$ for TE, and
+$\eps_r|p|^2+(\nu/(\eps_rx^2)-1)|u|^2>0$ for TM.
+At $X$ its value is nonpositive by \eqref{rg:hankelpositive}.
+Its value at every inner point is therefore nonpositive.
+The conserved nonzero imaginary Wronskian excludes $u=0$,
+so $\operatorname{Re}h\leq0$.
+
+The regular solution is positive and increasing up to $R$.
+For $y=x\psi_l'/\psi_l$, the Riccati equation is
+$xy'=\nu-x^2+y-y^2$. Comparison with its constant lower
+barrier $\gamma_*$ gives $y\geq\gamma_*$ on $(0,R]$;
+comparison with $l+1$ gives $y\leq l+1$.
+Solving the load equation gives
+\[
+ \gamma_l=\frac{\chi_l'-h\chi_l}{h\psi_l-\psi_l'}.
+\]
+Since $\psi_l,\psi_l'>0$ and $\operatorname{Re}h\leq0$,
+$|h\psi_l-\psi_l'|^2\geq
+ |h|^2\psi_l^2+(\psi_l')^2$.
+This proves \eqref{rg:loadbound}.
+
+Put $v=\psi_l/x^{l+1}$.
+Then $(x^{2l+2}v')'=-x^{2l+2}v$.
+The Riccati bound gives
+$v(t)/v(x)\leq(x/t)^{l+1-\gamma_*}$ for $0<t<x\leq R$.
+Integration yields $-v'(x)/v(x)\leq x/(l+\gamma_*+2)$.
+Its integral, using $v(0)=1/(2l+1)!!$, proves
+\eqref{rg:psilower}. Also
+$\psi_l(s)\leq s^{l+1}/(2l+1)!!$ in this interval.
+Combine these estimates with the Hankel bounds in the preceding
+proof, $\gamma_*\geq\theta_ql$, and $R/l\leq2/q$.
+The factor from the derivative term is at most
+$(1+2/q)/\theta_q$, and the exponential from
+\eqref{rg:psilower} is at most
+$\exp[R/(q(1+\theta_q))]$. This gives
+\eqref{rg:hightail}. Here $l\geq qR+O(1)$, so the factor
+$(s/R)^{2l}$ dominates that exponential and every fixed
+polynomial weight.
+\end{proof}
+
+\subsection{The limiting Maxwell source kernel}
+
+Let $\mathcal K_R$ be the actual electric response to polarization
+$P=\chi E$ in the radial background, with the convention
+$e^{-i\omega t}$. The free kernel is
+$\mathcal K_0(x,y)=(k^2I+\nabla\nabla)\Phi_k(x-y)$,
+where $\Phi_k(x)=e^{ik|x|}/(4\pi|x|)$. Define
+\begin{align}
+ {\cal J}(x,y)&=\operatorname{Im}{\cal K}_0(x,y)
+  =\frac{k^3}{16\pi^2}\int_{S^2}
+       (I-dd^T)e^{ikd\cdot(x-y)}\,dS(d),\label{rg:J}\\
+ {\cal J}_\pm(x,y)&=\tfrac12[{\cal J}(x,y)\pm{\cal J}(x,-y)].
+ \label{rg:Jpm}
+\end{align}
+These are the projections onto componentwise even and odd
+electric fields under $x\mapsto-x$.
+
+\begin{theorem}[PROVED: compact smooth source-kernel limit]
+\label{rg:local}
+For each fixed $A=q^M$, on every fixed compact core product,
+\begin{equation}\label{rg:kernellimit}
+ {\cal K}_R-{\cal K}_0\longrightarrow
+ i\bigl[(A^2-1){\cal J}_+
+                  +(A^{-2}-1){\cal J}_-\bigr]
+\end{equation}
+with every fixed number of derivatives. The limiting reaction
+kernel derivative of total order $s$ has operator norm at most
+$(A^2-1)k^{3+s}/(4\pi)$.
+On fields invariant under rotation by $\pi$ about $z$,
+$\mathcal J_+$ is electric-wall and $\mathcal J_-$ is magnetic-wall.
+Thus \eqref{rg:kernellimit} equals the reaction part of
+\eqref{cl:kernel}, with $B=A$, on that invariant sector.
+\end{theorem}
+\begin{proof}
+For fixed $l$, at $R=2\pi n$ the two columns of $F_l(R)$
+converge to the regular sine--cosine parity basis.
+The exterior outgoing state has a common factor
+$e^{iX}(-i)^{l+1}$, which cancels in $\alpha_l/\beta_l$.
+Substitution of \eqref{rg:reference} gives
+\[
+ \gamma_l^{\rm TE}\to
+ \begin{cases}-iA^2&l\ \text{even},\\-iA^{-2}&l\ \text{odd},
+ \end{cases}\qquad
+ \gamma_l^{\rm TM}\to
+ \begin{cases}-iA^{-2}&l\ \text{even},\\-iA^2&l\ \text{odd}.
+ \end{cases}
+\]
+No exterior phase padding is needed.
+
+On a fixed compact ball the regular TE and TM vector waves
+and their derivatives are bounded by a fixed polynomial in $l$
+times $s^{l+1}/(2l+1)!!$, after harmless enlargement of $s$.
+This follows directly from the power series for $j_l$;
+the addition theorem and its differentiated form bound the
+angular factors by fixed powers of $l$. Low orders are finite.
+The uniform bound \eqref{rg:low}, the factorial decay against
+\eqref{rg:middle} for $l\geq cR$, and
+\eqref{rg:hightail} justify termwise limits with every fixed
+number of derivatives in the reaction series.
+
+To check normalization, the free electric dyadic multipole
+coefficients are $ik^3$ on the regular--outgoing TE and TM
+products. Dividing the actual outgoing continuation by its
+Wronskian changes its regular--regular coefficient to
+$-k^3\gamma_l$. The reaction coefficient is therefore
+$-k^3(\gamma_l+i)$. The regular-wave completeness identity is
+$\mathcal J=k^3\sum(M_{lm}\overline{M_{lm}}+
+N_{lm}\overline{N_{lm}})$, equivalently obtained by expanding
+the Herglotz integral \eqref{rg:J}. TE electric parity is
+$(-1)^l$ and TM electric parity is $(-1)^{l+1}$, which gives
+\eqref{rg:kernellimit}.
+
+Each derivative of \eqref{rg:J} is bounded by
+$k^{3+s}/(4\pi)$. When expressed in $\mathcal J(x,y)$ and
+$\mathcal J(x,-y)$, the absolute values of the two coefficients
+in \eqref{rg:kernellimit} sum to $A^2-1$, proving the bound.
+Finally let $R_z=\operatorname{diag}(1,1,-1)$.
+Rotation invariance gives
+$E(-x)=-R_zE(R_zx)$, so componentwise inversion equals the
+wall involution \eqref{cl:projections} on this sector.
+\end{proof}
+
+\subsection{Source-normalized bounds throughout the remote layers}
+
+\begin{lemma}[PROVED: uniform radial-state sums]\label{rg:states}
+Fix a compact source ball and a gain $A$. For polarizations in
+that ball with bounded $L^2$ norm, the outgoing source response
+has uniformly bounded sums of its radial-state magnitudes,
+with every fixed polynomial angular weight, throughout
+$R\leq x<\infty$. The constants may depend on the gain and
+source ball, but not on sufficiently large $R$.
+\end{lemma}
+\begin{proof}
+Choose a fixed dimensionless $S\geq1$ slightly beyond the source
+support. Cauchy--Schwarz and the regular-wave power series bound
+each source moment by
+\begin{equation}\label{rg:moments}
+ |f_{lm}|\leq C\|P\|_2(l+1)^b
+                   \frac{S^{l+1}}{(2l+1)!!}.
+\end{equation}
+Here a fixed $b$, for example $b=4$, suffices before adding
+the desired angular weights. For all sufficiently large $l$
+the right side can instead be bounded by
+$C'\|P\|_2(l+1)^b\psi_l(S)$, by the positive regular-series
+lower bound. This intermediate bound is used only at large
+orders; it is not asserted at possible low-order zeros of
+$\psi_l(S)$. Finitely many exceptions in \eqref{rg:moments}
+are absorbed into its constant.
+
+Outside the source the normalized radial factor is
+$w_l=\chi_l+\gamma_l\psi_l$ in the core, continued by its
+actual layer equation. In the barrier range the exact
+Wronskian cancellation gives
+\begin{equation}\label{rg:wcancellation}
+ w_l(R)=\frac1{h\psi_l(R)-\psi_l'(R)},\qquad
+ p_l(R)=\frac{h}{h\psi_l(R)-\psi_l'(R)}.
+\end{equation}
+Therefore $|w_l(R)|\leq1/\psi_l'(R)$ and
+$|p_l(R)|\leq1/\psi_l(R)$.
+Write $u'=\eps_rp$, $p'=Vu$ in the TM barrier, where
+$V=\nu/(\eps_rx^2)-1>0$; for TE the first coefficient is one
+and $V=\nu/x^2-\eps_r>0$. The proof of
+Lemma~\ref{rg:barrier} gave
+$\operatorname{Re}(p\overline u)\leq0$ throughout this stack.
+Consequently
+\[
+ (|u|^2)'=2\eps_r\operatorname{Re}(p\overline u)\leq0,\qquad
+ (|p|^2)'=2V\operatorname{Re}(u\overline p)\leq0
+\]
+for TM, with coefficient one in the first equation for TE.
+Both states are continuous across every interface.
+Together with \eqref{rg:psilower} this proves, on the entire
+annulus,
+\begin{equation}\label{rg:barrierstates}
+ |f_{lm}|(|u_l|+|p_l|)
+ \leq C\|P\|_2(l+1)^b e^{C_q'R}(S/R)^{l+1}.
+\end{equation}
+The sum over $l\geq qR+O(1)$ decays faster than every inverse
+power of $R$, including arbitrary fixed polynomial weights.
+No large-order transfer estimate of the form
+$\exp(Cl^2/R^2)$ is being used.
+
+For low orders, \eqref{rg:low} and the bounded partial
+transfers give $|f_{lm}|(|u_l|+|p_l|)\leq C_A|f_{lm}|$.
+For intermediate orders the analogous bound is
+$e^{C_AR}|f_{lm}|$ by \eqref{rg:middle}.
+The latter weighted sum is $O(e^{-cR\log R})$ by
+\eqref{rg:moments}, since $l\geq c_0R+O(1)$.
+This proves the uniform annulus assertion.
+
+It also proves the exterior assertion, including all turning
+points. By \eqref{rg:hankelpositive}, $|\xi_l(x)|$ decreases
+to one. Moreover
+\[
+ (|\xi_l'|^2)'=
+       2(\nu/x^2-1)\operatorname{Re}(\xi_l\overline{\xi_l'}),
+\]
+so $|\xi_l'|$ decreases up to $\sqrt\nu$ and then increases
+to one. Thus, for all $x\geq X$,
+\[
+ |\xi_l(x)|\leq|\xi_l(X)|,\qquad
+ |\xi_l'(x)|\leq\max\{|\xi_l'(X)|,1\}
+              \leq\max\{|\xi_l'(X)|,|\xi_l(X)|\}.
+\]
+Multiply by the actual exterior outgoing coefficient.
+The exterior states are bounded by the annular endpoint states.
+This proves the lemma without requiring a far-field expansion
+uniform in uncontrolled angular order.
+\end{proof}
+
+\begin{corollary}[PROVED: absolute annulus and exterior flux]
+\label{rg:remote}
+Add a fixed finite-band incident family and its radial-background
+scattering field, with bounded physical incident coefficients.
+For its sum with the source response of Lemma~\ref{rg:states},
+\begin{equation}\label{rg:radialtangential}
+ |E_{\rm tan}|+|H_{\rm tan}|\leq C/r,\qquad
+ |E_{\rm rad}|+|H_{\rm rad}|\leq C/r^2,\qquad r\geq R/k .
+\end{equation}
+The labels refer to spheres centered at the origin.
+The absolute normal plane flux over the stack annulus is
+$O(d_A/R^2)$ and over the exterior is $O(1/R)$.
+\end{corollary}
+\begin{proof}
+Tangential vector-wave components are constants times $u/r$
+or $p/r$, and radial components are constants times
+$\sqrt\nu\,u/r^2$, with a bounded $\eps_r^{-1}$ factor where
+appropriate. The angular factors have polynomial sup-norm
+bounds. Lemma~\ref{rg:states} gives \eqref{rg:radialtangential}.
+The finitely many background orders satisfy the same bounds
+by the fixed-order transfer limit in the annulus and bounded
+incoming and outgoing coefficients in the exterior.
+On $z=0$ the spherical radial direction lies in the plane.
+Two sphere-tangential vectors have a radial cross product,
+whose normal component is zero. Thus only radial--tangential
+products contribute and $|S_z|\leq C/r^3$.
+Integrate over the annulus and exterior. Interface circles
+have plane measure zero.
+\end{proof}
+
+\subsection{The whole-plane physical limit}
+
+\begin{theorem}[PROVED: source and dielectric whole-plane limit]
+\label{rg:physical-limit}
+Fix $A=q^M$, a compact region $K$ at positive distance from
+$z=0$, and a finite-dimensional finite-band incident family.
+Use a common phase adjustment so that its radial-background
+fields converge on compact sets to their limiting core fields.
+Suppose $P_R\to P$ in $L^2(K)$, uniformly on that finite
+input family. Form the total fields by adding the actual
+radial-background response to $P_R$. Define their limiting
+fields using \eqref{rg:kernellimit} and $P$. Then the normal
+plane fluxes are integrable and
+\begin{equation}\label{rg:L1}
+ \sup_{\|c\|=1}\|S_{z,R}(c)-S_{z,\infty}(c)\|_{L^1(\mathbb R^2)}
+          \longrightarrow0 .
+\end{equation}
+
+Furthermore, let $\chi$ be a fixed bounded contrast supported
+in $K$. If the limiting volume equation
+\begin{equation}\label{rg:volume}
+ P=\chi(E_\infty^{\rm bg}+{\cal K}_\infty P)
+\end{equation}
+has a bounded inverse on $L^2(K)$ (or on its invariant
+rotation sector), then for all sufficiently large $R$ the
+actual radial-background volume equation has a bounded
+inverse, its solutions converge to $P$, and \eqref{rg:L1}
+holds for the actual scattering fields of the radial layers
+plus that dielectric perturbation. Their original physical
+incoming normalization is retained.
+\end{theorem}
+\begin{proof}
+The positive source--plane distance and
+Theorem~\ref{rg:local} give uniform field convergence on every
+fixed plane disk, including the magnetic fields obtained by
+curl. It remains to control the growing vacuum-core part of
+the plane.
+
+Split its reaction series at $\nu=c_0^2R^2$. Low-order
+coefficients $(\gamma_l+i)f_{lm}$ have uniformly bounded
+factorial tails by \eqref{rg:low} and \eqref{rg:moments}.
+The associated Herglotz densities are therefore uniformly
+bounded in every fixed smooth angular norm, although their
+cutoff depends on $R$. Their tangential fields are $O(1/r)$
+and their radial fields $O(1/r^2)$ uniformly in $R$.
+For an elementary verification, express the angular integral
+in polar coordinates about the observation direction and
+integrate once in $t=\cos\theta$. This gives the first
+bound. The radial amplitude vanishes at both endpoints by
+transversality, so a second integration gives the second.
+The azimuthally averaged smooth amplitude has bounded
+endpoint derivatives, as follows from its even local Taylor
+expansion in $\sin\theta$; uniform $C^4$ control suffices.
+The magnetic angular density is the electric density crossed
+with the direction, divided by $Z_0$, and has the same
+properties. The free compact-source response and the fixed
+finite-band background satisfy these bounds outside a fixed
+source ball as well. Their combined absolute plane-flux tail
+beyond radius $B$ is $O(1/B)$, uniformly in $R$.
+
+The remaining reaction field is negligible uniformly on
+$B\leq r\leq R/k$, where $B$ is fixed beyond twice the source
+ball. In the intermediate range, \eqref{rg:middle} contributes
+at most $e^{CR}$, the source moments have factorial decay
+with $l\geq cR$, and the observation factors and first
+derivatives have polynomial bounds. For example the integral
+representation of $j_l$ gives $|j_l|,|j_l'|\leq1$;
+inverse-radius factors are harmless on $r\geq B$.
+Thus this weighted field sum is $O(e^{-cR\log R})$.
+For barrier orders, combine \eqref{rg:loadbound} and
+\eqref{rg:psilower} with the regular upper bounds at $S$
+and at any $0<x\leq R$ to obtain
+\[
+ |\gamma_l|\psi_l(S)\psi_l(x)
+ \leq C e^{C_q'R}\frac{R}{2l+1}(S/R)^{l+1}.
+\]
+The bound $0<x\psi_l'/\psi_l\leq l+1$ supplies the
+corresponding derivative estimates. The angular factors add
+fixed polynomial weights, so these sums too are
+$O(e^{-cR\log R})$. The free regular coefficient $i$ in
+$\gamma_l+i$ is smaller. The high-order electric and magnetic
+reaction fields are therefore $o(R^{-m})$ for every fixed
+$m$ on the growing core annulus. Their self-flux and their
+cross-flux with the bounded low-order fields have integral
+$o(1)$ even after multiplication by its $O(R^2)$ area.
+
+Corollary~\ref{rg:remote} handles the remaining plane.
+Consequently
+\[
+ \limsup_{R\to\infty}\int_{r>B}|S_{z,R}|\,dA\leq C/B.
+\]
+The limiting free-plus-Herglotz field has the same tail.
+Compact convergence, followed by $B\to\infty$, proves
+\eqref{rg:L1}. The field estimates are linear and uniform on
+bounded source sets; the quadratic flux inequality then makes
+the conclusion uniform on every coherent unit input in the
+fixed finite-dimensional family.
+
+For the final assertion, the singular free-volume kernel is
+identical for all $R$; only its smooth reaction part varies.
+Theorem~\ref{rg:local} therefore implies
+\[
+ \|\chi({\cal K}_R-{\cal K}_\infty)\|_{L^2(K)\to L^2(K)}
+       \longrightarrow0.
+\]
+The inverse perturbation identity applied to
+$I-\chi{\cal K}_\infty$ gives invertibility for large $R$
+and convergence of the actual source solutions in $L^2(K)$.
+The source version of the theorem applies to these solutions.
+Uniqueness of outgoing scattering for each finite positive
+lossless dielectric identifies the volume solution with the
+physical scattering field.
+\end{proof}
+
+\begin{remark}[Quantifiers for the small-inclusion construction]
+\label{rg:diagonal}
+For every fixed inclusion size $a$ and fixed gain $B_a$, the
+preceding theorem is applied first. The radius can then be
+chosen large enough for any prescribed plane-flux error.
+There is no claim of a radius bound uniform in $a$.
+To realize the actual gain $B_a=\sqrt\lambda\,t/a$ in
+\eqref{cl:scales} using one fixed index $q$, take
+$a_M=t\sqrt\lambda/q^M$. Then $B_{a_M}=q^M$ exactly and
+$a_M\downarrow0$. The inverse and remainder theorem
+\ref{cl:remainder} applies along this sequence. All finite
+devices still have scalar permittivity between one and
+$\eps_+$, finite support, and a positive vacuum gap at the
+section plane for each member.
+\end{remark}

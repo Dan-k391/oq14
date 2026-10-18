@@ -1,8 +1,9 @@
 \section{Renewed closure audit: coherent bypass and global accessibility}
 \label{ca:section}
 
-\noindent\textbf{Verdict: the unrestricted channel target remains OPEN.}
-The demand for a full closure does not discharge a mathematical hypothesis.
+\noindent\textbf{Scope: local bypass and radiative-accessibility audit.}
+The later Theorem~\ref{uc:counterexample} supplies a different physical
+construction for $\delta>\eta$.
 This section tests whether the all-superposition passage and absolute-bypass
 conditions can supply the missing resource bound in Section~\ref{ch:section}.
 They do supply a global feasibility restriction.  They do not impose a finite
@@ -298,7 +299,7 @@ absolute bypass through a fixed small section.  Applying that framework
 therefore still requires the simultaneous synthesis and error control
 identified in Remark~\ref{cx:missing-bridge}.
 
-\begin{remark}[OPEN: smallest remaining global bridge]
+\begin{remark}[Global bridge required beyond these local packets]
 \label{ca:decisivebridge}
 The renewed audit reduces the choice to two substantive global tasks.
 A proof must restrict the radiatively accessible trace subspaces of all
@@ -311,8 +312,9 @@ and delivered channels and controlled absolute bypass.  Theorem
 whole-plane coherent bypass certificate cannot replace that global step.
 Proposition~\ref{ca:powerbudget} only closes the empty parameter regime
 $\eta\tau>1+\delta$; it does not resolve the meaningful positive-throughput
-regime.  No full fixed-section vector theorem or physically admissible
-many-channel counterexample has been obtained.
+regime. These packet arguments do not give a physical counterexample.
+The subsequent edge-sphere construction in Theorem~\ref{uc:counterexample}
+does supply one for $\delta>\eta$, without completing these exact packets.
 \end{remark}
 
 \begin{remark}[Formalization boundary]
@@ -325,5 +327,6 @@ Fourier analysis, the stated Maxwell evolution, and flux integration;
 its proof here is a mathematical derivation, not a Lean verification.
 Introducing an axiom that supplies the global bridge in
 Remark~\ref{ca:decisivebridge} would assume the unresolved content rather
-than verify it.  Accordingly no full-OQ14 Lean closure is claimed.
+than verify it. The later written counterexample has not yet been
+formalized in Lean either. Accordingly no full-OQ14 Lean closure is claimed.
 \end{remark}

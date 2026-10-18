@@ -1,0 +1,139 @@
+\section{Disproof of the unrestricted fixed-section channel bound}
+\label{uc:section}
+
+The unrestricted target quantifies over all fixed passage and bypass
+thresholds in Definition~\ref{pr:count}. The following counterexample
+uses a permitted range of those thresholds. It does not address the
+different question obtained by requiring $\delta\leq\eta$, or by
+restricting the selected outputs to a specified receiving hemisphere.
+
+\begin{theorem}[PROVED: arbitrarily large counted subspaces at fixed thresholds]
+\label{uc:counterexample}
+Fix $k_0>0$, $\eps_+>1$, $L>0$, $0<\tau<1$, and
+$0<\eta<\delta$. For every positive integer $N$ there is a finite,
+piecewise smooth, real scalar dielectric with
+$1\leq\eps_r\leq\eps_+$, vacuum exterior, and no interior sources,
+whose physical incoming space contains an $N$-dimensional counted
+subspace through the same square
+$D=(-L/2,L/2)^2\times\{0\}$. The selected outgoing map is its
+complete scattering map. In particular, every vector in this subspace
+has unit power throughput relative to its incident power, passage at
+least $\eta$ times that power, and absolute bypass at most $\delta$
+times that power. All plane fluxes are integrable.
+
+Consequently the unrestricted finiteness assertion in
+Conjecture~\ref{pr:channel-target}, and hence its stronger area bound,
+is false. The frequency, material interval, square and thresholds
+are common to the whole sequence of devices.
+\end{theorem}
+\begin{proof}
+Choose once and for all an index $1<q<\sqrt{\eps_+}$, a sphere
+permittivity $1<\eps_p\leq\eps_+$, and constants $h>\rho>0$.
+Choose $p_0\in(\eta,\delta)$ and then $t>0$ so that
+$\alpha t^2/(2\pi h)=p_0$, where
+$\alpha=4\pi\rho^3(\eps_p-1)/(\eps_p+2)>0$.
+These choices do not depend on $N$.
+
+Fix $N$. Lemmas~\ref{ct:jets}--\ref{ct:gram} supply $N$ distinct
+right-edge points and their left-edge partners, a finite band of
+regular electric-wall TE interpolants $v_j$, and $\lambda>0$ such
+that $g_j=v_j/\sqrt\lambda$ are orthonormal physical incoming data
+with the prescribed independent jets. Let
+\[
+ B_M=q^M,\qquad a_M=t\sqrt\lambda/B_M,\qquad \ell_0=k_0^{-1}.
+\]
+Thus $a_M\to0$ and the actual common core gain $B_M$ produces the
+jet multiplier $A_M=B_M/\sqrt\lambda=t/a_M$.
+Place the $2N$ radius-$\rho a_M\ell_0$ spheres at height
+$h a_M\ell_0$ above the chosen edge points. For large $M$ they are
+disjoint, lie strictly above the plane, and remain inside a fixed
+ball. Their arrangement is invariant under rotation by $\pi$ about
+the $z$ axis.
+
+For each such $M$, Theorem~\ref{cl:remainder} proves invertibility
+of the actual inclusion volume equation for the explicit limiting
+background kernel with gain $B_M$. It gives, uniformly for
+$c\in\mathbb C^N$ with $\|c\|=1$,
+\[
+ \|S_{z,M}^{\infty}(c)-F_{a_M}(c)\|_{L^1(\mathbb R^2)}
+       \leq C_N a_M.
+\]
+The constant is independent of $M$ once $N$ and its interpolants
+are fixed. This estimate includes the self-consistent polarization,
+all source angular orders, all coherent cross terms, and the entire
+measurement plane.
+
+Now hold $M$ fixed. Take a common radial stack of $M$ high-low
+quarter-wave pairs, with indices $q$ and one, starting at
+dimensionless radius $R=2\pi n$. The physical radius is $R/k_0$.
+Theorem~\ref{rg:physical-limit} proves both convergence of its
+source Green kernel to that used above and convergence in whole-plane
+$L^1$ of the resulting \emph{actual perturbed-device} fluxes, uniformly
+on this finite input space. Inverse stability supplies the actual
+dielectric polarizations, not arbitrary imposed dipole sources.
+Choose a sufficiently large finite integer $n=n(M,N)$ so that
+\[
+ \sup_{\|c\|=1}
+ \|S_{z,M}^{\rm phys}(c)-S_{z,M}^{\infty}(c)\|_1<a_M.
+\]
+One harmless common phase in the incident normalization does not
+affect flux or orthonormality. This order of choices requires no
+radius estimate uniform in $M$ or $N$.
+
+Combining the last two estimates with Proposition~\ref{ct:model}
+gives uniformly on the unit sphere of $\mathbb C^N$
+\[
+ P_D^{\rm phys}(c)\longrightarrow p_0,\qquad
+ \int_{\mathbb R^2\setminus D}|S_{z,M}^{\rm phys}(c)|\,dA
+       \longrightarrow p_0 .
+\]
+Here the absolute-value conclusion uses
+$\bigl||f|-|g|\bigr|\leq|f-g|$, so cancellation between distinct
+inputs or between distant parts of the plane is not substituted for
+the bypass condition. Choose a finite $M$ large enough that both
+errors are less than
+$\tfrac12\min\{p_0-\eta,\delta-p_0\}$.
+
+The resulting medium consists only of finitely many concentric
+ordinary dielectric shells and the separated ordinary dielectric
+spheres. It is compactly supported and piecewise smooth. The
+volume-equation inverse just proved gives its well-posed response
+for the prescribed illumination. Equivalently, outgoing uniqueness
+for this finite positive dielectric follows from the imaginary
+Green identity, outgoing Rellich theorem and interface unique
+continuation; the exterior zero field propagates through the finite
+smooth interfaces. Thus the usual lossless radiation scattering
+map $S$ is defined, and its power identity is
+$\|Sa\|^2=\|a\|^2$. With all outgoing radiation selected,
+$T=S$.
+
+Set $W=\operatorname{span}\{g_1,\ldots,g_N\}$. Its dimension is
+$N$ and input power is $\|c\|^2$. For unit $c$ the preceding
+strict margins prove the passage and bypass inequalities, while
+$\|Tc\|^2=1\geq\tau$ proves throughput. Quadratic homogeneity
+extends them to every $c$, including zero. The spheres leave a
+positive vacuum gap around $\overline D$ for each individual
+device; the remote shells lie outside that neighborhood. The
+proved plane-tail bounds give legitimate integrable fluxes even
+where the plane intersects remote interfaces, whose circles have
+zero plane measure. All admissibility conditions are satisfied.
+Since $N$ was arbitrary with the displayed fixed parameters,
+no finite device-independent count can hold there.
+\end{proof}
+
+\begin{remark}[Scope and physical mechanism]\label{uc:scope}
+The flux near each sphere circulates across a sharp edge of the
+measurement square: its positive interior contribution is paired
+with an exterior return of the same limiting magnitude. This is
+allowed by the frozen definition, which does not require the
+square to be a sole connection or the selected output to lie
+above it. The construction uses the strict allowance $\delta>\eta$;
+it does not refute a reformulated claim with smaller bypass or
+additional output restrictions. In particular the resource-controlled
+theorems requiring $\delta<\eta\tau$ retain their stated scope.
+The total support, common core amplification, interface count and
+inverse minimum feature size grow along the construction. None is
+a bounded resource in Conjecture~\ref{pr:channel-target}.
+The proof is analytic; no finite-element simulation or Lean proof
+of this complete device construction is claimed.
+\end{remark}

@@ -6,8 +6,10 @@ when $\delta>\eta$: positive circulation inside a sharp section edge may
 be accompanied by an equal negative return immediately outside it. This
 section proves an exact electrostatic cross-flux calculation and a
 finite-dimensional Maxwell jet-interpolation result for that mechanism.
-It then states the additional global estimate that would make the
-mechanism an admissible counterexample. That estimate is not proved here.
+It then states the additional global estimate needed to make the
+mechanism an admissible counterexample. Theorems~\ref{cl:remainder}
+and~\ref{rg:physical-limit} discharge that estimate in the following
+sections, leading to Theorem~\ref{uc:counterexample}.
 In particular, no impressed dipole is included in the admissible material
 class and no electrostatic field is presented as an exact solution at the
 fixed nonzero frequency.
@@ -319,26 +321,27 @@ gap is positive, so it supplies a source-free vacuum neighborhood
 of the section; its shrinking size is not a forbidden resource.
 \end{proof}
 
-\begin{remark}[OPEN: changing-background feedback and whole-plane error]
+\begin{remark}[The bridge discharged in the following sections]
 \label{ct:gap}
-Estimate \eqref{ct:missingestimate} has not been proved. The exact
-isolated-sphere electrostatic polarizability and the exact finite-band
-illumination control do not imply it. Three issues remain coupled:
+The exact isolated-sphere electrostatic polarizability and finite-band
+illumination control alone do not imply \eqref{ct:missingestimate}.
+Three issues must be controlled together:
 the small-inclusion expansion in a background whose resonant
 amplification grows like $a^{-1}$, the source Green response of
 unselected angular orders, and the absolute flux of all correction
 fields across the entire plane, including the remote layers.
-A finite inverse for each separate device is insufficient unless
+A finite inverse for each separate device would be insufficient unless
 its dependence on that varying background is controlled.
 
-The sphere volume is $O(a^3)$ and the amplified jet is $O(a^{-1})$,
-so a finite-dimensional same-parity feedback model suggests the
-small parameter $a^3a^{-2}=a$. This scaling is a diagnostic, not a
-resolvent estimate. Paired control suppresses opposite-wall
-\emph{incoming} responses in a prescribed finite band; it does not
-by itself bound the interior-source response in all bands.
-Likewise, compact field convergence and conservation of signed
-radiated power cannot replace the whole-plane absolute-value
-estimate in \eqref{ct:missingestimate}. The primary channel target
-therefore remains open after the proved local results of this section.
+The sphere volume is $O(a^3)$ and the amplified jet is $O(a^{-1})$.
+Theorem~\ref{cl:remainder} turns the resulting scale
+$a^3a^{-2}=a$ into an actual bounded-inverse and whole-plane remainder
+estimate for an explicit parity reaction kernel.
+Theorem~\ref{rg:physical-limit} identifies that kernel as the source
+response of distant finite common stacks in the limit, controlling
+all angular orders and the remote absolute-flux tails. Its inverse
+stability step transfers the estimate to actual perturbed devices.
+These two additional proofs, rather than incident gain or signed
+power conservation alone, discharge \eqref{ct:missingestimate}.
+The final fixed-threshold construction is Theorem~\ref{uc:counterexample}.
 \end{remark}

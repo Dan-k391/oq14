@@ -44,4 +44,13 @@ reviewed all three. WeakPoynting.lean and WeakPoynting/Green.lean are frozen
 and independently reviewed by root. The formal agent continues in separate
 Poynting.lean and Local.lean files. New common-stack Green convergence and
 transducer-limit sections remain with the channel and hotspot agents,
-respectively; they are not yet assertions of unrestricted closure.
+respectively. After independent root and cross-agent review, the common-stack
+Green and whole-plane limit and the small-inclusion remainder are integrated
+with root's channel_unrestricted.tex. They give the written counterexample
+for delta>eta and full-scattering output.
+
+Poynting.lean, Local.lean, and Conservation.lean are frozen and reviewed by
+root. The formal agent continues in WeakPoynting/Slices.lean. The hotspot
+agent continues in the separate ModalAlgebra.lean. Root owns registration,
+counts, the claim ledger, and all Git/build/release integration. Active new
+Lean work is excluded from clean snapshot builds until frozen and reviewed.

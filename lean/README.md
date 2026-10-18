@@ -2,7 +2,9 @@
 
 The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `HCurlDomain.lean`, `HCurlCutoff.lean`, `WeakPoynting.lean`, and
-`WeakPoynting/Green.lean`. Eighty-four exported
+`WeakPoynting/Green.lean`, `WeakPoynting/Poynting.lean`,
+`WeakPoynting/Local.lean`, and `WeakPoynting/Conservation.lean`.
+One hundred one exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -19,6 +21,7 @@ lake exe cache get Mathlib.Analysis.NormedSpace.OperatorNorm.Basic Mathlib.Analy
 lake exe cache get Mathlib.Analysis.InnerProductSpace.PiL2 Mathlib.Analysis.Calculus.FDeriv.Mul Mathlib.Analysis.Calculus.FDeriv.Symmetric Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts Mathlib.Analysis.SpecialFunctions.ExpDeriv Mathlib.LinearAlgebra.CrossProduct Mathlib.Tactic.FinCases Mathlib.Tactic.LinearCombination
 lake exe cache get Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Function.LpSpace.Indicator Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 lake exe cache get Mathlib.Analysis.Convolution Mathlib.Analysis.Calculus.BumpFunction.Convolution Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
+lake exe cache get Mathlib.Geometry.Manifold.PartitionOfUnity
 ```
 
 Then run the portable clean source build and axiom audit:
@@ -40,7 +43,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all seven registered modules, and audits all 84
+compiler and mathlib revision, builds all ten registered modules, and audits all 101
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -192,8 +195,31 @@ for two arbitrary whole-space H(curl) fields:
 The test chi is any compact C1 scalar. The proof first tests weak curl
 against chi times a smooth field, then passes to the proved graph-norm
 approximation. Neither nonsmooth field is differentiated classically.
-These results require global L2 field and curl; applying them to general
-scattering fields still needs the separate local-domain bridge.
+These two modules require global L2 field and curl. The following three
+modules prove the separate local-domain bridge.
+
+## Local weak power conservation
+
+`WeakPoynting/Poynting.lean` has five exports: weak curl commutes with
+conjugation, weighted conjugate products are integrable, the actual
+complex Poynting density is integrable, its integral agrees with the
+Green functional, and its integral is zero for arbitrary whole-space
+H(curl) fields.
+
+`WeakPoynting/Local.lean` has six exports. A smooth interior cutoff equal
+to one near the compact test support is constructed, not assumed.
+Cutoff zero extension preserves the field and curl there, giving both
+integrability and the complex Poynting law on any open region. No global
+L2 condition or boundary condition is imposed on the original fields.
+
+`WeakPoynting/Conservation.lean` has six exports. Its `WeakMaxwell`
+predicate is exactly the two almost-everywhere equations for the actual
+regional weak curls. Real variable coefficients make the reactive term
+purely imaginary. Consequently the actual real time-averaged Poynting
+vector has zero distributional divergence against every real compact C1
+test. No differentiability of fields or coefficients is assumed. This
+formalizes the distributional conservation step of `ch:fluxlemma`, not
+its remaining plane-slice representatives or trace evaluations.
 
 ## Explicitly outside the formalization
 
@@ -203,7 +229,7 @@ curl are represented. The source does not yet construct H(curl) trace theory,
 general-domain density and boundary traces, outgoing scattering, the conical spectrum,
 Runge approximation, rounding, the analytic Fredholm resonance pencil or
 its reciprocal norm. The complete written modal theorem is not yet a Lean
-theorem. The unrestricted channel claim additionally still lacks a written
-proof or physical counterexample. No hypothesis or custom axiom stands in
-for either missing conclusion. The exact remaining library development is
+theorem. The written unrestricted channel counterexample is likewise not
+yet a Lean theorem. No hypothesis or custom axiom stands in for either
+missing formal conclusion. The exact remaining library development is
 listed in `../reviews/maxwell_formalization.md`.
