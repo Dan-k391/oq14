@@ -106,6 +106,20 @@ for alpha in (.1,.5,.9):
         assert abs(p-exact)<1e-14
 checks.append({'name':'finite-frequency radial projection sign and factors','passed':True})
 
+# 3D conical projection: constant A,B has p=r(B-2A)/(2-lambda(lambda+1)).
+for lam in (.1,.5,.9):
+    for aa,bb in ((1.,0.),(0.,1.),(.3,-.7)):
+        for radius in (.01,.2,1.):
+            p=radius*((bb-(lam+1)*aa)/(1-lam)-(bb+lam*aa)/(lam+2))/(2*lam+1)
+            exact=radius*(bb-2*aa)/(2-lam*(lam+1))
+            assert abs(p-exact)<1e-13
+for contrast in (.01,.1,.5):
+    t=.8
+    denominator=4*math.pi*(1+contrast*(1-t**3))/3
+    numerator=4*math.pi*(2/3+contrast*(2/3-t+t**3/3))
+    assert 0<numerator/denominator<2
+checks.append({'name':'3D conical Rayleigh trial and exact forced radial projection','passed':True})
+
 # Exact compensated TE l=1 Bragg profile, dimensionless k0=omega=mu0=1.
 def jhat(x): return math.sin(x)/x-math.cos(x)
 def djhat(x): return math.cos(x)/x-math.sin(x)/x**2+math.sin(x)
@@ -161,7 +175,7 @@ result={'kind':'diagnostics, not continuum certification','seed':140014,
         'local_flux_quadrature':flux_refinement,
         'limitations':['No physical N-channel family was synthesized.',
         'Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.',
-        'No full hotspot scattering discretization or formal theorem prover was run.',
+        'No full hotspot scattering discretization was run; Lean results are recorded separately.',
         'Floating-point identities corroborate handwritten proofs and are not certified error bounds.']}
 (OUT/'verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 with (OUT/'model-diagnostics.csv').open('w',newline='',encoding='utf-8') as f:

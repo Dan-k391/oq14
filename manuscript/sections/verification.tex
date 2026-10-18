@@ -22,7 +22,8 @@ Maxwell-to-operator bridge in the channel problem.
 
 The reproducible script \texttt{scripts/verify.py} checks the exact pair
 model, passive reciprocal perturbations, the angular monodromy, radial
-Bragg matching, and local evanescent flux. Its fixed seed is $140014$.
+Bragg matching, the conical projection identities, and local evanescent
+flux. Its eight diagnostic groups use fixed seed $140014$.
 All matrix tests use singular values or Hermitian eigenvalues, not tests
 of randomly selected coherent inputs. Random numbers choose one fully
 specified perturbation matrix; its full norm and all-subspace certificate
@@ -69,9 +70,60 @@ for $N=2,4,8$ are \emph{unavailable}, not zero. Their fields in the
 machine-readable record are null. No rounded-hotspot scattering mesh was
 computed; that theorem rests on the analytic existence and convergence
 proof, which is nonconstructive in its illumination cost and rounding
-scale. No Lean formalization was performed. The supplied notes' claims
-about earlier finite-dimensional Lean checks were not rerun and do not
-certify any continuum result here.
+scale. The supplied notes' claims about earlier finite-dimensional Lean
+checks were not rerun. A new formalization is described below, with its
+own source, pinned dependencies, successful compilation, and axiom audit.
+
+\subsection{Lean verification and its precise boundary}
+\label{ver:lean}
+The project \texttt{lean/OQ14.lean} uses Lean~4.19.0. Its pinned
+mathlib commit is
+\begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
+Ten theorem declarations were compiled successfully. In namespace
+\texttt{OQ14}, the first five are:
+\begin{quote}\small\ttfamily
+approximation\_kernel\_trivial\\
+approximation\_injective\\
+finiteDimensional\_of\_approximation\\
+finite\_rank\_channel\_bound\\
+finite\_rank\_power\_channel\_bound
+\end{quote}
+They formalize Lemma~\ref{ch:ranklemma}, including the squared-power
+hypothesis, the strict error below $\sqrt\tau$, and actual finite
+dimensionality of the domain. The finite-dimensional range assumption is
+explicit; the proof does not misuse the natural-number dimension of an
+infinite-dimensional space.
+
+The next three declarations formalize the norm and power
+implications underlying Proposition~\ref{cx:compression}:
+\begin{quote}\small\ttfamily
+isometry\_perturbation\_lower\_bound\\
+isometry\_perturbation\_power\_threshold\\
+compression\_power\_threshold
+\end{quote}
+They apply to
+every vector and retain the strict $1-\sqrt\tau$ approximation margin.
+Finally two declarations formalize the pointwise
+complex quadratic-form estimate and its measure-theoretic integral
+consequence in Lemma~\ref{cx:absolute-bypass}:
+\begin{quote}\small\ttfamily
+quadratic\_flux\_norm\_bound\\
+absolute\_bypass\_certificate
+\end{quote}
+Integrability is a
+visible hypothesis; this is not merely a finite sample test.
+
+For every declaration the compiler lists three axioms: propositional
+extensionality (\texttt{propext}), classical choice
+(\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
+These are the standard logical foundations used by these mathlib proofs. No
+project-specific axiom, \texttt{sorry}, or admitted proof occurs. The
+formal build records the exact source hashes and pinned dependencies.
+This is a formal verification of these ten operator and integral
+theorems. It does not formalize Maxwell existence, the conical or corner
+analysis, scattering density, interface rounding, or the missing uniform
+channel approximation. In particular the mathematical research problem
+cannot be closed by adding its missing assertion as an axiom.
 
 \subsection{Smallest remaining research bridges}
 \label{ver:gaps}
@@ -81,8 +133,11 @@ a uniform estimate of the effective transmission directions with no
 uncontrolled field-resource factor. A bound on $B_*$ on the counted
 subspaces would suffice for finiteness in the stated collar class, but
 the Bragg construction shows why external passivity cannot supply a
-general input-to-field bound. It does not rule out a sharper argument
-using through-power and bypass together. The minimal abstract target is
+general input-to-field bound. It does not rule out a sharper global
+argument using radiative accessibility, through-power and bypass together.
+Theorem~\ref{ca:localpackets} proves that local Maxwell equations and
+whole-plane coherent bypass control alone cannot supply the required
+restriction. The minimal abstract target is
 the uniform finite-rank approximation in Remark~\ref{ch:missing};
 its area scaling is an additional requirement.
 
@@ -94,29 +149,32 @@ proves that weak coupling alone is not an obstruction, but it gives
 neither simultaneous bounded-index synthesis nor a relative error
 estimate for finite dielectric structures.
 
-For hotspots, the restricted theorem has no remaining local-to-global
-excitation assumption. The finite-three-dimensional and modal bridges
-are those in Remark~\ref{hs:open3d}: vector scattering control under
-finite-height realization and a valid mode with all required singular
-coefficients and normalization. Infinite extrusion and freely chosen
-illumination do not discharge these bridges.
+For hotspots, Theorem~\ref{hs:three-packing} supplies the finite-device
+driven construction directly, using conical points rather than an
+extrusion approximation. Its neighborhood projections lie in the
+prescribed planar patch; it does not require the rounded maxima to lie
+exactly in that plane. The modal gap is precisely
+Remark~\ref{hs:three-modal-gap}: one continued resonance must retain
+all singular coefficients and a finite nonzero specified normalization.
+Freely chosen illumination does not establish those modal properties.
 
 \subsection{Separate scientific verdicts}
 \label{ver:verdicts}
-\begin{longtable}{@{}p{.30\textwidth}p{.15\textwidth}p{.48\textwidth}@{}}
+\begin{longtable}{@{}p{.28\textwidth}p{.18\textwidth}p{.47\textwidth}@{}}
 \toprule Target & Status & Exact conclusion\\\midrule\endfirsthead
 \toprule Target & Status & Exact conclusion\\\midrule\endhead
 Driven, invariant 2D electric hotspots & PROVED & Theorem~\ref{hs:packing}: any finite number in any open patch, one physical unit-power-per-length illumination, fixed ordinary contrast and frequency, smooth rounded binary interfaces.\\[3pt]
-Driven finite 3D point hotspots & OPEN & Extrusion is not a finite three-dimensional realization; no end-effect bridge is claimed.\\[3pt]
+Driven finite 3D point hotspots & PROVED & Theorem~\ref{hs:three-packing}: one finite-power illumination, fixed small positive contrast, $2N$ smooth finite inclusions, disjoint 3D peak neighborhoods projecting into the prescribed patch.\\[3pt]
 Modal hotspot packing & OPEN & Bounded-region energy-to-peak ratios in Proposition~\ref{hs:regional-ratio} are not modal volume.\\[3pt]
 Scalar electric Helmholtz waves & OPEN here & The hotspot construction uses $u=H_z$ and in-plane vector $E$; it is not a singular scalar-electric-field example. Restricted scalar slab results do not settle OQ14.\\[3pt]
 Full vector, fixed-section channel finiteness and area law & OPEN & Theorem~\ref{ch:fulloutput} retains local field resource, trace compatibility, collar geometry, and $\delta<\eta\tau$. No unconditional count or physical counterexample is proved.\\[3pt]
 Resource-controlled vector channels & PROVED / CONDITIONAL & Explicit finite-rank, count, average-resource and essential-norm results hold under the listed hypotheses. Uniform area scaling requires uniform additional resources.\\[3pt]
-Ordinary dielectrics & PROVED restricted results & Both 2D hotspot existence and the Bragg/local-flux obstructions use fixed $1\leq\eps_r\leq\eps_+$. Neither uses ENZ.\\[3pt]
+Ordinary dielectrics & PROVED scoped results & The 2D and finite 3D driven hotspot constructions and Bragg/local-flux obstructions use fixed positive ordinary bounds. None uses ENZ.\\[3pt]
 Common positive lower bound below one & OPEN channel target & The local resource estimates extend; an ENZ limit does not settle this fixed-positive-bound target.\\[3pt]
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Scalar hotspot examples are contained in tensor classes admitting those scalar values. General vector channel closure remains open.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
+Operator and bypass formalization & LEAN VERIFIED & Ten declarations in Section~\ref{ver:lean}; no admitted proof or project-specific axiom. Maxwell existence, realization, and limiting arguments are outside this coverage.\\
 \bottomrule
 \end{longtable}
 

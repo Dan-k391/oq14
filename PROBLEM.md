@@ -8,3 +8,27 @@ Freeze fixed positive frequency; real scalar reciprocal nonmagnetic ordinary die
 Hotspots require one normalized global field exciting every neighborhood. Driven 2D, driven finite 3D, and modal claims must be distinguished. A local singularity alone does not settle global packing.
 
 The user supplied a research manual as project material. Its mathematical routes are proposals, not evidence or established conclusions.
+
+## Canonical scope and resource locations
+
+| Item | LaTeX label |
+|---|---|
+| Ordinary dielectric class, fixed frequency and vacuum exterior | `pr:class`, `pr:maxwell` |
+| Physical power normalization and outgoing admissibility | `pr:scattering` |
+| Same square D, transmission, passage, absolute bypass | `pr:count`, `pr:transmission`, `pr:passage`, `pr:bypass` |
+| Uniform channel target and separate area scaling | `pr:channel-target`, `pr:area-bound` |
+| Driven versus modal hotspot targets | `pr:hotspot-target`, `hs:peak-definition` |
+| 2D exact Maxwell reduction and incoming power per length | `hs:tm`, `hs:power` |
+| Finite 3D driven theorem, projected patch and finite incident power | `hs:three-packing`, `hs:three-illumination` |
+| Remaining single-resonance normalization and coefficient problem | `hs:three-modal-gap` |
+| Internal field resource and trace compatibility | `ch:resource`, `ch:tracecompatibility` |
+| Explicit collar, shape, lower-index and amplification costs | `ch:arearesource` |
+| Growing support in Bragg example | `cx:bragg`, `cx:bragg-scope` |
+| Mode-model errors versus physical section and bypass | `cx:n-model`, `cx:missing-bridge` |
+| Whole-plane local bypass obstruction and exact noncompletion | `ca:localpackets`, `ca:compactcompletion` |
+| Exact formal theorem coverage and logical foundations | `ver:lean` |
+| Separate verdicts and undischarged bridges | `ver:verdicts`, `ver:gaps` |
+
+Subsequent request: complete closure of the original statements and Lean
+formalization. The project must not assert that either requirement is met
+unless the complete substantive theorem and its physical bridges are proved.

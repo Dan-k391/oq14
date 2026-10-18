@@ -13,16 +13,19 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. The primary channel target fixes frequency, positive dielectric bounds, the physical section, and power, passage, and absolute-bypass thresholds while permitting arbitrarily fine structure and unrestricted exterior support. We separate restricted hotspot theorems, full-vector field-resource estimates, and exact counterexamples to intermediate lemmas. In particular, absolute bypass control connects sharp-section passage to a smooth flux observable. No unrestricted full-Maxwell, fixed-section channel bound or admissible many-channel counterexample is claimed. Model calculations are distinguished from continuum Maxwell constructions throughout.
+We investigate the two conjectures in Section 5.6 of Miller and Monticone's versioned tutorial. We prove simultaneous driven hotspot packing in an invariant two-dimensional setting and in finite three-dimensional dielectric devices, under explicit localization and incoming-power conventions. The three-dimensional result uses conical point tips and a fixed small positive contrast. The primary channel target fixes frequency, material bounds, the physical section, and power, passage, and absolute-bypass thresholds, with unrestricted external support and fine structure. We prove resource-dependent vector estimates and a local coherent-flux obstruction, but do not resolve the unrestricted physical channel target. The modal hotspot interpretation also remains open. Ten operator and integral theorems are checked in Lean; the continuum Maxwell arguments are not formalized.
 \end{abstract}
-\noindent\textbf{Reading guide.} Status words refer to the precise labeled statement, not to OQ14 as a whole. Proofs are mathematical arguments, not machine certification. See the verdicts in Section~\ref{ver:verdicts}, the claim ledger, and the reproducibility record for the exact scope.
-\tableofcontents
+\noindent\textbf{Reading guide.} Status words refer to the precise labeled statement, not to OQ14 as a whole. The exact Lean coverage is in Section~\ref{ver:lean}; other proofs are mathematical arguments. See Section~\ref{ver:verdicts}, the claim ledger, and the reproducibility record for the remaining scope.
+\clearpage
+{\linespread{0.90}\selectfont\tableofcontents}
 \clearpage
 \input{sections/problem}
-\InputIfFileExists{sections/hotspots.tex}{}{\section{Hotspots: investigation in progress}}
-\InputIfFileExists{sections/channels.tex}{}{\section{Channels: investigation in progress}}
-\InputIfFileExists{sections/counterexamples.tex}{}{\section{Counterexamples: investigation in progress}}
-\InputIfFileExists{sections/verification.tex}{}{\section{Verification: pending}\label{ver:verdicts}}
+\input{sections/hotspots}
+\input{sections/hotspot_closure_audit}
+\input{sections/channels}
+\input{sections/counterexamples}
+\input{sections/channel_closure_audit}
+\input{sections/verification}
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}
