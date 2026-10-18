@@ -1,0 +1,329 @@
+\section{Renewed closure audit: coherent bypass and global accessibility}
+\label{ca:section}
+
+\noindent\textbf{Verdict: the unrestricted channel target remains OPEN.}
+The demand for a full closure does not discharge a mathematical hypothesis.
+This section tests whether the all-superposition passage and absolute-bypass
+conditions can supply the missing resource bound in Section~\ref{ch:section}.
+They do supply a global feasibility restriction.  They do not impose a finite
+positive-flux dimension on local Maxwell solutions, even when bypass is
+certified on the entire transverse plane.  The distinction is proved below,
+with an explicit construction and its failure of radiative accessibility.
+
+\subsection{A global power-budget restriction}
+
+\begin{proposition}[PROVED: a necessary threshold condition]
+\label{ca:powerbudget}
+Consider the compact-scatterer vacuum-exterior class of
+Assumptions~\ref{pr:class}--\ref{pr:scattering}, with a legitimate integrable
+flux on the full plane $\Pi=\{z=0\}$.  Use the usual radiation normalization:
+the angular incoming and outgoing far-field amplitudes $a_\infty,b_\infty$
+have squared norms equal to their powers, with
+$\|b_\infty\|^2\leq\|a_\infty\|^2=\|a\|^2$.
+Then
+\begin{equation}
+ -\|a\|^2\leq P_\Pi(a)\leq\|a\|^2,
+ \qquad
+ |P_D(a)|\leq(1+\delta)\|a\|^2
+ \label{ca:powerbudgeteq}
+\end{equation}
+whenever the absolute bypass is at most $\delta\|a\|^2$.
+Consequently a nonzero counted subspace requires
+\begin{equation}
+ \eta\tau\leq1+\delta.
+ \label{ca:thresholdfeasibility}
+\end{equation}
+In particular, its dimension is zero if $\eta\tau>1+\delta$.
+\end{proposition}
+\begin{proof}
+Apply the real Poynting conservation law in a large upper half-ball.
+Its flat face has outward normal $-\hat z$.  On passing to infinity,
+the hemispherical outward flux is the outgoing upper-hemisphere power
+minus the incoming upper-hemisphere power.  Thus
+\begin{equation}
+ P_\Pi(a)=\|\mathbf1_{\Omega_+}b_\infty\|^2
+          -\|\mathbf1_{\Omega_+}a_\infty\|^2.
+ \label{ca:hemisphere}
+\end{equation}
+Here the far-field assertion can be checked directly: the magnetic
+amplitudes of outgoing and incoming waves are respectively
+$Z_0^{-1}\hat r\times E_{\rm out}$ and
+$-Z_0^{-1}\hat r\times E_{\rm in}$.  The incoming--outgoing cross terms
+in the real radial Poynting flux cancel, leaving their squared-power
+difference.  The definition of the radiation power amplitudes includes
+this integrated far-field limit.  Integrability of the plane flux permits
+the disk integral to converge to $P_\Pi$.
+Each term on the right of \eqref{ca:hemisphere} is nonnegative, and no
+larger than $\|a\|^2$, proving the first bound.  Also
+$|P_D-P_\Pi|\leq\int_{\Pi\setminus D}|S_z|\leq\delta\|a\|^2$.
+Finally the counted inequalities give
+$\eta\tau\|a\|^2\leq P_D(a)\leq(1+\delta)\|a\|^2$.
+\end{proof}
+
+\begin{remark}[PROVED: Loewner bounds do not count dimension]
+\label{ca:loewner}
+On any finite counted input space let $Q_D$ be its Hermitian section-flux
+matrix.  Polarization and Proposition~\ref{ca:powerbudget} give
+\begin{equation}
+ \eta T^*T\preceq Q_D\preceq(1+\delta)I,
+ \qquad \tau I\preceq T^*T\preceq I.
+ \label{ca:loewnereq}
+\end{equation}
+For $0<\eta\leq1$, the choice $T=I_N$, $Q_D=I_N$, with zero signed and
+absolute bypass, satisfies these algebraic inequalities for every $N$.
+This is not a physical construction.  It establishes precisely that the
+coherent Loewner inequalities and global power budget alone supply no rank
+bound.  A spatial Maxwell-to-input accessibility restriction is necessary.
+\end{remark}
+
+\subsection{Arbitrarily many local fields with whole-plane coherent bypass control}
+
+The next theorem strengthens the local evanescent example of
+Proposition~\ref{cx:evanescent}: it certifies absolute bypass on all of
+$\Pi\setminus D$, rather than only vanishing flux on the sides of a
+finite collar.  Its normalization is total \emph{local plane flux}, not
+power supplied by asymptotic incoming channels.
+
+\begin{theorem}[PROVED: coherent local passage with arbitrarily small bypass]
+\label{ca:localpackets}
+Fix $k_0>0$, $L>0$, $h>0$, an integer $N\geq1$, and $0<\delta<1$.
+Let $D=(-L/2,L/2)^2$ and
+$\Omega_h=\mathbb R^2\times(-h,h)$.  There are $N$ linearly independent,
+smooth, source-free vacuum Maxwell fields on $\Omega_h$, with finite
+weighted field norm there, such that every coefficient vector
+$a\in\mathbb C^N$ has
+\begin{equation}
+ S_z(a;x,y,0)\geq0,\quad
+ P_\Pi(a)=\|a\|^2,\quad
+ P_D(a)\geq(1-\delta)\|a\|^2,\quad
+ \int_{\Pi\setminus D}|S_z(a)|\leq\delta\|a\|^2.
+ \label{ca:packetflux}
+\end{equation}
+All tangential Fourier supports can be chosen above any prescribed
+transverse wavenumber.  Thus local source-free Maxwell equations and
+all-superposition passage and whole-plane bypass alone do not bound the
+dimension, even at fixed section, frequency, and homogeneous permittivity.
+\end{theorem}
+
+\begin{proof}
+Use the unitary Fourier transform on each transverse coordinate.  For
+$b>0$, define
+\begin{equation}
+ \widehat\phi_b(\xi)=(2b)^{-1/2}\mathbf1_{[-b,b]}(\xi),\qquad
+ \phi_b(x)=\frac{\sin(bx)}{\sqrt{\pi b}\,x},\qquad
+ g_b(x,y)=\phi_b(x)\phi_b(y),
+ \label{ca:sinc}
+\end{equation}
+with the continuous value at zero.  Plancherel gives
+$\|\phi_b\|_2=\|g_b\|_2=1$.  Since $|\sin(bx)|\leq1$,
+\begin{equation}
+ \int_{|x|\geq L/2}|\phi_b(x)|^2\,dx\leq\frac4{\pi bL},
+ \qquad
+ \int_{\mathbb R^2\setminus D}|g_b|^2\leq\frac8{\pi bL}.
+ \label{ca:sincescape}
+\end{equation}
+Choose $b\geq8N/(\pi L\delta)$, and choose $Q>k_0$ as large as
+desired.  For $j=1,\ldots,N$, put
+\begin{equation}
+ K_j=Q+3bj,\qquad f_j(x,y)=e^{iK_jx}g_b(x,y),\qquad
+ f_a=\sum_{j=1}^Na_jf_j.
+ \label{ca:packets}
+\end{equation}
+Their Fourier supports are disjoint rectangles
+$[K_j-b,K_j+b]\times[-b,b]$.  Thus the $f_j$ are orthonormal and
+$\|f_a\|_2^2=\|a\|^2$.  Pointwise Cauchy--Schwarz gives
+$|f_a|^2\leq N|g_b|^2\|a\|^2$, hence
+\begin{equation}
+ \int_{\mathbb R^2\setminus D}|f_a|^2\leq\delta\|a\|^2.
+ \label{ca:packettail}
+\end{equation}
+Every support lies in $\xi_x\geq Q+2b>k_0$, entirely in the
+evanescent sector, but its union is bounded for each finite $N,Q,b$.
+
+Use the normalized fields $e=\sqrt{\varepsilon_0}E$,
+$h=\sqrt{\mu_0}H$ of \eqref{ch:normalization}, and set
+$C=\sqrt{2/c_0}$.  Prescribe the tangential data at $z=0$ by
+\begin{equation}
+ e_t=(0,Cf_a),\qquad h_t=(-Cf_a,0),\qquad
+ e_z=\frac{iC}{k_0}\partial_yf_a,\qquad
+ h_z=-\frac{iC}{k_0}\partial_xf_a.
+ \label{ca:cauchydata}
+\end{equation}
+The normal components are determined by the two normal curl equations.
+For completeness, the full extension is constructed, not assumed.  Put
+$J(v_x,v_y)=(-v_y,v_x)$ and evolve the tangential components by
+\begin{equation}
+ \begin{aligned}
+ e_z&=\frac{i}{k_0}(\partial_xh_y-\partial_yh_x),&
+ \partial_z e_t&=\nabla_te_z-ik_0J h_t,\\
+ h_z&=-\frac{i}{k_0}(\partial_xe_y-\partial_ye_x),&
+ \partial_z h_t&=\nabla_th_z+ik_0J e_t.
+ \end{aligned}
+ \label{ca:cauchyevolution}
+\end{equation}
+After transverse Fourier transformation this is a four-component constant
+coefficient ordinary differential equation for each $\xi$.  Its matrix
+entries are polynomials of degree at most two in $\xi$, with fixed
+coefficients depending on $k_0$.  On the bounded Fourier support the
+matrix exponential and every fixed number of its derivatives are bounded
+for $|z|\leq h$.  Inverse Fourier transformation therefore supplies smooth
+fields, with every transverse derivative and every $z$ derivative in
+$L^2(\Omega_h)$.  In particular their weighted field norm is finite.
+The normal definitions and the tangential evolution are exactly all six
+curl equations, so
+$\operatorname{curl}e=ik_0h$ and
+$\operatorname{curl}h=-ik_0e$.  This also proves the divergence conditions.
+
+At the measurement plane,
+$S_z=(c_0/2)\operatorname{Re}(e\times\overline h)\cdot\hat z
+=(c_0C^2/2)|f_a|^2=|f_a|^2$.
+Orthogonality and \eqref{ca:packettail} give all four assertions in
+\eqref{ca:packetflux}.  They hold for every vector, not merely for the
+basis fields or a sample of random inputs.  Nonzero $f_a$ also proves
+linear independence of the fields.
+\end{proof}
+
+\begin{proposition}[PROVED: the flux normalization permits unbounded field resource]
+\label{ca:packetresource}
+For the fields in Theorem~\ref{ca:localpackets}, set $q_{\min}=Q+2b$.
+Their local slab resource satisfies
+\begin{equation}
+ \int_{\Omega_h}(|e_a|^2+|h_a|^2)\,dx\,dy\,dz
+ \geq\frac{4h}{c_0k_0^2}q_{\min}^2\|a\|^2.
+ \label{ca:packetresourceeq}
+\end{equation}
+Thus the same coherent flux and bypass bounds coexist with arbitrarily
+large resource at fixed $N,D,h,k_0,\delta$ in this local class.
+\end{proposition}
+\begin{proof}
+The vacuum Maxwell equations imply $(\Delta+k_0^2)h_z=0$.
+For each Fourier frequency in the support, put
+$\kappa(\xi)=\sqrt{|\xi|^2-k_0^2}>0$.
+The component has the form
+$u(z)=u(0)\cosh(\kappa z)+u'(0)\sinh(\kappa z)/\kappa$.
+When $|u|^2$ is integrated on $(-h,h)$ its cross term is odd, and both
+remaining terms are nonnegative.  Hence
+$\int_{-h}^h|u(z)|^2dz\geq2h|u(0)|^2$.
+Plancherel and \eqref{ca:cauchydata} yield
+\begin{equation}
+ \int_{\Omega_h}|h_z|^2\geq
+ \frac{2hC^2}{k_0^2}\|\partial_xf_a\|_2^2
+ \geq\frac{4h}{c_0k_0^2}q_{\min}^2\|a\|^2,
+ \label{ca:packetresproof}
+\end{equation}
+which is bounded above by the total resource.
+\end{proof}
+
+\subsection{Why the local theorem is not the requested counterexample}
+
+\begin{proposition}[PROVED: failure of a vacuum outgoing completion]
+\label{ca:outgoingfailure}
+No nonzero field of Theorem~\ref{ca:localpackets} can be continued into an
+entire homogeneous vacuum upper half-space with the outgoing condition
+that every evanescent Fourier component decays as $z\to+\infty$.
+\end{proposition}
+\begin{proof}
+The transverse Fourier support is preserved by vacuum evolution and
+contains only $|\xi|>k_0$, with a positive distance from the light circle.
+An outgoing continuation therefore has exponentially decaying $L^2$
+electric and magnetic slices as $z\to+\infty$, implying
+$P_\Pi(z)\to0$ by Cauchy--Schwarz.
+On the other hand, the full-plane integrated flux of a source-free vacuum
+solution with these $L^2$ slices is independent of $z$.  One way to justify
+this is to integrate the divergence-free real Poynting vector over a
+transverse cutoff of radius $R$.  Its lateral error is bounded by
+$C/R$ times the $L^1$ norm of the transverse Poynting field integrated
+over the finite $z$ interval.  That norm is finite by Cauchy--Schwarz,
+so the error tends to zero.  Conservation would give
+$P_\Pi(z)=P_\Pi(0)=\|a\|^2>0$, a contradiction.
+\end{proof}
+
+The example therefore cannot acquire a physical incoming-power
+normalization by simply declaring its coefficient space to be an incident
+channel space.  Formally appending $T=I_N$ would satisfy throughput and,
+for $\eta\leq1-\delta$, passage, but it would not construct the global
+field-to-port map required in Assumption~\ref{pr:scattering}.
+
+\begin{proposition}[PROVED: no exact realization of these entire slab data by a compact exterior device]
+\label{ca:compactcompletion}
+Suppose a proposed dielectric perturbation is compactly supported outside
+$\Omega_h$ and the exterior convention consists of propagating incoming
+radiation and outgoing scattered radiation.  It cannot have a nonzero
+field of Theorem~\ref{ca:localpackets} as its exact total field on all of
+$\Omega_h$.
+\end{proposition}
+\begin{proof}
+The Fourier Cauchy construction defines a homogeneous Maxwell solution
+$F^0=(e^0,h^0)$ on all of $\mathbb R^3$: for every finite $z$ its bounded
+Fourier support makes the matrix exponential well defined.  Let $F$ be
+the proposed scattering field.  The difference $F-F^0$ is a homogeneous
+vacuum Maxwell field in the unbounded connected component of the
+complement of the material support, and is zero on the entire open slab.
+Each component satisfies the constant-coefficient Helmholtz equation,
+so analytic continuation implies equality throughout that connected
+component, in particular everywhere outside a sufficiently large ball.
+
+Choose $z_0$ above that ball.  The entire half-space $z>z_0$ is vacuum,
+and $F=F^0$ there.  Its transverse spectrum is the same bounded set
+$|\xi|>k_0$ as before.  In a homogeneous exterior half-space the stated
+radiation convention permits incoming propagating components, outgoing
+propagating components, and evanescent components decaying toward
+infinity; it excludes growing evanescent components.  This follows as
+well by transverse Fourier transformation of the outgoing vacuum Green
+function and of the incident propagating angular spectrum: the
+longitudinal root for $|\xi|>k_0$ has positive imaginary part.
+There are no propagating components in the present support.  The field
+therefore decays toward $+\infty$ in $L^2$ slices, contradicting its
+conserved flux $\|a\|^2>0$, exactly as in
+Proposition~\ref{ca:outgoingfailure}.
+\end{proof}
+
+Thus even the exact local packet data are not a ready-made physical
+counterexample.  A resonant construction would need a quantitatively
+controlled \emph{approximation} to suitable concentrated data, or
+different accessible fields, with input power and every coherent error
+tracked.  Proposition~\ref{ca:compactcompletion} does not exclude that
+possibility, nor does it exclude arbitrary external resonant matching.
+
+\subsection{Matching theory and the decisive missing statement}
+
+The primary reflectionless-scattering analysis of
+\href{https://doi.org/10.1515/nanoph-2020-0403}{Stone, Sweeney, Hsu,
+Wisal, and Wang (2021)} gives a Maxwell formulation of reflection zeros
+and structural tuning to a real-frequency reflectionless state.  Its
+multichannel state is a selected coherent input vector.  Such a state
+does not assert an $N$-dimensional subspace with uniformly high
+transmission at the same frequency, nor does it certify passage and
+absolute bypass through a fixed small section.  Applying that framework
+therefore still requires the simultaneous synthesis and error control
+identified in Remark~\ref{cx:missing-bridge}.
+
+\begin{remark}[OPEN: smallest remaining global bridge]
+\label{ca:decisivebridge}
+The renewed audit reduces the choice to two substantive global tasks.
+A proof must restrict the radiatively accessible trace subspaces of all
+admitted bounded-index devices strongly enough to give the uniform
+finite-rank estimate of Lemma~\ref{ch:ranklemma}, despite arbitrary
+external support and feedback.  A disproof must realize an unbounded
+sequence of positive-flux trace subspaces with power-normalized incident
+and delivered channels and controlled absolute bypass.  Theorem
+\ref{ca:localpackets} shows that local Maxwell equations and even a
+whole-plane coherent bypass certificate cannot replace that global step.
+Proposition~\ref{ca:powerbudget} only closes the empty parameter regime
+$\eta\tau>1+\delta$; it does not resolve the meaningful positive-throughput
+regime.  No full fixed-section vector theorem or physically admissible
+many-channel counterexample has been obtained.
+\end{remark}
+
+\begin{remark}[Formalization boundary]
+\label{ca:leanboundary}
+Finite-dimensional Loewner consequences, norm perturbation certificates,
+and dimension lemmas can be formalized independently.  Such Lean
+statements do not formalize the existence of a Maxwell scattering
+realization.  The construction in Theorem~\ref{ca:localpackets} requires
+Fourier analysis, the stated Maxwell evolution, and flux integration;
+its proof here is a mathematical derivation, not a Lean verification.
+Introducing an axiom that supplies the global bridge in
+Remark~\ref{ca:decisivebridge} would assume the unresolved content rather
+than verify it.  Accordingly no full-OQ14 Lean closure is claimed.
+\end{remark}
