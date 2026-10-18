@@ -1,0 +1,629 @@
+\section{Finite three-dimensional driven packing and the modal normalization audit}
+\label{hs:three-section}
+
+This section replaces the unproved finite-extrusion step by a different
+construction: finite inclusions with conical \emph{point} tips.  Small
+positive contrast supplies a convenient uniform scattering inverse; it
+does not remove the point singularity.  The material bounds and frequency
+remain fixed.  The modal question is separated at the end.
+
+\begin{theorem}[PROVED: finite three-dimensional driven point localization]
+\label{hs:three-packing}
+Fix $k>0$ and an upper bound $\varepsilon_+>1$.  There is a number
+$\varepsilon_h\in(1,\varepsilon_+]$ that can be kept fixed in the
+following construction.  Given any nonempty open patch $\mathcal P$ in
+a plane, any finite $N$, and any $\ell,M>0$, there exist a compactly
+supported binary dielectric $\varepsilon_r\in\{1,\varepsilon_h\}$
+with $2N$ disjoint smooth inclusions and one unit-incoming-power
+Maxwell illumination at frequency $k$ such that there are $N$
+pairwise disjoint three-dimensional balls $Q_j$, of diameter less
+than $\ell$, satisfying
+\begin{equation}
+ \max_{\overline Q_j,\,\text{one-sided}}|E|>M,
+ \qquad
+ \sup_{\text{a collar of }\partial Q_j,\,\text{one-sided}}|E|
+ <\tfrac12\max_{\overline Q_j,\,\text{one-sided}}|E|.
+ \label{hs:three-peak}
+\end{equation}
+The centers of the balls lie in $\mathcal P$, and the orthogonal
+projections of the balls and of the material support are contained
+in $\mathcal P$.  In particular the selected superlevel components
+are localized in all three spatial dimensions.  The maximizing
+points after rounding need not lie exactly in the original plane.
+There is no invariant infinite direction, no internal impressed
+source, and no conducting boundary in the physical device.
+\end{theorem}
+
+The prescribed patch is therefore a projection constraint, while the
+localized neighborhoods themselves are three-dimensional.  This exact
+quantifier avoids silently replacing a point by an infinitely long edge.
+As before, no minimum energy fraction in an individual peak is required.
+
+\subsection{A genuine conical point exponent}
+\label{hs:three-angular-subsection}
+
+\begin{lemma}[PROVED: strict positive contrast gives a conical exponent below one]
+\label{hs:three-angular}
+Choose $t\in(1/\sqrt3,1)$ and set, on the unit sphere,
+\begin{equation}
+ q(\widehat x)=1+d\,\mathbf1_{\{|\widehat x\cdot e_3|>t\}},
+ \qquad d>0.
+ \label{hs:three-caps}
+\end{equation}
+There are a real $\phi\in H^1(S^2)$ and $\lambda\in(0,1)$ satisfying
+\begin{equation}
+ -\operatorname{div}_{S^2}(q\nabla_{S^2}\phi)
+   =\nu q\phi,\qquad
+ \nu=\lambda(\lambda+1),\qquad
+ \int_{S^2}q\phi^2=1,\quad \int_{S^2}q\phi=0.
+ \label{hs:three-angular-eigenproblem}
+\end{equation}
+The electrostatic field $E_0=\nabla(r^\lambda\phi)$ is curl free,
+satisfies $\operatorname{div}(qE_0)=0$ weakly in a ball, and obeys
+\begin{equation}
+ \int_{B_R}q|E_0|^2\,dx=\lambda R^{2\lambda+1}.
+ \label{hs:three-static-energy}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The weighted Rayleigh quotient on the subspace orthogonal to constants
+has a positive minimum by the compact embedding
+$H^1(S^2)\hookrightarrow L^2(S^2)$ and the sphere Poincare inequality.
+Use the trial function $z=\widehat x\cdot e_3$, whose weighted mean
+vanishes by reflection symmetry.  Since
+$|\nabla_{S^2}z|^2=1-z^2$,
+\begin{equation}
+ \int_{S^2}q(|\nabla_{S^2}z|^2-2z^2)
+ =d\int_{|z|>t}(1-3z^2)<0.
+ \label{hs:three-trial}
+\end{equation}
+Explicitly, the trial quotient is
+\begin{equation}
+ \mathcal Q(z)=\frac{2+d(2-3t+t^3)}{1+d(1-t^3)},\qquad
+ \mathcal Q(z)-2=-\frac{3dt(1-t^2)}{1+d(1-t^3)}<0.
+ \label{hs:three-trial-explicit}
+\end{equation}
+Thus the first positive eigenvalue $\nu$ is less than two; its
+positive indicial root satisfies $0<\lambda<1$.  Separation in
+spherical coordinates proves the weak electrostatic equation.
+The interface conditions are exactly those in the angular weak
+problem.  The flux through a small sphere is of order
+$r^{\lambda+1}$, so there is no point source at the origin.
+Finally $\int q|\nabla_{S^2}\phi|^2=\nu$ gives
+$(\lambda^2+\nu)\int_0^Rr^{2\lambda}\,dr
+=\lambda R^{2\lambda+1}$.
+\end{proof}
+
+\subsection{An exact Maxwell coefficient functional at the conical point}
+\label{hs:three-functional-subsection}
+
+We use one standard regularity theorem in a precise local form.  On a
+ball there is a bounded linear regularized Poincare lifting
+\begin{equation}
+ \mathcal R:H^1(B)^3\cap\ker\operatorname{div}\longrightarrow H^2(B)^3,
+ \qquad \operatorname{curl}\mathcal R f=f.
+ \label{hs:three-lifting}
+\end{equation}
+This is the regularized curl-potential operator of
+Costabel and McIntosh~\cite{costabelMcIntosh2010}; their homotopy
+identity and order-minus-one mapping theorem apply to a ball.
+Only this established local Sobolev mapping is imported.  It is not
+a scattering, corner-excitation, or rounding theorem.
+
+Use normalized units $\operatorname{curl}E=ikH$,
+$\operatorname{curl}H=-ikqE$ in the local arguments; the magnetic
+field here is the physical magnetic field multiplied by $Z_0$.
+
+\begin{lemma}[PROVED: local regular decomposition with controlled remainder]
+\label{hs:three-decomposition}
+Suppose $E,H$ solve the source-free Maxwell system with
+$1\leq q\leq\varepsilon_h$ on $B_{3R}$ and have finite local energy.
+On $B_R$ one can write
+\begin{equation}
+ E=\nabla v+W,\qquad v\in H^1(B_R),\quad W\in H^2(B_R)^3,
+ \quad
+ \|v\|_{H^1}+\|W\|_{H^2}\leq C\|E\|_{L^2(B_{3R})},
+ \label{hs:three-decomposition-bound}
+\end{equation}
+after fixing the additive constant of $v$.  The maps can be chosen
+linear.  The constant depends on the displayed radii, frequency and
+material bounds, not on derivatives of $q$.
+\end{lemma}
+
+\begin{proof}
+Testing $\operatorname{curl}\operatorname{curl}E=k^2qE$ against
+$\chi^2E$, for a compactly supported cutoff, and applying Young's
+inequality gives
+$\|\operatorname{curl}E\|_{L^2(B_{5R/2})}
+\leq C\|E\|_{L^2(B_{3R})}$.
+Since $\operatorname{div}H=0$ and
+$\operatorname{curl}H=-ikqE$, the Fourier curl/div identity applied
+to a cutoff of $H$ gives
+$\|H\|_{H^1(B_{2R})}\leq C\|E\|_{L^2(B_{3R})}$.
+This is the same constant-permeability interior mechanism as
+Lemma~\ref{ch:magneticHone}.  Apply \eqref{hs:three-lifting} on
+$B_{2R}$ to $\operatorname{curl}E=ikH$, which is divergence free,
+and restrict the resulting $W$ to $B_R$.
+The curl-free difference $E-W$ is a gradient on the simply connected
+ball.  Its potential with zero mean satisfies the stated bound by
+the ordinary Poincare inequality.  All operations are bounded and
+linear.
+\end{proof}
+
+\begin{lemma}[PROVED: intrinsic conical singular coefficient]
+\label{hs:three-coefficient}
+In the conical material of Lemma~\ref{hs:three-angular}, every local
+Maxwell solution as above has a linear coefficient $c(E)$, continuous
+for the $L^2(B_{3R})$ topology on its solution space.  If $c(E)\ne0$,
+then $|E|$ is unbounded at ordinary points approaching the conical
+vertex from the homogeneous regions.  Its local energy remains finite.
+\end{lemma}
+
+\begin{proof}
+Use $E=\nabla v+W$ from Lemma~\ref{hs:three-decomposition}.  Since
+$H^2(B_R)\hookrightarrow C^{0,\gamma}(\overline B_R)$ for
+$0<\gamma<1/2$, $W$ is bounded.  Define
+\begin{equation}
+ U(r)=\int_{S^2}qv(r,\widehat x)\phi,\qquad
+ A(r)=\int_{S^2}qW_r(r,\widehat x)\phi,\qquad
+ B(r)=\int_{S^2}qW_t(r,\widehat x)\cdot\nabla_{S^2}\phi.
+ \label{hs:three-projections}
+\end{equation}
+The subscripts denote radial and tangential components.  Projecting
+$\operatorname{div}(q(\nabla v+W))=0$ gives
+\begin{equation}
+ (r^2U')'-\lambda(\lambda+1)U=-(r^2A)'+rB.
+ \label{hs:three-radial}
+\end{equation}
+The exact solution with finite $H^1$ energy is
+\begin{align}
+ U(r)&=c(E)r^\lambda+p(r),\notag\\
+ p(r)&=\frac{1}{2\lambda+1}\left[
+ r^\lambda\int_0^rs^{-\lambda}\{B(s)-(\lambda+1)A(s)\}\,ds
+ \right.\notag\\[-2pt]
+ &\hspace{36mm}\left.
+ -r^{-\lambda-1}\int_0^rs^{\lambda+1}\{B(s)+\lambda A(s)\}\,ds
+ \right].
+ \label{hs:three-exact}
+\end{align}
+To verify this formula, variation of constants for the two homogeneous
+solutions $r^\lambda,r^{-\lambda-1}$ first gives integrals of
+$-A'-2A/r+B/r$.  Integrating the $A'$ terms by parts cancels their
+endpoint contributions and gives \eqref{hs:three-exact}.
+The integrals converge because $A,B$ are bounded and $\lambda<1$.
+They show
+\begin{equation}
+ |p(r)|\leq Cr\|W\|_\infty,\qquad
+ |p'(r)|\leq C\|W\|_\infty.
+ \label{hs:three-particular-bound}
+\end{equation}
+For the second inequality, differentiation produces the additional
+term $-A(r)$ and two bounded integral terms.  Finite $H^1$ energy
+excludes the other homogeneous term $r^{-\lambda-1}$.
+
+Average $r^{-\lambda}(U(r)-p(r))$ on $R/2<r<R$ to define $c(E)$.
+This is a bounded functional of $v$ in $L^2$ and $W$ in $L^\infty$;
+Lemma~\ref{hs:three-decomposition} proves the required continuity.
+It is independent of the chosen lifting.  Indeed, two liftings
+differ by a bounded curl-free vector field; the corresponding
+potentials differ by a Lipschitz function.  Its angular projection
+is $O(r)$ after subtracting its constant value, and the weighted
+mean of $\phi$ is zero.  Such a difference has coefficient zero.
+
+Angular integration by parts gives
+\begin{equation}
+ \sqrt{\nu}|U(r)|\leq
+ \left(\int_{S^2}q|\nabla_{S^2}v(r,\widehat x)|^2\right)^{1/2}.
+ \label{hs:three-gradient}
+\end{equation}
+If $c(E)\ne0$, then $|U(r)|\geq |c(E)|r^\lambda/2$ at all
+sufficiently small admissible radii, since $p=O(r)$.
+Consequently the essential supremum of $|\nabla v|$ on these spheres
+is at least a positive constant times $r^{\lambda-1}$.
+Subtracting the bounded $W$ cannot remove the divergence of $|E|$.
+Inside each constant-coefficient region the Maxwell field is analytic;
+the large values can be selected away from interfaces.  Its energy
+is finite by the starting local $L^2$ assumption.
+\end{proof}
+
+\begin{lemma}[PROVED: local positive-frequency excitation of the point coefficient]
+\label{hs:three-local-excitation}
+For the conical coefficient $q$, at every fixed $k>0$ there are local
+source-free Maxwell solutions on a sufficiently small ball with
+$c(E)\ne0$.
+\end{lemma}
+
+\begin{proof}
+Scale a physical ball to $B_1$ and write $\kappa=kR$.
+Let $E_0=\nabla(r^\lambda\phi)$ and consider
+\begin{equation}
+ X_q=\{w\in H_0(\operatorname{curl},B_1):
+                 \operatorname{div}(qw)=0\}.
+ \label{hs:three-local-space}
+\end{equation}
+There is a finite constant $C_q$ with
+$\|w\|_2\leq C_q\|\operatorname{curl}w\|_2$ on $X_q$.
+Here is a reduction to the ordinary ball estimate, which avoids an
+unproved smoothness assumption on $q$.  Decompose
+$w=w_T+\nabla p$ with $p\in H_0^1$ and
+$\operatorname{div}w_T=0$, $w_T\in H_0(\operatorname{curl})$.
+Weighted divergence yields
+$\int q\nabla p\cdot\nabla\overline\psi
+=-\int(q-1)w_T\cdot\nabla\overline\psi$, so
+$\|\nabla p\|_2\leq d\|w_T\|_2$.
+For a ball the usual Maxwell estimate is
+$\|w_T\|_2\leq C\|\operatorname{curl}w_T\|_2$.
+For clarity, $H^1$ membership in this assertion is not assumed.
+The order-minus-one lifting also maps $L^2$ to $H^1$; lift
+$\operatorname{curl}w_T$ to $V\in H^1$.  The difference
+$w_T-V=\nabla p_0$ has $\Delta p_0=-\operatorname{div}V$ and
+tangential boundary gradient $-V_t$.  The latter is in
+$H^{1/2}(S^2)$, so the boundary trace of $p_0$, modulo a constant,
+is in $H^{3/2}(S^2)$.  This follows by the scalar sphere Laplacian
+estimate applied to its tangential gradient.  Dirichlet regularity
+on the smooth ball gives $p_0\in H^2$, hence $w_T\in H^1$.
+One can now use the Gaffney identity for tangential-zero fields,
+\begin{equation}
+ \|\operatorname{curl}w_T\|_2^2+\|\operatorname{div}w_T\|_2^2
+ =\|\nabla w_T\|_2^2+2\|w_T\cdot n\|_{L^2(S^2)}^2,
+ \label{hs:three-gaffney}
+\end{equation}
+initially for smooth fields and then by trace-preserving approximation
+on the smooth ball.  Poincare's inequality with the tangential trace
+condition excludes constant vectors and bounds the $L^2$ norm.
+Thus $C_q\leq(1+d)C$ is sufficient.
+
+Solve on $X_q$
+\begin{equation}
+ \int\operatorname{curl}w\cdot\operatorname{curl}\overline z
+       -\kappa^2q w\cdot\overline z
+ =\kappa^2\int qE_0\cdot\overline z.
+ \label{hs:three-local-variational}
+\end{equation}
+For $\kappa^2\varepsilon_h C_q^2<1/2$ this is coercive and gives
+$\|w\|_{H(\operatorname{curl})}\leq C\kappa^2\|E_0\|_2$.
+It is also the equation for every test in $H_0(\operatorname{curl})$:
+the weighted Helmholtz decomposition splits such a test into an
+$X_q$ part and a gradient from $H_0^1$, and both sides vanish on
+the gradient part.  Hence $E=E_0+w$ satisfies
+$\operatorname{curl}\operatorname{curl}E=\kappa^2qE$ and
+$H=(i\kappa)^{-1}\operatorname{curl}E$ completes the exact Maxwell
+solution.
+
+On an interior ball, cutoff curl/div regularity gives
+\begin{equation}
+ \|\operatorname{curl}w\|_{H^1(B_{1/2})}
+ \leq C\left(\|\operatorname{curl}w\|_2
+              +\kappa^2\|q(E_0+w)\|_2\right)=O(\kappa^2).
+ \label{hs:three-local-curl-small}
+\end{equation}
+Apply the lifting to $\operatorname{curl}w$.  Its $W$ has $H^2$
+norm $O(\kappa^2)$; the potential in $E=\nabla v+W$ differs from
+$r^\lambda\phi$, up to a constant, by $O(\kappa^2)$ in $H^1$.
+The averaged formula in Lemma~\ref{hs:three-coefficient} therefore
+gives $c(E)=1+O(\kappa^2)$.  This proves nontriviality for small
+positive $\kappa$.  The local tangential boundary data used to
+construct this solution are a mathematical matching device.  The
+physical construction below uses global incoming waves and has no
+PEC boundary.
+\end{proof}
+
+\subsection{A uniform finite-device Maxwell inverse at fixed small contrast}
+\label{hs:three-volume-subsection}
+
+\begin{lemma}[PROVED: uniform volume-integral inverse]
+\label{hs:three-volume}
+Fix a ball $B_L$ and $k>0$.  There is $C_{kL}<\infty$ such that
+the electric volume operator
+\begin{equation}
+ \mathcal K_k f=(k^2I+\nabla\nabla)\Phi_k*f,
+ \qquad \Phi_k(x)=\frac{e^{ik|x|}}{4\pi|x|},
+ \label{hs:three-volume-operator}
+\end{equation}
+restricted to $B_L$, with $f$ zero extended, has $L^2$ norm at most
+$C_{kL}$.  For $0<d<(2C_{kL})^{-1}$ and any measurable
+$0\leq\chi\leq d$ supported in $B_L$,
+\begin{equation}
+ E=E^{\rm in}+\mathcal K_k(\chi E)
+ \label{hs:three-volume-equation}
+\end{equation}
+has a unique solution and
+$\|(I-\mathcal K_k\chi)^{-1}\|\leq2$.
+It is the unique outgoing Maxwell scattering field for
+$\varepsilon_r=1+\chi$.  An outgoing electric source problem with
+compact $L^2$ forcing is likewise well posed.
+\end{lemma}
+
+\begin{proof}
+Split
+$\mathcal K_k=\nabla\nabla\Phi_0*
+ +[k^2I\Phi_k+\nabla\nabla(\Phi_k-\Phi_0)]*$.
+The first operator has Fourier multiplier
+$-\xi\xi^T/|\xi|^2$, of norm at most one on all-space $L^2$;
+this includes its distributional diagonal term.  The bracketed
+matrix kernel is locally integrable: the expansion
+$\Phi_k-\Phi_0=ik/(4\pi)-k^2|x|/(8\pi)+O(k^3|x|^2)$
+shows a Hessian of order $1/|x|$.  Away from zero it is smooth.
+Young's inequality after cutting the kernel off at $|x|=2L$
+therefore bounds the remainder by its finite matrix $L^1$ norm.
+Rescaling $x$ by $L$ shows that the resulting constant depends only
+on $kL$.  This proves the operator estimate.
+
+The Neumann series proves the inverse bound, uniformly over all
+the admitted geometries.  The dyadic kernel
+$k^{-2}\mathcal K_k$ is the outgoing fundamental solution of
+$\operatorname{curl}\operatorname{curl}-k^2$.  Consequently
+\eqref{hs:three-volume-equation} gives the Maxwell equations and
+radiation condition in distributions.  Conversely, subtracting
+that representation from an outgoing solution gives an entire
+outgoing vacuum solution, which is zero by the spherical-wave
+expansion.  This proves uniqueness and equivalence, including for
+discontinuous $\chi$.  An electric forcing $f\in L^2_c$ replaces
+$E^{\rm in}$ by $k^{-2}\mathcal K_k f$ on a ball enclosing its
+support; the same inverse applies when that support is in $B_L$.
+Only this latter case is needed below.
+\end{proof}
+
+For the theorem choose $L=1/k$ and fix once and for all
+\begin{equation}
+ 0<d<\min\{\varepsilon_+-1,(2C_1)^{-1}\},
+ \qquad \varepsilon_h=1+d.
+ \label{hs:three-fixed-contrast}
+\end{equation}
+Every finite collection of tips and inclusions can be placed in a
+much smaller ball whose projected closure lies in $\mathcal P$.
+The containing comparison ball of radius $1/k$ is only used for
+the inverse; it is not extra material.
+
+\subsection{Physical illumination, total-field density, and rounding}
+\label{hs:three-global-subsection}
+
+We now restore physical units: $E$ is the physical electric field
+and $H$ is the physical magnetic field, without the local $Z_0$
+rescaling used above.  For a smooth tangential density
+$g:S^2\to\mathbb C^3$,
+$d\cdot g(d)=0$, use the physical electric incident field
+\begin{equation}
+ E_g^{\rm in}(x)=\frac{k\sqrt{Z_0}}{\sqrt2\,\pi}
+                 \int_{S^2}g(d)e^{ikd\cdot x}\,dS(d),
+ \qquad
+ H_g^{\rm in}(x)=\frac{k}{\sqrt{2Z_0}\,\pi}
+                 \int_{S^2}d\times g(d)e^{ikd\cdot x}\,dS(d).
+ \label{hs:three-illumination}
+\end{equation}
+Stationary phase on the sphere gives an incoming electric amplitude
+$\sqrt{2Z_0}\,g(-\widehat x)/r$, up to a phase of unit modulus.
+The radial incoming flux is $|E^{\rm in}_{\rm incoming}|^2/(2Z_0)$,
+so the total incoming power is exactly $\|g\|_{L^2(S^2)}^2$.
+This is finite total power, rather than power per invariant length.
+
+\begin{lemma}[PROVED: total-field Maxwell Runge approximation for these devices]
+\label{hs:three-runge}
+Let the small-contrast coefficient be piecewise constant, with finitely
+many smooth interface pieces and finitely many conical vertices and
+joining curves.  Let $Q$ be a closed ball, or a finite disjoint union
+of closed balls, compactly contained in the comparison ball $B_L$
+and with connected complement.  A source-free Maxwell
+electric field defined on a neighborhood of $Q$ can be approximated
+in $L^2(Q)^3$ by total electric fields from
+\eqref{hs:three-illumination}.
+\end{lemma}
+
+\begin{proof}
+Take $f\in L^2(Q)^3$ annihilating all such total fields under the
+complex bilinear pairing, and solve
+$(\operatorname{curl}\operatorname{curl}-k^2\varepsilon_r)W=f$
+outgoing by Lemma~\ref{hs:three-volume}.  Orthogonality to every
+smooth tangential density says
+$\int_Q f\cdot E_{d,p}=0$ for all incident plane waves
+$p e^{ikd\cdot x}$ with $p\cdot d=0$.  Continuity in $d,p$
+justifies passing from integrated illuminations to individual
+plane waves.  Maxwell Green's identity, without complex conjugation,
+equates this integral to a nonzero constant times
+$p\cdot W_\infty(-d)$.  One may obtain the identity directly by
+inserting the dyadic outgoing representation; the pairing of two
+outgoing solutions has zero boundary Wronskian.  Since the electric
+far field is tangential, testing all $p\perp d$ proves
+$W_\infty=0$.  The vacuum vector spherical-wave expansion then
+gives $W=0$ outside a sufficiently large sphere.
+
+The exterior of $Q$ is connected.  Unique continuation here is
+elementary within each material: the electric and magnetic fields
+satisfy constant-coefficient Helmholtz equations.  Zero extends
+across an open smooth interface because both tangential electric
+and magnetic traces are zero; extending by zero gives a weak
+constant-coefficient Maxwell solution on a ball crossing that
+interface, hence an analytic one.  Paths avoid the finitely many
+vertices and joining curves and cross only open interface pieces.
+Thus $W=0$ outside $Q$.
+Both $W$ and $\operatorname{curl}W$ are in local
+$H(\operatorname{curl})$, and have zero tangential traces on
+$\partial Q$.  For every local homogeneous solution $V$, Green's
+identity consequently gives
+$\int_Q f\cdot V=\int_QW\cdot
+(\operatorname{curl}\operatorname{curl}-k^2\varepsilon_r)V=0$.
+The annihilator characterization of the $L^2$ closure proves density.
+This is density of total fields in the actual material, not an
+assumed free-space approximation inside it.
+\end{proof}
+
+\begin{lemma}[PROVED: finite-device rounding continuity]
+\label{hs:three-rounding}
+Let $\chi_\rho,\chi$ be supported in the common comparison ball,
+$0\leq\chi_\rho,\chi\leq d$, with $\chi_\rho\to\chi$ almost
+everywhere.  For one fixed incident field, their total electric
+fields satisfy $E_\rho\to E$ in $L^2(B_L)^3$.
+On a fixed compact observation set avoiding all vertices and joining
+curves, and near which the coefficients are unchanged, convergence
+is uniform on each closed material side.  This includes fixed
+sphere collars intersecting smooth conical interfaces.
+\end{lemma}
+
+\begin{proof}
+Subtract the volume equations:
+\begin{equation}
+ E_\rho-E=(I-\mathcal K_k\chi_\rho)^{-1}
+                  \mathcal K_k((\chi_\rho-\chi)E).
+ \label{hs:three-rounding-identity}
+\end{equation}
+Dominated convergence makes the last multiplication tend to zero
+in $L^2$, and Lemma~\ref{hs:three-volume} bounds both operators
+uniformly.  This proves the first claim.
+
+For the second, the field difference solves the same homogeneous
+Maxwell equation in every fixed observation neighborhood.
+Lemma~\ref{hs:three-decomposition} produces
+$E_\rho-E=\nabla v_\rho+W_\rho$ there, with
+$\|v_\rho\|_{H^1}+\|W_\rho\|_{H^2}\to0$ on smaller balls.
+The potential satisfies
+$\operatorname{div}(\varepsilon_r\nabla v_\rho)
+=-\operatorname{div}(\varepsilon_r W_\rho)$.
+Across a fixed smooth interface this is the scalar positive
+transmission problem with continuous potential and conormal jump
+$-[\varepsilon_r W_\rho\cdot n]$.
+Its local piecewise $H^3$ estimate is bounded by
+$C(\|v_\rho\|_{H^1}+\|W_\rho\|_{H^2})$.
+To see the required regularity, flatten the fixed smooth interface,
+apply tangential difference quotients twice to the scalar weak
+equation, and use ellipticity and cutoffs to estimate them.
+The equation then determines second normal derivatives; differentiating
+it once determines third normal derivatives.  The coefficient and
+flattening derivatives are bounded on this fixed neighborhood.
+The two material-side estimates include the displayed conormal
+data, whose trace has the required $H^{3/2}$ regularity from
+$W_\rho\in H^2$.  Thus
+$\nabla v_\rho+W_\rho\to0$ piecewise in $H^2$.
+Since $H^2$ embeds in $C^{0,\gamma}$ in three dimensions,
+uniform one-sided convergence follows.  A finite cover treats the
+observation set.  No estimate uniform at the shrinking tip is used.
+The same local argument gives bounded one-sided electric fields
+for each fixed smooth rounded geometry.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{hs:three-packing}]
+Select distinct centers $p_j$ in the planar patch and sufficiently
+small disjoint balls about them.  Put two opposite dielectric cones
+at each center, with opening angle from \eqref{hs:three-caps}.
+They agree exactly with the homogeneous conical geometry on a
+smaller ball, and are smoothly capped farther away, all within
+the selected neighborhood.  Their closures touch only at the
+center in this sharp reference geometry.  The projections of all
+these neighborhoods lie in $\mathcal P$, and their total support
+fits in a ball of radius $1/k$.
+
+For each selected vertex, Lemma~\ref{hs:three-local-excitation}
+constructs a local finite-frequency field with nonzero coefficient.
+Lemma~\ref{hs:three-runge} approximates it on a slightly larger
+ball than that used to measure the coefficient.
+Lemma~\ref{hs:three-coefficient} then shows that the coefficient
+$c_j(E_g)$ is a nonzero continuous linear functional of the smooth
+tangential incident density $g$.  Choose one density outside the
+finite union of its kernels, exactly as in
+Proposition~\ref{hs:simultaneous}, and divide by its $L^2(S^2)$ norm.
+All coefficients remain nonzero, and the incoming power is one.
+
+Fix disjoint observation balls $Q_j$ of diameter less than $\ell$
+inside the exact conical regions.  The field is bounded on their
+fixed interface collars by the regularity argument in
+Lemma~\ref{hs:three-rounding}; call a common bound $B$.
+Choose $S>\max\{M,2B\}$.  At each vertex the nonzero coefficient
+supplies an ordinary interior point $x_j$ with $|E(x_j)|>4S$.
+Now round all conical tips inward within radius $\rho$, leaving
+the interfaces elsewhere unchanged.  The result has $2N$ disjoint
+inclusions with smooth boundaries and the same two material values.
+The changed sets shrink to the finite collection of vertices.
+
+Lemma~\ref{hs:three-rounding} permits one sufficiently small common
+$\rho$ for which every $|E_\rho(x_j)|>3S$ and every collar amplitude
+is less than $S$.  One-sided maxima on the compact observation
+balls are finite and attained for the fixed smooth configuration.
+Each exceeds $3S>M$, and its half-amplitude component cannot cross
+its collar.  This proves \eqref{hs:three-peak} and the theorem.
+All choices of illumination precede rounding; the same normalized
+input is used for every rounded field.
+\end{proof}
+
+\begin{corollary}[PROVED: finite-region volume-to-peak ratios in three dimensions]
+\label{hs:three-regional-volume}
+Along the rounded sequence for one fixed sharp configuration and
+one normalized input, electromagnetic energy in a fixed bounded
+region stays bounded, while the electric maximum in every selected
+ball tends to infinity.  Each resulting finite-region energy-to-peak
+ratio tends to zero.  This is a driven local-energy statement, not
+an all-space modal normalization.
+\end{corollary}
+
+\begin{proof}
+The electric $L^2$ norms are uniformly bounded by the volume inverse.
+The magnetic fields are bounded on fixed bounded regions by the
+Maxwell equations, the local curl estimate, and exterior vacuum
+regularity; a slightly larger comparison ball may be used for the
+cutoffs.  For every finite amplitude threshold, select high ordinary
+points in the sharp field first and then use rounding continuity.
+The finite diagonal argument makes the lower limit of each selected
+maximum infinite.  The material factors are bounded above and below.
+\end{proof}
+
+\subsection{What an exact mode can mean in a finite dielectric device}
+\label{hs:three-modal-subsection}
+
+\begin{proposition}[PROVED: absence of real-frequency finite-energy modes]
+\label{hs:three-no-real-mode}
+Let the real positive scalar permittivity be constant on finitely
+many material pieces with piecewise smooth interfaces, and equal
+one outside a bounded set.  At a fixed real $\omega>0$, a source-free
+Maxwell field with finite all-space electromagnetic energy is zero.
+The same conclusion holds for an outgoing source-free field,
+without a finite-energy assumption.
+\end{proposition}
+
+\begin{proof}
+In the exterior vacuum every Cartesian component satisfies the
+scalar Helmholtz equation.  A spherical harmonic expansion of an
+$L^2$ exterior solution has radial terms proportional to incoming
+and outgoing spherical Hankel functions.  Each nonzero radial
+combination has nondecaying mean radial $L^2$ mass, because its
+leading amplitude is a nonzero combination of $e^{ikr}$ and
+$e^{-ikr}$ divided by $r$.  It cannot be square integrable on
+$(R,\infty)$ with volume weight $r^2$.  Orthogonality of spherical
+harmonics excludes cancellation between different angular terms.
+Thus a finite-energy field is zero in the exterior.
+For an outgoing source-free field, the real part of the complex
+Poynting identity instead sets its nonnegative far-field radiation
+power to zero, giving the same exterior conclusion.
+Tangential electric and magnetic continuity then propagates zero
+across each open smooth material interface by the constant-coefficient
+extension argument used in Lemma~\ref{hs:three-runge}.
+Paths can avoid the finite lower-dimensional interface singular sets.
+Hence the field is zero everywhere.
+\end{proof}
+
+This proposition diagnoses an inappropriate literal interpretation
+of the modal numerator; it does \emph{not} refute the tutorial's
+high-$Q$ or quasinormal-mode interpretation.  A finite radiating
+resonator has complex-frequency poles.  Their outgoing fields grow
+at spatial infinity and require a specified regularized mode norm,
+or a justified high-$Q$ approximation, instead of the ordinary
+positive all-space energy integral.  The tutorial explicitly notes
+open-cavity generalizations of its mode-volume definition.
+
+\begin{remark}[OPEN: simultaneous packing in one normalized resonance]
+\label{hs:three-modal-gap}
+Theorem~\ref{hs:three-packing} closes the finite-device \emph{driven}
+point-localization target just stated.  It does not turn the chosen
+illumination into a resonator mode.  A possible modal route starts
+with a simple isolated dielectric resonance, inserts finitely many
+small conical inclusions where its electric field is nonzero, and
+then rounds their tips.  To complete that route one must prove
+that a single continued resonance has nonzero conical coefficients
+at every selected vertex, and that the chosen resonance normalization
+stays finite and nonzero under insertion and rounding.  These are
+not consequences of Runge approximation: Runge varies external
+illumination, whereas a pole's eigenfield is fixed by its homogeneous
+outgoing eigenproblem.  Strong local field convergence without a
+coefficient topology also does not prove nonzero singular coefficients.
+No theorem discharging these modal continuation and normalization
+conditions is established here.  The modal reading of the original
+hotspot conjecture therefore remains \textbf{OPEN} in this manuscript.
+\end{remark}
