@@ -1,0 +1,640 @@
+\section{Channel bounds: complete operators and a resource-dependent Maxwell theorem}
+\label{ch:section}
+
+The area-only, fixed-section vector-Maxwell conjecture remains \textbf{OPEN}.
+This section proves three usable conclusions: an exact finite-rank reduction,
+a local full-vector field-resource estimate, and a bridge from the prescribed
+absolute-bypass condition to that estimate.  The local estimates reproduce,
+with a complete audit, the argument in the supplied report
+\cite[Section 3]{priorreport}.  The outer-window construction below avoids that
+report's extra conserved-collar assumption for a sharp section.  None of these
+results bounds resonant amplification by external passivity.
+
+\subsection{What the cited channel bounds actually control}
+\label{ch:literature}
+
+Miller's Supplement S2 explicitly treats the maximum-index substitution as a
+conjecture; S12 distinguishes homogeneous-background SVD estimates from a
+design-specific calculation of the complete Green function.  These are useful
+diagnostics, without a uniform theorem for every structured interior
+\cite[Supplements S2 and S12]{miller2023}.
+
+Kuang, Miller, and Miller first identify the physically normalized map as
+$R_R^{1/2}T_RGT_SR_S^{-1/2}$.  Their Eq.~(1) retains the product of the two
+endpoint operator norms when bounding its singular values by those of $G$.
+Their explicit domain bounds concern the background Green operator, with
+source/receiver size and separation data and spherical separation; their
+relative-channel thresholds use a sum-rule normalization.  Appendix E rejects
+the older largest-singular-value normalization as a general monotonic bound
+\cite[Section II and Appendix E]{kuang2025}.  In particular, neither the
+endpoint norms nor these geometric data are determined by the area of the
+internal section.  A continuum use additionally needs bounded endpoint maps:
+invertibility of a finite resistance matrix does not prove a uniformly bounded
+inverse in an infinite-dimensional current space.
+
+\subsection{Exact operator reduction}
+\label{ch:operators}
+
+Throughout, norms in the incident and delivered channel spaces are physical
+power norms.  Let $T:\mathcal H_{\rm in}\to\mathcal H_{\rm out}$ be a bounded
+operator, and fix $0<\tau<1$.  A counted linear subspace $W$ satisfies
+\begin{equation}
+ \|Ta\|^2\geq\tau\|a\|^2\qquad(a\in W).
+ \label{ch:throughput}
+\end{equation}
+The other passage requirements are imposed separately below.
+
+\begin{lemma}[PROVED: finite-rank obstruction]
+\label{ch:ranklemma}
+If a linear map $R:W\to\mathcal H_{\rm out}$ has rank at most $M$ and
+$\|T|_W-R\|<\sqrt\tau$, then $\dim W\leq M$.
+\end{lemma}
+\begin{proof}
+If $\dim W>M$, choose $M+1$ linearly independent vectors in $W$.
+The restriction of $R$ to their span has a nonzero kernel vector $a$.
+Then $\|Ta\|=\|(T-R)a\|<\sqrt\tau\|a\|$, contradicting
+\eqref{ch:throughput}.  This proof also covers an infinite-dimensional $W$.
+The strict inequality is indispensable: on $\mathbb C^{M+1}$,
+$T=\sqrt\tau I$ and $R=0$ attain equality in the norm estimate.
+\end{proof}
+
+\begin{definition}[Approximation number]
+\label{ch:approxdef}
+For a bounded operator $U$ between Hilbert spaces, define
+\begin{equation}
+ a_{M+1}(U)=\inf_{\operatorname{rank}R\leq M}\|U-R\|.
+ \label{ch:approxnumber}
+\end{equation}
+No compactness is required for this definition.  Thus
+$a_{M+1}(T|_W)<\sqrt\tau$ is sufficient in Lemma~\ref{ch:ranklemma}.
+\end{definition}
+
+\begin{proposition}[PROVED: factorization with every amplification factor retained]
+\label{ch:factorization}
+Suppose $T=AGB+E$, where all maps are bounded between their stated Hilbert
+spaces and $\|E\|\leq e$.  If $\operatorname{rank}G_M\leq M$, then
+\begin{equation}
+ \operatorname{rank}(AG_MB)\leq M,\qquad
+ \|T-AG_MB\|\leq \|A\|\,\|B\|\,\|G-G_M\|+e.
+ \label{ch:factorerror}
+\end{equation}
+Consequently $\dim W\leq M$ if the right side is less than $\sqrt\tau$.
+If $G$ is compact, one may replace $\|G-G_M\|$ by its $(M+1)$st singular
+value using the truncated singular-value expansion.
+\end{proposition}
+\begin{proof}
+The image of $AG_MB$ is contained in the image under $A$ of the
+at-most-$M$-dimensional image of $G_M$.  Submultiplicativity and the triangle
+inequality prove \eqref{ch:factorerror}.  Apply Lemma~\ref{ch:ranklemma}.
+For compact $G$, its singular expansion is an orthogonal expansion and the
+norm of its discarded tail is exactly its next singular value.
+\end{proof}
+
+\begin{remark}[PROVED algebraic counteraudit; no Maxwell counterexample]
+\label{ch:algebraaudit}
+For $G_N=\operatorname{diag}(1,2^{-1},\ldots,N^{-1})$ and
+$A_N=\operatorname{diag}(1,2,\ldots,N)$, the full map $A_NG_N=I_N$
+is passive and has $N$ unit transmission singular values.  Passivity controls
+the product, not $\|A_N\|=N$.  Likewise, the finite-rank orthogonal projections
+onto the first $N$ coordinates of $\ell^2$ are individually compact
+contractions, although their counts above any fixed threshold below one grow
+without bound.  Finally, compressing $\operatorname{diag}(100,1,1)$ to the
+last two coordinates decreases every singular value, but increases the ratio
+of the second to the first from $1/100$ to $1$.  These exact examples identify
+invalid operator inferences.  They supply no dielectric realization and no
+section or bypass certificate.
+\end{remark}
+
+\subsection{Local Maxwell hypotheses and a legitimate weighted flux}
+\label{ch:local}
+
+Let $B\subset\mathbb R^3$ be an open rectangular box with side lengths
+$L_1,L_2,L_3$ and volume $V_B$.  The physical dielectric extends beyond $B$;
+no physical boundary condition is imposed on its faces.  A fixed well-posed
+scattering problem supplies fields depending linearly on the input $a$.
+Write
+\begin{equation}
+ e_a=\sqrt{\varepsilon_0}E_a,\qquad h_a=\sqrt{\mu_0}H_a,
+ \qquad c_0=(\varepsilon_0\mu_0)^{-1/2},\qquad k_0=\omega/c_0.
+ \label{ch:normalization}
+\end{equation}
+Assume on $B$, in distributions,
+\begin{equation}
+ \nabla\times e_a=ik_0h_a,\qquad
+ \nabla\times h_a=-ik_0\varepsilon_r e_a,\qquad
+ 0<\varepsilon_-\leq\varepsilon_r(x)\leq\varepsilon_+<\infty.
+ \label{ch:localmaxwell}
+\end{equation}
+The real scalar coefficient may be merely measurable.  Define the local
+weighted field resource
+\begin{equation}
+ \mathcal E_B(a)=\int_B(\varepsilon_r|e_a|^2+|h_a|^2)\,dx.
+ \label{ch:resource}
+\end{equation}
+Each field has finite resource.  A uniform bound relative to incident power
+will be an \emph{additional} assumption.  For nondispersive material this
+integral is four times the time-averaged local electromagnetic energy.
+In dispersive material a physical stored-energy formula requires frequency
+derivatives of the constitutive law, absent from these hypotheses.
+
+Choose a real $\psi\in W^{1,\infty}_c(\mathbb R^2)$ with $0\leq\psi\leq1$,
+and $\ell>0$, so that $B$ contains a neighborhood of
+$\operatorname{supp}\psi\times[0,\ell]$, including a negative-$z$ collar.
+Let $\chi\in W^{1,\infty}(0,\ell)$ be real, with
+$\chi(0)=1$, $\chi(\ell)=0$.  Set
+\begin{equation}
+ g(x,y,z)=
+ \begin{cases}
+  (\chi(z)\nabla_\perp\psi(x,y),\chi'(z)\psi(x,y)),&0<z<\ell,\\
+  0,&\text{otherwise},
+ \end{cases}
+ \qquad G=\|g\|_\infty.
+ \label{ch:g}
+\end{equation}
+Select real cutoffs $0\leq\zeta,\rho\leq1$ in
+$W^{1,\infty}_c(B)$, with $\zeta=1$ on $\operatorname{supp}g$ and
+$\rho=1$ on $\operatorname{supp}\zeta$.  Introduce explicit constants
+\begin{equation}
+ \begin{split}
+ d_1&=\|\nabla\rho\|_\infty,\qquad d_2=\|\nabla\zeta\|_\infty,\\
+ C_H&=k_0^2\varepsilon_++d_1^2,\qquad
+ C_E=\left(2+\frac{4d_2^2}{k_0^2\varepsilon_-}\right)^{1/2},\qquad
+ K=\frac{c_0GC_E}{2\sqrt{\varepsilon_-}}.
+ \end{split}
+ \label{ch:constants}
+\end{equation}
+
+\begin{lemma}[PROVED: canonical weak flux]
+\label{ch:fluxlemma}
+Define the Hermitian cross-Poynting vector
+\begin{equation}
+ p(a,b)=\frac{c_0}{4}
+ \left(e_a\times\overline{h_b}+\overline{e_b}\times h_a\right).
+ \label{ch:crosspoynting}
+\end{equation}
+For almost every $z$ near $[0,\ell]$, put
+$F_{ab}(z)=\int_{\mathbb R^2}\psi p_z(a,b)\,dx\,dy$.
+This is a $W^{1,1}$ function of $z$, with its unique continuous
+representative satisfying
+\begin{equation}
+ F'_{ab}(z)=\int_{\mathbb R^2}\nabla_\perp\psi\cdot p_\perp(a,b)\,dx\,dy,
+ \qquad
+ q_\psi(a,b):=F_{ab}(0)=-\int_Bg\cdot p(a,b)\,dx.
+ \label{ch:weakflux}
+\end{equation}
+The diagonal $p(a,a)$ is the physical real time-averaged Poynting vector.
+\end{lemma}
+\begin{proof}
+Both fields are locally in $H(\operatorname{curl})$ by
+\eqref{ch:localmaxwell}; their cross products belong to $L^1$.
+For such fields the identity
+$\operatorname{div}(u\times v)=v\cdot\operatorname{curl}u-
+u\cdot\operatorname{curl}v$ holds in distributions.  To justify it, mollify
+both fields in a relatively compact neighborhood of the test function;
+the fields and their curls converge in $L^2$, and every product converges
+in $L^1$.  For the first cross product in \eqref{ch:crosspoynting} its
+divergence is
+$ik_0(h_a\cdot\overline{h_b}-\varepsilon_r e_a\cdot\overline{e_b})$.
+The second has the opposite divergence, since $\varepsilon_r$ is real.
+Thus $\operatorname{div}p(a,b)=0$.  Testing this with
+$\psi(x,y)\theta(z)$ and using Fubini proves the derivative formula in
+\eqref{ch:weakflux}.  Both terms are integrable in $z$, establishing
+$W^{1,1}$ membership.  Finally integrate $(\chi F_{ab})'$ between zero
+and $\ell$ and use the endpoint values of $\chi$.  This gives the volume
+formula, including its transverse-gradient contribution.
+\end{proof}
+
+The transverse-gradient contribution accounts for lateral collar flux.
+Dropping it would assert an unproved conservation law for the individual
+aperture.  This construction requires no $L^2$ tangential trace of a rough
+Maxwell field.
+
+\subsection{Magnetic compactness and its quantitative cost}
+\label{ch:magnetic}
+
+\begin{lemma}[PROVED: uniform magnetic regularity]
+\label{ch:magneticHone}
+The zero extension of $\rho h_a$ is in $H^1_0(B)^3$, and
+\begin{equation}
+ \|\nabla(\rho h_a)\|_2^2\leq C_H\mathcal E_B(a).
+ \label{ch:Honebound}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Taking divergence of $\operatorname{curl}e_a=ik_0h_a$ gives
+$\operatorname{div}h_a=0$.  The compactly supported zero extension
+$v=\rho h_a$ has curl and divergence in $L^2$.  The Fourier identity
+$|\xi|^2|\widehat v|^2=|\xi\times\widehat v|^2+
+|\xi\cdot\widehat v|^2$ gives
+\begin{equation}
+ \|\nabla v\|_2^2=\|\operatorname{curl}v\|_2^2+
+ \|\operatorname{div}v\|_2^2.
+ \label{ch:divcurl}
+\end{equation}
+It proves $H^1$ membership; compact support supplies zero boundary trace.
+Let $X^2=\int_B\varepsilon_r|e_a|^2$ and $Y^2=\int_B|h_a|^2$.
+Minkowski's inequality in the direct sum of the curl and divergence spaces,
+and $|u\times v|^2+|u\cdot v|^2=|u|^2|v|^2$ for real $u$, give
+\begin{equation}
+ \|\nabla(\rho h_a)\|_2
+ \leq k_0\sqrt{\varepsilon_+}X+d_1Y
+ \leq\sqrt{C_H}\sqrt{X^2+Y^2}.
+ \label{ch:Honeproof}
+\end{equation}
+No derivative of $\varepsilon_r$ occurs.
+\end{proof}
+
+\begin{lemma}[PROVED: Caccioppoli and flux domination]
+\label{ch:caccioppoli}
+The complete physical fields obey
+\begin{equation}
+ \int_{\operatorname{supp}g}\varepsilon_r|e_a|^2
+ \leq C_E^2\int_{\operatorname{supp}\zeta}|h_a|^2,
+ \qquad
+ |q_\psi(a,a)|\leq K\|\rho h_a\|_2^2.
+ \label{ch:fluxdomination}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Eliminating $e_a$ gives the distributional equation
+\begin{equation}
+ \operatorname{curl}(\varepsilon_r^{-1}\operatorname{curl}h_a)
+ =k_0^2h_a.
+ \label{ch:magneticsecond}
+\end{equation}
+Test with $\zeta^2h_a$, permissible by compactly supported
+$H(\operatorname{curl})$ approximation.  Write
+$A_0=\int_B\zeta^2\varepsilon_r^{-1}|\operatorname{curl}h_a|^2$ and
+$J_0=\int_B\varepsilon_r^{-1}|\nabla\zeta\times h_a|^2$.
+Taking real parts and applying Young's inequality gives
+\begin{equation}
+ A_0\leq k_0^2\int_B\zeta^2|h_a|^2+2\sqrt{A_0J_0}
+ \leq k_0^2\int_B\zeta^2|h_a|^2+\tfrac12 A_0+2J_0.
+ \label{ch:caccioppoliproof}
+\end{equation}
+Use $\varepsilon_r^{-1}\leq\varepsilon_-^{-1}$ and
+$\varepsilon_r|e_a|^2=k_0^{-2}\varepsilon_r^{-1}
+|\operatorname{curl}h_a|^2$ to obtain the first estimate in
+\eqref{ch:fluxdomination}.  The volume representation and
+Cauchy--Schwarz then give
+\begin{equation}
+ |q_\psi(a,a)|\leq\frac{c_0G}{2}
+ \|e_a\|_{L^2(\operatorname{supp}g)}
+ \|h_a\|_{L^2(\operatorname{supp}g)}
+ \leq\frac{c_0GC_E}{2\sqrt{\varepsilon_-}}
+ \|h_a\|_{L^2(\operatorname{supp}\zeta)}^2
+ \leq K\|\rho h_a\|_2^2.
+ \label{ch:fluxproof}
+\end{equation}
+This is a vector Maxwell estimate, including the actual reflected and
+evanescent fields, not a scalar reduction or a propagating-wave cutoff.
+\end{proof}
+
+\begin{theorem}[PROVED: through-flux resource bound]
+\label{ch:resourcecount}
+Let $W$ have finite dimension $N$, and suppose
+$q_\psi(a,a)\geq p\|a\|^2$ for every $a\in W$, where $p>0$.
+Define
+\begin{equation}
+ B_W=\sup_{a\in W,\,\|a\|=1}\mathcal E_B(a),\qquad
+ \Lambda=K C_H B_W/p.
+ \label{ch:cutoff}
+\end{equation}
+Then, with $N_{D,B}(\Lambda)$ the scalar Dirichlet eigenvalue count of the
+comparison box,
+\begin{equation}
+ N\leq 3N_{D,B}(\Lambda)
+ \leq\frac{V_B}{2\pi^2}\left(\frac{K C_H B_W}{p}\right)^{3/2}.
+ \label{ch:count}
+\end{equation}
+Here $B_W$ is finite for a finite-dimensional $W$, but it is not uniformly
+bounded by the fixed physical class.
+\end{theorem}
+\begin{proof}
+Let $\Pi_\Lambda$ project onto vector Dirichlet eigenfunctions with scalar
+eigenvalue at most $\Lambda$.  Its rank is $3N_{D,B}(\Lambda)$.
+If $N$ exceeds that rank, there is a unit $a\in W$ with
+$\Pi_\Lambda(\rho h_a)=0$.  Writing $\lambda_{\rm next}>\Lambda$ for
+the next scalar eigenvalue, Parseval and \eqref{ch:Honebound} imply
+\begin{equation}
+ \|\rho h_a\|_2^2\leq
+ \frac{\|\nabla(\rho h_a)\|_2^2}{\lambda_{\rm next}}
+ \leq\frac{C_HB_W}{\lambda_{\rm next}}.
+ \label{ch:tail}
+\end{equation}
+Equation~\eqref{ch:fluxdomination} contradicts $q_\psi(a,a)\geq p$.
+The box eigenvalues are
+\begin{equation}
+ \lambda_{\mathbf n}=\pi^2\sum_{i=1}^3 n_i^2/L_i^2,
+ \qquad\mathbf n\in\{1,2,\ldots\}^3.
+ \label{ch:boxspectrum}
+\end{equation}
+For each point below the cutoff, the unit cell
+$\prod_i[n_i-1,n_i]$ lies in the positive octant of
+$\sum_i x_i^2/L_i^2\leq\Lambda/\pi^2$.  These cells have disjoint
+interiors.  Their total volume is at most the ellipsoid-octant volume,
+giving $N_{D,B}(\Lambda)\leq V_B\Lambda^{3/2}/(6\pi^2)$.
+Multiplication by three proves \eqref{ch:count} without a Weyl asymptotic
+or a remainder depending on fine material interfaces.
+\end{proof}
+
+\begin{theorem}[PROVED: cost averaged over an orthonormal input basis]
+\label{ch:average}
+Under the hypotheses of Theorem~\ref{ch:resourcecount}, let
+$a_1,\ldots,a_N$ be any orthonormal basis of $W$, and set
+$\mathcal E_{\rm sum}=\sum_i\mathcal E_B(a_i)$,
+$B_{\rm avg}=\mathcal E_{\rm sum}/N$.  If $\lambda_j^{\rm vec}$ lists
+the Dirichlet spectrum with three component multiplicity, then
+\begin{equation}
+ \mathcal E_{\rm sum}\geq\frac{p}{K C_H}
+ \sum_{j=1}^N\lambda_j^{\rm vec}
+ \geq\frac{3p}{5K C_H}
+ \left(\frac{2\pi^2}{V_B}\right)^{2/3}N^{5/3},\qquad
+ N\leq\frac{V_B}{2\pi^2}
+ \left(\frac{5K C_HB_{\rm avg}}{3p}\right)^{3/2}.
+ \label{ch:averagebound}
+\end{equation}
+\end{theorem}
+\begin{proof}
+Let $A:\mathbb C^N\to H^1_0(B)^3$ take coefficients to
+$\rho h_{\sum_i c_i a_i}$.  Its $L^2$ Gram matrix $S=A^*A$ obeys
+$S\geq(p/K)I$, by flux coercivity and \eqref{ch:fluxdomination}.
+The columns $u_i$ of $AS^{-1/2}$ are $L^2$-orthonormal.  Let $D_\nabla$
+be their positive semidefinite gradient Gram matrix.  Cyclicity of finite
+matrix trace gives
+\begin{equation}
+ \sum_i\|\nabla(\rho h_{a_i})\|_2^2
+ =\operatorname{Tr}(S D_\nabla)
+ \geq\frac pK\operatorname{Tr}D_\nabla
+ \geq\frac pK\sum_{j=1}^N\lambda_j^{\rm vec}.
+ \label{ch:averageproof}
+\end{equation}
+For the last inequality, expand the $u_i$ in a vector Dirichlet eigenbasis
+$v_j$.  The weights $w_j=\sum_i|\langle u_i,v_j\rangle|^2$ are between
+zero and one by Bessel's inequality and sum to $N$.  Among such weights,
+$\sum_j\lambda_j^{\rm vec}w_j$ is minimized by filling the first $N$
+positions; equivalently compare all weights with the cutoff
+$\lambda_N^{\rm vec}$.  All series are nonnegative.
+The left side of \eqref{ch:averageproof} is at most
+$C_H\mathcal E_{\rm sum}$.  The box count gives
+$\lambda_j^{\rm vec}\geq(2\pi^2j/V_B)^{2/3}$, and
+$\sum_{j=1}^Nj^{2/3}\geq\int_0^Nx^{2/3}dx=3N^{5/3}/5$.
+This proves both inequalities.  Basis independence of
+$\mathcal E_{\rm sum}$ follows because it is the trace of the positive
+resource quadratic form restricted to $W$.
+\end{proof}
+
+\subsection{Absolute bypass supplies the sharp-section bridge}
+\label{ch:bypassbridge}
+
+The following trace hypothesis states explicitly how the physical section
+measurement is related to Lemma~\ref{ch:fluxlemma}.  It is automatic for
+smooth fields on a neighborhood of the section, and also whenever the
+relevant plane Poynting integrals converge in $L^1$ to their plane-$0$
+values.  It is not inferred from $H(\operatorname{curl})$ alone.
+
+\begin{assumption}[Physical section compatibility]
+\label{ch:tracecompatibility}
+For each $a\in W$ there is a real flux density $s_a$ on the entire section
+plane, integrable on $D$ and absolutely integrable on its complement,
+such that
+\begin{equation}
+ P_D(a)=\int_Ds_a,\qquad
+ q_\psi(a,a)=\int_{\mathbb R^2}\psi s_a,\qquad
+ \int_{\mathbb R^2\setminus D}|s_a|\leq\delta\|a\|^2.
+ \label{ch:traceagreement}
+\end{equation}
+Here $s_a=\tfrac12\operatorname{Re}(E_a\times\overline{H_a})\cdot\hat z$
+when that classical trace exists.  A separately specified regularized
+measurement may be used if it establishes these identities.
+\end{assumption}
+
+\begin{lemma}[PROVED: an outer window preserves passage up to bypass]
+\label{ch:outerwindow}
+Take $\psi=1$ on the same fixed section $D$, with $0\leq\psi\leq1$
+and compact support in a slightly larger transverse region.  Under
+Assumption~\ref{ch:tracecompatibility} and the physical passage condition
+$P_D(a)\geq\eta\|Ta\|^2$, one has, for every $a\in W$,
+\begin{equation}
+ q_\psi(a,a)\geq\eta\|Ta\|^2-\delta\|a\|^2.
+ \label{ch:outerwindowbound}
+\end{equation}
+If also \eqref{ch:throughput} holds and $\delta<\eta\tau$, then
+$q_\psi(a,a)\geq p\|a\|^2$ with $p=\eta\tau-\delta>0$.
+\end{lemma}
+\begin{proof}
+Because $\psi=1$ on $D$,
+$q_\psi(a,a)=P_D(a)+\int_{\mathbb R^2\setminus D}\psi s_a$.
+The second integral is at least
+$-\int_{\mathbb R^2\setminus D}|s_a|$.
+Apply the passage and bypass hypotheses, then the throughput bound.
+\end{proof}
+
+\begin{remark}[Scope of the outer-window argument]
+\label{ch:outerwindowscope}
+The physical section $D$ has not been enlarged: its prescribed bypass
+condition controls the correction outside it.  The window is only an
+analytical device.  No limit of a discontinuous indicator, no unproved
+zero lateral flux, and no assumption about how much flux avoids an inner
+edge strip are used.  The new restriction $\delta<\eta\tau$ is genuine
+for this coercivity argument.  For larger tolerances this proof yields no
+positive lower bound, and makes no claim of impossibility or of a
+counterexample.  A sharp flux defined on an exceptional plane without the
+compatibility in Assumption~\ref{ch:tracecompatibility} is likewise outside
+the conclusion.
+\end{remark}
+
+\begin{theorem}[PROVED under stated resources: approximation of the complete transmission map]
+\label{ch:fulloutput}
+Let $W$ be a closed input subspace satisfying passage and absolute bypass,
+Assumption~\ref{ch:tracecompatibility}, and the preceding local Maxwell
+hypotheses.  Suppose for some finite $B_*$,
+\begin{equation}
+ \mathcal E_B(a)\leq B_*\|a\|^2\qquad(a\in W).
+ \label{ch:uniformresource}
+\end{equation}
+For any $\Lambda\geq0$, let
+$L_\Lambda a=\Pi_\Lambda(\rho h_a)$, let
+$\mathcal K_\Lambda=\ker L_\Lambda$, and let $P_\Lambda$ be the
+orthogonal projection of $W$ onto $\mathcal K_\Lambda^\perp$.
+The operator $R_\Lambda=T|_W P_\Lambda$ satisfies
+\begin{equation}
+ \operatorname{rank}R_\Lambda\leq3N_{D,B}(\Lambda),\qquad
+ \|T|_W-R_\Lambda\|^2
+ \leq\frac1\eta\left(\delta+
+             \frac{K C_H B_*}{\lambda_{\rm next}}\right),
+ \label{ch:fulloutputerror}
+\end{equation}
+where $\lambda_{\rm next}$ is the first scalar box eigenvalue exceeding
+$\Lambda$.  In particular, for $p=\eta\tau-\delta>0$ and
+$\Lambda=K C_HB_*/p$, the norm error is strictly below $\sqrt\tau$.
+If every vector in $W$ also satisfies \eqref{ch:throughput}, then
+\begin{equation}
+ \dim W\leq\frac{V_B}{2\pi^2}
+       \left(\frac{K C_HB_*}{\eta\tau-\delta}\right)^{3/2}.
+ \label{ch:physicalcount}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The resource bound makes $a\mapsto\rho h_a$ bounded, so
+$\mathcal K_\Lambda$ is closed.  Since $L_\Lambda$ has rank at most
+$3N_{D,B}(\Lambda)$, its kernel has codimension at most that number;
+this proves the rank statement.  For $b\in\mathcal K_\Lambda$,
+the spectral-tail estimate and Lemmas~\ref{ch:caccioppoli}
+and \ref{ch:outerwindow} give
+\begin{equation}
+ \eta\|Tb\|^2\leq q_\psi(b,b)+\delta\|b\|^2
+ \leq\left(\frac{K C_HB_*}{\lambda_{\rm next}}+\delta\right)\|b\|^2.
+ \label{ch:kerneloutput}
+\end{equation}
+Apply this to $b=(I-P_\Lambda)a$, whose norm is at most $\|a\|$.
+Because $\lambda_{\rm next}>\Lambda=K C_HB_*/p$, the error is
+strictly below $\sqrt\tau$ (if $B_*=0$, positivity of $p$ already
+precludes a nonzero counted subspace).  Lemma~\ref{ch:ranklemma} and
+the explicit box count finish the proof.
+\end{proof}
+
+\begin{corollary}[CONDITIONAL as a uniform family bound]
+\label{ch:spectralcor}
+Let $V_\tau=\operatorname{Ran}\mathbf1_{[\tau,\infty)}(T^*T)$.
+If passage, absolute bypass, trace compatibility, common local geometry,
+and a common finite resource $B_*$ hold for every vector of $V_\tau$,
+with $\delta<\eta\tau$, then \eqref{ch:physicalcount} bounds
+$\dim V_\tau$, without an a priori compactness assumption on $T$.
+It is the usual count of squared singular values at least $\tau$ when
+$T$ is compact.  Alternatively a uniform bound on the basis-average
+resource over every finite-dimensional subspace gives the last bound in
+\eqref{ch:averagebound}, with $p=\eta\tau-\delta$.
+\end{corollary}
+\begin{proof}
+The spectral theorem implies \eqref{ch:throughput} on $V_\tau$.
+Apply Theorem~\ref{ch:fulloutput}, or apply Theorem~\ref{ch:average}
+to every finite-dimensional subspace.  An infinite-dimensional Hilbert
+space contains finite orthonormal sets of arbitrarily large cardinality,
+so a common finite upper bound forces finite dimension.
+\end{proof}
+
+The map $R_\Lambda$ is defined using the complete $T$, including all
+matching and resonant feedback.  It is not obtained by deleting a component
+of an isolated link and then silently applying an uncontrolled inverse.
+Its cost is the explicitly retained norm $B_*$ of the actual full field.
+Thus Theorem~\ref{ch:fulloutput} discharges the output-approximation step
+under a resource hypothesis; it does not discharge that hypothesis.
+
+\begin{corollary}[PROVED: essential-norm consequence]
+\label{ch:essential}
+Under Theorem~\ref{ch:fulloutput}'s hypotheses, without assuming a
+throughput lower bound, the distance of $T|_W$ from the compact operators
+is at most $\sqrt{\delta/\eta}$.  In particular, exact zero bypass makes
+$T|_W$ compact.
+\end{corollary}
+\begin{proof}
+The finite-rank $R_\Lambda$ are compact and
+$\lambda_{\rm next}\to\infty$ as $\Lambda\to\infty$.
+Take the limit superior in \eqref{ch:fulloutputerror}.  When $\delta=0$,
+these finite-rank operators converge to $T|_W$ in operator norm.
+A norm limit of compact operators is compact: given any bounded input
+sequence, use a diagonal subsequence convergent under each approximant,
+then the uniform approximation makes its images under $T$ Cauchy.
+\end{proof}
+
+\subsection{An explicit area scaling with its extra resource exposed}
+\label{ch:explicitconstants}
+
+\begin{corollary}[CONDITIONAL: square-enclosure area scaling]
+\label{ch:arearesource}
+Suppose $D\subset[-L/2,L/2]^2$ and there is a source-free comparison box
+\begin{equation}
+ B=(-L/2-4r,L/2+4r)^2\times(-3r,4r),\qquad r>0,
+ \label{ch:explicitbox}
+\end{equation}
+on which the material bounds and \eqref{ch:uniformresource} hold.
+There are admissible cutoffs with
+\begin{equation}
+ V_B=7r(L+8r)^2,\quad
+ G\leq\sqrt3/r,\quad d_1,d_2\leq\sqrt3/r,\quad
+ C_H\leq k_0^2\varepsilon_++3/r^2,\quad
+ K\leq\frac{c_0\sqrt3}{2r\sqrt{\varepsilon_-}}
+       \sqrt{2+\frac{12}{k_0^2\varepsilon_-r^2}}.
+ \label{ch:explicitconstantsvalue}
+\end{equation}
+In particular, if $r=(k_0\sqrt{\varepsilon_+})^{-1}$ is admissible and
+$\kappa=\varepsilon_+/\varepsilon_-$, then, with
+$p=\eta\tau-\delta>0$,
+\begin{equation}
+ \dim W\leq\frac{7}{2\pi^2}
+ (k_0\sqrt{\varepsilon_+}L+8)^2
+ \left(2\sqrt3\sqrt\kappa\sqrt{2+12\kappa}\,
+       \frac{\omega B_*}{p}\right)^{3/2}.
+ \label{ch:arearesourcebound}
+\end{equation}
+For a scaled fixed shape with $L^2\leq c_D|D|$, this is
+$O(1+k_0^2\varepsilon_+|D|)$ \emph{only if} $\omega B_*$, the material
+ratio, thresholds, shape constant, and the required collar remain controlled.
+\end{corollary}
+\begin{proof}
+For a one-dimensional interval use the function equal to one on that
+interval, decreasing linearly to zero across an exterior strip of width
+$r$, and zero beyond the strip.  Its Lipschitz constant is $1/r$.
+Let $Q_s=[-L/2-s,L/2+s]^2$.  Take $\psi$ as the product of the two
+one-dimensional cutoffs equal to one on $Q_0$ and zero outside $Q_r$,
+and take $\chi(z)=1-z/r$ on $(0,r)$.  Then
+$|\nabla_\perp\psi|\leq\sqrt2/r$ and $|g|\leq\sqrt3/r$.
+Take $\zeta$ as the product cutoff equal to one on
+$Q_r\times[0,r]$, supported on $Q_{2r}\times[-r,2r]$;
+take $\rho$ equal to one on the latter box and supported on
+$Q_{3r}\times[-2r,3r]$.  Each has gradient bounded by $\sqrt3/r$,
+and both supports are compact in \eqref{ch:explicitbox}.
+Equality on the indicated closed supports suffices in the preceding
+estimates.  This proves \eqref{ch:explicitconstantsvalue}.
+Substitute $r=(k_0\sqrt{\varepsilon_+})^{-1}$ in
+\eqref{ch:physicalcount}, using $\omega=c_0k_0$; straightforward
+cancellation gives \eqref{ch:arearesourcebound}.
+Finally $(x+8)^2\leq2x^2+128$ proves the asserted order with every
+additional dependency retained.
+\end{proof}
+
+\begin{corollary}[PROVED: local extension to real symmetric anisotropy]
+\label{ch:anisotropy}
+All local estimates and their conditional channel consequences remain
+valid for measurable real symmetric tensors $\varepsilon_r(x)$ satisfying
+$\varepsilon_-I\leq\varepsilon_r\leq\varepsilon_+I$, provided
+$\varepsilon_r|e|^2$ is replaced by
+$\overline e\cdot\varepsilon_r e$ in the resource.
+\end{corollary}
+\begin{proof}
+Symmetry and reality give the same cross-Poynting cancellation.
+The magnetic estimate uses
+$|\varepsilon_r e|^2\leq\varepsilon_+
+\overline e\cdot\varepsilon_r e$.
+In the Caccioppoli step use the positive quadratic form of
+$\varepsilon_r^{-1}$, its Cauchy--Schwarz inequality, and
+$\varepsilon_r^{-1}\leq\varepsilon_-^{-1}I$.
+The identity
+$k_0^{-2}\overline{\operatorname{curl}h}\cdot
+\varepsilon_r^{-1}\operatorname{curl}h=
+\overline e\cdot\varepsilon_r e$ replaces its scalar version.
+Every remaining step is unchanged.  Constant scalar permeability is still
+essential to this proof of $\operatorname{div}h=0$.
+\end{proof}
+
+\subsection{The undischarged step}
+\label{ch:open}
+
+\begin{remark}[OPEN: full vector, area-only closure]
+\label{ch:missing}
+There is no estimate here, from $1\leq\varepsilon_r\leq\varepsilon_+$,
+the fixed section, passivity, passage, and absolute bypass alone, that
+uniformly bounds $B_*$ or replaces its role by a uniform approximation
+estimate for the full $T$.  A possible sufficient missing theorem is:
+every admitted counted subspace has a finite-rank approximation with error
+strictly below $\sqrt\tau$ and rank bounded solely by the frozen parameters.
+An area scaling additionally requires a rank of order
+$1+k_0^2\varepsilon_+|D|$.  Theorem~\ref{ch:fulloutput} supplies such an
+approximation \emph{with} $B_*$; it does not eliminate it.  Even proving
+unbounded local amplification would only invalidate that proof route,
+not construct an arbitrarily large channel subspace.  Conversely,
+pointwise compactness for each device would not make the bound uniform
+over a sequence of devices.  The unrestricted channel conjecture therefore
+remains open in this manuscript.
+\end{remark}
