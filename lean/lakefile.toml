@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization", "WeakPoynting.DivCurl", "WeakPoynting.DivCurlCompact", "WeakPoynting.DivCurlRegularity", "WeakPoynting.LocalRegularity", "WeakPoynting.RegularityBounds"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -100,3 +100,33 @@ name = "ModalInterface"
 
 [[lean_lib]]
 name = "NewtonHessian"
+
+[[lean_lib]]
+name = "PointSingularity"
+
+[[lean_lib]]
+name = "RealKernelBounds"
+
+[[lean_lib]]
+name = "KernelGradient"
+
+[[lean_lib]]
+name = "KernelSource"
+
+[[lean_lib]]
+name = "DynamicSource"
+
+[[lean_lib]]
+name = "NewtonConvolution"
+
+[[lean_lib]]
+name = "NewtonL2"
+
+[[lean_lib]]
+name = "NewtonL1L2"
+
+[[lean_lib]]
+name = "StaticNewton"
+
+[[lean_lib]]
+name = "ModalOrigin"

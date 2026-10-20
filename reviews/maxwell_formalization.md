@@ -435,6 +435,48 @@ The 10+4 selected exports compiled cleanly.
 
 DynamicIntegrability5 and KernelEstimates4 also compiled and passed separate
 independent audits. The additional 107 checked exports bring the registered
-source total to 646 in 45 modules. Their complete aggregate clean-checkout
-rebuild is a separate provenance step; the preserved 539-declaration release
-remains the latest complete clean-build package until that step is recorded.
+source total to 646 in 45 modules. On October 20 the aggregate clean-checkout
+rebuild passed, together with all 15 diagnostics and the visually inspected
+106-page manuscript. The coherent package is preserved at the tag
+oq14-maxwell-foundations-646 and its matching output checkpoint directory.
+
+
+## October 20 spatial sources, center removal and local H1 continuation
+
+The next 172 exports bring the registered source to 818 in 60 modules.
+All fifteen added modules passed targeted Lean checks and independent source
+review before registration. The aggregate clean rebuild is recorded separately.
+
+Root read NewtonConvolution11, NewtonL2 21, NewtonL1L2 11 and StaticNewton9 in
+full. The literal spatial Newton response is derived by absolute Fubini and
+Fourier pairing, then identified with -P on dense Schwartz sources and on
+all actual L1-intersection-L2 sources. Compact material support supplies L1,
+so the weighted spatial static block has the previously proved inverse bound
+one. The two sign conventions and coordinate transports are consistent.
+Hotspots independently audited all four modules.
+
+PointSingularity9, RealKernelBounds7, KernelGradient6 and KernelSource13
+were independently audited by the counterexamples agent. Actual integration
+by parts across a point uses lines avoiding the null transverse singleton.
+The all-radius real-frequency kernel bounds prove the required local
+integrability before weak differentiation. Subtracting the Newton kernel
+retains the exact source, and tracing gives the outgoing Helmholtz delta.
+DynamicSource7 derives its dyadic counterpart by actual compact-test
+derivatives, commutation and the proved scalar source; the static/dynamic
+split retains the singular distribution. Its independent audit is recorded
+in the kernel-source review.
+
+Root read ModalOrigin44 in full and channels independently audited it.
+Repeated divided differences yield the entire psi_1/z² profile with center
+value1/3 and derivative0. The center fields, actual Frechet derivatives and
+curls satisfy Maxwell's equations and agree with the prior punctured fields.
+This closes center regularity without asserting global interface assembly.
+
+Root read DivCurl6, DivCurlCompact7, DivCurlRegularity8, LocalRegularity9 and
+RegularityBounds4 in full. Actual mollified graph approximation and the
+Schwartz energy identity make all nine derivatives Cauchy in L2; their
+limits pass the genuine weak test identities. Regional Maxwell gives
+divergence-free H, smooth cutoffs give local weak H1, and the explicit Pi
+norm constants give the quantitative bound. Hotspots audited compact
+approximation/regularity; channels audited localization/bounds. No compact
+embedding or trace theorem is inferred from these results.

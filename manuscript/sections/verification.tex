@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The forty-five registered modules in \texttt{lean/} cover operator estimates,
+The sixty registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Six hundred forty-six exported theorem declarations were compiled successfully.
+Eight hundred eighteen exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -259,14 +259,14 @@ Ten declarations in \texttt{OQ14.StaticVolume} prove positivity and
 inverse estimates for the actual Hilbert-space block $I+S^*PS$,
 including actual orthogonal projections, perturbations of norm below one,
 and the polarization residual error bound. Identification of the
-projection with the physical longitudinal Newton operator is still an
-analytic formalization obligation. Twenty-two declarations in
+projection with the physical longitudinal Newton operator is established
+by the spatial convolution modules described below. Twenty-two declarations in
 \texttt{OQ14.LongitudinalProjection} construct the actual frequency
 symbol $\xi\xi^{\mathsf T}/|\xi|^2$ and its vector-valued $L^2$ multiplier,
 including the zero frequency. Coordinate formula, measurability,
 contraction, idempotence, self-adjointness and positivity are proved.
-Physical-space Fourier conjugation is proved below; Newton-kernel
-identification remains a separate obligation.
+Physical-space Fourier
+conjugation and Newton-kernel identification are proved below.
 
 Twenty-three declarations in \texttt{OQ14.FourierL2} prove scalar
 Euclidean Plancherel from Fourier-integral Fubini and Schwartz inversion.
@@ -339,7 +339,7 @@ absolute scale-space integrability and the actual Newton Fourier identity
 on Schwartz tests. Ten in \texttt{OQ14.NewtonHessian} derive the full
 distributional Hessian multiplier and the exact source identity
 $\Delta N=-\delta_0$, retaining its contact term. The spatial convolution
-operator identification is a separate remaining step.
+operator identification is proved by the subsequent modules.
 Five declarations in \texttt{OQ14.DynamicIntegrability} prove local
 $L^1$ and $L^2$ membership of each dynamic dyadic remainder entry.
 Four in \texttt{OQ14.KernelEstimates} give exact inverse-radius ball
@@ -351,8 +351,8 @@ outgoing dipole fields away from the center. Twenty-three in
 \texttt{OQ14.ModalInterface} prove equivalence of their actual tangential
 transmission conditions with the matching matrix, nontriviality of both
 amplitudes and an exterior trace, and existence of such matching fields
-at arbitrarily high quality factor. Center regularity and the complete
-outgoing operator remain separate obligations.
+at arbitrarily high quality factor. Center regularity is established below;
+the complete outgoing operator remains a separate obligation.
 Ten declarations in \texttt{OQ14.WeakEnergy} prove the actual reactive
 energy identity and Caccioppoli estimate, including weighted electric
 energy integrability. Four in \texttt{OQ14.EnergyLocalization} derive
@@ -360,6 +360,46 @@ the inner-set electric-to-magnetic estimate with coefficient
 $2+4d^2/(\omega^2m)$ for an actual compact $C^1$ cutoff. No derivative
 or upper bound of the real permittivity is required. Magnetic $H^1$
 regularity and compactness are not conclusions of these modules.
+
+Nine declarations in \texttt{OQ14.PointSingularity} derive integration by
+parts across a single point by coordinate Fubini. Seven in
+\texttt{OQ14.RealKernelBounds} establish the actual dynamic remainder
+bound at every real frequency and radius. Six in
+\texttt{OQ14.KernelGradient} prove gradient integrability and the actual
+first weak derivative. Thirteen in \texttt{OQ14.KernelSource} give the
+weak Hessian of $\phi_k-N$, the full outgoing Hessian decomposition,
+and $(\Delta+k^2)\phi_k=-\delta_0$. Seven in
+\texttt{OQ14.DynamicSource} derive the actual dyadic distributional
+decomposition and $(\operatorname{curl}\operatorname{curl}-k^2)K
+=k^2I\delta_0$. The Newton contact term is retained.
+
+Eleven declarations in \texttt{OQ14.NewtonConvolution} prove the actual
+spatial weak-convolution Fourier identity for $L^1$ sources. Twenty-one
+in \texttt{OQ14.NewtonL2} identify its unique bounded extension with
+$-P$, using actual Schwartz density. Eleven in
+\texttt{OQ14.NewtonL1L2} prove agreement of the integral Fourier transform
+and Plancherel on $L^1\cap L^2$, and the literal spatial response identity.
+Nine in \texttt{OQ14.StaticNewton} identify the actual compact-material
+static volume block with the positive block, transferring its inverse
+bound one. Dynamic operator bounds and volume-equation solvability
+remain separate.
+
+Forty-four declarations in \texttt{OQ14.ModalOrigin} construct the entire
+regular dipole profile from exponential divided differences and prove
+Maxwell's equations at its center. The high-quality transmission fields
+thus have no missing center point. Global spherical weak assembly and
+the full outgoing resolvent remain separate.
+
+Six declarations in \texttt{OQ14.DivCurl} establish the actual Schwartz
+div-curl energy identity. Seven in \texttt{OQ14.DivCurlCompact} give
+compact graph approximation. Eight in \texttt{OQ14.DivCurlRegularity}
+construct nine actual weak $L^2$ derivatives and their exact energy sum.
+Nine in \texttt{OQ14.LocalRegularity} derive local magnetic $H^1$
+regularity from regional weak Maxwell equations, nonzero real frequency
+and permeability one. Four in \texttt{OQ14.RegularityBounds} bound the
+cutoff derivatives using actual field norms and an upper permittivity
+bound, without coefficient derivatives. Compact embedding and general
+field traces remain separate obligations.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -475,7 +515,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Six hundred forty-six declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Eight hundred eighteen declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

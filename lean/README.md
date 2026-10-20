@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. Six hundred forty-six exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. Eight hundred eighteen exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all forty-five registered modules, and audits all 646
+compiler and mathlib revision, builds all sixty registered modules, and audits all 818
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -308,7 +308,7 @@ claimed to have been proved in this module. The twenty-two exports of
 xi xi-transpose / |xi|^2, zero at xi=0, and its genuine vector-valued L2
 multiplier. Coordinate formula, measurability, contraction, idempotence,
 self-adjointness and positivity are proved. Physical-space Fourier
-conjugation is proved below; identification with the Newton kernel remains separate.
+conjugation and spatial Newton identification are proved in the later modules below.
 
 The twenty-three exports of `FourierL2.lean` prove actual scalar Euclidean
 Plancherel. Fourier-integral Fubini and Schwartz inversion give Parseval;
@@ -323,7 +323,7 @@ The seventeen exports of `GreenKernel.lean` prove actual radial and
 Euclidean first/second derivatives of exp(i k |x|)/(4 pi |x|), smoothness
 away from zero, the three-dimensional Helmholtz equation there, and the
 radial Sommerfeld radiation limit for real k. Its distributional source
-at the origin and convolution/radiation solvability remain separate.
+at the origin is proved below; full convolution/radiation solvability remains separate.
 
 ## Physical projection, material multiplication and kernel remainder
 
@@ -417,7 +417,7 @@ Fourier identity on Schwartz tests. Ten of `NewtonHessian.lean` derive the
 full distributional Hessian symbol, its equality with the negative
 longitudinal matrix, and the exact source identity `ΔN = -δ`. These include
 the contact term; they do not replace the distributional Hessian by its
-pointwise expression or yet identify the spatial convolution operator.
+pointwise expression. The spatial convolution identification is proved below.
 
 Five exports of `DynamicIntegrability.lean` prove actual local L1 and L2
 membership of each dynamic dyadic remainder entry when `|k|R≤1`. Four of
@@ -431,8 +431,8 @@ ODE. Twenty-three of `ModalInterface.lean` identify the actual all-sphere
 electric and magnetic tangential transmission conditions with the matching
 matrix, prove both amplitudes and some exterior trace are nonzero, and
 construct matching Maxwell fields at arbitrarily high quality factor.
-The interior statement is still restricted away from the center; regular
-extension at the center and the full outgoing resolvent remain separate.
+The regular extension at the center is proved in ModalOrigin below; global weak
+spherical assembly and the full outgoing resolvent remain separate.
 
 Ten exports of `WeakPoynting/Energy.lean` derive the imaginary Poynting
 identity and a genuine Caccioppoli estimate for regional weak Maxwell
@@ -443,6 +443,53 @@ inner-set estimate with coefficient `2+4d²/(ω²m)` against magnetic energy
 on the cutoff support. These results use a compact C1 cutoff and require
 no derivative or upper bound of ε; they do not yet give magnetic H1
 regularity or compactness.
+
+## Spatial kernels, center regularity and magnetic weak derivatives
+
+Nine exports of `PointSingularity.lean` prove genuine integration by parts
+across a point in R3 using coordinate Fubini and one-dimensional integration
+by parts. Seven in `RealKernelBounds.lean` extend the actual remainder
+bound to every real frequency and radius, deriving local L1 membership.
+Six in `KernelGradient.lean` give actual gradient bounds, local L1 and
+the scalar kernel's first weak derivative. Thirteen in `KernelSource.lean`
+derive the weak Hessian of phi_k-N, the complete outgoing Hessian
+decomposition and `(Delta+k²)phi_k=-delta_0`. Seven in `DynamicSource.lean`
+use actual derivatives of compact smooth tests to derive the full dyadic
+static/dynamic decomposition and `(curl curl-k²)K=k² I delta_0`.
+The singular Newton contribution is retained throughout.
+
+Eleven exports of `NewtonConvolution.lean` prove actual spatial weak
+convolution Fourier identities for every L1 source. Twenty-one in
+`NewtonL2.lean` identify this response with the negative longitudinal
+projection on Schwartz sources, prove genuine density and uniqueness,
+and obtain its bounded L2 extension with norm at most one. Eleven in
+`NewtonL1L2.lean` prove ordinary/Plancherel Fourier agreement for all
+L1-intersection-L2 sources and their literal spatial response identity.
+Nine in `StaticNewton.lean` apply it to compact material sources and
+identify the actual weighted static volume block with the coercive
+block, transferring its inverse bound one. Dynamic convolution bounds
+and Maxwell volume-equation solvability remain separate.
+
+Forty-four exports of `ModalOrigin.lean` construct the entire regular
+dipole radial profile from repeated divided differences of the
+exponential. The actual center values and derivatives satisfy Maxwell's
+equations, so the high-quality transmission field now has no excluded
+center point. The spherical weak assembly and full resolvent pole
+identification are not asserted by this module.
+
+Six exports of `WeakPoynting/DivCurl.lean` prove the actual Schwartz
+div-curl energy identity. Seven in `DivCurlCompact.lean` give genuine
+compact representatives, reflected convolution and graph approximation.
+Eight in `DivCurlRegularity.lean` construct all nine weak L2 derivatives
+by completeness and derive their exact energy sum. Nine in
+`LocalRegularity.lean` apply this to regional weak Maxwell fields with
+nonzero real frequency and permeability one: the magnetic field is
+divergence-free and has actual weak H1 representatives near every
+compact interior set. Four in `RegularityBounds.lean` give the cutoff
+derivative bound in terms of field norms, frequency, cutoff bounds
+and an upper bound for the real permittivity. No derivative of that
+coefficient is needed. Compact embedding and general field traces
+remain separate.
 
 ## Explicitly outside the formalization
 
