@@ -1,80 +1,41 @@
 # OQ14 resume checkpoint — October 20, 2026 (second pause)
 
-**PAUSED at the user's explicit request: "create checkpoint and stop".**
-All three 6.1 Sol agents stopped and reported no active compiler sessions.
-Root stopped the unfinished clean aggregate (session93252, interrupted exit1).
-No proof work or automation should resume until the user asks.
+**ACTIVE: the user explicitly resumed from the latest checkpoint.**
+The immutable pause snapshot is `checkpoints/2026-10-20-resume-2/`.
+Its 27 working files and 32 evidence files were verified before resumption.
+The three 6.1 Sol agents are continuing the Legendre shooting, plane-source
+L1, and finite-shell inclusion geometry proofs. Root owns audits,
+important proof design, shared integration and the clean aggregate.
+The previous clean aggregate (session93252) was interrupted at the pause;
+it remains uncertified until a new genuinely clean build succeeds.
 The complete requested Maxwell formalization remains unfinished.
 
-## Start here
+## Current active integration
 
-Read `checkpoints/2026-10-20-resume-2/manifest.json` and its exact snapshots.
-The active working files remain in place. Never restore over later work.
-The user's model preference remains 6.1 Sol for subagents, Astra for
-important proof design, integration and audits.
+All156 completed declarations from checkpoint2 now passed independent
+source/compiler audits and are registered: **2390 declarations /217 modules
+/189 libraries**. See `reviews/angular_geometry_plane_2390.md`. The new clean
+aggregate and coherent PDF/package remain pending. The latest completed
+clean proof aggregate is2033; the latest coherent package is1660.
 
-1. Finish independent source/compiler audits of `HankelIntermediateBounds`
-   (6), `CavityBallBridges` (3), `ShellInclusionCells` (6), and
-   `DisjointBallPartition` (2). Author/root targeted compilation and object
-   generation passed for all four. The other ten new finished modules
-   already have independent full-source and compiler PASS. Write the missing
-   review for the independently passed `HankelCoefficientBounds` (16).
-2. Repair the two preserved drafts, retaining their genuine mathematics:
-   `CapLegendreSeries` has four chain-rule failures; `PlaneSourceKernel`
-   has three subtraction-expression rewrite failures. Neither is compiled
-   or registered. Exact errors and subsequent steps are below.
-3. Register only finished, audited sources. The 14 compiled new sources
-   contain156 selected declarations, all outside the current2234 registry.
-   Do not accidentally include the two unfinished sources in an aggregate.
-4. The independent checkout `tmp/clean-checkout` remains at `cc29d768fb89b308bd87d7d926fdc5122c505cfa`.
-   Its2234 aggregate was interrupted at the user's stop request. Rerun a
-   genuinely clean aggregate there after freezing the desired source commit.
-   Never clean the root Lean build while agents are active.
+The immutable checkpoint `oq14-resume-2026-10-20-2` remains at
+b04414fe1912c76f46dc394c61d3a4ac28687675. Its verified archive SHA256 is
+6acc0433c8ffff277e0ca0950e2c3a65a521b83617624e9ee3f8ab0669813776.
+It preserves27 working files and32 evidence files. Its pause status is
+historical; the user has explicitly resumed.
 
-## Current verification and release state
+Active6.1 Sol ownership: fredholm_sol repairs and extends CapLegendreSeries
+and actual angular shooting; continuation_review_sol develops the literal
+plane-source compact bounds and whole-plane L1 continuity; modal_sol builds
+finite layered inclusion geometry and actual Maxwell scattering adapters.
+Root owns proof design, independent audits and shared integration. Never
+clean the root Lean build while agents are active. The independent checkout
+was at cc29d768fb89b308bd87d7d926fdc5122c505cfa before this integration;
+advance it to the exact new source commit before a genuinely clean build.
 
-Registered source commit: `cc29d768fb89b308bd87d7d926fdc5122c505cfa`.
-**2234 declarations /203 modules /175 libraries.** Its new201 declarations
-since2033 passed targeted checks and full-source audits; the clean aggregate
-is NOT certified. The stopped rebuild created many objects, but that is not
-a full success. The old files currently under `tmp/clean-checkout/output/lean/`
-are stale2033 evidence (provenance identifies cef17ae), not2234 evidence.
-
-At exact clean2234 commit all15 diagnostic groups passed. Its110-page PDF
-also passed references, citations and overfull-box checks, and pages105,
-106 and108 were rendered and inspected. PDF SHA256:
-`54fbadcb829da654c3bf1598314f238fa36b3c4eeef6283109aa6426446a049a`.
-These PDF/diagnostic artifacts are preserved in this checkpoint's evidence.
-There is no2234 coherent proof/PDF release package.
-
-The last completed clean proof aggregate remains2033 at
-`cef17ae243efd453c425ca903846e22629af1691`, with15 diagnostics.
-The last coherent packaged release remains `oq14-maxwell-foundations-1660`
-at `f7e03a7db06c084abb1279e0affef93d3a72082c` (108-page PDF).
-Its delivery SHA256 is
-`31190f182f399636e9f1bcbbcf6522ec4dba05191924cb685bf48dc8bb41b777`.
-The earlier checkpoint tag `oq14-resume-2026-10-20` and all release evidence
-remain preserved. This is a resume checkpoint, not a completion claim.
-
-## Completed since the prior pause
-
-Registered2183 established actual weak Helmholtz continuation, variable
-Maxwell localization, actual interface continuation, geometric-cell global
-uniqueness and the Fredholm inverse. Registered2234 constructed all geometry
-for arbitrary finite concentric positive-material layers, actual physical
-scattering fields, and analytic volume inverses near every positive real
-frequency. Geometry and PDE propagation are proved, not supplied as the
-missing conclusion. Arbitrary outgoing PDE-to-volume equivalence remains
-outside the formal coverage.
-
-The new unregistered modules prove actual angular-measure symmetry and the
-cap-weighted coordinate Rayleigh trial below2; actual all-degree Hankel
-energy and low-order bounds, real basis/Wronskian and intermediate-range
-factorial/exponential estimates; actual connectivity and bridges for
-separated balls and an enclosing cavity/single shell; and inverse-cube
-actual Maxwell plane-flux tails with genuine2D integrability, including
-cross terms. They do not yet prove full Green convergence or either final
-device theorem. Per-module hashes, reports and audit status are in manifest.
+The2234 PDF110-page check and15 diagnostics passed; its full Lean build was
+interrupted at pause. In particular its old output/lean files are2033
+evidence, not a2234 success. Check exact provenance on every new artifact.
 
 ## Exact unfinished proof steps
 
@@ -147,3 +108,5 @@ One-time scripts `integrate_1058.py`,1312,1660,1835,2033,2183,2234;
 the preserve scripts and create_annular_equation.py must not be rerun.
 The unrelated untracked `sites/` belongs to the user and must remain untouched.
 No external repository, site, or paper was published.
+
+`tmp/integrate_2390.py` is also executed and non-idempotent; do not rerun it.

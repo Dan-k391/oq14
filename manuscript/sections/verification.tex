@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The two hundred three registered modules in \texttt{lean/} cover operator estimates,
+The two hundred seventeen registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two thousand two hundred thirty-four exported theorem declarations were compiled successfully.
+Two thousand three hundred ninety exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -659,6 +659,31 @@ this class, and its inverse and fixed-source solutions are analytic in
 genuine complex neighborhoods of these points. This does not supply full
 modal isolation or either complete device construction.
 
+A further156 declarations in14 modules establish actual angular estimates,
+concrete inclusion geometry and plane-flux tails. Orthogonal invariance of
+the angular measure follows from Euclidean volume. The literal cap-weighted
+coordinate trial has weighted mean zero, positive denominator and Rayleigh
+quotient below2, with the tangent derivative explicitly identified. Actual
+eigenfunction construction is still required.
+
+The explicit all-degree Hankel functions satisfy a proved outgoing energy
+identity and limit2. This yields low-range state bounds. Actual conjugation,
+the real Wronskian, reversed factorial estimates and exponential estimates
+give the corresponding intermediate-range bounds. High-barrier estimates
+and the complete all-order Green limit remain outside this batch.
+
+Finite separated-ball exteriors and bounded cavities have actual paths
+constructed by radial pushes and a continuous clamp. Null sphere interfaces,
+explicit crossing balls, coverage and reachability construct the Maxwell
+partition for inclusions and a single enclosing shell. No connectivity or
+PDE continuation conclusion is inserted as an unproved premise.
+
+Actual leading normal Maxwell flux cancels on the measurement plane. The
+remaining compact-source flux and its cross terms obey inverse-cube bounds.
+Genuine two-dimensional integration gives finite tails and inverse-radius
+integral estimates. The constants depend on the source support; whole-plane
+source continuity and uniform remote-stack convergence still require proof.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -775,7 +800,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand two hundred thirty-four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand three hundred ninety declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

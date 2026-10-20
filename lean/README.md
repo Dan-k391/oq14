@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand two hundred thirty-four exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand three hundred ninety exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all two hundred three registered modules, and audits all 2234
+compiler and mathlib revision, builds all two hundred seventeen registered modules, and audits all 2390
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -776,6 +776,43 @@ the partition hypotheses. Its inverse is analytic in genuine complex
 neighborhoods of every such frequency, and its fixed-source evaluation
 agrees with the actual real-frequency solution. This is not full modal
 isolation or the final hotspot theorem.
+
+## Angular estimates, concrete inclusion geometry and plane tails
+
+A further156 declarations in14 modules extend actual continuum estimates.
+`SphereAngularSymmetry` (4) derives angular-measure invariance from Euclidean
+volume and orthogonal maps. `ConicalAngularTrial` (23) proves the literal
+cap-weighted coordinate trial has weighted mean zero, positive denominator
+and Rayleigh quotient below2. Its tangent vector represents the actual
+coordinate derivative. Eigenfunction attainment is not inferred from this
+trial alone.
+
+`HankelEnergy` (14) derives the actual all-degree outgoing energy identity,
+its limit2 and low-angular-range bounds. `HankelRealBasis` (15) identifies
+the real basis and determinant1, and bounds the actual forward/inverse
+states. `HankelCoefficientBounds` (16) proves reversed factorial coefficient
+estimates and actual Hankel/derivative exponential bounds.
+`HankelIntermediateBounds` (6) derives uniform intermediate-range estimates.
+High-barrier estimates and the complete all-order Green limit remain open
+within this formalization.
+
+`DisjointBallGeometry` (18), `DisjointBallCells` (8), and
+`DisjointBallPartition` (2) construct actual paths outside finitely many
+strictly separated balls, sphere-null coverage, interface bridges and the
+Maxwell partition. `CavityBallGeometry` (13) proves actual paths in a bounded
+cavity via a continuous radial clamp and finite radial pushes.
+`CavityBallBridges` (3) and `ShellInclusionCells` (6) add actual interfaces,
+coverage and reachability for inclusions inside a single enclosing shell.
+These are geometric constructions, with no supplied connectivity conclusion.
+
+`PlaneInverseCube` (10) proves genuine two-dimensional tail integrability
+and its inverse-radius integral. `MaxwellPlaneTail` (18) proves cancellation
+of the leading normal flux of actual compact outgoing Maxwell sources on
+the plane. It obtains an inverse-cube bound and integrable tails for both
+ordinary power and cross-source flux. Constants retain source-radius
+dependence. Whole-plane source continuity and uniform remote-stack limits
+are subsequent work; these tail bounds do not by themselves close the
+unrestricted channel construction.
 
 ## Explicitly outside the formalization
 
