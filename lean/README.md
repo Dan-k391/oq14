@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand three hundred ninety exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand five hundred ninety-five exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all two hundred seventeen registered modules, and audits all 2390
+compiler and mathlib revision, builds all two hundred twenty-nine registered modules, and audits all 2595
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -779,17 +779,17 @@ isolation or the final hotspot theorem.
 
 ## Angular estimates, concrete inclusion geometry and plane tails
 
-A further156 declarations in14 modules extend actual continuum estimates.
+A further 156 declarations in 14 modules extend actual continuum estimates.
 `SphereAngularSymmetry` (4) derives angular-measure invariance from Euclidean
 volume and orthogonal maps. `ConicalAngularTrial` (23) proves the literal
 cap-weighted coordinate trial has weighted mean zero, positive denominator
-and Rayleigh quotient below2. Its tangent vector represents the actual
+and Rayleigh quotient below 2. Its tangent vector represents the actual
 coordinate derivative. Eigenfunction attainment is not inferred from this
 trial alone.
 
 `HankelEnergy` (14) derives the actual all-degree outgoing energy identity,
-its limit2 and low-angular-range bounds. `HankelRealBasis` (15) identifies
-the real basis and determinant1, and bounds the actual forward/inverse
+its limit 2 and low-angular-range bounds. `HankelRealBasis` (15) identifies
+the real basis and determinant 1, and bounds the actual forward/inverse
 states. `HankelCoefficientBounds` (16) proves reversed factorial coefficient
 estimates and actual Hankel/derivative exponential bounds.
 `HankelIntermediateBounds` (6) derives uniform intermediate-range estimates.
@@ -813,6 +813,48 @@ ordinary power and cross-source flux. Constants retain source-radius
 dependence. Whole-plane source continuity and uniform remote-stack limits
 are subsequent work; these tail bounds do not by themselves close the
 unrestricted channel construction.
+
+## Actual angular profiles, device coefficients and outgoing load
+
+A further 205 declarations in 12 modules derive actual constructions.
+`CapLegendreSeries` (45) proves convergent series, their derivatives and
+Legendre equations, parameter continuity and exact endpoint identities.
+`CapAngularShooting` (17) obtains an actual matching root with angular
+exponent in (0,1). `CapSturmLiouville` (30) constructs the literal odd
+piecewise profile, identifies its derivative away from interfaces, proves
+three-interval integration by parts and the weighted weak equation, and
+normalizes its genuine positive weighted mass. These are one-dimensional
+results. Lifting to the actual sphere and the Maxwell conical coefficient
+remains unfinished.
+
+`PlaneSourceKernel` (21) derives actual compact kernel bounds and source
+subtraction. `MaxwellPlaneL1` (8) proves whole-plane flux integrability and
+L1 continuity under source L1 convergence. A fixed source radius and a
+positive plane gap are required; the constants need not remain bounded
+when either varies.
+
+`LayeredInclusionCells` (10) constructs finite shell/inclusion partitions;
+`LayeredInclusionScattering` (11) applies actual Maxwell solvability.
+`LayeredInclusionCoefficient` (18) constructs the literal indicator-sum
+susceptibility, its common bound, exact cell values and compact support.
+`LayeredDeviceScattering` (11) obtains the actual volume solution, physical
+fields and positive-frequency inverse regularity for this coefficient.
+The final scattering theorem no longer takes partition, support or cell
+material agreement as supplied conclusions.
+
+`DynamicSupportVolume` (13) bounds the actual dynamic remainder by the
+square root of material volume, at fixed enclosing radius. It includes
+finite-ball volume bounds and a quantitative inverse estimate. This is
+not the sharper two-thirds volume power used elsewhere in the paper.
+
+`HankelPolynomial` (14) derives a third-order polynomial identity for the
+actual finite outgoing/incoming product, its coefficient recurrence,
+degree bound and coefficient nonnegativity. `HankelPositive` (7) identifies
+that product with the actual squared outgoing norm and proves the outgoing
+radial load is nonpositive in every degree at every positive radius.
+Regular-solution barrier estimates, finite-stack propagation, all-order
+Green convergence and complete counted-space flux identities remain work
+in progress.
 
 ## Explicitly outside the formalization
 
