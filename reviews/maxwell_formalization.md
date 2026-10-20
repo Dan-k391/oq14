@@ -488,8 +488,11 @@ embedding or trace theorem is inferred from these results.
 
 The next 240 exports bring the registered total to 1058 in 83 modules.
 The 23 added modules passed targeted compilation and independent source
-review. Their aggregate clean rebuild and publication artifacts are separate
-provenance steps; the coherent 818 package remains authoritative until replaced.
+review. Their aggregate clean rebuild subsequently passed all 1058 axiom
+reports, all 15 diagnostic groups, and the inspected 107-page manuscript.
+The coherent package is preserved at oq14-maxwell-foundations-1058,
+commit 29f7847b6a691080921859a4ca4d3586a038133e. Later unregistered sources
+remain outside that milestone.
 
 The field_response review records the actual spatial electric and magnetic
 construction, both first-order source equations, and their substitution into
@@ -519,3 +522,37 @@ MaxwellCompactness applies them to differences for the same fixed epsilon;
 this proves local E/H compactness with a common neighborhood and explicit
 agreement. No compact-embedding or electric-compactness conclusion is
 assumed. Hotspots also independently audited Translations and Compactness.
+
+## October 20 actual outgoing fields, compact volume block and shell poles
+
+The next 254 exports bring the registered source to 1312 declarations in
+110 modules / 82 libraries. All 27 added modules passed targeted compilation
+and independent source review before registration. The clean aggregate build,
+diagnostics and manuscript package are distinct pending verification steps;
+the coherent 1058 release remains the latest package until those pass.
+
+Root independently read the complete frozen channel, scalar-exterior and
+modal sources. Local source support and kernel integrability are proved
+before convolution differentiation or Fubini. The Newton singular response
+is identified with the ordinary dyadic exterior integral; continuous
+representatives give pointwise radiation limits without transferring such
+limits through a merely a.e. identity. Channels independently audited
+DyadicRadiation8, MaxwellRadiation14, OutgoingMaterial3, MaterialHCurl8
+and MaterialPower4. The outgoing theorem concerns the actual constructed
+fields and spatial-infinity filter, with an explicit uniform defect bound.
+
+Root and hotspots audited L2KernelCompact14 and DynamicVolumeCompact10.
+The former proves finite covers for the actual translated-kernel family;
+the latter derives L2 kernel membership and common material-source support
+before transferring compactness to the exact weighted operator. No
+small-volume restriction enters compactness, and no Fredholm conclusion
+is hidden in its hypotheses.
+
+The regional test-density and upgrade modules were read in full, as was
+MaterialCaccioppoli. Root and hotspots audited the actual first and second
+scalar derivatives, Helmholtz equation and C2 exterior regularity.
+Root and channels audited the actual shell response and its pole.
+ModalFieldPole constructs the divided-slope analytic numerator, proves its
+nonzero value and punctured normal form, and concludes order minus one
+using standard MeromorphicAt. Its domain is the actual two-amplitude
+matching data; it does not claim full-resolvent isolation or hotspot packing.

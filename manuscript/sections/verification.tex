@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The eighty-three registered modules in \texttt{lean/} cover operator estimates,
+The one hundred ten registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-One thousand fifty-eight exported theorem declarations were compiled successfully.
+One thousand three hundred twelve exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -424,8 +424,8 @@ $L^2$ membership of the electric response. Seven in
 Seven in \texttt{OQ14.MaterialMaxwell} then prove both dielectric Maxwell
 equations on compact smooth tests. Five in
 \texttt{OQ14.IncidentLocalization} construct the weighted incident datum
-from local $L^2$ data. Radiation and the regional compact-$C^1$ test upgrade
-are separate steps.
+from local $L^2$ data. The subsequent modules prove actual radiation and
+the regional compact-$C^1$ test upgrade.
 
 Eleven declarations in \texttt{OQ14.SphereRemovable} and twenty-three in
 \texttt{OQ14.RadialInterface} prove actual sphere-removal integration by
@@ -446,6 +446,49 @@ fields. Eight in \texttt{OQ14.ElectricControl} and eleven in
 \texttt{OQ14.MaxwellCompactness} give full local electric and magnetic
 $L^2$ compactness for one fixed positive bounded permittivity, with
 explicit a.e.\ agreement and strongly convergent subsequences.
+
+Five declarations in \texttt{OQ14.LocalConvolution} and three in
+\texttt{OQ14.MagneticLocal} prove actual local $L^2$ magnetic fields.
+Eight in \texttt{OQ14.InteriorTestDensity} and four in
+\texttt{OQ14.RegionalCurlUpgrade} establish interior compact-$C^1$ test
+approximation and the actual regional weak-curl identity. Six in
+\texttt{OQ14.SmallVolumeMaxwell}, eight in \texttt{OQ14.MaterialHCurl}
+and four in \texttt{OQ14.MaterialPower} construct the small-volume
+Maxwell fields, genuine regional graphs and local physical power law.
+Eight in \texttt{OQ14.MaterialCaccioppoli} control magnetic and
+electric-curl energy by outer electric energy.
+
+Seven declarations in \texttt{OQ14.NewtonExterior} and fifteen in
+\texttt{OQ14.NewtonExteriorResponse} identify the actual exterior dyadic
+integral. Nine in \texttt{OQ14.ExteriorContinuity} and nine in
+\texttt{OQ14.ExteriorMaterial} give continuous exterior representatives.
+Thirteen in \texttt{OQ14.ScalarRadiation}, eight in
+\texttt{OQ14.DyadicRadiation} and fourteen in \texttt{OQ14.MaxwellRadiation}
+prove explicit inverse-square defects and the actual Silver--M\"uller
+condition at spatial infinity. Three in \texttt{OQ14.OutgoingMaterial}
+combine these with the small-volume inverse and regional $H(\mathrm{curl})$
+equations for one actual outgoing solution. Arbitrary-size solvability and
+uniqueness among all outgoing PDE solutions are not inferred.
+
+Ten declarations in \texttt{OQ14.ScalarExterior}, eleven in
+\texttt{OQ14.ScalarExteriorSecond} and six in
+\texttt{OQ14.ScalarExteriorRegularity} prove actual exterior derivatives,
+the scalar Helmholtz equation and $C^2$ regularity. Fourteen in
+\texttt{OQ14.L2KernelCompact} prove compactness of actual convolution
+after a bounded input map with common compact support. Ten in
+\texttt{OQ14.DynamicVolumeCompact} derive compactness of the actual
+weighted dyadic remainder for every finite support radius.
+
+Twelve declarations in \texttt{OQ14.ModalLocal} and fourteen in
+\texttt{OQ14.ModalHCurl} give actual local integrability and nonzero
+regional $H(\mathrm{curl})$ modal graphs. Nine in \texttt{OQ14.ModalShell}
+construct the physical shell-$L^2$ field pair. Thirteen in
+\texttt{OQ14.ModalFieldResidue} prove its operator-norm residue and
+nonzero field image. Seventeen in \texttt{OQ14.ModalShellAnalytic} prove
+actual Banach-valued analyticity. Fourteen in \texttt{OQ14.ModalFieldPole}
+give an analytic regularization and standard meromorphic order $-1$ at
+the constructed high-quality zeros. This is the two-data spherical
+matching response with actual shell fields, not the full Maxwell resolvent.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -561,7 +604,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand fifty-eight declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand three hundred twelve declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

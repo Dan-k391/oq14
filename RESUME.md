@@ -7,22 +7,20 @@ Do not replace missing analytic proofs with hypotheses or custom axioms.
 
 ## Verified release and current sources
 
-The latest coherent packaged release is `oq14-maxwell-foundations-818`, commit
-`618be804c984614f49efb1d109e9a08ed39ada6e`. Its clean build passed all 818
-selected declarations in 60 modules, with only propext, Classical.choice and
-Quot.sound; all 15 diagnostic groups passed; the 106-page PDF was inspected.
-It is preserved in `output/checkpoints/oq14-maxwell-foundations-818/` and
+The latest coherent packaged release is `oq14-maxwell-foundations-1058`, commit
+`29f7847b6a691080921859a4ca4d3586a038133e`. Its clean build passed all 1058
+selected declarations in 83 modules, with only propext, Classical.choice and
+Quot.sound; all 15 diagnostic groups passed; the 107-page PDF was inspected.
+It is preserved in `output/checkpoints/oq14-maxwell-foundations-1058/` and
 currently in the top-level delivery files.
 
-- Delivery SHA256: `0b15ed1c506781a11d158679aebbb5f8fae51df9b8ba46663132ac0e9b9f9712`
-- PDF SHA256: `cda469595ed0939ea552fd9b06d0198a6da352b3cd2fbf3665802eaffe995e9a`
+- Delivery SHA256: `89aa39cabf0b707aa1873cb720f6dbcb9d9eefc36b1d7ecedc23bd9c61091bbf`
+- PDF SHA256: `a66cdfdedf51d859535046a00bdaeda03fac78ec5bb946721e69129493d2ea45`
 
-The latest packaged source has 818 audited exports in 60 modules / 41 libraries.
-The additional 172 exports passed targeted builds, independent source review,
+The latest packaged source has 1058 audited exports in 83 modules / 58 libraries.
+The additional 240 exports passed targeted builds, independent source review,
 the aggregate clean rebuild, manuscript rendering and packaging. Previous
-646 and 539 releases remain preserved in their checkpoint directories.
-The next registered source batch has 1058 audited exports in 83 modules /
-58 libraries. Its aggregate clean build and package are separate steps.
+818, 646 and 539 releases remain preserved in their checkpoint directories.
 Newer active drafts are not included in that registered count. Consult the
 release record before identifying the current source with a packaged PDF.
 
@@ -54,41 +52,39 @@ Local H1 does not itself prove compact embedding or general field traces.
 
 ## Active continuation tracks
 
+The frozen registered source now has 1312 audited exports in 110 modules /
+82 libraries. Its next clean aggregate build and package are pending.
+The coherent 1058 package listed above remains the latest release.
+
 The root owns registration, shared ledgers, clean builds and release packaging.
 Agents share the same directory; never delete their root build artifacts.
 
-- root: the 1058 batch includes NewtonWeak5, KernelConvolution6,
-  WaveResponse3, FieldResponse5, MagneticResponse10 and MaterialMaxwell7.
-  Both actual first-order source equations and their material substitution
-  are proved on compact smooth tests. Active ScalarRadiation and
-  SmallVolumeMaxwell drafts extend this to radiation bounds and explicit
-  locally L2 field existence; inspect their compiler status before using.
-- channels: the 1058 batch includes L1Convolution16, DynamicConvolution13,
-  DynamicVolume14, Constants2, LocalVolumeResponse7, MaterialField7 and
-  IncidentLocalization5. Actual source, inverse, local electric L2 and
-  polarization self-consistency are proved. Subsequent LocalConvolution5
-  and MagneticLocal3 supply magnetic local L2; inspect freeze status.
-- hotspots: the 1058 batch includes SphereRemovable11, RadialInterface23,
-  ModalProfiles34 and ModalWeak21. Genuine global weak high-Q spherical
-  fields include the electric normal jump and exact outgoing Hankel exterior.
-  ModalLocal and subsequent H(curl) assembly are active separate modules.
-- counterexamples: the 1058 batch includes PartialSmoothing9, Translations7,
-  Compactness10, MagneticCompactness6, ElectricControl8 and
-  MaxwellCompactness11. Both E and H are locally precompact for one fixed
-  positive bounded coefficient. InteriorTestDensity and RegionalCurlUpgrade
-  subsequently extend compact smooth identities to the actual regional
-  compact-C1 weak-curl definition; inspect freeze status.
+- Root: actual scalar and dyadic radiation, Silver--Müller at the spatial
+  infinity filter, and the assembled outgoing small-volume existence theorem
+  are frozen and independently reviewed. Regional H(curl) and physical power
+  conservation are also proved for the actual fields.
+- Channels: actual continuous exterior representatives, L2-kernel convolution
+  compactness and arbitrary-support weighted dynamic compactness are frozen.
+  The next work is actual static-inverse preconditioning and a proved generic
+  compact-operator Fredholm argument; the pinned library lacks the alternative.
+- Hotspots: actual nonzero shell L2 residue, Banach analyticity and standard
+  meromorphic order minus one are frozen. ModalPoleMode and ModalOutgoing
+  are subsequent drafts tying the same residue to global modal fields and
+  an explicit complex-frequency radiation condition.
+- Counterexamples: interior compact-C1 test density, weak-curl upgrade,
+  material Caccioppoli and actual scalar exterior C2 Helmholtz regularity
+  are frozen. The next work constructs actual exterior C∞ fields by a local
+  smooth kernel cutoff, then classical Maxwell equations.
 
-These newer files may be unregistered or unfinished. Inspect their current
-source, reviews and compiler logs before using them as proved results.
-All compiler sessions from a previous turn must be checked rather than assumed
-complete. Avoid running the aggregate build over active drafts.
+New drafts are outside the registered count. Inspect source, reviews and
+compiler results before treating them as proved. Avoid aggregate builds
+over active drafts; use the committed clean checkout below.
 
-Further work still includes global outgoing scattering, actual dynamic
-volume solvability/radiation, all-angular-order Green convergence and whole-plane
-flux, conical coefficients and Runge, rounding, analytic Fredholm theory,
-reciprocal normalization and infinite-degree modal isolation. The full channel
-and hotspot constructions are not Lean theorems yet.
+Further work includes arbitrary-size outgoing solvability and uniqueness,
+all-angular-order Green convergence and whole-plane flux, conical coefficients
+and Runge, rounding, analytic Fredholm theory, reciprocal normalization and
+infinite-degree modal isolation. The full channel and hotspot constructions
+are not Lean theorems yet. Continue the task, not just checkpoint maintenance.
 
 ## Scientific scope
 

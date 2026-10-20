@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization", "WeakPoynting.DivCurl", "WeakPoynting.DivCurlCompact", "WeakPoynting.DivCurlRegularity", "WeakPoynting.LocalRegularity", "WeakPoynting.RegularityBounds", "WeakPoynting.PartialSmoothing", "WeakPoynting.Translations", "WeakPoynting.Compactness", "WeakPoynting.MagneticCompactness", "WeakPoynting.ElectricControl", "WeakPoynting.MaxwellCompactness"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization", "WeakPoynting.DivCurl", "WeakPoynting.DivCurlCompact", "WeakPoynting.DivCurlRegularity", "WeakPoynting.LocalRegularity", "WeakPoynting.RegularityBounds", "WeakPoynting.PartialSmoothing", "WeakPoynting.Translations", "WeakPoynting.Compactness", "WeakPoynting.MagneticCompactness", "WeakPoynting.ElectricControl", "WeakPoynting.MaxwellCompactness", "WeakPoynting.InteriorTestDensity", "WeakPoynting.RegionalCurlUpgrade", "WeakPoynting.MaterialCaccioppoli"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -181,3 +181,75 @@ name = "ModalProfiles"
 
 [[lean_lib]]
 name = "ModalWeak"
+
+[[lean_lib]]
+name = "LocalConvolution"
+
+[[lean_lib]]
+name = "MagneticLocal"
+
+[[lean_lib]]
+name = "SmallVolumeMaxwell"
+
+[[lean_lib]]
+name = "ScalarRadiation"
+
+[[lean_lib]]
+name = "MaterialHCurl"
+
+[[lean_lib]]
+name = "MaterialPower"
+
+[[lean_lib]]
+name = "NewtonExterior"
+
+[[lean_lib]]
+name = "NewtonExteriorResponse"
+
+[[lean_lib]]
+name = "ExteriorContinuity"
+
+[[lean_lib]]
+name = "ExteriorMaterial"
+
+[[lean_lib]]
+name = "DyadicRadiation"
+
+[[lean_lib]]
+name = "MaxwellRadiation"
+
+[[lean_lib]]
+name = "OutgoingMaterial"
+
+[[lean_lib]]
+name = "ScalarExterior"
+
+[[lean_lib]]
+name = "ScalarExteriorSecond"
+
+[[lean_lib]]
+name = "ScalarExteriorRegularity"
+
+[[lean_lib]]
+name = "ModalLocal"
+
+[[lean_lib]]
+name = "ModalHCurl"
+
+[[lean_lib]]
+name = "ModalShell"
+
+[[lean_lib]]
+name = "ModalFieldResidue"
+
+[[lean_lib]]
+name = "ModalShellAnalytic"
+
+[[lean_lib]]
+name = "L2KernelCompact"
+
+[[lean_lib]]
+name = "DynamicVolumeCompact"
+
+[[lean_lib]]
+name = "ModalFieldPole"

@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand fifty-eight exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand three hundred twelve exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all eighty-three registered modules, and audits all 1058
+compiler and mathlib revision, builds all one hundred ten registered modules, and audits all 1312
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -520,8 +520,8 @@ this identity with the actual source equations to prove the dielectric
 Maxwell equations on compact smooth tests. Five in
 `IncidentLocalization.lean` construct the weighted L2 datum from the
 incident field's local L2 restriction to the material ball. No global
-L2 assumption is imposed on the incoming field. The regional C1-test
-upgrade and outgoing-radiation identification remain separate.
+L2 assumption is imposed on the incoming field. The subsequent modules
+prove the regional C1-test upgrade and actual outgoing radiation.
 
 Eleven exports of `SphereRemovable.lean` prove actual integration by parts
 across a sphere using finite coordinate-line intersections. Twenty-three
@@ -548,12 +548,56 @@ L2 subsequence for one fixed positive bounded permittivity. A common open
 neighborhood and actual a.e. agreement are part of the conclusions.
 These results do not assert compactness uniformly over varying coefficients.
 
+## Actual radiation, regional fields and meromorphic shell response
+
+Five exports of `LocalConvolution.lean` and three of `MagneticLocal.lean`
+prove actual local L2 magnetic fields. Eight of
+`WeakPoynting/InteriorTestDensity.lean` and four of `RegionalCurlUpgrade.lean`
+approximate actual compact C1 tests inside the open region and pass the
+weak-curl identity. Six of `SmallVolumeMaxwell.lean`, eight of
+`MaterialHCurl.lean` and four of `MaterialPower.lean` construct actual
+small-volume material fields, their regional H(curl) graphs and physical
+local power conservation. Eight of `WeakPoynting/MaterialCaccioppoli.lean`
+control magnetic and electric-curl energy by outer electric energy.
+
+Seven exports of `NewtonExterior.lean` and fifteen of
+`NewtonExteriorResponse.lean` identify the actual exterior electric field
+with the ordinary dyadic integral. Nine of `ExteriorContinuity.lean` and
+nine of `ExteriorMaterial.lean` construct continuous representatives on
+the whole exterior. Thirteen of `ScalarRadiation.lean`, eight of
+`DyadicRadiation.lean` and fourteen of `MaxwellRadiation.lean` give explicit
+inverse-square radiation-defect bounds and the actual Silver--Müller
+limit at spatial infinity. Three of `OutgoingMaterial.lean` combine the
+volume inverse, local equations, regional H(curl), continuous exterior
+representatives and outgoing condition for one small-volume solution.
+This is existence under the explicit sufficient smallness bound; uniqueness
+among all outgoing PDE solutions and arbitrary-size solvability are separate.
+
+Ten exports of `ScalarExterior.lean`, eleven of `ScalarExteriorSecond.lean`
+and six of `ScalarExteriorRegularity.lean` differentiate the actual source
+integrals, prove the exterior scalar Helmholtz equation and establish C2
+regularity. Fourteen of `L2KernelCompact.lean` prove compactness of the
+actual L2-kernel convolution after a bounded input map with common compact
+support. Ten of `DynamicVolumeCompact.lean` apply this to the actual
+weighted dyadic remainder for every finite support radius, without smallness.
+
+Twelve exports of `ModalLocal.lean` and fourteen of `ModalHCurl.lean`
+give local integrability and genuine nonzero regional H(curl) modal fields.
+Nine of `ModalShell.lean` construct the actual electric/magnetic pair in
+shell L2. Thirteen of `ModalFieldResidue.lean` prove the operator-norm
+residue and its nonzero field image. Seventeen of `ModalShellAnalytic.lean`
+prove Banach-valued analyticity of the actual shell field. Fourteen of
+`ModalFieldPole.lean` construct its analytic regularization and prove
+standard meromorphic order minus one at the constructed high-Q zeros.
+The response here maps two spherical matching data to actual shell fields;
+identification with a pole of the full Maxwell resolvent is still required.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
-general-domain density and boundary traces, outgoing scattering, the conical spectrum,
+general boundary traces, arbitrary-size outgoing solvability, the conical spectrum,
 Runge approximation, rounding, the analytic Fredholm resonance pencil or
 its reciprocal norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
