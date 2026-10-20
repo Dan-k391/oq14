@@ -1,155 +1,149 @@
-# OQ14 resume checkpoint — October 20, 2026
+# OQ14 resume checkpoint — October 20, 2026 (second pause)
 
-**ACTIVE: the user explicitly resumed after the October20 checkpoint.**
-The immutable pause snapshot remains in `checkpoints/2026-10-20-resume/`.
-The complete Maxwell Lean task remains unfinished.
-The user's model preference is 6.1 Sol for subagents and Astra for important proof
-design, integration and audits.
+**PAUSED at the user's explicit request: "create checkpoint and stop".**
+All three 6.1 Sol agents stopped and reported no active compiler sessions.
+Root stopped the unfinished clean aggregate (session93252, interrupted exit1).
+No proof work or automation should resume until the user asks.
+The complete requested Maxwell formalization remains unfinished.
 
-## Current active work
+## Start here
 
-The registered batch is now **2234 declarations / 203 modules / 175 libraries**.
-The actual finite radial geometry, scattering fields and positive-real
-analytic inverse are proved and audited. See `reviews/radial_scattering_2234.md`.
-The new clean aggregate and coherent PDF/package checks are pending; run
-them only in the independent `tmp/clean-checkout`, never cleaning the root
-Lean build while agents are active.
+Read `checkpoints/2026-10-20-resume-2/manifest.json` and its exact snapshots.
+The active working files remain in place. Never restore over later work.
+The user's model preference remains 6.1 Sol for subagents, Astra for
+important proof design, integration and audits.
 
-Root owns proof design, shared registration, clean aggregate and packaging.
-The 6.1 Sol agents now develop actual angular symmetry/cap trial geometry,
-disjoint-ball material geometry, and audit the channel proof bridge.
-Their subsequent unregistered sources are outside this frozen batch.
-The full channel and modal constructions remain unfinished.
-Unrelated user-created `sites/` must remain untouched.
+1. Finish independent source/compiler audits of `HankelIntermediateBounds`
+   (6), `CavityBallBridges` (3), `ShellInclusionCells` (6), and
+   `DisjointBallPartition` (2). Author/root targeted compilation and object
+   generation passed for all four. The other ten new finished modules
+   already have independent full-source and compiler PASS. Write the missing
+   review for the independently passed `HankelCoefficientBounds` (16).
+2. Repair the two preserved drafts, retaining their genuine mathematics:
+   `CapLegendreSeries` has four chain-rule failures; `PlaneSourceKernel`
+   has three subtraction-expression rewrite failures. Neither is compiled
+   or registered. Exact errors and subsequent steps are below.
+3. Register only finished, audited sources. The 14 compiled new sources
+   contain156 selected declarations, all outside the current2234 registry.
+   Do not accidentally include the two unfinished sources in an aggregate.
+4. The independent checkout `tmp/clean-checkout` remains at `cc29d768fb89b308bd87d7d926fdc5122c505cfa`.
+   Its2234 aggregate was interrupted at the user's stop request. Rerun a
+   genuinely clean aggregate there after freezing the desired source commit.
+   Never clean the root Lean build while agents are active.
 
-The immutable pause snapshot remains at tag `oq14-resume-2026-10-20`,
-commit4216802265d44d891e996af05ba632aa9d400d67; archive SHA256
-ab0399142662af5d88c737f261929bf0b9f9878b7d9ba2e70051088fd39e6365.
+## Current verification and release state
 
-## Verification and release state
+Registered source commit: `cc29d768fb89b308bd87d7d926fdc5122c505cfa`.
+**2234 declarations /203 modules /175 libraries.** Its new201 declarations
+since2033 passed targeted checks and full-source audits; the clean aggregate
+is NOT certified. The stopped rebuild created many objects, but that is not
+a full success. The old files currently under `tmp/clean-checkout/output/lean/`
+are stale2033 evidence (provenance identifies cef17ae), not2234 evidence.
 
-The **2033-declaration clean aggregate PASSED** at exact commit
-`cef17ae243efd453c425ca903846e22629af1691`, with 176 registered modules / 148 libraries.
-The root build was cleaned; all nine dependency revisions match their pins;
-only propext, Classical.choice and Quot.sound appear in selected dependencies.
-All 15 diagnostic groups also passed at that clean commit.
-Proof and diagnostic evidence is preserved in
-`output/checkpoints/proof-build-2033/` and in this resume checkpoint's evidence.
-Its PDF check failed on one 31.24463pt overfull paragraph (verification.tex
-lines 566–582). The working source now adds internal allowbreak points to
-FiniteMeromorphicInverse, MeromorphicOperator and AnalyticCompactInverse.
-**That layout fix has not been rebuilt. No 2033 PDF/package is claimed.**
+At exact clean2234 commit all15 diagnostic groups passed. Its110-page PDF
+also passed references, citations and overfull-box checks, and pages105,
+106 and108 were rendered and inspected. PDF SHA256:
+`54fbadcb829da654c3bf1598314f238fa36b3c4eeef6283109aa6426446a049a`.
+These PDF/diagnostic artifacts are preserved in this checkpoint's evidence.
+There is no2234 coherent proof/PDF release package.
 
-The latest coherent packaged release remains `oq14-maxwell-foundations-1660`,
-commit `f7e03a7db06c084abb1279e0affef93d3a72082c`: clean aggregate 1660,
-15 diagnostics, 108-page visually checked PDF, no unresolved references or
-overfull boxes. Matching artifacts are in
-`output/checkpoints/oq14-maxwell-foundations-1660/` and top-level output.
+The last completed clean proof aggregate remains2033 at
+`cef17ae243efd453c425ca903846e22629af1691`, with15 diagnostics.
+The last coherent packaged release remains `oq14-maxwell-foundations-1660`
+at `f7e03a7db06c084abb1279e0affef93d3a72082c` (108-page PDF).
+Its delivery SHA256 is
+`31190f182f399636e9f1bcbbcf6522ec4dba05191924cb685bf48dc8bb41b777`.
+The earlier checkpoint tag `oq14-resume-2026-10-20` and all release evidence
+remain preserved. This is a resume checkpoint, not a completion claim.
 
-- Delivery SHA256: `31190f182f399636e9f1bcbbcf6522ec4dba05191924cb685bf48dc8bb41b777`
-- PDF SHA256: `2292c6663c7da4813c4321154d078c7bd258d71f7c408cb684bee63db43f0543`
+## Completed since the prior pause
 
-The 1835 clean aggregate also passed at
-`44ca66d9d6db10e555ae1881bdc1399aefb88100`, but its PDF failed and it was
-not packaged. Evidence remains in `output/checkpoints/proof-build-1835/`.
-Earlier releases and the October18 checkpoint are preserved.
+Registered2183 established actual weak Helmholtz continuation, variable
+Maxwell localization, actual interface continuation, geometric-cell global
+uniqueness and the Fredholm inverse. Registered2234 constructed all geometry
+for arbitrary finite concentric positive-material layers, actual physical
+scattering fields, and analytic volume inverses near every positive real
+frequency. Geometry and PDE propagation are proved, not supplied as the
+missing conclusion. Arbitrary outgoing PDE-to-volume equivalence remains
+outside the formal coverage.
 
-## Newly registered proof sources
+The new unregistered modules prove actual angular-measure symmetry and the
+cap-weighted coordinate Rayleigh trial below2; actual all-degree Hankel
+energy and low-order bounds, real basis/Wronskian and intermediate-range
+factorial/exponential estimates; actual connectivity and bridges for
+separated balls and an enclosing cavity/single shell; and inverse-cube
+actual Maxwell plane-flux tails with genuine2D integrability, including
+cross terms. They do not yet prove full Green convergence or either final
+device theorem. Per-module hashes, reports and audit status are in manifest.
 
-The17 sources/120 reports saved at the pause are now registered, together
-with the finalized seven volume-adapter proofs and23 additional reports in
-RegionalMaxwellContinuation, MaterialCellGraph, PiecewiseMaxwellUniqueness
-and MaxwellZeroField. The complete inventory and scope are in
-`lean/README.md` and `reviews/interior_continuation_2183.md`.
+## Exact unfinished proof steps
 
-## Mathematical design to continue
+`CapLegendreSeries.lean`: latest compilation EXIT1, no object and no prints.
+Four failing proofs are `pole_hasDerivAt`, `poleD_hasDerivAt`,
+`odd_hasDerivAt`, `oddD_hasDerivAt`: invalid named argument `g` for
+`HasDerivAt.comp` and inference for the odd z-squared composition. Fix with
+explicitly typed inner derivatives and actual binder names. Generic
+power-series summability/differentiation, moment recurrences and the
+Legendre algebra produced no further errors, but the complete source has
+not passed. Then prove derivative-series parameter continuity, exact
+Lambda0/2 endpoints and odd positivity. The intended actual shooting uses
+P_Lambda regular at z1 and F_Lambda odd at z0. Matching determinant
+D(Lambda)=(1+d)P'_Lambda(t)F_Lambda(t)-P_Lambda(t)F'_Lambda(t) has D0<0,
+D2=d*t>0 for0<t<1,d>0. IVT gives Lambda in(0,2), then
+lambda=(sqrt(1+4Lambda)-1)/2 in(0,1). This shooting theorem and the genuine
+sphere weak/H1 lifting remain unproved. `CapAngularShooting.lean` not created.
 
-Exterior Maxwell Rellich is now fully derived for actual homogeneous volume
-fields: both fields vanish outside the material support at positive real
-frequency, without support smallness. Global zero is now proved for explicit material-cell partitions, with
-all geometry instantiated for arbitrary finite concentric layers.
+`PlaneSourceKernel.lean`: latest compilation EXIT1, no object/no prints.
+Errors around lines152,184,194 concern `integral_add` with a Pi subtraction
+and `response_plane_sub` rewrite shapes. The actual compact source region,
+positive plane gap, compact-product kernel bound and continuity elaborate;
+do not call the full draft compiled. Next prove local disk E/H component
+bounds from the actual compact kernel bound, combine with `MaxwellPlaneTail`
+for a whole-plane bilinear L1 bound depending on k,R,gap, and prove actual
+source subtraction and L1 convergence. `MaxwellPlaneL1.lean` not created.
 
-The interior scalar argument is now proved without assuming solution
-analyticity or an unproved regularity theorem. Genuine compact annular tests,
-polar integration and homogeneous harmonic polynomials give the radial moment
-equation. Actual derivatives and the one-dimensional fundamental lemma give
-the classical flux ODE. Finite-interval Hankel uniqueness and harmonic density
-give smooth ball continuation. Literal translations and connectedness give
-smooth domain continuation.
+Geometry next: `ShellInclusionCells` gives a literal single-shell partition
+with inclusions/cavity/shell/exterior. After its independent audit, extend
+to arbitrary finite radial shells by replacing cell0 of
+`FiniteRadialPartition` with the proved cavity; use inclusion-to-cavity
+bridges, a cavity-to-first-shell bridge and existing higher radial bridges.
+No multishell source was started. Then instantiate the actual global
+Maxwell uniqueness/scattering theorem for the final channel geometry.
 
-For weak fields, actual compact normalized mollifiers solve the classical
-equation eventually on every fixed inner ball. They inherit a zero germ from
-an AE-zero neighborhood. Smooth continuation makes the mollified values
-eventually zero; genuine AE convergence gives zero for the original weak
-field. A countable open subcover globalizes the AE germs. Full weak-to-smooth
-representative regularity is not needed for this uniqueness argument and
-has not been claimed.
+Channel next: Hankel low and intermediate estimates are proved, but high
+barrier positivity/regular-solution lower bounds, actual stack transfers,
+all-order physical Green convergence, self-consistent inclusion responses,
+coherent whole-plane flux convergence and counted-space power identities
+still require formal construction. Do not replace them with hypotheses.
+Modal gaps include conical eigenfunction/coefficient construction, Runge,
+rounding, physical reciprocal normalization, infinite-degree isolation and
+the final simultaneous peaks.
 
-Completed interface step: let U,V be connected open material cells, and B an open connected set
-covered almost everywhere by U union V, meeting each in a nonempty open set.
-If E is AE zero on U and epsilon=epsilonV on V, then epsilon*E=epsilonV*E
-AE on B. `RegionalMaxwellLocalization` derives the actual constant-material
-weak scalar Helmholtz equation there. `WeakHelmholtzContinuation` propagates
-zero across B, then throughout V. Electric vanishing alone suffices for the
-volume uniqueness adapter; no initial magnetic zero premise is required.
+## Scientific scope and operational notes
 
-Completed: `MaterialCellGraph.lean` and `PiecewiseMaxwellUniqueness.lean` use actual bridges
-with AE two-cell coverage and nonempty overlaps, geometric reachability
-(`Relation.ReflTransGen`), and an AE cover of space by material cells.
-The actual PDE propagation is discharged in the global uniqueness theorem.
-Concrete geometry instances for the finite constructions are now being proved.
+The written channel disproof fixes delta>eta>0 with full scattering output,
+common ordinary material bounds/frequency and unrestricted finite support.
+Stronger bypass, receiving-hemisphere or uniformly bounded-support problems
+remain separate. The written modal theorem concerns an actual normalized
+high-Q QNM with maxima in the prescribed plane patch. Its reciprocal residue
+normalization must remain explicit. See `reviews/original_scope_2026_10_20.md`;
+the original Downloads manual is currently absent, so exact manual comparison
+cannot be certified from its historical hash alone.
 
-Further gaps: concrete material geometry and physical scattering assembly; all-angular-order
-Green convergence and whole-plane flux; conical coefficients, Runge and
-rounding; physical reciprocal mode normalization and infinite-degree modal
-isolation; complete channel and hotspot constructions. Do not replace any
-missing proof with its conclusion as a hypothesis or a custom axiom.
+Workspace D:/oq14, PowerShell. Python:
+`C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`.
+Lake `D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe`.
+Tectonic `D:/oq14/.tools/tectonic/tectonic.exe`.
+Lean4.19.0, mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b, nine locked dependencies.
+Use Python -X utf8 and TECTONIC_CACHE_DIR=D:/oq14/tmp/tectonic-cache.
+Target: `lake env lean -o .lake/build/lib/lean/Module.olean Module.lean`.
+Clean aggregate: `python lean/build.py --lake <path> --log-dir output/lean`
+in the independent checkout. Diagnostics `python scripts/verify.py`; PDF
+`python scripts/build.py --cached --tectonic <path>`. Only package artifacts
+from one matching clean commit after all checks and visual inspection.
 
-## Written scientific scope
-
-The written unrestricted fixed-section channel finiteness assertion is
-disproved for each fixed delta>eta>0, with the full scattering map as output,
-common ordinary positive material bounds and frequency, and unrestricted
-finite support. Stronger bypass thresholds, receiving outputs and uniformly
-bounded support remain separate questions.
-
-The written modal hotspot theorem constructs one genuinely normalized high-Q
-mode with arbitrary finite peak count, fixed real frequency, common ordinary
-bounds and actual maxima in the prescribed plane patch. Contrast may depend
-on N within those bounds. Do not silently broaden these quantifiers.
-
-## Reproduction and operational notes
-
-Workspace `D:/oq14`; PowerShell. Pinned runtime:
-
-- Python `C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`
-- Lake `D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe`
-- Tectonic `D:/oq14/.tools/tectonic/tectonic.exe`
-- Lean 4.19.0; mathlib `c44e0c8ee63ca166450922a373c7409c5d26b00b`; nine locked dependencies.
-
-Targeted checks from `lean/`: `lake env lean File.lean`; add
-`-o .lake/build/lib/lean/File.olean` for importable objects.
-Never clean the root Lean build while agents are active. Aggregate only in
-`tmp/clean-checkout`, whose root build is independent and dependency junction
-reuses pinned packages. It remains at `cef17ae243efd453c425ca903846e22629af1691` with a passed build.
-
-After a frozen batch is committed, update that checkout to the exact commit,
-then run `lean/build.py --lake <path> --log-dir output/lean`,
-`scripts/verify.py`, and `scripts/build.py --cached --tectonic <path>`.
-Set `TECTONIC_CACHE_DIR=D:/oq14/tmp/tectonic-cache`, use Python `-X utf8`.
-Inspect changed PDF pages before packaging with `scripts/package_release.py`.
-Only copy coherent release artifacts together. No repository was published.
-
-Executed one-time scripts in tmp include integrate_1058.py, integrate_1312.py,
-integrate_1660.py, integrate_1835.py, integrate_2033.py,
-create_annular_equation.py, preserve_1058.py, preserve_1312.py,
-preserve_1660.py, create_stop_checkpoint_20261020.py and integrate_2183.py. Do not rerun them.
-No source or dependency upgrade is authorized by routine resumption.
-
-Original-scope audit: `reviews/original_scope_2026_10_20.md`. The original
-manual is currently unavailable; cached tutorial and manuscript quantifiers
-were compared. Do not label every OQ14 interpretation closed. The exact
-channel regime and modal normalization must remain explicit.
-
-The executed integration scripts through `tmp/integrate_2234.py` are
-non-idempotent: do not rerun them.
+One-time scripts `integrate_1058.py`,1312,1660,1835,2033,2183,2234;
+`create_stop_checkpoint_20261020.py`, `create_stop_checkpoint_20261020_2.py`,
+the preserve scripts and create_annular_equation.py must not be rerun.
+The unrelated untracked `sites/` belongs to the user and must remain untouched.
+No external repository, site, or paper was published.
