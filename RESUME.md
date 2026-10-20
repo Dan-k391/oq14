@@ -8,30 +8,22 @@ design, integration and audits.
 
 ## Current active work
 
-The checkpoint's pending final independent weak-continuation check and the
-seven volume-adapter proofs are now finished and audited. The new registered
-batch has **2183 selected declarations / 198 modules / 170 libraries**.
-All150 additions passed targeted compilation and full-source review.
-Its new clean aggregate and PDF/package checks are pending. See
-`reviews/interior_continuation_2183.md` for the exact frozen sources.
+The registered batch is now **2234 declarations / 203 modules / 175 libraries**.
+The actual finite radial geometry, scattering fields and positive-real
+analytic inverse are proved and audited. See `reviews/radial_scattering_2234.md`.
+The new clean aggregate and coherent PDF/package checks are pending; run
+them only in the independent `tmp/clean-checkout`, never cleaning the root
+Lean build while agents are active.
 
-Root/Astra owns proof design, audits, shared registration, clean aggregate
-and packaging. The 6.1 Sol agents work on distinct files:
+Root owns proof design, shared registration, clean aggregate and packaging.
+The 6.1 Sol agents now develop actual angular symmetry/cap trial geometry,
+disjoint-ball material geometry, and audit the channel proof bridge.
+Their subsequent unregistered sources are outside this frozen batch.
+The full channel and modal constructions remain unfinished.
+Unrelated user-created `sites/` must remain untouched.
 
-- fredholm_sol: `RadialMaterialCells.lean`, actual sphere/annulus/exterior
-  connectedness and interface bridge geometry.
-- continuation_review_sol: `FiniteRadialPartition.lean`, actual finite
-  ordered-radius cover, reachability and partition construction.
-- modal_sol: `PiecewiseScattering.lean`, actual physical scattering
-  assembly and radiation from the proved geometric-partition inverse.
-
-These active new files are outside2183 until they are compiled and reviewed.
-Unrelated user-created `sites/` is untracked and must remain untouched.
-Do not clean the root Lean build while agents are active. Use the independent
-checkout for the aggregate.
-
-The paused snapshot remains immutable at tag `oq14-resume-2026-10-20`, commit
-4216802265d44d891e996af05ba632aa9d400d67. Its archive SHA256 is
+The immutable pause snapshot remains at tag `oq14-resume-2026-10-20`,
+commit4216802265d44d891e996af05ba632aa9d400d67; archive SHA256
 ab0399142662af5d88c737f261929bf0b9f9878b7d9ba2e70051088fd39e6365.
 
 ## Verification and release state
@@ -74,7 +66,8 @@ and MaxwellZeroField. The complete inventory and scope are in
 
 Exterior Maxwell Rellich is now fully derived for actual homogeneous volume
 fields: both fields vanish outside the material support at positive real
-frequency, without support smallness. This does not yet prove global zero.
+frequency, without support smallness. Global zero is now proved for explicit material-cell partitions, with
+all geometry instantiated for arbitrary finite concentric layers.
 
 The interior scalar argument is now proved without assuming solution
 analyticity or an unproved regularity theorem. Genuine compact annular tests,
@@ -157,3 +150,6 @@ Original-scope audit: `reviews/original_scope_2026_10_20.md`. The original
 manual is currently unavailable; cached tutorial and manuscript quantifiers
 were compared. Do not label every OQ14 interpretation closed. The exact
 channel regime and modal normalization must remain explicit.
+
+The executed integration scripts through `tmp/integrate_2234.py` are
+non-idempotent: do not rerun them.

@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand one hundred eighty-three exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand two hundred thirty-four exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all one hundred ninety-eight registered modules, and audits all 2183
+compiler and mathlib revision, builds all two hundred three registered modules, and audits all 2234
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -751,6 +751,31 @@ proved, not supplied as premises. Concrete construction geometries still
 need instances of this partition data. `MaxwellZeroField` (5) derives
 magnetic AE zero from electric AE zero using actual global weak Maxwell
 and the fundamental lemma.
+
+## Concrete radial geometry, scattering and positive-real regularity
+
+A further 51 declarations in five modules instantiate actual finite-layer
+geometry and assemble its scattering fields. `RadialMaterialCells` (18)
+proves ball, annulus and exterior connectivity, sphere-null interfaces and
+explicit interface bridges. `FiniteRadialPartition` (12) proves the actual
+finite ordered-radius cover, every adjacent bridge, reachability and an
+exterior seed. `RadialMaxwellUniqueness` (6) consequently proves actual
+global homogeneous zero, an invertible volume operator and unique volume
+solutions for any finite number of concentric positive-material layers,
+without a smallness condition or assumed geometric certificate.
+
+`PiecewiseScattering` (7) constructs actual global weak Maxwell fields from
+the unique volume solution for the geometric-partition class. It proves
+local square integrability, material self-consistency, exterior continuity
+and the actual inverse-square Silver--Mueller defect bound and radiation
+limit. This proves existence of physical fields and uniqueness of the
+volume unknown; equivalence with every possible outgoing PDE solution
+has not been established. `PiecewiseRealSpectrum` (8) proves that the actual
+complex volume pencil has no positive-real exceptional frequencies under
+the partition hypotheses. Its inverse is analytic in genuine complex
+neighborhoods of every such frequency, and its fixed-source evaluation
+agrees with the actual real-frequency solution. This is not full modal
+isolation or the final hotspot theorem.
 
 ## Explicitly outside the formalization
 

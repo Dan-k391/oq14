@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The one hundred ninety-eight registered modules in \texttt{lean/} cover operator estimates,
+The two hundred three registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two thousand one hundred eighty-three exported theorem declarations were compiled successfully.
+Two thousand two hundred thirty-four exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -640,6 +640,25 @@ Concrete construction geometries still need instances of the partition
 data. Magnetic zero from electric zero is also derived directly from
 weak Maxwell and the fundamental lemma.
 
+A further 51 declarations in five modules prove the actual finite-layer
+geometry, physical scattering assembly and positive-real spectral
+regularity. Balls, annuli and exteriors have proved connectivity; their
+sphere interfaces have measure zero. Explicit adjacent bridges, finite
+coverage, reachability and an exterior seed instantiate the global
+uniqueness theorem for every finite family of strictly ordered positive
+radial interfaces. No support smallness or supplied connectivity
+certificate is needed for this radial specialization.
+
+For the geometric-partition class, the unique volume unknown produces
+actual global weak Maxwell fields with local square integrability,
+material self-consistency, exterior continuity and an inverse-square
+Silver--Mueller defect bound. Uniqueness among arbitrary outgoing PDE
+fields still requires the converse volume representation. The actual
+complex volume pencil has no positive-real exceptional frequencies in
+this class, and its inverse and fixed-source solutions are analytic in
+genuine complex neighborhoods of these points. This does not supply full
+modal isolation or either complete device construction.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -756,7 +775,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand one hundred eighty-three declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand two hundred thirty-four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

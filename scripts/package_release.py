@@ -80,8 +80,11 @@ selected as output. Stronger bypass or receiving-output versions remain
 separate questions. The construction is an analytic proof, not a numerical
 many-channel simulation. Lean checks the scoped declarations listed in its
 README and build provenance, including actual weak local power conservation.
-Full scattering, interface, channel construction and resonance proofs are
-NOT yet formalized. Complete formal verification remains unfinished.
+Actual interface continuation, geometric-partition volume uniqueness,
+finite radial geometry and constructed physical scattering fields are
+formalized. The complete channel and modal constructions remain unfinished;
+arbitrary outgoing PDE equivalence and the remaining continuum bridges
+are not supplied by these scoped results.
 
 The source/ directory contains all tracked sources, build instructions,
 proof reviews and research-stage evidence. Release artifacts and clean
