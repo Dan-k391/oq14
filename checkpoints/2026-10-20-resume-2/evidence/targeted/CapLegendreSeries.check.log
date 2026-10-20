@@ -1,0 +1,44 @@
+CapLegendreSeries.lean:301:39: error: invalid argument name 'g' for function 'HasDerivAt.comp'
+CapLegendreSeries.lean:299:41: error: unsolved goals
+a z : ℝ
+ha : a ∈ Icc 0 2
+hz : |(1 - z) / 2| < 1
+⊢ HasDerivAt (pole a) (poleD a z) z
+CapLegendreSeries.lean:311:4: error: invalid argument name 'g' for function 'HasDerivAt.comp'
+CapLegendreSeries.lean:308:43: error: unsolved goals
+a z : ℝ
+ha : a ∈ Icc 0 2
+hz : |(1 - z) / 2| < 1
+⊢ HasDerivAt (poleD a) (poleDD a z) z
+CapLegendreSeries.lean:324:58: error: application type mismatch
+  HasDerivAt.comp z
+    (powerSum_hasDerivAt_growth (oddCoeff a) 1 ?m.24476 0 (oddCoeff_growth a ha) (z ^ 2) (odd_argument z hz))
+    (HasDerivAt.pow 2 (hasDerivAt_id z))
+argument
+  HasDerivAt.pow 2 (hasDerivAt_id z)
+has type
+  HasDerivAt (fun y => id y ^ 2) (↑2 * id z ^ (2 - 1) * 1) z : Prop
+but is expected to have type
+  HasDerivAt (Real.mul✝ (npowRec 1 z)) ?m.24533 z : Prop
+CapLegendreSeries.lean:324:32: error: invalid argument name 'g' for function 'HasDerivAt.comp'
+CapLegendreSeries.lean:322:39: error: unsolved goals
+a z : ℝ
+ha : a ∈ Icc 0 2
+hz : |z| < 1
+⊢ HasDerivAt (odd a) (oddD a z) z
+CapLegendreSeries.lean:332:58: error: application type mismatch
+  HasDerivAt.comp z
+    (powerSum_hasDerivAt_growth (oddCoeff a) 1 ?m.25978 0 (oddCoeff_growth a ha) (z ^ 2) (odd_argument z hz))
+    (HasDerivAt.pow 2 (hasDerivAt_id z))
+argument
+  HasDerivAt.pow 2 (hasDerivAt_id z)
+has type
+  HasDerivAt (fun y => id y ^ 2) (↑2 * id z ^ (2 - 1) * 1) z : Prop
+but is expected to have type
+  HasDerivAt (Real.mul✝ (npowRec 1 z)) ?m.26035 z : Prop
+CapLegendreSeries.lean:332:32: error: invalid argument name 'g' for function 'HasDerivAt.comp'
+CapLegendreSeries.lean:330:41: error: unsolved goals
+a z : ℝ
+ha : a ∈ Icc 0 2
+hz : |z| < 1
+⊢ HasDerivAt (oddD a) (oddDD a z) z
