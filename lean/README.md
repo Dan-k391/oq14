@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand six hundred sixty exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand eight hundred thirty-five exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all one hundred thirty-four registered modules, and audits all 1660
+compiler and mathlib revision, builds all one hundred fifty-two registered modules, and audits all 1835
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -618,8 +618,8 @@ truncated remainder. `L1KernelOperator` (18) constructs bounded linear
 dependence of L2 convolution on its L1 kernel and the finite-support L2-to-L1
 map. `ComplexConvolutionAnalytic` (37) assembles the genuine entire compact
 volume pencil, its exact real-frequency restriction, static factorization
-and invertible value at zero. The analytic Fredholm alternative and isolated
-noninvertible values are subsequent work.
+and invertible value at zero. The subsequent meromorphic-inverse construction
+and isolated noninvertible values are now proved below.
 
 `KernelReciprocity` (29) and `NewtonReciprocity` (16) prove non-Hermitian
 bilinear reciprocity of the actual weighted volume block and actual
@@ -636,14 +636,49 @@ measure pushes forward to ordinary spatial volume, and its residue is the
 same dilated actual field. This is a spherical matching response; full
 resolvent isolation across all angular degrees remains unproved in Lean.
 
+## Zero outgoing power and the meromorphic volume inverse
+
+A further 175 declarations in 18 modules close two analytic bridges.
+`PolarIntegration` (5), `RadialPowerTest` (27), `RadialWeight` (19), and
+`RadialFlux` (9) derive zero far-field power from actual weak Maxwell
+conservation, using a genuine compact radial test, exact Euclidean polar
+integration, and a nonnegative radial weight with strictly positive mass.
+The zero-power conclusion is not assumed. `AngularPowerZero` (6) upgrades
+zero power to both amplitudes vanishing in every unit direction.
+`HomogeneousVolumePower` (11) derives all these hypotheses from any actual
+homogeneous volume solution, without support smallness. `AngularEnergy`
+(8) proves actual unphased surface-energy limits. `ExteriorHelmholtz` (8)
+derives the actual component Helmholtz equations from exterior Maxwell and
+Gauss equations. Exterior Rellich and material continuation remain separate.
+
+`HilbertFiniteRank` (3) constructs finite-dimensional approximations from
+compact image nets and orthogonal projection. `FiniteRankSchur` (11)
+proves the exact typed Schur criterion and Woodbury inverse.
+`FiniteDimensionalDeterminant` (3) proves actual determinant analyticity and
+its invertibility criterion. `LocalDichotomy` (3) proves connectedness
+propagation. `LocalFredholmReduction` (16) combines these with a locally
+invertible regular factor to prove punctured invertibility of an anchored
+entire compact pencil at every center. `FiniteMeromorphicInverse` (14)
+constructs the actual analytic adjugate and meromorphic finite inverse.
+`MeromorphicOperator` (2) and `AnalyticCompactInverse` (2) transfer it through
+the actual Woodbury formula. `VolumeAnalyticAlternative` (12) applies this
+to the actual volume operator: its exceptional frequencies form a closed
+discrete set, finite in bounded sets, its inverse is meromorphic, and actual
+noninvertible values are genuine poles. Finite-rank principal Laurent
+coefficients and real-frequency homogeneous uniqueness remain further work.
+
+`ModalMatchingNorm` (16) proves the genuine derivative pairing and normalized
+rank-one residue for the finite matching pencil. This is not yet the
+reciprocal physical-volume resonance norm or full modal multiplicity.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
 general boundary traces, arbitrary-size outgoing solvability, the conical spectrum,
-Runge approximation, rounding, the analytic Fredholm alternative for the constructed pencil or
-its reciprocal resonance norm. The complete written modal theorem is not yet a Lean
+Runge approximation, rounding, finite-rank principal Laurent coefficients, or
+the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either
 missing formal conclusion. The exact remaining library development is

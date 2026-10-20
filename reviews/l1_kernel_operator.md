@@ -30,3 +30,5 @@ transfer required for Banach-valued kernel holomorphy.
 Pinned Lean 4.19 compile and importable object export completed with exit 0. All 18 selected theorem dependency reports contain only propext, Classical.choice, and Quot.sound. Root independently read the complete source and accepted the construction at the frozen hash above. Source scan clear of proof placeholders or extra foundational declarations.
 
 Root integration removed surplus blank lines at end of file only. The clean aggregate build records the packaged source hash; targeted hashes above remain the original run evidence.
+
+Root subsequently gave final freeze approval at the recorded hash.

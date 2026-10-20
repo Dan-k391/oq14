@@ -562,8 +562,12 @@ matching data; it does not claim full-resolvent isolation or hotspot packing.
 
 The next 348 exports bring the registered source to 1660 declarations in
 134 modules / 106 libraries. All 24 added modules passed targeted compilation
-and full independent source review. The clean aggregate rebuild and new PDF
-package are pending; the coherent 1312 release remains the latest package.
+and full independent source review. The clean aggregate rebuild passed at
+commit f7e03a7db06c084abb1279e0affef93d3a72082c. All 15 diagnostic groups
+passed, and the 108-page PDF was rendered and visually inspected. The tag
+`oq14-maxwell-foundations-1660` packages that exact source; fourteen matching
+artifacts are preserved under its checkpoint directory and top-level output.
+Delivery SHA256: `31190f182f399636e9f1bcbbcf6522ec4dba05191924cb685bf48dc8bb41b777`.
 
 Root read every new module in full. Supporting work was assigned to 6.1 Sol
 agents at the user's request; root retained the mathematical audits and
@@ -592,3 +596,37 @@ resolvent pole across all degrees or the reciprocal volume normalization.
 Targeted review hashes record the source bytes used for those runs. Git's
 LF normalization may change byte hashes without changing Lean text; the
 clean aggregate provenance records the exact packaged bytes and dependencies.
+
+## October 20 zero homogeneous far field and actual meromorphic inverse
+
+The next frozen source has 1835 exports in 152 modules / 124 libraries.
+Its 175 additional exports passed targeted compilation and full independent
+source review. Its separate clean rebuild and PDF package are pending.
+The coherent 1660 release remains preserved and remains the latest delivery.
+
+Root read all eighteen added modules in full. PolarIntegration and RadialFlux
+also passed independent exact-source recompilation by Reciprocity Sol, as did
+AngularEnergy. The weak power identity is converted to an actual integrable
+weighted spherical flux. Its radial weight has a proved positive mass and
+vanishes inside the chosen scale. This yields zero far power from the
+actual Maxwell equations. HomogeneousVolumePower derives the required fields,
+local integrability and exterior identities from an actual homogeneous volume
+solution, without a smallness premise. Angular positivity then gives both
+far amplitudes zero in every direction. Actual unphased surface energies tend
+to zero, and actual smooth exterior components satisfy Helmholtz equations.
+Rellich and material continuation are still separate.
+
+Actual compact image nets give finite-rank approximations. The Schur and
+Woodbury identities reduce local inversion to an analytic finite matrix.
+The analytic determinant dichotomy and a connectedness argument exclude the
+locally all-singular case using the actual invertible value at zero.
+The adjugate formula and bounded operator composition yield a genuine
+meromorphic inverse of the actual volume operator. Noninvertible frequencies
+are closed and discrete, are finite in bounded sets, and have strictly
+negative inverse meromorphic order. Finite-rank principal Laurent
+coefficients remain outside this frozen batch.
+
+The matching normalization identifies a genuine finite-matrix derivative
+pairing and a normalized rank-one residue. It does not identify the
+reciprocal physical volume norm or the multiplicity of the full Maxwell
+resolvent. Full channel and hotspot Lean constructions remain unfinished.

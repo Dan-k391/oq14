@@ -7,22 +7,22 @@ Do not replace missing analytic proofs with hypotheses or custom axioms.
 
 ## Verified release and current sources
 
-The latest coherent packaged release is `oq14-maxwell-foundations-1312`, commit
-`ed0d41181a0e9c3ebef586e04cc7c590d15bab91`. Its clean build passed all 1312
-selected declarations in 110 modules, with only propext, Classical.choice and
-Quot.sound; all 15 diagnostic groups passed; the 107-page PDF was inspected.
-It is preserved in `output/checkpoints/oq14-maxwell-foundations-1312/` and
-currently in the top-level delivery files.
+The latest coherent packaged release is `oq14-maxwell-foundations-1660`, commit
+`f7e03a7db06c084abb1279e0affef93d3a72082c`. Its clean build passed all 1660
+selected declarations in 134 modules / 106 libraries, with only propext,
+Classical.choice and Quot.sound. All 15 diagnostic groups passed. The 108-page
+PDF has no unresolved references or overfull boxes; the front matter and
+changed verification/verdict pages were visually inspected.
 
-- Delivery SHA256: `089ef47e3953013368c53cb81069aeafb8c4de9547a8394d3d2490d5e6c0a43f`
-- PDF SHA256: `7abf20801ae4fb1c6d24012ac8924cb245a21a420082c9b7cae3856434df72cd`
+Fourteen matching artifacts were copied with hash verification to
+`output/checkpoints/oq14-maxwell-foundations-1660/` and the top-level output.
 
-The latest packaged source has 1312 audited exports in 110 modules / 82 libraries.
-The additional 254 exports passed targeted builds, independent source review,
-the aggregate clean rebuild, manuscript rendering and packaging. Previous
-1058, 818, 646 and 539 releases remain preserved in their checkpoint directories.
-Newer active drafts are not included in that registered count. Consult the
-release record before identifying the current source with a packaged PDF.
+- Delivery SHA256: `31190f182f399636e9f1bcbbcf6522ec4dba05191924cb685bf48dc8bb41b777`
+- PDF SHA256: `2292c6663c7da4813c4321154d078c7bd258d71f7c408cb684bee63db43f0543`
+
+Previous 1312, 1058, 818, 646 and 539 releases remain preserved. Newer active
+proofs are not included in the registered count. Consult the release record
+before identifying current working sources with a packaged PDF.
 
 ## New mathematical progress
 
@@ -52,14 +52,13 @@ Local H1 does not itself prove compact embedding or general field traces.
 
 ## Active continuation tracks
 
-The coherent 1312 release passed its clean build, diagnostics and package at
-one exact commit. Fourteen coherent artifacts were copied with hash verification
-to the immutable checkpoint and top-level output directory.
+The coherent 1660 release passed the clean rebuild, diagnostics, PDF build,
+visual checks and packaging at one exact source commit. Work continues on
+the newer proofs listed below; these are outside the 1660 package.
 
-The next frozen registered source now has 1660 exports in 134 modules /
-106 libraries. All 24 new modules passed targeted compilation and independent
-source audit; the new clean aggregate build and PDF package are pending.
-The top-level output still correctly identifies the coherent 1312 package.
+The next frozen registered source has 1835 exports in 152 modules / 124
+libraries. These 18 new modules passed targeted compilation and independent
+source audit. Its clean aggregate build and PDF package are pending.
 
 The root owns registration, shared ledgers, clean builds and release packaging.
 Agents share the same directory; never delete their root build artifacts.
@@ -69,14 +68,19 @@ Agents share the same directory; never delete their root build artifacts.
   transversality and radial outgoing power limit are established. AngularPower
   compiled and passed independent review, deriving the genuine spherical
   integral from a uniform bound. Root now owns PolarIntegration and the
-  weak-power-to-zero-total-flux bridge.
+  weak-power-to-zero-total-flux bridge. Both now compile and passed independent
+  review. RadialFlux derives zero far power from actual weak conservation,
+  and AngularEnergy proves actual squared-field surface-integral limits.
 - fredholm_sol (6.1 Sol): CompactPerturbation6, CompactAlternative7,
   VolumeFredholm7 and VolumeAlternative8 compiled and were audited. The last
   is explicitly conditional on homogeneous volume uniqueness. ComplexGreenKernel15
   and ComplexDynamicKernel14 also compiled and were audited. L2Parametric2,
   ComplexKernelAnalytic18 and ComplexConvolutionAnalytic37 now prove genuine
   Banach holomorphy, actual complex compactness and an invertible zero value.
-  HilbertFiniteRank and analytic Fredholm reduction are active.
+  HilbertFiniteRank, finite reduction, analytic determinant and connectedness
+  propagation compile. The generic meromorphic inverse and actual volume
+  discreteness/meromorphy compile or are in their final audit. Finite-rank
+  principal coefficients remain active work.
 - modal_sol (6.1 Sol): ModalPoleMode9, ModalOutgoing22, ModalPoleRadiation7
   and ModalScaling24 compiled and passed root review. These concern actual
   nonzero global weak fields, complex-frequency outgoing limits and prescribed
@@ -84,14 +88,18 @@ Agents share the same directory; never delete their root build artifacts.
   the physical shell measure and exact frequency-rescaling residue factor.
   ModalMatchingNorm16 is a newer audited draft outside 1660; it proves the
   actual finite matching derivative pairing, not the physical volume norm.
-  The agent now owns FiniteRankSchur for the Fredholm reduction.
+  FiniteRankSchur and FiniteMeromorphicInverse are also compiled and audited.
+  The agent now owns RadialRellich: actual Hankel radial basis and nondecay.
 - reciprocity_sol (6.1 Sol): KernelReciprocity29 and NewtonReciprocity16
   compiled with permitted dependencies and passed root review. The actual
   untruncated compact-source electric response is bilinearly reciprocal.
   L1KernelOperator18 compiled and passed root review, constructing bounded
   linear dependence of the actual L2 convolution operator on its L1 kernel.
   SphereMeasure3 proves actual angular open-set positivity. AngularPowerZero6
-  is a newer audited draft outside 1660. RadialPowerTest is active.
+  is a newer audited draft outside 1660. RadialPowerTest, RadialWeight,
+  HomogeneousVolumePower and ExteriorHelmholtz now compile and passed root
+  review. Actual homogeneous volume solutions have zero far amplitudes
+  without a smallness premise. Harmonic-polynomial completeness is next.
 - ExteriorSmooth9 and ExteriorClassical18 compiled and passed root review:
   actual compact-L1-source exterior fields are smooth and obey classical
   Maxwell and Gauss equations.
@@ -107,9 +115,11 @@ over active drafts; use the committed clean checkout below.
 
 Further work includes arbitrary-size outgoing solvability and uniqueness,
 all-angular-order Green convergence and whole-plane flux, conical coefficients
-and Runge, rounding, analytic Fredholm theory, reciprocal normalization and
+and Runge, rounding, finite-rank principal parts, reciprocal normalization and
 infinite-degree modal isolation. The full channel and hotspot constructions
-are not Lean theorems yet. Continue the task, not just checkpoint maintenance.
+are not Lean theorems yet. Root is developing the genuine Cartesian radial
+test identity and annular moment equation needed for Rellich. Continue the
+task, not just checkpoint maintenance.
 
 ## Scientific scope
 
