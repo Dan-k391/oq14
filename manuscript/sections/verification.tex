@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The one hundred fifty-two registered modules in \texttt{lean/} cover operator estimates,
+The one hundred seventy-six registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-One thousand eight hundred thirty-five exported theorem declarations were compiled successfully.
+Two thousand thirty-three exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -558,9 +558,12 @@ derives component Helmholtz equations from actual Maxwell and Gauss equations.
 Exterior Rellich and material continuation remain separate formal steps.
 
 \texttt{OQ14.\allowbreak HilbertFiniteRank} (3) constructs actual finite-rank
-approximations. \texttt{OQ14.\allowbreak FiniteRankSchur} (11) proves the
+approximations.
+
+\texttt{OQ14.\allowbreak FiniteRankSchur} (11) proves the
 exact Schur criterion and Woodbury inverse.
-\texttt{OQ14.\allowbreak FiniteDimensionalDeterminant} (3) proves analytic
+
+\texttt{OQ14.\allowbreak FiniteDimensional\allowbreak Determinant} (3) proves analytic
 determinants and their invertibility criterion.
 \texttt{OQ14.\allowbreak LocalDichotomy} (3) and
 \texttt{OQ14.\allowbreak LocalFredholmReduction} (16) prove anchored
@@ -572,10 +575,37 @@ meromorphic inverse via the adjugate and Woodbury formulas.
 \texttt{OQ14.\allowbreak VolumeAnalyticAlternative} (12) proves that the
 actual volume inverse is meromorphic, its noninvertible frequencies are
 closed and discrete with finitely many in each bounded set, and those
-frequencies are genuine poles. Finite-rank principal Laurent coefficients
-remain subsequent work. \texttt{OQ14.\allowbreak ModalMatchingNorm} (16)
+frequencies are genuine poles. The finite-rank Laurent coefficients are
+proved in the continuation below. \texttt{OQ14.\allowbreak ModalMatchingNorm} (16)
 proves the actual finite matching derivative pairing and normalized
 rank-one residue; the reciprocal physical-volume norm remains separate.
+
+A further 198 declarations in 24 modules complete the actual
+exterior Rellich argument and the finite-rank Laurent construction.
+The finite analytic jets and fixed finite-dimensional Schur factor give
+convergent principal-part expansions for the actual inverse with
+finite-rank coefficients. Actual complex-frequency volume reciprocity
+and its parameter derivative are also proved.
+
+The angular argument proves polynomial differentiation, Euler's formula,
+finite Fischer decomposition and uniform density of homogeneous harmonic
+restrictions. Local Green identities, actual compact annular tests and
+complex polar integration derive the weak radial moment equation from
+the spatial Helmholtz equation. Actual first and second moment derivatives
+and a proved one-dimensional fundamental lemma turn this into the
+classical radial flux equation. The genuine all-degree Hankel basis and
+its nondecay argument force each decaying harmonic moment to vanish.
+The proved angular density then gives pointwise exterior field vanishing.
+
+In particular, \texttt{OQ14.\allowbreak ScalarExteriorRellich} (3)
+proves exterior scalar uniqueness from the actual positive-frequency
+Helmholtz equation and vanishing surface mass.
+\texttt{OQ14.\allowbreak MaxwellExteriorRellich} (5) applies it to the
+actual electric and magnetic volume fields. Every homogeneous volume
+solution has both fields zero outside the material support, without
+support smallness. Interior material continuation remains necessary for
+global uniqueness. Kernel analyticity away from the source is also
+proved; arbitrary-solution analyticity is not inferred from it.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -586,7 +616,7 @@ formal build records the exact source hashes and pinned dependencies.
 This formally verifies the listed operator, differential and integral
 theorems. It does not yet formalize arbitrary-size outgoing uniqueness,
 conical or corner analysis, scattering density, interface rounding,
-finite-rank principal Laurent coefficients, the physical
+interior material continuation, the physical
 reciprocal modal norm, or the complete channel and hotspot constructions.
 In particular the full mathematical research problem cannot be closed by
 adding its missing assertions as axioms.
@@ -692,7 +722,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand eight hundred thirty-five declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand thirty-three declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

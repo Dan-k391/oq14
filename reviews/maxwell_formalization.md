@@ -630,3 +630,40 @@ The matching normalization identifies a genuine finite-matrix derivative
 pairing and a normalized rank-one residue. It does not identify the
 reciprocal physical volume norm or the multiplicity of the full Maxwell
 resolvent. Full channel and hotspot Lean constructions remain unfinished.
+
+
+## Actual exterior uniqueness continuation
+
+A further 198 declarations in 24 modules derive actual exterior uniqueness
+and complete the finite-rank principal-part construction.
+`FiniteRankAnalyticJets` (6), `CompactLaurent` (1), and `VolumeLaurent` (1)
+give convergent Laurent expansions for the actual inverse modulo an analytic
+regular part, with finite-rank coefficients from a fixed finite-dimensional
+Schur factor. `ComplexVolumeReciprocity` (9) proves actual complex-frequency
+bilateral reciprocity and reciprocity of the operator derivative.
+
+`SpherePolynomial` (5), `HarmonicPolynomial` (21), and
+`FischerDecomposition` (11) prove actual polynomial differentiation,
+Euler's formula, finite Fischer decomposition, and uniform density of the
+homogeneous harmonic restrictions. `HarmonicMomentSeparation` (3) proves
+pointwise separation using the actual angular measure.
+
+`HelmholtzTestCalculus` (7), `ExteriorGreen` (11), `RadialNormTest` (8),
+and `ComplexPolarIntegration` (8) give actual spatial test derivatives,
+local integration by parts, compact annular tests, and the complex polar
+identity. `SphericalMomentEquation` (9) derives the actual weak radial
+equation from the spatial Helmholtz equation. `RadialMoment` (17),
+`RadialMomentRegularity` (4), `RadialMomentWeights` (9),
+`OneDimensionalGreen` (11), and `RadialMomentClassical` (4) establish its
+actual derivatives and classical radial flux equation. `RadialRellich` (20)
+and `RadialMomentODE` (4) prove the radial nondecay and uniqueness argument.
+
+`ScalarExteriorRellich` (3) consequently proves pointwise exterior
+vanishing from the actual positive-frequency Helmholtz equation and
+vanishing surface mass. `ComponentAngularEnergy` (9) and
+`MaxwellExteriorRellich` (5) apply this to the actual electric and magnetic
+volume fields: every homogeneous volume solution has both fields zero
+outside the material support, without a support-smallness premise.
+Interior material continuation is still required to prove global uniqueness.
+`SpatialKernelAnalytic` (12) exposes actual kernel analyticity away from
+the source; it does not assert analyticity of arbitrary PDE solutions.

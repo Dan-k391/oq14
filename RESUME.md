@@ -56,70 +56,49 @@ The coherent 1660 release passed the clean rebuild, diagnostics, PDF build,
 visual checks and packaging at one exact source commit. Work continues on
 the newer proofs listed below; these are outside the 1660 package.
 
-The next frozen registered source has 1835 exports in 152 modules / 124
-libraries. These 18 new modules passed targeted compilation and independent
-source audit. Its clean aggregate build and PDF package are pending.
+The 1835-declaration clean aggregate passed at commit
+`44ca66d9d6db10e555ae1881bdc1399aefb88100`, with clean provenance and all
+15 diagnostic groups passing. Its PDF failed on two line overflows.
+That layout is corrected in the next batch; 1835 was not packaged.
 
-The root owns registration, shared ledgers, clean builds and release packaging.
-Agents share the same directory; never delete their root build artifacts.
+The next frozen registered source has **2033 exports in 176 modules /
+148 libraries**. All 24 new modules passed targeted compilation and
+full-source audit. The key completed bridges are actual exterior scalar
+and Maxwell Rellich, actual spherical harmonic density and moment
+equations, complex volume reciprocity, and finite-rank Laurent principal
+coefficients. Its clean combined verification and package remain pending.
 
-- Root/Astra: ScalarFarField8, MaxwellFarField15 and FarFieldPower9 compiled
-  and passed independent source review. The actual electric/magnetic amplitudes,
-  transversality and radial outgoing power limit are established. AngularPower
-  compiled and passed independent review, deriving the genuine spherical
-  integral from a uniform bound. Root now owns PolarIntegration and the
-  weak-power-to-zero-total-flux bridge. Both now compile and passed independent
-  review. RadialFlux derives zero far power from actual weak conservation,
-  and AngularEnergy proves actual squared-field surface-integral limits.
-- fredholm_sol (6.1 Sol): CompactPerturbation6, CompactAlternative7,
-  VolumeFredholm7 and VolumeAlternative8 compiled and were audited. The last
-  is explicitly conditional on homogeneous volume uniqueness. ComplexGreenKernel15
-  and ComplexDynamicKernel14 also compiled and were audited. L2Parametric2,
-  ComplexKernelAnalytic18 and ComplexConvolutionAnalytic37 now prove genuine
-  Banach holomorphy, actual complex compactness and an invertible zero value.
-  HilbertFiniteRank, finite reduction, analytic determinant and connectedness
-  propagation compile. The generic meromorphic inverse and actual volume
-  discreteness/meromorphy compile or are in their final audit. Finite-rank
-  principal coefficients remain active work.
-- modal_sol (6.1 Sol): ModalPoleMode9, ModalOutgoing22, ModalPoleRadiation7
-  and ModalScaling24 compiled and passed root review. These concern actual
-  nonzero global weak fields, complex-frequency outgoing limits and prescribed
-  real frequency. ModalScaledPole30 compiled and passed root review, including
-  the physical shell measure and exact frequency-rescaling residue factor.
-  ModalMatchingNorm16 is a newer audited draft outside 1660; it proves the
-  actual finite matching derivative pairing, not the physical volume norm.
-  FiniteRankSchur and FiniteMeromorphicInverse are also compiled and audited.
-  The agent now owns RadialRellich: actual Hankel radial basis and nondecay.
-- reciprocity_sol (6.1 Sol): KernelReciprocity29 and NewtonReciprocity16
-  compiled with permitted dependencies and passed root review. The actual
-  untruncated compact-source electric response is bilinearly reciprocal.
-  L1KernelOperator18 compiled and passed root review, constructing bounded
-  linear dependence of the actual L2 convolution operator on its L1 kernel.
-  SphereMeasure3 proves actual angular open-set positivity. AngularPowerZero6
-  is a newer audited draft outside 1660. RadialPowerTest, RadialWeight,
-  HomogeneousVolumePower and ExteriorHelmholtz now compile and passed root
-  review. Actual homogeneous volume solutions have zero far amplitudes
-  without a smallness premise. Harmonic-polynomial completeness is next.
-- ExteriorSmooth9 and ExteriorClassical18 compiled and passed root review:
-  actual compact-L1-source exterior fields are smooth and obey classical
-  Maxwell and Gauss equations.
+The root/Astra owns central proof design, mathematical audits, registration,
+shared ledgers and release packaging. The user explicitly requested
+6.1 Sol subagents. Agents share the directory; never clean the root
+Lean build artifacts while they are active. Use the independent committed
+clean checkout for aggregate checks.
 
-The user explicitly requested 6.1 Sol subagents and Astra for the important
-parts. Root retains mathematical audits and shared integration. Former agents
-channels, counterexamples and hotspots hit their usage limits; their completed
-source was reviewed before reassignment. Do not resume their errored runs.
+Active work after 2033:
 
-New drafts are outside the registered count. Inspect source, reviews and
-compiler results before treating them as proved. Avoid aggregate builds
-over active drafts; use the committed clean checkout below.
+- Root: constant-coefficient continuation using actual harmonic moment
+  equations on finite radial intervals; integration and release.
+- reciprocity_sol: `AnnularMoment.lean`, genuine differentiation and
+  second continuity for fields smooth only on a finite annulus.
+- modal_sol: `RadialIntervalUniqueness.lean`, actual finite-interval radial
+  uniqueness from zero Cauchy data and the genuine Hankel Wronskian.
+- fredholm_sol: `LocalHelmholtzRepresentation.lean`, actual compact smooth
+  Helmholtz Green representation from the proved kernel Dirac identity.
 
-Further work includes arbitrary-size outgoing solvability and uniqueness,
-all-angular-order Green convergence and whole-plane flux, conical coefficients
-and Runge, rounding, finite-rank principal parts, reciprocal normalization and
-infinite-degree modal isolation. The full channel and hotspot constructions
-are not Lean theorems yet. Root is developing the genuine Cartesian radial
-test identity and annular moment equation needed for Rellich. Continue the
-task, not just checkpoint maintenance.
+The main continuation design is to propagate zero from a center
+neighborhood to an interior ball using the proved harmonic moments and
+finite-interval ODE uniqueness. This avoids assuming PDE analyticity.
+Kernel spatial analyticity alone does not prove solution analyticity;
+pinned mathlib has no general elliptic regularity or analytic integral
+API. Weak-to-smooth regularity and material-interface continuation still
+need genuine proofs.
+
+Further work includes global arbitrary-support homogeneous uniqueness
+and outgoing solvability, all-angular-order Green convergence and
+whole-plane flux, conical coefficients, Runge, rounding, physical
+reciprocal normalization and infinite-degree modal isolation. The full
+channel and hotspot constructions are not Lean theorems yet.
+Continue the task, not just checkpoint maintenance.
 
 ## Scientific scope
 

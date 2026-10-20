@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand eight hundred thirty-five exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand thirty-three exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all one hundred fifty-two registered modules, and audits all 1835
+compiler and mathlib revision, builds all one hundred seventy-six registered modules, and audits all 2033
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -664,12 +664,49 @@ constructs the actual analytic adjugate and meromorphic finite inverse.
 the actual Woodbury formula. `VolumeAnalyticAlternative` (12) applies this
 to the actual volume operator: its exceptional frequencies form a closed
 discrete set, finite in bounded sets, its inverse is meromorphic, and actual
-noninvertible values are genuine poles. Finite-rank principal Laurent
-coefficients and real-frequency homogeneous uniqueness remain further work.
+noninvertible values are genuine poles. The finite-rank Laurent coefficients
+are proved in the continuation below; global homogeneous uniqueness still
+requires interior material continuation.
 
 `ModalMatchingNorm` (16) proves the genuine derivative pairing and normalized
 rank-one residue for the finite matching pencil. This is not yet the
 reciprocal physical-volume resonance norm or full modal multiplicity.
+
+## Exterior Rellich and finite-rank Laurent coefficients
+
+A further 198 declarations in 24 modules derive actual exterior uniqueness
+and complete the finite-rank principal-part construction.
+`FiniteRankAnalyticJets` (6), `CompactLaurent` (1), and `VolumeLaurent` (1)
+give convergent Laurent expansions for the actual inverse modulo an analytic
+regular part, with finite-rank coefficients from a fixed finite-dimensional
+Schur factor. `ComplexVolumeReciprocity` (9) proves actual complex-frequency
+bilateral reciprocity and reciprocity of the operator derivative.
+
+`SpherePolynomial` (5), `HarmonicPolynomial` (21), and
+`FischerDecomposition` (11) prove actual polynomial differentiation,
+Euler's formula, finite Fischer decomposition, and uniform density of the
+homogeneous harmonic restrictions. `HarmonicMomentSeparation` (3) proves
+pointwise separation using the actual angular measure.
+
+`HelmholtzTestCalculus` (7), `ExteriorGreen` (11), `RadialNormTest` (8),
+and `ComplexPolarIntegration` (8) give actual spatial test derivatives,
+local integration by parts, compact annular tests, and the complex polar
+identity. `SphericalMomentEquation` (9) derives the actual weak radial
+equation from the spatial Helmholtz equation. `RadialMoment` (17),
+`RadialMomentRegularity` (4), `RadialMomentWeights` (9),
+`OneDimensionalGreen` (11), and `RadialMomentClassical` (4) establish its
+actual derivatives and classical radial flux equation. `RadialRellich` (20)
+and `RadialMomentODE` (4) prove the radial nondecay and uniqueness argument.
+
+`ScalarExteriorRellich` (3) consequently proves pointwise exterior
+vanishing from the actual positive-frequency Helmholtz equation and
+vanishing surface mass. `ComponentAngularEnergy` (9) and
+`MaxwellExteriorRellich` (5) apply this to the actual electric and magnetic
+volume fields: every homogeneous volume solution has both fields zero
+outside the material support, without a support-smallness premise.
+Interior material continuation is still required to prove global uniqueness.
+`SpatialKernelAnalytic` (12) exposes actual kernel analyticity away from
+the source; it does not assert analyticity of arbitrary PDE solutions.
 
 ## Explicitly outside the formalization
 
@@ -677,7 +714,7 @@ This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
 general boundary traces, arbitrary-size outgoing solvability, the conical spectrum,
-Runge approximation, rounding, finite-rank principal Laurent coefficients, or
+Runge approximation, rounding, interior material continuation, or
 the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either

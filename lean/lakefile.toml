@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole", "CompactPerturbation", "CompactAlternative", "VolumeFredholm", "VolumeAlternative", "ExteriorSmooth", "ExteriorClassical", "ScalarFarField", "MaxwellFarField", "FarFieldPower", "AngularPower", "SphereMeasure", "ComplexGreenKernel", "ComplexDynamicKernel", "L2Parametric", "ComplexKernelAnalytic", "L1KernelOperator", "ComplexConvolutionAnalytic", "KernelReciprocity", "NewtonReciprocity", "ModalPoleMode", "ModalOutgoing", "ModalPoleRadiation", "ModalScaling", "ModalScaledPole", "AngularPowerZero", "ModalMatchingNorm", "HilbertFiniteRank", "FiniteRankSchur", "FiniteDimensionalDeterminant", "LocalDichotomy", "LocalFredholmReduction", "MeromorphicOperator", "FiniteMeromorphicInverse", "AnalyticCompactInverse", "VolumeAnalyticAlternative", "PolarIntegration", "RadialPowerTest", "RadialWeight", "RadialFlux", "HomogeneousVolumePower", "AngularEnergy", "ExteriorHelmholtz"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole", "CompactPerturbation", "CompactAlternative", "VolumeFredholm", "VolumeAlternative", "ExteriorSmooth", "ExteriorClassical", "ScalarFarField", "MaxwellFarField", "FarFieldPower", "AngularPower", "SphereMeasure", "ComplexGreenKernel", "ComplexDynamicKernel", "L2Parametric", "ComplexKernelAnalytic", "L1KernelOperator", "ComplexConvolutionAnalytic", "KernelReciprocity", "NewtonReciprocity", "ModalPoleMode", "ModalOutgoing", "ModalPoleRadiation", "ModalScaling", "ModalScaledPole", "AngularPowerZero", "ModalMatchingNorm", "HilbertFiniteRank", "FiniteRankSchur", "FiniteDimensionalDeterminant", "LocalDichotomy", "LocalFredholmReduction", "MeromorphicOperator", "FiniteMeromorphicInverse", "AnalyticCompactInverse", "VolumeAnalyticAlternative", "PolarIntegration", "RadialPowerTest", "RadialWeight", "RadialFlux", "HomogeneousVolumePower", "AngularEnergy", "ExteriorHelmholtz", "FiniteRankAnalyticJets", "CompactLaurent", "VolumeLaurent", "ComplexVolumeReciprocity", "RadialRellich", "RadialMoment", "RadialMomentODE", "SpherePolynomial", "HarmonicPolynomial", "FischerDecomposition", "HelmholtzTestCalculus", "ExteriorGreen", "RadialNormTest", "ComplexPolarIntegration", "HarmonicMomentSeparation", "OneDimensionalGreen", "RadialMomentRegularity", "RadialMomentWeights", "RadialMomentClassical", "SphericalMomentEquation", "ScalarExteriorRellich", "ComponentAngularEnergy", "MaxwellExteriorRellich", "SpatialKernelAnalytic"]
 
 [[require]]
 name = "mathlib"
@@ -379,3 +379,75 @@ name = "AngularEnergy"
 
 [[lean_lib]]
 name = "ExteriorHelmholtz"
+
+[[lean_lib]]
+name = "FiniteRankAnalyticJets"
+
+[[lean_lib]]
+name = "CompactLaurent"
+
+[[lean_lib]]
+name = "VolumeLaurent"
+
+[[lean_lib]]
+name = "ComplexVolumeReciprocity"
+
+[[lean_lib]]
+name = "RadialRellich"
+
+[[lean_lib]]
+name = "RadialMoment"
+
+[[lean_lib]]
+name = "RadialMomentODE"
+
+[[lean_lib]]
+name = "SpherePolynomial"
+
+[[lean_lib]]
+name = "HarmonicPolynomial"
+
+[[lean_lib]]
+name = "FischerDecomposition"
+
+[[lean_lib]]
+name = "HelmholtzTestCalculus"
+
+[[lean_lib]]
+name = "ExteriorGreen"
+
+[[lean_lib]]
+name = "RadialNormTest"
+
+[[lean_lib]]
+name = "ComplexPolarIntegration"
+
+[[lean_lib]]
+name = "HarmonicMomentSeparation"
+
+[[lean_lib]]
+name = "OneDimensionalGreen"
+
+[[lean_lib]]
+name = "RadialMomentRegularity"
+
+[[lean_lib]]
+name = "RadialMomentWeights"
+
+[[lean_lib]]
+name = "RadialMomentClassical"
+
+[[lean_lib]]
+name = "SphericalMomentEquation"
+
+[[lean_lib]]
+name = "ScalarExteriorRellich"
+
+[[lean_lib]]
+name = "ComponentAngularEnergy"
+
+[[lean_lib]]
+name = "MaxwellExteriorRellich"
+
+[[lean_lib]]
+name = "SpatialKernelAnalytic"
