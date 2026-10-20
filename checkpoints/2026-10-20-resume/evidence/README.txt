@@ -1,0 +1,1 @@
+Proof and diagnostic evidence only; not a PDF/package release. Clean aggregate PASS 2033 at cef17ae243efd453c425ca903846e22629af1691; all 15 diagnostics PASS. PDF check failed; the layout fix has not been verified. Latest coherent package remains oq14-maxwell-foundations-1660.
