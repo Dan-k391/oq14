@@ -1,0 +1,73 @@
+SphereAxialTests.lean:25:65: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨0, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨0, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨0, ⋯⟩`
+SphereAxialTests.lean:25:65: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨1, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨1, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨1, ⋯⟩`
+SphereAxialTests.lean:25:65: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨2, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨2, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse a.1 * cos (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])),
+      transverse a.1 * sin (Matrix.vecHead (Matrix.vecTail ![a.1, a.2])), a.1]
+    ⟨2, ⋯⟩`
+SphereAxialTests.lean:46:2: error: type mismatch, term
+  HasFDerivAt.comp_hasDerivAt z (ContinuousLinearEquiv.hasFDerivAt (PiLp.continuousLinearEquiv 2 ℝ fun x => ℝ).symm) h
+after simplification has type
+  HasDerivAt
+    (fun x => (PiLp.continuousLinearEquiv 2 ℝ fun x => ℝ).symm ![transverse x * cos θ, transverse x * sin θ, x])
+    (↑(PiLp.continuousLinearEquiv 2 ℝ fun x => ℝ).symm ![-z / transverse z * cos θ, -z / transverse z * sin θ, 1])
+    z : Prop
+but is expected to have type
+  HasDerivAt
+    (fun y =>
+      !₂[![1, y, θ] 0 * transverse (![1, y, θ] 1) * cos (![1, y, θ] 2),
+        ![1, y, θ] 0 * transverse (![1, y, θ] 1) * sin (![1, y, θ] 2), ![1, y, θ] 0 * ![1, y, θ] 1])
+    !₂[-z / transverse z * cos θ, -z / transverse z * sin θ, 1] z : Prop
+SphereAxialTests.lean:76:4: error: linarith failed to find a contradiction
+case h.«0».h1.h
+z θ : ℝ
+hz : z ∈ Ioo (-1) 1
+hp : 0 < transverse z
+hs : transverse z ^ 2 = 1 - z ^ 2
+a✝ : (1 - z ^ 2) * (z * cos θ) < z * (transverse z * cos θ) * transverse z
+⊢ False failed
+SphereAxialTests.lean:78:4: error: linarith failed to find a contradiction
+case h.«1».h1.h
+z θ : ℝ
+hz : z ∈ Ioo (-1) 1
+hp : 0 < transverse z
+hs : transverse z ^ 2 = 1 - z ^ 2
+a✝ : (1 - z ^ 2) * (z * sin θ) < z * (transverse z * sin θ) * transverse z
+⊢ False failed
+SphereAxialTests.lean:70:58: error: unsolved goals
+case h.«2»
+z θ : ℝ
+hz : z ∈ Ioo (-1) 1
+hp : 0 < transverse z
+hs : transverse z ^ 2 = 1 - z ^ 2
+⊢ z ^ 2 = z * z
+SphereAxialTests.lean:117:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (600000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.

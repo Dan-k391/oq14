@@ -1,0 +1,12 @@
+AnnularMoment.lean:26:4: error: linarith failed to find a contradiction
+case refine_2.h
+R L r : ℝ
+hr : r ∈ Ioo R L
+a✝ : R ≥ r - min (r - R) (L - r) / 2
+⊢ False failed
+AnnularMoment.lean:27:4: error: linarith failed to find a contradiction
+case refine_3.h
+R L r : ℝ
+hr : r ∈ Ioo R L
+a✝ : r + min (r - R) (L - r) / 2 ≥ L
+⊢ False failed

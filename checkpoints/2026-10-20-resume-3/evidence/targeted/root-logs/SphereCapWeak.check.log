@@ -1,0 +1,113 @@
+SphereCapWeak.lean:77:59: error: application type mismatch
+  f n
+argument
+  n
+has type
+  Space : Type
+but is expected to have type
+  ↑Sphere : Type
+SphereCapWeak.lean:90:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  fun n => coefficient d t (↑n 2) * f n
+f : ↑Sphere → ℝ
+hf : Integrable f angularMeasure
+d t : ℝ
+S : Set ↑Sphere := {n | t < |↑n 2|}
+hS : MeasurableSet S
+he : (fun n => coefficient d t (↑n 2) * f n) = f + d • S.indicator f
+⊢ Integrable (fun n => coefficient d t (n 2) * f sorry) sorry
+SphereCapWeak.lean:95:71: error: application type mismatch
+  f n
+argument
+  n
+has type
+  Space : Type
+but is expected to have type
+  ↑Sphere : Type
+SphereCapWeak.lean:97:84: error: application type mismatch
+  IntegrableOn (fun n => CapSturmLiouville.slope a t (n 2)) univ angularMeasure
+argument
+  angularMeasure
+has type
+  Measure ↑Sphere : Type
+but is expected to have type
+  autoParam (Measure Space) _auto✝ : Type
+SphereCapWeak.lean:99:49: error: failed to synthesize
+  CompactSpace Space
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SphereCapWeak.lean:108:33: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (Measure.prod ?m.46696 ?m.46697).restrict (?s ×ˢ ?t)
+case hf
+f : Space → ℝ
+hf : Integrable (fun n => f ↑n) angularMeasure
+h : Integrable (fun q => f (physical ![1, q.1, q.2])) (volume.restrict (Ioo (-1) 1 ×ˢ Ioo (-π) π))
+⊢ Integrable (Function.uncurry fun x y => f (physical ![1, x, y]))
+    ((volume.restrict (Ioo (-1) 1)).prod (volume.restrict (Ioo (-π) π)))
+SphereCapWeak.lean:111:8: warning: declaration uses 'sorry'
+SphereCapWeak.lean:111:42: warning: unused variable `ha`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereCapWeak.lean:112:5: warning: unused variable `ht`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereCapWeak.lean:112:18: warning: unused variable `ht1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereCapWeak.lean:112:32: warning: unused variable `hr`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereCapWeak.lean:113:21: warning: unused variable `hψ`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereCapWeak.lean:125:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:127:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:129:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:130:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:131:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:144:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:145:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:146:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:147:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+SphereCapWeak.lean:124:2: warning: 'have hiL := coefficient_integrable _ (slope_mul_integrable a t ha ht ht1 _ cf) d t' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:125:2: warning: 'have hiR :=
+  coefficient_integrable _
+    (OQ14.ConicalAngularTrial.continuous_integrable _
+      ((profile_continuous a t ha ht ht1).mul (hψ.continuous.comp continuous_subtype_val)))
+    d t' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:127:2: warning: 'rw [integral_axial_swapped _ hiL, integral_axial_swapped _ hiR, ← integral_const_mul]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:129:2: warning: 'apply integral_congr_ae' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:130:2: warning: 'filter_upwards with θ' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:131:2: warning: 'have hl :
+  (∫ z in Ioo (-1 : ℝ) 1,
+      coefficient d t ((latitude z θ) 2) *
+        (CapSturmLiouville.slope a t ((latitude z θ) 2) *
+          fderiv ℝ ψ (latitude z θ) (basis 2 - (latitude z θ) 2 • latitude z θ))) =
+    ∫ z in (-1 : ℝ)..1, coefficient d t z * ((1 - z ^ 2) * CapSturmLiouville.slope a t z * testSlope ψ z θ) :=
+  by
+  rw [intervalIntegral.integral_of_le (show (-1 : ℝ) ≤ 1 by norm_num), integral_Ioc_eq_integral_Ioo]
+  apply setIntegral_congr_fun measurableSet_Ioo
+  intro z hz
+  simp only [latitude, physical, AxialCoordinates.map, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_two,
+    one_mul]
+  change
+    coefficient d t z * (CapSturmLiouville.slope a t z * fderiv ℝ ψ (latitude z θ) (basis 2 - z • latitude z θ)) = _
+  rw [← test_tangent_identity ψ z θ hz]
+  ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:144:2: warning: 'rw [hl, cap_latitude_weak a d t ha ht ht1 hr ψ hψ θ]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:145:2: warning: 'congr 1' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:146:2: warning: 'rw [intervalIntegral.integral_of_le (show (-1 : ℝ) ≤ 1 by norm_num), integral_Ioc_eq_integral_Ioo]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+SphereCapWeak.lean:147:2: warning: 'congr 1' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`

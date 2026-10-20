@@ -1,0 +1,16 @@
+RadialMomentRegularity.lean:20:4: error: application type mismatch
+  ContinuousAt.comp
+    (ContinuousOn.continuousAt hv (IsOpen.mem_nhds (exterior_open R) (ray_exterior R (↑z.1) hR z.1.property z.2)))
+    (Continuous.continuousAt
+      (Continuous.smul (Continuous.comp continuous_subtype_val continuous_fst)
+        (Continuous.comp continuous_subtype_val continuous_snd)))
+argument
+  Continuous.continuousAt
+    (Continuous.smul (Continuous.comp continuous_subtype_val continuous_fst)
+      (Continuous.comp continuous_subtype_val continuous_snd))
+has type
+  ContinuousAt (fun x => (Subtype.val ∘ Prod.fst) x • (Subtype.val ∘ Prod.snd) x) ?m.4903 : Prop
+but is expected to have type
+  ContinuousAt (HSMul.hSMul ↑z.1) ↑z.2 : Prop
+RadialMomentRegularity.lean:33:13: error: typeclass instance problem is stuck, it is often due to metavariables
+  SecondCountableTopologyEither ↑Sphere ?m.14947

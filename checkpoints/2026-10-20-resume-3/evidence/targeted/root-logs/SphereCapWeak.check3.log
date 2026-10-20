@@ -1,0 +1,39 @@
+SphereCapWeak.lean:142:46: error: type mismatch
+  rfl
+has type
+  ?m.20079 = ?m.20079 : Prop
+but is expected to have type
+  latitude z θ 2 = z : Prop
+SphereCapWeak.lean:143:4: error: 'change' tactic failed, pattern
+  coefficient d t z * (CapSturmLiouville.slope a t z * (fderiv ℝ ψ (latitude z θ)) (basis 2 - z • latitude z θ)) =
+    ?m.21511
+is not definitionally equal to target
+  coefficient d t (latitude z θ 2) *
+      (CapSturmLiouville.slope a t (latitude z θ 2) *
+        (fderiv ℝ ψ (latitude z θ)) (basis 2 - latitude z θ 2 • latitude z θ)) =
+    coefficient d t z * ((1 - z ^ 2) * CapSturmLiouville.slope a t z * testSlope ψ z θ)
+SphereCapWeak.lean:120:59: error: unsolved goals
+case h.h.e_a.e_f
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hr : determinant d t a = 0
+ψ : Space → ℝ
+hψ : ContDiff ℝ 1 ψ
+cx : Continuous fun n => ↑n 2
+cf : Continuous fun n => (fderiv ℝ ψ ↑n) (basis 2 - ↑n 2 • ↑n)
+hiL :
+  Integrable
+    (fun n => coefficient d t (↑n 2) * (CapSturmLiouville.slope a t (↑n 2) * (fderiv ℝ ψ ↑n) (basis 2 - ↑n 2 • ↑n)))
+    angularMeasure
+hiR : Integrable (fun n => coefficient d t (↑n 2) * (profile a t (↑n 2) * (ψ ∘ Subtype.val) n)) angularMeasure
+θ : ℝ
+hl :
+  ∫ (z : ℝ) in Ioo (-1) 1,
+      coefficient d t (latitude z θ 2) *
+        (CapSturmLiouville.slope a t (latitude z θ 2) *
+          (fderiv ℝ ψ (latitude z θ)) (basis 2 - latitude z θ 2 • latitude z θ)) =
+    ∫ (z : ℝ) in -1 ..1, coefficient d t z * ((1 - z ^ 2) * CapSturmLiouville.slope a t z * testSlope ψ z θ)
+⊢ (fun t_1 => coefficient d t t_1 * (profile a t t_1 * ψ (latitude t_1 θ))) = fun z =>
+    coefficient d t (latitude z θ 2) * (profile a t (latitude z θ 2) * ψ (latitude z θ))

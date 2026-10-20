@@ -1,0 +1,20 @@
+SphereCapWeak.lean:129:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (n : ↑Sphere), ?m.14137 ↑n ∂angularMeasure
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hr : determinant d t a = 0
+ψ : Space → ℝ
+hψ : ContDiff ℝ 1 ψ
+cx : Continuous fun n => ↑n 2
+cf : Continuous fun n => (fderiv ℝ ψ ↑n) (basis 2 - ↑n 2 • ↑n)
+hiL :
+  Integrable
+    (fun n => coefficient d t (↑n 2) * (CapSturmLiouville.slope a t (↑n 2) * (fderiv ℝ ψ ↑n) (basis 2 - ↑n 2 • ↑n)))
+    angularMeasure
+hiR : Integrable (fun n => coefficient d t (↑n 2) * (profile a t (↑n 2) * (ψ ∘ Subtype.val) n)) angularMeasure
+⊢ ∫ (n : ↑Sphere),
+      coefficient d t (↑n 2) *
+        (CapSturmLiouville.slope a t (↑n 2) * (fderiv ℝ ψ ↑n) (basis 2 - ↑n 2 • ↑n)) ∂angularMeasure =
+    a * ∫ (n : ↑Sphere), coefficient d t (↑n 2) * (profile a t (↑n 2) * ψ ↑n) ∂angularMeasure

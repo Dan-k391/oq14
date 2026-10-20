@@ -1,0 +1,37 @@
+WeakHelmholtzContinuation.lean:47:58: error: invalid field 'symm', the environment does not contain 'Filter.Eventually.symm'
+  he
+has type
+  ∀ᶠ (n : ℕ) in atTop, smooth (complexKernel (shrinkingBump n)) u x = 0
+WeakHelmholtzContinuation.lean:47:58: error: invalid field 'symm', the environment does not contain 'Membership.mem.symm'
+  he
+has type
+  {x_1 | (fun n => smooth (complexKernel (shrinkingBump n)) u x = 0) x_1} ∈ atTop
+WeakHelmholtzContinuation.lean:47:58: error: invalid field 'symm', the environment does not contain 'Membership.mem.symm'
+  he
+has type
+  {x_1 | (fun n => smooth (complexKernel (shrinkingBump n)) u x = 0) x_1} ∈ atTop.sets
+WeakHelmholtzContinuation.lean:47:58: error: invalid field 'symm', the environment does not contain 'Set.Mem.symm'
+  he
+has type
+  atTop.sets.Mem {x_1 | (fun n => smooth (complexKernel (shrinkingBump n)) u x = 0) x_1}
+WeakHelmholtzContinuation.lean:47:58: error: invalid field 'symm', the environment does not contain 'Filter.sets.symm'
+  he
+has type
+  atTop.sets {x_1 | (fun n => smooth (complexKernel (shrinkingBump n)) u x = 0) x_1}
+WeakHelmholtzContinuation.lean:47:58: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  he
+has type
+  atTop.1 {x_1 | (fun n => smooth (complexKernel (shrinkingBump n)) u x = 0) x_1}
+'OQ14.WeakHelmholtzContinuation.zero_on_ball_of_ae_zero_near' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.WeakHelmholtzContinuation.zero_on_ball_of_ae_zero_ball' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.WeakHelmholtzContinuation.weak_equation_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.WeakHelmholtzContinuation.zero_on_connected_open' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

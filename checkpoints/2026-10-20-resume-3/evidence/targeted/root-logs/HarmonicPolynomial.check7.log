@@ -1,0 +1,7 @@
+Try this: ring_nf
+HarmonicPolynomial.lean:176:2: error: type mismatch, term
+  congrArg Complex.ofReal h
+after simplification has type
+  ↑(∑ x_1, x x_1 * (eval fun i => x i) ((pderiv x_1) p)) = ↑(↑n * (eval fun i => x i) p) : Prop
+but is expected to have type
+  ↑(∑ i, x i * (eval fun i => x i) ((pderiv i) p)) = ↑n * ↑((eval fun i => x i) p) : Prop

@@ -1,0 +1,56 @@
+CapSturmLiouville.lean:277:2: error: unsolved goals
+case h
+a t z : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hz : z ∈ Ioo (-1) 1
+hl : z ≠ -t
+hr : z ≠ t
+hL : z < -t
+y : ℝ
+hy : y ∈ Iio (-t)
+⊢ -t ≤ y → (if y ≤ t then CapAngularShooting.interior a t y else CapAngularShooting.exterior a t y) = negative a t y
+CapSturmLiouville.lean:292:32: error: application type mismatch
+  not_le.mpr hy
+argument
+  hy
+has type
+  y ∈ Ioi t : Prop
+but is expected to have type
+  ?m.40221 < ?m.40220 : Prop
+CapSturmLiouville.lean:292:52: error: linarith failed to find a contradiction
+case h
+a t z : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hz : z ∈ Ioo (-1) 1
+hl : z ≠ -t
+hr : z ≠ t
+hL : ¬z < -t
+hzl : -t < z
+hR : ¬z ≤ t
+hzr : t < z
+y : ℝ
+hy : y ∈ Ioi t
+a✝ : y < -t
+⊢ False failed
+CapSturmLiouville.lean:288:4: error: unsolved goals
+case h
+a t z : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hz : z ∈ Ioo (-1) 1
+hl : z ≠ -t
+hr : z ≠ t
+hL : ¬z < -t
+hzl : -t < z
+hR : ¬z ≤ t
+hzr : t < z
+y : ℝ
+hy : y ∈ Ioi t
+⊢ (if y < -t then negative a t y
+    else if y ≤ t then CapAngularShooting.interior a t y else CapAngularShooting.exterior a t y) =
+    CapAngularShooting.exterior a t y

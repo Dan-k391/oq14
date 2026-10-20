@@ -1,0 +1,25 @@
+SphereAxialMeasure.lean:19:78: error: unsolved goals
+q : ↑angularDomain
+⊢ ![1, (↑q).1, (↑q).2] 0 = 1
+SphereAxialMeasure.lean:26:8: error: application type mismatch
+  Function.comp PiLp.continuous_equiv_symm
+argument
+  PiLp.continuous_equiv_symm
+has type
+  ∀ (p : ℝ≥0∞) {ι : Type ?u.2694} (β : ι → Type ?u.2693) [inst : (i : ι) → UniformSpace (β i)],
+    Continuous ⇑(WithLp.equiv p ((i : ι) → β i)).symm : Prop
+but is expected to have type
+  ?m.2705 → Continuous fun x => (WithLp.equiv 2 Coordinates).symm (map ![1, (↑x).1, (↑x).2]) : Prop
+SphereAxialMeasure.lean:46:14: error: unknown identifier 'measurePreserving_id'
+SphereAxialMeasure.lean:44:54: error: unsolved goals
+h1 : MeasurePreserving (⇑(MeasurableEquiv.piFinSuccAbove (fun x => ℝ) 0)) volume volume
+⊢ MeasurePreserving (⇑split) volume volume
+SphereAxialMeasure.lean:82:4: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  Ioo ?m.13637 ↑?b
+case h.e'_3
+s : Set ↑Sphere
+hs : MeasurableSet s
+r : ↑(Ioi 0) := ⟨1, ⋯⟩
+hV : MeasurableSet (⇑(homeomorphUnitSphereProd Space) ⁻¹' s ×ˢ Iio r)
+hm : MeasurableSet (Subtype.val '' (⇑(homeomorphUnitSphereProd Space) ⁻¹' s ×ˢ Iio r))
+⊢ (fun x => ↑((homeomorphUnitSphereProd Space).symm x)) '' s ×ˢ Iio r = image2 (fun a b => a • ↑b) (Ioo 0 1) s

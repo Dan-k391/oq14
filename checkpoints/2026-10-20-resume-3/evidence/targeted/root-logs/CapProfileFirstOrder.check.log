@@ -1,0 +1,23 @@
+CapProfileFirstOrder.lean:61:44: error: type mismatch, term
+  hz.right
+after simplification has type
+  z ≤ -1 ∨ z ≤ -t : Prop
+but is expected to have type
+  z ≤ -t : Prop
+CapProfileFirstOrder.lean:82:63: error: unsolved goals
+case h
+a t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+v vD : ℝ → ℝ
+hv : ContinuousOn v (Icc (-1) 1)
+hD : ∀ z ∈ Ioo (-1) 1, HasDerivAt v (vD z) z
+hi : IntervalIntegrable vD volume (-1) 1
+ir : IntervalIntegrable (rightSlope a t) volume (-1) 1
+h :
+  ∫ (x : ℝ) in -1 ..1, profile a t x * vD x =
+    profile a t 1 * v 1 - profile a t (-1) * v (-1) - ∫ (x : ℝ) in -1 ..1, rightSlope a t x * v x
+z : ℝ
+hz : rightSlope a t z = CapSturmLiouville.slope a t z
+⊢ z ∈ uIoc (-1) 1 → CapSturmLiouville.slope a t z * v z = CapSturmLiouville.slope a t z * v z

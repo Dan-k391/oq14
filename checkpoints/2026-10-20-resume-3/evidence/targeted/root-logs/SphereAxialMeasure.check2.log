@@ -1,0 +1,33 @@
+SphereAxialMeasure.lean:31:59: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨0, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨0, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨0, ⋯⟩`
+SphereAxialMeasure.lean:31:59: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨1, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨1, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨1, ⋯⟩`
+SphereAxialMeasure.lean:31:59: error: `fun_prop` was unable to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨2, ⋯⟩`
+
+Issues:
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2 ⟨2, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Continuous fun a =>
+  ![transverse (↑a).1 * Real.cos (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])),
+      transverse (↑a).1 * Real.sin (Matrix.vecHead (Matrix.vecTail ![(↑a).1, (↑a).2])), (↑a).1]
+    ⟨2, ⋯⟩`

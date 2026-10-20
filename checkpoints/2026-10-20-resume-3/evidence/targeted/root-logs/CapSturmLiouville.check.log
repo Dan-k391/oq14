@@ -1,0 +1,93 @@
+CapSturmLiouville.lean:139:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (x : ℝ) in ?m.43041..?m.43042, ?r * ?f x ∂?m.43043
+f fD fDD v vD : ℝ → ℝ
+a A B : ℝ
+hAB : A ≤ B
+hf : ∀ z ∈ Icc A B, HasDerivAt f (fD z) z
+hD : ∀ z ∈ Icc A B, HasDerivAt fD (fDD z) z
+hode : ∀ z ∈ Icc A B, (1 - z ^ 2) * fDD z - 2 * z * fD z + a * f z = 0
+hv : ∀ (z : ℝ), HasDerivAt v (vD z) z
+hc : Continuous vD
+hfc : ContinuousOn f (Icc A B)
+hDc : ContinuousOn fD (Icc A B)
+hU : ContinuousOn (fun z => (1 - z ^ 2) * fD z) (Icc A B)
+hd : ∀ z ∈ Icc A B, HasDerivAt (fun z => (1 - z ^ 2) * fD z) (-a * f z) z
+h :
+  ∫ (x : ℝ) in A..B, (1 - x ^ 2) * fD x * vD x =
+    (1 - B ^ 2) * fD B * v B - (1 - A ^ 2) * fD A * v A - ∫ (x : ℝ) in A..B, (fun z => -a * f z) x * v x
+⊢ ∫ (z : ℝ) in A..B, (1 - z ^ 2) * fD z * vD z =
+    (1 - B ^ 2) * fD B * v B - (1 - A ^ 2) * fD A * v A + a * ∫ (z : ℝ) in A..B, f z * v z
+CapSturmLiouville.lean:155:34: error: unknown identifier 'Ι'
+CapSturmLiouville.lean:156:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.26873) ∂Measure.restrict ?m.26869 (uIoc ?m.26879 ?m.26880), ?m.26871 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+⊢ g =ᶠ[ae (volume.restrict sorry)] L
+CapSturmLiouville.lean:158:34: error: unknown identifier 'Ι'
+CapSturmLiouville.lean:159:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.28381) ∂Measure.restrict ?m.28377 (uIoc ?m.28387 ?m.28388), ?m.28379 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+eL : g =ᶠ[ae (volume.restrict sorry)] L
+⊢ g =ᶠ[ae (volume.restrict sorry)] M
+CapSturmLiouville.lean:161:34: error: unknown identifier 'Ι'
+CapSturmLiouville.lean:162:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.29889) ∂Measure.restrict ?m.29885 (uIoc ?m.29895 ?m.29896), ?m.29887 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+eL : g =ᶠ[ae (volume.restrict sorry)] L
+eM : g =ᶠ[ae (volume.restrict sorry)] M
+⊢ g =ᶠ[ae (volume.restrict sorry)] R
+CapSturmLiouville.lean:151:50: error: unsolved goals
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+eL : g =ᶠ[ae (volume.restrict sorry)] L
+eM : g =ᶠ[ae (volume.restrict sorry)] M
+eR : g =ᶠ[ae (volume.restrict sorry)] R
+⊢ ∫ (z : ℝ) in -1 ..1, g z = ((∫ (z : ℝ) in -1 ..-t, L z) + ∫ (z : ℝ) in -t..t, M z) + ∫ (z : ℝ) in t..1, R z
+CapSturmLiouville.lean:201:13: error: typeclass instance problem is stuck, it is often due to metavariables
+  IsLocallyFiniteMeasure ?m.36043

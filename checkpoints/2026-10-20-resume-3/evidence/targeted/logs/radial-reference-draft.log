@@ -1,0 +1,83 @@
+Try this: ring_nf
+RadialReference.lean:45:2: error: unsolved goals
+case h.e'_9
+q σ t : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+hs : HasDerivAt (sin ∘ HMul.hMul q) (cos (q * t) * (q * 1)) t
+hc : HasDerivAt (cos ∘ HMul.hMul q) (-sin (q * t) * (q * 1)) t
+⊢ True ∨ σ = 0
+RadialReference.lean:58:25: error: function expected at
+  (solution q σ hq hσ s t).1
+term has type
+  ℂ
+Try this: ring_nf
+RadialReference.lean:64:2: error: unsolved goals
+case a
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+s : State
+t : ℝ
+ha : HasDerivAt (fun t => (matrix q σ t hq hσ).a) (σ * (matrix q σ t hq hσ).c) t
+hb : HasDerivAt (fun t => (matrix q σ t hq hσ).b) (σ * (matrix q σ t hq hσ).d) t
+hc : HasDerivAt (fun t => (matrix q σ t hq hσ).c) (-q ^ 2 / σ * (matrix q σ t hq hσ).a) t
+hd : HasDerivAt (fun t => (matrix q σ t hq hσ).d) (-q ^ 2 / σ * (matrix q σ t hq hσ).b) t
+⊢ HasDerivAt (fun t => ↑(matrix q σ t hq hσ).c * s.1 + ↑(matrix q σ t hq hσ).d * s.2) ↑(-(q ^ 2 * σ⁻¹)) * sorry ↔
+    HasDerivAt (fun x => s.1 * ↑(matrix q σ x hq hσ).c + s.2 * ↑(matrix q σ x hq hσ).d)
+      (s.1 * ↑(-(q ^ 2 * σ⁻¹)) * ↑(matrix q σ t hq hσ).a + s.2 * ↑(-(q ^ 2 * σ⁻¹)) * ↑(matrix q σ t hq hσ).b) t
+RadialReference.lean:73:43: error: unsolved goals
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+⊢ q * π * 2 = π * (2 * q)
+RadialReference.lean:87:4: error: tactic 'rfl' failed, the left-hand side
+  -q / σ * sin (q * (π / (2 * q)))
+is not definitionally equal to the right-hand side
+  -q / σ
+case intro.intro.intro.left
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+ha : (matrix q σ (π / (2 * q)) hq hσ).a = 0
+hb : (matrix q σ (π / (2 * q)) hq hσ).b = σ / q
+hc : (matrix q σ (π / (2 * q)) hq hσ).c = -q / σ
+hd : (matrix q σ (π / (2 * q)) hq hσ).d = 0
+⊢ -q / σ * sin (q * (π / (2 * q))) = -q / σ
+RadialReference.lean:89:4: error: tactic 'rfl' failed, the left-hand side
+  cos (q * (π / (2 * q)))
+is not definitionally equal to the right-hand side
+  0
+case intro.intro.intro.right.left
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+ha : (matrix q σ (π / (2 * q)) hq hσ).a = 0
+hb : (matrix q σ (π / (2 * q)) hq hσ).b = σ / q
+hc : (matrix q σ (π / (2 * q)) hq hσ).c = -q / σ
+hd : (matrix q σ (π / (2 * q)) hq hσ).d = 0
+⊢ cos (q * (π / (2 * q))) = 0
+RadialReference.lean:91:4: error: tactic 'rfl' failed, the left-hand side
+  -1 / 1 * cos (q * (π / (2 * q)))
+is not definitionally equal to the right-hand side
+  0
+case intro.intro.intro.right.right.left
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+ha : (matrix q σ (π / (2 * q)) hq hσ).a = 0
+hb : (matrix q σ (π / (2 * q)) hq hσ).b = σ / q
+hc : (matrix q σ (π / (2 * q)) hq hσ).c = -q / σ
+hd : (matrix q σ (π / (2 * q)) hq hσ).d = 0
+⊢ -1 / 1 * cos (q * (π / (2 * q))) = 0
+Try this: ring_nf
+RadialReference.lean:82:58: error: unsolved goals
+case intro.intro.intro.right.right.right
+q σ : ℝ
+hq : q ≠ 0
+hσ : σ ≠ 0
+ha : (matrix q σ (π / (2 * q)) hq hσ).a = 0
+hb : (matrix q σ (π / (2 * q)) hq hσ).b = σ / q
+hc : (matrix q σ (π / (2 * q)) hq hσ).c = -q / σ
+hd : (matrix q σ (π / (2 * q)) hq hσ).d = 0
+⊢ -(σ * q⁻¹ * sin (q * q⁻¹ * π * (1 / 2))) = -(σ * q⁻¹)

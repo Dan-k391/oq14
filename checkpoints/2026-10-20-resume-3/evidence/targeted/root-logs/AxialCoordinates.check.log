@@ -1,0 +1,69 @@
+AxialCoordinates.lean:24:42: error: unknown constant 'WithLp.toLp'
+AxialCoordinates.lean:38:6: error: unknown constant 'WithLp.toLp_apply'
+AxialCoordinates.lean:39:4: error: linarith failed to find a contradiction
+case h1.h
+p : Coordinates
+hp : p ∈ domain
+a✝ : sorry 0 ^ 2 + sorry 1 ^ 2 + sorry 2 ^ 2 < p 0 ^ 2
+⊢ False failed
+AxialCoordinates.lean:37:4: warning: declaration uses 'sorry'
+AxialCoordinates.lean:55:12: error: typeclass instance problem is stuck, it is often due to metavariables
+  Module ?m.28674 ℝ
+AxialCoordinates.lean:92:2: error: linarith failed to find a contradiction
+case h1.h
+p : Coordinates
+hp : p ∈ domain
+ht : 0 < transverse (p 1)
+hs : transverse (p 1) ^ 2 = 1 - p 1 ^ 2
+a✝ :
+  -(transverse (p 1) * cos (p 2) * (p 0 * p 1 * sin (p 2)) *
+                  vecCons
+                    (![transverse (p 1) * cos (p 2), -(p 0 * p 1 * cos (p 2)) / transverse (p 1),
+                        -(p 0 * transverse (p 1) * sin (p 2))]
+                      2)
+                    (fun i =>
+                      vecCons
+                        (![transverse (p 1) * sin (p 2), -(p 0 * p 1 * sin (p 2)) / transverse (p 1),
+                            p 0 * transverse (p 1) * cos (p 2)]
+                          2)
+                        (fun i => ![p 1, p 0, 0] 2) i)
+                    2) -
+              transverse (p 1) *
+                (transverse (p 1) * cos (p 2) *
+                    ![transverse (p 1) * sin (p 2), -(p 0 * p 1 * sin (p 2)) / transverse (p 1),
+                        p 0 * transverse (p 1) * cos (p 2)]
+                      2 *
+                  vecCons (-(p 0 * p 1 * cos (p 2)) / transverse (p 1))
+                    (fun i => vecCons (-(p 0 * p 1 * sin (p 2)) / transverse (p 1)) (fun i => p 0) i) 2) +
+            p 0 * p 1 * cos (p 2) * (transverse (p 1) * sin (p 2)) *
+              vecCons
+                (![transverse (p 1) * cos (p 2), -(p 0 * p 1 * cos (p 2)) / transverse (p 1),
+                    -(p 0 * transverse (p 1) * sin (p 2))]
+                  2)
+                (fun i =>
+                  vecCons
+                    (![transverse (p 1) * sin (p 2), -(p 0 * p 1 * sin (p 2)) / transverse (p 1),
+                        p 0 * transverse (p 1) * cos (p 2)]
+                      2)
+                    (fun i => ![p 1, p 0, 0] 2) i)
+                2 +
+          -(p 0 * p 1 * cos (p 2) *
+                ![transverse (p 1) * sin (p 2), -(p 0 * p 1 * sin (p 2)) / transverse (p 1),
+                    p 0 * transverse (p 1) * cos (p 2)]
+                  2 *
+              vecCons (transverse (p 1) * cos (p 2)) (fun i => vecCons (transverse (p 1) * sin (p 2)) (fun i => p 1) i)
+                2) +
+        ![transverse (p 1) * cos (p 2), -(p 0 * p 1 * cos (p 2)) / transverse (p 1),
+                  -(p 0 * transverse (p 1) * sin (p 2))]
+                2 *
+              (transverse (p 1) * sin (p 2)) *
+            vecCons (-(p 0 * p 1 * cos (p 2)) / transverse (p 1))
+              (fun i => vecCons (-(p 0 * p 1 * sin (p 2)) / transverse (p 1)) (fun i => p 0) i) 2 *
+          transverse (p 1) +
+      ![transverse (p 1) * cos (p 2), -(p 0 * p 1 * cos (p 2)) / transverse (p 1),
+              -(p 0 * transverse (p 1) * sin (p 2))]
+            2 *
+          (p 0 * p 1 * sin (p 2)) *
+        vecCons (transverse (p 1) * cos (p 2)) (fun i => vecCons (transverse (p 1) * sin (p 2)) (fun i => p 1) i) 2 <
+    -(p 0 ^ 2 * transverse (p 1))
+⊢ False failed

@@ -1,0 +1,8 @@
+AnnularMomentClassical.lean:27:64: error: application type mismatch
+  OneDimensionalGreen.weak_green_pointwise (Ioo R L) isOpen_Ioi
+argument
+  isOpen_Ioi
+has type
+  IsOpen (Ioi ?m.8682) : Prop
+but is expected to have type
+  IsOpen (Ioo R L) : Prop

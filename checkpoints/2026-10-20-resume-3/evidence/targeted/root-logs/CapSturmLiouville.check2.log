@@ -1,0 +1,73 @@
+Try this: ring_nf
+CapSturmLiouville.lean:120:70: error: unsolved goals
+case h.e'_3
+f fD fDD v vD : ℝ → ℝ
+a A B : ℝ
+hAB : A ≤ B
+hf : ∀ z ∈ Icc A B, HasDerivAt f (fD z) z
+hD : ∀ z ∈ Icc A B, HasDerivAt fD (fDD z) z
+hode : ∀ z ∈ Icc A B, (1 - z ^ 2) * fDD z - 2 * z * fD z + a * f z = 0
+hv : ∀ (z : ℝ), HasDerivAt v (vD z) z
+hc : Continuous vD
+hfc : ContinuousOn f (Icc A B)
+hDc : ContinuousOn fD (Icc A B)
+hU : ContinuousOn (fun z => (1 - z ^ 2) * fD z) (Icc A B)
+hd : ∀ z ∈ Icc A B, HasDerivAt (fun z => (1 - z ^ 2) * fD z) (-a * f z) z
+h :
+  ∫ (x : ℝ) in A..B, (1 - x ^ 2) * (fD x * vD x) =
+    (1 - B ^ 2) * (fD B * v B) - (1 - A ^ 2) * (fD A * v A) - -a * ∫ (x : ℝ) in A..B, f x * v x
+⊢ (1 - B ^ 2) * fD B * v B - (1 - A ^ 2) * fD A * v A + a * ∫ (z : ℝ) in A..B, f z * v z =
+    (1 - B ^ 2) * (fD B * v B) - (1 - A ^ 2) * (fD A * v A) - -a * ∫ (x : ℝ) in A..B, f x * v x
+CapSturmLiouville.lean:157:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.26907) ∂Measure.restrict ?m.26903 (uIoc ?m.26913 ?m.26914), ?m.26905 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+⊢ g =ᶠ[ae (volume.restrict (uIoc (-1) (-t)))] L
+CapSturmLiouville.lean:160:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.28402) ∂Measure.restrict ?m.28398 (uIoc ?m.28408 ?m.28409), ?m.28400 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+eL : g =ᶠ[ae (volume.restrict (uIoc (-1) (-t)))] L
+⊢ g =ᶠ[ae (volume.restrict (uIoc (-t) t))] M
+CapSturmLiouville.lean:163:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∀ᵐ (x : ?m.29881) ∂Measure.restrict ?m.29877 (uIoc ?m.29887 ?m.29888), ?m.29879 x
+g L M R : ℝ → ℝ
+t : ℝ
+ht : 0 < t
+ht1 : t < 1
+hL : IntervalIntegrable L volume (-1) (-t)
+hM : IntervalIntegrable M volume (-t) t
+hR : IntervalIntegrable R volume t 1
+heL : ∀ᵐ (z : ℝ), z ∈ Ioc (-1) (-t) → g z = L z
+heM : ∀ᵐ (z : ℝ), z ∈ Ioc (-t) t → g z = M z
+heR : ∀ᵐ (z : ℝ), z ∈ Ioc t 1 → g z = R z
+h1 : -1 ≤ -t
+h2 : -t ≤ t
+h3 : t ≤ 1
+eL : g =ᶠ[ae (volume.restrict (uIoc (-1) (-t)))] L
+eM : g =ᶠ[ae (volume.restrict (uIoc (-t) t))] M
+⊢ g =ᶠ[ae (volume.restrict (uIoc t 1))] R
+CapSturmLiouville.lean:218:22: error: unknown identifier 'ae_neq'
+CapSturmLiouville.lean:232:22: error: unknown identifier 'ae_neq'

@@ -1,0 +1,16 @@
+AxialCoordinates.lean:65:32: error: application type mismatch
+  HasDerivAt.comp_hasFDerivAt p ?m.40545 (hasFDerivAt_apply 1 p)
+argument
+  hasFDerivAt_apply 1 p
+has type
+  HasFDerivAt (fun f => f 1) (ContinuousLinearMap.proj 1) p : Prop
+but is expected to have type
+  HasFDerivAt (fun q => 1 - q 1 ^ 2) (ContinuousLinearMap.proj 1) p : Prop
+AxialCoordinates.lean:65:10: error: application type mismatch
+  HasDerivAt.comp_hasFDerivAt p hd
+argument
+  hd
+has type
+  HasDerivAt transverse (-p 1 / transverse (p 1)) (p 1) : Prop
+but is expected to have type
+  HasDerivAt sqrt (-p 1 / transverse (p 1)) (1 - p 1 ^ 2) : Prop

@@ -1,0 +1,29 @@
+Try this: ring_nf
+HarmonicPolynomial.lean:124:8: error: unsolved goals
+case C
+x : Space
+i : Fin 3
+r : ℝ
+⊢ 0 = evaluate 0 x
+HarmonicPolynomial.lean:128:22: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  fderiv ℝ (fun y => evaluate p y + evaluate q y) x
+case add
+x : Space
+i : Fin 3
+p q : MvPolynomial (Fin 3) ℝ
+hp : (fderiv ℝ (evaluate p) x) (basis i) = evaluate ((pderiv i) p) x
+hq : (fderiv ℝ (evaluate q) x) (basis i) = evaluate ((pderiv i) q) x
+hdP : DifferentiableAt ℝ (evaluate p) x
+hdQ : DifferentiableAt ℝ (evaluate q) x
+⊢ (fderiv ℝ (evaluate p + evaluate q) x) (basis i) = evaluate ((pderiv i) (p + q)) x
+HarmonicPolynomial.lean:133:22: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  fderiv ℝ (fun y => evaluate p y * evaluate (X j) y) x
+case mul_X
+x : Space
+i : Fin 3
+p : MvPolynomial (Fin 3) ℝ
+j : Fin 3
+hp : (fderiv ℝ (evaluate p) x) (basis i) = evaluate ((pderiv i) p) x
+hdP : DifferentiableAt ℝ (evaluate p) x
+hdX : DifferentiableAt ℝ (evaluate (X j)) x
+⊢ (fderiv ℝ (evaluate p * evaluate (X j)) x) (basis i) = evaluate ((pderiv i) (p * X j)) x

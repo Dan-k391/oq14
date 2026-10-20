@@ -1,0 +1,24 @@
+RadialMomentWeights.lean:35:10: error: application type mismatch
+  HasDerivAt.mul (HasDerivAt.pow (l + 2) ?m.7754)
+argument
+  HasDerivAt.pow (l + 2) ?m.7754
+has type
+  HasDerivAt (fun y => ?m.7608 y ^ (l + 2)) (↑(l + 2) * ?m.7608 ?m.7607 ^ (l + 2 - 1) * ?m.7609) ?m.7607 : Prop
+but is expected to have type
+  HasDerivAt ?m.7782 ?m.7784 r : Prop
+RadialMomentWeights.lean:43:24: error: application type mismatch
+  HasDerivAt.mul (HasDerivAt.pow (l + 2) ?m.11480) hUD
+argument
+  hUD
+has type
+  HasDerivAt UD (UDD r) r : Prop
+but is expected to have type
+  HasDerivAt ?m.11509 ?m.11511 ?m.11504 : Prop
+RadialMomentWeights.lean:49:12: error: application type mismatch
+  HasDerivAt.mul (HasDerivAt.pow (l + 1) ?m.12636)
+argument
+  HasDerivAt.pow (l + 1) ?m.12636
+has type
+  HasDerivAt (fun y => ?m.12488 y ^ (l + 1)) (↑(l + 1) * ?m.12488 ?m.12487 ^ (l + 1 - 1) * ?m.12489) ?m.12487 : Prop
+but is expected to have type
+  HasDerivAt ?m.12664 ?m.12666 r : Prop

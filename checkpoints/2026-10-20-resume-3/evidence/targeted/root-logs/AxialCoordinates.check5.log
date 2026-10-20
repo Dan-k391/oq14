@@ -1,0 +1,48 @@
+AxialCoordinates.lean:65:32: error: application type mismatch
+  HasDerivAt.comp_hasFDerivAt p ?m.40545 (hasFDerivAt_apply 1 p)
+argument
+  hasFDerivAt_apply 1 p
+has type
+  HasFDerivAt (fun f => f 1) (ContinuousLinearMap.proj 1) p : Prop
+but is expected to have type
+  HasFDerivAt (fun q => 1 - q 1 ^ 2) (ContinuousLinearMap.proj 1) p : Prop
+AxialCoordinates.lean:65:10: error: application type mismatch
+  HasDerivAt.comp_hasFDerivAt p hd
+argument
+  hd
+has type
+  HasDerivAt transverse (-p 1 / transverse (p 1)) (p 1) : Prop
+but is expected to have type
+  HasDerivAt sqrt (-p 1 / transverse (p 1)) (1 - p 1 ^ 2) : Prop
+AxialCoordinates.lean:97:4: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:98:40: error: unknown constant 'Real.polarCoord.target'
+AxialCoordinates.lean:97:72: error: unsolved goals
+p : Coordinates
+hp : p ∈ domain
+⊢ sorry = (p 0 * transverse (p 1), p 2)
+AxialCoordinates.lean:111:41: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:102:44: error: unsolved goals
+p : Coordinates
+hp : p ∈ domain
+q : Coordinates
+hq : q ∈ domain
+he : map p = map q
+hphys : physical p = physical q
+hr : p 0 = q 0
+hz0 : p 0 * p 1 = q 0 * q 1
+hz : p 1 = q 1
+hxy : (map p 0, map p 1) = (map q 0, map q 1)
+⊢ p = q
+AxialCoordinates.lean:126:11: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:124:90: error: unsolved goals
+x : Coordinates
+hy : x 1 ≠ 0
+r : ℝ := ‖(WithLp.equiv 2 Coordinates).symm x‖
+⊢ x ∈ map '' domain
+AxialCoordinates.lean:177:52: error: expected token
+AxialCoordinates.lean:200:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (derivative p).det
+f : Coordinates → ℝ
+p : Coordinates
+hp : p ∈ domain
+⊢ (fun x => |(derivative x).det| • f (map x)) p = (fun x => x 0 ^ 2 * f (map x)) p

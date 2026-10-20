@@ -1,0 +1,739 @@
+{
+  "kind": "diagnostics, not continuum certification",
+  "seed": 140014,
+  "source_commit": "bc37efda5d633e3dd3bf8b16161907d8ee5e8fba",
+  "dirty_worktree": false,
+  "script_sha256": "b4fc2164e630b188efe8f98ff2e775e0e01a7b798959108bb20a612f7581c31a",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": [
+    {
+      "name": "N=2,4,8 pair networks and weighted passive reciprocal perturbations",
+      "passed": true
+    },
+    {
+      "name": "exact pair line shape and lossless balance",
+      "passed": true,
+      "max_residual": 6.661338147750939e-16
+    },
+    {
+      "name": "corner exponent and angular transfer relation",
+      "passed": true
+    },
+    {
+      "name": "finite-frequency radial projection sign and factors",
+      "passed": true
+    },
+    {
+      "name": "3D conical Rayleigh trial and exact forced radial projection",
+      "passed": true
+    },
+    {
+      "name": "exact radial Bragg transfer and incoming-power identity",
+      "passed": true
+    },
+    {
+      "name": "local evanescent coherent flux Gram under quadrature refinement",
+      "passed": true
+    },
+    {
+      "name": "positive diagonals and zero signed bypass do not imply coherent constraints",
+      "passed": true
+    },
+    {
+      "name": "sphere TM determinant, rational coefficients and asymptotic phase",
+      "passed": true,
+      "max_relative_residual": 1.735435014755391e-13
+    },
+    {
+      "name": "simple electric dipole pole asymptotics and high-Q trend",
+      "passed": true,
+      "samples": 9
+    },
+    {
+      "name": "modal constant-lifting cancellation at exponent one",
+      "passed": true
+    },
+    {
+      "name": "actual TE/TM radial ODE refinement and finite-band gain bounds",
+      "passed": true,
+      "samples": 16
+    },
+    {
+      "name": "real-frequency dynamic dyadic kernel bound",
+      "passed": true,
+      "max_bound_ratio": 0.676048148820034
+    },
+    {
+      "name": "paired TE/TM radial identity-loop derivatives and integrated norms",
+      "passed": true,
+      "samples": 9
+    },
+    {
+      "name": "actual common-stack source Green coefficient and paired limit",
+      "passed": true,
+      "samples": 32
+    }
+  ],
+  "pair_networks": [
+    {
+      "N": 2,
+      "weakest_J": 0.01,
+      "minimum_transmission_singular_value": 1.0000000000000002,
+      "power_balance_residual": 4.440892098500626e-16,
+      "model_current_gram_residual": 2.220446049250313e-16,
+      "max_model_internal_energy": 100.00000000000001,
+      "weakest_pair_FWHM": 0.028284271247461905,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.004127216591175884,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999608224132055,
+      "full_model_unitarity_residual": 3.032802318273427e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    },
+    {
+      "N": 4,
+      "weakest_J": 0.0001,
+      "minimum_transmission_singular_value": 1.0000000000000002,
+      "power_balance_residual": 4.440892098500626e-16,
+      "model_current_gram_residual": 4.440892098500626e-16,
+      "max_model_internal_energy": 10000.0,
+      "weakest_pair_FWHM": 0.000282842712474619,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.006687607201178146,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999585355884899,
+      "full_model_unitarity_residual": 7.085293209474264e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    },
+    {
+      "N": 8,
+      "weakest_J": 1e-08,
+      "minimum_transmission_singular_value": 1.0,
+      "power_balance_residual": 8.881784197001252e-16,
+      "model_current_gram_residual": 4.440892098500626e-16,
+      "max_model_internal_energy": 100000000.0,
+      "weakest_pair_FWHM": 2.8284271247461904e-08,
+      "detuning": 0.0,
+      "perturbation_weighted_norm": 0.01,
+      "perturbed_T_error": 0.007523879624059154,
+      "error_bound": 0.010071214238830596,
+      "perturbed_min_power": 0.9999489108263374,
+      "full_model_unitarity_residual": 7.774734376396386e-16,
+      "physical_section_flux_gram": null,
+      "physical_absolute_bypass": null,
+      "Maxwell_model_reduction_error": null
+    }
+  ],
+  "corner_exponents": [
+    {
+      "eps_plus": 1.1,
+      "alpha": 0.9696733040357924,
+      "periodicity_residual": 5.315747594302368e-16
+    },
+    {
+      "eps_plus": 2.0,
+      "alpha": 0.7836531040612146,
+      "periodicity_residual": 7.134074347326007e-16
+    },
+    {
+      "eps_plus": 4.0,
+      "alpha": 0.590334470601733,
+      "periodicity_residual": 1.7084829437791018e-15
+    },
+    {
+      "eps_plus": 12.0,
+      "alpha": 0.35782475004413367,
+      "periodicity_residual": 1.0561495042945875e-15
+    }
+  ],
+  "bragg": [
+    {
+      "pairs": 0,
+      "radius": 2.743707269992269,
+      "core_amplitude_squared": 8.000000000000004,
+      "core_amplitude_squared_over_q2M": 8.000000000000004,
+      "reflection_power": 1.0000000000000004,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 2,
+      "radius": 7.456096250376959,
+      "core_amplitude_squared": 115.29189320262898,
+      "core_amplitude_squared_over_q2M": 7.2057433251643115,
+      "reflection_power": 0.9999999999999998,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 4,
+      "radius": 12.168485230761648,
+      "core_amplitude_squared": 1824.3229763418144,
+      "core_amplitude_squared_over_q2M": 7.1262616263352125,
+      "reflection_power": 0.9999999999999998,
+      "eps_upper_used": 4.265677299161778
+    },
+    {
+      "pairs": 8,
+      "radius": 21.59326319153103,
+      "core_amplitude_squared": 464888.83375191595,
+      "core_amplitude_squared_over_q2M": 7.093640651732116,
+      "reflection_power": 1.0,
+      "eps_upper_used": 4.265677299161778
+    }
+  ],
+  "local_flux_quadrature": [
+    {
+      "quadrature_points": 33,
+      "gram_error": 5.277446420287326e-16
+    },
+    {
+      "quadrature_points": 65,
+      "gram_error": 7.398899861438361e-16
+    },
+    {
+      "quadrature_points": 129,
+      "gram_error": 5.342034526201533e-16
+    }
+  ],
+  "modal_sphere_poles": [
+    {
+      "index": 1.1,
+      "radial_order": 10,
+      "real": 29.960441884747517,
+      "imag": -1.3860686592997025,
+      "Q": 10.807704828952966,
+      "root_residual": 1.746305648443034e-13,
+      "scaled_asymptotic_error": 0.2757547588022421
+    },
+    {
+      "index": 1.1,
+      "radial_order": 40,
+      "real": 115.66058574745196,
+      "imag": -1.3840211097370738,
+      "Q": 41.78425637215328,
+      "root_residual": 3.0133547267228424e-13,
+      "scaled_asymptotic_error": 0.2858115603360708
+    },
+    {
+      "index": 1.1,
+      "radial_order": 100,
+      "real": 287.02444955624213,
+      "imag": -1.3838977497647047,
+      "Q": 103.70146551833149,
+      "root_residual": 1.0400005220202851e-12,
+      "scaled_asymptotic_error": 0.2879348319572185
+    },
+    {
+      "index": 1.5,
+      "radial_order": 10,
+      "real": 21.9709226696733,
+      "imag": -0.5378972992426427,
+      "Q": 20.42297172769623,
+      "root_residual": 1.8839228570392733e-14,
+      "scaled_asymptotic_error": 0.20275550833025083
+    },
+    {
+      "index": 1.5,
+      "radial_order": 40,
+      "real": 84.8177617014485,
+      "imag": -0.5365742419964119,
+      "Q": 79.03637098369668,
+      "root_residual": 3.2307490016592055e-14,
+      "scaled_asymptotic_error": 0.2096322180817244
+    },
+    {
+      "index": 1.5,
+      "radial_order": 100,
+      "real": 210.48459626404258,
+      "imag": -0.5364947181226394,
+      "Q": 196.16651306521075,
+      "root_residual": 1.9912642284091816e-13,
+      "scaled_asymptotic_error": 0.21115827332221965
+    },
+    {
+      "index": 2.0,
+      "radial_order": 10,
+      "real": 16.47815950077393,
+      "imag": -0.27583017438226165,
+      "Q": 29.870117614357756,
+      "root_residual": 1.8478815134306613e-14,
+      "scaled_asymptotic_error": 0.15247434628675707
+    },
+    {
+      "index": 2.0,
+      "radial_order": 40,
+      "real": 63.61332071433603,
+      "imag": -0.2747318352770953,
+      "Q": 115.7734789821053,
+      "root_residual": 8.740417618113925e-15,
+      "scaled_asymptotic_error": 0.1572523975628014
+    },
+    {
+      "index": 2.0,
+      "radial_order": 100,
+      "real": 157.86344716128716,
+      "imag": -0.27466585958804457,
+      "Q": 287.3736244432734,
+      "root_residual": 1.3264193008667687e-14,
+      "scaled_asymptotic_error": 0.15837332250626937
+    }
+  ],
+  "growing_radial_stacks": [
+    {
+      "periods": 1,
+      "order": 1,
+      "polarization": "TE",
+      "inner_radius": 21419.37871217521,
+      "state_error": 6.536137165492583e-05,
+      "step_refinement_error": 4.174923965690899e-11,
+      "scaled_incoming_coefficient": 0.5000000015485566
+    },
+    {
+      "periods": 1,
+      "order": 1,
+      "polarization": "TM",
+      "inner_radius": 21419.37871217521,
+      "state_error": 3.334763816482058e-05,
+      "step_refinement_error": 2.9821044145420577e-11,
+      "scaled_incoming_coefficient": 0.49999999852942306
+    },
+    {
+      "periods": 1,
+      "order": 2,
+      "polarization": "TE",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.0001000345320154109,
+      "step_refinement_error": 2.982287988855082e-11,
+      "scaled_incoming_coefficient": 0.49999999744006884
+    },
+    {
+      "periods": 1,
+      "order": 2,
+      "polarization": "TM",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.00019607103477019153,
+      "step_refinement_error": 4.17495453366049e-11,
+      "scaled_incoming_coefficient": 0.5000000160689763
+    },
+    {
+      "periods": 1,
+      "order": 3,
+      "polarization": "TE",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.0003921355332132222,
+      "step_refinement_error": 4.174765134169183e-11,
+      "scaled_incoming_coefficient": 0.5000000530664267
+    },
+    {
+      "periods": 1,
+      "order": 3,
+      "polarization": "TM",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.00020006487980522744,
+      "step_refinement_error": 2.9821251607439506e-11,
+      "scaled_incoming_coefficient": 0.49999998175585986
+    },
+    {
+      "periods": 1,
+      "order": 4,
+      "polarization": "TE",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.0003334386894785022,
+      "step_refinement_error": 2.98218554088626e-11,
+      "scaled_incoming_coefficient": 0.4999999645029452
+    },
+    {
+      "periods": 1,
+      "order": 4,
+      "polarization": "TM",
+      "inner_radius": 21419.37871217521,
+      "state_error": 0.0006535548557491724,
+      "step_refinement_error": 4.1746837828098816e-11,
+      "scaled_incoming_coefficient": 0.5000001606874148
+    },
+    {
+      "periods": 3,
+      "order": 1,
+      "polarization": "TE",
+      "inner_radius": 82284.59478282386,
+      "state_error": 3.334765922756946e-05,
+      "step_refinement_error": 1.4487360596021265e-10,
+      "scaled_incoming_coefficient": 0.5000000020564104
+    },
+    {
+      "periods": 3,
+      "order": 1,
+      "polarization": "TM",
+      "inner_radius": 82284.59478282386,
+      "state_error": 4.428907456604663e-06,
+      "step_refinement_error": 1.0349357845145982e-10,
+      "scaled_incoming_coefficient": 0.49999999974671644
+    },
+    {
+      "periods": 3,
+      "order": 2,
+      "polarization": "TE",
+      "inner_radius": 82284.59478282386,
+      "state_error": 1.3284765307442204e-05,
+      "step_refinement_error": 1.0348996152725653e-10,
+      "scaled_incoming_coefficient": 0.4999999998905485
+    },
+    {
+      "periods": 3,
+      "order": 2,
+      "polarization": "TM",
+      "inner_radius": 82284.59478282386,
+      "state_error": 0.00010003992844806564,
+      "step_refinement_error": 1.4487342450631942e-10,
+      "scaled_incoming_coefficient": 0.5000000189406474
+    },
+    {
+      "periods": 3,
+      "order": 3,
+      "polarization": "TE",
+      "inner_radius": 82284.59478282386,
+      "state_error": 0.00020007837584563566,
+      "step_refinement_error": 1.4487241053992477e-10,
+      "scaled_incoming_coefficient": 0.5000000734831086
+    },
+    {
+      "periods": 3,
+      "order": 3,
+      "polarization": "TM",
+      "inner_radius": 82284.59478282386,
+      "state_error": 2.6568559930301313e-05,
+      "step_refinement_error": 1.0349330086169399e-10,
+      "scaled_incoming_coefficient": 0.4999999979347969
+    },
+    {
+      "periods": 3,
+      "order": 4,
+      "polarization": "TE",
+      "inner_radius": 82284.59478282386,
+      "state_error": 4.428027790523379e-05,
+      "step_refinement_error": 1.0349210004324653e-10,
+      "scaled_incoming_coefficient": 0.49999999734951733
+    },
+    {
+      "periods": 3,
+      "order": 4,
+      "polarization": "TM",
+      "inner_radius": 82284.59478282386,
+      "state_error": 0.00033346292024610813,
+      "step_refinement_error": 1.4487530163435702e-10,
+      "scaled_incoming_coefficient": 0.5000002068189437
+    }
+  ],
+  "radial_control_loops": [
+    {
+      "index": 1.2,
+      "pairs_per_half": 1,
+      "angular_derivative_relative_error": 2.914720145638435e-16,
+      "integrated_norm_relative_error": 2.7034102645782815e-16,
+      "tm_angular_derivative_relative_error": 6.670601376453694e-17,
+      "tm_integrated_norm_relative_error": 1.3517051322891408e-16
+    },
+    {
+      "index": 1.2,
+      "pairs_per_half": 2,
+      "angular_derivative_relative_error": 1.8334047254817934e-16,
+      "integrated_norm_relative_error": 1.3558166602985074e-15,
+      "tm_angular_derivative_relative_error": 1.8330299349651704e-16,
+      "tm_integrated_norm_relative_error": 1.3558166602985074e-15
+    },
+    {
+      "index": 1.2,
+      "pairs_per_half": 5,
+      "angular_derivative_relative_error": 6.589064437033999e-16,
+      "integrated_norm_relative_error": 2.9226652922297427e-16,
+      "tm_angular_derivative_relative_error": 4.942143126314092e-16,
+      "tm_integrated_norm_relative_error": 2.9226652922297427e-16
+    },
+    {
+      "index": 1.4,
+      "pairs_per_half": 1,
+      "angular_derivative_relative_error": 4.3171394404211996e-17,
+      "integrated_norm_relative_error": 4.0527516222067775e-16,
+      "tm_angular_derivative_relative_error": 1.7138446246237456e-16,
+      "tm_integrated_norm_relative_error": 1.3509172074022593e-16
+    },
+    {
+      "index": 1.4,
+      "pairs_per_half": 2,
+      "angular_derivative_relative_error": 9.928830884258883e-17,
+      "integrated_norm_relative_error": 1.145366089277193e-16,
+      "tm_angular_derivative_relative_error": 2.6455284854334034e-16,
+      "tm_integrated_norm_relative_error": 3.4360982678315786e-16
+    },
+    {
+      "index": 1.4,
+      "pairs_per_half": 5,
+      "angular_derivative_relative_error": 2.3070338041983287e-16,
+      "integrated_norm_relative_error": 1.1287056997666832e-16,
+      "tm_angular_derivative_relative_error": 4.614090193663985e-16,
+      "tm_integrated_norm_relative_error": 1.1287056997666832e-16
+    },
+    {
+      "index": 2.1,
+      "pairs_per_half": 1,
+      "angular_derivative_relative_error": 2.0482434583642384e-16,
+      "integrated_norm_relative_error": 3.8612198087401153e-16,
+      "tm_angular_derivative_relative_error": 1.0283431552567188e-16,
+      "tm_integrated_norm_relative_error": 1.9306099043700576e-16
+    },
+    {
+      "index": 2.1,
+      "pairs_per_half": 2,
+      "angular_derivative_relative_error": 6.68394537382091e-16,
+      "integrated_norm_relative_error": 3.2919943118212425e-16,
+      "tm_angular_derivative_relative_error": 8.354876633955721e-16,
+      "tm_integrated_norm_relative_error": 4.937991467731864e-16
+    },
+    {
+      "index": 2.1,
+      "pairs_per_half": 5,
+      "angular_derivative_relative_error": 1.2116763770924295e-16,
+      "integrated_norm_relative_error": 4.8458214982743e-16,
+      "tm_angular_derivative_relative_error": 1.2116754762329332e-16,
+      "tm_integrated_norm_relative_error": 0.0
+    }
+  ],
+  "common_stack_green_limits": [
+    {
+      "pairs": 2,
+      "order": 1,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.0005880102372297616
+    },
+    {
+      "pairs": 2,
+      "order": 1,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.00014711831315679586
+    },
+    {
+      "pairs": 2,
+      "order": 1,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.0022588893238001716
+    },
+    {
+      "pairs": 2,
+      "order": 1,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0005651695426122263
+    },
+    {
+      "pairs": 2,
+      "order": 2,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.0067764554952623275
+    },
+    {
+      "pairs": 2,
+      "order": 2,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0016955054307753103
+    },
+    {
+      "pairs": 2,
+      "order": 2,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.0017640354033330726
+    },
+    {
+      "pairs": 2,
+      "order": 2,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0004413550469948238
+    },
+    {
+      "pairs": 2,
+      "order": 5,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.008820551850420907
+    },
+    {
+      "pairs": 2,
+      "order": 5,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0022067811727125674
+    },
+    {
+      "pairs": 2,
+      "order": 5,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.033849021131495766
+    },
+    {
+      "pairs": 2,
+      "order": 5,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.008477005777953127
+    },
+    {
+      "pairs": 2,
+      "order": 6,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.04734543681527263
+    },
+    {
+      "pairs": 2,
+      "order": 6,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.011867128839040685
+    },
+    {
+      "pairs": 2,
+      "order": 6,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.012349260847430087
+    },
+    {
+      "pairs": 2,
+      "order": 6,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0030895012959314214
+    },
+    {
+      "pairs": 4,
+      "order": 1,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.000740471876713575
+    },
+    {
+      "pairs": 4,
+      "order": 1,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0001853765606034781
+    },
+    {
+      "pairs": 4,
+      "order": 1,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.010927038958557712
+    },
+    {
+      "pairs": 4,
+      "order": 1,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0027357550049155396
+    },
+    {
+      "pairs": 4,
+      "order": 2,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.03276346216816647
+    },
+    {
+      "pairs": 4,
+      "order": 2,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.008206988813075277
+    },
+    {
+      "pairs": 4,
+      "order": 2,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.00222142259965533
+    },
+    {
+      "pairs": 4,
+      "order": 2,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0005561298634214094
+    },
+    {
+      "pairs": 4,
+      "order": 5,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.011107616666669597
+    },
+    {
+      "pairs": 4,
+      "order": 5,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0027806573602948245
+    },
+    {
+      "pairs": 4,
+      "order": 5,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.1614424333681687
+    },
+    {
+      "pairs": 4,
+      "order": 5,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.04099684436905574
+    },
+    {
+      "pairs": 4,
+      "order": 6,
+      "polarization": "TE",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.2228625388191694
+    },
+    {
+      "pairs": 4,
+      "order": 6,
+      "polarization": "TE",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.05734285645897359
+    },
+    {
+      "pairs": 4,
+      "order": 6,
+      "polarization": "TM",
+      "radius": 1256.6370614359173,
+      "relative_reaction_error": 0.015551387470206296
+    },
+    {
+      "pairs": 4,
+      "order": 6,
+      "polarization": "TM",
+      "radius": 5026.548245743669,
+      "relative_reaction_error": 0.0038929316878254143
+    }
+  ],
+  "limitations": [
+    "No physical N-channel family was synthesized.",
+    "Physical section Gram, bypass, finite-device and model-reduction errors are unavailable, not zero.",
+    "No full hotspot scattering discretization was run; Lean results are recorded separately.",
+    "Floating-point identities corroborate handwritten proofs and are not certified error bounds."
+  ]
+}

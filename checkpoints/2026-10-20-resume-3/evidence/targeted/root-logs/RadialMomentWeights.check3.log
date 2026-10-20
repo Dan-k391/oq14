@@ -1,0 +1,16 @@
+Try this: ring_nf
+RadialMomentWeights.lean:44:73: error: unsolved goals
+case h.e'_9
+l : ℕ
+U UD UDD : ℝ → ℂ
+r : ℝ
+hU : HasDerivAt U (UD r) r
+hUD : HasDerivAt UD (UDD r) r
+⊢ ↑l * ↑r * ↑r ^ l * UD r * 2 + ↑l * ↑r ^ l * U r * 3 + ↑l ^ 2 * ↑r ^ l * U r + ↑r * ↑r ^ l * UD r * 4 +
+        ↑r ^ 2 * ↑r ^ l * UDD r +
+      ↑r ^ l * U r * 2 =
+    ↑l * ↑r * ↑r ^ l * UD r + ↑l * ↑r ^ l * U r * 3 + ↑l * ↑r ^ (2 + l - 1) * UD r + ↑l ^ 2 * ↑r ^ l * U r +
+            ↑r * ↑r ^ l * UD r * 2 +
+          ↑r ^ 2 * ↑r ^ l * UDD r +
+        ↑r ^ l * U r * 2 +
+      ↑r ^ (2 + l - 1) * UD r * 2

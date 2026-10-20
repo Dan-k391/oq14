@@ -1,0 +1,32 @@
+AxialCoordinates.lean:98:4: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:99:40: error: unknown constant 'Real.polarCoord.target'
+AxialCoordinates.lean:98:72: error: unsolved goals
+p : Coordinates
+hp : p ∈ domain
+⊢ sorry = (p 0 * transverse (p 1), p 2)
+AxialCoordinates.lean:112:41: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:103:44: error: unsolved goals
+p : Coordinates
+hp : p ∈ domain
+q : Coordinates
+hq : q ∈ domain
+he : map p = map q
+hphys : physical p = physical q
+hr : p 0 = q 0
+hz0 : p 0 * p 1 = q 0 * q 1
+hz : p 1 = q 1
+hxy : (map p 0, map p 1) = (map q 0, map q 1)
+⊢ p = q
+AxialCoordinates.lean:127:11: error: unknown constant 'Real.polarCoord'
+AxialCoordinates.lean:125:90: error: unsolved goals
+x : Coordinates
+hy : x 1 ≠ 0
+r : ℝ := ‖(WithLp.equiv 2 Coordinates).symm x‖
+⊢ x ∈ map '' domain
+AxialCoordinates.lean:178:52: error: expected token
+AxialCoordinates.lean:201:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (derivative p).det
+f : Coordinates → ℝ
+p : Coordinates
+hp : p ∈ domain
+⊢ (fun x => |(derivative x).det| • f (map x)) p = (fun x => x 0 ^ 2 * f (map x)) p

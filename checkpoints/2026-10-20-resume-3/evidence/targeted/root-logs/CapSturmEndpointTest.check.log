@@ -1,0 +1,171 @@
+CapSturmEndpointTest.lean:66:98: error: application type mismatch
+  ContinuousOn.mul (Continuous.continuousOn (Continuous.sub continuous_const (Continuous.pow continuous_id 2))) cLD
+argument
+  cLD
+has type
+  ContinuousOn (negativeD a t) (Icc (-1) (-t)) : Prop
+but is expected to have type
+  ContinuousOn ?m.67148 (uIcc (-1) (-t)) : Prop
+CapSturmEndpointTest.lean:73:35: error: unsolved goals
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hroot : determinant d t a = 0
+v vD : ℝ → ℝ
+hv : ∀ z ∈ Ioo (-1) 1, HasDerivAt v (vD z) z
+hvc : ContinuousOn v (Icc (-1) 1)
+hvi : IntervalIntegrable vD volume (-1) 1
+hL : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negative a t) (negativeD a t z) z
+hLD : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negativeD a t) (negativeDD a t z) z
+hM : ∀ z ∈ Icc (-t) t, HasDerivAt (CapAngularShooting.interior a t) (interiorD a t z) z
+hMD : ∀ z ∈ Icc (-t) t, HasDerivAt (interiorD a t) (interiorDD a t z) z
+hR : ∀ z ∈ Icc t 1, HasDerivAt (CapAngularShooting.exterior a t) (exteriorD a t z) z
+hRD : ∀ z ∈ Icc t 1, HasDerivAt (exteriorD a t) (exteriorDD a t z) z
+sL : Icc (-1) (-t) ⊆ Icc (-1) 1
+sM : Icc (-t) t ⊆ Icc (-1) 1
+sR : Icc t 1 ⊆ Icc (-1) 1
+iL : IntervalIntegrable vD volume (-1) (-t)
+iM : IntervalIntegrable vD volume (-t) t
+iR : IntervalIntegrable vD volume t 1
+cL : ContinuousOn (negative a t) (Icc (-1) (-t))
+cLD : ContinuousOn (negativeD a t) (Icc (-1) (-t))
+cM : ContinuousOn (CapAngularShooting.interior a t) (Icc (-t) t)
+cMD : ContinuousOn (interiorD a t) (Icc (-t) t)
+cR : ContinuousOn (CapAngularShooting.exterior a t) (Icc t 1)
+cRD : ContinuousOn (exteriorD a t) (Icc t 1)
+eL : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * negativeD a t z * vD z)) volume (-1) (-t)
+eM : IntervalIntegrable (fun z => (1 - z ^ 2) * interiorD a t z * vD z) volume (-t) t
+h✝ : ContinuousOn (fun x => (?m.71565 - id x ^ 2) * exteriorD a t x) (Icc t 1)
+⊢ ContinuousOn (fun x => (?m.71565 - id x ^ 2) * exteriorD a t x) (Icc t 1)
+CapSturmEndpointTest.lean:90:43: error: ambiguous, possible interpretations 
+  _root_.slope : (?m.86774 → ?m.86777) → ?m.86774 → ?m.86774 → ?m.86776
+  
+  CapSturmLiouville.slope : ℝ → ℝ → ℝ → ℝ
+CapSturmEndpointTest.lean:86:71: error: unsolved goals
+case h
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hroot : determinant d t a = 0
+v vD : ℝ → ℝ
+hv : ∀ z ∈ Ioo (-1) 1, HasDerivAt v (vD z) z
+hvc : ContinuousOn v (Icc (-1) 1)
+hvi : IntervalIntegrable vD volume (-1) 1
+hL : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negative a t) (negativeD a t z) z
+hLD : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negativeD a t) (negativeDD a t z) z
+hM : ∀ z ∈ Icc (-t) t, HasDerivAt (CapAngularShooting.interior a t) (interiorD a t z) z
+hMD : ∀ z ∈ Icc (-t) t, HasDerivAt (interiorD a t) (interiorDD a t z) z
+hR : ∀ z ∈ Icc t 1, HasDerivAt (CapAngularShooting.exterior a t) (exteriorD a t z) z
+hRD : ∀ z ∈ Icc t 1, HasDerivAt (exteriorD a t) (exteriorDD a t z) z
+sL : Icc (-1) (-t) ⊆ Icc (-1) 1
+sM : Icc (-t) t ⊆ Icc (-1) 1
+sR : Icc t 1 ⊆ Icc (-1) 1
+iL : IntervalIntegrable vD volume (-1) (-t)
+iM : IntervalIntegrable vD volume (-t) t
+iR : IntervalIntegrable vD volume t 1
+cL : ContinuousOn (negative a t) (Icc (-1) (-t))
+cLD : ContinuousOn (negativeD a t) (Icc (-1) (-t))
+cM : ContinuousOn (CapAngularShooting.interior a t) (Icc (-t) t)
+cMD : ContinuousOn (interiorD a t) (Icc (-t) t)
+cR : ContinuousOn (CapAngularShooting.exterior a t) (Icc t 1)
+cRD : ContinuousOn (exteriorD a t) (Icc t 1)
+eL : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * negativeD a t z * vD z)) volume (-1) (-t)
+eM : IntervalIntegrable (fun z => (1 - z ^ 2) * interiorD a t z * vD z) volume (-t) t
+eR : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * exteriorD a t z * vD z)) volume t 1
+mL : IntervalIntegrable (fun z => (1 + d) * (negative a t z * v z)) volume (-1) (-t)
+mM : IntervalIntegrable (fun z => CapAngularShooting.interior a t z * v z) volume (-t) t
+mR : IntervalIntegrable (fun z => (1 + d) * (CapAngularShooting.exterior a t z * v z)) volume t 1
+hne : ∀ᵐ (z : ℝ), z ≠ -t
+z : ℝ
+hzne : z ≠ -t
+hz : z ∈ Ioc (-1) (-t)
+hzt : z < -t
+⊢ ((CapSturmLiouville.slope a t z = negativeD a t z ∨ 1 - z ^ 2 = 0) ∨ vD z = 0) ∨ 1 + d = 0
+CapSturmEndpointTest.lean:93:53: error: ambiguous, possible interpretations 
+  _root_.slope : (?m.91149 → ?m.91152) → ?m.91149 → ?m.91149 → ?m.91151
+  
+  CapSturmLiouville.slope : ℝ → ℝ → ℝ → ℝ
+CapSturmEndpointTest.lean:90:57: error: unsolved goals
+case h
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hroot : determinant d t a = 0
+v vD : ℝ → ℝ
+hv : ∀ z ∈ Ioo (-1) 1, HasDerivAt v (vD z) z
+hvc : ContinuousOn v (Icc (-1) 1)
+hvi : IntervalIntegrable vD volume (-1) 1
+hL : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negative a t) (negativeD a t z) z
+hLD : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negativeD a t) (negativeDD a t z) z
+hM : ∀ z ∈ Icc (-t) t, HasDerivAt (CapAngularShooting.interior a t) (interiorD a t z) z
+hMD : ∀ z ∈ Icc (-t) t, HasDerivAt (interiorD a t) (interiorDD a t z) z
+hR : ∀ z ∈ Icc t 1, HasDerivAt (CapAngularShooting.exterior a t) (exteriorD a t z) z
+hRD : ∀ z ∈ Icc t 1, HasDerivAt (exteriorD a t) (exteriorDD a t z) z
+sL : Icc (-1) (-t) ⊆ Icc (-1) 1
+sM : Icc (-t) t ⊆ Icc (-1) 1
+sR : Icc t 1 ⊆ Icc (-1) 1
+iL : IntervalIntegrable vD volume (-1) (-t)
+iM : IntervalIntegrable vD volume (-t) t
+iR : IntervalIntegrable vD volume t 1
+cL : ContinuousOn (negative a t) (Icc (-1) (-t))
+cLD : ContinuousOn (negativeD a t) (Icc (-1) (-t))
+cM : ContinuousOn (CapAngularShooting.interior a t) (Icc (-t) t)
+cMD : ContinuousOn (interiorD a t) (Icc (-t) t)
+cR : ContinuousOn (CapAngularShooting.exterior a t) (Icc t 1)
+cRD : ContinuousOn (exteriorD a t) (Icc t 1)
+eL : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * negativeD a t z * vD z)) volume (-1) (-t)
+eM : IntervalIntegrable (fun z => (1 - z ^ 2) * interiorD a t z * vD z) volume (-t) t
+eR : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * exteriorD a t z * vD z)) volume t 1
+mL : IntervalIntegrable (fun z => (1 + d) * (negative a t z * v z)) volume (-1) (-t)
+mM : IntervalIntegrable (fun z => CapAngularShooting.interior a t z * v z) volume (-t) t
+mR : IntervalIntegrable (fun z => (1 + d) * (CapAngularShooting.exterior a t z * v z)) volume t 1
+hne : ∀ᵐ (z : ℝ), z ≠ -t
+z : ℝ
+hz : z ∈ Ioc (-t) t
+⊢ (CapSturmLiouville.slope a t z = interiorD a t z ∨ 1 - z ^ 2 = 0) ∨ vD z = 0
+CapSturmEndpointTest.lean:96:45: error: ambiguous, possible interpretations 
+  _root_.slope : (?m.94922 → ?m.94925) → ?m.94922 → ?m.94922 → ?m.94924
+  
+  CapSturmLiouville.slope : ℝ → ℝ → ℝ → ℝ
+CapSturmEndpointTest.lean:93:88: error: unsolved goals
+case h
+a d t : ℝ
+ha : a ∈ Icc 0 2
+ht : 0 < t
+ht1 : t < 1
+hroot : determinant d t a = 0
+v vD : ℝ → ℝ
+hv : ∀ z ∈ Ioo (-1) 1, HasDerivAt v (vD z) z
+hvc : ContinuousOn v (Icc (-1) 1)
+hvi : IntervalIntegrable vD volume (-1) 1
+hL : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negative a t) (negativeD a t z) z
+hLD : ∀ z ∈ Icc (-1) (-t), HasDerivAt (negativeD a t) (negativeDD a t z) z
+hM : ∀ z ∈ Icc (-t) t, HasDerivAt (CapAngularShooting.interior a t) (interiorD a t z) z
+hMD : ∀ z ∈ Icc (-t) t, HasDerivAt (interiorD a t) (interiorDD a t z) z
+hR : ∀ z ∈ Icc t 1, HasDerivAt (CapAngularShooting.exterior a t) (exteriorD a t z) z
+hRD : ∀ z ∈ Icc t 1, HasDerivAt (exteriorD a t) (exteriorDD a t z) z
+sL : Icc (-1) (-t) ⊆ Icc (-1) 1
+sM : Icc (-t) t ⊆ Icc (-1) 1
+sR : Icc t 1 ⊆ Icc (-1) 1
+iL : IntervalIntegrable vD volume (-1) (-t)
+iM : IntervalIntegrable vD volume (-t) t
+iR : IntervalIntegrable vD volume t 1
+cL : ContinuousOn (negative a t) (Icc (-1) (-t))
+cLD : ContinuousOn (negativeD a t) (Icc (-1) (-t))
+cM : ContinuousOn (CapAngularShooting.interior a t) (Icc (-t) t)
+cMD : ContinuousOn (interiorD a t) (Icc (-t) t)
+cR : ContinuousOn (CapAngularShooting.exterior a t) (Icc t 1)
+cRD : ContinuousOn (exteriorD a t) (Icc t 1)
+eL : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * negativeD a t z * vD z)) volume (-1) (-t)
+eM : IntervalIntegrable (fun z => (1 - z ^ 2) * interiorD a t z * vD z) volume (-t) t
+eR : IntervalIntegrable (fun z => (1 + d) * ((1 - z ^ 2) * exteriorD a t z * vD z)) volume t 1
+mL : IntervalIntegrable (fun z => (1 + d) * (negative a t z * v z)) volume (-1) (-t)
+mM : IntervalIntegrable (fun z => CapAngularShooting.interior a t z * v z) volume (-t) t
+mR : IntervalIntegrable (fun z => (1 + d) * (CapAngularShooting.exterior a t z * v z)) volume t 1
+hne : ∀ᵐ (z : ℝ), z ≠ -t
+z : ℝ
+hz : z ∈ Ioc t 1
+⊢ ((CapSturmLiouville.slope a t z = exteriorD a t z ∨ 1 - z ^ 2 = 0) ∨ vD z = 0) ∨ 1 + d = 0

@@ -1,0 +1,33 @@
+AxialCoordinates.lean:97:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+AxialCoordinates.lean:103:8: error: (kernel) unknown constant 'OQ14.AxialCoordinates.recover_polar'
+AxialCoordinates.lean:141:30: error: linarith failed to find a contradiction
+case h
+x : Coordinates
+hy : x 1 ≠ 0
+r : ℝ := ‖(WithLp.equiv 2 Coordinates).symm x‖
+c : ℝ × ℝ := ↑polarCoord (x 0, x 1)
+hsrc : (x 0, x 1) ∈ polarCoord.source
+hc : c ∈ polarCoord.target
+hrec : (c.1 * cos c.2, c.1 * sin c.2) = (x 0, x 1)
+hrsq : r ^ 2 = x 0 ^ 2 + x 1 ^ 2 + x 2 ^ 2
+hcsq : c.1 ^ 2 = x 0 ^ 2 + x 1 ^ 2
+hr : 0 < r
+a✝ : |x 2| ≥ r
+⊢ False failed
+AxialCoordinates.lean:147:16: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  transverse (x 2 / r) ^ 2
+x : Coordinates
+hy : x 1 ≠ 0
+r : ℝ := ‖(WithLp.equiv 2 Coordinates).symm x‖
+c : ℝ × ℝ := ↑polarCoord (x 0, x 1)
+hsrc : (x 0, x 1) ∈ polarCoord.source
+hc : c ∈ polarCoord.target
+hrec : (c.1 * cos c.2, c.1 * sin c.2) = (x 0, x 1)
+hrsq : r ^ 2 = x 0 ^ 2 + x 1 ^ 2 + x 2 ^ 2
+hcsq : c.1 ^ 2 = x 0 ^ 2 + x 1 ^ 2
+hr : 0 < r
+hz : x 2 / r ∈ Ioo (-1) 1
+⊢ r ^ 2 * √(1 - (x 2 / r) ^ 2) ^ 2 = c.1 ^ 2

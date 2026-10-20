@@ -1,0 +1,7 @@
+FischerDecomposition.lean:133:16: error: unknown identifier 'weight_apply'
+FischerDecomposition.lean:133:4: error: type mismatch, term
+  hp (Finsupp.mem_support_iff.mp hd)
+after simplification has type
+  (Finsupp.weight 1) d = l : Prop
+but is expected to have type
+  ∑ i ∈ d.support, d i = l : Prop

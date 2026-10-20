@@ -1,0 +1,8 @@
+SphereAxialTests.lean:82:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+SphereAxialTests.lean:84:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+SphereAxialTests.lean:127:4: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (600000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.

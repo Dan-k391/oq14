@@ -1,0 +1,17 @@
+RadialMomentWeights.lean:35:2: error: type mismatch, term
+  hd
+after simplification has type
+  HasDerivAt (⇑Complex.ofRealCLM ∘ fun x => x ^ n) (↑n * ↑r ^ (n - 1)) r : Prop
+but is expected to have type
+  HasDerivAt (fun t => ↑t ^ n) (↑n * ↑r ^ (n - 1)) r : Prop
+RadialMomentWeights.lean:40:63: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+RadialMomentWeights.lean:40:63: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+RadialMomentWeights.lean:39:60: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+RadialMomentWeights.lean:46:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+RadialMomentWeights.lean:47:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+RadialMomentWeights.lean:54:4: error: simp made no progress

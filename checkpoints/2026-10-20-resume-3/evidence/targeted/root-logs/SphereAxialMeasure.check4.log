@@ -1,0 +1,10 @@
+SphereAxialMeasure.lean:32:89: error: `fun_prop` was unable to prove `Continuous fun q => transverse (↑q).1 * Real.cos (↑q).2`
+
+Issues:
+  No theorems found for `OQ14.AxialCoordinates.transverse` in order to prove `Continuous fun x0 => transverse x0`
+  No theorems found for `OQ14.AxialCoordinates.transverse` in order to prove `Continuous fun x => transverse (↑x).1`
+SphereAxialMeasure.lean:34:89: error: `fun_prop` was unable to prove `Continuous fun q => transverse (↑q).1 * Real.sin (↑q).2`
+
+Issues:
+  No theorems found for `OQ14.AxialCoordinates.transverse` in order to prove `Continuous fun x0 => transverse x0`
+  No theorems found for `OQ14.AxialCoordinates.transverse` in order to prove `Continuous fun x => transverse (↑x).1`

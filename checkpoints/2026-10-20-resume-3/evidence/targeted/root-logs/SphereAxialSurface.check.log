@@ -1,0 +1,17 @@
+SphereAxialSurface.lean:62:4: error: ring failed, ring expressions not equal
+z θ : ℝ
+hz : z ∈ Ioo (-1) 1
+hp : 0 < transverse z
+hs : transverse z ^ 2 = 1 - z ^ 2
+⊢ transverse z ^ 2 * cos θ * 2 - cos θ * 2 + cos θ * z ^ 2 * 2 = 0
+SphereAxialSurface.lean:64:4: error: ring failed, ring expressions not equal
+z θ : ℝ
+hz : z ∈ Ioo (-1) 1
+hp : 0 < transverse z
+hs : transverse z ^ 2 = 1 - z ^ 2
+⊢ transverse z ^ 2 * sin θ * 2 - sin θ * 2 + sin θ * z ^ 2 * 2 = 0
+SphereAxialSurface.lean:77:12: error: simp made no progress
+SphereAxialSurface.lean:77:12: error: simp made no progress
+SphereAxialSurface.lean:70:51: error: unsolved goals
+unknown goal
+SphereAxialSurface.lean:70:51: error: unknown metavariable '?_uniq.71574'

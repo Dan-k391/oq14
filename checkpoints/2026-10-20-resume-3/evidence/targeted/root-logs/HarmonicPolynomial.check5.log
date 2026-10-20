@@ -1,0 +1,11 @@
+Try this: ring_nf
+HarmonicPolynomial.lean:141:4: error: unsolved goals
+case pos
+x : Space
+i : Fin 3
+p : MvPolynomial (Fin 3) ℝ
+hp : (fderiv ℝ (evaluate p) x) (basis i) = evaluate ((pderiv i) p) x
+hdP : DifferentiableAt ℝ (evaluate p) x
+hdX : DifferentiableAt ℝ (evaluate (X i)) x
+⊢ (eval fun i => x i) p + x i * (eval fun i => x i) ((pderiv i) p) =
+    x i * (eval fun i => x i) ((pderiv i) p) + (eval fun i => x i) p

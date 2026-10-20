@@ -1,0 +1,11 @@
+RadialMomentRegularity.lean:37:4: error: failed to synthesize
+  LocallyCompactSpace ↑(Ioi R)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RadialMomentRegularity.lean:39:24: error: unknown identifier 'integral_univ'
+RadialMomentRegularity.lean:39:2: error: type mismatch, term
+  hi
+after simplification has type
+  Continuous fun r => ∫ (n : ↑Sphere) in univ, ((fderiv ℝ (fderiv ℝ u) (↑r • ↑n)) ↑n) ↑n * P n ∂angularMeasure : Prop
+but is expected to have type
+  Continuous ((Ioi R).restrict (momentDD u P)) : Prop

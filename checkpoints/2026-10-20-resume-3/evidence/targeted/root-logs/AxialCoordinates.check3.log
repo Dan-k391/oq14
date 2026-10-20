@@ -1,0 +1,19 @@
+AxialCoordinates.lean:58:16: error: invalid field 'pow', the environment does not contain 'HasFDerivAt.pow'
+  hasFDerivAt_apply 1 p
+has type
+  HasFDerivAt (fun f => f 1) (ContinuousLinearMap.proj 1) p
+AxialCoordinates.lean:58:16: error: invalid field 'pow', the environment does not contain 'HasFDerivAtFilter.pow'
+  hasFDerivAt_apply 1 p
+has type
+  HasFDerivAtFilter (fun f => f 1) (ContinuousLinearMap.proj 1) p (𝓝 p)
+AxialCoordinates.lean:82:2: error: unsolved goals
+case h.e'_12.h.h.h
+p : Coordinates
+hp : p ∈ domain
+ht : HasFDerivAt (fun q => transverse (q 1)) ((-p 1 / transverse (p 1)) • ContinuousLinearMap.proj 1) p
+hc : HasFDerivAt (cos ∘ fun f => f 2) (-sin (p 2) • ContinuousLinearMap.proj 2) p
+hs : HasFDerivAt (sin ∘ fun f => f 2) (cos (p 2) • ContinuousLinearMap.proj 2) p
+e_8✝ : NormedAddCommGroup.toAddCommGroup = SeminormedAddCommGroup.toAddCommGroup
+he✝ : NormedSpace.toModule = NormedSpace.toModule
+v : Coordinates
+⊢ p 1 * v 0 + p 0 * v 1 = p 0 * v 1 + p 1 * v 0

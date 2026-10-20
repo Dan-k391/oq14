@@ -1,0 +1,10 @@
+RadialStack.lean:156:2: error: type mismatch, term
+  h
+after simplification has type
+  (traverse l gs (outgoing l X)).2.re * (traverse l gs (outgoing l X)).1.re -
+      (traverse l gs (outgoing l X)).2.im * -(traverse l gs (outgoing l X)).1.im ≤
+    0 : Prop
+but is expected to have type
+  (traverse l gs (outgoing l X)).2.re * (traverse l gs (outgoing l X)).1.re +
+      (traverse l gs (outgoing l X)).2.im * (traverse l gs (outgoing l X)).1.im ≤
+    0 : Prop

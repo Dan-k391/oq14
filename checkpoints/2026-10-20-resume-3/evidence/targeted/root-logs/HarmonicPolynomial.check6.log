@@ -1,0 +1,17 @@
+Try this: ring_nf
+HarmonicPolynomial.lean:141:4: error: unsolved goals
+case pos
+x : Space
+i : Fin 3
+p : MvPolynomial (Fin 3) ℝ
+hp : (fderiv ℝ (evaluate p) x) (basis i) = evaluate ((pderiv i) p) x
+hdP : DifferentiableAt ℝ (evaluate p) x
+hdX : DifferentiableAt ℝ (evaluate (X i)) x
+⊢ (eval fun i => x i) p + x i * (eval fun i => x i) ((pderiv i) p) =
+    x i * (eval fun i => x i) ((pderiv i) p) + (eval fun i => x i) p
+HarmonicPolynomial.lean:163:2: error: invalid '←' modifier, 'OQ14.HarmonicPolynomial.complexEvaluate' is a declaration name to be unfolded
+HarmonicPolynomial.lean:163:2: error: simp made no progress
+HarmonicPolynomial.lean:172:2: error: mod_cast has type
+  ∑ x_1, x x_1 * (eval fun i => x i) ((pderiv x_1) p) = (eval fun i => x i) ↑n * (eval fun i => x i) p : Prop
+but is expected to have type
+  ↑(∑ i, x i * evaluate ((pderiv i) p) x) = ↑n * complexEvaluate p x : Prop

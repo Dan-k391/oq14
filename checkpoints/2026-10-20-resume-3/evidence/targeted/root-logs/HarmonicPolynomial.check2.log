@@ -1,0 +1,7 @@
+Try this: ring_nf
+HarmonicPolynomial.lean:29:65: error: unsolved goals
+p : Poly
+i : Fin 3
+⊢ (pderiv i) 2 * X i * p + X i * (pderiv i) p * 4 + p * 2 + radiusSq * (pderiv i) ((pderiv i) p) =
+    X i * (pderiv i) p * 4 + p * 2 + radiusSq * (pderiv i) ((pderiv i) p)
+Try this: ring_nf

@@ -1,0 +1,13 @@
+AxialCoordinates.lean:56:12: error: typeclass instance problem is stuck, it is often due to metavariables
+  Module ?m.28906 ℝ
+AxialCoordinates.lean:93:2: error: ring failed, ring expressions not equal
+p : Coordinates
+hp : p ∈ domain
+ht : 0 < transverse (p 1)
+hs : transverse (p 1) ^ 2 = 1 - p 1 ^ 2
+⊢ transverse (p 1) * cos (p 2) ^ 2 * p 0 ^ 2 +
+          (-(transverse (p 1) * cos (p 2) ^ 2 * p 0 ^ 2 * p 1 ^ 2) -
+            transverse (p 1) * p 0 ^ 2 * p 1 ^ 2 * sin (p 2) ^ 2) +
+        transverse (p 1) * p 0 ^ 2 * sin (p 2) ^ 2 +
+      (-(transverse (p 1) ^ 3 * cos (p 2) ^ 2 * p 0 ^ 2) - transverse (p 1) ^ 3 * p 0 ^ 2 * sin (p 2) ^ 2) =
+    0

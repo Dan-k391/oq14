@@ -1,0 +1,6 @@
+FischerDecomposition.lean:133:4: error: type mismatch, term
+  hp (Finsupp.mem_support_iff.mp hd)
+after simplification has type
+  ∑ x ∈ d.support, d x • 1 = l : Prop
+but is expected to have type
+  ∑ i ∈ d.support, d i = l : Prop

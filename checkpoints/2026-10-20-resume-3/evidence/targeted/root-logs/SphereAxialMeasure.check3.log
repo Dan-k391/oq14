@@ -1,0 +1,34 @@
+SphereAxialMeasure.lean:31:4: error: 'change' tactic failed, pattern
+  Continuous fun q => transverse (↑q).1 * Real.cos (↑q).2
+is not definitionally equal to target
+  Continuous fun a => map ![1, (↑a).1, (↑a).2] ((fun i => i) ⟨0, ⋯⟩)
+SphereAxialMeasure.lean:33:4: error: 'change' tactic failed, pattern
+  Continuous fun q => transverse (↑q).1 * Real.sin (↑q).2
+is not definitionally equal to target
+  Continuous fun a => map ![1, (↑a).1, (↑a).2] ((fun i => i) ⟨1, ⋯⟩)
+SphereAxialMeasure.lean:35:4: error: 'change' tactic failed, pattern
+  Continuous fun q => (↑q).1
+is not definitionally equal to target
+  Continuous fun a => map ![1, (↑a).1, (↑a).2] ((fun i => i) ⟨2, ⋯⟩)
+SphereAxialMeasure.lean:107:12: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  intervalIntegral
+has type
+  (ℝ → ?m.9960) → ℝ → ℝ → Measure ℝ → ?m.9960
+SphereAxialMeasure.lean:102:83: error: unsolved goals
+hi : IntegrableOn (fun r => r ^ 2) (Ioo 0 1) volume
+⊢ ENNReal.ofReal (1 / 3) = 3⁻¹
+SphereAxialMeasure.lean:148:7: error: application type mismatch
+  @MeasurePreserving.symm ?m.78917 ?m.78918 ?m.78919 ?m.78920 VectorFourier.coordinateMap_preserving
+argument
+  VectorFourier.coordinateMap_preserving
+has type
+  MeasurePreserving (⇑VectorFourier.coordinateMap) volume volume : Prop
+but is expected to have type
+  ?m.78917 ≃ᵐ ?m.78918 : Type (max ?u.78916 ?u.78915)
+SphereAxialMeasure.lean:158:45: error: no goals to be solved
+SphereAxialMeasure.lean:160:94: error: unsolved goals
+case h
+s : Set ↑Sphere
+hs : MeasurableSet s
+hd : Module.finrank ℝ Space = 3
+⊢ parameterMeasure (direction ⁻¹' s) = 3 * 3⁻¹ * parameterMeasure (direction ⁻¹' s)

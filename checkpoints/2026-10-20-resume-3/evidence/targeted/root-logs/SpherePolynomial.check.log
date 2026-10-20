@@ -1,0 +1,21 @@
+SpherePolynomial.lean:40:9: error: application type mismatch
+  Exists.intro (MvPolynomial.X i)
+argument
+  MvPolynomial.X i
+has type
+  MvPolynomial (Fin 3) ?m.8459 : Type (max 0 ?u.8458)
+but is expected to have type
+  C(↑Sphere, ℝ) : Type
+SpherePolynomial.lean:40:27: error: unsolved goals
+x y : ↑Sphere
+hxy : x ≠ y
+hval : ↑x ≠ ↑y
+i : Fin 3
+hi : ↑x i ≠ ↑y i
+⊢ sorry () ∈ polynomialAlgebra ∧ sorry () = coordinate i
+SpherePolynomial.lean:56:15: error: type mismatch, term
+  hg
+after simplification has type
+  ‖↑g - f‖ < ε : Prop
+but is expected to have type
+  ‖polynomialMap p - f‖ < ε : Prop
