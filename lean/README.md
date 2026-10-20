@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand thirty-three exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand one hundred eighty-three exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all one hundred seventy-six registered modules, and audits all 2033
+compiler and mathlib revision, builds all one hundred ninety-eight registered modules, and audits all 2183
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -665,8 +665,8 @@ the actual Woodbury formula. `VolumeAnalyticAlternative` (12) applies this
 to the actual volume operator: its exceptional frequencies form a closed
 discrete set, finite in bounded sets, its inverse is meromorphic, and actual
 noninvertible values are genuine poles. The finite-rank Laurent coefficients
-are proved in the continuation below; global homogeneous uniqueness still
-requires interior material continuation.
+are proved in the continuation below; global homogeneous uniqueness for explicit material-cell geometry is
+proved in the continuation below.
 
 `ModalMatchingNorm` (16) proves the genuine derivative pairing and normalized
 rank-one residue for the finite matching pencil. This is not yet the
@@ -704,17 +704,62 @@ vanishing surface mass. `ComponentAngularEnergy` (9) and
 `MaxwellExteriorRellich` (5) apply this to the actual electric and magnetic
 volume fields: every homogeneous volume solution has both fields zero
 outside the material support, without a support-smallness premise.
-Interior material continuation is still required to prove global uniqueness.
+The next continuation supplies interior propagation and global uniqueness
+for explicit material-cell geometry.
 `SpatialKernelAnalytic` (12) exposes actual kernel analyticity away from
 the source; it does not assert analyticity of arbitrary PDE solutions.
+
+## Weak continuation and material-cell global uniqueness
+
+A further 150 declarations in 22 modules derive actual scalar continuation
+and global Maxwell volume uniqueness for explicitly specified material-cell
+geometry. `AnnularMoment` (15), `AnnularMomentClassical` (2), and
+`AnnularMomentEquation` (3) prove actual finite-annulus moment calculus and
+the radial equation from actual spatial Helmholtz tests.
+`RadialIntervalUniqueness` (5) and `RadialIntervalFlux` (4) give genuine
+finite-interval ODE uniqueness. `HelmholtzBallContinuation` (4) combines it
+with actual harmonic density to prove whole-ball zero from a zero germ.
+`HelmholtzTranslation` (11), `LocalZeroPropagation` (4), and
+`HelmholtzUniqueContinuation` (3) prove smooth connected-domain continuation.
+
+`LocalHelmholtzRepresentation` (10) proves the actual compact and local
+Green representation. `WeakHelmholtzRegularity` (7), `HelmholtzMollifiers`
+(5), and `HelmholtzMollifierZero` (5) prove actual convolution derivatives,
+shrinking support, eventual classical PDE and zero germs, and genuine AE
+convergence. `LocalAEZeroPropagation` (6) proves the countable-cover step;
+`WeakHelmholtzContinuation` (4) gives actual weak connected-domain
+continuation. A smooth representative or solution analyticity is not assumed.
+
+`RegionalMaxwellHelmholtz` (22) derives Gauss and scalar weak Helmholtz from
+literal regional Maxwell tests, including the actual H(curl) interface.
+`RegionalMaxwellLocalization` (10) derives those regional equations from
+global variable-material Maxwell tests whenever the material-weighted field
+agrees with a constant material. `RegionalMaxwellContinuation` (6) uses
+actual PDE continuation to carry electric zero across an open interface
+bridge covered almost everywhere by two cells. `MaterialCellGraph` (7)
+proves geometric reachability and AE cover globalization.
+
+`HomogeneousVolumeUniqueness` (7) gives actual component local integrability
+and proves that electric AE zero forces the original homogeneous volume
+unknown to vanish. `PiecewiseMaxwellUniqueness` (5) combines exterior
+Rellich, interface propagation, cell reachability and the actual Fredholm
+alternative. It proves global uniqueness and invertibility with no support
+smallness, for an explicit geometric partition: positive constant material
+on open preconnected cells, AE coverage, actual bridge reachability, and an
+exterior seed point. The PDE propagation and zero-kernel conclusion are
+proved, not supplied as premises. Concrete construction geometries still
+need instances of this partition data. `MaxwellZeroField` (5) derives
+magnetic AE zero from electric AE zero using actual global weak Maxwell
+and the fundamental lemma.
 
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
-general boundary traces, arbitrary-size outgoing solvability, the conical spectrum,
-Runge approximation, rounding, interior material continuation, or
+general boundary traces, full geometric instances and physical scattering
+assembly for the final constructions, the conical spectrum, Runge
+approximation, rounding, or
 the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either

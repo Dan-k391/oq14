@@ -1,30 +1,38 @@
 # OQ14 resume checkpoint — October 20, 2026
 
-**PAUSED at the user's explicit request: "ok, stop here create checkpoint for later resume".**
-No proof work, compiler job, subagent task, or automation remains running.
-Resume only when the user asks. The complete Maxwell Lean task remains unfinished.
+**ACTIVE: the user explicitly resumed after the October20 checkpoint.**
+The immutable pause snapshot remains in `checkpoints/2026-10-20-resume/`.
+The complete Maxwell Lean task remains unfinished.
 The user's model preference is 6.1 Sol for subagents and Astra for important proof
 design, integration and audits.
 
-## Start here on resumption
+## Current active work
 
-1. Read this file and `checkpoints/2026-10-20-resume/manifest.json`.
-   The checkpoint saves exact working bytes, including unfinished work.
-2. Independently recompile the final `WeakHelmholtzContinuation.lean`. Root's
-   final compile and object generation passed with all four standard-only reports.
-   The independent agent reviewed the full mathematics, but its last compiler
-   run preceded the final `he.mono (fun _ hn => hn.symm)` syntax fix. Do not
-   confuse that old failed run with the final root PASS.
-3. Finalize `HomogeneousVolumeUniqueness.lean`: its seven proofs compile, but
-   it has no dependency prints, no emitted object, and no completed independent
-   source audit/review. Add the seven prints, check the object, audit and freeze.
-4. Prove actual material-interface continuation by composing regional Maxwell
-   localization with the now-proved weak Helmholtz continuation. Then prove
-   the required material-cell geometry and global homogeneous uniqueness.
-5. Register only the finished audited modules as a new batch. Update the
-   formal coverage ledgers, commit it, and run a clean aggregate in the
-   independent checkout. The new modules listed below are NOT registered yet.
-   Finish PDF layout verification before making a new coherent release.
+The checkpoint's pending final independent weak-continuation check and the
+seven volume-adapter proofs are now finished and audited. The new registered
+batch has **2183 selected declarations / 198 modules / 170 libraries**.
+All150 additions passed targeted compilation and full-source review.
+Its new clean aggregate and PDF/package checks are pending. See
+`reviews/interior_continuation_2183.md` for the exact frozen sources.
+
+Root/Astra owns proof design, audits, shared registration, clean aggregate
+and packaging. The 6.1 Sol agents work on distinct files:
+
+- fredholm_sol: `RadialMaterialCells.lean`, actual sphere/annulus/exterior
+  connectedness and interface bridge geometry.
+- continuation_review_sol: `FiniteRadialPartition.lean`, actual finite
+  ordered-radius cover, reachability and partition construction.
+- modal_sol: `PiecewiseScattering.lean`, actual physical scattering
+  assembly and radiation from the proved geometric-partition inverse.
+
+These active new files are outside2183 until they are compiled and reviewed.
+Unrelated user-created `sites/` is untracked and must remain untouched.
+Do not clean the root Lean build while agents are active. Use the independent
+checkout for the aggregate.
+
+The paused snapshot remains immutable at tag `oq14-resume-2026-10-20`, commit
+4216802265d44d891e996af05ba632aa9d400d67. Its archive SHA256 is
+ab0399142662af5d88c737f261929bf0b9f9878b7d9ba2e70051088fd39e6365.
 
 ## Verification and release state
 
@@ -54,41 +62,13 @@ The 1835 clean aggregate also passed at
 not packaged. Evidence remains in `output/checkpoints/proof-build-1835/`.
 Earlier releases and the October18 checkpoint are preserved.
 
-## New, unregistered proof sources
+## Newly registered proof sources
 
-There are 17 sources with 120 selected declarations that passed targeted
-compilation and complete-source mathematical review, plus the seven-theorem
-compiling volume-adapter draft. These targeted checks do not constitute a
-new clean aggregate or a completed formalization.
-
-| Module | Reports | Actual result |
-|---|---:|---|
-| AnnularMoment | 15 | Literal spherical moment first/second derivatives on finite annuli |
-| AnnularMomentClassical | 2 | Actual weak annular moments imply classical residual/flux |
-| AnnularMomentEquation | 3 | Actual spatial Helmholtz equation gives weak radial tests |
-| RadialIntervalUniqueness | 5 | Finite-interval Hankel ODE uniqueness from zero data |
-| RadialIntervalFlux | 4 | Actual radial flux uniqueness from a zero neighborhood |
-| HelmholtzBallContinuation | 4 | Actual smooth Helmholtz zero germ implies whole-ball zero |
-| HelmholtzTranslation | 11 | Literal translated derivatives, Laplacian and ball equations |
-| LocalZeroPropagation | 4 | Topological propagation of a supplied ball property |
-| HelmholtzUniqueContinuation | 3 | Actual smooth Helmholtz continuation on connected open sets |
-| LocalHelmholtzRepresentation | 10 | Genuine compact/local Green representation |
-| WeakHelmholtzRegularity | 7 | Actual convolution derivatives and reduced-ball classical PDE |
-| HelmholtzMollifiers | 5 | Actual bump support, eventual PDE, and AE convergence |
-| HelmholtzMollifierZero | 5 | Actual AE-zero neighborhoods force mollifier zero germs |
-| LocalAEZeroPropagation | 6 | AE-germ propagation and genuine countable-cover globalization |
-| WeakHelmholtzContinuation | 4 | Actual weak Helmholtz continuation on connected open sets |
-| RegionalMaxwellHelmholtz | 22 | Actual regional Maxwell tests imply Gauss and scalar Helmholtz |
-| RegionalMaxwellLocalization | 10 | Actual global variable-material tests localize across interfaces |
-| HomogeneousVolumeUniqueness | 0 (draft) | Seven compiling proofs: local integrability and electric AE zero imply volume unknown zero |
-
-Root independently compiled and read the two RegionalMaxwell sources, the
-translation, AE topology, smoothing, and zero-inheritance sources. Earlier
-annular/ODE sources were also independently checked. Root ball and smooth
-continuation sources received independent source and compiler PASS.
-Weak continuation has root compiler PASS and independent source PASS, with
-the final independent compiler rerun outstanding as stated above.
-Hashes and per-file status are in the checkpoint manifest.
+The17 sources/120 reports saved at the pause are now registered, together
+with the finalized seven volume-adapter proofs and23 additional reports in
+RegionalMaxwellContinuation, MaterialCellGraph, PiecewiseMaxwellUniqueness
+and MaxwellZeroField. The complete inventory and scope are in
+`lean/README.md` and `reviews/interior_continuation_2183.md`.
 
 ## Mathematical design to continue
 
@@ -112,7 +92,7 @@ field. A countable open subcover globalizes the AE germs. Full weak-to-smooth
 representative regularity is not needed for this uniqueness argument and
 has not been claimed.
 
-Next interface step: let U,V be connected open material cells, and B a ball
+Completed interface step: let U,V be connected open material cells, and B an open connected set
 covered almost everywhere by U union V, meeting each in a nonempty open set.
 If E is AE zero on U and epsilon=epsilonV on V, then epsilon*E=epsilonV*E
 AE on B. `RegionalMaxwellLocalization` derives the actual constant-material
@@ -120,14 +100,13 @@ weak scalar Helmholtz equation there. `WeakHelmholtzContinuation` propagates
 zero across B, then throughout V. Electric vanishing alone suffices for the
 volume uniqueness adapter; no initial magnetic zero premise is required.
 
-Planned but NOT STARTED: `MaterialCellGraph.lean`. Use actual bridge balls
+Completed: `MaterialCellGraph.lean` and `PiecewiseMaxwellUniqueness.lean` use actual bridges
 with AE two-cell coverage and nonempty overlaps, geometric reachability
 (`Relation.ReflTransGen`), and an AE cover of space by material cells.
-Prove actual geometric instances for the finite construction, not an assumed
-PDE continuation conclusion. The abstract reachable-property induction alone
-does not close global Maxwell uniqueness.
+The actual PDE propagation is discharged in the global uniqueness theorem.
+Concrete geometry instances for the finite constructions are now being proved.
 
-Further gaps: arbitrary-support global uniqueness/solvability; all-angular-order
+Further gaps: concrete material geometry and physical scattering assembly; all-angular-order
 Green convergence and whole-plane flux; conical coefficients, Runge and
 rounding; physical reciprocal mode normalization and infinite-degree modal
 isolation; complete channel and hotspot constructions. Do not replace any
@@ -171,5 +150,10 @@ Only copy coherent release artifacts together. No repository was published.
 Executed one-time scripts in tmp include integrate_1058.py, integrate_1312.py,
 integrate_1660.py, integrate_1835.py, integrate_2033.py,
 create_annular_equation.py, preserve_1058.py, preserve_1312.py,
-preserve_1660.py and create_stop_checkpoint_20261020.py. Do not rerun them.
+preserve_1660.py, create_stop_checkpoint_20261020.py and integrate_2183.py. Do not rerun them.
 No source or dependency upgrade is authorized by routine resumption.
+
+Original-scope audit: `reviews/original_scope_2026_10_20.md`. The original
+manual is currently unavailable; cached tutorial and manuscript quantifiers
+were compared. Do not label every OQ14 interpretation closed. The exact
+channel regime and modal normalization must remain explicit.

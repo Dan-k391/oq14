@@ -105,3 +105,11 @@ theorem unknown_zero_of_electric_zero (c : Coefficient) (k R : ℝ) (u : VectorL
     _ = 0 := hsol
 
 end OQ14.HomogeneousVolumeUniqueness
+
+#print axioms OQ14.HomogeneousVolumeUniqueness.locallyIntegrable_of_memLp_closedBalls
+#print axioms OQ14.HomogeneousVolumeUniqueness.electric_locallyIntegrable
+#print axioms OQ14.HomogeneousVolumeUniqueness.magnetic_locallyIntegrable
+#print axioms OQ14.HomogeneousVolumeUniqueness.source_zero_of_electric_zero
+#print axioms OQ14.HomogeneousVolumeUniqueness.weighted_unknown_zero_of_source_zero
+#print axioms OQ14.HomogeneousVolumeUniqueness.volumeBlock_eq_unknown_of_weighted_zero
+#print axioms OQ14.HomogeneousVolumeUniqueness.unknown_zero_of_electric_zero

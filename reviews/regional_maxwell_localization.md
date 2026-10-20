@@ -43,4 +43,5 @@ actual weak curl signs, AE weight equality only inside the test support,
 pointwise vanishing outside the region, complex contrast embedding,
 constant factor extraction, and reuse of actual local integrability.
 
-Source frozen pending root independent mathematical audit.
+Root independently read the complete final source and independently
+recompiled all ten exports at the recorded hash. Source frozen.

@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The one hundred seventy-six registered modules in \texttt{lean/} cover operator estimates,
+The one hundred ninety-eight registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two thousand thirty-three exported theorem declarations were compiled successfully.
+Two thousand one hundred eighty-three exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -603,9 +603,42 @@ Helmholtz equation and vanishing surface mass.
 \texttt{OQ14.\allowbreak MaxwellExteriorRellich} (5) applies it to the
 actual electric and magnetic volume fields. Every homogeneous volume
 solution has both fields zero outside the material support, without
-support smallness. Interior material continuation remains necessary for
-global uniqueness. Kernel analyticity away from the source is also
+support smallness. The following continuation proves global uniqueness
+for explicit material-cell geometry. Kernel analyticity away from the source is also
 proved; arbitrary-solution analyticity is not inferred from it.
+
+A further 150 declarations in 22 modules prove actual interior
+continuation and global volume uniqueness for explicit material-cell
+geometry. Finite-annulus Green tests give the actual radial moment
+equation. Genuine moment derivatives, finite-interval Hankel uniqueness
+and homogeneous harmonic density prove ball continuation for smooth
+Helmholtz fields. Literal translation and connectedness globalize it.
+
+For weak fields, actual normalized compact mollifiers solve the classical
+equation on fixed inner balls and inherit a zero germ. The proved smooth
+continuation and actual almost-everywhere convergence give weak
+continuation. A genuine countable open subcover globalizes the result.
+No solution analyticity or smooth-representative conclusion is assumed.
+
+Actual regional Maxwell tests imply Gauss and the scalar weak Helmholtz
+equation. Global variable-material tests localize whenever the weighted
+electric field agrees with a constant material. In an open bridge covered
+almost everywhere by two material cells, electric zero on one side gives
+this agreement with the other side's material. Actual weak continuation
+therefore propagates zero across the interface.
+
+The global theorem assumes only explicit geometric partition data in
+addition to the material and Maxwell hypotheses: open preconnected
+constant-material cells, almost-everywhere coverage, actual bridge
+reachability, and an exterior seed point. The actual exterior Rellich
+theorem supplies the homogeneous volume field's zero seed. Proven
+interface propagation gives global electric zero; actual material
+self-consistency then forces the original volume unknown to vanish.
+The proved Fredholm alternative gives an invertible volume operator and
+unique solutions at positive real frequency, without support smallness.
+Concrete construction geometries still need instances of the partition
+data. Magnetic zero from electric zero is also derived directly from
+weak Maxwell and the fundamental lemma.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -614,10 +647,11 @@ These are the standard logical foundations used by these mathlib proofs. No
 project-specific axiom, \texttt{sorry}, or admitted proof occurs. The
 formal build records the exact source hashes and pinned dependencies.
 This formally verifies the listed operator, differential and integral
-theorems. It does not yet formalize arbitrary-size outgoing uniqueness,
-conical or corner analysis, scattering density, interface rounding,
-interior material continuation, the physical
-reciprocal modal norm, or the complete channel and hotspot constructions.
+theorems. Full geometric instances and physical scattering assembly for
+the final constructions, conical or corner analysis, scattering density,
+interface rounding, the physical
+reciprocal modal norm, and the complete channel and hotspot constructions
+remain outside this coverage.
 In particular the full mathematical research problem cannot be closed by
 adding its missing assertions as axioms.
 
@@ -722,7 +756,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand thirty-three declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand one hundred eighty-three declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

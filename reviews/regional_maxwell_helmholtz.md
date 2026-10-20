@@ -46,4 +46,5 @@ test support, actual restricted-to-global integral equality, and the
 existing HCurl/Maxwell interface. The module derives weak scalar
 Helmholtz only; regularization and continuation remain separate.
 
-Source frozen pending root independent mathematical audit.
+Root independently read the complete final source and independently
+recompiled all twenty-two exports at the recorded hash. Source frozen.
