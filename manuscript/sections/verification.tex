@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The one hundred ten registered modules in \texttt{lean/} cover operator estimates,
+The one hundred thirty-four registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-One thousand three hundred twelve exported theorem declarations were compiled successfully.
+One thousand six hundred sixty exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -490,6 +490,57 @@ give an analytic regularization and standard meromorphic order $-1$ at
 the constructed high-quality zeros. This is the two-data spherical
 matching response with actual shell fields, not the full Maxwell resolvent.
 
+A further 348 declarations in 24 modules extend this coverage.
+The compact-operator alternative is proved in
+\texttt{OQ14.\allowbreak CompactPerturbation} (6 declarations) and
+\texttt{OQ14.\allowbreak CompactAlternative} (7).
+The actual volume preconditioner and compact remainder are assembled in
+\texttt{OQ14.\allowbreak VolumeFredholm} (7);
+\texttt{OQ14.\allowbreak VolumeAlternative} (8) gives arbitrary-data
+solvability conditional on explicit homogeneous volume uniqueness.
+This premise is not discharged by the compactness argument.
+
+The actual exterior fields are smooth and satisfy classical Maxwell and
+Gauss equations in \texttt{OQ14.\allowbreak ExteriorSmooth} (9) and
+\texttt{OQ14.\allowbreak ExteriorClassical} (18).
+\texttt{OQ14.\allowbreak ScalarFarField} (8),
+\texttt{OQ14.\allowbreak MaxwellFarField} (15), and
+\texttt{OQ14.\allowbreak FarFieldPower} (9) give the actual directional
+far-field and radial power limits. The 17 declarations of
+\texttt{OQ14.\allowbreak AngularPower} prove a uniform angular majorant
+and the genuine spherical power limit
+$\tfrac12\int_{\mathbb S^2}|E_\infty|^2$.
+The three declarations of \texttt{OQ14.\allowbreak SphereMeasure} prove
+positivity of the ordinary angular measure on every nonempty open patch.
+
+\texttt{OQ14.\allowbreak ComplexGreenKernel} (15) and
+\texttt{OQ14.\allowbreak ComplexDynamicKernel} (14) construct the actual
+complex kernel and local integrability bounds.
+\texttt{OQ14.\allowbreak L2Parametric} (2) proves Banach differentiation
+by dominated convergence of squared difference quotients.
+\texttt{OQ14.\allowbreak ComplexKernelAnalytic} (18) applies it to the
+actual truncated remainder. \texttt{OQ14.\allowbreak L1KernelOperator}
+(18) establishes bounded linear dependence of convolution on its kernel.
+\texttt{OQ14.\allowbreak ComplexConvolutionAnalytic} (37) constructs the
+genuine entire compact volume pencil, its exact real restriction, static
+factorization and invertible value at zero. The analytic Fredholm
+alternative is still a subsequent formalization step.
+
+\texttt{OQ14.\allowbreak KernelReciprocity} (29) and
+\texttt{OQ14.\allowbreak NewtonReciprocity} (16) prove actual bilinear
+reciprocity, including the full singular Newton contribution and the
+untruncated compact-source electric response.
+\texttt{OQ14.\allowbreak ModalPoleMode} (9),
+\texttt{OQ14.\allowbreak ModalOutgoing} (22), and
+\texttt{OQ14.\allowbreak ModalPoleRadiation} (7) connect the same
+nonzero shell residue with global weak fields and actual radiation.
+\texttt{OQ14.\allowbreak ModalScaling} (24) prescribes the positive real
+frequency while preserving arbitrary quality factor.
+\texttt{OQ14.\allowbreak ModalScaledPole} (30) proves exact order $-1$
+and residue factor $1/s$ for the volume-weighted physical shell response,
+whose residue is the same dilated actual mode. This remains the spherical
+matching response; full-resolvent isolation is not inferred.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -497,9 +548,10 @@ These are the standard logical foundations used by these mathlib proofs. No
 project-specific axiom, \texttt{sorry}, or admitted proof occurs. The
 formal build records the exact source hashes and pinned dependencies.
 This formally verifies the listed operator, differential and integral
-theorems. It does not yet formalize weak-field existence, conical or corner
-analysis, scattering density, interface rounding, the analytic Fredholm
-pencil, modal normalization, or the missing uniform channel approximation.
+theorems. It does not yet formalize arbitrary-size outgoing uniqueness,
+conical or corner analysis, scattering density, interface rounding,
+the analytic Fredholm alternative for the constructed pencil, the physical
+reciprocal modal norm, or the complete channel and hotspot constructions.
 In particular the full mathematical research problem cannot be closed by
 adding its missing assertions as axioms.
 
@@ -604,7 +656,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand three hundred twelve declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand six hundred sixty declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

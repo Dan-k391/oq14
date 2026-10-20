@@ -528,8 +528,9 @@ assumed. Hotspots also independently audited Translations and Compactness.
 The next 254 exports bring the registered source to 1312 declarations in
 110 modules / 82 libraries. All 27 added modules passed targeted compilation
 and independent source review before registration. The clean aggregate build,
-diagnostics and manuscript package are distinct pending verification steps;
-the coherent 1058 release remains the latest package until those pass.
+diagnostics and manuscript package subsequently passed at commit
+ed0d41181a0e9c3ebef586e04cc7c590d15bab91. The coherent 1312 release is
+preserved in its immutable checkpoint directory.
 
 Root independently read the complete frozen channel, scalar-exterior and
 modal sources. Local source support and kernel integrability are proved
@@ -556,3 +557,38 @@ ModalFieldPole constructs the divided-slope analytic numerator, proves its
 nonzero value and punctured normal form, and concludes order minus one
 using standard MeromorphicAt. Its domain is the actual two-amplitude
 matching data; it does not claim full-resolvent isolation or hotspot packing.
+
+## October 20 actual power, reciprocity and entire compact family
+
+The next 348 exports bring the registered source to 1660 declarations in
+134 modules / 106 libraries. All 24 added modules passed targeted compilation
+and full independent source review. The clean aggregate rebuild and new PDF
+package are pending; the coherent 1312 release remains the latest package.
+
+Root read every new module in full. Supporting work was assigned to 6.1 Sol
+agents at the user's request; root retained the mathematical audits and
+integration. The actual compact-operator alternative was proved, rather
+than supplied as a premise. VolumeAlternative keeps homogeneous uniqueness
+explicit. Exterior smoothness and classical Maxwell/Gauss identities apply
+to actual compact-L1 source responses. Genuine scalar/vector far fields and
+the actual spherical power limit use proved uniform bounds and dominated
+convergence. Independent audits also checked the signs, normalization, and
+directional versus angular scope.
+
+The actual complex kernel derivative has a local uniform inverse-radius
+majorant in spatial L2. Squared-norm dominated convergence proves the Banach
+derivative. A separately proved bounded-linear map from L1 kernels to
+bounded L2 convolution operators, plus the actual ball cutoff and material
+multipliers, yields a genuine entire compact pencil with value identity at
+zero. The subsequent analytic Fredholm alternative remains unfinished.
+
+Physical compact-source bilinear reciprocity retains the full Newton
+distribution. The actual modal residue yields global weak fields, weighted
+complex-frequency radiation and prescribed real frequency after dilation.
+The scaled shell measure represents ordinary spatial volume, and the
+residue factor is exactly 1/s. None of these statements identifies a full
+resolvent pole across all degrees or the reciprocal volume normalization.
+
+Targeted review hashes record the source bytes used for those runs. Git's
+LF normalization may change byte hashes without changing Lean text; the
+clean aggregate provenance records the exact packaged bytes and dependencies.

@@ -13,3 +13,5 @@ The proof explicitly supplies continuity on a neighborhood where the mathlib C0-
 This completes the C2 scalar-potential layer; it does not by itself establish third derivatives, full smoothness, or classical derivatives of the dyadic electric field.
 
 Complete compiler output, lock metadata, and hashes of the actual local import closure are saved in `lean/scalar-exterior-regularity-verification.txt` and `lean/scalar-exterior-regularity-provenance.json`. The local olean is ready.
+
+The coordinator and the hotspot agent independently read the complete source; both audits passed. The subsequent `ExteriorSmooth` module separately establishes full exterior C∞ regularity without changing this frozen file.

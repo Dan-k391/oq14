@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand three hundred twelve exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand six hundred sixty exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all one hundred ten registered modules, and audits all 1312
+compiler and mathlib revision, builds all one hundred thirty-four registered modules, and audits all 1660
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -592,14 +592,58 @@ standard meromorphic order minus one at the constructed high-Q zeros.
 The response here maps two spherical matching data to actual shell fields;
 identification with a pole of the full Maxwell resolvent is still required.
 
+## Actual far-field power and analytic volume family
+
+The continuation adds 348 audited declarations in 24 modules. The compact
+operator alternative is proved in `CompactPerturbation` (6 exports) and
+`CompactAlternative` (7); `VolumeFredholm` (7) applies the actual static
+preconditioner and compact remainder, and `VolumeAlternative` (8) derives
+arbitrary-data solvability conditional on homogeneous volume uniqueness.
+That remaining uniqueness premise is explicit.
+
+`ExteriorSmooth` (9) and `ExteriorClassical` (18) prove actual exterior
+smoothness and classical Maxwell/Gauss equations. `ScalarFarField` (8),
+`MaxwellFarField` (15) and `FarFieldPower` (9) prove actual compact-source
+far-field limits, transversality and the directional power formula.
+`AngularPower` (17) derives a uniform angular bound and the actual spherical
+power limit by dominated convergence. Its nonnegative limit is the integral
+of half the squared electric amplitude. `SphereMeasure` (3) proves that the
+ordinary angular measure is positive on every nonempty open patch.
+
+`ComplexGreenKernel` (15) and `ComplexDynamicKernel` (14) construct the actual
+complex-frequency kernel and local L1/L2 cancellation bounds. `L2Parametric`
+(2) proves Banach L2 differentiation by dominated convergence of squared
+difference quotients. `ComplexKernelAnalytic` (18) applies it to the actual
+truncated remainder. `L1KernelOperator` (18) constructs bounded linear
+dependence of L2 convolution on its L1 kernel and the finite-support L2-to-L1
+map. `ComplexConvolutionAnalytic` (37) assembles the genuine entire compact
+volume pencil, its exact real-frequency restriction, static factorization
+and invertible value at zero. The analytic Fredholm alternative and isolated
+noninvertible values are subsequent work.
+
+`KernelReciprocity` (29) and `NewtonReciprocity` (16) prove non-Hermitian
+bilinear reciprocity of the actual weighted volume block and actual
+untruncated compact-source electric fields. The singular Newton source term
+is retained. These results do not yet identify the reciprocal resonance norm.
+
+`ModalPoleMode` (9), `ModalOutgoing` (22) and `ModalPoleRadiation` (7) tie the
+same nonzero shell residue to global weak Maxwell fields and the actual
+complex-frequency radiation condition. `ModalScaling` (24) gives prescribed
+positive real frequency and arbitrary quality factor by actual spatial
+dilation. `ModalScaledPole` (30) proves exact meromorphic order minus one and
+the residue factor 1/s for the scaled physical shell response. Its shell
+measure pushes forward to ordinary spatial volume, and its residue is the
+same dilated actual field. This is a spherical matching response; full
+resolvent isolation across all angular degrees remains unproved in Lean.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
 general boundary traces, arbitrary-size outgoing solvability, the conical spectrum,
-Runge approximation, rounding, the analytic Fredholm resonance pencil or
-its reciprocal norm. The complete written modal theorem is not yet a Lean
+Runge approximation, rounding, the analytic Fredholm alternative for the constructed pencil or
+its reciprocal resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either
 missing formal conclusion. The exact remaining library development is

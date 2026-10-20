@@ -12,4 +12,4 @@ The input support is derived from the actual square-root material multiplication
 
 The result has no small-volume hypothesis and allows every finite material support radius. It is a real-frequency compactness theorem, not yet an arbitrary-size invertibility theorem or a complex-frequency analytic Fredholm theorem.
 
-Independent full-source review by the modal agent passed. Root review is pending.
+Independent full-source reviews by the modal agent and root both passed.

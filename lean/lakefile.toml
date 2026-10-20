@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole", "CompactPerturbation", "CompactAlternative", "VolumeFredholm", "VolumeAlternative", "ExteriorSmooth", "ExteriorClassical", "ScalarFarField", "MaxwellFarField", "FarFieldPower", "AngularPower", "SphereMeasure", "ComplexGreenKernel", "ComplexDynamicKernel", "L2Parametric", "ComplexKernelAnalytic", "L1KernelOperator", "ComplexConvolutionAnalytic", "KernelReciprocity", "NewtonReciprocity", "ModalPoleMode", "ModalOutgoing", "ModalPoleRadiation", "ModalScaling", "ModalScaledPole"]
 
 [[require]]
 name = "mathlib"
@@ -253,3 +253,75 @@ name = "DynamicVolumeCompact"
 
 [[lean_lib]]
 name = "ModalFieldPole"
+
+[[lean_lib]]
+name = "CompactPerturbation"
+
+[[lean_lib]]
+name = "CompactAlternative"
+
+[[lean_lib]]
+name = "VolumeFredholm"
+
+[[lean_lib]]
+name = "VolumeAlternative"
+
+[[lean_lib]]
+name = "ExteriorSmooth"
+
+[[lean_lib]]
+name = "ExteriorClassical"
+
+[[lean_lib]]
+name = "ScalarFarField"
+
+[[lean_lib]]
+name = "MaxwellFarField"
+
+[[lean_lib]]
+name = "FarFieldPower"
+
+[[lean_lib]]
+name = "AngularPower"
+
+[[lean_lib]]
+name = "SphereMeasure"
+
+[[lean_lib]]
+name = "ComplexGreenKernel"
+
+[[lean_lib]]
+name = "ComplexDynamicKernel"
+
+[[lean_lib]]
+name = "L2Parametric"
+
+[[lean_lib]]
+name = "ComplexKernelAnalytic"
+
+[[lean_lib]]
+name = "L1KernelOperator"
+
+[[lean_lib]]
+name = "ComplexConvolutionAnalytic"
+
+[[lean_lib]]
+name = "KernelReciprocity"
+
+[[lean_lib]]
+name = "NewtonReciprocity"
+
+[[lean_lib]]
+name = "ModalPoleMode"
+
+[[lean_lib]]
+name = "ModalOutgoing"
+
+[[lean_lib]]
+name = "ModalPoleRadiation"
+
+[[lean_lib]]
+name = "ModalScaling"
+
+[[lean_lib]]
+name = "ModalScaledPole"
