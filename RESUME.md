@@ -1,63 +1,56 @@
 # Active OQ14 continuation — October 20, 2026
 
-The user explicitly resumed the latest immutable checkpoint and requested
-continued work toward full OQ14 closure and complete Lean proofs. Do not
-pause or stop at this working status file without a new user request.
-Use the existing 6.1 Sol agents; root owns important proof design, audits,
-shared integration and exact-source verification.
+The user resumed work toward full OQ14 closure and complete Lean proofs.
+Continue until completion or a new user stop request. Use the existing
+6.1 Sol agents; root owns important proof design, audits and integration.
+The complete requested Maxwell formalization remains unfinished.
 
-## Current registered proof set
+## Registered sources and verified release
 
-2595 declarations / 229 modules / 201 libraries. All newly registered
-sources passed full-source and independent pinned-compiler audits. Reviews
-`angular_geometry_plane_2390.md` and `actual_constructions_2595.md` give exact
-scope. The complete requested Maxwell formalization remains unfinished.
+2804 declarations / 247 modules / 219 libraries, with full-source and
+independent pinned-compiler audits for the new files. Exact scope is in
+reviews/actual_constructions_2804.md. This revision needs a clean aggregate.
 
-Clean aggregate session 89998 is running in D:/oq14/tmp/clean-checkout at
-2f1ca342b33687c154226129f8417487dad3a175 (2390 declarations). Its 15 diagnostics
-and 110-page PDF passed, no unresolved references or overfull boxes. Pages
-106 and109 were visually inspected. PDF SHA256:
-b05d9298e67fe66d8b0ac863b9a66b9cc95843a82ddc0113a135d3e080a0f92c.
-Do not advance that checkout until the running aggregate finishes. Existing
-output/lean provenance may still be2033 until the new build succeeds.
-The last completed clean aggregate is2033; last coherent package is1660.
-Never clean the root Lean build while agents are active.
+The 2390 milestone at 2f1ca342b33687c154226129f8417487dad3a175 passed a clean
+aggregate, all 15 diagnostics, and the 110-page manuscript with no unresolved
+references or overfull boxes. Rendered pages 106 and 109 were inspected.
+PDF SHA256: b05d9298e67fe66d8b0ac863b9a66b9cc95843a82ddc0113a135d3e080a0f92c.
+Local tag: oq14-maxwell-foundations-2390. Fourteen matching artifacts are
+preserved in output/checkpoints/oq14-maxwell-foundations-2390/ and copied
+to top-level output. Delivery: 5002464 bytes, SHA256
+011b8e9ed5767c25d8ae5ecf1f14b8a25731fa7910a794dfdc74ff0320cacf4e.
+This is the latest completed coherent release. No external publication.
 
-## Active mathematical work
+Use D:/oq14/tmp/clean-checkout for clean aggregate work after checking its
+exact revision and active sessions. Never clean the root Lean build while
+agents are active. Old aggregate session 89998 finished EXIT0.
 
-Root has proved actual Hankel polynomial coefficient positivity and the
-outgoing radial load sign in every degree. Those sources are independently
-audited and now registered. New RadialLayer.lean constructs actual scaled
-homogeneous fundamental matrices and determinant-one transfers, actual
-solutions, initial matching and endpoint transfer formulas; its current
-unregistered draft compiled once, before report emission. Root is extending
-actual propagation and barrier estimates.
+## Active mathematical ownership
 
-modal_sol owns actual all-degree regular Riccati–Bessel series identification
-and barrier estimates. Raw ModalAlgebra.psi has Laurent default values at0;
-identify the genuine regular series for nonzero arguments and use its
-continuous extension for origin limits. No singular-origin uniqueness or
-series identification may be assumed.
+Root completed actual layer solutions, shared-radius stack energy and load,
+core source coefficients, scalar Green branch jump and barrier source bounds.
+Next: physical radial gluing, actual common-stack limits, spatial Green
+reconstruction and uniform all-order/whole-plane estimates.
 
-fredholm_sol completed the actual normalized one-dimensional cap weak
-profile and independently audited root Hankel positivity. Next it is
-investigating genuine spherical parametrization/coarea and arbitrary-test
-lifting. No sphere weak equation or H1 result has been proved yet.
+modal_sol completed actual regular series, origin limits, barrier positivity
+and logarithmic bounds. Next: sharp Gaussian regular lower bound via an
+actual weighted Riccati deficit and integrating factor. Raw ModalAlgebra.psi
+is not the continuous extension at zero.
 
-continuation_review_sol completed actual fixed-gap whole-plane L1
-continuity and the actual dynamic support-volume estimate. It now owns
-SphereReactionKernel.lean and BoundedMaterialKernel.lean for literal sphere
-reaction kernels and an actual material-volume operator bound. Exact static
-sphere polarization, self-consistent inclusion asymptotics and moving-gap
-flux limits remain separate.
+fredholm_sol completed actual coordinates and the angular measure formula.
+Next: arbitrary smooth-test lifting of the cap profile, integrable endpoint
+slopes, actual sphere weak equation and H1.
 
-Remaining full constructions include actual finite-stack transfer estimates,
-regular barrier lower bounds, all-order physical Green convergence,
-self-consistent inclusion responses, common-stack coherent whole-plane flux,
-counted-space power identities, sphere/conical Maxwell coefficient lifting,
-Runge approximation, rounding, physical reciprocal normalization,
-infinite-degree pole isolation and final simultaneous modal maxima.
-Do not insert these conclusions as hypotheses or count them as closed.
+continuation_review_sol completed actual explicit parity-kernel operators
+and unique solutions. Next: exact ball Newton potential and C1 matching,
+genuine weak Hessian/L2 projection identification and static polarization.
+
+Remaining full constructions include all-order physical Green convergence,
+self-consistent inclusion asymptotics, moving-gap coherent whole-plane flux,
+counted-space power identities, conical Maxwell coefficient lifting, Runge,
+rounding, physical reciprocal normalization, infinite-degree pole isolation
+and final simultaneous modal maxima. Do not insert these conclusions as
+hypotheses or count them as closed.
 
 ## Immutable prior checkpoint
 
@@ -99,3 +92,5 @@ The unrelated untracked `sites/` belongs to the user and must remain untouched.
 No external repository, site, or paper was published.
 
 `tmp/integrate_2390.py` is also executed and non-idempotent; do not rerun it.
+
+One-time integration scripts integrate_2595.py and integrate_2804.py were also executed; do not rerun.

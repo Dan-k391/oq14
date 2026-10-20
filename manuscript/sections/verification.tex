@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The two hundred twenty-nine registered modules in \texttt{lean/} cover operator estimates,
+The two hundred forty-seven registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two thousand five hundred ninety-five exported theorem declarations were compiled successfully.
+Two thousand eight hundred four exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -701,6 +701,23 @@ nonpositive outgoing radial load in every degree. These results do not yet
 supply the full regular-solution barrier estimates, uniform all-order Green
 limit, or either complete device construction.
 
+A further 209 declarations in 18 modules derive actual spherical
+coordinates, their Jacobian and the surface measure formula by cones.
+The regular Riccati series is identified with the actual Hankel solution
+off zero, with genuine origin limits, barrier positivity and both
+logarithmic-derivative bounds. Actual homogeneous layer solutions give
+shared-radius stack energy and load estimates. Their outgoing core
+coefficients have a nonzero denominator, negative imaginary reaction and
+uniform low-order bounds. The core Green branches have derivative jump
+one; barrier reaction and normalized source bounds follow without supplied
+load-sign or positivity conclusions. Literal sphere-integral parity
+reactions define actual bounded material operators. For gain $b/a$,
+sufficiently small finite balls have a uniformly bounded inverse, and its
+solution satisfies the actual material relation for this explicit kernel.
+Arbitrary-test angular lifting, the sharp regular lower bound, spatial
+Maxwell Green reconstruction, physical-stack identification and all-order
+convergence remain subsequent steps.
+
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -817,7 +834,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand five hundred ninety-five declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand eight hundred four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

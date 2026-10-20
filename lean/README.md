@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand five hundred ninety-five exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand eight hundred four exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all two hundred twenty-nine registered modules, and audits all 2595
+compiler and mathlib revision, builds all two hundred forty-seven registered modules, and audits all 2804
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -852,9 +852,49 @@ actual finite outgoing/incoming product, its coefficient recurrence,
 degree bound and coefficient nonnegativity. `HankelPositive` (7) identifies
 that product with the actual squared outgoing norm and proves the outgoing
 radial load is nonpositive in every degree at every positive radius.
-Regular-solution barrier estimates, finite-stack propagation, all-order
-Green convergence and complete counted-space flux identities remain work
-in progress.
+The subsequent section adds regular barrier estimates and actual stack
+propagation. All-order Green convergence and complete counted-space flux
+identities remain work in progress.
+
+## Constructed radial sources, angular measure and material response
+
+A further 209 declarations in 18 modules are independently audited.
+`AxialCoordinates` (13) proves the actual Jacobian, injectivity and volume
+change of variables outside a null plane. `SphereAxialMeasure` (20)
+derives the sphere surface measure by cones, the latitude/azimuth integral
+formula and zero measure of every latitude. Arbitrary-test angular weak
+lifting and its H1 interpretation remain subsequent work.
+
+`RiccatiRaising` (9), `RiccatiSeriesCoefficients` (11),
+`RiccatiOriginSeries` (16), and `RiccatiOriginLimits` (14) derive the
+entire regular series, its identification with the actual Hankel-defined
+solution off zero, and both normalized origin limits. The entire series
+is the extension at zero; the Laurent definition is not substituted there.
+`RiccatiBarrier` (9) proves positivity of the regular solution and its
+derivative. `RiccatiLogDerivative` (9) proves both logarithmic-derivative
+bounds by a weighted Wronskian. The sharper Gaussian lower bound and
+all-order summation remain separate.
+
+`RadialLayer` (7) constructs homogeneous bases, actual solutions and
+endpoint transfers. `RadialPropagation` (10) proves energy and barrier
+estimates from those ODEs. `RadialStack` (17) derives estimates for exact
+shared-radius chains, common material bounds and conserved imaginary
+load. `RadialSource` (16) constructs outgoing core coefficients, a nonzero
+denominator, negative imaginary reaction, low-order bound, core ODE,
+normalized boundary matching and scalar Green branch-derivative jump.
+`RadialLoadBounds` (8) derives the barrier reaction bound and both
+normalized core source bounds. Full spatial Maxwell Green reconstruction
+and all-order convergence are not already formalized by these results.
+
+`SphereReactionKernel` (12) defines the literal sphere-integral parity
+reaction and derives its bounds. `BoundedMaterialKernel` (17) constructs
+the weighted L2 integral operator with its material-volume bound.
+`ParityReactionVolume` (7) and `SmallParityInclusions` (5) derive uniform
+invertibility for gain b/a and small finite balls. `ParityMaterialField`
+(9) derives the unique inverse solution, norm estimates and actual
+material relation for this explicit kernel. Identification with the
+finite physical stack, exact static sphere polarization and the final
+shrinking-gap whole-plane estimates remain separate.
 
 ## Explicitly outside the formalization
 
