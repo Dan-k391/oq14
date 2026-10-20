@@ -7,21 +7,24 @@ Do not replace missing analytic proofs with hypotheses or custom axioms.
 
 ## Verified release and current sources
 
-The latest coherent packaged release is `oq14-maxwell-foundations-646`, commit
-`8ce72b53c83420362694b9be7bb03085a04b1948`. Its clean build passed all 646
-selected declarations in 45 modules, with only propext, Classical.choice and
+The latest coherent packaged release is `oq14-maxwell-foundations-818`, commit
+`618be804c984614f49efb1d109e9a08ed39ada6e`. Its clean build passed all 818
+selected declarations in 60 modules, with only propext, Classical.choice and
 Quot.sound; all 15 diagnostic groups passed; the 106-page PDF was inspected.
-It is preserved in `output/checkpoints/oq14-maxwell-foundations-646/` and
+It is preserved in `output/checkpoints/oq14-maxwell-foundations-818/` and
 currently in the top-level delivery files.
 
-- Delivery SHA256: `900b8e00e47943da0379e65bf59ab9066af8f87c03f6d031d59b442b824e6df0`
-- PDF SHA256: `312079d921a04afef02cb2afac889129b946e0cc6a0ebec114c6782151100e2a`
+- Delivery SHA256: `0b15ed1c506781a11d158679aebbb5f8fae51df9b8ba46663132ac0e9b9f9712`
+- PDF SHA256: `cda469595ed0939ea552fd9b06d0198a6da352b3cd2fbf3665802eaffe995e9a`
 
-The new registered source has 818 audited exports in 60 modules / 41 libraries.
-The additional 172 exports have passed targeted builds and independent source
-review. Its aggregate clean rebuild, manuscript rendering and package are
-separate verification steps; consult the output release record before calling
-this new batch a packaged release. Do not mix its sources with the 646 PDF.
+The latest packaged source has 818 audited exports in 60 modules / 41 libraries.
+The additional 172 exports passed targeted builds, independent source review,
+the aggregate clean rebuild, manuscript rendering and packaging. Previous
+646 and 539 releases remain preserved in their checkpoint directories.
+The next registered source batch has 1058 audited exports in 83 modules /
+58 libraries. Its aggregate clean build and package are separate steps.
+Newer active drafts are not included in that registered count. Consult the
+release record before identifying the current source with a packaged PDF.
 
 ## New mathematical progress
 
@@ -54,13 +57,27 @@ Local H1 does not itself prove compact embedding or general field traces.
 The root owns registration, shared ledgers, clean builds and release packaging.
 Agents share the same directory; never delete their root build artifacts.
 
-- channels: actual L1 convolution as a bounded L2 operator, literal spatial
-  identification, localized dyadic remainder and concrete norm-small volume
-  inverse. New work is in L1Convolution and subsequent separate modules.
-- hotspots: SphereRemovable gives actual integration by parts across a sphere;
-  then assemble genuine weak modal fields, allowing the electric normal jump.
-- counterexamples: PartialSmoothing supplies genuine compact C1 approximation
-  and Schwartz-to-weak test transfer; then actual compactness from weak H1.
+- root: the 1058 batch includes NewtonWeak5, KernelConvolution6,
+  WaveResponse3, FieldResponse5, MagneticResponse10 and MaterialMaxwell7.
+  Both actual first-order source equations and their material substitution
+  are proved on compact smooth tests. Active ScalarRadiation and
+  SmallVolumeMaxwell drafts extend this to radiation bounds and explicit
+  locally L2 field existence; inspect their compiler status before using.
+- channels: the 1058 batch includes L1Convolution16, DynamicConvolution13,
+  DynamicVolume14, Constants2, LocalVolumeResponse7, MaterialField7 and
+  IncidentLocalization5. Actual source, inverse, local electric L2 and
+  polarization self-consistency are proved. Subsequent LocalConvolution5
+  and MagneticLocal3 supply magnetic local L2; inspect freeze status.
+- hotspots: the 1058 batch includes SphereRemovable11, RadialInterface23,
+  ModalProfiles34 and ModalWeak21. Genuine global weak high-Q spherical
+  fields include the electric normal jump and exact outgoing Hankel exterior.
+  ModalLocal and subsequent H(curl) assembly are active separate modules.
+- counterexamples: the 1058 batch includes PartialSmoothing9, Translations7,
+  Compactness10, MagneticCompactness6, ElectricControl8 and
+  MaxwellCompactness11. Both E and H are locally precompact for one fixed
+  positive bounded coefficient. InteriorTestDensity and RegionalCurlUpgrade
+  subsequently extend compact smooth identities to the actual regional
+  compact-C1 weak-curl definition; inspect freeze status.
 
 These newer files may be unregistered or unfinished. Inspect their current
 source, reviews and compiler logs before using them as proved results.

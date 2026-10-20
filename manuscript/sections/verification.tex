@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The sixty registered modules in \texttt{lean/} cover operator estimates,
+The eighty-three registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Eight hundred eighteen exported theorem declarations were compiled successfully.
+One thousand fifty-eight exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -381,14 +381,14 @@ $-P$, using actual Schwartz density. Eleven in
 and Plancherel on $L^1\cap L^2$, and the literal spatial response identity.
 Nine in \texttt{OQ14.StaticNewton} identify the actual compact-material
 static volume block with the positive block, transferring its inverse
-bound one. Dynamic operator bounds and volume-equation solvability
-remain separate.
+bound one. Dynamic operator bounds and the small-volume equation are established
+by the subsequent modules.
 
 Forty-four declarations in \texttt{OQ14.ModalOrigin} construct the entire
 regular dipole profile from exponential divided differences and prove
 Maxwell's equations at its center. The high-quality transmission fields
-thus have no missing center point. Global spherical weak assembly and
-the full outgoing resolvent remain separate.
+thus have no missing center point. Global spherical weak assembly is established below; the full outgoing
+resolvent remains separate.
 
 Six declarations in \texttt{OQ14.DivCurl} establish the actual Schwartz
 div-curl energy identity. Seven in \texttt{OQ14.DivCurlCompact} give
@@ -399,8 +399,53 @@ Nine in \texttt{OQ14.LocalRegularity} derive local magnetic $H^1$
 regularity from regional weak Maxwell equations, nonzero real frequency
 and permeability one. Four in \texttt{OQ14.RegularityBounds} bound the
 cutoff derivatives using actual field norms and an upper permittivity
-bound, without coefficient derivatives. Compact embedding and general
-field traces remain separate obligations.
+bound, without coefficient derivatives. Compact embedding is established below. General field traces remain
+separate obligations.
+
+Sixteen declarations in \texttt{OQ14.L1Convolution} construct the actual
+$L^1$-kernel convolution operator on $L^2$. Thirteen in
+\texttt{OQ14.DynamicConvolution} derive the actual dyadic remainder
+operator. Fourteen in \texttt{OQ14.DynamicVolume} remove its cutoff exactly
+on the material support and prove the inverse and unique volume unknown.
+Two in \texttt{OQ14.DynamicVolume} give the sufficient explicit error bound
+$252\chi_{\max}k^2R^2<1$.
+
+Five declarations in \texttt{OQ14.NewtonWeak} prove zero weak curl of the
+actual Newton response. Six in \texttt{OQ14.KernelConvolution} justify
+absolute compact-source Fubini pairings. Three in \texttt{OQ14.WaveResponse}
+and five in \texttt{OQ14.FieldResponse} derive the full convolved Maxwell
+source and the actual spatial electric curl-curl equation. Ten in
+\texttt{OQ14.MagneticResponse} construct the magnetic field from outgoing
+gradient integrals and prove both first-order source equations.
+
+Seven declarations in \texttt{OQ14.LocalVolumeResponse} prove actual local
+$L^2$ membership of the electric response. Seven in
+\texttt{OQ14.MaterialField} derive $\rho=\chi E$ without dividing by contrast.
+Seven in \texttt{OQ14.MaterialMaxwell} then prove both dielectric Maxwell
+equations on compact smooth tests. Five in
+\texttt{OQ14.IncidentLocalization} construct the weighted incident datum
+from local $L^2$ data. Radiation and the regional compact-$C^1$ test upgrade
+are separate steps.
+
+Eleven declarations in \texttt{OQ14.SphereRemovable} and twenty-three in
+\texttt{OQ14.RadialInterface} prove actual sphere-removal integration by
+parts and radial-profile derivatives. Thirty-four in
+\texttt{OQ14.ModalProfiles} construct a continuous scalar potential and
+axial decomposition. Twenty-one in \texttt{OQ14.ModalWeak} prove global
+weak Maxwell equations on compact $C^2$ tests, including the normal
+electric jump, and actual high-quality nonzero fields with the exact
+outgoing Hankel exterior. Full-resolvent pole isolation and normalization
+are not inferred.
+
+Nine declarations in \texttt{OQ14.PartialSmoothing} prove actual weak
+derivative approximation. Seven in \texttt{OQ14.WeakTranslations} derive
+translation and smoothing bounds. Ten in \texttt{OQ14.WeakCompactness}
+prove the supported weak-$H^1$ compact embedding. Six in
+\texttt{OQ14.MagneticCompactness} apply it to genuine regional Maxwell
+fields. Eight in \texttt{OQ14.ElectricControl} and eleven in
+\texttt{OQ14.MaxwellCompactness} give full local electric and magnetic
+$L^2$ compactness for one fixed positive bounded permittivity, with
+explicit a.e.\ agreement and strongly convergent subsequences.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -516,7 +561,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Eight hundred eighteen declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & One thousand fifty-eight declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

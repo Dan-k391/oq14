@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. Eight hundred eighteen exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. One thousand fifty-eight exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all sixty registered modules, and audits all 818
+compiler and mathlib revision, builds all eighty-three registered modules, and audits all 1058
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -467,8 +467,8 @@ and obtain its bounded L2 extension with norm at most one. Eleven in
 L1-intersection-L2 sources and their literal spatial response identity.
 Nine in `StaticNewton.lean` apply it to compact material sources and
 identify the actual weighted static volume block with the coercive
-block, transferring its inverse bound one. Dynamic convolution bounds
-and Maxwell volume-equation solvability remain separate.
+block, transferring its inverse bound one. The subsequent modules derive dynamic convolution bounds, a small-volume
+inverse and actual compact-smooth-test Maxwell equations.
 
 Forty-four exports of `ModalOrigin.lean` construct the entire regular
 dipole radial profile from repeated divided differences of the
@@ -488,8 +488,65 @@ divergence-free and has actual weak H1 representatives near every
 compact interior set. Four in `RegularityBounds.lean` give the cutoff
 derivative bound in terms of field norms, frequency, cutoff bounds
 and an upper bound for the real permittivity. No derivative of that
-coefficient is needed. Compact embedding and general field traces
-remain separate.
+coefficient is needed. Compact embedding is established in the subsequent modules. General
+boundary traces remain separate.
+
+## Actual source fields, material equations, spherical assembly and compactness
+
+Sixteen exports of `L1Convolution.lean` construct the actual L1-kernel
+convolution as a bounded L2 operator and prove its spatial identification.
+Thirteen in `DynamicConvolution.lean` apply this to the actual truncated
+dyadic remainder. Fourteen in `DynamicVolume.lean` remove that truncation
+exactly on the material support, derive the weighted operator norm, and
+prove an inverse, a unique volume unknown and its bound. Two in
+`DynamicVolumeConstants.lean` simplify the sufficient smallness bound to
+`252 * chi_max * k² * R² < 1`.
+
+Five exports of `NewtonWeak.lean` prove the actual Newton response has zero
+weak curl. Six in `KernelConvolution.lean` establish absolute compact-source
+Fubini pairings and actual translated tests. Three in `WaveResponse.lean`
+convolve the full dyadic source equation. Five in `FieldResponse.lean`
+identify the actual spatial electric field and its curl-curl equation.
+Ten in `MagneticResponse.lean` construct H from actual outgoing-gradient
+integrals and prove curl E = ikH and curl H = -ik(E+rho).
+These source identities use compact smooth tests and retain the singular
+Newton contribution; they do not assume the response solves Maxwell.
+
+Seven exports of `LocalVolumeResponse.lean` prove the actual electric field
+is locally L2 using an exact cutoff on every observation ball. Seven in
+`MaterialField.lean` derive rho = chi E from the volume equation without
+dividing by possibly zero contrast. Seven in `MaterialMaxwell.lean` combine
+this identity with the actual source equations to prove the dielectric
+Maxwell equations on compact smooth tests. Five in
+`IncidentLocalization.lean` construct the weighted L2 datum from the
+incident field's local L2 restriction to the material ball. No global
+L2 assumption is imposed on the incoming field. The regional C1-test
+upgrade and outgoing-radiation identification remain separate.
+
+Eleven exports of `SphereRemovable.lean` prove actual integration by parts
+across a sphere using finite coordinate-line intersections. Twenty-three
+in `RadialInterface.lean` instantiate it for genuine radial profiles and
+coordinate-weighted potentials, with local derivative integrability proved.
+Thirty-four in `ModalProfiles.lean` construct the actual continuous
+potential and axial decomposition of the spherical electric field.
+Twenty-one in `ModalWeak.lean` prove the global distributional Maxwell
+equations on compact C2 tests, with the normal electric jump handled by
+the weak gradient. Its high-Q existence result gives actual nonzero fields,
+real positive material bounds and the exact outgoing Hankel exterior.
+It does not identify an isolated pole of the full Maxwell resolvent.
+
+Nine exports of `WeakPoynting/PartialSmoothing.lean` prove genuine derivative
+approximation and compact-C1 test transfer. Seven in `Translations.lean`
+derive translation and mollification bounds from actual weak L2 derivatives.
+Ten in `Compactness.lean` prove compact closure of the supported weak H1
+ball, using actual smoothing, Arzela-Ascoli and finite-cover transfer.
+Six in `MagneticCompactness.lean` apply this to bounded regional Maxwell
+families. Eight in `ElectricControl.lean` derive actual electric L2 control
+by magnetic cutoff energy. Eleven in `MaxwellCompactness.lean` apply the
+bound to differences to obtain full local E/H compactness and a strong
+L2 subsequence for one fixed positive bounded permittivity. A common open
+neighborhood and actual a.e. agreement are part of the conclusions.
+These results do not assert compactness uniformly over varying coefficients.
 
 ## Explicitly outside the formalization
 

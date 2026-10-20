@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak"]
 
 [[require]]
 name = "mathlib"
@@ -24,7 +24,7 @@ name = "HCurlCutoff"
 
 [[lean_lib]]
 name = "WeakPoynting"
-roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization", "WeakPoynting.DivCurl", "WeakPoynting.DivCurlCompact", "WeakPoynting.DivCurlRegularity", "WeakPoynting.LocalRegularity", "WeakPoynting.RegularityBounds"]
+roots = ["WeakPoynting", "WeakPoynting.Green", "WeakPoynting.Poynting", "WeakPoynting.Local", "WeakPoynting.Conservation", "WeakPoynting.Slices", "WeakPoynting.Representative", "WeakPoynting.Weighted", "WeakPoynting.Polarization", "WeakPoynting.Lipschitz", "WeakPoynting.Aperture", "WeakPoynting.Axial", "WeakPoynting.LipschitzBoundary", "WeakPoynting.Energy", "WeakPoynting.EnergyLocalization", "WeakPoynting.DivCurl", "WeakPoynting.DivCurlCompact", "WeakPoynting.DivCurlRegularity", "WeakPoynting.LocalRegularity", "WeakPoynting.RegularityBounds", "WeakPoynting.PartialSmoothing", "WeakPoynting.Translations", "WeakPoynting.Compactness", "WeakPoynting.MagneticCompactness", "WeakPoynting.ElectricControl", "WeakPoynting.MaxwellCompactness"]
 
 [[lean_lib]]
 name = "ModalAlgebra"
@@ -130,3 +130,54 @@ name = "StaticNewton"
 
 [[lean_lib]]
 name = "ModalOrigin"
+
+[[lean_lib]]
+name = "L1Convolution"
+
+[[lean_lib]]
+name = "DynamicConvolution"
+
+[[lean_lib]]
+name = "DynamicVolume"
+
+[[lean_lib]]
+name = "DynamicVolumeConstants"
+
+[[lean_lib]]
+name = "NewtonWeak"
+
+[[lean_lib]]
+name = "KernelConvolution"
+
+[[lean_lib]]
+name = "WaveResponse"
+
+[[lean_lib]]
+name = "FieldResponse"
+
+[[lean_lib]]
+name = "MagneticResponse"
+
+[[lean_lib]]
+name = "LocalVolumeResponse"
+
+[[lean_lib]]
+name = "MaterialField"
+
+[[lean_lib]]
+name = "MaterialMaxwell"
+
+[[lean_lib]]
+name = "IncidentLocalization"
+
+[[lean_lib]]
+name = "SphereRemovable"
+
+[[lean_lib]]
+name = "RadialInterface"
+
+[[lean_lib]]
+name = "ModalProfiles"
+
+[[lean_lib]]
+name = "ModalWeak"

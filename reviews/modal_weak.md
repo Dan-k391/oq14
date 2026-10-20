@@ -1,0 +1,13 @@
+# ModalWeak scope and self-audit
+
+The module proves the actual global distributional Maxwell equations for the assembled spherical electric and magnetic fields. Its 21 exports end with actual high-Q nonzero weak fields obtained from the previously constructed determinant zeros and interface matching. The frequency is complex, with negative imaginary part and arbitrarily large specified quality ratio. The material coefficient is the real positive sphere coefficient, and the exterior is exactly the previously constructed outgoing Hankel field.
+
+The electric field has a normal jump. The proof does not assert its continuity or discard the jump. Instead it uses the exact decomposition into the locally integrable weak gradient of the continuous scalar potential and the continuous axial field. Actual local C2 regularity and Hessian symmetry prove the classical gradient curl is zero away from the origin and sphere. The prior weak radial derivative theorem proves its distributional curl is zero globally. Continuous axial and magnetic fields then satisfy the actual interface integration-by-parts theorem, with all individual actual derivatives proved locally integrable. The classical Maxwell equations identify those curls almost everywhere.
+
+The resulting equations hold against every compact C2 scalar test. Electric, magnetic, and displacement components are locally integrable; multiplication by the discontinuous material coefficient is handled by measurable indicators and never by an assumed transmission identity. The existence theorem additionally proves a nonzero actual boundary trace and the exact outgoing exterior formula.
+
+Self-audit checked the weak-curl sign, Hessian symmetry, normal electric jump, center removal, material coefficient placement, and the quantifiers in the high-Q existence theorem. Local L2 membership and the corresponding regional H(curl) representation are the next module. Identification with an isolated pole of the full Maxwell operator, cross-degree isolation, and pole normalization are not asserted here.
+
+Evidence: `lean/logs/modal-weak-check.log`, successful compiler exit, 21 reports containing only `propext`, `Classical.choice`, and `Quot.sound`. Source SHA256: `FD007F6F32B7872F2E929C0A0C179DD12660AB728BD882EA621F3E65421792E5`.
+
+Root reviewed the complete mathematical chain before the final compile and found no defect. The channels agent independently read all 21 exports and passed the full audit, including the Hessian/equality argument, global weak gradient removal, actual derivative integrability, indicator multiplication, and high-Q quantifiers.

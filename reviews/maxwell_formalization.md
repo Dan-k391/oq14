@@ -445,7 +445,9 @@ oq14-maxwell-foundations-646 and its matching output checkpoint directory.
 
 The next 172 exports bring the registered source to 818 in 60 modules.
 All fifteen added modules passed targeted Lean checks and independent source
-review before registration. The aggregate clean rebuild is recorded separately.
+review before registration. Its aggregate clean rebuild passed all 818
+reports, all 15 diagnostics and the inspected 106-page PDF. The exact package
+is preserved at oq14-maxwell-foundations-818, commit618be804c984614f49efb1d109e9a08ed39ada6e.
 
 Root read NewtonConvolution11, NewtonL2 21, NewtonL1L2 11 and StaticNewton9 in
 full. The literal spatial Newton response is derived by absolute Fubini and
@@ -480,3 +482,40 @@ divergence-free H, smooth cutoffs give local weak H1, and the explicit Pi
 norm constants give the quantitative bound. Hotspots audited compact
 approximation/regularity; channels audited localization/bounds. No compact
 embedding or trace theorem is inferred from these results.
+
+
+## October 20 actual source equations, weak spherical fields and compactness
+
+The next 240 exports bring the registered total to 1058 in 83 modules.
+The 23 added modules passed targeted compilation and independent source
+review. Their aggregate clean rebuild and publication artifacts are separate
+provenance steps; the coherent 818 package remains authoritative until replaced.
+
+The field_response review records the actual spatial electric and magnetic
+construction, both first-order source equations, and their substitution into
+the dielectric material equation. Root read all seven channel modules in
+full; hotspots independently audited convolution, volume and localization,
+and the explicit numerical constant was independently checked.
+The support cutoff is exact, the L1 source property is proved, and the
+inverse bound is a sufficient small-volume condition, not general outgoing
+solvability. IncidentLocalization constructs its own weighted datum from
+local L2 incident components.
+
+Root and channels independently read SphereRemovable, RadialInterface,
+ModalProfiles and ModalWeak. Actual local integrability precedes each
+interface integration-by-parts step. The electric field's normal jump is
+retained through the continuous-potential gradient decomposition. The
+high-Q conclusion concerns actual nonzero weak Maxwell fields with the
+explicit Hankel exterior. It does not assert complete resolvent pole
+isolation, reciprocal normalization or hotspot packing.
+
+Root read all six new weak-field modules in full. PartialSmoothing and
+Translations use actual convolution and L2 graph convergence. Compactness
+uses Arzela-Ascoli only for the genuinely uniformly bounded Lipschitz
+smoothed family, then transfers finite covers through quantitative smoothing
+error. MagneticCompactness applies the actual local div-curl estimate.
+ElectricControl proves the actual regional energy and cutoff norm bounds.
+MaxwellCompactness applies them to differences for the same fixed epsilon;
+this proves local E/H compactness with a common neighborhood and explicit
+agreement. No compact-embedding or electric-compactness conclusion is
+assumed. Hotspots also independently audited Translations and Compactness.
