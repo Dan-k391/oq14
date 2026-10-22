@@ -1,0 +1,53 @@
+ConicalRadialUnbounded.lean:21:47: error: invalid field 'max', the environment does not contain 'ContinuousOn.max'
+  ContinuousOn.sub (ContinuousOn.norm hVc) (Continuous.continuousOn (Continuous.mul continuous_const continuous_id))
+has type
+  ContinuousOn (fun x => ‖c * power ν x + P x‖ - ?m.3375 * id x) (Ioo 0 R)
+ConicalRadialUnbounded.lean:21:47: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  ContinuousOn.sub (ContinuousOn.norm hVc) (Continuous.continuousOn (Continuous.mul continuous_const continuous_id))
+has type
+  ∀ x ∈ Ioo 0 R, ContinuousWithinAt (fun x => ‖c * power ν x + P x‖ - ?m.3375 * id x) (Ioo 0 R) x
+ConicalRadialUnbounded.lean:36:39: error: invalid field 'filter_mono', the environment does not contain 'Membership.mem.filter_mono'
+  Iio_mem_nhds hR
+has type
+  Iio R ∈ 𝓝 0
+ConicalRadialUnbounded.lean:36:39: error: invalid field 'filter_mono', the environment does not contain 'Membership.mem.filter_mono'
+  Iio_mem_nhds hR
+has type
+  Iio R ∈ (𝓝 0).sets
+ConicalRadialUnbounded.lean:36:39: error: invalid field 'filter_mono', the environment does not contain 'Set.Mem.filter_mono'
+  Iio_mem_nhds hR
+has type
+  (𝓝 0).sets.Mem (Iio R)
+ConicalRadialUnbounded.lean:36:39: error: invalid field 'filter_mono', the environment does not contain 'Filter.sets.filter_mono'
+  Iio_mem_nhds hR
+has type
+  (𝓝 0).sets (Iio R)
+ConicalRadialUnbounded.lean:36:39: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  Iio_mem_nhds hR
+has type
+  (𝓝 0).1 (Iio R)
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'Membership.mem.and'
+  self_mem_nhdsWithin
+has type
+  ?m.10256 ∈ 𝓝[?m.10256] ?m.10255
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'Membership.mem.and'
+  self_mem_nhdsWithin
+has type
+  ?m.10256 ∈ (𝓝[?m.10256] ?m.10255).sets
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'Set.Mem.and'
+  self_mem_nhdsWithin
+has type
+  (𝓝[?m.10256] ?m.10255).sets.Mem ?m.10256
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'Filter.sets.and'
+  self_mem_nhdsWithin
+has type
+  (𝓝[?m.10256] ?m.10255).sets ?m.10256
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'setOf.and'
+  self_mem_nhdsWithin
+has type
+  {s | ∃ a ∈ 𝓝 ?m.10255, ∃ b ∈ 𝓟 ?m.10256, s = a ∩ b} ?m.10256
+ConicalRadialUnbounded.lean:37:29: error: invalid field 'and', the environment does not contain 'Exists.and'
+  self_mem_nhdsWithin
+has type
+  ∃ a ∈ 𝓝 ?m.10255, ∃ b ∈ 𝓟 ?m.10256, ?m.10256 = a ∩ b
+ConicalRadialUnbounded.lean:37:9: error: rcases tactic failed: x✝ : ?m.9995 is not an inductive datatype

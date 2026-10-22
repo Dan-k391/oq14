@@ -1,0 +1,115 @@
+ConicalRoundedMaxwell.lean:17:34: error: ambiguous, possible interpretations 
+  ↥ConicalStaticVolume.VectorL2 : Type
+  
+  ↥NewtonL2.VectorL2 : Type
+ConicalRoundedMaxwell.lean:17:49: error: ambiguous, possible interpretations 
+  ↥ConicalStaticVolume.VectorL2 : Type
+  
+  ↥NewtonL2.VectorL2 : Type
+ConicalRoundedMaxwell.lean:20:42: error: ambiguous, possible interpretations 
+  ↥ConicalStaticVolume.VectorL2 : Type
+  
+  ↥NewtonL2.VectorL2 : Type
+ConicalRoundedMaxwell.lean:23:45: error: ambiguous, possible interpretations 
+  ↥ConicalStaticVolume.VectorL2 : Type
+  
+  ↥NewtonL2.VectorL2 : Type
+Try this: abel_nf
+ConicalRoundedMaxwell.lean:39:52: error: unsolved goals
+p : Data
+n : ℕ
+k : ℝ
+⊢ -1 • (newtonOperator + DynamicConvolution.operator k (2 * p.cutoff.rOut)) (annularSource p) +
+      (newtonOperator + DynamicConvolution.operator k (2 * p.cutoff.rOut))
+        ((StaticCoefficient.sqrtMultiplier (ConicalTipRounding.rounded (coefficient p) n))
+          (MaterialVolumeLimit.weightedSolution (ConicalTipRounding.rounded (coefficient p) n) k p.cutoff.rOut
+            (-1 • (newtonOperator + DynamicConvolution.operator k (2 * p.cutoff.rOut)) (annularSource p)))) =
+    sorry
+ConicalRoundedMaxwell.lean:40:2: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:40:2: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:40:2: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:44:8: warning: unused variable `field_weighted`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ConicalRoundedMaxwell.lean:49:4: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:54:2: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:52:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:61:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:62:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:59:2: warning: 'change
+  (physicalCoordinate (StaticCoefficient.sqrtMultiplier (material p n) (solution p n k)) i -
+        physicalCoordinate (annularSource p) i)
+      x =
+    _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:61:2: warning: 'rw [hs]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:62:2: warning: 'simp only [Pi.sub_apply, hm, ha, source, DynamicVolume.source, annular]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:65:76: error: unsolved goals
+p : Data
+n : ℕ
+k : ℝ
+i : Fin 3
+x : Space
+hx : x ∉ closedBall 0 p.cutoff.rOut
+⊢ DynamicVolume.source (material p n) sorry i x - annular p i x = 0
+ConicalRoundedMaxwell.lean:66:6: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:69:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:77:4: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:86:2: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:80:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:89:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:94:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:99:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:100:5: warning: unused variable `hk`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ConicalRoundedMaxwell.lean:106:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:110:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:112:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:113:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:114:2: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ConicalRoundedMaxwell.lean:105:2: warning: 'rw [field_weighted p n k hk] at hs' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:106:2: warning: 'filter_upwards [ae_restrict_of_ae hs,
+  ae_restrict_of_ae (physicalCoordinate_ae (StaticCoefficient.sqrtMultiplier (material p n) (solution p n k)) i),
+  ae_restrict_of_ae (StaticNewton.material_source_ae (material p n) (solution p n k) i),
+  ae_restrict_of_ae (physicalCoordinate_ae (field p n k) i), field_ae p n k i] with x hs hm hsrc hf
+  he' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:110:2: warning: 'change
+  (Real.sqrt ((material p n).value (VectorFourier.coordinateMap x)) : ℂ) *
+      solution p n k (VectorFourier.coordinateMap x) i =
+    _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:112:2: warning: 'rw [← hsrc, hm, hs]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:113:2: warning: 'change
+  ((material p n).value (VectorFourier.coordinateMap x) : ℂ) * field p n k (VectorFourier.coordinateMap x) i =
+    _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:114:2: warning: 'rw [material_spatial, ← hf, he]' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+ConicalRoundedMaxwell.lean:135:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:116:8: warning: declaration uses 'sorry'
+ConicalRoundedMaxwell.lean:139:8: warning: declaration uses 'sorry'
+'OQ14.ConicalRoundedMaxwell.material_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.material_spatial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.field_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.field_weighted' does not depend on any axioms
+'OQ14.ConicalRoundedMaxwell.source_ae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.source_zero_outer' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.source_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.source_compact' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.field_ae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.electric_memLp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.magnetic_memLp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.material_relation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.source_pairing_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalRoundedMaxwell.maxwell_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

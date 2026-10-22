@@ -1,0 +1,167 @@
+Try this: ring_nf
+ParityTotalFlux.lean:51:76: error: unsolved goals
+ι : Type u_1
+inst✝ : Fintype ι
+k B : ℝ
+ρ : Source
+p : ι → Space
+j : ι → Fin 3
+A : ι → ℂ
+q : Plane
+hi : ∀ (i : Fin 3), i ≠ 2 → incidentElectric k p j A (MaxwellPlaneTail.planePoint q) i = 0
+he : ∀ (i : Fin 3), i ≠ 2 → ParityPlaneFields.electric true k ρ (MaxwellPlaneTail.planePoint q) i = 0
+hh : ∀ (i : Fin 3), i ≠ 2 → ParityPlaneFields.magnetic false k ρ (MaxwellPlaneTail.planePoint q) i = 0
+⊢ ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 * ↑B ^ 2 *
+                                                  (starRingEnd ℂ)
+                                                    (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q)
+                                                      1) +
+                                                ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                                    (↑B)⁻¹ ^ 2 *
+                                                  (starRingEnd ℂ) 0 +
+                                              ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                                (starRingEnd ℂ)
+                                                  (FiniteHerglotzFlux.magnetic k (fun x => true) p j A
+                                                    (MaxwellPlaneTail.planePoint q) 1) +
+                                            ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                              (starRingEnd ℂ)
+                                                (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1) +
+                                          (-(ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                                (starRingEnd ℂ)
+                                                  (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q)
+                                                    1)) -
+                                            ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                              (starRingEnd ℂ) 0) +
+                                        (↑B ^ 2 * (↑B)⁻¹ ^ 2 *
+                                              ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                            (starRingEnd ℂ)
+                                              (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1) -
+                                          ↑B ^ 2 * (↑B)⁻¹ ^ 2 *
+                                              ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                            (starRingEnd ℂ)
+                                              (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                                      (-(↑B ^ 2 *
+                                              ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                            (starRingEnd ℂ)
+                                              (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1)) -
+                                        ↑B ^ 2 * ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                          (starRingEnd ℂ)
+                                            (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                                    ↑B ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                      (starRingEnd ℂ)
+                                        (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+                                  (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ)
+                                      (FiniteHerglotzFlux.magnetic k (fun x => true) p j A
+                                        (MaxwellPlaneTail.planePoint q) 1) +
+                                ((↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1) -
+                                  (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ)
+                                      (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1)) +
+                              (-((↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                      (starRingEnd ℂ) 0 *
+                                    2) -
+                                (↑B)⁻¹ ^ 2 * (starRingEnd ℂ) 0 *
+                                  ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1) +
+                            (↑B)⁻¹ ^ 2 * (starRingEnd ℂ) 0 *
+                                ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                              2 +
+                          (-((↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                (starRingEnd ℂ)
+                                  (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q)
+                                    0)) -
+                            (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                              (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                        (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                          (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+                      ((↑B)⁻¹ ^ 4 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                          (starRingEnd ℂ) 0 -
+                        (↑B)⁻¹ ^ 4 * (starRingEnd ℂ) 0 *
+                          ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1) +
+                    (-(ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                          (starRingEnd ℂ)
+                            (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 1)) -
+                      ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                        (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1)) +
+                  ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                    (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1) +
+                ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 * (starRingEnd ℂ) 0 +
+              ((starRingEnd ℂ) 0 * ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 -
+                (starRingEnd ℂ) 0 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1) +
+            (-(ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                  (starRingEnd ℂ)
+                    (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 0)) -
+              ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+          ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+            (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+        ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 0) +
+      (ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0) -
+        ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0)) =
+    ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 * ↑B ^ 2 *
+                                    (starRingEnd ℂ)
+                                      (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1) +
+                                  ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ)
+                                      (FiniteHerglotzFlux.magnetic k (fun x => true) p j A
+                                        (MaxwellPlaneTail.planePoint q) 1) +
+                                (ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1) -
+                                  ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                    (starRingEnd ℂ)
+                                      (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1)) +
+                              (↑B ^ 2 * (↑B)⁻¹ ^ 2 *
+                                    ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                  (starRingEnd ℂ)
+                                    (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1) -
+                                ↑B ^ 2 * (↑B)⁻¹ ^ 2 *
+                                    ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                  (starRingEnd ℂ)
+                                    (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                            (-(↑B ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                                  (starRingEnd ℂ)
+                                    (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1)) -
+                              ↑B ^ 2 * ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                                (starRingEnd ℂ)
+                                  (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                          ↑B ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                            (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+                        (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                          (starRingEnd ℂ)
+                            (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 1) +
+                      ((↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                          (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1) -
+                        (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                          (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1)) +
+                    (-((↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                          (starRingEnd ℂ)
+                            (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 0)) -
+                      (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                        (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+                  (↑B)⁻¹ ^ 2 * ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                    (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+                (-(ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                      (starRingEnd ℂ)
+                        (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 1)) -
+                  ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                    (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 1)) +
+              ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 0 *
+                (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 1) +
+            (-(ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                  (starRingEnd ℂ)
+                    (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 0)) -
+              ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+                (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0)) +
+          ExteriorContinuity.electric k ρ (MaxwellPlaneTail.planePoint q) 1 *
+            (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0) +
+        ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (FiniteHerglotzFlux.magnetic k (fun x => true) p j A (MaxwellPlaneTail.planePoint q) 0) +
+      (ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (MagneticResponse.magnetic k ρ (MaxwellPlaneTail.planePoint q) 0) -
+        ParityPlaneFields.electric false k ρ (MaxwellPlaneTail.planePoint q) 1 *
+          (starRingEnd ℂ) (ParityPlaneFields.magnetic true k ρ (MaxwellPlaneTail.planePoint q) 0))
+'OQ14.ParityTotalFlux.free_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityTotalFlux.total_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

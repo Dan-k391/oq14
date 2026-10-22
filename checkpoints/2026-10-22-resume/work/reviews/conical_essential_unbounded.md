@@ -1,0 +1,5 @@
+# ConicalEssentialUnbounded — author verification
+
+Source SHA256 `9E90A1AE29D90778A87C187576A5CC9269B11E32C6E47D2BB6CCD6243D37D66F`. Initial target50876 and final/object first command28630 EXIT0/no warnings/both standard-only reports. Subsequent first Hotspot target also succeeded. Log `lean/ConicalEssentialUnbounded.final.log` SHA256 `7D9949DFD3ECC54CD5F072BDEB6A2F1420686CAD51D2C8D521B32539DF1C49D7`; object225576 bytes.
+
+If the actual physical electric field were essentially bounded on a tip ball, the literal continuous correction would be bounded on its compact closure. The actual potential-gradient identity then bounds every actual gradient coordinate almost everywhere there. Genuine polar AE moment bounds and bounded actual angular weights force U to have an AE linear radial bound. This contradicts the proved retained nonzero conical mode for sufficiently small positive frequencies. The resulting actual physical electric field is not essentially bounded on any positive ball at the tip inside the inner radius. No field boundedness-to-moment implication or frequency singularity is assumed. Parent independent audit requested.

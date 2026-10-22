@@ -1,0 +1,7 @@
+PolynomialVectorCalculus.lean:42:2: error: unsolved goals
+case «1»
+Q : Vec
+⊢ (pderiv 1) ((pderiv 2) (Q 2)) - (pderiv 2) ((pderiv 2) (Q 1)) -
+      ((pderiv 0) ((pderiv 0) (Q 1)) - (pderiv 1) ((pderiv 0) (Q 0))) =
+    (pderiv 1) ((pderiv 0) (Q 0)) + (pderiv 1) ((pderiv 1) (Q 1)) + (pderiv 1) ((pderiv 2) (Q 2)) -
+      ((pderiv 0) ((pderiv 0) (Q 1)) + (pderiv 1) ((pderiv 1) (Q 1)) + (pderiv 2) ((pderiv 2) (Q 1)))

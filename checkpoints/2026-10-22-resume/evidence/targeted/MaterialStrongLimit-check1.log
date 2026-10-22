@@ -1,0 +1,33 @@
+MaterialStrongLimit.lean:16:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ⟪?x, ?x⟫_?m.3598
+f : ↥VectorL2
+x : LongitudinalProjection.Frequency
+⊢ (fun a => RCLike.re ⟪↑↑f a, ↑↑f a⟫_ℂ) x = (fun a => ‖↑↑f a‖ ^ 2) x
+MaterialStrongLimit.lean:34:51: error: unexpected token 'have'; expected ')', ',' or ':'
+MaterialStrongLimit.lean:25:8: error: tactic 'rewrite' failed, equality or iff proof expected
+  (fun x => ℂ) ?i
+c : ℕ → Coefficient
+c₀ : Coefficient
+D : ℝ
+hb : ∀ (n : ℕ), (c n).bound ≤ D
+hb₀ : c₀.bound ≤ D
+ha : ∀ᵐ (x : Space), Tendsto (fun n => (c n).value x) atTop (𝓝 (c₀.value x))
+f : ↥VectorL2
+q : ℕ → Space → StaticCoefficient.Vector := fun n x => (↑√((c n).value x) - ↑√(c₀.value x)) • ↑↑f x
+hD : 0 ≤ D
+n : ℕ
+x : Space
+⊢ ‖q n x‖ ≤ 2 * √D * ‖↑↑f x‖
+MaterialStrongLimit.lean:21:81: error: unsolved goals
+c : ℕ → Coefficient
+c₀ : Coefficient
+D : ℝ
+hb : ∀ (n : ℕ), (c n).bound ≤ D
+hb₀ : c₀.bound ≤ D
+ha : ∀ᵐ (x : Space), Tendsto (fun n => (c n).value x) atTop (𝓝 (c₀.value x))
+f : ↥VectorL2
+q : ℕ → Space → StaticCoefficient.Vector := fun n x => (↑√((c n).value x) - ↑√(c₀.value x)) • ↑↑f x
+hD : 0 ≤ D
+hbound : ∀ (n : ℕ) (x : Space), ‖q n x‖ ≤ 2 * √D * ‖↑↑f x‖
+hm : ∀ (n : ℕ), AEStronglyMeasurable (fun x => ‖q n x‖ ^ 2) volume
+⊢ Tendsto (fun n => (sqrtMultiplier (c n)) f) atTop (𝓝 ((sqrtMultiplier c₀) f))

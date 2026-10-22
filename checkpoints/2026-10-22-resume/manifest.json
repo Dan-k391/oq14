@@ -1,0 +1,3061 @@
+{
+  "checkpoint_tag": "oq14-resume-2026-10-22",
+  "user_requested_pause": true,
+  "task_complete": false,
+  "registered_base_commit": "c597c535c9a751fccbf3e9a0d644721326ceda26",
+  "registered_declarations": 4391,
+  "registered_modules": 469,
+  "registered_libraries": 441,
+  "latest_coherent_release": "oq14-maxwell-foundations-4391",
+  "registered_clean_aggregate": "PASS; EXIT0; all reports standard-only; nine dependency pins",
+  "diagnostic_groups_passed": 15,
+  "pdf_pages": 113,
+  "new_unregistered_modules": 69,
+  "new_source_report_directives": 361,
+  "independently_audited_modules": 58,
+  "independently_audited_reports": 277,
+  "author_only_modules": 10,
+  "author_only_reports": 74,
+  "uncompiled_drafts": [
+    "ConicalRoundedHCurl"
+  ],
+  "active_compiler_jobs": 0,
+  "active_agent_jobs": 0,
+  "module_status": [
+    {
+      "module": "ConicalAngularEnergy",
+      "reports": 3,
+      "sha256": "ecb2c17f70939ab648d5993e75413e5f995d5f1e77a25c0b75c55a4e0e250703",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalAngularEnergy-root-audit.log",
+      "log_sha256": "1ffc6d9985351617abd69d52ddf7d50d959a70252efac0b7a39d16e758b2a3c8",
+      "local_object": {
+        "bytes": 160624,
+        "sha256": "0e40a327ad963f00be91bac99042c99f844bb33fa5a4f478a0c4ff8c8a4ecc38",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalAnnularCoefficient",
+      "reports": 7,
+      "sha256": "9dbe59fa83acf6e78a1766b6d408a3b54f95fa83608ede7c26fcc15a1dd63a61",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalAnnularCoefficient-root-audit.log",
+      "log_sha256": "d2560094ea643ee872bac4345f4bc13ac092768a5b7ef800927a8b029cf4736e",
+      "local_object": {
+        "bytes": 346560,
+        "sha256": "2ded2ddd947e8ef09c34a47eb4a5423152e02d02e2d3075d81a3e6be0a8d8070",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalCoefficientIdentity",
+      "reports": 2,
+      "sha256": "6df4d5449d06874f314af1eab91bcdf45adb61ebf6ea39be866e9146bebac956",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalCoefficientIdentity-root-audit.log",
+      "log_sha256": "1ed3356fd4544b6883e9d5420a70c392966966b78a5536f0ae27f6d144b06898",
+      "local_object": {
+        "bytes": 267984,
+        "sha256": "72287e69b1ea4012697b9b324bebc6182ec970af52d5cf3372f67bc948b07fba",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalCoefficientLimit",
+      "reports": 3,
+      "sha256": "c14ba536d1f120676e14b70d2c3a05641fd2937d4b2ac3877a3b8eb4e30eb35b",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalCoefficientLimit-root-audit.log",
+      "log_sha256": "a9e3085d8ebdfd90fbd214dc281beda52589a062873ef6b69a491907deb2f020",
+      "local_object": {
+        "bytes": 218304,
+        "sha256": "779e57b604f50347f13a16d66cb924473c3e2ee6a2d16d69c361d12f3b098a02",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalCoefficientRetention",
+      "reports": 3,
+      "sha256": "2a654fe47db6fbe94d91d8dfd6c46d13e6bbdd755bdf8e91663a9a4ad95796bc",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalCoefficientRetention-root-audit.log",
+      "log_sha256": "2e9ffbd02fc70997cb576032e48f6a0b39585660c0b09b8b461b99d9794e3bac",
+      "local_object": {
+        "bytes": 246416,
+        "sha256": "eafa720c6afc55c1d7757ce85aaf1964c0c473538704231e65990d853a98dbbd",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalCorrectionBounds",
+      "reports": 2,
+      "sha256": "c07e3157f2b69e4afe58889d6762745f5114719b0baca2d478636609811cd493",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalCorrectionBounds-root-audit.log",
+      "log_sha256": "c30fe005e59f38a8edd9813b3975510d2ddd67b92a9f15148e4dbdceb9b9825e",
+      "local_object": {
+        "bytes": 228240,
+        "sha256": "b163461952d9c5e95154acf24600f45d31079dfbe39c83153e216fcd60fa2389",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalDynamicHotspot",
+      "reports": 1,
+      "sha256": "f5c536cedb1afdecac62e7a7981622c4157bb28959ac5637543734cee3651e35",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalDynamicHotspot-root-audit.log",
+      "log_sha256": "b8a0f76b9a45a1fa1d22b63d4c726b3ab2ff9d254d1768058b5f6de8c3b4332f",
+      "local_object": {
+        "bytes": 268472,
+        "sha256": "93317c96521e4db22b40fe96b8c5615a2ed1d7298c4ebebab1e812a72b31be0e",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalEssentialUnbounded",
+      "reports": 2,
+      "sha256": "9e90a1ae29d90778a87c187576a5cc9269b11e32c6e47d2bb6ccd6243d37d66f",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalEssentialUnbounded-root-audit.log",
+      "log_sha256": "7d9949dfd3ecc54cd5f072bdeb6a2f1420686cad51d2c8d521b32539df1c49d7",
+      "local_object": {
+        "bytes": 225576,
+        "sha256": "e6bbecfdfc40c7979e18082ab975f014a6daedbb7df43432dd62cd47c5e6c0c3",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalRadialUnbounded",
+      "reports": 5,
+      "sha256": "5be315150c95f327c6771ee496ee35d016d08338cca4287a366e354cbcb8042e",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalRadialUnbounded-root-audit.log",
+      "log_sha256": "330cc86465e3efc8bb31d1ec853a6e03e8cbcbdd2b97006f5ed93cbc15f8f0ff",
+      "local_object": {
+        "bytes": 268552,
+        "sha256": "54b08ddab28238e5c194c1efc7e6170fda2cdd5730fbfc0b3a7e27b8139c6caa",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalRoundedHCurl",
+      "reports": 10,
+      "sha256": "cbbb0230a5e1e7ec784d62aa61cadb9b6b95b5091ca69df25e5f72d980e15174",
+      "status": "UNCOMPILED DRAFT",
+      "log": null
+    },
+    {
+      "module": "ConicalRoundedMaxwell",
+      "reports": 14,
+      "sha256": "58f6f0f0f704416cd7d30d742c8ffd42bee0f193627c706ff9afc6423d1325f0",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/ConicalRoundedMaxwell.final.log",
+      "log_sha256": "0b8034bac1ad1915bddda366c7e3e59339ea24d47f998a273f00495efe1bab5e",
+      "local_object": {
+        "bytes": 349120,
+        "sha256": "f70c7f3d24cccdda3d2e4d57c721fa69737e24a2a36b66d54b063a66aa490b65",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalRoundedPeaks",
+      "reports": 8,
+      "sha256": "7636c913a874750d29b8685559bf1637810ca00c1402446e2b377cfd9e2c266e",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalRoundedPeaks-root-audit.log",
+      "log_sha256": "95be815a6cf2eb14e1dc5655bba4d7af8621515e1e08a05d06bf1f7829f28f1a",
+      "local_object": {
+        "bytes": 180896,
+        "sha256": "c09d0e19e8849aba011c6c52d73cc2f7878781eb2a694b6744ce816f0e406fa1",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalStaticCoefficient",
+      "reports": 3,
+      "sha256": "73bf9b8f0a99ec6839c2bb752dbb30adf582eb61c261be37420a88d03e79c887",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalStaticCoefficient-root-audit.log",
+      "log_sha256": "de88c147399b5c91fe36fc44c3cef0bf78bf8d33680505f1f46d656830323ae9",
+      "local_object": {
+        "bytes": 391912,
+        "sha256": "c8050bd91c46ed63357231a8572587181d88e42bf8114840e09906179de2983c",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalTipRounding",
+      "reports": 14,
+      "sha256": "e88f1d6114928deba49d2d10e5e49e78f872742c467199692afb18613da43010",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalTipRounding-root-audit.log",
+      "log_sha256": "194661e2864adec8812bd64eb83af12207eb3cd851dd17bf13e04e42ab56fcfa",
+      "local_object": {
+        "bytes": 253168,
+        "sha256": "d1d2137a718d864593d53774fdf46e98f87812b334ac05cb900f42c7f54484eb",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ConicalVolumePeaks",
+      "reports": 4,
+      "sha256": "b80545b2f247f72676b83bd532fa4bcc0682baa2725c1bca6ce98c1688243a11",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ConicalVolumePeaks-root-audit.log",
+      "log_sha256": "7cd3c4a55818d8a13c0d5d0cfd495a8c303fe62c5895a31970c6fc0f5e0eb417",
+      "local_object": {
+        "bytes": 206976,
+        "sha256": "a1f261f6e92dacf2258d2f338b5aa07e3105d6e655c9791e70d1ad18acaaaeb0",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "DensityCurl",
+      "reports": 3,
+      "sha256": "c7baed2b95113b5cda24b75937e4134e2be14a4753b9c2ffd07b44e4bcc07465",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/DensityCurl-final.log",
+      "log_sha256": "7867a95302b55f3970bc35e85cc83cea474166e251c0009f6add10eadcea968e",
+      "local_object": {
+        "bytes": 205320,
+        "sha256": "b9bbc624fc777b1270f3b99fa2797972c8b36bbaa39549c051d25461fdae73b0",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "DensityDerivatives",
+      "reports": 4,
+      "sha256": "6adb054725316f4817e5f3dcd034413c766e3514b19f75af2d5c9b9a501772c7",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/DensityDerivatives-final.log",
+      "log_sha256": "fa0aa5d6e2601846df0f2b43201bed792e81f30779f8213efb6e2c574ccb6028",
+      "local_object": {
+        "bytes": 168080,
+        "sha256": "2603db8a7c3484ed1fd853b8e11a05337dd6b1790fd72f88d1593391fc1bc522",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "DensityWeak",
+      "reports": 3,
+      "sha256": "7490773f178b17988b72f9e52acfc9769e08723ddbf74d7d0a2750c871b51e1b",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/DensityWeak-final.log",
+      "log_sha256": "4ba82ab34ab47f7c4086bec30cfdea885c53d45003907b54edb7f6ec99705047",
+      "local_object": {
+        "bytes": 164632,
+        "sha256": "e188f24cad772dbc1b4ee4241a1ab8b8fb770a1666169d2c111b12c866ffefa3",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSphereActualSources",
+      "reports": 4,
+      "sha256": "423253aa5ec67104d3bfbbd7ede6f5611093aa39fa5d84252b53d58d2fb2a821",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSphereActualSources-root-audit.log",
+      "log_sha256": "e6ec1f41c57fd70e837216bcde8b9a505248e1cbced9d514e18d56b1d2d08cbf",
+      "local_object": {
+        "bytes": 314504,
+        "sha256": "ad7d31145cce250b2823eb2a307b4fb0f67d5e4e3ce42a67b115ab5ba3216be8",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSphereIllumination",
+      "reports": 2,
+      "sha256": "58c828dbf950a44f069d181b184e4c47dbaf814b51696710b84f9426b48686ba",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSphereIllumination-root-audit.log",
+      "log_sha256": "bc07a5001093a10ed26116fd12cd2be75a3bf6b7757dc5eba170b40fb1f57eb7",
+      "local_object": {
+        "bytes": 146864,
+        "sha256": "afc3a21236659e608283eb4bb504a4b6550c185e222e889817b3c769d5621a65",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSphereIncident",
+      "reports": 9,
+      "sha256": "0ff9ebbcb3688410c37add333c82006661f0600123fd6b417e42ac8d2f471c2a",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSphereIncident-root-audit.log",
+      "log_sha256": "f0cc688a9c92760a73a4c46a5c2eb84b4350b8c5b84eb0cc55431c177413f842",
+      "local_object": {
+        "bytes": 444832,
+        "sha256": "589537aaead05531770279d9652149021c8764379d8f5bfc99988784ec04fc60",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSpherePlaneLimit",
+      "reports": 1,
+      "sha256": "cd456c08cc335ca2373c4d2f2fee34c18f10efe6afa399e504ef5d9c6d61c738",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSpherePlaneLimit-root-audit.log",
+      "log_sha256": "d4003fedee2033224b102437c567c97512dfba5f6083f47c353ef3b8ad407a49",
+      "local_object": {
+        "bytes": 149104,
+        "sha256": "f0b3af7c440c483b34f873c76eac8a6481b3c4cfc34d1f074befcac1a34b93df",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSphereQuadratic",
+      "reports": 2,
+      "sha256": "979cdeb3b18ab0f13071ce422faf28e371fda08d6e4331b4e612f1188063e8b7",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSphereQuadratic-root-audit.log",
+      "log_sha256": "fef5a576cc1811ba6115c50c4b2a45f435c756f9e4c0e1ba9c7b263f3e53d91e",
+      "local_object": {
+        "bytes": 235336,
+        "sha256": "04e8dc05cd26ef5831983d6406ccc6afe7d537aa14531ca39b5c2cdacb49522c",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "FiniteSphereSourceMass",
+      "reports": 2,
+      "sha256": "7319dcfd874ac1ab073872a392abdeca3ad576e9c63e8ba8962d4d73e54a935e",
+      "status": "independent audit PASS",
+      "log": "lean/logs/FiniteSphereSourceMass-root-audit.log",
+      "log_sha256": "d58e1609744ad5c7f7e6c9d86fd52d6e478257cb8b36120c3a730d90c4cb7dea",
+      "local_object": {
+        "bytes": 246144,
+        "sha256": "ee7dfaeb5e4683e88fee0994dc056463bee5f2b0876d6b8f057caddb74215466",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "HarmonicRadiationFactors",
+      "reports": 8,
+      "sha256": "12b1a0c3fa1d80e5486e35bef55d96f7becbae6b7325fd53c2eec5b991ec7e4b",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/HarmonicRadiationFactors-final.log",
+      "log_sha256": "52352009d4c3a908b614e0290e2c625a12cec8d28fa5c0b2e10607ca78be308e",
+      "local_object": {
+        "bytes": 556312,
+        "sha256": "a9c7a64c18687d3f3164f8e809f83dc4fb43aae24fafb357c61957b5eebb3c3e",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "HarmonicRadiationGeometry",
+      "reports": 4,
+      "sha256": "0eeee5d5bb466070b32cfec98792cc5c255554f6e109f87424ebf4e4ed5457a9",
+      "status": "independent audit PASS",
+      "log": "lean/logs/HarmonicRadiationGeometry-modal-audit.log",
+      "log_sha256": "c6623763cc108331fe6b6ba374ce347ecd0e7ed550f7bc99abb8bc3fa0a5e33d",
+      "local_object": {
+        "bytes": 352672,
+        "sha256": "cb21423272a04e10f388c3812e859dc58c7c0c7d4905ea6f426f193b435ea80c",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "HarmonicSpatialMajorant",
+      "reports": 5,
+      "sha256": "c6906c378fe440b1b3d5b25e37b41478464e845abaea1842314240055b543a73",
+      "status": "independent audit PASS",
+      "log": "lean/logs/HarmonicSpatialMajorant-root-audit.log",
+      "log_sha256": "cb7c20e5c9353d68dae4dda0814589f2b8d617328a3b9cb78dc0b8900e1cbca2",
+      "local_object": {
+        "bytes": 392608,
+        "sha256": "9e115e145d77e4d188613cfae57eced6433ca3bd8b797a5d432875c0a5f4caa9",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "HarmonicVectorDecomposition",
+      "reports": 9,
+      "sha256": "9d76dbc326e0f96c1f410c81af2949adf8a1bd83a529957c10e20c0bc21297c8",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/HarmonicVectorDecomposition-final.log",
+      "log_sha256": "53c8fb607f54dd5cb791a637c919b2d9997acb8377ae858398f6d167001bc666",
+      "local_object": {
+        "bytes": 447864,
+        "sha256": "ad17acaa9c7721f3a2a307947cdfe524941be8a599495202f3d1572d7000bc4f",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "L2PeakPreservation",
+      "reports": 3,
+      "sha256": "3e5fb555e70a5a193aa992b867ed20da19f0da01e7b9d10e5e72325c8d8348e7",
+      "status": "independent audit PASS",
+      "log": "lean/logs/L2PeakPreservation-root-audit.log",
+      "log_sha256": "a06e8adb070c0675dc06cfee7398e02b79821e605c4e4141f9f4cd74c99ea757",
+      "local_object": {
+        "bytes": 144200,
+        "sha256": "7d6683b00664f9bb74bfe4804d472df02be7ee04e3c5f899b2c2802529f68974",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "LocalSmoothSeries",
+      "reports": 2,
+      "sha256": "e80e5e5d815b66cfd22e8cdc5e7b44d4195f72f65f00a0d5d0ee9c2d7130322d",
+      "status": "independent audit PASS",
+      "log": "lean/logs/LocalSmoothSeries-root-audit.log",
+      "log_sha256": "0d4ae87717d073ecd12f246d847364e55ff9ba984b1afca1ecf2857123b5934d",
+      "local_object": {
+        "bytes": 242432,
+        "sha256": "7ac9b162293c54350b32c539c0578b4c97f4d987968bfe458d025b5e078fb8e4",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "MaterialStrongLimit",
+      "reports": 3,
+      "sha256": "85d10fabf5a68bb1bd3e8b8dac48b189fb0379aecf9df04e6b59052bb5e0f8f7",
+      "status": "independent audit PASS",
+      "log": "lean/logs/MaterialStrongLimit-root-audit.log",
+      "log_sha256": "b053ac5dbe9b4e25ea212653b46a939338f079a0d34dbc5011ad58d177b5d855",
+      "local_object": {
+        "bytes": 288656,
+        "sha256": "5ea640cbc8e4a0b5f85135e60f2fc31c60aa7ccac32a79c48b0b4b351b7e17c3",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "MaterialVolumeLimit",
+      "reports": 8,
+      "sha256": "d3d0e02d30fbd251c236f24ba17d0d601a25cae8f15e43b0691d28ec4dfe4d3c",
+      "status": "independent audit PASS",
+      "log": "lean/logs/MaterialVolumeLimit-root-audit.log",
+      "log_sha256": "6647fab4a91ead86ceb31c78440e863145bec0491f983ad3a6cb1cb6b3f8e960",
+      "local_object": {
+        "bytes": 363880,
+        "sha256": "dcbdd782fe96bbaa016bb7ea1ee3f696e366a049ebb46161f99f50e72b90f928",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityCompleteLimit",
+      "reports": 1,
+      "sha256": "54a790b2a688a3440d5d5e5eec0fc0e28d059b54916200e9a10b65b8070b1749",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityCompleteLimit-root-audit.log",
+      "log_sha256": "271f0ee49062fd1b7f6932b40eeb0a4ab84dd3065475696e58c408cad242b9ab",
+      "local_object": {
+        "bytes": 285552,
+        "sha256": "26c291891d7490b221325edcea8177593ef1bc725c388d166f23dc2dd41b075a",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityDensityMaxwell",
+      "reports": 7,
+      "sha256": "d1dfd6cdde6e97a61104bbc69a84e3e0226f67d8785577ecb61a503901ca0597",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/ParityDensityMaxwell-final.log",
+      "log_sha256": "8a06899c86b65adfab5a262196f522a72ffc1a4b4f8702feadc7db381aa85daa",
+      "local_object": {
+        "bytes": 94296,
+        "sha256": "22db46133d09ff5b6a6482d2b059a175f49dcd3aa0a2d2392210d17583e36d4e",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityIncidentFlux",
+      "reports": 4,
+      "sha256": "4c2a11f721003ad8be45f18b3c8106c0d99e9153a7e28324867d9efc3d51647f",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityIncidentFlux-root-audit.log",
+      "log_sha256": "137b76d705d719fdcb636e7bca8fd7b95a9daf2fe7f3d6ac381d152b9e54edbd",
+      "local_object": {
+        "bytes": 273320,
+        "sha256": "cd11dc23058ce16966be8d6f084f3f93feaa49b68f353db362d67f41b7d3a4d5",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityPlaneBounds",
+      "reports": 4,
+      "sha256": "823c8359125102dee4a252ee6b0bbfa99cdcb2eb2bc35b848b1f001d69162145",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityPlaneBounds-root-audit.log",
+      "log_sha256": "ccfe4baef4a86c4058695a0bfa82328cb21dcfa82cde8ac1e0158750b1c80b8e",
+      "local_object": {
+        "bytes": 195664,
+        "sha256": "071adac043784419d9bb5d91f119832f5df8bf4fa997667ff22893ef8f9a8e9d",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityPlaneColumns",
+      "reports": 5,
+      "sha256": "a9e59a25dba0f865f37ce064996ab0d8bd342d88178aca4a8cabcc9c74f9d766",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityPlaneColumns-root-audit.log",
+      "log_sha256": "5d64318bc4d4b90b033f00b33428bc77346762e993145335d761a400e02f5c3f",
+      "local_object": {
+        "bytes": 234072,
+        "sha256": "76ae808b4d0c5ce82fb5daf86d30b365845cc936c5f7caf363d87a77c85e718f",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityPlaneFields",
+      "reports": 12,
+      "sha256": "2f64f9dc8af196b9220c4cf9256ce72343b724f5b185236f61bd7e8d8685a5b2",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityPlaneFields-root-audit.log",
+      "log_sha256": "7d76a5eb0af43de94c55e228a6f5c7e1464f64ce2502622ed6456fcd6efa6e1a",
+      "local_object": {
+        "bytes": 242864,
+        "sha256": "acf58fd611d617d117b5f0a4d2834bbd3bd15dec9a013d8423a2daab14458421",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityRemainderBound",
+      "reports": 1,
+      "sha256": "aa533ea54b4851add412231e48038b1f28f87a4ea15e8b0fff09af51621aad95",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityRemainderBound-root-audit.log",
+      "log_sha256": "b9cec81d1d3c688c65177d712da1b3cf3ddc17712e5e60b2be21877f1717c530",
+      "local_object": {
+        "bytes": 261776,
+        "sha256": "058218483fa9031f4c3066cdd32154b2f1d9877023a5668bb4fcb74d819a0688",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityRemainderMoving",
+      "reports": 3,
+      "sha256": "c65b8a3cc23fb5441ac0eca03dca2ed4fa789d99afe44182005545485b09d248",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityRemainderMoving-root-audit.log",
+      "log_sha256": "1c9a5c9dfe798ce519f5c2ec088905a256d4979a3356a1c5331c077b100bda9e",
+      "local_object": {
+        "bytes": 486048,
+        "sha256": "728174072483fdab216692a708f8fb2fde30d65a9b6483b85bad2a37f898d04b",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ParityTotalFlux",
+      "reports": 2,
+      "sha256": "f095a9307085fec9f3f3107c184f0550a8769f212e93b2eeb023a7ce994de1f0",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ParityTotalFlux-root-audit.log",
+      "log_sha256": "0ac628d0857a3e4d7eaafe59610820ac94b763a86855baf81721ffea36555733",
+      "local_object": {
+        "bytes": 330600,
+        "sha256": "700f2a61a9f369ac104ea8484f7f274a03220a0a4bd0788a1031a6a57fcfffcc",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PhysicalReactionLimit",
+      "reports": 9,
+      "sha256": "cae9c90556496705ab4dbf21c94fc4440ca13b6a04016ef526e2d8fc9f8635e0",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PhysicalReactionLimit-root-audit.log",
+      "log_sha256": "2be801553725d4eb3d643106be63b2cd78e3624afaf82435beacff039e33487f",
+      "local_object": {
+        "bytes": 367832,
+        "sha256": "8ed70809ac26a21ed389da8e33aae40d6d70570707100a9b00791f69a779e3f3",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PhysicalReactionSeries",
+      "reports": 7,
+      "sha256": "a735f3cb47da482db731e6aa7f4ee5c572f41410cc673460d951abbaf4b02313",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PhysicalReactionSeries-root-audit.log",
+      "log_sha256": "4756418162cf5051cf8646a3c690553f124b1e8904752d51013a9d9d4ba04180",
+      "local_object": {
+        "bytes": 643552,
+        "sha256": "200a94e1152f8ad1ab271459aaf24bb345620b9692c3718a2b8de813ffa0bc22",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PhysicalScalarReaction",
+      "reports": 5,
+      "sha256": "d426be1cc4a983d655da1694345db24e101dc8317f1b8dc3841ca8c43334ec41",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PhysicalScalarReaction-root-audit.log",
+      "log_sha256": "97e10315aff5b93d03524e741cbb4dd6d015fc3905f051f59a3b36770055f37a",
+      "local_object": {
+        "bytes": 246216,
+        "sha256": "b6817ccf21946f0c242983d2f291ede360caa3a2804690d9fe7307e57a1588b8",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PlaneQuadraticFlux",
+      "reports": 6,
+      "sha256": "3d3502ddea1d99deadc53298e150a7df0d9c4bd7ef66d4946b48710195fe27af",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PlaneQuadraticFlux-root-audit.log",
+      "log_sha256": "15296bc91c4a9f69401abfab8f08cc77115e20836c35c02fa85cd0b8588cdb9e",
+      "local_object": {
+        "bytes": 387376,
+        "sha256": "e758474332817a2cdf6f038a3179195ebb76aaf10efc8b97baf07c2fabaf5738",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PlaneQuadraticMoving",
+      "reports": 4,
+      "sha256": "b915e094cf41fe144d3a4eed3a8452656c287e575f8cfa5b09600b7263fd86b2",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PlaneQuadraticMoving-root-audit.log",
+      "log_sha256": "ef694bede19bd3bae046a242bf949d5e68a1cb3fe86d8f443ffca057955a9f5e",
+      "local_object": {
+        "bytes": 358480,
+        "sha256": "37e7d8b9e24dc7da4c85dc6368f45bf7e0bee367a3ad975450147cd13fbc9719",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PolarMomentBound",
+      "reports": 1,
+      "sha256": "af1ac3c31849b8d68f7bfc2d63d1c75149ea8f448adb53e13ef7e98ab867f32f",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PolarMomentBound-root-audit.log",
+      "log_sha256": "96e75ed4cf4ba5aaeff6c591499ae1443bce32aef7d58bdef2d7def1a0a37129",
+      "local_object": {
+        "bytes": 106288,
+        "sha256": "8d27931fc8592cabaf89bcd05bfcd3a4bd9d1a8fcb5506de87e0f4eb14a9159e",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PolynomialVectorCalculus",
+      "reports": 12,
+      "sha256": "4404af9542b1ef6d9141c3e0005e106ad25ce0276dfe7c771186d84296d0484c",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/PolynomialVectorCalculus-final.log",
+      "log_sha256": "5eb50d68bae3e536a9c295bfbf7311db4703195b8310834eafca7156f19128c4",
+      "local_object": {
+        "bytes": 788264,
+        "sha256": "2bf4a85618c97de72af332f5f489daaa899d98dec7b49b3d1a62aeb611cf7e90",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "PuncturedMaxwellScaling",
+      "reports": 5,
+      "sha256": "d19526d70048f3ed3dc7dca5b96f2bed52d9084a80a6c1ecdee4273f03467a37",
+      "status": "independent audit PASS",
+      "log": "lean/logs/PuncturedMaxwellScaling-independent-modal.log",
+      "log_sha256": "79d623ec7a07d3d90c190ef3d166f77e54693f7eec0bb15ac11e563529f4a780",
+      "local_object": {
+        "bytes": 197016,
+        "sha256": "2c87f6a3523c6484a2a1d1b5017c208896fc69fe3d1c3998d6272f52ac61fc06",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "RadialToroidalCurl",
+      "reports": 1,
+      "sha256": "0fb14b0465f831b59ddd2fcd596dc87743dab7772113e7b656fb5cb0e7c6b35e",
+      "status": "independent audit PASS",
+      "log": "lean/logs/RadialToroidalCurl-independent-modal.log",
+      "log_sha256": "b5c547923d8aaf1c9d99d4785f26ed1b384165e247897c26860e0e5be1814842",
+      "local_object": {
+        "bytes": 285136,
+        "sha256": "1ef62936b63b4bbbf8b60faf3ce714f585a658a3f1751a0c1b7771d6be7659bf",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "RiccatiImaginaryBound",
+      "reports": 5,
+      "sha256": "2ae4eaa012445bec39dd967a84ec16a9e4bbe37aefaaf59ebe10b6940f2652f7",
+      "status": "independent audit PASS",
+      "log": "lean/logs/RiccatiImaginaryBound-root-audit.log",
+      "log_sha256": "00ad4fbcab9f2550256ba1b312c10554f5a7d5a06a71860eb54ec21b9cb12d63",
+      "local_object": {
+        "bytes": 351472,
+        "sha256": "3d6c335c5d5126ec9c531ed9aa4da7ba930022752a76bfa0343386999d921974",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ScalarGreenAngularBound",
+      "reports": 5,
+      "sha256": "bbe0deb99f5a0140def1cac2979dcac90abad10d64001bc9f21fb4f9ca69ba53",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ScalarGreenAngularBound-root-audit.log",
+      "log_sha256": "df61158d666c8b0f99b90b08797654e9047b768f39050b2d07ad6cd53ea90d6f",
+      "local_object": {
+        "bytes": 376632,
+        "sha256": "407e1c9c1c66180c1159fcf3fa695023b659cd29161b01e29572af2338b0ac28",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ScalarGreenPointwise",
+      "reports": 9,
+      "sha256": "79f8f24d7604ecc4c5e37a36917f78a1e78f7085ed0743a9af6ce1c4b58a58e1",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ScalarGreenPointwise-root-audit.log",
+      "log_sha256": "56d93cd691edcd673adb08d0a3726b773f8879b2893d0bc3c9be1c0f1a02e621",
+      "local_object": {
+        "bytes": 274584,
+        "sha256": "72813406c67c636c401eb27812d0f1395e5288042ff31159195349cec87b1b4a",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ScalarGreenRadialBound",
+      "reports": 2,
+      "sha256": "17f995741e4e3099a3856a37ccefd8c2263d76be9b498d1f0dc2243bfd63da1d",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ScalarGreenRadialBound-root-audit.log",
+      "log_sha256": "976dc0344ac449305fc4c2f78f284787abb35cf18472f082fc99ca5f251bf490",
+      "local_object": {
+        "bytes": 277088,
+        "sha256": "44ce5a8f34cd1070b306959bd1fd73122b8e390723a4dc2782af721fcd692bb0",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "ScalarGreenSpatial",
+      "reports": 3,
+      "sha256": "2aa8d3c9f591f4e47107ae7754295e6fa23acf2244658a97abcd37d0bcb18929",
+      "status": "independent audit PASS",
+      "log": "lean/logs/ScalarGreenSpatial-root-audit.log",
+      "log_sha256": "3c8e9e09711332a9dc24ccf6105c4750dccd072cbd2973c658b506994e92887f",
+      "local_object": {
+        "bytes": 242448,
+        "sha256": "5ef606d47f26a21eb283a3013e67b3984ec9deed46d4d0957eb338615afb8989",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceDielectricMaxwell",
+      "reports": 4,
+      "sha256": "50745ff3c632505c075b4857bb9edd4739a3d19115dc7207ab8b28999ff962e4",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceDielectricMaxwell-independent-modal.log",
+      "log_sha256": "2298b5b7fdd6df9fb7dab12359b2deb16b1b578528e0f1b26eb22abb4fa314e9",
+      "local_object": {
+        "bytes": 127000,
+        "sha256": "a6fdd180bda606dcef1347fc99d029c985be52b19cb5e79fef9f9939d4eadf1b",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceElectricProfiles",
+      "reports": 11,
+      "sha256": "ad4068ffc8419af40062170e862b67bb89caed8bc6982ed3e71db6a14cfebc3b",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceElectricProfiles-independent-modal.log",
+      "log_sha256": "f7c53c96adee2fc80b0402955ebddd84c359b51ef400c6ee4fb8f99d657d10d3",
+      "local_object": {
+        "bytes": 648696,
+        "sha256": "f5a07e17a987a1828e8be2ba49a29fdf55cdf04231892e78fcaa9d3b571fe0e9",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceGeneralMaxwell",
+      "reports": 8,
+      "sha256": "f31a9aaa540b8ca7a0b8193386299700bbbb14841c498d4de74c83e9e3bd0766",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceGeneralMaxwell-independent-modal.log",
+      "log_sha256": "6543e423504b512eefd70003ff2f7a97fd97bba8e3fc619dfc0f8131d0e099cd",
+      "local_object": {
+        "bytes": 659032,
+        "sha256": "6192ed2d0e23f505645ff7406be4825f25b0edb4f685aa5c874de4f0f7e2742b",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceMagneticProfiles",
+      "reports": 8,
+      "sha256": "055344693cb8252666d5736bfa5d8b7afd054ec5562d159846b8f122cb2f6f62",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceMagneticProfiles-independent-modal.log",
+      "log_sha256": "7bd62f2cce883237ed2f74ee0274e58f21b0ee1dda734339c5dce3a9bd343ce1",
+      "local_object": {
+        "bytes": 783032,
+        "sha256": "befce90d79fdcdeaab76c988c2419efaf7d8900fe3501c97e00573eb02b38dca",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceParityFlux",
+      "reports": 6,
+      "sha256": "34ae7d0d305c9cc4ad9bf8b1f29b3a21feb14cd40b924a3766ee8035463e8068",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceParityFlux-root-audit.log",
+      "log_sha256": "f472ac6f24c9ccb9dbc638347d680603b3087fa227f8794ed7cb3b510aed132a",
+      "local_object": {
+        "bytes": 324544,
+        "sha256": "eb2b30fe71e0c337da02abb0d30e2a472e45ae60cda2753f95c49a83b4441aba",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceParityWhole",
+      "reports": 4,
+      "sha256": "ca58025a43e22d9386aad9ee94e26bf18c9a52ea658f741c59921ee591fdbd20",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceParityWhole-root-audit.log",
+      "log_sha256": "6a856e861b4f5fb445c7a8c80110b5dd0ee21174bf27c91a7d00f890ecb37500",
+      "local_object": {
+        "bytes": 439096,
+        "sha256": "2eb924a0a396dce17086ddab2fe53d888dc75abbdb99716e5d20aa1c21562f15",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceRadialSystem",
+      "reports": 14,
+      "sha256": "44858ab8ad71d17f3c45c6f728d1adb6fed52c6a0d050d9828d123726931aa46",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceRadialSystem-independent-modal.log",
+      "log_sha256": "44ec361b92901d7630d0ffe3188b13f28b638632999d9369d3035a4392f8f41e",
+      "local_object": {
+        "bytes": 391640,
+        "sha256": "f791bb139659b217ce0c9f8acef28098831be3ed78620a2abd6d110422cbe1b8",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceRadiation",
+      "reports": 4,
+      "sha256": "693bc8cbfbe2b2ed2383745f07c01be0b638f43bdf96e1bb77eca04434ff6369",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceRadiation-modal-audit.log",
+      "log_sha256": "09ab53f7bf429d4042b0ec1be44c118375f830e39450da52f253a225035ded6a",
+      "local_object": {
+        "bytes": 592960,
+        "sha256": "751513616af2b018716e83a8065fb66d000012ddbe28d88ca85582e5224fca37",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceTERadiation",
+      "reports": 4,
+      "sha256": "5332dc117cf0716041ba8f0042a713861db05e7ff29a1d468fac41a1e33a67eb",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/SourceTERadiation-final.log",
+      "log_sha256": "bfe9c239674765b847c6925a228f4963e45768af4043bb5f2c3b9c1294573e53",
+      "local_object": {
+        "bytes": 1050384,
+        "sha256": "9c724b65d3c711b70bab6606fbef14c77929a14f48abeccc9659a9072daf6bee",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SourceUnclippedMaxwell",
+      "reports": 6,
+      "sha256": "963b4b14d190910ddc637f49826222c59822a9faf8122d9e8a4b35ad8d1f7c53",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SourceUnclippedMaxwell-independent-modal.log",
+      "log_sha256": "b93177193844aa10c073b7da2f913ddeb4242f48b1aa00e88fb5d8a0999f5d71",
+      "local_object": {
+        "bytes": 355784,
+        "sha256": "d491059ba82f4d41840cf9e32b62c169fd02243ffa9e54a8c5b03feea151b28b",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SpatialReactionMajorant",
+      "reports": 6,
+      "sha256": "260dad6e7c07f593044c02969ab1f2eb1963d71abedc366bfc19b8079dc9e6e6",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SpatialReactionMajorant-root-audit.log",
+      "log_sha256": "c8a1bf3e7171dab2289db34a60e37cfdf4540e610362ffa1185960645203843b",
+      "local_object": {
+        "bytes": 522656,
+        "sha256": "b59fdc8df2cba31a213638b8e815c8fef46a24ce387bcb1e7188eb668d172815",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SpatialReactionSeries",
+      "reports": 2,
+      "sha256": "d5f19e556f0ca216b3456eb1b3a70915bf8b5b87d830bf9f4c785a574f8685a1",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SpatialReactionSeries-root-audit.log",
+      "log_sha256": "99e0967cbfaa519346135f142f9b3894d716289744592b3e1a48e31d4ac56553",
+      "local_object": {
+        "bytes": 219440,
+        "sha256": "a1f033f1084294263f71011435df32465312ae17759dcc35d13108492490045a",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SpatialReactionTerms",
+      "reports": 8,
+      "sha256": "4476889b0dc5e3e538b8ee898918ca8f2102bca775b76df83b1d0cc2a9d469aa",
+      "status": "independent audit PASS",
+      "log": "lean/logs/SpatialReactionTerms-root-audit.log",
+      "log_sha256": "b5bb2752a5b6f5f2bca431307610eef097f1d23a9cf8b0b98dba94993d18f4c1",
+      "local_object": {
+        "bytes": 574120,
+        "sha256": "16303e08f147ac491eeddd215fac700f7c147f31f9abcab51ea82a838d2c7211",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    },
+    {
+      "module": "SphereParityDifferential",
+      "reports": 10,
+      "sha256": "b59f47a122dc8918ff6862693c6f1dba5456e5688e06f1b2ba59fb13aaebc694",
+      "status": "author final PASS; independent audit pending",
+      "log": "lean/logs/SphereParityDifferential-final.log",
+      "log_sha256": "a922a0148c92a8219ebccc4de9fe7169f89c20982812b9c41b427a9d3c2341b0",
+      "local_object": {
+        "bytes": 437680,
+        "sha256": "c14cfd7a8912fe02297324d037d1a7ee0698a49c2b8b2867d0ddc7f07c43864f",
+        "note": "Object hashes are local evidence; source/log verification determines status."
+      }
+    }
+  ],
+  "saved_working_files": [
+    {
+      "path": "RESUME.md",
+      "bytes": 11336,
+      "sha256": "ce53ebbd22bce2831f7f5c74fcc9d84c0c89a7a508e283f5848ae158e8f501b7"
+    },
+    {
+      "path": "lean/ConicalAngularEnergy.lean",
+      "bytes": 2597,
+      "sha256": "ecb2c17f70939ab648d5993e75413e5f995d5f1e77a25c0b75c55a4e0e250703"
+    },
+    {
+      "path": "lean/ConicalAnnularCoefficient.lean",
+      "bytes": 10176,
+      "sha256": "9dbe59fa83acf6e78a1766b6d408a3b54f95fa83608ede7c26fcc15a1dd63a61"
+    },
+    {
+      "path": "lean/ConicalCoefficientIdentity.lean",
+      "bytes": 6904,
+      "sha256": "6df4d5449d06874f314af1eab91bcdf45adb61ebf6ea39be866e9146bebac956"
+    },
+    {
+      "path": "lean/ConicalCoefficientLimit.lean",
+      "bytes": 4245,
+      "sha256": "c14ba536d1f120676e14b70d2c3a05641fd2937d4b2ac3877a3b8eb4e30eb35b"
+    },
+    {
+      "path": "lean/ConicalCoefficientRetention.lean",
+      "bytes": 4044,
+      "sha256": "2a654fe47db6fbe94d91d8dfd6c46d13e6bbdd755bdf8e91663a9a4ad95796bc"
+    },
+    {
+      "path": "lean/ConicalCorrectionBounds.lean",
+      "bytes": 4184,
+      "sha256": "c07e3157f2b69e4afe58889d6762745f5114719b0baca2d478636609811cd493"
+    },
+    {
+      "path": "lean/ConicalDynamicHotspot.lean",
+      "bytes": 3213,
+      "sha256": "f5c536cedb1afdecac62e7a7981622c4157bb28959ac5637543734cee3651e35"
+    },
+    {
+      "path": "lean/ConicalEssentialUnbounded.lean",
+      "bytes": 4268,
+      "sha256": "9e90a1ae29d90778a87c187576a5cc9269b11e32c6e47d2bb6ccd6243d37d66f"
+    },
+    {
+      "path": "lean/ConicalRadialUnbounded.lean",
+      "bytes": 7945,
+      "sha256": "5be315150c95f327c6771ee496ee35d016d08338cca4287a366e354cbcb8042e"
+    },
+    {
+      "path": "lean/ConicalRoundedHCurl.lean",
+      "bytes": 7852,
+      "sha256": "cbbb0230a5e1e7ec784d62aa61cadb9b6b95b5091ca69df25e5f72d980e15174"
+    },
+    {
+      "path": "lean/ConicalRoundedMaxwell.lean",
+      "bytes": 9783,
+      "sha256": "58f6f0f0f704416cd7d30d742c8ffd42bee0f193627c706ff9afc6423d1325f0"
+    },
+    {
+      "path": "lean/ConicalRoundedPeaks.lean",
+      "bytes": 4989,
+      "sha256": "7636c913a874750d29b8685559bf1637810ca00c1402446e2b377cfd9e2c266e"
+    },
+    {
+      "path": "lean/ConicalStaticCoefficient.lean",
+      "bytes": 8668,
+      "sha256": "73bf9b8f0a99ec6839c2bb752dbb30adf582eb61c261be37420a88d03e79c887"
+    },
+    {
+      "path": "lean/ConicalTipRounding.lean",
+      "bytes": 5930,
+      "sha256": "e88f1d6114928deba49d2d10e5e49e78f872742c467199692afb18613da43010"
+    },
+    {
+      "path": "lean/ConicalVolumePeaks.lean",
+      "bytes": 4670,
+      "sha256": "b80545b2f247f72676b83bd532fa4bcc0682baa2725c1bca6ce98c1688243a11"
+    },
+    {
+      "path": "lean/DensityCurl.lean",
+      "bytes": 3695,
+      "sha256": "c7baed2b95113b5cda24b75937e4134e2be14a4753b9c2ffd07b44e4bcc07465"
+    },
+    {
+      "path": "lean/DensityDerivatives.lean",
+      "bytes": 3617,
+      "sha256": "6adb054725316f4817e5f3dcd034413c766e3514b19f75af2d5c9b9a501772c7"
+    },
+    {
+      "path": "lean/DensityWeak.lean",
+      "bytes": 4161,
+      "sha256": "7490773f178b17988b72f9e52acfc9769e08723ddbf74d7d0a2750c871b51e1b"
+    },
+    {
+      "path": "lean/FiniteSphereActualSources.lean",
+      "bytes": 8362,
+      "sha256": "423253aa5ec67104d3bfbbd7ede6f5611093aa39fa5d84252b53d58d2fb2a821"
+    },
+    {
+      "path": "lean/FiniteSphereIllumination.lean",
+      "bytes": 4825,
+      "sha256": "58c828dbf950a44f069d181b184e4c47dbaf814b51696710b84f9426b48686ba"
+    },
+    {
+      "path": "lean/FiniteSphereIncident.lean",
+      "bytes": 10029,
+      "sha256": "0ff9ebbcb3688410c37add333c82006661f0600123fd6b417e42ac8d2f471c2a"
+    },
+    {
+      "path": "lean/FiniteSpherePlaneLimit.lean",
+      "bytes": 3708,
+      "sha256": "cd456c08cc335ca2373c4d2f2fee34c18f10efe6afa399e504ef5d9c6d61c738"
+    },
+    {
+      "path": "lean/FiniteSphereQuadratic.lean",
+      "bytes": 6182,
+      "sha256": "979cdeb3b18ab0f13071ce422faf28e371fda08d6e4331b4e612f1188063e8b7"
+    },
+    {
+      "path": "lean/FiniteSphereSourceMass.lean",
+      "bytes": 5118,
+      "sha256": "7319dcfd874ac1ab073872a392abdeca3ad576e9c63e8ba8962d4d73e54a935e"
+    },
+    {
+      "path": "lean/HarmonicRadiationFactors.lean",
+      "bytes": 4210,
+      "sha256": "12b1a0c3fa1d80e5486e35bef55d96f7becbae6b7325fd53c2eec5b991ec7e4b"
+    },
+    {
+      "path": "lean/HarmonicRadiationGeometry.lean",
+      "bytes": 3208,
+      "sha256": "0eeee5d5bb466070b32cfec98792cc5c255554f6e109f87424ebf4e4ed5457a9"
+    },
+    {
+      "path": "lean/HarmonicSpatialMajorant.lean",
+      "bytes": 3326,
+      "sha256": "c6906c378fe440b1b3d5b25e37b41478464e845abaea1842314240055b543a73"
+    },
+    {
+      "path": "lean/HarmonicVectorDecomposition.lean",
+      "bytes": 5599,
+      "sha256": "9d76dbc326e0f96c1f410c81af2949adf8a1bd83a529957c10e20c0bc21297c8"
+    },
+    {
+      "path": "lean/L2PeakPreservation.lean",
+      "bytes": 2086,
+      "sha256": "3e5fb555e70a5a193aa992b867ed20da19f0da01e7b9d10e5e72325c8d8348e7"
+    },
+    {
+      "path": "lean/LocalSmoothSeries.lean",
+      "bytes": 3101,
+      "sha256": "e80e5e5d815b66cfd22e8cdc5e7b44d4195f72f65f00a0d5d0ee9c2d7130322d"
+    },
+    {
+      "path": "lean/MaterialStrongLimit.lean",
+      "bytes": 5419,
+      "sha256": "85d10fabf5a68bb1bd3e8b8dac48b189fb0379aecf9df04e6b59052bb5e0f8f7"
+    },
+    {
+      "path": "lean/MaterialVolumeLimit.lean",
+      "bytes": 8861,
+      "sha256": "d3d0e02d30fbd251c236f24ba17d0d601a25cae8f15e43b0691d28ec4dfe4d3c"
+    },
+    {
+      "path": "lean/ParityCompleteLimit.lean",
+      "bytes": 4424,
+      "sha256": "54a790b2a688a3440d5d5e5eec0fc0e28d059b54916200e9a10b65b8070b1749"
+    },
+    {
+      "path": "lean/ParityDensityMaxwell.lean",
+      "bytes": 5025,
+      "sha256": "d1dfd6cdde6e97a61104bbc69a84e3e0226f67d8785577ecb61a503901ca0597"
+    },
+    {
+      "path": "lean/ParityIncidentFlux.lean",
+      "bytes": 5447,
+      "sha256": "4c2a11f721003ad8be45f18b3c8106c0d99e9153a7e28324867d9efc3d51647f"
+    },
+    {
+      "path": "lean/ParityPlaneBounds.lean",
+      "bytes": 4440,
+      "sha256": "823c8359125102dee4a252ee6b0bbfa99cdcb2eb2bc35b848b1f001d69162145"
+    },
+    {
+      "path": "lean/ParityPlaneColumns.lean",
+      "bytes": 4881,
+      "sha256": "a9e59a25dba0f865f37ce064996ab0d8bd342d88178aca4a8cabcc9c74f9d766"
+    },
+    {
+      "path": "lean/ParityPlaneFields.lean",
+      "bytes": 9271,
+      "sha256": "2f64f9dc8af196b9220c4cf9256ce72343b724f5b185236f61bd7e8d8685a5b2"
+    },
+    {
+      "path": "lean/ParityRemainderBound.lean",
+      "bytes": 4707,
+      "sha256": "aa533ea54b4851add412231e48038b1f28f87a4ea15e8b0fff09af51621aad95"
+    },
+    {
+      "path": "lean/ParityRemainderMoving.lean",
+      "bytes": 4864,
+      "sha256": "c65b8a3cc23fb5441ac0eca03dca2ed4fa789d99afe44182005545485b09d248"
+    },
+    {
+      "path": "lean/ParityTotalFlux.lean",
+      "bytes": 4041,
+      "sha256": "f095a9307085fec9f3f3107c184f0550a8769f212e93b2eeb023a7ce994de1f0"
+    },
+    {
+      "path": "lean/PhysicalReactionLimit.lean",
+      "bytes": 8664,
+      "sha256": "cae9c90556496705ab4dbf21c94fc4440ca13b6a04016ef526e2d8fc9f8635e0"
+    },
+    {
+      "path": "lean/PhysicalReactionSeries.lean",
+      "bytes": 9295,
+      "sha256": "a735f3cb47da482db731e6aa7f4ee5c572f41410cc673460d951abbaf4b02313"
+    },
+    {
+      "path": "lean/PhysicalScalarReaction.lean",
+      "bytes": 3913,
+      "sha256": "d426be1cc4a983d655da1694345db24e101dc8317f1b8dc3841ca8c43334ec41"
+    },
+    {
+      "path": "lean/PlaneQuadraticFlux.lean",
+      "bytes": 8395,
+      "sha256": "3d3502ddea1d99deadc53298e150a7df0d9c4bd7ef66d4946b48710195fe27af"
+    },
+    {
+      "path": "lean/PlaneQuadraticMoving.lean",
+      "bytes": 3794,
+      "sha256": "b915e094cf41fe144d3a4eed3a8452656c287e575f8cfa5b09600b7263fd86b2"
+    },
+    {
+      "path": "lean/PolarMomentBound.lean",
+      "bytes": 1224,
+      "sha256": "af1ac3c31849b8d68f7bfc2d63d1c75149ea8f448adb53e13ef7e98ab867f32f"
+    },
+    {
+      "path": "lean/PolynomialVectorCalculus.lean",
+      "bytes": 3803,
+      "sha256": "4404af9542b1ef6d9141c3e0005e106ad25ce0276dfe7c771186d84296d0484c"
+    },
+    {
+      "path": "lean/PuncturedMaxwellScaling.lean",
+      "bytes": 5636,
+      "sha256": "d19526d70048f3ed3dc7dca5b96f2bed52d9084a80a6c1ecdee4273f03467a37"
+    },
+    {
+      "path": "lean/RadialToroidalCurl.lean",
+      "bytes": 2124,
+      "sha256": "0fb14b0465f831b59ddd2fcd596dc87743dab7772113e7b656fb5cb0e7c6b35e"
+    },
+    {
+      "path": "lean/RiccatiImaginaryBound.lean",
+      "bytes": 4465,
+      "sha256": "2ae4eaa012445bec39dd967a84ec16a9e4bbe37aefaaf59ebe10b6940f2652f7"
+    },
+    {
+      "path": "lean/ScalarGreenAngularBound.lean",
+      "bytes": 5575,
+      "sha256": "bbe0deb99f5a0140def1cac2979dcac90abad10d64001bc9f21fb4f9ca69ba53"
+    },
+    {
+      "path": "lean/ScalarGreenPointwise.lean",
+      "bytes": 6700,
+      "sha256": "79f8f24d7604ecc4c5e37a36917f78a1e78f7085ed0743a9af6ce1c4b58a58e1"
+    },
+    {
+      "path": "lean/ScalarGreenRadialBound.lean",
+      "bytes": 2599,
+      "sha256": "17f995741e4e3099a3856a37ccefd8c2263d76be9b498d1f0dc2243bfd63da1d"
+    },
+    {
+      "path": "lean/ScalarGreenSpatial.lean",
+      "bytes": 3529,
+      "sha256": "2aa8d3c9f591f4e47107ae7754295e6fa23acf2244658a97abcd37d0bcb18929"
+    },
+    {
+      "path": "lean/SourceDielectricMaxwell.lean",
+      "bytes": 3287,
+      "sha256": "50745ff3c632505c075b4857bb9edd4739a3d19115dc7207ab8b28999ff962e4"
+    },
+    {
+      "path": "lean/SourceElectricProfiles.lean",
+      "bytes": 9440,
+      "sha256": "ad4068ffc8419af40062170e862b67bb89caed8bc6982ed3e71db6a14cfebc3b"
+    },
+    {
+      "path": "lean/SourceGeneralMaxwell.lean",
+      "bytes": 7477,
+      "sha256": "f31a9aaa540b8ca7a0b8193386299700bbbb14841c498d4de74c83e9e3bd0766"
+    },
+    {
+      "path": "lean/SourceMagneticProfiles.lean",
+      "bytes": 7756,
+      "sha256": "055344693cb8252666d5736bfa5d8b7afd054ec5562d159846b8f122cb2f6f62"
+    },
+    {
+      "path": "lean/SourceParityFlux.lean",
+      "bytes": 6063,
+      "sha256": "34ae7d0d305c9cc4ad9bf8b1f29b3a21feb14cd40b924a3766ee8035463e8068"
+    },
+    {
+      "path": "lean/SourceParityWhole.lean",
+      "bytes": 7943,
+      "sha256": "ca58025a43e22d9386aad9ee94e26bf18c9a52ea658f741c59921ee591fdbd20"
+    },
+    {
+      "path": "lean/SourceRadialSystem.lean",
+      "bytes": 9041,
+      "sha256": "44858ab8ad71d17f3c45c6f728d1adb6fed52c6a0d050d9828d123726931aa46"
+    },
+    {
+      "path": "lean/SourceRadiation.lean",
+      "bytes": 3877,
+      "sha256": "693bc8cbfbe2b2ed2383745f07c01be0b638f43bdf96e1bb77eca04434ff6369"
+    },
+    {
+      "path": "lean/SourceTERadiation.lean",
+      "bytes": 5941,
+      "sha256": "5332dc117cf0716041ba8f0042a713861db05e7ff29a1d468fac41a1e33a67eb"
+    },
+    {
+      "path": "lean/SourceUnclippedMaxwell.lean",
+      "bytes": 4991,
+      "sha256": "963b4b14d190910ddc637f49826222c59822a9faf8122d9e8a4b35ad8d1f7c53"
+    },
+    {
+      "path": "lean/SpatialReactionMajorant.lean",
+      "bytes": 7359,
+      "sha256": "260dad6e7c07f593044c02969ab1f2eb1963d71abedc366bfc19b8079dc9e6e6"
+    },
+    {
+      "path": "lean/SpatialReactionSeries.lean",
+      "bytes": 3487,
+      "sha256": "d5f19e556f0ca216b3456eb1b3a70915bf8b5b87d830bf9f4c785a574f8685a1"
+    },
+    {
+      "path": "lean/SpatialReactionTerms.lean",
+      "bytes": 8607,
+      "sha256": "4476889b0dc5e3e538b8ee898918ca8f2102bca775b76df83b1d0cc2a9d469aa"
+    },
+    {
+      "path": "lean/SphereParityDifferential.lean",
+      "bytes": 7539,
+      "sha256": "b59f47a122dc8918ff6862693c6f1dba5456e5688e06f1b2ba59fb13aaebc694"
+    },
+    {
+      "path": "reviews/clean_release_4391.md",
+      "bytes": 1580,
+      "sha256": "a412b7075176f56fc2cad3fd4ece747f7628cb97c20eb5148fa06170f20a44ab"
+    },
+    {
+      "path": "reviews/conical_angular_energy.md",
+      "bytes": 997,
+      "sha256": "a7629ea6fffae362d7cb36fca52af1f4ac19cb855fc5f94045dfa9eb7f7cd319"
+    },
+    {
+      "path": "reviews/conical_annular_coefficient.md",
+      "bytes": 1303,
+      "sha256": "c7ce86157730bb09a2aa07dddc645003d1ff25e7eeb8f7fd0693500b82bd87cc"
+    },
+    {
+      "path": "reviews/conical_coefficient_identity.md",
+      "bytes": 1208,
+      "sha256": "20d0caaeb6ad573bc805cb68cc57417f1f42e664eff863eac8fcbc6cf0f3a765"
+    },
+    {
+      "path": "reviews/conical_coefficient_limit.md",
+      "bytes": 1209,
+      "sha256": "e98879f5eb2fa1921c3ee5566624170390e961a7f8f5265159ef89d0d5bd409d"
+    },
+    {
+      "path": "reviews/conical_coefficient_retention.md",
+      "bytes": 1553,
+      "sha256": "afcb409e3bb785198be32a8857f3bebeb2fba575ee7f077c165fa782faebbd66"
+    },
+    {
+      "path": "reviews/conical_correction_bounds.md",
+      "bytes": 811,
+      "sha256": "020f02210fcfe5febe3c6afd535423cc8f153fcbbf1077917bd77cb1c4ed88c3"
+    },
+    {
+      "path": "reviews/conical_dynamic_hotspot.md",
+      "bytes": 1304,
+      "sha256": "20a04939f9f6043aa5bb94bfb4b85a1563a0d2d0122dc40a24d58e98bb5a4fb7"
+    },
+    {
+      "path": "reviews/conical_essential_unbounded.md",
+      "bytes": 1152,
+      "sha256": "cc606551404cc6a3a9b75bf4e40ea299c8c8a36abff91bfc8ea25646b1a06d08"
+    },
+    {
+      "path": "reviews/conical_radial_unbounded.md",
+      "bytes": 936,
+      "sha256": "2213690b6602614833092e9c65b83175a119bd69453e9b8a21efe7201e8d57d8"
+    },
+    {
+      "path": "reviews/conical_rounded_maxwell.md",
+      "bytes": 1951,
+      "sha256": "42fc409acb6c73803c51c2792e54205dcd29f9e3cbcf5770dada9625159e84dc"
+    },
+    {
+      "path": "reviews/conical_rounded_peaks.md",
+      "bytes": 1446,
+      "sha256": "8a33f9de1e3b50ae51b305b7d9e927013405f9f911346d89a8c52dddb14d4b95"
+    },
+    {
+      "path": "reviews/conical_rounding_stop_handoff.md",
+      "bytes": 3803,
+      "sha256": "77d495123b87553cff6aa5f4b63ec0aded229bfb896fda5ef806f7b8d4e8e02b"
+    },
+    {
+      "path": "reviews/conical_static_coefficient.md",
+      "bytes": 1388,
+      "sha256": "2812f27c5636ded47c23e1cd395f0af26de5c339f76a543b7e6cf4524b6b4b15"
+    },
+    {
+      "path": "reviews/conical_tip_rounding.md",
+      "bytes": 1472,
+      "sha256": "cdbb8d48c5af8160f918f0c30a5bc69e4f0bac8faa03aafa107a9778e6a14c58"
+    },
+    {
+      "path": "reviews/conical_volume_peaks.md",
+      "bytes": 1556,
+      "sha256": "823c582d91967f744af680a66c73616a9293b41bc73e107e69359e08c8e4db83"
+    },
+    {
+      "path": "reviews/continuation_stop_2026_10_22.md",
+      "bytes": 3905,
+      "sha256": "a8705ea911167c7f3b41c06253df8a5646c971814cd4b7254a3f7b1f2713dfab"
+    },
+    {
+      "path": "reviews/continuation_stop_2026_10_22_sources.json",
+      "bytes": 14201,
+      "sha256": "56e6483d6bd5dc9088af6fe15857ff74285c7e8ac10254e2516af225919c6a8d"
+    },
+    {
+      "path": "reviews/density_curl.md",
+      "bytes": 1214,
+      "sha256": "c163b49a5b8845bf69350aa64f6f29b37e55070d62fc5a68e38bd1212c0325c9"
+    },
+    {
+      "path": "reviews/density_derivatives.md",
+      "bytes": 1178,
+      "sha256": "f1adfc0db496216c0ae0141c897bd0d1b5d937d29cec691be2b8cbb15eba86b9"
+    },
+    {
+      "path": "reviews/density_weak.md",
+      "bytes": 1345,
+      "sha256": "06584fc7680e90162bbacfbdf12ee3dfb611aeb7c075691cacd43c338de0bd73"
+    },
+    {
+      "path": "reviews/finite_sphere_actual_sources.md",
+      "bytes": 1476,
+      "sha256": "4409d759e8ac21d8598aaf8405bcbd1a4f0a114c3de8007b723d963ef44018a5"
+    },
+    {
+      "path": "reviews/finite_sphere_illumination.md",
+      "bytes": 1831,
+      "sha256": "07bd885fa03e94e84da7d078f7b5bab14658d2ed3c9a1f75bd36654c1d563246"
+    },
+    {
+      "path": "reviews/finite_sphere_incident.md",
+      "bytes": 1786,
+      "sha256": "bd4b2fe48115e649218e5ea55ff09bc8d0b582451a12b592d1dff1b15729ee4d"
+    },
+    {
+      "path": "reviews/finite_sphere_plane_limit.md",
+      "bytes": 1729,
+      "sha256": "0ef0ffc66e13edf08bf402b98eb75d15f4b095873ad78537bb3cf83dc964ae2a"
+    },
+    {
+      "path": "reviews/finite_sphere_quadratic.md",
+      "bytes": 1441,
+      "sha256": "0e00606dfad66a05a7a871f867b34625a9856f74c9665dd1e1103353d52e0929"
+    },
+    {
+      "path": "reviews/finite_sphere_source_mass.md",
+      "bytes": 1266,
+      "sha256": "5c8430086552eaafda82baff98479e544cd5115686dc97ac5ae0e35e3b787ad2"
+    },
+    {
+      "path": "reviews/harmonic_radiation_factors.md",
+      "bytes": 619,
+      "sha256": "6c8acea74e5ee87e2f5a8a86a2e9e856f6826055d76315f5dd56267895341abf"
+    },
+    {
+      "path": "reviews/harmonic_radiation_geometry_modal_audit.md",
+      "bytes": 883,
+      "sha256": "4f5ea026a440a294ca823209898e30ee487f8d02cc93fb4ab841df22a92a41ae"
+    },
+    {
+      "path": "reviews/harmonic_spatial_majorant.md",
+      "bytes": 1026,
+      "sha256": "eac2e4cff79b64e1d4a66893dc056e2580664fd414beac11f4c7fd88f96beab3"
+    },
+    {
+      "path": "reviews/harmonic_vector_decomposition.md",
+      "bytes": 1612,
+      "sha256": "5e0e0d6bdbddacf49a51e7eb8421f5b157544f0474f9feba04256a88d9942a07"
+    },
+    {
+      "path": "reviews/l2_peak_preservation.md",
+      "bytes": 922,
+      "sha256": "029ae845982d83f732dedc468b232e19a185ee55ddab3f0ffcd85d9016bec3a9"
+    },
+    {
+      "path": "reviews/local_smooth_series.md",
+      "bytes": 904,
+      "sha256": "0f514adf1c4f4f637df3d3abe5b42b2277cc6e258a25707fba5c6a3445ab6dc5"
+    },
+    {
+      "path": "reviews/material_strong_limit.md",
+      "bytes": 1069,
+      "sha256": "acea0ba3bbe6122e72614db2f18a4a56c6c0fa92dc634b53cd7b015a65d086d1"
+    },
+    {
+      "path": "reviews/material_volume_limit.md",
+      "bytes": 1461,
+      "sha256": "142f5c43cb70c6b62c374cd00747a8562d49b9c55f91224dd28f06c2a3278831"
+    },
+    {
+      "path": "reviews/parity_complete_limit.md",
+      "bytes": 1296,
+      "sha256": "4dbc5552d5c2e0defa4c8ec8573037b772a3dcb24ae3d37c4a0816f100fcd73e"
+    },
+    {
+      "path": "reviews/parity_density_maxwell.md",
+      "bytes": 1347,
+      "sha256": "9bd9e6b3e57ed72532a4d4fbd7ee2f7f4e34f26e8a6be1821f74a870875fa041"
+    },
+    {
+      "path": "reviews/parity_incident_flux.md",
+      "bytes": 1269,
+      "sha256": "0c10a63b76b78d32b311dcd4822c3af50baabc7f488e5c3dfc017f3deec86bc5"
+    },
+    {
+      "path": "reviews/parity_plane_bounds.md",
+      "bytes": 1267,
+      "sha256": "419e6e428274a3209480f4309a41090210d7ec48500f32b43f7581d125323921"
+    },
+    {
+      "path": "reviews/parity_plane_columns.md",
+      "bytes": 1258,
+      "sha256": "a8879ca46475c1bbaa0bbb20ab096feefded2febc3606558097c042a23f2a802"
+    },
+    {
+      "path": "reviews/parity_plane_fields.md",
+      "bytes": 1848,
+      "sha256": "a4d2a1641afb9abafab67d655f0e6015d07f58be502d20adc730b9549e4f15da"
+    },
+    {
+      "path": "reviews/parity_remainder_bound.md",
+      "bytes": 1419,
+      "sha256": "ba761c562830d0d075710781fdbe84470a4ada5e550107db92e9a2a991e2af78"
+    },
+    {
+      "path": "reviews/parity_remainder_moving.md",
+      "bytes": 1338,
+      "sha256": "2232b89c5791d07a0f2bc8e4098b452dd6415e7a00d922690f03ac7aa096fb54"
+    },
+    {
+      "path": "reviews/parity_total_flux.md",
+      "bytes": 1537,
+      "sha256": "f83eb668363a0fabce58daf40e2382e4ca9ad3f2e66c97a3fef089c83b0b740c"
+    },
+    {
+      "path": "reviews/physical_reaction_limit.md",
+      "bytes": 1372,
+      "sha256": "2400abf4de627213827df36b0ecd4aaed7ec931e6d1aa19a86b0c0e55f599e40"
+    },
+    {
+      "path": "reviews/physical_reaction_series.md",
+      "bytes": 1397,
+      "sha256": "34fb100079aa4cdb0a10c6f84db6af3b4c28adf0b9e093b168cc1994de4e04dd"
+    },
+    {
+      "path": "reviews/physical_scalar_reaction.md",
+      "bytes": 1235,
+      "sha256": "ba29cad2b025292b1f014290dbb6aa267b4a7fbb43b6b14366f21a2c8340fae5"
+    },
+    {
+      "path": "reviews/plane_quadratic_flux.md",
+      "bytes": 1411,
+      "sha256": "27c3993b94933bdda5576041ab33d629356f754baa0f76612aa162cedbbde388"
+    },
+    {
+      "path": "reviews/plane_quadratic_moving.md",
+      "bytes": 1164,
+      "sha256": "11ef8de632f29c7a44f88404adac755ae69d2e49edcd00bfce1e62af747928c1"
+    },
+    {
+      "path": "reviews/polar_moment_bound.md",
+      "bytes": 758,
+      "sha256": "cd29121612375550dc4b9450bdd769bbbe5557e6c6b161735a2b7abde0a0e4b5"
+    },
+    {
+      "path": "reviews/polynomial_vector_calculus.md",
+      "bytes": 950,
+      "sha256": "8cd1285954628c8b04fd3659b6efd8dd8ca0f38d126dd1c5631fea57343ef1c4"
+    },
+    {
+      "path": "reviews/punctured_maxwell_scaling_modal_audit.md",
+      "bytes": 1017,
+      "sha256": "898c4a951ed978c6e5b90b227339fe6bb510334383581c8d28eedae7f35144da"
+    },
+    {
+      "path": "reviews/radial_toroidal_curl_modal_audit.md",
+      "bytes": 926,
+      "sha256": "b60061ff3f3bd635f6f4b2da04b40295a49be47c2e6b51ee17624ab98db1e8eb"
+    },
+    {
+      "path": "reviews/riccati_imaginary_bound.md",
+      "bytes": 1211,
+      "sha256": "809d48a70a473c71ff522e38ce88a28870ea269938fdcd68af2adcb64395bf3c"
+    },
+    {
+      "path": "reviews/scalar_green_angular_bound.md",
+      "bytes": 1090,
+      "sha256": "d40762ab437383fd54511284d9e9f4d25aac6ac36d819dcfecbcacb6a00c723d"
+    },
+    {
+      "path": "reviews/scalar_green_pointwise.md",
+      "bytes": 1431,
+      "sha256": "d8781749492b5bc545f25588b539c86bec913034b6704f3f26b29daa17f74faa"
+    },
+    {
+      "path": "reviews/scalar_green_radial_bound.md",
+      "bytes": 900,
+      "sha256": "aa9a677a9cf8b07896caa46b3cf3b07d77ae4d9ba08c5e91707772a1ee36fa28"
+    },
+    {
+      "path": "reviews/scalar_green_spatial.md",
+      "bytes": 1159,
+      "sha256": "d39c317d1933b1a1b55b1bae2597e2399b52a48327bc082cf32d15b4059bf134"
+    },
+    {
+      "path": "reviews/source_dielectric_maxwell_modal_audit.md",
+      "bytes": 947,
+      "sha256": "b387b4f65d091c9288ae18443979824a3c5a5ab319299f1bab0f31df03b07351"
+    },
+    {
+      "path": "reviews/source_electric_profiles_modal_audit.md",
+      "bytes": 949,
+      "sha256": "2ef46bebfcef883f0e1356f36b5ceb2482ead8259f0d0155e89b7f2a7f4ba776"
+    },
+    {
+      "path": "reviews/source_general_maxwell_modal_audit.md",
+      "bytes": 1030,
+      "sha256": "f0aadd820e396073a936bf0d99719c325e074491fcaba9f437d200c52bba1875"
+    },
+    {
+      "path": "reviews/source_magnetic_profiles_modal_audit.md",
+      "bytes": 976,
+      "sha256": "307af8d241d066bc4ba3a8372e7ab77cca0fa9c4f5f5f517275b7973d8ad5525"
+    },
+    {
+      "path": "reviews/source_parity_flux.md",
+      "bytes": 1246,
+      "sha256": "dfa5bf47f446c83fb81740f2c3c1dcedc4841182e926cd74d64dd883ac08997d"
+    },
+    {
+      "path": "reviews/source_parity_whole.md",
+      "bytes": 1235,
+      "sha256": "e0cf29dd8bc849aea794c40f2b647c5443e08625d54dc66680e3597d96ff3f61"
+    },
+    {
+      "path": "reviews/source_radial_system_modal_audit.md",
+      "bytes": 894,
+      "sha256": "92d57d9fcce8b86db90c4cd18eac0aa67f3d145a4ea9d6ce161f6f5db895dca1"
+    },
+    {
+      "path": "reviews/source_radiation_modal_audit.md",
+      "bytes": 1098,
+      "sha256": "35d89e3ec67064867db4ab7b9d15db0115d32cf5def69966bb317d9aa6c53b03"
+    },
+    {
+      "path": "reviews/source_te_radiation.md",
+      "bytes": 828,
+      "sha256": "2bf3c240235d1e126a0d304ad0f4bce17a559e9759bdc481f60ac5aea5d09d5b"
+    },
+    {
+      "path": "reviews/source_unclipped_maxwell_modal_audit.md",
+      "bytes": 1076,
+      "sha256": "732fc9d5023a4d57486d14d6968ece66ac93798156149877a4df6605a720702f"
+    },
+    {
+      "path": "reviews/spatial_reaction_majorant.md",
+      "bytes": 1216,
+      "sha256": "dcfcb87225a87f67f8c01df761cf445fd62e2716e9cf3b5cb70bdb9147fe9ef5"
+    },
+    {
+      "path": "reviews/spatial_reaction_series.md",
+      "bytes": 1229,
+      "sha256": "6fc0839eb5e05d41ef2d1a9b4666bb1de3eac14747aa6f093eaa218a9d283899"
+    },
+    {
+      "path": "reviews/spatial_reaction_terms.md",
+      "bytes": 1047,
+      "sha256": "fb054581ddcbf460c7686416e7cbefa1dce30f57f4f1d9805e57876d9d5e849e"
+    },
+    {
+      "path": "reviews/sphere_parity_differential.md",
+      "bytes": 1282,
+      "sha256": "6ea69f2116fcb680875aba2002e7f220b7722fe150433bb2f0f72ead62f10d02"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "evidence/clean-release-4391/lean/clean-build.txt",
+      "bytes": 687747,
+      "sha256": "713aa4881304d5d7d93520a53ffda7fd82241e4d6cf2f2fc936291ecd23ad38a"
+    },
+    {
+      "path": "evidence/clean-release-4391/lean/provenance.json",
+      "bytes": 279443,
+      "sha256": "d009dbbf2fefa67d11311a3ede5df149f5df9eec177daa536c42c8886b8d14bb"
+    },
+    {
+      "path": "evidence/clean-release-4391/build-manifest.json",
+      "bytes": 3111,
+      "sha256": "65e30018331dbbaa7d6db4d97f950cfd053603e4867ccddae923bf07c153bef1"
+    },
+    {
+      "path": "evidence/clean-release-4391/verification.json",
+      "bytes": 22466,
+      "sha256": "d3e792836a33347cae90e19bec7e783d68060f31b9fb58e4faf8e872380f55fa"
+    },
+    {
+      "path": "evidence/clean-release-4391/model-diagnostics.csv",
+      "bytes": 932,
+      "sha256": "670878c2f513593bad63bd2e9fbb1051d084c5e114051c64ea72c2d90599347d"
+    },
+    {
+      "path": "evidence/clean-release-4391/latex-final-pass.log",
+      "bytes": 23338,
+      "sha256": "8c2f8ca5f372033aa49656dc5cb41ecfa586eba873ebc98e259c2b64b2f1afb2"
+    },
+    {
+      "path": "evidence/clean-release-4391/compiler-output.txt",
+      "bytes": 11052,
+      "sha256": "53a6608615f47f13130ed006d5c9e6edaea3136336c32094462e8786f6b8fe4d"
+    },
+    {
+      "path": "evidence/clean-release-4391/pdf/oq14-manuscript.pdf",
+      "bytes": 760328,
+      "sha256": "8c29cdc3b31ee277cdb7e0b9efc3a54669eb69b85e46d38af052a0b060ad22ce"
+    },
+    {
+      "path": "evidence/clean-release-4391/RELEASE.md",
+      "bytes": 2587,
+      "sha256": "00ab13103cb96626f8cb7bfa488ed425fb93c9e7eccd721bbf2c8e815b5645f5"
+    },
+    {
+      "path": "evidence/clean-release-4391/SHA256SUMS.json",
+      "bytes": 1046,
+      "sha256": "92b7c582f14d6f8361601b61019de26ba262871dfe4d0e5c4035ad8adb820db8"
+    },
+    {
+      "path": "evidence/clean-release-4391/preservation.json",
+      "bytes": 1313,
+      "sha256": "2c8982d5887b1854c8604db3ac2591d92392a133615efeffefecc32065a06f4b"
+    },
+    {
+      "path": "evidence/clean-release-4391/bundle-verification.txt",
+      "bytes": 2549,
+      "sha256": "e7500fe7d96f060338820c783422584b2bf7cd3a685a2dfcb5e86d8463147d0f"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-106.png",
+      "bytes": 306546,
+      "sha256": "a219e405e0116aed3d37e29375564e56a48034e0d01eeab21f2f8288cd871730"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-107.png",
+      "bytes": 309198,
+      "sha256": "331359411f0f0f745e9777c748cbb9c44af244c0284fc575adf1b12988e685ad"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-108.png",
+      "bytes": 291306,
+      "sha256": "e1c975f7453873cecb7a7bb563b579feab942defaa9ef45d76e4f75d9523caea"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-109.png",
+      "bytes": 299630,
+      "sha256": "22b68f881734c079954aa6f3a8986b645cd37c952b0c2bc0f8465c225f937158"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-110.png",
+      "bytes": 212173,
+      "sha256": "665d1b92a55ee5e0984df7f52b5daf867377b403c0bfd792442d18be6c6edfd2"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-111.png",
+      "bytes": 101539,
+      "sha256": "afec91b7dee75db4a91a920b7fdead06bfbd5b5f807153fb247bd32b46f50486"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-112.png",
+      "bytes": 252575,
+      "sha256": "42b8756b8cc8edbdb877b2ba308603de95a7eb2d867686b4d96a33bf6e7e5f79"
+    },
+    {
+      "path": "evidence/clean-release-4391/visual-page-113.png",
+      "bytes": 41465,
+      "sha256": "2a792f0daabb315de5461d47dbda5ac67f3cb11c6eed44ee421d73bdf8ff7a1b"
+    },
+    {
+      "path": "evidence/audit-metadata/audited_after_4391.json",
+      "bytes": 19346,
+      "sha256": "d2650d05cd715a67fc69946720f2da2714ffb9244aae45a0b97d05e7760ede3a"
+    },
+    {
+      "path": "evidence/audit-metadata/audited_batch_4391.json",
+      "bytes": 44450,
+      "sha256": "81f3272497a3f1d49806bd63155a6de8c7b272f822ad9ad30c95a8ea37b77b52"
+    },
+    {
+      "path": "evidence/audit-metadata/checkpoint_20261022_module_status.json",
+      "bytes": 17705,
+      "sha256": "c97ee264f6eef457eaabc3861fb0c20f0307e5e9a67dfae12df7974d6a37cd9b"
+    },
+    {
+      "path": "evidence/audit-metadata/record_after_4391.py",
+      "bytes": 1679,
+      "sha256": "9319788a399fe1a17455f2179ebe5d31c5624c66695c0117bcbc06828cc8d1aa"
+    },
+    {
+      "path": "evidence/audit-metadata/record_modal_after_4391.py",
+      "bytes": 1955,
+      "sha256": "55ff871b4c9d0f74652f7f96128ad30b2e3956272ef2f7848078eac26b9cd88d"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalAngularEnergy-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalAngularEnergy-root-audit.log",
+      "bytes": 323,
+      "sha256": "1ffc6d9985351617abd69d52ddf7d50d959a70252efac0b7a39d16e758b2a3c8"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalAnnularCoefficient-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalAnnularCoefficient-root-audit.log",
+      "bytes": 784,
+      "sha256": "d2560094ea643ee872bac4345f4bc13ac092768a5b7ef800927a8b029cf4736e"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientIdentity-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientIdentity-root-audit.log",
+      "bytes": 227,
+      "sha256": "1ed3356fd4544b6883e9d5420a70c392966966b78a5536f0ae27f6d144b06898"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientLimit-root-audit.log",
+      "bytes": 340,
+      "sha256": "a9e3085d8ebdfd90fbd214dc281beda52589a062873ef6b69a491907deb2f020"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientRetention-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCoefficientRetention-root-audit.log",
+      "bytes": 383,
+      "sha256": "2e9ffbd02fc70997cb576032e48f6a0b39585660c0b09b8b461b99d9794e3bac"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCorrectionBounds-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalCorrectionBounds-root-audit.log",
+      "bytes": 233,
+      "sha256": "c30fe005e59f38a8edd9813b3975510d2ddd67b92a9f15148e4dbdceb9b9825e"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalDynamicHotspot-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalDynamicHotspot-root-audit.log",
+      "bytes": 119,
+      "sha256": "b8a0f76b9a45a1fa1d22b63d4c726b3ab2ff9d254d1768058b5f6de8c3b4332f"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalEssentialUnbounded-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalEssentialUnbounded-root-audit.log",
+      "bytes": 267,
+      "sha256": "7d9949dfd3ecc54cd5f072bdeb6a2f1420686cad51d2c8d521b32539df1c49d7"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalRadialUnbounded-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalRadialUnbounded-root-audit.log",
+      "bytes": 639,
+      "sha256": "330cc86465e3efc8bb31d1ec853a6e03e8cbcbdd2b97006f5ed93cbc15f8f0ff"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalRoundedPeaks-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalRoundedPeaks-root-audit.log",
+      "bytes": 879,
+      "sha256": "95be815a6cf2eb14e1dc5655bba4d7af8621515e1e08a05d06bf1f7829f28f1a"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalStaticCoefficient-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalStaticCoefficient-root-audit.log",
+      "bytes": 339,
+      "sha256": "de88c147399b5c91fe36fc44c3cef0bf78bf8d33680505f1f46d656830323ae9"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalTipRounding-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalTipRounding-root-audit.log",
+      "bytes": 1439,
+      "sha256": "194661e2864adec8812bd64eb83af12207eb3cd851dd17bf13e04e42ab56fcfa"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalVolumePeaks-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ConicalVolumePeaks-root-audit.log",
+      "bytes": 442,
+      "sha256": "7cd3c4a55818d8a13c0d5d0cfd495a8c303fe62c5895a31970c6fc0f5e0eb417"
+    },
+    {
+      "path": "evidence/targeted/logs/DensityCurl-final.log",
+      "bytes": 288,
+      "sha256": "7867a95302b55f3970bc35e85cc83cea474166e251c0009f6add10eadcea968e"
+    },
+    {
+      "path": "evidence/targeted/logs/DensityDerivatives-final.log",
+      "bytes": 421,
+      "sha256": "fa0aa5d6e2601846df0f2b43201bed792e81f30779f8213efb6e2c574ccb6028"
+    },
+    {
+      "path": "evidence/targeted/logs/DensityDerivatives-target.log",
+      "bytes": 403,
+      "sha256": "54cc8a304bf59092f86eec9162ada48b2faf0773377eec3526f8176c4b165bf9"
+    },
+    {
+      "path": "evidence/targeted/logs/DensityWeak-final.log",
+      "bytes": 293,
+      "sha256": "4ba82ab34ab47f7c4086bec30cfdea885c53d45003907b54edb7f6ec99705047"
+    },
+    {
+      "path": "evidence/targeted/logs/DensityWeak-target.log",
+      "bytes": 377,
+      "sha256": "37fc3bf9ca33d5bc7b63538a3faa098e1c93787c9eeefa5bc6d724c94bcd19db"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereActualSources-final.log",
+      "bytes": 430,
+      "sha256": "e6ec1f41c57fd70e837216bcde8b9a505248e1cbced9d514e18d56b1d2d08cbf"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereActualSources-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereActualSources-root-audit.log",
+      "bytes": 430,
+      "sha256": "e6ec1f41c57fd70e837216bcde8b9a505248e1cbced9d514e18d56b1d2d08cbf"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereActualSources-target.log",
+      "bytes": 430,
+      "sha256": "e6ec1f41c57fd70e837216bcde8b9a505248e1cbced9d514e18d56b1d2d08cbf"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIllumination-final.log",
+      "bytes": 218,
+      "sha256": "bc07a5001093a10ed26116fd12cd2be75a3bf6b7757dc5eba170b40fb1f57eb7"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIllumination-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIllumination-root-audit.log",
+      "bytes": 218,
+      "sha256": "bc07a5001093a10ed26116fd12cd2be75a3bf6b7757dc5eba170b40fb1f57eb7"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIncident-final.log",
+      "bytes": 970,
+      "sha256": "f0cc688a9c92760a73a4c46a5c2eb84b4350b8c5b84eb0cc55431c177413f842"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIncident-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIncident-root-audit.log",
+      "bytes": 970,
+      "sha256": "f0cc688a9c92760a73a4c46a5c2eb84b4350b8c5b84eb0cc55431c177413f842"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereIncident-target.log",
+      "bytes": 1074,
+      "sha256": "fcb506abe89b901b765891a4edde08d2cf57fb52594e0d85b52cff48062fefcb"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSpherePlaneLimit-final.log",
+      "bytes": 111,
+      "sha256": "d4003fedee2033224b102437c567c97512dfba5f6083f47c353ef3b8ad407a49"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSpherePlaneLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSpherePlaneLimit-root-audit.log",
+      "bytes": 111,
+      "sha256": "d4003fedee2033224b102437c567c97512dfba5f6083f47c353ef3b8ad407a49"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereQuadratic-final.log",
+      "bytes": 222,
+      "sha256": "fef5a576cc1811ba6115c50c4b2a45f435c756f9e4c0e1ba9c7b263f3e53d91e"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereQuadratic-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereQuadratic-root-audit.log",
+      "bytes": 222,
+      "sha256": "fef5a576cc1811ba6115c50c4b2a45f435c756f9e4c0e1ba9c7b263f3e53d91e"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereQuadratic-target.log",
+      "bytes": 222,
+      "sha256": "fef5a576cc1811ba6115c50c4b2a45f435c756f9e4c0e1ba9c7b263f3e53d91e"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereSourceMass-final.log",
+      "bytes": 204,
+      "sha256": "d58e1609744ad5c7f7e6c9d86fd52d6e478257cb8b36120c3a730d90c4cb7dea"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereSourceMass-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereSourceMass-root-audit.log",
+      "bytes": 204,
+      "sha256": "d58e1609744ad5c7f7e6c9d86fd52d6e478257cb8b36120c3a730d90c4cb7dea"
+    },
+    {
+      "path": "evidence/targeted/logs/FiniteSphereSourceMass-target.log",
+      "bytes": 1694,
+      "sha256": "cb84b6417bb1ba28df442fa55ef233afe41c216917b919bef95db019a57b470d"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicRadiationFactors-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicRadiationFactors-final.log",
+      "bytes": 862,
+      "sha256": "52352009d4c3a908b614e0290e2c625a12cec8d28fa5c0b2e10607ca78be308e"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicRadiationGeometry-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicRadiationGeometry-final.log",
+      "bytes": 467,
+      "sha256": "c6623763cc108331fe6b6ba374ce347ecd0e7ed550f7bc99abb8bc3fa0a5e33d"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicRadiationGeometry-modal-audit.log",
+      "bytes": 467,
+      "sha256": "c6623763cc108331fe6b6ba374ce347ecd0e7ed550f7bc99abb8bc3fa0a5e33d"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicSpatialMajorant-draft.log",
+      "bytes": 318,
+      "sha256": "12e23fadf6e3adc782d52179c93767216000fd6525da735ddb2a95ef606f579c"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicSpatialMajorant-final.log",
+      "bytes": 585,
+      "sha256": "cb7c20e5c9353d68dae4dda0814589f2b8d617328a3b9cb78dc0b8900e1cbca2"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicSpatialMajorant-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicSpatialMajorant-root-audit.log",
+      "bytes": 585,
+      "sha256": "cb7c20e5c9353d68dae4dda0814589f2b8d617328a3b9cb78dc0b8900e1cbca2"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicVectorDecomposition-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/HarmonicVectorDecomposition-final.log",
+      "bytes": 1012,
+      "sha256": "53c8fb607f54dd5cb791a637c919b2d9997acb8377ae858398f6d167001bc666"
+    },
+    {
+      "path": "evidence/targeted/logs/L2PeakPreservation-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/L2PeakPreservation-root-audit.log",
+      "bytes": 327,
+      "sha256": "a06e8adb070c0675dc06cfee7398e02b79821e605c4e4141f9f4cd74c99ea757"
+    },
+    {
+      "path": "evidence/targeted/logs/LocalSmoothSeries-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/LocalSmoothSeries-final.log",
+      "bytes": 224,
+      "sha256": "0d4ae87717d073ecd12f246d847364e55ff9ba984b1afca1ecf2857123b5934d"
+    },
+    {
+      "path": "evidence/targeted/logs/LocalSmoothSeries-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/LocalSmoothSeries-root-audit.log",
+      "bytes": 224,
+      "sha256": "0d4ae87717d073ecd12f246d847364e55ff9ba984b1afca1ecf2857123b5934d"
+    },
+    {
+      "path": "evidence/targeted/logs/MaterialStrongLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/MaterialStrongLimit-root-audit.log",
+      "bytes": 339,
+      "sha256": "b053ac5dbe9b4e25ea212653b46a939338f079a0d34dbc5011ad58d177b5d855"
+    },
+    {
+      "path": "evidence/targeted/logs/MaterialVolumeLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/MaterialVolumeLimit-root-audit.log",
+      "bytes": 870,
+      "sha256": "6647fab4a91ead86ceb31c78440e863145bec0491f983ad3a6cb1cb6b3f8e960"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityCompleteLimit-final.log",
+      "bytes": 102,
+      "sha256": "271f0ee49062fd1b7f6932b40eeb0a4ab84dd3065475696e58c408cad242b9ab"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityCompleteLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityCompleteLimit-root-audit.log",
+      "bytes": 102,
+      "sha256": "271f0ee49062fd1b7f6932b40eeb0a4ab84dd3065475696e58c408cad242b9ab"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityCompleteLimit-target.log",
+      "bytes": 102,
+      "sha256": "271f0ee49062fd1b7f6932b40eeb0a4ab84dd3065475696e58c408cad242b9ab"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityDensityMaxwell-final.log",
+      "bytes": 731,
+      "sha256": "8a06899c86b65adfab5a262196f522a72ffc1a4b4f8702feadc7db381aa85daa"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityDensityMaxwell-target.log",
+      "bytes": 731,
+      "sha256": "8a06899c86b65adfab5a262196f522a72ffc1a4b4f8702feadc7db381aa85daa"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityIncidentFlux-final.log",
+      "bytes": 421,
+      "sha256": "137b76d705d719fdcb636e7bca8fd7b95a9daf2fe7f3d6ac381d152b9e54edbd"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityIncidentFlux-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityIncidentFlux-root-audit.log",
+      "bytes": 421,
+      "sha256": "137b76d705d719fdcb636e7bca8fd7b95a9daf2fe7f3d6ac381d152b9e54edbd"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityIncidentFlux-target.log",
+      "bytes": 421,
+      "sha256": "137b76d705d719fdcb636e7bca8fd7b95a9daf2fe7f3d6ac381d152b9e54edbd"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneBounds-final.log",
+      "bytes": 403,
+      "sha256": "ccfe4baef4a86c4058695a0bfa82328cb21dcfa82cde8ac1e0158750b1c80b8e"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneBounds-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneBounds-root-audit.log",
+      "bytes": 403,
+      "sha256": "ccfe4baef4a86c4058695a0bfa82328cb21dcfa82cde8ac1e0158750b1c80b8e"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneColumns-final.log",
+      "bytes": 531,
+      "sha256": "5d64318bc4d4b90b033f00b33428bc77346762e993145335d761a400e02f5c3f"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneColumns-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneColumns-root-audit.log",
+      "bytes": 531,
+      "sha256": "5d64318bc4d4b90b033f00b33428bc77346762e993145335d761a400e02f5c3f"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneFields-final.log",
+      "bytes": 1265,
+      "sha256": "7d76a5eb0af43de94c55e228a6f5c7e1464f64ce2502622ed6456fcd6efa6e1a"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneFields-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneFields-root-audit.log",
+      "bytes": 1265,
+      "sha256": "7d76a5eb0af43de94c55e228a6f5c7e1464f64ce2502622ed6456fcd6efa6e1a"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityPlaneFields-target.log",
+      "bytes": 1488,
+      "sha256": "75c9630cb1dd6807f645b74a59e0de4c76fd95f5b7dc73cc7ccb41fdbddeecef"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderBound-final.log",
+      "bytes": 101,
+      "sha256": "b9cec81d1d3c688c65177d712da1b3cf3ddc17712e5e60b2be21877f1717c530"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderBound-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderBound-root-audit.log",
+      "bytes": 101,
+      "sha256": "b9cec81d1d3c688c65177d712da1b3cf3ddc17712e5e60b2be21877f1717c530"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderBound-target.log",
+      "bytes": 101,
+      "sha256": "b9cec81d1d3c688c65177d712da1b3cf3ddc17712e5e60b2be21877f1717c530"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderMoving-final.log",
+      "bytes": 321,
+      "sha256": "1c9a5c9dfe798ce519f5c2ec088905a256d4979a3356a1c5331c077b100bda9e"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderMoving-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderMoving-root-audit.log",
+      "bytes": 321,
+      "sha256": "1c9a5c9dfe798ce519f5c2ec088905a256d4979a3356a1c5331c077b100bda9e"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityRemainderMoving-target.log",
+      "bytes": 471,
+      "sha256": "b2757ce31e0f13f9654cb5aa066c6de36d428db00fc8a3d32c4f99a81554a8f5"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityTotalFlux-final.log",
+      "bytes": 195,
+      "sha256": "0ac628d0857a3e4d7eaafe59610820ac94b763a86855baf81721ffea36555733"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityTotalFlux-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityTotalFlux-root-audit.log",
+      "bytes": 195,
+      "sha256": "0ac628d0857a3e4d7eaafe59610820ac94b763a86855baf81721ffea36555733"
+    },
+    {
+      "path": "evidence/targeted/logs/ParityTotalFlux-target.log",
+      "bytes": 14967,
+      "sha256": "7b6f5fe97b9c7a9a2849ee7dfec5524ad32724705c7ccf6e584e40a511aa32de"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionLimit-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionLimit-final.log",
+      "bytes": 998,
+      "sha256": "2be801553725d4eb3d643106be63b2cd78e3624afaf82435beacff039e33487f"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionLimit-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionLimit-root-audit.log",
+      "bytes": 998,
+      "sha256": "2be801553725d4eb3d643106be63b2cd78e3624afaf82435beacff039e33487f"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionSeries-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionSeries-final.log",
+      "bytes": 813,
+      "sha256": "4756418162cf5051cf8646a3c690553f124b1e8904752d51013a9d9d4ba04180"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionSeries-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalReactionSeries-root-audit.log",
+      "bytes": 813,
+      "sha256": "4756418162cf5051cf8646a3c690553f124b1e8904752d51013a9d9d4ba04180"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalScalarReaction-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalScalarReaction-final.log",
+      "bytes": 540,
+      "sha256": "97e10315aff5b93d03524e741cbb4dd6d015fc3905f051f59a3b36770055f37a"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalScalarReaction-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PhysicalScalarReaction-root-audit.log",
+      "bytes": 540,
+      "sha256": "97e10315aff5b93d03524e741cbb4dd6d015fc3905f051f59a3b36770055f37a"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticFlux-final.log",
+      "bytes": 629,
+      "sha256": "15296bc91c4a9f69401abfab8f08cc77115e20836c35c02fa85cd0b8588cdb9e"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticFlux-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticFlux-root-audit.log",
+      "bytes": 629,
+      "sha256": "15296bc91c4a9f69401abfab8f08cc77115e20836c35c02fa85cd0b8588cdb9e"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticFlux-target.log",
+      "bytes": 730,
+      "sha256": "179f6b6e36aaa70b23cc00e3a09f6bbe7fc2d3514b5217f2a1c0192ea61ffa57"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticMoving-final.log",
+      "bytes": 431,
+      "sha256": "ef694bede19bd3bae046a242bf949d5e68a1cb3fe86d8f443ffca057955a9f5e"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticMoving-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticMoving-root-audit.log",
+      "bytes": 431,
+      "sha256": "ef694bede19bd3bae046a242bf949d5e68a1cb3fe86d8f443ffca057955a9f5e"
+    },
+    {
+      "path": "evidence/targeted/logs/PlaneQuadraticMoving-target.log",
+      "bytes": 431,
+      "sha256": "ef694bede19bd3bae046a242bf949d5e68a1cb3fe86d8f443ffca057955a9f5e"
+    },
+    {
+      "path": "evidence/targeted/logs/PolarMomentBound-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PolarMomentBound-root-audit.log",
+      "bytes": 100,
+      "sha256": "96e75ed4cf4ba5aaeff6c591499ae1443bce32aef7d58bdef2d7def1a0a37129"
+    },
+    {
+      "path": "evidence/targeted/logs/PolynomialVectorCalculus-draft.log",
+      "bytes": 426,
+      "sha256": "af81b207465925d2682281688a8468857dbb1da885c99fa0d3b8296c1d677648"
+    },
+    {
+      "path": "evidence/targeted/logs/PolynomialVectorCalculus-final.log",
+      "bytes": 1252,
+      "sha256": "5eb50d68bae3e536a9c295bfbf7311db4703195b8310834eafca7156f19128c4"
+    },
+    {
+      "path": "evidence/targeted/logs/PuncturedMaxwellScaling-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/PuncturedMaxwellScaling-final.log",
+      "bytes": 572,
+      "sha256": "79d623ec7a07d3d90c190ef3d166f77e54693f7eec0bb15ac11e563529f4a780"
+    },
+    {
+      "path": "evidence/targeted/logs/PuncturedMaxwellScaling-independent-modal.log",
+      "bytes": 572,
+      "sha256": "79d623ec7a07d3d90c190ef3d166f77e54693f7eec0bb15ac11e563529f4a780"
+    },
+    {
+      "path": "evidence/targeted/logs/RadialToroidalCurl-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/RadialToroidalCurl-final.log",
+      "bytes": 99,
+      "sha256": "b5c547923d8aaf1c9d99d4785f26ed1b384165e247897c26860e0e5be1814842"
+    },
+    {
+      "path": "evidence/targeted/logs/RadialToroidalCurl-independent-modal.log",
+      "bytes": 99,
+      "sha256": "b5c547923d8aaf1c9d99d4785f26ed1b384165e247897c26860e0e5be1814842"
+    },
+    {
+      "path": "evidence/targeted/logs/RadialToroidalCurl-target.log",
+      "bytes": 1193,
+      "sha256": "558903d7ea9b2961a141d47683853ca1d5f674528c2528fb3ea9abecacf9d4ee"
+    },
+    {
+      "path": "evidence/targeted/logs/RiccatiImaginaryBound-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/RiccatiImaginaryBound-final.log",
+      "bytes": 557,
+      "sha256": "00ad4fbcab9f2550256ba1b312c10554f5a7d5a06a71860eb54ec21b9cb12d63"
+    },
+    {
+      "path": "evidence/targeted/logs/RiccatiImaginaryBound-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/RiccatiImaginaryBound-root-audit.log",
+      "bytes": 557,
+      "sha256": "00ad4fbcab9f2550256ba1b312c10554f5a7d5a06a71860eb54ec21b9cb12d63"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenAngularBound-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenAngularBound-final.log",
+      "bytes": 566,
+      "sha256": "df61158d666c8b0f99b90b08797654e9047b768f39050b2d07ad6cd53ea90d6f"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenAngularBound-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenAngularBound-root-audit.log",
+      "bytes": 566,
+      "sha256": "df61158d666c8b0f99b90b08797654e9047b768f39050b2d07ad6cd53ea90d6f"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenPointwise-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenPointwise-final.log",
+      "bytes": 972,
+      "sha256": "56d93cd691edcd673adb08d0a3726b773f8879b2893d0bc3c9be1c0f1a02e621"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenPointwise-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenPointwise-root-audit.log",
+      "bytes": 972,
+      "sha256": "56d93cd691edcd673adb08d0a3726b773f8879b2893d0bc3c9be1c0f1a02e621"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenRadialBound-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenRadialBound-final.log",
+      "bytes": 225,
+      "sha256": "976dc0344ac449305fc4c2f78f284787abb35cf18472f082fc99ca5f251bf490"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenRadialBound-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenRadialBound-root-audit.log",
+      "bytes": 225,
+      "sha256": "976dc0344ac449305fc4c2f78f284787abb35cf18472f082fc99ca5f251bf490"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenSpatial-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenSpatial-final.log",
+      "bytes": 317,
+      "sha256": "3c8e9e09711332a9dc24ccf6105c4750dccd072cbd2973c658b506994e92887f"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenSpatial-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/ScalarGreenSpatial-root-audit.log",
+      "bytes": 317,
+      "sha256": "3c8e9e09711332a9dc24ccf6105c4750dccd072cbd2973c658b506994e92887f"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceDielectricMaxwell-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceDielectricMaxwell-final.log",
+      "bytes": 419,
+      "sha256": "2298b5b7fdd6df9fb7dab12359b2deb16b1b578528e0f1b26eb22abb4fa314e9"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceDielectricMaxwell-independent-modal.log",
+      "bytes": 419,
+      "sha256": "2298b5b7fdd6df9fb7dab12359b2deb16b1b578528e0f1b26eb22abb4fa314e9"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceElectricProfiles-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceElectricProfiles-final.log",
+      "bytes": 1206,
+      "sha256": "f7c53c96adee2fc80b0402955ebddd84c359b51ef400c6ee4fb8f99d657d10d3"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceElectricProfiles-independent-modal.log",
+      "bytes": 1206,
+      "sha256": "f7c53c96adee2fc80b0402955ebddd84c359b51ef400c6ee4fb8f99d657d10d3"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceElectricProfiles-target.log",
+      "bytes": 6245,
+      "sha256": "b821524f7a5e4ab1eeb0bb884728b16f6ac7f032b94ec7c8e3cf1095b02e73bf"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceGeneralMaxwell-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceGeneralMaxwell-final.log",
+      "bytes": 869,
+      "sha256": "6543e423504b512eefd70003ff2f7a97fd97bba8e3fc619dfc0f8131d0e099cd"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceGeneralMaxwell-independent-modal.log",
+      "bytes": 869,
+      "sha256": "6543e423504b512eefd70003ff2f7a97fd97bba8e3fc619dfc0f8131d0e099cd"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceGeneralMaxwell-target.log",
+      "bytes": 3204,
+      "sha256": "ce40d89e2f4635fddd5e52ac988b06f93b9bf1be43c51b8a65875e4158d0af85"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceMagneticProfiles-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceMagneticProfiles-final.log",
+      "bytes": 861,
+      "sha256": "7bd62f2cce883237ed2f74ee0274e58f21b0ee1dda734339c5dce3a9bd343ce1"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceMagneticProfiles-independent-modal.log",
+      "bytes": 861,
+      "sha256": "7bd62f2cce883237ed2f74ee0274e58f21b0ee1dda734339c5dce3a9bd343ce1"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceMagneticProfiles-target.log",
+      "bytes": 6612,
+      "sha256": "94a16398f562cb27171be6fef3cccf62679847c92fc830785eafe9594875a831"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityFlux-final.log",
+      "bytes": 620,
+      "sha256": "f472ac6f24c9ccb9dbc638347d680603b3087fa227f8794ed7cb3b510aed132a"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityFlux-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityFlux-root-audit.log",
+      "bytes": 620,
+      "sha256": "f472ac6f24c9ccb9dbc638347d680603b3087fa227f8794ed7cb3b510aed132a"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityFlux-target.log",
+      "bytes": 620,
+      "sha256": "f472ac6f24c9ccb9dbc638347d680603b3087fa227f8794ed7cb3b510aed132a"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityWhole-final.log",
+      "bytes": 400,
+      "sha256": "6a856e861b4f5fb445c7a8c80110b5dd0ee21174bf27c91a7d00f890ecb37500"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityWhole-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityWhole-root-audit.log",
+      "bytes": 400,
+      "sha256": "6a856e861b4f5fb445c7a8c80110b5dd0ee21174bf27c91a7d00f890ecb37500"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceParityWhole-target.log",
+      "bytes": 400,
+      "sha256": "6a856e861b4f5fb445c7a8c80110b5dd0ee21174bf27c91a7d00f890ecb37500"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadialSystem-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadialSystem-final.log",
+      "bytes": 1503,
+      "sha256": "44ec361b92901d7630d0ffe3188b13f28b638632999d9369d3035a4392f8f41e"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadialSystem-independent-modal.log",
+      "bytes": 1503,
+      "sha256": "44ec361b92901d7630d0ffe3188b13f28b638632999d9369d3035a4392f8f41e"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadialSystem-target.log",
+      "bytes": 2438,
+      "sha256": "18bd9e658b578150726c68304a0d22d4fa84944089edb80009730a30c03fe23c"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadiation-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadiation-final.log",
+      "bytes": 414,
+      "sha256": "09ab53f7bf429d4042b0ec1be44c118375f830e39450da52f253a225035ded6a"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceRadiation-modal-audit.log",
+      "bytes": 414,
+      "sha256": "09ab53f7bf429d4042b0ec1be44c118375f830e39450da52f253a225035ded6a"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceTERadiation-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceTERadiation-final.log",
+      "bytes": 418,
+      "sha256": "bfe9c239674765b847c6925a228f4963e45768af4043bb5f2c3b9c1294573e53"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceUnclippedMaxwell-final.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceUnclippedMaxwell-final.log",
+      "bytes": 665,
+      "sha256": "b93177193844aa10c073b7da2f913ddeb4242f48b1aa00e88fb5d8a0999f5d71"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceUnclippedMaxwell-independent-modal.log",
+      "bytes": 665,
+      "sha256": "b93177193844aa10c073b7da2f913ddeb4242f48b1aa00e88fb5d8a0999f5d71"
+    },
+    {
+      "path": "evidence/targeted/logs/SourceUnclippedMaxwell-target.log",
+      "bytes": 3384,
+      "sha256": "7bfed55f57b237bdf46d6b5fec1962bfea5052efbb392e1a8408f187c9f7afac"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionMajorant-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionMajorant-final.log",
+      "bytes": 694,
+      "sha256": "c8a1bf3e7171dab2289db34a60e37cfdf4540e610362ffa1185960645203843b"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionMajorant-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionMajorant-root-audit.log",
+      "bytes": 694,
+      "sha256": "c8a1bf3e7171dab2289db34a60e37cfdf4540e610362ffa1185960645203843b"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionSeries-draft.log",
+      "bytes": 186,
+      "sha256": "056ad52d69917906570dc0e86ebce1b38f751b7e9dba5c5a84f2b2534bbb68d4"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionSeries-final.log",
+      "bytes": 230,
+      "sha256": "99e0967cbfaa519346135f142f9b3894d716289744592b3e1a48e31d4ac56553"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionSeries-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionSeries-root-audit.log",
+      "bytes": 230,
+      "sha256": "99e0967cbfaa519346135f142f9b3894d716289744592b3e1a48e31d4ac56553"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionTerms-draft.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionTerms-final.log",
+      "bytes": 878,
+      "sha256": "b5bb2752a5b6f5f2bca431307610eef097f1d23a9cf8b0b98dba94993d18f4c1"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionTerms-root-audit.exit.log",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "evidence/targeted/logs/SpatialReactionTerms-root-audit.log",
+      "bytes": 878,
+      "sha256": "b5bb2752a5b6f5f2bca431307610eef097f1d23a9cf8b0b98dba94993d18f4c1"
+    },
+    {
+      "path": "evidence/targeted/logs/SphereParityDifferential-final.log",
+      "bytes": 1220,
+      "sha256": "a922a0148c92a8219ebccc4de9fe7169f89c20982812b9c41b427a9d3c2341b0"
+    },
+    {
+      "path": "evidence/targeted/logs/SphereParityDifferential-target.log",
+      "bytes": 1220,
+      "sha256": "a922a0148c92a8219ebccc4de9fe7169f89c20982812b9c41b427a9d3c2341b0"
+    },
+    {
+      "path": "evidence/targeted/ConicalAngularEnergy-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalAngularEnergy.final.log",
+      "bytes": 323,
+      "sha256": "1ffc6d9985351617abd69d52ddf7d50d959a70252efac0b7a39d16e758b2a3c8"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient-check1.log",
+      "bytes": 1429,
+      "sha256": "6ca77a9710e3819b40ae66016b9dbb6815df2ea81b98101a2194b90b7f73e920"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient-check2.log",
+      "bytes": 408,
+      "sha256": "ea3ceb03e552ad1803ade9647c5a1f5b4df69ec4af06abdc3d9fa6e432e857b3"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient-check3.log",
+      "bytes": 1937,
+      "sha256": "04a940147934e3d6e2e9b74b04fccc261ee3c810c15f54fac8ed6b620b3c428e"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient-check4.log",
+      "bytes": 1246,
+      "sha256": "5b375f9bd79e75d1865c9b4cb498e8aca066e68b389397c18acb4693d65df18d"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient-check5.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalAnnularCoefficient.final.log",
+      "bytes": 784,
+      "sha256": "d2560094ea643ee872bac4345f4bc13ac092768a5b7ef800927a8b029cf4736e"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientIdentity-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientIdentity-check2.log",
+      "bytes": 154,
+      "sha256": "187aab053161928351fccfc390f6ac3c02cd2ac7399198a1d69614785d64e5bc"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientIdentity-check3.log",
+      "bytes": 595,
+      "sha256": "fd4340e406f5c88d1ba1214d94a0dbacd9f32b62f12cc2ab99e18704246f76aa"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientIdentity-check4.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientIdentity.final.log",
+      "bytes": 227,
+      "sha256": "1ed3356fd4544b6883e9d5420a70c392966966b78a5536f0ae27f6d144b06898"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientLimit-check1.log",
+      "bytes": 1094,
+      "sha256": "6f533fffc4c268d030dfdd61047faeabf3963eb1453e5f8bdd20cc5980d4f58f"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientLimit-check2.log",
+      "bytes": 188,
+      "sha256": "fc8a51c8a331b120ff2f960aa2e8ddc311eca1b47fa8801b89b876cac5fd950b"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientLimit.final.log",
+      "bytes": 340,
+      "sha256": "a9e3085d8ebdfd90fbd214dc281beda52589a062873ef6b69a491907deb2f020"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientRetention-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalCoefficientRetention.final.log",
+      "bytes": 383,
+      "sha256": "2e9ffbd02fc70997cb576032e48f6a0b39585660c0b09b8b461b99d9794e3bac"
+    },
+    {
+      "path": "evidence/targeted/ConicalCorrectionBounds-check1.log",
+      "bytes": 190,
+      "sha256": "b08fa77471662d554862667a2bae34cff7c870e2a0c9252ba395049463dfce9b"
+    },
+    {
+      "path": "evidence/targeted/ConicalCorrectionBounds-check2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalCorrectionBounds.final.log",
+      "bytes": 233,
+      "sha256": "c30fe005e59f38a8edd9813b3975510d2ddd67b92a9f15148e4dbdceb9b9825e"
+    },
+    {
+      "path": "evidence/targeted/ConicalDynamicHotspot-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalDynamicHotspot.final.log",
+      "bytes": 119,
+      "sha256": "b8a0f76b9a45a1fa1d22b63d4c726b3ab2ff9d254d1768058b5f6de8c3b4332f"
+    },
+    {
+      "path": "evidence/targeted/ConicalEssentialUnbounded-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalEssentialUnbounded.final.log",
+      "bytes": 267,
+      "sha256": "7d9949dfd3ecc54cd5f072bdeb6a2f1420686cad51d2c8d521b32539df1c49d7"
+    },
+    {
+      "path": "evidence/targeted/ConicalRadialUnbounded-check1.log",
+      "bytes": 2913,
+      "sha256": "22cffa80971ce12b68643da52c6b4a0ffd8a9ecef49667a108670d3c8255b4af"
+    },
+    {
+      "path": "evidence/targeted/ConicalRadialUnbounded-check2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalRadialUnbounded.final.log",
+      "bytes": 639,
+      "sha256": "330cc86465e3efc8bb31d1ec853a6e03e8cbcbdd2b97006f5ed93cbc15f8f0ff"
+    },
+    {
+      "path": "evidence/targeted/ConicalRoundedMaxwell-check1.log",
+      "bytes": 7814,
+      "sha256": "9c63accf0a4f4867263724b75e3a012c868c95bead5771e974bdd2400449cd26"
+    },
+    {
+      "path": "evidence/targeted/ConicalRoundedMaxwell-check2.log",
+      "bytes": 1457,
+      "sha256": "0b8034bac1ad1915bddda366c7e3e59339ea24d47f998a273f00495efe1bab5e"
+    },
+    {
+      "path": "evidence/targeted/ConicalRoundedMaxwell.final.log",
+      "bytes": 1457,
+      "sha256": "0b8034bac1ad1915bddda366c7e3e59339ea24d47f998a273f00495efe1bab5e"
+    },
+    {
+      "path": "evidence/targeted/ConicalRoundedPeaks-check1.log",
+      "bytes": 879,
+      "sha256": "95be815a6cf2eb14e1dc5655bba4d7af8621515e1e08a05d06bf1f7829f28f1a"
+    },
+    {
+      "path": "evidence/targeted/ConicalRoundedPeaks.final.log",
+      "bytes": 879,
+      "sha256": "95be815a6cf2eb14e1dc5655bba4d7af8621515e1e08a05d06bf1f7829f28f1a"
+    },
+    {
+      "path": "evidence/targeted/ConicalStaticCoefficient-check1.log",
+      "bytes": 3815,
+      "sha256": "630aa014f28b406b2ad967524d17dd79fc7261910882ea07ff99fcab0bbb1b3d"
+    },
+    {
+      "path": "evidence/targeted/ConicalStaticCoefficient-check2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/ConicalStaticCoefficient-check3.log",
+      "bytes": 328,
+      "sha256": "c7b9e876cfc062fbae0651528a48207dda74a0c74cff2715c8aba1834d5af572"
+    },
+    {
+      "path": "evidence/targeted/ConicalStaticCoefficient.final.log",
+      "bytes": 339,
+      "sha256": "de88c147399b5c91fe36fc44c3cef0bf78bf8d33680505f1f46d656830323ae9"
+    },
+    {
+      "path": "evidence/targeted/ConicalTipRounding-check1.log",
+      "bytes": 2726,
+      "sha256": "78f60c9e0960fec8e0135f79440a8d9593f62a32140cbc8fd40c5717236e7ad3"
+    },
+    {
+      "path": "evidence/targeted/ConicalTipRounding-check2.log",
+      "bytes": 1439,
+      "sha256": "194661e2864adec8812bd64eb83af12207eb3cd851dd17bf13e04e42ab56fcfa"
+    },
+    {
+      "path": "evidence/targeted/ConicalTipRounding.final.log",
+      "bytes": 1439,
+      "sha256": "194661e2864adec8812bd64eb83af12207eb3cd851dd17bf13e04e42ab56fcfa"
+    },
+    {
+      "path": "evidence/targeted/ConicalVolumePeaks-check1.log",
+      "bytes": 442,
+      "sha256": "7cd3c4a55818d8a13c0d5d0cfd495a8c303fe62c5895a31970c6fc0f5e0eb417"
+    },
+    {
+      "path": "evidence/targeted/ConicalVolumePeaks.final.log",
+      "bytes": 442,
+      "sha256": "7cd3c4a55818d8a13c0d5d0cfd495a8c303fe62c5895a31970c6fc0f5e0eb417"
+    },
+    {
+      "path": "evidence/targeted/L2PeakPreservation-check1.log",
+      "bytes": 81,
+      "sha256": "1230c860f88703574cb15a754468ba7e5b86b75f7b67dfcc60d87d4d81c18d1d"
+    },
+    {
+      "path": "evidence/targeted/L2PeakPreservation-check2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/L2PeakPreservation.final.log",
+      "bytes": 327,
+      "sha256": "a06e8adb070c0675dc06cfee7398e02b79821e605c4e4141f9f4cd74c99ea757"
+    },
+    {
+      "path": "evidence/targeted/MaterialStrongLimit-check1.log",
+      "bytes": 1592,
+      "sha256": "045812813c7bb93036659213253579321b5e4900305cf1d2835f8b87cf0dcc4f"
+    },
+    {
+      "path": "evidence/targeted/MaterialStrongLimit-check2.log",
+      "bytes": 363,
+      "sha256": "2fd9a55ec7831089cfec36ff773f2899bf7be4456b11297317a367e261be56d0"
+    },
+    {
+      "path": "evidence/targeted/MaterialStrongLimit-check3.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/MaterialStrongLimit.final.log",
+      "bytes": 339,
+      "sha256": "b053ac5dbe9b4e25ea212653b46a939338f079a0d34dbc5011ad58d177b5d855"
+    },
+    {
+      "path": "evidence/targeted/MaterialVolumeLimit-check1.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/MaterialVolumeLimit-check2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/targeted/MaterialVolumeLimit.final.log",
+      "bytes": 870,
+      "sha256": "6647fab4a91ead86ceb31c78440e863145bec0491f983ad3a6cb1cb6b3f8e960"
+    },
+    {
+      "path": "evidence/targeted/PolarMomentBound.final.log",
+      "bytes": 100,
+      "sha256": "96e75ed4cf4ba5aaeff6c591499ae1443bce32aef7d58bdef2d7def1a0a37129"
+    },
+    {
+      "path": "evidence/build-status.json",
+      "bytes": 661,
+      "sha256": "d79a2a728a00eecf24d44047fe6a2fa5e8902990ceb8f4ced5b0612e91b715ec"
+    }
+  ]
+}

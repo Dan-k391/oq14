@@ -1,0 +1,28 @@
+ConicalAnnularCoefficient.lean:118:72: error: application type mismatch
+  LT.lt.le hk
+argument
+  hk
+has type
+  k ∈ ball 0 (DynamicStaticLimit.frequencyRadius (coefficient p) p.cutoff.rOut) : Prop
+but is expected to have type
+  |k| < DynamicStaticLimit.frequencyRadius (coefficient p) p.cutoff.rOut : Prop
+ConicalAnnularCoefficient.lean:121:4: error: type mismatch, term
+  Tendsto.mul_const (testMass p ζ)
+    (Tendsto.mul_const ‖ScalarPotentialBound.cutoff 0 (p.cutoff.rOut + p.cutoff.rOut)‖
+      (Tendsto.mul_const (ConicalPotentialSplit.sourceBound p) (Tendsto.pow tendsto_id 2)))
+after simplification has type
+  Tendsto
+    (fun k =>
+      k ^ 2 * ConicalPotentialSplit.sourceBound p * ‖ScalarPotentialBound.cutoff 0 (p.cutoff.rOut + p.cutoff.rOut)‖ *
+        testMass p ζ)
+    (𝓝 ?m.30819)
+    (𝓝
+      (?m.30819 ^ 2 * ConicalPotentialSplit.sourceBound p *
+          ‖ScalarPotentialBound.cutoff 0 (p.cutoff.rOut + p.cutoff.rOut)‖ *
+        testMass p ζ)) : Prop
+but is expected to have type
+  Tendsto
+    (fun k =>
+      k ^ 2 * ConicalPotentialSplit.sourceBound p * ‖ScalarPotentialBound.cutoff 0 (p.cutoff.rOut + p.cutoff.rOut)‖ *
+        testMass p ζ)
+    (𝓝 0) (𝓝 0) : Prop

@@ -1,0 +1,24 @@
+RadialToroidalCurl.lean:19:51: error: `ContDiff ℝ ↑⊤ fun t =>
+  a ‖x‖ + (↑t - ↑‖x‖) * aD` is not a `fun_prop` goal! Maybe you forgot marking `ContDiff` with `@[fun_prop]`.
+RadialToroidalCurl.lean:31:48: error: unknown identifier 'toroidal'
+RadialToroidalCurl.lean:17:62: error: unsolved goals
+a : ℝ → ℂ
+aD : ℂ
+p : Poly
+l : ℕ
+hp : MvPolynomial.IsHomogeneous p l
+hh : formalLaplacian p = 0
+x : Space
+hx : x ≠ 0
+ha : HasDerivAt a aD ‖x‖
+i : Fin 3
+η : ℝ → ℂ := fun t => a ‖x‖ + (↑t - ↑‖x‖) * aD
+hη : ContDiff ℝ (↑⊤) η
+hηD : HasDerivAt η aD ‖x‖
+hη0 : η ‖x‖ = a ‖x‖
+hpd : ∀ (j k : Fin 3), pd (field a (angularToroidal p)) x j k = pd (field η (angularToroidal p)) x j k
+hc : curl (field a (angularToroidal p)) x = curl (field η (angularToroidal p)) x
+he : field η (angularToroidal p) =ᶠ[𝓝 x] sorry
+⊢ curl (field η (angularToroidal p)) x i =
+    (↑‖x‖ * aD + (↑l + 1) * a ‖x‖) * dcoord (complexEvaluate p) x i - ↑l * aD / ↑‖x‖ * ↑(x i) * complexEvaluate p x
+'OQ14.RadialToroidalCurl.curl_formula' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

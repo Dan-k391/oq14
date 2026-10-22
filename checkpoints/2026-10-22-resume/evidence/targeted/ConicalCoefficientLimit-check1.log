@@ -1,0 +1,27 @@
+ConicalCoefficientLimit.lean:28:8: error: tactic 'rewrite' failed, equality or iff proof expected
+  ℝ
+p : Data
+hν : p.exponent < 1
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+hs : tsupport ζ ⊆ Ioo 0 p.cutoff.rIn
+C : ℝ
+hC : 0 ≤ C
+hb :
+  ∀ (k : ℝ),
+    |k| ≤ DynamicStaticLimit.frequencyRadius (coefficient p) p.cutoff.rOut →
+      ∀ r ∈ Ioc 0 p.cutoff.rIn,
+        ‖ConicalRadialParticular.particular p.exponent (ConicalCorrectionMoments.radialCorrection p k)
+              (ConicalCorrectionMoments.tangentCorrection p k) r‖ ≤
+          k ^ 2 * C * r
+hi : IntegrableOn (fun r => r ^ 2 * |ζ r|) (Ioi 0) volume
+I : ℝ := ∫ (r : ℝ) in Ioi 0, r ^ 2 * |ζ r|
+hI : 0 ≤ I
+k : ℝ
+hk : |k| ≤ DynamicStaticLimit.frequencyRadius (coefficient p) p.cutoff.rOut
+⊢ ‖∫ (r : ℝ) in Ioi 0,
+        ↑r * ↑(ζ r) *
+          ConicalRadialParticular.particular p.exponent (ConicalCorrectionMoments.radialCorrection p k)
+            (ConicalCorrectionMoments.tangentCorrection p k) r‖ ≤
+    k ^ 2 * C * I

@@ -1,0 +1,18 @@
+ParityPlaneFields.lean:87:2: error: type mismatch
+  ContinuousWithinAt.continuousAt
+    (ContinuousAt.continuousWithinAt
+      (DifferentiableAt.continuousAt (SphereParityMaxwell.magnetic_differentiable e k ?m.22268 y i j)))
+has type
+  ?m.22267 ∈ 𝓝 ?m.22268 → ContinuousAt (fun z => magneticReaction e k z y i j) ?m.22268 : Prop
+but is expected to have type
+  Continuous fun x => magneticReaction e k x y i j * ρ j y : Prop
+'OQ14.ParityPlaneFields.electric_integrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.magnetic_integrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.electric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.magnetic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.electric_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.magnetic_continuous' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.electric_true_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.magnetic_false_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.electric_material' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ParityPlaneFields.material_total_ae_strip' depends on axioms: [propext, Classical.choice, Quot.sound]

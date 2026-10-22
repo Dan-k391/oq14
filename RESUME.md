@@ -1,98 +1,200 @@
-# Active OQ14 continuation — October 22, 2026
+# OQ14 checkpoint — October 22, 2026
 
-The user requested continuation toward full OQ14 closure and complete actual
-Lean Maxwell proofs. Keep working until complete or an explicit user stop.
-Existing 6.1 Sol agents own disjoint proof modules; root owns important proof
-design, independent audits and integration. Full formalization is unfinished.
+**PAUSED at the user's explicit request: "stop and make a checkpoint after
+the current stage".** Current-stage checks finished. All three 6.1 Sol
+agents and all owned compiler jobs stopped. Resume only when the user asks.
+Full requested OQ14 Lean closure remains incomplete.
 
-## Registered and packaged state
+Checkpoint: `checkpoints/2026-10-22-resume/`.
+Local checkpoint tag: `oq14-resume-2026-10-22`.
+Read its `manifest.json`, immutable `work/RESUME.md`, and the saved agent
+handoffs. Original working files remain in place. Restore only missing
+files with the checkpoint's non-overwriting restore script. User preference:
+6.1 Sol subagents; Astra for critical mathematics, design and integration.
 
-4391 reports /469 modules /441 libraries registered. The 474 new reports have
-complete-source and independent pinned-compiler audits, no warnings and only
-standard foundations. See reviews/actual_constructions_4391.md and
-tmp/audited_batch_4391.json. Matching clean aggregate/PDF are pending.
-Do not run a root aggregate: agents' unregistered drafts share lean/.
+## Completed clean milestone
 
-Latest completed coherent release: oq14-maxwell-foundations-3917 at
-e7d42ab2f86e8c23a992558bf5d89a42538c4347. All 3917 reports, nine dependency
-checks and 15 diagnostics PASS; 112-page PDF visually checked. Fourteen
-matching artifacts preserved in output/checkpoints/oq14-maxwell-foundations-3917/
-and top-level output. Delivery 8885736 bytes, SHA256
-1f29974477832b9c2b158dd2823ec02990821c5d5f54c284a7845a815be19747.
-PDF SHA256 3ad0eff586c16beaa9a80a7e4f00c5d42ec0d8416d10845baf200218902d3338.
-See reviews/clean_release_3917.md. The final bibliography item is alone on
-page 112; improve that pagination in the next source revision.
+`oq14-maxwell-foundations-4391` at
+`c597c535c9a751fccbf3e9a0d644721326ceda26`:
+4391 audited reports /469 modules /441 libraries. Clean aggregate exit0,
+nine dependency pins verified, all 15 diagnostic groups passed. Matching
+113-page PDF passed reference/citation/overfull checks; pages106–113 rendered
+and visually inspected. All14 matching artifacts are preserved under
+`output/checkpoints/oq14-maxwell-foundations-4391/` and top-level `output/`.
 
-Previous coherent release: oq14-maxwell-foundations-3404 at
-155907f9137d85120d7e4fadbc0cf3cddd667d0c. Clean aggregate PASS, nine dependency
-checks PASS, 15 diagnostics PASS, 111-page PDF PASS; pages 106/107/108/111
-visually inspected. Fourteen matching artifacts are preserved in
-output/checkpoints/oq14-maxwell-foundations-3404/ and at top-level output.
-Delivery: 8456406 bytes; SHA256
-c018deba6b6aebb578feba591a8253010a1f822ad1e3d10871ed6c19e4ead8f5.
-PDF SHA256 455d3c5a2f81a2f5f3bcce107b73900235284509aa054bb483fb01227c12cd3b.
-Older releases remain preserved. No external publication.
+PDF SHA256:
+`8c29cdc3b31ee277cdb7e0b9efc3a54669eb69b85e46d38af052a0b060ad22ce`.
+Delivery9365092bytes, SHA256:
+`89f16629977b6477345ca0732357fc0bf468ee32def7d0570fec75ec4eafe0c3`.
+See `reviews/clean_release_4391.md`. Clean build47048 finished and was
+consumed; clone `tmp/clean-checkout` remains at this clean release commit.
+Root build caches were not cleaned. Older coherent3917/3404/3162/2804/2390
+releases and earlier immutable resume checkpoints remain preserved.
 
-tmp/clean-checkout is the independent checkout at e7d42ab. Its 3917 aggregate
-session 77633 completed exit0 and was consumed. The default legacy log output
-was preserved in output/lean before restoring only those two generated log
-paths. Both root and clone have the matching tag. Never clean the root Lean
-build while agents are active. preserve_3917.py already executed; do not rerun
-one-time integration or release scripts blindly.
+## New unregistered source state
 
-## Active proof tasks
+69 new Lean sources are preserved, with361 selected source directives:
 
-The 4391 registration adds actual normalized scalar Green coefficients and
-angular L2 expansion, exact source jump/reduced sign, both weak Maxwell
-equations through finite-chain interfaces in the layer annulus, actual smooth
-weak-derivative representatives, the physical conical radial system and
-finite-energy positive-power expansion, and actual whole-plane coherent
-moving-gap error estimates for finite Maxwell parity illuminations.
+- 58 modules /277 reports independently reviewed and compiled.
+- 10 modules /74 reports have clean author-final compiles and objects;
+  independent audits remain pending.
+- One10-report draft, `ConicalRoundedHCurl`, has never compiled and has no
+  object. Its statements are not verified results.
 
-Root owns independent audits, clean integration, full spatial layer
-core/exterior assembly and major proof design. RadialMultiplierWeak3,
-LayerMagneticProfiles6 and LayerMagneticMaxwell3 are frozen and independently
-audited. Full source/exterior assembly remains; sourceState has a singular
-core and must never be described as regular at the origin.
+The68 checked new modules contain351 reports; these are targeted results,
+not a new clean combined release. Do not add them to4391 as an aggregate
+claim. No new module has been registered in `OQ14.lean`/`lakefile.lean`.
+Do not run a root aggregate that includes the unfinished draft.
 
-fredholm_sol: derive the actual annular L2 coefficient functional, positive
-static normalization and positive-frequency retention from the actual radial
-expansion. No nonzero coefficient or coefficient-continuity premise may be
-substituted for the result. Runge and rounding follow.
+Independent pending modules:
+`ConicalRoundedMaxwell`, `DensityCurl`, `DensityDerivatives`, `DensityWeak`,
+`HarmonicRadiationFactors`, `HarmonicVectorDecomposition`,
+`ParityDensityMaxwell`, `PolynomialVectorCalculus`, `SourceTERadiation`,
+`SphereParityDifferential`.
 
-modal_sol: actual scalar Green normalization and L2 expansion are checked.
-Current imaginary-axis noncancellation and normalized spatial jet majorants
-for actual derivative convergence. Dyadic k^3 normalization remains separate.
+Exact source/log hashes, report counts and statuses are in the checkpoint
+manifest and saved evidence. `tmp/audited_after_4391.json` records the58
+independent checks and is preserved in checkpoint evidence. The two record
+scripts are incremental and reject changed frozen receipts. Old one-time
+integration/preservation/checkpoint scripts must not be rerun blindly.
 
-continuation_review_sol: actual finite-incident coherent whole-plane errors
-are checked. Current literal incident amplitude/derivative estimates and
-weighted forcing, then finite-point Gram coefficients and full channel
-assembly. No assumed coherent-flux limit or source error.
+## Root source Maxwell/radiation work
 
-Still essential: full spatial dyadic Green identification and source/layer
-gluing, physical-stack/channel assembly, conical nonzero coefficient, Runge,
-rounding, actual reciprocal modal normalization, infinite-degree pole
-isolation and simultaneous modal maxima. Complete OQ14 Lean closure is not
-claimed. Work remains active; no user stop was requested.
+Actual normalized source fields now satisfy both weak Maxwell equations
+on all punctured space, including core, every layer and exterior, for both
+TM and TE and every prescribed positive frequency. This is actual source
+assembly, not a regular-origin solution. `SourceRadialSystem.Data` has NO
+dispersion field: TM uses explicit layer q²=sigma; TE uses sigma=1, and
+the general constitutive coefficient is actual q²/sigma. Do not restore the
+obsolete pre-refactor Data or earlier audit logs.
 
-## Immutable checkpoint and scope safeguards
+SourceRadialSystem14, SourceElectricProfiles11, RadialToroidalCurl1,
+SourceMagneticProfiles8, SourceUnclippedMaxwell6, SourceGeneralMaxwell8,
+SourceDielectricMaxwell4 and PuncturedMaxwellScaling5 are independently
+audited. Tests must have support avoiding the origin. Frequency fields are
+literal E(k*x), H(k*x), with coefficient a(k*norm(x)). Origin source
+distribution normalization is not proved by these statements.
 
-The starting checkpoint checkpoints/2026-10-20-resume-3/ and its zip are
-immutable: 23 work files/296 evidence files. Do not rerun working-file
-equality now or restore it over later work. Tag oq14-resume-2026-10-20-3;
-zip SHA256 7b808173455586f8bb16bac1ca4486c9ddd11740a346f11f71b50a0968a8d791.
+HarmonicRadiationGeometry4 and SourceRadiation4 are independently audited.
+The actual all-degree TM weighted defect equals outgoing amplitude times
+phase times pD(r) times the normalized toroidal factor. The uniform angular
+bound proves convergence for every path with norm tending to infinity.
+HarmonicRadiationFactors8 and SourceTERadiation4 are author-final PASS,
+awaiting independent audit. TE has actual pD*poloidal and p/r*radial terms.
+Final TE compiler49373 completed exit0; earlier failed logs are obsolete.
+Next: audit these two, apply the already genuine spatial dilation to both
+radiation defects, and bundle actual Maxwell/radiation source families.
+Full origin distribution and spatial dyadic Green identification remain.
 
-Written channel scope: fixed delta>eta>0, complete scattering output, common
-frequency/material bounds and unrestricted finite support. Stronger bypass,
-receiving-only and uniform-support variants remain separate. Written modal
-scope: actual reciprocal-residue-normalized high-Q QNMs, fixed real frequency
-and common material bounds, actual 3D maxima in the plane patch, N-dependent
-insertion contrast. The original Downloads manual was absent at the earlier
-comparison: reviews/original_scope_2026_10_20.md. Do not claim exact current
-comparison. Do not touch, stage or package unrelated sites/.
+## Scalar Green and vector completeness — modal_sol
 
-Runtime: .tools/lean/lean-4.19.0-windows/bin/lake.exe, pinned mathlib v4.19.
-Python: C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe.
-Tectonic: .tools/tectonic/tectonic.exe; cache tmp/tectonic-cache.
-Integration scripts through integrate_4391.py are one-time mutations: do not
-rerun. tmp/audited_batch_3404.json preserves exact frozen sources/logs.
+Physical reaction coefficients are **-(gamma+I)**, not gamma alone. Actual
+joint spatial derivative majorants, summability and compact C-norm Tannery
+limits are proved, including the origin in the regular reaction series.
+The radius condition depends on the chosen finite derivative order:
+R>=exp(1)*B and B>=degreeScale(order,ball). Do not claim all orders at a
+fixed insufficient radius.
+
+Actual free scalar Green modes are uniformly summable on angular sphere
+pairs for0<r<s. Genuine jump/Wronskian coefficients plus actual angular L2
+expansion and full-support injectivity identify the continuous sum with
+Phi. ScalarGreenSpatial gives literal polynomial-coordinate HasSum for
+nonzero x,y with unequal norms, either radial order. These are independently
+audited. Equal-radius/diagonal issues and the vector dyadic are separate.
+
+PolynomialVectorCalculus12 and HarmonicVectorDecomposition9 are author-final
+PASS, awaiting independent audit. Actual positive-degree three-sector
+harmonic vector decomposition is proved; tor(Q)=Q cross x. Next: degree-zero
+case, representative polynomial span/injectivity, actual vector sphere
+density and transverse completeness, then normalized TE/TM dyadic assembly.
+No completeness draft was started. See their author reviews.
+
+## Conical coefficient, cutoff and peaks — fredholm_sol
+
+The actual annular coefficient functional has positive static normalization
+and is retained nonzero at small positive frequency. The genuine projected
+expansion with0<nu<1 proves the actual electric field essentially unbounded
+in every tip ball. ConicalDynamicHotspot removes data-existence premises for
+every prescribed positive cap contrast and genuine cap geometry.
+
+Actual bounded-AE material convergence gives strong sqrt-multiplier, volume
+block and inverse-response convergence with a common small-frequency
+radius. L2 convergence preserves positive-volume superlevel sets above
+every fixed threshold. Exact physical-coordinate pullback connects this
+to the actual conical field. These results and ConicalTipRounding14 and
+ConicalRoundedPeaks8 are independently audited.
+
+The explicit smooth radial gate is zero for norm<=1/(n+1), one for
+norm>=2/(n+1). The coefficient shares contrast and outer support and
+converges AE to the sharp cone. This is smooth removal of material at the
+tip; it does not assert globally smooth interfaces or finite maxima.
+
+ConicalRoundedMaxwell14 author-final PASS constructs genuine compact-source
+Green E/H, identifies the L2 volume response AE, proves actual material
+self-consistency and both inner weak Maxwell equations. Root independent
+audit is pending. Its log is `lean/ConicalRoundedMaxwell.final.log` (outside
+lean/logs). ConicalRoundedHCurl10 is the sole uncompiled draft; compile/fix
+it first when resuming this track. Then transfer peaks to literal electric
+representatives through field_ae and bundle actual Hcurl rounded families.
+Actual illumination Runge remains essential: the present excitation is an
+annular source. Test-function density is not solution-space Runge density.
+No fixed-point/plane maxima follow from L2 convergence alone.
+Exact handoff: `reviews/conical_rounding_stop_handoff.md`.
+
+## Complete plane flux and density Maxwell — continuation_review_sol
+
+Actual finite illumination bounds derive the source massO(a²), source
+errorO(a³), genuine moving gap and inverse smallness. The exact complete
+parity total plane flux contains four reaction terms; their whole-plane
+L1 remainder tends to zero in the pure electric-wall finite-incident regime.
+FiniteSpherePlaneLimit compares the constructed actual inverse total flux
+to the actual static trial incident+free flux. Finite coefficient-mass
+control and geometric hypotheses remain explicit. These modules are
+independently audited; no final flux limit or mass/error premise is assumed.
+
+Five latest density modules (27 reports) have author-final PASS and await
+root independent audit. Actual density differentiation/curl interchange
+proves both global vacuum equations and the genuine magnetic partner of
+the material reaction. DensityWeak gives the genuine weak-test upgrade.
+No unfinished draft in this track. See
+`reviews/continuation_stop_2026_10_22.md` and its sources JSON.
+
+Next: instantiate density weak curl pairs and assemble the actual full
+material TestMaxwell pair through the derived modified incident datum;
+then specialize to finite balls and the legitimate continuous strip/plane
+representative. A three-dimensional AE identity cannot simply be restricted
+to a plane. Later derive whole-plane static trial/dipole comparison, actual
+Gram interpolation/incoming-power normalization and physical finite-stack
+identification. Do not infer whole-plane convergence from local convergence.
+
+## Remaining final scope
+
+Still essential: actual full spatial dyadic/source normalization,
+physical finite-stack/channel identification and Gram/power construction,
+illumination Runge, final rounded driven realization, actual reciprocal
+modal residue normalization, infinite-degree pole isolation and simultaneous
+three-dimensional modal maxima in the prescribed plane patch.
+
+The written unrestricted-channel disproof fixes delta>eta>0 and complete
+scattering output with common frequency/material bounds and unrestricted
+finite support. Delta<=eta, receiving-only, sole-connection and uniformly
+bounded-support variants are separate. The written modal theorem uses actual
+reciprocal-residue normalization, arbitrarily high Q, fixed real frequency,
+common bounds and N-dependent insertion contrast. Preserve the scope.
+The original Downloads manual was absent at the last recorded comparison;
+see reviews/original_scope_2026_10_20.md. No current exact comparison claimed.
+
+## Safe resumption
+
+Workspace D:/oq14, PowerShell. Python:
+`C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`.
+Lake: `D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe`.
+Lean4.19.0, mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b, nine pinned deps.
+Use Python -X utf8 or explicit UTF-8 file encoding. Some compiler logs have
+UTF16 BOM; decode accordingly. Compile in cwd `lean`, never project root.
+Do not compile a dependent file while its imported object is being rebuilt.
+Never clean root lean/.lake/build. Use the separate clone for clean releases.
+Only propext, Classical.choice and Quot.sound are accepted. Error recovery
+reports are not proofs. Complete remaining audits before registration.
+Unrelated untracked `sites/` must not be touched, staged or packaged.
+No external publication or scheduled continuation. Work is stopped.

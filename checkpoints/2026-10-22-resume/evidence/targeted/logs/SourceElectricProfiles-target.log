@@ -1,0 +1,111 @@
+SourceElectricProfiles.lean:9:28: error: unexpected token '('; expected command
+SourceElectricProfiles.lean:15:28: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:17:51: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:18:14: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:20:43: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:21:14: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:24:2: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:28:28: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:29:28: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:40:27: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:41:28: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:56:28: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:52:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (2600000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourceElectricProfiles.lean:61:35: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:62:18: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:66:29: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:66:5: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (2600000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourceElectricProfiles.lean:85:19: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:85:37: error: ambiguous, possible interpretations 
+  ClippedLayerProfiles.state : ℕ → List RadialStack.Layer → RadialStack.State → ℝ → ℝ → RadialStack.State
+  
+  SourceRadialSystem.state : Data → ℝ → RadialStack.State
+SourceElectricProfiles.lean:83:66: error: unsolved goals
+case h
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+hlt : r < d.c
+t : ℝ
+ht : t ∈ Iio d.c
+⊢ sorry t = (raw d d.c).2 / ↑d.c ^ d.l
+SourceElectricProfiles.lean:90:19: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:90:37: error: ambiguous, possible interpretations 
+  ClippedLayerProfiles.state : ℕ → List RadialStack.Layer → RadialStack.State → ℝ → ℝ → RadialStack.State
+  
+  SourceRadialSystem.state : Data → ℝ → RadialStack.State
+SourceElectricProfiles.lean:88:62: error: unsolved goals
+case h
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+hgt : r > d.c
+t : ℝ
+ht : t ∈ Ioi d.c
+⊢ sorry t = (raw d t).2 / ↑t ^ d.l
+SourceElectricProfiles.lean:94:29: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:94:53: error: ambiguous, possible interpretations 
+  ClippedLayerProfiles.state : ℕ → List RadialStack.Layer → RadialStack.State → ℝ → ℝ → RadialStack.State
+  
+  SourceRadialSystem.state : Data → ℝ → RadialStack.State
+Try this: ring_nf
+SourceElectricProfiles.lean:88:2: error: unsolved goals
+case h.e'_9
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+hgt : r > d.c
+he : a d =ᶠ[𝓝 r] fun t => (raw d t).2 / ↑t ^ d.l
+hd :
+  HasDerivAt (fun t => (fun t => (raw d t).2) t / ↑t ^ d.l)
+    (SourceRadialSystem.potential d r * (raw d r).1 / ↑r ^ d.l - ↑d.l * (fun t => (raw d t).2) r / ↑r ^ (d.l + 1)) r
+⊢ SourceRadialSystem.potential d r * sorry - sorry * ↑d.l =
+    SourceRadialSystem.potential d r * (raw d r).1 * (↑r)⁻¹ ^ d.l - ↑d.l * (↑r)⁻¹ * (↑r)⁻¹ ^ d.l * (raw d r).2
+SourceElectricProfiles.lean:85:6: warning: declaration uses 'sorry'
+SourceElectricProfiles.lean:86:4: warning: declaration uses 'sorry'
+SourceElectricProfiles.lean:98:13: error: unknown identifier 'quotient_continuous'
+SourceElectricProfiles.lean:97:90: error: unsolved goals
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+⊢ ContinuousAt (b d) r
+SourceElectricProfiles.lean:114:24: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:116:8: error: (kernel) unknown constant 'OQ14.SourceElectricProfiles.b_locallyIntegrable_space'
+SourceElectricProfiles.lean:127:25: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:131:8: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:132:32: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:137:6: error: simp made no progress
+SourceElectricProfiles.lean:132:6: warning: declaration uses 'sorry'
+SourceElectricProfiles.lean:132:6: warning: declaration uses 'sorry'
+SourceElectricProfiles.lean:152:23: error: unknown identifier 'quotient'
+SourceElectricProfiles.lean:151:4: warning: declaration uses 'sorry'
+'OQ14.SourceElectricProfiles.a_continuous' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceElectricProfiles.b_measurable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceElectricProfiles.b_locallyIntegrable_real' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceElectricProfiles.primitive_intervalIntegrable' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceElectricProfiles.b_locallyIntegrable_space' does not depend on any axioms
+'OQ14.SourceElectricProfiles.aD_locallyIntegrable_space' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceElectricProfiles.a_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceElectricProfiles.b_continuousAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceElectricProfiles.electric_weak_curl' depends on axioms: [OQ14.SourceElectricProfiles.electric_weak_curl]
+'OQ14.SourceElectricProfiles.curl_coefficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceElectricProfiles.first_weak_maxwell' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound,
+ OQ14.SourceElectricProfiles.electric_weak_curl]

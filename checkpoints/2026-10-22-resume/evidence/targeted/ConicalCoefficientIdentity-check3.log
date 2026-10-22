@@ -1,0 +1,9 @@
+ConicalCoefficientIdentity.lean:69:4: error: type mismatch
+  Integrable.integrableOn
+    (Continuous.integrable_of_hasCompactSupport (Continuous.mul (Continuous.comp Complex.continuous_ofReal hη) hpow)
+      (HasCompactSupport.mul_right (HasCompactSupport.comp_left hcη (of_eq_true (eq_self 0)))))
+has type
+  IntegrableOn (fun x => (Complex.ofReal ∘ fun r => r * ζ r) x * ConicalRadialParticular.power p.exponent x) ?m.7374
+    volume : Prop
+but is expected to have type
+  IntegrableOn (fun r => ↑r * ↑(ζ r) * ConicalRadialParticular.power p.exponent r) (Ioi 0) volume : Prop

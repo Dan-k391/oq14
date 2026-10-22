@@ -1,0 +1,32 @@
+FiniteSphereSourceMass.lean:72:72: error: unexpected token '|*'; expected '|' or '|ₘ'
+FiniteSphereSourceMass.lean:60:110: error: unsolved goals
+case calc.step
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+p : ι → Space
+ρ a χ δ R k b A M : ℝ
+hρ : 0 ≤ ρ
+ha : 0 < a
+ha1 : a ≤ 1
+hχ : 0 ≤ χ
+d : BoundedMaterialKernel.SupportData (FiniteSphereStatic.coefficient p (fun x => ρ * a) χ hχ)
+f : ↥VectorFourier.VectorL2
+E : ι → Vector
+hE : ∀ (l : ι) (j : Fin 3), ‖E l j‖ ≤ A / a
+he : FiniteSphereAsymptotics.Estimates p ρ a χ δ R k b A M hχ d f E
+u : ↥DynamicConvolution.VectorL2 := ParityMaterialField.solution d k (b / a) f
+S : Source := trialSource p (fun x => ρ * a) fun l => StaticSpherePolarization.polarization χ (E l)
+hs : ∀ (j : Fin 3), Integrable (S j) volume
+hi :
+  ∀ (j : Fin 3), Integrable (DynamicVolume.source (FiniteSphereStatic.coefficient p (fun x => ρ * a) χ hχ) u j) volume
+hm :
+  sourceMass
+      (DynamicVolume.source (FiniteSphereStatic.coefficient p (fun x => ρ * a) χ hχ)
+          (ParityMaterialField.solution d k (b / a) f) -
+        trialSource p (fun x => ρ * a) fun l => StaticSpherePolarization.polarization χ (E l)) ≤
+    FiniteSpherePlaneSources.errorConstant χ ρ δ k R b A M * a ^ 3
+⊢ |FiniteSpherePlaneSources.errorConstant χ ρ δ k R b A M| ≤
+    (trialConstant χ ρ A + |FiniteSpherePlaneSources.errorConstant χ ρ δ k R b A M|) * a ^ 2
+'OQ14.FiniteSphereSourceMass.trial_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteSphereSourceMass.inverse_mass' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

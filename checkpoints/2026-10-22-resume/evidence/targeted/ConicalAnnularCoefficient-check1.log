@@ -1,0 +1,27 @@
+ConicalAnnularCoefficient.lean:54:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(tangentFieldL2 p.eigenvalue p.contrast p.threshold ⋯ ⋯ ⋯ ⋯ ζ hζ hc i) x
+case h
+p : Data
+k : ℝ
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+hs : tsupport ζ ⊆ Ioo 0 p.cutoff.rIn
+i : Fin 3
+x : Maxwell.Space
+hg :
+  ↑↑(ConicalPotentialGraph.gradient p k i) x =
+    bump p x * (ConicalSpatialMaxwell.electric p k x i - ConicalPotentialSplit.correction p k x i) +
+      dcoord (bump p) x i * ConicalPotentialSplit.potential p k x
+hw : ↑↑(correctionL2 p k i) x = cutCorrection p k i x
+ha :
+  ↑↑(physicalCoordinate (ConicalDynamicVolume.field p k) i - correctionL2 p k i) x =
+    (↑↑(physicalCoordinate (ConicalDynamicVolume.field p k) i) - ↑↑(correctionL2 p k i)) x
+hf :
+  x ∈ closedBall 0 p.cutoff.rOut →
+    ↑↑(physicalCoordinate (ConicalDynamicVolume.field p k) i) x = ConicalSpatialMaxwell.electric p k x i
+ht :
+  ↑↑(tangentFieldL2 p.eigenvalue p.contrast p.threshold ⋯ ⋯ ⋯ ⋯ ζ hζ hc i) x =
+    ↑(tangentField ζ p.eigenvalue p.contrast p.threshold x i)
+⊢ ↑↑(testCoordinate p ζ hζ hc i) x * ↑↑(ConicalPotentialGraph.gradient p k i) x =
+    ↑↑(testCoordinate p ζ hζ hc i) x * ↑↑(physicalCoordinate (ConicalDynamicVolume.field p k) i - correctionL2 p k i) x

@@ -1,0 +1,127 @@
+SourceMagneticProfiles.lean:72:34: error: ambiguous, possible interpretations 
+  SourceRadialSystem.extend : ℝ → ℝ → (ℝ → ℂ) → (ℝ → ℂ) → ℝ → ℂ
+  
+  MeasureTheory.extend : ((s : ?m.6155) → ?m.6156 s → ENNReal) → ?m.6155 → ENNReal
+SourceMagneticProfiles.lean:72:2: error: unsolved goals
+case pos
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+hR : r ≤ d.R
+⊢ SourceRadialSystem.extend d.R d.X (fun r => ↑(sigmaAt d.gs r)) (fun x => 1) r *
+      SourceRadialSystem.extend d.R d.X (ClippedLayerProfiles.inverseSigma d.gs) (fun x => 1) r =
+    1
+SourceMagneticProfiles.lean:75:9: error: unknown identifier 'RadialSource.outgoing'
+SourceMagneticProfiles.lean:76:36: error: ambiguous, possible interpretations 
+  SourceRadialSystem.extend : ℝ → ℝ → (ℝ → ℂ) → (ℝ → ℂ) → ℝ → ℂ
+  
+  MeasureTheory.extend : ((s : ?m.6575) → ?m.6576 s → ENNReal) → ?m.6575 → ENNReal
+SourceMagneticProfiles.lean:77:6: error: type mismatch
+  mul_inv_cancel₀ (Complex.ofReal_ne_zero.mpr (LT.lt.ne' g.σ_pos))
+has type
+  ↑g.σ * (↑g.σ)⁻¹ = 1 : Prop
+but is expected to have type
+  SourceRadialSystem.extend d.R d.X (fun r => ↑(sigmaAt d.gs r)) (fun x => 1) r *
+      SourceRadialSystem.extend d.R d.X (ClippedLayerProfiles.inverseSigma d.gs) (fun x => 1) r =
+    1 : Prop
+SourceMagneticProfiles.lean:78:36: error: ambiguous, possible interpretations 
+  SourceRadialSystem.extend : ℝ → ℝ → (ℝ → ℂ) → (ℝ → ℂ) → ℝ → ℂ
+  
+  MeasureTheory.extend : ((s : ?m.6942) → ?m.6943 s → ENNReal) → ?m.6942 → ENNReal
+SourceMagneticProfiles.lean:78:4: error: unsolved goals
+case neg
+d : Data
+r : ℝ
+hr : r ∉ interfaces d
+hR : ¬r ≤ d.R
+hX : ¬r ≤ d.X
+⊢ SourceRadialSystem.extend d.R d.X (fun r => ↑(sigmaAt d.gs r)) (fun x => 1) r *
+      SourceRadialSystem.extend d.R d.X (ClippedLayerProfiles.inverseSigma d.gs) (fun x => 1) r =
+    1
+Try this: ring_nf
+SourceMagneticProfiles.lean:86:2: error: unsolved goals
+case left
+d : Data
+r : ℝ
+hcr : d.c < r
+hr : r ∉ interfaces d
+hn : ↑r ≠ 0
+hs : sigma d r * inverseSigma d r = 1
+z : ℂ
+he : ↑r ^ d.l = z
+hz : z ≠ 0
+⊢ ↑r ^ 4 * sigma d r * momentum d r * z ^ 3 * (↑r)⁻¹ ^ 4 * z⁻¹ ^ 3 = sigma d r * momentum d r
+Try this: ring_nf
+SourceMagneticProfiles.lean:91:2: error: unsolved goals
+case right
+d : Data
+r : ℝ
+hcr : d.c < r
+hr : r ∉ interfaces d
+hn : ↑r ≠ 0
+hs : sigma d r * inverseSigma d r = 1
+z : ℂ
+he : ↑r ^ d.l = z
+hz : z ≠ 0
+⊢ -(↑d.l * sigma d r * momentum d r * z * ↑r ^ 2 * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 4) +
+        ↑d.l * z * ↑r * value d r * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 4 +
+      ↑d.l ^ 2 * z * ↑r * value d r * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 4 =
+    -(↑d.l * sigma d r * momentum d r * z * ↑r ^ 3 * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 5) +
+        ↑d.l * z * ↑r ^ 2 * value d r * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 5 +
+      ↑d.l ^ 2 * z * ↑r ^ 2 * value d r * z⁻¹ ^ 2 * (↑r)⁻¹ ^ 5
+SourceMagneticProfiles.lean:112:8: error: unknown identifier 'HarmonicPolynomial.dcoord'
+Try this: ring_nf
+SourceMagneticProfiles.lean:113:95: error: unsolved goals
+d : Data
+p : HarmonicPolynomial.Poly
+hp : MvPolynomial.IsHomogeneous p d.l
+hh : HarmonicPolynomial.formalLaplacian p = 0
+x : Space
+hcx : d.c < ‖x‖
+hi : ‖x‖ ∉ interfaces d
+hx : x ≠ 0
+ha : ↑‖x‖ * etaD d ‖x‖ + (↑d.l + 1) * eta d ‖x‖ = sigma d ‖x‖ * a d ‖x‖
+hb : -↑d.l * etaD d ‖x‖ / ↑‖x‖ = sigma d ‖x‖ * b d ‖x‖
+j : Fin 3
+ht :
+  curl (magnetic d p) x j =
+    (↑‖x‖ * (-Complex.I * etaD d ‖x‖) + (↑d.l + 1) * (-Complex.I * eta d ‖x‖)) *
+        dcoord (HarmonicPolynomial.complexEvaluate p) x j -
+      ↑d.l * (-Complex.I * etaD d ‖x‖) / ↑‖x‖ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x
+⊢ -(↑‖x‖ * Complex.I * etaD d ‖x‖ * dcoord (HarmonicPolynomial.complexEvaluate p) x j) +
+        Complex.I * etaD d ‖x‖ * ↑d.l * (↑‖x‖)⁻¹ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x +
+      (-(Complex.I * ↑d.l * eta d ‖x‖ * dcoord (HarmonicPolynomial.complexEvaluate p) x j) -
+        Complex.I * eta d ‖x‖ * dcoord (HarmonicPolynomial.complexEvaluate p) x j) =
+    -(↑‖x‖ * Complex.I * etaD d ‖x‖ * sorry) +
+        Complex.I * etaD d ‖x‖ * ↑d.l * (↑‖x‖)⁻¹ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x +
+      (-(Complex.I * ↑d.l * eta d ‖x‖ * sorry) - Complex.I * eta d ‖x‖ * sorry)
+Try this: ring_nf
+SourceMagneticProfiles.lean:114:13: error: unsolved goals
+d : Data
+p : HarmonicPolynomial.Poly
+hp : MvPolynomial.IsHomogeneous p d.l
+hh : HarmonicPolynomial.formalLaplacian p = 0
+x : Space
+hcx : d.c < ‖x‖
+hi : ‖x‖ ∉ interfaces d
+hx : x ≠ 0
+ha : ↑‖x‖ * etaD d ‖x‖ + (↑d.l + 1) * eta d ‖x‖ = sigma d ‖x‖ * a d ‖x‖
+hb : -↑d.l * etaD d ‖x‖ / ↑‖x‖ = sigma d ‖x‖ * b d ‖x‖
+j : Fin 3
+ht :
+  curl (magnetic d p) x j =
+    (↑‖x‖ * (-Complex.I * etaD d ‖x‖) + (↑d.l + 1) * (-Complex.I * eta d ‖x‖)) *
+        dcoord (HarmonicPolynomial.complexEvaluate p) x j -
+      ↑d.l * (-Complex.I * etaD d ‖x‖) / ↑‖x‖ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x
+⊢ -(Complex.I * sigma d ‖x‖ * a d ‖x‖ * sorry) -
+      Complex.I * sigma d ‖x‖ * b d ‖x‖ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x =
+    -(Complex.I * sigma d ‖x‖ * a d ‖x‖ * dcoord (HarmonicPolynomial.complexEvaluate p) x j) -
+      Complex.I * sigma d ‖x‖ * b d ‖x‖ * ↑(x j) * HarmonicPolynomial.complexEvaluate p x
+'OQ14.SourceMagneticProfiles.eta_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.etaD_locallyIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.eta_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.magnetic_weak_curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.sigma_inverse' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.curl_coefficients' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.second_pointwise' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceMagneticProfiles.second_weak_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+MaterialStrongLimit.lean:37:4: error: type mismatch, term
+  Integrable.const_mul (MemLp.integrable_sq (MemLp.norm (Lp.memLp f))) ((2 * √D) ^ 2)
+after simplification has type
+  Integrable (fun x => (2 * √D) ^ 2 * ‖↑↑f x‖ ^ 2) volume : Prop
+but is expected to have type
+  Integrable (fun x => 2 ^ 2 * √D ^ 2 * ‖↑↑f x‖ ^ 2) volume : Prop

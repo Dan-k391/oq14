@@ -1,0 +1,6 @@
+ConicalAnnularCoefficient.lean:56:4: warning: 'change
+  (tangentField ζ p.eigenvalue p.contrast p.threshold x i : ℂ) *
+      (bump p x * (ConicalSpatialMaxwell.electric p k x i - ConicalPotentialSplit.correction p k x i) +
+        dcoord (bump p) x i * ConicalPotentialSplit.potential p k x) =
+    _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`

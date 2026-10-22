@@ -1,0 +1,7 @@
+# ConicalCoefficientRetention — author verification
+
+Source SHA256 `2A654FE47DB6FBE94D91D8DFD6C46D13E6BBDD755BDF8E91663A9A4AD95796BC`. Complete target62989 second command and final/object50070 EXIT0/no warnings/all three standard-only reports. Log `lean/ConicalCoefficientRetention.final.log` SHA256 `2E9FFBD02FC70997CB576032E48F6A0B39585660C0B09B8B461B99D9794E3BAC`; object246416 bytes.
+
+A literal smooth bump centered at half the inner radius, with outer radius one quarter the inner radius, supplies a nonnegative nonzero annular test genuinely supported strictly inside the physical inner ball. Its static pairing is proved nonzero. The actual extracted numerator tends to that nonzero static pairing, so it remains nonzero in a genuine frequency neighborhood. The exact actual extraction identity forces the coefficient supplied by the proved physical Maxwell projected expansion to be nonzero for every sufficiently small nonzero frequency. The final theorem gives an actual positive delta and every positive k below it has c≠0 and the literal AE projected expansion. No coefficient, expansion, frequency correction, or continuity conclusion is assumed. This is a genuine nonzero singular coefficient of the constructed positive-frequency Maxwell fields; the resulting spatial essential-unboundedness remains a subsequent adapter. Parent independent complete-source/compiler audit requested.
+
+Parent independent complete-source and pinned-compiler audit PASS, all standard-only reports; confirmed by root during October22 continuation.

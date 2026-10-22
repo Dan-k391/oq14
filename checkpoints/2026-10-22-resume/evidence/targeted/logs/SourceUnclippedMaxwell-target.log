@@ -1,0 +1,54 @@
+SourceUnclippedMaxwell.lean:26:2: error: tactic 'rfl' failed, the left-hand side
+  (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ d.l * dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+    (inverseSigma { l := d.l, gs := d.gs, R := d.R, X := d.X, c := c, hR := ⋯, hc := hc, chain := ⋯, dispersion := ⋯ }
+              ‖x‖ *
+            (↑d.l * (↑d.l + 1) * ((RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).1 / ↑‖x‖ ^ (d.l + 3))) -
+          ↑d.l * ((RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ (d.l + 2))) *
+        ↑(x i) *
+      HarmonicPolynomial.complexEvaluate p x
+is not definitionally equal to the right-hand side
+  (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ d.l * dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+    (inverseSigma d ‖x‖ * (↑d.l * (↑d.l + 1) * (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).1 / ↑‖x‖ ^ (d.l + 3)) -
+          ↑d.l * (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ (d.l + 2)) *
+        ↑(x i) *
+      HarmonicPolynomial.complexEvaluate p x
+case h
+d : Data
+c : ℝ
+hc : 0 < c
+p : HarmonicPolynomial.Poly
+x : Space
+hx : c < ‖x‖
+i : Fin 3
+⊢ (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ d.l * dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+      (inverseSigma { l := d.l, gs := d.gs, R := d.R, X := d.X, c := c, hR := ⋯, hc := hc, chain := ⋯, dispersion := ⋯ }
+                ‖x‖ *
+              (↑d.l * (↑d.l + 1) * ((RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).1 / ↑‖x‖ ^ (d.l + 3))) -
+            ↑d.l * ((RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ (d.l + 2))) *
+          ↑(x i) *
+        HarmonicPolynomial.complexEvaluate p x =
+    (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ d.l *
+        dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+      (inverseSigma d ‖x‖ *
+              (↑d.l * (↑d.l + 1) * (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).1 / ↑‖x‖ ^ (d.l + 3)) -
+            ↑d.l * (RadialGluing.sourceState d.l d.gs d.R d.X ⋯ ‖x‖).2 / ↑‖x‖ ^ (d.l + 2)) *
+          ↑(x i) *
+        HarmonicPolynomial.complexEvaluate p x
+SourceUnclippedMaxwell.lean:29:101: error: unsolved goals
+d : Data
+c : ℝ
+hc : 0 < c
+p : HarmonicPolynomial.Poly
+x : Space
+hx : c < ‖x‖
+⊢ SourceElectricProfiles.magnetic
+      { l := d.l, gs := d.gs, R := d.R, X := d.X, c := c, hR := ⋯, hc := hc, chain := ⋯, dispersion := ⋯ } p x =
+    magnetic d p x
+'OQ14.SourceUnclippedMaxwell.electric_agrees' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceUnclippedMaxwell.magnetic_agrees' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceUnclippedMaxwell.weakCurlPairing_congr_on_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceUnclippedMaxwell.compact_test_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceUnclippedMaxwell.first_weak_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceUnclippedMaxwell.second_weak_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

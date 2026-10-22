@@ -1,0 +1,80 @@
+ConicalStaticCoefficient.lean:56:12: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∑ i ∈ ?s, ↑(?f i)
+case neg
+p : Data
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+hs : tsupport ζ ⊆ Ioo 0 p.cutoff.rIn
+f : Fin 3 → Space → ℂ :=
+  fun i x =>
+    ↑(tangentField ζ p.eigenvalue p.contrast p.threshold x i) *
+      ↑(cutElectric (↑p.cutoff) p.exponent p.eigenvalue p.threshold x i)
+hfi : ∀ (i : Fin 3), Integrable (f i) volume
+he : (fieldPair p ζ hζ hc) (ConicalStaticVolume.electric p) = ∫ (x : Space), ∑ i, f i x
+r : ℝ
+hr : 0 < r
+n : ↑Sphere
+hz : ¬ζ r = 0
+hri : r < p.cutoff.rIn
+hx : r • ↑n ∈ ball 0 p.cutoff.rIn
+hcut :
+  cutElectric (↑p.cutoff) p.exponent p.eigenvalue p.threshold (r • ↑n) =
+    ConicalCapField.electric p.exponent p.eigenvalue p.threshold (r • ↑n)
+⊢ ∑ x,
+      ↑(ζ r *
+            (CapSturmLiouville.coefficient p.contrast p.threshold (↑n 2) *
+              SphereCapH1.gradient p.eigenvalue p.threshold n x)) *
+        ↑(r ^ (p.exponent - 1) * angularElectric p.exponent p.eigenvalue p.threshold n x) =
+    ↑(ζ r * r ^ (p.exponent - 1)) *
+      ↑(CapSturmLiouville.coefficient p.contrast p.threshold (↑n 2) *
+          ‖SphereCapH1.gradient p.eigenvalue p.threshold n‖ ^ 2)
+ConicalStaticCoefficient.lean:71:4: error: type mismatch, term
+  congrArg (fun z => ↑(ζ r) * ↑(r ^ (p.exponent - 1)) * z) (Eq.symm hJ)
+after simplification has type
+  ↑(ζ r) *
+      (↑(r ^ (p.exponent - 1)) *
+        ↑(∫ (x : ↑Sphere),
+            CapSturmLiouville.coefficient p.contrast p.threshold (↑x 2) *
+              ‖SphereCapH1.gradient p.eigenvalue p.threshold x‖ ^ 2 ∂angularMeasure)) =
+    ↑(ζ r) *
+      (↑(r ^ (p.exponent - 1)) *
+        ∫ (x : ↑Sphere),
+          ↑(CapSturmLiouville.coefficient p.contrast p.threshold (↑x 2)) *
+            ↑(‖SphereCapH1.gradient p.eigenvalue p.threshold x‖ ^ 2) ∂angularMeasure) : Prop
+but is expected to have type
+  ↑(ζ r) *
+      (↑(r ^ (p.exponent - 1)) *
+        ∫ (a : ↑Sphere),
+          ↑(CapSturmLiouville.coefficient p.contrast p.threshold (↑a 2)) *
+            ↑(‖SphereCapH1.gradient p.eigenvalue p.threshold a‖ ^ 2) ∂angularMeasure) =
+    ↑(ζ r) *
+      (↑(r ^ (p.exponent - 1)) *
+        ↑(∫ (n : ↑Sphere),
+            CapSturmLiouville.coefficient p.contrast p.threshold (↑n 2) *
+              ‖SphereCapH1.gradient p.eigenvalue p.threshold n‖ ^ 2 ∂angularMeasure)) : Prop
+ConicalStaticCoefficient.lean:76:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (n : ↑Sphere), ∑ i, f i (r • ↑n) ∂angularMeasure
+p : Data
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+hs : tsupport ζ ⊆ Ioo 0 p.cutoff.rIn
+f : Fin 3 → Space → ℂ :=
+  fun i x =>
+    ↑(tangentField ζ p.eigenvalue p.contrast p.threshold x i) *
+      ↑(cutElectric (↑p.cutoff) p.exponent p.eigenvalue p.threshold x i)
+hfi : ∀ (i : Fin 3), Integrable (f i) volume
+he : (fieldPair p ζ hζ hc) (ConicalStaticVolume.electric p) = ∫ (x : Space), ∑ i, f i x
+hinner :
+  ∀ (r : ℝ),
+    0 < r →
+      ∫ (n : ↑Sphere), ∑ i, f i (r • ↑n) ∂angularMeasure =
+        ↑(ζ r) * ↑(r ^ (p.exponent - 1)) * ↑(ConicalAngularEnergy.energy p.eigenvalue p.contrast p.threshold)
+r : ℝ
+hr : r ∈ Ioi 0
+⊢ (fun x => ↑x ^ 2 * ∫ (n : ↑Sphere), ∑ i, f i (x • ↑n) ∂angularMeasure) r =
+    (fun x =>
+        ↑(ConicalAngularEnergy.energy p.eigenvalue p.contrast p.threshold) *
+          (↑x * ↑(ζ x) * ConicalRadialParticular.power p.exponent x))
+      r

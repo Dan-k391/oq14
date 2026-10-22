@@ -1,0 +1,52 @@
+SourceGeneralMaxwell.lean:30:6: error: no goals to be solved
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+SourceGeneralMaxwell.lean:105:77: error: unsolved goals
+case h.«0»
+F : Maxwell.Field
+φ : Space → ℂ
+⊢ ![(-∫ (a : Space), F a 1 * dcoord φ a 2) + ∫ (a : Space), F a 2 * dcoord φ a 1,
+        (-∫ (a : Space), F a 2 * dcoord φ a 0) + ∫ (a : Space), F a 0 * dcoord φ a 2,
+        (-∫ (a : Space), F a 0 * dcoord φ a 1) + ∫ (a : Space), F a 1 * dcoord φ a 0]
+      ⟨0, ⋯⟩ =
+    -![(∫ (a : Space), F a 1 * dcoord φ a 2) - ∫ (a : Space), F a 2 * dcoord φ a 1,
+          (∫ (a : Space), F a 2 * dcoord φ a 0) - ∫ (a : Space), F a 0 * dcoord φ a 2,
+          (∫ (a : Space), F a 0 * dcoord φ a 1) - ∫ (a : Space), F a 1 * dcoord φ a 0]
+        ⟨0, ⋯⟩
+
+case h.«1»
+F : Maxwell.Field
+φ : Space → ℂ
+⊢ ![(-∫ (a : Space), F a 1 * dcoord φ a 2) + ∫ (a : Space), F a 2 * dcoord φ a 1,
+        (-∫ (a : Space), F a 2 * dcoord φ a 0) + ∫ (a : Space), F a 0 * dcoord φ a 2,
+        (-∫ (a : Space), F a 0 * dcoord φ a 1) + ∫ (a : Space), F a 1 * dcoord φ a 0]
+      ⟨1, ⋯⟩ =
+    -![(∫ (a : Space), F a 1 * dcoord φ a 2) - ∫ (a : Space), F a 2 * dcoord φ a 1,
+          (∫ (a : Space), F a 2 * dcoord φ a 0) - ∫ (a : Space), F a 0 * dcoord φ a 2,
+          (∫ (a : Space), F a 0 * dcoord φ a 1) - ∫ (a : Space), F a 1 * dcoord φ a 0]
+        ⟨1, ⋯⟩
+
+case h.«2»
+F : Maxwell.Field
+φ : Space → ℂ
+⊢ ![(-∫ (a : Space), F a 1 * dcoord φ a 2) + ∫ (a : Space), F a 2 * dcoord φ a 1,
+        (-∫ (a : Space), F a 2 * dcoord φ a 0) + ∫ (a : Space), F a 0 * dcoord φ a 2,
+        (-∫ (a : Space), F a 0 * dcoord φ a 1) + ∫ (a : Space), F a 1 * dcoord φ a 0]
+      ⟨2, ⋯⟩ =
+    -![(∫ (a : Space), F a 1 * dcoord φ a 2) - ∫ (a : Space), F a 2 * dcoord φ a 1,
+          (∫ (a : Space), F a 2 * dcoord φ a 0) - ∫ (a : Space), F a 0 * dcoord φ a 2,
+          (∫ (a : Space), F a 0 * dcoord φ a 1) - ∫ (a : Space), F a 1 * dcoord φ a 0]
+        ⟨2, ⋯⟩
+SourceGeneralMaxwell.lean:130:6: error: failed to rewrite using equation theorems for 'OQ14.SourceGeneralMaxwell.teMagnetic'.
+'OQ14.SourceGeneralMaxwell.layer_dispersion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.dispersion_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.curl_coefficient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.clipped_first_weak_maxwell' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceGeneralMaxwell.first_weak_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.weakCurlPairing_neg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.te_first_weak_maxwell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceGeneralMaxwell.te_second_weak_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

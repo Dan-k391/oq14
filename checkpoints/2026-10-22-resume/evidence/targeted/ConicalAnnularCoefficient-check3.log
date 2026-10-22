@@ -1,0 +1,37 @@
+ConicalAnnularCoefficient.lean:70:167: error: unsolved goals
+p : Data
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+i : Fin 3
+⊢ 1 ≤ ?m.21786
+ConicalAnnularCoefficient.lean:70:13: error: application type mismatch
+  MemLp.locallyIntegrable
+    (MemLp.ofReal
+      (tangentField_memLp p.eigenvalue p.contrast p.threshold p.eigenvalue_bounds p.contrast_nonnegative p.threshold_pos
+        p.threshold_lt_one ζ (ContDiff.continuous hζ) hc i))
+argument
+  MemLp.ofReal
+    (tangentField_memLp p.eigenvalue p.contrast p.threshold p.eigenvalue_bounds p.contrast_nonnegative p.threshold_pos
+      p.threshold_lt_one ζ (ContDiff.continuous hζ) hc i)
+has type
+  @MemLp ?m.21746
+    (@ContinuousENorm.toENorm ?m.21746
+      (@UniformSpace.toTopologicalSpace ?m.21746
+        (@PseudoMetricSpace.toUniformSpace ?m.21746
+          (@SeminormedAddGroup.toPseudoMetricSpace ?m.21746
+            (@SeminormedAddCommGroup.toSeminormedAddGroup ?m.21746 NonUnitalSeminormedRing.toSeminormedAddCommGroup))))
+      SeminormedAddGroup.toContinuousENorm)
+    Maxwell.Space MeasureSpace.toMeasurableSpace UniformSpace.toTopologicalSpace
+    (fun x => ↑(tangentField ζ p.eigenvalue p.contrast p.threshold x i)) 2 volume : Prop
+but is expected to have type
+  @MemLp ?m.21779
+    (@ContinuousENorm.toENorm ?m.21779
+      (@UniformSpace.toTopologicalSpace ?m.21779
+        (@PseudoMetricSpace.toUniformSpace ?m.21779
+          (@SeminormedAddGroup.toPseudoMetricSpace ?m.21779
+            (@SeminormedAddCommGroup.toSeminormedAddGroup ?m.21779 NormedAddCommGroup.toSeminormedAddCommGroup))))
+      SeminormedAddGroup.toContinuousENorm)
+    ?m.21778 ?m.21780 UniformSpace.toTopologicalSpace ?m.21785 ?m.21786 ?m.21783 : Prop
+ConicalAnnularCoefficient.lean:112:8: error: unknown identifier 'tendsto_iff_norm_tendsto_zero.mpr'
+ConicalAnnularCoefficient.lean:113:2: error: no goals to be solved

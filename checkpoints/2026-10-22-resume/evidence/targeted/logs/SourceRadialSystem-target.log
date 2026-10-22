@@ -1,0 +1,40 @@
+SourceRadialSystem.lean:114:16: error: failed to synthesize
+  OpensMeasurableSpace Y
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourceRadialSystem.lean:114:52: error: failed to synthesize
+  OpensMeasurableSpace Y
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourceRadialSystem.lean:115:10: error: failed to synthesize
+  OpensMeasurableSpace Y
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourceRadialSystem.lean:131:6: error: tactic 'apply' failed, failed to unify
+  Continuous (Complex.ofReal ∘ ?m.11503)
+with
+  Continuous fun r => -↑(1 - HankelEnergy.angular d.l / radius d.c r ^ 2)
+d : Data
+ρ : Space → ℝ
+hρ : Continuous ρ
+⊢ Continuous fun r => -↑(1 - HankelEnergy.angular d.l / radius d.c r ^ 2)
+'OQ14.SourceRadialSystem.interfaces_countable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.off_interfaces' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.state_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.raw_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.extend_continuousAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.inverseSigma_continuousAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.extend_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.inverseSigma_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.locallyIntegrable_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.extend_locallyIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.inverseSigma_locallyIntegrable' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceRadialSystem.sigma_locallyIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRadialSystem.potential_locallyIntegrable' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.SourceRadialSystem.dispersion_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

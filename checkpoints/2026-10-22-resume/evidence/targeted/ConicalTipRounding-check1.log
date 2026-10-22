@@ -1,0 +1,50 @@
+ConicalTipRounding.lean:39:77: error: application type mismatch
+  abs_of_nonneg (sq_nonneg ?m.5015)
+argument
+  sq_nonneg ?m.5015
+has type
+  @OfNat.ofNat ?m.5007 0 (@Zero.toOfNat0 ?m.5007 MulZeroClass.toZero) ≤ ?m.5015 ^ 2 : Prop
+but is expected to have type
+  @OfNat.ofNat ?m.5001 0 (@Zero.toOfNat0 ?m.5001 NegZeroClass.toZero) ≤ ?m.5004 : Prop
+ConicalTipRounding.lean:40:4: error: type mismatch
+  pow_le_pow_left₀ (norm_nonneg x) hx 2
+has type
+  ‖x‖ ^ 2 ≤ radius n ^ 2 : Prop
+but is expected to have type
+  |‖x‖ ^ 2| ≤ radius n ^ 2 : Prop
+ConicalTipRounding.lean:45:62: error: application type mismatch
+  abs_of_nonneg (sq_nonneg ?m.5135)
+argument
+  sq_nonneg ?m.5135
+has type
+  @OfNat.ofNat ?m.5127 0 (@Zero.toOfNat0 ?m.5127 MulZeroClass.toZero) ≤ ?m.5135 ^ 2 : Prop
+but is expected to have type
+  @OfNat.ofNat ?m.5121 0 (@Zero.toOfNat0 ?m.5121 NegZeroClass.toZero) ≤ ?m.5124 : Prop
+ConicalTipRounding.lean:46:4: error: linarith failed to find a contradiction
+case a
+n : ℕ
+x : Space
+hx : 2 * radius n ≤ ‖x‖
+a✝ : 4 * radius n ^ 2 > |‖x‖ ^ 2|
+⊢ False failed
+ConicalTipRounding.lean:80:81: error: application type mismatch
+  LT.lt.le hx
+argument
+  hx
+has type
+  x ∈ ball 0 (radius n) : Prop
+but is expected to have type
+  ‖x‖ < radius n : Prop
+'OQ14.ConicalTipRounding.radius_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_zero_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_one_outer' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.gate_eventually_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.rounded_spatial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.rounded_zero_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.rounded_eq_outer' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.rounded_smooth_near_tip' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.rounded_ae_tendsto' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalTipRounding.conical_common_support' depends on axioms: [propext, Classical.choice, Quot.sound]
