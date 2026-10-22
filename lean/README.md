@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand four hundred four exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand nine hundred seventeen exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all three hundred twenty-three registered modules, and audits all 3404
+compiler and mathlib revision, builds all three hundred ninety-three registered modules, and audits all 3917
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -1002,6 +1002,53 @@ from an actual radial ODE and a homogeneous harmonic polynomial.
 `EntireFactorialSeries` proves actual differentiation of factorially bounded
 entire series. These bridges do not by themselves supply the normalized
 spherical basis, its addition identities or full spatial Green series.
+
+## Actual conical Maxwell continuation, normalized harmonics and plane bounds
+
+A further 513 declarations in 70 modules have complete-source and independent
+pinned-compiler audits. Registered totals are 3917 reports, 393 modules and
+365 libraries. The matching clean aggregate and paper build are pending;
+the complete 3404 release remains preserved separately.
+
+Actual all-degree regular scalar and TE/TM Maxwell waves now include the
+origin; outgoing waves satisfy the equations on punctured space. Riccati
+profiles agree with the physical radial layer transfer states. Tangential
+E/H and normal D/B match at adjacent interfaces with the correct TE/TM
+material factors. Global interface gluing, radiation identification and
+the full spatial dyadic Green reconstruction still require assembly.
+
+The actual polynomial harmonic spaces have finite orthonormal bases and
+dense union. Their rotation action yields the diagonal addition identity
+and evaluation bounds; the rank has a proved cubic upper bound. Literal
+three-coordinate Lagrange interpolation derives polynomial-times-exponential
+coefficient bounds for the actual normalized representatives, and hence
+all-order compact spatial derivative bounds, including the origin.
+Cross-degree orthogonality and the full vector angular basis are separate.
+
+The conical static field is localized using an actual vector potential
+whose weak curl is its dielectric displacement. The resulting annular source
+is compact and L2. Actual Schwartz gradient/divergence identities prove its
+static volume equation and exact inverse identity. The actual positive-
+frequency inverse, with frequency-dependent annular forcing, converges to
+this field in L2; its weighted error is O(k^2). The spatial Green fields
+satisfy both Maxwell curl equations in the inner conical region. Their
+regional H(curl) fields and Gauss law are proved. Genuine H1 annular angular
+tests have the literal polar gradient and same-support smooth approximation.
+A general actual scalar-potential decomposition has a continuous correction
+bounded by k^2 times the source norm. The remaining conical step is to derive
+the singular projection system and retain its nonzero coefficient, followed
+by Runge approximation and rounding. L2 convergence alone does not prove
+that coefficient remains nonzero.
+
+The actual finite-sphere inverse has derived reaction and gain errors.
+Continuous Newton representatives identify exact exterior point dipoles on
+the plane without restricting an ambient almost-everywhere identity to a
+null set. Their whole-plane static dipole error is O(a^2). Genuine plane
+inverse-distance integrals give a gap-independent local dynamic bound;
+inverse-square integrals give the magnetic logarithm. Actual finite-sum
+electric/magnetic disk L1 bounds and source-difference estimates follow.
+Whole-plane coherent flux for the actual Herglotz family and finite-stack
+identification remain essential.
 
 ## Explicitly outside the formalization
 

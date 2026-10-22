@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The three hundred twenty-three registered modules in \texttt{lean/} cover operator estimates,
+The three hundred ninety-three registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Three thousand four hundred four exported theorem declarations were compiled successfully.
+Three thousand nine hundred seventeen exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -765,6 +765,36 @@ bridge and actual entire-series differentiation support subsequent spatial
 wave construction; normalized angular addition and complete Green assembly
 are still required.
 
+A further 513 declarations in 70 modules construct actual all-degree
+regular and outgoing scalar and TE/TM Maxwell waves. Regular waves include
+the origin; actual neighboring radial layers satisfy tangential and normal
+transmission with the correct material factors. The actual normalized
+polynomial harmonic bases have dense union, rotation invariance, a diagonal
+addition identity and a cubic rank bound. Literal tensor interpolation
+derives their coefficient bounds and all-order compact spatial derivatives.
+Cross-degree orthogonality, the vector angular basis, global layer gluing
+and full spatial Green identification remain separate.
+
+The actual conical cutoff field now solves its static volume equation.
+Its positive-frequency volume inverse, including the frequency-dependent
+annular source response, converges in $L^2$ to that field, with an explicit
+$O(k^2)$ weighted error. Actual spatial fields satisfy both inner Maxwell
+curl equations and Gauss law, and belong to the genuine regional weak-curl
+graphs. Literal annular angular tests have proved weak gradients and smooth
+graph approximation. The scalar Green decomposition supplies an actual
+locally $H^1$ potential and continuous correction bounded by $k^2$ times the
+source norm. The actual singular projection and preservation of its nonzero
+coefficient still remain; $L^2$ convergence alone does not establish them.
+Runge approximation, rounding and complete modal normalization remain.
+
+Actual finite-sphere inverse reaction errors and exact Newton dipoles yield
+an $O(a^2)$ whole-plane static error. Continuity on an open gap region
+justifies the plane identity. Genuine plane inverse-distance and
+inverse-square integrals supply respectively gap-independent local dynamic
+bounds and logarithmic magnetic bounds, including finite sums and source
+differences. Whole-plane coherent Herglotz flux and finite physical-stack
+identification remain outside this formal coverage.
+
 Only the following logical foundations occur in the audited declarations: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -881,7 +911,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand four hundred four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand nine hundred seventeen declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 
