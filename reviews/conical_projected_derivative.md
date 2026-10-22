@@ -1,0 +1,9 @@
+# ConicalProjectedDerivative — author verification
+
+Source SHA256 `75F7FAC856E5370525D5F221CBB2A65CBB6BC33D0BF89D0DE3865C790BD3AB9A`. Pinned Lean 4.19 final target/object EXIT0/no warnings/all seven standard-only dependency reports. Final log `lean/ConicalProjectedDerivative.final.log`, SHA256 `581E7E933FD903B2761F2F5019FB8A2DDC51D8FC3ADB8D82F5AD673A125ECF67`. Object 478536 bytes.
+
+The actual projected moment is defined from the tangential gradient moment as U=r T/a, with a>0 genuinely derived from the conical separation relation and positive exponent. A literal smooth compact elimination test r(3 zeta+r zeta')/a is inserted into the actual tangential moment identity and combined with the actual radial identity; all scalar-potential moments cancel. The resulting weighted weak derivative is thus a theorem about the actual gradient-defined U. For every actual smooth compact real test eta supported away from zero, eta/r^3 is proved smooth across zero using its genuine vanishing germ, compactly supported, and differentiated by the literal quotient rule. Substitution gives the genuine first-order weak test identity integral eta R + integral eta' U=0. No projected derivative, regular representative, or coefficient identity is assumed. Parent independent complete-source/compiler audit requested.
+
+## Independent integration verification, October 22, 2026
+
+Complete source independently reviewed. Pinned compiler exit 0, no warnings; all 7 reports use only standard foundations. Final source SHA256 `75f7fac856e5370525d5f221cbb2a65cbb6bc33d0bf89d0de3865c790bd3ab9a`. Independent log `lean/logs/ConicalProjectedDerivative-root-audit.log`, SHA256 `581e7e933fd903b2761f2f5019fb8a2ddc51d8fc3adb8d82f5ad673a125ecf67`. The audit verifies this stated scope; complete OQ14 formalization remains unfinished.

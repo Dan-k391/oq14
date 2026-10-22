@@ -7,13 +7,23 @@ design, independent audits and integration. Full formalization is unfinished.
 
 ## Registered and packaged state
 
-3917 reports /393 modules /365 libraries. All 513 new reports have complete
-source and independent pinned-compiler audits, no warnings and only standard
-foundations. See reviews/actual_constructions_3917.md and
-tmp/audited_batch_3917.json. A clean aggregate/PDF for this revision is pending.
+4391 reports /469 modules /441 libraries registered. The 474 new reports have
+complete-source and independent pinned-compiler audits, no warnings and only
+standard foundations. See reviews/actual_constructions_4391.md and
+tmp/audited_batch_4391.json. Matching clean aggregate/PDF are pending.
 Do not run a root aggregate: agents' unregistered drafts share lean/.
 
-Completed coherent release: oq14-maxwell-foundations-3404 at
+Latest completed coherent release: oq14-maxwell-foundations-3917 at
+e7d42ab2f86e8c23a992558bf5d89a42538c4347. All 3917 reports, nine dependency
+checks and 15 diagnostics PASS; 112-page PDF visually checked. Fourteen
+matching artifacts preserved in output/checkpoints/oq14-maxwell-foundations-3917/
+and top-level output. Delivery 8885736 bytes, SHA256
+1f29974477832b9c2b158dd2823ec02990821c5d5f54c284a7845a815be19747.
+PDF SHA256 3ad0eff586c16beaa9a80a7e4f00c5d42ec0d8416d10845baf200218902d3338.
+See reviews/clean_release_3917.md. The final bibliography item is alone on
+page 112; improve that pagination in the next source revision.
+
+Previous coherent release: oq14-maxwell-foundations-3404 at
 155907f9137d85120d7e4fadbc0cf3cddd667d0c. Clean aggregate PASS, nine dependency
 checks PASS, 15 diagnostics PASS, 111-page PDF PASS; pages 106/107/108/111
 visually inspected. Fourteen matching artifacts are preserved in
@@ -23,44 +33,47 @@ c018deba6b6aebb578feba591a8253010a1f822ad1e3d10871ed6c19e4ead8f5.
 PDF SHA256 455d3c5a2f81a2f5f3bcce107b73900235284509aa054bb483fb01227c12cd3b.
 Older releases remain preserved. No external publication.
 
-tmp/clean-checkout is the independent checkout; its 3404 aggregate session
-64424 completed exit0 and was consumed. Confirm its exact revision before advancing. Never
-clean the root Lean build while agents are active.
+tmp/clean-checkout is the independent checkout at e7d42ab. Its 3917 aggregate
+session 77633 completed exit0 and was consumed. The default legacy log output
+was preserved in output/lean before restoring only those two generated log
+paths. Both root and clone have the matching tag. Never clean the root Lean
+build while agents are active. preserve_3917.py already executed; do not rerun
+one-time integration or release scripts blindly.
 
 ## Active proof tasks
 
-The 3917 registration includes all-degree actual spherical Maxwell fields,
-Riccati layer Maxwell/transmission, actual normalized harmonic coefficient
-and compact jet bounds, finite reaction/dipole/plane bounds, and actual
-conical static/dynamic volume equations, spatial inner Maxwell equations,
-genuine regional Hcurl and Gauss law. Exact remaining scopes are in the new
-review and README. No final OQ14 Lean closure is claimed.
+The 4391 registration adds actual normalized scalar Green coefficients and
+angular L2 expansion, exact source jump/reduced sign, both weak Maxwell
+equations through finite-chain interfaces in the layer annulus, actual smooth
+weak-derivative representatives, the physical conical radial system and
+finite-energy positive-power expansion, and actual whole-plane coherent
+moving-gap error estimates for finite Maxwell parity illuminations.
 
-Root: ConicalPotentialSplit9 final object build is running, providing uniform
-O(k^2) continuous correction with actual frequency-uniform source bound.
-Next explicit parameter Data existence and actual coefficient retention
-with fredholm_sol's projection. Full source of WeakDivergenceGraph3 and
-SphereWaveTransform8 read; independent compiler session11013 pending.
+Root owns independent audits, clean integration, full spatial layer
+core/exterior assembly and major proof design. RadialMultiplierWeak3,
+LayerMagneticProfiles6 and LayerMagneticMaxwell3 are frozen and independently
+audited. Full source/exterior assembly remains; sourceState has a singular
+core and must never be described as regular at the origin.
 
-fredholm_sol: actual annular H1 tests registered. Current literal radial and
-tangential Hdiv test identities, then actual forced radial projection system
-and nonzero singular coefficient retention. Root owns actual volume and
-Maxwell lifting, agent owns actual projection/test construction. Do not
-assume a projected equation or coefficient-continuity conclusion.
+fredholm_sol: derive the actual annular L2 coefficient functional, positive
+static normalization and positive-frequency retention from the actual radial
+expansion. No nonzero coefficient or coefficient-continuity premise may be
+substituted for the result. Runge and rounding follow.
 
-modal_sol: normalized actual harmonic compact jets are registered. Current
-cross-degree orthogonality via genuine k=0 annular moment equation, then
-global scalar Hilbert basis, vector harmonics and full spatial Green bridge.
+modal_sol: actual scalar Green normalization and L2 expansion are checked.
+Current imaginary-axis noncancellation and normalized spatial jet majorants
+for actual derivative convergence. Dyadic k^3 normalization remains separate.
 
-continuation_review_sol: actual local E/H/source-difference disk L1 bounds
-registered. SphereWaveTransform8 frozen, root compiler pending. Current
-actual differentiation of sphere wave integrals, dyadic reaction-kernel and
-magnetic parity identification, then actual whole-plane Herglotz flux tail.
+continuation_review_sol: actual finite-incident coherent whole-plane errors
+are checked. Current literal incident amplitude/derivative estimates and
+weighted forcing, then finite-point Gram coefficients and full channel
+assembly. No assumed coherent-flux limit or source error.
 
-Still essential: full spatial dyadic Green identification and layer gluing,
-moving-gap coherent whole-plane flux/counting assembly, conical nonzero
-coefficient, Runge, rounding, actual reciprocal modal normalization,
-infinite-degree pole isolation and simultaneous modal maxima.
+Still essential: full spatial dyadic Green identification and source/layer
+gluing, physical-stack/channel assembly, conical nonzero coefficient, Runge,
+rounding, actual reciprocal modal normalization, infinite-degree pole
+isolation and simultaneous modal maxima. Complete OQ14 Lean closure is not
+claimed. Work remains active; no user stop was requested.
 
 ## Immutable checkpoint and scope safeguards
 
@@ -81,5 +94,5 @@ comparison. Do not touch, stage or package unrelated sites/.
 Runtime: .tools/lean/lean-4.19.0-windows/bin/lake.exe, pinned mathlib v4.19.
 Python: C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe.
 Tectonic: .tools/tectonic/tectonic.exe; cache tmp/tectonic-cache.
-Integration scripts through integrate_3917.py are one-time mutations: do not
+Integration scripts through integrate_4391.py are one-time mutations: do not
 rerun. tmp/audited_batch_3404.json preserves exact frozen sources/logs.

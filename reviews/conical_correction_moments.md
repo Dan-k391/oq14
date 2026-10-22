@@ -1,0 +1,9 @@
+# ConicalCorrectionMoments — author verification
+
+Source SHA256 `732FEF8D7BBC1C7C95C79407EFD4FE639C9B9A80C1B5646B6B3D41C5A269279E`. Pinned Lean4.19 complete target EXIT0 (26085); final target/object succeeded as first command of72673, no warnings/all ten standard-only reports. Its separate dependent Flux draft failed after the object had been emitted. Log `lean/ConicalCorrectionMoments.final.log` SHA256 `CEDE180A398DF6CE4863EB2188DAA7B6DA301F7A9949010CB5E90747ADB8105E`; object248536 bytes.
+
+The literal cut correction is chi times the actual continuous Green correction W. Its continuity, compact support and L2 class are proved. Adding that class to the actual compact potential gradient gives a total L2 coordinate equal to the physical Maxwell electric coordinate almost everywhere inside the inner ball. Actual Gauss testing transfers to these total coordinates by vanishing of the angular test outside the inner ball. Literal radial and tangential correction moments are continuous by proved angular dominated convergence. The pointwise cut correction bound uses zero-to-one bump bounds and the actual uniform quadratic-frequency correction estimate; its actual angular moment integral satisfies the corresponding explicit bound. No radial forcing or moment continuity is assumed. Parent independent full-source/compiler audit requested.
+
+## Independent integration verification, October 22, 2026
+
+Complete source independently reviewed. Pinned compiler exit 0, no warnings; all 10 reports use only standard foundations. Final source SHA256 `732fef8d7bbc1c7c95c79407efd4fe639c9b9a80c1b5646b6b3d41c5a269279e`. Independent log `lean/logs/ConicalCorrectionMoments-root-audit.log`, SHA256 `cede180a398df6ce4863eb2188daa7b6da301f7a9949010cb5e90747adb8105e`. The audit verifies this stated scope; complete OQ14 formalization remains unfinished.

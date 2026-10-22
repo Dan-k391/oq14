@@ -1,0 +1,9 @@
+# ConicalPotentialGraph — author verification
+
+Source SHA256 `428A9719201C6D3248BFAB245C86A99CEE9D35A62548CE25B5906FC08157657F`. Pinned Lean 4.19 final target/object EXIT0/no warnings/all six standard-only dependency reports. Final log `lean/ConicalPotentialGraph.final.log`, SHA256 `A3E2ACAFBF6C339B174A1FAC64F2980957B069C9CEAC10D22D386B7B9C44F692`. Object 356624 bytes. The command then ran a separate dependent draft check; its later failure does not change the successful target/object result here.
+
+The actual Green scalar potential and actual E-W have the previously proved local L2 membership. Their genuine zero extensions from the outer ball define global L2 classes; multiplication by the actual conical cutoff and its actual coordinate derivative constructs the compact scalar value and the literal product gradient. Actual AE identities, cutoff support and derivative vanishing establish these representatives globally. Testing the actual Green weak gradient against the product of the cutoff and an arbitrary Schwartz test, with all split integrals proved integrable, yields the exact global weak gradient. The existing proved smooth-test density upgrades it to genuine HasWeakPartial. The actual cutoff equals one with zero derivative in the physical inner ball. No local-to-global Sobolev regularity or weak-gradient conclusion is assumed. Parent independent complete-source/compiler audit requested.
+
+## Independent integration verification, October 22, 2026
+
+Complete source independently reviewed. Pinned compiler exit 0, no warnings; all 6 reports use only standard foundations. Final source SHA256 `428a9719201c6d3248bfab245c86a99cee9d35a62548ce25b5906fc08157657f`. Independent log `lean/logs/ConicalPotentialGraph-root-audit.log`, SHA256 `a3e2acafbf6c339b174a1fac64f2980957b069c9ceac10d22d386b7b9c44f692`. The audit verifies this stated scope; complete OQ14 formalization remains unfinished.

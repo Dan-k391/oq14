@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The three hundred ninety-three registered modules in \texttt{lean/} cover operator estimates,
+The four hundred sixty-nine registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Three thousand nine hundred seventeen exported theorem declarations were compiled successfully.
+Four thousand three hundred ninety-one exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -795,6 +795,39 @@ bounds and logarithmic magnetic bounds, including finite sums and source
 differences. Whole-plane coherent Herglotz flux and finite physical-stack
 identification remain outside this formal coverage.
 
+A further 474 declarations in 76 modules derive actual Green coefficients,
+the conical radial system and whole-plane coherent errors. Cross-degree
+orthogonality supplies the complete complex scalar harmonic basis; actual
+vector harmonic normalization and orthonormality are also proved. The literal
+scalar Green kernel has regular interior and outgoing exterior moments.
+Actual compact tests derive their matching and source jump, and Wronskians
+fix the physical coefficient and reduced-Green sign. Its angular $L^2$
+expansion follows. Spatial derivative convergence, the dyadic normalization
+and complete finite-stack identification still require assembly.
+
+For literal finite-chain TM fields, normal electric jumps are handled by
+an actual scalar primitive. Locally integrable actual partials and integration
+by parts across spherical interfaces give both weak Maxwell equations for
+compact tests inside the layer annulus. This statement excludes the clipped
+core; global core and outgoing exterior assembly remain separate.
+
+Actual conical Gauss and potential identities, polar integration and radial
+energy bounds now yield the forced weak radial system. Genuine smooth-test
+representatives, with exact interval increments, convert it to a classical
+system on the finite inner interval. Wronskian classification and actual
+$L^2$ energy exclude its negative-power branch. The remaining expansion is
+$c r^\nu$ plus the literal particular solution. Preservation of nonzero $c$
+at positive frequency, Runge approximation, rounding and the complete modal
+normalization and maxima statement remain outside this formal coverage.
+
+Actual sphere-integral parity illuminations and finite sums satisfy both
+global vacuum Maxwell equations. Their coherent pairing with the actual
+volume response is integrable over the whole plane. Local singular bounds
+and inverse-cubic tails give vanishing coherent error for gap $\gamma a$,
+source error $O(a^3)$ and incident coefficient mass $O(1/a)$. The actual
+finite-ball inverse provides the source error and support conditions.
+Incident coefficient construction and final physical channel assembly remain.
+
 Only the following logical foundations occur in the audited declarations: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
@@ -911,7 +944,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand nine hundred seventeen declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Four thousand three hundred ninety-one declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand nine hundred seventeen exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Four thousand three hundred ninety-one exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all three hundred ninety-three registered modules, and audits all 3917
+compiler and mathlib revision, builds all four hundred sixty-nine registered modules, and audits all 4391
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -1006,9 +1006,9 @@ spherical basis, its addition identities or full spatial Green series.
 ## Actual conical Maxwell continuation, normalized harmonics and plane bounds
 
 A further 513 declarations in 70 modules have complete-source and independent
-pinned-compiler audits. Registered totals are 3917 reports, 393 modules and
-365 libraries. The matching clean aggregate and paper build are pending;
-the complete 3404 release remains preserved separately.
+pinned-compiler audits. That revision contained 3917 reports, 393 modules and
+365 libraries. Its clean aggregate, diagnostics and matching paper passed;
+the complete 3917 release remains preserved separately.
 
 Actual all-degree regular scalar and TE/TM Maxwell waves now include the
 origin; outgoing waves satisfy the equations on punctured space. Riccati
@@ -1049,6 +1049,51 @@ inverse-square integrals give the magnetic logarithm. Actual finite-sum
 electric/magnetic disk L1 bounds and source-difference estimates follow.
 Whole-plane coherent flux for the actual Herglotz family and finite-stack
 identification remain essential.
+
+## Actual Green coefficients, conical projection and whole-plane errors
+
+A further 474 declarations in 76 modules have complete-source and independent
+pinned-compiler audits. The current registration has 4391 reports, 469 modules
+and 441 libraries. Its clean aggregate and matching paper build are pending;
+the complete 3917 release remains preserved separately.
+
+Actual cross-degree orthogonality gives the complete scalar complex harmonic
+basis. Actual vector harmonic normalization, tangency and orthonormality are
+proved; completeness of the vector family is separate. The literal outgoing
+scalar Green kernel has its actual radial moment equation, regular interior
+and outgoing exterior selection. Smooth compact tests derive continuity and
+the exact source jump. Wronskians fix the physical coefficient, including the
+sign relating it to the reduced radial Green function. The resulting angular
+L2 expansion is proved for the actual kernel. Spatial derivative convergence,
+the dyadic normalization and full finite-stack identification remain.
+
+Actual finite-chain TM electric fields have only normal jumps. An explicit
+normal primitive and integration by parts through countably many spheres
+prove their weak curl. Actual magnetic profiles have locally integrable
+partials and a global weak curl. Both Maxwell equations therefore hold through
+all interfaces for compact tests inside the layer annulus. The clipped core
+is excluded from this result; full core/exterior assembly remains.
+
+For the actual conical Maxwell field, the scalar Green potential and continuous
+O(k^2) correction yield literal angular moments. Actual Hdiv testing, polar
+integration, AE transfer and finite-energy estimates derive the two weak radial
+equations. Smooth-test weak derivatives have genuine continuous representatives
+on open real sets, exact integral increments and classical derivatives for
+continuous forcing. This constructs the actual classical conical system on its
+finite inner interval. Wronskian classification and actual L2 radial energy
+remove the negative power, leaving c r^nu plus the literal particular solution.
+The coefficient c is not yet proved nonzero at positive frequency. Retention,
+Runge approximation, rounding and the full normalized modal statement remain.
+
+Literal sphere-integral electric and magnetic parity columns, and their finite
+sums, satisfy both global vacuum Maxwell equations. Actual volume-response
+coherent flux against these finite illuminations is integrable on the whole
+plane, with proved local singular estimates and an inverse-cubic tail.
+For a gap gamma*a, source error O(a^3) and coefficient mass O(1/a), the actual
+coherent L1 error tends to zero. The finite-ball material inverse supplies
+the source error and geometric support conditions. Incident coefficient
+construction, complete physical-stack identification and final all-vector
+channel assembly remain.
 
 ## Explicitly outside the formalization
 
