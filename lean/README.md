@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Two thousand eight hundred four exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand one hundred sixty-two exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all two hundred forty-seven registered modules, and audits all 2804
+compiler and mathlib revision, builds all two hundred eighty-three registered modules, and audits all 3162
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -824,8 +824,8 @@ exponent in (0,1). `CapSturmLiouville` (30) constructs the literal odd
 piecewise profile, identifies its derivative away from interfaces, proves
 three-interval integration by parts and the weighted weak equation, and
 normalizes its genuine positive weighted mass. These are one-dimensional
-results. Lifting to the actual sphere and the Maxwell conical coefficient
-remains unfinished.
+results. The subsequent sphere H1 section supplies the actual angular
+lifting. The finite-frequency Maxwell conical coefficient remains unfinished.
 
 `PlaneSourceKernel` (21) derives actual compact kernel bounds and source
 subtraction. `MaxwellPlaneL1` (8) proves whole-plane flux integrability and
@@ -862,8 +862,8 @@ A further 209 declarations in 18 modules are independently audited.
 `AxialCoordinates` (13) proves the actual Jacobian, injectivity and volume
 change of variables outside a null plane. `SphereAxialMeasure` (20)
 derives the sphere surface measure by cones, the latitude/azimuth integral
-formula and zero measure of every latitude. Arbitrary-test angular weak
-lifting and its H1 interpretation remain subsequent work.
+formula and zero measure of every latitude. The subsequent sphere H1
+section supplies arbitrary-test angular weak lifting.
 
 `RiccatiRaising` (9), `RiccatiSeriesCoefficients` (11),
 `RiccatiOriginSeries` (16), and `RiccatiOriginLimits` (14) derive the
@@ -872,8 +872,8 @@ solution off zero, and both normalized origin limits. The entire series
 is the extension at zero; the Laurent definition is not substituted there.
 `RiccatiBarrier` (9) proves positivity of the regular solution and its
 derivative. `RiccatiLogDerivative` (9) proves both logarithmic-derivative
-bounds by a weighted Wronskian. The sharper Gaussian lower bound and
-all-order summation remain separate.
+bounds by a weighted Wronskian. The subsequent section supplies the
+Gaussian lower bound and actual all-derivative scalar high-degree tails.
 
 `RadialLayer` (7) constructs homogeneous bases, actual solutions and
 endpoint transfers. `RadialPropagation` (10) proves energy and barrier
@@ -893,8 +893,68 @@ the weighted L2 integral operator with its material-volume bound.
 invertibility for gain b/a and small finite balls. `ParityMaterialField`
 (9) derives the unique inverse solution, norm estimates and actual
 material relation for this explicit kernel. Identification with the
-finite physical stack, exact static sphere polarization and the final
-shrinking-gap whole-plane estimates remain separate.
+finite physical stack and final shrinking-gap whole-plane estimates remain
+separate. Exact static sphere polarization is established below.
+
+## Actual sphere H1, scalar stack limits and spherical inclusion response
+
+A further 358 declarations in 36 modules have complete-source and independent
+pinned-compiler audits. The new aggregate revision still needs its own clean
+combined build. The completed clean 2804 release is preserved separately.
+
+`CapSturmEndpointTest`, `CapProfileFirstOrder`, `SphereAxialTests`,
+`SphereCapWeak`, `SphereAxialSurface`, `SphereSurfaceTests` and
+`SphereSurfaceFubini` derive the actual spherical weak identities for
+arbitrary ambient C1 tests, including integrable pole behavior, periodic
+azimuth cancellation and the curvature term in all three tangential
+gradient components. `SphereCapH1` proves L2 membership, actual weak
+tangential differentiation, a nonzero L2 class, positive mass and a normalized
+H1 eigenfunction from the actual shooting root, with exponent in (0,1).
+Its H1 definition explicitly states these distribution identities; no
+equivalence with an abstract manifold Sobolev library is claimed.
+`ConicalCapField` constructs literal spatial potential and electric
+candidate, proves global Borel representatives, local L2 membership,
+continuity of the potential at the origin and a nonzero angular electric
+factor. Its spatial weak-gradient and transmission equations, and the
+finite-frequency Maxwell correction, are still subsequent work.
+
+`RiccatiBarrierNormalization` and `RiccatiGaussianBound` prove the actual
+Gaussian regular lower bound. `RadialHighOrderBound`, `RadialHighOrderTail`
+and `RadialStackHighTail` derive actual high-degree reaction estimates,
+absolute weighted summability and decay faster than every fixed inverse
+power of the radius for common bounded-index chains.
+`RadialReactionKernel` and `RadialReactionTail` identify the literal scalar
+Green reaction and its first mixed derivatives. `RiccatiCompactDerivatives`,
+`RadialEntireReaction` and `RadialEntireTail` extend these scalar results to
+every fixed derivative order on compact complex disks, including the
+analytic origin. Constants and larger comparison disks are independent of
+degree and radius. `RadialIntermediateBound` supplies an actual exponential
+bound in the complementary degree window. Summing that window and the full
+spatial dyadic reconstruction remain separate requirements.
+
+`RadialGluing` proves literal radial matching. `RadialReference` constructs
+the exact constant-coefficient sine/cosine transfer and quarter-wave powers.
+`RadialApproximation` derives the actual radial/reference error of order
+R^-2 for fixed layer width and degree. `RadialFiniteLimit` constructs
+physical shared-radius lists and proves their forward finite-stack limit.
+`RadialBackwardLimit` proves inverse transfer identities, the backward
+finite-stack limit and equality with the existing actual traversal.
+These are fixed-degree, fixed-finite-stack results. The outgoing coefficient
+parity limit and spatial Green identification are not supplied as premises
+or inferred from those results alone.
+
+`StaticBallPotential`, `StaticBallHessian`, `StaticBallL2`,
+`StaticBallSchwartz`, `StaticBallFourier`, `StaticBallSymbol` and
+`StaticBallNewton` derive the genuine uniform-ball potential, weak Hessian,
+Schwartz identities, Fourier symbol and its identification with the existing
+Newton operator. The interior action is actually -P/3.
+`StaticSpherePolarization` proves the exact isolated-sphere response.
+`StaticBallTranslation` and `StaticBallCentered` establish it at any center
+through actual measure-preserving translation and translated weak pairings.
+`StaticSphereMaterial` proves the exact weighted block and inverse action;
+the weighted trial is 3 sqrt(chi)/(chi+3) E and its physical polarization is
+3 chi/(chi+3) E, including chi=0. Quantitative varying-field, multiple-ball,
+finite-frequency and shrinking-gap source estimates remain subsequent work.
 
 ## Explicitly outside the formalization
 
@@ -902,8 +962,8 @@ This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
 general boundary traces, full geometric instances and physical scattering
-assembly for the final constructions, the conical spectrum, Runge
-approximation, rounding, or
+assembly for the final constructions, the finite-frequency conical
+coefficient, Runge approximation, rounding, or
 the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either

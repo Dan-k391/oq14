@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The two hundred forty-seven registered modules in \texttt{lean/} cover operator estimates,
+The two hundred eighty-three registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Two thousand eight hundred four exported theorem declarations were compiled successfully.
+Three thousand one hundred sixty-two exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -687,7 +687,8 @@ source continuity and uniform remote-stack convergence still require proof.
 A further 205 declarations in 12 modules derive the actual cap Legendre
 series and their derivatives, a matching exponent in $(0,1)$, and a normalized
 piecewise profile satisfying the genuine one-dimensional weighted weak
-equation. Sphere lifting and the Maxwell conical coefficient remain separate.
+equation. The later angular batch supplies sphere lifting; the Maxwell
+conical coefficient remains separate.
 Actual compact source kernels give whole-plane flux integrability and
 $L^1$ continuity for a fixed support radius and positive plane gap. Finite
 layered geometries now have literal indicator-sum material coefficients:
@@ -698,8 +699,8 @@ of material volume at a fixed enclosing radius, with quantitative smallness
 and inverse estimates. Finally, a third-order identity and recurrence for
 the actual finite Hankel product prove nonnegative coefficients and the
 nonpositive outgoing radial load in every degree. These results do not yet
-supply the full regular-solution barrier estimates, uniform all-order Green
-limit, or either complete device construction.
+supply the uniform all-order spatial Green limit or either complete device
+construction; the later radial batches supply regular barrier estimates.
 
 A further 209 declarations in 18 modules derive actual spherical
 coordinates, their Jacobian and the surface measure formula by cones.
@@ -714,9 +715,33 @@ load-sign or positivity conclusions. Literal sphere-integral parity
 reactions define actual bounded material operators. For gain $b/a$,
 sufficiently small finite balls have a uniformly bounded inverse, and its
 solution satisfies the actual material relation for this explicit kernel.
-Arbitrary-test angular lifting, the sharp regular lower bound, spatial
-Maxwell Green reconstruction, physical-stack identification and all-order
-convergence remain subsequent steps.
+The later batch supplies arbitrary-test angular lifting and the sharp
+regular lower bound. Spatial Maxwell Green reconstruction, physical-stack
+identification and all-order spatial convergence remain subsequent steps.
+
+A further 358 declarations in 36 modules derive arbitrary-test spherical
+weak identities, all three actual tangential gradient components and an
+explicit distributional $H^1$ eigenfunction with positive mass from the
+shooting root. The literal conical potential and electric candidate have
+genuine Borel representatives and local $L^2$ bounds; their spatial weak
+equations and finite-frequency Maxwell correction remain subsequent work.
+Actual Riccati normalization gives the Gaussian lower bound, weighted
+high-degree summability and decay faster than each fixed inverse power of
+the radius. The literal scalar reaction and every fixed mixed derivative
+have corresponding compact-disk bounds, including the analytic origin.
+An actual intermediate-window exponential bound is also derived; its
+summation and the spatial dyadic reconstruction remain separate.
+Exact quarter-wave reference transfers, an actual $R^{-2}$ layer error,
+physical shared-radius lists, and both forward and backward finite-stack
+limits are proved for each fixed degree and finite stack. Their outgoing
+parity coefficient limit is a subsequent identification.
+The genuine uniform-ball potential, weak Hessian, Schwartz pairings and
+Fourier symbol identify the actual Newton operator and its interior action
+$-P/3$. Measure-preserving translation supplies every ball center. Exact
+static sphere polarization and the actual material-weighted block inverse
+follow, with weighted trial $3\sqrt{\chi}/(\chi+3)E$ and physical source
+$3\chi/(\chi+3)E$, including $\chi=0$. Multiple-ball, finite-frequency and
+shrinking-gap estimates remain separate.
 
 For every audited declaration the compiler lists three axioms: propositional
 extensionality (\texttt{propext}), classical choice
@@ -726,7 +751,7 @@ project-specific axiom, \texttt{sorry}, or admitted proof occurs. The
 formal build records the exact source hashes and pinned dependencies.
 This formally verifies the listed operator, differential and integral
 theorems. Full geometric instances and physical scattering assembly for
-the final constructions, conical or corner analysis, scattering density,
+the final constructions, finite-frequency conical coefficient lifting, scattering density,
 interface rounding, the physical
 reciprocal modal norm, and the complete channel and hotspot constructions
 remain outside this coverage.
@@ -834,7 +859,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Two thousand eight hundred four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand one hundred sixty-two declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 
