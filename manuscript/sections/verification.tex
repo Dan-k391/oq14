@@ -91,14 +91,14 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The two hundred eighty-three registered modules in \texttt{lean/} cover operator estimates,
+The three hundred twenty-three registered modules in \texttt{lean/} cover operator estimates,
 classical and weak Maxwell identities, plane flux, radial and modal
 formulas, and the longitudinal frequency multiplier. The exact source
 list and build instructions are in \texttt{lean/README.md}.
 They use Lean~4.19.0. Their pinned
 mathlib commit is
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-Three thousand one hundred sixty-two exported theorem declarations were compiled successfully.
+Three thousand four hundred four exported theorem declarations were compiled successfully.
 The original ten are operator and integral statements. In namespace
 \texttt{OQ14}, the first five are:
 \begin{quote}\small\ttfamily
@@ -743,7 +743,29 @@ follow, with weighted trial $3\sqrt{\chi}/(\chi+3)E$ and physical source
 $3\chi/(\chi+3)E$, including $\chi=0$. Multiple-ball, finite-frequency and
 shrinking-gap estimates remain separate.
 
-For every audited declaration the compiler lists three axioms: propositional
+A further 242 declarations in 40 modules supply the actual outgoing parity
+coefficient limit for common physical finite-stack families and both
+polarizations. Low, intermediate and high degree estimates yield a fixed
+summable majorant. The complete scalar series and its actual mixed
+derivatives converge uniformly on compact complex disk products, with every
+fixed degree weight. Full spatial dyadic Maxwell reconstruction remains
+separate. The literal conical static field now has proved weak gradient,
+zero weak curl and zero weighted divergence, finite local energy, an
+exponent in $(0,1)$ and uniform blowup on an open cone of positive measure.
+Its positive-frequency correction and retained nonzero coefficient remain
+unfinished. Actual single and finite sphere residual estimates derive
+weighted and physical $L^2$ errors of order $a\sqrt a$ and coordinate $L^1$
+errors of order $a^3$, including moving centers under uniform separation
+and explicit incident bounds. These concern the actual parity limiting
+kernel; finite-stack identification and shrinking-gap whole-plane flux
+remain separate. Actual source moments and exact exterior Newton dipoles
+are also proved. Genuine local Debye calculus derives both vector Maxwell
+polarizations from actual scalar Helmholtz solutions. A radial harmonic
+bridge and actual entire-series differentiation support subsequent spatial
+wave construction; normalized angular addition and complete Green assembly
+are still required.
+
+Only the following logical foundations occur in the audited declarations: propositional
 extensionality (\texttt{propext}), classical choice
 (\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
 These are the standard logical foundations used by these mathlib proofs. No
@@ -859,7 +881,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand one hundred sixty-two declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED, partial scope & Three thousand four hundred four declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
 \bottomrule
 \end{longtable}
 

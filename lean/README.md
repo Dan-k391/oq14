@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand one hundred sixty-two exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Three thousand four hundred four exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all two hundred eighty-three registered modules, and audits all 3162
+compiler and mathlib revision, builds all three hundred twenty-three registered modules, and audits all 3404
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -955,6 +955,53 @@ through actual measure-preserving translation and translated weak pairings.
 the weighted trial is 3 sqrt(chi)/(chi+3) E and its physical polarization is
 3 chi/(chi+3) E, including chi=0. Quantitative varying-field, multiple-ball,
 finite-frequency and shrinking-gap source estimates remain subsequent work.
+
+## Actual static cone, complete scalar stack sum and finite sphere asymptotics
+
+A further 242 declarations in 40 modules have complete-source and independent
+pinned-compiler audits. Registered totals are 3404 reports, 323 modules and
+295 libraries. The new aggregate revision needs its own clean combined build;
+the completed clean 3162 release is preserved separately.
+
+`RadialPhaseLimit`, `RadialParityLimit` and `RadialPairedFamily` derive the
+actual outgoing coefficient limit along a common sequence of physical
+finite radial stacks, for both polarizations and common material bounds.
+`RiccatiFactorialTail`, `RadialMiddleTail`, `RadialLowTail` and
+`RadialFullMajorant` combine the actual low, intermediate and high degree
+estimates into a fixed summable majorant. `RadialScalarSeries`,
+`RadialScalarUniform`, `RadialPairedScalar` and
+`RadialScalarDifferentiation` prove convergence of the entire scalar sum
+and its actual mixed derivatives, uniformly on compact complex disk
+products and with each fixed degree weight. These are actual derivatives
+of the sum, rather than merely convergent formal differentiated series.
+The spatial dyadic Maxwell reconstruction remains a separate requirement.
+
+The conical radial, angular and spatial test modules prove the actual weak
+gradient, zero weak curl and zero weighted divergence of the literal
+singular static field. `ConicalStaticField` assembles existence from the
+actual shooting root, with exponent in (0,1), finite local energy, common
+positive permittivity bounds and uniform blowup on an open cone of positive
+measure. The singular field is static. Preserving its nonzero coefficient
+under a positive-frequency Maxwell correction remains unfinished.
+
+The static sphere residual, forcing, scale and small-error modules derive
+the actual inverse error from incident variation. The finite sphere modules
+extend this to multiple separated balls, including moving centers, with
+actual cross-Newton interactions and derived perturbation smallness.
+`FiniteSphereAsymptotics` proves the actual weighted and physical L2 errors
+of order a*sqrt(a), and coordinate L1 error of order a^3, under explicit
+incident derivative and center-amplitude bounds of order 1/a. It uses the
+actual parity limiting kernel; its identification with finite physical
+stacks remains a separate step. `StaticBallDipole` proves the actual source
+moment and exact exterior Newton point-dipole identity.
+
+`DebyeCalculus` and `DebyeMaxwell` derive genuine local vector Maxwell
+equations for both Debye polarizations from an actual smooth scalar
+Helmholtz solution. `LocalRadialHarmonic` derives the spatial scalar equation
+from an actual radial ODE and a homogeneous harmonic polynomial.
+`EntireFactorialSeries` proves actual differentiation of factorially bounded
+entire series. These bridges do not by themselves supply the normalized
+spherical basis, its addition identities or full spatial Green series.
 
 ## Explicitly outside the formalization
 

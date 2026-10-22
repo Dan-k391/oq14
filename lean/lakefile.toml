@@ -1,6 +1,6 @@
 name = "oq14"
 version = "0.1.0"
-defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole", "CompactPerturbation", "CompactAlternative", "VolumeFredholm", "VolumeAlternative", "ExteriorSmooth", "ExteriorClassical", "ScalarFarField", "MaxwellFarField", "FarFieldPower", "AngularPower", "SphereMeasure", "ComplexGreenKernel", "ComplexDynamicKernel", "L2Parametric", "ComplexKernelAnalytic", "L1KernelOperator", "ComplexConvolutionAnalytic", "KernelReciprocity", "NewtonReciprocity", "ModalPoleMode", "ModalOutgoing", "ModalPoleRadiation", "ModalScaling", "ModalScaledPole", "AngularPowerZero", "ModalMatchingNorm", "HilbertFiniteRank", "FiniteRankSchur", "FiniteDimensionalDeterminant", "LocalDichotomy", "LocalFredholmReduction", "MeromorphicOperator", "FiniteMeromorphicInverse", "AnalyticCompactInverse", "VolumeAnalyticAlternative", "PolarIntegration", "RadialPowerTest", "RadialWeight", "RadialFlux", "HomogeneousVolumePower", "AngularEnergy", "ExteriorHelmholtz", "FiniteRankAnalyticJets", "CompactLaurent", "VolumeLaurent", "ComplexVolumeReciprocity", "RadialRellich", "RadialMoment", "RadialMomentODE", "SpherePolynomial", "HarmonicPolynomial", "FischerDecomposition", "HelmholtzTestCalculus", "ExteriorGreen", "RadialNormTest", "ComplexPolarIntegration", "HarmonicMomentSeparation", "OneDimensionalGreen", "RadialMomentRegularity", "RadialMomentWeights", "RadialMomentClassical", "SphericalMomentEquation", "ScalarExteriorRellich", "ComponentAngularEnergy", "MaxwellExteriorRellich", "SpatialKernelAnalytic", "AnnularMoment", "AnnularMomentClassical", "AnnularMomentEquation", "RadialIntervalUniqueness", "RadialIntervalFlux", "HelmholtzBallContinuation", "HelmholtzTranslation", "LocalZeroPropagation", "HelmholtzUniqueContinuation", "LocalHelmholtzRepresentation", "WeakHelmholtzRegularity", "HelmholtzMollifiers", "HelmholtzMollifierZero", "LocalAEZeroPropagation", "WeakHelmholtzContinuation", "RegionalMaxwellHelmholtz", "RegionalMaxwellLocalization", "HomogeneousVolumeUniqueness", "RegionalMaxwellContinuation", "MaterialCellGraph", "PiecewiseMaxwellUniqueness", "MaxwellZeroField", "RadialMaterialCells", "FiniteRadialPartition", "PiecewiseScattering", "RadialMaxwellUniqueness", "PiecewiseRealSpectrum", "SphereAngularSymmetry", "ConicalAngularTrial", "HankelEnergy", "HankelRealBasis", "HankelCoefficientBounds", "HankelIntermediateBounds", "DisjointBallGeometry", "DisjointBallCells", "DisjointBallPartition", "CavityBallGeometry", "CavityBallBridges", "ShellInclusionCells", "PlaneInverseCube", "MaxwellPlaneTail", "CapLegendreSeries", "CapAngularShooting", "CapSturmLiouville", "PlaneSourceKernel", "MaxwellPlaneL1", "LayeredInclusionCells", "LayeredInclusionScattering", "LayeredInclusionCoefficient", "LayeredDeviceScattering", "DynamicSupportVolume", "HankelPolynomial", "HankelPositive", "AxialCoordinates", "SphereAxialMeasure", "SphereReactionKernel", "BoundedMaterialKernel", "ParityReactionVolume", "SmallParityInclusions", "ParityMaterialField", "RiccatiRaising", "RiccatiSeriesCoefficients", "RiccatiOriginSeries", "RiccatiOriginLimits", "RiccatiBarrier", "RiccatiLogDerivative", "RadialLayer", "RadialPropagation", "RadialStack", "RadialSource", "RadialLoadBounds", "CapSturmEndpointTest", "RadialGluing", "RiccatiBarrierNormalization", "RiccatiGaussianBound", "SphereAxialTests", "StaticBallPotential", "StaticBallHessian", "SphereCapWeak", "CapProfileFirstOrder", "RadialHighOrderBound", "RadialHighOrderTail", "RadialStackHighTail", "SphereAxialSurface", "StaticBallL2", "RadialReference", "StaticBallSchwartz", "StaticBallFourier", "RadialReactionKernel", "RadialReactionTail", "SphereSurfaceTests", "SphereSurfaceFubini", "StaticBallSymbol", "RadialApproximation", "SphereCapH1", "RiccatiCompactDerivatives", "StaticBallNewton", "StaticSpherePolarization", "RadialEntireReaction", "RadialEntireTail", "RadialFiniteLimit", "StaticBallTranslation", "StaticBallCentered", "ConicalCapField", "RadialIntermediateBound", "StaticSphereMaterial", "RadialBackwardLimit"]
+defaultTargets = ["OQ14", "Maxwell", "HCurl", "HCurlDomain", "HCurlCutoff", "WeakPoynting", "ModalAlgebra", "RadialGreen", "StaticVolume", "LongitudinalProjection", "ModalWronskian", "FourierL2", "ModalRational", "GreenKernel", "VectorFourier", "ModalAlgebraicity", "GradientProjection", "StaticCoefficient", "ModalExistence", "DyadicKernel", "HelmholtzProjection", "ModalAsymptotics", "ModalMatching", "KernelIntegrability", "HeatFourier", "ModalDipole", "NewtonFourier", "DynamicIntegrability", "KernelEstimates", "ModalInterface", "NewtonHessian", "PointSingularity", "RealKernelBounds", "KernelGradient", "KernelSource", "DynamicSource", "NewtonConvolution", "NewtonL2", "NewtonL1L2", "StaticNewton", "ModalOrigin", "L1Convolution", "DynamicConvolution", "DynamicVolume", "DynamicVolumeConstants", "NewtonWeak", "KernelConvolution", "WaveResponse", "FieldResponse", "MagneticResponse", "LocalVolumeResponse", "MaterialField", "MaterialMaxwell", "IncidentLocalization", "SphereRemovable", "RadialInterface", "ModalProfiles", "ModalWeak", "LocalConvolution", "MagneticLocal", "SmallVolumeMaxwell", "ScalarRadiation", "MaterialHCurl", "MaterialPower", "NewtonExterior", "NewtonExteriorResponse", "ExteriorContinuity", "ExteriorMaterial", "DyadicRadiation", "MaxwellRadiation", "OutgoingMaterial", "ScalarExterior", "ScalarExteriorSecond", "ScalarExteriorRegularity", "ModalLocal", "ModalHCurl", "ModalShell", "ModalFieldResidue", "ModalShellAnalytic", "L2KernelCompact", "DynamicVolumeCompact", "ModalFieldPole", "CompactPerturbation", "CompactAlternative", "VolumeFredholm", "VolumeAlternative", "ExteriorSmooth", "ExteriorClassical", "ScalarFarField", "MaxwellFarField", "FarFieldPower", "AngularPower", "SphereMeasure", "ComplexGreenKernel", "ComplexDynamicKernel", "L2Parametric", "ComplexKernelAnalytic", "L1KernelOperator", "ComplexConvolutionAnalytic", "KernelReciprocity", "NewtonReciprocity", "ModalPoleMode", "ModalOutgoing", "ModalPoleRadiation", "ModalScaling", "ModalScaledPole", "AngularPowerZero", "ModalMatchingNorm", "HilbertFiniteRank", "FiniteRankSchur", "FiniteDimensionalDeterminant", "LocalDichotomy", "LocalFredholmReduction", "MeromorphicOperator", "FiniteMeromorphicInverse", "AnalyticCompactInverse", "VolumeAnalyticAlternative", "PolarIntegration", "RadialPowerTest", "RadialWeight", "RadialFlux", "HomogeneousVolumePower", "AngularEnergy", "ExteriorHelmholtz", "FiniteRankAnalyticJets", "CompactLaurent", "VolumeLaurent", "ComplexVolumeReciprocity", "RadialRellich", "RadialMoment", "RadialMomentODE", "SpherePolynomial", "HarmonicPolynomial", "FischerDecomposition", "HelmholtzTestCalculus", "ExteriorGreen", "RadialNormTest", "ComplexPolarIntegration", "HarmonicMomentSeparation", "OneDimensionalGreen", "RadialMomentRegularity", "RadialMomentWeights", "RadialMomentClassical", "SphericalMomentEquation", "ScalarExteriorRellich", "ComponentAngularEnergy", "MaxwellExteriorRellich", "SpatialKernelAnalytic", "AnnularMoment", "AnnularMomentClassical", "AnnularMomentEquation", "RadialIntervalUniqueness", "RadialIntervalFlux", "HelmholtzBallContinuation", "HelmholtzTranslation", "LocalZeroPropagation", "HelmholtzUniqueContinuation", "LocalHelmholtzRepresentation", "WeakHelmholtzRegularity", "HelmholtzMollifiers", "HelmholtzMollifierZero", "LocalAEZeroPropagation", "WeakHelmholtzContinuation", "RegionalMaxwellHelmholtz", "RegionalMaxwellLocalization", "HomogeneousVolumeUniqueness", "RegionalMaxwellContinuation", "MaterialCellGraph", "PiecewiseMaxwellUniqueness", "MaxwellZeroField", "RadialMaterialCells", "FiniteRadialPartition", "PiecewiseScattering", "RadialMaxwellUniqueness", "PiecewiseRealSpectrum", "SphereAngularSymmetry", "ConicalAngularTrial", "HankelEnergy", "HankelRealBasis", "HankelCoefficientBounds", "HankelIntermediateBounds", "DisjointBallGeometry", "DisjointBallCells", "DisjointBallPartition", "CavityBallGeometry", "CavityBallBridges", "ShellInclusionCells", "PlaneInverseCube", "MaxwellPlaneTail", "CapLegendreSeries", "CapAngularShooting", "CapSturmLiouville", "PlaneSourceKernel", "MaxwellPlaneL1", "LayeredInclusionCells", "LayeredInclusionScattering", "LayeredInclusionCoefficient", "LayeredDeviceScattering", "DynamicSupportVolume", "HankelPolynomial", "HankelPositive", "AxialCoordinates", "SphereAxialMeasure", "SphereReactionKernel", "BoundedMaterialKernel", "ParityReactionVolume", "SmallParityInclusions", "ParityMaterialField", "RiccatiRaising", "RiccatiSeriesCoefficients", "RiccatiOriginSeries", "RiccatiOriginLimits", "RiccatiBarrier", "RiccatiLogDerivative", "RadialLayer", "RadialPropagation", "RadialStack", "RadialSource", "RadialLoadBounds", "CapSturmEndpointTest", "RadialGluing", "RiccatiBarrierNormalization", "RiccatiGaussianBound", "SphereAxialTests", "StaticBallPotential", "StaticBallHessian", "SphereCapWeak", "CapProfileFirstOrder", "RadialHighOrderBound", "RadialHighOrderTail", "RadialStackHighTail", "SphereAxialSurface", "StaticBallL2", "RadialReference", "StaticBallSchwartz", "StaticBallFourier", "RadialReactionKernel", "RadialReactionTail", "SphereSurfaceTests", "SphereSurfaceFubini", "StaticBallSymbol", "RadialApproximation", "SphereCapH1", "RiccatiCompactDerivatives", "StaticBallNewton", "StaticSpherePolarization", "RadialEntireReaction", "RadialEntireTail", "RadialFiniteLimit", "StaticBallTranslation", "StaticBallCentered", "ConicalCapField", "RadialIntermediateBound", "StaticSphereMaterial", "RadialBackwardLimit", "RadialPhaseLimit", "RadialParityLimit", "RadialPairedFamily", "RiccatiFactorialTail", "RadialMiddleTail", "RadialLowTail", "RadialFullMajorant", "RadialScalarSeries", "RadialScalarUniform", "RadialPairedScalar", "RadialScalarDifferentiation", "ConicalRadialTests", "ConicalNontrivial", "ConicalPolarTests", "ConicalAngularTests", "ConicalSpatialTests", "ConicalSpatialWeak", "ConicalWeakGradient", "ConicalDivergenceTests", "ConicalStaticDivergence", "ConicalWeakCurl", "ConicalStaticField", "StaticSphereResidual", "StaticSphereForcing", "StaticBallInteraction", "StaticSphereScale", "StaticSphereSmallError", "StaticSphereAsymptotics", "FiniteSphereStatic", "FiniteSphereResidual", "FiniteSphereResidualBound", "FiniteSphereComparison", "FiniteSphereScale", "FiniteSphereSmallError", "FiniteSphereAsymptotics", "StaticBallDipole", "DebyeCalculus", "DebyeMaxwell", "LocalRadialHarmonic", "EntireFactorialSeries"]
 
 [[require]]
 name = "mathlib"
@@ -772,3 +772,123 @@ name = "StaticSphereMaterial"
 
 [[lean_lib]]
 name = "RadialBackwardLimit"
+
+[[lean_lib]]
+name = "RadialPhaseLimit"
+
+[[lean_lib]]
+name = "RadialParityLimit"
+
+[[lean_lib]]
+name = "RadialPairedFamily"
+
+[[lean_lib]]
+name = "RiccatiFactorialTail"
+
+[[lean_lib]]
+name = "RadialMiddleTail"
+
+[[lean_lib]]
+name = "RadialLowTail"
+
+[[lean_lib]]
+name = "RadialFullMajorant"
+
+[[lean_lib]]
+name = "RadialScalarSeries"
+
+[[lean_lib]]
+name = "RadialScalarUniform"
+
+[[lean_lib]]
+name = "RadialPairedScalar"
+
+[[lean_lib]]
+name = "RadialScalarDifferentiation"
+
+[[lean_lib]]
+name = "ConicalRadialTests"
+
+[[lean_lib]]
+name = "ConicalNontrivial"
+
+[[lean_lib]]
+name = "ConicalPolarTests"
+
+[[lean_lib]]
+name = "ConicalAngularTests"
+
+[[lean_lib]]
+name = "ConicalSpatialTests"
+
+[[lean_lib]]
+name = "ConicalSpatialWeak"
+
+[[lean_lib]]
+name = "ConicalWeakGradient"
+
+[[lean_lib]]
+name = "ConicalDivergenceTests"
+
+[[lean_lib]]
+name = "ConicalStaticDivergence"
+
+[[lean_lib]]
+name = "ConicalWeakCurl"
+
+[[lean_lib]]
+name = "ConicalStaticField"
+
+[[lean_lib]]
+name = "StaticSphereResidual"
+
+[[lean_lib]]
+name = "StaticSphereForcing"
+
+[[lean_lib]]
+name = "StaticBallInteraction"
+
+[[lean_lib]]
+name = "StaticSphereScale"
+
+[[lean_lib]]
+name = "StaticSphereSmallError"
+
+[[lean_lib]]
+name = "StaticSphereAsymptotics"
+
+[[lean_lib]]
+name = "FiniteSphereStatic"
+
+[[lean_lib]]
+name = "FiniteSphereResidual"
+
+[[lean_lib]]
+name = "FiniteSphereResidualBound"
+
+[[lean_lib]]
+name = "FiniteSphereComparison"
+
+[[lean_lib]]
+name = "FiniteSphereScale"
+
+[[lean_lib]]
+name = "FiniteSphereSmallError"
+
+[[lean_lib]]
+name = "FiniteSphereAsymptotics"
+
+[[lean_lib]]
+name = "StaticBallDipole"
+
+[[lean_lib]]
+name = "DebyeCalculus"
+
+[[lean_lib]]
+name = "DebyeMaxwell"
+
+[[lean_lib]]
+name = "LocalRadialHarmonic"
+
+[[lean_lib]]
+name = "EntireFactorialSeries"

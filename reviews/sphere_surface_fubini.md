@@ -10,3 +10,5 @@ The final theorem cap_surface_ibp identifies the literal bounded candidate G=slo
 ## Independent integration verification, October 22, 2026
 
 Complete source reviewed independently. The pinned compiler completed with exit 0, no warnings, and all 6 reports using only standard foundations. Final source SHA256 `628b319febe2b7b2856276b6b54183ea32f3b786593ea0d50392c7958936c997`. Independent log: `lean/logs/SphereSurfaceFubini-root-audit.log`; log SHA256 `5e0fb48a6c701c93ad9f85d2ddea20332afc726d9259704ffbe919b2b9b0cd41`. This certifies the stated scope, not either complete OQ14 construction.
+
+Root independent complete-source and fresh pinned-compiler audit PASS, exact frozen hash confirmed, no warnings/all six standard-only reports. Log lean/SphereSurfaceFubini-root-audit.log.
