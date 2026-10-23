@@ -1,0 +1,1954 @@
+{
+  "baseline_reports": 4391,
+  "new_reports": 847,
+  "total_reports": 5238,
+  "module_count": 627,
+  "library_count": 599,
+  "modules": [
+    {
+      "module": "RiccatiImaginaryBound",
+      "reports": 5,
+      "source_sha256": "2ae4eaa012445bec39dd967a84ec16a9e4bbe37aefaaf59ebe10b6940f2652f7",
+      "audit_log": "lean/logs/RiccatiImaginaryBound-root-audit.log",
+      "audit_log_sha256": "00ad4fbcab9f2550256ba1b312c10554f5a7d5a06a71860eb54ec21b9cb12d63",
+      "source": "lean/RiccatiImaginaryBound.lean",
+      "reviews": [
+        "reviews/riccati_imaginary_bound.md"
+      ],
+      "source_lf_sha256": "edcb55f8a75737efe85b7f4c8c6dc23c11c673dcdb4e95c8c8d45e21b5f7c5ce"
+    },
+    {
+      "module": "HarmonicSpatialMajorant",
+      "reports": 5,
+      "source_sha256": "c6906c378fe440b1b3d5b25e37b41478464e845abaea1842314240055b543a73",
+      "audit_log": "lean/logs/HarmonicSpatialMajorant-root-audit.log",
+      "audit_log_sha256": "cb7c20e5c9353d68dae4dda0814589f2b8d617328a3b9cb78dc0b8900e1cbca2",
+      "source": "lean/HarmonicSpatialMajorant.lean",
+      "reviews": [
+        "reviews/harmonic_spatial_majorant.md"
+      ],
+      "source_lf_sha256": "cd6d61f84594b52031ebcb31a34a8e1ecb02aa3df9e78149ad6ae315677582b5"
+    },
+    {
+      "module": "FiniteSphereIncident",
+      "reports": 9,
+      "source_sha256": "0ff9ebbcb3688410c37add333c82006661f0600123fd6b417e42ac8d2f471c2a",
+      "audit_log": "lean/logs/FiniteSphereIncident-root-audit.log",
+      "audit_log_sha256": "f0cc688a9c92760a73a4c46a5c2eb84b4350b8c5b84eb0cc55431c177413f842",
+      "source": "lean/FiniteSphereIncident.lean",
+      "reviews": [
+        "reviews/finite_sphere_incident.md"
+      ],
+      "source_lf_sha256": "684088c81f83134094031da5c969dd8e448914c93af5a0ae926f6860e5ca0141"
+    },
+    {
+      "module": "FiniteSphereIllumination",
+      "reports": 2,
+      "source_sha256": "58c828dbf950a44f069d181b184e4c47dbaf814b51696710b84f9426b48686ba",
+      "audit_log": "lean/logs/FiniteSphereIllumination-root-audit.log",
+      "audit_log_sha256": "bc07a5001093a10ed26116fd12cd2be75a3bf6b7757dc5eba170b40fb1f57eb7",
+      "source": "lean/FiniteSphereIllumination.lean",
+      "reviews": [
+        "reviews/finite_sphere_illumination.md"
+      ],
+      "source_lf_sha256": "58c828dbf950a44f069d181b184e4c47dbaf814b51696710b84f9426b48686ba"
+    },
+    {
+      "module": "ConicalAngularEnergy",
+      "reports": 3,
+      "source_sha256": "ecb2c17f70939ab648d5993e75413e5f995d5f1e77a25c0b75c55a4e0e250703",
+      "audit_log": "lean/logs/ConicalAngularEnergy-root-audit.log",
+      "audit_log_sha256": "1ffc6d9985351617abd69d52ddf7d50d959a70252efac0b7a39d16e758b2a3c8",
+      "source": "lean/ConicalAngularEnergy.lean",
+      "reviews": [
+        "reviews/conical_angular_energy.md"
+      ],
+      "source_lf_sha256": "04c88ca18eb658d82e8306d8929dee95e8b8b95e4c347acace1ab4cc825958d7"
+    },
+    {
+      "module": "SpatialReactionMajorant",
+      "reports": 6,
+      "source_sha256": "260dad6e7c07f593044c02969ab1f2eb1963d71abedc366bfc19b8079dc9e6e6",
+      "audit_log": "lean/logs/SpatialReactionMajorant-root-audit.log",
+      "audit_log_sha256": "c8a1bf3e7171dab2289db34a60e37cfdf4540e610362ffa1185960645203843b",
+      "source": "lean/SpatialReactionMajorant.lean",
+      "reviews": [
+        "reviews/spatial_reaction_majorant.md"
+      ],
+      "source_lf_sha256": "35bfb38f6ca98e0498877508d458e66e981edcfa3b26fda59b69191c45bf05b0"
+    },
+    {
+      "module": "PlaneQuadraticFlux",
+      "reports": 6,
+      "source_sha256": "3d3502ddea1d99deadc53298e150a7df0d9c4bd7ef66d4946b48710195fe27af",
+      "audit_log": "lean/logs/PlaneQuadraticFlux-root-audit.log",
+      "audit_log_sha256": "15296bc91c4a9f69401abfab8f08cc77115e20836c35c02fa85cd0b8588cdb9e",
+      "source": "lean/PlaneQuadraticFlux.lean",
+      "reviews": [
+        "reviews/plane_quadratic_flux.md"
+      ],
+      "source_lf_sha256": "c97b7592fdce37e094116cc42501c4c6044305c9edfe42bf95f10b435df787cf"
+    },
+    {
+      "module": "ConicalAnnularCoefficient",
+      "reports": 7,
+      "source_sha256": "9dbe59fa83acf6e78a1766b6d408a3b54f95fa83608ede7c26fcc15a1dd63a61",
+      "audit_log": "lean/logs/ConicalAnnularCoefficient-root-audit.log",
+      "audit_log_sha256": "d2560094ea643ee872bac4345f4bc13ac092768a5b7ef800927a8b029cf4736e",
+      "source": "lean/ConicalAnnularCoefficient.lean",
+      "reviews": [
+        "reviews/conical_annular_coefficient.md"
+      ],
+      "source_lf_sha256": "206b70e5791c92e0d5041799e74080483037f27175cc9838b4f20d8ea6d1455e"
+    },
+    {
+      "module": "ConicalCorrectionBounds",
+      "reports": 2,
+      "source_sha256": "c07e3157f2b69e4afe58889d6762745f5114719b0baca2d478636609811cd493",
+      "audit_log": "lean/logs/ConicalCorrectionBounds-root-audit.log",
+      "audit_log_sha256": "c30fe005e59f38a8edd9813b3975510d2ddd67b92a9f15148e4dbdceb9b9825e",
+      "source": "lean/ConicalCorrectionBounds.lean",
+      "reviews": [
+        "reviews/conical_correction_bounds.md"
+      ],
+      "source_lf_sha256": "bfdfffd23fd1692b523efc99c82ad966cf5bc51433ed430829b8e04498b16fb8"
+    },
+    {
+      "module": "PlaneQuadraticMoving",
+      "reports": 4,
+      "source_sha256": "b915e094cf41fe144d3a4eed3a8452656c287e575f8cfa5b09600b7263fd86b2",
+      "audit_log": "lean/logs/PlaneQuadraticMoving-root-audit.log",
+      "audit_log_sha256": "ef694bede19bd3bae046a242bf949d5e68a1cb3fe86d8f443ffca057955a9f5e",
+      "source": "lean/PlaneQuadraticMoving.lean",
+      "reviews": [
+        "reviews/plane_quadratic_moving.md"
+      ],
+      "source_lf_sha256": "b915e094cf41fe144d3a4eed3a8452656c287e575f8cfa5b09600b7263fd86b2"
+    },
+    {
+      "module": "FiniteSphereSourceMass",
+      "reports": 2,
+      "source_sha256": "7319dcfd874ac1ab073872a392abdeca3ad576e9c63e8ba8962d4d73e54a935e",
+      "audit_log": "lean/logs/FiniteSphereSourceMass-root-audit.log",
+      "audit_log_sha256": "d58e1609744ad5c7f7e6c9d86fd52d6e478257cb8b36120c3a730d90c4cb7dea",
+      "source": "lean/FiniteSphereSourceMass.lean",
+      "reviews": [
+        "reviews/finite_sphere_source_mass.md"
+      ],
+      "source_lf_sha256": "7319dcfd874ac1ab073872a392abdeca3ad576e9c63e8ba8962d4d73e54a935e"
+    },
+    {
+      "module": "LocalSmoothSeries",
+      "reports": 2,
+      "source_sha256": "e80e5e5d815b66cfd22e8cdc5e7b44d4195f72f65f00a0d5d0ee9c2d7130322d",
+      "audit_log": "lean/logs/LocalSmoothSeries-root-audit.log",
+      "audit_log_sha256": "0d4ae87717d073ecd12f246d847364e55ff9ba984b1afca1ecf2857123b5934d",
+      "source": "lean/LocalSmoothSeries.lean",
+      "reviews": [
+        "reviews/local_smooth_series.md"
+      ],
+      "source_lf_sha256": "f4d96e982ea5a76294e96ba7307ff379e3e7701d56faddc1727f7fe4bdaf0fe4"
+    },
+    {
+      "module": "SpatialReactionTerms",
+      "reports": 8,
+      "source_sha256": "4476889b0dc5e3e538b8ee898918ca8f2102bca775b76df83b1d0cc2a9d469aa",
+      "audit_log": "lean/logs/SpatialReactionTerms-root-audit.log",
+      "audit_log_sha256": "b5bb2752a5b6f5f2bca431307610eef097f1d23a9cf8b0b98dba94993d18f4c1",
+      "source": "lean/SpatialReactionTerms.lean",
+      "reviews": [
+        "reviews/spatial_reaction_terms.md"
+      ],
+      "source_lf_sha256": "81c0df1f7a0861bd4fee10ee126220c7eb88f64b35321f783cc735464b783c31"
+    },
+    {
+      "module": "ConicalCoefficientIdentity",
+      "reports": 2,
+      "source_sha256": "6df4d5449d06874f314af1eab91bcdf45adb61ebf6ea39be866e9146bebac956",
+      "audit_log": "lean/logs/ConicalCoefficientIdentity-root-audit.log",
+      "audit_log_sha256": "1ed3356fd4544b6883e9d5420a70c392966966b78a5536f0ae27f6d144b06898",
+      "source": "lean/ConicalCoefficientIdentity.lean",
+      "reviews": [
+        "reviews/conical_coefficient_identity.md"
+      ],
+      "source_lf_sha256": "bccdb00afc82598435e29d7495868308a1a6d922722a128a58b2929b57860dcc"
+    },
+    {
+      "module": "FiniteSphereQuadratic",
+      "reports": 2,
+      "source_sha256": "979cdeb3b18ab0f13071ce422faf28e371fda08d6e4331b4e612f1188063e8b7",
+      "audit_log": "lean/logs/FiniteSphereQuadratic-root-audit.log",
+      "audit_log_sha256": "fef5a576cc1811ba6115c50c4b2a45f435c756f9e4c0e1ba9c7b263f3e53d91e",
+      "source": "lean/FiniteSphereQuadratic.lean",
+      "reviews": [
+        "reviews/finite_sphere_quadratic.md"
+      ],
+      "source_lf_sha256": "979cdeb3b18ab0f13071ce422faf28e371fda08d6e4331b4e612f1188063e8b7"
+    },
+    {
+      "module": "ConicalCoefficientLimit",
+      "reports": 3,
+      "source_sha256": "c14ba536d1f120676e14b70d2c3a05641fd2937d4b2ac3877a3b8eb4e30eb35b",
+      "audit_log": "lean/logs/ConicalCoefficientLimit-root-audit.log",
+      "audit_log_sha256": "a9e3085d8ebdfd90fbd214dc281beda52589a062873ef6b69a491907deb2f020",
+      "source": "lean/ConicalCoefficientLimit.lean",
+      "reviews": [
+        "reviews/conical_coefficient_limit.md"
+      ],
+      "source_lf_sha256": "393f85cbdd93c2fa10c347569f3f4eacc124e3e193cb4a89197d2fb8b147fb81"
+    },
+    {
+      "module": "ConicalStaticCoefficient",
+      "reports": 3,
+      "source_sha256": "73bf9b8f0a99ec6839c2bb752dbb30adf582eb61c261be37420a88d03e79c887",
+      "audit_log": "lean/logs/ConicalStaticCoefficient-root-audit.log",
+      "audit_log_sha256": "de88c147399b5c91fe36fc44c3cef0bf78bf8d33680505f1f46d656830323ae9",
+      "source": "lean/ConicalStaticCoefficient.lean",
+      "reviews": [
+        "reviews/conical_static_coefficient.md"
+      ],
+      "source_lf_sha256": "352cc524d588fc14921b6895fec6db1350b0ee49798c09b67dc776de41eb349b"
+    },
+    {
+      "module": "ConicalCoefficientRetention",
+      "reports": 3,
+      "source_sha256": "2a654fe47db6fbe94d91d8dfd6c46d13e6bbdd755bdf8e91663a9a4ad95796bc",
+      "audit_log": "lean/logs/ConicalCoefficientRetention-root-audit.log",
+      "audit_log_sha256": "2e9ffbd02fc70997cb576032e48f6a0b39585660c0b09b8b461b99d9794e3bac",
+      "source": "lean/ConicalCoefficientRetention.lean",
+      "reviews": [
+        "reviews/conical_coefficient_retention.md"
+      ],
+      "source_lf_sha256": "6a445c3cd5d1f7ff565fd10dcfdf498bc72b4f7409cb44d0d04f6c9fb7e182d3"
+    },
+    {
+      "module": "PhysicalScalarReaction",
+      "reports": 5,
+      "source_sha256": "d426be1cc4a983d655da1694345db24e101dc8317f1b8dc3841ca8c43334ec41",
+      "audit_log": "lean/logs/PhysicalScalarReaction-root-audit.log",
+      "audit_log_sha256": "97e10315aff5b93d03524e741cbb4dd6d015fc3905f051f59a3b36770055f37a",
+      "source": "lean/PhysicalScalarReaction.lean",
+      "reviews": [
+        "reviews/physical_scalar_reaction.md"
+      ],
+      "source_lf_sha256": "38fd8ab5496ea11317477e2a5d62aefada7ba825d0c4e5aead15da37c19e89fa"
+    },
+    {
+      "module": "ParityPlaneFields",
+      "reports": 12,
+      "source_sha256": "2f64f9dc8af196b9220c4cf9256ce72343b724f5b185236f61bd7e8d8685a5b2",
+      "audit_log": "lean/logs/ParityPlaneFields-root-audit.log",
+      "audit_log_sha256": "7d76a5eb0af43de94c55e228a6f5c7e1464f64ce2502622ed6456fcd6efa6e1a",
+      "source": "lean/ParityPlaneFields.lean",
+      "reviews": [
+        "reviews/parity_plane_fields.md"
+      ],
+      "source_lf_sha256": "2f64f9dc8af196b9220c4cf9256ce72343b724f5b185236f61bd7e8d8685a5b2"
+    },
+    {
+      "module": "ParityPlaneColumns",
+      "reports": 5,
+      "source_sha256": "a9e59a25dba0f865f37ce064996ab0d8bd342d88178aca4a8cabcc9c74f9d766",
+      "audit_log": "lean/logs/ParityPlaneColumns-root-audit.log",
+      "audit_log_sha256": "5d64318bc4d4b90b033f00b33428bc77346762e993145335d761a400e02f5c3f",
+      "source": "lean/ParityPlaneColumns.lean",
+      "reviews": [
+        "reviews/parity_plane_columns.md"
+      ],
+      "source_lf_sha256": "a9e59a25dba0f865f37ce064996ab0d8bd342d88178aca4a8cabcc9c74f9d766"
+    },
+    {
+      "module": "ParityPlaneBounds",
+      "reports": 4,
+      "source_sha256": "823c8359125102dee4a252ee6b0bbfa99cdcb2eb2bc35b848b1f001d69162145",
+      "audit_log": "lean/logs/ParityPlaneBounds-root-audit.log",
+      "audit_log_sha256": "ccfe4baef4a86c4058695a0bfa82328cb21dcfa82cde8ac1e0158750b1c80b8e",
+      "source": "lean/ParityPlaneBounds.lean",
+      "reviews": [
+        "reviews/parity_plane_bounds.md"
+      ],
+      "source_lf_sha256": "823c8359125102dee4a252ee6b0bbfa99cdcb2eb2bc35b848b1f001d69162145"
+    },
+    {
+      "module": "SpatialReactionSeries",
+      "reports": 2,
+      "source_sha256": "d5f19e556f0ca216b3456eb1b3a70915bf8b5b87d830bf9f4c785a574f8685a1",
+      "audit_log": "lean/logs/SpatialReactionSeries-root-audit.log",
+      "audit_log_sha256": "99e0967cbfaa519346135f142f9b3894d716289744592b3e1a48e31d4ac56553",
+      "source": "lean/SpatialReactionSeries.lean",
+      "reviews": [
+        "reviews/spatial_reaction_series.md"
+      ],
+      "source_lf_sha256": "ad6d782a71c992b9a2c5b724d5f1e9374c3d14355128f69af793a98686765da8"
+    },
+    {
+      "module": "PhysicalReactionSeries",
+      "reports": 7,
+      "source_sha256": "a735f3cb47da482db731e6aa7f4ee5c572f41410cc673460d951abbaf4b02313",
+      "audit_log": "lean/logs/PhysicalReactionSeries-root-audit.log",
+      "audit_log_sha256": "4756418162cf5051cf8646a3c690553f124b1e8904752d51013a9d9d4ba04180",
+      "source": "lean/PhysicalReactionSeries.lean",
+      "reviews": [
+        "reviews/physical_reaction_series.md"
+      ],
+      "source_lf_sha256": "0d5648bf6d634d1346261ac11991964ec7bd59c7172d41a8bc177d50a8048500"
+    },
+    {
+      "module": "ConicalRadialUnbounded",
+      "reports": 5,
+      "source_sha256": "5be315150c95f327c6771ee496ee35d016d08338cca4287a366e354cbcb8042e",
+      "audit_log": "lean/logs/ConicalRadialUnbounded-root-audit.log",
+      "audit_log_sha256": "330cc86465e3efc8bb31d1ec853a6e03e8cbcbdd2b97006f5ed93cbc15f8f0ff",
+      "source": "lean/ConicalRadialUnbounded.lean",
+      "reviews": [
+        "reviews/conical_radial_unbounded.md"
+      ],
+      "source_lf_sha256": "53bdd86860a66494422294faea2d5c2d6fb2a838f1dc32b55d0c609eb0e3cab6"
+    },
+    {
+      "module": "PolarMomentBound",
+      "reports": 1,
+      "source_sha256": "af1ac3c31849b8d68f7bfc2d63d1c75149ea8f448adb53e13ef7e98ab867f32f",
+      "audit_log": "lean/logs/PolarMomentBound-root-audit.log",
+      "audit_log_sha256": "96e75ed4cf4ba5aaeff6c591499ae1443bce32aef7d58bdef2d7def1a0a37129",
+      "source": "lean/PolarMomentBound.lean",
+      "reviews": [
+        "reviews/polar_moment_bound.md"
+      ],
+      "source_lf_sha256": "5a3c1fd30474bf055d090ef7c2aec0aa03eba1c580526b51f2c8e518d1241da8"
+    },
+    {
+      "module": "ConicalEssentialUnbounded",
+      "reports": 2,
+      "source_sha256": "9e90a1ae29d90778a87c187576a5cc9269b11e32c6e47d2bb6ccd6243d37d66f",
+      "audit_log": "lean/logs/ConicalEssentialUnbounded-root-audit.log",
+      "audit_log_sha256": "7d9949dfd3ecc54cd5f072bdeb6a2f1420686cad51d2c8d521b32539df1c49d7",
+      "source": "lean/ConicalEssentialUnbounded.lean",
+      "reviews": [
+        "reviews/conical_essential_unbounded.md"
+      ],
+      "source_lf_sha256": "9f40958f6a8d53b2ad696e1b1e0aaf3cba1e9499b24bd4d69e3f049f2e3c4a12"
+    },
+    {
+      "module": "ConicalDynamicHotspot",
+      "reports": 1,
+      "source_sha256": "f5c536cedb1afdecac62e7a7981622c4157bb28959ac5637543734cee3651e35",
+      "audit_log": "lean/logs/ConicalDynamicHotspot-root-audit.log",
+      "audit_log_sha256": "b8a0f76b9a45a1fa1d22b63d4c726b3ab2ff9d254d1768058b5f6de8c3b4332f",
+      "source": "lean/ConicalDynamicHotspot.lean",
+      "reviews": [
+        "reviews/conical_dynamic_hotspot.md"
+      ],
+      "source_lf_sha256": "7a4cf2b2a6f817f17aaf29642a4bcef07a95504e845936165ba4c236ff78d1ca"
+    },
+    {
+      "module": "SourceParityFlux",
+      "reports": 6,
+      "source_sha256": "34ae7d0d305c9cc4ad9bf8b1f29b3a21feb14cd40b924a3766ee8035463e8068",
+      "audit_log": "lean/logs/SourceParityFlux-root-audit.log",
+      "audit_log_sha256": "f472ac6f24c9ccb9dbc638347d680603b3087fa227f8794ed7cb3b510aed132a",
+      "source": "lean/SourceParityFlux.lean",
+      "reviews": [
+        "reviews/source_parity_flux.md"
+      ],
+      "source_lf_sha256": "34ae7d0d305c9cc4ad9bf8b1f29b3a21feb14cd40b924a3766ee8035463e8068"
+    },
+    {
+      "module": "SourceParityWhole",
+      "reports": 4,
+      "source_sha256": "ca58025a43e22d9386aad9ee94e26bf18c9a52ea658f741c59921ee591fdbd20",
+      "audit_log": "lean/logs/SourceParityWhole-root-audit.log",
+      "audit_log_sha256": "6a856e861b4f5fb445c7a8c80110b5dd0ee21174bf27c91a7d00f890ecb37500",
+      "source": "lean/SourceParityWhole.lean",
+      "reviews": [
+        "reviews/source_parity_whole.md"
+      ],
+      "source_lf_sha256": "ca58025a43e22d9386aad9ee94e26bf18c9a52ea658f741c59921ee591fdbd20"
+    },
+    {
+      "module": "ParityIncidentFlux",
+      "reports": 4,
+      "source_sha256": "4c2a11f721003ad8be45f18b3c8106c0d99e9153a7e28324867d9efc3d51647f",
+      "audit_log": "lean/logs/ParityIncidentFlux-root-audit.log",
+      "audit_log_sha256": "137b76d705d719fdcb636e7bca8fd7b95a9daf2fe7f3d6ac381d152b9e54edbd",
+      "source": "lean/ParityIncidentFlux.lean",
+      "reviews": [
+        "reviews/parity_incident_flux.md"
+      ],
+      "source_lf_sha256": "4c2a11f721003ad8be45f18b3c8106c0d99e9153a7e28324867d9efc3d51647f"
+    },
+    {
+      "module": "ParityTotalFlux",
+      "reports": 2,
+      "source_sha256": "f095a9307085fec9f3f3107c184f0550a8769f212e93b2eeb023a7ce994de1f0",
+      "audit_log": "lean/logs/ParityTotalFlux-root-audit.log",
+      "audit_log_sha256": "0ac628d0857a3e4d7eaafe59610820ac94b763a86855baf81721ffea36555733",
+      "source": "lean/ParityTotalFlux.lean",
+      "reviews": [
+        "reviews/parity_total_flux.md"
+      ],
+      "source_lf_sha256": "f095a9307085fec9f3f3107c184f0550a8769f212e93b2eeb023a7ce994de1f0"
+    },
+    {
+      "module": "ParityRemainderBound",
+      "reports": 1,
+      "source_sha256": "aa533ea54b4851add412231e48038b1f28f87a4ea15e8b0fff09af51621aad95",
+      "audit_log": "lean/logs/ParityRemainderBound-root-audit.log",
+      "audit_log_sha256": "b9cec81d1d3c688c65177d712da1b3cf3ddc17712e5e60b2be21877f1717c530",
+      "source": "lean/ParityRemainderBound.lean",
+      "reviews": [
+        "reviews/parity_remainder_bound.md"
+      ],
+      "source_lf_sha256": "aa533ea54b4851add412231e48038b1f28f87a4ea15e8b0fff09af51621aad95"
+    },
+    {
+      "module": "ParityRemainderMoving",
+      "reports": 3,
+      "source_sha256": "c65b8a3cc23fb5441ac0eca03dca2ed4fa789d99afe44182005545485b09d248",
+      "audit_log": "lean/logs/ParityRemainderMoving-root-audit.log",
+      "audit_log_sha256": "1c9a5c9dfe798ce519f5c2ec088905a256d4979a3356a1c5331c077b100bda9e",
+      "source": "lean/ParityRemainderMoving.lean",
+      "reviews": [
+        "reviews/parity_remainder_moving.md"
+      ],
+      "source_lf_sha256": "c65b8a3cc23fb5441ac0eca03dca2ed4fa789d99afe44182005545485b09d248"
+    },
+    {
+      "module": "PhysicalReactionLimit",
+      "reports": 9,
+      "source_sha256": "cae9c90556496705ab4dbf21c94fc4440ca13b6a04016ef526e2d8fc9f8635e0",
+      "audit_log": "lean/logs/PhysicalReactionLimit-root-audit.log",
+      "audit_log_sha256": "2be801553725d4eb3d643106be63b2cd78e3624afaf82435beacff039e33487f",
+      "source": "lean/PhysicalReactionLimit.lean",
+      "reviews": [
+        "reviews/physical_reaction_limit.md"
+      ],
+      "source_lf_sha256": "d3409df6f763d47101df003da423fdc30d22021c618d3ef5dc6a419d6139ea6a"
+    },
+    {
+      "module": "ScalarGreenRadialBound",
+      "reports": 2,
+      "source_sha256": "17f995741e4e3099a3856a37ccefd8c2263d76be9b498d1f0dc2243bfd63da1d",
+      "audit_log": "lean/logs/ScalarGreenRadialBound-root-audit.log",
+      "audit_log_sha256": "976dc0344ac449305fc4c2f78f284787abb35cf18472f082fc99ca5f251bf490",
+      "source": "lean/ScalarGreenRadialBound.lean",
+      "reviews": [
+        "reviews/scalar_green_radial_bound.md"
+      ],
+      "source_lf_sha256": "cb1782e5b2f7a11662c333b7a12bea4c023570194e7811c8a398dbee63692b69"
+    },
+    {
+      "module": "ScalarGreenAngularBound",
+      "reports": 5,
+      "source_sha256": "bbe0deb99f5a0140def1cac2979dcac90abad10d64001bc9f21fb4f9ca69ba53",
+      "audit_log": "lean/logs/ScalarGreenAngularBound-root-audit.log",
+      "audit_log_sha256": "df61158d666c8b0f99b90b08797654e9047b768f39050b2d07ad6cd53ea90d6f",
+      "source": "lean/ScalarGreenAngularBound.lean",
+      "reviews": [
+        "reviews/scalar_green_angular_bound.md"
+      ],
+      "source_lf_sha256": "fd8cdf043aa9ed9169aaf992ba333fdbba9f896cd57e9ef856422f13706892f0"
+    },
+    {
+      "module": "FiniteSphereActualSources",
+      "reports": 4,
+      "source_sha256": "423253aa5ec67104d3bfbbd7ede6f5611093aa39fa5d84252b53d58d2fb2a821",
+      "audit_log": "lean/logs/FiniteSphereActualSources-root-audit.log",
+      "audit_log_sha256": "e6ec1f41c57fd70e837216bcde8b9a505248e1cbced9d514e18d56b1d2d08cbf",
+      "source": "lean/FiniteSphereActualSources.lean",
+      "reviews": [
+        "reviews/finite_sphere_actual_sources.md"
+      ],
+      "source_lf_sha256": "423253aa5ec67104d3bfbbd7ede6f5611093aa39fa5d84252b53d58d2fb2a821"
+    },
+    {
+      "module": "MaterialStrongLimit",
+      "reports": 3,
+      "source_sha256": "85d10fabf5a68bb1bd3e8b8dac48b189fb0379aecf9df04e6b59052bb5e0f8f7",
+      "audit_log": "lean/logs/MaterialStrongLimit-root-audit.log",
+      "audit_log_sha256": "b053ac5dbe9b4e25ea212653b46a939338f079a0d34dbc5011ad58d177b5d855",
+      "source": "lean/MaterialStrongLimit.lean",
+      "reviews": [
+        "reviews/material_strong_limit.md"
+      ],
+      "source_lf_sha256": "992daf395481334eb99f2873e1e9ec38c4d6686dd0d5aa9429ab240bf803770c"
+    },
+    {
+      "module": "L2PeakPreservation",
+      "reports": 3,
+      "source_sha256": "3e5fb555e70a5a193aa992b867ed20da19f0da01e7b9d10e5e72325c8d8348e7",
+      "audit_log": "lean/logs/L2PeakPreservation-root-audit.log",
+      "audit_log_sha256": "a06e8adb070c0675dc06cfee7398e02b79821e605c4e4141f9f4cd74c99ea757",
+      "source": "lean/L2PeakPreservation.lean",
+      "reviews": [
+        "reviews/l2_peak_preservation.md"
+      ],
+      "source_lf_sha256": "2b294a505dc11015a40bb90104df4d411037a0463fdadcbe8ba9945c6377e7fd"
+    },
+    {
+      "module": "MaterialVolumeLimit",
+      "reports": 8,
+      "source_sha256": "d3d0e02d30fbd251c236f24ba17d0d601a25cae8f15e43b0691d28ec4dfe4d3c",
+      "audit_log": "lean/logs/MaterialVolumeLimit-root-audit.log",
+      "audit_log_sha256": "6647fab4a91ead86ceb31c78440e863145bec0491f983ad3a6cb1cb6b3f8e960",
+      "source": "lean/MaterialVolumeLimit.lean",
+      "reviews": [
+        "reviews/material_volume_limit.md"
+      ],
+      "source_lf_sha256": "aee65068d327c182aceb2d65c57b43e86e73594c66b11ffe191662c475861121"
+    },
+    {
+      "module": "ScalarGreenPointwise",
+      "reports": 9,
+      "source_sha256": "79f8f24d7604ecc4c5e37a36917f78a1e78f7085ed0743a9af6ce1c4b58a58e1",
+      "audit_log": "lean/logs/ScalarGreenPointwise-root-audit.log",
+      "audit_log_sha256": "56d93cd691edcd673adb08d0a3726b773f8879b2893d0bc3c9be1c0f1a02e621",
+      "source": "lean/ScalarGreenPointwise.lean",
+      "reviews": [
+        "reviews/scalar_green_pointwise.md"
+      ],
+      "source_lf_sha256": "3da9af16190888d6900a026dea6d42e117d0f7d6bec7a6aaa7e0e7cfef02608c"
+    },
+    {
+      "module": "ParityCompleteLimit",
+      "reports": 1,
+      "source_sha256": "54a790b2a688a3440d5d5e5eec0fc0e28d059b54916200e9a10b65b8070b1749",
+      "audit_log": "lean/logs/ParityCompleteLimit-root-audit.log",
+      "audit_log_sha256": "271f0ee49062fd1b7f6932b40eeb0a4ab84dd3065475696e58c408cad242b9ab",
+      "source": "lean/ParityCompleteLimit.lean",
+      "reviews": [
+        "reviews/parity_complete_limit.md"
+      ],
+      "source_lf_sha256": "54a790b2a688a3440d5d5e5eec0fc0e28d059b54916200e9a10b65b8070b1749"
+    },
+    {
+      "module": "FiniteSpherePlaneLimit",
+      "reports": 1,
+      "source_sha256": "cd456c08cc335ca2373c4d2f2fee34c18f10efe6afa399e504ef5d9c6d61c738",
+      "audit_log": "lean/logs/FiniteSpherePlaneLimit-root-audit.log",
+      "audit_log_sha256": "d4003fedee2033224b102437c567c97512dfba5f6083f47c353ef3b8ad407a49",
+      "source": "lean/FiniteSpherePlaneLimit.lean",
+      "reviews": [
+        "reviews/finite_sphere_plane_limit.md"
+      ],
+      "source_lf_sha256": "cd456c08cc335ca2373c4d2f2fee34c18f10efe6afa399e504ef5d9c6d61c738"
+    },
+    {
+      "module": "ScalarGreenSpatial",
+      "reports": 3,
+      "source_sha256": "2aa8d3c9f591f4e47107ae7754295e6fa23acf2244658a97abcd37d0bcb18929",
+      "audit_log": "lean/logs/ScalarGreenSpatial-root-audit.log",
+      "audit_log_sha256": "3c8e9e09711332a9dc24ccf6105c4750dccd072cbd2973c658b506994e92887f",
+      "source": "lean/ScalarGreenSpatial.lean",
+      "reviews": [
+        "reviews/scalar_green_spatial.md"
+      ],
+      "source_lf_sha256": "a5663dc982ee60845bb49222f837f0357650537f3e18ae90c4d10c8c7d876060"
+    },
+    {
+      "module": "ConicalVolumePeaks",
+      "reports": 4,
+      "source_sha256": "b80545b2f247f72676b83bd532fa4bcc0682baa2725c1bca6ce98c1688243a11",
+      "audit_log": "lean/logs/ConicalVolumePeaks-root-audit.log",
+      "audit_log_sha256": "7cd3c4a55818d8a13c0d5d0cfd495a8c303fe62c5895a31970c6fc0f5e0eb417",
+      "source": "lean/ConicalVolumePeaks.lean",
+      "reviews": [
+        "reviews/conical_volume_peaks.md"
+      ],
+      "source_lf_sha256": "9048059a9c4c5f49a6eef545509c60d8b47e62cab6b38db2895bb708120d10d0"
+    },
+    {
+      "module": "SourceRadialSystem",
+      "reports": 14,
+      "source_sha256": "44858ab8ad71d17f3c45c6f728d1adb6fed52c6a0d050d9828d123726931aa46",
+      "audit_log": "lean/logs/SourceRadialSystem-independent-modal.log",
+      "audit_log_sha256": "44ec361b92901d7630d0ffe3188b13f28b638632999d9369d3035a4392f8f41e",
+      "independent_review": "reviews/source_radial_system_modal_audit.md",
+      "source": "lean/SourceRadialSystem.lean",
+      "reviews": [
+        "reviews/source_radial_system_modal_audit.md"
+      ],
+      "source_lf_sha256": "61524bd16bfa43c0ae2ef0cc335eb8a508244222bcb86b1e3c121d2832552bac"
+    },
+    {
+      "module": "SourceElectricProfiles",
+      "reports": 11,
+      "source_sha256": "ad4068ffc8419af40062170e862b67bb89caed8bc6982ed3e71db6a14cfebc3b",
+      "audit_log": "lean/logs/SourceElectricProfiles-independent-modal.log",
+      "audit_log_sha256": "f7c53c96adee2fc80b0402955ebddd84c359b51ef400c6ee4fb8f99d657d10d3",
+      "independent_review": "reviews/source_electric_profiles_modal_audit.md",
+      "source": "lean/SourceElectricProfiles.lean",
+      "reviews": [
+        "reviews/source_electric_profiles_modal_audit.md"
+      ],
+      "source_lf_sha256": "ad4068ffc8419af40062170e862b67bb89caed8bc6982ed3e71db6a14cfebc3b"
+    },
+    {
+      "module": "RadialToroidalCurl",
+      "reports": 1,
+      "source_sha256": "0fb14b0465f831b59ddd2fcd596dc87743dab7772113e7b656fb5cb0e7c6b35e",
+      "audit_log": "lean/logs/RadialToroidalCurl-independent-modal.log",
+      "audit_log_sha256": "b5c547923d8aaf1c9d99d4785f26ed1b384165e247897c26860e0e5be1814842",
+      "independent_review": "reviews/radial_toroidal_curl_modal_audit.md",
+      "source": "lean/RadialToroidalCurl.lean",
+      "reviews": [
+        "reviews/radial_toroidal_curl_modal_audit.md"
+      ],
+      "source_lf_sha256": "0fb14b0465f831b59ddd2fcd596dc87743dab7772113e7b656fb5cb0e7c6b35e"
+    },
+    {
+      "module": "SourceMagneticProfiles",
+      "reports": 8,
+      "source_sha256": "055344693cb8252666d5736bfa5d8b7afd054ec5562d159846b8f122cb2f6f62",
+      "audit_log": "lean/logs/SourceMagneticProfiles-independent-modal.log",
+      "audit_log_sha256": "7bd62f2cce883237ed2f74ee0274e58f21b0ee1dda734339c5dce3a9bd343ce1",
+      "independent_review": "reviews/source_magnetic_profiles_modal_audit.md",
+      "source": "lean/SourceMagneticProfiles.lean",
+      "reviews": [
+        "reviews/source_magnetic_profiles_modal_audit.md"
+      ],
+      "source_lf_sha256": "055344693cb8252666d5736bfa5d8b7afd054ec5562d159846b8f122cb2f6f62"
+    },
+    {
+      "module": "SourceUnclippedMaxwell",
+      "reports": 6,
+      "source_sha256": "963b4b14d190910ddc637f49826222c59822a9faf8122d9e8a4b35ad8d1f7c53",
+      "audit_log": "lean/logs/SourceUnclippedMaxwell-independent-modal.log",
+      "audit_log_sha256": "b93177193844aa10c073b7da2f913ddeb4242f48b1aa00e88fb5d8a0999f5d71",
+      "independent_review": "reviews/source_unclipped_maxwell_modal_audit.md",
+      "source": "lean/SourceUnclippedMaxwell.lean",
+      "reviews": [
+        "reviews/source_unclipped_maxwell_modal_audit.md"
+      ],
+      "source_lf_sha256": "963b4b14d190910ddc637f49826222c59822a9faf8122d9e8a4b35ad8d1f7c53"
+    },
+    {
+      "module": "SourceGeneralMaxwell",
+      "reports": 8,
+      "source_sha256": "f31a9aaa540b8ca7a0b8193386299700bbbb14841c498d4de74c83e9e3bd0766",
+      "audit_log": "lean/logs/SourceGeneralMaxwell-independent-modal.log",
+      "audit_log_sha256": "6543e423504b512eefd70003ff2f7a97fd97bba8e3fc619dfc0f8131d0e099cd",
+      "independent_review": "reviews/source_general_maxwell_modal_audit.md",
+      "source": "lean/SourceGeneralMaxwell.lean",
+      "reviews": [
+        "reviews/source_general_maxwell_modal_audit.md"
+      ],
+      "source_lf_sha256": "1180665ab0fd19a3a073f92b32d2036e6aea05faa932836b9b1de347f47217eb"
+    },
+    {
+      "module": "SourceDielectricMaxwell",
+      "reports": 4,
+      "source_sha256": "50745ff3c632505c075b4857bb9edd4739a3d19115dc7207ab8b28999ff962e4",
+      "audit_log": "lean/logs/SourceDielectricMaxwell-independent-modal.log",
+      "audit_log_sha256": "2298b5b7fdd6df9fb7dab12359b2deb16b1b578528e0f1b26eb22abb4fa314e9",
+      "independent_review": "reviews/source_dielectric_maxwell_modal_audit.md",
+      "source": "lean/SourceDielectricMaxwell.lean",
+      "reviews": [
+        "reviews/source_dielectric_maxwell_modal_audit.md"
+      ],
+      "source_lf_sha256": "50745ff3c632505c075b4857bb9edd4739a3d19115dc7207ab8b28999ff962e4"
+    },
+    {
+      "module": "PuncturedMaxwellScaling",
+      "reports": 5,
+      "source_sha256": "d19526d70048f3ed3dc7dca5b96f2bed52d9084a80a6c1ecdee4273f03467a37",
+      "audit_log": "lean/logs/PuncturedMaxwellScaling-independent-modal.log",
+      "audit_log_sha256": "79d623ec7a07d3d90c190ef3d166f77e54693f7eec0bb15ac11e563529f4a780",
+      "independent_review": "reviews/punctured_maxwell_scaling_modal_audit.md",
+      "source": "lean/PuncturedMaxwellScaling.lean",
+      "reviews": [
+        "reviews/punctured_maxwell_scaling_modal_audit.md"
+      ],
+      "source_lf_sha256": "d19526d70048f3ed3dc7dca5b96f2bed52d9084a80a6c1ecdee4273f03467a37"
+    },
+    {
+      "module": "ConicalTipRounding",
+      "reports": 14,
+      "source_sha256": "e88f1d6114928deba49d2d10e5e49e78f872742c467199692afb18613da43010",
+      "audit_log": "lean/logs/ConicalTipRounding-root-audit.log",
+      "audit_log_sha256": "194661e2864adec8812bd64eb83af12207eb3cd851dd17bf13e04e42ab56fcfa",
+      "source": "lean/ConicalTipRounding.lean",
+      "reviews": [
+        "reviews/conical_tip_rounding.md"
+      ],
+      "source_lf_sha256": "e88f1d6114928deba49d2d10e5e49e78f872742c467199692afb18613da43010"
+    },
+    {
+      "module": "ConicalRoundedPeaks",
+      "reports": 8,
+      "source_sha256": "7636c913a874750d29b8685559bf1637810ca00c1402446e2b377cfd9e2c266e",
+      "audit_log": "lean/logs/ConicalRoundedPeaks-root-audit.log",
+      "audit_log_sha256": "95be815a6cf2eb14e1dc5655bba4d7af8621515e1e08a05d06bf1f7829f28f1a",
+      "source": "lean/ConicalRoundedPeaks.lean",
+      "reviews": [
+        "reviews/conical_rounded_peaks.md"
+      ],
+      "source_lf_sha256": "d9fb8e6d2c446240de1f0e15a1d11fd0ea983a3de1dcc34a71b2c28b566b92c4"
+    },
+    {
+      "module": "HarmonicRadiationGeometry",
+      "reports": 4,
+      "source_sha256": "0eeee5d5bb466070b32cfec98792cc5c255554f6e109f87424ebf4e4ed5457a9",
+      "audit_log": "lean/logs/HarmonicRadiationGeometry-modal-audit.log",
+      "audit_log_sha256": "c6623763cc108331fe6b6ba374ce347ecd0e7ed550f7bc99abb8bc3fa0a5e33d",
+      "independent_review": "reviews/harmonic_radiation_geometry_modal_audit.md",
+      "source": "lean/HarmonicRadiationGeometry.lean",
+      "reviews": [
+        "reviews/harmonic_radiation_geometry_modal_audit.md"
+      ],
+      "source_lf_sha256": "0eeee5d5bb466070b32cfec98792cc5c255554f6e109f87424ebf4e4ed5457a9"
+    },
+    {
+      "module": "SourceRadiation",
+      "reports": 4,
+      "source_sha256": "693bc8cbfbe2b2ed2383745f07c01be0b638f43bdf96e1bb77eca04434ff6369",
+      "audit_log": "lean/logs/SourceRadiation-modal-audit.log",
+      "audit_log_sha256": "09ab53f7bf429d4042b0ec1be44c118375f830e39450da52f253a225035ded6a",
+      "independent_review": "reviews/source_radiation_modal_audit.md",
+      "source": "lean/SourceRadiation.lean",
+      "reviews": [
+        "reviews/source_radiation_modal_audit.md"
+      ],
+      "source_lf_sha256": "693bc8cbfbe2b2ed2383745f07c01be0b638f43bdf96e1bb77eca04434ff6369"
+    },
+    {
+      "module": "ConicalRoundedMaxwell",
+      "reports": 14,
+      "source_sha256": "58f6f0f0f704416cd7d30d742c8ffd42bee0f193627c706ff9afc6423d1325f0",
+      "audit_log": "lean/logs/ConicalRoundedMaxwell-root-audit.log",
+      "audit_log_sha256": "0b8034bac1ad1915bddda366c7e3e59339ea24d47f998a273f00495efe1bab5e",
+      "source": "lean/ConicalRoundedMaxwell.lean",
+      "reviews": [
+        "reviews/conical_rounded_maxwell.md"
+      ],
+      "source_lf_sha256": "58f6f0f0f704416cd7d30d742c8ffd42bee0f193627c706ff9afc6423d1325f0"
+    },
+    {
+      "module": "PolynomialVectorCalculus",
+      "reports": 12,
+      "source_sha256": "4404af9542b1ef6d9141c3e0005e106ad25ce0276dfe7c771186d84296d0484c",
+      "audit_log": "lean/logs/PolynomialVectorCalculus-root-audit.log",
+      "audit_log_sha256": "5eb50d68bae3e536a9c295bfbf7311db4703195b8310834eafca7156f19128c4",
+      "source": "lean/PolynomialVectorCalculus.lean",
+      "reviews": [
+        "reviews/polynomial_vector_calculus.md"
+      ],
+      "source_lf_sha256": "9c252293d561f69120ef76979f6c69f84843d29ed723db8197c2e48cf03a7c15"
+    },
+    {
+      "module": "HarmonicVectorDecomposition",
+      "reports": 9,
+      "source_sha256": "9d76dbc326e0f96c1f410c81af2949adf8a1bd83a529957c10e20c0bc21297c8",
+      "audit_log": "lean/logs/HarmonicVectorDecomposition-root-audit.log",
+      "audit_log_sha256": "53c8fb607f54dd5cb791a637c919b2d9997acb8377ae858398f6d167001bc666",
+      "source": "lean/HarmonicVectorDecomposition.lean",
+      "reviews": [
+        "reviews/harmonic_vector_decomposition.md"
+      ],
+      "source_lf_sha256": "9d76dbc326e0f96c1f410c81af2949adf8a1bd83a529957c10e20c0bc21297c8"
+    },
+    {
+      "module": "SphereParityDifferential",
+      "reports": 10,
+      "source_sha256": "b59f47a122dc8918ff6862693c6f1dba5456e5688e06f1b2ba59fb13aaebc694",
+      "audit_log": "lean/logs/SphereParityDifferential-root-audit.log",
+      "audit_log_sha256": "a922a0148c92a8219ebccc4de9fe7169f89c20982812b9c41b427a9d3c2341b0",
+      "source": "lean/SphereParityDifferential.lean",
+      "reviews": [
+        "reviews/sphere_parity_differential.md"
+      ],
+      "source_lf_sha256": "b59f47a122dc8918ff6862693c6f1dba5456e5688e06f1b2ba59fb13aaebc694"
+    },
+    {
+      "module": "DensityDerivatives",
+      "reports": 4,
+      "source_sha256": "6adb054725316f4817e5f3dcd034413c766e3514b19f75af2d5c9b9a501772c7",
+      "audit_log": "lean/logs/DensityDerivatives-root-audit.log",
+      "audit_log_sha256": "fa0aa5d6e2601846df0f2b43201bed792e81f30779f8213efb6e2c574ccb6028",
+      "source": "lean/DensityDerivatives.lean",
+      "reviews": [
+        "reviews/density_derivatives.md"
+      ],
+      "source_lf_sha256": "6adb054725316f4817e5f3dcd034413c766e3514b19f75af2d5c9b9a501772c7"
+    },
+    {
+      "module": "DensityCurl",
+      "reports": 3,
+      "source_sha256": "c7baed2b95113b5cda24b75937e4134e2be14a4753b9c2ffd07b44e4bcc07465",
+      "audit_log": "lean/logs/DensityCurl-root-audit.log",
+      "audit_log_sha256": "7867a95302b55f3970bc35e85cc83cea474166e251c0009f6add10eadcea968e",
+      "source": "lean/DensityCurl.lean",
+      "reviews": [
+        "reviews/density_curl.md"
+      ],
+      "source_lf_sha256": "c7baed2b95113b5cda24b75937e4134e2be14a4753b9c2ffd07b44e4bcc07465"
+    },
+    {
+      "module": "ParityDensityMaxwell",
+      "reports": 7,
+      "source_sha256": "d1dfd6cdde6e97a61104bbc69a84e3e0226f67d8785577ecb61a503901ca0597",
+      "audit_log": "lean/logs/ParityDensityMaxwell-root-audit.log",
+      "audit_log_sha256": "8a06899c86b65adfab5a262196f522a72ffc1a4b4f8702feadc7db381aa85daa",
+      "source": "lean/ParityDensityMaxwell.lean",
+      "reviews": [
+        "reviews/parity_density_maxwell.md"
+      ],
+      "source_lf_sha256": "d1dfd6cdde6e97a61104bbc69a84e3e0226f67d8785577ecb61a503901ca0597"
+    },
+    {
+      "module": "DensityWeak",
+      "reports": 3,
+      "source_sha256": "7490773f178b17988b72f9e52acfc9769e08723ddbf74d7d0a2750c871b51e1b",
+      "audit_log": "lean/logs/DensityWeak-root-audit.log",
+      "audit_log_sha256": "4ba82ab34ab47f7c4086bec30cfdea885c53d45003907b54edb7f6ec99705047",
+      "source": "lean/DensityWeak.lean",
+      "reviews": [
+        "reviews/density_weak.md"
+      ],
+      "source_lf_sha256": "7490773f178b17988b72f9e52acfc9769e08723ddbf74d7d0a2750c871b51e1b"
+    },
+    {
+      "module": "HarmonicRadiationFactors",
+      "reports": 8,
+      "source_sha256": "12b1a0c3fa1d80e5486e35bef55d96f7becbae6b7325fd53c2eec5b991ec7e4b",
+      "audit_log": "lean/logs/HarmonicRadiationFactors-modal-audit.log",
+      "audit_log_sha256": "52352009d4c3a908b614e0290e2c625a12cec8d28fa5c0b2e10607ca78be308e",
+      "independent_review": "reviews/harmonic_radiation_factors_modal_audit.md",
+      "source": "lean/HarmonicRadiationFactors.lean",
+      "reviews": [
+        "reviews/harmonic_radiation_factors.md",
+        "reviews/harmonic_radiation_factors_modal_audit.md"
+      ],
+      "source_lf_sha256": "12b1a0c3fa1d80e5486e35bef55d96f7becbae6b7325fd53c2eec5b991ec7e4b"
+    },
+    {
+      "module": "SourceTERadiation",
+      "reports": 4,
+      "source_sha256": "5332dc117cf0716041ba8f0042a713861db05e7ff29a1d468fac41a1e33a67eb",
+      "audit_log": "lean/logs/SourceTERadiation-modal-audit.log",
+      "audit_log_sha256": "bfe9c239674765b847c6925a228f4963e45768af4043bb5f2c3b9c1294573e53",
+      "independent_review": "reviews/source_te_radiation_modal_audit.md",
+      "source": "lean/SourceTERadiation.lean",
+      "reviews": [
+        "reviews/source_te_radiation.md",
+        "reviews/source_te_radiation_modal_audit.md"
+      ],
+      "source_lf_sha256": "358f2a69bdfc7256edfc32b26af48a00a5d24c8758e7048ca6c798ac35581952"
+    },
+    {
+      "module": "ConicalRoundedHCurl",
+      "reports": 10,
+      "source_sha256": "cbbb0230a5e1e7ec784d62aa61cadb9b6b95b5091ca69df25e5f72d980e15174",
+      "audit_log": "lean/logs/ConicalRoundedHCurl-root-audit.log",
+      "audit_log_sha256": "f89af0b7d992633530a67391ceba13aed944c4f059366d3ffa4fe5d35d8d94b3",
+      "source": "lean/ConicalRoundedHCurl.lean",
+      "reviews": [
+        "reviews/conical_rounded_hcurl.md"
+      ],
+      "source_lf_sha256": "cbbb0230a5e1e7ec784d62aa61cadb9b6b95b5091ca69df25e5f72d980e15174"
+    },
+    {
+      "module": "HarmonicVectorConstants",
+      "reports": 5,
+      "source_sha256": "8cc2e32cbf56d4aaf054770d985b97457337b5c8a45920db1b63f5c600ea7962",
+      "audit_log": "lean/logs/HarmonicVectorConstants-root-audit.log",
+      "audit_log_sha256": "b21a89e8b1f17c5e9d97703dd64bec2db87633365f75dcd2e9f226b43cb2e691",
+      "source": "lean/HarmonicVectorConstants.lean",
+      "reviews": [
+        "reviews/harmonic_vector_constants.md"
+      ],
+      "source_lf_sha256": "8cc2e32cbf56d4aaf054770d985b97457337b5c8a45920db1b63f5c600ea7962"
+    },
+    {
+      "module": "HarmonicPolynomialRestriction",
+      "reports": 3,
+      "source_sha256": "4858461d96ea450db0d1f3a7b5b31eb781ba853a9ac99963e7d59cb2a506a2e2",
+      "audit_log": "lean/logs/HarmonicPolynomialRestriction-root-audit.log",
+      "audit_log_sha256": "98bf190b5c6d28a774fcda0980bda427ccda8cfd05ac3db1404e2c7699355fa8",
+      "source": "lean/HarmonicPolynomialRestriction.lean",
+      "reviews": [
+        "reviews/harmonic_polynomial_restriction.md"
+      ],
+      "source_lf_sha256": "4858461d96ea450db0d1f3a7b5b31eb781ba853a9ac99963e7d59cb2a506a2e2"
+    },
+    {
+      "module": "ParityDensityWeak",
+      "reports": 1,
+      "source_sha256": "cb79e44619ea72ddb33349f49ba08fcf3c2b6d240da31f46d43fe72065c753fa",
+      "audit_log": "lean/logs/ParityDensityWeak-root-audit.log",
+      "audit_log_sha256": "0d858c688ac06bcac5d6ff808f47fac99c1ab981d59f74af80aeffb1c5881625",
+      "source": "lean/ParityDensityWeak.lean",
+      "reviews": [
+        "reviews/parity_density_weak.md"
+      ],
+      "source_lf_sha256": "cb79e44619ea72ddb33349f49ba08fcf3c2b6d240da31f46d43fe72065c753fa"
+    },
+    {
+      "module": "SourceRadiationFrequency",
+      "reports": 6,
+      "source_sha256": "4c458c2eab89799841a16db7cfc0df9b5c5115491c6e2a34b9a899afa6364eb3",
+      "audit_log": "lean/logs/SourceRadiationFrequency-modal-audit.log",
+      "audit_log_sha256": "f06bd64a5524761018d21ab1b1b48c5113d08ae2cd0e09bc5c357b9dd42303c8",
+      "independent_review": "reviews/source_radiation_frequency_modal_audit.md",
+      "source": "lean/SourceRadiationFrequency.lean",
+      "reviews": [
+        "reviews/source_radiation_frequency.md",
+        "reviews/source_radiation_frequency_modal_audit.md"
+      ],
+      "source_lf_sha256": "4c458c2eab89799841a16db7cfc0df9b5c5115491c6e2a34b9a899afa6364eb3"
+    },
+    {
+      "module": "ConicalRoundedHotspot",
+      "reports": 3,
+      "source_sha256": "22903a3820626dac4a1f727d5f1b3dc1d12db746e3e57e06dcba557af0f8f98d",
+      "audit_log": "lean/logs/ConicalRoundedHotspot-root-audit.log",
+      "audit_log_sha256": "1b99001018790031b5283a496c7f47cd63317bd9a53af9c2810debb54e735293",
+      "source": "lean/ConicalRoundedHotspot.lean",
+      "reviews": [
+        "reviews/conical_rounded_hotspot.md"
+      ],
+      "source_lf_sha256": "22903a3820626dac4a1f727d5f1b3dc1d12db746e3e57e06dcba557af0f8f98d"
+    },
+    {
+      "module": "WeakMaxwellLinear",
+      "reports": 2,
+      "source_sha256": "177bef2c72f4a8b3eb2685f0e29d62ac8f0dbfb19ae790f018e114cd016539cb",
+      "audit_log": "lean/logs/WeakMaxwellLinear-root-audit.log",
+      "audit_log_sha256": "5563749afac8c66a7f0c19482b5a04781f1d7af62a83acf527e4b74852503b48",
+      "source": "lean/WeakMaxwellLinear.lean",
+      "reviews": [
+        "reviews/weak_maxwell_linear.md"
+      ],
+      "source_lf_sha256": "177bef2c72f4a8b3eb2685f0e29d62ac8f0dbfb19ae790f018e114cd016539cb"
+    },
+    {
+      "module": "ParityModifiedIncident",
+      "reports": 3,
+      "source_sha256": "db9b11a308acc6e2ca734a76b7d612564033baabb20c8d9b485bf2739c89833e",
+      "audit_log": "lean/logs/ParityModifiedIncident-root-audit.log",
+      "audit_log_sha256": "9200c138a16ad84d6286ca8641245dcc3114b11eb3ee1d9b28115daad09accad",
+      "source": "lean/ParityModifiedIncident.lean",
+      "reviews": [
+        "reviews/parity_modified_incident.md"
+      ],
+      "source_lf_sha256": "db9b11a308acc6e2ca734a76b7d612564033baabb20c8d9b485bf2739c89833e"
+    },
+    {
+      "module": "ParityMaterialMaxwell",
+      "reports": 4,
+      "source_sha256": "b54c13cffd7fc204f3743d432b747f6c301b799c636498d592b7893725cd4fdf",
+      "audit_log": "lean/logs/ParityMaterialMaxwell-root-audit.log",
+      "audit_log_sha256": "931edaabd698d590abd5df0223a89fb3900ec3c1be190a32a00355703c5e6e6d",
+      "source": "lean/ParityMaterialMaxwell.lean",
+      "reviews": [
+        "reviews/parity_material_maxwell.md"
+      ],
+      "source_lf_sha256": "b54c13cffd7fc204f3743d432b747f6c301b799c636498d592b7893725cd4fdf"
+    },
+    {
+      "module": "ConicalSeparatedSource",
+      "reports": 12,
+      "source_sha256": "1b0de4e950dc379d4dbec30e65045d9d76e9dae131f9fc597b97a0acfc0c945d",
+      "audit_log": "lean/logs/ConicalSeparatedSource-root-audit.log",
+      "audit_log_sha256": "1f313e83b7ccb4e0e8daf302eccb723214bf696586e3adf57d1c2b98c5e97103",
+      "source": "lean/ConicalSeparatedSource.lean",
+      "reviews": [
+        "reviews/conical_separated_source.md"
+      ],
+      "source_lf_sha256": "abb6dbe86e12be3b92d99060a707a3e3ee526e0ee98ee836a6cb1c993c8761f2"
+    },
+    {
+      "module": "VectorHarmonicSpan",
+      "reports": 7,
+      "source_sha256": "99c4f07708c5f42c42e03a59497bcaf05176076a014fbdb514f8a0f56efbf872",
+      "audit_log": "lean/logs/VectorHarmonicSpan-root-audit.log",
+      "audit_log_sha256": "446ce7215c7c64ccf1a0ec208ac1ad0244d2893003d1ba2c603f0cafbe7b0e70",
+      "source": "lean/VectorHarmonicSpan.lean",
+      "reviews": [
+        "reviews/vector_harmonic_span.md"
+      ],
+      "source_lf_sha256": "99c4f07708c5f42c42e03a59497bcaf05176076a014fbdb514f8a0f56efbf872"
+    },
+    {
+      "module": "VectorHarmonicDensity",
+      "reports": 6,
+      "source_sha256": "b96f02f706dd46285899371c2711f4a3b2d9e35681612bb8619041fbfc8b3f37",
+      "audit_log": "lean/logs/VectorHarmonicDensity-root-audit.log",
+      "audit_log_sha256": "8b4f767c4c63e625c1bdfae7fda74a2ece54934c1a715bf59929fcb89de8fb64",
+      "source": "lean/VectorHarmonicDensity.lean",
+      "reviews": [
+        "reviews/vector_harmonic_density.md"
+      ],
+      "source_lf_sha256": "b96f02f706dd46285899371c2711f4a3b2d9e35681612bb8619041fbfc8b3f37"
+    },
+    {
+      "module": "SolidMaxwellProfiles",
+      "reports": 8,
+      "source_sha256": "3b1c87d8eefcbee19b9500ab6c2cbe89311e9511355b77426cb56c5d1a7447a9",
+      "audit_log": "lean/logs/SolidMaxwellProfiles-modal-audit.log",
+      "audit_log_sha256": "94a65d9ad5cb9d623dc0a808bbf29a31c051eb27958f9ca380d016e0626f45ab",
+      "independent_review": "reviews/solid_maxwell_profiles_modal_audit.md",
+      "source": "lean/SolidMaxwellProfiles.lean",
+      "reviews": [
+        "reviews/solid_maxwell_profiles.md",
+        "reviews/solid_maxwell_profiles_modal_audit.md"
+      ],
+      "source_lf_sha256": "3b1c87d8eefcbee19b9500ab6c2cbe89311e9511355b77426cb56c5d1a7447a9"
+    },
+    {
+      "module": "SourceCoreReaction",
+      "reports": 7,
+      "source_sha256": "1369ab1434fe3ca274557e371ae105879c0a5fc31dd05e0308c3ffa96571ef0b",
+      "audit_log": "lean/logs/SourceCoreReaction-modal-audit.log",
+      "audit_log_sha256": "c37500a7c9c81ac7a51b80ecc4c53bf22723a67f739d16724ba72a767008c3e0",
+      "independent_review": "reviews/source_core_reaction_modal_audit.md",
+      "source": "lean/SourceCoreReaction.lean",
+      "reviews": [
+        "reviews/source_core_reaction.md",
+        "reviews/source_core_reaction_modal_audit.md"
+      ],
+      "source_lf_sha256": "1369ab1434fe3ca274557e371ae105879c0a5fc31dd05e0308c3ffa96571ef0b"
+    },
+    {
+      "module": "VectorHarmonicBasisSpan",
+      "reports": 8,
+      "source_sha256": "304aa238d484a9a3d2115b7d2f3181d8a4b90d1cdd259dffab5fbd2905f7b4b5",
+      "audit_log": "lean/logs/VectorHarmonicBasisSpan-root-audit.log",
+      "audit_log_sha256": "182b7e443de4531c9a05ad97f97fc0f379be495735d2fe9b0475754cb159eae8",
+      "source": "lean/VectorHarmonicBasisSpan.lean",
+      "reviews": [
+        "reviews/vector_harmonic_basis_span.md"
+      ],
+      "source_lf_sha256": "304aa238d484a9a3d2115b7d2f3181d8a4b90d1cdd259dffab5fbd2905f7b4b5"
+    },
+    {
+      "module": "ConicalRungeAnnihilator",
+      "reports": 7,
+      "source_sha256": "e3daa206e5bc30e2027c3f4c82156cf3264d408bff2c365879b53dad5634c6ca",
+      "audit_log": "lean/logs/ConicalRungeAnnihilator-root-audit.log",
+      "audit_log_sha256": "da6937e7e06ff5644957628bc2a13da032edb15d697d7c08eaeba6ab2ccc72e6",
+      "source": "lean/ConicalRungeAnnihilator.lean",
+      "reviews": [
+        "reviews/conical_runge_annihilator.md"
+      ],
+      "source_lf_sha256": "e3daa206e5bc30e2027c3f4c82156cf3264d408bff2c365879b53dad5634c6ca"
+    },
+    {
+      "module": "BoundedMaxwellWeak",
+      "reports": 1,
+      "source_sha256": "5eec677d54ab09f9bb66887d8cf97a8cd02372cd5ff94e43929501675226d0bc",
+      "audit_log": "lean/logs/BoundedMaxwellWeak-root-audit.log",
+      "audit_log_sha256": "40bad3eb7c31832a466bf2bbc784bd9f41534807b1cfa045ec4e703d559c2e49",
+      "source": "lean/BoundedMaxwellWeak.lean",
+      "reviews": [
+        "reviews/bounded_maxwell_weak.md"
+      ],
+      "source_lf_sha256": "5eec677d54ab09f9bb66887d8cf97a8cd02372cd5ff94e43929501675226d0bc"
+    },
+    {
+      "module": "FiniteParityWeak",
+      "reports": 3,
+      "source_sha256": "64d2188c4a06c270f1146ed1210bfdf613baf8903e904b479d758e03ef557e73",
+      "audit_log": "lean/logs/FiniteParityWeak-root-audit.log",
+      "audit_log_sha256": "7aa718e7f256ec4beb773997ce21b37ec6a80c5c9ccbc92d988eee116f430ea0",
+      "source": "lean/FiniteParityWeak.lean",
+      "reviews": [
+        "reviews/finite_parity_weak.md"
+      ],
+      "source_lf_sha256": "64d2188c4a06c270f1146ed1210bfdf613baf8903e904b479d758e03ef557e73"
+    },
+    {
+      "module": "VectorHarmonicSeparation",
+      "reports": 7,
+      "source_sha256": "25485987dd33b60d056dfe2b80b41ae69cbb0041511ab87c451a3487f6af755f",
+      "audit_log": "lean/logs/VectorHarmonicSeparation-root-audit.log",
+      "audit_log_sha256": "14a234d86c802156a73d9b54ee91fb25d58489bc7ed45063769dec3e0bbd28a7",
+      "source": "lean/VectorHarmonicSeparation.lean",
+      "reviews": [
+        "reviews/vector_harmonic_separation.md"
+      ],
+      "source_lf_sha256": "25485987dd33b60d056dfe2b80b41ae69cbb0041511ab87c451a3487f6af755f"
+    },
+    {
+      "module": "ScalarPlaneWaveMoment",
+      "reports": 7,
+      "source_sha256": "5710f9bfd5e569a4e1e831a54cdf5ec26a17f932ce3ec611b340bcb90fabc372",
+      "audit_log": "lean/logs/ScalarPlaneWaveMoment-modal-audit.log",
+      "audit_log_sha256": "65efa3af1df44dc96780f324e1e1a8b8758336d7b37ca40abacaff2aae2fd3a5",
+      "independent_review": "reviews/scalar_plane_wave_moment_modal_audit.md",
+      "source": "lean/ScalarPlaneWaveMoment.lean",
+      "reviews": [
+        "reviews/scalar_plane_wave_moment.md",
+        "reviews/scalar_plane_wave_moment_modal_audit.md"
+      ],
+      "source_lf_sha256": "5710f9bfd5e569a4e1e831a54cdf5ec26a17f932ce3ec611b340bcb90fabc372"
+    },
+    {
+      "module": "FiniteBallWeak",
+      "reports": 2,
+      "source_sha256": "1f76b1b7fe6da824705a95a9c3dc2744901be896f467814c4410042a37ec8da4",
+      "audit_log": "lean/logs/FiniteBallWeak-root-audit.log",
+      "audit_log_sha256": "5f621c3333c35688fcad8b4dd1984c6645aabb4aef02cb41c70bea7dcf00f78b",
+      "source": "lean/FiniteBallWeak.lean",
+      "reviews": [
+        "reviews/finite_ball_weak.md"
+      ],
+      "source_lf_sha256": "1f76b1b7fe6da824705a95a9c3dc2744901be896f467814c4410042a37ec8da4"
+    },
+    {
+      "module": "TransverseHarmonicBasis",
+      "reports": 10,
+      "source_sha256": "b845074e7ef34280263833def30f99945b38cb788afc4dc7aa60515f78290b7a",
+      "audit_log": "lean/logs/TransverseHarmonicBasis-root-audit.log",
+      "audit_log_sha256": "b1373c7dffbaf110c5be51e2108456a23ae5c5df192880645b26e27cc1a2d59d",
+      "source": "lean/TransverseHarmonicBasis.lean",
+      "reviews": [
+        "reviews/transverse_harmonic_basis.md"
+      ],
+      "source_lf_sha256": "b845074e7ef34280263833def30f99945b38cb788afc4dc7aa60515f78290b7a"
+    },
+    {
+      "module": "ConicalRungeBall",
+      "reports": 8,
+      "source_sha256": "6dacbf860e1010b83b5260bf81caa1314615bf4a726fa8c4e7888265298bbd74",
+      "audit_log": "lean/logs/ConicalRungeBall-root-audit.log",
+      "audit_log_sha256": "0d046e6f5ec024c67f4404aeb8a25d1dc72b6d6a15601b1b7294069e68f91dca",
+      "source": "lean/ConicalRungeBall.lean",
+      "reviews": [
+        "reviews/conical_runge_ball.md"
+      ],
+      "source_lf_sha256": "6dacbf860e1010b83b5260bf81caa1314615bf4a726fa8c4e7888265298bbd74"
+    },
+    {
+      "module": "FiniteBallPlaneFields",
+      "reports": 2,
+      "source_sha256": "654060b7dd9b6a780ea4ae599bb0d910f4b33f48d4ff6ab42074aba114de7f70",
+      "audit_log": "lean/logs/FiniteBallPlaneFields-root-audit.log",
+      "audit_log_sha256": "060dfdf6ff0db163d15b9c3e5be53bb6736d0e83a853abfacf92ca6cb421f341",
+      "source": "lean/FiniteBallPlaneFields.lean",
+      "reviews": [
+        "reviews/finite_ball_plane_fields.md"
+      ],
+      "source_lf_sha256": "654060b7dd9b6a780ea4ae599bb0d910f4b33f48d4ff6ab42074aba114de7f70"
+    },
+    {
+      "module": "ConicalRungeClosure",
+      "reports": 5,
+      "source_sha256": "b9c5f84649bf1a559f9e32291826ebb7a4e30472171f80e96e45392f4000d26f",
+      "audit_log": "lean/logs/ConicalRungeClosure-root-audit.log",
+      "audit_log_sha256": "0241d2c4a3b580505488e5228c696ef7443e4db7eddeeba721a97063398dc216",
+      "source": "lean/ConicalRungeClosure.lean",
+      "reviews": [
+        "reviews/conical_runge_closure.md"
+      ],
+      "source_lf_sha256": "b9c5f84649bf1a559f9e32291826ebb7a4e30472171f80e96e45392f4000d26f"
+    },
+    {
+      "module": "ComplexVectorSphere",
+      "reports": 9,
+      "source_sha256": "a96b67a053d4780c232a94045e1474917d7e5af3983dd93f174cdd2aa19da6f4",
+      "audit_log": "lean/logs/ComplexVectorSphere-root-audit.log",
+      "audit_log_sha256": "33b7c85cf5d8833f17e906cebaaa047b118953b2d576f3ea2c24ce2af09d63f9",
+      "source": "lean/ComplexVectorSphere.lean",
+      "reviews": [
+        "reviews/complex_vector_sphere.md"
+      ],
+      "source_lf_sha256": "a96b67a053d4780c232a94045e1474917d7e5af3983dd93f174cdd2aa19da6f4"
+    },
+    {
+      "module": "ConicalPlaneWaves",
+      "reports": 9,
+      "source_sha256": "1b25e110baedbfe35c2944253622f94799f2b7de16ccfccae3e571f90cf54473",
+      "audit_log": "lean/logs/ConicalPlaneWaves-root-audit.log",
+      "audit_log_sha256": "f7b70709764c78d342b593b361a790b8bffd1184cfc776bf29b02f0891aeef55",
+      "source": "lean/ConicalPlaneWaves.lean",
+      "reviews": [
+        "reviews/conical_plane_waves.md"
+      ],
+      "source_lf_sha256": "1b25e110baedbfe35c2944253622f94799f2b7de16ccfccae3e571f90cf54473"
+    },
+    {
+      "module": "StaticSourceTail",
+      "reports": 2,
+      "source_sha256": "6333db1785c14840050276a8d98ee07f15629ddf072c0822df072e20efde7c22",
+      "audit_log": "lean/logs/StaticSourceTail-root-audit.log",
+      "audit_log_sha256": "93e7eff60b75057137d8e8381a21b060069dff039d636bc1b67882e56133af67",
+      "source": "lean/StaticSourceTail.lean",
+      "reviews": [
+        "reviews/static_source_tail.md"
+      ],
+      "source_lf_sha256": "6333db1785c14840050276a8d98ee07f15629ddf072c0822df072e20efde7c22"
+    },
+    {
+      "module": "StaticCoherentRemainder",
+      "reports": 6,
+      "source_sha256": "68572bf0ae652053362c75ada602fa21d79e623152ab1b83a645b88485823625",
+      "audit_log": "lean/logs/StaticCoherentRemainder-root-audit.log",
+      "audit_log_sha256": "d8e7aecd5ba6ccc08064003fcc37ceb5bd5571e8e10d284b2bff3f4df22682eb",
+      "source": "lean/StaticCoherentRemainder.lean",
+      "reviews": [
+        "reviews/static_coherent_remainder.md"
+      ],
+      "source_lf_sha256": "68572bf0ae652053362c75ada602fa21d79e623152ab1b83a645b88485823625"
+    },
+    {
+      "module": "FiniteStaticCoherent",
+      "reports": 3,
+      "source_sha256": "095e453dcb168de1995f4bcaf26249aadbb537da3747ec603c2521b38750a4a8",
+      "audit_log": "lean/logs/FiniteStaticCoherent-root-audit.log",
+      "audit_log_sha256": "5a7436d6bc033040fe1bf2249ad22e7e596dd091c14a6e05b4ef1dfa36f4b321",
+      "source": "lean/FiniteStaticCoherent.lean",
+      "reviews": [
+        "reviews/finite_static_coherent.md"
+      ],
+      "source_lf_sha256": "095e453dcb168de1995f4bcaf26249aadbb537da3747ec603c2521b38750a4a8"
+    },
+    {
+      "module": "ToroidalPlaneWaveMoment",
+      "reports": 6,
+      "source_sha256": "cc1ae926b442d1bbf54f92158c5485b204541118fdc968444a681eafdac78c1c",
+      "audit_log": "lean/logs/ToroidalPlaneWaveMoment-modal-audit.log",
+      "audit_log_sha256": "6df00abb8faea83a534cc7b7e73ee7b197007a44b2db7515d33175c09ccb7287",
+      "independent_review": "reviews/toroidal_plane_wave_moment_modal_audit.md",
+      "source": "lean/ToroidalPlaneWaveMoment.lean",
+      "reviews": [
+        "reviews/toroidal_plane_wave_moment.md",
+        "reviews/toroidal_plane_wave_moment_modal_audit.md"
+      ],
+      "source_lf_sha256": "cc1ae926b442d1bbf54f92158c5485b204541118fdc968444a681eafdac78c1c"
+    },
+    {
+      "module": "ComplexTransverseExpansion",
+      "reports": 4,
+      "source_sha256": "0d69a1c65209235bb8a1b0c6d7820233bd5b0f3985e0ac67fa19b97a623e6cd5",
+      "audit_log": "lean/logs/ComplexTransverseExpansion-root-audit.log",
+      "audit_log_sha256": "3649a8a2a8baf490ee03b104190cad4080ddf0dc8809f72a841e90c2b728f9ee",
+      "source": "lean/ComplexTransverseExpansion.lean",
+      "reviews": [
+        "reviews/complex_transverse_expansion.md"
+      ],
+      "source_lf_sha256": "0d69a1c65209235bb8a1b0c6d7820233bd5b0f3985e0ac67fa19b97a623e6cd5"
+    },
+    {
+      "module": "StaticTrialLimit",
+      "reports": 2,
+      "source_sha256": "e4c2e9b7b8f2ac54214affe1a87fc04846b226b1051ff8efbafee62af8ac9742",
+      "audit_log": "lean/logs/StaticTrialLimit-root-audit.log",
+      "audit_log_sha256": "883db415b5b1e2280944ce832e762107dc4a0864fad3a8294637b9afb4f048f7",
+      "source": "lean/StaticTrialLimit.lean",
+      "reviews": [
+        "reviews/static_trial_limit.md"
+      ],
+      "source_lf_sha256": "e4c2e9b7b8f2ac54214affe1a87fc04846b226b1051ff8efbafee62af8ac9742"
+    },
+    {
+      "module": "FiniteSphereDipoleFlux",
+      "reports": 2,
+      "source_sha256": "67fc438c3c395a2d24cc208bb5a3dd3d970faf52d30ab1f6839f25d087ebeed0",
+      "audit_log": "lean/logs/FiniteSphereDipoleFlux-root-audit.log",
+      "audit_log_sha256": "8b6b388b30d26ffae02ea32c012c8389c713dec662212d72a1c0e38b627249f5",
+      "source": "lean/FiniteSphereDipoleFlux.lean",
+      "reviews": [
+        "reviews/finite_sphere_dipole_flux.md"
+      ],
+      "source_lf_sha256": "67fc438c3c395a2d24cc208bb5a3dd3d970faf52d30ab1f6839f25d087ebeed0"
+    },
+    {
+      "module": "ConicalFinitePlanes",
+      "reports": 6,
+      "source_sha256": "11194aa23ab48a9cd6164593f2f7dc42da5583348602c6b3f73b71fa2883600d",
+      "audit_log": "lean/logs/ConicalFinitePlanes-root-audit.log",
+      "audit_log_sha256": "23738245e07effbd8bf9189086de9b5d21f644c3abcca7190eda860ad1d87d02",
+      "source": "lean/ConicalFinitePlanes.lean",
+      "reviews": [
+        "reviews/conical_finite_planes.md"
+      ],
+      "source_lf_sha256": "be3ac02253875c84bc56da7cacf7051fd203d0a2187b6b33d140812398e3f414"
+    },
+    {
+      "module": "PoloidalPlaneWaveMoment",
+      "reports": 9,
+      "source_sha256": "cbd2571039fd0bf5e3f67b3c0129486e111c5de9b31596cc13e74101a982c831",
+      "audit_log": "lean/logs/PoloidalPlaneWaveMoment-modal-audit.log",
+      "audit_log_sha256": "99c1a423cec46aa83c96ee5e21e593de3352fd01942dbc556903d41a6565609c",
+      "independent_review": "reviews/poloidal_plane_wave_moment_modal_audit.md",
+      "source": "lean/PoloidalPlaneWaveMoment.lean",
+      "reviews": [
+        "reviews/poloidal_plane_wave_moment.md",
+        "reviews/poloidal_plane_wave_moment_modal_audit.md"
+      ],
+      "source_lf_sha256": "cbd2571039fd0bf5e3f67b3c0129486e111c5de9b31596cc13e74101a982c831"
+    },
+    {
+      "module": "TransversePlaneFields",
+      "reports": 8,
+      "source_sha256": "10e05e2d653211b942ba9921deb81df546ad5451032fc17593acb159cd3f5f75",
+      "audit_log": "lean/logs/TransversePlaneFields-root-audit.log",
+      "audit_log_sha256": "fa4c71c575c2c995c5daf45b20cf0e9337f30d3783301ccc33d91da352190def",
+      "source": "lean/TransversePlaneFields.lean",
+      "reviews": [
+        "reviews/transverse_plane_fields.md"
+      ],
+      "source_lf_sha256": "10e05e2d653211b942ba9921deb81df546ad5451032fc17593acb159cd3f5f75"
+    },
+    {
+      "module": "FiniteSphereDipoleLimit",
+      "reports": 1,
+      "source_sha256": "7c13da17e06dd4a73bb7fb8e2990c818ea92b5b0e4b9d5ae2e10ccccf791845d",
+      "audit_log": "lean/logs/FiniteSphereDipoleLimit-root-audit.log",
+      "audit_log_sha256": "65cdffd3fe9ab2d7bcc2381164fddf0c380e741fa336357bf0e357e53006292c",
+      "source": "lean/FiniteSphereDipoleLimit.lean",
+      "reviews": [
+        "reviews/finite_sphere_dipole_limit.md"
+      ],
+      "source_lf_sha256": "7c13da17e06dd4a73bb7fb8e2990c818ea92b5b0e4b9d5ae2e10ccccf791845d"
+    },
+    {
+      "module": "ConicalBallExtension",
+      "reports": 8,
+      "source_sha256": "ff6f1b52f2fffde3ee0131cfece0e50ca78b88c00fc98cb11dc98980183a031e",
+      "audit_log": "lean/logs/ConicalBallExtension-root-audit.log",
+      "audit_log_sha256": "e911c80f978ad567f05d26e1dfe2c6491de432aea5ccafc5c772d419ccd63735",
+      "source": "lean/ConicalBallExtension.lean",
+      "reviews": [
+        "reviews/conical_ball_extension.md"
+      ],
+      "source_lf_sha256": "ff6f1b52f2fffde3ee0131cfece0e50ca78b88c00fc98cb11dc98980183a031e"
+    },
+    {
+      "module": "ConicalBallRestriction",
+      "reports": 6,
+      "source_sha256": "8f02383fa5a90459c30723268c6f7c68a61c13e45515a01d1578e88ea15821e3",
+      "audit_log": "lean/logs/ConicalBallRestriction-root-audit.log",
+      "audit_log_sha256": "8f4e9828d9cb0d228e1d6e2d347b5cbc42459f003eae5b8a270fa9f047cbdbef",
+      "source": "lean/ConicalBallRestriction.lean",
+      "reviews": [
+        "reviews/conical_ball_restriction.md"
+      ],
+      "source_lf_sha256": "c572ce11cd21f9e8ae350f80465e2939eb5cf52e118600e339825c8bb63f9066"
+    },
+    {
+      "module": "ConicalMaterialRunge",
+      "reports": 5,
+      "source_sha256": "cd3dc6abeba35733dc882079e63dfd5d916c0d8667a749122508117ecd79d5a2",
+      "audit_log": "lean/logs/ConicalMaterialRunge-root-audit.log",
+      "audit_log_sha256": "657b5d1ead9f4c312b5638436e54a08dd0eb20ae1a1b26140fa7076d81bf5805",
+      "source": "lean/ConicalMaterialRunge.lean",
+      "reviews": [
+        "reviews/conical_material_runge.md"
+      ],
+      "source_lf_sha256": "a8d3292dd5c6f7e870c8cfd73a128a46d54135ab6f3303d4bd13931b0d679de6"
+    },
+    {
+      "module": "PlaneFieldCoefficients",
+      "reports": 6,
+      "source_sha256": "70c264131d7934bd0ce43eea0fd757165c60ad847541c6e738359cef785a4e18",
+      "audit_log": "lean/logs/PlaneFieldCoefficients-root-audit.log",
+      "audit_log_sha256": "3c4ae2e5c93f8213483da5953e65d4bc043cc294f6a76b4ef3f2ca783cc47542",
+      "source": "lean/PlaneFieldCoefficients.lean",
+      "reviews": [
+        "reviews/plane_field_coefficients.md"
+      ],
+      "source_lf_sha256": "70c264131d7934bd0ce43eea0fd757165c60ad847541c6e738359cef785a4e18"
+    },
+    {
+      "module": "PlaneDebyeCoefficients",
+      "reports": 4,
+      "source_sha256": "fb79760be297bf36c906950f3698d26cbd2d9d5b9a9e8d13f980a39b2f9d0826",
+      "audit_log": "lean/logs/PlaneDebyeCoefficients-root-audit.log",
+      "audit_log_sha256": "7eeea7fa515a03f9a1951f3c4878c1311b2a67f3d39ab1f6907268f383f0f869",
+      "source": "lean/PlaneDebyeCoefficients.lean",
+      "reviews": [
+        "reviews/plane_debye_coefficients.md"
+      ],
+      "source_lf_sha256": "fb79760be297bf36c906950f3698d26cbd2d9d5b9a9e8d13f980a39b2f9d0826"
+    },
+    {
+      "module": "DebyeJetBounds",
+      "reports": 7,
+      "source_sha256": "bac02f5b914fc8b4131aea05d95a005a883a27cc9dcece3f1725f5be5d593350",
+      "audit_log": "lean/logs/DebyeJetBounds-modal-audit.log",
+      "audit_log_sha256": "1597020214d066735df186eb4c0c37368e8aab5dd76f2965dd7942cdb6eee8aa",
+      "independent_review": "reviews/debye_jet_bounds_modal_audit.md",
+      "source": "lean/DebyeJetBounds.lean",
+      "reviews": [
+        "reviews/debye_jet_bounds.md",
+        "reviews/debye_jet_bounds_modal_audit.md"
+      ],
+      "source_lf_sha256": "bac02f5b914fc8b4131aea05d95a005a883a27cc9dcece3f1725f5be5d593350"
+    },
+    {
+      "module": "DebyeReactionExpansion",
+      "reports": 2,
+      "source_sha256": "c99167d0a9231b226d2f321da9813e0c473723ac7a506a933d566a15311e16b0",
+      "audit_log": "lean/logs/DebyeReactionExpansion-root-audit.log",
+      "audit_log_sha256": "9f57a7ff84a576b8776cf7035b4e0f67c626a8949a7e03422ac3a9fec29d747b",
+      "source": "lean/DebyeReactionExpansion.lean",
+      "reviews": [
+        "reviews/debye_reaction_expansion.md"
+      ],
+      "source_lf_sha256": "c99167d0a9231b226d2f321da9813e0c473723ac7a506a933d566a15311e16b0"
+    },
+    {
+      "module": "SymmetricScalarWaves",
+      "reports": 11,
+      "source_sha256": "ad7f8022e9e4f35377620c652d52105c08e7ef709e87fd8f7a3bb3a13a3a301a",
+      "audit_log": "lean/logs/SymmetricScalarWaves-root-audit.log",
+      "audit_log_sha256": "8da7a0bdc4bed06528667ece1e1860b235f06880e6b2dbe23e7621a6f5d62928",
+      "source": "lean/SymmetricScalarWaves.lean",
+      "reviews": [
+        "reviews/symmetric_scalar_waves.md"
+      ],
+      "source_lf_sha256": "ad7f8022e9e4f35377620c652d52105c08e7ef709e87fd8f7a3bb3a13a3a301a"
+    },
+    {
+      "module": "DebyePlanarJets",
+      "reports": 3,
+      "source_sha256": "336d494669190601b9c28a41f26aa0c19affb04a0cb61524ba2adc87ad3c6ea8",
+      "audit_log": "lean/logs/DebyePlanarJets-root-audit.log",
+      "audit_log_sha256": "c384646c7a3c1afd18f75029190b35dfb9c0b2f1eb27e66d99fae85d67d3eea1",
+      "source": "lean/DebyePlanarJets.lean",
+      "reviews": [
+        "reviews/debye_planar_jets.md"
+      ],
+      "source_lf_sha256": "336d494669190601b9c28a41f26aa0c19affb04a0cb61524ba2adc87ad3c6ea8"
+    },
+    {
+      "module": "VectorReactionTerms",
+      "reports": 7,
+      "source_sha256": "c1b9854eb1ffc9934ccdc6eaa23cbe8ac84173d242db3d8fc2ed2ec7441ecb20",
+      "audit_log": "lean/logs/VectorReactionTerms-modal-audit.log",
+      "audit_log_sha256": "8bf61b45596f4534901762877298f6401624b78009481854b544154f3a7aa5a2",
+      "independent_review": "reviews/vector_reaction_terms_modal_audit.md",
+      "source": "lean/VectorReactionTerms.lean",
+      "reviews": [
+        "reviews/vector_reaction_terms.md",
+        "reviews/vector_reaction_terms_modal_audit.md"
+      ],
+      "source_lf_sha256": "c1b9854eb1ffc9934ccdc6eaa23cbe8ac84173d242db3d8fc2ed2ec7441ecb20"
+    },
+    {
+      "module": "VectorReactionSeries",
+      "reports": 3,
+      "source_sha256": "60f66409d851348453c4b613b8cd9c71f44f5d3efdeac14993f600dd1ce39abd",
+      "audit_log": "lean/logs/VectorReactionSeries-modal-audit.log",
+      "audit_log_sha256": "b527149e120e193b4f7f90950370c4a81f4c832e0bcacb0046d3f5b26f37242c",
+      "independent_review": "reviews/vector_reaction_series_modal_audit.md",
+      "source": "lean/VectorReactionSeries.lean",
+      "reviews": [
+        "reviews/vector_reaction_series.md",
+        "reviews/vector_reaction_series_modal_audit.md"
+      ],
+      "source_lf_sha256": "60f66409d851348453c4b613b8cd9c71f44f5d3efdeac14993f600dd1ce39abd"
+    },
+    {
+      "module": "ConicalSeparatedDynamic",
+      "reports": 9,
+      "source_sha256": "7976462febe3d816e6a506e644c2bdc84fcc2b436e69d1ea5bc109054590791c",
+      "audit_log": "lean/logs/ConicalSeparatedDynamic-root-audit.log",
+      "audit_log_sha256": "e256c70843e779030515ff53daf5dc0f2731ecb74c0632bddeb3eead10466901",
+      "source": "lean/ConicalSeparatedDynamic.lean",
+      "reviews": [
+        "reviews/conical_separated_dynamic.md"
+      ],
+      "source_lf_sha256": "7976462febe3d816e6a506e644c2bdc84fcc2b436e69d1ea5bc109054590791c"
+    },
+    {
+      "module": "SolidWaveReality",
+      "reports": 7,
+      "source_sha256": "3ddf374ed6457128bb71b428b38d220d2061e59fe8bd8d554e9a44d667ad9e3e",
+      "audit_log": "lean/logs/SolidWaveReality-root-audit.log",
+      "audit_log_sha256": "af2b1168eed59582150e029ae600b2cd9928c524f3986c4b02535575b66f42d8",
+      "source": "lean/SolidWaveReality.lean",
+      "reviews": [
+        "reviews/solid_wave_reality.md"
+      ],
+      "source_lf_sha256": "3ddf374ed6457128bb71b428b38d220d2061e59fe8bd8d554e9a44d667ad9e3e"
+    },
+    {
+      "module": "DebyeUnitReaction",
+      "reports": 6,
+      "source_sha256": "48032f28a78498bca7ea990f84790dc10801563384e12ee147d11d5ca5e74904",
+      "audit_log": "lean/logs/DebyeUnitReaction-root-audit.log",
+      "audit_log_sha256": "48451dcde1ad778ff9022aaf8465f8071bf44c6a881bcc54d69db1326717862e",
+      "source": "lean/DebyeUnitReaction.lean",
+      "reviews": [
+        "reviews/debye_unit_reaction.md"
+      ],
+      "source_lf_sha256": "48032f28a78498bca7ea990f84790dc10801563384e12ee147d11d5ca5e74904"
+    },
+    {
+      "module": "VectorReactionLimit",
+      "reports": 7,
+      "source_sha256": "b2dc288a06dcc81b472b94aab38bb75191d5142b48ca9891c4eb64f99f7a0cea",
+      "audit_log": "lean/logs/VectorReactionLimit-modal-audit.log",
+      "audit_log_sha256": "ea8f5dc702f0f96797c928fa7d390355c79c8a2b7f1c3855ce792701569e8ad3",
+      "independent_review": "reviews/vector_reaction_limit_modal_audit.md",
+      "source": "lean/VectorReactionLimit.lean",
+      "reviews": [
+        "reviews/vector_reaction_limit.md",
+        "reviews/vector_reaction_limit_modal_audit.md"
+      ],
+      "source_lf_sha256": "b2dc288a06dcc81b472b94aab38bb75191d5142b48ca9891c4eb64f99f7a0cea"
+    },
+    {
+      "module": "EntireExponentialPackets",
+      "reports": 4,
+      "source_sha256": "d3aaf6305d5935a129aa279e331e6a51961ea4f56dc18af215852cb22203bdda",
+      "audit_log": "lean/logs/EntireExponentialPackets-root-audit.log",
+      "audit_log_sha256": "21bfd7a5a308f1bdbbf343aeee5a580614077872e110963db27a07039d0ee57d",
+      "source": "lean/EntireExponentialPackets.lean",
+      "reviews": [
+        "reviews/entire_exponential_packets.md"
+      ],
+      "source_lf_sha256": "d3aaf6305d5935a129aa279e331e6a51961ea4f56dc18af215852cb22203bdda"
+    },
+    {
+      "module": "ConicalSeparatedMaxwell",
+      "reports": 12,
+      "source_sha256": "410ec5e80e33e6510c33c16cefaa24f6ce5aabe67753f062d586a6bc19ec0f38",
+      "audit_log": "lean/logs/ConicalSeparatedMaxwell-root-audit.log",
+      "audit_log_sha256": "e2d2c6b4fcef3e89690c3d94ddfd6c885a275055d6d95f25287fadf2b8cb50a9",
+      "source": "lean/ConicalSeparatedMaxwell.lean",
+      "reviews": [
+        "reviews/conical_separated_maxwell.md"
+      ],
+      "source_lf_sha256": "410ec5e80e33e6510c33c16cefaa24f6ce5aabe67753f062d586a6bc19ec0f38"
+    },
+    {
+      "module": "ConicalSeparatedPotential",
+      "reports": 9,
+      "source_sha256": "071315ac550bea7178c35143f943fb2391dfecef48b52118b158ec42f3abc84c",
+      "audit_log": "lean/logs/ConicalSeparatedPotential-root-audit.log",
+      "audit_log_sha256": "f48611f4a71a941d521bbd610ec9d92dd1290bc534daa373b5951cc05547335d",
+      "source": "lean/ConicalSeparatedPotential.lean",
+      "reviews": [
+        "reviews/conical_separated_potential.md"
+      ],
+      "source_lf_sha256": "071315ac550bea7178c35143f943fb2391dfecef48b52118b158ec42f3abc84c"
+    },
+    {
+      "module": "EntireRealIdentity",
+      "reports": 2,
+      "source_sha256": "2f7fcc25169b4639462d35c12465071609be9683f5c3a4eb61e9d562134f57bd",
+      "audit_log": "lean/logs/EntireRealIdentity-root-audit.log",
+      "audit_log_sha256": "af97675fdae9b7e1ec4635a18456712c5f9a129e408cab098e3a0060a142cb00",
+      "source": "lean/EntireRealIdentity.lean",
+      "reviews": [
+        "reviews/entire_real_identity.md"
+      ],
+      "source_lf_sha256": "2f7fcc25169b4639462d35c12465071609be9683f5c3a4eb61e9d562134f57bd"
+    },
+    {
+      "module": "SolidWaveParity",
+      "reports": 6,
+      "source_sha256": "c450541ed5a7a7d78f6f56253a6d31d275e89055e80111c7a68152183026266a",
+      "audit_log": "lean/logs/SolidWaveParity-modal-audit.log",
+      "audit_log_sha256": "64ad80753beb4e418405187b0a059d6e3e52134c818de8b98c50a23cde75f19a",
+      "independent_review": "reviews/solid_wave_parity_modal_audit.md",
+      "source": "lean/SolidWaveParity.lean",
+      "reviews": [
+        "reviews/solid_wave_parity.md",
+        "reviews/solid_wave_parity_modal_audit.md"
+      ],
+      "source_lf_sha256": "c450541ed5a7a7d78f6f56253a6d31d275e89055e80111c7a68152183026266a"
+    },
+    {
+      "module": "BivariateExponentialPackets",
+      "reports": 2,
+      "source_sha256": "3bd19d7313f0fec18a487326e1c4d7b147c4c68388a9329c412e122615fed0a0",
+      "audit_log": "lean/logs/BivariateExponentialPackets-root-audit.log",
+      "audit_log_sha256": "c13172b8cf80ffcb306c44e87bcc723c563e1252850a316a0eebc05b3ae14e2e",
+      "source": "lean/BivariateExponentialPackets.lean",
+      "reviews": [
+        "reviews/bivariate_exponential_packets.md"
+      ],
+      "source_lf_sha256": "3bd19d7313f0fec18a487326e1c4d7b147c4c68388a9329c412e122615fed0a0"
+    },
+    {
+      "module": "SourceFarAmplitude",
+      "reports": 7,
+      "source_sha256": "7162f8abd277cfb56833504c72bfe26319d24996935d083503c80bb52d57efb6",
+      "audit_log": "lean/logs/SourceFarAmplitude-root-audit.log",
+      "audit_log_sha256": "0e5c20fdd431b9f142846c052a930d6b6e675d3ad526e385a538dffadec63269",
+      "source": "lean/SourceFarAmplitude.lean",
+      "reviews": [
+        "reviews/source_far_amplitude.md"
+      ],
+      "source_lf_sha256": "7162f8abd277cfb56833504c72bfe26319d24996935d083503c80bb52d57efb6"
+    },
+    {
+      "module": "RadialVectorParity",
+      "reports": 4,
+      "source_sha256": "b2ce2ab255ece03fadc4a0784b9f0b486f3dd90bcf173181df09fba8a06d75be",
+      "audit_log": "lean/logs/RadialVectorParity-modal-audit.log",
+      "audit_log_sha256": "dce2c8e90836b57d32ab71f69e1ee6f8af02a9b94290ff326670ea0e7b004068",
+      "independent_review": "reviews/radial_vector_parity_modal_audit.md",
+      "source": "lean/RadialVectorParity.lean",
+      "reviews": [
+        "reviews/radial_vector_parity.md",
+        "reviews/radial_vector_parity_modal_audit.md"
+      ],
+      "source_lf_sha256": "b2ce2ab255ece03fadc4a0784b9f0b486f3dd90bcf173181df09fba8a06d75be"
+    },
+    {
+      "module": "PointDyadicFarField",
+      "reports": 2,
+      "source_sha256": "a68ee792e93c812454ca6c994be7f29785191873bd0e8808a48459ef449aec75",
+      "audit_log": "lean/logs/PointDyadicFarField-root-audit.log",
+      "audit_log_sha256": "98db6ad39e6b7ac41c9990291c08afc2eb231055dcf777f0e1ac304ca1b43f20",
+      "source": "lean/PointDyadicFarField.lean",
+      "reviews": [
+        "reviews/point_dyadic_far_field.md"
+      ],
+      "source_lf_sha256": "a68ee792e93c812454ca6c994be7f29785191873bd0e8808a48459ef449aec75"
+    },
+    {
+      "module": "EdgeCosineJets",
+      "reports": 3,
+      "source_sha256": "c8264f53403cc815cd3393ca568b7cabee8604647a294d48ac47069f45b3fcaf",
+      "audit_log": "lean/logs/EdgeCosineJets-root-audit.log",
+      "audit_log_sha256": "c382734e91c28a59ed77690e83c30975211484549f0e7f96bd99eced8da7e3e2",
+      "source": "lean/EdgeCosineJets.lean",
+      "reviews": [
+        "reviews/edge_cosine_jets.md"
+      ],
+      "source_lf_sha256": "c8264f53403cc815cd3393ca568b7cabee8604647a294d48ac47069f45b3fcaf"
+    },
+    {
+      "module": "CentralReactionExpansion",
+      "reports": 5,
+      "source_sha256": "45a9f561158335c63d77fdd9bb64dcfc38dca36ca9c41379cb2c6b7e09f573ef",
+      "audit_log": "lean/logs/CentralReactionExpansion-modal-audit.log",
+      "audit_log_sha256": "c4c788e12c854f6f3ee18f006524cc8aa773d761bb80c337fc1e9f08f381cfdb",
+      "independent_review": "reviews/central_reaction_expansion_modal_audit.md",
+      "source": "lean/CentralReactionExpansion.lean",
+      "reviews": [
+        "reviews/central_reaction_expansion.md",
+        "reviews/central_reaction_expansion_modal_audit.md"
+      ],
+      "source_lf_sha256": "45a9f561158335c63d77fdd9bb64dcfc38dca36ca9c41379cb2c6b7e09f573ef"
+    },
+    {
+      "module": "EdgeScalarInterpolation",
+      "reports": 3,
+      "source_sha256": "775b96de7f51520b3938b753c1e4d7e0ccebdd515aa0da073eca5893e1256eb3",
+      "audit_log": "lean/logs/EdgeScalarInterpolation-root-audit.log",
+      "audit_log_sha256": "c8f312d7e1a1683da3ced69928b0149c7f187281624427010dea4b981591102a",
+      "source": "lean/EdgeScalarInterpolation.lean",
+      "reviews": [
+        "reviews/edge_scalar_interpolation.md"
+      ],
+      "source_lf_sha256": "775b96de7f51520b3938b753c1e4d7e0ccebdd515aa0da073eca5893e1256eb3"
+    },
+    {
+      "module": "FreeSourceCoefficients",
+      "reports": 10,
+      "source_sha256": "3cb5c8995683540d770d0b180e897cddc7e91f1bd343b5138699b26a49383f3a",
+      "audit_log": "lean/logs/FreeSourceCoefficients-root-audit.log",
+      "audit_log_sha256": "62e6558fc7ceb6c6bbb2790161ed5e738270cec9f532b40415d1a60771522373",
+      "source": "lean/FreeSourceCoefficients.lean",
+      "reviews": [
+        "reviews/free_source_coefficients.md"
+      ],
+      "source_lf_sha256": "3cb5c8995683540d770d0b180e897cddc7e91f1bd343b5138699b26a49383f3a"
+    },
+    {
+      "module": "ConicalGradientGraph",
+      "reports": 9,
+      "source_sha256": "da4fbcee0ba689e31c3feb34bcf1ac001dadbc9d08e9468b439113f4ac77862b",
+      "audit_log": "lean/logs/ConicalGradientGraph-root-audit.log",
+      "audit_log_sha256": "7778ca9bc30f4cb6010a2bd3740d3ab2218b9d053c9eff2a5865225358784910",
+      "source": "lean/ConicalGradientGraph.lean",
+      "reviews": [
+        "reviews/conical_gradient_graph.md"
+      ],
+      "source_lf_sha256": "da4fbcee0ba689e31c3feb34bcf1ac001dadbc9d08e9468b439113f4ac77862b"
+    },
+    {
+      "module": "ConicalGraphMoments",
+      "reports": 7,
+      "source_sha256": "7dfcb129d8f21bef6f4f5b32a5b5aad485721e31bffc6f3b3ce3d1ad722cfef6",
+      "audit_log": "lean/logs/ConicalGraphMoments-root-audit.log",
+      "audit_log_sha256": "ad884afeb401ee8d052cb0f7661997f33059c25fe871a042b4c5a77100871f14",
+      "source": "lean/ConicalGraphMoments.lean",
+      "reviews": [
+        "reviews/conical_graph_moments.md"
+      ],
+      "source_lf_sha256": "7dfcb129d8f21bef6f4f5b32a5b5aad485721e31bffc6f3b3ce3d1ad722cfef6"
+    },
+    {
+      "module": "ConicalGraphProjection",
+      "reports": 7,
+      "source_sha256": "64df1cdafe76c382f5f9387282af912e48444791174d4303d548725e4ae16ec4",
+      "audit_log": "lean/logs/ConicalGraphProjection-root-audit.log",
+      "audit_log_sha256": "a865111679f4b58ce4ea6ff05e6e434008bf39dd5c2394368f661c4757f1f112",
+      "source": "lean/ConicalGraphProjection.lean",
+      "reviews": [
+        "reviews/conical_graph_projection.md"
+      ],
+      "source_lf_sha256": "64df1cdafe76c382f5f9387282af912e48444791174d4303d548725e4ae16ec4"
+    },
+    {
+      "module": "ConicalGraphEnergy",
+      "reports": 4,
+      "source_sha256": "9a09dabc684450c82ab23c4fcea1ce43a3172042e0b97763d7a303d3251e9e7b",
+      "audit_log": "lean/logs/ConicalGraphEnergy-root-audit.log",
+      "audit_log_sha256": "0d9b72db6718c185e98616cb41a9eb0208c126fed54ce63cd3b79881edc3efb4",
+      "source": "lean/ConicalGraphEnergy.lean",
+      "reviews": [
+        "reviews/conical_graph_energy.md"
+      ],
+      "source_lf_sha256": "9a09dabc684450c82ab23c4fcea1ce43a3172042e0b97763d7a303d3251e9e7b"
+    },
+    {
+      "module": "ConicalSeparatedGauss",
+      "reports": 8,
+      "source_sha256": "633d077cbc6774adc90fa33afe645667d2ec6f4b063ada02368c3f6014b8586b",
+      "audit_log": "lean/logs/ConicalSeparatedGauss-root-audit.log",
+      "audit_log_sha256": "f71fad3e0d6e290166328b2b6e192d95134433882baf8c646bf5a91391bd142d",
+      "source": "lean/ConicalSeparatedGauss.lean",
+      "reviews": [
+        "reviews/conical_separated_gauss.md"
+      ],
+      "source_lf_sha256": "633d077cbc6774adc90fa33afe645667d2ec6f4b063ada02368c3f6014b8586b"
+    },
+    {
+      "module": "ConicalSeparatedCorrection",
+      "reports": 10,
+      "source_sha256": "ba0f536d71134cd723805bcae24ca68cafa8ec5203b08fafec287cd2526b69a3",
+      "audit_log": "lean/logs/ConicalSeparatedCorrection-root-audit.log",
+      "audit_log_sha256": "295445c4105ee340400125160835e6d19604d51b291983d3d5fded38ffa786d6",
+      "source": "lean/ConicalSeparatedCorrection.lean",
+      "reviews": [
+        "reviews/conical_separated_correction.md"
+      ],
+      "source_lf_sha256": "ba0f536d71134cd723805bcae24ca68cafa8ec5203b08fafec287cd2526b69a3"
+    },
+    {
+      "module": "ConicalSeparatedFlux",
+      "reports": 8,
+      "source_sha256": "8f458f9d905e9179337e05bf884cf9c172c7f749fa2af2ba5f4999b314a99422",
+      "audit_log": "lean/logs/ConicalSeparatedFlux-root-audit.log",
+      "audit_log_sha256": "7ad8c7be867896c1db9a0743f136b8519b55c81cb3e992955233c27cf735ee15",
+      "source": "lean/ConicalSeparatedFlux.lean",
+      "reviews": [
+        "reviews/conical_separated_flux.md"
+      ],
+      "source_lf_sha256": "011bf2ef3628f1cdb71acac2d76452fbbdb471f0d22e23321d4c1c6d203c4910"
+    },
+    {
+      "module": "ConicalSeparatedSystem",
+      "reports": 3,
+      "source_sha256": "cb2dbad9edc9e66c45a7bd339078e70dccaf83dc42eed46f8d14769d2f251c32",
+      "audit_log": "lean/logs/ConicalSeparatedSystem-root-audit.log",
+      "audit_log_sha256": "ebfeacb42f2af6ba782b4db6c6057fa20a1dabd0534f4aac33177dd34be18a29",
+      "source": "lean/ConicalSeparatedSystem.lean",
+      "reviews": [
+        "reviews/conical_separated_system.md"
+      ],
+      "source_lf_sha256": "64e7746b4a4afa69b686998091e9d4aa6f86ac6f3e7cee5a8822cd4a6f7fb007"
+    },
+    {
+      "module": "ConicalSeparatedBounds",
+      "reports": 2,
+      "source_sha256": "f28c0349e8d3d230e55f5b038897abc2fe1c6494a6d92c077e00895fa296a936",
+      "audit_log": "lean/logs/ConicalSeparatedBounds-root-audit.log",
+      "audit_log_sha256": "123a6b4901560fe3b198004cb838ced255cf0f5b6d43828bd7b419507682384a",
+      "source": "lean/ConicalSeparatedBounds.lean",
+      "reviews": [
+        "reviews/conical_separated_bounds.md"
+      ],
+      "source_lf_sha256": "170d63a68f75a041240ca974b52c3ee2e2c1079aeb559076d4edd9e49289ac31"
+    },
+    {
+      "module": "SymmetricScalarJets",
+      "reports": 3,
+      "source_sha256": "3c8d6ae19a444c95453743cfe6dd7b5a816f17520889839783e2d2706c8bb3d0",
+      "audit_log": "lean/logs/SymmetricScalarJets-root-audit.log",
+      "audit_log_sha256": "021b4ef4a0fe4a5f9898d181eac0ad2dc45ef88a69eadbe9e746d71a112b6da3",
+      "source": "lean/SymmetricScalarJets.lean",
+      "reviews": [
+        "reviews/symmetric_scalar_jets.md"
+      ],
+      "source_lf_sha256": "3c8d6ae19a444c95453743cfe6dd7b5a816f17520889839783e2d2706c8bb3d0"
+    },
+    {
+      "module": "ScalarFiniteCalculus",
+      "reports": 4,
+      "source_sha256": "9032b210891b4dc76e2b40104f3f3c71358bd2fe4238488718e88afea1581367",
+      "audit_log": "lean/logs/ScalarFiniteCalculus-root-audit.log",
+      "audit_log_sha256": "033a2877c6525d85b43db63aa1e47559110f15463b816c2d1256c879208548e9",
+      "source": "lean/ScalarFiniteCalculus.lean",
+      "reviews": [
+        "reviews/scalar_finite_calculus.md"
+      ],
+      "source_lf_sha256": "9032b210891b4dc76e2b40104f3f3c71358bd2fe4238488718e88afea1581367"
+    },
+    {
+      "module": "VectorLimitIdentification",
+      "reports": 6,
+      "source_sha256": "70edba11f6777e7c3060b9a0c792c4d58602160c81588ff2c9cc00b61fefb3ad",
+      "audit_log": "lean/logs/VectorLimitIdentification-modal-audit.log",
+      "audit_log_sha256": "7139c32a80d643856d40d05ae70a82f5b9397cce3f0dedb62d32844436ae6200",
+      "independent_review": "reviews/vector_limit_identification_modal_audit.md",
+      "source": "lean/VectorLimitIdentification.lean",
+      "reviews": [
+        "reviews/vector_limit_identification.md",
+        "reviews/vector_limit_identification_modal_audit.md"
+      ],
+      "source_lf_sha256": "70edba11f6777e7c3060b9a0c792c4d58602160c81588ff2c9cc00b61fefb3ad"
+    },
+    {
+      "module": "VectorLimitJets",
+      "reports": 7,
+      "source_sha256": "5f279aa8e278f423ccceb775cff6a82ba83cad40d08f5cb38e5ed98ef7dcb85e",
+      "audit_log": "lean/logs/VectorLimitJets-modal-audit.log",
+      "audit_log_sha256": "b7aa9489fd9b274fd8bf98bd0363e8783f06098fc4a18b152d4ebf96fac6a067",
+      "independent_review": "reviews/vector_limit_jets_modal_audit.md",
+      "source": "lean/VectorLimitJets.lean",
+      "reviews": [
+        "reviews/vector_limit_jets.md",
+        "reviews/vector_limit_jets_modal_audit.md"
+      ],
+      "source_lf_sha256": "5f279aa8e278f423ccceb775cff6a82ba83cad40d08f5cb38e5ed98ef7dcb85e"
+    },
+    {
+      "module": "PairedVectorKernelLimit",
+      "reports": 3,
+      "source_sha256": "32dff9e625d924dd1fa31820c727a7cc97a5201b9483bec03fadff4d1e40d9e4",
+      "audit_log": "lean/logs/PairedVectorKernelLimit-modal-audit.log",
+      "audit_log_sha256": "d7c38b61e0849a8fc8431a093caacd32ca56be46ef34b1e7eb1c6af175a00cd4",
+      "independent_review": "reviews/paired_vector_kernel_limit_modal_audit.md",
+      "source": "lean/PairedVectorKernelLimit.lean",
+      "reviews": [
+        "reviews/paired_vector_kernel_limit.md",
+        "reviews/paired_vector_kernel_limit_modal_audit.md"
+      ],
+      "source_lf_sha256": "32dff9e625d924dd1fa31820c727a7cc97a5201b9483bec03fadff4d1e40d9e4"
+    },
+    {
+      "module": "HarmonicHalfTurn",
+      "reports": 6,
+      "source_sha256": "1df3e21dd42ecaa6981f71cb46cb90bfb5930a89db8ba4fc53a96bfcd043635b",
+      "audit_log": "lean/logs/HarmonicHalfTurn-root-audit.log",
+      "audit_log_sha256": "2bef4c61d171b615554dd4b49d66b125b0c1e5c7e180271aba3361ada833f9a6",
+      "source": "lean/HarmonicHalfTurn.lean",
+      "reviews": [
+        "reviews/harmonic_half_turn.md"
+      ],
+      "source_lf_sha256": "1df3e21dd42ecaa6981f71cb46cb90bfb5930a89db8ba4fc53a96bfcd043635b"
+    },
+    {
+      "module": "AngularScalarJets",
+      "reports": 4,
+      "source_sha256": "858fc5b6c84d9456f7fd5d381b40ba15d1fff469b3c270a9dfecc914ef742bfd",
+      "audit_log": "lean/logs/AngularScalarJets-root-audit.log",
+      "audit_log_sha256": "6269442dc7b4da30b51e7058c9ea5a0a0d484412eb222b890eefa163aec0f563",
+      "source": "lean/AngularScalarJets.lean",
+      "reviews": [
+        "reviews/angular_scalar_jets.md"
+      ],
+      "source_lf_sha256": "858fc5b6c84d9456f7fd5d381b40ba15d1fff469b3c270a9dfecc914ef742bfd"
+    },
+    {
+      "module": "ConicalSeparatedExpansion",
+      "reports": 1,
+      "source_sha256": "15eafd0a66951f60b3d939b9db53cf9fe420a2cd2a9a415f17e21507305c2971",
+      "audit_log": "lean/logs/ConicalSeparatedExpansion-root-audit.log",
+      "audit_log_sha256": "283d4d032b04881913468f76bba5ff37e5bfe3544b8039cf90f56fc081c6c7fe",
+      "source": "lean/ConicalSeparatedExpansion.lean",
+      "reviews": [
+        "reviews/conical_separated_expansion.md"
+      ],
+      "source_lf_sha256": "0ec1f0ae57d6dbd168f14d6043fc58f1485ceb2072921c246fbca5442d236757"
+    },
+    {
+      "module": "ConicalSeparatedPairing",
+      "reports": 5,
+      "source_sha256": "8d5c28e80158e920651570ea5dccf6fe796864bbf2f38980054d71e992e107c4",
+      "audit_log": "lean/logs/ConicalSeparatedPairing-root-audit.log",
+      "audit_log_sha256": "6e2f2b078e6cbd853ea3e3310c038bb85f9dfed88da36204036bf04b4604a2f1",
+      "source": "lean/ConicalSeparatedPairing.lean",
+      "reviews": [
+        "reviews/conical_separated_pairing.md"
+      ],
+      "source_lf_sha256": "94f8f66de3b74f69b1ffd674a7e84f1bfec7eecd803b87e2a787ef9cda19b064"
+    },
+    {
+      "module": "ConicalSeparatedIdentity",
+      "reports": 2,
+      "source_sha256": "8b3845119e9d7eb2793f5c60f665c9fd83407f086341b796af19d731e3bb084b",
+      "audit_log": "lean/logs/ConicalSeparatedIdentity-root-audit.log",
+      "audit_log_sha256": "9d145c028920fda3ee8ed7f478dbc60a334f61a3b8d3925f51e21ad199d58370",
+      "source": "lean/ConicalSeparatedIdentity.lean",
+      "reviews": [
+        "reviews/conical_separated_identity.md"
+      ],
+      "source_lf_sha256": "2e35f252607925929a43d4df4e1dc6586f9e3963e6f9d648a511afe45cab4d26"
+    },
+    {
+      "module": "HankelExteriorBounds",
+      "reports": 9,
+      "source_sha256": "4e52e45d147e948d6c3e90bf06fcc318070eee6d3cdefe45436596881dd5da0b",
+      "audit_log": "lean/logs/HankelExteriorBounds-root-audit.log",
+      "audit_log_sha256": "969c7099612aebbc278e8c1d25679e1af32046459a8e27d39195c44b1e33b920",
+      "source": "lean/HankelExteriorBounds.lean",
+      "reviews": [
+        "reviews/hankel_exterior_bounds.md"
+      ],
+      "source_lf_sha256": "4e52e45d147e948d6c3e90bf06fcc318070eee6d3cdefe45436596881dd5da0b"
+    },
+    {
+      "module": "AngularExteriorBounds",
+      "reports": 7,
+      "source_sha256": "8810b23025c9303a522df24ad3c91cea07751bda65b5fdc2de69c4de7f48b80b",
+      "audit_log": "lean/logs/AngularExteriorBounds-root-audit.log",
+      "audit_log_sha256": "72039064a39b5347f54f6dad2ee626666e25b5b8c1c919faa2c36703ad329215",
+      "source": "lean/AngularExteriorBounds.lean",
+      "reviews": [
+        "reviews/angular_exterior_bounds.md"
+      ],
+      "source_lf_sha256": "8810b23025c9303a522df24ad3c91cea07751bda65b5fdc2de69c4de7f48b80b"
+    },
+    {
+      "module": "ConicalSeparatedLimit",
+      "reports": 3,
+      "source_sha256": "8bee5f540643878c1dcf18b074b6fc7e7b244071553644689ea95538a42cec14",
+      "audit_log": "lean/logs/ConicalSeparatedLimit-root-audit.log",
+      "audit_log_sha256": "cb5d72755ed97c84fbb14a01f88fbef7b6e19125d01d7b70c51f07000b423b7c",
+      "source": "lean/ConicalSeparatedLimit.lean",
+      "reviews": [
+        "reviews/conical_separated_limit.md"
+      ],
+      "source_lf_sha256": "1f9f70edaae16e4472c48638b6fe1441fc0072d725cbacd3474bec4a4fe48d59"
+    },
+    {
+      "module": "ConicalSeparatedRetention",
+      "reports": 3,
+      "source_sha256": "21a55004d9d7117feb5697547794974489303ab20ff5e1494d5d4371c2f3c206",
+      "audit_log": "lean/logs/ConicalSeparatedRetention-root-audit.log",
+      "audit_log_sha256": "79c42054b13cc8db7a4eb164028a9cc868d8a2691043137efd188556e429b1a3",
+      "source": "lean/ConicalSeparatedRetention.lean",
+      "reviews": [
+        "reviews/conical_separated_retention.md"
+      ],
+      "source_lf_sha256": "3a964bbce4dd04a3ee71375d90c142dac410660fe3ff08de7ad05487bde763af"
+    },
+    {
+      "module": "HalfTurnMaxwellParity",
+      "reports": 11,
+      "source_sha256": "f8ea2dddbd2ed2759537fe435e1f213eb3a57d2bf99016724ed225bf434027de",
+      "audit_log": "lean/logs/HalfTurnMaxwellParity-modal-audit.log",
+      "audit_log_sha256": "c6428eb2ea46235c6213414930be0a4244177267010235b8176171803206763b",
+      "independent_review": "reviews/half_turn_maxwell_parity_modal_audit.md",
+      "source": "lean/HalfTurnMaxwellParity.lean",
+      "reviews": [
+        "reviews/half_turn_maxwell_parity.md",
+        "reviews/half_turn_maxwell_parity_modal_audit.md"
+      ],
+      "source_lf_sha256": "f8ea2dddbd2ed2759537fe435e1f213eb3a57d2bf99016724ed225bf434027de"
+    }
+  ],
+  "line_endings": "Independent receipts hash original bytes; source_lf_sha256 hashes the Git-normalized LF bytes for the clean aggregate."
+}

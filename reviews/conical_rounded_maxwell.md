@@ -1,0 +1,11 @@
+# ConicalRoundedMaxwell — author verification
+
+Frozen source SHA256 `58F6F0F0F704416CD7D30D742C8FFD42BEE0F193627C706FF9AFC6423D1325F0`. First target65554 and final target/object68254 EXIT0, no warnings, fourteen standard-only reports. Log `lean/ConicalRoundedMaxwell.final.log` SHA256 `0B8034BAC1AD1915BDDDA366C7E3E59339EA24D47F998A273F00495EFE1BAB5E`; object349120 bytes. Final compiler was already running when user requested stop and was consumed before handoff. No compiler remains active under this agent.
+
+The explicit radial-gated coefficient retains the actual common outer support. The inverse solution defines the material source and the actual total compact source obtained by subtracting the identical original annular forcing. The actual volume field equals the Newton-plus-dynamic response of that total source. Genuine local Green response identities identify its physical coordinates AE with the literal FieldResponse electric field. Both actual electric and magnetic fields are locally L2.
+
+The actual weighted inverse equation proves material source equals (rounded permittivity minus one) times the literal electric field. On the original inner ball, the actual annular forcing vanishes, so the proved global Green curl identities give both literal weak Maxwell curl equations with the actual rounded permittivity. No Maxwell equation or physical response identification is assumed. Frequency hypotheses use the genuine quantitative inverse radius, identical across this family because the literal coefficient bound is unchanged.
+
+The separate ten-report RoundedHCurl source remains uncompiled at the user stop. Transfer of volume peaks to these literal representatives, Hcurl bundling, and actual illumination Runge approximation are exact next tasks. No globally smooth interface, plane maximum, pointwise finite peak or physical-illumination synthesis is asserted. Parent independent complete-source/compiler audit requested.
+
+October23: root independent full-source and pinned compiler audit PASS confirmed, frozen source unchanged.

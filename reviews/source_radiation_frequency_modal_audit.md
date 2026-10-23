@@ -1,0 +1,5 @@
+# SourceRadiationFrequency independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0; all 6 reports standard-only, no warnings. Source SHA256 `4C458C2EAB89799841A16DB7CFC0DF9B5C5115491C6E2A34B9A899AFA6364EB3`. Log `lean/logs/SourceRadiationFrequency-modal-audit.log`, SHA256 `F06BD64A5524761018D21AB1B1B48C5113D08AE2CD0E09BC5C357B9DD42303C8`. Frozen source unchanged; forbidden-source scan clean.
+
+The actual defect scales by 1/k under positive spatial dilation, including the normalized tangent factor and exponential phase. Escaping paths remain escaping after positive dilation. The TM and TE radiation results use the already proved actual source defects. Final bundles combine actual punctured weak equations with those derived outgoing conditions under the explicit dielectric constitutive hypotheses. The generic dilation transfer has an outgoing premise, but actual exported source bundles discharge it with the genuine source theorems. No origin source distribution or physical dyadic normalization is claimed.

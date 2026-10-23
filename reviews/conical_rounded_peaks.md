@@ -1,0 +1,7 @@
+# ConicalRoundedPeaks — author verification
+
+Frozen source SHA256 `7636C913A874750D29B8685559BF1637810CA00C1402446E2B377CFD9E2C266E`. Final target/object session6895 EXIT0, no warnings, eight standard-only reports. Log `lean/ConicalRoundedPeaks.final.log` SHA256 `95BE815A6CF2EB14E1DC5655BBA4D7AF8621515E1E08A05D06BF1F7829F28F1A`; object180896 bytes.
+
+The explicit rounded permittivity is 1 plus the proved radial-gated susceptibility. It stays in [1,1+contrast], is identically one on the closed shrinking tip ball, is smooth in the open tip ball, equals the literal original dielectric outside twice the radius, and is one outside the original support. Its actual volume solutions for the identical fixed annular incident field converge strongly to the proved singular conical solution at each common sufficiently small frequency.
+
+The actual physical coordinate pullback therefore has positive-volume superlevel sets above every prescribed amplitude in every positive tip ball for all sufficiently late rounded coefficients. The existential wrapper obtains the actual data and exponent in (0,1) for every prescribed contrast d>0 and cap threshold t in (0,1), with common support fixed by the given cutoff. No approximants or limiting singularity are hypotheses. Literal physical Green representatives and H(curl) adapters follow separately; Runge illumination remains a genuine gap. Parent independent full-source/compiler audit requested.

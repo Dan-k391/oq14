@@ -1,0 +1,7 @@
+# ConicalVolumePeaks — author verification
+
+Frozen source SHA256 `B80545B2F247F72676B83BD532FA4BCC0682BAA2725C1BCA6CE98C1688243A11`. Final target/object session27066 EXIT0, no warnings, four standard-only dependency reports. Log `lean/ConicalVolumePeaks.final.log` SHA256 `7CD3C4A55818D8A13C0D5D0CFD495A8C303FE62C5895A31970C6FC0F5E0EB417`; object206976 bytes.
+
+The actual volume field with the sharp conical coefficient and the fixed actual annular incident field equals the actual conical inverse solution. Finite-coordinate boundedness would bound the physical electric Pi norm, so actual electric essential unboundedness forces an actual unbounded coordinate. The precise existing physical-coordinate pullback agrees AE with that physical electric coordinate on every strict inner ball. Its genuine bounded complex-linear map transfers the proved material-volume L2 convergence into physical scalar L2 convergence. The proved closedness of AE amplitude bounds then yields positive physical volume of every prescribed superlevel for all sufficiently late approximants. The frequency radius is positive and bounded by the common quantitative inverse radius.
+
+All coefficient convergence hypotheses are literal bounded AE value convergence, and the limiting unboundedness is proved by the actual conical Maxwell construction. No operator-norm material convergence, Runge density, plane trace or pointwise maximum is assumed or concluded. Explicit approximants are the next separate construction. Parent independent full-source/compiler audit requested.

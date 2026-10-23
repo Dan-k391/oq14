@@ -1,0 +1,5 @@
+# DebyeReactionExpansion author review
+
+Frozen source SHA256 `C99167D0A9231B226D2F321DA9813E0C473723AC7A506A933D566A15311E16B0`. Author full-source mathematical review and pinned final target/object PASS exit 0, all 2 reports standard-only, no warnings. Log `lean/logs/DebyeReactionExpansion-final.log`; forbidden-source scan clean. Root independent audit pending.
+
+The actual plane-field coefficient is identified with the explicit normalized regular Debye expressions for both polarizations. Substitution into the proved actual J sphere-kernel series gives a genuine HasSum equal to the existing physical reaction tensor J(k,x-y), for every nonzero real k and all spatial x,y including origins and coincidences. The prefactor k^3/(16pi^2), complex conjugation, phases, positive-degree normalizers, and poloidal division by -ik remain explicit. This is an actual kernel identification, not an assumed dyadic expansion. Further simplification to the manuscript unit-frequency convention remains a successor; full outgoing Green source identification is separate.

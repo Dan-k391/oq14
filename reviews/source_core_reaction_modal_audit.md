@@ -1,0 +1,5 @@
+# SourceCoreReaction independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0; all 7 reports standard-only, no warnings. Source SHA256 `1369AB1434FE3CA274557E371AE105879C0A5FC31DD05E0308C3FFA96571EF0B`. Log `lean/logs/SourceCoreReaction-modal-audit.log`, SHA256 `C37500A7C9C81AC7A51B80ECC4C53BF22723A67F739D16724BA72A767008C3E0`. Source unchanged; forbidden-source scan clean.
+
+The actual regular/irregular Wronskian and real-imaginary Hankel identities give vacuum coefficients exactly (1,I), hence gamma=-I and the entire vacuum raw state=-I times the outgoing state. Exact core formulas then cancel their common singular irregular part. The residual electric and magnetic fields are gamma+I times actual globally smooth regular solid fields, on the punctured core including its outer boundary. The TE formulas follow the literal dual signs; no change in source sign is absorbed. These are genuine field equalities, not merely radial coefficient limits. Origin distribution normalization is still separate.

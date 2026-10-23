@@ -1,0 +1,5 @@
+# PoloidalPlaneWaveMoment independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0; all 9 reports standard-only, no warnings. Frozen source unchanged, SHA256 `CBD2571039FD0BF5E3F67B3C0129486E111C5DE9B31596CC13E74101A982C831`. Log `lean/logs/PoloidalPlaneWaveMoment-modal-audit.log`, SHA256 `99C1A423CEC46AA83C96EE5E21E593DE3352FD01942DBC556903D41A6565609C`.
+
+Actual compact sphere polynomial bounds justify all integrals and differentiation under the integral. The coordinate curl of polynomial moments is minus ik times their toroidal polynomial moments. The actual double-cross polynomial identity on the unit sphere equals minus the tangential restriction, so curling the actual toroidal integral gives plus ik times the poloidal moment. Actual smooth Debye curl identifies the resulting electric regular field. The division theorem uses k nonzero explicitly; the scaled identity holds at all real k. All identities include spatial origin. No angular IBP or vector completeness assumption is introduced.

@@ -1,0 +1,5 @@
+# HankelExteriorBounds author review
+
+Frozen source SHA256 `4E52E45D147E948D6C3E90BF06FCC318070EEE6D3CDEFE45436596881DD5DA0B`. Author full-source mathematical review and pinned final target/object PASS exit 0, all 9 reports standard-only, no warnings. Log `lean/logs/HankelExteriorBounds-final.log`; forbidden-source scan clean. Root independent audit pending.
+
+Actual positive Hankel coefficient sums decrease as positive radius increases. This gives genuine p, pD, xi and xiD bounds uniform for all r at least fixed R, with exp(R) rather than exp(r). Exact actual regular-amplitude times leading-Hankel-coefficient cancellation yields geometric regular/outgoing products. For R at least 1 and twice B, both actual products are bounded by exp(R) times 2 to the negative degree. Every polynomially weighted sum is genuinely summable, using the already proved polynomial-geometric series. These are uniform actual radial product estimates; spatial angular factors, full outgoing Maxwell-series derivatives, far-field interchange and Rellich matching remain successor work.

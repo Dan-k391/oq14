@@ -17,7 +17,7 @@ Also registered are `WeakPoynting/Polarization.lean`, `FourierL2.lean`,
 `KernelIntegrability.lean`, `HeatFourier.lean`, `NewtonFourier.lean`,
 `NewtonHessian.lean`, `DynamicIntegrability.lean`, `KernelEstimates.lean`,
 `ModalDipole.lean`, `ModalInterface.lean`, `WeakPoynting/Energy.lean`, and
-`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. Four thousand three hundred ninety-one exported
+`WeakPoynting/EnergyLocalization.lean`. The continuation adds `PointSingularity.lean`, `RealKernelBounds.lean`, `KernelGradient.lean`, `KernelSource.lean`, `DynamicSource.lean`, `NewtonConvolution.lean`, `NewtonL2.lean`, `NewtonL1L2.lean`, `StaticNewton.lean`, `ModalOrigin.lean`, `WeakPoynting/DivCurl.lean`, `WeakPoynting/DivCurlCompact.lean`, `WeakPoynting/DivCurlRegularity.lean`, `WeakPoynting/LocalRegularity.lean`, and `WeakPoynting/RegularityBounds.lean`. The spatial-source, volume, spherical-assembly and compactness modules described below are also registered. 5238 exported
 theorems compile with Lean 4.19.0
 and mathlib revision `c44e0c8ee63ca166450922a373c7409c5d26b00b`
 (the `v4.19.0` tag). `lake-manifest.json` pins every transitive dependency.
@@ -59,7 +59,7 @@ tracked dependency files; `--git /absolute/path/to/git` selects it explicitly.
 The output also records the source repository commit and dirty flag.
 
 The build removes **only this package's** `.lake/build`, verifies the pinned
-compiler and mathlib revision, builds all four hundred sixty-nine registered modules, and audits all 4391
+compiler and mathlib revision, builds all 627 registered modules, and audits all 5238
 `#print axioms` reports. It retains compiled dependency artifacts, as a
 normal clean project build does. The raw successful compiler output is
 `logs/clean-build.txt`; exact source and manifest SHA256 hashes, compiler,
@@ -1053,9 +1053,10 @@ identification remain essential.
 ## Actual Green coefficients, conical projection and whole-plane errors
 
 A further 474 declarations in 76 modules have complete-source and independent
-pinned-compiler audits. The current registration has 4391 reports, 469 modules
-and 441 libraries. Its clean aggregate and matching paper build are pending;
-the complete 3917 release remains preserved separately.
+pinned-compiler audits. That revision contained 4391 reports, 469 modules
+and 441 libraries. Its clean aggregate, diagnostics and matching paper
+passed; the complete 4391 release remains preserved separately. The
+following description records the scope at that revision.
 
 Actual cross-degree orthogonality gives the complete scalar complex harmonic
 basis. Actual vector harmonic normalization, tangency and orthonormality are
@@ -1095,15 +1096,62 @@ the source error and geometric support conditions. Incident coefficient
 construction, complete physical-stack identification and final all-vector
 channel assembly remain.
 
+## Actual vector kernel, separated excitation and complete plane flux
+
+The continuation adds 847 independently audited reports in 158
+modules. Registration now contains 5238 selected reports, 627
+modules and 599 libraries. Exact source and independent compiler
+hashes are in `../reviews/audited_constructions_5238.json`. The matching clean aggregate is recorded in
+release provenance; individual audits alone do not certify that build.
+
+The actual transverse harmonic family is complete, with derived complex
+expansion and literal plane-wave coefficients. The genuine spherical
+reaction integral has its normalized regular Maxwell dyad expansion.
+Exact regular source moments, outgoing ray amplitudes and free-source
+coefficients fix all signs and constants. Actual all-layer TM/TE fields
+satisfy both weak Maxwell equations and outgoing radiation away from the
+point source. The source-state core is singular, not a regular origin.
+
+The normalized paired vector series converges, together with every fixed
+finite derivative order, uniformly on compact core regions to the explicit
+central-inversion gain kernel. Origins and coincident points are included;
+the required radius depends on the derivative order. Genuine half-turn
+covariance supplies the plane-wall formula on the specified invariant
+sector. Full outgoing dyadic identification, summation through interfaces
+and the perturbed finite-stack response still need assembly.
+
+Actual conical fields now retain a nonzero singular coefficient at every
+sufficiently small positive frequency. This includes separated sources
+vanishing on the whole material ball: actual Maxwell equations, weak
+potential, gradient graph, projected radial system, finite energy and a
+nonzero static annular pairing derive the coefficient. Genuine vacuum
+Runge density, finite transverse plane-wave approximation and material
+inverse transfer are proved. Explicit rounded families preserve high
+positive-volume superlevel sets under strong convergence. Assembly of
+these ingredients into final finite-illumination rounded devices remains.
+
+For literal finite parity-column illuminations, the actual inverse total
+plane flux converges in whole-plane L1 to the exact static dipole flux.
+Both coherent and quadratic self terms are controlled with actual source
+mass, error and moving-gap bounds. Symmetric scalar Helmholtz waves,
+their Debye fields, scalar edge-jet interpolation and angular jet integrals
+are derived. Restricted finite even-degree/even-azimuthal TE interpolation,
+physical input power and Gram balancing remain essential; arbitrary
+finite point columns do not supply that sector by themselves.
+
+Actual reciprocal modal residue normalization, infinite-degree pole
+isolation and simultaneous three-dimensional modal maxima in the
+prescribed plane patch are still required. Neither final OQ14 construction
+is yet a complete Lean theorem.
+
 ## Explicitly outside the formalization
 
 This is **not complete formal verification of OQ14**. Maxwell derivatives
 and weak-test identities, complete weak-curl graphs and weak divergence of
 curl are represented. The source does not yet construct H(curl) trace theory,
 general boundary traces, full geometric instances and physical scattering
-assembly for the final constructions, the finite-frequency conical
-coefficient, Runge approximation, rounding, or
-the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
+assembly for the final constructions, the final rounded finite-illumination
+device and prescribed modal maxima, or the reciprocal physical resonance norm. The complete written modal theorem is not yet a Lean
 theorem. The written unrestricted channel counterexample is likewise not
 yet a Lean theorem. No hypothesis or custom axiom stands in for either
 missing formal conclusion. The exact remaining library development is

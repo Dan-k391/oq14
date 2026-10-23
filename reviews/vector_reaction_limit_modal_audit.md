@@ -1,0 +1,5 @@
+# VectorReactionLimit independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0; all 7 reports standard-only, no warnings. Frozen source unchanged, SHA256 `B2DC288A06DCC81B472B94AAB38BB75191D5142B48CA9891C4EB64F99F7A0CEA`. Log `lean/logs/VectorReactionLimit-modal-audit.log`, SHA256 `EA8F5DC702F0F96797C928FA7D390355C79C8A2B7F1C3855CE792701569E8AD3`.
+
+The actual finite-stack gamma limit gives each genuine compact joint-jet map limit. The actual common material bounds and eventual radius at least width ensure literal layers have X at most 2R in every use of the global majorant. The genuine summable index majorant gives eventual actual summability, limiting summability, and actual compact-map Tannery convergence. Evaluation of the actual sum equals the actual derivative using the b+1 neighborhood and the audited termwise derivative theorem. No all-order convergence premise, physical Green kernel identity, or central-inversion/plane-reflection identification is assumed.

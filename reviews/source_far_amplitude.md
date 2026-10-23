@@ -1,0 +1,5 @@
+# SourceFarAmplitude author review
+
+Frozen source SHA256 `7162F8ABD277CFB56833504C72BFE26319D24996935D083503C80BB52D57EFB6`. Author full-source mathematical review and pinned final target/object PASS exit 0, all 7 reports standard-only, no warnings. Log `lean/logs/SourceFarAmplitude-final.log`; forbidden-source scan clean. Root independent audit pending.
+
+The exact same raw layered source state supplies its actual outgoing coefficient beyond the stack. The electric field is split into its actual normalized poloidal factor and a lower-order radial part, retaining the latter explicitly; the magnetic field is the normalized toroidal factor. Exact Hankel identities cancel the outgoing exponential. Actual polynomial homogeneity and positive ray radius cancel all normalizing powers. The genuine Hankel polynomial limits then give the actual separate electric and magnetic ray amplitudes. No far amplitude premise or radiation equivalence is assumed. This is each actual source mode, not an infinite outgoing series or a translated point-source Green identity.

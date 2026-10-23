@@ -1,0 +1,5 @@
+# MaterialStrongLimit — author verification
+
+Source SHA256 `85D10FABF5A68BB1BD3E8B8DAC48B189FB0379AECF9DF04E6B59052BB5E0F8F7`. Target52685 and final/object first command22950 EXIT0/no warnings/all three standard-only reports; subsequent initial MaterialVolumeLimit target also succeeded. Log `lean/MaterialStrongLimit.final.log` SHA256 `B053AC5DBE9B4E25EA212653B46A939338F079A0D34DBC5011AD58D177B5D855`; object288656 bytes.
+
+For actual nonnegative material coefficients with a common finite bound and actual AE value convergence, continuity of the real square root gives pointwise convergence of literal material multiplication. The actual vector-L2 squared-norm identity and genuine dominated convergence, with majorant (2 sqrtD times normf)², prove strong L2 convergence of the actual square-root multiplication operators on each fixed input. Uniform actual operator bounds then prove convergence when the input also converges in L2. No operator-norm coefficient convergence or multiplier-continuity conclusion is assumed. Parent independent audit requested.

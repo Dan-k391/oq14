@@ -1,0 +1,5 @@
+# FreeSourceCoefficients author review
+
+Frozen source SHA256 `3CB5C8995683540D770D0B180E897CDDC7E91F1BD343B5138699B26A49383F3A`. Author full-source mathematical review and pinned final target/object PASS exit 0, all 10 reports standard-only, no warnings. Log `lean/logs/FreeSourceCoefficients-final.log`; forbidden-source scan clean. Root independent audit pending.
+
+The actual unit-frequency freeAmplitude is 1/(4pi) times the actual projected plane field. Its AE representative is proved to be the genuine translated point-dyadic electric ray limit. The actual normalized P/T plane coefficients then give the literal signed source coefficients: TM minus weight times regular electric component, TE minus i times weight times regular toroidal component. The same true vacuum source state has amplitude -i, and its actual ray amplitudes are phase times poloidal and minus phase times toroidal. These prove the finite-mode coefficient match on both actual fields. No infinite outgoing series convergence, Rellich conclusion, or point-source distribution normalization is assumed. The full outgoing Green/source equality remains a successor.
