@@ -1,0 +1,6 @@
+# Actual harmonic TE inverse on shrinking finite balls
+
+Frozen source: lean/RestrictedTEFiniteBalls.lean, SHA256 8A12E154862EF3DBD237AAE605EF576CACA55D6D590E47A53AB60F6C42AD29A7.
+Author final pinned compiler/object PASS: exit 0, no warnings, three standard-only reports. Log: lean/logs/RestrictedTEFiniteBalls-final.log. Independent audit pending.
+
+For arbitrary actual finite harmonic TE coefficient data varying with the ball scale, this constructs the literal parity material inverse on actual finite unions of balls of radius rho*a. The explicit smallness condition is derived from actual support-volume geometry and B=b/a, rather than assumed. Both dielectric weak Maxwell equations hold for sufficiently small positive a. Actual material source admissibility follows from enclosing-ball and center-height geometry. The actual total fields have a continuous strip representative; actual almost-everywhere material equality plus continuous-representative uniqueness identifies its legitimate plane trace. No restriction of a three-dimensional null set to the plane is used. This remains the explicit parity material kernel at unit frequency, not an identification with a physical finite radial-stack Green operator.

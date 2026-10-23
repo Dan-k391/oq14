@@ -1,0 +1,27 @@
+# Exact scope and next channel adapters — October 23
+
+The original full closure target remains unfinished. This note compares the actual new harmonic-field results to the current manuscript; it does not certify unavailable original manual contents.
+
+## Frozen statement evidence
+
+- manuscript/sections/channel_transducers.tex, SHA256 93ADD3152C939BDEC92C1B5354D4801024D4D9BB1B442ED11744548F8A03552E: ct:jets at lines 90–103 allows all nonzero plane points distinct modulo sign, and explicitly names even l>=2 and even m. The actual Lean interpolation at lean/PhysicalTEBandInterpolation.lean:13 is at distinct edge points (r,y_j,0), r nonzero. It constructs a common finite even-degree l>=2 band in the intrinsic proper-half-turn invariant harmonic sector, and genuine orthonormal physical incoming data. This suffices for choosing edge points in the construction, but is not a proof of the full arbitrary-point ct:jets quantifier or named even-m basis equivalence.
+- manuscript/sections/channel_unrestricted.tex, SHA256 3BA0A98962F0F0A4F4D3DC4F9E86CF2C6BF4A9F444C23A5B4744AFCF396FD298: lines 10–27 fix k0, epsilon+, L, tau and 0<eta<delta, then quantify over every N and require the complete outgoing scattering map. The frequency, material interval, square and thresholds are common; the theorem does not require one device radius common to N. Lines 66–81 choose a finite radius after fixing M,N and explicitly disclaim a radius estimate uniform in M,N.
+- manuscript/sections/channel_transducer_limit.tex, SHA256 0C1C4D13DF2EFF9E344B8701B243E51FD83576C4408F68F28A5F0F16A2EBC487: lines 4–10 separate the explicit parity-kernel inclusion estimates from physical finite radial-background identification. This distinction is retained throughout the new Lean modules.
+
+## What the new adapter actually discharges
+
+lean/RestrictedTECoherentTail.lean:64 proves genuine whole-plane L1 dynamic-minus-static coherent error for the actual finite harmonic TE incident, with a constant independent of the positive shrinking source gap. It derives the transverse tails, rather than using a point-source incident surrogate.
+
+lean/RestrictedTEFiniteBalls.lean:22 constructs the actual material inverse weak Maxwell pair for these incidents, deriving perturbative smallness from actual finite-ball geometry. Its representative theorem at line 47 constructs the legitimate continuous strip representative and unique plane trace. lean/RestrictedTESourceMass.lean:35 derives actual source mass O(a²), actual trial-source error O(a³), and both plane gaps from actual geometry. lean/RestrictedTEFreeLimit.lean:14 composes them into a whole-plane free-total-field flux to static coherent limit. There is no final PDE, source-response, field-identification or convergence conclusion hidden among its premises.
+
+The 31-module interpolation/power batch has 131 reports. The additional harmonic plane/material adapter batch through RestrictedTEFreeLimit has 14 modules and 46 reports. These are author-final targeted pinned compiler/object passes, clean warning/gap scans and standard-only foundations. Independent receipts are separate and must not be inferred from these author passes.
+
+## Remaining constructive steps to the complete channel statement
+
+1. Instantiate the actual edge points and reflected partner geometry inside the fixed square, then finite linear combinations of the normalized interpolants. Named even-m basis equivalence remains a separate identification if that exact manuscript label is retained.
+2. Extend the literal complete parity total-flux/reaction remainder estimates from finite point columns to these actual harmonic incidents. The nearest missing estimate is the actual whole-plane pairing of a density-integrated parity electric reaction field with the actual harmonic magnetic partner. A concrete route uses SphereDyadicTransform.J_dyadic for frequencies +1 and -1, the derived harmonic magnetic radial/tangential bounds, actual point-source leading electric errors and exact transverse plane cancellation. Local reaction bounds are entire-kernel bounds; integrating the inverse-cube envelope gives a genuine source-mass bound. This would discharge the incident-reaction term in the existing four-term parity remainder budget, without assuming its desired decay.
+3. Combine actual inverse source asymptotics with exact finite uniformly polarized ball dipoles, then actual small-height section and absolute-bypass integrals. The required conclusions are uniform for all unit coefficient vectors in the constructed finite input space, not merely separate basis columns. Existing physical Gram and finite coefficient algebra support that uniform finite-dimensional passage, but its final section wrapper is not yet proved here.
+4. Discharge physical finite-stack source Green/volume identification, actual perturbed inverse stability and remote-annulus whole-plane L1 passage. Root and the modal track own this major bridge. The actual harmonic input and literal parity inverse results do not substitute for it.
+5. Apply genuine lossless complete outgoing scattering power identification and fixed physical-frequency normalization, then choose p0 strictly between eta and delta and the finite gain/radius stages with strict error margins. Preserve common material bounds and square. These final scattering/geometry/count conclusions must be derived for the actual physical device, not supplied as an abstract channel realization premise.
+
+The new free-flux limit is a completed adapter, not a complete outgoing scattering-channel theorem.

@@ -1,0 +1,5 @@
+# HelmholtzInteriorLocal independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all four reports standard-only. Source SHA256 `63F2BF61BC4F834B1B7936F65D2014E87C6D25D698B06A0F53D68B75B7A80AE0`; independent log `lean/logs/HelmholtzInteriorLocal-modal-audit.log`, SHA256 `FB0EA7D25E739CA3DFB5B5458431B036A408E453134D2106458D6D7B8641EDB3`.
+
+Outside the actual cutoff support, all cutoff first derivatives and its Laplacian vanish, so the literal reproducing kernel vanishes. Its support is therefore compact. The genuine smooth localization theorem supplies a globally smooth auxiliary function agreeing with the actual solution on neighborhoods of the cutoff support. Locality transfers both the scalar Helmholtz equation and point values. The global reproducing formula then becomes the claimed local formula by integral congruence, since the kernel vanishes off that support. No globally smooth extension is assumed and no PDE conclusion is included as a premise equivalent to the integral identity.

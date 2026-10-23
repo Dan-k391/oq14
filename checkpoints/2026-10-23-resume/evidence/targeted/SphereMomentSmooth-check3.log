@@ -1,0 +1,14 @@
+SphereMomentSmooth.lean:40:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ContDiff ?m.4776 (?m.4784 + 1) ?m.4785
+case succ
+k : ℝ
+n : ℕ
+ih : ∀ (a : ↑Sphere → ℂ), Continuous a → ContDiff ℝ (↑↑n) (moment a k)
+a : ↑Sphere → ℂ
+ha : Continuous a
+⊢ ContDiff ℝ (↑(↑n + 1)) (moment a k)
+'OQ14.SphereMomentSmooth.amplitude_bound_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_fderiv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_contDiff_nat' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

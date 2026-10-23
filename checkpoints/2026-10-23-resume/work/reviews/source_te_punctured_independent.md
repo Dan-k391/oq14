@@ -1,0 +1,5 @@
+# SourceTEPunctured independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; both reports are standard-only. Source SHA256 `390BBCFD276A9FECF0AD543E823CE670BAEC00388A318B63F4EFFBD6D33C6E74`. Independent compiler log `lean/logs/SourceTEPunctured-modal-audit.log`, SHA256 `D97AF8A4AB5ACCA719B838966232E24A78ABFB1EF9AE8EC6D00F6CC35B1D706A`.
+
+The actual punctured TE field equations are used with literal sigma-one layers. Raw field and test-partial integrability justify every difference integral through all interfaces. The exact algebra mu*E = E + (mu-1)*E places the literal TE polarization in the forced second equation with the correct minus-I sign. Its source integrability is explicit here and is supplied by the actual SourceMuBounds theorem in the global adapter. Subtracting the actual vacuum TE fields gives the forced equation, and genuine away-origin identities transfer it to the literal corrected fields. No weak Maxwell or volume representation conclusion is supplied as an input.

@@ -1,0 +1,15 @@
+RestrictedTEOrthogonalKernel.lean:31:4: error: invalid field 'comp', the environment does not contain 'Function.Embedding.comp'
+  Infinite.natEmbedding ?m.9759
+has type
+  ℕ ↪ ?m.9759
+RestrictedTEOrthogonalKernel.lean:43:19: error: typeclass instance problem is stuck, it is often due to metavariables
+  InnerProductSpace ℂ ?m.14687
+'OQ14.RestrictedTEOrthogonalKernel.kernel_not_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEOrthogonalKernel.orthonormal_of_not_finite' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.RestrictedTEOrthogonalKernel.orthogonal_null_jets' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,7 @@
+# SourcePairedGeometry author review
+
+Author complete-source mathematical review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 13 reports are standard-only. Source SHA256 `4BC802860E98C447026A3CCB6A20D9117DFBA31818CA4AA583421BE167819377`. Final compiler log `lean/logs/SourcePairedGeometry-final.log`, SHA256 `28899CFDDA9E1543D5B2AFF937E5330D638131485356A3BC1E0B5605BFD6F8F3`. Root independent audit pending. Frozen source.
+
+The actual physical Data has baseline angular degree zero, common core radius radius(r), auxiliary clipping radius R/4, and literal finite quarter-pair TM layers with outer radius R plus the actual segment width. Actual layer construction supplies Chain. Direct induction through the actual high/low segments proves dielectric dispersion q_g squared equals sigma_g. Existing genuine finite-layer parameter transfer supplies common material bounds 1 <= sigma_g <= q squared, q_g squared <= q squared and q_g <= q for q >= 1.
+
+A generic actual segment reset preserves every width and endpoint while setting sigma to one. Induction through the actual reversed layer constructor proves exact commutation with layer reset. Direct quarter-pair induction identifies reset TM segments with the literal TE segments, so both physical polarizations have exactly identical geometry, not merely an asymptotically matching width. The final layer and outer-radius identities give the actual shared family used by the root paired-kernel limit adapter. No desired normalization, dispersion or geometry conclusion is a caller premise.

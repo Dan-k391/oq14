@@ -1,0 +1,48 @@
+Try this: ring_nf
+CoreMaterialEvaluation.lean:91:92: error: unsolved goals
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap y) = 0
+x : Space
+hx : ‖x‖ < R
+i j : Fin 3
+u : ↥VectorL2
+v : ↥DynamicConvolution.ScalarL2 := (component j) ((StaticCoefficient.sqrtMultiplier c) u)
+hv : Integrable (↑↑(NewtonL2.physicalCoordinate ((StaticCoefficient.sqrtMultiplier c) u) j)) volume
+hm :
+  ∫ (x : FourierL2.Space), ‖↑↑((component j) ((StaticCoefficient.sqrtMultiplier c) u)) x‖ ≤
+    √c.bound * ‖u‖ * √(volume.real (supportData c R X hc).carrier)
+⊢ kernelBound R X x hx i j * √c.bound * ‖u‖ * √(volume.real (supportData c R X hc).carrier) =
+    kernelBound R X x hx i j * √c.bound * ‖u‖ * √(volume.real (annulus R X))
+CoreMaterialEvaluation.lean:108:26: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ?r * ∫ (a : ?m.37732), ?f a ∂?m.37734
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap y) = 0
+x : Space
+hx : ‖x‖ < R
+i j : Fin 3
+z : ℂ
+u : ↥VectorL2
+⊢ ∫ (y : Space) in annulus R X,
+      ↑↑(z • (component j) ((StaticCoefficient.sqrtMultiplier c) u)) y * DyadicKernel.dyadic 1 (x - y) i j =
+    (RingHom.id ℂ) z •
+      ∫ (y : Space) in annulus R X,
+        ↑↑((component j) ((StaticCoefficient.sqrtMultiplier c) u)) y * DyadicKernel.dyadic 1 (x - y) i j
+CoreMaterialEvaluation.lean:132:2: error: unsolved goals
+case pos
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap y) = 0
+x : Space
+hx : ‖x‖ < R
+i j : Fin 3
+u : ↥VectorL2
+y : Space
+hy :
+  ↑↑(NewtonL2.physicalCoordinate ((StaticCoefficient.sqrtMultiplier c) u) j) y =
+    ↑√(c.value (VectorFourier.coordinateMap y)) * ↑↑u (VectorFourier.coordinateMap y) j
+hs : y ∈ annulus R X
+⊢ ↑√(c.value (VectorFourier.coordinateMap y)) * ↑↑u (VectorFourier.coordinateMap y) j *
+      DyadicKernel.dyadic 1 (x - y) i j =
+    DynamicVolume.source c u j y * DyadicKernel.dyadic 1 (x - y) i j

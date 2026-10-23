@@ -1,0 +1,5 @@
+# PointDyadicHelmholtz author review
+
+Final pinned target plus importable object PASS, exit 0, no warnings; all eight reports standard-only. Source SHA256 `430AE29308F84CB70DC2DFFA114C8269ABB3D949FAD95ABBFE987B900B9A0668`; final log `lean/logs/PointDyadicHelmholtz-final.log`, SHA256 `3AB72E641F0BA85B5F222F65B0EBD8B48F503B54871B8D8DA3BA25461379AEA4`. Forbidden-token scan clean. Root independent audit pending.
+
+Actual partial differentiation preserves the scalar unit-frequency Helmholtz equation by local derivative commutation and the actual equation on a neighborhood. This applies twice to the genuine Green kernel. Its actual Hessian identities identify the dyadic components with their actual second derivative expressions. Actual local linear Laplacian calculus consequently proves each unit-frequency dyadic component satisfies Helmholtz off zero; actual kernel analyticity gives smoothness there. The genuine translation Laplacian identity supplies both smoothness and Helmholtz away from any translated source. No field or kernel PDE conclusion is assumed.

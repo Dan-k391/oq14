@@ -1,0 +1,17 @@
+SourcePairedCore.lean:14:2: error: failed to synthesize
+  FiniteDimensional ℝ (ContinuousMultilinearMap ℝ (fun i => Space × Space) ℂ)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SourcePairedCore.lean:24:2: error: 'change' tactic failed, pattern
+  ((PairedVectorKernelLimit.kernelJetMap q ⋯ n 0 b i j) p) 0 = ?m.38623
+is not definitionally equal to target
+  (limitMap q hq n b i j) p = VectorLimitIdentification.kernel q n i j ↑p
+SourcePairedCore.lean:36:2: error: 'change' tactic failed, pattern
+  ((PairedVectorKernelLimit.actualJetMap q ⋯ n 0 b i j r) p) 0 = ?m.39412
+is not definitionally equal to target
+  (actualMap q hq n b i j r) p = SourcePairedTensor.kernel q hq n r i j ↑p
+'OQ14.SourcePairedCore.limitMap_apply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourcePairedCore.actualMap_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourcePairedCore.eventually_actualMap' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourcePairedCore.operator_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourcePairedCore.eventually_entries_actual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,9 @@
+ConicalEntireStability.lean:115:2: error: 'change' tactic failed, pattern
+  ?m.65924 ≤ Cp * d + Cn * (e + B * d)
+is not definitionally equal to target
+  ‖ConicalCoefficientStability.numerator s ζ hζ hc - ConicalCoefficientStability.numerator t ζ hζ hc‖ ≤
+    ‖ConicalLocalPairing.ballPair p R ζ hζ hc‖ * (‖A‖ * d) + Cn * (e + B * d)
+'OQ14.ConicalEntireStability.totalSource_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireStability.field_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireStability.correction_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireStability.numerator_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

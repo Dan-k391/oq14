@@ -1,0 +1,17 @@
+TEFiniteCalculus.lean:48:9: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  curl (fun y j => ∑ q ∈ s, A q * DebyeCalculus.toroidal (F q) y j) x ?i
+κ : Type u_1
+s : Finset κ
+F : κ → Space → ℂ
+A : κ → ℂ
+hF : ∀ q ∈ s, ContDiff ℝ (↑⊤) (F q)
+k : ℂ
+x : Space
+i : Fin 3
+he :
+  (DebyeMaxwell.teElectric fun y => ∑ q ∈ s, A q * F q y) = fun y j => ∑ q ∈ s, A q * DebyeMaxwell.teElectric (F q) y j
+⊢ -Complex.I / k * curl (fun y j => ∑ q ∈ s, A q * DebyeMaxwell.teElectric (F q) y j) x i =
+    ∑ q ∈ s, A q * DebyeMaxwell.teMagnetic k (F q) x i
+'OQ14.TEFiniteCalculus.curl_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.TEFiniteCalculus.electric_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.TEFiniteCalculus.magnetic_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

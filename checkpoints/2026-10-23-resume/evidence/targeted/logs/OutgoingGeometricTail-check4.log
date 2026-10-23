@@ -1,0 +1,43 @@
+OutgoingGeometricTail.lean:61:4: error: type mismatch, term
+  Summable.mul_left (prefactor b R) h
+after simplification has type
+  Summable fun i => prefactor b R * ((↑i + 2) ^ 11 * (1 / 2) ^ (i + 1)) : Prop
+but is expected to have type
+  Summable fun n => prefactor b R * (↑n + 2) ^ 11 * (1 / 2) ^ (n + 1) : Prop
+OutgoingGeometricTail.lean:83:58: error: unknown identifier 'a'
+OutgoingGeometricTail.lean:88:33: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  p
+has type
+  ?m.3945
+OutgoingGeometricTail.lean:88:57: error: invalid projection, structure expected
+  hp
+has type
+  p ∈ ?m.3964
+OutgoingGeometricTail.lean:88:57: error: invalid projection, structure expected
+  hp
+has type
+  Set.Mem ?m.3964 p
+OutgoingGeometricTail.lean:88:57: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  hp
+has type
+  ?m.3964 p
+OutgoingGeometricTail.lean:88:62: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  p
+has type
+  ?m.3945
+OutgoingGeometricTail.lean:88:68: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  p
+has type
+  ?m.3945
+OutgoingGeometricTail.lean:88:74: error: invalid projection, structure expected
+  hp
+has type
+  p ∈ ?m.3964
+OutgoingGeometricTail.lean:88:74: error: invalid projection, structure expected
+  hp
+has type
+  Set.Mem ?m.3964 p
+OutgoingGeometricTail.lean:88:74: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  hp
+has type
+  ?m.3964 p

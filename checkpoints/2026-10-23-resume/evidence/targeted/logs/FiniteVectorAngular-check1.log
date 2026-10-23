@@ -1,0 +1,26 @@
+FiniteVectorAngular.lean:24:51: error: ambiguous, possible interpretations 
+  VectorHarmonicNormalization.restrictionL2 : (Fin 3 → HarmonicPolynomial.Poly) → ↥VectorAmbient
+  
+  SphereHarmonicBasis.restrictionL2 : (l : ℕ) → ↥(harmonicPolynomials l) →ₗ[ℝ] ↥Ambient
+FiniteVectorAngular.lean:24:51: error: ambiguous, possible interpretations 
+  VectorHarmonicNormalization.restrictionL2 : (Fin 3 → HarmonicPolynomial.Poly) → ↥VectorAmbient
+  
+  SphereHarmonicBasis.restrictionL2 : (l : ℕ) → ↥(harmonicPolynomials l) →ₗ[ℝ] ↥Ambient
+FiniteVectorAngular.lean:22:73: error: unsolved goals
+case inl
+val✝ : PositiveIndex
+⊢ normalizer val✝.fst •
+      (ContinuousMap.toLp 2 angularMeasure ℝ)
+        (restriction (AngularHarmonicEnergy.tangential (↑(representative (val✝.fst + 1) val✝.snd)) (val✝.fst + 1))) =
+    normalizer val✝.fst •
+      VectorHarmonicNormalization.restrictionL2
+        (AngularHarmonicEnergy.tangential (↑(representative (val✝.fst + 1) val✝.snd)) (val✝.fst + 1))
+
+case inr
+val✝ : PositiveIndex
+⊢ normalizer val✝.fst •
+      (ContinuousMap.toLp 2 angularMeasure ℝ)
+        (restriction (AngularHarmonicEnergy.toroidal ↑(representative (val✝.fst + 1) val✝.snd))) =
+    normalizer val✝.fst •
+      VectorHarmonicNormalization.restrictionL2
+        (AngularHarmonicEnergy.toroidal ↑(representative (val✝.fst + 1) val✝.snd))

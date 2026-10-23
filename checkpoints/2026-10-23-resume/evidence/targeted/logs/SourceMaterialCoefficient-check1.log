@@ -1,0 +1,12 @@
+SourceMaterialCoefficient.lean:44:8: error: invalid field 're', the environment does not contain 'Measurable.re'
+  SourceLocalBounds.sigma_measurable d
+has type
+  Measurable (sigma d)
+SourceMaterialCoefficient.lean:44:8: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  SourceLocalBounds.sigma_measurable d
+has type
+  ∀ ⦃t : Set ℂ⦄, MeasurableSet t → MeasurableSet (sigma d ⁻¹' t)
+SourceMaterialCoefficient.lean:56:14: warning: unused variable `ξ`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SourceMaterialCoefficient.lean:57:10: warning: unused variable `ξ`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,0 +1,18 @@
+RestrictedTEEffectiveBand.lean:23:6: error: type mismatch, term
+  EvenHarmonicProjection.homogeneous (↑q).2 (↑q).1 q.property.left
+after simplification has type
+  MvPolynomial.IsHomogeneous (EvenHarmonicProjection.project 0 (↑q).2) 0 : Prop
+but is expected to have type
+  MvPolynomial.IsHomogeneous (polynomial q) 0 : Prop
+RestrictedTEEffectiveBand.lean:15:74: error: unsolved goals
+q : Index
+hq : ¬Active q
+hg : ∀ (i : Fin 3), (MvPolynomial.pderiv i) (polynomial q) = 0
+hz : angularMap q = 0
+⊢ (4 * ↑Real.pi * I ^ (↑q).1 * RegularTEIncoming.coefficient (↑q).1 true / 2) • 0 = 0
+'OQ14.RestrictedTEEffectiveBand.column_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEEffectiveBand.support_active' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEEffectiveBand.support_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEEffectiveBand.amplitudeMap_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEEffectiveBand.input_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEEffectiveBand.jets_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,68 @@
+RestrictedTEDatumLinear.lean:22:13: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  MeasurePreserving.symm ?m.4309
+has type
+  MeasurePreserving ⇑?m.4309 ?m.4310 ?m.4311 → MeasurePreserving ⇑(MeasurableEquiv.symm ?m.4309) ?m.4311 ?m.4310
+RestrictedTEDatumLinear.lean:22:13: error: application type mismatch
+  @MeasurePreserving.symm ?m.3971 ?m.3972 ?m.3973 ?m.3974 VectorFourier.coordinateMap_preserving
+argument
+  VectorFourier.coordinateMap_preserving
+has type
+  MeasurePreserving (⇑VectorFourier.coordinateMap) volume volume : Prop
+but is expected to have type
+  ?m.3971 ≃ᵐ ?m.3972 : Type (max ?u.3970 ?u.3969)
+RestrictedTEDatumLinear.lean:33:27: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) i
+case h
+c : Coefficient
+d : BoundedMaterialKernel.SupportData c
+A B : Index →₀ ℂ
+i : Fin 3
+hc✝ :
+  ∀ᵐ (x : VectorFourier.Space),
+    ↑↑(RestrictedTEMaterial.datum c d A + RestrictedTEMaterial.datum c d B) (VectorFourier.coordinateMap x) =
+      (↑↑(RestrictedTEMaterial.datum c d A) + ↑↑(RestrictedTEMaterial.datum c d B)) (VectorFourier.coordinateMap x)
+x : Space
+hs :
+  ↑↑(RestrictedTEMaterial.datum c d (A + B)) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * electric (A + B) x i
+ha :
+  ↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * electric A x i
+hb :
+  ↑↑(RestrictedTEMaterial.datum c d B) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * electric B x i
+hc :
+  ↑↑(RestrictedTEMaterial.datum c d A + RestrictedTEMaterial.datum c d B) (VectorFourier.coordinateMap x) =
+    (↑↑(RestrictedTEMaterial.datum c d A) + ↑↑(RestrictedTEMaterial.datum c d B)) (VectorFourier.coordinateMap x)
+⊢ ↑√(c.value (VectorFourier.coordinateMap x)) * electric (A + B) x i =
+    (↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) +
+        ↑↑(RestrictedTEMaterial.datum c d B) (VectorFourier.coordinateMap x))
+      i
+RestrictedTEDatumLinear.lean:45:28: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) i
+case h
+c : Coefficient
+d : BoundedMaterialKernel.SupportData c
+z : ℂ
+A : Index →₀ ℂ
+i : Fin 3
+hc✝ :
+  ∀ᵐ (x : VectorFourier.Space),
+    ↑↑(z • RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) =
+      (z • ↑↑(RestrictedTEMaterial.datum c d A)) (VectorFourier.coordinateMap x)
+x : Space
+hs :
+  ↑↑(RestrictedTEMaterial.datum c d (z • A)) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * electric (z • A) x i
+ha :
+  ↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * electric A x i
+hc :
+  ↑↑(z • RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x) =
+    (z • ↑↑(RestrictedTEMaterial.datum c d A)) (VectorFourier.coordinateMap x)
+⊢ ↑√(c.value (VectorFourier.coordinateMap x)) * electric (z • A) x i =
+    (z • ↑↑(RestrictedTEMaterial.datum c d A) (VectorFourier.coordinateMap x)) i
+'OQ14.RestrictedTEDatumLinear.physical_ext' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEDatumLinear.datum_add' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEDatumLinear.datum_smul' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEDatumLinear.solutionMap_apply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

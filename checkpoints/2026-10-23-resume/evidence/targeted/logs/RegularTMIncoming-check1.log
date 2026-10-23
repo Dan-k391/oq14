@@ -1,0 +1,149 @@
+RegularTMIncoming.lean:29:84: error: unsolved goals
+case h.e'_3
+l : ℕ
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+x : Space
+hx : x ≠ 0
+h :
+  (fun v => I • v) (DebyeMaxwell.teMagnetic 1 (SolidScalarHelmholtz.wave l 1 p) x) =
+    (fun v => I • v) (RegularTEIncoming.magnetic l false p x + RegularTEIncoming.magnetic l true p x)
+⊢ electric l false p x + electric l true p x =
+    (fun v => I • v) (RegularTEIncoming.magnetic l false p x + RegularTEIncoming.magnetic l true p x)
+RegularTMIncoming.lean:40:84: error: unsolved goals
+case h.e'_3
+l : ℕ
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+x : Space
+hx : x ≠ 0
+h :
+  (fun v => -I • v) (DebyeMaxwell.teElectric (SolidScalarHelmholtz.wave l 1 p) x) =
+    (fun v => -I • v) (RegularTEIncoming.electric l false p x + RegularTEIncoming.electric l true p x)
+⊢ magnetic l false p x + magnetic l true p x =
+    (fun v => -I • v) (RegularTEIncoming.electric l false p x + RegularTEIncoming.electric l true p x)
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+RegularTMIncoming.lean:51:95: error: unsolved goals
+case h.«0»
+l : ℕ
+inward : Bool
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+hh : formalLaplacian p = 0
+n : ↑Sphere
+r : ℝ
+hr : 0 < r
+hn : ‖↑n‖ = 1
+hdir : MaxwellRadiation.direction ↑n = position ↑n
+hnn : dot (position ↑n) (position ↑n) = 1
+H : Maxwell.Vector := RegularTEIncoming.magnetic l inward p (r • ↑n)
+hid :
+  ∀ (i : Fin 3),
+    H i = (crossProduct ((crossProduct (position ↑n)) H)) (position ↑n) i + dot (position ↑n) H * position (↑n) i
+hc : (crossProduct (position ↑n)) H = (I * radialD l inward r / (2 * ↑r)) • angularToroidal p ↑n
+hd : dot (position ↑n) H = -I * ↑l * (↑l + 1) * radial l inward r / (2 * ↑r ^ 2) * complexEvaluate p ↑n
+⊢ I *
+          ![I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 2) * (1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 1) * (-1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 2) * angularToroidal p (↑n) 0 * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 0) * (1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 0) * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 1) * angularToroidal p (↑n) 0 * (1 / 2)]
+            ⟨0, ⋯⟩ +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨0, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨0, ⋯⟩) * (1 / 2) =
+    radialD l inward r * (↑r)⁻¹ *
+            ![-(angularToroidal p (↑n) 1 * ↑(↑n 2)) + angularToroidal p (↑n) 2 * ↑(↑n 1),
+                ↑(↑n 2) * angularToroidal p (↑n) 0 - angularToroidal p (↑n) 2 * ↑(↑n 0),
+                angularToroidal p (↑n) 1 * ↑(↑n 0) - ↑(↑n 1) * angularToroidal p (↑n) 0]
+              ⟨0, ⋯⟩ *
+          (1 / 2) +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨0, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨0, ⋯⟩) * (1 / 2)
+
+case h.«1»
+l : ℕ
+inward : Bool
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+hh : formalLaplacian p = 0
+n : ↑Sphere
+r : ℝ
+hr : 0 < r
+hn : ‖↑n‖ = 1
+hdir : MaxwellRadiation.direction ↑n = position ↑n
+hnn : dot (position ↑n) (position ↑n) = 1
+H : Maxwell.Vector := RegularTEIncoming.magnetic l inward p (r • ↑n)
+hid :
+  ∀ (i : Fin 3),
+    H i = (crossProduct ((crossProduct (position ↑n)) H)) (position ↑n) i + dot (position ↑n) H * position (↑n) i
+hc : (crossProduct (position ↑n)) H = (I * radialD l inward r / (2 * ↑r)) • angularToroidal p ↑n
+hd : dot (position ↑n) H = -I * ↑l * (↑l + 1) * radial l inward r / (2 * ↑r ^ 2) * complexEvaluate p ↑n
+⊢ I *
+          ![I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 2) * (1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 1) * (-1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 2) * angularToroidal p (↑n) 0 * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 0) * (1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 0) * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 1) * angularToroidal p (↑n) 0 * (1 / 2)]
+            ⟨1, ⋯⟩ +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨1, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨1, ⋯⟩) * (1 / 2) =
+    radialD l inward r * (↑r)⁻¹ *
+            ![-(angularToroidal p (↑n) 1 * ↑(↑n 2)) + angularToroidal p (↑n) 2 * ↑(↑n 1),
+                ↑(↑n 2) * angularToroidal p (↑n) 0 - angularToroidal p (↑n) 2 * ↑(↑n 0),
+                angularToroidal p (↑n) 1 * ↑(↑n 0) - ↑(↑n 1) * angularToroidal p (↑n) 0]
+              ⟨1, ⋯⟩ *
+          (1 / 2) +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨1, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨1, ⋯⟩) * (1 / 2)
+
+case h.«2»
+l : ℕ
+inward : Bool
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+hh : formalLaplacian p = 0
+n : ↑Sphere
+r : ℝ
+hr : 0 < r
+hn : ‖↑n‖ = 1
+hdir : MaxwellRadiation.direction ↑n = position ↑n
+hnn : dot (position ↑n) (position ↑n) = 1
+H : Maxwell.Vector := RegularTEIncoming.magnetic l inward p (r • ↑n)
+hid :
+  ∀ (i : Fin 3),
+    H i = (crossProduct ((crossProduct (position ↑n)) H)) (position ↑n) i + dot (position ↑n) H * position (↑n) i
+hc : (crossProduct (position ↑n)) H = (I * radialD l inward r / (2 * ↑r)) • angularToroidal p ↑n
+hd : dot (position ↑n) H = -I * ↑l * (↑l + 1) * radial l inward r / (2 * ↑r ^ 2) * complexEvaluate p ↑n
+⊢ I *
+          ![I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 2) * (1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 1) * (-1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 2) * angularToroidal p (↑n) 0 * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 2 * ↑(↑n 0) * (1 / 2),
+              I * radialD l inward r * (↑r)⁻¹ * angularToroidal p (↑n) 1 * ↑(↑n 0) * (-1 / 2) +
+                I * radialD l inward r * (↑r)⁻¹ * ↑(↑n 1) * angularToroidal p (↑n) 0 * (1 / 2)]
+            ⟨2, ⋯⟩ +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨2, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨2, ⋯⟩) * (1 / 2) =
+    radialD l inward r * (↑r)⁻¹ *
+            ![-(angularToroidal p (↑n) 1 * ↑(↑n 2)) + angularToroidal p (↑n) 2 * ↑(↑n 1),
+                ↑(↑n 2) * angularToroidal p (↑n) 0 - angularToroidal p (↑n) 2 * ↑(↑n 0),
+                angularToroidal p (↑n) 1 * ↑(↑n 0) - ↑(↑n 1) * angularToroidal p (↑n) 0]
+              ⟨2, ⋯⟩ *
+          (1 / 2) +
+        (↑r)⁻¹ ^ 2 * ↑l * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨2, ⋯⟩) * (1 / 2) +
+      (↑r)⁻¹ ^ 2 * ↑l ^ 2 * radial l inward r * complexEvaluate p ↑n * ↑(↑n ⟨2, ⋯⟩) * (1 / 2)
+RegularTMIncoming.lean:123:2: error: type mismatch, term
+  Tendsto.add h1 h2
+after simplification has type
+  Tendsto
+    (fun x =>
+      (phase inward x * radialD l inward x / 2) • angularP p +
+        (↑l * (↑l + 1) * (phase inward x * radial l inward x / ↑x) / 2) • angularR p)
+    atTop (𝓝 (((coefficient l inward * if inward = true then -I else I) / 2) • angularP p + 0 • angularR p)) : Prop
+but is expected to have type
+  Tendsto (electricMap l inward p) atTop
+    (𝓝 (((coefficient l inward * if inward = true then -I else I) / 2) • angularP p)) : Prop

@@ -1,0 +1,30 @@
+ConicalEntireGauge.lean:25:2: error: unknown constant 'WithLp.toLp'
+ConicalEntireGauge.lean:29:2: error: type mismatch
+  MemLp.coeFn_toLp (SmallVolumeMaxwell.continuous_memLp_ball (fun x => I.E x i) (ContDiff.continuous (I.smoothE i)) a)
+has type
+  ↑↑(MemLp.toLp (fun x => I.E x i) ⋯) =ᶠ[ae (volume.restrict (closedBall 0 a))] fun x => I.E x i : Prop
+but is expected to have type
+  ↑↑(restricted a I i) =ᶠ[ae (volume.restrict (closedBall 0 a))] fun x => I.E x i : Prop
+ConicalEntireGauge.lean:121:23: error: application type mismatch
+  MaterialMaxwell.volume_solution_testMaxwell (ConicalSeparatedSource.material p a) k a (solution p a k c) c.E
+argument
+  c.E
+has type
+  Maxwell.Field : Type
+but is expected to have type
+  ↥MaterialMaxwell.VectorL2 : Type
+ConicalEntireGauge.lean:124:14: error: type mismatch
+  Continuous.locallyIntegrable (ContDiff.continuous (c.smoothE i))
+has type
+  LocallyIntegrable (fun x => c.E x i) ?m.40303 : Prop
+but is expected to have type
+  LocallyIntegrable (fun x => c.H x i) volume : Prop
+'OQ14.ConicalEntireGauge.source_ae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.source_zero_outer' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.exists_incident_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.electric_in_fixed_gauge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.gauss' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.system' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.system_total_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.restricted_ae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalEntireGauge.error_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]

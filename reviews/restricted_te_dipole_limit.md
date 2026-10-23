@@ -1,0 +1,6 @@
+# Literal complete harmonic parity-device flux to exact dipole limit
+
+Frozen source: lean/RestrictedTEDipoleLimit.lean, SHA256 45539DEB20680A62026558F49B17A22EAC61989771E27C3989A62ED4AC9F2C26.
+Author final pinned compiler/object PASS: exit 0, no warnings, one standard-only report. Log: lean/logs/RestrictedTEDipoleLimit-final.log. Independent audit pending.
+
+For every fixed actual finite restricted harmonic TE input, the literal self-consistent finite-ball parity material inverse has complete E/H normal flux converging in whole-plane L1 to the exact static dipole expression of its actual uniformly polarized ball trial. Both electric and magnetic reaction terms, all coherent cross terms and the quadratic free response are retained. Actual geometry and the actual input discharge source masses, gaps, derivative bounds, inverse smallness, weighted forcing and physical source error. Exact Newton exterior action supplies the ball dipoles. No field or Green convergence conclusion is assumed. This is the explicit parity-device endpoint, not a physical finite radial-shell identification. Uniformity over an entire unit coefficient sphere of a finite input family, physical finite-stack/remote-annulus lifting, named even-m equivalence and final section/counting inequalities remain separate.

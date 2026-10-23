@@ -1,0 +1,14 @@
+PlaneCapApproximation.lean:40:52: error: invalid field notation, function 'Function.compactSpace' does not have argument with type (Function ...) that can be used, it must be explicit or implicit with a unique name
+PlaneCapApproximation.lean:49:41: error: type mismatch
+  (ContinuousLinearMap.proj j).comp ?m.24580
+has type
+  ?m.21440 →SL[?m.21439] ?m.20801 j : Type (max ?u.21403 ?u.20795)
+but is expected to have type
+  (Fin 3 → Fin 3 → ℂ) →L[ℝ] ℂ : Type
+'OQ14.PlaneCapApproximation.electric_as_wave' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.electric_joint_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.matrixKernel_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.uniform_cap_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

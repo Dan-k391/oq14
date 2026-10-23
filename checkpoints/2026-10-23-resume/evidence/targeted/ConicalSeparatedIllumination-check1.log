@@ -1,0 +1,63 @@
+ConicalSeparatedIllumination.lean:37:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑((ConicalBallRestriction.vector a) (ConicalSeparatedDynamic.incident p a k) j) x
+case h
+p : Data
+a k : ℝ
+hai : a < p.cutoff.rIn
+j : Fin 3
+x : ConicalRungeBall.Space
+hr :
+  ↑↑((ConicalBallRestriction.vector a) (ConicalSeparatedDynamic.incident p a k) j) x =
+    ↑↑(NewtonL2.physicalCoordinate (ConicalSeparatedDynamic.incident p a k) j) x
+hi :
+  ↑↑(NewtonL2.physicalCoordinate (ConicalSeparatedDynamic.incident p a k) j) x =
+    -FieldResponse.electric k (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) x j
+ht :
+  ↑↑(target k a p.cutoff.rOut (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) ⋯ ⋯ j)
+      x =
+    FieldResponse.electric k (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) x j
+hn :
+  ↑↑(-target k a p.cutoff.rOut (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) ⋯ ⋯ j)
+      x =
+    (-↑↑(target k a p.cutoff.rOut (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) ⋯ ⋯
+              j))
+      x
+⊢ ↑↑(incidentBall p a k j) x =
+    ↑↑(-target k a p.cutoff.rOut (ConicalSeparatedSource.forcing p a) (ConicalSeparatedSource.physicalSource p a) ⋯ ⋯ j)
+      x
+ConicalSeparatedIllumination.lean:58:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  b.sum fun i a_1 => a_1 • waves k a i
+case intro.intro.intro
+p : Data
+a k : ℝ
+ha : 0 ≤ a
+hai : a < p.cutoff.rIn
+hk : 0 < k
+ε : ℝ
+hε : 0 < ε
+ht : incidentBall p a k ∈ closure ↑(waveSpan k a)
+v : BallL2 a
+hv : v ∈ ↑(waveSpan k a)
+hd : dist (incidentBall p a k) v < ε
+b : WaveIndex →₀ ℂ
+hb : (b.sum fun i a_1 => a_1 • waves k a i) = v
+⊢ ‖ConicalFinitePlanes.restricted k a b - incidentBall p a k‖ < ε
+'OQ14.ConicalSeparatedIllumination.incidentBall_eq_neg_target' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalSeparatedIllumination.incidentBall_mem_closedSpan' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalSeparatedIllumination.finite_incident_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalSeparatedIllumination.weighted_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalSeparatedIllumination.solution_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalSeparatedIllumination.total_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalSeparatedIllumination.finite_total_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

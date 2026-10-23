@@ -1,0 +1,41 @@
+SourceTEPunctured.lean:62:11: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a : Space), SourceUnclippedMaxwell.magnetic d p a i * ↑f a + SourceTECorrection.polarization d p i a * ↑f a
+d : Data
+hσ : ∀ g ∈ d.gs, g.σ = 1
+p : HarmonicPolynomial.Poly
+hp : MvPolynomial.IsHomogeneous p d.l
+hh : HarmonicPolynomial.formalLaplacian p = 0
+hρ : ∀ (i : Fin 3), Integrable (SourceTECorrection.polarization d p i) volume
+f : Test
+h0 : 0 ∉ tsupport ⇑↑f
+E : Maxwell.Field := SourceGeneralMaxwell.teElectric d p
+H : Maxwell.Field := SourceGeneralMaxwell.teMagnetic d p
+V : Maxwell.Field := SourceGeneralMaxwell.teElectric (vacuum d) p
+W : Maxwell.Field := SourceGeneralMaxwell.teMagnetic (vacuum d) p
+ρ : Fin 3 → Space → ℂ := SourceTECorrection.polarization d p
+hE : ∀ (i : Fin 3), Integrable (fun x => SourceUnclippedMaxwell.magnetic d p x i * ↑f x) volume
+hH : ∀ (i : Fin 3), Integrable (fun x => SourceGeneralMaxwell.teMagnetic d p x i * ↑f x) volume
+hV : ∀ (i : Fin 3), Integrable (fun x => SourceUnclippedMaxwell.magnetic (vacuum d) p x i * ↑f x) volume
+hW : ∀ (i : Fin 3), Integrable (fun x => SourceGeneralMaxwell.teMagnetic (vacuum d) p x i * ↑f x) volume
+hEp : ∀ (i j : Fin 3), Integrable (fun x => SourceUnclippedMaxwell.magnetic d p x i * ↑(testPartial j f) x) volume
+hHp : ∀ (i j : Fin 3), Integrable (fun x => SourceGeneralMaxwell.teMagnetic d p x i * ↑(testPartial j f) x) volume
+hVp :
+  ∀ (i j : Fin 3), Integrable (fun x => SourceUnclippedMaxwell.magnetic (vacuum d) p x i * ↑(testPartial j f) x) volume
+hWp :
+  ∀ (i j : Fin 3), Integrable (fun x => SourceGeneralMaxwell.teMagnetic (vacuum d) p x i * ↑(testPartial j f) x) volume
+hfirst :
+  ∀ (a : Data),
+    (∀ g ∈ a.gs, g.σ = 1) →
+      MvPolynomial.IsHomogeneous p a.l →
+        ∀ (i : Fin 3),
+          curlPair (fieldPair (SourceGeneralMaxwell.teElectric a p)) i f =
+            Complex.I * fieldPair (SourceGeneralMaxwell.teMagnetic a p) i f
+hsecond :
+  ∀ (a : Data) (i : Fin 3),
+    curlPair (fieldPair (SourceGeneralMaxwell.teMagnetic a p)) i f =
+      -Complex.I * ∫ (x : Space), SourceGeneralMaxwell.mu a ‖x‖ * SourceGeneralMaxwell.teElectric a p x i * ↑f x
+i : Fin 3
+he : (fun x => SourceGeneralMaxwell.mu d ‖x‖ * E x i * ↑f x) = fun x => E x i * ↑f x + ρ i x * ↑f x
+⊢ ∫ (x : Space), E x i * ↑f x + ρ i x * ↑f x = fieldPair E i f + ∫ (x : Space), ρ i x * ↑f x
+'OQ14.SourceTEPunctured.magnetic_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceTEPunctured.equation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

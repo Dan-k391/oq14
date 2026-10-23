@@ -1,0 +1,32 @@
+ConicalSourceFreeHelmholtz.lean:20:2: error: unsolved goals
+case pos
+ρ : Space → ℂ
+a : ℝ
+hi : ∀ y ∈ ball 0 a, ρ y = 0
+f : Test (ball 0 a)
+x : Space
+hx : ↑f x = 0
+⊢ 0 = 0 x
+ConicalSourceFreeHelmholtz.lean:21:2: error: unsolved goals
+case neg
+ρ : Space → ℂ
+a : ℝ
+hi : ∀ y ∈ ball 0 a, ρ y = 0
+f : Test (ball 0 a)
+x : Space
+hx : ¬↑f x = 0
+⊢ 0 = 0 x
+'OQ14.ConicalSourceFreeHelmholtz.source_pair_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalSourceFreeHelmholtz.regional_maxwell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalSourceFreeHelmholtz.electric_weak_helmholtz' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalSourceFreeHelmholtz.integral_weak_helmholtz' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalSourceFreeHelmholtz.electric_classical_helmholtz' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

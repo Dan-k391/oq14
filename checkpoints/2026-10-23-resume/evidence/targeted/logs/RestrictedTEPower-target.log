@@ -1,0 +1,21 @@
+RestrictedTEPower.lean:29:10: error: unknown constant 'OQ14.FarFieldPower.energy_zero_iff.mp'
+RestrictedTEPower.lean:36:72: error: unsolved goals
+case h.h
+A : Index →₀ ℂ
+h : physicalPower A = 0
+ha : ∀ (n : ↑Sphere), RestrictedTEAmplitude.amplitude A n = 0
+hc : 2 * ↑Real.pi * I ≠ 0
+hd : ∀ (n : ↑Sphere), density A n = 0
+he : DebyeMaxwell.teElectric (RestrictedTEFields.potential 1 A) = 0
+x : Maxwell.Space
+j : Fin 3
+⊢ ![dcoord (fun y => 0) x 1 - dcoord (fun y => 0) x 2, dcoord (fun y => 0) x 2 - dcoord (fun y => 0) x 0,
+        dcoord (fun y => 0) x 0 - dcoord (fun y => 0) x 1]
+      j =
+    0
+RestrictedTEPower.lean:65:4: warning: try 'simp at hj' instead of 'simpa using hj'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+'OQ14.RestrictedTEPower.energy_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEPower.power_zero_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEPower.fields_zero_of_power_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEPower.physical_power_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

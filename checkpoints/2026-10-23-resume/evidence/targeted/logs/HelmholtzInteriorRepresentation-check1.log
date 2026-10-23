@@ -1,0 +1,22 @@
+HelmholtzInteriorRepresentation.lean:34:26: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (y : Space), ?f (?x - y) * ?g y
+k : ℝ
+ψ : Space → ℂ
+hψ : ContDiff ℝ (↑⊤) ψ
+hc : HasCompactSupport ψ
+x : Space
+i : Fin 3
+h : ∫ (x_1 : Space), phiGradient k x_1 i * ψ (x - x_1) = ∫ (a : Space), phi k a * dcoord ψ (x - a) i
+⊢ ∫ (y : Space), phiGradient k (x - y) i * ψ y = ∫ (z : Space), phi k z * dcoord ψ (x - z) i
+'OQ14.HelmholtzInteriorRepresentation.translated_test_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.translated_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.translated_gradient_test' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.remove_solution_derivative' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

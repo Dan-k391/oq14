@@ -1,0 +1,22 @@
+FreeFarFieldExpansion.lean:22:94: error: unsolved goals
+y : Space
+i j : Fin 3
+⊢ (4 * ↑Real.pi)⁻¹ •
+      (SphereVectorComponents.coordinate i)
+        ((ContinuousMap.toLp 2 angularMeasure ℂ) (TransversePlaneFields.plane 1 y j)) =
+    (4 * ↑Real.pi)⁻¹ • (SphereVectorComponents.coordinate i) (TransversePlaneFields.field 1 y j)
+FreeFarFieldExpansion.lean:28:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑((4 * ↑Real.pi)⁻¹ • TransversePlaneFields.field 1 y j) n
+case h
+y : Space
+j : Fin 3
+n : ↑Sphere
+hn : inner (embedVector ↑n) (↑↑(TransversePlaneFields.field 1 y j) n) = 0
+he :
+  ↑↑((4 * ↑Real.pi)⁻¹ • TransversePlaneFields.field 1 y j) n =
+    ((4 * ↑Real.pi)⁻¹ • ↑↑(TransversePlaneFields.field 1 y j)) n
+⊢ inner (embedVector ↑n) (↑↑(freeAmplitude y j) n) = 0
+FreeFarFieldExpansion.lean:83:7: error: ambiguous, possible interpretations 
+  SphereVectorComponents.coordinate i : ↥ComplexVectorSphere.Ambient →L[ℂ] ↥(Lp ℂ 2 angularMeasure)
+  
+  Maxwell.coordinate i : Space →L[ℝ] ℂ

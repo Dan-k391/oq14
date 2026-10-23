@@ -1,0 +1,5 @@
+# ForcedTestLocalization independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all five reports standard-only. Source SHA256 `99AB34D717303B0F65C0CC67E4AF6701C6DF1B535929A7320A063BE2F1DAF54F`; independent compiler log `lean/logs/ForcedTestLocalization-modal-audit.log`, SHA256 `D3AC57F9DB2AA45A23FF1792706A29F371EDED8689622E83C1551097246290A2`.
+
+Actual local integrability justifies splitting each compact-test pairing. Genuine first derivatives split by the actual derivative sum rule, and finite curl-pair algebra recombines the literal forced Maxwell equations. A genuine smooth interior cutoff equals one near the origin, splitting an arbitrary compact Schwartz test into a near-region test and a compact smooth remainder vanishing near the origin. Their actual supports discharge the two explicit local equation hypotheses, yielding the global forced equation without any limiting boundary terms or distributional-separation assumption.

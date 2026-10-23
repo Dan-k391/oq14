@@ -1,0 +1,44 @@
+ConicalInteriorNewton.lean:26:2: error: unsolved goals
+case neg
+ρ : Space → ℂ
+δ a b : ℝ
+hgap : δ + b ≤ a
+hi : ∀ y ∈ ball 0 a, ρ y = 0
+i j : Fin 3
+x y : Space
+hx : x ∈ ball 0 b
+hz : ¬ρ y = 0
+hy : y ∉ ball 0 a
+⊢ ρ y * {z | δ ≤ ‖z‖}.indicator (fun z => phiHessian 0 z i j) (x - y) = ρ y * phiHessian 0 (x - y) i j
+ConicalInteriorNewton.lean:35:72: error: unsolved goals
+case neg
+ρ : Space → ℂ
+hρ : Integrable ρ volume
+δ a b S : ℝ
+hδ : 0 < δ
+hgap : δ + b ≤ a
+hc : ∀ y ∉ closedBall 0 S, ρ y = 0
+hi : ∀ y ∈ ball 0 a, ρ y = 0
+i j : Fin 3
+f : DynamicSource.Test
+hf : tsupport ⇑↑f ⊆ ball 0 b
+y : NewtonConvolution.Space
+hz : ¬ρ y = 0
+hy : y ∉ ball 0 a
+hfy : y ∉ tsupport ⇑↑f
+x : Space
+hx : ¬↑f x = 0
+hs : δ ≤ ‖x - y‖
+⊢ phiHessian 0 (x - y) i j * ↑f x = {z | δ ≤ ‖z‖}.indicator (fun z => phiHessian 0 z i j) (x - y) * ↑f x
+'OQ14.ConicalInteriorNewton.separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalInteriorNewton.awayKernel_source_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalInteriorNewton.weakConvolution_interior_pairing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalInteriorNewton.newton_cutResponse_pairing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalInteriorNewton.newton_ae_cutResponse' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalInteriorNewton.newton_ae_interior' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

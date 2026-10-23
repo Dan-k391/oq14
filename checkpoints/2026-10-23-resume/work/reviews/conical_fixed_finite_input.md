@@ -1,0 +1,7 @@
+# ConicalFixedFiniteInput — author verification
+
+Frozen source SHA256 `87E934F69FE8DAAEA8B35531C4D265B59450DA3552494B4D6FA57994FDE0DE53`. Final source target85393 and final target/object82299 EXIT0/no warnings/all four standard-only reports. Log `lean/ConicalFixedFiniteInput.final.log` SHA256 `BE500A2B36269E60601AE06AA078E1C128592177C526B836A95B6372481017AD`; object 359792 bytes.
+
+The genuine Runge incident approximation, proved full numerator input error bound and actual smooth incident extension select one literal finite Maxwell sum with nonzero extraction numerator. The true coefficient identity then proves its actual conical q is nonzero. Finally an actual nonnegative annular bump, proved nonzero static angular pairing and actual separated numerator convergence discharge the baseline nonzero condition: for every sufficiently small positive k, a finite incident vector exists with actual q≠0. Quantifiers choose that vector before any rounding or superlevel threshold. Source and material radii remain separated, and extraction is on strict interior balls.
+
+This is a fixed finite-directional illumination intermediate. Such plane sums do not have finite physical incoming power. Smooth angular Herglotz realization and actual input-power normalization are essential subsequent tasks, not conclusions here. No coefficient nonzero or continuity premise survives the final theorem. Parent independent full-source/compiler audit requested.

@@ -1,0 +1,25 @@
+SphereCapKernels.lean:28:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (∫ (x : ?m.17167), ?m.17179 x ∂?m.17170) ?v
+X : Type u_1
+inst✝¹ : TopologicalSpace X
+inst✝ : CompactSpace X
+f : ↑Sphere × X → ℂ
+hf : Continuous f
+ε : ℝ
+hε : 0 < ε
+F : C(↑Sphere, C(X, ℂ)) := { toFun := f, continuous_toFun := hf }.curry
+δ : ℝ
+hδ : 0 < δ
+hbound :
+  ∀ (n : ↑SphereSmoothCaps.Sphere) (r : ℝ) (hr : 0 < r),
+    r ≤ δ → ‖∫ (θ : ↑SphereSmoothCaps.Sphere), SphereSmoothCaps.density n r hr θ • F θ ∂SphereSmoothCaps.μ - F n‖ ≤ ε
+n : ↑Sphere
+r : ℝ
+hr : 0 < r
+hrδ : r ≤ δ
+x : X
+hi : Integrable (fun θ => SphereSmoothCaps.density n r hr θ • F θ) μ
+⊢ (∫ (θ : ↑Sphere), SphereSmoothCaps.density n r hr θ • F θ ∂μ) x =
+    ∫ (θ : ↑Sphere), ↑(SphereSmoothCaps.density n r hr θ) * f (θ, x) ∂μ
+SphereCapKernels.lean:33:9: error: invalid 'by' tactic, expected type has not been provided
+'OQ14.SphereCapKernels.uniform_kernel_averaging' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

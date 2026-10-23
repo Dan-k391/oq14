@@ -1,0 +1,19 @@
+RegularTEDecomposition.lean:31:6: error: failed to rewrite using equation theorems for 'OQ14.RegularTEIncoming.electric'.
+RegularTEDecomposition.lean:44:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  curl (fun y j => electric l false p y j + electric l true p y j) x
+l : ℕ
+p : Poly
+hp : MvPolynomial.IsHomogeneous p l
+x : Space
+hx : x ≠ 0
+hn : {y | y ≠ 0} ∈ 𝓝 x
+he :
+  DebyeMaxwell.teElectric (SolidScalarHelmholtz.wave l 1 p) =ᶠ[𝓝 x] fun y => electric l false p y + electric l true p y
+hc :
+  curl (DebyeMaxwell.teElectric (SolidScalarHelmholtz.wave l 1 p)) x =
+    curl (fun y => electric l false p y + electric l true p y) x
+⊢ DebyeMaxwell.teMagnetic 1 (SolidScalarHelmholtz.wave l 1 p) x = magnetic l false p x + magnetic l true p x
+'OQ14.RegularTEDecomposition.electric_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RegularTEDecomposition.electric_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RegularTEDecomposition.magnetic_curl' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RegularTEDecomposition.magnetic_split' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

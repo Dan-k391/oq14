@@ -1,0 +1,36 @@
+HalfTurnReactionKernel.lean:36:4: error: type mismatch
+  LinearIsometryEquiv.inner_map_map HarmonicHalfTurn.rotation (↑θ) x
+has type
+  ⟪HarmonicHalfTurn.rotation ↑θ, HarmonicHalfTurn.rotation x⟫_ℝ = ⟪↑θ, x⟫_ℝ : Prop
+but is expected to have type
+  k * ⟪↑((sphereMap HarmonicHalfTurn.rotation) θ), HarmonicHalfTurn.rotation x⟫_ℝ = k * ⟪↑θ, x⟫_ℝ : Prop
+HalfTurnReactionKernel.lean:44:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (y : ↑AngularPower.Sphere), amplitude y i j * wave k (HarmonicHalfTurn.rotation x) y ∂AngularPower.angularMeasure
+k : ℝ
+x : Space
+i j : Fin 3
+ha : ∀ (θ : ↑Sphere), amplitude ((sphereMap HarmonicHalfTurn.rotation) θ) i j = ↑(sign i) * ↑(sign j) * amplitude θ i j
+hw : ∀ (θ : ↑Sphere), wave k (HarmonicHalfTurn.rotation x) ((sphereMap HarmonicHalfTurn.rotation) θ) = wave k x θ
+hc :
+  ↑(sign i) * (↑(sign j) * ∫ (a : ↑Sphere), amplitude a i j * wave k x a ∂surface) =
+    ∫ (y : ↑AngularPower.Sphere), amplitude y i j * wave k (HarmonicHalfTurn.rotation x) y ∂AngularPower.angularMeasure
+⊢ ↑(k ^ 3 / (16 * Real.pi ^ 2)) * ∫ (θ : ↑Sphere), amplitude θ i j * wave k (HarmonicHalfTurn.rotation x) θ ∂surface =
+    ↑(sign i) * ↑(sign j) * (↑(k ^ 3 / (16 * Real.pi ^ 2)) * ∫ (θ : ↑Sphere), amplitude θ i j * wave k x θ ∂surface)
+HalfTurnReactionKernel.lean:47:76: error: unsolved goals
+k : ℝ
+x : Space
+i j : Fin 3
+L : Space ≃ₗᵢ[ℝ] Space := LinearIsometryEquiv.neg ℝ
+ha : ∀ (θ : ↑Sphere), amplitude ((sphereMap L) θ) i j = amplitude θ i j
+hw : ∀ (θ : ↑Sphere), wave k (-x) ((sphereMap L) θ) = wave k x θ
+hc :
+  ∫ (θ : ↑Sphere), amplitude θ i j * wave k x θ ∂surface =
+    ∫ (y : ↑AngularPower.Sphere), amplitude y i j * wave k (-x) y ∂AngularPower.angularMeasure
+⊢ ↑(k ^ 3 / (16 * Real.pi ^ 2)) * ∫ (θ : ↑Sphere), amplitude θ i j * wave k (-x) θ ∂surface =
+    ↑(k ^ 3 / (16 * Real.pi ^ 2)) *
+      ∫ (y : ↑AngularPower.Sphere), amplitude y i j * wave k (-x) y ∂AngularPower.angularMeasure
+'OQ14.HalfTurnReactionKernel.rotation_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.rotation_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.J_rotation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.J_neg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.potential_invariant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

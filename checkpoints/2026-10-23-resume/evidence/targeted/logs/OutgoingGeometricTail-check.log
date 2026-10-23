@@ -1,0 +1,9 @@
+OutgoingGeometricTail.lean:44:34: error: not a positivity goal
+OutgoingGeometricTail.lean:46:4: error: type mismatch
+  mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hp hb) (LT.lt.le (Real.exp_pos R)))
+    hb
+has type
+  b * (↑a.fst + 2) ^ 6 * Real.exp R * b ≤ b * (↑a.fst + 2) ^ 8 * Real.exp R * b : Prop
+but is expected to have type
+  2 * DebyeJetBounds.scale 0 b * scale * (↑a.fst + 2) ^ 6 * (Real.exp R * (1 / 2) ^ (a.fst + 1)) ≤
+    2 * DebyeJetBounds.scale 0 b * scale * (↑a.fst + 2) ^ 8 * Real.exp R * (1 / 2) ^ (a.fst + 1) : Prop

@@ -1,0 +1,21 @@
+RestrictedTEInput.lean:94:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑(↑n 0) * RestrictedTEAmplitude.amplitude A n 0 + ↑(↑n 1) * RestrictedTEAmplitude.amplitude A n 1 +
+    ↑(↑n 2) * RestrictedTEAmplitude.amplitude A n 2
+case h
+A : Index →₀ ℂ
+n : ↑Sphere
+hn : ↑↑(rawInput A) n = (amplitudeMap A) n
+hs : ↑↑(input A) n = (1 / ↑√2) • ↑↑(rawInput A) n
+ht :
+  ↑(↑n 0) * RestrictedTEAmplitude.amplitude A n 0 + ↑(↑n 1) * RestrictedTEAmplitude.amplitude A n 1 +
+      ↑(↑n 2) * RestrictedTEAmplitude.amplitude A n 2 =
+    0
+⊢ 1 / ↑√2 *
+      (RestrictedTEAmplitude.amplitude A n 0 * ↑(↑n 0) + RestrictedTEAmplitude.amplitude A n 1 * ↑(↑n 1) +
+        RestrictedTEAmplitude.amplitude A n 2 * ↑(↑n 2)) =
+    0
+'OQ14.RestrictedTEInput.amplitudeMap_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEInput.raw_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEInput.input_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEInput.input_zero_fields' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEInput.input_transverse' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

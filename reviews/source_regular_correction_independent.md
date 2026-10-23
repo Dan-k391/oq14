@@ -1,0 +1,5 @@
+# SourceRegularCorrection independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all seven reports standard-only. Source SHA256 `9A210DED2987E6B96C0C03FF0B279C3A46E745FA2AEB0074426230D7E01428AD`; independent compiler log `lean/logs/SourceRegularCorrection-modal-audit.log`, SHA256 `3C08E8625A56BE6965FB1597D2ADEA9E897BB17D35B28D6567E983A81443D0AA`.
+
+The actual corrected fields use the genuine regular solid-wave difference in the closed half-core ball and the literal layered-minus-vacuum difference elsewhere. Existing exact core reaction identities prove agreement with the actual raw difference at every nonzero point, including the overlap boundary. The inner identities retain the actual smooth solid fields at the origin. The polarization is the literal (sigma-1) times layered electric field and vanishes exactly in the core and beyond the outer radius. Vacuum sigma is identically one from the empty layer list. This source does not yet assume or claim global weak equations, outgoing representation, local L2 or inverse matching; those properties are distinct downstream proofs.

@@ -1,0 +1,5 @@
+SphereVectorPairing.lean:29:2: error: `fun_prop` was unable to prove `Continuous fun n => F n 0 * (starRingEnd ℂ) (G n 0) + F n 1 * (starRingEnd ℂ) (G n 1) + F n 2 * (starRingEnd ℂ) (G n 2)`
+
+Issues:
+  No theorems found for `starRingEnd` in order to prove `Continuous fun x3 => (starRingEnd ℂ) x3`
+  No theorems found for `starRingEnd` in order to prove `Continuous fun x => (starRingEnd ℂ) (G x 0)`

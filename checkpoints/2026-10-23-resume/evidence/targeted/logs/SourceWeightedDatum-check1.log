@@ -1,0 +1,23 @@
+SourceWeightedDatum.lean:44:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(IncidentLocalization.datum c X (SourceElectricProfiles.electric (SourceCorrectionLocalBounds.clipped a) p) hc ⋯)
+    (VectorFourier.coordinateMap x) i
+case h
+c : Coefficient
+X : ℝ
+hc : ∀ x ∉ closedBall 0 X, c.value (VectorFourier.coordinateMap x) = 0
+a : Data
+p : HarmonicPolynomial.Poly
+hzero : ∀ (x : Space), ‖x‖ ≤ a.R → c.value (VectorFourier.coordinateMap x) = 0
+i : Fin 3
+x : VectorFourier.Space
+hx :
+  ↑↑(IncidentLocalization.datum c X (SourceElectricProfiles.electric (SourceCorrectionLocalBounds.clipped a) p) hc ⋯)
+      (VectorFourier.coordinateMap x) i =
+    IncidentLocalization.weighted c (SourceElectricProfiles.electric (SourceCorrectionLocalBounds.clipped a) p) i x
+⊢ ↑↑(datum c X hc a p) (VectorFourier.coordinateMap x) i =
+    ↑√(c.value (VectorFourier.coordinateMap x)) * SourceUnclippedMaxwell.electric a p x i
+'OQ14.SourceWeightedDatum.material_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceWeightedDatum.material_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceWeightedDatum.actual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceWeightedDatum.source_actual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceWeightedDatum.sourceL2_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

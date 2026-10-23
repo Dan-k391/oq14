@@ -1,0 +1,5 @@
+# SourceTMPhysicalResponse independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `592A01C1D81D18B201C8C3906DD58BF8ADE45A802E5DAFF20A65C948C04FF6CB`. Independent compiler log `lean/logs/SourceTMPhysicalResponse-modal-audit.log`, SHA256 `6BACC39409FB53F306C357AAF144D949B67B95F10DCB7AD1179755A577F1CB89`.
+
+The actual coefficient has exactly sigma minus one susceptibility. Actual sorted-cut geometry supplies positive-frequency invertibility, and the already proved weighted mode volume equation therefore identifies the physical inverse solution with the actual layer weighted datum. Its polarization agrees AE with the literal compact layer source. AE integral congruence transfers the genuine core dyadic identity to this exact inverse solution, including the origin. All remaining premises are explicit physical layer bounds/dispersion and actual polynomial harmonicity/homogeneity; no material identity, invertibility, radiation or response-equality premise is supplied.

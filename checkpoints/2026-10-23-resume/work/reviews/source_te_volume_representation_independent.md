@@ -1,0 +1,5 @@
+# SourceTEVolumeRepresentation independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `0D871CC08826297EBF3936F98F5CED5BFF86FEECBBD1A3EDEB715C561EADF945`. Independent compiler log `lean/logs/SourceTEVolumeRepresentation-modal-audit.log`, SHA256 `FAFD0B9332E6EEC6D213C879CE500666A6F1B5ED17FABA46737CC0CE6D386A58`.
+
+The genuine compact TE polarization L2 functions are inserted into the physical vector Hilbert space coordinatewise, with actual AE representative equality. Actual all-space forced Maxwell, local L2, exact source support, derived exterior smoothness and actual dual outgoing trace discharge every premise of the source representation theorem. The literal TE corrected fields are consequently equal AE to the actual electric/magnetic Green volume response, including the origin in the AE sense. No radiation, smoothness, local-L2, Maxwell or volume-equivalence conclusion is assumed by the caller.

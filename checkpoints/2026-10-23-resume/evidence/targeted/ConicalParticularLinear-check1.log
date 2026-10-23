@@ -1,0 +1,21 @@
+Try this: ring_nf
+ConicalParticularLinear.lean:26:72: error: unsolved goals
+ν : ℝ
+hν : ν ∈ Ioo 0 1
+A B C D : ℝ → ℂ
+hA : ContinuousOn A (Ici 0)
+hB : ContinuousOn B (Ici 0)
+hC : ContinuousOn C (Ici 0)
+hD : ContinuousOn D (Ici 0)
+r : ℝ
+hr : 0 ≤ r
+hm : minusForcing ν (A - C) (B - D) = minusForcing ν A B - minusForcing ν C D
+hp : plusForcing ν (A - C) (B - D) = plusForcing ν A B - plusForcing ν C D
+⊢ power ν r * primitive (-ν) (minusForcing ν A B - minusForcing ν C D) r * (↑(1 + ν * 2))⁻¹ -
+      power (-1 - ν) r * primitive (1 + ν) (plusForcing ν A B - plusForcing ν C D) r * (↑(1 + ν * 2))⁻¹ =
+    power ν r * (↑(1 + ν * 2))⁻¹ * primitive (-ν) (minusForcing ν A B) r +
+        (-(power ν r * (↑(1 + ν * 2))⁻¹ * primitive (-ν) (minusForcing ν C D) r) -
+          power (-1 - ν) r * (↑(1 + ν * 2))⁻¹ * primitive (1 + ν) (plusForcing ν A B) r) +
+      power (-1 - ν) r * (↑(1 + ν * 2))⁻¹ * primitive (1 + ν) (plusForcing ν C D) r
+'OQ14.ConicalParticularLinear.primitive_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalParticularLinear.particular_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

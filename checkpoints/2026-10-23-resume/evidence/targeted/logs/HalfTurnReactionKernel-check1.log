@@ -1,0 +1,108 @@
+HalfTurnReactionKernel.lean:15:25: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+HalfTurnReactionKernel.lean:18:33: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+HalfTurnReactionKernel.lean:23:32: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+Try this: ring_nf
+HalfTurnReactionKernel.lean:26:51: error: unsolved goals
+case «0».«0»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ ↑(HarmonicHalfTurn.rotation (↑θ) 0) ^ 2 = ↑(↑θ 0) ^ 2
+
+case «0».«1»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ ↑(HarmonicHalfTurn.rotation (↑θ) 0) * ↑(HarmonicHalfTurn.rotation (↑θ) 1) = ↑(↑θ 0) * ↑(↑θ 1)
+
+case «0».«2»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ -(↑(HarmonicHalfTurn.rotation (↑θ) 0) * ↑(HarmonicHalfTurn.rotation (↑θ) 2)) = ↑(↑θ 0) * ↑(↑θ 2)
+
+case «1».«0»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ ↑(HarmonicHalfTurn.rotation (↑θ) 1) * ↑(HarmonicHalfTurn.rotation (↑θ) 0) = ↑(↑θ 1) * ↑(↑θ 0)
+
+case «1».«1»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ ↑(HarmonicHalfTurn.rotation (↑θ) 1) ^ 2 = ↑(↑θ 1) ^ 2
+
+case «1».«2»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ -(↑(HarmonicHalfTurn.rotation (↑θ) 1) * ↑(HarmonicHalfTurn.rotation (↑θ) 2)) = ↑(↑θ 1) * ↑(↑θ 2)
+
+case «2».«0»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ -(↑(HarmonicHalfTurn.rotation (↑θ) 2) * ↑(HarmonicHalfTurn.rotation (↑θ) 0)) = ↑(↑θ 2) * ↑(↑θ 0)
+
+case «2».«1»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ -(↑(HarmonicHalfTurn.rotation (↑θ) 2) * ↑(HarmonicHalfTurn.rotation (↑θ) 1)) = ↑(↑θ 2) * ↑(↑θ 1)
+
+case «2».«2»
+k : ℝ
+x : sorry
+θ : ↑Sphere
+⊢ ↑(HarmonicHalfTurn.rotation (↑θ) 2) ^ 2 = ↑(↑θ 2) ^ 2
+HalfTurnReactionKernel.lean:45:27: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+HalfTurnReactionKernel.lean:46:43: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+HalfTurnReactionKernel.lean:45:76: error: unsolved goals
+case refine_1
+k : ℝ
+x : sorry
+i j : Fin 3
+⊢ SeminormedAddCommGroup sorry
+
+case refine_2
+k : ℝ
+x : sorry
+i j : Fin 3
+⊢ Module ℝ sorry
+HalfTurnReactionKernel.lean:62:21: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+HalfTurnReactionKernel.lean:66:29: error: ambiguous, possible interpretations 
+  SphereReactionKernel.Space : Type
+  
+  Maxwell.Space : Type
+'OQ14.HalfTurnReactionKernel.rotation_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.rotation_coordinate' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.J_rotation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.J_neg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionKernel.potential_invariant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

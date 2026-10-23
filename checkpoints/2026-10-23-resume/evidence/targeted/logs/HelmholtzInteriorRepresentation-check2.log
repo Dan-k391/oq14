@@ -1,0 +1,43 @@
+HelmholtzInteriorRepresentation.lean:108:9: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a : Space),
+    ∑ i ∈ ?m.20518,
+      ((fun y => phi k (x - y) * (u y * dcoord (fun z => dcoord χ z i) y i)) + fun x_1 =>
+          2 * (phi k (x - x_1) * (dcoord χ x_1 i * dcoord u x_1 i)))
+        a
+k : ℝ
+χ u : Space → ℂ
+hχ : ContDiff ℝ (↑⊤) χ
+hu : ContDiff ℝ (↑⊤) u
+hc : HasCompactSupport χ
+heq : ∀ y ∈ tsupport χ, laplacian u y + ↑k ^ 2 * u y = 0
+x : Space
+hx : χ x = 1
+hiC : ∀ (i : Fin 3), Integrable (fun y => phi k (x - y) * (u y * dcoord (fun z => dcoord χ z i) y i)) volume
+hiB : ∀ (i : Fin 3), Integrable (fun y => phi k (x - y) * (dcoord χ y i * dcoord u y i)) volume
+hiG : ∀ (i : Fin 3), Integrable (fun y => phiGradient k (x - y) i * (u y * dcoord χ y i)) volume
+hs :
+  (fun y => phi k (x - y) * source k (fun z => χ z * u z) y) = fun y =>
+    ∑ i,
+      (phi k (x - y) * (u y * dcoord (fun z => dcoord χ z i) y i) + 2 * (phi k (x - y) * (dcoord χ y i * dcoord u y i)))
+h :
+  u x =
+    -∫ (y : Space),
+        ∑ i,
+          (phi k (x - y) * (u y * dcoord (fun z => dcoord χ z i) y i) +
+            2 * (phi k (x - y) * (dcoord χ y i * dcoord u y i)))
+⊢ u x = ∫ (y : Space), u y * kernel k χ x y
+'OQ14.HelmholtzInteriorRepresentation.translated_test_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.translated_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.translated_gradient_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.remove_solution_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.cutoff_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorRepresentation.cutoff_representation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

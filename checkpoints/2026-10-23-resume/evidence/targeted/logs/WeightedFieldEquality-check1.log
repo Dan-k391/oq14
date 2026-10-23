@@ -1,0 +1,38 @@
+WeightedFieldEquality.lean:33:9: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(z • v) (VectorFourier.coordinateMap x)
+case h
+c : Coefficient
+u v w : ↥VectorL2
+E F G : Maxwell.Field
+z t : ℂ
+hu✝ :
+  ∀ (i : Fin 3),
+    (fun x => ↑↑u (VectorFourier.coordinateMap x) i) =ᶠ[ae volume] fun x =>
+      ↑√(c.value (VectorFourier.coordinateMap x)) * E x i
+hv✝ :
+  ∀ (i : Fin 3),
+    (fun x => ↑↑v (VectorFourier.coordinateMap x) i) =ᶠ[ae volume] fun x =>
+      ↑√(c.value (VectorFourier.coordinateMap x)) * F x i
+hw✝ :
+  ∀ (i : Fin 3),
+    (fun x => ↑↑w (VectorFourier.coordinateMap x) i) =ᶠ[ae volume] fun x =>
+      ↑√(c.value (VectorFourier.coordinateMap x)) * G x i
+he : ∀ (x : Space) (i : Fin 3), E x i = z * F x i + t * G x i
+i : Fin 3
+ha✝ :
+  ∀ᵐ (x : VectorFourier.Space),
+    ↑↑(z • v + t • w) (VectorFourier.coordinateMap x) = (↑↑(z • v) + ↑↑(t • w)) (VectorFourier.coordinateMap x)
+hz✝ :
+  ∀ᵐ (x : VectorFourier.Space), ↑↑(z • v) (VectorFourier.coordinateMap x) = (z • ↑↑v) (VectorFourier.coordinateMap x)
+ht✝ :
+  ∀ᵐ (x : VectorFourier.Space), ↑↑(t • w) (VectorFourier.coordinateMap x) = (t • ↑↑w) (VectorFourier.coordinateMap x)
+x : Space
+hu : ↑↑u (VectorFourier.coordinateMap x) i = ↑√(c.value (VectorFourier.coordinateMap x)) * E x i
+hv : ↑↑v (VectorFourier.coordinateMap x) i = ↑√(c.value (VectorFourier.coordinateMap x)) * F x i
+hw : ↑↑w (VectorFourier.coordinateMap x) i = ↑√(c.value (VectorFourier.coordinateMap x)) * G x i
+ha : ↑↑(z • v + t • w) (VectorFourier.coordinateMap x) = (↑↑(z • v) + ↑↑(t • w)) (VectorFourier.coordinateMap x)
+hz : ↑↑(z • v) (VectorFourier.coordinateMap x) = (z • ↑↑v) (VectorFourier.coordinateMap x)
+ht : ↑↑(t • w) (VectorFourier.coordinateMap x) = (t • ↑↑w) (VectorFourier.coordinateMap x)
+⊢ ↑↑u (VectorFourier.coordinateMap x) i = (↑↑(z • v) + ↑↑(t • w)) (VectorFourier.coordinateMap x) i
+'OQ14.WeightedFieldEquality.ext' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.WeightedFieldEquality.combination' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

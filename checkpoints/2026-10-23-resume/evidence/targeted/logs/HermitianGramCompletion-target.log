@@ -1,0 +1,43 @@
+HermitianGramCompletion.lean:17:6: error: type mismatch
+  Finset.single_le_sum (fun j x => ?m.15433) (Finset.mem_univ i)
+has type
+  ?m.5211 i ≤ ∑ x, ?m.5211 x : Prop
+but is expected to have type
+  |hG.eigenvalues i| ≤ ∑ j, |hG.eigenvalues j| : Prop
+HermitianGramCompletion.lean:26:25: error: no goals to be solved
+HermitianGramCompletion.lean:31:82: error: unsolved goals
+n : Type u_1
+inst✝¹ : Fintype n
+inst✝ : DecidableEq n
+G : Matrix n n ℂ
+hG : G.IsHermitian
+scale : ℝ := 1 + ∑ i, |hG.eigenvalues i|
+hscale : 0 < scale
+hb : ∀ (i : n), hG.eigenvalues i ≤ scale
+D : Matrix n n ℂ := diagonal fun i => ↑(scale - hG.eigenvalues i)
+hD : D.PosSemidef
+he : D = ↑scale • 1 - diagonal (RCLike.ofReal ∘ hG.eigenvalues)
+hp :
+  (↑hG.eigenvectorUnitary * ↑scale • 1 * (↑hG.eigenvectorUnitary)ᴴ -
+      ↑hG.eigenvectorUnitary * diagonal (RCLike.ofReal ∘ hG.eigenvalues) * (↑hG.eigenvectorUnitary)ᴴ).PosSemidef
+⊢ scale • (↑hG.eigenvectorUnitary * (↑hG.eigenvectorUnitary)ᴴ) = scale • 1
+HermitianGramCompletion.lean:33:14: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑hG.eigenvectorUnitary * diagonal (RCLike.ofReal ∘ hG.eigenvalues) * star ↑hG.eigenvectorUnitary
+n : Type u_1
+inst✝¹ : Fintype n
+inst✝ : DecidableEq n
+G : Matrix n n ℂ
+hG : G.IsHermitian
+scale : ℝ := 1 + ∑ i, |hG.eigenvalues i|
+hscale : 0 < scale
+hb : ∀ (i : n), hG.eigenvalues i ≤ scale
+D : Matrix n n ℂ := diagonal fun i => ↑(scale - hG.eigenvalues i)
+hD : D.PosSemidef
+he : D = ↑scale • 1 - diagonal (RCLike.ofReal ∘ hG.eigenvalues)
+hp :
+  (↑scale • 1 -
+      ↑hG.eigenvectorUnitary * diagonal (RCLike.ofReal ∘ hG.eigenvalues) * (↑hG.eigenvectorUnitary)ᴴ).PosSemidef
+hscalar : ↑hG.eigenvectorUnitary * ↑scale • 1 * (↑hG.eigenvectorUnitary)ᴴ = ↑scale • 1
+⊢ ∃ scale, 0 < scale ∧ (↑scale • 1 - G).PosSemidef
+'OQ14.HermitianGramCompletion.positive_shift' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HermitianGramCompletion.completion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

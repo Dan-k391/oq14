@@ -1,0 +1,22 @@
+ConicalProjectionData.lean:84:45: error: application type mismatch
+  PolarMomentContinuity.moment_norm_le hM
+argument
+  hM
+has type
+  0 ≤ M : Prop
+but is expected to have type
+  Maxwell.Space → ℂ : Type
+ConicalProjectionData.lean:84:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (2000000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'OQ14.ConicalProjectionData.correction_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.correctionL2_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.totalCoordinate_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.actual_gauss_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.radialCorrection_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.tangentCorrection_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionData.correction_moment_norm_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

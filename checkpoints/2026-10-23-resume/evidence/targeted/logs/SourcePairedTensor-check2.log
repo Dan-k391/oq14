@@ -1,0 +1,18 @@
+SourcePairedTensor.lean:73:6: error: application type mismatch
+  Tendsto.eventually (PairedVectorKernelLimit.uniform_kernel_jet_limit q hq n m b hb i j) (ball_mem_nhds ?m.12367 hε)
+argument
+  ball_mem_nhds ?m.12367 hε
+has type
+  ball ?m.12367 ε ∈ 𝓝 ?m.12367 : Prop
+but is expected to have type
+  ∀ᶠ (y : C(Region b, PhysicalReactionLimit.Jet m)) in 𝓝 (PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j),
+    y ∈ ball (PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j) ε : Prop
+SourcePairedTensor.lean:79:24: error: type mismatch, term
+  hr
+after simplification has type
+  dist (PairedVectorKernelLimit.actualJetMap q ⋯ n m b i j r) (PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j) <
+    ε : Prop
+but is expected to have type
+  ‖PairedVectorKernelLimit.actualJetMap q ⋯ n m b i j r - PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j‖ < ε : Prop
+'OQ14.SourcePairedTensor.eventually_actual_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourcePairedTensor.uniform_actual_jet_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

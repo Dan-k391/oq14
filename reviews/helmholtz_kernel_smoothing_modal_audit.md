@@ -1,0 +1,5 @@
+# HelmholtzKernelSmoothing independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all six reports standard-only. Source SHA256 `946BFC5B102EEF6FF222CFB6E50A329A7031AFC11792152FAB2823089907153F`; independent log `lean/logs/HelmholtzKernelSmoothing-modal-audit.log`, SHA256 `4E097EAC057698084322B9083152214BE015A4A3B4C0E344A9CAF51D127096C0`.
+
+Actual cutoff derivatives and Laplacian have support inside the cutoff support. Multiplying locally continuous u by those globally continuous compact factors gives globally continuous compact sources, hence integrable sources. Where the cutoff equals one on a neighborhood, these sources vanish on that neighborhood. The actual kernel integral splits, with integrability justified before finite integral operations, into a phi response minus twice a finite gradient-response sum. Each response is smooth at the evaluation point by the actual separated-support convolution theorem. This derives smoothness of the reproducing integral from only local continuity of u; it does not presume smoothness of u itself or assume equality of u with the reproducing integral.

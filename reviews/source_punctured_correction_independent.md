@@ -1,0 +1,5 @@
+# SourcePuncturedCorrection independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; both reports standard-only. Source SHA256 `2920D34CE2C19E05E9C95BB9550916932AF5C96C8F904B1FA4AFF1B94F1C3563`; independent compiler log `lean/logs/SourcePuncturedCorrection-modal-audit.log`, SHA256 `DDFA690451C12E3F28B130E963ABF4A405B938AE73F9254531AA7259FD7351E2`.
+
+Positive re-clipping proves actual polarization integrability without changing sigma or the raw source. For tests avoiding the source point, the actual layered and vacuum field/test products and all derivative-test products are integrable by genuine clipped agreement. The established two actual punctured Maxwell equations can therefore be subtracted inside their literal pairings. The identity sigma E = E + (sigma-1)E retains the exact polarization sign; the empty vacuum has sigma one. Exact punctured agreement then transfers that forced equation to the actual origin-corrected fields. Dispersion is explicitly required for the first actual Maxwell equation.

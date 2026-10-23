@@ -1,0 +1,20 @@
+OutgoingDyadBounds.lean:34:4: error: type mismatch, term
+  h.right
+after simplification has type
+  ‖DebyeMaxwell.tmElectric (SolidScalarHelmholtz.wave (a.fst + 1) 1 ↑(representative (a.fst + 1) a.snd)) y j‖ ≤
+    DebyeJetBounds.scale 0 b * RiccatiSeriesCoefficients.amplitude (a.fst + 1) 0 * (↑a.fst + 1 + 1) ^ 3 *
+      B ^ (a.fst + 1) : Prop
+but is expected to have type
+  ‖DebyeMaxwell.tmElectric (SolidScalarHelmholtz.wave (a.fst + 1) 1 ↑(representative (a.fst + 1) a.snd)) y j‖ ≤
+    DebyeJetBounds.scale 0 b * RiccatiSeriesCoefficients.amplitude (a.fst + 1) 0 * (↑a.fst + 2) ^ 3 *
+      B ^ (a.fst + 1) : Prop
+OutgoingDyadBounds.lean:37:4: error: type mismatch, term
+  h.left
+after simplification has type
+  ‖DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (a.fst + 1) 1 ↑(representative (a.fst + 1) a.snd)) y j‖ ≤
+    DebyeJetBounds.scale 0 b * RiccatiSeriesCoefficients.amplitude (a.fst + 1) 0 * (↑a.fst + 1 + 1) ^ 3 *
+      B ^ (a.fst + 1) : Prop
+but is expected to have type
+  ‖DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (a.fst + 1) 1 ↑(representative (a.fst + 1) a.snd)) y j‖ ≤
+    DebyeJetBounds.scale 0 b * RiccatiSeriesCoefficients.amplitude (a.fst + 1) 0 * (↑a.fst + 2) ^ 3 *
+      B ^ (a.fst + 1) : Prop

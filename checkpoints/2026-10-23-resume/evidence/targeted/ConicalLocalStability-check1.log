@@ -1,0 +1,45 @@
+ConicalLocalStability.lean:57:13: error: ambiguous, possible interpretations 
+  ConicalAnnularCoefficient.gradientPair : Data → ℝ → (ζ : ℝ → ℝ) → ContDiff ℝ (↑⊤) ζ → HasCompactSupport ζ → ℂ
+  
+  ConicalLocalCoefficient.gradientPair : System ?m.7549 ?m.7550 →
+    (ζ : ℝ → ℝ) → ContDiff ℝ (↑⊤) ζ → HasCompactSupport ζ → ℂ
+Try this: ring_nf
+ConicalLocalStability.lean:56:75: error: unsolved goals
+p : Data
+a : ℝ
+s : System p a
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+⊢ ConicalLocalCoefficient.gradientPair s ζ hζ hc =
+    ∑ x, (scalarProduct (testCoordinate p ζ hζ hc x)) (s.graph.gradient x)
+ConicalLocalStability.lean:90:4: error: unsolved goals
+case pos
+p : Data
+a : ℝ
+s t : System p a
+R M : ℝ
+hM : 0 ≤ M
+hW : ∀ (i : Fin 3), ∀ x ∈ closedBall 0 R, ‖s.correction i x - t.correction i x‖ ≤ M
+ζ : ℝ → ℝ
+hζ : ContDiff ℝ (↑⊤) ζ
+hc : HasCompactSupport ζ
+hs : tsupport ζ ⊆ Ioo 0 R
+i : Fin 3
+he :
+  ∫ (x : Space), ↑↑(testCoordinate p ζ hζ hc i) x * ↑↑(correctionL2 (ConicalProjectionLinear.sub s t) i) x =
+    ∫ (x : Space),
+      ↑(ConicalTangentialDivergence.tangentField ζ p.eigenvalue p.contrast p.threshold x i) *
+        (s.correction i x - t.correction i x)
+x : ConicalAnnularCoefficient.Space
+hz : ζ ‖x‖ = 0
+⊢ 0 ≤ 0
+'OQ14.ConicalLocalStability.particular_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalStability.particular_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalStability.correctionL2_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalStability.gradientPair_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalStability.correctionPair_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalStability.correctionPair_difference_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

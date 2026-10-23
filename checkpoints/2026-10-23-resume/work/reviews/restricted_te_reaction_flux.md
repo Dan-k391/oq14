@@ -1,0 +1,6 @@
+# Actual density/harmonic reaction pairing on the whole plane
+
+Frozen source: lean/RestrictedTEReactionFlux.lean, SHA256 27E86308B8C47C2FE7ED9B1281B7C63827BBB541FC7267BA0B5BC58771D8C25D.
+Author final pinned compiler/object PASS: exit 0, no warnings, four standard-only reports. Log: lean/logs/RestrictedTEReactionFlux-final.log. Root independent full-source mathematical review and fresh pinned compiler PASS: exit 0, no warnings, standard-only. Log: lean/logs/RestrictedTEReactionFlux-root-audit.log; receipt: lean/logs/RestrictedTEReactionFlux-root-audit.exit.log.
+
+The actual electric parity-density field paired with the same literal harmonic TE magnetic field is continuous and integrable on the entire plane, with integral norm at most C times genuine source mass. Actual density/cross-product interchange, the proved source-center-uniform integrable point envelope and the genuine source integral establish this conclusion. Actual coefficient scaling gives exactly conjugate scalar scaling of the pairing and the corresponding bound C*sourceMass*|c|. The constant depends on the fixed finite harmonic field and enclosing source ball and is independent of the source gap and density. No desired field pairing, decay or integrability is a premise. The physical finite-stack lift and named even-m basis equivalence are separate.

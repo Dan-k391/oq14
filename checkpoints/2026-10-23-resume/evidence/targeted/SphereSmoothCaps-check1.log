@@ -1,0 +1,22 @@
+SphereSmoothCaps.lean:27:8: error: failed to synthesize
+  μ.IsOpenPosMeasure
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SphereSmoothCaps.lean:30:2: error: no goals to be solved
+SphereSmoothCaps.lean:57:78: warning: unused variable `hε`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SphereSmoothCaps.lean:91:2: error: type mismatch
+  LT.lt.le (hbound (LT.lt.trans_le hθ hrδ))
+has type
+  dist (f θ) (f n) ≤ ε : Prop
+but is expected to have type
+  ‖f θ - f n‖ ≤ ε : Prop
+'OQ14.SphereSmoothCaps.bump_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.mass_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.ambient_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.density_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.density_mass' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.density_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.averaging_error' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereSmoothCaps.uniform_averaging' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

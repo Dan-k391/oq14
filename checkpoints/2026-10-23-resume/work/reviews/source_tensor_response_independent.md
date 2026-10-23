@@ -1,0 +1,5 @@
+# SourceTensorResponse independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 4 reports are standard-only. Source SHA256 `90AB9C21F3F157ED83E25B07CCFCF2B22793872C99D841160E2A54C53F3D0576`. Independent compiler log `lean/logs/SourceTensorResponse-modal-audit.log`, SHA256 `561776E03316D7FDA76CCE5766217AF3601B1BD7E41A002C3BE31FDC2B41B56B`.
+
+The free datum is genuinely sqrt(c) times the actual free unit dyadic on material support, constructed from compact annulus data. The actual outgoing free-mode material HasSum passes through the literal bounded inverse and the derived bounded core evaluation CLM. Modewise exact response identities therefore identify the full infinite positive-mode sum with the actual inverse-derived core tensor integral. The physical specialization discharges exact coefficient matching and IsUnit using literal layer bounds, dispersion and genuine radial partition geometry. The large-core free-series scale conditions remain explicit, with no assumed PDE, response, integrability or convergence conclusion.

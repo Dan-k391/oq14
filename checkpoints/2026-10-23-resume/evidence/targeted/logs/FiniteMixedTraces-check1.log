@@ -1,0 +1,70 @@
+FiniteMixedTraces.lean:43:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  phaseFactor (Sum.inl ?a) * (RegularTEIncoming.coefficient (Sigma.fst ?a + 1) true * -I / 2)
+case inl
+a : PositiveIndex
+h :
+  Tendsto
+    (fun k =>
+      phaseFactor (Sum.inl a) * (RegularTEIncoming.phase true k * RegularTEIncoming.radialD (a.fst + 1) true k / 2))
+    atTop
+    (𝓝
+      (phaseFactor (Sum.inl a) *
+        ((RegularTEIncoming.coefficient (a.fst + 1) true * if true = true then -I else I) / 2)))
+⊢ Tendsto (electricCoefficient (Sum.inl a)) atTop (𝓝 (2 * ↑Real.pi * I))
+FiniteMixedTraces.lean:71:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  phaseFactor (Sum.inr a) * (I * (RegularTEIncoming.coefficient (a.fst + 1) true * -I) / 2)
+case inr
+a : PositiveIndex
+h :
+  Tendsto
+    (fun k =>
+      phaseFactor (Sum.inr a) *
+        (I * (RegularTEIncoming.phase true k * RegularTEIncoming.radialD (a.fst + 1) true k) / 2))
+    atTop
+    (𝓝
+      (phaseFactor (Sum.inr a) *
+        (I * (RegularTEIncoming.coefficient (a.fst + 1) true * if true = true then -I else I) / 2)))
+he : phaseFactor (Sum.inr a) * (I * (RegularTEIncoming.coefficient (a.fst + 1) true * -I) / 2) = 2 * ↑Real.pi * I
+⊢ Tendsto (magneticCoefficient (Sum.inr a)) atTop (𝓝 (2 * ↑Real.pi * I))
+FiniteMixedTraces.lean:142:2: error: type mismatch, term
+  Tendsto.add (Tendsto.smul_const (electricCoefficient_limit m) (angular m))
+    (Tendsto.smul_const (radialCoefficient_limit m) (radialAngular m))
+after simplification has type
+  Tendsto (fun x => electricCoefficient m x • angular m + radialCoefficient m x • radialAngular m) atTop
+    (𝓝 ((2 * ↑Real.pi * I) • angular m + 0 • radialAngular m)) : Prop
+but is expected to have type
+  Tendsto (electricModeMap m) atTop (𝓝 ((2 * ↑Real.pi * I) • angular m)) : Prop
+FiniteMixedTraces.lean:160:8: warning: `ext` did not consume the patterns: [i]
+note: this linter can be disabled with `set_option linter.unusedRCasesPattern false`
+FiniteMixedTraces.lean:157:77: error: unsolved goals
+case h.e'_5.h
+c : ModeIndex →₀ ℂ
+h :
+  Tendsto (fun b => ∑ c_1 ∈ c.support, c c_1 • electricModeMap c_1 b) atTop
+    (𝓝 (∑ c_1 ∈ c.support, c c_1 • (2 * ↑Real.pi * I) • angular c_1))
+n : Set C(↑Sphere, Maxwell.Vector)
+⊢ n ∈
+      𝓝
+        ((2 * ↑Real.pi * I) •
+          { toFun := fun n i => (∑ x ∈ c.support, c x • (FiniteVectorAngular.angular x) n) i, continuous_toFun := ⋯ }) ↔
+    n ∈
+      𝓝
+        (∑ x ∈ c.support,
+          c x • (2 * ↑Real.pi * I) • { toFun := fun n i => (FiniteVectorAngular.angular x) n i, continuous_toFun := ⋯ })
+FiniteMixedTraces.lean:167:8: warning: `ext` did not consume the patterns: [i]
+note: this linter can be disabled with `set_option linter.unusedRCasesPattern false`
+FiniteMixedTraces.lean:164:77: error: unsolved goals
+case h.e'_5.h
+c : ModeIndex →₀ ℂ
+h :
+  Tendsto (fun b => ∑ c_1 ∈ c.support, c c_1 • magneticModeMap c_1 b) atTop
+    (𝓝 (∑ c_1 ∈ c.support, c c_1 • (2 * ↑Real.pi * I) • angular c_1))
+n : Set C(↑Sphere, Maxwell.Vector)
+⊢ n ∈
+      𝓝
+        ((2 * ↑Real.pi * I) •
+          { toFun := fun n i => (∑ x ∈ c.support, c x • (FiniteVectorAngular.angular x) n) i, continuous_toFun := ⋯ }) ↔
+    n ∈
+      𝓝
+        (∑ x ∈ c.support,
+          c x • (2 * ↑Real.pi * I) • { toFun := fun n i => (FiniteVectorAngular.angular x) n i, continuous_toFun := ⋯ })

@@ -1,0 +1,4 @@
+FiniteVectorAngular.lean:87:2: error: 'change' tactic failed, pattern
+  (c m).re * (c m).re - -(c m).im * (c m).im = (c m).re ^ 2 + (c m).im ^ 2
+is not definitionally equal to target
+  RCLike.re ((starRingEnd ℂ) (c m) * c m) = (c m).re * (c m).re + (c m).im * (c m).im

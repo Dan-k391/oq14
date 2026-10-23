@@ -1,0 +1,6 @@
+Try this: ring_nf
+FiniteVectorAngular.lean:79:85: error: unsolved goals
+c : ModeIndex →₀ ℂ
+m : ModeIndex
+a✝ : m ∈ c.support
+⊢ RCLike.re ((starRingEnd ℂ) (c m) * c m) = (c m).re ^ 2 + (c m).im ^ 2

@@ -1,0 +1,62 @@
+Try this: ring_nf
+VacuumOutgoingBounds.lean:62:13: error: unsolved goals
+l : ℕ
+m : Index l
+n : ↑Sphere
+r : ℝ
+hr : 1 < r
+i : Fin 3
+he :
+  electricWeighted (data l) (↑(representative l m)) (r • ↑n) i =
+    ((amplitude (data l) * phase (data l).l * (I * p (data l).l ↑r + pD (data l).l ↑r)) •
+          HarmonicRadiationFactors.poloidal ↑(representative l m) ↑n +
+        (amplitude (data l) * phase (data l).l * (↑(data l).l * (↑(data l).l + 1)) * (p (data l).l ↑r / ↑r)) •
+          HarmonicRadiationFactors.radial ↑(representative l m) ↑n)
+      i
+h1 : ‖HarmonicRadiationFactors.poloidal (↑(representative l m)) (↑n) i‖ ≤ (↑l + 1) * envelope l
+h2 : ‖HarmonicRadiationFactors.radial (↑(representative l m)) (↑n) i‖ ≤ envelope l
+hratio : ‖xi l ↑r‖ / r ≤ ‖xi l ↑r‖
+hl : 0 ≤ ↑l
+ha : 0 ≤ envelope l
+hp : ↑l + 1 ≤ (↑l + 1) ^ 2
+hp' : ↑l * (↑l + 1) ≤ (↑l + 1) ^ 2
+ht1 :
+  ‖xiD l ↑r‖ * ‖HarmonicRadiationFactors.poloidal (↑(representative l m)) (↑n) i‖ ≤ ‖xiD l ↑r‖ * ((↑l + 1) * envelope l)
+ht2 :
+  ↑l * r * (‖xi l ↑r‖ / r) * ‖HarmonicRadiationFactors.radial (↑(representative l m)) (↑n) i‖ ≤
+    ↑l * r * ‖xi l ↑r‖ * envelope l
+⊢ ‖xiD l ↑r‖ * ↑l * envelope l * 2 + ‖xiD l ↑r‖ * ↑l ^ 2 * envelope l + ‖xiD l ↑r‖ * envelope l +
+          ↑l * envelope l * ‖xi l ↑r‖ * 2 +
+        ↑l ^ 2 * envelope l * ‖xi l ↑r‖ +
+      envelope l * ‖xi l ↑r‖ =
+    ?m.20307
+VacuumOutgoingBounds.lean:56:4: error: invalid 'calc' step, left-hand side is
+  ‖xiD l ↑r‖ * ‖HarmonicRadiationFactors.poloidal (↑(representative l m)) (↑n) i‖ + ?m.18949 : ℝ
+but is expected to be
+  ‖amplitude
+              { l := l, gs := [], R := 1, X := 1, c := 1, hR := data._proof_1, hc := data._proof_1,
+                chain := data._proof_2 }‖ *
+          1 *
+        ‖xiD l ↑r‖ *
+      ‖HarmonicRadiationFactors.poloidal (↑(representative l m)) (↑n) i‖ +
+    ‖amplitude
+                { l := l, gs := [], R := 1, X := 1, c := 1, hR := data._proof_1, hc := data._proof_1,
+                  chain := data._proof_2 }‖ *
+            1 *
+          (↑l * ‖↑l + 1‖) *
+        (‖xi l ↑r‖ / r) *
+      ‖HarmonicRadiationFactors.radial (↑(representative l m)) (↑n) i‖ : ℝ
+Try this: ring_nf
+VacuumOutgoingBounds.lean:73:31: error: unsolved goals
+l : ℕ
+m : Index l
+n : ↑Sphere
+r : ℝ
+hr : 1 < r
+i : Fin 3
+he :
+  magneticWeighted (data l) (↑(representative l m)) (r • ↑n) i =
+    ((-I * amplitude (data l) * phase (data l).l * p (data l).l ↑r) •
+        DebyeRadialTrace.angularToroidal ↑(representative l m) ↑n)
+      i
+⊢ ‖?m.5916‖ * envelope l * 2 = ?m.6068

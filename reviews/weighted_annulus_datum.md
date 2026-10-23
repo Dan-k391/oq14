@@ -1,0 +1,5 @@
+# WeightedAnnulusDatum author review
+
+Final pinned target plus importable object PASS, exit 0, no warnings; all eight reports standard-only. Source SHA256 `B9338C859C9E37E0034A294D9DA77A3ABED931E4BCFA80920BAF31186E20E7F0`; final log `lean/logs/WeightedAnnulusDatum-final.log`, SHA256 `FFB38446022B9A9E3B9ACF54B773B21CB5A1CE79048D8E3FB34BAABC9E1102EE`. Forbidden-token scan clean. Root independent audit pending.
+
+The literal closed annulus is compact. A continuous scalar field on it is extended by zero and multiplied by the actual measurable square root of the nonnegative bounded susceptibility. The resulting actual measurable compactly supported function is bounded and hence genuinely L2. Linearity is proved on actual L2 representatives; comparison with the actual annulus indicator gives a bounded continuous linear map from continuous annulus functions to physical scalar L2. If susceptibility vanishes outside that annulus, the output agrees almost everywhere with the literal square-root-weighted incident field, even when that incident field is singular elsewhere. No whole-ball incident integrability is required or assumed.

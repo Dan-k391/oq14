@@ -1,0 +1,5 @@
+# FreeFarFieldExpansion author review
+
+Final pinned target plus importable object PASS, exit 0, no warnings; all seven dependency reports contain only propext, Classical.choice and Quot.sound. Source SHA256 `814E1D35B465CAE64D8155000E63BD11BC7601356B40BD145F055850B746C164`; final log `lean/logs/FreeFarFieldExpansion-final.log`, SHA256 `5AF6264945C2898C98870E390027E5EF3B22E27C96E407D87DB04079116CAD0E`. Forbidden-token scan clean. Root independent audit pending.
+
+The actual continuous free dyadic far amplitude is the coordinate of the literal negative-frequency transverse plane field divided by 4 pi. Genuine complex Hilbert expansion of that tangential field is mapped through the actual coordinate continuous linear map. Previously derived signed TM and TE source coefficients identify the resulting terms with the actual vacuum source far amplitudes. Separately summable poloidal and toroidal sectors give the paired positive-degree L2 HasSum. No angular completeness or series convergence is supplied as a premise; both are derived from the constructed normalized basis. This module establishes an L2 equality; pointwise uniform equality is the successor task.

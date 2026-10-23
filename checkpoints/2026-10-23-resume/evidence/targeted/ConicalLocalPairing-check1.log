@@ -1,0 +1,20 @@
+ConicalLocalPairing.lean:31:2: error: type mismatch
+  Filter.mp_mem
+    (tangentFieldL2_ae p.eigenvalue p.contrast p.threshold p.eigenvalue_bounds p.contrast_nonnegative p.threshold_pos
+      p.threshold_lt_one ζ hζ hc i)
+    ?m.22840
+has type
+  ?m.22846 ∈ ae volume : Prop
+but is expected to have type
+  ∫ (x : Maxwell.Space), ↑↑(testCoordinate p ζ hζ hc i) x * ↑↑(totalCoordinate s i) x =
+    ∫ (x : Maxwell.Space),
+      ↑↑(testCoordinate p ζ hζ hc i) x * ↑↑(NewtonL2.physicalCoordinate ((ConicalBallExtension.vector b) g) i) x : Prop
+'OQ14.ConicalLocalPairing.totalPair_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalPairing.totalPair_difference_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.ConicalLocalPairing.numerator_difference_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

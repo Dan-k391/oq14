@@ -1,0 +1,75 @@
+SourceDielectricModes.lean:64:2: error: tactic 'rfl' failed, the left-hand side
+  (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).2 / ↑‖x‖ ^ d.l *
+      dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+    (inverseSigma { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖ *
+            (↑d.l * (↑d.l + 1) *
+                (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).1 /
+              ↑‖x‖ ^ (d.l + 3)) -
+          ↑d.l * (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).2 /
+            ↑‖x‖ ^ (d.l + 2)) *
+        ↑(x i) *
+      HarmonicPolynomial.complexEvaluate p x
+is not definitionally equal to the right-hand side
+  (raw (VacuumOutgoingBounds.data d.l) ‖x‖).2 / ↑‖x‖ ^ (VacuumOutgoingBounds.data d.l).l *
+      dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+    (1 *
+            (↑(VacuumOutgoingBounds.data d.l).l * (↑(VacuumOutgoingBounds.data d.l).l + 1) *
+                (raw (VacuumOutgoingBounds.data d.l) ‖x‖).1 /
+              ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 3)) -
+          ↑(VacuumOutgoingBounds.data d.l).l * (raw (VacuumOutgoingBounds.data d.l) ‖x‖).2 /
+            ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 2)) *
+        ↑(x i) *
+      HarmonicPolynomial.complexEvaluate p x
+case h
+d : Data
+p : HarmonicPolynomial.Poly
+x : Space
+i : Fin 3
+⊢ (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).2 / ↑‖x‖ ^ d.l *
+        dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+      (inverseSigma { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖ *
+              (↑d.l * (↑d.l + 1) *
+                  (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).1 /
+                ↑‖x‖ ^ (d.l + 3)) -
+            ↑d.l * (raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).2 /
+              ↑‖x‖ ^ (d.l + 2)) *
+          ↑(x i) *
+        HarmonicPolynomial.complexEvaluate p x =
+    (raw (VacuumOutgoingBounds.data d.l) ‖x‖).2 / ↑‖x‖ ^ (VacuumOutgoingBounds.data d.l).l *
+        dcoord (HarmonicPolynomial.complexEvaluate p) x i +
+      (1 *
+              (↑(VacuumOutgoingBounds.data d.l).l * (↑(VacuumOutgoingBounds.data d.l).l + 1) *
+                  (raw (VacuumOutgoingBounds.data d.l) ‖x‖).1 /
+                ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 3)) -
+            ↑(VacuumOutgoingBounds.data d.l).l * (raw (VacuumOutgoingBounds.data d.l) ‖x‖).2 /
+              ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 2)) *
+          ↑(x i) *
+        HarmonicPolynomial.complexEvaluate p x
+SourceDielectricModes.lean:71:2: error: tactic 'rfl' failed, the left-hand side
+  -Complex.I *
+      ((raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).1 /
+        ↑‖x‖ ^ (d.l + 1)) *
+    DebyeRadialTrace.angularToroidal p x i
+is not definitionally equal to the right-hand side
+  -Complex.I * ((raw (VacuumOutgoingBounds.data d.l) ‖x‖).1 / ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 1)) *
+    DebyeRadialTrace.angularToroidal p x i
+case h
+d : Data
+p : HarmonicPolynomial.Poly
+x : Space
+i : Fin 3
+⊢ -Complex.I *
+        ((raw { l := d.l, gs := [], R := d.R, X := d.R, c := d.c, hR := ⋯, hc := ⋯, chain := ⋯ } ‖x‖).1 /
+          ↑‖x‖ ^ (d.l + 1)) *
+      DebyeRadialTrace.angularToroidal p x i =
+    -Complex.I * ((raw (VacuumOutgoingBounds.data d.l) ‖x‖).1 / ↑‖x‖ ^ ((VacuumOutgoingBounds.data d.l).l + 1)) *
+      DebyeRadialTrace.angularToroidal p x i
+'OQ14.SourceDielectricModes.te_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.tm_sigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.te_sigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.te_select' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.te_mu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.vacuum_inverseSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.vacuum_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.vacuum_electric' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceDielectricModes.vacuum_magnetic' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

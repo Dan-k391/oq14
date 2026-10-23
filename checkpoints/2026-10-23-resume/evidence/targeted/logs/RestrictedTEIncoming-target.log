@@ -1,0 +1,31 @@
+RestrictedTEIncoming.lean:53:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  DebyeMaxwell.teElectric (SolidScalarHelmholtz.wave (↑q).1 1 (EvenHarmonicProjection.project (↑q).1 (↑q).2)) x
+case h
+A : Index →₀ ℂ
+x : Space
+hx : x ≠ 0
+i : Fin 3
+q : Index
+a✝ : q ∈ A.support
+⊢ coefficient A q * DebyeMaxwell.teElectric (SolidScalarHelmholtz.wave (↑q).1 1 (polynomial q)) x i =
+    coefficient A q * RegularTEIncoming.electric (↑q).1 false (polynomial q) x i +
+      coefficient A q * RegularTEIncoming.electric (↑q).1 true (polynomial q) x i
+RestrictedTEIncoming.lean:66:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  DebyeMaxwell.teMagnetic 1 (SolidScalarHelmholtz.wave (↑q).1 1 (EvenHarmonicProjection.project (↑q).1 (↑q).2)) x
+case h
+A : Index →₀ ℂ
+x : Space
+hx : x ≠ 0
+i : Fin 3
+q : Index
+a✝ : q ∈ A.support
+⊢ coefficient A q * DebyeMaxwell.teMagnetic 1 (SolidScalarHelmholtz.wave (↑q).1 1 (polynomial q)) x i =
+    coefficient A q * RegularTEIncoming.magnetic (↑q).1 false (polynomial q) x i +
+      coefficient A q * RegularTEIncoming.magnetic (↑q).1 true (polynomial q) x i
+'OQ14.RestrictedTEIncoming.potential_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.electric_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.magnetic_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.electric_split' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.magnetic_split' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.actual_power_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEIncoming.physical_power_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]

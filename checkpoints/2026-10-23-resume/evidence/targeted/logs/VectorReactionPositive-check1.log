@@ -1,0 +1,28 @@
+VectorReactionPositive.lean:36:16: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  iteratedFDeriv ?m.2766 ?m.2774 fun x => 0
+tm : Bool
+i j : Fin 3
+gs : List RadialStack.Layer
+R X : ℝ
+hR : 0 < R
+a : Index 0
+m : ℕ
+p : Space × Space
+⊢ iteratedFDeriv ℝ m 0 p = 0
+VectorReactionPositive.lean:43:2: error: type mismatch
+  tsum_positive_eq ?m.2783 fun a => ?m.3100
+has type
+  (@tsum ?m.2779 ?m.2780 ?m.2781 PositiveIndex fun a => ?m.2783 (positive a)) = ∑' (a : TotalIndex), ?m.2783 a : Prop
+but is expected to have type
+  (@tsum ℂ ENormedAddCommMonoid.toAddCommMonoid UniformSpace.toTopologicalSpace PositiveIndex fun a =>
+      term tm (positive a) i j gs R X hR p) =
+    VectorReactionSeries.series tm i j gs R X hR p : Prop
+VectorReactionPositive.lean:49:2: error: type mismatch
+  tsum_positive_eq ?m.4868 fun a => ?m.5205
+has type
+  (@tsum ?m.4864 ?m.4865 ?m.4866 PositiveIndex fun a => ?m.4868 (positive a)) = ∑' (a : TotalIndex), ?m.4868 a : Prop
+but is expected to have type
+  (@tsum (ContinuousMultilinearMap ℝ (fun i => Space × Space) ℂ) ContinuousMultilinearMap.addCommMonoid
+      ContinuousMultilinearMap.instTopologicalSpace PositiveIndex fun a =>
+      iteratedFDeriv ℝ m (term tm (positive a) i j gs R X hR) p) =
+    ∑' (a : TotalIndex), iteratedFDeriv ℝ m (term tm a i j gs R X hR) p : Prop

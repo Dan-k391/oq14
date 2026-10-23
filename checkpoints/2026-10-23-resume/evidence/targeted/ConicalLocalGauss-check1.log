@@ -1,0 +1,52 @@
+ConicalLocalGauss.lean:17:23: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  |ConicalCapField.permittivity p.contrast p.threshold x|
+p : Data
+x : Space
+h :
+  1 ≤ ConicalCapField.permittivity p.contrast p.threshold x ∧
+    ConicalCapField.permittivity p.contrast p.threshold x ≤ 1 + p.contrast
+⊢ |epsilon p x| ≤ 1 + p.contrast
+ConicalLocalGauss.lean:48:76: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(displacementL2 p E i) x
+p : Data
+a : ℝ
+hai : a < p.cutoff.rIn
+E : Fin 3 → ↥WeakCurl.L2Scalar
+hGauss :
+  ∀ (f : 𝓢(Space, ℂ)), tsupport ⇑f ⊆ ball 0 a → ∑ i, ∫ (x : Space), ↑(epsilon p x) * ↑↑(E i) x * dcoord (⇑f) x i = 0
+η : ℝ → ℂ
+hη : ContDiff ℝ (↑⊤) η
+hc : HasCompactSupport η
+hs : tsupport η ⊆ Ioo 0 a
+f : 𝓢(Space, ℂ)
+hf : tsupport ⇑f ⊆ norm ⁻¹' tsupport η
+i : Fin 3
+x : Maxwell.Space
+hx : ↑↑(displacementL2 p E i) x = (fun x => ↑(epsilon p x) * ↑↑(E i) x) x
+⊢ (fun x => ↑↑(displacementL2 p E i) x * dcoord (⇑f) x i) x = (fun x => ↑(epsilon p x) * ↑↑(E i) x * dcoord (⇑f) x i) x
+ConicalLocalGauss.lean:59:74: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(displacementL2 p E i) x
+p : Data
+a : ℝ
+hai : a < p.cutoff.rIn
+E : Fin 3 → ↥WeakCurl.L2Scalar
+hGauss :
+  ∀ (f : 𝓢(Space, ℂ)), tsupport ⇑f ⊆ ball 0 a → ∑ i, ∫ (x : Space), ↑(epsilon p x) * ↑↑(E i) x * dcoord (⇑f) x i = 0
+η : ℝ → ℂ
+hη : ContDiff ℝ (↑⊤) η
+hc : HasCompactSupport η
+hs : tsupport η ⊆ Ioo 0 a
+hweak :
+  ∀ (f : 𝓢(Space, ℂ)),
+    tsupport ⇑f ⊆ norm ⁻¹' tsupport η → ∑ i, ∫ (x : Space), ↑↑(displacementL2 p E i) x * dcoord (⇑f) x i = 0
+hs' : tsupport η ⊆ Ioo 0 p.cutoff.rIn
+h : ∑ i, ∫ (x : Maxwell.Space), ↑↑(displacementL2 p E i) x * angularDerivative p.eigenvalue p.threshold η x i = 0
+i : Fin 3
+x : Maxwell.Space
+hx : ↑↑(displacementL2 p E i) x = (fun x => ↑(epsilon p x) * ↑↑(E i) x) x
+⊢ (fun x => ↑↑(displacementL2 p E i) x * angularDerivative p.eigenvalue p.threshold η x i) x =
+    (fun x => ↑(epsilon p x) * ↑↑(E i) x * angularDerivative p.eigenvalue p.threshold η x i) x
+'OQ14.ConicalLocalGauss.epsilon_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalGauss.displacement_memLp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalGauss.displacementL2_ae' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalLocalGauss.angular_gauss' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,25 @@
+FiniteCapApproximation.lean:38:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (if w.2 = j then 1 else 0) - ↑(↑θ w.2) * ↑(↑θ j)
+case h.h
+k : ℝ
+c : WaveIndex →₀ ℂ
+r : ℝ
+hr : 0 < r
+x : Space
+j : Fin 3
+hi :
+  ∀ (w : WaveIndex),
+    Integrable
+      (fun θ =>
+        c w * ↑(SphereSmoothCaps.density w.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) w.2 j * wave (-k) x θ)
+      μ
+w : WaveIndex
+a✝ : w ∈ c.support
+θ : ↑Sphere
+⊢ c w * ↑(SphereSmoothCaps.density w.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) w.2 j * wave (-k) x θ =
+    c w * (↑(SphereSmoothCaps.density w.1 r hr θ) * (amplitude θ w.2 j * wave (-k) x θ))
+'OQ14.FiniteCapApproximation.electric_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteCapApproximation.uniform_electric_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

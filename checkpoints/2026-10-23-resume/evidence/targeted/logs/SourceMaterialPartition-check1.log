@@ -1,0 +1,10 @@
+SourceMaterialPartition.lean:51:15: error: application type mismatch
+  @InitialSeg ↑j
+argument
+  ↑j
+has type
+  ℕ : Type
+but is expected to have type
+  Type ?u.1533 : Type (?u.1533 + 1)
+SourceMaterialPartition.lean:51:22: error: invalid dotted identifier notation, expected type is not of the form (... → C ...) where C is a constant
+  Type ?u.1532

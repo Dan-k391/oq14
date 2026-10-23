@@ -1,0 +1,18 @@
+RestrictedHarmonicInterpolation.lean:22:2: error: type mismatch, term
+  h
+after simplification has type
+  L (EdgeScalarInterpolation.scalarJet r y (↑k * ↑(↑θ 0)) (↑k * ↑(↑θ 1))) = 0 : Prop
+but is expected to have type
+  L (EdgeScalarInterpolation.scalarJet r y ↑s ↑t) = 0 : Prop
+'OQ14.RestrictedHarmonicInterpolation.dual_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedHarmonicInterpolation.span_top' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedHarmonicInterpolation.finite_interpolant' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.RestrictedHarmonicInterpolation.moment_eq_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedHarmonicInterpolation.scalar_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedHarmonicInterpolation.finite_scalar_interpolant' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

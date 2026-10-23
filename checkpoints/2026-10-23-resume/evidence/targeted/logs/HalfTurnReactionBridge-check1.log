@@ -1,0 +1,32 @@
+HalfTurnReactionBridge.lean:40:27: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a : SphereReactionKernel.Space), J k (x - a) i j * ρ a j + ?m.26555 * (J k (x + a) i j * ρ a j)
+e : Bool
+k : ℝ
+ρ : Maxwell.Field
+hρ : ∀ (j : Fin 3), Integrable (fun y => ρ y j) volume
+x : Space
+i j : Fin 3
+hp : Integrable (fun y => J k (x + y) i j * ρ y j) volume
+⊢ Complex.I / 2 * ∫ (a : Space), J k (x - a) i j * ρ a j + (if e = true then 1 else -1) * J k (x + a) i j * ρ a j =
+    Complex.I / 2 *
+      ((∫ (y : Space), J k (x - y) i j * ρ y j) + (if e = true then 1 else -1) * ∫ (y : Space), J k (x + y) i j * ρ y j)
+HalfTurnReactionBridge.lean:54:6: error: application type mismatch
+  integral_add (integrable_J k ρ hρ x i j)
+    (Integrable.const_mul (Integrable.const_mul (integrable_J k ρ hρ (reflect x) i j) ?m.23337))
+argument
+  Integrable.const_mul (Integrable.const_mul (integrable_J k ρ hρ (reflect x) i j) ?m.23337)
+has type
+  ∀ (c : ℂ), Integrable (fun x_1 => c * (?m.23337 * (J k (reflect x - x_1) i j * ρ x_1 j))) volume : Prop
+but is expected to have type
+  Integrable ?m.23216 volume : Prop
+HalfTurnReactionBridge.lean:57:2: error: no goals to be solved
+HalfTurnReactionBridge.lean:65:23: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+HalfTurnReactionBridge.lean:65:23: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+'OQ14.HalfTurnReactionBridge.integrable_J' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionBridge.potential_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionBridge.central_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionBridge.wall_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionBridge.central_eq_wall' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HalfTurnReactionBridge.paired_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

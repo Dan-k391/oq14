@@ -1,0 +1,5 @@
+# SourceTensorJets independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 5 reports are standard-only. Source SHA256 `07F2B098C418A00C07BE78665AB6019D7EC48F74423F8CA5B334C2F017C3181B`. Independent compiler log `lean/logs/SourceTensorJets-modal-audit.log`, SHA256 `9CCEB4F3CA996FA394343C59158C0D7708EFAF251DCF92E257B20835FCF96C82`.
+
+Actual neighborhood equality transfers every iterated Frechet derivative, without assuming differentiability of the physical kernel. The genuine common material dispersion derives TE reset bounds and Chain. Actual summable joint jet majorants for both sectors prove local termwise differentiation of the combined total-index series and justify splitting its differentiated tsum into TM and TE derivatives. The kernel germ identity then gives every actual physical tensor jet as the genuine series jet. All finite-order scale and open-neighborhood hypotheses remain explicit; no derivative-interchange or derivative-convergence premise is imposed.

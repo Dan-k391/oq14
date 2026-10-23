@@ -1,0 +1,24 @@
+HerglotzAngularL2.lean:29:2: error: linarith failed to find a contradiction
+case h1.h
+k : ℝ
+x : Space
+i : Fin 3
+h :
+  inner (TransversePlaneFields.field k x i) (TransversePlaneFields.field k x i) =
+    inner (TransversePlaneFields.field 0 0 i) (TransversePlaneFields.field 0 0 i)
+he : (↑‖TransversePlaneFields.field k x i‖ ^ 2).re = (↑‖TransversePlaneFields.field 0 0 i‖ ^ 2).re
+a✝ : ‖TransversePlaneFields.field k x i‖ < ‖TransversePlaneFields.field 0 0 i‖
+⊢ False failed
+HerglotzAngularL2.lean:37:2: error: tactic 'apply' failed, failed to unify
+  ‖inner ?m.8483 ?m.8484‖ ≤ ?m.8569
+with
+  ‖(value k x i) F‖ ≤ bound * ‖F‖
+k : ℝ
+x : Space
+i : Fin 3
+F : ↥Ambient
+⊢ ‖(value k x i) F‖ ≤ bound * ‖F‖
+'OQ14.HerglotzAngularL2.plane_norm' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.bound_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.value_norm_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.value_difference_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

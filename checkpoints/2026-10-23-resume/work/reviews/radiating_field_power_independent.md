@@ -1,0 +1,5 @@
+# RadiatingFieldPower independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all four reports standard-only. Source SHA256 `6CEB258BCEA92551C84DB0BFD968122352AC66B31DA7931B5191A47AAB4497BA`; independent compiler log `lean/logs/RadiatingFieldPower-modal-audit.log`, SHA256 `E5F91C71FEBC3DA18D4AC442643751B50A2CF1D800D6455A54CE998FBD7924A9`.
+
+The actual transverse far electric amplitude and its directional magnetic cross product give half the electric energy as radial power. Genuine uniform component bounds dominate the actual sphere flux integrands, and continuity plus actual electric/magnetic ray limits gives the flux limit by dominated convergence. Actual global weak Maxwell and local L2 give the genuine weighted flux identity; the nonnegative-limit lemma forces the far energy integral to vanish. The independently established actual electric sphere-energy limit and component inequality then give each component vanishing sphericalMass. No conclusion of radiation equivalence, zero far energy, or surface decay is assumed; all far-limit and bound hypotheses are explicit actual field properties.

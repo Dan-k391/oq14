@@ -1,0 +1,44 @@
+FiniteMixedTraces.lean:44:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  phaseFactor (Sum.inl ?a) * (RegularTEIncoming.coefficient (Sigma.fst ?a + 1) true * -I / 2)
+case inl
+a : PositiveIndex
+h :
+  Tendsto
+    (fun k =>
+      phaseFactor (Sum.inl a) * (RegularTEIncoming.phase true k * RegularTEIncoming.radialD (a.fst + 1) true k / 2))
+    atTop
+    (𝓝 (phaseFactor (Sum.inl a) * ((RegularTEIncoming.coefficient (a.fst + 1) true * if True then -I else I) / 2)))
+⊢ Tendsto (electricCoefficient (Sum.inl a)) atTop (𝓝 (2 * ↑Real.pi * I))
+FiniteMixedTraces.lean:73:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  phaseFactor (Sum.inr a) * (I * (RegularTEIncoming.coefficient (a.fst + 1) true * -I) / 2)
+case inr
+a : PositiveIndex
+he : phaseFactor (Sum.inr a) * (I * (RegularTEIncoming.coefficient (a.fst + 1) true * -I) / 2) = 2 * ↑Real.pi * I
+h :
+  Tendsto
+    (fun k =>
+      phaseFactor (Sum.inr a) *
+        (I * (RegularTEIncoming.phase true k * RegularTEIncoming.radialD (a.fst + 1) true k) / 2))
+    atTop
+    (𝓝 (phaseFactor (Sum.inr a) * (I * (RegularTEIncoming.coefficient (a.fst + 1) true * if True then -I else I) / 2)))
+⊢ Tendsto (magneticCoefficient (Sum.inr a)) atTop (𝓝 (2 * ↑Real.pi * I))
+FiniteMixedTraces.lean:162:77: error: unsolved goals
+case h.e'_5.e_x.h.h
+c : ModeIndex →₀ ℂ
+h :
+  Tendsto (fun b => ∑ c_1 ∈ c.support, c c_1 • electricModeMap c_1 b) atTop
+    (𝓝 (∑ c_1 ∈ c.support, c c_1 • (2 * ↑Real.pi * I) • angular c_1))
+n : ↑Sphere
+i : Fin 3
+⊢ 2 * ↑Real.pi * I * (∑ x ∈ c.support, c x • (FiniteVectorAngular.angular x) n) i =
+    ∑ x ∈ c.support, 2 * ↑Real.pi * I * (c x * (FiniteVectorAngular.angular x) n i)
+FiniteMixedTraces.lean:170:77: error: unsolved goals
+case h.e'_5.e_x.h.h
+c : ModeIndex →₀ ℂ
+h :
+  Tendsto (fun b => ∑ c_1 ∈ c.support, c c_1 • magneticModeMap c_1 b) atTop
+    (𝓝 (∑ c_1 ∈ c.support, c c_1 • (2 * ↑Real.pi * I) • angular c_1))
+n : ↑Sphere
+i : Fin 3
+⊢ 2 * ↑Real.pi * I * (∑ x ∈ c.support, c x • (FiniteVectorAngular.angular x) n) i =
+    ∑ x ∈ c.support, 2 * ↑Real.pi * I * (c x * (FiniteVectorAngular.angular x) n i)

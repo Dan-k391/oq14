@@ -1,0 +1,4 @@
+FiniteVectorAngular.lean:82:16: error: unknown constant 'Complex.conj_mul'
+FiniteVectorAngular.lean:79:85: error: unsolved goals
+c : ModeIndex →₀ ℂ
+⊢ ∑ x ∈ c.support, ((c x).re * (c x).re + (c x).im * (c x).im) = ∑ m ∈ c.support, ‖c m‖ ^ 2

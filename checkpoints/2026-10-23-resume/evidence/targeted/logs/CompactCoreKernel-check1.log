@@ -1,0 +1,59 @@
+CompactCoreKernel.lean:38:10: warning: unused variable `x`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+CompactCoreKernel.lean:38:12: warning: unused variable `y`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+CompactCoreKernel.lean:59:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a : DynamicConvolution.Space),
+    (extension b hb f).value x a * ↑↑((DynamicConvolution.component j) ((StaticCoefficient.sqrtMultiplier c) u)) a -
+      (extension b hb g).value x a * ↑↑((DynamicConvolution.component j) ((StaticCoefficient.sqrtMultiplier c) u)) a
+case h
+c : StaticCoefficient.Coefficient
+d : BoundedMaterialKernel.SupportData c
+b : ℝ
+hb : 0 < b
+f g : C(Region b, ℂ)
+u : ↥VectorFourier.VectorL2
+j : Fin 3
+x : FourierL2.Space
+hfg :
+  ↑↑(BoundedMaterialKernel.entry d (extension b hb (f - g)) u j) x =
+    BoundedMaterialKernel.value d (extension b hb (f - g)) u j x
+hf : ↑↑(BoundedMaterialKernel.entry d (extension b hb f) u j) x = BoundedMaterialKernel.value d (extension b hb f) u j x
+hg : ↑↑(BoundedMaterialKernel.entry d (extension b hb g) u j) x = BoundedMaterialKernel.value d (extension b hb g) u j x
+hs :
+  ↑↑(BoundedMaterialKernel.entry d (extension b hb f) u j - BoundedMaterialKernel.entry d (extension b hb g) u j) x =
+    (↑↑(BoundedMaterialKernel.entry d (extension b hb f) u j) -
+        ↑↑(BoundedMaterialKernel.entry d (extension b hb g) u j))
+      x
+⊢ ↑√(c.value (VectorFourier.coordinateMap x)) *
+      ∫ (y : DynamicConvolution.Space),
+        f (clamp b hb (x, y)) * ↑↑((DynamicConvolution.component j) ((StaticCoefficient.sqrtMultiplier c) u)) y -
+          g (clamp b hb (x, y)) * ↑↑((DynamicConvolution.component j) ((StaticCoefficient.sqrtMultiplier c) u)) y =
+    ↑↑(BoundedMaterialKernel.entry d
+              { value := fun x y => f (clamp b hb (x, y)), continuous := ⋯, bound := ‖f‖, nonnegative := ⋯,
+                bounded := ⋯ }
+              u j)
+        x -
+      ↑↑(BoundedMaterialKernel.entry d
+              { value := fun x y => g (clamp b hb (x, y)), continuous := ⋯, bound := ‖g‖, nonnegative := ⋯,
+                bounded := ⋯ }
+              u j)
+        x
+CompactCoreKernel.lean:72:4: error: type mismatch
+  entry_sub c d b hb (f i j) (g i j) u j
+has type
+  BoundedMaterialKernel.entry d (extension b hb (f i j - g i j)) u j =
+    BoundedMaterialKernel.entry d (extension b hb (f i j)) u j -
+      BoundedMaterialKernel.entry d (extension b hb (g i j)) u j : Prop
+but is expected to have type
+  ↑↑((BoundedMaterialKernel.entryOperator d (extension b hb (f i j - g i j)) j) u) =ᶠ[ae volume]
+    ↑↑((BoundedMaterialKernel.entryOperator d (extension b hb (f i j)) j -
+            BoundedMaterialKernel.entryOperator d (extension b hb (g i j)) j)
+          u) : Prop
+'OQ14.CompactCoreKernel.clampValue_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.clampValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.clamp_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.extension_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.entry_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.operator_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.CompactCoreKernel.operator_difference_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

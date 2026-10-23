@@ -1,0 +1,21 @@
+FiniteTEIncomingPower.lean:38:78: error: unsolved goals
+case h.e'_5
+κ : Type u_1
+l : κ → ℕ
+A : κ → ℂ
+i : κ
+h :
+  Tendsto (fun a => A i * (I * (RegularTEIncoming.phase true a * RegularTEIncoming.radialD (l i) true a)) / 2) atTop
+    (𝓝 (A i * (I * (RegularTEIncoming.coefficient (l i) true * if true = true then -I else I)) / 2))
+⊢ A i * RegularTEIncoming.coefficient (l i) true * 2⁻¹ = -(A i * RegularTEIncoming.coefficient (l i) true * (-1 / 2))
+'OQ14.FiniteTEIncomingPower.electric_coefficient_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.magnetic_coefficient_limit' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.FiniteTEIncomingPower.electric_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.magnetic_tangent_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.sphere_power_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.actual_power_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.incoming_power_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteTEIncomingPower.amplitude_energy_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]

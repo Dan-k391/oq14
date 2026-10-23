@@ -1,0 +1,5 @@
+# ForcedMaxwellResponse independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all six reports standard-only. Source SHA256 `325A90615208EA4EF3E80F98C4D94FA7A9C588612B92F2EAD0CE1D2971AADE3E`; independent compiler log `lean/logs/ForcedMaxwellResponse-modal-audit.log`, SHA256 `36025A3B0E3143BBB7D5F8422207B1B39ED2C0B41687B2424552EBFF72EE8BD2`.
+
+The literal forced weak equations retain the actual electric source in the second Maxwell pairing. Actual local integrability justifies subtraction inside each compact-test integral; finite curl-pair algebra then cancels equal sources exactly, yielding global vacuum weak Maxwell for the difference. Almost-everywhere field equality transfers the actual forced equations through the existing pairing congruence. The actual compact electric and magnetic convolution responses satisfy the forced equations by previously proved genuine source identities, and the exterior representative inherits them through its actual almost-everywhere equality. No outgoing representation or inverse matching is assumed or concluded in this module.

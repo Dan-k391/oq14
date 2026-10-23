@@ -1,0 +1,12 @@
+SourceTensorSeries.lean:37:52: error: application type mismatch
+  (VectorLimitIdentification.positive_hasSum_iff ?m.3071 (fun a => ?m.3111) ?m.3114).mp he
+argument
+  he
+has type
+  HasSum (fun a => term d (VectorLimitIdentification.positive a) i j p)
+    (SourceTensorResponse.reaction c d p.2 hyR p.1 i j) : Prop
+but is expected to have type
+  HasSum (fun a => ?m.3071 (VectorLimitIdentification.positive a)) ?m.3114 : Prop
+'OQ14.SourceTensorSeries.term_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceTensorSeries.kernel_eq_series' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceTensorSeries.kernel_eventually_series' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

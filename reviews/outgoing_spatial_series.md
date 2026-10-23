@@ -1,0 +1,5 @@
+# OutgoingSpatialSeries author review
+
+Final pinned target plus importable object PASS, exit 0, no warnings; all eight reports standard-only. Source SHA256 `62E06B987048E36E1F43F59B1A30AE203DF35D0AFC764E69AE2240026D214119`; final log SHA256 `C77471C385F6AD6D5E11F92D99B1ACB24FD469B73651A7CCE90EE2012C7BCB56`. Forbidden-token scan clean. Root independent audit pending.
+
+The field is the actual coordinatewise sum of signed TM electric and TE electric (canonical TM magnetic) vacuum source fields. The spatial weight has norm equal to the radius. Normalizing each nonzero observation point to the actual unit sphere transfers the proved weighted radial bound to an unweighted exterior bound, since radius is at least two. The actual summable envelope yields uniform convergence jointly over the full distant exterior and any fixed source compact. The weight commutes with the infinite sum by continuous scalar multiplication. Consequently this literal unweighted spatial field has the genuine translated free-dyadic far amplitude at every direction. Classical PDE regularity and equality with the actual free dyadic are not asserted here.

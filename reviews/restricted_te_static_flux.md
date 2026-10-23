@@ -1,0 +1,6 @@
+# Actual static coherent plane masses and dynamic integrability
+
+Frozen source: lean/RestrictedTEStaticFlux.lean, SHA256 6A8CA94743F8AE33FB8B70EA499F0EA4C24E1725AAFF04DB1E5516216277A145.
+Author final pinned compiler/object PASS: exit 0, no warnings, three standard-only reports. Log: lean/logs/RestrictedTEStaticFlux-final.log. Root independent full-source mathematical review and fresh pinned compiler PASS: exit 0, no warnings, standard-only. Log: lean/logs/RestrictedTEStaticFlux-root-audit.log; receipt: lean/logs/RestrictedTEStaticFlux-root-audit.exit.log.
+
+The actual static Hessian source response has whole-plane component mass at most (3/d)*sourceMass, directly from the genuine plane kernel integration and the actual finite component sum. Pairing it with the globally bounded actual harmonic magnetic field gives integrable static coherent flux and bound (6B/d)*sourceMass, with B derived from that fixed field. Actual dynamic-minus-static tail integrability, local continuity and compact disk integration then prove integrability of the literal dynamic coherent flux for every positive gap. No gap upper bound is needed for this integrability conclusion, and no plane trace or field identity is assumed.

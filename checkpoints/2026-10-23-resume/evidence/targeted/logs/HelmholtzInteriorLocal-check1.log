@@ -1,0 +1,22 @@
+HelmholtzInteriorLocal.lean:37:57: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  χ x
+Ω : Set Space
+hΩ : IsOpen Ω
+k : ℝ
+χ u : Space → ℂ
+hχ : ContDiff ℝ (↑⊤) χ
+hc : HasCompactSupport χ
+hs : tsupport χ ⊆ Ω
+hu : ∀ y ∈ Ω, ContDiffAt ℝ (↑⊤) u y
+heq : ∀ y ∈ Ω, laplacian u y + ↑k ^ 2 * u y = 0
+x : Space
+hx : χ x = 1
+g : Space → ℂ
+hg : ContDiff ℝ (↑⊤) g
+left✝ : HasCompactSupport g
+he : ∀ x ∈ tsupport χ, g =ᶠ[𝓝 x] u
+⊢ x ∈ Function.support χ
+'OQ14.HelmholtzInteriorLocal.partial_zero_of_not_tsupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorLocal.kernel_zero_of_not_tsupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorLocal.kernel_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorLocal.local_representation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

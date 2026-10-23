@@ -1,0 +1,6 @@
+# Actual harmonic TE local coherent comparison
+
+Frozen source: lean/RestrictedTEPlaneLocal.lean, SHA256 C36594447A84C2ADA50BC6F2E65E70C96B2DA23FD0B0A1CE93704B673D118089.
+Author final pinned compiler/object PASS: exit 0, no warnings, six standard-only reports. Log: lean/logs/RestrictedTEPlaneLocal-final.log. Independent audit pending.
+
+For the actual finite restricted harmonic TE E/H fields, the derived wall parities force tangential E and normal H to vanish on the measurement plane. The actual free total-field normal flux then equals the literal coherent source/incident term plus the actual quadratic source flux, with no omitted incident terms. The actual dynamic-minus-static coherent error is identified with the literal dyadic remainder convolution, and its integral norm on every disk is bounded by twice a genuine fixed-field global magnetic bound times the proved remainder mass and source mass. That bound is derived from the same actual magnetic Herglotz partner, not supplied as a hypothesis, and is uniform in the positive source gap. The physical frequency is unit-normalized; constants depend on the actual finite input field. Whole-plane transverse tails, physical finite-stack identification, exact named even-m basis equivalence and final channel closure remain separate.

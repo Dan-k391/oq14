@@ -1,0 +1,26 @@
+Try this: ring_nf
+SourceModeReaction.lean:38:95: error: unsolved goals
+d : Data
+a : PositiveIndex
+x y : Space
+i j : Fin 3
+⊢ -(↑(VectorReactionTerms.angularWeight (1 + a.fst)) *
+              DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) y j *
+            RadialSource.gamma (1 + a.fst) (List.map teLayer d.gs) d.R d.X ⋯ *
+          DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) x i) +
+      ↑(VectorReactionTerms.angularWeight (1 + a.fst)) *
+            DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) y j *
+          DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) x i *
+        Complex.I ^ 3 =
+    -(↑(VectorReactionTerms.angularWeight (1 + a.fst)) *
+              DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) y j *
+            RadialSource.gamma (1 + a.fst) (List.map teLayer d.gs) d.R d.X ⋯ *
+          DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) x i) -
+      ↑(VectorReactionTerms.angularWeight (1 + a.fst)) *
+            DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) y j *
+          DebyeCalculus.toroidal (SolidScalarHelmholtz.wave (1 + a.fst) 1 ↑(representative (a.fst + 1) a.snd)) x i *
+        Complex.I
+'OQ14.SourceModeReaction.weight_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeReaction.tm_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeReaction.te_normalization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceModeReaction.mode_core' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,14 @@
+EvenHarmonicProjection.lean:17:4: error: type mismatch
+  MvPolynomial.isHomogeneous_zero
+has type
+  ∀ (σ : Type ?u.1413) (R : Type ?u.1412) [inst : CommSemiring R] (n : ℕ), MvPolynomial.IsHomogeneous 0 n : Prop
+but is expected to have type
+  MvPolynomial.IsHomogeneous 0 l : Prop
+EvenHarmonicProjection.lean:35:14: error: unknown identifier 'FischerDecomposition.evaluate_smul'
+'OQ14.EvenHarmonicProjection.homogeneous' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.central_even' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.equator_even' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.wave_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.EvenHarmonicProjection.wave_central_even' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

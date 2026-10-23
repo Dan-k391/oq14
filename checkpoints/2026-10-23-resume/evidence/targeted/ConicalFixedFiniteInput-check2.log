@@ -1,0 +1,60 @@
+ConicalFixedFiniteInput.lean:103:66: error: tactic 'assumption' failed
+p : Data
+a b R : ℝ
+ha : 0 ≤ a
+hai : a < p.cutoff.rIn
+hba : b < a
+hR : 0 < R
+hRb : R < b
+hν : p.exponent < 1
+δ k : ℝ
+hfreq : |k| ≤ DynamicStaticLimit.frequencyRadius (ConicalSeparatedSource.material p a) a
+c : ConicalRungeClosure.WaveIndex →₀ ℂ
+J : Maxwell.Field
+hJ : ∀ (i : Fin 3), ContDiff ℝ ↑⊤ fun x => J x i
+heJ : ∀ (i : Fin 3), ∀ x ∈ closedBall 0 b, J x i = ConicalIncidentEstimate.error p a k c i x
+q : ℂ
+⊢ 0 < k
+ConicalFixedFiniteInput.lean:106:88: error: tactic 'assumption' failed
+p : Data
+a b R : ℝ
+ha : 0 ≤ a
+hai : a < p.cutoff.rIn
+hba : b < a
+hR : 0 < R
+hRb : R < b
+hν : p.exponent < 1
+δ k : ℝ
+hfreq : |k| ≤ DynamicStaticLimit.frequencyRadius (ConicalSeparatedSource.material p a) a
+c : ConicalRungeClosure.WaveIndex →₀ ℂ
+J : Maxwell.Field
+hJ : ∀ (i : Fin 3), ContDiff ℝ ↑⊤ fun x => J x i
+heJ : ∀ (i : Fin 3), ∀ x ∈ closedBall 0 b, J x i = ConicalIncidentEstimate.error p a k c i x
+q : ℂ
+r : ℝ
+⊢ 0 < k
+ConicalFixedFiniteInput.lean:107:89: error: tactic 'assumption' failed
+p : Data
+a b R : ℝ
+ha : 0 ≤ a
+hai : a < p.cutoff.rIn
+hba : b < a
+hR : 0 < R
+hRb : R < b
+hν : p.exponent < 1
+δ k : ℝ
+hfreq : |k| ≤ DynamicStaticLimit.frequencyRadius (ConicalSeparatedSource.material p a) a
+c : ConicalRungeClosure.WaveIndex →₀ ℂ
+J : Maxwell.Field
+hJ : ∀ (i : Fin 3), ContDiff ℝ ↑⊤ fun x => J x i
+heJ : ∀ (i : Fin 3), ∀ x ∈ closedBall 0 b, J x i = ConicalIncidentEstimate.error p a k c i x
+q : ℂ
+r : ℝ
+⊢ 0 < k
+'OQ14.ConicalFixedFiniteInput.exists_nonzero_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFixedFiniteInput.exists_nonzero_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFixedFiniteInput.eventually_nonzero_baseline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFixedFiniteInput.positive_frequency_fixed_input' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

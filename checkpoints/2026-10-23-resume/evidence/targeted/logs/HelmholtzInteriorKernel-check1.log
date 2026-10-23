@@ -1,0 +1,21 @@
+HelmholtzInteriorKernel.lean:40:6: error: type mismatch
+  ContDiffAt.comp (x, y) ?m.7347 hd
+has type
+  ContDiffAt ℝ (↑⊤) (?m.7137 ∘ fun p => p.1 - p.2) (x, y) : Prop
+but is expected to have type
+  ContDiffAt ℝ (↑⊤) (fun p => phi k (p.1 - p.2)) (x, y) : Prop
+HelmholtzInteriorKernel.lean:40:101: error: simp made no progress
+HelmholtzInteriorKernel.lean:43:6: error: type mismatch
+  ContDiffAt.comp (x, y) ?m.9690 hd
+has type
+  ContDiffAt ℝ (↑⊤) (?m.9579 ∘ fun p => p.1 - p.2) (x, y) : Prop
+but is expected to have type
+  ContDiffAt ℝ (↑⊤) (fun p => phiGradient k (p.1 - p.2) i) (x, y) : Prop
+HelmholtzInteriorKernel.lean:43:111: error: simp made no progress
+'OQ14.HelmholtzInteriorKernel.partial_zero_of_constant_nhds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorKernel.laplacian_zero_of_constant_nhds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OQ14.HelmholtzInteriorKernel.kernel_zero_of_constant_nhds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorKernel.kernel_joint_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HelmholtzInteriorKernel.kernel_row_continuous' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

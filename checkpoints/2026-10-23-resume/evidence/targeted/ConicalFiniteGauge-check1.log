@@ -1,0 +1,51 @@
+ConicalFiniteGauge.lean:123:8: error: tactic 'rfl' failed, the left-hand side
+  1 + (coefficient p).value (VectorFourier.coordinateMap x)
+is not definitionally equal to the right-hand side
+  ConicalLocalGauss.epsilon p x
+p : Data
+a b k : ℝ
+ha : 0 ≤ a
+hai : a < p.cutoff.rIn
+hba : b < a
+hk : k ≠ 0
+hfreq : |k| ≤ DynamicStaticLimit.frequencyRadius (ConicalSeparatedSource.material p a) a
+c : ConicalRungeClosure.WaveIndex →₀ ℂ
+J : Maxwell.Field
+hJ : ∀ (i : Fin 3), ∀ x ∈ closedBall 0 b, J x i = ConicalIncidentEstimate.error p a k c i x
+f : 𝓢(Space, ℂ)
+hf : tsupport ⇑f ⊆ ball 0 b
+hc : HasCompactSupport ⇑f
+hm :
+  MaterialMaxwell.TestMaxwell k (MaterialMaxwell.dielectric (ConicalSeparatedSource.material p a))
+    (MaterialField.total (ConicalSeparatedSource.material p a) k
+      ((ConicalMaterialRunge.solutionOperator (ConicalSeparatedSource.material p a) k a)
+        (ConicalFinitePlanes.restricted k a c))
+      (ConicalFinitePlanes.electric k c))
+    (MaterialMaxwell.totalMagnetic (ConicalSeparatedSource.material p a) k
+      ((ConicalMaterialRunge.solutionOperator (ConicalSeparatedSource.material p a) k a)
+        (ConicalFinitePlanes.restricted k a c))
+      (ConicalFinitePlanes.magnetic k c))
+hg :
+  ∑ i,
+      ∫ (x : Space),
+        ↑(MaterialMaxwell.dielectric (ConicalSeparatedSource.material p a) x) *
+            MaterialField.total (ConicalSeparatedSource.material p a) k
+              ((ConicalMaterialRunge.solutionOperator (ConicalSeparatedSource.material p a) k a)
+                (ConicalFinitePlanes.restricted k a c))
+              (ConicalFinitePlanes.electric k c) x i *
+          dcoord (⇑↑⟨f, hc⟩) x i =
+    0
+i : Fin 3
+x : Space
+he :
+  x ∈ closedBall 0 b →
+    FieldResponse.electric k (totalSource p a k c) (source p a k c) x i + J x i = electric p a k c x i
+hx : x ∈ ball 0 b
+hxa : ‖x‖ ≤ a
+⊢ 1 + (coefficient p).value (VectorFourier.coordinateMap x) = ConicalLocalGauss.epsilon p x
+'OQ14.ConicalFiniteGauge.material_gauss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFiniteGauge.source_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFiniteGauge.source_zero_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFiniteGauge.exists_incident_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFiniteGauge.electric_in_fixed_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalFiniteGauge.gauss' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

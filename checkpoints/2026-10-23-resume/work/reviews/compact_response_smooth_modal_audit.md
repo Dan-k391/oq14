@@ -1,0 +1,5 @@
+# CompactResponseSmooth independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; both reports standard-only. Source SHA256 `26B81B45F7E786F4FFDAB5C13F61EFF090F3D34309B377CA7BFA3945FF5C91BB`; independent log `lean/logs/CompactResponseSmooth-modal-audit.log`, SHA256 `461B2E4142BD485017508ACA32B2066C691AC97FFAB56978DB92F2B1462623C3`.
+
+A compact source set is separated from the evaluation point by an actual positive ball. The compact set of all nearby point-minus-source differences avoids zero, so genuine smooth localization replaces the punctured smooth kernel there by a globally smooth compact kernel. Its convolution with the actual integrable source is smooth. Local equality of the integrals follows from pointwise kernel equality on source support and exact source vanishing elsewhere. The result applies to arbitrary compact support, rather than only a source ball centered at the origin. No solution regularity or PDE is assumed or asserted beyond smoothness of this actual separated-support response.

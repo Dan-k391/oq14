@@ -1,0 +1,68 @@
+FiniteAngularHerglotz.lean:33:6: error: type mismatch, term
+  congrArg (fun x => VectorHarmonicNormalization.normalizer a.fst * x) h
+after simplification has type
+  VectorHarmonicNormalization.normalizer a.fst *
+      ∑ x,
+        ↑n x *
+          (VectorHarmonicNormalization.restriction
+              (AngularHarmonicEnergy.tangential (↑(representative (a.fst + 1) a.snd)) (a.fst + 1)))
+            n x =
+    VectorHarmonicNormalization.normalizer a.fst * 0 : Prop
+but is expected to have type
+  VectorHarmonicNormalization.normalizer a.fst *
+      ∑ i,
+        ↑n i *
+          (VectorHarmonicNormalization.restriction
+              (AngularHarmonicEnergy.tangential (↑(representative (a.fst + 1) a.snd)) (a.fst + 1)))
+            n i =
+    0 : Prop
+FiniteAngularHerglotz.lean:37:6: error: type mismatch, term
+  congrArg (fun x => VectorHarmonicNormalization.normalizer a.fst * x) h
+after simplification has type
+  VectorHarmonicNormalization.normalizer a.fst *
+      ∑ x,
+        ↑n x *
+          (VectorHarmonicNormalization.restriction (AngularHarmonicEnergy.toroidal ↑(representative (a.fst + 1) a.snd)))
+            n x =
+    VectorHarmonicNormalization.normalizer a.fst * 0 : Prop
+but is expected to have type
+  VectorHarmonicNormalization.normalizer a.fst *
+      ∑ i,
+        ↑n i *
+          (VectorHarmonicNormalization.restriction (AngularHarmonicEnergy.toroidal ↑(representative (a.fst + 1) a.snd)))
+            n i =
+    0 : Prop
+FiniteAngularHerglotz.lean:27:114: error: unsolved goals
+m : ModeIndex
+n : ↑Sphere
+hreal : ∑ i, ↑n i * (FiniteVectorAngular.realAngular m) n i = 0
+⊢ ↑(∑ i, (FiniteVectorAngular.realAngular m) n i * ↑n i) = 0
+FiniteAngularHerglotz.lean:61:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  AngularHerglotz.electric k (fun n j => (FiniteVectorAngular.amplitude c) n j) ?x ?i
+k : ℝ
+c : ModeIndex →₀ ℂ
+x : Space
+i : Fin 3
+⊢ (incident k c).E x i = (HerglotzAngularL2.value k x i) (HerglotzAngularL2.finiteAmplitude c)
+FiniteAngularHerglotz.lean:88:2: error: type mismatch, term
+  hd k x i
+after simplification has type
+  ‖(HerglotzAngularL2.value k x i) (HerglotzAngularL2.finiteAmplitude d) -
+        (HerglotzAngularL2.value k x i)
+          ((ContinuousMap.toLp 2 angularMeasure ℂ)
+            { toFun := fun n => (WithLp.equiv 2 (Fin 3 → ℂ)).symm (FiniteHerglotzCaps.amplitude c r hr n),
+              continuous_toFun := ⋯ })‖ <
+    ε : Prop
+but is expected to have type
+  ‖(HerglotzAngularL2.value k x i) (HerglotzAngularL2.finiteAmplitude d) -
+        AngularHerglotz.electric k (FiniteHerglotzCaps.amplitude c r hr) x i‖ <
+    ε : Prop
+'OQ14.FiniteAngularHerglotz.normal_inner_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteAngularHerglotz.angular_tangent' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteAngularHerglotz.amplitude_tangent' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteAngularHerglotz.electric_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteAngularHerglotz.capMap_tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteAngularHerglotz.uniform_cap_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

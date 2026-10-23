@@ -19,3 +19,7 @@ kernel. Physical response preservation of the sector still needs assembly.
 Source SHA256 `f8ea2dddbd2ed2759537fe435e1f213eb3a57d2bf99016724ed225bf434027de`.
 Evidence `lean/logs/HalfTurnMaxwellParity-final.log`, SHA256
 `c6428eb2ea46235c6213414930be0a4244177267010235b8176171803206763b`.
+
+## Independent continuation review
+
+Complete source mathematical review and fresh pinned compiler PASS at SHA256 F8EA2DDDBD2ED2759537FE435E1F213EB3A57D2BF99016724ED225BF434027DE. All eleven reports use standard foundations only, exit 0, no warnings. Log: lean/logs/HalfTurnMaxwellParity-independent-continuation.log. The actual proper half-turn, scalar chain rule, curl covariance, and electric/magnetic wall projection signs were checked. Scalar invariance is an explicit input to the generic toroidal theorem and is discharged for the actual symmetric scalar wave. No finite harmonic sector or Maxwell completeness conclusion is hidden in the hypotheses.

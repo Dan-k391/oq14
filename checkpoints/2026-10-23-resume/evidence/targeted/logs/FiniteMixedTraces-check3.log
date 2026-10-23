@@ -1,0 +1,6 @@
+FiniteMixedTraces.lean:60:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+FiniteMixedTraces.lean:163:2: error: 'change' tactic failed, pattern
+  (EuclideanSpace.proj i) (∑ m ∈ c.support, c m • (FiniteVectorAngular.angular m) n) = ?m.31501
+is not definitionally equal to target
+  (amplitude c) n i = ∑ m ∈ c.support, c m * (angular m) n i

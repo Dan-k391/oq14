@@ -1,0 +1,11 @@
+AngularJetSymmetry.lean:75:0: warning: automatically included section variable(s) unused in theorem 'OQ14.AngularJetSymmetry.cosineJet_average':
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+'OQ14.AngularJetSymmetry.scalarJet_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularJetSymmetry.cosineJet_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularJetSymmetry.cosineJet_half_turn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularJetSymmetry.cosineJet_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularJetSymmetry.wave_on_plane' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularJetSymmetry.cosineJet_average' depends on axioms: [propext, Classical.choice, Quot.sound]

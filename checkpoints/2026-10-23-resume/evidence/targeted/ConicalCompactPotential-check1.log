@@ -1,0 +1,39 @@
+ConicalCompactPotential.lean:66:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑(totalCoordinate
+          (ConicalProjectionLocalization.ofPotential p a hai (potentialData k S F ρ hc hF)
+            (fun x i => J x i + ElectricPotentialDecomposition.correction k ρ x i) ⋯ ?m.23227)
+          i)
+    x
+case h
+p : Data
+a : ℝ
+hai : a < p.cutoff.rIn
+k S : ℝ
+F : ↥VectorFourier.VectorL2
+ρ : Fin 3 → Space → ℂ
+hc : ∀ (j : Fin 3), ∀ y ∉ closedBall 0 S, ρ j y = 0
+hF : ∀ (j : Fin 3), ↑↑(NewtonL2.physicalCoordinate F j) =ᶠ[ae volume] ρ j
+J : Maxwell.Field
+hJ : ∀ (i : Fin 3), Continuous fun x => J x i
+hGauss :
+  ∀ (f : 𝓢(Space, ℂ)),
+    tsupport ⇑f ⊆ ball 0 a →
+      ∑ i,
+          ∫ (x : Space),
+            ↑(ConicalLocalGauss.epsilon p x) * (FieldResponse.electric k F ρ x i + J x i) * dcoord (⇑f) x i =
+        0
+i : Fin 3
+x : Space
+hx :
+  x ∈ ball 0 a →
+    ↑↑(totalCoordinate
+              (ConicalProjectionLocalization.ofPotential p a hai (potentialData k S F ρ hc hF)
+                (fun x i => J x i + ElectricPotentialDecomposition.correction k ρ x i) ⋯ ?m.23227)
+              i)
+        x =
+      (potentialData k S F ρ hc hF).derivative i x + (J x i + ElectricPotentialDecomposition.correction k ρ x i)
+hm : x ∈ ball 0 a
+⊢ ↑↑(totalCoordinate (system p a hai k S F ρ hc hF J hJ hGauss) i) x = FieldResponse.electric k F ρ x i + J x i
+'OQ14.ConicalCompactPotential.potentialData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalCompactPotential.system' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalCompactPotential.total_inner' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

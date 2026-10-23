@@ -1,0 +1,65 @@
+AngularHerglotz.lean:37:50: error: ambiguous, possible interpretations 
+  SphereWaveCalculus.coordinate l θ : ℂ
+  
+  (Maxwell.coordinate l) ↑θ : ℂ
+AngularHerglotz.lean:40:53: error: ambiguous, possible interpretations 
+  SphereWaveCalculus.coordinate l θ : ℂ
+  
+  (Maxwell.coordinate l) ↑θ : ℂ
+AngularHerglotz.lean:41:59: error: tactic 'unfold' failed to unfold 'OQ14.SphereReactionKernel.wave' at
+  Continuous ?m.20757
+AngularHerglotz.lean:57:104: error: application type mismatch
+  A θ
+argument
+  θ
+has type
+  ConicalPlaneWaves.Space : Type
+but is expected to have type
+  ↑Sphere : Type
+AngularHerglotz.lean:64:4: error: ring failed, ring expressions not equal
+A : ↑Sphere → Maxwell.Vector
+hA : ∀ (θ : ConicalPlaneWaves.Space), dot (ConicalPlaneWaves.direction θ) (A sorry) = 0
+θ : ↑Sphere
+hs : ↑(↑θ 0) ^ 2 + ↑(↑θ 1) ^ 2 + ↑(↑θ 2) ^ 2 = 1
+ht : ↑(↑θ 0) * A sorry 0 + ↑(↑θ 1) * A sorry 1 + ↑(↑θ 2) * A sorry 2 = 0
+⊢ ↑(↑θ 2) * ↑(↑θ 0) * A θ 2 + (↑(↑θ 2) * ↑(↑θ 0) * A sorry 2 - ↑(↑θ 2) ^ 2 * A θ 0 * 2) + ↑(↑θ 0) * ↑(↑θ 1) * A θ 1 +
+          (↑(↑θ 0) * ↑(↑θ 1) * A sorry 1 - ↑(↑θ 0) ^ 2 * A θ 0) +
+        ↑(↑θ 0) ^ 2 * A sorry 0 +
+      (A θ 0 * 2 - A θ 0 * ↑(↑θ 1) ^ 2 * 2) =
+    0
+AngularHerglotz.lean:65:4: error: ring failed, ring expressions not equal
+A : ↑Sphere → Maxwell.Vector
+hA : ∀ (θ : ConicalPlaneWaves.Space), dot (ConicalPlaneWaves.direction θ) (A sorry) = 0
+θ : ↑Sphere
+hs : ↑(↑θ 0) ^ 2 + ↑(↑θ 1) ^ 2 + ↑(↑θ 2) ^ 2 = 1
+ht : ↑(↑θ 0) * A sorry 0 + ↑(↑θ 1) * A sorry 1 + ↑(↑θ 2) * A sorry 2 = 0
+⊢ ↑(↑θ 0) * ↑(↑θ 1) * A θ 0 + (↑(↑θ 0) * ↑(↑θ 1) * A sorry 0 - ↑(↑θ 0) ^ 2 * A θ 1 * 2) + ↑(↑θ 1) * ↑(↑θ 2) * A θ 2 +
+          (↑(↑θ 1) * ↑(↑θ 2) * A sorry 2 - ↑(↑θ 1) ^ 2 * A θ 1) +
+        ↑(↑θ 1) ^ 2 * A sorry 1 +
+      (A θ 1 * 2 - A θ 1 * ↑(↑θ 2) ^ 2 * 2) =
+    0
+AngularHerglotz.lean:66:4: error: ring failed, ring expressions not equal
+A : ↑Sphere → Maxwell.Vector
+hA : ∀ (θ : ConicalPlaneWaves.Space), dot (ConicalPlaneWaves.direction θ) (A sorry) = 0
+θ : ↑Sphere
+hs : ↑(↑θ 0) ^ 2 + ↑(↑θ 1) ^ 2 + ↑(↑θ 2) ^ 2 = 1
+ht : ↑(↑θ 0) * A sorry 0 + ↑(↑θ 1) * A sorry 1 + ↑(↑θ 2) * A sorry 2 = 0
+⊢ ↑(↑θ 1) * ↑(↑θ 2) * A θ 1 + (↑(↑θ 1) * ↑(↑θ 2) * A sorry 1 - ↑(↑θ 1) ^ 2 * A θ 2 * 2) + ↑(↑θ 2) * ↑(↑θ 0) * A θ 0 +
+          (↑(↑θ 2) * ↑(↑θ 0) * A sorry 0 - ↑(↑θ 2) ^ 2 * A θ 2) +
+        ↑(↑θ 2) ^ 2 * A sorry 2 +
+      (A θ 2 * 2 - A θ 2 * ↑(↑θ 0) ^ 2 * 2) =
+    0
+AngularHerglotz.lean:69:54: error: application type mismatch
+  A θ
+argument
+  θ
+has type
+  ConicalPlaneWaves.Space : Type
+but is expected to have type
+  ↑Sphere : Type
+'OQ14.AngularHerglotz.magneticAmplitude_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularHerglotz.electric_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularHerglotz.magnetic_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.AngularHerglotz.curl_electric' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.AngularHerglotz.magneticAmplitude_twice' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.AngularHerglotz.maxwell_at' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

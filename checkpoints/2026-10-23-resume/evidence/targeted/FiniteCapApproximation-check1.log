@@ -1,0 +1,55 @@
+FiniteCapApproximation.lean:29:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a : ↑Sphere),
+    ∑ i ∈ ?m.15055,
+      c i * ↑(SphereSmoothCaps.density i.1 r hr a) * ConicalPlaneWaves.polarization (↑a) i.2 j * wave (-k) x a ∂μ
+k : ℝ
+c : WaveIndex →₀ ℂ
+r : ℝ
+hr : 0 < r
+x : Space
+j : Fin 3
+hi :
+  ∀ (w : WaveIndex),
+    Integrable
+      (fun θ =>
+        c w * ↑(SphereSmoothCaps.density w.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) w.2 j * wave (-k) x θ)
+      μ
+⊢ ∫ (θ : ↑SphereReactionKernel.Sphere),
+      ∑ i ∈ c.support,
+        c i * ↑(SphereSmoothCaps.density i.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) i.2 j *
+          wave (-k) x θ ∂surface =
+    ∑ w ∈ c.support,
+      c w * ∫ (θ : ↑Sphere), ↑(SphereSmoothCaps.density w.1 r hr θ) * ConicalPlaneWaves.electric k (↑θ) w.2 x j ∂μ
+FiniteCapApproximation.lean:61:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ?a * ?b / ?c
+k R : ℝ
+c : WaveIndex →₀ ℂ
+ε : ℝ
+hε : 0 < ε
+S : ℝ := ∑ w ∈ c.support, ‖c w‖
+hS : 0 ≤ S
+hSp : 0 < S + 1
+δ : ℝ
+hδ : 0 < δ
+hbound :
+  ∀ (n : ↑PlaneCapApproximation.Sphere) (r : ℝ) (hr : 0 < r),
+    r ≤ δ →
+      ∀ x ∈ closedBall 0 R,
+        ∀ (i j : Fin 3),
+          ‖∫ (θ : ↑PlaneCapApproximation.Sphere),
+                  ↑(SphereSmoothCaps.density n r hr θ) *
+                    ConicalPlaneWaves.electric k (↑θ) i x j ∂PlaneCapApproximation.μ -
+                ConicalPlaneWaves.electric k (↑n) i x j‖ ≤
+            ε / (S + 1)
+r : ℝ
+hr : 0 < r
+hrδ : r ≤ δ
+x : Space
+hx : x ∈ closedBall 0 R
+j : Fin 3
+⊢ S * (ε / (S + 1)) < ε
+'OQ14.FiniteCapApproximation.electric_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteCapApproximation.uniform_electric_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

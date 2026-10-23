@@ -1,0 +1,44 @@
+SourceModeInverse.lean:62:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  multiplier (tmData d (a.fst + 1)) *
+    SolidMaxwellProfiles.electric (tmData d (a.fst + 1)).l (↑(representative (a.fst + 1) a.snd)) x i
+c : Coefficient
+d : Data
+hm : ∀ (x : Space), ↑(c.value (VectorFourier.coordinateMap x)) = sigma d ‖x‖ - 1
+hdisp : ∀ g ∈ d.gs, g.q ^ 2 = g.σ
+hu : IsUnit (DynamicVolume.volumeBlock c 1 d.X)
+hc : ∀ x ∉ closedBall 0 d.X, c.value (VectorFourier.coordinateMap x) = 0
+a : PositiveIndex
+x : Space
+hx : ‖x‖ < d.R
+i : Fin 3
+⊢ ∑ j,
+      ∫ (y : Space),
+        DynamicVolume.source c (MaterialField.solution c 1 d.X (tmIncident c d hc a)) j y *
+          DyadicKernel.dyadic 1 (x - y) i j =
+    multiplier (tmData d (a.fst + 1)) *
+      SolidMaxwellProfiles.electric (a.fst + 1) (↑(representative (a.fst + 1) a.snd)) x i
+SourceModeInverse.lean:78:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  multiplier (teData d (a.fst + 1)) *
+    SolidMaxwellProfiles.magnetic (teData d (a.fst + 1)).l (↑(representative (a.fst + 1) a.snd)) x i
+c : Coefficient
+d : Data
+hm : ∀ (x : Space), ↑(c.value (VectorFourier.coordinateMap x)) = sigma d ‖x‖ - 1
+hdisp : ∀ g ∈ d.gs, g.q ^ 2 = g.σ
+hu : IsUnit (DynamicVolume.volumeBlock c 1 d.X)
+hc : ∀ x ∉ closedBall 0 d.X, c.value (VectorFourier.coordinateMap x) = 0
+a : PositiveIndex
+x : Space
+hx : ‖x‖ < d.R
+i : Fin 3
+⊢ ∑ j,
+      ∫ (y : Space),
+        DynamicVolume.source c (MaterialField.solution c 1 d.X (teIncident c d hc a)) j y *
+          DyadicKernel.dyadic 1 (x - y) i j =
+    multiplier (teData d (a.fst + 1)) *
+      SolidMaxwellProfiles.magnetic (a.fst + 1) (↑(representative (a.fst + 1) a.snd)) x i
+'OQ14.SourceModeInverse.tm_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeInverse.te_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeInverse.tm_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeInverse.te_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceModeInverse.tm_core' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceModeInverse.te_core' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

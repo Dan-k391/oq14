@@ -1,0 +1,6 @@
+# Actual complete harmonic TE inverse flux to static comparison
+
+Frozen source: lean/RestrictedTETotalLimit.lean, SHA256 A137DBA31674203991DD8F7D83F29A57348189C6583C19E9E23F2F52ACD6788B.
+Author final pinned compiler/object PASS: exit 0, no warnings, one standard-only report. Log: lean/logs/RestrictedTETotalLimit-final.log. Independent audit pending.
+
+For the literal self-consistent parity material inverse driven by an actual finite harmonic TE input scaled by a inverse, this proves whole-plane L1 convergence of the complete E/H total normal flux to its actual static coherent expression. All source mass, source gap, incident Maxwell, actual weighted datum and inverse hypotheses are discharged by the actual finite-ball construction and actual geometry. It combines the proved complete parity reaction remainder limit with the proved free-flux dynamic-static limit and genuine integrability of both differences. No desired source-response, reaction pairing or flux convergence is a premise. The result is for each fixed finite harmonic coefficient vector; a uniform finite-dimensional coefficient-sphere adapter is still separate, as are physical finite-stack lifting and named even-m basis equivalence.

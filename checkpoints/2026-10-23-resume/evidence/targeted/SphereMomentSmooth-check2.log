@@ -1,0 +1,33 @@
+SphereMomentSmooth.lean:20:80: error: ambiguous, possible interpretations 
+  Maxwell.Space : Type
+  
+  SphereReactionKernel.Space : Type
+SphereMomentSmooth.lean:20:80: error: ambiguous, possible interpretations 
+  Maxwell.Space : Type
+  
+  SphereReactionKernel.Space : Type
+SphereMomentSmooth.lean:21:71: error: unsolved goals
+case intro
+a : ↑Sphere → ℂ
+ha : Continuous a
+k : ℝ
+x : sorry
+v : sorry
+A : ℝ
+hA : ∀ (θ : ↑Sphere), ‖a θ‖ ≤ A
+hi : Integrable (fun θ => (a θ * wave k sorry θ) • phase k θ) surface
+⊢ (fderiv ℝ (moment a k) sorry) sorry = moment (fun θ => a θ * (phase k θ) sorry) k sorry
+SphereMomentSmooth.lean:38:34: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ContDiff ?m.7106 (?m.7114 + 1) ?m.7115
+case succ
+k : ℝ
+n : ℕ
+ih : ∀ (a : ↑Sphere → ℂ), Continuous a → ContDiff ℝ (↑↑n) (moment a k)
+a : ↑Sphere → ℂ
+ha : Continuous a
+⊢ ContDiff ℝ (↑(↑n + 1)) (moment a k)
+'OQ14.SphereMomentSmooth.amplitude_bound_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_fderiv_apply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_contDiff_nat' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SphereMomentSmooth.moment_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

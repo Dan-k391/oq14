@@ -1,0 +1,33 @@
+ConicalProjectionLinear.lean:27:2: error: dsimp made no progress
+ConicalProjectionLinear.lean:34:15: error: invalid field 'sub', the environment does not contain 'HasCompactSupport.sub'
+  s.compact i
+has type
+  HasCompactSupport (s.correction i)
+ConicalProjectionLinear.lean:34:15: error: invalid field 'sub', the environment does not contain 'IsCompact.sub'
+  s.compact i
+has type
+  IsCompact (tsupport (s.correction i))
+ConicalProjectionLinear.lean:34:15: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  s.compact i
+has type
+  ?m.11656 ≤ Filter.principal (tsupport (s.correction i)) → ∃ x ∈ tsupport (s.correction i), ClusterPt x ?m.11656
+ConicalProjectionLinear.lean:64:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∫ (a_1 : ↑Sphere), s.correction i (r • ↑a_1) * σ a_1 ∂angularMeasure -
+    ∫ (a_1 : ↑Sphere), t.correction i (r • ↑a_1) * σ a_1 ∂angularMeasure
+p : Data
+a : ℝ
+s t : System p a
+i : Fin 3
+σ : ↑Sphere → ℂ
+hσ : Measurable σ
+C : ℝ
+hb : ∀ (n : ↑Sphere), ‖σ n‖ ≤ C
+r : ℝ
+⊢ ∫ (n : ↑Sphere), (s.correction i (r • ↑n) - t.correction i (r • ↑n)) * σ n ∂angularMeasure =
+    moment (s.correction i) σ r - moment (t.correction i) σ r
+'OQ14.ConicalProjectionLinear.graphSub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionLinear.gauss_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionLinear.sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionLinear.moment_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionLinear.radialCorrection_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalProjectionLinear.tangentCorrection_sub' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

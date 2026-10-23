@@ -1,0 +1,17 @@
+SourceRegularCorrection.lean:48:30: error: unsolved goals
+case pos
+d : Data
+p : HarmonicPolynomial.Poly
+x : Space
+hx : d.X < ‖x‖
+i : Fin 3
+h✝¹ : d.R < ‖x‖
+h✝ : ‖x‖ ≤ d.X
+⊢ ↑(RadialGluing.sigmaAt d.gs ‖x‖) - 1 = 0 ∨ SourceUnclippedMaxwell.electric d p x i = 0
+'OQ14.SourceRegularCorrection.electric_away' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.magnetic_away' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.electric_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.magnetic_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.polarization_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.polarization_outer' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.SourceRegularCorrection.vacuum_sigma' depends on axioms: [propext, Classical.choice, Quot.sound]

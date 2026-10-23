@@ -1,0 +1,13 @@
+Try this: ring_nf
+PlaneCapApproximation.lean:40:22: error: failed to synthesize
+  CompactSpace ↑(closedBall 0 R)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PlaneCapApproximation.lean:40:9: error: rcases tactic failed: x✝ : ?m.21089 is not an inductive datatype
+'OQ14.PlaneCapApproximation.electric_as_wave' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.electric_joint_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.matrixKernel_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.PlaneCapApproximation.uniform_cap_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,8 @@
+RestrictedTEFiniteBalls.lean:46:0: warning: automatically included section variable(s) unused in theorem 'OQ14.RestrictedTEFiniteBalls.representative':
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+'OQ14.RestrictedTEFiniteBalls.actual_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEFiniteBalls.source_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEFiniteBalls.representative' depends on axioms: [propext, Classical.choice, Quot.sound]

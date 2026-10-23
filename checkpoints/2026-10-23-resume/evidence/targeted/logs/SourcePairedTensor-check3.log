@@ -1,0 +1,9 @@
+SourcePairedTensor.lean:79:24: error: type mismatch, term
+  hr
+after simplification has type
+  dist (PairedVectorKernelLimit.actualJetMap q ⋯ n m b i j r) (PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j) <
+    ε : Prop
+but is expected to have type
+  ‖PairedVectorKernelLimit.actualJetMap q ⋯ n m b i j r - PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j‖ < ε : Prop
+'OQ14.SourcePairedTensor.eventually_actual_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourcePairedTensor.uniform_actual_jet_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

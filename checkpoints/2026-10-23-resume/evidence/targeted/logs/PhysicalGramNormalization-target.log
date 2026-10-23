@@ -1,0 +1,11 @@
+PhysicalGramNormalization.lean:21:4: error: type mismatch
+  Eq.symm he
+has type
+  ↑scale = ↑√scale ^ 2 : Prop
+but is expected to have type
+  ↑scale = ↑√scale * ↑√scale : Prop
+'OQ14.PhysicalGramNormalization.normalize_orthonormal' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'OQ14.PhysicalGramNormalization.interpolate' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

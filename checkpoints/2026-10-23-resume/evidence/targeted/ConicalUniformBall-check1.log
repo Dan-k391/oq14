@@ -1,0 +1,33 @@
+ConicalUniformBall.lean:13:84: error: expected token
+ConicalUniformBall.lean:16:51: error: failed to prove positivity/nonnegativity/nonzeroness
+ConicalUniformBall.lean:22:95: error: expected token
+ConicalUniformBall.lean:22:92: error: failed to synthesize
+  LE Type
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ConicalUniformBall.lean:22:94: error: failed to synthesize
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ConicalUniformBall.lean:20:24: error: unsolved goals
+a : ℝ
+g : BallL2 a
+e : ℝ
+he : 0 ≤ e
+hg : ∀ (i : Fin 3), ∀ᵐ (x : Space) ∂volume.restrict (closedBall 0 a), ‖↑↑(g i) x‖ ≤ e
+A : (Fin 3 → ↥(ScalarBall a)) →L[ℂ] PiLp 2 fun x => ↥(ScalarBall a) :=
+  ↑(PiLp.continuousLinearEquiv 2 ℂ fun x => ↥(ScalarBall a)).symm
+M : ℝ := sorry
+⊢ ‖g‖ ≤ factor a * e
+ConicalUniformBall.lean:42:2: error: type mismatch
+  herror x hx i
+has type
+  ‖I.E x i - ConicalFinitePlanes.electric k c x i‖ ≤ e : Prop
+but is expected to have type
+  ‖(↑↑(ConicalEntireGauge.restricted a I i) - ↑↑(ConicalFinitePlanes.restricted k a c i)) x‖ ≤ e : Prop
+'OQ14.ConicalUniformBall.factor_nonnegative' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalUniformBall.norm_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.ConicalUniformBall.restricted_difference' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

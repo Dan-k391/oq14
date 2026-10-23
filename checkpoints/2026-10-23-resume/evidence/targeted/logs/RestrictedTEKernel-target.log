@@ -1,0 +1,7 @@
+RestrictedTEKernel.lean:21:4: error: mod_cast has type
+  (fun j => ↑↑j) i = (fun j => ↑↑j) j : Prop
+but is expected to have type
+  ↑i = ↑j : Prop
+'OQ14.RestrictedTEKernel.grid_surjective' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEKernel.incoming_not_finite' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.RestrictedTEKernel.kernel_not_finite' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

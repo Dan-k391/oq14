@@ -1,0 +1,33 @@
+SphereVectorComponents.lean:28:9: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑((ContinuousLinearMap.compLpL 2 angularMeasure (EuclideanSpace.proj i)) ((ContinuousMap.toLp 2 angularMeasure ℂ) v))
+    n
+case h
+v : C(↑Sphere, ComplexVectorSphere.Vector)
+i : Fin 3
+n : ↑Sphere
+hc : ↑↑((ContinuousMap.toLp 2 angularMeasure ℂ) (complexComponent v i)) n = (complexComponent v i) n
+hv : ↑↑((ContinuousMap.toLp 2 angularMeasure ℂ) v) n = v n
+he :
+  ↑↑((ContinuousLinearMap.compLpL 2 angularMeasure (EuclideanSpace.proj i)) ((ContinuousMap.toLp 2 angularMeasure ℂ) v))
+      n =
+    (EuclideanSpace.proj i) (↑↑((ContinuousMap.toLp 2 angularMeasure ℂ) v) n)
+⊢ (complexComponent v i) n = ↑↑((coordinate i) ((ContinuousMap.toLp 2 angularMeasure ℂ) v)) n
+SphereVectorComponents.lean:40:9: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ↑↑((ContinuousLinearMap.compLpL 2 angularMeasure (EuclideanSpace.proj i))
+          (realLift ((ContinuousMap.toLp 2 angularMeasure ℝ) v)))
+    n
+case h
+v : C(↑Sphere, Space)
+i : Fin 3
+n : ↑Sphere
+hc : ↑↑((ContinuousMap.toLp 2 angularMeasure ℂ) (realComponent v i)) n = (realComponent v i) n
+hv : ↑↑((ContinuousMap.toLp 2 angularMeasure ℝ) v) n = v n
+he :
+  ↑↑((ContinuousLinearMap.compLpL 2 angularMeasure embedVector) ((ContinuousMap.toLp 2 angularMeasure ℝ) v)) n =
+    embedVector (↑↑((ContinuousMap.toLp 2 angularMeasure ℝ) v) n)
+hi :
+  ↑↑((ContinuousLinearMap.compLpL 2 angularMeasure (EuclideanSpace.proj i))
+            (realLift ((ContinuousMap.toLp 2 angularMeasure ℝ) v)))
+      n =
+    (EuclideanSpace.proj i) (↑↑(realLift ((ContinuousMap.toLp 2 angularMeasure ℝ) v)) n)
+⊢ (realComponent v i) n = ↑↑((coordinate i) (realLift ((ContinuousMap.toLp 2 angularMeasure ℝ) v))) n

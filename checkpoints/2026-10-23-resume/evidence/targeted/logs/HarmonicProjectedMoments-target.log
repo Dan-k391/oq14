@@ -1,0 +1,18 @@
+HarmonicProjectedMoments.lean:30:113: error: unsolved goals
+v : ↑Sphere → ℂ
+hv : Continuous v
+hs : ∀ (θ : ↑AngularPower.Sphere), v ((SphereAngularSymmetry.sphereMap HarmonicHalfTurn.rotation) θ) = v θ
+p : Poly
+hi : ∀ (q : Poly), Integrable (fun θ => v θ * ↑((SpherePolynomial.polynomialMap q) θ)) surface
+θ : ↑Sphere
+hr : evaluate ((HarmonicRotation.rotate HarmonicHalfTurn.rotation) p) ↑θ = evaluate p (HarmonicHalfTurn.rotation ↑θ)
+⊢ (MvPolynomial.eval fun i => ↑θ i) ((HarmonicRotation.rotate HarmonicHalfTurn.rotation) p) =
+    (MvPolynomial.eval fun i => HarmonicHalfTurn.rotation (↑θ) i) p
+'OQ14.HarmonicProjectedMoments.integral_twist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HarmonicProjectedMoments.half_turn_moment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HarmonicProjectedMoments.odd_moment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HarmonicProjectedMoments.projected_moment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HarmonicProjectedMoments.zero_of_projected_moments' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

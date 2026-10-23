@@ -1,0 +1,35 @@
+HerglotzAngularL2.lean:29:2: error: linarith failed to find a contradiction
+case h1.h
+k : ℝ
+x : Space
+i : Fin 3
+h :
+  inner (TransversePlaneFields.field k x i) (TransversePlaneFields.field k x i) =
+    inner (TransversePlaneFields.field 0 0 i) (TransversePlaneFields.field 0 0 i)
+he : (↑‖TransversePlaneFields.field k x i‖ ^ 2).re = (↑‖TransversePlaneFields.field 0 0 i‖ ^ 2).re
+a✝ : ‖TransversePlaneFields.field k x i‖ < ‖TransversePlaneFields.field 0 0 i‖
+⊢ False failed
+HerglotzAngularL2.lean:78:63: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  star (SphereReactionKernel.wave ?k ?x ?n)
+case h
+k : ℝ
+A : C(↑Sphere, ComplexVectorSphere.Vector)
+ht : ∀ (n : ↑SphereHarmonicBasis.Sphere), inner (TransversePlaneFields.normal n) (A n) = 0
+x : Space
+i : Fin 3
+n : ↑SphereHarmonicBasis.Sphere
+hA : ↑↑((ContinuousMap.toLp 2 angularMeasure ℂ) A) n = A n
+hp : ↑↑(TransversePlaneFields.field (-k) x i) n = (TransversePlaneFields.plane (-k) x i) n
+⊢ (starRingEnd ℂ) (SphereReactionKernel.wave k x n) * A n i = A n i * SphereReactionKernel.wave (-k) x n
+'OQ14.HerglotzAngularL2.plane_norm' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.bound_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.value_norm_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.value_difference_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.inner_projected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.conjugate_wave' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.value_toLp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.finite_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.HerglotzAngularL2.uniform_finite_approximation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

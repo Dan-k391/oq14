@@ -1,0 +1,24 @@
+PhysicalGramBalance.lean:17:8: error: typeclass instance problem is stuck, it is often due to metavariables
+  InnerProductSpace ?m.1921 ?m.1922
+PhysicalGramBalance.lean:30:30: error: unknown identifier 'conj_zero'
+PhysicalGramBalance.lean:31:51: error: unsolved goals
+ι : Type u_1
+inst✝ : Fintype ι
+p : ι → Space
+n : ℕ
+v w : Fin n → ↥IncomingSpace
+hw : Orthonormal ℂ w
+hJ : ∀ (j : Fin n), (toJet p) (w j) = 0
+hO : ∀ (i j : Fin n), inner (v i) (w j) = 0
+scale : ℝ
+hscale : 0 < scale
+B : Matrix (Fin n) (Fin n) ℂ
+hB : Bᴴ * B = ↑scale • 1 - gram v
+c : Fin n → ↥IncomingSpace := fun j => ∑ k, B k j • w k
+hvC : ∀ (i j : Fin n), inner (v i) (c j) = 0
+hCv : ∀ (i j : Fin n), inner (c i) (v j) = 0
+i j : Fin n
+hw' : ∀ (i j : Fin n), inner (w i) (w j) = if i = j then 1 else 0
+⊢ ∑ x, B x j * (starRingEnd ℂ) (B x i) = ∑ x, (starRingEnd ℂ) (B x i) * B x j
+'OQ14.PhysicalGramBalance.gram_hermitian' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.PhysicalGramBalance.balance' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

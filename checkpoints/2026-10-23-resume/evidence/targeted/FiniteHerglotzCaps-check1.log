@@ -1,0 +1,32 @@
+FiniteHerglotzCaps.lean:28:36: error: application type mismatch
+  ContDiff.comp (ContinuousLinearMap.contDiff Complex.ofRealCLM) (ContinuousLinearMap.contDiff ?m.23776)
+argument
+  ContinuousLinearMap.contDiff ?m.23776
+has type
+  ContDiff ?m.4908 ?m.4916 ⇑?m.23776 : Prop
+but is expected to have type
+  ContDiff ℝ ↑⊤ fun y => y w.2 : Prop
+FiniteHerglotzCaps.lean:47:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∑ x ∈ ?m.5102, ∑ y ∈ ?m.5103, ?m.5104 x y
+c : WaveIndex →₀ ℂ
+r : ℝ
+hr : 0 < r
+θ : ↑Sphere
+⊢ ∑ i ∈ c.support,
+          ConicalPlaneWaves.direction (↑θ) 0 *
+            (c i * ↑(SphereSmoothCaps.density i.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) i.2 0) +
+        ∑ i ∈ c.support,
+          ConicalPlaneWaves.direction (↑θ) 1 *
+            (c i * ↑(SphereSmoothCaps.density i.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) i.2 1) +
+      ∑ i ∈ c.support,
+        ConicalPlaneWaves.direction (↑θ) 2 *
+          (c i * ↑(SphereSmoothCaps.density i.1 r hr θ) * ConicalPlaneWaves.polarization (↑θ) i.2 2) =
+    0
+'OQ14.FiniteHerglotzCaps.ambient_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.amplitude_continuous' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.amplitude_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.amplitude_tangent' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.electric_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.magnetic_smooth' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.maxwell_at' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.FiniteHerglotzCaps.amplitude_memLp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

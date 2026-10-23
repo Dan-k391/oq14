@@ -1,0 +1,151 @@
+CoreMaterialEvaluation.lean:15:28: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:18:29: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:21:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:30:33: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:30:58: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:37:43: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:39:8: error: tactic 'introN' failed, insufficient number of binders
+R X : ℝ
+x : sorry
+hx : sorry < R
+i j : Fin 3
+⊢ sorry
+CoreMaterialEvaluation.lean:43:31: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:46:47: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:49:36: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:50:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:55:43: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:60:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:61:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:69:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:70:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:94:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:95:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:99:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ?f (?x + ?y)
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap sorry) = 0
+x : sorry
+hx : sorry < R
+i j : Fin 3
+u v : ↥VectorL2
+⊢ sorry c R X x i j (u + v) = sorry c R X x i j u + sorry c R X x i j v
+CoreMaterialEvaluation.lean:108:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ?f (?c • ?x)
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap sorry) = 0
+x : sorry
+hx : sorry < R
+i j : Fin 3
+z : ℂ
+u : ↥VectorL2
+⊢ sorry c R X x i j (z • u) = (RingHom.id ℂ) z • sorry c R X x i j u
+CoreMaterialEvaluation.lean:116:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:117:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:120:7: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (1000000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+CoreMaterialEvaluation.lean:123:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:124:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:125:4: error: unknown identifier 'entryMap'
+CoreMaterialEvaluation.lean:137:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:138:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:139:15: error: unknown identifier 'entryMap'
+CoreMaterialEvaluation.lean:142:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:143:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:145:88: error: unsolved goals
+c : Coefficient
+R X : ℝ
+hc : ∀ y ∉ annulus R X, c.value (VectorFourier.coordinateMap sorry) = 0
+x : sorry
+hx : sorry < R
+i : Fin 3
+u : ↥VectorL2
+⊢ ∑ d, sorry u = ∑ x, ∫ (y : DynamicVolume.Space), DynamicVolume.source c u x y * DyadicKernel.dyadic 1 sorry i x
+CoreMaterialEvaluation.lean:146:2: warning: declaration uses 'sorry'
+CoreMaterialEvaluation.lean:149:16: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type
+CoreMaterialEvaluation.lean:150:9: error: ambiguous, possible interpretations 
+  DynamicConvolution.Space : Type
+  
+  Maxwell.Space : Type

@@ -1,0 +1,15 @@
+FiniteMixedFields.lean:80:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  curl (fun y j => ∑ q ∈ c.support, scalar c q * modeElectric q y j) x i
+case left.h
+c : ModeIndex →₀ ℂ
+x : Space
+i : Fin 3
+⊢ curl (electric c) x i = I * ↑1 * ↑1 * magnetic c x i
+FiniteMixedFields.lean:89:8: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  curl (fun y j => ∑ q ∈ c.support, scalar c q * modeMagnetic q y j) x i
+case right.h
+c : ModeIndex →₀ ℂ
+x : Space
+i : Fin 3
+⊢ curl (magnetic c) x i = -I * ↑1 * ↑1 * electric c x i
+FiniteMixedFields.lean:146:6: error: simp made no progress

@@ -1,0 +1,24 @@
+SourcePairedTensor.lean:70:4: error: application type mismatch
+  Tendsto.eventually (PairedVectorKernelLimit.uniform_kernel_jet_limit q hq n m b hb i j) (ball_mem_nhds ?m.8889 hε)
+argument
+  ball_mem_nhds ?m.8889 hε
+has type
+  ball ?m.8889 ε ∈ 𝓝 ?m.8889 : Prop
+but is expected to have type
+  ∀ᶠ (y : C(Region b, PhysicalReactionLimit.Jet m)) in 𝓝 (PairedVectorKernelLimit.kernelJetMap q ⋯ n m b i j),
+    ?m.8877 y : Prop
+SourcePairedTensor.lean:68:82: error: unsolved goals
+q : ℝ
+hq : 1 ≤ q
+n m : ℕ
+b : ℝ
+hb : 0 ≤ b
+i j : Fin 3
+ε : ℝ
+hε : 0 < ε
+⊢ ∀ᶠ (r : ℕ) in atTop,
+    ∀ (p : Region b),
+      ‖iteratedFDeriv ℝ m (kernel q hq n r i j) ↑p - iteratedFDeriv ℝ m (VectorLimitIdentification.kernel q n i j) ↑p‖ <
+        ε
+'OQ14.SourcePairedTensor.eventually_actual_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.SourcePairedTensor.uniform_actual_jet_limit' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,28 @@
+RadiatingMaxwellUniqueness.lean:68:12: error: unknown identifier 'FiniteRadialPartition.axis'
+RadiatingMaxwellUniqueness.lean:63:43: error: unsolved goals
+k : ℝ
+hk : 0 < k
+R : ℝ
+hR : 0 ≤ R
+E H : Maxwell.Field
+A : ↑Sphere → Maxwell.Vector
+hE : ∀ (T : ℝ) (i : Fin 3), MemLp (fun x => E x i) 2 (volume.restrict (closedBall 0 T))
+hH : ∀ (T : ℝ) (i : Fin 3), MemLp (fun x => H x i) 2 (volume.restrict (closedBall 0 T))
+hMax : MaterialMaxwell.TestMaxwell k (fun x => 1) E H
+hEs : ∀ (i : Fin 3) (x : Space), R < ‖x‖ → ContDiffAt ℝ (↑⊤) (fun z => E z i) x
+htrans : ∀ (n : ↑Sphere), dot (MaxwellRadiation.direction ↑n) (A n) = 0
+hc : ∀ᶠ (r : ℝ) in atTop, (Continuous fun n => E (r • ↑n)) ∧ Continuous fun n => H (r • ↑n)
+hb :
+  ∃ C,
+    0 ≤ C ∧
+      ∀ᶠ (r : ℝ) in atTop,
+        ∀ (n : ↑Sphere) (i : Fin 3), ‖factor k r * E (r • ↑n) i‖ ≤ C ∧ ‖factor k r * H (r • ↑n) i‖ ≤ C
+he : ∀ (n : ↑Sphere), Tendsto (fun r => factor k r • E (r • ↑n)) atTop (𝓝 (A n))
+hh :
+  ∀ (n : ↑Sphere),
+    Tendsto (fun r => factor k r • H (r • ↑n)) atTop (𝓝 ((crossProduct (MaxwellRadiation.direction ↑n)) (A n)))
+hz : ∀ (x : Space), R < ‖x‖ → E x = 0
+hloc : ∀ (i : Fin 3), LocallyIntegrable (fun x => E x i) volume
+⊢ E =ᶠ[ae volume] 0 ∧ H =ᶠ[ae volume] 0
+'OQ14.RadiatingMaxwellUniqueness.electric_exterior_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.RadiatingMaxwellUniqueness.vacuum_fields_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
