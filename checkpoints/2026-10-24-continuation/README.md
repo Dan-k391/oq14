@@ -60,3 +60,11 @@ independently audited by the modal subagent; root-authored SourcePairedSmallness
 Final: SourcePairedSmallness (3) modal-audited. Ledger copy: 209 modules /
 1133 reports; every module added today is independently audited. Tag
 `oq14-resume-2026-10-24` marks this commit.
+
+Stage 7 (same day, second continuation): SourcePairedSmallInclusion (8,
+fredholm Sol author, root audit: smallness automatic below an explicit radius).
+Root-authored, author-final, modal audits queued: SourcePairedWallKernel (5: on
+the proper-half-turn-invariant source sector the limiting effective block IS the
+explicit parity material block with B = q^n) and SourcePairedParityLimit (2: the
+paired-shell effective inclusion solutions converge to the parity-device
+solution of invariant data). Ledger copy: 210 modules / 1141 reports.
