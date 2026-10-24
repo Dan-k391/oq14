@@ -249,3 +249,10 @@ measurable, converging uniformly on disks to the raw limit with the limiting
 rescaled incident; the raw limit is the parity field of the twisted input when
 the limiting rescaling is q^n times a twist; the twisted counted-subspace
 theorem for unitary twists, and from core agreement, tail and twist identity.
+
+Stage 36: RestrictedTEActualPiecewise (30, channel Sol author, root audit): piecewise
+device fields (core inside the inner shell radius, abstract outside), tail from
+core and outside majorants, outside majorant from uniform decompositions of
+background plus radiated parts, background decomposition on the unit sphere of
+the span, eventual boundedness of the inclusion solutions, and the composite
+counted-subspace theorem under the remaining analytic hypotheses.
