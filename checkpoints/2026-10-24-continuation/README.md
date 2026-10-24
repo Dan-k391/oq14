@@ -178,3 +178,9 @@ continues to 2i/c2 times the regular core state (Wronskian transport), the
 transmission converges along the radii 2 pi (s+1), and the rescaled finite TE
 datum converges in vector L2; the layered background state is -(conj c2) times
 the source state minus its conjugate.
+
+Stage 26: ChannelMaterialThroughput (8) and ChannelScatteringMap (19) root-audited
+(channel Sol author): the weak-Maxwell pair and exterior representation are
+discharged for the material volume solution, so the actual paired-shell-plus-
+inclusion device has unit throughput whenever the effective block is a unit, and
+the scattering map on the finite TE input space is linear and isometric.
