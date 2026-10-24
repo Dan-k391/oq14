@@ -95,8 +95,13 @@ assembly with the n-dependent parity phase (stage 42); and the final theorem
 counted-subspace statement for the actual paired dielectric with no field
 hypotheses, depending only on the three standard axioms. The piecewise device
 fields whose flux it counts are the physical L2 fields almost everywhere in
-space off null sets (stages 38, 40, 42, 43); the consolidated identification
-statement is in progress. Remaining caveats: unit frequency, finite even-degree
+space off null sets (stages 38, 40, 42, 43), and the consolidated statement
+`PhysicalFieldIdentification.physical_identification` (stage 45) identifies the
+L2 total electric field, its continuous exterior representative and the
+pointwise total magnetic field of the combined solution with the space
+versions of the piecewise fields, region by region, with no hypothesis on the
+annulus; the literal corollary for the final theorem's radiated plane fields
+(zero on the inner circle and below the threshold index) is in progress. Remaining caveats: unit frequency, finite even-degree
 TE inputs, the open square up to parametrization, eventual statements without
 rates. Then, in the original list:
 (2) tying the parity-device inputs to half-turn-fixed data
