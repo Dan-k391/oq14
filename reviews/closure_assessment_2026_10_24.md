@@ -103,11 +103,27 @@ versions of the piecewise fields, region by region, with no hypothesis on the
 annulus; and `PhysicalDeviceFields.device_fields_physical` (stage 46) shows
 that the exact fields counted by the final theorem are these space versions at
 every plane point off the inner circle and almost everywhere on the plane. The
-field-identification chain is complete; what the Lean development does not
-contain is any frequency other than k = 1, any rate in n or r, and the
-manuscript's own parametrization of the square. Remaining caveats: unit frequency, finite even-degree
-TE inputs, the open square up to parametrization, eventual statements without
-rates. Then, in the original list:
+field-identification chain is complete. Stage 49
+(`RestrictedTEFrequencyScaling.counted_subspaces_at_frequency`, standard axioms
+only) removes the unit-frequency caveat in the following exact sense: for every
+k > 0 the unit-frequency device of half-side k L, with its coefficient dilated
+by 1/k (`scaleCoeff k`, dielectric still in [1, eps_plus]) and its fields
+dilated with amplitude factor k (`scaleField k`, `scaleMap k`), has dilated
+physical fields that are a weak Maxwell pair at frequency k with the dilated
+dielectric (`TestMaxwell k`, stage 48, with the stage-45 identification
+transported), dilated finite TE inputs that are vacuum weak Maxwell pairs at
+frequency k with limiting inward power `physicalPower` (stage 47), and the span
+of the same orthonormal family is a counted subspace through the square of
+half-side L with the same scattering map, power and thresholds. Not asserted:
+that the dilated fields are the volume solution
+`MaterialField.total (scaleCoeff k c) k …` of a dilated L2 datum (no dilation
+of the L2 machinery and no uniqueness theorem at frequency k are in the tree;
+reviews/frequency_scaling_design.md, section 5). What the Lean development
+still does not contain is any rate in n or r and the manuscript's own
+parametrization of the square. Remaining caveats: finite even-degree TE
+inputs, the open square up to parametrization, eventual statements without
+rates, and the frequency-k fields being dilations rather than re-solved volume
+equations. Then, in the original list:
 (2) tying the parity-device inputs to half-turn-fixed data
 and the parity plane flux to the paired-shell total-field flux, so that the
 parity count transfers to the actual finite dielectric; (3) unit throughput /
@@ -142,3 +158,11 @@ is proved for the explicit parity device), and every mechanism of (B) up to quan
 sharpenings, with all additions independently audited. (C) is proved in the
 manuscript only and is blocked in Lean by a missing transcendence theorem. Full
 OQ14 closure must not be claimed.
+
+## Addendum (fourth continuation, same day)
+
+Stages 47-49 extend (A) to every frequency k > 0 in the dilation sense stated
+in the channel section (scale invariance of the frozen weak system, of the
+plane flux through the dilated square, of the inward power and of the far
+amplitude; the k-frequency device is the unit-frequency device dilated by 1/k).
+This changes nothing for (B) and (C); full OQ14 closure is still not claimed.

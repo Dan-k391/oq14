@@ -1,4 +1,4 @@
-# OQ14 resume state — October 24, 2026 (third continuation, in progress)
+# OQ14 resume state — October 24, 2026 (fourth continuation: frequency scaling)
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`
@@ -17,8 +17,9 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 292 modules / 2704 reports at the latest third-continuation
-commit `03d765b` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 297 modules / 2759 reports at the stage-49 commit
+`f4d5564` of the fourth continuation (292 / 2704 at the end of the third
+continuation, commit `03d765b`; 226 / 1334 at the end of the second; 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -407,6 +408,54 @@ for almost every plane point, eventually in the gain and shell indices
 (`device_fields_physical`, `device_fields_physical_ae`). The
 field-identification chain of the channel branch is complete.
 
+Fourth continuation (same day): the unit-frequency caveat removed by scale
+invariance (design note `reviews/frequency_scaling_design.md`).
+Stage 47 (channel Sol authors, root audits): FrequencyScalingMaxwell 23,
+FrequencyScalingFlux 12, FrequencyScalingPower 8: the frozen weak dielectric
+system `MaterialMaxwell.TestMaxwell` is scale invariant (dilated compact smooth
+tests, Jacobian k^-3, chain rule k^-1: `TestMaxwell 1 ε E H` gives
+`TestMaxwell k` for the coefficient `scaleCoeff k c` with value at k x and the
+same bounds, and for the amplitude-normalized dilated fields
+`scaleField k F x = k F (k x)`); the plane flux density of dilated field maps is
+k^2 times the original at k ξ, the square and its complement dilate exactly,
+passage and bypass through `Dsq L` of the dilated fields equal those through
+`Dsq (k L)` of the originals, so `IsCounted` transfers with the same scattering
+map, power and thresholds (`isCounted_scale`); the inward sphere power of the
+dilated finite TE incident pair at radius r is the unit-frequency power at
+radius k r and tends to `physicalPower`, the dilated incident pair is a vacuum
+weak Maxwell pair at frequency k, and the far amplitude is unchanged
+(`factor k r * k = factor 1 (k r)`).
+Stage 48 (channel Sol author, root audit): FrequencyScalingDevice 6: the
+physical fields `physE`, `physH` of the combined shell-plus-inclusion solution
+satisfy `TestMaxwell 1` with the dielectric of the combined coefficient whenever
+the combined block is a unit, hence for the concrete doubled device eventually
+in n and r (a statement not previously written down for the combined device);
+the dilated fields satisfy `TestMaxwell k` with the dilated coefficient; the
+stage-45 identification transports along the dilation (`PhysicallyIdentifiedAt`,
+radii divided by k, almost-everywhere clauses by the quasi-measure-preserving
+dilation), and the dilated piecewise plane fields of the final counting theorem
+are the dilated space fields at every plane point off the circle of radius
+`radius r / k`.
+Stage 49 (channel Sol author, root audit): RestrictedTEFrequencyScaling 6:
+`counted_subspaces_at_frequency`: for every k > 0, eps_plus > 1, N,
+0 < eta < delta, tau <= 1 and half-side L > 0, the unit-frequency device of
+half-side k L with coefficient `scaleCoeff k (pairedCoeff …)` (the device
+dilated by 1/k: shells of radii R_r/k, X_r/k, spheres of radius ρ a_n/k at
+height h a_n/k above the points (-L, y_l), `devPos_scale`) has dielectric
+values in [1, eps_plus], the same orthonormal family of N finite TE inputs has
+a span that is, eventually in n and r, a counted subspace through the square
+`Dsq L` for the plane flux of the dilated device fields `scaleMap k deviceFieldsE/H`
+with the same scattering map `actualScatter`, the same `physicalPower` and the
+same tau, eta, delta; the dilated finite TE inputs are vacuum weak Maxwell
+pairs at frequency k with limiting inward power `physicalPower`; and eventually
+in n, for every input, eventually in r, the dilated physical fields are a weak
+Maxwell pair at frequency k with the dilated dielectric, identified with the
+dilated space fields, whose plane values off the circle of radius `radius r / k`
+are the counted plane fields. Standard axioms only. Not asserted: that the
+dilated fields are the volume solution `MaterialField.total (scaleCoeff k c) k …`
+of a dilated L2 datum (no dilation of the L2 machinery and no uniqueness at
+frequency k are in the tree; design note section 5).
+
 In progress at this commit: nothing; every delivered module is audited and
 recorded, and no brief is outstanding.
 
@@ -419,12 +468,16 @@ field almost everywhere in space off the carrier closure and the inner sphere,
 the magnetic field almost everywhere in space and pointwise on the open core
 and the exterior), and by stage 46 the exact fields counted by the final
 theorem are these space versions at every plane point off the inner circle
-and for almost every plane point. Caveats that remain and are stated
-in reviews/channel_actual_counting_scope_2026_10_24.md: unit frequency k = 1;
+and for almost every plane point. By stage 49 the same statement holds at every
+frequency k > 0 in the dilation sense (`counted_subspaces_at_frequency`: dilated
+coefficient, dilated fields satisfying the weak Maxwell system at frequency k,
+same scattering map, power and thresholds, square of half-side L). Caveats that
+remain and are stated in reviews/channel_actual_counting_scope_2026_10_24.md:
 finite even-degree restricted TE inputs; the open square up to parametrization;
 all statements eventual in the gain index n and the shell index r without
 rates; the identification is in space, not almost everywhere on the plane (the
-plane fields are the continuous representatives). The modal branch (C) remains
+plane fields are the continuous representatives); the frequency-k fields are
+dilations of the unit-frequency fields, not re-solved volume equations. The modal branch (C) remains
 blocked by Hermite-Lindemann; the hotspot branch (B) keeps its per-frequency
 input. Full OQ14 closure is therefore still not claimed.
 
@@ -440,20 +493,26 @@ is proved; unit throughput of the full scattering map and the finite-stack Green
 identification of the parity flux with the paired-shell flux remain), any modal
 statement (blocked by Hermite-Lindemann and a
 complex-frequency radiation representation absent from the tree), or
-uniform-in-k hotspot input. Full OQ14 closure remains open; see
-`reviews/closure_assessment_2026_10_24.md`.
+uniform-in-k hotspot input. The channel counting theorem holds at every
+frequency k > 0 in the dilation sense of stage 49 (what is and is not asserted:
+`reviews/frequency_scaling_design.md`, section 5). Full OQ14 closure remains
+open; see `reviews/closure_assessment_2026_10_24.md`.
 
 ## Immediate next work (in order)
 
 1. The channel branch is complete through the physical-field identification
-   (stages 16-46); the tag `oq14-resume-2026-10-24-3` marks the stage-46 refresh
-   commit.
+   (stages 16-46) and holds at every frequency k > 0 in the dilation sense
+   (stages 47-49); the tag `oq14-resume-2026-10-25-1` marks the stage-49
+   refresh commit (fourth-continuation commits `ebbb006`, `340dcf3`,
+   `f4d5564`).
    Nothing is assigned. The remaining reductions of the caveats, in order of
-   value: (a) arbitrary frequency k by the scale invariance of the device and
-   of the counting statement (every module is at k = 1); (b) explicit
-   thresholds or rates in the gain index n and the shell index r; (c) the
-   manuscript's parametrization of the square. Every audited module is
-   recorded; the previous tag is `oq14-resume-2026-10-24-2`,
+   value: (a) explicit thresholds or rates in the gain index n and the shell
+   index r; (b) the manuscript's parametrization of the square; (c) optional:
+   identify the dilated fields with the frequency-k volume solution
+   `MaterialField.total (scaleCoeff k c) k …` (needs the dilation of the L2
+   machinery and uniqueness at frequency k; design note section 5). Every
+   audited module is recorded; earlier tags `oq14-resume-2026-10-24-3`,
+   `oq14-resume-2026-10-24-2`,
    third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`, `e7b81e6`, `ea163dd`, `03d765b`.
 2. The bridge items of the earlier continuations are all done (stages 16-46);
    nothing from them is open.
