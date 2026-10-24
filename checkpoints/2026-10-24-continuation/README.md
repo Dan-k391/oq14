@@ -420,3 +420,10 @@ density), and hence the commutation with the longitudinal projection, the
 Newton operator, the static response and the static Newton block; the physical
 coordinate of D_k F is k times that of F at k x almost everywhere. L2-side
 inputs of the frequency-k volume-solution identification.
+
+Stage 53: FrequencyFieldResponse (9, modal Sol author, root audit): the
+scattered and total electric fields of the dilated coefficient and dilated
+weighted field at frequency k are the dilations k E(k x) of the unit-frequency
+fields almost everywhere, the total magnetic field exactly at every point; the
+dilated coefficient of a sum; the weighted-datum predicate transported under
+dilation. Field-level inputs of the frequency-k volume-solution identification.
