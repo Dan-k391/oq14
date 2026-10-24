@@ -1,0 +1,5 @@
+# RestrictedTEHomogeneousCount author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 5 reports are standard-only. Source SHA256 `6365C02356D8599254D2A3D1911314C11D5E92142C8BA332379682C1BAA4AEAF`. Final compiler log `lean/logs/RestrictedTEHomogeneousCount-final.log`, SHA256 `1E6FD720920C667977510BA62F51110BA3E54F0DA8F714107121547D915C8CC1`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+The physical power is quadratic in the coefficient vector, passage is real-linear and bypass is absolutely homogeneous in the flux density, and the actual plane flux of the parity device is quadratically homogeneous in the coefficient vector by the audited sesquilinearity of the flux form (the height-gap hypothesis supplies the gap gamma a). Hence the audited unit-power counting inequalities of the explicit parity device extend to every element of the input span with positive physical power P: passage at least eta P and absolute bypass at most delta P, eventually in the shrinking scaling. No new hypothesis; still the explicit parity device only.
