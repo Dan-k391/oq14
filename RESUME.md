@@ -455,9 +455,30 @@ are the counted plane fields. Standard axioms only. Not asserted: that the
 dilated fields are the volume solution `MaterialField.total (scaleCoeff k c) k …`
 of a dilated L2 datum (no dilation of the L2 machinery and no uniqueness at
 frequency k are in the tree; design note section 5).
+Stage 50 (channel Sol author, root audit): CountedSubspacesManuscript 3: the
+manuscript-form corollaries with explicit indices (no eventual quantifiers):
+`counted_subspaces_manuscript`: for k > 0, eps_plus > 1, 0 < eta < delta,
+0 < tau < 1 and side L fixed before N, every N has a single finite device
+(explicit gain index n and shell index r) with dielectric in [1, eps_plus], an
+orthonormal family of N finite TE inputs whose span is a counted subspace
+through the open square (-L/2, L/2)^2, unit throughput of the scattering map on
+every finite TE input, and the per-basis-vector physical identification at
+frequency k; the docstring maps the clauses to uc:counterexample and lists what
+is not asserted. Rates in n and r are not needed for the manuscript's
+existential statement; they remain unproved.
 
-In progress at this commit: nothing; every delivered module is audited and
-recorded, and no brief is outstanding.
+In progress at this commit (author drafts, untracked until audited): the
+constructive identification of the dilated fields with the frequency-k volume
+solution, removing the dilation caveat of stages 47-49: DilationKernels (modal
+Sol; Green kernel identities phi_k(x) = k phi_1(k x), remainder_k(x) = k^3
+remainder_1(k x), dilation of the convolution and magnetic responses),
+DilationL2 (fredholm Sol; the dilation operator D_k u = k u(k .) on VectorL2,
+its commutation with the square-root multiplier, the source, the Fourier
+transform, the longitudinal projection and the static Newton block); then
+DilationVolume (volume block, weighted remainder and `solution` transported:
+solution (scaleCoeff k c) k (R/k) (D_k f) = D_k (solution c 1 R f)) and
+FrequencyVolumeSolution (scaleField k (total c 1 u inc) = total (scaleCoeff k c)
+k (D_k u) (scaleField k inc) almost everywhere, applied to the device).
 
 What the channel branch now establishes in Lean: the manuscript's
 uc:counterexample form for the actual paired dielectric (ordinary dielectric
@@ -471,7 +492,10 @@ theorem are these space versions at every plane point off the inner circle
 and for almost every plane point. By stage 49 the same statement holds at every
 frequency k > 0 in the dilation sense (`counted_subspaces_at_frequency`: dilated
 coefficient, dilated fields satisfying the weak Maxwell system at frequency k,
-same scattering map, power and thresholds, square of half-side L). Caveats that
+same scattering map, power and thresholds, square of half-side L), and by stage 50 in the manuscript's literal form
+(`CountedSubspacesManuscript.counted_subspaces_manuscript`: one finite device per
+N with explicit gain and shell indices, square (-L/2, L/2)^2, 0 < tau < 1,
+0 < eta < delta, unit throughput). Caveats that
 remain and are stated in reviews/channel_actual_counting_scope_2026_10_24.md:
 finite even-degree restricted TE inputs; the open square up to parametrization;
 all statements eventual in the gain index n and the shell index r without
@@ -505,12 +529,16 @@ open; see `reviews/closure_assessment_2026_10_24.md`.
    (stages 47-49); the tag `oq14-resume-2026-10-25-1` marks the stage-49
    refresh commit (fourth-continuation commits `ebbb006`, `340dcf3`,
    `f4d5564`).
-   Nothing is assigned. The remaining reductions of the caveats, in order of
-   value: (a) explicit thresholds or rates in the gain index n and the shell
-   index r; (b) the manuscript's parametrization of the square; (c) optional:
-   identify the dilated fields with the frequency-k volume solution
-   `MaterialField.total (scaleCoeff k c) k …` (needs the dilation of the L2
-   machinery and uniqueness at frequency k; design note section 5). Every
+   Stage 50 (`CountedSubspacesManuscript`, commit `d8a3e97`) gives the
+   manuscript's literal form (explicit indices, square (-L/2, L/2)^2), which
+   settles (b) and shows that rates are not needed for the manuscript's
+   existential statement. Assigned and in progress: (c) the identification of
+   the dilated fields with the frequency-k volume solution by the constructive
+   dilation route (DilationKernels, DilationL2, then DilationVolume and
+   FrequencyVolumeSolution; no uniqueness theory needed: every operator of the
+   volume block conjugates by the dilation D_k u = k u(k .) because the dyadic
+   kernel satisfies G_k(z) = k^3 G_1(k z)). Still optional afterwards: (a)
+   explicit thresholds or rates in n and r. Every
    audited module is recorded; earlier tags `oq14-resume-2026-10-24-3`,
    `oq14-resume-2026-10-24-2`,
    third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`, `e7b81e6`, `ea163dd`, `03d765b`.

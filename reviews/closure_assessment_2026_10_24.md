@@ -166,3 +166,15 @@ in the channel section (scale invariance of the frozen weak system, of the
 plane flux through the dilated square, of the inward power and of the far
 amplitude; the k-frequency device is the unit-frequency device dilated by 1/k).
 This changes nothing for (B) and (C); full OQ14 closure is still not claimed.
+
+## Addendum (fifth continuation, 2026-10-25)
+
+Stage 50 (`CountedSubspacesManuscript`) states (A) in the manuscript's literal
+form: for every frequency k > 0, eps_plus > 1, side L, 0 < tau < 1 and
+0 < eta < delta fixed before N, every N has a single finite device with explicit
+gain and shell indices, dielectric in [1, eps_plus], an N-dimensional counted
+subspace of finite TE inputs through (-L/2, L/2)^2 and unit throughput of the
+scattering map; its docstring lists what is not asserted (finite TE inputs,
+dilation sense of k, identification in space, no rates). The constructive
+identification of the dilated fields with the frequency-k volume solution is in
+progress. (B) and (C) are unchanged; full OQ14 closure is still not claimed.
