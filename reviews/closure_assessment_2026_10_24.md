@@ -78,8 +78,21 @@ radial state bounds (BarrierSourceStateBounds, BarrierAnnulusStateBounds),
 exterior constants uniform in the shell index (SourceRemotePlaneUniform:
 the absolute finite-band plane flux outside the core vanishes with the shell
 index); the partner-ball device with half-turn-fixed data for every TE input.
-Remaining, in dependency order: (1) the all-degree remote return flux: degree-
-explicit summable decomposition constants and the series step (in progress);
+Done since: the all-degree remote return flux (series step, degree-summable
+constants, all-degree flux outside the core: stages 18, 20, 22); the closure
+theorem instantiated for the partner device (stage 19); unit throughput of the
+complete lossless field and of the actual device, with the isometric scattering
+map (stages 23, 26); the counted-subspace statement for the actual device
+through one fixed square, for every N and every window, with the dielectric in
+[1, eps_plus], modulo a whole-plane L1 interface (stages 27, 29, 31, 34), now
+reduced to field estimates (stages 35, 36); the plane fields of the paired
+shells converging on compacts to the parity device, electric and magnetic
+(stages 21, 24, 28, 33, 35, 40); the background lift (stages 25, 30, 32, 39,
+42); the radiated field majorant in the growing core (stages 37, 41) and its
+mode series beyond the stack radius (stage 38); the assembly with the
+n-dependent parity phase (stage 42). Remaining for the actual-device counting
+theorem: the annulus identification of the radiated field (in progress) and
+the final instantiation. Then, in the original list:
 (2) tying the parity-device inputs to half-turn-fixed data
 and the parity plane flux to the paired-shell total-field flux, so that the
 parity count transfers to the actual finite dielectric; (3) unit throughput /

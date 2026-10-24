@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 285 modules / 2532 reports at the latest third-continuation
-commit `ff74c55` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 287 modules / 2608 reports at the latest third-continuation
+commit `d156d79` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -355,22 +355,26 @@ structure of the piecewise assembly is discharged for the concrete doubled
 device (background family plus radiated decomposition plus eventual solution
 bound on the unit sphere), with the magnetic core formula of the background
 family.
+Stage 42 (channel Sol, root audits): RestrictedTEBackgroundOutside 53 and
+RestrictedTEActualPhase 23: the TE background pair equals the actual total
+fields of the shell solution (magnetic pointwise off the origin by weak
+uniqueness and continuity, electric beyond the stack radius and a.e. in the
+annulus); the outside background plane fields and the outside decomposition
+reduced to the radiated part; the device fields depend on the input only, so
+the assembly works with the n-dependent global unimodular parity phase.
 
 In progress at this commit (author drafts, untracked until audited):
 SourceRadiatedAnnulus (fredholm Sol; the radiated field identified with the
 mode series on the shell annulus, the decomposition export,
-measurability/linearity), RestrictedTEBackgroundOutside and
-RestrictedTEActualPhase (channel Sol; the TE background pair identified
-pointwise with the actual total fields of the shell solution outside the
-core; the assembly with the n-dependent global phase).
+measurability/linearity), RestrictedTEParityInstance (channel Sol; the
+instantiation of the phase assembly with the parity phase), and the
+physical-field identification summary (modal Sol).
 
-Remaining for the counted-subspace theorem of the actual device, all assigned:
-the annulus identification of the radiated field with the mode series and the
-export of its decomposition (in progress), the pointwise identification of the
-TE background outside the core (in progress), the assembly with the
-n-dependent global phase (in progress), and then the instantiation of
-`RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
-outside fields (background family plus radiated series), the outside
+Remaining for the counted-subspace theorem of the actual device: the annulus
+identification of the radiated field with the mode series and the export of
+its decomposition (in progress), then the instantiation of
+`RestrictedTEActualPhase.actual_counted_subspaces_of_pieces_phase` with the
+outside fields (background family plus radiated series), the radiated
 decomposition, the core majorant (stage 41) and the parity phase (stage 39).
 
 ## What this does and does not establish
@@ -391,11 +395,11 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (SourceRadiatedAnnulus,
-   RestrictedTEBackgroundOutside, RestrictedTEActualPhase); then instantiate
+   RestrictedTEParityInstance, the physical-field summary); then instantiate
    `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
    fredholm series as the radiated part, the modal core majorant and the twist.
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
