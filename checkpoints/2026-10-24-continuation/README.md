@@ -146,3 +146,9 @@ Stage 20: BarrierDegreeFluxConstants (20) and BarrierDegreeDecomp (36) root-audi
 (modal Sol author): per-mode tangential/radial decomposition constants explicit in
 the degree, summable against any polynomial weight, with one degree-independent
 threshold radius; the exact interface of the series theorem is discharged.
+
+Stage 21: SourcePairedReactionField (13, fredholm Sol author, root audit): the
+shell-reaction field at arbitrary points converges uniformly on balls to the
+limit field for L2-convergent inclusion solutions, and on half-turn invariant
+sources the limit field is the parity plane reaction field. (Record scripts now
+accept primed theorem names.)
