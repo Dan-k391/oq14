@@ -395,3 +395,11 @@ removed in this dilation sense; the remaining caveats are finite even-degree TE
 inputs, the open square up to parametrization, eventual statements without
 rates, and the identification being in space plus continuous plane
 representatives. Full OQ14 closure is not claimed.
+
+Stage 50: CountedSubspacesManuscript (3, channel Sol author, root audit): the
+manuscript-form corollaries with explicit indices n and r (no eventual
+quantifiers): at unit frequency, at every frequency k > 0, and
+`counted_subspaces_manuscript` with the manuscript's data (square (-L/2, L/2)^2,
+0 < tau < 1, 0 < eta < delta fixed before N), including the unit throughput of
+the scattering map and the per-basis-vector physical identification; the
+docstring maps the clauses to uc:counterexample and lists what is not asserted.
