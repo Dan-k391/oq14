@@ -329,3 +329,15 @@ hypothesis on the annulus; instantiated for the concrete doubled device
 eventually in the gain index. The literal link to the radiated plane fields of
 the final counting theorem (zero on the inner circle and below the threshold
 index) is a separate corollary in progress.
+
+Stage 46: PhysicalDeviceFields (4, modal Sol author, root audit): the exact
+piecewise device fields of `actual_counted_subspaces_device` (outside fields
+built from devRadE, devRadH) equal the space versions of the physical fields at
+every plane point off the circle at the inner radius, and for almost every
+plane point, eventually in the gain and shell indices, together with the
+stage-45 identification of the physical fields (`device_fields_physical`,
+`device_fields_physical_ae`). This closes the field-identification chain of the
+channel branch; the remaining caveats are unit frequency, finite even-degree TE
+inputs, the open square up to parametrization, eventual statements without
+rates, and the identification being in space plus continuous plane
+representatives.
