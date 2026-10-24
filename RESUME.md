@@ -1,4 +1,4 @@
-# OQ14 resume state — October 24, 2026 (end of the resumed session)
+# OQ14 resume state — October 24, 2026 (end of the second continuation)
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`
@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 209 modules / 1133 reports at the time of writing (169 / 832
-at the October 23 stop).
+compiled modules: 219 modules / 1215 reports at the time of writing (169 / 832
+at the October 23 stop), plus whatever the last audits below add.
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
 complete-source mathematical review by someone other than the author plus a
@@ -113,40 +113,66 @@ inclusion contrast bound times the carrier volume times the sum of the nine
 limit-kernel sup norms, so inclusion-data smallness makes the limiting
 effective block a unit and eventually the combined blocks are units.
 
+## Second continuation (same day): physical source symmetry closed on the invariant sector
+
+Root (modal Sol audits): SourcePairedWallKernel 5 and its almost-everywhere
+twin SourcePairedWallKernelAE 5 with HalfTurnReactionBridgeAE 3 (on the
+proper-half-turn-invariant source sector the clamped central-inversion limit
+operator equals the gain combination q^(2n)-1, q^(-2n)-1 of the wall-reflection
+parity reaction operators, so the limiting effective block IS
+`ParityMaterialField.block d 1 (q^n)`), SourcePairedParityLimit 2,
+SourcePairedParityClosure 4. Modal Sol (root audits): HalfTurnVectorAction 32
+and HalfTurnParityEquivariance 15: the natural half-turn action on vector L2
+commutes with the square-root multiplier of a symmetric coefficient, the parity
+reaction operators, the dynamic remainder sandwich, the vector Fourier
+transform (Schwartz density), the longitudinal multiplier and hence the
+physical projection and the whole parity block; the parity solution of
+half-turn-fixed data is half-turn fixed with almost-everywhere invariant source.
+Fredholm Sol (root audits): SourcePairedSmallInclusion 8 (smallness automatic
+below an explicit radius depending only on gains and contrast cap),
+SourcePairedSolutionFormula 2 (eventual explicit combined solution),
+SourceRemotePlaneFlux 6 (single TM mode exterior plane flux density bounded by
+C/|x|^3; scope note `reviews/remote_annulus_return_flux_scope_2026_10_24.md`).
+Channel Sol: dipole-flux concentration / plane jets in progress at the time of
+writing; fredholm Sol: TE dual and plane tail integral in progress.
+
+Closure theorem of the source branch
+(`SourcePairedParityClosure.paired_shell_solutions_tendsto_parity_of_small`):
+for a half-turn symmetric inclusion coefficient supported in the ball of radius b
+inside the core of the actual paired shells, inclusion-data smallness and
+parity smallness, and any half-turn-fixed datum f, the effective inclusion
+solutions of the paired shells converge in L2 to the explicit parity-device
+solution `ParityMaterialField.solution d 1 (q^n) f`. All hypotheses are
+explicit and discharged by the frozen smallness criteria; the only undischarged
+physical input is that the datum of interest is half-turn fixed.
+
 ## What this does and does not establish
 
-The finite-shell-plus-inclusion reduction announced as "next" on October 23 is
-now formalized end to end (modulo the two pending modal audits): the actual
-combined paired-shell-plus-inclusion volume equation reduces exactly to the
-shell block and an effective inclusion equation whose operator is literally the
-clamped paired-core operator for large shell index, and inverse stability
-transfers along the central-inversion limit. It does NOT establish: the physical
-source symmetry (the limit is central inversion; the parity device uses wall
-reflection; equality holds only in the proper-half-turn-invariant source sector,
-`HalfTurnReactionBridge`), the remote annulus whole-plane return flux, an
-explicit bound on the limit operator norm, the complete scattering output, any
-channel count, or any modal statement. Full OQ14 closure remains open.
+The finite-shell-plus-inclusion reduction is formalized end to end and tied to
+the channel branch's explicit parity device on the half-turn-invariant sector,
+with every module independently audited. It does NOT establish: the remote
+annulus whole-plane return flux (only a single-mode exterior density bound
+exists), the counted-channel theorem (dipole concentration / plane jets, unit
+throughput, physical finite-stack Green identification beyond the invariant
+sector remain), any modal statement (blocked by Hermite-Lindemann and a
+complex-frequency radiation representation absent from the tree), or
+uniform-in-k hotspot input. Full OQ14 closure remains open; see
+`reviews/closure_assessment_2026_10_24.md`.
 
 ## Immediate next work (in order)
 
-1. Nothing is pending from this session: every module added today is
-   independently audited and recorded (209 / 1133); the Git tag
-   `oq14-resume-2026-10-24` marks the final commit.
-2. Root: the assembled eventual explicit combined solution formula (per shell
-   index it is `ShellInclusionVolume.solution_eq` with
-   `SourcePairedInclusion.effective_eq` and the eventual unit property; the
-   single assembled statement timed out at elaboration and was dropped from
-   SourcePairedSmallness); explicit values or decay of the limit-kernel sup
-   norms in the inclusion radius.
-3. Root: physical source symmetry — show the material-inverse source of the
-   effective inclusion problem lies in the proper-half-turn-invariant sector
-   for symmetric inclusions, so `HalfTurnReactionBridge.central_eq_wall`
-   identifies the limiting operator with the wall-reflection parity operator of
-   `RestrictedTEParitySandwich`; then the channel branch's parity endpoint
-   becomes a statement about the actual paired shells. Then the remote annulus
-   return flux.
-4. Channel: dipole-flux concentration / plane jets (scope note item (iii)(b)),
-   then unit throughput.
+1. Record any audits still pending at the stop (channel dipole concentration,
+   fredholm TE dual / plane tail), copy logs under the checkpoint evidence and
+   commit. The tag `oq14-resume-2026-10-24` marks the end of the first
+   continuation; later stage commits follow it on main.
+2. Remote annulus return flux: the TE dual, the integrated plane tail, then
+   finite-band sums and the all-degree uniform state bounds (scope note).
+3. Channel: dipole-flux concentration / plane jets, then the counted-channel
+   inequality for the explicit parity device; then unit throughput.
+4. Tie the parity device input (RestrictedTE datum) to a half-turn-fixed
+   datum so that SourcePairedParityClosure applies to the actual channel
+   inputs; identify the parity plane flux with the paired-shell total-field
+   plane flux (needs the remote annulus bound).
 5. Modal: see the scope note; the fixed input remains per-frequency.
 
 ## Handoffs and how to resume safely
@@ -167,8 +193,9 @@ audits of root modules; logs `lean/logs/<M>-modal-audit.log`; receipt
 `reviews/<m>_independent.md` must contain PASS, exit 0 and both hashes), and
 alone touches Git. Never rerun the one-time `integrate_current_audits.py 5238`
 or older checkpoint/release creators. Git checkpoints today: `f2cb699`,
-`b6f653b`, `f37b0b4`, `4d3066c`, `e612292`, then the stage 6 commit and any
-later audit-recording commit; `tmp/` and `*.log` are gitignored, so evidence is
+`b6f653b`, `f37b0b4`, `4d3066c`, `e612292`, `fe2e75e`, `926ee8a` (tag
+`oq14-resume-2026-10-24`), `a5f0156`, `eaadf5c`, `f8b3dc3`, then the final
+commit of the second continuation; `tmp/` and `*.log` are gitignored, so evidence is
 copied under the checkpoint folder and added with `git add -f` (add
 directories, not globs: the Windows argument limit rejects large globs). Never
 stage `sites/`.

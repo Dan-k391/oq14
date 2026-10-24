@@ -57,16 +57,25 @@ parity device block with B = q^n, and the paired-shell effective solutions
 converge to the parity solution (SourcePairedWallKernel,
 SourcePairedParityLimit).
 
-Remaining, in dependency order: (1) equivariance of the parity block under
-the half-turn, so that the parity solution of invariant data is invariant (in
-progress; the physical Fourier projection's equivariance is the hard step);
-(2) dipole-flux concentration and the plane-jet replacement, feeding the
-counting inequalities (in progress); (3) the remote annulus whole-plane return
-flux (scoping in progress); (4) the physical finite-stack Green identification
-beyond the invariant sector; (5) unit throughput / `ca:powerbudget` (needs a
-Riemann–Lebesgue cross-term step absent from the tree); (6) the named even-m
-basis is not in the tree (the even sector is intrinsic), and the interpolation
-geometry is narrower than the manuscript's arbitrary plane points.
+Done since the first draft of this note: the half-turn equivariance of the
+parity block (HalfTurnVectorAction, HalfTurnParityEquivariance, including the
+physical Fourier projection) and the closure theorem
+`SourcePairedParityClosure.paired_shell_solutions_tendsto_parity_of_small`:
+for a symmetric inclusion and half-turn-fixed data, the paired-shell effective
+inclusion solutions converge to the explicit parity-device solution, all
+hypotheses discharged by explicit smallness. Single-mode exterior plane flux
+density bound (SourceRemotePlaneFlux).
+
+Remaining, in dependency order: (1) dipole-flux concentration and the plane-jet
+replacement, feeding the counting inequalities (in progress); (2) the remote
+annulus whole-plane return flux: TE dual, integrated tail, finite-band sums,
+all-degree uniform state bounds, annulus layers (scope note; only the
+single-mode exterior density bound exists); (3) tying the channel inputs to
+half-turn-fixed data and the parity plane flux to the paired-shell total-field
+flux; (4) unit throughput / `ca:powerbudget` (needs a Riemann-Lebesgue
+cross-term step absent from the tree); (5) the named even-m basis is not in the
+tree (the even sector is intrinsic), and the interpolation geometry is narrower
+than the manuscript arbitrary plane points.
 
 ## (C) Modal: formal status
 
@@ -87,8 +96,9 @@ importing an axiom (forbidden) or formalizing Hermite–Lindemann.
 
 ## Verdict
 
-The Lean formalization now covers every mechanism of (A) up to the physical
-symmetry and remote-flux bridges and every mechanism of (B) up to quantitative
+The Lean formalization now covers every mechanism of (A) up to the remote-flux
+bridge and the final counting assembly (the physical symmetry bridge is closed
+on the invariant sector), and every mechanism of (B) up to quantitative
 sharpenings, with all additions independently audited. (C) is proved in the
 manuscript only and is blocked in Lean by a missing transcendence theorem. Full
 OQ14 closure must not be claimed.
