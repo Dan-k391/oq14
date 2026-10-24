@@ -147,7 +147,14 @@ number), which Mathlib at the pinned revision does not contain and which the
 project's no-axiom rule forbids assuming; the modal coefficient continuation,
 modal rounding convergence and the finite assembly are large. The modal
 theorem therefore cannot be closed in Lean in this session without either
-importing an axiom (forbidden) or formalizing Hermite–Lindemann.
+importing an axiom (forbidden) or formalizing Hermite–Lindemann. The
+transcendence input is used only for the all-degree isolation of the chosen
+degree-1 pole; a transcendence-free alternative (degenerating the index to
+n = 1, where the determinant has no zeros, against the polynomial growth of an
+algebraic coincidence branch) is sketched, unverified, in
+`reviews/modal_item2_degeneration_note_2026_10_25.md`; it would be a
+self-contained analysis project and would still leave the transfer to the
+volume operator and the finite assembly open.
 
 ## Verdict
 
