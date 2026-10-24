@@ -1,123 +1,164 @@
-# OQ14 paused checkpoint — October 23, 2026
+# OQ14 resume state — October 24, 2026 (work resumed at the user's request)
 
-**STOPPED at the user's explicit request: “stop and create checkpoint”.**
-Do not resume proof work until the user asks. Full OQ14 closure and complete
-Maxwell Lean formalization are unfinished. The latest checkpoint is
-`checkpoints/2026-10-23-resume/`; read its manifest and the handoffs below.
+Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
+Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`
+(commit `3d5329e`). This file supersedes the October 23 stop note; the dated
+checkpoint folder `checkpoints/2026-10-24-continuation/` carries the stage log,
+ledger copies and compiler evidence for everything added today.
 
-## Exact verification boundary
+## Exact verification boundary (unchanged release)
 
 The last clean combined release remains `oq14-maxwell-foundations-5238`,
 commit `8a4a8bf4abb15d7ae6f2fc0fa4d63758c3c04248`: 5238 proof reports,
-627 modules, 599 libraries, nine pinned dependencies, all15 diagnostic groups
-passed, 113-page PDF. Its clean build has fourteen legacy tactic warnings,
-exactly matching release4391, and no new warnings or errors.
-The preserved delivery is `output/checkpoints/oq14-maxwell-foundations-5238/`.
-PDF SHA256: `611c64b2041ace2988d2db781246a4a7dfb0a05c867c28ad09948ceb7b3b649d`.
-Delivery ZIP SHA256: `ba907a88acbb9f69821d96adef7b35f4d0a80e30322454812debee14832db1c7`.
+627 modules, 599 libraries, nine pinned dependencies, all 15 diagnostic groups
+passed, 113-page PDF (SHA256 `611c64b2…b649d1`, delivery ZIP
+`ba907a88…4db1c7`). No clean aggregate release, publication or registry change
+was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
-records169 independently reviewed and freshly checked modules /832 reports.
-Every recorded report uses only propext, Classical.choice and Quot.sound.
-These targeted checks are NOT a new combined clean aggregate release.
-There are180 new Lean sources in the checkpoint: the manifest distinguishes
-all169 independently checked modules from the eleven newer files. Some newer
-files have author-only checks; others are unfinished. Compiler recovery output
-and an old object file are never evidence that a current source passes.
+(copied into the checkpoint folder) records independently reviewed and freshly
+compiled modules. At the time of writing it holds 198 modules / 1060 reports
+(it held 169 / 832 at the October 23 stop). Every recorded report uses only
+`propext`, `Classical.choice` and `Quot.sound` (some pure-algebra reports use
+`propext` alone). "Independently audited" means: a complete-source
+mathematical review by someone other than the author plus a fresh pinned
+compile from source without the author's object, exit 0, no warnings, with the
+receipt `reviews/<module>_independent.md` carrying exact source and log hashes.
+Root audits subagent work; the modal subagent audits root work. Author-only
+status is always stated as such. These targeted checks are NOT a new release.
 
-## Completed root stage and immediate next work
+## What was done on October 24 (all independently audited unless marked)
 
-The actual TM and TE finite physical material inverses, polarizations and
-pointwise core Green integrals are proved, including origins and interfaces.
-Their complete infinite angular-mode sum now equals the actual tensor response.
-`SourcePairedTensor.uniform_actual_jet_limit` proves compact uniform convergence
-of every fixed finite joint derivative for actual finite paired dielectric shells.
-Author stages are frozen in the three `reviews/source_*_stage_2026_10_23.json`
-files (Maxwell converse, physical modes, tensor limit); independent receipts are
-in the incremental ledger.
+Resume stage 1: the seven modules left author-only at the stop were audited
+(CompactCoreKernel 7, SourcePairedCore 5, ConicalUniformBall 3,
+FiniteAngularNonzero 4, SphereVectorPairing 5, FiniteMixedFields 13,
+RestrictedTEFieldLinear 4).
 
-The actual limit is central inversion. `HalfTurnReactionKernel` and
-`HalfTurnReactionBridge` independently prove actual J covariance and equality
-of central/wall volume integrals for integrable proper-half-turn-invariant
-sources. This does not establish invariance of the material-inverse source.
+Modal/hotspot branch (modal Sol author, root audit): FiniteMixedTraces 13
+(repaired; finite incoming trace bridge), FiniteMixedFlux 3 (sphere-pairing
+limit 4 pi squared), FiniteMixedInwardFlux 3 (literal inward Poynting integral
+of the incoming half-fields tends to 2 pi squared times the amplitude energy,
+positive for nonzero coefficients), FiniteMixedHerglotz 11 (EXACT identity:
+`FiniteAngularHerglotz.incident k c` equals the finite mixed regular Debye field
+evaluated at k times the point, no constant, no conjugation),
+FiniteMixedScaledFlux 14 (1/k^2 power scaling derived; `normalizeK k c` has
+unit limiting inward half-field power at frequency k), SimplePoleResidueForm 2
+(abstract rank-one residue form), AxisymmetricPlaneMaximizer 7 (geometry only).
+Scope note for the three remaining modal closure items:
+`reviews/modal_closure_scope_2026_10_24.md` (smallest missing theorems:
+`weighted_mode_in_volume_kernel`, which needs a complex-frequency radiation
+representation; Hermite–Lindemann, absent from Mathlib; the modal continuation
+and rounding assembly).
 
-`CompactCoreKernel` (7 reports, check2) and `SourcePairedCore` (5 reports,
-check2) have clean author checks and objects, but independent audits were not
-started before stopping. They extend compact kernels continuously by radial
-clamping and derive convergence in the actual bounded material operator norm.
-The entries eventually equal the literal shell tensor on the fixed core.
-Next: independently audit these files, prove the actual weighted volume-integral
-identity on the inclusion support, derive inverse stability and the full
-finite-shell-plus-inclusion reduction. Then prove physical source symmetry
-and control the remote annulus's complete whole-plane return flux.
-No CompactCoreOperator or inverse-stability successor was written before stop.
+Fixed-angular branch (fredholm Sol author, root audit): ConicalFixedAngularInput 3
+(final object emitted), ConicalFixedInputTransfer 8 (one fixed finite angular
+input, chosen per small positive frequency BEFORE the rounding level, radius,
+coordinate and threshold, gives eventually positive-measure superlevel sets of
+the rounded total field at every threshold), ConicalNormalizedInputTransfer 6
+(the same with the input replaced by its unit-limiting-inward-power
+normalization), ConicalNormalizedInputHCurl 2 (regional H(curl) representatives
+and weak Maxwell for the rounded fields), ConicalNormalizedInputCoefficient 5
+(nonzero singular coefficient and projected-graph identity for the normalized
+input, by uniqueness of the coefficient under scaling; the gauge system is
+affine in the incident, so scaling is transferred by uniqueness, not by scaling
+the system). The input still depends on k; it is not uniform in k. "Normalized"
+means the limit of the inward half-field Poynting integral equals one; it is not
+finite-radius power and not total-field power. No plane-maximum claim.
 
-## Channel branch
+Channel branch (channel Sol author, root audit): RestrictedTEDatumLinear 4
+(repaired), MaterialSourceLinear 2, RestrictedTEPolarization 4 (complex
+polarization), RestrictedTETotalLinear 44, whose endpoint
+`uniform_actual_inverse_to_dipoles` gives, for every tolerance and every fixed
+finite index set, eventual integrability and an L1 whole-plane error bound
+uniform over all coefficient vectors supported in that set with coordinates of
+modulus at most one, under the same geometric hypotheses as the frozen
+fixed-input theorem. This is still the explicit parity-device endpoint: the
+named even-m basis identification, physical frequency/Poynting normalization,
+finite physical background lift, counted-channel construction and the
+finite-shell identification remain. Scope note requested:
+`reviews/channel_closure_scope_2026_10_24.md` (in progress at the time of writing).
 
-Actual finite even-degree TE fields have prescribed edge jets and physically
-orthonormal incoming channels, with common finite band and Gram completion.
-Magnetic decay, the coherent whole-plane bound and the full four-term parity
-flux budget are proved. `RestrictedTEDipoleLimit` independently proves the
-actual explicit-parity inverse's complete whole-plane L1 limit to literal
-polarized finite-ball dipoles, for each fixed actual input.
+Root (Astra) source/inclusion branch (modal Sol audits): SourcePairedInverse 8
+(inverse stability: norm-convergent operators with a unit limit difference have
+eventually units, convergent inverses and convergent solutions; specialized to
+the clamped paired-core operators), SourceCoreOperator 8 (material operators
+depend only on kernel values on carrier x carrier; the clamped paired-core
+operator eventually equals any operator carrying the literal shell tensor on an
+inclusion support inside the core, with the weighted volume-integral form of its
+components), ShellInclusionAlgebra 18 (ring algebra: push-through inverses,
+shell Green element identities, the effective identity
+`(1 - Si G Si)(Si T S) = (Si G S)(1 - S T S)` and the explicit two-sided inverse
+of the combined block), ShellInclusionBlocks 3, ShellInclusionVolume 12 (the
+dynamic volume block IS `1 - S c * kernel k R * S c` with the coefficient-
+independent kernel `DynamicConvolution.operator k (2R) - physicalProjection`;
+coefficient sum with pointwise disjoint supports; sqrt-multiplier additivity and
+orthogonality; the combined shell-plus-inclusion block reduces exactly to the
+shell block and the effective inclusion block, with explicit inverse and
+solution formula). Author-final, independent audits requested:
+ShellInclusionReaction 3 (effective block = inclusion volume block minus the
+inclusion-weighted reaction operator `Si T Ss r Ss T Si`), ShellInclusionSmall 8
+(norm bounds; smallness := errorBound ci + ci.bound * ‖scatteredGreen‖ < 1
+makes the effective block a unit with explicit inverse bound, hence the combined
+block is a unit whenever the shell block is). Fredholm Sol, root audit:
+SeparatedScatteredRepresentation 7 (off-support a.e. pointwise dyadic
+representation of the scattered field and of `kernel k R (S ci u)` on the
+enclosing ball).
 
-The next step is uniformity over all unit coefficient vectors in one finite
-input space, using genuine operator linearity and finite polarization identities.
-RestrictedTEFieldLinear has a clean four-report target check and object, awaiting
-independent review. RestrictedTEDatumLinear failed its target check and
-MaterialSourceLinear remains uncompiled. The channel handoff records exact
-resume steps. Do not replace fixed-input convergence with an assumed uniform bound.
-The finite physical background lift, complete outgoing power/frequency bridge,
-final counted-channel construction and named even-m basis identification remain.
-The target has delta > eta > 0, arbitrary finite N, fixed frequency/common
-positive dielectric bounds/square, unrestricted finite device support, and the
-complete scattering output. Do not claim delta <= eta or a uniform support bound.
+## Immediate next work (in order)
 
-## Fixed-input hotspot and modal branches
+1. Kernel identification (requested from fredholm Sol as
+   `ShellReactionIdentification`): identify root's reaction operator with the
+   bounded material operator of the literal shell reaction tensor on the
+   inclusion support, via the Bochner-integral form of `S cs (kernel (S ci u))`
+   (weak identity through inner products and Fubini), commutation of the shell
+   inverse and of `CoreMaterialEvaluation.evaluation` with the integral, and
+   `SeparatedScatteredRepresentation.kernel_weighted_exterior_ae`.
+2. Then assemble the full finite-shell-plus-inclusion reduction: with the
+   identification, `SourceCoreOperator.eventually_operator_eq` shows the
+   clamped paired-core operator equals the reaction operator of the paired
+   shell for large shell index on the inclusion support, `SourcePairedCore.
+   operator_limit` and `SourcePairedInverse` give convergence of the effective
+   inverses and solutions to the central-inversion limit, and `ShellInclusionSmall`
+   gives unit-ness for small inclusions. Record each step; no step is done yet.
+3. Physical source symmetry (central inversion versus wall reflection: equal
+   only in the proper-half-turn-invariant source sector, `HalfTurnReactionBridge`)
+   and the remote annulus whole-plane return flux remain open after that.
+4. Channel: discharge the scope note's smallest item; eventually tie the
+   parity-device endpoint to the finite-shell reduction.
+5. Modal: the smallest missing theorems are deep (see the scope note); do not
+   claim modal closure. Hotspot: the fixed input is per-frequency; no uniform-in-k
+   statement exists.
 
-Actual smooth angular caps approximate a finite directional input on a compact
-ball. Genuine transverse harmonic L2 approximation then gives finite angular
-Herglotz inputs with uniformly controlled electric-field error. Actual entire
-Maxwell gauge and conical coefficient stability are proved.
-`ConicalFixedAngularInput` passed its three-report target check2, but no final
-object was emitted. It selects a nonzero finite angular input with retained
-coefficient before rounding/threshold. It does not yet prove unit physical power.
+## Handoffs and how to resume safely
 
-`FiniteMixedFields` (13 reports) and `SphereVectorPairing` (5 reports) have clean
-author checks/objects, awaiting independent root review. `FiniteMixedTraces`
-is unfinished: check3 exited1, with one amplitude_apply elaboration error and
-one unnecessary-tactic warning; no object. The next work is the actual finite
-field-to-trace-map bridge, literal incoming flux limit, negative-phase Herglotz
-field equality and positive-frequency scaling. Then normalize one fixed input
-and transfer it through rounding without reselecting it for each threshold.
+Agent handoffs from the October 23 stop remain valid historical records:
+`reviews/modal_checkpoint_2026_10_23_stop.md`,
+`reviews/fredholm_sol_stop_oct23_fixed_angular.md` (+ JSON),
+`reviews/continuation_uniform_stop_2026_10_23.md`. Today's per-module author
+reviews and independent receipts are under `reviews/` with the module's
+snake-case name; scope notes are `reviews/*_scope_2026_10_24.md`.
 
-Full modal closure also still needs actual reciprocal-residue normalization,
-infinite-degree pole isolation and simultaneous genuine three-dimensional
-maxima in the prescribed plane. The target uses arbitrarily high Q, fixed real
-pole frequency, common bounds and N-dependent insertion contrast. Driven field
-peaks or angular energy alone do not establish that modal statement.
+Process that worked today: Sonnet ("6.1 Sol") subagents author and repair
+drafts, one Lean process each; root (Astra) keeps the critical mathematics,
+audits everything from source with fresh compiles, records receipts with
+`tmp/record_after_5238.py` (root audits, logs `lean/logs/<M>-root-audit.log`)
+or `tmp/record_modal_after_5238.py` (non-root audits of root modules, logs
+`lean/logs/<M>-modal-audit.log` and receipt `reviews/<m>_independent.md`), and
+alone touches Git. Never rerun the one-time `integrate_current_audits.py 5238`
+or older checkpoint/release creators. Git checkpoints today: `f2cb699`
+(stage 1), `b6f653b` (stage 2), `f37b0b4` (stage 3), plus later stage commits;
+`tmp/` and `*.log` are gitignored, so evidence is copied under the checkpoint
+folder and added with `git add -f`. Never stage `sites/`.
 
-## Handoffs and safe resumption
-
-Read the exact agent handoffs under reviews:
-- `modal_checkpoint_2026_10_23_stop.md`
-- `fredholm_sol_stop_oct23_fixed_angular.md` and its JSON
-- `continuation_uniform_stop_2026_10_23.md`.
-
-Use6.1 Sol subagents when the user resumes; retain root/Astra for critical
-mathematics and integration. Root alone edits shared registries, release docs
-and Git. Verify hashes before recording a proof. Use `record_after_5238.py` and
-`record_modal_after_5238.py` only for new completed audits. Never rerun the
-one-time `integrate_current_audits.py 5238` or older checkpoint/release creators.
-No clean release regeneration, publication or new theorem stage was started
-after the stop request. Old releases and checkpoints remain preserved.
-
-Workspace: D:/oq14, PowerShell. Compile with cwd D:/oq14/lean using
-D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe.
-Lean4.19.0; mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b; nine pins.
-Python: C:/Users/Daniel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe.
-Use explicit UTF8 source reads; logs may have UTF16 BOM. Never clean root
-lean/.lake/build; never compile a dependent before its new dependency passes.
-Never touch, stage or package the unrelated sites/ tree.
-The Downloads manual was absent at the last recorded comparison; original
-scope evidence is in reviews/original_scope_2026_10_20.md, not a fresh comparison.
+Workspace: D:/oq14. Compile with cwd D:/oq14/lean using
+D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe
+(`lake.exe env lean <Module>.lean` for a check, `-o .lake/build/lib/lean/<Module>.olean`
+for the final object). Always run inside `( cd /d/oq14/lean || exit 9; ... )`:
+the Bash tool's working directory drifts between calls and a compile started
+from the wrong directory fails to find the project search path. The aggregate
+`Mathlib` module is not built; import specific Mathlib files. Lean 4.19.0;
+mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b; nine pins. Small modules
+compile in 10–60 s. Never clean root lean/.lake/build; never compile a
+dependent before its dependency has a passing final object; use explicit UTF-8
+reads (logs may have UTF-16 BOM). Memory is tight on the machine (commit charge
+near its limit); keep concurrent Lean processes to about three.

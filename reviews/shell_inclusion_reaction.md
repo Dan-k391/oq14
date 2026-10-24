@@ -1,0 +1,7 @@
+# ShellInclusionReaction author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `836C2CB58DFBC55EA4DB3D20E3C8CCFD8C3A7E79F41B43B7271245CD5F0EA973`. Final compiler log `lean/logs/ShellInclusionReaction-final.log`, SHA256 `EDE7190D5EF1AAB1801502AD3DF122A3B378941EEF979A1A646C940A41737D17`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+The shell-scattered Green operator is the kernel operator, the shell square-root multiplier, the ring inverse of the shell volume block, the shell multiplier and the kernel operator in that order; the shell Green operator of the audited algebra is the kernel operator plus this scattered part. The inclusion-weighted reaction operator sandwiches the scattered Green operator between the inclusion multipliers. The effective inclusion block of ShellInclusionBlocks therefore equals the inclusion's own dynamic volume block minus the reaction operator, by the sandwich form of the volume block and ring algebra, and the combined shell-plus-inclusion block is a unit whenever the shell block and the inclusion block minus the reaction operator are units.
+
+Not proved here: any norm bound on the reaction operator, unit-ness for a specific configuration, or the identification of the reaction operator's kernel with the literal shell reaction tensor.

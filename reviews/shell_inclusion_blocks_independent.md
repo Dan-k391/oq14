@@ -1,0 +1,7 @@
+# ShellInclusionBlocks independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `A534A808E2E76E755295441BAB366C174E436A22B033366D1DDD832B9AF82921`. Independent compiler log `lean/logs/ShellInclusionBlocks-modal-audit.log`, SHA256 `BB3E9615FCCC992DFF9D56506D45B60952907152DB79766188596AB99AEA619D`.
+
+The module names the four elements of the audited algebra in an arbitrary ring: the shell block 1 - Ss T Ss, the combined block 1 - (Ss+Si) T (Ss+Si), the effective block 1 - Si G Si with G the shell Green element, and the explicit combined inverse 1 + S (G S + G Si E^(-1) Si G S) with E^(-1) the ring inverse of the effective block. The three theorems are literal specializations of ShellInclusionAlgebra (effective_of_combined_unit, combined_isUnit, combined_inverse): the effective identity (effective)(Si T S) = (Si G S)(combined) under a unit shell block and Ss Si = Si Ss = 0, unit-ness of the combined block from unit shell and effective blocks, and the ring inverse of the combined block equals the named explicit inverse. I checked that each definition matches the expression in the specialized lemma exactly, so the wrappers add no content.
+
+Unit-ness of the shell block and of the effective block are hypotheses; nothing Maxwell-specific is in the file. I found no mathematical disagreement.
