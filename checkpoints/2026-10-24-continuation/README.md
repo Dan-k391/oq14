@@ -212,3 +212,9 @@ field whose scattered part radiates, so by the representation theorem and the un
 shell block the shells' actual response to each regular incident mode (TM per
 degree, TE for finite coefficient vectors) is the background mode, whose core part
 is transmission/2 times the incident mode; physical responses and core limits.
+
+Stage 31: RestrictedTEL1Assembly (18, channel Sol author, root audit): the whole-
+plane L1 interface reduces to measurability, compact convergence on disks and
+inverse-cube tail majorants; the parity flux has the tail majorant (six audited
+piece tails through the mixed identity), is integrable and quadratically
+homogeneous; the three estimates on the actual flux imply the interface.
