@@ -85,3 +85,7 @@ SourceRemotePlaneFlux (6) root-audited (fredholm Sol authors). Ledger copy:
 219 modules / 1215 reports. Every source/inclusion module is now independently
 audited; the closure theorem of that branch is
 SourcePairedParityClosure.paired_shell_solutions_tendsto_parity(_of_small).
+
+Stage 10 (same day): SourceRemotePlaneFluxTE (2) and SourceRemotePlaneTail (7)
+root-audited (fredholm Sol author): single-mode TM and TE exterior plane flux
+outside radius R tends to zero. Ledger copy: 221 modules / 1224 reports.

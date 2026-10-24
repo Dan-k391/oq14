@@ -1,0 +1,11 @@
+# SourceRemotePlaneTail — author verification
+
+Frozen source SHA256 `A9A1A5661E113D9968F97B8D9B4F5C483EC536645145F69A7CDB5C0B2A287F7A` (13003 bytes). Draft check2 and final/object run EXIT0, no warnings, no errors, no `sorry`, seven standard-only reports (`[propext, Classical.choice, Quot.sound]`). Final log `lean/logs/SourceRemotePlaneTail-final.log` SHA256 `13A93C3D26CB419C95F7667BD7BC8A1CC908EE92D696BE02270DC822496DD9C7`; exit file `lean/logs/SourceRemotePlaneTail-final.exit.log` = 0; object `lean/.lake/build/lib/lean/SourceRemotePlaneTail.olean` 340544 bytes. Imports `SourceRemotePlaneFluxTE` (and through it `SourceRemotePlaneFlux`), `MaxwellPlaneTail`, `PlaneInverseCube`; nothing existing edited.
+
+Plane model: `PlaneInverseCube.Plane = EuclideanSpace ℝ (Fin 2)` with its Lebesgue measure, embedded in space by `MaxwellPlaneTail.planePoint` (norm-preserving, z-coordinate zero), exactly as in `MaxwellPlaneTail` and `ParityTotalFlux`.
+
+Results. `tail_integral_small (F : Plane → ℂ) (C r0 : ℝ)` with `F` almost-everywhere strongly measurable on `{r0 < ‖q‖}` and `‖F q‖ ≤ C/‖q‖^3` for `r0 < ‖q‖`: for all `R ≥ 2 max r0 1`, `‖F‖` is integrable on `{q | R ≤ ‖q‖}`, and `Tendsto (fun R => ∫ q in {q | R ≤ ‖q‖}, ‖F q‖) atTop (𝓝 0)`; it reuses `PlaneInverseCube.tail_integrable` and `tail_integral_bound` (polar integration, bound `C diskConstant/T`) at `T = R/2`. For the single layered source mode: `electric_continuousOn` and `magnetic_continuousOn` (the exterior fields are continuous on `{‖x‖ > d.X}`, via the exact exterior formulas and continuity of the Hankel polynomials), `flux_continuousOn` (the plane flux density `crossProduct E (conjugate H) 2` on `planePoint q` is continuous for `‖q‖ > d.X`), and the corollaries `single_mode_tail_TM` and `single_mode_tail_TE`: the absolute normal plane flux of the single-mode exterior field (TM resp. TE) outside radius R, `∫ q in {R ≤ ‖q‖}, ‖crossProduct E(planePoint q) (conjugate H(planePoint q)) 2‖`, tends to 0 as R tends to infinity.
+
+Scope: single layered source mode (fixed degree, fixed polynomial), exterior only (outside the stack radius `d.X`), no annulus layers, no uniformity in the degree or the polynomial, no inclusion, incident or total field. The tail integral for the sum over all degrees still needs the uniform state bounds `rg:states`.
+
+Root independent audit pending.
