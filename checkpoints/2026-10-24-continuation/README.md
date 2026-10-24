@@ -427,3 +427,13 @@ weighted field at frequency k are the dilations k E(k x) of the unit-frequency
 fields almost everywhere, the total magnetic field exactly at every point; the
 dilated coefficient of a sum; the weighted-datum predicate transported under
 dilation. Field-level inputs of the frequency-k volume-solution identification.
+
+Stage 54: DilationVolume (35, fredholm Sol author, root audit): the truncated
+remainder kernel at frequency k and radius R/k is k^3 times the unit kernel at
+k z; the Fourier transform of a dilated kernel; the scalar dilation and its
+Fourier intertwining; the L1 convolution operator, the dynamic convolution
+operator, the weighted remainder and the dynamic volume block of the dilated
+coefficient at radius R/k commute with D_k; the error bound is invariant; the
+block at frequency k is the conjugate of the unit-frequency block, so units and
+Ring.inverse transport and solution (scaleCoeff k c) k (R/k) (D_k f) =
+D_k (solution c 1 R f) with no smallness hypothesis.
