@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 264 modules / 2020 reports at the latest third-continuation
-commit `c4f141b` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 267 modules / 2084 reports at the latest third-continuation
+commit `781acf3` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -277,41 +277,36 @@ block the shells' actual response to each regular TM mode and to every finite
 TE coefficient vector is the background mode, whose core part is
 transmission/2 times the incident field, converging along the radii
 2 pi (s+1): the background lift (a) is complete at the single-shell level.
+Stage 31 (channel Sol, root audit): RestrictedTEL1Assembly 18: the whole-plane
+L1 interface reduces to measurability, compact convergence on disks and
+inverse-cube tail majorants of the actual and parity fluxes; the parity flux
+has the majorant (six audited piece tails through the mixed identity), is
+integrable and quadratically homogeneous.
+Stage 32 (modal Sol, root audits): BackgroundShellCoefficient 16 and
+BackgroundFluxMajorant 30: the material pipeline depends on a coefficient only
+through its value, so the mu-material TE response is the response of the
+closure theorem's shell coefficient; the background plane flux of a finite TE
+vector has an inverse-cube majorant uniform in the shell index in the core,
+annulus and exterior.
 
 In progress at this commit (author drafts, untracked until audited):
-BackgroundShellCoefficient / BackgroundFluxMajorant (modal Sol; the mu-material
-coefficient of the TE response identified with the paired shell coefficient of
-the closure theorem, and the uniform inverse-cube plane-flux majorant of the
-background field in the core, annulus and exterior), SourcePairedPlaneIdentification
-(fredholm Sol; the assembled plane fields equal the fields of the combined
+CoreRadiatedMajorant (modal Sol; the radiated field of the inclusion in the
+growing core: vacuum mode expansion of the free potential and regular-dyad
+series of the shell reaction with moment coefficients, inverse-cube majorant
+uniform in the shell index), SourcePairedPlaneIdentification (fredholm Sol;
+the assembled plane fields equal the fields of the combined
 shell-plus-inclusion solution inside the core; varying-datum closure),
-RestrictedTEL1Assembly (channel Sol; L1Interface reduces to compact convergence
-plus uniform inverse-cube tail majorants; parity tail majorant; homogeneity
-from linearity).
+RestrictedTEActualFields (channel Sol; end-to-end composition with abstract
+linear fields: the counted-subspace theorem under measurability, compact
+convergence of the fields and the tail majorant of the actual flux).
 
-Remaining analytic work for the L1 interface, not yet assigned: the actual
+Remaining analytic work for the L1 interface, all now assigned: the actual
 flux must be defined piecewise (kernel integrals inside the core, the layered
-mode series with moment coefficients outside, where the dyadic integral is
-only an L2 class inside the shell material); the mode-series representation of
-the radiated field outside the core (coefficients = source moments, bounded by
-the regular value at the inclusion scale); the uniform inverse-cube majorant of
-the radiated series inside the growing core (regular modes with moment
-coefficients: core-region state bounds); and the plane-flux structure of the
-background mode (standing wave in the core, layered outside).
-
-Remaining bridge to the physical dielectric, in order: (a) background lift: done
-(stages 25 and 30), the coefficient identification with the closure theorem's
-shell object in progress; (b) identification of the all-degree radiated field
-outside the core with the mode series (coefficients = source moments, bounded
-by the regular value at the inclusion scale); (c) the magnetic plane field: done
-(stage 28); the identification of the assembled plane fields with the combined
-shell-plus-inclusion solution (operator/integral interchange) is in progress;
-(d) whole-plane L1 convergence of the paired-shell
-plane flux to the parity-device flux (compact part from (c), remote part from
-BarrierDegreeSeriesFlux, parity tail by integrability); (e) the diagonal choice and the
-counting statement: done modulo the L1 interface (stage 27); (f) unit throughput: done for the actual device whenever the
-effective block is a unit (stage 26). The modal theorem stays blocked by
-Hermite-Lindemann.
+mode series with moment coefficients outside, where the dyadic integral is only
+an L2 class inside the shell material); the mode-series representation of the
+radiated field outside the core (coefficients = source moments); the
+inverse-cube majorant of the radiated field inside the growing core (in
+progress); the background majorant is done (stage 32).
 
 ## What this does and does not establish
 
@@ -330,10 +325,10 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record the in-progress drafts as they land (BackgroundShellCoefficient,
-   BackgroundFluxMajorant, SourcePairedPlaneIdentification, RestrictedTEL1Assembly);
+1. Audit and record the in-progress drafts as they land (CoreRadiatedMajorant,
+   SourcePairedPlaneIdentification, RestrictedTEActualFields);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
