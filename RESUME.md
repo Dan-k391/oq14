@@ -481,19 +481,40 @@ density); hence the longitudinal projection, the Newton operator, the static
 response and the static Newton block commute with D_k, and the physical
 coordinate dilates with the factor k almost everywhere.
 
-In progress at this commit (author drafts, untracked until audited), completing
-the constructive identification of the dilated fields with the frequency-k
-volume solution: DilationVolume (fredholm Sol; the truncated kernel and its
-Fourier transform, the convolution operator, the weighted remainder and the
-dynamic volume block of the dilated coefficient at radius R/k conjugated by
-D_k, the error bound invariant, and the solution map transported:
-solution (scaleCoeff k c) k (R/k) (D_k f) = D_k (solution c 1 R f));
-FrequencyFieldResponse (modal Sol; scaleField k (scattered c 1 u) equals
-scattered (scaleCoeff k c) k (D_k u) almost everywhere, the total electric
-field likewise, the total magnetic field pointwise, the dilated coefficient of
-a sum, and the transport of the weighted-datum predicate). Then the device
-application and the restatement of the frequency-k theorem with the volume
-solution.
+Stage 53 (modal Sol, root audit): FrequencyFieldResponse 9: the scattered and
+total electric fields of the dilated coefficient and dilated weighted field at
+frequency k are the dilations k E(k x) of the unit-frequency fields almost
+everywhere, the total magnetic field at every point; the dilated coefficient
+of a sum; the weighted-datum predicate transported.
+Stage 54 (fredholm Sol, root audit): DilationVolume 35: the truncated remainder
+kernel at frequency k and radius R/k is k^3 times the unit kernel at k z, its
+Fourier transform is the unit transform at xi/k, the scalar dilation
+intertwines the Fourier-side convolution operators, and the dynamic
+convolution operator, the weighted remainder and the dynamic volume block of
+the dilated coefficient at radius R/k commute with D_k; the error bound is
+invariant; the block at frequency k is the conjugate of the unit-frequency
+block, so units and Ring.inverse transport and
+solution (scaleCoeff k c) k (R/k) (D_k f) = D_k (solution c 1 R f) with no
+smallness hypothesis.
+Stage 55 (modal Sol, root audit): FrequencyVolumeSolution 12: for the combined
+device and every k > 0 the rescaled physical fields are the frequency-k
+MaterialField.total (almost everywhere) and totalMagnetic (at every point) of
+the frequency-k volume solution, at radius X/k, of the dilated paired
+coefficient with the rescaled incident field and the dilated total datum,
+which is the weighted datum of the rescaled incident field; the dilated block
+is a unit exactly when the unit-frequency block is
+(`dilated_fields_are_volume_solution`). The dilation caveat of stages 47-49
+is removed at the level of the fields.
+Root note (draft, unverified): reviews/modal_item2_degeneration_note_2026_10_25.md
+sketches a transcendence-free route to the all-degree pole isolation of the
+modal branch (degeneration of the index to 1 against the polynomial growth of
+an algebraic coincidence branch); the closure assessment's (C) paragraph now
+states the modal block precisely (items 1 and 3 remain large).
+
+In progress at this commit (author draft, untracked until audited):
+CountedSubspacesVolume (channel Sol; the frequency-k counting theorem and its
+manuscript form restated with the volume-solution clause for every basis
+vector, replacing the dilation caveat).
 
 What the channel branch now establishes in Lean: the manuscript's
 uc:counterexample form for the actual paired dielectric (ordinary dielectric
@@ -547,13 +568,16 @@ open; see `reviews/closure_assessment_2026_10_24.md`.
    Stage 50 (`CountedSubspacesManuscript`, commit `d8a3e97`) gives the
    manuscript's literal form (explicit indices, square (-L/2, L/2)^2), which
    settles (b) and shows that rates are not needed for the manuscript's
-   existential statement. Assigned and in progress: (c) the identification of
-   the dilated fields with the frequency-k volume solution by the constructive
-   dilation route (DilationKernels, DilationL2, then DilationVolume and
-   FrequencyVolumeSolution; no uniqueness theory needed: every operator of the
-   volume block conjugates by the dilation D_k u = k u(k .) because the dyadic
-   kernel satisfies G_k(z) = k^3 G_1(k z)). Still optional afterwards: (a)
-   explicit thresholds or rates in n and r. Every
+   existential statement. (c) The identification of
+   the dilated fields with the frequency-k volume solution is proved by the
+   constructive dilation route (stages 51-55: DilationKernels, DilationL2,
+   FrequencyFieldResponse, DilationVolume, FrequencyVolumeSolution; no
+   uniqueness theory: every operator of the volume block conjugates by the
+   dilation D_k u = k u(k .) because the dyadic kernel satisfies
+   G_k(z) = k^3 G_1(k z)); the restatement of the counting theorems with that
+   clause (CountedSubspacesVolume) is in progress. Still optional afterwards:
+   (a) explicit thresholds or rates in n and r. The modal branch: see the
+   draft degeneration note; not assigned. Every
    audited module is recorded; earlier tags `oq14-resume-2026-10-24-3`,
    `oq14-resume-2026-10-24-2`,
    third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`, `e7b81e6`, `ea163dd`, `03d765b`.
