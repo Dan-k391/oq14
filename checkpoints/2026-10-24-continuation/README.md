@@ -97,3 +97,9 @@ inequalities with arbitrarily many channels for the explicit parity device.
 Every module added in both continuations is independently audited. Tag
 `oq14-resume-2026-10-24-2` marks this commit. Full OQ14 closure remains open
 (see reviews/closure_assessment_2026_10_24.md).
+
+Stage 12 (third continuation): SourceRemotePlaneBand (18) and
+SourceRemotePlaneBandTail (3) root-audited: finite-band (mixed TM/TE) exterior
+plane flux density bounded by C/|x|^3 via the transverse cancellation, tails
+vanish. Root-authored RestrictedTEHomogeneousCount (5) author-final, modal audit
+queued.
