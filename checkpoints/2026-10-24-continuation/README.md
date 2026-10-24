@@ -109,3 +109,9 @@ RestrictedTEPartnerCount 9, RestrictedTEConcreteDoubled 5, RestrictedTEPartnerSm
 root-audited: half-turn symmetric doubled device, half-turn-fixed data for every
 TE input, doubled counting with 2 p0. Root-authored SourcePairedNormSmallness (4)
 author-final (unit-ness from the remainder operator norm), modal audit queued.
+
+Stage 14: BarrierSourceStateBounds (27, modal Sol author, root audit): exterior
+radial state bounds of the paired-shell source response in the barrier, low and
+intermediate degree regimes (Wronskian cancellation with the radial load sign);
+scope note reviews/radial_state_bounds_scope_2026_10_24.md. RestrictedTEHomogeneousCount
+(5) and SourcePairedNormSmallness (4) modal-audited.
