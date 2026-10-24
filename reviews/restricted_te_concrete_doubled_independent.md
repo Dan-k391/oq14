@@ -1,0 +1,5 @@
+# RestrictedTEConcreteDoubled independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 5 reports are standard-only. Source SHA256 `BFCACABBC27C008CFB6D3C00C5EDCCFE449B87B52CD12A0D380147B5568FA6F4`. Independent compiler log `lean/logs/RestrictedTEConcreteDoubled-root-audit.log`, SHA256 `D0F03C7F8DED9B9CA5F575E3081B4805F0F6ABD12DAD2E433B5E55509C75C173`; exit receipt `lean/logs/RestrictedTEConcreteDoubled-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+For points on the line x = r with distinct second coordinates, the symmetric section of absolute first coordinate above r is half-turn symmetric and locally a half-plane at every original point; the containment and height hypotheses transfer to the doubled family, and the audited concrete device supplies the interpolation family, giving the doubled concrete counting with p0 = 2 Vb(rho) halfPlane / scale. Separation and containment of the doubled family are derived from those of the original points.

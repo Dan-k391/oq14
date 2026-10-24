@@ -1,0 +1,7 @@
+# Explicit parity smallness of the doubled device for small balls
+
+Author final pinned compiler/object PASS: 1 report (partner_perturbation_small), standard-only [propext, Classical.choice, Quot.sound]; exit 0, no warnings, no errors. Frozen source: lean/RestrictedTEPartnerSmall.lean, SHA256 cc0b251ed5847c1684736bbdb7497e9528ab9f206d81c4b0780e71a4dbc95b3f. Final log: lean/logs/RestrictedTEPartnerSmall-final.log, SHA256 63f5a2f45448ed2577200db784f87b6224fa4842d6afab0fe780e38045bd550c (exit file lean/logs/RestrictedTEPartnerSmall-final.exit.log, value 0). Imports the frozen RestrictedTEPartnerBalls and SmallParityInclusions objects. Root independent audit pending. Frozen source.
+
+Proved: for the partner-ball support data of the scaled device and any `b > 0`, there is `δ0 > 0` such that for all `0 < a < δ0`, `a <= 1`, `ParityReactionVolume.perturbationBound (partnerData ...) 1 (b/a) < 1/2`. This discharges the hypothesis `hpar : perturbationBound d 1 (q^n) < 1` of `SourcePairedParityClosure.paired_shell_solutions_tendsto_parity_of_small` along `a = b / q^n` for large `n`, from the derived volume bound `(2 card) rho^3 (4 pi/3) a^3` of the doubled carrier and `SmallParityInclusions.scaled_perturbation_bound`, without any operator-smallness assumption.
+
+Not proved: the other hypothesis `SourcePairedSmallness.dataSmallness q hq n ci d b < 1` of the closure theorem (it involves the limiting kernel norm of the root source reduction).

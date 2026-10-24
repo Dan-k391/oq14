@@ -1,0 +1,5 @@
+# RestrictedTEEvenDatum independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 8 reports are standard-only. Source SHA256 `DC63084F26712C409CC42D3481515922BBD032E5028DED859AAD63E51B66A2B9`. Independent compiler log `lean/logs/RestrictedTEEvenDatum-root-audit.log`, SHA256 `EAC5807B0CF7AEC13CA735804001906C4B604DE72216FCE0E1ECEB47F8E1ACE8`; exit receipt `lean/logs/RestrictedTEEvenDatum-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+Because the finite TE potentials are built from the frozen even harmonic projection, the incident electric and magnetic fields of every coefficient vector are half-turn invariant in the Maxwell parity sense, hence covariant under the rotation with the coordinate signs; for a half-turn symmetric coefficient the sqrt-chi datum is therefore fixed by the half-turn action, in particular for the partner-ball coefficient and for linear combinations of inputs. No sector hypothesis on the coefficient vector is needed.

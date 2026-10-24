@@ -1,0 +1,5 @@
+# RestrictedTEPartnerBalls independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 21 reports are standard-only. Source SHA256 `FD9B907567A94251C39C00739ADFD7C634F0A1C690D04180482EFAB029BEF9EB`. Independent compiler log `lean/logs/RestrictedTEPartnerBalls-root-audit.log`, SHA256 `4F50C7333F20F0464B6F99813C374FD9CA45B9FD8B34BDB4AB3C05A375B9072A`; exit receipt `lean/logs/RestrictedTEPartnerBalls-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+The partner-ball coefficient is the frozen finite-sphere coefficient on the doubled index with the original centres and their half-turn images and the same radii, so the union of balls is invariant under the half-turn and the coefficient is half-turn symmetric with the same bound; support data with any enclosing radius containing all balls is supplied, and the device geometry facts (image of the point above c is the point above minus c, separation of the doubled family at least the minimum of the original separation and twice the line offset, heights preserved) are proved. The partner balls double the dipole count.

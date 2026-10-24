@@ -1,0 +1,5 @@
+# RestrictedTEPartnerCount independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 9 reports are standard-only. Source SHA256 `6980DF1A2C4DD7A1E79252F67FE3D316262010EB66B78167917F60F4180F5A57`. Independent compiler log `lean/logs/RestrictedTEPartnerCount-root-audit.log`, SHA256 `38E8898AE8B9D9C6C28379A8E6A231EF0B8726D9BAEFE601F2AAF6EB3B03E4D2`; exit receipt `lean/logs/RestrictedTEPartnerCount-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+The half-plane value is even in the normal, the half-turn image of a plane point is its negative, and half-turn covariance fixes the jets at the partner points: the normal electric jet is unchanged and the tangential magnetic jet changes sign, so the passage coefficient at a partner point equals the original one. Re-instantiating the audited explicit parity device counting on the doubled index with a half-turn symmetric section gives the doubled counting statement with model value 2 p0. Explicit parity device only.

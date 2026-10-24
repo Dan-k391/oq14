@@ -103,3 +103,9 @@ SourceRemotePlaneBandTail (3) root-audited: finite-band (mixed TM/TE) exterior
 plane flux density bounded by C/|x|^3 via the transverse cancellation, tails
 vanish. Root-authored RestrictedTEHomogeneousCount (5) author-final, modal audit
 queued.
+
+Stage 13: partner-ball device (RestrictedTEPartnerBalls 21, RestrictedTEEvenDatum 8,
+RestrictedTEPartnerCount 9, RestrictedTEConcreteDoubled 5, RestrictedTEPartnerSmall 1)
+root-audited: half-turn symmetric doubled device, half-turn-fixed data for every
+TE input, doubled counting with 2 p0. Root-authored SourcePairedNormSmallness (4)
+author-final (unit-ness from the remainder operator norm), modal audit queued.

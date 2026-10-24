@@ -1,0 +1,5 @@
+# SourcePairedNormSmallness author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 4 reports are standard-only. Source SHA256 `1C8C942B1ECC05397D25D1E7B3B611B8C62D93A6ACFFD8EE64C54AABF778BDCD`. Final compiler log `lean/logs/SourcePairedNormSmallness-final.log`, SHA256 `250F2DD3449F5BCD7057B06C034E58A8A002FE787568B197DC29999D5049BB19`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+The limiting effective inclusion block is the positive static weighted block of the inclusion minus the sum of the dynamic remainder sandwich at the inclusion radius and the limiting clamped paired-core operator, so it is a unit with the explicit inverse bound whenever the operator norm of the remainder sandwich plus the norm of the limit operator (or its inclusion-data bound) is below one, by the frozen positive-block perturbation theorem. This replaces the entry-mass error bound by the remainder operator norm itself, so a carrier-sensitive remainder bound suffices for small-volume inclusions in a fixed enclosing ball. No bound on the remainder norm is proved here.
