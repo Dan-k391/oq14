@@ -317,3 +317,15 @@ the audited mode series of the inclusion solution, measurable, linear, with the
 uniform decomposition from the stage-43 export; the theorem depends only on
 propext, Classical.choice and Quot.sound. The consolidated identification of the
 piecewise fields with the physical L2 fields is the modal module in progress.
+
+Stage 45: PhysicalFieldIdentification (39, modal Sol author, root audit): the
+physical fields of the combined shell-plus-inclusion device (L2 total electric
+field, its continuous exterior representative, pointwise total magnetic field)
+are the space versions of the piecewise fields of the assembly: almost
+everywhere on the open core off the carrier closure, on the shell annulus and
+on the exterior (electric), pointwise on the open core and the exterior and
+almost everywhere in space (magnetic), eventually in the shell index, with no
+hypothesis on the annulus; instantiated for the concrete doubled device
+eventually in the gain index. The literal link to the radiated plane fields of
+the final counting theorem (zero on the inner circle and below the threshold
+index) is a separate corollary in progress.
