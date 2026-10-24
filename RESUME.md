@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 206 modules / 1109 reports at the time of writing (169 / 832
-at the October 23 stop), plus the entries added by the last audits listed below.
+compiled modules: 208 modules / 1130 reports at the time of writing (169 / 832
+at the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
 complete-source mathematical review by someone other than the author plus a
@@ -106,7 +106,12 @@ hence it converges in operator norm to the central-inversion limit; if the
 limiting effective block `volumeBlock ci 1 b - limitingOperator` is a unit,
 eventually the effective and combined blocks are units and effective inverses
 and solutions converge; the limiting block is a unit when
-`errorBound ci 1 b + ‖limitingOperator‖ < 1`).
+`errorBound ci 1 b + ‖limitingOperator‖ < 1`). Both were independently audited
+by the modal subagent before the final commit. SourcePairedSmallness 3 (root
+author, final; modal audit requested): the limit operator norm is at most the
+inclusion contrast bound times the carrier volume times the sum of the nine
+limit-kernel sup norms, so inclusion-data smallness makes the limiting
+effective block a unit and eventually the combined blocks are units.
 
 ## What this does and does not establish
 
@@ -124,14 +129,15 @@ channel count, or any modal statement. Full OQ14 closure remains open.
 
 ## Immediate next work (in order)
 
-1. Record the modal audits of SourcePairedInclusion and SourcePairedReduction
-   when they arrive (`tmp/record_modal_after_5238.py`), copy their logs under
+1. Record the modal audit of SourcePairedSmallness if it was not recorded
+   (`tmp/record_modal_after_5238.py SourcePairedSmallness`), copy its log under
    the checkpoint evidence and commit.
-2. Root: bound `‖SourcePairedCore.limitingOperator ci d q hq n b hb‖` by
-   `ci.bound * volume.real d.carrier * Σ ‖limitMap‖` (BoundedMaterialKernel.
-   operator_norm) to turn the smallness hypothesis into inclusion data only;
-   then state the eventual explicit combined solution via
-   `ShellInclusionVolume.solution_eq`.
+2. Root: the assembled eventual explicit combined solution formula (per shell
+   index it is `ShellInclusionVolume.solution_eq` with
+   `SourcePairedInclusion.effective_eq` and the eventual unit property; the
+   single assembled statement timed out at elaboration and was dropped from
+   SourcePairedSmallness); explicit values or decay of the limit-kernel sup
+   norms in the inclusion radius.
 3. Root: physical source symmetry — show the material-inverse source of the
    effective inclusion problem lies in the proper-half-turn-invariant sector
    for symmetric inclusions, so `HalfTurnReactionBridge.central_eq_wall`
@@ -161,8 +167,8 @@ audits of root modules; logs `lean/logs/<M>-modal-audit.log`; receipt
 `reviews/<m>_independent.md` must contain PASS, exit 0 and both hashes), and
 alone touches Git. Never rerun the one-time `integrate_current_audits.py 5238`
 or older checkpoint/release creators. Git checkpoints today: `f2cb699`,
-`b6f653b`, `f37b0b4`, `4d3066c`, then the stage 5 commit and any later
-audit-recording commit; `tmp/` and `*.log` are gitignored, so evidence is
+`b6f653b`, `f37b0b4`, `4d3066c`, `e612292`, then the stage 6 commit and any
+later audit-recording commit; `tmp/` and `*.log` are gitignored, so evidence is
 copied under the checkpoint folder and added with `git add -f` (add
 directories, not globs: the Windows argument limit rejects large globs). Never
 stage `sites/`.

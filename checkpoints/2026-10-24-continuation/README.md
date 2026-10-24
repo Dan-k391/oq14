@@ -52,3 +52,7 @@ Ledger copy: 206 modules / 1109 reports; all entries re-verified against disk.
 Root-authored SourcePairedInclusion (10) and SourcePairedReduction (11) have
 clean author finals and reviews; their modal audits were requested and are not
 yet recorded. RESUME.md rewritten to the end-of-session state.
+
+Stage 6 (same day): SourcePairedInclusion (10) and SourcePairedReduction (11)
+independently audited by the modal subagent; root-authored SourcePairedSmallness
+(3) author-final, modal audit requested. Ledger copy: 208 modules / 1130 reports.

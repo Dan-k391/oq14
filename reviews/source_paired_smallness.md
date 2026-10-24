@@ -1,0 +1,7 @@
+# SourcePairedSmallness author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `8FD70F149549568A732B5E3FC4D16B255F8FA64C68840151B02018AB69D94E85`. Final compiler log `lean/logs/SourcePairedSmallness-final.log`, SHA256 `85CB7944F053F712481053649260DF2CA217079D600067F275E67A70F8C106CE`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+The limiting clamped paired-core operator is a bounded material operator whose nine kernel entries are the clamped extensions of the limit kernel maps with bound their sup norms, so the frozen material operator norm bounds it by the inclusion contrast bound times the carrier volume times the sum of the nine sup norms. Inclusion-data smallness, the dynamic error bound at the inclusion radius plus that product, below one therefore makes the limiting effective block a unit, hence eventually the combined paired-shell-plus-inclusion blocks are units.
+
+Not proved here: the explicit eventual combined solution formula as a single theorem (it follows per shell index from ShellInclusionVolume.solution_eq with SourcePairedInclusion.effective_eq and the eventual unit property, but the assembled statement was not elaborated within the heartbeat budget), explicit values or decay of the limit kernel sup norms, source symmetry, remote annulus flux, or scattering output.
