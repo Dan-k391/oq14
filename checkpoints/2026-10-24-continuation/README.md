@@ -171,3 +171,10 @@ are fixed with invariant source); the assembled plane electric field of the
 effective solutions converges uniformly on balls at positive distance from the
 carrier to the parity-device total electric field with gain q^n. Magnetic shell
 reaction field and the physical identification of the assembled field remain.
+
+Stage 25: BackgroundCoreTransmission (46, modal Sol author, root audit): the
+background lift at the radial level: a unit incoming wave at the stack radius
+continues to 2i/c2 times the regular core state (Wronskian transport), the
+transmission converges along the radii 2 pi (s+1), and the rescaled finite TE
+datum converges in vector L2; the layered background state is -(conj c2) times
+the source state minus its conjugate.
