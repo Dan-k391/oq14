@@ -1,4 +1,4 @@
-# OQ14 resume state — October 24, 2026 (end of the second continuation)
+# OQ14 resume state — October 24, 2026 (third continuation, in progress)
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`
@@ -17,8 +17,9 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 226 modules / 1334 reports at the final commit of the second
-continuation (169 / 832 at the October 23 stop).
+compiled modules: 240 modules / 1482 reports at the latest third-continuation
+commit `bd9a349` (226 / 1334 at the end of the second continuation, 169 / 832 at
+the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
 complete-source mathematical review by someone other than the author plus a
@@ -160,13 +161,56 @@ solution `ParityMaterialField.solution d 1 (q^n) f`. All hypotheses are
 explicit and discharged by the frozen smallness criteria; the only undischarged
 physical input is that the datum of interest is half-turn fixed.
 
+## Third continuation (same day): remote return flux beyond single modes
+
+Stage 12 (fredholm Sol, root audits): SourceRemotePlaneBand 18 and
+SourceRemotePlaneBandTail 3: for any finite family of TM and TE exterior modes
+with complex coefficients, the transverse cancellation (tangential times
+tangential is parallel to the position, so its normal component vanishes on the
+plane) gives a plane flux density bounded by an explicit constant over the cube
+of the distance, and the exterior tails vanish. Root-authored
+RestrictedTEHomogeneousCount 5 (modal audit): the explicit parity-device count
+extended from the unit sphere to the span by homogeneity.
+Stage 13 (channel Sol, root audits): RestrictedTEPartnerBalls 21,
+RestrictedTEEvenDatum 8, RestrictedTEPartnerCount 9, RestrictedTEConcreteDoubled 5,
+RestrictedTEPartnerSmall 1: the half-turn symmetric doubled (partner-ball)
+device; every finite TE input has half-turn-fixed sqrt-chi datum (no sector
+hypothesis), so SourcePairedParityClosure applies to the actual channel inputs;
+doubled counting with model value 2 p0; parity smallness for small scaling.
+Root-authored SourcePairedNormSmallness 4 (modal audit): unit-ness of the
+limiting effective block from the remainder operator norm plus the
+inclusion-data limit term.
+Stage 14 (modal Sol, root audit): BarrierSourceStateBounds 27: exterior radial
+state bounds of the source response in the barrier (geometric (s/R)^(l+1)
+source-weighted bound), low and intermediate degree regimes, uniform in the
+shell index beyond the fixed width.
+Stage 15 (fredholm Sol, root audits): SourceAnnulusStateBounds 16 and
+SourceAnnulusPlaneFlux 9: annulus energy propagation uniform in the shell
+index; the finite-band annulus plane flux of the paired shells tends to zero.
+Stage 16 (modal Sol, root audit): BarrierAnnulusStateBounds 11: annulus state
+bounds in all three degree regimes by induction over the layers; the barrier
+geometric bound holds at every radius beyond the inner radius.
+Stage 17 (fredholm Sol, root audit): SourceRemotePlaneUniform 11: exterior
+constants uniform in the shell index; the absolute finite-band plane flux
+outside the core radius tends to zero with the shell index
+(`band_outside_core_flux_tendsto`).
+
+In progress at this commit (author drafts, not audited unless listed above):
+BarrierDegreeFluxConstants (modal Sol; degree-explicit summable decomposition
+constants), SourceRemotePlaneSeries (fredholm Sol; abstract all-degree series
+step consuming those constants), WeightedRemainderSchur and the partner
+smallness/transfer modules (channel Sol; carrier-sensitive remainder bound R1
+and instantiation of the closure theorem for the partner device). Drafts are
+untracked until audited.
+
 ## What this does and does not establish
 
 The finite-shell-plus-inclusion reduction is formalized end to end and tied to
 the channel branch's explicit parity device on the half-turn-invariant sector,
-with every module independently audited. It does NOT establish: the remote
-annulus whole-plane return flux (only single-mode exterior density bounds and
-tails exist), the unrestricted counted-channel theorem (the parity-device count
+with every module independently audited. It does NOT establish: the all-degree
+remote return flux (finite-band annulus and exterior plane flux outside the
+core vanish with the shell index, uniformly in the shell; the degree sums are
+in progress), the unrestricted counted-channel theorem (the parity-device count
 is proved; unit throughput of the full scattering map and the finite-stack Green
 identification of the parity flux with the paired-shell flux remain), any modal
 statement (blocked by Hermite-Lindemann and a
@@ -176,18 +220,20 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Nothing is pending: every module added in both continuations is
-   independently audited and recorded. Tags: `oq14-resume-2026-10-24` (end of
-   the first continuation) and `oq14-resume-2026-10-24-2` (final commit).
-2. Remote annulus return flux: the TE dual, the integrated plane tail, then
-   finite-band sums and the all-degree uniform state bounds (scope note).
-3. Channel: unit throughput / power normalization of the full scattering map
-   (Riemann-Lebesgue cross-term step), partner spheres, extension from the unit
-   sphere to the span by homogeneity, closed form halfPlane = 1/(2 pi h).
-4. Tie the parity device input (RestrictedTE datum) to a half-turn-fixed
-   datum so that SourcePairedParityClosure applies to the actual channel
-   inputs; identify the parity plane flux with the paired-shell total-field
-   plane flux (needs the remote annulus bound).
+1. Audit and record the in-progress drafts as they land (BarrierDegreeFluxConstants,
+   SourceRemotePlaneSeries, WeightedRemainderSchur, partner smallness/transfer);
+   every audited module so far is recorded; the last tag is
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`.
+2. All-degree remote return flux: combine the degree-explicit constants with the
+   series step (per-mode decomposition with summable constants and a common
+   shell threshold), then the all-degree absolute plane flux outside the core.
+3. Channel: R1 carrier-sensitive remainder bound, instantiate the closure theorem
+   for the partner device, then unit throughput / power normalization of the
+   full scattering map (Riemann-Lebesgue cross-term step), closed form
+   halfPlane = 1/(2 pi h).
+4. Identify the parity plane flux with the paired-shell total-field plane flux
+   (needs the all-degree remote bound and a field representation of the
+   inclusion solution on the plane).
 5. Modal: see the scope note; the fixed input remains per-frequency.
 
 ## Handoffs and how to resume safely

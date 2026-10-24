@@ -72,9 +72,15 @@ inequality for the explicit parity device with arbitrarily many channels
 RestrictedTEConcreteDevice.concrete_counting), and the single-mode exterior
 plane flux tails (SourceRemotePlaneTail).
 
-Remaining, in dependency order: (1) the remote annulus whole-plane return flux
-beyond single modes: finite-band sums, all-degree uniform state bounds, annulus
-layers (scope note); (2) tying the parity-device inputs to half-turn-fixed data
+Done in the third continuation: finite-band sums (SourceRemotePlaneBand),
+annulus layers (SourceAnnulusStateBounds, SourceAnnulusPlaneFlux), all-degree
+radial state bounds (BarrierSourceStateBounds, BarrierAnnulusStateBounds),
+exterior constants uniform in the shell index (SourceRemotePlaneUniform:
+the absolute finite-band plane flux outside the core vanishes with the shell
+index); the partner-ball device with half-turn-fixed data for every TE input.
+Remaining, in dependency order: (1) the all-degree remote return flux: degree-
+explicit summable decomposition constants and the series step (in progress);
+(2) tying the parity-device inputs to half-turn-fixed data
 and the parity plane flux to the paired-shell total-field flux, so that the
 parity count transfers to the actual finite dielectric; (3) unit throughput /
 `ca:powerbudget` (needs a Riemann-Lebesgue cross-term step absent from the
