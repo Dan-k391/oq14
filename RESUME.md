@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 279 modules / 2366 reports at the latest third-continuation
-commit `513ded8` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 283 modules / 2509 reports at the latest third-continuation
+commit `ba118ff` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -330,21 +330,38 @@ bound on the reaction coefficient times regular state times moment factor), so
 the assembled plane flux has an inverse-cube majorant between a fixed radius
 and the inner shell radius: the core majorant hypothesis of stage 36 is
 discharged.
+Stage 38 (fredholm Sol, root audits): SourceRadiatedSeries 32,
+SourceRadiatedMagnetic 45, SourceRadiatedFlux 28: the radiated field of the
+inclusion (free potential plus shell reaction) is the series of source moments
+times the layered TM and TE modes beyond the stack radius, electric and
+magnetic; the series flux theorem generalized to shell-dependent coefficients
+and TE-chain data; the exterior plane flux of the actual radiated field
+vanishes with the shell index for bounded inclusion solutions. The shell
+annulus (inner radius to stack radius) is not yet identified.
+Stage 39 (modal Sol, root audit): BackgroundTransmissionParity 38: half the
+limiting TE transmission is q^n times the global unimodular parity phase
+exp(i n pi (q-1)/(2q)) on even degrees (q^(-n) on odd degrees); the
+degreewise rescaling of even-supported vectors is q^n times a unitary global
+phase twist, so the alignment of the actual limit incident with the parity
+incident holds with an n-dependent global phase, which leaves spans,
+orthonormality and all quadratic flux functionals unchanged.
 
 In progress at this commit (author drafts, untracked until audited):
-BackgroundTransmissionParity (modal Sol; the even/odd limiting transmission
-and the unitary twist), SourceRadiatedSeries / SourceRadiatedMagnetic (fredholm
-Sol; the radiated field outside the core as the layered mode series with
-moment coefficients), RestrictedTEBackgroundOutside (channel Sol; the TE
-background pair identified pointwise with the actual total fields of the shell
-solution outside the core).
+SourceRadiatedAnnulus (fredholm Sol; the radiated field identified with the
+mode series on the shell annulus, a.e. on the dielectric layers and pointwise
+in the vacuum gaps, the decomposition export and measurability/linearity),
+RestrictedTEBackgroundOutside and RestrictedTEActualPhase (channel Sol; the
+TE background pair identified pointwise with the actual total fields of the
+shell solution outside the core; the assembly with an n-dependent global phase
+twist), ExteriorMaterialOffCarrier (modal Sol; the continuous total field
+identified with the L2 class on the core off the carrier).
 
-Remaining analytic work for the L1 interface, all assigned: the mode-series
-representation of the radiated field outside the core with the radiated
-decomposition uniform in the shell index (in progress), the pointwise magnetic
-identification of the background outside the core (in progress), and the
-twist identity from the even-degree limiting transmission (in progress); the
-core majorant (stage 37) and the background majorant (stage 32) are done.
+Remaining analytic work for the L1 interface, all assigned: the annulus
+identification of the radiated field with the mode series (in progress), the
+pointwise magnetic identification of the background outside the core (in
+progress), the assembly with the n-dependent global phase (in progress); the
+core majorant (stage 37), the background majorant (stage 32), the exterior
+mode series (stage 38) and the transmission phase (stage 39) are done.
 
 ## What this does and does not establish
 
@@ -363,13 +380,13 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record the in-progress drafts as they land (BackgroundTransmissionParity,
-   SourceRadiatedSeries and SourceRadiatedMagnetic, RestrictedTEBackgroundOutside);
-   then instantiate
+1. Audit and record the in-progress drafts as they land (SourceRadiatedAnnulus,
+   RestrictedTEBackgroundOutside, RestrictedTEActualPhase,
+   ExteriorMaterialOffCarrier); then instantiate
    `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
    fredholm series as the radiated part, the modal core majorant and the twist.
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
