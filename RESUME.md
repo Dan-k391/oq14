@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 260 modules / 1853 reports at the latest third-continuation
-commit `90d1f3f` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 261 modules / 1869 reports at the latest third-continuation
+commit `83d0b2f` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -260,16 +260,37 @@ and its L1 convergence to the parity flux).
 Stage 28 (fredholm Sol, root audit): SourcePairedPlaneMagnetic 50: the magnetic
 shell reaction field and the assembled plane magnetic field converging on
 compacts to the parity-device total magnetic field.
+Stage 29 (channel Sol, root audit): RestrictedTEActualSquare 16: the
+counted-subspace statement through one fixed square (device on the left edge,
+N points on a fixed segment) with the dielectric proved to lie in
+[1, eps_plus]: for every eps_plus > 1, N, window 0 < eta < delta, tau at most
+one and square half-side there are an ordinary dielectric in [1, eps_plus] and
+an orthonormal family of N finite TE inputs whose span is a counted subspace,
+for every quadratically homogeneous actual flux satisfying the whole-plane L1
+interface. This is the manuscript's uc:counterexample form modulo that
+interface.
 
 In progress at this commit (author drafts, untracked until audited):
-BackgroundModeMaxwell / BackgroundModeResponse (modal Sol; the background mode
-as a global weak Maxwell field whose scattered part is purely outgoing, and its
-identification with the shells' actual response to each regular incident mode),
-SourcePairedPlaneIdentification (fredholm Sol; the assembled plane fields equal
-the fields of the combined shell-plus-inclusion solution, by the interchange of
-the bounded shell inverse with the Bochner integral over the inclusion source),
-RestrictedTEActualSquare (channel Sol; fixed square section with the
-sign-flipped device and the permittivity bounds 1 <= eps <= eps_plus).
+BackgroundModeMaxwell / BackgroundModeResponse / BackgroundModeTE (modal Sol;
+the background mode as a global weak Maxwell field whose scattered part is
+purely outgoing, and its identification with the shells' actual response to
+each regular incident mode), SourcePairedPlaneIdentification (fredholm Sol; the
+assembled plane fields equal the fields of the combined shell-plus-inclusion
+solution inside the core, by the interchange of the bounded shell inverse with
+the Bochner integral over the inclusion source; varying-datum closure),
+RestrictedTEL1Assembly (channel Sol; L1Interface reduces to compact
+convergence plus uniform inverse-cube tail majorants; parity tail majorant;
+homogeneity from linearity).
+
+Remaining analytic work for the L1 interface, not yet assigned: the actual
+flux must be defined piecewise (kernel integrals inside the core, the layered
+mode series with moment coefficients outside, where the dyadic integral is
+only an L2 class inside the shell material); the mode-series representation of
+the radiated field outside the core (coefficients = source moments, bounded by
+the regular value at the inclusion scale); the uniform inverse-cube majorant of
+the radiated series inside the growing core (regular modes with moment
+coefficients: core-region state bounds); and the plane-flux structure of the
+background mode (standing wave in the core, layered outside).
 
 Remaining bridge to the physical dielectric, in order: (a) background lift: radial
 level done (stage 25); the background Maxwell field and its identification with
@@ -303,9 +324,9 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (BackgroundModeMaxwell,
-   SourcePairedPlaneIdentification, RestrictedTEActualSquare);
+   SourcePairedPlaneIdentification, RestrictedTEL1Assembly);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
