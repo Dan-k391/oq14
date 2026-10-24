@@ -273,3 +273,11 @@ layered TM and TE modes beyond the stack radius, electric and magnetic; the
 series flux theorem generalized to shell-dependent coefficients and TE-chain
 data; the exterior plane flux of the actual radiated field vanishes with the
 shell index for bounded inclusion solutions. The shell annulus is open.
+
+Stage 39: BackgroundTransmissionParity (38, modal Sol author, root audit): half the
+limiting TE transmission is q^n times the global unimodular parity phase
+exp(i n pi (q-1)/(2q)) on even degrees and q^(-n) times it on odd degrees; the
+degreewise rescaling of even-supported vectors is q^n times a unitary global
+phase twist, and the input of any rescaled vector is q^n times the phase times
+the input. The assembly must use an n-dependent global phase, not one fixed
+twist.
