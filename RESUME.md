@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 267 modules / 2084 reports at the latest third-continuation
-commit `781acf3` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 269 modules / 2153 reports at the latest third-continuation
+commit `83548bc` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -288,17 +288,31 @@ through its value, so the mu-material TE response is the response of the
 closure theorem's shell coefficient; the background plane flux of a finite TE
 vector has an inverse-cube majorant uniform in the shell index in the core,
 annulus and exterior.
+Stage 33 (fredholm Sol, root audit): SourcePairedPlaneIdentification 51: the
+assembled plane fields are the fields of the combined shell-plus-inclusion
+solution inside the core (dipole superposition, block decomposition, effective
+datum = datum of the background field on the inclusion, a.e. identification on
+the gap annulus), and the combined total fields converge on compacts to the
+parity device under converging background and effective data.
+Stage 34 (channel Sol, root audit): RestrictedTEActualFields 18: the counted-
+subspace theorem through the fixed square for every pair of linear plane field
+families satisfying the actual field estimates (measurability, uniform
+convergence on disks to the parity fields, inverse-cube tail majorant).
+Alignment point found by root at this stage: the actual device's limit incident
+field is the physical input rescaled degreewise by half the limiting
+transmission, while the parity device's incident is the input times q^n; the
+even-degree limiting transmission (modulus q^n by the even gamma limit) must be
+computed exactly, and any degree-dependent unimodular phase absorbed into the
+input family by a unitary twist (in progress).
 
 In progress at this commit (author drafts, untracked until audited):
-CoreRadiatedMajorant (modal Sol; the radiated field of the inclusion in the
-growing core: vacuum mode expansion of the free potential and regular-dyad
-series of the shell reaction with moment coefficients, inverse-cube majorant
-uniform in the shell index), SourcePairedPlaneIdentification (fredholm Sol;
-the assembled plane fields equal the fields of the combined
-shell-plus-inclusion solution inside the core; varying-datum closure),
-RestrictedTEActualFields (channel Sol; end-to-end composition with abstract
-linear fields: the counted-subspace theorem under measurability, compact
-convergence of the fields and the tail majorant of the actual flux).
+CoreRadiatedMajorant and BackgroundTransmissionParity (modal Sol; the radiated
+field's inverse-cube majorant in the growing core; the even/odd limiting
+transmission and the twist), SourceRadiatedSeries (fredholm Sol; the radiated
+field outside the core as the layered mode series with moment coefficients),
+RestrictedTEActualCore (channel Sol; the inside-core actual fields from the
+combined solution, their linearity, measurability and convergence to the raw
+limit, and the twisted counted-subspace theorem).
 
 Remaining analytic work for the L1 interface, all now assigned: the actual
 flux must be defined piecewise (kernel integrals inside the core, the layered
@@ -326,9 +340,9 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (CoreRadiatedMajorant,
-   SourcePairedPlaneIdentification, RestrictedTEActualFields);
+   BackgroundTransmissionParity, SourceRadiatedSeries, RestrictedTEActualCore);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
