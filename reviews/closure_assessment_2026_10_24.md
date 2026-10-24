@@ -100,8 +100,12 @@ space off null sets (stages 38, 40, 42, 43), and the consolidated statement
 L2 total electric field, its continuous exterior representative and the
 pointwise total magnetic field of the combined solution with the space
 versions of the piecewise fields, region by region, with no hypothesis on the
-annulus; the literal corollary for the final theorem's radiated plane fields
-(zero on the inner circle and below the threshold index) is in progress. Remaining caveats: unit frequency, finite even-degree
+annulus; and `PhysicalDeviceFields.device_fields_physical` (stage 46) shows
+that the exact fields counted by the final theorem are these space versions at
+every plane point off the inner circle and almost everywhere on the plane. The
+field-identification chain is complete; what the Lean development does not
+contain is any frequency other than k = 1, any rate in n or r, and the
+manuscript's own parametrization of the square. Remaining caveats: unit frequency, finite even-degree
 TE inputs, the open square up to parametrization, eventual statements without
 rates. Then, in the original list:
 (2) tying the parity-device inputs to half-turn-fixed data

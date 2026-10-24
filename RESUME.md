@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 291 modules / 2700 reports at the latest third-continuation
-commit `4febdea` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 292 modules / 2704 reports at the latest third-continuation
+commit `ea163dd` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -397,13 +397,18 @@ with no hypothesis on the annulus (predicate `PhysicallyIdentified`);
 instantiated for the concrete doubled device eventually in the gain index, and
 the piecewise device fields of the assembly are these space versions at every
 plane point whenever the outside radiated plane fields are the radiated series.
+Stage 46 (modal Sol, root audit): PhysicalDeviceFields 4: beyond the threshold
+shell index and strictly beyond the inner radius the radiated plane fields of
+the device module are the radiated series of the identification module, so
+the exact piecewise device fields counted by
+`RestrictedTEActualDevice.actual_counted_subspaces_device` equal the space
+versions of the physical fields at every plane point off the inner circle and
+for almost every plane point, eventually in the gain and shell indices
+(`device_fields_physical`, `device_fields_physical_ae`). The
+field-identification chain of the channel branch is complete.
 
-In progress at this commit (author drafts, untracked until audited):
-PhysicalDeviceFields (modal Sol; the literal corollary for the final theorem's
-radiated plane fields `devRadE`, `devRadH`, which are the series only beyond
-the threshold shell index and strictly beyond the inner radius: the piecewise
-device fields of `actual_counted_subspaces_device` equal the space versions at
-every plane point off the inner circle, eventually in n and r).
+In progress at this commit: nothing; every delivered module is audited and
+recorded, and no brief is outstanding.
 
 What the channel branch now establishes in Lean: the manuscript's
 uc:counterexample form for the actual paired dielectric (ordinary dielectric
@@ -412,8 +417,9 @@ piecewise device fields, which are the physical fields of the combined
 shell-plus-inclusion solution (stage 45, `PhysicallyIdentified`: the L2 electric
 field almost everywhere in space off the carrier closure and the inner sphere,
 the magnetic field almost everywhere in space and pointwise on the open core
-and the exterior), with the literal corollary for the final theorem's radiated
-plane fields (zero on the inner circle) in progress. Caveats that remain and are stated
+and the exterior), and by stage 46 the exact fields counted by the final
+theorem are these space versions at every plane point off the inner circle
+and for almost every plane point. Caveats that remain and are stated
 in reviews/channel_actual_counting_scope_2026_10_24.md: unit frequency k = 1;
 finite even-degree restricted TE inputs; the open square up to parametrization;
 all statements eventual in the gain index n and the shell index r without
@@ -439,13 +445,15 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record PhysicalDeviceFields when it lands; then refresh this note,
-   the closure assessment and the channel scope note, commit and tag
-   `oq14-resume-2026-10-24-3`; the instantiation
-   `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
-   fredholm series as the radiated part, the modal core majorant and the twist.
-   every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`.
+1. The channel branch is complete through the physical-field identification
+   (stages 16-46); the tag `oq14-resume-2026-10-24-3` marks this note's commit.
+   Nothing is assigned. The remaining reductions of the caveats, in order of
+   value: (a) arbitrary frequency k by the scale invariance of the device and
+   of the counting statement (every module is at k = 1); (b) explicit
+   thresholds or rates in the gain index n and the shell index r; (c) the
+   manuscript's parametrization of the square. Every audited module is
+   recorded; the previous tag is `oq14-resume-2026-10-24-2`,
+   third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`, `e7b81e6`, `ea163dd`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
