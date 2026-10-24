@@ -410,3 +410,13 @@ gradient k^2, Hessian and dyadic/remainder k^3, static Hessian k^3) and of the
 kernel responses to the dilated source k rho(k .): the remainder response and
 the magnetic response scale by k, the gradient response is invariant; the
 kernel-level inputs of the frequency-k volume-solution identification.
+
+Stage 52: DilationL2 (49, fredholm Sol author, root audit): the dilation
+operator D_k u = k u(k .) on the weighted vector L2 space (exact inner-product
+identity k^-1, group laws), its commutation with the square-root multiplier of
+the dilated coefficient, the dilated source almost everywhere, the Fourier
+intertwining F(D_k u) = k^-1 D_(1/k) F u (Schwartz change of variables plus
+density), and hence the commutation with the longitudinal projection, the
+Newton operator, the static response and the static Newton block; the physical
+coordinate of D_k F is k times that of F at k x almost everywhere. L2-side
+inputs of the frequency-k volume-solution identification.
