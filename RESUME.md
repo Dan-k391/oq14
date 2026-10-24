@@ -467,18 +467,33 @@ frequency k; the docstring maps the clauses to uc:counterexample and lists what
 is not asserted. Rates in n and r are not needed for the manuscript's
 existential statement; they remain unproved.
 
-In progress at this commit (author drafts, untracked until audited): the
-constructive identification of the dilated fields with the frequency-k volume
-solution, removing the dilation caveat of stages 47-49: DilationKernels (modal
-Sol; Green kernel identities phi_k(x) = k phi_1(k x), remainder_k(x) = k^3
-remainder_1(k x), dilation of the convolution and magnetic responses),
-DilationL2 (fredholm Sol; the dilation operator D_k u = k u(k .) on VectorL2,
-its commutation with the square-root multiplier, the source, the Fourier
-transform, the longitudinal projection and the static Newton block); then
-DilationVolume (volume block, weighted remainder and `solution` transported:
-solution (scaleCoeff k c) k (R/k) (D_k f) = D_k (solution c 1 R f)) and
-FrequencyVolumeSolution (scaleField k (total c 1 u inc) = total (scaleCoeff k c)
-k (D_k u) (scaleField k inc) almost everywhere, applied to the device).
+Stage 51 (modal Sol, root audit): DilationKernels 24: the Green kernel
+identities for k > 0 (phi_k(x) = k phi_1(k x), gradient k^2, Hessian and
+dyadic/remainder kernels k^3, static Hessian k^3) and, by change of variables,
+the remainder response and the magnetic response to the dilated source
+k rho(k .) are k times the unit-frequency responses at k x.
+Stage 52 (fredholm Sol, root audit): DilationL2 49: the dilation operator
+D_k u = k u(k .) on the weighted vector L2 space (exact inner-product identity
+<D_k u, D_k v> = k^-1 <u, v>, group laws), commuting with the square-root
+multiplier of the dilated coefficient; the dilated source almost everywhere; the
+Fourier intertwining F(D_k u) = k^-1 D_(1/k) F u (Schwartz change of variables,
+density); hence the longitudinal projection, the Newton operator, the static
+response and the static Newton block commute with D_k, and the physical
+coordinate dilates with the factor k almost everywhere.
+
+In progress at this commit (author drafts, untracked until audited), completing
+the constructive identification of the dilated fields with the frequency-k
+volume solution: DilationVolume (fredholm Sol; the truncated kernel and its
+Fourier transform, the convolution operator, the weighted remainder and the
+dynamic volume block of the dilated coefficient at radius R/k conjugated by
+D_k, the error bound invariant, and the solution map transported:
+solution (scaleCoeff k c) k (R/k) (D_k f) = D_k (solution c 1 R f));
+FrequencyFieldResponse (modal Sol; scaleField k (scattered c 1 u) equals
+scattered (scaleCoeff k c) k (D_k u) almost everywhere, the total electric
+field likewise, the total magnetic field pointwise, the dilated coefficient of
+a sum, and the transport of the weighted-datum predicate). Then the device
+application and the restatement of the frequency-k theorem with the volume
+solution.
 
 What the channel branch now establishes in Lean: the manuscript's
 uc:counterexample form for the actual paired dielectric (ordinary dielectric
