@@ -309,3 +309,11 @@ of the inclusion equals the layered mode series almost everywhere on the whole
 region beyond the inner shell radius (weak route through bounded functionals and
 the fundamental lemma), with the uniform decomposition export, plane measurability
 and linearity of the series in the inclusion solution.
+
+Stage 44: RestrictedTEActualDevice (17, channel Sol author, root audit): the counted-
+subspace theorem for the actual paired dielectric device with no field
+hypotheses (`actual_counted_subspaces_device`): radiated plane fields defined as
+the audited mode series of the inclusion solution, measurable, linear, with the
+uniform decomposition from the stage-43 export; the theorem depends only on
+propext, Classical.choice and Quot.sound. The consolidated identification of the
+piecewise fields with the physical L2 fields is the modal module in progress.
