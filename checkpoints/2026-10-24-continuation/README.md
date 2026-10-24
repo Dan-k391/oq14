@@ -218,3 +218,11 @@ plane L1 interface reduces to measurability, compact convergence on disks and
 inverse-cube tail majorants; the parity flux has the tail majorant (six audited
 piece tails through the mixed identity), is integrable and quadratically
 homogeneous; the three estimates on the actual flux imply the interface.
+
+Stage 32: BackgroundShellCoefficient (16) and BackgroundFluxMajorant (30) root-audited
+(modal Sol author): the material pipeline depends on the coefficient only
+through its value, so the TE mu-material response is the response of the
+closure theorem's shell coefficient (actual TE response of the paired shell =
+background family, core part rescaled by half the transmission); the background
+plane flux of a finite TE vector has an inverse-cube majorant uniform in the
+shell index in the core, annulus and exterior.
