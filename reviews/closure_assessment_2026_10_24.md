@@ -89,10 +89,16 @@ reduced to field estimates (stages 35, 36); the plane fields of the paired
 shells converging on compacts to the parity device, electric and magnetic
 (stages 21, 24, 28, 33, 35, 40); the background lift (stages 25, 30, 32, 39,
 42); the radiated field majorant in the growing core (stages 37, 41) and its
-mode series beyond the stack radius (stage 38); the assembly with the
-n-dependent parity phase (stage 42). Remaining for the actual-device counting
-theorem: the annulus identification of the radiated field (in progress) and
-the final instantiation. Then, in the original list:
+mode series beyond the stack radius and on the annulus (stages 38, 43); the
+assembly with the n-dependent parity phase (stage 42); and the final theorem
+`RestrictedTEActualDevice.actual_counted_subspaces_device` (stage 44): the
+counted-subspace statement for the actual paired dielectric with no field
+hypotheses, depending only on the three standard axioms. The piecewise device
+fields whose flux it counts are the physical L2 fields almost everywhere in
+space off null sets (stages 38, 40, 42, 43); the consolidated identification
+statement is in progress. Remaining caveats: unit frequency, finite even-degree
+TE inputs, the open square up to parametrization, eventual statements without
+rates. Then, in the original list:
 (2) tying the parity-device inputs to half-turn-fixed data
 and the parity plane flux to the paired-shell total-field flux, so that the
 parity count transfers to the actual finite dielectric; (3) unit throughput /

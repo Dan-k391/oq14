@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 289 modules / 2644 reports at the latest third-continuation
-commit `8e04cd0` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 290 modules / 2661 reports at the latest third-continuation
+commit `d3c2a6e` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -371,23 +371,38 @@ almost everywhere on the whole region beyond the inner shell radius (weak route
 through bounded pairing functionals and the fundamental lemma), with the
 uniform decomposition export, plane measurability and linearity in the
 inclusion solution: every analytic hypothesis of the assembly is now proved.
+Stage 44 (channel Sol, root audit): RestrictedTEActualDevice 17:
+`actual_counted_subspaces_device`, the counted-subspace theorem for the actual
+paired dielectric device with no field hypotheses: for every eps_plus > 1,
+every N, every window 0 < eta < delta, every tau at most one and every square
+half-side there are device parameters and an orthonormal family of N finite
+TE inputs such that the paired device's dielectric lies in [1, eps_plus] and,
+eventually in the gain and shell indices, the span is a counted subspace
+through the fixed square (exact unit transmission by the isometric scattering
+map, passage at least eta, bypass at most delta) for the plane flux of the
+piecewise device fields; the theorem depends only on propext,
+Classical.choice and Quot.sound. The piecewise device fields are the physical
+fields almost everywhere in space on the core off the carrier (stage 40) and
+beyond the inner shell radius (stages 38, 42, 43); the consolidated statement
+of these identifications is in progress.
 
 In progress at this commit (author drafts, untracked until audited):
-RestrictedTEActualDevice (channel Sol; the counted-subspace theorem for the
-actual paired device with no field hypotheses: radiated plane fields defined
-as the layered mode series of the inclusion solution, their measurability and
-decomposition from the fredholm exports, and the physical identification
-corollary), PhysicalFieldIdentification (modal Sol; the L2 total field equals
-the piecewise representatives a.e. on the three regions).
+PhysicalFieldIdentification (modal Sol; the L2 total field equals the
+piecewise representatives a.e. on the three regions, consolidated).
 
-Remaining for the counted-subspace theorem of the actual device: only the
-final instantiation (in progress), which has no analytic content left: the
-radiated plane fields are the audited series of the inclusion solution, their
-decomposition and measurability are the stage-43 exports, the core majorant is
-stage 41, the parity phase is stage 39. The theorem is about the piecewise
-device fields, which equal the physical fields almost everywhere in space on
-the core off the carrier (stage 40) and beyond the inner shell radius (stages
-38, 42, 43).
+What the channel branch now establishes in Lean: the manuscript's
+uc:counterexample form for the actual paired dielectric (ordinary dielectric
+in [1, eps_plus], fixed square, fixed thresholds, every N), with the flux of the
+piecewise device fields, which coincide with the physical L2 fields almost
+everywhere in space off null sets (the carrier closure, the circle at the inner
+radius, the interface spheres, the origin). Caveats that remain and are stated
+in reviews/channel_actual_counting_scope_2026_10_24.md: unit frequency k = 1;
+finite even-degree restricted TE inputs; the open square up to parametrization;
+all statements eventual in the gain index n and the shell index r without
+rates; the identification is in space, not almost everywhere on the plane (the
+plane fields are the continuous representatives). The modal branch (C) remains
+blocked by Hermite-Lindemann; the hotspot branch (B) keeps its per-frequency
+input. Full OQ14 closure is therefore still not claimed.
 
 ## What this does and does not establish
 
@@ -406,13 +421,13 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record the in-progress drafts as they land (RestrictedTEActualDevice,
-   PhysicalFieldIdentification); then refresh this note, the closure assessment and
-   the channel scope note with the final theorem, commit and tag; the instantiation
+1. Audit and record PhysicalFieldIdentification when it lands; then refresh this
+   note, the closure assessment and the channel scope note, commit and tag
+   `oq14-resume-2026-10-24-3`; the instantiation
    `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
    fredholm series as the radiated part, the modal core majorant and the twist.
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
