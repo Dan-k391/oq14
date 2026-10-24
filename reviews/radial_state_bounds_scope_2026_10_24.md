@@ -85,3 +85,8 @@ Not in the new file, in decreasing order of size:
 3. All-degree constants in `SourceRemotePlaneFlux.plane_flux_bound` (use `AngularExteriorBounds.poloidal_bound` and `radial_bound`), the TE dual, finite sums over modes and the plane integral of the `r^-3` tail; then the annulus and exterior flux (`rg:remote`).
 
 Feasibility: item 1 is a day-scale induction over the layer list; item 2 is several days; item 3 is days. None of these needs a new estimate beyond what the manuscript lemma states.
+
+
+## Update: annulus states (BarrierAnnulusStateBounds)
+
+Item 1 above is now proved in `lean/BarrierAnnulusStateBounds.lean` (11 theorems, standard-only; `reviews/barrier_annulus_state_bounds.md`): `annulus_state_bound` (barrier range, `‖(sourceState l gs R X hR x).1‖ ≤ 1/regularD l R ∧ ‖(sourceState ...).2‖ ≤ 1/regular l R` for every `x ∈ Icc R X`), `source_weighted_all_high` (the geometric source-weighted bound at every `x ≥ R`), `profile_energy_le` and `annulus_energy_le` (layerwise energy propagation), `low_annulus_state_bound` and `middle_annulus_state_bound`. Items 2 and 3 remain.
