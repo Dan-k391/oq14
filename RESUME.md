@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 219 modules / 1215 reports at the time of writing (169 / 832
-at the October 23 stop), plus whatever the last audits below add.
+compiled modules: 226 modules / 1334 reports at the final commit of the second
+continuation (169 / 832 at the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
 complete-source mathematical review by someone other than the author plus a
@@ -133,8 +133,22 @@ below an explicit radius depending only on gains and contrast cap),
 SourcePairedSolutionFormula 2 (eventual explicit combined solution),
 SourceRemotePlaneFlux 6 (single TM mode exterior plane flux density bounded by
 C/|x|^3; scope note `reviews/remote_annulus_return_flux_scope_2026_10_24.md`).
-Channel Sol: dipole-flux concentration / plane jets in progress at the time of
-writing; fredholm Sol: TE dual and plane tail integral in progress.
+Fredholm Sol (root audits): SourceRemotePlaneFluxTE 2 and SourceRemotePlaneTail 7
+(single-mode TM and TE exterior plane flux outside radius R tends to zero).
+Channel Sol (root audits): RestrictedTEDipoleProfile 31, RestrictedTEHalfPlanePositive 4,
+RestrictedTEDipoleConcentration 31, RestrictedTEPlaneJets 31,
+RestrictedTEConcreteDevice 13. Endpoint
+`RestrictedTEPlaneJets.explicit_parity_device_counting`: for the explicit parity
+device, an orthonormal input family whose plane jets have the prescribed
+tangential form with common half-plane sum p0, and thresholds eta < p0 < delta,
+eventually in the shrinking scaling every unit-power element of the span has
+passage at least eta and absolute bypass at most delta through the half-plane
+section; `RestrictedTEConcreteDevice.concrete_counting` discharges the jet
+hypotheses by the frozen band interpolation for distinct points on a line, with
+p0 = Vb(rho) * halfPlane / scale > 0 explicit. This is a counted-channel
+statement with arbitrarily many channels for the EXPLICIT PARITY DEVICE; it is
+not the unrestricted target (no unit throughput of the full scattering map, no
+finite-stack Green identification, no even-m labelling, no partner spheres).
 
 Closure theorem of the source branch
 (`SourcePairedParityClosure.paired_shell_solutions_tendsto_parity_of_small`):
@@ -151,24 +165,25 @@ physical input is that the datum of interest is half-turn fixed.
 The finite-shell-plus-inclusion reduction is formalized end to end and tied to
 the channel branch's explicit parity device on the half-turn-invariant sector,
 with every module independently audited. It does NOT establish: the remote
-annulus whole-plane return flux (only a single-mode exterior density bound
-exists), the counted-channel theorem (dipole concentration / plane jets, unit
-throughput, physical finite-stack Green identification beyond the invariant
-sector remain), any modal statement (blocked by Hermite-Lindemann and a
+annulus whole-plane return flux (only single-mode exterior density bounds and
+tails exist), the unrestricted counted-channel theorem (the parity-device count
+is proved; unit throughput of the full scattering map and the finite-stack Green
+identification of the parity flux with the paired-shell flux remain), any modal
+statement (blocked by Hermite-Lindemann and a
 complex-frequency radiation representation absent from the tree), or
 uniform-in-k hotspot input. Full OQ14 closure remains open; see
 `reviews/closure_assessment_2026_10_24.md`.
 
 ## Immediate next work (in order)
 
-1. Record any audits still pending at the stop (channel dipole concentration,
-   fredholm TE dual / plane tail), copy logs under the checkpoint evidence and
-   commit. The tag `oq14-resume-2026-10-24` marks the end of the first
-   continuation; later stage commits follow it on main.
+1. Nothing is pending: every module added in both continuations is
+   independently audited and recorded. Tags: `oq14-resume-2026-10-24` (end of
+   the first continuation) and `oq14-resume-2026-10-24-2` (final commit).
 2. Remote annulus return flux: the TE dual, the integrated plane tail, then
    finite-band sums and the all-degree uniform state bounds (scope note).
-3. Channel: dipole-flux concentration / plane jets, then the counted-channel
-   inequality for the explicit parity device; then unit throughput.
+3. Channel: unit throughput / power normalization of the full scattering map
+   (Riemann-Lebesgue cross-term step), partner spheres, extension from the unit
+   sphere to the span by homogeneity, closed form halfPlane = 1/(2 pi h).
 4. Tie the parity device input (RestrictedTE datum) to a half-turn-fixed
    datum so that SourcePairedParityClosure applies to the actual channel
    inputs; identify the parity plane flux with the paired-shell total-field

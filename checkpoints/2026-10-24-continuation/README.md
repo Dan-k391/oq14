@@ -89,3 +89,11 @@ SourcePairedParityClosure.paired_shell_solutions_tendsto_parity(_of_small).
 Stage 10 (same day): SourceRemotePlaneFluxTE (2) and SourceRemotePlaneTail (7)
 root-audited (fredholm Sol author): single-mode TM and TE exterior plane flux
 outside radius R tends to zero. Ledger copy: 221 modules / 1224 reports.
+
+Stage 11 (same day, final): channel chain root-audited: RestrictedTEDipoleProfile
+(31), RestrictedTEHalfPlanePositive (4), RestrictedTEDipoleConcentration (31),
+RestrictedTEPlaneJets (31), RestrictedTEConcreteDevice (13): counted-channel
+inequalities with arbitrarily many channels for the explicit parity device.
+Every module added in both continuations is independently audited. Tag
+`oq14-resume-2026-10-24-2` marks this commit. Full OQ14 closure remains open
+(see reviews/closure_assessment_2026_10_24.md).

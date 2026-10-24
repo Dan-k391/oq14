@@ -1,0 +1,5 @@
+# RestrictedTEDipoleProfile independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 31 reports are standard-only. Source SHA256 `FA9780F43B25BC407316C0260BEA64B540A1202D5BC8A436F0ED1D5AE9EB6779`. Independent compiler log `lean/logs/RestrictedTEDipoleProfile-root-audit.log`, SHA256 `32CBE152E8EC7FC492F570EE6CFCF88DE86D5DCCF3B172E1F129E8B484F9FD2E`; exit receipt `lean/logs/RestrictedTEDipoleProfile-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+The static dyadic kernel at zero frequency has the explicit off-diagonal Hessian entries, so a dipole at height t above the plane produces at a plane point the tangential-normal entry minus the explicit profile times the tangential offset; the half-plane profile integrals over disks converge to the half-plane value, scale exactly under the shrinking-dipole scaling, and the local passage and local absolute bypass of the signed profile over a half-plane section are the same half-disk number. Positivity of the half-plane value is proved separately; its closed form is not formalized and not needed.

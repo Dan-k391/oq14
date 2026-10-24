@@ -66,16 +66,21 @@ inclusion solutions converge to the explicit parity-device solution, all
 hypotheses discharged by explicit smallness. Single-mode exterior plane flux
 density bound (SourceRemotePlaneFlux).
 
-Remaining, in dependency order: (1) dipole-flux concentration and the plane-jet
-replacement, feeding the counting inequalities (in progress); (2) the remote
-annulus whole-plane return flux: TE dual, integrated tail, finite-band sums,
-all-degree uniform state bounds, annulus layers (scope note; only the
-single-mode exterior density bound exists); (3) tying the channel inputs to
-half-turn-fixed data and the parity plane flux to the paired-shell total-field
-flux; (4) unit throughput / `ca:powerbudget` (needs a Riemann-Lebesgue
-cross-term step absent from the tree); (5) the named even-m basis is not in the
-tree (the even sector is intrinsic), and the interpolation geometry is narrower
-than the manuscript arbitrary plane points.
+Also done: dipole-flux concentration, plane jets and the counted-channel
+inequality for the explicit parity device with arbitrarily many channels
+(RestrictedTEPlaneJets.explicit_parity_device_counting,
+RestrictedTEConcreteDevice.concrete_counting), and the single-mode exterior
+plane flux tails (SourceRemotePlaneTail).
+
+Remaining, in dependency order: (1) the remote annulus whole-plane return flux
+beyond single modes: finite-band sums, all-degree uniform state bounds, annulus
+layers (scope note); (2) tying the parity-device inputs to half-turn-fixed data
+and the parity plane flux to the paired-shell total-field flux, so that the
+parity count transfers to the actual finite dielectric; (3) unit throughput /
+`ca:powerbudget` (needs a Riemann-Lebesgue cross-term step absent from the
+tree); (4) the named even-m basis is not in the tree (the even sector is
+intrinsic), and the interpolation geometry is narrower than the manuscript
+arbitrary plane points.
 
 ## (C) Modal: formal status
 
@@ -97,8 +102,9 @@ importing an axiom (forbidden) or formalizing Hermite–Lindemann.
 ## Verdict
 
 The Lean formalization now covers every mechanism of (A) up to the remote-flux
-bridge and the final counting assembly (the physical symmetry bridge is closed
-on the invariant sector), and every mechanism of (B) up to quantitative
+bridge and the transfer of the parity-device count to the actual dielectric
+(the physical symmetry bridge is closed on the invariant sector and the count
+is proved for the explicit parity device), and every mechanism of (B) up to quantitative
 sharpenings, with all additions independently audited. (C) is proved in the
 manuscript only and is blocked in Lean by a missing transcendence theorem. Full
 OQ14 closure must not be claimed.
