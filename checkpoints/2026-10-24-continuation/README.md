@@ -242,3 +242,10 @@ structure is consistent. Open point noted by root: the limit incident of the
 actual device is the input rescaled degreewise by half the limiting
 transmission, the parity incident is the input times q^n; the even-degree
 limiting transmission must be computed to align them.
+
+Stage 35: RestrictedTEActualCore (82, channel Sol author, root audit): the inside-
+core actual fields of the paired device from the combined solution, linear and
+measurable, converging uniformly on disks to the raw limit with the limiting
+rescaled incident; the raw limit is the parity field of the twisted input when
+the limiting rescaling is q^n times a twist; the twisted counted-subspace
+theorem for unitary twists, and from core agreement, tail and twist identity.
