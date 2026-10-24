@@ -256,3 +256,12 @@ core and outside majorants, outside majorant from uniform decompositions of
 background plus radiated parts, background decomposition on the unit sphere of
 the span, eventual boundedness of the inclusion solutions, and the composite
 counted-subspace theorem under the remaining analytic hypotheses.
+
+Stage 37: CoreWeakSeries (8), CoreWeakLinear (5), CoreOutgoingModes (22), CoreFreePotential
+(21), CoreReactionDegree (5), CoreRegularModes (10), CoreReaction (23), CoreRadiatedMajorant
+(7) root-audited (modal Sol author): the radiated field of the inclusion (free
+potential plus shell reaction) decomposes inside the growing core with constants
+independent of the shell index, so the assembled plane flux has an inverse-cube
+majorant between a fixed radius and the inner shell radius; the new analytic input
+is the degree bound on the reaction coefficient times the regular state times the
+moment factor.

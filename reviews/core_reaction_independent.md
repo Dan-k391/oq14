@@ -1,0 +1,5 @@
+# CoreReaction independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 23 reports are standard-only. Source SHA256 `999F35850697860F070E99CA1D59EB4DEA5489A4CC4507149C417D7B502425FA`. Independent compiler log `lean/logs/CoreReaction-root-audit.log`, SHA256 `6D39FD9FBD9D92EFCE58EC673692C1B6A9601CE7FC679B79D5F61C6A457DD07A`; exit receipt `lean/logs/CoreReaction-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+For the physical paired stack the shell reaction kernel series identity holds at every core point against sources in the carrier ball (the frozen physical series), so the reaction field is the degree series of the reaction coefficients times regular modes times moments; with the degree bound the series decomposes with constants K times the solution norm, independently of the shell index, for all core points beyond the threshold rhoMin; the magnetic reaction field is identified through the weak relation (continuity in the hollow core) and decomposes likewise; the source mass is bounded by the carrier constant times the solution norm.
