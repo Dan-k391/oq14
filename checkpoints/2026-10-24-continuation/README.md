@@ -374,3 +374,24 @@ divided by k), and the dilated piecewise plane fields of the final counting
 theorem are the dilated space fields at every plane point off the circle of
 radius radius r / k. Ledger 296/2753. The final k-frequency counting theorem is
 in progress and not part of this stage.
+
+Stage 49 (channel Sol author, root audit): RestrictedTEFrequencyScaling (6):
+counted_subspaces_at_frequency, the k-frequency form of the final counting
+theorem: for every k > 0, eps_plus > 1, N, 0 < eta < delta, tau <= 1 and
+half-side L > 0, the unit-frequency device of half-side k L with its
+coefficient dilated by 1/k (dielectric in [1, eps_plus]) and its plane fields
+dilated with amplitude factor k gives, for the same orthonormal family of N
+finite TE inputs, a counted subspace through the square of half-side L with the
+same scattering map, power and thresholds, eventually in the gain and shell
+indices; the dilated finite TE inputs are vacuum weak Maxwell pairs at
+frequency k with limiting inward power physicalPower; the dilated physical
+fields are a weak Maxwell pair at frequency k with the dilated dielectric,
+identified with the dilated space fields, whose plane values off the circle of
+radius radius r / k are the counted plane fields. The dilated-device geometry
+is recorded (devPos_scale). Standard axioms only. Not asserted: that the dilated
+fields are the frequency-k volume solution of a dilated L2 datum (design note,
+section 5). Ledger 297/2759. The unit-frequency caveat of the channel branch is
+removed in this dilation sense; the remaining caveats are finite even-degree TE
+inputs, the open square up to parametrization, eventual statements without
+rates, and the identification being in space plus continuous plane
+representatives. Full OQ14 closure is not claimed.
