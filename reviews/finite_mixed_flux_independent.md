@@ -1,0 +1,5 @@
+# FiniteMixedFlux independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `B6A6AA3F153396D605CD074074E3BAEAE2B339E5E3A995B0EBD4C9AE8FA37E5B`. Independent compiler log `lean/logs/FiniteMixedFlux-root-audit.log`, SHA256 `DDDC53E5EFCD18A4E3F3C97AD70F440394EF15F19E17069B6EADAF87DBC55077`; exit receipt `lean/logs/FiniteMixedFlux-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+The sphere pairing is linear in its first slot and conjugate-linear in its second, proved from the literal integral representation. Composing the frozen joint continuity of the pairing with the two uniform trace-map limits gives convergence of the pairing of the finite electric and magnetic trace maps to (2 pi I) times its conjugate times the self-pairing of the finite amplitude, and that constant is exactly 4 pi squared. This is the limit of a sphere pairing of trace maps; it is not yet the inward Poynting integral of the half-fields and makes no physical flux or unit-power claim.

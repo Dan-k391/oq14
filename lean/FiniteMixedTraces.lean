@@ -57,7 +57,8 @@ theorem magneticCoefficient_limit (m : ModeIndex) :
   | inl a =>
     have h := (((RegularTEIncoming.scaled_radial_limit (a.1+1) true).const_mul (-I)).div_const (2 : ℂ)).const_mul (phaseFactor (Sum.inl a))
     have he : phaseFactor (Sum.inl a)*(-I*RegularTEIncoming.coefficient (a.1+1) true/2)=(2*Real.pi : ℂ)*I := by
-      convert incoming_poloidal_phase a using 1 <;> ring
+      convert incoming_poloidal_phase a using 1
+      ring
     rw [he] at h
     exact h
   | inr a =>
@@ -160,10 +161,15 @@ def amplitude (c : ModeIndex →₀ ℂ) : C(Sphere,Vector) :=
 
 theorem amplitude_apply (c : ModeIndex →₀ ℂ) (n : Sphere) (i : Fin 3) :
     amplitude c n i=∑ m∈c.support,c m*angular m n i := by
-  change (EuclideanSpace.proj i : ComplexVectorSphere.Vector →L[ℂ] ℂ)
-    (∑ m∈c.support,c m • FiniteVectorAngular.angular m n)=_
-  simp only [map_sum,map_smul,smul_eq_mul]
-  rfl
+  have h : FiniteVectorAngular.amplitude c n=∑ m∈c.support,c m • FiniteVectorAngular.angular m n := by
+    simp only [FiniteVectorAngular.amplitude,ContinuousMap.coe_sum,Finset.sum_apply,ContinuousMap.smul_apply,
+      ContinuousMap.coe_smul,Pi.smul_apply]
+  show FiniteVectorAngular.amplitude c n i=_
+  rw [h]
+  have hp := map_sum (EuclideanSpace.proj i : ComplexVectorSphere.Vector →L[ℂ] ℂ)
+    (fun m => c m • FiniteVectorAngular.angular m n) c.support
+  simp only [map_smul,smul_eq_mul] at hp
+  exact hp
 
 theorem electricMap_limit (c : ModeIndex →₀ ℂ) :
     Tendsto (electricMap c) atTop (𝓝 (((2*Real.pi : ℂ)*I) • amplitude c)) := by
@@ -189,4 +195,52 @@ theorem magneticMap_limit (c : ModeIndex →₀ ℂ) :
   intro m _
   ring
 
+theorem electricMap_actual (c : ModeIndex →₀ ℂ) (r : ℝ) (hr : 0<r) (n : Sphere) :
+    (RegularTEIncoming.phase true r*(r : ℂ)) • electricPart c true (r • (n : Space))=electricMap c r n := by
+  ext i
+  simp only [electricMap,electricPart,ContinuousMap.sum_apply,ContinuousMap.smul_apply,Finset.sum_apply,
+    Pi.smul_apply,smul_eq_mul]
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro m _
+  have hm := congrFun (electricModeMap_actual m r hr n) i
+  simp only [Pi.smul_apply,smul_eq_mul] at hm
+  rw [←hm]
+  simp only [scalar]
+  ring
+
+theorem magneticMap_actual (c : ModeIndex →₀ ℂ) (r : ℝ) (hr : 0<r) (n : Sphere) :
+    (RegularTEIncoming.phase true r*(r : ℂ)) •
+      crossProduct (DebyeRadialTrace.position n) (magneticPart c true (r • (n : Space)))=magneticMap c r n := by
+  have hs : magneticPart c true (r • (n : Space))=
+      ∑ m∈c.support,(c m) • ((phaseFactor m*(normalizer (index m).1 : ℂ)) • halfMagnetic m true (r • (n : Space))) := by
+    ext i
+    simp only [magneticPart,Finset.sum_apply,Pi.smul_apply,smul_eq_mul,scalar]
+    apply Finset.sum_congr rfl
+    intro m _
+    ring
+  rw [hs,map_sum,Finset.smul_sum]
+  ext i
+  simp only [magneticMap,ContinuousMap.sum_apply,ContinuousMap.smul_apply,Finset.sum_apply,Pi.smul_apply,
+    smul_eq_mul]
+  apply Finset.sum_congr rfl
+  intro m _
+  have hm := congrFun (magneticModeMap_actual m r hr n) i
+  simp only [Pi.smul_apply,smul_eq_mul,map_smul] at hm ⊢
+  rw [←hm]
+  ring
+
 end OQ14.FiniteMixedTraces
+#print axioms OQ14.FiniteMixedTraces.poloidal_factor
+#print axioms OQ14.FiniteMixedTraces.electricCoefficient_limit
+#print axioms OQ14.FiniteMixedTraces.magneticCoefficient_limit
+#print axioms OQ14.FiniteMixedTraces.radialCoefficient_limit
+#print axioms OQ14.FiniteMixedTraces.electricModeMap_actual
+#print axioms OQ14.FiniteMixedTraces.magneticModeMap_actual
+#print axioms OQ14.FiniteMixedTraces.electricModeMap_limit
+#print axioms OQ14.FiniteMixedTraces.magneticModeMap_limit
+#print axioms OQ14.FiniteMixedTraces.amplitude_apply
+#print axioms OQ14.FiniteMixedTraces.electricMap_limit
+#print axioms OQ14.FiniteMixedTraces.magneticMap_limit
+#print axioms OQ14.FiniteMixedTraces.electricMap_actual
+#print axioms OQ14.FiniteMixedTraces.magneticMap_actual
