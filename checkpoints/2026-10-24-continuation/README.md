@@ -437,3 +437,12 @@ coefficient at radius R/k commute with D_k; the error bound is invariant; the
 block at frequency k is the conjugate of the unit-frequency block, so units and
 Ring.inverse transport and solution (scaleCoeff k c) k (R/k) (D_k f) =
 D_k (solution c 1 R f) with no smallness hypothesis.
+
+Stage 55: FrequencyVolumeSolution (12, modal Sol author, root audit): for the
+combined device and every k > 0 the rescaled physical fields are the
+frequency-k MaterialField.total (almost everywhere) and totalMagnetic (at every
+point) of the frequency-k volume solution, at radius X/k, of the dilated paired
+coefficient with the rescaled incident field and the dilated total datum,
+which is the weighted datum of the rescaled incident field; the dilated block
+is a unit exactly when the unit-frequency block is. The dilation caveat of
+stages 47-49 is removed at the level of the fields.
