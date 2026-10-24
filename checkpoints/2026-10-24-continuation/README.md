@@ -205,3 +205,10 @@ counted-subspace statement for the actual device through one fixed square
 proved to lie in [1, eps_plus]; the remaining hypotheses are exactly the
 homogeneity and the whole-plane L1 interface of the actual flux. Ledger after
 stage 28 was 260/1853 (the stage 27 and 28 commit messages overstate by 19).
+
+Stage 30: BackgroundModeMaxwell (68), BackgroundModeResponse (27) and BackgroundModeTE
+(56) root-audited (modal Sol author): the background mode is a global weak Maxwell
+field whose scattered part radiates, so by the representation theorem and the unit
+shell block the shells' actual response to each regular incident mode (TM per
+degree, TE for finite coefficient vectors) is the background mode, whose core part
+is transmission/2 times the incident mode; physical responses and core limits.
