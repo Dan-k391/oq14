@@ -23,3 +23,15 @@ independently audited by the modal subagent. Ledger copy updated:
 author final object and review; its independent audit was requested and is
 not yet recorded. RestrictedTEDatumLinear / MaterialSourceLinear remained in
 progress with the channel subagent and are not part of this stage.
+
+Stage 3 (same day): channel chain repaired and extended to uniform finite-input
+convergence (RestrictedTEDatumLinear 4, MaterialSourceLinear 2,
+RestrictedTEPolarization 4, RestrictedTETotalLinear 44); fixed-angular branch
+normalized to unit limiting inward half-field power with H(curl) and
+coefficient conjuncts (FiniteMixedScaledFlux 14, ConicalNormalizedInputTransfer 6,
+ConicalNormalizedInputHCurl 2, ConicalNormalizedInputCoefficient 5); modal
+residue-form lemma (SimplePoleResidueForm 2); all independently audited by root.
+Root-authored SourceCoreOperator (8) and ShellInclusionAlgebra (18) were
+independently audited by the modal subagent. Ledger copy: 194 modules /
+1031 reports. Root-authored ShellInclusionBlocks (3) and ShellInclusionVolume (12)
+have clean author finals; their independent audits are requested, not recorded.

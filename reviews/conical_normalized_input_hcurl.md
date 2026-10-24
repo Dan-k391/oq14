@@ -1,0 +1,9 @@
+# ConicalNormalizedInputHCurl — author verification
+
+Frozen source SHA256 `A29F12B7918D9536EAE693ED543CBE290615863672011A157C2BA8B10FBA79B5` (5382 bytes). Draft check1 and final/object run EXIT0, no warnings, no errors, no `sorry`, two standard-only reports (`[propext, Classical.choice, Quot.sound]`). Final log `lean/logs/ConicalNormalizedInputHCurl-final.log` SHA256 `5bf867e37dc88df926b58ff007be6c37237f03e51100d53a1a5bc390a72d8645`; exit file `lean/logs/ConicalNormalizedInputHCurl-final.exit.log` = 0; object `lean/.lake/build/lib/lean/ConicalNormalizedInputHCurl.olean` 337128 bytes. Imports `ConicalNormalizedInputTransfer` (frozen, unchanged) and `MaterialHCurl`.
+
+Mirrors `ConicalFiniteIlluminationPeaks.exists_regional_fields`, which establishes that the rounded finite-illumination fields are in `DomainCurl.HCurl (ball 0 a)` with the a.e. coordinate identifications and `WeakConservation.WeakMaxwell k (fun _ => 1) (permittivity p a n) e h`. Here, for an arbitrary actual `ConicalEntireGauge.Incident k` I and every n and k with |k| ≤ `commonRadius p.contrast a`, `exists_regional_fields` gives such e, h for `ConicalFixedInputTransfer.electric/magnetic p a k n I`. The proof uses square integrability on the ball of the smooth entire incident field (continuous on a compact ball) plus the existing scattered-field bounds, then `MaterialHCurl.exists_regional_fields` with `rounded_maxwell`. The restated `positive_frequency_normalized_input_rounded_hcurl_transfer` is the normalized transfer theorem (reused, not re-proved) with the additional conjunct `∀ n, ∃ e h : HCurl (ball 0 a), … WeakMaxwell …` for `incident k c'`; its δ is the minimum of the earlier δ and `commonRadius p.contrast a`.
+
+Not proved: the projected-graph/q conjunct (see `reviews/conical_normalized_input_coefficient.md`), any total-field power statement.
+
+Root independent audit pending.

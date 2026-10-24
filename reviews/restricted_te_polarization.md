@@ -1,0 +1,7 @@
+# Complex polarization for sesquilinear maps
+
+Author final pinned compiler/object PASS: 4 reports (Sesq.polarization, Sesq.symmetrized, polarization_complex, re_polarization), each standard-only [propext, Classical.choice, Quot.sound]; exit 0, no warnings, no errors. Frozen source: lean/RestrictedTEPolarization.lean, SHA256 487f5a84825c15345b58b9c47cfab76e45dc58ee4f2d471ed8d19d4f316ffb1d. Final log: lean/logs/RestrictedTEPolarization-final.log, SHA256 64b8776d1ec66a0b43d0e954bd98d2d12e6aa04530cb22417884dd9fff238c3d (exit file lean/logs/RestrictedTEPolarization-final.exit.log, value 0). Root independent audit pending. Frozen source.
+
+Proved: for a map B from V x V into any complex vector space W (V a complex vector space) that is additive and C-homogeneous in the first argument and additive and conjugate-homogeneous in the second (hypothesis bundle `Sesq B`), B u v = (1/4)(Q(u+v) - Q(u-v) + i(Q(u+iv) - Q(u-iv))) with Q w := B w w, both as a W-valued smul identity (`Sesq.polarization`) and as the C-valued formula divided by 4 (`polarization_complex`); the symmetrized combination B u v + B v u = (1/2)(Q(u+v) - Q(u-v)); and, for a Hermitian C-valued form (B v u = conj (B u v)), the real-part formula Re B u v = (Re Q(u+v) - Re Q(u-v))/4.
+
+Not proved: no analytic statement, no norm or integral bound, no connection to the Maxwell chain; the lemma is purely algebraic. Positivity or boundedness of the form is not assumed or used.

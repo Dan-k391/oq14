@@ -19,7 +19,8 @@ theorem physical_ext (u v : VectorL2)
     apply PiLp.ext
     intro i
     exact hx i
-  have hn := VectorFourier.coordinateMap_preserving.symm.quasiMeasurePreserving.ae hp
+  have hn := (MeasurePreserving.symm VectorFourier.coordinateMap
+    VectorFourier.coordinateMap_preserving).quasiMeasurePreserving.ae hp
   simpa only [Function.comp_apply,MeasurableEquiv.apply_symm_apply] using hn
 
 theorem datum_add (c : Coefficient) (d : BoundedMaterialKernel.SupportData c) (A B : Index →₀ ℂ) :
@@ -30,7 +31,9 @@ theorem datum_add (c : Coefficient) (d : BoundedMaterialKernel.SupportData c) (A
     (Lp.coeFn_add (RestrictedTEMaterial.datum c d A) (RestrictedTEMaterial.datum c d B))
   filter_upwards [RestrictedTEMaterial.datum_actual c d (A+B) i,
     RestrictedTEMaterial.datum_actual c d A i,RestrictedTEMaterial.datum_actual c d B i,hc] with x hs ha hb hc
-  rw [hs,hc,PiLp.add_apply,ha,hb,RestrictedTEFieldLinear.electric_add]
+  rw [hs,hc]
+  simp only [Pi.add_apply,PiLp.add_apply]
+  rw [ha,hb,RestrictedTEFieldLinear.electric_add]
   simp only [Pi.add_apply]
   ring
 
@@ -42,7 +45,9 @@ theorem datum_smul (c : Coefficient) (d : BoundedMaterialKernel.SupportData c) (
     (Lp.coeFn_smul z (RestrictedTEMaterial.datum c d A))
   filter_upwards [RestrictedTEMaterial.datum_actual c d (z • A) i,RestrictedTEMaterial.datum_actual c d A i,hc]
     with x hs ha hc
-  rw [hs,hc,PiLp.smul_apply,ha,RestrictedTEScale.electric_smul]
+  rw [hs,hc]
+  simp only [Pi.smul_apply,PiLp.smul_apply,smul_eq_mul]
+  rw [ha,RestrictedTEScale.electric_smul]
   simp only [Pi.smul_apply,smul_eq_mul]
   ring
 

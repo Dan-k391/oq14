@@ -1,0 +1,5 @@
+# ConicalNormalizedInputHCurl independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 2 reports are standard-only. Source SHA256 `A29F12B7918D9536EAE693ED543CBE290615863672011A157C2BA8B10FBA79B5`. Independent compiler log `lean/logs/ConicalNormalizedInputHCurl-root-audit.log`, SHA256 `5BF867E37DC88DF926B58FF007BE6C37237F03E51100D53A1A5BC390A72D8645`; exit receipt `lean/logs/ConicalNormalizedInputHCurl-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+For every actual entire incident field and rounding level under the common-radius frequency bound, the rounded fixed-input total electric and magnetic fields have regional H(curl) representatives on the ball of radius a satisfying the weak Maxwell system of the rounded permittivity, mirroring the frozen regional-field construction for finite illuminations. The normalized transfer theorem is reused, not re-proved, with that conjunct added. No new power or peak claim.

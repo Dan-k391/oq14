@@ -1,0 +1,9 @@
+# FiniteMixedScaledFlux author review
+
+Author complete-source mathematical review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 14 reports are standard-only. Source SHA256 `D6F491581DB9A1A54B5D4D3C17600566FAAA4877E563F7F23F4AD8F879023149`. Final compiler log `lean/logs/FiniteMixedScaledFlux-final.log`, SHA256 `19A697C39DA75622EC9C1C2B285B8412D5A6DF8F47D9F71602886B65A192A47C`. Root independent audit pending. Frozen source.
+
+The quantity `inwardPowerK k c r` is the inward radial Poynting integral over the sphere of radius r of the finite incoming half-fields at frequency k, defined by scaling the argument of `electricPart c true` and `magneticPart c true` by k (consistent with the proved Herglotz scaling). It is NOT the total-field physical incoming power. For k > 0 it is proved exactly equal to `inwardPower c (k r) / k^2` (the algebra (k r)^2 = k^2 r^2 with k (r n) = (k r) n), and therefore converges, as r tends to infinity, to (2 pi^2 / k^2) times the surface integral of the energy of the actual finite amplitude. The 1/k^2 scaling of that limit is thus derived, not assumed.
+
+The amplitude is proved homogeneous (amplitude (z c) = z amplitude c, by finite support algebra), the energy integral scales by t^2 under real t, and for nonzero c the normalization normalize c = (sqrt (E c))^(-1) c, with E c = 2 pi^2 times the energy integral (positive by the existing positivity theorem), is nonzero and has E = 1. Hence inwardPower of the normalized coefficient tends to 1, inwardPowerK k of it tends to 1/k^2, and with normalizeK k c = k times the normalized coefficient the frequency-k inward power tends to 1. These normalize the LIMIT of the inward half-field Poynting integral only.
+
+Not proved: no total physical power or conservation statement for the full regular field, no identification with the outgoing half-fields or net flux, no finite-r unit power claim. No limit or normalization is a caller premise.

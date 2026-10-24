@@ -1,0 +1,5 @@
+# RestrictedTEDatumLinear independent root audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 4 reports are standard-only. Source SHA256 `11614B7FE58A62CCD174A240A1A634F06053C288A9DF86EE5DEA808572CD393F`. Independent compiler log `lean/logs/RestrictedTEDatumLinear-root-audit.log`, SHA256 `87064510B245F4E6A813C273F8607A2645B26A8CD259D1E5D9C5740FA69A8831`; exit receipt `lean/logs/RestrictedTEDatumLinear-root-audit.exit.log`. Audited 2026-10-24 from source only, without the author's object.
+
+Physical extensionality of vector L2 elements from almost-everywhere coordinate identities after the measure-preserving coordinate map is derived through the inverse of that map. The weighted sqrt-chi datum is additive and complex-homogeneous in the finite harmonic coefficient vector, by the frozen datum representative identity and the audited linearity of the finite TE electric field; this packages the datum as a linear map and composes it with the ring inverse of the parity block to a linear solution map whose value is the literal parity material solution of the datum. No invertibility, flux or uniformity claim is made.

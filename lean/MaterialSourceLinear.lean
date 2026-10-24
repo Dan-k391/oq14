@@ -14,7 +14,7 @@ theorem add (c : Coefficient) (u v : VectorL2) (j : Fin 3) :
       fun y : Space => DynamicVolume.source c u j y+DynamicVolume.source c v j y := by
   have h := VectorFourier.coordinateMap_preserving.quasiMeasurePreserving.ae (Lp.coeFn_add u v)
   filter_upwards [h] with y hy
-  simp only [DynamicVolume.source,hy,PiLp.add_apply]
+  simp only [DynamicVolume.source,hy,Pi.add_apply,PiLp.add_apply]
   ring
 
 theorem smul (c : Coefficient) (z : ℂ) (u : VectorL2) (j : Fin 3) :
@@ -22,7 +22,7 @@ theorem smul (c : Coefficient) (z : ℂ) (u : VectorL2) (j : Fin 3) :
       fun y : Space => z*DynamicVolume.source c u j y := by
   have h := VectorFourier.coordinateMap_preserving.quasiMeasurePreserving.ae (Lp.coeFn_smul z u)
   filter_upwards [h] with y hy
-  simp only [DynamicVolume.source,hy,PiLp.smul_apply,smul_eq_mul]
+  simp only [DynamicVolume.source,hy,Pi.smul_apply,PiLp.smul_apply,smul_eq_mul]
   ring
 
 end OQ14.MaterialSourceLinear

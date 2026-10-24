@@ -1,0 +1,7 @@
+# SimplePoleResidueForm author review
+
+Author complete-source mathematical review and final pinned compiler plus importable object PASS, exit 0, no warnings; both reports are standard-only. Source SHA256 `95DF6DA4562BEDF364E85BBCD2505394C072B796BD88BF7E66AFCCAD3F0A153B`. Final compiler log `lean/logs/SimplePoleResidueForm-final.log`, SHA256 `614BB105662B471F802EA0CC2DF7658C842D7813E96A3C7F5E7825162A2F0D8E`. Root independent audit pending. Frozen source.
+
+In an arbitrary complex normed space H, let A be an operator-valued function differentiable at z0 with derivative A1, invertible on a punctured neighbourhood, and suppose the punctured limit of (z - z0) times the ring inverse of A z exists in operator norm and equals R. First, A(z0) R = 0 (the limit of A(z) times (z - z0) A(z)^(-1), which equals (z - z0) times the identity). If moreover the kernel of A(z0) is spanned by u, the covector phi annihilates the range of A(z0), and phi(A1 u) is nonzero, then R x = (phi x / phi(A1 u)) u for every x. The proof applies phi to A(z) (z - z0) A(z)^(-1) x = (z - z0) x, writes A(z) = A(z0) + (z - z0) slope, cancels z - z0 and passes to the limit.
+
+This is a residue-form lemma only. The existence of the residue limit (simplicity of the pole), one-dimensionality of the kernel, the identification of u with the actual weighted Mie mode in the volume kernel, and the identification of phi and phi(A1 u) with the reciprocal pairing and the matching derivative are explicit hypotheses or are not here; no Maxwell or modal conclusion is claimed.
