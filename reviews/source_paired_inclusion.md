@@ -1,0 +1,7 @@
+# SourcePairedInclusion author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 10 reports are standard-only. Source SHA256 `0BCD1197B615D9821D0892366DACA13A01A9DABEB5A395D3FE3612AB44AE6273`. Final compiler log `lean/logs/SourcePairedInclusion-final.log`, SHA256 `3E63C35C92CDCEB12F88653B55D8738CAB548EFFB09473C4B5BEB8B092453F54`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+The actual paired-shell susceptibility vanishes on the closed core ball of the data's inner radius and outside its outer radius, and its volume block at unit frequency and the outer radius is a unit by the frozen partition theorem. An inclusion coefficient supported in a ball of radius at most the inner radius is pointwise disjoint from the shell, and vanishes outside the outer ball. Hence the combined paired-shell-plus-inclusion block is the named combined block, the effective inclusion block equals the inclusion's own block at the inclusion radius minus the paired-shell reaction operator, every combined solution yields an effective solution with the shell-Green datum, and the combined block is a unit whenever that effective block is, in particular for small inclusions.
+
+Not proved here: convergence in the shell index, the identification of the reaction operator with the paired-core operator, or unit-ness of the effective block beyond the smallness hypothesis.

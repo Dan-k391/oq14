@@ -43,3 +43,12 @@ SeparatedScatteredRepresentation (7) audited by root. Ledger copy: 200 modules /
 1071 reports. RESUME.md rewritten to the October 24 state. The shell reaction
 kernel identification (ShellReactionIdentification) was in progress with the
 fixed-angular subagent and the channel scope note with the channel subagent.
+
+Stage 5 (same day): kernel identification and paired-shell reduction.
+Root-audited: RestrictedTEUnitSphere (4), ShellReactionIdentification (8),
+RestrictedTEPassageTransfer (5), RestrictedTEParitySandwich (8),
+LosslessSphereFluxConstancy (10); modal-audited ShellInclusionTruncation (3).
+Ledger copy: 206 modules / 1109 reports; all entries re-verified against disk.
+Root-authored SourcePairedInclusion (10) and SourcePairedReduction (11) have
+clean author finals and reviews; their modal audits were requested and are not
+yet recorded. RESUME.md rewritten to the end-of-session state.
