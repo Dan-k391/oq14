@@ -265,3 +265,11 @@ independent of the shell index, so the assembled plane flux has an inverse-cube
 majorant between a fixed radius and the inner shell radius; the new analytic input
 is the degree bound on the reaction coefficient times the regular state times the
 moment factor.
+
+Stage 38: SourceRadiatedSeries (32), SourceRadiatedMagnetic (45) and SourceRadiatedFlux
+(28) root-audited (fredholm Sol author): the radiated field of the inclusion
+(free potential plus shell reaction) is the series of source moments times the
+layered TM and TE modes beyond the stack radius, electric and magnetic; the
+series flux theorem generalized to shell-dependent coefficients and TE-chain
+data; the exterior plane flux of the actual radiated field vanishes with the
+shell index for bounded inclusion solutions. The shell annulus is open.
