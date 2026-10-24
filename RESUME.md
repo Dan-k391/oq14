@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 283 modules / 2509 reports at the latest third-continuation
-commit `ba118ff` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 284 modules / 2519 reports at the latest third-continuation
+commit `86237a5` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -345,16 +345,21 @@ degreewise rescaling of even-supported vectors is q^n times a unitary global
 phase twist, so the alignment of the actual limit incident with the parity
 incident holds with an n-dependent global phase, which leaves spans,
 orthonormality and all quadratic flux functionals unchanged.
+Stage 40 (modal Sol, root audit): ExteriorMaterialOffCarrier 10: the Newton
+identity on an arbitrary open set where the source vanishes (separation
+pairing, countable ball cover), so the physical L2 total field of the combined
+solution equals the assembled plane electric field almost everywhere on the
+core outside the closure of the inclusion carrier.
 
 In progress at this commit (author drafts, untracked until audited):
 SourceRadiatedAnnulus (fredholm Sol; the radiated field identified with the
-mode series on the shell annulus, a.e. on the dielectric layers and pointwise
-in the vacuum gaps, the decomposition export and measurability/linearity),
-RestrictedTEBackgroundOutside and RestrictedTEActualPhase (channel Sol; the
-TE background pair identified pointwise with the actual total fields of the
-shell solution outside the core; the assembly with an n-dependent global phase
-twist), ExteriorMaterialOffCarrier (modal Sol; the continuous total field
-identified with the L2 class on the core off the carrier).
+mode series on the shell annulus, the decomposition export,
+measurability/linearity), RestrictedTEBackgroundOutside and
+RestrictedTEActualPhase (channel Sol; the TE background pair identified
+pointwise with the actual total fields of the shell solution outside the
+core; the assembly with the n-dependent global phase), CoreMajorantDevice
+(modal Sol; the core-majorant structure of the assembly discharged for the
+concrete device).
 
 Remaining analytic work for the L1 interface, all assigned: the annulus
 identification of the radiated field with the mode series (in progress), the
@@ -381,12 +386,12 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (SourceRadiatedAnnulus,
-   RestrictedTEBackgroundOutside, RestrictedTEActualPhase,
-   ExteriorMaterialOffCarrier); then instantiate
+   RestrictedTEBackgroundOutside, RestrictedTEActualPhase, CoreMajorantDevice);
+   then instantiate
    `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
    fredholm series as the radiated part, the modal core majorant and the twist.
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
