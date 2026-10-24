@@ -1,0 +1,7 @@
+# SourcePairedWallKernelAE independent modal audit
+
+Complete-source mathematical review and fresh pinned compiler PASS, exit 0, no warnings; all 5 reports are standard-only. Source SHA256 `96FED533FD938047F4E7144FF96E32BD3D24966BBFEB23F151E2EC57A060118A`. Independent compiler log `lean/logs/SourcePairedWallKernelAE-modal-audit.log`, SHA256 `6C474C38D9B9D0C0261EB9A6A15B5737BF0F312C34FD058F33E35199A820F5CE`.
+
+I ran `diff` against `lean/SourcePairedWallKernel.lean`. The files differ only in: the import (HalfTurnReactionBridgeAE instead of HalfTurnReactionBridge), the docstring wording, the namespace (SourcePairedWallKernelAE), the type of the invariance hypothesis (`HalfTurnReactionBridgeAE.InvariantAE (sourceField ci u)` in place of the pointwise `Invariant`) in `limitingOperator_invariant`, `limitEffective_invariant`, `limitEffective_of_parity` and `limit_solution_eq_parity`, the two calls in `limitingOperator_invariant` (`central_eq_wall_ae` in place of `central_eq_wall`, with the same arguments), and the renamed axiom reports. No proof line other than those two calls changed, so the earlier audit of the pointwise file (gain pairing q^(2n)-1 with e = true and q^(-2n)-1 with e = false, case split on the carrier, radius independence, (q^n)^2 = q^(2n)) carries over verbatim.
+
+Invariance of the parity solution is not proved in this file; the hypothesis `InvariantAE` is explicit, and the unit property of the limiting effective block is an explicit hypothesis of `limit_solution_eq_parity`. I found no mathematical disagreement.

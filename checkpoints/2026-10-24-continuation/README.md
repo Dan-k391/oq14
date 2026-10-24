@@ -78,3 +78,10 @@ SourcePairedParityClosure (4: for a half-turn symmetric inclusion in the core
 of the actual paired shells and half-turn-fixed data, the effective inclusion
 solutions converge to the explicit parity-device solution with B = q^n). Ledger
 copy: 214 modules / 1195 reports.
+
+Stage 9 (same day): HalfTurnReactionBridgeAE (3), SourcePairedWallKernelAE (5),
+SourcePairedParityClosure (4) modal-audited; SourcePairedSolutionFormula (2) and
+SourceRemotePlaneFlux (6) root-audited (fredholm Sol authors). Ledger copy:
+219 modules / 1215 reports. Every source/inclusion module is now independently
+audited; the closure theorem of that branch is
+SourcePairedParityClosure.paired_shell_solutions_tendsto_parity(_of_small).
