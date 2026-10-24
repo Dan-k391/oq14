@@ -1,0 +1,13 @@
+# Closure of the paired-shell effective solutions onto the doubled parity device
+
+Author final pinned compiler/object PASS: 2 reports (partner_parity_small, partner_shell_solutions_tendsto), standard-only [propext, Classical.choice, Quot.sound]; exit 0, no warnings, no errors. Frozen source: lean/RestrictedTEPartnerTransfer.lean, SHA256 3984a7239b7e7f0ad869baed24b1c52e7976d861b2060ff3dc7b3099b6e6e32a (4938 bytes). Final log: lean/logs/RestrictedTEPartnerTransfer-final.log, SHA256 e961145f84f8d05362cf1dcab1ebaec62da489e1ad38e7fd4639707ba565148c (exit file lean/logs/RestrictedTEPartnerTransfer-final.exit.log, value 0). Object lean/.lake/build/lib/lean/RestrictedTEPartnerTransfer.olean. Imports the author-PASS RestrictedTEPartnerSmallness and the frozen RestrictedTEEvenDatum, SourcePairedParityClosure objects. Root independent audit pending. Frozen source.
+
+Parameter matching: closure gain `q^n`, device scale `a_n = (q^n)^-1` (`RestrictedTEPartnerSmallness.scale`), so `1 / a_n = q^n` (`scale_gain`) and the gain `b_device / a` of `RestrictedTEPartnerSmall.partner_perturbation_small` is taken with `b_device = 1`; the closure enclosing radius `b` (any `b >= R`, `0 < b`) is a different parameter; the carrier of the doubled device at every scale lies in the ball of radius `R`.
+
+Proved:
+- `partner_parity_small` (q > 1): eventually in `n`, `ParityReactionVolume.perturbationBound (deviceData n) 1 (q^n) < 1/2`.
+- `partner_shell_solutions_tendsto` (q > 1, `0 < b`, `R <= b`, any `A : SymmetricHarmonicJets.Index ->0 C`): eventually in `n`,
+  `Tendsto (fun r : N => Ring.inverse (DynamicVolume.volumeBlock ci 1 b - reaction (shell q hq.le n r) ci 1 (data q hq.le n r).X) f) atTop (nhds (ParityMaterialField.solution d 1 (q^n) f))`
+  with `ci = deviceCoeff p rho chi hchi q n`, `d = deviceData p rho chi R hrho hchi hi q hq n`, `f = RestrictedTEMaterial.datum ci d A`. It instantiates `SourcePairedParityClosure.paired_shell_solutions_tendsto_parity` with: `hcar` from `RestrictedTEPartnerBalls.partner_carrier_norm` and `R <= b`; `hsym` from `partner_symmetric`; the unit hypothesis on `limitEffective` from `partner_limitEffective_isUnit` (the quadratic remainder smallness, not the root dataSmallness); the unit hypothesis on `ParityMaterialField.block d 1 (q^n)` from `partner_parity_small` and `ParityReactionVolume.explicitBlock_isUnit`; the half-turn fixed datum from `RestrictedTEEvenDatum.partner_datum_fixed` (no sector hypothesis on `A`).
+
+Not proved: the conclusion is for large `n` (eventually in `n`, no explicit threshold); the flux of the actual device through the plane (R2 of the partner transfer scope note) and the diagonal argument over `n` and the shell index `r` are not part of this module; no statement about `q = 1`.

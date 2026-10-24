@@ -134,3 +134,10 @@ Stage 18: SourceRemotePlaneSeries (5, fredholm Sol author, root audit): decompos
 with summable constants pass to series; conditional on degree-summable per-mode
 constants beyond a common shell threshold, the absolute all-degree plane flux of
 the paired-shell series outside the core tends to zero.
+
+Stage 19: WeightedRemainderSchur (9), RestrictedTEPartnerSmallness (25) and
+RestrictedTEPartnerTransfer (2) root-audited (channel Sol author): carrier-
+sensitive remainder bound (Young on the difference set), eventual smallness of
+the doubled device data at scales q^(-n), and the closure theorem instantiated
+for the partner device: for all large n the paired-shell effective solutions
+converge to the parity solution with gain q^n of every finite TE datum.
