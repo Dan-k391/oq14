@@ -287,3 +287,9 @@ identity on an arbitrary open set where the source vanishes (separation pairing,
 countable ball cover), so the physical L2 total field of the combined solution
 equals the assembled plane electric field almost everywhere on the core outside
 the closure of the inclusion carrier.
+
+Stage 41: CoreMajorantDevice (13, modal Sol author, root audit): the core-majorant
+structure of the piecewise assembly is discharged for the concrete doubled
+device (background family plus radiated decomposition plus eventual solution
+bound on the unit sphere), including the magnetic core formula of the
+background family.
