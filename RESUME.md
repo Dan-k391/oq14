@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 257 modules / 1769 reports at the latest third-continuation
-commit `0c546d3` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 260 modules / 1853 reports at the latest third-continuation
+commit `90d1f3f` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -248,30 +248,40 @@ finite TE incident field is a weak Maxwell pair with the exterior
 incident-plus-dyadic representation, so the actual paired shells plus inclusion
 have unit throughput whenever the effective block is a unit, and the scattering
 map on the finite TE input space is linear and isometric.
+Stage 27 (channel Sol, root audits): RestrictedTEActualCounting 19 and
+RestrictedTEActualWindow 15: the diagonal assembly and the manuscript's
+counted-subspace form for the actual paired device, for every N, every window
+0 < eta < delta and every tau at most one: an orthonormal family of N finite TE
+inputs whose span is a counted subspace with unit transmission, for every
+quadratically homogeneous actual flux family satisfying the whole-plane L1
+interface (`L1Interface`), which is the single remaining hypothesis on the
+device's flux (the identification of that family with the actual Poynting flux
+and its L1 convergence to the parity flux).
+Stage 28 (fredholm Sol, root audit): SourcePairedPlaneMagnetic 50: the magnetic
+shell reaction field and the assembled plane magnetic field converging on
+compacts to the parity-device total magnetic field.
 
 In progress at this commit (author drafts, untracked until audited):
 BackgroundModeMaxwell / BackgroundModeResponse (modal Sol; the background mode
 as a global weak Maxwell field whose scattered part is purely outgoing, and its
 identification with the shells' actual response to each regular incident mode),
-SourcePairedPlaneMagnetic (fredholm Sol; magnetic shell reaction field, compact
-limit through the first-order jet limits, curl analogue of central-equals-wall),
-RestrictedTEActualCounting (channel Sol; diagonal assembly: parity counting plus
-whole-plane L1 convergence of the actual flux gives the counting statement for
-the actual device, and the counted-subspace form with the isometric scattering
-map).
+SourcePairedPlaneIdentification (fredholm Sol; the assembled plane fields equal
+the fields of the combined shell-plus-inclusion solution, by the interchange of
+the bounded shell inverse with the Bochner integral over the inclusion source),
+RestrictedTEActualSquare (channel Sol; fixed square section with the
+sign-flipped device and the permittivity bounds 1 <= eps <= eps_plus).
 
 Remaining bridge to the physical dielectric, in order: (a) background lift: radial
 level done (stage 25); the background Maxwell field and its identification with
 the shells' actual response remain (in progress); (b) identification of the all-degree radiated field
 outside the core with the mode series (coefficients = source moments, bounded
-by the regular value at the inclusion scale); (c) the magnetic plane field and
-its compact convergence, and the identification of the assembled plane field
-with the combined shell-plus-inclusion solution (operator/integral interchange);
+by the regular value at the inclusion scale); (c) the magnetic plane field: done
+(stage 28); the identification of the assembled plane fields with the combined
+shell-plus-inclusion solution (operator/integral interchange) is in progress;
 (d) whole-plane L1 convergence of the paired-shell
 plane flux to the parity-device flux (compact part from (c), remote part from
-BarrierDegreeSeriesFlux, parity tail by integrability); (e) the diagonal choice
-of the shell index as a function of n and the counting statement for the
-actual device; (f) unit throughput: done for the actual device whenever the
+BarrierDegreeSeriesFlux, parity tail by integrability); (e) the diagonal choice and the
+counting statement: done modulo the L1 interface (stage 27); (f) unit throughput: done for the actual device whenever the
 effective block is a unit (stage 26). The modal theorem stays blocked by
 Hermite-Lindemann.
 
@@ -293,9 +303,9 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (BackgroundModeMaxwell,
-   SourcePairedPlaneMagnetic, RestrictedTEActualCounting);
+   SourcePairedPlaneIdentification, RestrictedTEActualSquare);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
