@@ -129,3 +129,8 @@ radius beyond the inner radius.
 Stage 17: SourceRemotePlaneUniform (11, fredholm Sol author, root audit):
 exterior plane flux constants of the paired shells uniform in the shell index;
 the absolute finite-band plane flux outside the core radius tends to zero.
+
+Stage 18: SourceRemotePlaneSeries (5, fredholm Sol author, root audit): decompositions
+with summable constants pass to series; conditional on degree-summable per-mode
+constants beyond a common shell threshold, the absolute all-degree plane flux of
+the paired-shell series outside the core tends to zero.
