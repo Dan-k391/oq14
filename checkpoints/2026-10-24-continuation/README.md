@@ -164,3 +164,10 @@ author): unit throughput of the complete lossless field for finite TE incident
 fields at unit frequency, by the exact far-flux expansion and a Cesaro average over
 the radius (no Riemann-Lebesgue step); the weak-Maxwell pair and exterior
 representation of the actual device are hypotheses, satisfiable in vacuum.
+
+Stage 24: SourcePairedPlaneCompact (25, fredholm Sol author, root audit): the
+finite-shell effective block commutes with the half-turn (solutions of fixed data
+are fixed with invariant source); the assembled plane electric field of the
+effective solutions converges uniformly on balls at positive distance from the
+carrier to the parity-device total electric field with gain q^n. Magnetic shell
+reaction field and the physical identification of the assembled field remain.
