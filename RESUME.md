@@ -17,7 +17,7 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 208 modules / 1130 reports at the time of writing (169 / 832
+compiled modules: 209 modules / 1133 reports at the time of writing (169 / 832
 at the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -108,7 +108,7 @@ eventually the effective and combined blocks are units and effective inverses
 and solutions converge; the limiting block is a unit when
 `errorBound ci 1 b + ‖limitingOperator‖ < 1`). Both were independently audited
 by the modal subagent before the final commit. SourcePairedSmallness 3 (root
-author, final; modal audit requested): the limit operator norm is at most the
+author; modal audit recorded): the limit operator norm is at most the
 inclusion contrast bound times the carrier volume times the sum of the nine
 limit-kernel sup norms, so inclusion-data smallness makes the limiting
 effective block a unit and eventually the combined blocks are units.
@@ -129,9 +129,9 @@ channel count, or any modal statement. Full OQ14 closure remains open.
 
 ## Immediate next work (in order)
 
-1. Record the modal audit of SourcePairedSmallness if it was not recorded
-   (`tmp/record_modal_after_5238.py SourcePairedSmallness`), copy its log under
-   the checkpoint evidence and commit.
+1. Nothing is pending from this session: every module added today is
+   independently audited and recorded (209 / 1133); the Git tag
+   `oq14-resume-2026-10-24` marks the final commit.
 2. Root: the assembled eventual explicit combined solution formula (per shell
    index it is `ShellInclusionVolume.solution_eq` with
    `SourcePairedInclusion.effective_eq` and the eventual unit property; the
