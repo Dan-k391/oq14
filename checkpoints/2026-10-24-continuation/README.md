@@ -152,3 +152,8 @@ shell-reaction field at arbitrary points converges uniformly on balls to the
 limit field for L2-convergent inclusion solutions, and on half-turn invariant
 sources the limit field is the parity plane reaction field. (Record scripts now
 accept primed theorem names.)
+
+Stage 22: BarrierDegreeSeriesFlux (20, modal Sol author, root audit): the absolute
+plane flux outside the core of the all-degree paired-shell series with bounded
+coefficient families tends to zero with the shell index (stages 18 and 20
+assembled; modes encoded by the natural numbers with extension by zero).
