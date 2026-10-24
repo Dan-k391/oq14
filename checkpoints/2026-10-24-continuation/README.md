@@ -141,3 +141,8 @@ sensitive remainder bound (Young on the difference set), eventual smallness of
 the doubled device data at scales q^(-n), and the closure theorem instantiated
 for the partner device: for all large n the paired-shell effective solutions
 converge to the parity solution with gain q^n of every finite TE datum.
+
+Stage 20: BarrierDegreeFluxConstants (20) and BarrierDegreeDecomp (36) root-audited
+(modal Sol author): per-mode tangential/radial decomposition constants explicit in
+the degree, summable against any polynomial weight, with one degree-independent
+threshold radius; the exact interface of the series theorem is discharged.
