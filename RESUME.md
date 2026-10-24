@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 240 modules / 1482 reports at the latest third-continuation
-commit `bd9a349` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 247 modules / 1592 reports at the latest third-continuation
+commit `396e899` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -195,13 +195,54 @@ constants uniform in the shell index; the absolute finite-band plane flux
 outside the core radius tends to zero with the shell index
 (`band_outside_core_flux_tendsto`).
 
-In progress at this commit (author drafts, not audited unless listed above):
-BarrierDegreeFluxConstants (modal Sol; degree-explicit summable decomposition
-constants), SourceRemotePlaneSeries (fredholm Sol; abstract all-degree series
-step consuming those constants), WeightedRemainderSchur and the partner
-smallness/transfer modules (channel Sol; carrier-sensitive remainder bound R1
-and instantiation of the closure theorem for the partner device). Drafts are
-untracked until audited.
+Stage 18 (fredholm Sol, root audit): SourceRemotePlaneSeries 5: decompositions
+with summable constants pass to series; conditional on degree-summable per-mode
+constants beyond a common shell threshold, the absolute all-degree plane flux of
+the paired-shell series outside the core tends to zero.
+Stage 19 (channel Sol, root audits): WeightedRemainderSchur 9 (the weighted
+dynamic remainder sandwich only sees the kernel on differences of carrier
+points: Young bound 9 * bound * L1 mass on any measurable superset of K-K),
+RestrictedTEPartnerSmallness 25 (remainder mass quadratic and carrier volume
+cubic in the scale; at scales q^(-n) the data term is at most a constant times
+the scale, so the limiting effective block is eventually a unit),
+RestrictedTEPartnerTransfer 2 (`partner_shell_solutions_tendsto`: for q>1,
+every enclosing radius and every finite restricted TE coefficient vector, for
+all large n the paired-shell effective solutions converge to the explicit parity
+solution with gain q^n of the half-turn-fixed datum).
+Stage 20 (modal Sol, root audits): BarrierDegreeFluxConstants 20 and
+BarrierDegreeDecomp 36: per-mode decomposition constants explicit in the degree
+(factorial decay of the regular value at the inner scale absorbs the low and
+intermediate regimes; the barrier regime is geometric beyond an explicit
+threshold radius), summable against any polynomial weight with one
+degree-independent threshold: the exact interface of the series theorem.
+Stage 21 (fredholm Sol, root audit): SourcePairedReactionField 13: the
+shell-reaction field at arbitrary points, uniform kernel convergence on product
+balls, uniform convergence of the reaction fields on balls for L2-convergent
+inclusion solutions, and the identification of the limit field with the parity
+plane reaction fields on half-turn invariant sources.
+
+In progress at this commit (author drafts, untracked until audited):
+BarrierDegreeSeriesFlux (modal Sol; all-degree paired-shell flux outside the
+core for bounded coefficient families, assembling stages 18 and 20),
+SourcePairedPlaneCompact (fredholm Sol; invariance of the finite-shell
+effective solutions, free potential and total plane field convergence on
+compact sets at positive distance from the carrier, magnetic side to be
+reported), ChannelCesaroThroughput / ChannelScaledFields (channel Sol; unit
+throughput by a Cesaro average over the radius of the constant lossless flux,
+which removes the e^{-2ikr} cross term exactly).
+
+Remaining bridge to the physical dielectric, in order: (a) background lift
+(incoming-to-core multiplier convergence of the finite-band incident family with
+the phase choice radius s = 2 pi (s+1), so the closure datum is the actual
+core background field); (b) identification of the all-degree radiated field
+outside the core with the mode series (coefficients = source moments, bounded
+by the regular value at the inclusion scale); (c) the magnetic plane field and
+its compact convergence; (d) whole-plane L1 convergence of the paired-shell
+plane flux to the parity-device flux (compact part from (c), remote part from
+BarrierDegreeSeriesFlux, parity tail by integrability); (e) the diagonal choice
+of the shell index as a function of n and the counting statement for the
+actual device; (f) unit throughput. The modal theorem stays blocked by
+Hermite-Lindemann.
 
 ## What this does and does not establish
 
@@ -220,20 +261,18 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record the in-progress drafts as they land (BarrierDegreeFluxConstants,
-   SourceRemotePlaneSeries, WeightedRemainderSchur, partner smallness/transfer);
+1. Audit and record the in-progress drafts as they land (BarrierDegreeSeriesFlux,
+   SourcePairedPlaneCompact, ChannelCesaroThroughput, ChannelScaledFields);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`.
-2. All-degree remote return flux: combine the degree-explicit constants with the
-   series step (per-mode decomposition with summable constants and a common
-   shell threshold), then the all-degree absolute plane flux outside the core.
-3. Channel: R1 carrier-sensitive remainder bound, instantiate the closure theorem
-   for the partner device, then unit throughput / power normalization of the
-   full scattering map (Riemann-Lebesgue cross-term step), closed form
-   halfPlane = 1/(2 pi h).
-4. Identify the parity plane flux with the paired-shell total-field plane flux
-   (needs the all-degree remote bound and a field representation of the
-   inclusion solution on the plane).
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`.
+2. Bridge items (a)-(f) listed at the end of the third-continuation section,
+   in that order; (a) and (b) go to the modal author after the series assembly,
+   (c)-(e) to the fredholm author after the compact plane field, (f) is with the
+   channel author.
+3. Channel afterwards: closed form halfPlane = 1/(2 pi h), bounded symmetric
+   section for the doubled device.
+4. Record scripts `tmp/record_after_5238.py` and `tmp/record_modal_after_5238.py`
+   now accept primed theorem names (regex widened on 2026-10-24).
 5. Modal: see the scope note; the fixed input remains per-frequency.
 
 ## Handoffs and how to resume safely
