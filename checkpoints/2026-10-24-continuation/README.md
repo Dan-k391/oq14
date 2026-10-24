@@ -300,3 +300,12 @@ fields of the shell solution (magnetic pointwise off the origin, electric beyond
 the stack radius and a.e. in the annulus); outside background plane fields and
 the outside decomposition reduced to the radiated part; the assembly with an
 n-dependent global unimodular phase, with the fields depending on the input only.
+
+Stage 43: RestrictedTEParityInstance (2, channel Sol author) and SourceRadiatedAnnulus (34,
+fredholm Sol author) root-audited: the counting theorem with the parity phase
+and the discharged core majorant carries only two hypotheses on the radiated
+plane fields (measurability and the uniform decomposition); the radiated field
+of the inclusion equals the layered mode series almost everywhere on the whole
+region beyond the inner shell radius (weak route through bounded functionals and
+the fundamental lemma), with the uniform decomposition export, plane measurability
+and linearity of the series in the inclusion solution.
