@@ -403,3 +403,10 @@ quantifiers): at unit frequency, at every frequency k > 0, and
 0 < tau < 1, 0 < eta < delta fixed before N), including the unit throughput of
 the scattering map and the per-basis-vector physical identification; the
 docstring maps the clauses to uc:counterexample and lists what is not asserted.
+
+Stage 51: DilationKernels (24, modal Sol author, root audit): the dilation
+identities of the Green kernels at frequency k > 0 (phi_k(x) = k phi_1(k x),
+gradient k^2, Hessian and dyadic/remainder k^3, static Hessian k^3) and of the
+kernel responses to the dilated source k rho(k .): the remainder response and
+the magnetic response scale by k, the gradient response is invariant; the
+kernel-level inputs of the frequency-k volume-solution identification.
