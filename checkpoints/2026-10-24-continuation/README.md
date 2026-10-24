@@ -233,3 +233,12 @@ solution inside the core (dipole superposition, block decomposition, effective
 datum = datum of the background field on the inclusion, a.e. identification on
 the gap annulus), and the combined total fields converge on compacts to the
 parity device under converging background and effective data.
+
+Stage 34: RestrictedTEActualFields (18, channel Sol author, root audit): the counted-
+subspace theorem through the fixed square for every pair of linear plane field
+families satisfying the actual field estimates (measurability, uniform
+convergence on disks to the parity fields, inverse-cube tail majorant); the
+structure is consistent. Open point noted by root: the limit incident of the
+actual device is the input rescaled degreewise by half the limiting
+transmission, the parity incident is the input times q^n; the even-degree
+limiting transmission must be computed to align them.
