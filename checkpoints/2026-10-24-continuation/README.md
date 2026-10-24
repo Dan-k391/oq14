@@ -184,3 +184,17 @@ Stage 26: ChannelMaterialThroughput (8) and ChannelScatteringMap (19) root-audit
 discharged for the material volume solution, so the actual paired-shell-plus-
 inclusion device has unit throughput whenever the effective block is a unit, and
 the scattering map on the finite TE input space is linear and isometric.
+
+Stage 27: RestrictedTEActualCounting (19) and RestrictedTEActualWindow (15) root-audited
+(channel Sol author): the diagonal assembly (parity counting plus whole-plane L1
+convergence of an actual flux family gives the counting statement) and the
+manuscript's counted-subspace form for the actual paired device with its
+isometric scattering map, for every N, every window 0 < eta < delta, every tau
+at most one; the L1 interface and quadratic homogeneity of the actual flux are
+the remaining hypotheses.
+
+Stage 28: SourcePairedPlaneMagnetic (50, fredholm Sol author, root audit): the
+magnetic shell reaction field, the curl identity, uniform convergence on balls
+through the first-order jet limits, the odd-kernel central-equals-wall identity,
+and the assembled plane magnetic field converging to the parity-device total
+magnetic field on compacts at positive distance from the carrier.

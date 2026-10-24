@@ -1,0 +1,34 @@
+# Counted subspaces of the actual device: what the Lean statement asserts (author scope note, October 24)
+
+Author scope note by the channel proof agent for the final counted-subspace theorem `OQ14.RestrictedTEActualWindow.actual_counted_subspaces_all` (lean/RestrictedTEActualWindow.lean, reviews/restricted_te_actual_window.md) and the modules below it: `RestrictedTEActualCounting` (diagonal transfer, `IsCounted`), `ChannelScatteringMap` and `ChannelMaterialThroughput` (unit throughput of the actual material device), `ChannelUnitThroughput`, `ChannelFarFluxExpansion`, `ChannelScaledFields`, `ChannelCesaroThroughput` (the energy identity), `RestrictedTEPartnerSmallness`, `RestrictedTEPartnerTransfer`, `WeightedRemainderSchur` (the effective unit-ness of the limiting block). Nothing here upgrades a manuscript PROVED label.
+
+## 1. The manuscript statement being approached
+
+Theorem `uc:counterexample` (PROVED in the manuscript): fix `k0 > 0`, `eps_+ > 1`, `L > 0`, `0 < tau < 1`, `0 < eta < delta`; for every positive integer `N` there is a finite piecewise smooth real scalar dielectric with `1 <= eps_r <= eps_+`, vacuum exterior, whose physical incoming space contains an `N`-dimensional counted subspace through the same square `D`; the selected outgoing map is the complete scattering map, every vector has unit power throughput, passage at least `eta` times the power, absolute bypass at most `delta` times the power, all plane fluxes integrable. Definition `pr:count` of a counted subspace: transmission `||Ta||^2 >= tau ||a||^2`, passage `P_D(a) >= eta ||Ta||^2`, absolute bypass `int_{z=0 \ D} |S_z(a)| <= delta ||a||^2`.
+
+## 2. What the Lean statement asserts for the actual dielectric
+
+Under the two hypotheses of section 3, for every `N`, every `0 < eta < delta`, every `tau <= 1`, every gain base `q > 1`, `r0 > 0` and contrast `chi > 0` (wave number normalized to `k = 1`), there is an explicit device and an `N`-dimensional orthonormal family `A : Fin N -> Index ->0 C` of finite restricted TE inputs (the interpolation family), and for all large gain indices `n` and then all large shell indices `r`, for the actual paired-shell-plus-inclusion device (shell stack `shell q hq n r`, inclusion = the `2N` small spheres of radius `rho a_n` at height `h a_n`, `a_n = (q^n)^-1`, half-turn symmetric, centres above the points `(r0, l)`):
+- Transmission: the scattering map `actualScatter` (the amplitude of the complete outgoing field in `L2(sphere, C^3)`, normalized like the input) satisfies `||actualScatter x||^2 = physicalPower x = ||input x||^2` for every finite input `x` (exact unit throughput, proved from the weak Maxwell system of the actual material solution, the sphere-flux constancy of the lossless field, the far expansion with the oscillating cross terms and the Cesaro lemma; the effective block is a unit for large `n` by the partner-device smallness). So `tau ||a||^2 <= ||Ta||^2` for every `tau <= 1`.
+- Passage and bypass: for every vector `x` of the span, `passage >= eta * physicalPower x` and `bypass <= delta * physicalPower x`, where passage is `Re int_D Fact` and bypass is `int_{D^c} |Fact|` for the plane flux density `Fact n r x` of the actual device (hypothesis), through the section `D = {|x| > r0}` or through the bounded symmetric section `{|x| > r0} cap ball 0 T`. This is the manuscript's `pr:count` with `||Ta||^2 = ||a||^2`.
+- The span has dimension exactly `N`, the inputs are orthonormal in the physical power inner product, and no operator of rank below `N` approximates the scattering map on them within `sqrt tau` (`actual_device_no_low_rank`).
+- Everything holds for any fixed thresholds with `0 < eta < delta` (the window is chosen by `RestrictedTEActualWindow.window_choice`: `rho = h/2`, `h` explicit, after the interpolation scale).
+
+## 3. What is hypothetical
+
+Only two statements about the family `Fact : N -> N -> (Index ->0 C) -> Plane -> C` of plane flux densities of the actual device are assumed, for the chosen device:
+(H-hom) `HomogeneousFlux Fact`: `Fact n r (z x) = |z|^2 Fact n r x`.
+(H-L1) `L1Interface`: for every orthonormal family of inputs, every `n`, every `epsilon > 0`, for all large `r`, on the unit-power sphere of the span, `Fact n r x` is integrable, the difference with the parity flux at the matching scale is integrable and its `L1(R^2)` norm is at most `epsilon`.
+Both are the content of the identification of `Fact` with the actual normal Poynting-flux density of the complete field of the finite paired-shell device at `z = 0` and of the whole-plane L1 convergence to the parity-device flux (electric side in `SourcePairedPlaneCompact`, magnetic side in progress on the fredholm/modal side). The effective unit-ness of the limiting block is NOT hypothetical: it is supplied for large `n` by `RestrictedTEPartnerSmallness.partner_limitEffective_isUnit`. The parity-device counting, the unit throughput, the window and the geometry are proved.
+
+## 4. Differences from the manuscript statement (not hypotheses, but not yet matched)
+
+- Section: the Lean section is `{|x| > r0}` (its boundary lines pass through the dipole points; locally a half-plane at each of the `2N` points) or its intersection with a disk, not the square `D = (-L/2, L/2)^2`. The manuscript's right-edge/left-edge points with the square on the inner side correspond to the opposite half-plane at each point (`nvec -> -nvec` in the concrete device with a sign-flipped jet target); this variant of the concrete device has not been formalized.
+- Dielectric class: the Lean theorem holds for every `q > 1` and `chi > 0`; the bound `1 <= eps_r <= eps_+` requires choosing `q^2 <= eps_+` and `chi <= eps_+ - 1` (and the shell stack contrast bounds of `SourcePairedGeometry`), which is not a conclusion of the Lean statement.
+- Frequency: normalized to `k = 1` (the problem is scale-invariant); the support radius grows with `r`, as in the manuscript.
+- The finite TE inputs are the even-`l` finite restricted TE fields (input space of the physical power inner product), the manuscript's physical incoming space contains them; no claim is made about the full incoming space.
+- Passage here is the real part of the signed section integral of the flux density `Fact`; the identification with `(1/2) Re int_D (E x conj H) . z` is part of the hypothetical identification of `Fact`.
+
+## 5. Order of the existential choices (diagonal)
+
+Interpolation family and jet scale from `(r0, y, chi)` first; then `h` and `rho` from the thresholds and the jet scale; then the geometry bound `R`; then, for the given `Fact`, `n` large (parity counting and limiting unit-ness), then `r` large (L1 error below the margin `min(eta' - eta, delta - delta')`). This matches the order in the manuscript's proof (choose the parity model, then the gain, then the radial stack).
