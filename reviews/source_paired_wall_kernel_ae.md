@@ -1,0 +1,5 @@
+# SourcePairedWallKernelAE author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 5 reports are standard-only. Source SHA256 `96FED533FD938047F4E7144FF96E32BD3D24966BBFEB23F151E2EC57A060118A`. Final compiler log `lean/logs/SourcePairedWallKernelAE-final.log`, SHA256 `6C474C38D9B9D0C0261EB9A6A15B5737BF0F312C34FD058F33E35199A820F5CE`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+Mechanical twin of the audited SourcePairedWallKernel with the pointwise invariance hypothesis replaced by almost-everywhere invariance and the frozen central-equals-wall identity replaced by its almost-everywhere version; the proofs are otherwise identical: on the almost-everywhere invariant sector the limiting effective inclusion block equals the explicit parity material block with gain parameter q^n, and a parity solution with such a source solves the limiting effective equation and is the limiting effective solution when that block is a unit.

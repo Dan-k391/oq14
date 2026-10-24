@@ -68,3 +68,13 @@ the proper-half-turn-invariant source sector the limiting effective block IS the
 explicit parity material block with B = q^n) and SourcePairedParityLimit (2: the
 paired-shell effective inclusion solutions converge to the parity-device
 solution of invariant data). Ledger copy: 210 modules / 1141 reports.
+
+Stage 8 (same day): half-turn equivariance of the parity block fully proved by
+the modal subagent (HalfTurnVectorAction 32, HalfTurnParityEquivariance 15,
+root audits), SourcePairedWallKernel (5) and SourcePairedParityLimit (2)
+modal-audited. Root-authored, author-final, modal audits queued:
+HalfTurnReactionBridgeAE (3), SourcePairedWallKernelAE (5),
+SourcePairedParityClosure (4: for a half-turn symmetric inclusion in the core
+of the actual paired shells and half-turn-fixed data, the effective inclusion
+solutions converge to the explicit parity-device solution with B = q^n). Ledger
+copy: 214 modules / 1195 reports.

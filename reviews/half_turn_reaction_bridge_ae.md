@@ -1,0 +1,5 @@
+# HalfTurnReactionBridgeAE author review
+
+Root author complete-source review and final pinned compiler plus importable object PASS, exit 0, no warnings; all 3 reports are standard-only. Source SHA256 `3009212D9894114010E955D878E3AEFB220BDC2A045F2A66AE7C8FCD8B203ED8`. Final compiler log `lean/logs/HalfTurnReactionBridgeAE-final.log`, SHA256 `CB64D1351BE6F5E6605EE66DCBE4B92E813B80E5CE962D258DAFB406452A8C91`. Written 2026-10-24. Independent (non-root) audit pending. Frozen source.
+
+Almost-everywhere proper-half-turn invariance of a source field is defined and follows from pointwise invariance. The frozen invariance proof of the Herglotz potential pushes the source invariance through one measure-preserving change of variables inside an integral, so it holds verbatim under the almost-everywhere hypothesis by congruence of integrals; the central-equals-wall identity on the invariant sector then follows with the almost-everywhere hypothesis exactly as in the frozen bridge. Nothing else changes.

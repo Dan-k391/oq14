@@ -1525,5 +1525,35 @@
     "source_sha256": "54a09e2d5d75feeeaedb0073fe2b8dac8fdcd7c324c6346aecc93a6516318169",
     "audit_log": "lean/logs/SourcePairedSmallInclusion-root-audit.log",
     "audit_log_sha256": "a09ce6b5f919736a2db0f3e5f5b555ed2170b059ae7cd50dd22ac63abed31ecd"
+  },
+  {
+    "module": "SourcePairedWallKernel",
+    "reports": 5,
+    "source_sha256": "4eb628aabcab2c8a7f99f45a7817e70624b3d065bb5db418dcd4ece1b1ad3050",
+    "audit_log": "lean/logs/SourcePairedWallKernel-modal-audit.log",
+    "audit_log_sha256": "bf2ab52e4d95318fe52412bc110babfe9f51c73e327acae3f6fb73a4e1e48b21",
+    "independent_review": "reviews/source_paired_wall_kernel_independent.md"
+  },
+  {
+    "module": "SourcePairedParityLimit",
+    "reports": 2,
+    "source_sha256": "c39321b1f8779ddc5805a362b22551279c5e39cc3f7ff7dfd749c6f1df1b8e83",
+    "audit_log": "lean/logs/SourcePairedParityLimit-modal-audit.log",
+    "audit_log_sha256": "0879def19e3992d6642d686c96cff3789059a68abc6036384c27787b8c909c13",
+    "independent_review": "reviews/source_paired_parity_limit_independent.md"
+  },
+  {
+    "module": "HalfTurnVectorAction",
+    "reports": 32,
+    "source_sha256": "05ea85b6a68c6baa25c19f85e810cd3ed8f97dc64cdbfd680e2b1a6ae52d830c",
+    "audit_log": "lean/logs/HalfTurnVectorAction-root-audit.log",
+    "audit_log_sha256": "348a129fbe7c509b2cf50c10f9792708551e967fabf6ec137957382af6d6610c"
+  },
+  {
+    "module": "HalfTurnParityEquivariance",
+    "reports": 15,
+    "source_sha256": "3c5d8b6a050c1e8d827083a62ca5327d7f47bcb1c5b05db390f195d74dde0ddf",
+    "audit_log": "lean/logs/HalfTurnParityEquivariance-root-audit.log",
+    "audit_log_sha256": "eb9e2349352065212799146589635f5c2075fa093883b69df24c14e1873bd643"
   }
 ]

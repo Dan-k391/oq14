@@ -1,0 +1,7 @@
+# SourcePairedSolutionFormula — author verification
+
+Frozen source SHA256 `9009B05818FD41C28EF9C2E3978AB07D55C96641626EE53C84446CC0B9A0A0EC` (3344 bytes). Draft check1 and final/object run EXIT0, no warnings, no errors, no `sorry`, two standard-only reports (`[propext, Classical.choice, Quot.sound]`). Final log `lean/logs/SourcePairedSolutionFormula-final.log` SHA256 `051D8EF3B37F89D5F89AE2630D34C0FC4E72C575A5C1749B8FD59E66957197F0`; exit file `lean/logs/SourcePairedSolutionFormula-final.exit.log` = 0; object `lean/.lake/build/lib/lean/SourcePairedSolutionFormula.olean` 97688 bytes. Imports `SourcePairedSmallness`; nothing existing edited; compile about 2m45s with `maxHeartbeats 4000000`.
+
+The timeout is avoided by naming every intermediate with its literal type. `combined_solution_eq` is the pointwise-in-r statement: for `hb : b ≤ (data q hq n r).R`, `hci` (inclusion vanishes off `closedBall 0 b`) and `hE : IsUnit (volumeBlock ci 1 b - reaction (shell q hq n r) ci 1 (data q hq n r).X)`, every `f` satisfies `MaterialField.solution (add (shell q hq n r) ci) 1 (data q hq n r).X f = ShellInclusionBlocks.combinedInverse (S (shell q hq n r)) (S ci) (kernel 1 (data q hq n r).X) f`; proof: `disjoint`, `shell_isUnit`, `effective_eq` and `ShellInclusionVolume.solution_eq`. `eventually_combined_solution_eq` is the requested eventual statement (`∀ᶠ r, ∀ f, …` under `limitEffective` being a unit), by `eventually_effective_isUnit` and `eventually_inner_radius`.
+
+Root independent audit pending.
