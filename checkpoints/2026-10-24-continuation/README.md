@@ -341,3 +341,23 @@ channel branch; the remaining caveats are unit frequency, finite even-degree TE
 inputs, the open square up to parametrization, eventual statements without
 rates, and the identification being in space plus continuous plane
 representatives.
+
+Stage 47 (channel Sol authors, root audits): FrequencyScalingMaxwell (23),
+FrequencyScalingFlux (12), FrequencyScalingPower (8): the scaling lemmas that
+remove the unit-frequency caveat of the channel branch (design note
+reviews/frequency_scaling_design.md). The frozen weak dielectric system
+TestMaxwell is scale invariant: dilated compact smooth tests, the change of
+variables with Jacobian k^-3 and the chain rule k^-1 give TestMaxwell k for the
+dilated coefficient (value at k x, same bounds) and the amplitude-normalized
+dilated fields k F(k x), vacuum case included. The plane flux density of the
+dilated field maps is k^2 times the original at k xi, the square and its
+complement dilate exactly, and passage and bypass through the square of
+half-side L of the dilated fields equal those through the square of half-side
+k L of the originals, so the counted-subspace predicate transfers with the same
+scattering map, power and thresholds. The inward sphere power of the dilated
+finite TE incident pair at radius r is the unit-frequency power at radius k r,
+tending to physicalPower; the dilated incident pair is a vacuum weak Maxwell
+pair at frequency k; the far amplitude is unchanged (factor k r times k is
+factor 1 (k r)). Ledger 295/2747. The device module (combined-solution weak
+Maxwell system at k = 1 and k, transported physical identification) and the
+final k-frequency counting theorem are in progress and not part of this stage.
