@@ -182,6 +182,17 @@ form: for every frequency k > 0, eps_plus > 1, side L, 0 < tau < 1 and
 gain and shell indices, dielectric in [1, eps_plus], an N-dimensional counted
 subspace of finite TE inputs through (-L/2, L/2)^2 and unit throughput of the
 scattering map; its docstring lists what is not asserted (finite TE inputs,
-dilation sense of k, identification in space, no rates). The constructive
-identification of the dilated fields with the frequency-k volume solution is in
-progress. (B) and (C) are unchanged; full OQ14 closure is still not claimed.
+dilation sense of k, identification in space, no rates). Stages 51-56 then
+remove the dilation sense: the dyadic kernel satisfies G_k(z) = k^3 G_1(k z),
+so the dilation D_k u = k u(k .) conjugates every operator of the volume block
+and transports the solution map; the frequency-k fields of the counting
+theorem are the frequency-k material total fields of the frequency-k volume
+solution of the explicit dilated dielectric with the rescaled incident field
+(`FrequencyVolumeSolution.dilated_fields_are_volume_solution`), and the
+counting theorems are restated with that clause
+(`CountedSubspacesVolume.counted_subspaces_manuscript_volume`). What (A) still
+does not assert: the full physical incoming space (finite even-degree TE
+inputs only), a plane trace of the L2 field (identification in space plus
+continuous plane representatives), the manuscript's flux normalization as a
+separate clause, and rates in n or r. (B) and (C) are unchanged; full OQ14
+closure is still not claimed.

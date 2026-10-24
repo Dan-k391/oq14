@@ -511,10 +511,24 @@ modal branch (degeneration of the index to 1 against the polynomial growth of
 an algebraic coincidence branch); the closure assessment's (C) paragraph now
 states the modal block precisely (items 1 and 3 remain large).
 
-In progress at this commit (author draft, untracked until audited):
-CountedSubspacesVolume (channel Sol; the frequency-k counting theorem and its
-manuscript form restated with the volume-solution clause for every basis
-vector, replacing the dilation caveat).
+Stage 56 (channel Sol, root audit): CountedSubspacesVolume 2:
+`counted_subspaces_at_frequency_volume` and `counted_subspaces_manuscript_volume`,
+the frequency-k counting theorem and its manuscript form verbatim, with the
+identification clause extended by the stage-55 summary: for every input
+(eventually in r) and for every basis vector (at the explicit indices) the
+rescaled physical fields are the frequency-k material total fields of the
+frequency-k volume solution at radius X/k of the explicit dilated dielectric
+with the rescaled incident field, whose weighted datum is the dilated datum,
+and the dilated block is a unit iff the unit-frequency block is. The dilation
+caveat of the frequency statement is removed; the docstring lists what is
+still not asserted (finite even-degree TE inputs; flux integrability inside
+IsCounted; identification in space with continuous plane representatives off
+the circle; the flux normalization; no rates; the solution map is Ring.inverse
+of the block, whose unit-frequency invertibility for the device is the frozen
+development's).
+
+In progress at this commit: nothing; every delivered module is audited and
+recorded, and no brief is outstanding.
 
 What the channel branch now establishes in Lean: the manuscript's
 uc:counterexample form for the actual paired dielectric (ordinary dielectric
@@ -531,13 +545,14 @@ coefficient, dilated fields satisfying the weak Maxwell system at frequency k,
 same scattering map, power and thresholds, square of half-side L), and by stage 50 in the manuscript's literal form
 (`CountedSubspacesManuscript.counted_subspaces_manuscript`: one finite device per
 N with explicit gain and shell indices, square (-L/2, L/2)^2, 0 < tau < 1,
-0 < eta < delta, unit throughput). Caveats that
+0 < eta < delta, unit throughput), and by stage 56 with the frequency-k fields
+identified with the frequency-k material solution of the explicit dilated
+dielectric (`CountedSubspacesVolume.counted_subspaces_manuscript_volume`). Caveats that
 remain and are stated in reviews/channel_actual_counting_scope_2026_10_24.md:
 finite even-degree restricted TE inputs; the open square up to parametrization;
 all statements eventual in the gain index n and the shell index r without
 rates; the identification is in space, not almost everywhere on the plane (the
-plane fields are the continuous representatives); the frequency-k fields are
-dilations of the unit-frequency fields, not re-solved volume equations. The modal branch (C) remains
+plane fields are the continuous representatives). The modal branch (C) remains
 blocked by Hermite-Lindemann; the hotspot branch (B) keeps its per-frequency
 input. Full OQ14 closure is therefore still not claimed.
 
@@ -574,10 +589,14 @@ open; see `reviews/closure_assessment_2026_10_24.md`.
    FrequencyFieldResponse, DilationVolume, FrequencyVolumeSolution; no
    uniqueness theory: every operator of the volume block conjugates by the
    dilation D_k u = k u(k .) because the dyadic kernel satisfies
-   G_k(z) = k^3 G_1(k z)); the restatement of the counting theorems with that
-   clause (CountedSubspacesVolume) is in progress. Still optional afterwards:
-   (a) explicit thresholds or rates in n and r. The modal branch: see the
-   draft degeneration note; not assigned. Every
+   G_k(z) = k^3 G_1(k z)), and the counting theorems are restated with that
+   clause (stage 56, CountedSubspacesVolume). The tag
+   `oq14-resume-2026-10-25-2` marks the stage-56 refresh commit. Nothing is
+   assigned. Still optional: (a) explicit thresholds or rates in n and r (not
+   needed for the manuscript's existential statement). The modal branch (C):
+   see the draft degeneration note; the honest status is that it needs either
+   a transcendence input or that unverified analysis, plus two large analytic
+   items; not assigned. Every
    audited module is recorded; earlier tags `oq14-resume-2026-10-24-3`,
    `oq14-resume-2026-10-24-2`,
    third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`, `d8c0197`, `513ded8`, `8ae8281`, `3c5beef`, `ba118ff`, `738a361`, `86237a5`, `bf235ac`, `ff74c55`, `7f1cb3a`, `d156d79`, `a2fd08b`, `8e04cd0`, `7c667c1`, `d3c2a6e`, `4d50464`, `4febdea`, `e7b81e6`, `ea163dd`, `03d765b`.
