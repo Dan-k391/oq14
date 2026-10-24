@@ -293,3 +293,10 @@ structure of the piecewise assembly is discharged for the concrete doubled
 device (background family plus radiated decomposition plus eventual solution
 bound on the unit sphere), including the magnetic core formula of the
 background family.
+
+Stage 42: RestrictedTEBackgroundOutside (53) and RestrictedTEActualPhase (23) root-
+audited (channel Sol author): the TE background pair equals the actual total
+fields of the shell solution (magnetic pointwise off the origin, electric beyond
+the stack radius and a.e. in the annulus); outside background plane fields and
+the outside decomposition reduced to the radiated part; the assembly with an
+n-dependent global unimodular phase, with the fields depending on the input only.
