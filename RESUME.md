@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 247 modules / 1592 reports at the latest third-continuation
-commit `396e899` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 254 modules / 1696 reports at the latest third-continuation
+commit `e9170ec` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -220,16 +220,33 @@ shell-reaction field at arbitrary points, uniform kernel convergence on product
 balls, uniform convergence of the reaction fields on balls for L2-convergent
 inclusion solutions, and the identification of the limit field with the parity
 plane reaction fields on half-turn invariant sources.
+Stage 22 (modal Sol, root audit): BarrierDegreeSeriesFlux 20: the absolute
+plane flux outside the core of the all-degree, all-mode paired-shell series with
+bounded coefficient families tends to zero with the shell index (modes encoded
+by the natural numbers with extension by zero).
+Stage 23 (channel Sol, root audits): ChannelCesaroThroughput 5,
+ChannelScaledFields 30, ChannelFarFluxExpansion 11, ChannelUnitThroughput 9,
+ChannelAntipodalAmplitude 4: unit throughput of the complete lossless field for
+finite TE incident fields at unit frequency; the sphere flux is constant in the
+radius while its exact far expansion is a convergent part plus exp(-2ir) times a
+convergent coefficient, and an interval average over the radius forces the
+outgoing energy (outgoing incident amplitude plus scattered far amplitude) to
+equal the incoming energy; the weak-Maxwell pair and the exterior representation
+of the actual device are hypotheses, satisfied in vacuum.
+Stage 24 (fredholm Sol, root audit): SourcePairedPlaneCompact 25: the
+finite-shell effective block commutes with the half-turn; the assembled plane
+electric field of the effective solutions converges uniformly on balls at
+positive distance from the carrier to the parity-device total electric field.
 
 In progress at this commit (author drafts, untracked until audited):
-BarrierDegreeSeriesFlux (modal Sol; all-degree paired-shell flux outside the
-core for bounded coefficient families, assembling stages 18 and 20),
-SourcePairedPlaneCompact (fredholm Sol; invariance of the finite-shell
-effective solutions, free potential and total plane field convergence on
-compact sets at positive distance from the carrier, magnetic side to be
-reported), ChannelCesaroThroughput / ChannelScaledFields (channel Sol; unit
-throughput by a Cesaro average over the radius of the constant lossless flux,
-which removes the e^{-2ikr} cross term exactly).
+BackgroundCoreTransmission (modal Sol; background lift: transmitted core
+amplitude 2i over the second shell coefficient, its phase-normalized limit, and
+datum convergence by linearity), ChannelMaterialThroughput (channel Sol;
+discharging the weak-Maxwell pair and exterior representation for the material
+volume solution, at gain one the parity block is the plain volume block, and the
+linear isometric scattering map), SourcePairedPlaneMagnetic (fredholm Sol; the
+magnetic shell reaction field, its compact limit through the first-order jet
+limits, and the curl analogue of the central-equals-wall identity).
 
 Remaining bridge to the physical dielectric, in order: (a) background lift
 (incoming-to-core multiplier convergence of the finite-band incident family with
@@ -237,7 +254,9 @@ the phase choice radius s = 2 pi (s+1), so the closure datum is the actual
 core background field); (b) identification of the all-degree radiated field
 outside the core with the mode series (coefficients = source moments, bounded
 by the regular value at the inclusion scale); (c) the magnetic plane field and
-its compact convergence; (d) whole-plane L1 convergence of the paired-shell
+its compact convergence, and the identification of the assembled plane field
+with the combined shell-plus-inclusion solution (operator/integral interchange);
+(d) whole-plane L1 convergence of the paired-shell
 plane flux to the parity-device flux (compact part from (c), remote part from
 BarrierDegreeSeriesFlux, parity tail by integrability); (e) the diagonal choice
 of the shell index as a function of n and the counting statement for the
@@ -261,10 +280,10 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 
 ## Immediate next work (in order)
 
-1. Audit and record the in-progress drafts as they land (BarrierDegreeSeriesFlux,
-   SourcePairedPlaneCompact, ChannelCesaroThroughput, ChannelScaledFields);
+1. Audit and record the in-progress drafts as they land (BackgroundCoreTransmission,
+   ChannelMaterialThroughput, SourcePairedPlaneMagnetic);
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
