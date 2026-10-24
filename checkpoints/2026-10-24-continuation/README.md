@@ -361,3 +361,16 @@ pair at frequency k; the far amplitude is unchanged (factor k r times k is
 factor 1 (k r)). Ledger 295/2747. The device module (combined-solution weak
 Maxwell system at k = 1 and k, transported physical identification) and the
 final k-frequency counting theorem are in progress and not part of this stage.
+
+Stage 48 (channel Sol author, root audit): FrequencyScalingDevice (6): the
+physical fields of the combined shell-plus-inclusion solution satisfy the frozen
+weak dielectric Maxwell system at k = 1 with the dielectric of the combined
+coefficient whenever the combined block is a unit, hence for the concrete
+doubled device eventually in the gain and shell indices (a statement not
+previously written down for the combined device); the dilated fields k F(k x)
+satisfy the system at frequency k with the dilated coefficient; the stage-45
+physical identification transports along the dilation (region preimage, radii
+divided by k), and the dilated piecewise plane fields of the final counting
+theorem are the dilated space fields at every plane point off the circle of
+radius radius r / k. Ledger 296/2753. The final k-frequency counting theorem is
+in progress and not part of this stage.
