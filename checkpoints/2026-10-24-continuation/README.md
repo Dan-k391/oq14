@@ -157,3 +157,10 @@ Stage 22: BarrierDegreeSeriesFlux (20, modal Sol author, root audit): the absolu
 plane flux outside the core of the all-degree paired-shell series with bounded
 coefficient families tends to zero with the shell index (stages 18 and 20
 assembled; modes encoded by the natural numbers with extension by zero).
+
+Stage 23: ChannelCesaroThroughput (5), ChannelScaledFields (30), ChannelFarFluxExpansion (11),
+ChannelUnitThroughput (9), ChannelAntipodalAmplitude (4) root-audited (channel Sol
+author): unit throughput of the complete lossless field for finite TE incident
+fields at unit frequency, by the exact far-flux expansion and a Cesaro average over
+the radius (no Riemann-Lebesgue step); the weak-Maxwell pair and exterior
+representation of the actual device are hypotheses, satisfiable in vacuum.
