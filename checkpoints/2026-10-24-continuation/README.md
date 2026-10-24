@@ -120,3 +120,8 @@ Stage 15: SourceAnnulusStateBounds (16) and SourceAnnulusPlaneFlux (9)
 root-audited (fredholm Sol author): finite-band annulus plane flux of the
 paired shells tends to zero with the shell index, constants uniform in the
 shell.
+
+Stage 16: BarrierAnnulusStateBounds (11, modal Sol author, root audit): annulus
+radial state bounds in all three degree regimes by induction over the layer
+list; the barrier-range geometric source-weighted bound now holds at every
+radius beyond the inner radius.
