@@ -17,8 +17,8 @@ was made today. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
-compiled modules: 270 modules / 2235 reports at the latest third-continuation
-commit `d20add2` (226 / 1334 at the end of the second continuation, 169 / 832 at
+compiled modules: 271 modules / 2265 reports at the latest third-continuation
+commit `42446f9` (226 / 1334 at the end of the second continuation, 169 / 832 at
 the October 23 stop).
 Every recorded report uses only `propext`, `Classical.choice` and `Quot.sound`
 (some pure-algebra reports use `propext` alone). "Independently audited" means a
@@ -312,15 +312,24 @@ the half-turn-fixed limiting datum, the fields converge uniformly on disks to
 the raw limit, and with the limiting rescaling equal to q^n times a unitary
 twist the counted-subspace theorem holds for the untwisted interpolation
 family from core agreement, the tail majorant and the twist identity.
+Stage 36 (channel Sol, root audit): RestrictedTEActualPiecewise 30: piecewise
+device fields (core inside the inner shell radius, abstract outside), the tail
+from core and outside majorants, the outside majorant from uniform
+decompositions of background plus radiated parts, the background decomposition
+on the unit sphere of the span, eventual boundedness of the inclusion
+solutions, and the composite counted-subspace theorem under the remaining
+analytic hypotheses (outside fields, radiated decomposition, core majorant,
+twist identity).
 
 In progress at this commit (author drafts, untracked until audited):
 CoreRadiatedMajorant with its Core* companion files and
 BackgroundTransmissionParity (modal Sol; the radiated field's inverse-cube
 majorant in the growing core; the even/odd limiting transmission and the
-twist), SourceRadiatedSeries (fredholm Sol; the radiated field outside the core
-as the layered mode series with moment coefficients), RestrictedTEActualPiecewise
-(channel Sol; piecewise fields, tail assembly from the core and outside
-majorants, solution bounds on the unit sphere, final composition).
+twist), SourceRadiatedSeries / SourceRadiatedMagnetic (fredholm Sol; the
+radiated field outside the core as the layered mode series with moment
+coefficients), RestrictedTEBackgroundOutside (channel Sol; the TE background
+pair identified pointwise with the actual total fields of the shell solution
+outside the core, and the outside background field maps).
 
 Remaining analytic work for the L1 interface, all now assigned: the actual
 flux must be defined piecewise (kernel integrals inside the core, the layered
@@ -348,10 +357,12 @@ uniform-in-k hotspot input. Full OQ14 closure remains open; see
 ## Immediate next work (in order)
 
 1. Audit and record the in-progress drafts as they land (CoreRadiatedMajorant and
-   companions, BackgroundTransmissionParity, SourceRadiatedSeries,
-   RestrictedTEActualPiecewise);
+   companions, BackgroundTransmissionParity, SourceRadiatedSeries and
+   SourceRadiatedMagnetic, RestrictedTEBackgroundOutside); then instantiate
+   `RestrictedTEActualPiecewise.actual_counted_subspaces_of_pieces` with the
+   fredholm series as the radiated part, the modal core majorant and the twist.
    every audited module so far is recorded; the last tag is
-   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`.
+   `oq14-resume-2026-10-24-2`, third-continuation commits: `be89c03`, `d0ec870`, `96ffdba`, `874160c`, `e0c1858`, `920914d`, `bd9a349`, `2d90be0`, `3412885`, `e591113`, `830b8e6`, `396e899`, `48bd956`, `67f92cf`, `a3e59ea`, `e9170ec`, `49a4ff4`, `6cc8945`, `0c546d3`, `9fbb710`, `a160c71`, `90d1f3f`, `2e1972a`, `83d0b2f`, `40b3aea`, `c4f141b`, `badccfa`, `b3e9f84`, `781acf3`, `30e1ee0`, `12e11c5`, `83548bc`, `a5aa7c0`, `d20add2`, `409cd12`, `42446f9`.
 2. Bridge items (a)-(f) listed at the end of the third-continuation section,
    in that order; (a) and (b) go to the modal author after the series assembly,
    (c)-(e) to the fredholm author after the compact plane field, (f) is with the
