@@ -446,3 +446,13 @@ coefficient with the rescaled incident field and the dilated total datum,
 which is the weighted datum of the rescaled incident field; the dilated block
 is a unit exactly when the unit-frequency block is. The dilation caveat of
 stages 47-49 is removed at the level of the fields.
+
+Stage 56: CountedSubspacesVolume (2, channel Sol author, root audit): the
+frequency-k counting theorem and its manuscript form restated verbatim with
+the volume-solution clause for every input (eventual form) and every basis
+vector (explicit-index form): the rescaled physical fields are the frequency-k
+material total fields of the frequency-k volume solution of the explicit
+dilated dielectric with the rescaled incident field, whose weighted datum is
+the dilated datum; the dilated block is a unit iff the unit-frequency block
+is. The dilation caveat of the frequency statement is removed; the docstring
+lists what is still not asserted.
