@@ -226,3 +226,10 @@ closure theorem's shell coefficient (actual TE response of the paired shell =
 background family, core part rescaled by half the transmission); the background
 plane flux of a finite TE vector has an inverse-cube majorant uniform in the
 shell index in the core, annulus and exterior.
+
+Stage 33: SourcePairedPlaneIdentification (51, fredholm Sol author, root audit): the
+assembled plane fields are the fields of the combined shell-plus-inclusion
+solution inside the core (dipole superposition, block decomposition, effective
+datum = datum of the background field on the inclusion, a.e. identification on
+the gap annulus), and the combined total fields converge on compacts to the
+parity device under converging background and effective data.
