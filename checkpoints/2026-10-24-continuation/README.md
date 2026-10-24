@@ -281,3 +281,9 @@ degreewise rescaling of even-supported vectors is q^n times a unitary global
 phase twist, and the input of any rescaled vector is q^n times the phase times
 the input. The assembly must use an n-dependent global phase, not one fixed
 twist.
+
+Stage 40: ExteriorMaterialOffCarrier (10, modal Sol author, root audit): the Newton
+identity on an arbitrary open set where the source vanishes (separation pairing,
+countable ball cover), so the physical L2 total field of the combined solution
+equals the assembled plane electric field almost everywhere on the core outside
+the closure of the inclusion carrier.
