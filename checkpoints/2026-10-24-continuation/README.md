@@ -198,3 +198,10 @@ magnetic shell reaction field, the curl identity, uniform convergence on balls
 through the first-order jet limits, the odd-kernel central-equals-wall identity,
 and the assembled plane magnetic field converging to the parity-device total
 magnetic field on compacts at positive distance from the carrier.
+
+Stage 29: RestrictedTEActualSquare (16, channel Sol author, root audit): the
+counted-subspace statement for the actual device through one fixed square
+(device on the left edge, N points on a fixed segment), with the dielectric
+proved to lie in [1, eps_plus]; the remaining hypotheses are exactly the
+homogeneity and the whole-plane L1 interface of the actual flux. Ledger after
+stage 28 was 260/1853 (the stage 27 and 28 commit messages overstate by 19).
