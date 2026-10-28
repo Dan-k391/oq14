@@ -8,10 +8,10 @@ The October 27 review checked the existing incremental ledger: 304 modules,
 Three targeted source checks passed with 42 standard-only reports. These used
 existing dependency objects and were not a clean aggregate rebuild.
 
-Stage 58 records 338 independently audited modules / 3108 reports beyond
-release 5238, including 24 new modules / 134 reports after the stage-57 commit
-`5d5aba480f2de5fac6f7646a8ce0b40a4dcbd6ce`. All 338 source/log byte hashes and
-report lists were verified; the earlier 314 ledger records are unchanged.
+Stage 59 records 365 independently audited modules / 3227 reports beyond
+release 5238, including 27 new modules / 119 reports after the stage-58 commit
+`9c8024be9d1602fe31eef2157c0766d7f7e95ef1`. All 365 source/log byte hashes and
+report lists were verified; the earlier 338 ledger records are unchanged.
 The new `PhysicalCountedSubspaces.counted_subspaces_manuscript_physical`
 corrects the physical passage/bypass factor and supplies whole-plane
 integrability for every vector of the selected finite span, with the same
@@ -26,8 +26,18 @@ nonzero weighted residue belongs to the actual volume kernel.
 `ModalSphereVolumePoles` then proves genuine poles of the full volume inverse
 with arbitrarily high Q at fixed refractive index, with punctured invertibility.
 This proves neither order minus one nor a one-dimensional full-sphere kernel.
-A selected axisymmetric electric sector, its simple-pole derivative pairing,
-all-degree separation, continuation, rounding and finite assembly remain.
+Stage 59 proves prescribed-real-frequency actual volume poles at fixed contrast
+(`ModalFixedFrequencyVolumePoles`). `ModalIncidentVolumePole` proves the exact
+simple pole and nonzero vector residue of the actual inverse applied to the
+analytic regular-dipole input; it does not assert the whole inverse is simple.
+The actual incident/interior bilinear overlap is proved nonzero by physical
+polar integration and a Wronskian identity. `ModalVolumeNormalization` therefore
+proves nonzero actual volume derivative pairing and unit reciprocal left/right
+normalization of the actual weighted Maxwell residue. The selected electric
+sector's kernel simplicity and operator residue formula, all-degree separation,
+continuation, rounding and finite assembly remain. Continuous axial rotation,
+Fourier/static commutation and literal dyadic covariance are proved; the full
+complex operator invariance is subsequent work.
 The invalid near-zero ratio estimate is replaced by
 `ModalDipoleOrigin` compact zero exclusion for the actual determinant.
 `ModalDipoleInfinity` proves the actual joint scaled quotient limit and
@@ -42,20 +52,26 @@ coefficient with a contrast bound independent of the number of disjoint
 outer balls, and proves that each translated static baseline solves that
 same common-material static volume equation. Actual finite-union Runge and
 finite-angular approximation allow annular sources inside the enclosing
-ball while excluding each material ball. Common dynamic local projection,
-simultaneous nonzero coefficients, common rounding and actual maxima still
-need assembly; separate-device theorems are not that assembly.
+ball while excluding each material ball. Stage 59 constructs the common
+dynamic response and its actual local projection systems, with local forced
+Maxwell/Gauss equations derived from the source separation. Uniform correction
+bounds and convergence to the original static tip give one positive-frequency
+interval on which every tip's actual coefficient is nonzero, using separate
+translated source witnesses under that same common coefficient. One common
+finite incident field, common rounding and actual maxima still need assembly.
 
 Current work uses Terra subagents for independent audits, common-material
 local projection and actual rotational covariance. Root handles critical
-mathematics, prescribed-real-frequency actual volume poles, documentation
-and checkpoint integration.
+mathematics, actual reciprocal normalization and its physical scaling,
+documentation and checkpoint integration.
 Later source files remain author-only or drafts until independent receipts
-are recorded. Stage 57 and 58 evidence is in
+are recorded. Stage 57, 58 and 59 evidence is in
 `checkpoints/2026-10-27-continuation/`. The frozen stage-57 ledger is preserved;
-stage 58 has a separate ledger and raw-byte evidence ZIP. Complex dilation,
-common dynamic convergence and local Gauss translation are later author-only
-modules awaiting independent receipts at this checkpoint.
+each later stage has a separate ledger and raw-byte evidence ZIP. Later
+author-only modules include common entire-field systems and angular functionals,
+union material transfer, and full axial convolution/invariance; audit them before
+registration. The common Runge coefficient transfer must compare compatible
+potential gauges, as detailed in the active agent notes and stage-59 checkpoint.
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`

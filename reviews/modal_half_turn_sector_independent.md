@@ -1,0 +1,5 @@
+# Independent audit: ModalHalfTurnSector
+
+PASS. Frozen source SHA-256: 2D6354C24D3537EBA02E5DBE9DAE1A3328B2D3C43561BC306BE70BCB475C9CDD. Fresh compiler log: `lean/logs/ModalHalfTurnSector-root-audit.log`, SHA-256 92003E081385A68E3CFE929453645E16F626770294CF4959763F8F87808C8AF3. The check returned exit 0 with no warnings or errors. Seven fully qualified axiom prints match seven reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+Real-frequency commutation of the actual volume block with half-turn action is established from the static and dynamic terms and extended analytically to complex frequency. For the radial sphere coefficient, the two eigenspace kernels are closed and invariant, and the actual weighted dipole numerator is in the even sector by its AE physical-coordinate identity. The result does not establish that this sector is an individual angular degree, prove a one-dimensional kernel, or exclude coincident modes.

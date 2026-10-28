@@ -1,0 +1,5 @@
+# Independent audit: ModalFixedFrequencyVolumePoles
+
+PASS. Frozen source SHA-256: FB558CC9F94C15C10E369B58009406ADF830DBB5DD12964E76182BF4F39985B5. Fresh compiler log: `lean/logs/ModalFixedFrequencyVolumePoles-root-audit.log`, SHA-256 9A934E3A86CAE555C995F2F39918BA13A066C2941F8384DA2981C790B1F32C29. The check returned exit 0 with no warnings or errors. All five fully qualified axiom prints match five reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match the author review; no placeholder or custom axiom token appears.
+
+For fixed n > 1 and prescribed positive real frequency, a positive dilation scales an actual high-quality sphere root so the scaled real part equals that frequency while preserving the frequency-to-decay ratio and contrast bound. The actual complex volume block retains a transported nonzero kernel vector; noninvertibility and the analytic Fredholm result give a negative-order pole of its full inverse and punctured invertibility. The material support is the closed ball of radius 1/s. The result does not claim simple full-operator pole, one-dimensional kernel, fixed radius, or normalization.

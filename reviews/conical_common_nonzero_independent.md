@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonNonzero
+
+PASS. Frozen source SHA-256: F129ED65C969E90A337640E0DF373F6CE85939BCE42973755F9EF3A2B86248AA. Fresh compiler log: `lean/logs/ConicalCommonNonzero-root-audit.log`, SHA-256 859F42A1438945A8DC491EEEB229E7A7CC088DD6F8B15A45E6904541AD30D647. The check returned exit 0 with no warnings or errors. All three fully qualified axiom prints match three reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+For each tip the annular numerator is kept nonzero by convergence to a nonzero actual static pairing and a separately bounded O(k²) correction. A positive annular test gives nonzero intrinsic coefficient for each source-driven local system, and finite intersection supplies a common positive small-frequency interval. The systems use the same assembled coefficient but their driving sources are indexed by tip; the conclusion does not choose a single illumination, perform Runge transfer, or establish rounding.

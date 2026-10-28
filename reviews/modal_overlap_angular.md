@@ -1,0 +1,5 @@
+# Author review: ModalOverlapAngular
+
+Source SHA-256: 70A7FA28049A61522FA56D573FEE4556D0DF0BBC80AFEBF6AA9260139EE9B6BB. Final compiler log: `lean/logs/ModalOverlapAngular-final.log`, SHA-256 C9EC3619451141F3232438B5929333E0945EE975ED3EB97FCAD8D7295F9C77FD. Object build exit 0 without warnings or errors; all nine fully qualified axiom reports contain only propext, Classical.choice, Quot.sound.
+
+The sphere coordinate-square symmetry yields the actual angular average of the bilinear centerE dot product. Complex polar integration over the material ball and the checked radial FTC identify the actual weighted L2 vectorPair of the incident and numerator fields with a scalar multiple of the regularized boundary primitive. At real n > 1 and nonzero complex determinant root, the explicit endpoint factorization, positive sphere area, and nonzero boundary Wronskian prove this overlap is nonzero. The pairing is bilinear, not a positive norm. This does not by itself prove a simple operator pole, rank-one residue, or kernel dimension.

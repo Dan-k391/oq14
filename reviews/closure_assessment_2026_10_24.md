@@ -1,5 +1,18 @@
 # OQ14 closure assessment — corrected October 28, 2026 (root)
 
+Stage-59 correction: genuine full volume poles now occur at prescribed positive
+real frequency and arbitrary Q with fixed contrast. The actual dipole driven
+volume response has an exact simple pole and nonzero residue. Actual bilinear
+overlap evaluation now proves nonzero volume derivative pairing and reciprocal
+unit normalization of the actual weighted sphere mode. Selected-sector kernel
+simplicity and a restricted rank-one operator residue remain separate gaps.
+For the common hotspot material, actual local projection systems and nonzero
+coefficients are established simultaneously on one small-frequency interval
+with separate source witnesses; transfer to one common finite input and rounding
+remain. The independently checked incremental ledger is 365 modules / 3227
+reports. This supersedes the corresponding stage-58 gaps and counts below;
+the clean aggregate release is unchanged.
+
 Stage-58 correction: the actual sphere residue now lies in the actual complex
 volume-operator kernel, and the full volume inverse has genuine poles with
 arbitrarily high Q at fixed refractive index (`ModalSphereVolumeKernel`,

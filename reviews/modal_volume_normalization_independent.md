@@ -1,0 +1,5 @@
+# Independent audit: ModalVolumeNormalization
+
+PASS. Frozen source SHA-256: 912C5475401675E3AC149320B69E65BC01469B87FF2CF4888A2CA190F1C71826. Fresh compiler log: `lean/logs/ModalVolumeNormalization-root-audit.log`, SHA-256 7F475052007CE932636DD8280679033C9B94CCFDE4A4F8B3CECE8647758D34B2. The check returned exit 0 with no warnings or errors. Five fully qualified axiom prints match five reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match the author review; no placeholder or custom axiom token appears.
+
+The proven nonzero actual bilinear overlap and differentiated volume identity imply nonzero derivative pairing for the numerator at a simple nonzero degree-one determinant root. Every nonzero actual weighted modal residue is a nonzero scalar multiple of that numerator, so its bilinear derivative pairing remains nonzero. Reciprocity makes the induced continuous pairing functional a left annihilator, and an explicit complex square root rescales a nonzero mode to derivative pairing one. These results do not prove that the full operator kernel is one-dimensional or that the inverse has a simple pole or a rank-one residue.

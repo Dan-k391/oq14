@@ -1,5 +1,27 @@
 # Modal closure scope, October 24, 2026
 
+## October 28 correction (stage 59, root)
+
+The actual reciprocal derivative pairing is now nonzero for every nonzero
+weighted degree-one Maxwell residue at a simple matching root. The actual
+incident/interior L2 overlap was evaluated using polar coordinates, the sphere
+second moment and the radial Wronskian primitive, then proved nonzero from
+matching and the outgoing/regular Wronskian. `ModalVolumeDerivativePairing`
+and `ModalVolumeNormalization` use that identity to construct actual reciprocal
+left/right unit derivative normalization. This does not assume nonvanishing.
+The remaining item-1 spectral obligations are selected-sector kernel simplicity
+and the normalized restricted operator residue formula. Actual normalization
+of one mode alone does not establish full-space rank one.
+
+`ModalFixedFrequencyVolumePoles` places genuine full inverse poles at any
+prescribed positive real frequency and arbitrary Q, keeping contrast fixed
+and allowing radius to vary. `ModalIncidentVolumePole` proves exact order minus
+one and a nonzero residue for the full inverse applied to the actual analytic
+dipole incident datum. The whole inverse's order is still only known negative.
+Actual continuous axial action, Fourier/static covariance and dyadic covariance
+are also independently checked; full axial operator invariance is later work.
+These statements supersede the corresponding stage-58 gaps below.
+
 ## October 28 correction (stage 58, root)
 
 The dated item-1 gap below is now discharged. `ModalDrivenRepresentation`

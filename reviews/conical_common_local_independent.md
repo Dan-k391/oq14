@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonLocal
+
+PASS. Frozen source SHA-256: 8E29EAF213F916017F038B891E742BF459AFBA3FD7E1CC1CCEB4E3291713679F. Fresh compiler log: `lean/logs/ConicalCommonLocal-root-audit.log`, SHA-256 4203019D53118BAAA0C99CBF217F5A84249A840D2F1FA526A9A010AC9A0F1385. The check returned exit 0 with no warnings or errors. Both fully qualified axiom prints match two reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match the author review; no placeholder or custom axiom token appears.
+
+Disjoint material support and the local material formula give exact dielectric equality at each translated tip. The local Gauss pairing is obtained from an explicitly assumed global test-Maxwell solution by translating a compactly supported Schwartz test, changing variables, and applying the local dielectric identity on its support. The theorem requires nonzero real k and b ≤ the material radius; the global solution and any local potential or projection system are not constructed here.

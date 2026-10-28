@@ -1,0 +1,5 @@
+# Independent audit: ComplexDilationVolume
+
+PASS. Frozen source SHA-256: 55E79B27EDD990D2A86B659917184BB4828C2D3598BBA396FAD561039DF69563. Fresh compiler log: `lean/logs/ComplexDilationVolume-root-audit.log`, SHA-256 4B0E61CBEAC2899FBC4D6522D406E0A881523311855413660C614F83B3DC0C20. The check returned exit 0 with no warnings or errors. Six fully qualified axiom prints match six reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match the author review; no placeholder or custom axiom token appears.
+
+The real positive-frequency scaling identity is derived by composing the earlier dilation identity at two positive scales. Analyticity and the positive-real accumulation point extend it to arbitrary complex frequency, with positive dilation s and nonnegative R. The actual volume operators are conjugate under invertible dilation, yielding equivalence of invertibility, inverse conjugacy, support transport and nonzero kernel transport. This module does not itself establish pole-order preservation or a pole family.
