@@ -1,0 +1,5 @@
+# Independent audit: ModalDrivenRepresentation
+
+PASS. Frozen source SHA-256: 2CD5D0A80AFDA78558BD3004D671A4CBAD53BEF9D07BAA8A00A858EF70B0038E. Fresh compiler log: `lean/logs/ModalDrivenRepresentation-terra-independent.log`, SHA-256 3A34655E91E3E857810BD4E64900F69647D51C4D049CA8FCF29F247AF11D3576. The check returned exit 0 with no warnings or errors. Both fully qualified axiom print commands match two reports, each restricted to propext, Classical.choice, and Quot.sound. No placeholder or custom axiom token appears.
+
+The response identity invokes the proved radiating-source representation with the actual compact dynamic source, its L2 representative, local L2 fields, the derived forced equations, exterior smoothness and constructed radiation trace. Its uniqueness argument compares two forced fields; the desired representation is not an input. The volume identity then uses the actual weighted total and incident fields and this almost-everywhere response equality in the material converse. This establishes the real-frequency premise of ModalVolumeContinuation for n > 1 and k > 0, without asserting invertibility or a complex-frequency radiation theorem.

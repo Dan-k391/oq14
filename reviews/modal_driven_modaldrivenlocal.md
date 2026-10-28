@@ -1,0 +1,11 @@
+# ModalDrivenLocal author review
+
+Scope: Local square integrability of the driven fields.
+
+Source SHA256: 10ADA6F3DBC52C002B644957D656087E83003DD8D2D4BC4E2650C069C5934078
+Final log SHA256: 926A15C03997614718309C94A7B6B33B513CF1E50C2047246AC4B92F6B6D13C3
+Exit receipt SHA256: 13BF7B3039C63BF5A50491FA3CFD8EB4E699D1BA1436315AEF9CBE5711530354
+Exit code: 0
+
+Axiom printouts in the final log report only propext, Classical.choice and Quot.sound.
+

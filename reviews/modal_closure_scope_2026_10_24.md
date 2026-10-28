@@ -1,5 +1,28 @@
 # Modal closure scope, October 24, 2026
 
+## October 28 correction (stage 58, root)
+
+The dated item-1 gap below is now discharged. `ModalDrivenRepresentation`
+derives the actual real-frequency volume equation from the constructed weak
+Maxwell fields, radiation and forced-response uniqueness. `ModalVolumeData`
+proves the actual weighted interior datum and numerator entire in vector L2;
+`ModalVolumeContinuation` continues the real identity to all complex frequency.
+`ModalSphereVolumeKernel` discharges the real identity and proves actual weighted
+residue kernel membership and noninvertibility. `ModalSphereVolumePoles` proves
+negative meromorphic order of the full inverse and arbitrarily high-Q actual
+volume poles at fixed index, with punctured invertibility. All are independently
+audited. No lower-half-plane outgoing uniqueness is assumed in this route.
+
+The remaining item-1 obligations are the actual invariant selected electric
+sector, simplicity there, its nonzero derivative pairing, and the normalized
+restricted residue. Full-sphere rank one would be false because of rotational
+degeneracy. Full-operator pole isolation in frequency is proved; noncoincidence
+of angular degrees and order minus one are distinct and remain unproved here.
+Prescribed-real-frequency scaling at the actual volume level is in progress.
+The item-3 modal continuation, rounding and simultaneous actual maxima also
+remain. This correction supersedes the corresponding missing/not-attempted
+claims in the historical text below, not the stated remaining obligations.
+
 Author: modal Sol agent. Scoping only, from a read of the sources named below. Statements are copied from the Lean files (long ones are truncated with an ellipsis; the file name gives the rest). Nothing here is a new theorem except the one file named in the last section.
 
 The three remaining items from the handoff are (1) actual reciprocal-residue normalization, (2) infinite-degree pole isolation, (3) simultaneous genuine three-dimensional maxima in the prescribed plane. Targets: arbitrarily high Q, fixed real pole frequency, common bounds, N-dependent insertion contrast.

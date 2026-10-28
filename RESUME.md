@@ -1,4 +1,4 @@
-# OQ14 resume state — October 27, 2026 continuation
+# OQ14 resume state — October 28, 2026 continuation
 
 ## Current status (takes precedence over the dated stage history)
 
@@ -8,18 +8,27 @@ The October 27 review checked the existing incremental ledger: 304 modules,
 Three targeted source checks passed with 42 standard-only reports. These used
 existing dependency objects and were not a clean aggregate rebuild.
 
-Stage 57 now records 314 independently audited modules / 2974 reports beyond
-release 5238, including ten new modules / 81 reports in this continuation.
+Stage 58 records 338 independently audited modules / 3108 reports beyond
+release 5238, including 24 new modules / 134 reports after the stage-57 commit
+`5d5aba480f2de5fac6f7646a8ce0b40a4dcbd6ce`. All 338 source/log byte hashes and
+report lists were verified; the earlier 314 ledger records are unchanged.
 The new `PhysicalCountedSubspaces.counted_subspaces_manuscript_physical`
 corrects the physical passage/bypass factor and supplies whole-plane
 integrability for every vector of the selected finite span, with the same
 finite device, scattering norm and physical-field identification clauses.
 The single-tip driven construction has a fixed finite input of unit limiting
 incoming power; arbitrary-N geometry, attained separated maxima and boundary
-control are additional obligations. The modal branch still needs the actual
-complex-frequency volume representation, a selected axisymmetric electric
-sector for a rank-one residue, all-degree separation, continuation, rounding
-and finite assembly. The invalid near-zero ratio estimate is replaced by
+control are additional obligations. The actual sphere-mode-to-volume-operator
+gap is now closed: actual real-frequency driven Maxwell fields and radiation
+give a volume equation, and Banach-valued analytic continuation gives its
+complex-frequency identity. `ModalSphereVolumeKernel` proves that the actual
+nonzero weighted residue belongs to the actual volume kernel.
+`ModalSphereVolumePoles` then proves genuine poles of the full volume inverse
+with arbitrarily high Q at fixed refractive index, with punctured invertibility.
+This proves neither order minus one nor a one-dimensional full-sphere kernel.
+A selected axisymmetric electric sector, its simple-pole derivative pairing,
+all-degree separation, continuation, rounding and finite assembly remain.
+The invalid near-zero ratio estimate is replaced by
 `ModalDipoleOrigin` compact zero exclusion for the actual determinant.
 `ModalDipoleInfinity` proves the actual joint scaled quotient limit and
 two-sided modulus bounds at large frequency. Algebraic branch nonidentity
@@ -28,15 +37,25 @@ Full closure is not claimed.
 
 The four conical additions give intrinsic actual coefficient functionals and
 one normalized input exciting every member of a finite family of separate
-single-tip devices. They do not identify that family with a single material.
-`ModalWeightedMode` constructs a nonzero actual weighted residue field;
-complex volume-kernel membership remains to be proved.
+single-tip devices. Stage 58 additionally constructs one actual common
+coefficient with a contrast bound independent of the number of disjoint
+outer balls, and proves that each translated static baseline solves that
+same common-material static volume equation. Actual finite-union Runge and
+finite-angular approximation allow annular sources inside the enclosing
+ball while excluding each material ball. Common dynamic local projection,
+simultaneous nonzero coefficients, common rounding and actual maxima still
+need assembly; separate-device theorems are not that assembly.
 
-Current work uses Terra subagents for driven-field representation, finite-union
-Runge and compact-core analytic infrastructure. Root handles critical mathematics,
-the actual analytic volume bridge, documentation and independent audits.
+Current work uses Terra subagents for independent audits, common-material
+local projection and actual rotational covariance. Root handles critical
+mathematics, prescribed-real-frequency actual volume poles, documentation
+and checkpoint integration.
 Later source files remain author-only or drafts until independent receipts
-are recorded. Stage 57 evidence is in `checkpoints/2026-10-27-continuation/`.
+are recorded. Stage 57 and 58 evidence is in
+`checkpoints/2026-10-27-continuation/`. The frozen stage-57 ledger is preserved;
+stage 58 has a separate ledger and raw-byte evidence ZIP. Complex dilation,
+common dynamic convergence and local Gauss translation are later author-only
+modules awaiting independent receipts at this checkpoint.
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`

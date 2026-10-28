@@ -1,0 +1,5 @@
+# Independent audit: ModalSphereVolumeKernel
+
+PASS. Frozen source SHA-256: 327C8C0242FFA310AC2BE7F01F1B3F6887287387C0DE0E3F55CA2CCCEEEF7044. Fresh compiler log: `lean/logs/ModalSphereVolumeKernel-terra-independent.log`, SHA-256 E79437BE59BECB25A4C63D43D03C084114729A64D22B31C4710C9847B76361A1. The check returned exit 0 with no warnings or errors. All five fully qualified axiom prints match five reports containing only propext, Classical.choice, and Quot.sound. No placeholder or custom axiom token appears.
+
+The positive-real volume premise is discharged directly by the proved actual driven-source representation, and the analytic continuation supplies the complex identity. For real n > 1 and a nonzero complex determinant root, the actual weighted numerator is nonzero and in the actual complex volume-block kernel, so the block cannot be a unit. A nonzero weighted modal residue is separately established under the additional nonzero determinant derivative assumption. The module does not prove existence of such roots, kernel dimension, a complete sector, or a full inverse-pole theorem.

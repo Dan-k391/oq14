@@ -1,4 +1,17 @@
-# OQ14 closure assessment — corrected October 27, 2026 (root)
+# OQ14 closure assessment — corrected October 28, 2026 (root)
+
+Stage-58 correction: the actual sphere residue now lies in the actual complex
+volume-operator kernel, and the full volume inverse has genuine poles with
+arbitrarily high Q at fixed refractive index (`ModalSphereVolumeKernel`,
+`ModalSphereVolumePoles`). This uses proved actual driven Maxwell/radiation
+and real-volume identities, followed by analytic continuation. It does not
+give full-space rank one or order minus one. Selected electric-sector
+simplicity and reciprocal normalization remain. Actual finite-union Runge,
+the common material with a uniform contrast bound, and its translated static
+baselines are also independently checked; simultaneous common-material
+dynamic coefficients, rounding and maxima are still incomplete. The current
+incremental ledger has 338 modules / 3108 reports, independently checked
+against source/log hashes; it is not a clean aggregate release.
 
 Review correction: stages 16–56 completed the channel's finite-device field,
 remote-flux, unit-throughput and frequency-k volume-solution bridges. The
