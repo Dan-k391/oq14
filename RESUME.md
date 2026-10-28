@@ -1,5 +1,16 @@
 # OQ14 resume state — October 28, 2026 continuation
 
+STOPPED at the user's October 28 checkpoint request. Stage 65 is the latest
+verified rollback snapshot: 495 incremental modules / 3632 reports; all previous
+473 records are unchanged. See checkpoints/2026-10-27-continuation/STAGE65.md.
+Actual complex outgoing selection, global electric Debye radial coefficients,
+general weak angular coupling and both actual complex first-order Maxwell laws
+are checked. Full OQ14 closure remains unfinished. Pending author-only magnetic,
+interface-forcing and unfinished drafts are preserved separately in
+evidence/stage65-pending-drafts.zip, with statuses and exact hashes in its manifest.
+They are not accepted proofs. All agents stopped and no compiler sessions remain.
+Resume only on a new user instruction. Clean aggregate release 5238 is unchanged.
+
 Stage 64 is the latest verified rollback snapshot: 473 incremental modules /
 3575 reports; all previous 440 records remain unchanged. See STAGE64.md in
 checkpoints/2026-10-27-continuation. Every actual complex sphere kernel vector
