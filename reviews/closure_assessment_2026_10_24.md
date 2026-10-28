@@ -1,5 +1,18 @@
 # OQ14 closure assessment — corrected October 28, 2026 (root)
 
+Stage 64 is the latest verified rollback snapshot: 473 incremental modules /
+3575 reports; all previous 440 records remain unchanged. See STAGE64.md in
+checkpoints/2026-10-27-continuation. Every actual complex sphere kernel vector
+now has one global regular scalar-harmonic amplitude throughout the interior.
+Actual exterior integral/weak equations and positive-real outgoing selection are
+checked; entire radial L2 families are ready for complex outgoing continuation.
+Vector coupling, interface matching and selected-sector kernel dimension remain.
+The actual common binary material now has smooth physical boundaries, exactly
+two values for equal contrasts, and exact agreement on every fixed tip collar.
+Actual magnetic inverse-dielectric curl-curl, local H1 and weighted Caccioppoli
+estimates are checked; one-sided interface sup estimates and attained maxima
+remain. The clean aggregate is still release 5238. Work remains active.
+
 Stage 63 is the latest verified rollback snapshot: 440 incremental modules /
 3475 reports; all previous 424 records remain unchanged. See STAGE63.md in
 checkpoints/2026-10-27-continuation. Every genuine complex sphere kernel vector
