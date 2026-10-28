@@ -1,5 +1,17 @@
 # OQ14 closure assessment — corrected October 28, 2026 (root)
 
+Stage-61 correction: the common-material shared-input gap is now closed.
+Actual joint incident/solution Runge approximation and compatible gauge
+estimates prove each coefficient functional nonzero, then produce one
+normalized finite angular input exciting all tips in the same material.
+For sufficiently small positive frequencies, that input is fixed before a
+common rounding sequence, selected tip radii and thresholds. Actual rounded
+Maxwell fields have simultaneous positive-volume superlevel sets. This is
+not yet an attained-maxima theorem: smooth binary boundary construction,
+fixed-collar transmission regularity and boundary control remain. The modal
+exact-plane target is separate. Incremental ledger: 402 modules / 3357 reports;
+clean aggregate unchanged. Full closure is not claimed.
+
 Stage-60 correction: the actual complex sphere volume operator preserves the
 closed axisymmetric electric sector, and physical dilation carries the actual
 unit reciprocal derivative normalization to a prescribed real frequency at

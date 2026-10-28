@@ -1,0 +1,19 @@
+{
+  "reason": "Before the stage-61 commit, replace the premature author-review fallback with the completed independent review. Source bytes and compiler-log bytes are identical; no proof or prior committed ledger record changed.",
+  "previous_record": {
+    "module": "ConicalCommonRungeNonzero",
+    "reports": 2,
+    "source_sha256": "1607810ca742b908795f2b557f02b7c8545198f542c127741cc404f44d65de44",
+    "audit_log": "lean/logs/ConicalCommonRungeNonzero-author-final.log",
+    "audit_log_sha256": "a20d3b29a981539d449181ae582a22f2f5c850e39d66d967805710f39e966132",
+    "independent_review": "reviews/conical_common_runge_nonzero.md"
+  },
+  "corrected_record": {
+    "module": "ConicalCommonRungeNonzero",
+    "reports": 2,
+    "source_sha256": "1607810ca742b908795f2b557f02b7c8545198f542c127741cc404f44d65de44",
+    "audit_log": "lean/logs/ConicalCommonRungeNonzero-root-audit.log",
+    "audit_log_sha256": "a20d3b29a981539d449181ae582a22f2f5c850e39d66d967805710f39e966132",
+    "independent_review": "reviews/conical_common_runge_nonzero_independent.md"
+  }
+}

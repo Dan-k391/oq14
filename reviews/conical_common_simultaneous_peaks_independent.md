@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonSimultaneousPeaks
+
+PASS. Frozen source SHA-256: 1736019D4FCE544166FC19DC69C6F44B8DE4B54F5A5CBAA69B8F971CA4A3B284. Fresh compiler log: `lean/logs/ConicalCommonSimultaneousPeaks-root-audit.log`, SHA-256 C134E9621527D658861AF2BBECF5D906E06B65FF7197238B769B1EBC8DE22729. The check returned exit 0 with no warnings or errors. The fully qualified axiom print matches one report containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+The finite intersection of the per-tip eventual statements gives a single sufficiently advanced rounding index valid simultaneously for all tips for any selected positive radii and thresholds. One normalized finite angular input and one rounded common material sequence are fixed before those selections; component choices may depend on radii but are fixed before thresholds. The conclusion is positive-volume superlevels, not attained pointwise maxima or a common plane. Geometry and small-frequency assumptions remain explicit.

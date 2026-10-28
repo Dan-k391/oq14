@@ -2,6 +2,21 @@
 
 ## Current status (takes precedence over the dated stage history)
 
+Stage 61 supersedes the stage-60 counts and shared-input gaps below. After parent
+`051bfbcd6894a8c2b1174d5a4ea67f8b6bc3115f`, the verified incremental ledger is
+402 modules / 3357 reports, with all previous 385 records unchanged. See
+`checkpoints/2026-10-27-continuation/STAGE61.md`. One normalized finite angular
+input now excites every actual intrinsic tip coefficient in the SAME common
+material on a common sufficiently small positive-frequency interval; all
+nonzero-functional premises are discharged. The SAME input through one common
+product-gate rounding sequence gives simultaneous positive-volume superlevels
+in all chosen tip balls, with radii and thresholds selected after the input.
+Attained maxima, globally smooth binary interfaces, boundary control and the
+modal exact-plane statement remain. Actual vector angular slices, their
+decompositions and the numerator's dipole projection are also checked. Root's
+historical public Lindemann proof port is in progress, outside this snapshot.
+Work continues with Terra agents on actual geometry and volume angular analysis.
+
 Stage 60 is the latest rollback checkpoint, after parent `ae7be05389388a81db06cbb360a70fbca5a08318`.
 The independently audited incremental ledger now has 385 modules / 3315 reports;
 all source/log hashes and report lists were verified and all 365 stage-59 records

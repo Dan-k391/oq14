@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonRoundedPeaks
+
+PASS. Frozen source SHA-256: D715C9A61D37065F733F70CF8EC603F87CC2C43DF1AE32542C2C2C5EFF418341. Fresh compiler log: `lean/logs/ConicalCommonRoundedPeaks-root-audit.log`, SHA-256 B3BDF9F8ABD12219590FFDA87323D61A6ABE4D1A6F0076EBBD96A59AB48B3DE9. The check returned exit 0 with no warnings or errors. Seven fully qualified axiom prints match seven reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+The common finite angular input is fixed before the rounding index and has normalized limiting inward flux and nonzero actual local coefficients. Product-gate coefficients retain support and bounded contrast, their actual rounded fields satisfy material Maxwell, and strong L2 convergence transfers sharp essential unboundedness into positive-volume superlevels in each smaller tip ball for every threshold eventually. Frequency must lie in an explicitly obtained small positive interval. The result does not prove attained maxima, coplanar points, or globally smooth interfaces.

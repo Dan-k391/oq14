@@ -1,0 +1,5 @@
+# Author review: CommonRoundedTransfer
+
+Source SHA-256: CB4DC733B107A212F813E3DC5275EC0071C47FE8940031005C49787CB997D706. Final compiler log: `lean/logs/CommonRoundedTransfer-final.log`, SHA-256 B49E9B6745CA274AFD9B3E562D7AEAFBD372EE004355A876238D8130334D1292. Object build exit 0 without warnings or errors; six fully qualified axiom reports contain only propext, Classical.choice, Quot.sound.
+
+For one given entire illumination, finite-center rounded coefficients produce actual material Maxwell fields and their material-ball total fields converge strongly in L2 under the common-radius frequency bound. A nonzero intrinsic coefficient at each tip makes the sharp field essentially unbounded in every smaller tip ball; closedness of the bounded L2 subset transfers this to positive-measure superlevel sets for all sufficiently advanced common rounding indices. Finite intersection gives simultaneous positive-measure sets for arbitrary chosen tip thresholds and radii. This result assumes the common incident field and nonzero coefficients, and it does not establish an attained interior maximum, globally smooth material interfaces, or frequency selection.
