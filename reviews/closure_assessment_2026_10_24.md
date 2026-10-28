@@ -1,5 +1,17 @@
 # OQ14 closure assessment — corrected October 28, 2026 (root)
 
+Stage-60 correction: the actual complex sphere volume operator preserves the
+closed axisymmetric electric sector, and physical dilation carries the actual
+unit reciprocal derivative normalization to a prescribed real frequency at
+arbitrary Q and fixed contrast. The full inverse is not yet proved simple.
+Common-material joint incident/solution approximation, coefficient linearity,
+incident error estimates and a compatible fixed-source gauge are checked.
+Finite-center rounding preserves bounds/support and gives actual volume-field
+convergence. A single normalized input exciting all tips and actual peak maxima
+remain in progress. The audited incremental ledger is 385 modules / 3315 reports;
+the clean aggregate is unchanged. These statements supersede corresponding
+stage-59 gaps and counts below. Full OQ14 closure is not claimed.
+
 Stage-59 correction: genuine full volume poles now occur at prescribed positive
 real frequency and arbitrary Q with fixed contrast. The actual dipole driven
 volume response has an exact simple pole and nonzero residue. Actual bilinear

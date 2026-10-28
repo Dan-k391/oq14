@@ -1,5 +1,18 @@
 # Modal closure scope, October 24, 2026
 
+## October 28 correction (stage 60, root)
+
+Full complex axial and meridional-reflection operator commutation are now
+independently checked, so the actual closed electric sector is invariant.
+Physical dilation of the actual reciprocal derivative pairing is proved, and
+`ModalFixedFrequencyNormalization` provides a normalized actual mode at any
+prescribed positive real frequency and arbitrary Q with fixed contrast. Actual
+scalar angular slices and their complete expansions are checked. Selected-sector
+kernel classification, all-degree noncoincidence and the restricted operator
+residue still remain. A possible port of the public Lindemann proof is under
+investigation and is not an accepted proof. These facts supersede the matching
+stage-59 gaps below; the modal hotspot assembly is still unfinished.
+
 ## October 28 correction (stage 59, root)
 
 The actual reciprocal derivative pairing is now nonzero for every nonzero

@@ -1,0 +1,5 @@
+# Author review: UnionMaterialTransfer
+
+Source SHA-256: 9A6DE5F2DDF4F0F6B0D75D4ABFB22DAB77A6BBF4536A30938DCF1636D2CE0400. Final compiler log: `lean/logs/UnionMaterialTransfer-final.log`, SHA-256 89AEB2FC4F8C1B96124BD568D9FFB61FD89D934CCA3EF66FAEA4020EAB1B930F. Object build exit 0 without warnings or errors; 13 fully qualified axiom reports contain only propext, Classical.choice, Quot.sound.
+
+A measurable union-L2 field is zero-extended by a bounded complex-linear operator. For a coefficient supported on that domain its weighted extension agrees AE with the actual material-weighted field and with the global weighted field whenever their local representatives agree. The actual assembled common coefficient is supported on its union of material balls. The bounded inverse volume-block map supplies solution stability, and finite angular inputs approximate the solution induced by a source-supported union target. The volume equation requires the stated small-frequency hypothesis. This does not yet prove simultaneous nonzero local coefficients or normalized illumination.

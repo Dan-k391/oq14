@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonEntire
+
+PASS. Frozen source SHA-256: 2523C4A2AC2E4A30DA3D3D70FEFA520F54D77311A72B7F03C4DEFD436362448E. Fresh compiler log: `lean/logs/ConicalCommonEntire-root-audit.log`, SHA-256 FCAD94FC90F988B0E6A69F8BACBE0688E58E0B4AEA961D23B982D439762AE394. The check returned exit 0 with no warnings or errors. Seven fully qualified axiom prints match seven reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+The actual common volume solution and its material Maxwell field are constructed for a supplied entire incident field under small-frequency invertibility and outer support hypotheses. The material potential is translated to the tip, the continuous correction and derived local Gauss law construct a projection system, and its total component equals the actual total electric field almost everywhere locally. No nonzero coefficient or simultaneous input is asserted.

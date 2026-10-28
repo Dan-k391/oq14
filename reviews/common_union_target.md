@@ -1,0 +1,5 @@
+# Author review: CommonUnionTarget
+
+Source SHA-256: 27BC45ECAE43E16C17159C3AEE45187A941A164CF839A4510E3BEA0BC3CE5DC6. Final compiler log: `lean/logs/CommonUnionTarget-final.log`, SHA-256 230A6AEC3A244B5B53418E915929323D5F3080D9BEE1530C8DE4ECEC57D31956. Object build exit 0 without warnings or errors; five fully qualified axiom reports contain only propext, Classical.choice, Quot.sound.
+
+The actual union source-response target equals minus the physical common baseline incident almost everywhere on the union; weighted localization identifies its datum and solution as the negatives of the corresponding common baseline quantities. Negating the finite angular coefficient then proves an actual finite angular input whose common volume solution approximates any one baseline solution in global L2. The material balls require nonnegative radii and strict separation, and source supports must lie in the stated enclosing balls. This theorem selects an input separately for each baseline and does not yet prove simultaneous nonzero tip coefficients or normalized illumination.

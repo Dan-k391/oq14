@@ -2,6 +2,22 @@
 
 ## Current status (takes precedence over the dated stage history)
 
+Stage 60 is the latest rollback checkpoint, after parent `ae7be05389388a81db06cbb360a70fbca5a08318`.
+The independently audited incremental ledger now has 385 modules / 3315 reports;
+all source/log hashes and report lists were verified and all 365 stage-59 records
+are unchanged. See `checkpoints/2026-10-27-continuation/STAGE60.md` and its raw
+evidence archive. The actual full complex sphere operator preserves the closed
+axisymmetric electric sector. Physical dilation transports the actual reciprocal
+normalization, and one theorem now combines it with prescribed real frequency,
+arbitrary Q and fixed contrast. Kernel simplicity and all-degree noncoincidence
+remain. Common-material joint incident/solution approximation, actual coefficient
+linearity, local incident error bounds and compatible fixed-source gauge are
+checked. A common rounding sequence preserves bounds/support and yields actual
+volume-field convergence. One shared normalized input and actual maxima remain
+in progress. Root is investigating a pinned historical public Lindemann proof
+port; downloaded upstream files are not accepted proofs. This paragraph supersedes
+the corresponding stage-59 gaps and counts below. Work remains active.
+
 Work resumed from committed checkpoint `d3c7c773e682485d291b4ca7dc00dcc4c74f851b`.
 The October 27 review checked the existing incremental ledger: 304 modules,
 2893 reports, matching source/log hashes; the previous 169 entries are unchanged.

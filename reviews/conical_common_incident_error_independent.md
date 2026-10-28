@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonIncidentError
+
+PASS. Frozen source SHA-256: 6CB8D60B0A64F941C8A5092A9CB3980900111C3B0C45EFC0807BC6C050937FB6. Fresh compiler log: `lean/logs/ConicalCommonIncidentError-root-audit.log`, SHA-256 336E48C28CC837BD85D36065F158ABF11A6D4773147628863A3CBBAA07398E8E. The check returned exit 0 with no warnings or errors. Four fully qualified axiom prints match four reports containing only propext, Classical.choice, and Quot.sound. Source and log hashes match author review; no placeholder or custom axiom token appears.
+
+The centered error is the actual finite-angular incident field plus the original separated source exterior response. Both solve the homogeneous Helmholtz equation on the source-free material ball, and the compact interior estimate controls the error uniformly on a smaller ball by any local L2 representative equal to it AE. Nonzero k and strictly nested radii are explicit. This does not identify the representative from the union Runge approximation or prove nonzero local coefficients.

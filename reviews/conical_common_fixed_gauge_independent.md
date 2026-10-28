@@ -1,0 +1,5 @@
+# Independent audit: ConicalCommonFixedGauge
+
+PASS. Frozen source SHA-256: 74183D3E7F76911A72229653EA302DE6221DE89EEAB8D06BDC63FABF080BA952. Fresh compiler log: `lean/logs/ConicalCommonFixedGauge-root-audit.log`, SHA-256 991848B8AB08BC1BA6E83237565F19A62640CBEC0668C647E8BC4B510D221D87. The check returned exit 0 with no warnings or errors. Eight fully qualified axiom prints match eight reports containing only propext, Classical.choice, and Quot.sound. No placeholder or custom axiom token appears.
+
+The fixed-source gauge subtracts the actual witness forcing from the finite-input material polarization, with matching physical source and outer support. A localized smooth extension agrees with the actual centered incident error on the smaller ball. Linearity of the physical response and source-free exterior identification establish that the reconstructed fixed-gauge total field equals the actual common total field AE there. The derived local Gauss identity constructs the projection system and its actual field identity, under the explicit support and small-frequency hypotheses. This does not prove the finite-input coefficient nonzero or simultaneous illumination.
