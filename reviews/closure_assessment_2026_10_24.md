@@ -1,4 +1,13 @@
-# OQ14 closure assessment — October 24, 2026 (root)
+# OQ14 closure assessment — corrected October 27, 2026 (root)
+
+Review correction: stages 16–56 completed the channel's finite-device field,
+remote-flux, unit-throughput and frequency-k volume-solution bridges. The
+raw-flux counting wrapper lacks the physical factor one half already present
+in incoming/outgoing power. Stage 57 now supplies an independently checked
+replacement, `PhysicalCountedSubspaces.counted_subspaces_manuscript_physical`,
+with the correct factor, original thresholds and whole-plane integrability
+on the entire finite span. The stage history records what was built; it is
+not a claim of full closure of the hotspot and modal obligations.
 
 Purpose: state exactly how far the Lean formalization is from closing the
 OQ14 statement after the October 24 continuation, branch by branch, with the
@@ -36,8 +45,11 @@ is the limit of the inward half-field Poynting integral, not the total-field
 power (the total-field sphere flux vanishes almost everywhere for the global
 weak class, LosslessSphereFluxConstancy, so a total-field normalization must go
 through the incoming/outgoing split); peaks are per-coordinate superlevel sets,
-not counted separated maxima; no plane-maximum statement. These are
-quantitative sharpenings, not missing mechanisms.
+not counted separated maxima; no plane-maximum statement. The actual theorem
+concerns one conical vertex. A common material with arbitrary N separated tips,
+one input exciting every actual coefficient, attained maxima, controlled
+boundaries and placement in the prescribed plane remain additional theorem
+obligations. They are not merely rates or quantitative improvements.
 
 ## (A) Channel: formal status
 
@@ -158,13 +170,15 @@ volume operator and the finite assembly open.
 
 ## Verdict
 
-The Lean formalization now covers every mechanism of (A) up to the remote-flux
-bridge and the transfer of the parity-device count to the actual dielectric
-(the physical symmetry bridge is closed on the invariant sector and the count
-is proved for the explicit parity device), and every mechanism of (B) up to quantitative
-sharpenings, with all additions independently audited. (C) is proved in the
-manuscript only and is blocked in Lean by a missing transcendence theorem. Full
-OQ14 closure must not be claimed.
+The channel construction reaches the actual dielectric and frequency-k volume
+solution, but its exported counting statement needs the physical half-flux
+normalization and explicit measurement contract. The driven hotspot result is
+for one conical vertex, with separated finite packing and maxima still open.
+Modal closure requires the complex-frequency volume bridge, the correct sector
+restriction, all-degree separation and the continuation/rounding/assembly
+arguments. Hermite–Lindemann is one route to separation; the unverified
+degeneration sketch is an alternative with a known gap. Full OQ14 closure must
+not be claimed. The last clean aggregate release remains 5238.
 
 ## Addendum (fourth continuation, same day)
 
@@ -176,8 +190,8 @@ This changes nothing for (B) and (C); full OQ14 closure is still not claimed.
 
 ## Addendum (fifth continuation, 2026-10-25)
 
-Stage 50 (`CountedSubspacesManuscript`) states (A) in the manuscript's literal
-form: for every frequency k > 0, eps_plus > 1, side L, 0 < tau < 1 and
+Stage 50 (`CountedSubspacesManuscript`) states the raw-flux counterpart of (A):
+for every frequency k > 0, eps_plus > 1, side L, 0 < tau < 1 and
 0 < eta < delta fixed before N, every N has a single finite device with explicit
 gain and shell indices, dielectric in [1, eps_plus], an N-dimensional counted
 subspace of finite TE inputs through (-L/2, L/2)^2 and unit throughput of the

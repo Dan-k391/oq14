@@ -1,0 +1,7 @@
+# ConicalAngularCoefficient — author verification
+
+Frozen source SHA256 `0A229EFA46AB0BAC75237B486FBEB0DAEF0611D1602836E75DA6146DCBC5877B`. Corrected final eleven-report target71948 and final/object73770 EXIT0/no warnings/all standard-only. Final log `lean/ConicalAngularCoefficient.final.log` SHA256 `54BB1BAC888DDD4BCD1B150B36B5D6325995D6421F3A2EB82E4133A1884B2E0F`; object505896 bytes.
+
+The actual Herglotz electric field and its material-ball restriction are linear in finite angular coefficients. A genuine smooth extension is selected separately for each input in the fixed separated-source gauge; no additivity is asserted for those extensions. Each selected system is identified with the actual bounded material response on the extraction ball. Intrinsic total-field coefficient additivity and scaling therefore give the actual incident-to-singular-coefficient linear map. Its restriction to any fixed finite set of angular modes is a continuous linear functional by finite dimensionality. Arbitrary valid fixed-gauge expansions yield that same coefficient. The previously proved concrete positive-frequency excitation gives a nonzero functional for all sufficiently small positive frequencies.
+
+No multi-tip geometry is constructed or assumed. This is actual one-device coefficient infrastructure; a finite-family result must explicitly distinguish different devices. Root independent full-source/compiler audit requested.

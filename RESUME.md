@@ -1,4 +1,42 @@
-# OQ14 resume state — October 24, 2026 (fourth continuation: frequency scaling)
+# OQ14 resume state — October 27, 2026 continuation
+
+## Current status (takes precedence over the dated stage history)
+
+Work resumed from committed checkpoint `d3c7c773e682485d291b4ca7dc00dcc4c74f851b`.
+The October 27 review checked the existing incremental ledger: 304 modules,
+2893 reports, matching source/log hashes; the previous 169 entries are unchanged.
+Three targeted source checks passed with 42 standard-only reports. These used
+existing dependency objects and were not a clean aggregate rebuild.
+
+Stage 57 now records 314 independently audited modules / 2974 reports beyond
+release 5238, including ten new modules / 81 reports in this continuation.
+The new `PhysicalCountedSubspaces.counted_subspaces_manuscript_physical`
+corrects the physical passage/bypass factor and supplies whole-plane
+integrability for every vector of the selected finite span, with the same
+finite device, scattering norm and physical-field identification clauses.
+The single-tip driven construction has a fixed finite input of unit limiting
+incoming power; arbitrary-N geometry, attained separated maxima and boundary
+control are additional obligations. The modal branch still needs the actual
+complex-frequency volume representation, a selected axisymmetric electric
+sector for a rank-one residue, all-degree separation, continuation, rounding
+and finite assembly. The invalid near-zero ratio estimate is replaced by
+`ModalDipoleOrigin` compact zero exclusion for the actual determinant.
+`ModalDipoleInfinity` proves the actual joint scaled quotient limit and
+two-sided modulus bounds at large frequency. Algebraic branch nonidentity
+and all-degree isolation still remain.
+Full closure is not claimed.
+
+The four conical additions give intrinsic actual coefficient functionals and
+one normalized input exciting every member of a finite family of separate
+single-tip devices. They do not identify that family with a single material.
+`ModalWeightedMode` constructs a nonzero actual weighted residue field;
+complex volume-kernel membership remains to be proved.
+
+Current work uses Terra subagents for driven-field representation, finite-union
+Runge and compact-core analytic infrastructure. Root handles critical mathematics,
+the actual analytic volume bridge, documentation and independent audits.
+Later source files remain author-only or drafts until independent receipts
+are recorded. Stage 57 evidence is in `checkpoints/2026-10-27-continuation/`.
 
 Full OQ14 closure and complete Maxwell Lean formalization are still unfinished.
 Work resumed on October 24 from the paused checkpoint `oq14-resume-2026-10-23`
@@ -11,9 +49,9 @@ ledger copies and compiler evidence for everything added today.
 The last clean combined release remains `oq14-maxwell-foundations-5238`,
 commit `8a4a8bf4abb15d7ae6f2fc0fa4d63758c3c04248`: 5238 proof reports,
 627 modules, 599 libraries, nine pinned dependencies, all 15 diagnostic groups
-passed, 113-page PDF (SHA256 `611c64b2…b649d1`, delivery ZIP
+passed, 113-page PDF (SHA256 `611c64b2…49d`, delivery ZIP
 `ba907a88…4db1c7`). No clean aggregate release, publication or registry change
-was made today. Release 5238 is immutable.
+was made for the new continuation. Release 5238 is immutable.
 
 Beyond that release, the incremental ledger `tmp/audited_after_5238.json`
 (copied into the checkpoint folder) records independently reviewed and freshly
@@ -558,20 +596,14 @@ input. Full OQ14 closure is therefore still not claimed.
 
 ## What this does and does not establish
 
-The finite-shell-plus-inclusion reduction is formalized end to end and tied to
-the channel branch's explicit parity device on the half-turn-invariant sector,
-with every module independently audited. It does NOT establish: the all-degree
-remote return flux (finite-band annulus and exterior plane flux outside the
-core vanish with the shell index, uniformly in the shell; the degree sums are
-in progress), the unrestricted counted-channel theorem (the parity-device count
-is proved; unit throughput of the full scattering map and the finite-stack Green
-identification of the parity flux with the paired-shell flux remain), any modal
-statement (blocked by Hermite-Lindemann and a
-complex-frequency radiation representation absent from the tree), or
-uniform-in-k hotspot input. The channel counting theorem holds at every
-frequency k > 0 in the dilation sense of stage 49 (what is and is not asserted:
-`reviews/frequency_scaling_design.md`, section 5). Full OQ14 closure remains
-open; see `reviews/closure_assessment_2026_10_24.md`.
+Stages 16–56 include the all-degree remote flux estimates, the actual paired
+device transfer, complete outgoing unit throughput and frequency-k volume
+solution identification. These are no longer open bridge tasks. The remaining
+channel statement correction is physical plane-flux normalization and the
+export of its integrability/representative contract. The hotspot and modal
+obligations are listed in the current-status section above. A clean combined
+build and final paper reconciliation remain required before a new release.
+See `reviews/closure_assessment_2026_10_24.md` for the corrected closure boundary.
 
 ## Immediate next work (in order)
 

@@ -61,7 +61,7 @@ Missing: the transfer from the sphere mode to the volume operator. Smallest miss
 
 `theorem weighted_mode_in_volume_kernel ... : ComplexConvolutionAnalytic.volumeBlock c k₀.1 R (weightedMode c n k₀ f) = 0`
 
-where `weightedMode` is the L2 class of `x ↦ (Real.sqrt (c.value x) : ℂ) • ModalPoleMode.electricMode n k₀.1 f x`. After it, three more pieces are needed: kernel simplicity (kernel equals the span of the weighted mode, which needs the angular/sector decomposition of the volume operator), the identity that `vectorPair (deriv (fun z => volumeBlock c z R) k₀ u) u` equals a nonzero constant times `deriv (tmDet 1 n) k₀`, and the simple-pole residue limit. The abstract residue-form step is now supplied by `SimplePoleResidueForm.residue_form` (below).
+where `weightedMode` is the L2 class of the square-root susceptibility times the actual electric residue mode (with the physical coordinate map made explicit). After it, three more pieces are needed: construction and invariance of the selected axisymmetric electric sector and kernel simplicity on that restricted operator; the identity that the restricted derivative pairing equals a nonzero constant times `deriv (tmDet 1 n) k₀`; and the restricted simple-pole residue limit. The full sphere operator has degree-one rotational multiplicity three, so its kernel must not be asserted to equal the span of one mode. This is the same sector restriction used in manuscript/sections/modal_spectral.tex, lines 258–272. The abstract `SimplePoleResidueForm.residue_form` applies to the restricted operator after its hypotheses are proved; it does not remove this obligation.
 
 ## Item 2: infinite-degree pole isolation
 

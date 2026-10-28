@@ -2,13 +2,35 @@
 
 Author: root (Astra), 2026-10-25. Status: mathematical sketch only. Nothing here is formalized, audited or claimed; it records a candidate route so that the closure assessment states the modal block precisely. It does not change the verdict: full OQ14 closure is not claimed.
 
+October 27 review: the bounded-branch argument below is invalid near z = 0.
+For fixed n > 1 the degree-one rational pole function tends to 1 as z tends
+to zero; the displayed lower bound proportional to 1/(n−1) is not uniform on
+compact sets containing zero. A replacement must use the regularized actual
+determinant to exclude zeros uniformly near (n,z)=(1,0), and then compactness
+away from zero. Stage 57 now independently verifies this replacement in
+`ModalDipoleOrigin`, including compact zero exclusion. `ModalDipoleInfinity`
+also verifies the exact scaled quotient limit, modulus bounds and unit-phase
+limit at inverse frequency zero. This draft itself remains unverified: the
+algebraic-branch continuation and nonidentity arguments are still missing.
+The spherical volume operator must be restricted to
+the selected axisymmetric electric sector before claiming rank-one simplicity.
+
 ## The obstacle
 
 `reviews/modal_closure_scope_2026_10_24.md`, item 2: for the modal device one needs a simple high-Q zero `z` of `tmDet 1 n` that is not a zero of `tmDet j n` for any degree `j ≠ 1`. Per pair of degrees the coincidences are finite (`ModalRational.finite_common_zeros`), and for algebraic `n` a coincidence forces a nonzero algebraic `a = 2 i n z` with `exp a` algebraic (`ModalAlgebraicity.common_zero_exponential_obstruction`), which contradicts Hermite–Lindemann; the pinned Mathlib has only the analytic half of that theorem, and the project's no-axiom rule forbids assuming it. The notes also record that a genericity argument in `n` fails at the countability step: a countable union of finite coincidence sets cannot be excluded from the countable set of candidate zeros by counting.
 
 ## Structure used
 
-The modules write `tmDet l n z = A_l(n, z) exp(2 i n z) + B_l(n, z)` with `A_l, B_l` polynomial in `n` and in `1/z` (the exact Riccati–Hankel polynomials; `ModalExistence`, `ModalRational`). Two facts about degree 1 (to be checked against the explicit polynomials, not assumed): (i) at `n = 1` the determinant is the Wronskian constant, so `A_1(1, z) ≡ 0` and `B_1(1, z) ≡ c ≠ 0`; hence `A_1(n, z) = (n − 1) Ã_1(n, z)` and, for `n` near `1`, a zero satisfies `|exp(2 i n z)| = |B_1/A_1| ≥ c' / (n − 1)` on compacts in `z` and `|B_1/A_1| ≤ C / (n − 1)` for `|z|` large; (ii) as `|z| → ∞` at fixed `n`, `B_1/A_1 → L(n)` with `L(n) = −B_lead(n)/((n − 1) Ã_lead(n))`, whose argument has a limit as `n → 1⁺` (`n − 1` is real positive).
+The exact factorization in `ModalAlgebra.tmDet_exp_factorization` is
+`tmDet l n z = ((-i)^(l+1)/2) exp(i(1-n)z) (cPlus l n z exp(2 i n z) + cMinus l n z)`.
+The prefactor is nonzero, so zeros are equivalent to the vanishing of the
+parenthesized expression. The coefficients are finite Laurent expressions in
+n and z, not the determinant itself. Clearing denominators gives the polynomial
+elimination equation. At n = 1 and z nonzero the degree-one determinant is the
+Wronskian constant. The earlier claim of uniform ratio blow-up on arbitrary
+bounded z sets is withdrawn; in particular it cannot be used when z tends to
+zero. Large-z bounds uniform in n near 1 and their phase behavior still need
+proof, rather than only fixed-n asymptotics.
 
 A coincidence of degrees `1` and `j` at `(n, z)` eliminates the exponential: `P_{1j}(n, z) := B_1 A_j − B_j A_1 = 0`, a polynomial in `(n, z)` after clearing `1/z` (nonzero because the leading asymptotics distinguish the degrees: `reviews/channel_next.md`, "rational asymptotic distinguishes every angular order").
 
@@ -18,7 +40,10 @@ Fix a degree `j ≠ 1`. The roots of `P_{1j}(n, ·)` are finitely many algebraic
 
 Proof of the claim by degeneration `n → 1⁺`, with `w(n) = z_i(n)` an algebraic branch satisfying `exp(2 i n w) = R_1(n, w)` identically:
 
-- Case `w(n)` bounded as `n → 1`: the left side is bounded, the right side has modulus `≥ c'/(n − 1) → ∞` on compacts (fact (i)). Contradiction.
+- Case `w(n)` bounded as `n → 1`: the former ratio-blow-up argument is invalid.
+  The needed replacement is uniform zero exclusion for the actual determinant
+  on each bounded z set, including its removable value at z = 0. This draft
+  does not prove that statement.
 - Case `|w(n)| → ∞`: an algebraic branch tending to infinity does so at least at a polynomial rate: writing `v = 1/w` and dividing the defining polynomial by the maximal power of `v`, `Q̂(n, v(n)) = 0` with `Q̂(1, 0) = 0`, `Q̂(1, v) = v^μ u(v)`, `u(0) ≠ 0`, gives `|v(n)|^μ |u(v)| = (n − 1) |S(n, v)|`, hence `|w(n)| ≥ c (n − 1)^{−1/μ}`. (This replaces Puiseux expansions by one elementary estimate.)
   - If `Re w(n)` is unbounded near `n = 1`: by continuity and the intermediate value theorem the phase `exp(2 i n Re w(n))` takes every unit value in every neighborhood of `n = 1`, while by fact (ii) the phase of `R_1(n, w(n))` converges (since `|w| → ∞` along the whole approach); the modulus identity `exp(−2 n Im w) = |R_1|` makes the phases equal. Contradiction.
   - If `Re w(n)` is bounded: then `|Im w(n)| ≥ c (n − 1)^{−1/μ} − C`. If `Im w → −∞` then `exp(−2 n Im w) ≥ exp(2c (n − 1)^{−1/μ} − C') ≫ C/(n − 1) ≥ |R_1|` (fact (i), large `|z|`). If `Im w → +∞` then the left modulus tends to `0` while `|R_1| ≥ c'/(n − 1) → ∞`. Either way a contradiction.
