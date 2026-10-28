@@ -1,5 +1,18 @@
 # OQ14 resume state — October 28, 2026 continuation
 
+Stage 62 supersedes the corresponding older gaps below. The verified incremental
+ledger is 424 modules / 3416 reports, with all previous 402 records unchanged.
+See checkpoints/2026-10-27-continuation/STAGE62.md. The complete historical
+Hermite–Lindemann proof and its rational endpoint are now independently checked.
+ModalTMIsolation proves all-degree TM simplicity/noncoincidence for algebraic
+index outside 0, +/-1; no transcendence premise remains. Actual general
+volume-kernel classification and selected-sector inverse residue remain open.
+Actual bounded angular-mode reconstruction and the smooth apex/corner geometry
+support are checked; full physical smooth-boundary/coefficient identification,
+fixed-collar transmission estimates and attained maxima remain. Stage 61 already
+proved one normalized common illumination and simultaneous actual superlevels.
+Work continues. Clean aggregate release 5238 is unchanged.
+
 ## Current status (takes precedence over the dated stage history)
 
 Stage 61 supersedes the stage-60 counts and shared-input gaps below. After parent

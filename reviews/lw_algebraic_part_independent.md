@@ -1,0 +1,7 @@
+# Independent audit: LWAlgebraicPart
+
+PASS. Frozen source SHA-256: 9BEC5A34F975EA8D48269EBE9C4D0A00E6D93017892365FE1ABF04DC860D2A1D. Fresh compiler log: `lean/logs/LWAlgebraicPart-root-audit.log`, SHA-256 6D3CBE1DE04E7D8BAFEC49EBB26D9EB9C8D91AE2AB88AA8916AE721672B932C0. The check returned exit 0 with no warnings or errors. The one fully qualified OQ14 axiom print matches one report containing only propext, Classical.choice, and Quot.sound. Full-source forbidden-token scan found no placeholder, custom axiom, unsafe, or native-decide declaration.
+
+Compared the full port and diff with the cached Apache-2.0 PR 28013 commit d173f68c80a51efe617648e78fa1ae3e2b994a9d AlgebraicPart-2025.lean, SHA-256 EFDCFD1B117F219A4A3713476D573E6FA24CEA4AA3D38FB2B5DE54D992D53B43, matching local provenance. The core proof is unchanged except the updated map_finsuppSum spelling; imports use the checked local conjugate-root and additive-monoid ports, and provenance and one wrapper are added. Copyright and authorship are retained.
+
+The endpoint reduces an explicitly assumed nontrivial algebraic relation for an arbitrary multiplicative character on an algebraically closed rational algebra to an integer constant plus integer-weighted sums over polynomial roots. It requires finitely many distinct integral arguments and integral coefficients and does not establish that the assumed relation is impossible. Thus this is an algebraic reduction, not yet Lindemann-Weierstrass or modal noncoincidence.

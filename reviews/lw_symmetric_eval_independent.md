@@ -1,0 +1,5 @@
+# Independent audit: LWSymmetricEval
+
+PASS. Frozen source SHA-256: 0CA1DE82E4807C35D790DA96504344A25F6A9BCDE0096F4DC6A26F5F6AD5BA6A. Fresh compiler log: `lean/logs/LWSymmetricEval-root-audit.log`, SHA-256 D7D3DA170637BCD4F6763E86C9DBCB31C3EA94516BC588E6BD8FE415429441F4. The check returned exit 0 with no warnings or errors. The fully qualified OQ14 axiom print matches one report containing only propext, Classical.choice, and Quot.sound. Full-source forbidden-token scan found no placeholder, custom axiom, unsafe, or native-decide declaration.
+
+Compared line-by-line with cached Apache-2.0 PR 28013 commit d173f68c80a51efe617648e78fa1ae3e2b994a9d SymmetricEval-2025.lean (SHA-256 F55F4F54D581FC7A4232BE7C8159892500EF5B5387372F606077283ADAE88662). Upstream declarations and proofs are unchanged; the local file retains the copyright, replaces an upstream documentation marker with provenance and adds one qualified wrapper endpoint and axiom print. The endpoint states symmetric evaluation of the sum polynomial equals the sum of evaluations when the multiset has the stated cardinality. It is a support lemma, not a transcendence or modal noncoincidence conclusion.

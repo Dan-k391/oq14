@@ -1,0 +1,5 @@
+# Independent audit: LWMonoidAlgebra
+
+PASS. Frozen source SHA-256: B573E41EC623E28D48926CCE9460371628930D3C383114CE1EE2516DF317512C. Fresh compiler log: `lean/logs/LWMonoidAlgebra-root-audit.log`, SHA-256 9B229C8E242A80EB5345A7A36A0784E14AAE860A220654ABB604F69DF045A45E. The check returned exit 0 with no warnings or errors. The fully qualified OQ14 axiom print matches one report containing only propext, Classical.choice, and Quot.sound. Full-source forbidden-token scan found no placeholder, custom axiom, unsafe, or native-decide declaration.
+
+The additive declaration block from domCongrAut through mapRangeAlgAut exactly matches the corresponding cached upstream MonoidAlgebraBasic-2025.lean block after newline normalization; cached upstream SHA-256 is 39BF7E54A4904A2DE378F9A764B14335FFE98559F8C7ABF5C7B8BE4B22F42AD1. The source preserves its upstream Apache copyright and author header; local changes consist of the narrower import, provenance, additive-only selection, noncomputable section, and qualified wrapper. The wrapper states lift compatibility with extension of scalar coefficients under the given algebra tower; it is not a transcendence result.

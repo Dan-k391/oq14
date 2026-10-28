@@ -1,0 +1,42 @@
+{
+  "source_pr": "https://github.com/leanprover-community/mathlib4/pull/28013",
+  "historical_commit": "d173f68c80a51efe617648e78fa1ae3e2b994a9d",
+  "license": "Apache-2.0",
+  "author": "Yuyang Zhao (upstream copyright header)",
+  "status": "Full historical proof and five local support ports independently checked on pinned Lean 4.19.0; rational endpoints and actual TM determinant consequences checked. This does not prove actual volume-kernel classification.",
+  "files": [
+    {
+      "path": "sources/cache/lindemann/AlgebraicPart-2025.lean",
+      "sha256": "efdcfd1b117f219a4a3713476d573e6fa24cea4aa3d38fb2b5de54d992d53b43"
+    },
+    {
+      "path": "sources/cache/lindemann/Basic-2025.lean",
+      "sha256": "144d6b0eb3cf2c7162f978b41901af944118f9c15da38538efe3ab0bd1840c28"
+    },
+    {
+      "path": "sources/cache/lindemann/ConjRootClass-2025.lean",
+      "sha256": "e07e1d9e3ba7a48224ba35db97ca06ccf363df5f56e077357ec89c7dd1c39338"
+    },
+    {
+      "path": "sources/cache/lindemann/SumAEvalARoots-2025.lean",
+      "sha256": "341653c1340adeab200e59e7e5864d46bf11f437291282dc9529a01934786733"
+    },
+    {
+      "path": "sources/cache/lindemann/SymmetricEval-2025.lean",
+      "sha256": "f55f4f54d581fc7a4232be7c8159892500ef5b5387372f606077283adae88662"
+    },
+    {
+      "path": "sources/cache/lindemann/MonoidAlgebraBasic-2025.lean",
+      "sha256": "39bf7e54a4904a2de378f9a764b14335ffe98559f8c7abf5c7b8be4b22f42ad1"
+    }
+  ],
+  "local_modules": [
+    "LWConjRootClass",
+    "LWSymmetricEval",
+    "LWMonoidAlgebra",
+    "LWSumAEvalARoots",
+    "LWAlgebraicPart",
+    "LindemannWeierstrassPort",
+    "ModalTMIsolation"
+  ]
+}

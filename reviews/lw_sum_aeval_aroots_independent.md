@@ -1,0 +1,5 @@
+# Independent audit: LWSumAEvalARoots
+
+PASS. Frozen source SHA-256: 57F2807175023671C27B5FBB57D9F1BD54A54832C2FD0D5546D603928DF52F2B. Fresh compiler log: `lean/logs/LWSumAEvalARoots-root-audit.log`, SHA-256 DC8BE787FC706BE8083DA18F7F44E370B377C7D27B1A29F4F68F0AFF521F2403. The check returned exit 0 with no warnings or errors. The fully qualified OQ14 axiom print matches one report containing only propext, Classical.choice, and Quot.sound. Full-source forbidden-token scan found no placeholder, custom axiom, unsafe, or native-decide declaration.
+
+Compared line-by-line to cached upstream SumAEvalARoots-2025.lean (SHA-256 341653C1340ADEAB200E59E7E5864D46BF11F437291282DC9529A01934786733). The original theorem and proof are unchanged; the import is redirected to the local symmetric-evaluation port, provenance is added, and a qualified wrapper and print are appended. The endpoint requires the explicit divisibility, degree, injectivity and complete-root-count hypotheses and concludes the scaled sum lies in the base-ring image. It is not itself the Lindemann theorem.
