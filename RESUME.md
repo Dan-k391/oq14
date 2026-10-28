@@ -1,5 +1,18 @@
 # OQ14 resume state — October 28, 2026 continuation
 
+Stage 63 is the latest verified rollback snapshot: 440 incremental modules /
+3475 reports; all previous 424 records remain unchanged. See STAGE63.md in
+checkpoints/2026-10-27-continuation. Every genuine complex sphere kernel vector
+now yields actual locally integrable interior weak Helmholtz response at z*n,
+with unrestricted compact smooth tests and no assumed field equation. Exterior
+outgoing/interface matching and selected-sector kernel classification remain.
+Actual annular mollifier moment expansions and strong radial L2 convergence
+are checked; closed-span transfer is next. The common one-normalized-input
+simultaneous superlevel theorem now holds for actual inward binary materials,
+with the same bound/support and actual Maxwell at every index. Physical smooth
+interfaces and boundary estimates leading to attained maxima remain in progress.
+The clean aggregate is still release 5238. Work remains active.
+
 Stage 62 supersedes the corresponding older gaps below. The verified incremental
 ledger is 424 modules / 3416 reports, with all previous 402 records unchanged.
 See checkpoints/2026-10-27-continuation/STAGE62.md. The complete historical
