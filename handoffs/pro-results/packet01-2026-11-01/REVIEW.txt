@@ -1,0 +1,72 @@
+OQ14 PACKET 01 — REVIEW OF RETURNED PRO REPORT
+Date: 2026-11-01
+Review scope: mathematical correctness, agreement with existing source interfaces,
+and evidence status. No new Lean proof implementation or compilation performed.
+
+VERDICT
+The report supplies a sound mathematical proof of the Packet 01 targets from
+the stated existing premises. Root reviewed the full report and relevant actual
+source declarations; a separate 6.1 Terra reviewer independently agreed. No
+mathematical error was identified. This is a reviewed proof report, not a new
+Lean-verified addition to the accepted ledger.
+
+PROVENANCE
+Original chat title: 数学证明与Lean方案
+Chat ID: 6ae7e93d-7138-83ea-9782-57a3575d1254
+Report: https://chatgpt.com/library?file_id=libfile_ef0a2260977081918478c5c0bff6436c
+Retrieved through the chat reader, then the full library report through the
+browser after the chat reader truncated at 20,000 characters. Downloaded
+original saved byte-for-byte as RETURN_REPORT.txt (39,349 bytes).
+SHA256: f59fa5162b7f37faa103c8a480acb3179494bc19351c36f5d2238ec301731956
+Input packet SHA256, confirmed against the local handoff:
+6ea8bf7ba574de33e59d37293f41ee11e7ae4882b903c936b14efc2c4011879d
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+
+MATHEMATICAL CHECKS
+1. The actual/L2 representative bridge is valid almost everywhere in radius.
+   Polar disintegration, positivity of r^2 on r>0, finite intersections of
+   full-measure sets, and angular Cauchy-Schwarz justify the operations.
+2. For polynomial degree L=l+1, the substitution eta=r^(-L)*phi in the actual
+   weighted relation correctly gives (r^2 A)'=r B. Compact support inside (0,1)
+   makes this test globally smooth, including near zero. Local integrability
+   justifies splitting, cancellation, and restriction of the integrals.
+3. Transferring that weak relation to c*regular(L,z*n,r), and applying the
+   existing weak derivative uniqueness theorem, yields B=c*regularD/r with
+   the SAME c. regularD already includes the radial chain-rule factor z*n.
+4. The degree-zero proof is separate and valid. Actual divergence gives
+   F_0'=0 for F_0=r^2*A_1. Testing the actual Debye weak Helmholtz equation
+   with psi(r)/r gives F_0''+(z*n)^2*F_0=0. Subtracting the flux identity
+   tested with psi' and using z*n!=0 forces F_0=0 as a distribution and a.e.
+5. The nine proposed Lean signatures retain the correct hypotheses, degree
+   indexing, bilinear convention, frequency factor and radial measures.
+   They are specifications only, with no proof terms or compiled evidence.
+
+SOURCE-STATUS CAVEATS RESOLVED LOCALLY
+The original report accurately states the limited evidence available in its
+Pro session. Preserve its text; these findings refine that evidence:
+
+- All 14 quoted source blocks match the original archive and working files
+  after universal newline normalization. Six text-block hashes match the raw
+  originals directly; eight differ because original CRLF bytes were normalized
+  to LF in the TXT handoff. All 14 original raw hashes match the manifest.
+  No substantive source difference was found. See source_verification.json.
+- RadialOriginSelection.lean has a prior independent audit and is in the
+  release-5238 clean-build evidence. The current raw source hash matches the
+  independent receipt in reviews/radial_origin_selection.md:
+  7f94cbac8a50b6cf2ddd09157ab0be113f16fa441d1836e20b9a219e6feb0e57.
+  The receipt records nine standard-only reports; the clean-build log includes
+  regular_hasDerivAt and regularD_hasDerivAt with the standard foundations.
+  This is prior evidence, not a fresh compile of that module in this review.
+
+REMAINING FORMAL WORK
+Finalize and independently check the representative bridge; implement compact
+test division, local integrability and weak-identity adapters; prove the final
+same-amplitude and monopole theorems; run the pinned compiler and inspect actual
+axiom reports; then independently audit before adding anything to the ledger.
+The pending MonopoleFlux source has not been repaired by this review. The
+report's cast simplification is a reasonable uncompiled suggestion only.
+
+No interface matching, sector kernel dimension, TE elimination, inverse-pole
+simplicity or hotspot closure follows from this report alone. Packet 04 still
+requires the results of Packet 02 in addition to this mathematical report.
+Existing proof sources, frozen evidence and acceptance counts were not changed.

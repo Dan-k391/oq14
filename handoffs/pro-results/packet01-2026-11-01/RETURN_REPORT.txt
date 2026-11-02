@@ -1,0 +1,799 @@
+OQ14 — PACKET 01 RETURN REPORT
+Electric radial/poloidal coefficients and the missing degree-zero case
+Prepared: 2026-11-01
+Checkpoint identified by the packet: aeed697d5224424878d99840d33b67abde175947
+
+RESULT AND VERIFICATION BOUNDARY
+
+The task-specific mathematical argument is complete relative to the packet's stated accepted results and the exact regular/regularD derivative interfaces quoted in its supporting source. For every positive harmonic degree L, the actual radial and poloidal moments have the same amplitude:
+
+  r^2 A_P(r) = c regular(L,zn,r),
+  B_P(r) = c regularD(L,zn,r)/r
+
+almost everywhere on (0,1), and (r^2 A_P)' = r B_P in distributions. The actual electric monopole A_1 vanishes almost everywhere. The proof below establishes the missing representative bridge and flux argument instead of treating the pending files as accepted.
+
+No new Lean theorem was compiled or kernel-verified in this session. All proposed declarations below are UNCOMPILED SIGNATURE SPECIFICATIONS, not complete implementation files. The packet's accepted status labels are reported as supplied; its original build evidence and dependency tree were not available. In particular, RadialOriginSelection remains supporting source with uncertified individual acceptance.
+
+1. PACKET ID, EXACT ASSUMPTIONS, DEFINITIONS, AND THEOREMS
+
+Packet ID: OQ14 Stage 65, Packet 01. Dependencies on earlier returned packets: none.
+
+1.1 Physical and algebraic hypotheses
+
+For every:
+
+  n : ℝ, hn : 1 < n,
+  z : ℂ, hz : z ≠ 0,
+  u : OQ14.VectorFourier.VectorL2,
+
+assume exactly:
+
+  ComplexConvolutionAnalytic.volumeBlock
+    (ModalWeightedMode.coefficient n hn) z 1 u = 0.
+
+Put I=(0,1) and k=z(n:ℂ). Since n>1, n is nonzero and k≠0.
+
+Use the actual field, with the packet's fixed radius and material coefficient,
+
+  ℰ_j(x) =
+    ComplexKernelResponse.response
+      (ModalWeightedMode.coefficient n hn) z 1 u
+      (VectorFourier.coordinateMap x) j,
+
+and its supplied L² coordinate representatives,
+
+  E_j = ComplexKernelDebye.coordinates n hn z u j.
+
+No assumption that u is nonzero, no extra normalization of u, no sign restriction on Im z, and no additional radiation assumption are imposed. The response definition and its outgoing convention are retained. All conclusions concern the interior open interval; no endpoint trace is asserted.
+
+For the positive-degree theorem, quantify over every
+
+  p : HarmonicPolynomial.Poly, L : ℕ,
+  1 ≤ L, p.IsHomogeneous L,
+  HarmonicPolynomial.formalLaplacian p = 0.
+
+The type Poly is the packet's actual polynomial type. We do not change its coefficient field. Write Y_P(ω)=SphericalMomentEquation.angularPolynomial p ω, and
+
+  D_jP(ω)=angularPolynomial (MvPolynomial.pderiv j p) ω.
+
+Let μ be exactly AngularPower.angularMeasure. All radial a.e. statements use unweighted Lebesgue measure dr restricted to I. The polar volume Jacobian is r²; it is not built into that radial a.e. measure.
+
+1.2 Literal moments
+
+Define, with the supplied L² representatives,
+
+  A_P(r)=Σ_j ∫ E_j(rω) ω_j Y_P(ω) dμ(ω),
+  G_P(r)=Σ_j ∫ E_j(rω) D_jP(ω) dμ(ω),
+  B_P(r)=G_P(r)-L A_P(r).
+
+The first two are exactly HarmonicMomentIntegrability.radialMoment and gradientMoment. If L=l+1, the third is exactly tangentialMoment E p l. In particular, tangentialMoment E p 0 is the definition for degree one; it must not be used to encode degree zero.
+
+Also write
+
+  A_P^act(r)=∫ (Σ_j ω_j ℰ_j(rω)) Y_P(ω) dμ(ω),
+
+which is exactly ComplexKernelDebye.radialCoefficient n hn z u p r.
+
+Every product above is the supplied complex bilinear product, not a Hermitian pairing. The proof does not insert conjugation or renormalize μ.
+
+1.3 Exact conclusions
+
+Theorem A — actual representatives. For every p, without harmonicity or homogeneity and without hz or the kernel condition,
+
+  A_P=A_P^act a.e. on I.
+
+For every natural l, the supplied tangentialMoment also equals, a.e., the literal actual angular integral with weight
+
+  D_jP(ω)-(l+1)ω_jY_P(ω).
+
+If p is homogeneous of degree L=l+1, this weight is its surface gradient.
+
+Theorem B — weak positive-degree coupling. Under the genuine-kernel hypotheses and homogeneity of positive degree L, without requiring harmonicity,
+
+  (r² A_P)' = r B_P in D'(I).
+
+Equivalently, for every complex φ∈C_c^∞(I),
+
+  ∫_I φ'(r) r²A_P(r) dr + ∫_I φ(r) rB_P(r) dr = 0.
+
+The same statement holds with A_P^act.
+
+Theorem C — common regular amplitude. Under all hypotheses in §1.1, including harmonicity, there exists one c∈ℂ such that, on one full-measure subset of I,
+
+  r²A_P^act(r)=c regular(L,k,r),
+  B_P(r)=c regularD(L,k,r)/r.
+
+Thus the quantifier order is:
+
+  for each n,z,u,p,L satisfying the hypotheses,
+  there exists c,
+  for almost every r∈I, both formulas hold.
+
+More strongly, for every c satisfying the radial representation, the displayed poloidal representation holds with that same c. The final theorem obtains c from the accepted Debye theorem; it does not assume a new classification or the desired poloidal formula.
+
+Theorem D — degree zero. Under the genuine-kernel hypotheses,
+
+  A_1^act(r)=0 and A_1(r)=0 for a.e. r∈I.
+
+This concerns the radial electric moment tested by the constant polynomial. It is not a claim that the scalar degree-zero moments of each Cartesian component vanish.
+
+2. COMPLETE NUMBERED MATHEMATICAL PROOF
+
+2.1 Polar slices and changes of representatives
+
+For each of the three coordinates, the physical-coordinate interface gives E_j=ℰ_j volume-a.e. Polar integration/disintegration transfers this to
+
+  E_j(rω)=ℰ_j(rω)
+
+for a.e. r>0 and, at each such radius, for μ-a.e. ω. Explicitly, a volume-null exceptional set N gives
+
+  ∫_0^∞ r² ∫ 1_N(rω) dμ(ω) dr=0.
+
+The integrand is nonnegative. Since r²>0 on (0,∞), its inner integral vanishes for unweighted-dr-a.e. r>0. The equivalence of weighted and unweighted null sets can also be checked on the countable annuli [1/m,m].
+
+Likewise, E_j∈L²(volume) and polar integration give
+
+  ∫_0^∞ r² ∫ |E_j(rω)|² dμ(ω) dr <∞,
+
+so the angular slice is L² for a.e. r>0. Intersect these finitely many full-measure radial sets, and then the finitely many angular full-measure sets for the three coordinates.
+
+The radial and gradient polynomial weights belong to L²(μ), as stated by accepted HarmonicMomentCoupling.weight_memLp. Cauchy–Schwarz therefore makes every product in A_P and G_P angular integrable at the good radii. Their finite sums and differences are integrable too. No statement about integrability at every radius is required.
+
+At these radii, finite sum/integral interchange and the representative equalities give
+
+  A_P(r)
+    =∫ Σ_j E_j(rω)ω_jY_P(ω) dμ
+    =∫ (Σ_j ω_jℰ_j(rω))Y_P(ω) dμ
+    =A_P^act(r).
+
+The same argument with D_jP and with D_jP-Lω_jY_P gives the literal gradient and poloidal angular integrals.
+
+This proves the mathematical content of the pending KernelRadialMomentBridge.radial_moment_actual. Its existing hypotheses suffice; hz, the kernel equation, homogeneity, and harmonicity are not needed for this bridge. The proof does not assume equality of arbitrary representatives on every sphere.
+
+2.2 Explicit integrability bounds and their dependence
+
+Define finite constants
+
+  C_A²=∫ |Y_P|² dμ,
+  C_G²=∫ Σ_j |D_jP|² dμ,
+  C_B²=∫ Σ_j |D_jP-Lω_jY_P|² dμ.
+
+The triangle inequality in angular vector L² gives C_B≤C_G+L C_A. These constants depend only on p, L, and the supplied angular measure. They do not depend on n,z,u.
+
+Set
+
+  Q(r)²=∫ Σ_j |E_j(rω)|² dμ.
+
+At good radii, vector Cauchy–Schwarz and Σ_jω_j²=1 give
+
+  |A_P(r)|≤C_A Q(r),
+  |G_P(r)|≤C_G Q(r),
+  |B_P(r)|≤C_B Q(r).
+
+Absolute values used in this estimate do not change the bilinear convention of the moments.
+
+For 0<a<b<1 put
+
+  N_ab²=Σ_j ∫_{a<|x|<b} |E_j(x)|² dx
+       =∫_a^b r²Q(r)² dr.
+
+Consequently,
+
+  ||rA_P||_{L²(a,b)}≤C_A N_ab,
+  ||rG_P||_{L²(a,b)}≤C_G N_ab,
+  ||rB_P||_{L²(a,b)}≤C_B N_ab.
+
+In particular,
+
+  ||A_P||_{L¹(a,b)}≤a^(-1)√(b-a) C_A N_ab,
+  ||G_P||_{L¹(a,b)}≤a^(-1)√(b-a) C_G N_ab,
+  ||B_P||_{L¹(a,b)}≤a^(-1)√(b-a) C_B N_ab,
+  ||r²A_P||_{L¹(a,b)}≤b√(b-a) C_A N_ab,
+  ||rB_P||_{L¹(a,b)}≤√(b-a) C_B N_ab.
+
+Thus all moments and the functions F=r²A_P and H=rB_P are locally integrable on I, in fact locally square integrable. The same holds for their literal actual counterparts by §2.1. Compact tests and any of their derivatives can be multiplied into these functions and integrated absolutely. This proves the necessary regularity instead of assuming it as a theorem hypothesis.
+
+No numerical 4π factor is inserted: the constants use μ exactly as supplied. No estimate uniform in degree, frequency, or distance to either endpoint is claimed or needed.
+
+2.3 Identification of the actual tangential weight
+
+Homogeneity gives P(tω)=t^L P(ω), with the same complex evaluation as in the packet. Differentiate this polynomial identity at t=1:
+
+  Σ_j ω_jD_jP(ω)=L Y_P(ω).
+
+Therefore T_P(ω)=DP(ω)-LωY_P(ω) has ω·T_P=0. For any tangent vector v with v·ω=0, the directional derivative of the restricted polynomial in direction v equals DP(ω)·v=T_P(ω)·v. This is the defining property of the surface gradient. Hence
+
+  T_P=∇_{S²}Y_P,
+  B_P(r)=∫ ℰ(rω)·∇_{S²}Y_P(ω) dμ
+
+for a.e. r. This is the requested literal poloidal moment. No division by L(L+1) is appropriate for this definition.
+
+2.4 Reduction of the accepted weighted test identity
+
+Use the accepted HarmonicMomentIntegrability.actual_radial_tangential_relation with its Lean index l=L-1. It states, for every complex η smooth on ℝ with compact topological support contained in I,
+
+  ∫_0^∞ η' r^(L+2) A_P dr
+  +∫_0^∞ η r^(L+1)(B_P+L A_P) dr=0.                 (W)
+
+The displayed source already justifies the two weighted integrals. We additionally established the integrability needed to split and cancel the terms below.
+
+Let φ be an arbitrary complex C_c^∞(I) test, viewed as its smooth zero extension to ℝ. Set
+
+  η(r)=φ(r)/(r:ℂ)^L for r≠0, and η(0)=0.
+
+There is a neighborhood of 0 on which φ is identically zero, because its topological support is a compact subset of I. Hence η is identically zero there and smooth at 0. Away from 0 it is a quotient of smooth functions with nonvanishing denominator. Its support is contained in the support of φ, so it is an admissible global smooth compact test. In Lean's totalized division, the same function can simply be written φ r/(r:ℂ)^L.
+
+For r>0,
+
+  η'=r^(-L)φ' - L r^(-L-1)φ.
+
+Writing F=r²A_P and H=rB_P, the integrands become
+
+  η' r^(L+2)A_P = φ'F-Lφ rA_P,
+  η r^(L+1)(B_P+LA_P)=φH+Lφ rA_P.
+
+All four terms are integrable on the common compact support, by §2.2. Their cancellation in (W) is therefore legitimate and gives
+
+  ∫_I φ'F dr +∫_I φH dr=0.                         (U)
+
+Both φ and φ' vanish outside the topological support of φ. The integrals can consequently be taken over I, (0,∞), or all ℝ, as needed. This justifies the change from the source's restricted integrals to the whole-line convention in WeakDerivativeIdentification.
+
+By the convention <F',φ>=-∫Fφ', equation (U) is exactly F'=H, with positive sign. No angular integral has been differentiated.
+
+2.5 Weak-derivative uniqueness, with the representative change justified
+
+Here is the precise analytic principle being used:
+
+  If J⊂ℝ is an open interval, f has derivative df at every point of J,
+  df is continuous on J, g∈L¹_loc(J), and
+  ∫φ'f+∫φg=0 for every compact smooth real test φ in J,
+  then g=df a.e. on J.
+
+For a compact test, choose an interval whose interior contains its support and whose closure lies in J. The classical product rule and fundamental theorem of calculus, applied to real and imaginary parts, give ∫φ'f=-∫φdf; there are no boundary terms because φ vanishes near the interval endpoints. Thus ∫φ(g-df)=0.
+
+For completeness, the test-annihilation principle for an L¹_loc function h follows by mollification. On each compact subinterval K⊂J, choose a compact cutoff equal to one on a neighborhood of K and extend the product with h by zero. Testing against translated, sufficiently narrow smooth mollifiers makes its convolutions vanish on K. The convolutions converge in L¹(K) to h. Indeed, the approximate-identity estimate follows from continuity of translations in L¹, which follows by approximating L¹ functions by continuous compactly supported functions and using their uniform continuity. Hence h=0 a.e. on each K, and a countable exhaustion gives the conclusion on J.
+
+The supplied accepted theorem WeakDerivativeIdentification.classical implements the displayed analytic principle. Its tests are real-valued; equation (U), proved for complex tests, supplies them by taking the complex coercion of a real test. Its derivative is the complex coercion of the real derivative.
+
+If F=f a.e. on I, (U) transfers to f: multiplying the a.e. equality by the compactly supported φ' preserves equality, and both products are integrable. Outside I the test derivative is zero. No classical differentiability of the original arbitrary representative F is asserted.
+
+2.6 Substitution of the actual regular radial mode
+
+The accepted ComplexKernelDebye.regular_radial_coefficient gives c∈ℂ with
+
+  r²A_P^act(r)=c regular(L,k,r) a.e. on I.
+
+By §2.1, the same holds for A_P. Let
+
+  f(r)=c regular(L,k,r),
+  df(r)=c regularD(L,k,r).
+
+The exact supplied supporting interface is
+
+  HasDerivAt (regular L k) (regularD L k r) r
+
+for every real r. Hence f'=df. For k≠0 and r≠0, the supplied regularD_hasDerivAt asserts that regularD L k has a derivative at r. This implies its continuity at every r∈I, without needing to unfold the coefficient appearing in that derivative. Therefore df is continuous on I.
+
+These are the precise supporting-source dependencies. Their individual Lean acceptance is not certified by the packet, and no new certification is asserted here.
+
+Apply §2.5, or accepted WeakDerivativeIdentification.classical, with
+
+  J=I, f=c regular(L,k), df=c regularD(L,k), g=H=rB_P.
+
+Every hypothesis has now been checked: openness, the pointwise derivative, continuity of df, local integrability of g, and the transferred weak identity. We obtain
+
+  rB_P(r)=c regularD(L,k,r) a.e. on I.
+
+Since r>0 on I, its complex coercion is nonzero. Division yields
+
+  B_P(r)=c regularD(L,k,r)/r a.e. on I.
+
+Intersecting the radial and poloidal full-measure sets proves the joint conclusion with one c. By §2.1 the poloidal moment is also its literal actual angular integral.
+
+The source defines
+
+  regular L k r=origin L (k*r),
+  regularD L k r=k*originD L (k*r).
+
+Thus the radial chain-rule factor k is already included. There is no additional k, i, complex conjugation, or angular normalization factor in the formula.
+
+2.7 Separate degree-zero flux calculation from actual divergence
+
+Now take p=1. Polynomial evaluation gives Y_1=1 and its polynomial derivatives are zero. Put F_0(r)=r²A_1^act(r), equivalently r²A_1(r) a.e. By §2.2, F_0∈L¹_loc(I).
+
+Given η∈C_c^∞(I;ℂ), define Φ(x)=η(|x|). It vanishes on a neighborhood of the origin, is smooth everywhere, and has compact support in an annulus contained in the unit ball. For x=rω and r>0,
+
+  ∂_jΦ(rω)=η'(r)ω_j.
+
+Apply the accepted ComplexSphereDivergence.actual_divergence to this actual test:
+
+  0=Σ_j ∫ ℰ_j(x)∂_jΦ(x) dx.
+
+Each product is integrable: the field has an L² representative and the test derivative is bounded with compact support. Polar integration and the justified finite angular sum give
+
+  0=∫_I r²η'(r)∫Σ_jω_jℰ_j(rω)dμ dr
+   =∫_I η'(r)F_0(r)dr.                             (F)
+
+Therefore F_0'=0 in D'(I). This is a direct degree-zero argument. It does not specialize the positive-degree coupling at an invalid index.
+
+This also establishes the mathematical content of pending MonopoleFlux.actual_weak_flux. Its constant_test_derivative is the elementary radial chain rule above. The draft's finite radial sum is justified by radial_integrable with m=1 and test η'.
+
+2.8 Derive the actual degree-zero radial equation
+
+Let q=DebyeScalarL2.datum 1 (ComplexKernelDebye.coordinates n hn z u).
+
+The accepted scalar_weak states
+
+  ∫ q(x)(ΔΦ(x)+k²Φ(x)) dx=0
+
+for every smooth compact test supported in the unit ball. This is a theorem about the actual L² Debye datum, not an assumed scalar substitute.
+
+The accepted scalar_actual identifies q with x·ℰ inside the ball. More directly, accepted moment_actual at p=1 gives
+
+  m_0(r):=∫q(rω)dμ = r A_1^act(r) a.e. on I.        (M)
+
+Let ψ∈C_c^∞(I;ℂ), set χ(r)=ψ(r)/r for r>0 and zero for r≤0, and use Φ(x)=χ(|x|). The same support argument as in §2.4 proves that χ and Φ are globally smooth with compact support in an interior annulus.
+
+For r>0,
+
+  χ'=ψ'/r-ψ/r²,
+  χ''=ψ''/r-2ψ'/r²+2ψ/r³.
+
+To compute the three-dimensional radial Laplacian, differentiate
+∂_jΦ=χ'(r)x_j/r and sum over j:
+
+  ΔΦ=χ''(r)Σ_jx_j²/r²
+      +χ'(r)Σ_j(1/r-x_j²/r³)
+     =χ''(r)+2χ'(r)/r
+     =ψ''(r)/r.
+
+At the origin the test vanishes on a neighborhood, so no singularity or distribution supported at the origin is introduced.
+
+The product q(ΔΦ+k²Φ) is integrable since q∈L² and the other factor is bounded with compact support. Thus polar integration and (M) give
+
+  0=∫_I r²m_0(r)[ψ''(r)+k²ψ(r)]/r dr
+   =∫_I F_0(r)[ψ''(r)+k²ψ(r)]dr.                  (R0)
+
+All one-dimensional products are integrable by §2.2. This proves
+
+  F_0''+k²F_0=0 in D'(I).
+
+The coefficient is k²=(zn)², not |k|². This derivation needs no differentiation of q or of its angular integral.
+
+As an independent sign check, the scalar spherical-Bessel equation is
+t²w''+2tw'+[t²-L(L+1)]w=0; after the Riccati change its degree-zero radial form is exactly F''+k²F=0. See NIST DLMF 10.47.1:
+https://dlmf.nist.gov/10.47#E1
+The proof above derives the required equation from the actual field, so the external formula is only a check, not a new premise or an identification of the project's regular-mode normalization.
+
+2.9 Eliminate the monopole
+
+The derivative ψ' is also a compact smooth test supported in I: differentiation cannot enlarge topological support. Take η=ψ' in (F), obtaining
+
+  ∫_I F_0 ψ'' dr=0.
+
+Subtract this from (R0):
+
+  k²∫_I F_0 ψ dr=0.
+
+Since k≠0, k²≠0, so ∫F_0ψ=0 for every compact smooth test. The test-annihilation principle proved in §2.5 gives F_0=0 a.e. on I. Division by the nonzero r² yields
+
+  A_1^act=0 a.e. on I,
+
+and the representative bridge gives A_1=0 a.e.
+
+For Lean, the final test-annihilation step can reuse the accepted identification theorem: the identity ∫ψF_0=0 is precisely the weak-derivative condition with f=0 and g=F_0. Apply WeakDerivativeIdentification.classical with f=df=0 and the proved local integrability of F_0. It returns F_0=0 a.e.
+
+Flux conservation by itself only proves a constant distribution on the connected interval; it does not by itself force that constant to vanish. Here the actual nonzero-frequency radial equation supplies the missing argument.
+
+2.10 Relation to the regular degree-zero representation and degree bookkeeping
+
+The accepted Debye radial theorem is valid at p=1,L=0, because 1 is homogeneous of degree zero and harmonic. It gives F_0=c regular(0,k) a.e. The proof above forces this representative to be zero as a distribution and, by continuity, throughout I. It is therefore legitimate to choose the zero amplitude for the monopole.
+
+A second valid route transfers (F) to c regular(0,k), uses weak-derivative identification to get c regularD(0,k)=0, and combines that with the degree-zero Riccati equation. However, the supplied regularD_hasDerivAt refers to an imported RadialRellich.radialCoefficient whose definition is not printed. That shortcut would need the exact interface
+
+  RadialRellich.radialCoefficient 0 k r = -(k^2)
+
+at r≠0. The direct proof in §2.8 removes that dependency.
+
+No angular-component classification was used. The scalar degree in the Debye moment belongs to x·ℰ. A componentwise harmonic degree of ℰ_j is a different object; the result does not eliminate those componentwise constant harmonics. The constant angular polynomial has zero surface gradient, but the positive-degree-indexed tangentialMoment must still not be called at l=0 to represent it.
+
+3. SOURCE MAP AND STATUS
+
+All source references below are to the named blocks in the attached packet. "Accepted" means accepted according to the packet, not compiled again in this session.
+
+3.1 Accepted interfaces actually used
+
+(a) lean/ComplexKernelDebye.lean
+  - regular_radial_coefficient: under n>1,z≠0,the actual kernel equation,
+    homogeneous harmonic p of degree L, supplies one c and
+    r² radialCoefficient=c regular L (z*n) a.e. on (0,1).
+  - scalar_weak: the specified Debye L² datum is weak Helmholtz with k=z*n
+    in the unit ball under the same physical hypotheses.
+  - moment_actual: for every p, the datum's actual angular moment equals
+    r*radialCoefficient a.e. on (0,1), without requiring hker or hz.
+  - scalar_actual: identifies the datum with the closed-ball indicator of
+    x·ℰ a.e.; the tests used here lie strictly inside the ball.
+  - divergence: equivalent actual-coordinate representative divergence.
+  Status: accepted Stage 65.
+
+(b) lean/HarmonicMomentIntegrability.lean
+  - actual_radial_tangential_relation and actual_weak_relation:
+    the weighted identities for p.IsHomogeneous (l+1).
+  - radial_integrable: for f in scalar L², continuous angular L² weight σ,
+    a smooth compact η and natural m, r^(m+1)η(r)moment(f,σ,r)
+    is integrable on (0,∞).
+  - radialMoment, gradientMoment, tangentialMoment: literal definitions.
+  Status: accepted Stage 65.
+
+(c) lean/HarmonicMomentCoupling.lean
+  - weight_memLp: radial and gradient polynomial weights belong to angular L².
+  - angular_split: splitting is justified when the angular field slice is L².
+  - actual_moment_divergence: provenance of the accepted weighted coupling.
+  Status: accepted Stage 65.
+
+(d) lean/ComplexSphereDivergence.lean
+  - actual_divergence: for the genuine kernel response and every smooth compact
+    Φ supported in the unit ball, Σ_j∫ℰ_j∂_jΦ=0.
+  Status: accepted Stage 65.
+
+(e) lean/ComplexSpherePolarDivergence.lean
+  - polar_radial_divergence: same actual divergence after polar integration
+    for test η(|x|)P(x), with arbitrary p, including p=1.
+  Status: accepted Stage 65.
+
+(f) lean/WeakDerivativeIdentification.lean
+  - classical: on open Ω, pointwise HasDerivAt f(df x), ContinuousOn df Ω,
+    LocallyIntegrableOn g Ω and WeakDerivative Ω f g imply g=df a.e.
+  Status: accepted Stage 65.
+
+3.2 Provenance and inspected supporting sources
+
+- lean/DebyeScalarL2.lean: datum construction, datum_actual, datum_weak, and
+  regular_moment connect actual L² coordinates to the Debye scalar.
+  Accepted; not replaced by an abstract field assumption.
+- lean/WeakDebyeScalar.lean: weak_helmholtz derives the equation for x·E
+  from actual component Helmholtz equations and divergence. Accepted.
+- lean/RegularBallGlobal.lean: weak_moment supplies one global interior
+  amplitude for a weak scalar Helmholtz datum. Accepted.
+  Its separate kernel_moment for Cartesian components is not used as a
+  vector-degree classification.
+- lean/HarmonicRadialTestGradient.lean: derivative_on_ray is positive-degree
+  calculus underlying the weighted relation. Accepted; not used at degree zero.
+- lean/RadialOriginSelection.lean: regular_hasDerivAt and
+  regularD_hasDerivAt have their exact hypotheses checked in §2.6.
+  Supporting source only: individual acceptance is uncertified.
+- checkpoints/.../STAGE65.md: checkpoint context only, not a proof premise.
+  Supporting source; ledger counts do not certify this task's closure.
+
+3.3 Pending sources reviewed mathematically here
+
+- lean/KernelRadialMomentBridge.lean, radial_moment_actual:
+  mathematically valid by §2.1. The packet's draft compiler success does not
+  constitute a new accepted/frozen result.
+- lean/MonopoleFlux.lean, constant_test_derivative and actual_weak_flux:
+  mathematically valid by §2.7. Its failed compiler check remains unresolved
+  as a Lean matter. We have not modified the source or claimed a repaired build.
+
+3.4 Imported interfaces whose complete defining files were not supplied
+
+The following mathematical content is visible in uses within the supplied proofs.
+The proofs above also justify the needed analysis, but exact Lean invocations
+require reading the defining sources:
+
+- NewtonL2.physicalCoordinate_ae: physicalCoordinate E j equals
+  x↦E(coordinateMap x)j volume-a.e.
+- PolarMomentAE.polar_ae: a volume-a.e. property on Space holds angular-a.e.
+  for dr-a.e. positive radius.
+- PolarMomentEnergy.slice_memLp_ae: a scalar volume L² representative has
+  angular L² slices for dr-a.e. positive radius.
+- PolarMomentEnergy.radial_moment_memLp: for scalar volume L² f and a
+  measurable angular L² weight σ, r↦r*moment f σ r is L²(dr|(0,∞)).
+- ComplexPolarIntegration.integral_polar_complex: for an integrable complex
+  h on Space, ∫h dx=∫_0^∞r²∫h(rω)dμ dr.
+- SmoothWeakDerivative.WeakDerivative: its exact definition must be read
+  before writing the adapter; the supplied classical proof shows real tests
+  and whole-line integral identities.
+
+The primary mathlib documentation confirms the usual local test-annihilation
+theorem, but it is current documentation rather than verification of the pinned
+commit: https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Distribution/AEEqOfIntegralContDiff.html
+The accepted local classical theorem already provides the interface needed here.
+
+4. MINIMAL ORDERED LEAN LEMMA/MODULE PLAN
+
+Use new files for the returned work. Do not silently alter accepted/frozen files.
+
+1. Packet01MomentBridge.lean
+   Finalize radial_moment_actual; prove the literal tangential integral bridge;
+   derive local integrability of A,G,B,F,H from weighted L² moments.
+
+2. Packet01RadialTestReduction.lean
+   Prove compact-test division by r^L, derivative/support facts, and equality
+   of restricted and whole-line test integrals. Substitute into the actual
+   weighted identity to obtain the explicit unweighted weak identity.
+
+3. Packet01PoloidalCoefficients.lean
+   Establish the continuity consequence for regularD on I; transfer the weak
+   relation to c regular; invoke accepted classical; divide by r; obtain the
+   final joint theorem with c supplied by regular_radial_coefficient.
+
+4. Packet01Monopole.lean
+   Prove angularPolynomial_one and the constant radial test derivative;
+   derive actual flux; prove the compact ψ/r radial Laplacian calculation;
+   derive the actual weak degree-zero ODE; combine flux with the ODE and
+   invoke test-annihilation to conclude the monopole theorem.
+
+Dependencies: steps 1 and 2 plus the quoted regular derivative interfaces feed
+step 3. Step 4 uses the local-integrability/representative work from step 1,
+the compact-quotient test idea from step 2, and accepted actual divergence,
+scalar_weak, and moment_actual. It does not depend on step 3 or a positive-degree
+specialization.
+
+4.1 Proposed Lean statement catalog — ALL UNCOMPILED
+
+These are signatures only, not declarations with proof terms and not a candidate
+source file presented as compilable. Names are proposed new theorem names.
+No axioms or proof placeholders have been introduced to claim closure.
+
+Use the namespaces supplied by the packet; within namespace OQ14, the following
+open declarations explain the abbreviations used in this catalog:
+
+  open Complex MeasureTheory Metric Set Filter
+    OQ14.Maxwell OQ14.AngularPower OQ14.HarmonicPolynomial
+    OQ14.HarmonicMomentCoupling OQ14.HarmonicMomentIntegrability
+    OQ14.ComplexKernelResponse OQ14.SphericalMomentEquation
+  open scoped Topology
+
+(i) Representative bridge, same mathematical statement as the pending file:
+
+  theorem radial_moment_actual
+      (n : ℝ) (hn : 1 < n) (z : ℂ)
+      (u : VectorFourier.VectorL2) (p : HarmonicPolynomial.Poly) :
+      ∀ᵐ r : ℝ ∂volume.restrict (Ioo (0 : ℝ) 1),
+        radialMoment (ComplexKernelDebye.coordinates n hn z u) p r =
+          ComplexKernelDebye.radialCoefficient n hn z u p r
+
+(ii) Literal actual tangential integral, valid algebraically for every p:
+
+  theorem tangential_moment_actual
+      (n : ℝ) (hn : 1 < n) (z : ℂ)
+      (u : VectorFourier.VectorL2)
+      (p : HarmonicPolynomial.Poly) (l : ℕ) :
+      ∀ᵐ r : ℝ ∂volume.restrict (Ioo (0 : ℝ) 1),
+        tangentialMoment
+            (ComplexKernelDebye.coordinates n hn z u) p l r =
+          ∫ ω : Sphere,
+            (∑ j : Fin 3,
+              response (ModalWeightedMode.coefficient n hn) z 1 u
+                  (VectorFourier.coordinateMap (r • (ω : Space))) j *
+                (gradientWeight p j ω -
+                  (l + 1 : ℂ) * radialWeight p j ω))
+            ∂angularMeasure
+
+(iii) Local integrability, with the weighted variants as immediate companions:
+
+  theorem moments_locallyIntegrable
+      (E : Fin 3 → PolarMomentEnergy.ScalarL2)
+      (p : HarmonicPolynomial.Poly) (l : ℕ) :
+      LocallyIntegrableOn (radialMoment E p) (Ioi (0 : ℝ)) ∧
+        LocallyIntegrableOn (gradientMoment E p) (Ioi (0 : ℝ)) ∧
+        LocallyIntegrableOn (tangentialMoment E p l) (Ioi (0 : ℝ))
+
+(iv) Compact inverse-power test:
+
+  theorem div_radial_pow_test
+      (L : ℕ) (ψ : ℝ → ℂ)
+      (hψ : ContDiff ℝ (⊤ : ℕ∞) ψ)
+      (hc : HasCompactSupport ψ)
+      (hs : tsupport ψ ⊆ Ioo (0 : ℝ) 1) :
+      ContDiff ℝ (⊤ : ℕ∞)
+          (fun r : ℝ => ψ r / (r : ℂ)^L) ∧
+        HasCompactSupport (fun r : ℝ => ψ r / (r : ℂ)^L) ∧
+        tsupport (fun r : ℝ => ψ r / (r : ℂ)^L)
+          ⊆ Ioo (0 : ℝ) 1 ∧
+        ∀ r ∈ Ioo (0 : ℝ) 1,
+          HasDerivAt (fun t : ℝ => ψ t / (t : ℂ)^L)
+            (deriv ψ r / (r : ℂ)^L -
+              (L : ℂ) * ψ r / (r : ℂ)^(L+1)) r
+
+(v) Actual unweighted weak relation; harmonicity is deliberately absent:
+
+  theorem actual_radial_tangential_weak
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0)
+      (p : HarmonicPolynomial.Poly) (l : ℕ)
+      (hp : p.IsHomogeneous (l+1))
+      (ψ : ℝ → ℂ) (hψ : ContDiff ℝ (⊤ : ℕ∞) ψ)
+      (hc : HasCompactSupport ψ)
+      (hs : tsupport ψ ⊆ Ioo (0 : ℝ) 1) :
+      (∫ r : ℝ, deriv ψ r *
+        ((r : ℂ)^2 *
+          ComplexKernelDebye.radialCoefficient n hn z u p r)) +
+        (∫ r : ℝ, ψ r * ((r : ℂ) *
+          tangentialMoment
+            (ComplexKernelDebye.coordinates n hn z u) p l r)) = 0
+
+(vi) Final same-amplitude theorem; no assumed radial or poloidal formula:
+
+  theorem electric_radial_tangential_regular
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0)
+      (p : HarmonicPolynomial.Poly) (l : ℕ)
+      (hp : p.IsHomogeneous (l+1))
+      (hh : HarmonicPolynomial.formalLaplacian p = 0) :
+      ∃ c : ℂ, ∀ᵐ r : ℝ ∂volume.restrict (Ioo (0 : ℝ) 1),
+        ((r : ℂ)^2 *
+            ComplexKernelDebye.radialCoefficient n hn z u p r =
+          c * RadialOriginSelection.regular (l+1) (z*n) r) ∧
+        (tangentialMoment
+            (ComplexKernelDebye.coordinates n hn z u) p l r =
+          c * RadialOriginSelection.regularD (l+1) (z*n) r /
+            (r : ℂ))
+
+A useful intermediary takes a particular c and the accepted radial a.e.
+representation, and concludes the second formula. Its proof is §2.6. The final
+theorem above discharges that intermediary's radial premise using the accepted
+Debye theorem.
+
+(vii) Actual degree-zero flux:
+
+  theorem actual_monopole_weak_flux
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0)
+      (ψ : ℝ → ℂ) (hψ : ContDiff ℝ (⊤ : ℕ∞) ψ)
+      (hc : HasCompactSupport ψ)
+      (hs : tsupport ψ ⊆ Ioo (0 : ℝ) 1) :
+      (∫ r in Ioo (0 : ℝ) 1,
+        ((r : ℂ)^2 *
+          ComplexKernelDebye.radialCoefficient
+            n hn z u (1 : HarmonicPolynomial.Poly) r) *
+          deriv ψ r) = 0
+
+(viii) Actual degree-zero radial equation:
+
+  theorem actual_monopole_weak_riccati
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0)
+      (ψ : ℝ → ℂ) (hψ : ContDiff ℝ (⊤ : ℕ∞) ψ)
+      (hc : HasCompactSupport ψ)
+      (hs : tsupport ψ ⊆ Ioo (0 : ℝ) 1) :
+      (∫ r in Ioo (0 : ℝ) 1,
+        ((r : ℂ)^2 *
+          ComplexKernelDebye.radialCoefficient
+            n hn z u (1 : HarmonicPolynomial.Poly) r) *
+          (deriv (deriv ψ) r + (z*n)^2 * ψ r)) = 0
+
+(ix) Final actual monopole theorem:
+
+  theorem monopole_radial_coefficient_eq_zero
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0) :
+      ∀ᵐ r : ℝ ∂volume.restrict (Ioo (0 : ℝ) 1),
+        ComplexKernelDebye.radialCoefficient
+          n hn z u (1 : HarmonicPolynomial.Poly) r = 0
+
+4.2 Pending cast-of-one repair: uncompiled suggestion only
+
+First prove the elementary helper
+
+  angularPolynomial (1 : HarmonicPolynomial.Poly) ω = (1 : ℂ).
+
+This is evaluation of the constant polynomial followed by casting real one to
+complex one. It makes radialWeight 1 j ω equal to the complex coordinate ω_j.
+
+The draft's failing simplification may be repaired by adding Complex.ofReal_one:
+
+  simp only [radialWeight, angularPolynomial, complexEvaluate,
+    evaluate, map_one, Complex.ofReal_one, mul_one]
+  ring
+
+This is not a verified patch. The exact evaluation definitions and compiler
+error were not supplied as a runnable project; only the mathematical repair
+is established. The original files remain untouched.
+
+5. VERIFICATION: WHAT WAS ACTUALLY RUN
+
+Requested environment:
+  Lean 4.19.0
+  mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+
+Actual checks:
+  - Read all 14 quoted source blocks (including the checkpoint note).
+  - Located no Lean project/dependency tree in the supplied workspace.
+  - lean --version: exit 127, "lean: command not found".
+  - lake --version: exit 127, "lake: command not found".
+  - Checks for lean/lake/elan on PATH found none.
+  - Python SHA-256 calculation of the attached packet: exit 0.
+
+Packet SHA-256:
+  6ea8bf7ba574de33e59d37293f41ee11e7ae4882b903c936b14efc2c4011879d
+
+A quotation-extraction hash probe matched six quoted blocks to their displayed
+complete-original hashes. The other eight did not match under that extraction,
+including ordinary trailing-newline variants. The packet explicitly permits
+focused excerpts as well as full files, so this does not establish a source
+alteration or invalidate a theorem. It does mean that these quotations are not
+an independent byte-level authentication of all complete original files.
+Source acceptance in this report remains attributed to the packet.
+
+No new .lean implementation was compiled. No #print axioms command was executed.
+No .olean or compiler acceptance log was produced. The supplied draft-pass and
+draft-failure descriptions were not reproduced locally. External documentation
+was checked only as a mathematical/API cross-reference; the pinned mathlib
+source fetch was unavailable and is not claimed verified.
+
+Therefore:
+  VERIFIED NEW LEAN CODE: none.
+  NEW MATHEMATICAL PROOFS: §§2.1–2.10, subject to the listed packet premises.
+  UNCOMPILED LEAN PROPOSALS: all signatures and the cast simplification above.
+  COMPLETE CANDIDATE IMPLEMENTATION SOURCE FILES: none produced.
+
+The eventual coding-agent verification should compile the new modules in the
+existing pinned project, then run #print axioms for the final common-amplitude
+and monopole theorems and record the actual output. No expected axiom list is
+being substituted for that check.
+
+6. REMAINING GAPS AND REQUIRED CONTEXT
+
+6.1 Mathematical status
+
+All new task-specific mathematical obligations are proved:
+
+  - actual/L² representative bridges, including the literal poloidal integral;
+  - angular and radial local integrability with explicit constants;
+  - globally admissible inverse-power compact tests;
+  - cancellation of the weighted identity and its distributional sign;
+  - a.e. substitution of the regular representative and weak uniqueness;
+  - direct degree-zero flux conservation from the actual divergence equation;
+  - the actual degree-zero radial equation from scalar_weak;
+  - nonzero-frequency elimination of the monopole.
+
+The positive-degree identification has the explicitly recorded dependence on
+regular_hasDerivAt and regularD_hasDerivAt from the supplied supporting source.
+Their statements have all hypotheses checked here, but their original compiled
+evidence is not supplied. This is an evidence/formalization prerequisite, not
+an assumed new poloidal formula or regularity estimate for the actual field.
+
+No interface matching, kernel dimension, TE elimination, resonance simplicity,
+or hotspot closure follows from this packet and none is claimed.
+
+6.2 Context required for the implementation phase
+
+Supply the pinned repository or its exact relevant sources and dependency
+objects, especially:
+
+  - NewtonL2.lean: physicalCoordinate and physicalCoordinate_ae.
+  - PolarMomentEnergy.lean: scalar L² type, slice_memLp_ae,
+    radial_moment_memLp.
+  - PolarMomentAE.lean: polar_ae.
+  - ComplexPolarIntegration.lean: integrable polar change of variables.
+  - SmoothWeakDerivative.lean: exact WeakDerivative definition.
+  - SphericalMomentEquation.lean and HarmonicPolynomial.lean:
+    angularPolynomial, complexEvaluate/evaluate, and constant-polynomial casts.
+  - RadialNormTest.lean (and the actual defining calculus module if different):
+    radial composition/support calculus and any existing radial Laplacian lemma.
+  - The pinned imports/evidence behind RadialOriginSelection.lean, including
+    RadialBoundarySelection.lean and RiccatiOriginLimits.lean and their exact
+    transitive dependencies, to certify the derivative interfaces.
+
+The exact header/declaration should be inspected before choosing API names or
+claiming a syntax repair. If a preexisting radial-Laplacian lemma is unavailable,
+the elementary calculation in §2.8 is the complete proof to formalize.
+
+The recommended monopole proof does not require the unquoted definition of
+RadialRellich.radialCoefficient. Request it only if choosing the alternate
+regular-ODE shortcut. No additional earlier-report theorem is assumed.
+
+Final disposition: mathematical completion of Packet 01 relative to its stated
+accepted premises and explicit supporting derivative interfaces; Lean
+implementation, pinned compilation, axiom auditing, and source promotion remain.
