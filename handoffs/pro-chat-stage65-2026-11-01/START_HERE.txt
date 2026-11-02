@@ -1,0 +1,49 @@
+OQ14: USING SEPARATE CHATS TO DEVELOP THE REMAINING PROOFS
+Prepared 2026-11-01 from the stopped stage-65 proof checkpoint:
+aeed697d5224424878d99840d33b67abde175947.
+
+Start with a fresh chat for each of these independent packets:
+  01_radial_coefficients.txt — radial/tangential moments and monopole elimination
+  02_magnetic_symmetry.txt — magnetic covariance and radial scalar vanishing
+  03_flat_interface_estimate.txt — the missing uniform interface energy bound
+If starting only one, begin with 03: it supplies a major estimate used in both
+driven and modal hotspot closure. Packet 01 is the smaller warm-up task.
+
+Upload the individual TXT as reference context and ask:
+  Please carry out the task in this packet and return the complete proof report
+  in its requested format. Distinguish proven mathematics from uncompiled Lean.
+
+Each TXT includes its own task, checkpoint status, relevant Lean source and/or
+paper excerpts. There is no need to upload the whole repository.
+The all-packets ZIP is a convenient download container; upload individual TXT
+files to the chats rather than relying on archive extraction support.
+
+Next rounds:
+  01 + 02 reports -> 04_sphere_kernel_classification.txt
+  03 report      -> 05_one_sided_maxima.txt
+  04 report      -> 06_simple_sector_residue.txt
+  05 + 06 reports -> 07_modal_and_driven_assembly.txt
+Attach full prerequisite reports to later tasks. Those reports are candidate
+proofs until reviewed; their existence does not certify their correctness.
+Task 07 has separate local insertion, modal assembly and driven
+assembly obligations; they can be returned separately with their dependency map.
+
+Bring results back to the coding chat after EACH packet; no need to finish all
+seven first. Preserve task ID, complete proof, exact statements, gap list and any
+candidate Lean files. If a chat stops on a specific missing imported theorem,
+return that request too. The coding agent can supply a focused extra source
+excerpt, check the result, create a rollback commit before integration, implement
+and compile Lean, audit dependencies/axioms, then update the closure ledger.
+
+Returning only a summary or a claim of success is insufficient. Generated Lean
+that has not actually compiled is UNCOMPILED. The packets explicitly forbid
+promoting pending drafts or the manuscript's PROVED labels to audited status.
+
+The project is not fully closed at this checkpoint. This handoff packages
+existing context and proposed tasks; it adds no new accepted Maxwell proofs.
+An eventual full result also requires paper integration and a clean full build.
+Source bytes referenced here were checked against available stage-65 accepted
+or pending manifests. Source status and raw hashes are in manifest.json. The
+source-reference ZIP preserves full raw originals, including files excerpted in
+the TXT packets, if more context is requested later. It is not a buildable Lean
+project: it omits the toolchain, mathlib, and unrelated/transitive imports.

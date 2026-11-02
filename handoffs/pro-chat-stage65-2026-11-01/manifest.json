@@ -1,0 +1,652 @@
+{
+  "prepared_date": "2026-11-01",
+  "proof_checkpoint": "aeed697d5224424878d99840d33b67abde175947",
+  "purpose": "Research handoff only; no new proof acceptance or full build",
+  "packets": [
+    {
+      "id": "01",
+      "file": "01_radial_coefficients.txt",
+      "title": "Electric radial/poloidal coefficients and the missing degree-zero case",
+      "dependencies": "None. This is a first-round task.",
+      "bytes": 65816,
+      "sha256": "6ea8bf7ba574de33e59d37293f41ee11e7ae4882b903c936b14efc2c4011879d",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/ComplexKernelDebye.lean",
+        "lean/DebyeScalarL2.lean",
+        "lean/WeakDebyeScalar.lean",
+        "lean/HarmonicMomentIntegrability.lean",
+        "lean/HarmonicMomentCoupling.lean",
+        "lean/HarmonicRadialTestGradient.lean",
+        "lean/ComplexSpherePolarDivergence.lean",
+        "lean/ComplexSphereDivergence.lean",
+        "lean/KernelRadialMomentBridge.lean",
+        "lean/MonopoleFlux.lean",
+        "lean/WeakDerivativeIdentification.lean",
+        "lean/RadialOriginSelection.lean",
+        "lean/RegularBallGlobal.lean"
+      ]
+    },
+    {
+      "id": "02",
+      "file": "02_magnetic_symmetry.txt",
+      "title": "Actual magnetic axial covariance and vanishing magnetic Debye scalar",
+      "dependencies": "None. Independent of packets 01 and 03.",
+      "bytes": 97640,
+      "sha256": "63a0d2d7c7e056e68ba6a37f5a58bbc91e775a05170f01cc7720a4446ecd1f55",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/ComplexMagneticLocal.lean",
+        "lean/ComplexMagneticResponse.lean",
+        "lean/ComplexMagneticMaxwell.lean",
+        "lean/ComplexSphereMaxwell.lean",
+        "lean/ComplexMagneticHelmholtz.lean",
+        "lean/ComplexMagneticDivergence.lean",
+        "lean/ComplexMagneticDebye.lean",
+        "lean/ComplexMagneticReflection.lean",
+        "lean/ModalAxialRotation.lean",
+        "lean/ModalAxialVolume.lean",
+        "lean/ModalMeridionalReflection.lean",
+        "lean/ModalMeridionalStatic.lean",
+        "lean/ModalMeridionalVolume.lean",
+        "lean/ComplexGreenKernel.lean"
+      ]
+    },
+    {
+      "id": "03",
+      "file": "03_flat_interface_estimate.txt",
+      "title": "Uniform differentiated-curl estimate across a flat dielectric interface",
+      "dependencies": "None. Independent first-round PDE task; highest-priority analytical estimate.",
+      "bytes": 71482,
+      "sha256": "a0ee54c5c9ac30b21b1e5d171e3063f7773bb91ea8b6b55f739ce0baae07b92a",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/MaxwellInverseCurlCurl.lean",
+        "lean/MaterialCurlCoercivity.lean",
+        "lean/MaxwellDifferenceQuotient.lean",
+        "lean/MaxwellWeakTranslation.lean",
+        "lean/FlatDifferenceCoercivity.lean",
+        "lean/FlatMaxwellDifferenceEnergy.lean",
+        "lean/MaxwellQuotientEnergy.lean",
+        "lean/MaxwellCutoffCommutator.lean",
+        "lean/LocalizedCurlCurlSource.lean",
+        "lean/MaxwellCurlCutoffSource.lean",
+        "lean/FlatLocalCurlSources.lean",
+        "lean/NestedCurlCutoffSource.lean",
+        "lean/FlatNestedMaxwellForcing.lean",
+        "lean/GlobalToRegionalCurl.lean",
+        "lean/WeakPoynting/Conservation.lean"
+      ]
+    },
+    {
+      "id": "04",
+      "file": "04_sphere_kernel_classification.txt",
+      "title": "Weak interface matching and the actual one-dimensional electric-sector sphere kernel",
+      "dependencies": "Supply completed reports from packets 01 and 02. Without them, state the missing prerequisites and give only a conditional result.",
+      "bytes": 115913,
+      "sha256": "ff7180b22305c5d11f786eb136775da92635ccd1a21f80474ed099ec27f091a0",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/ComplexKernelDebye.lean",
+        "lean/HarmonicMomentIntegrability.lean",
+        "lean/ComplexMagneticMaxwell.lean",
+        "lean/ComplexSphereInterface.lean",
+        "lean/ComplexInterfaceWeak.lean",
+        "lean/ComplexSphereMaxwell.lean",
+        "lean/AnalyticOutgoingSelection.lean",
+        "lean/OutgoingModeGluing.lean",
+        "lean/ModalVectorAngularSlices.lean",
+        "lean/ModalVolumeAngularCoefficients.lean",
+        "lean/ModalReconstructionOperator.lean",
+        "lean/ModalReconstructionEnergy.lean",
+        "lean/RiccatiTransmission.lean",
+        "lean/RiccatiDebyeTrace.lean",
+        "lean/ModalTMIsolation.lean",
+        "lean/ModalMeridionalVolume.lean",
+        "lean/ModalWeightedMode.lean",
+        "lean/ModalSphereVolumeKernel.lean",
+        "lean/ModalBoundedContrastIsolation.lean",
+        "manuscript/sections/modal_spectral.tex"
+      ]
+    },
+    {
+      "id": "05",
+      "file": "05_one_sided_maxima.txt",
+      "title": "Fixed curved-interface regularity, uniform convergence, and attained hotspot maxima",
+      "dependencies": "Supply packet 03, or prove a complete alternative regularity route and account for all its analytic lemmas.",
+      "bytes": 91036,
+      "sha256": "57e6d4c8bb1261df547c18fc2d9cbf5a1a3d25672aaeeb5481d94b1c0947300d",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/CommonBinaryCollar.lean",
+        "lean/CommonBinaryInterface.lean",
+        "lean/CommonBinaryValues.lean",
+        "lean/ConicalCommonBinaryPeaks.lean",
+        "lean/ConicalCommonSimultaneousPeaks.lean",
+        "lean/ConicalCommonRungeNonzero.lean",
+        "lean/MaxwellInverseCurlCurl.lean",
+        "lean/MaterialCurlCoercivity.lean",
+        "lean/WeakPoynting/MagneticCompactness.lean",
+        "manuscript/sections/hotspot_closure_audit.tex",
+        "manuscript/sections/modal_spectral.tex"
+      ]
+    },
+    {
+      "id": "06",
+      "file": "06_simple_sector_residue.txt",
+      "title": "Simple selected-sector inverse pole and the genuine reciprocal Green residue",
+      "dependencies": "Supply completed packet 04. The exact one-dimensional actual sector kernel is a prerequisite, not an assumption to hide.",
+      "bytes": 103565,
+      "sha256": "1b5990dca0332322223df8fce28b6378328fedb4f987578d4f938fc8be3c524b",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "lean/ModalVolumeNormalization.lean",
+        "lean/ModalVolumeDerivativePairing.lean",
+        "lean/ComplexVolumeReciprocity.lean",
+        "lean/ModalMeridionalVolume.lean",
+        "lean/ModalWeightedMode.lean",
+        "lean/ComplexConvolutionAnalytic.lean",
+        "lean/VolumeFredholm.lean",
+        "lean/LocalFredholmReduction.lean",
+        "lean/FiniteRankSchur.lean",
+        "lean/SimplePoleResidueForm.lean",
+        "lean/ModalVolumeContinuation.lean",
+        "lean/ModalFixedFrequencyNormalization.lean",
+        "manuscript/sections/modal_spectral.tex"
+      ]
+    },
+    {
+      "id": "07",
+      "file": "07_modal_and_driven_assembly.txt",
+      "title": "Analytic cone insertion and final quantified hotspot assembly",
+      "dependencies": "Supply completed packets 05 and 06. Earlier results may be investigated conditionally, but full closure must wait for proved prerequisites.",
+      "bytes": 149930,
+      "sha256": "f184a82e0db76c33828077aee367fc21ca204bf07fb2397cde00aeb970d07a23",
+      "source_paths": [
+        "checkpoints/2026-10-27-continuation/STAGE65.md",
+        "manuscript/sections/modal_next.tex",
+        "manuscript/sections/modal_spectral.tex",
+        "manuscript/sections/hotspot_closure_audit.tex",
+        "lean/ModalBoundedContrastIsolation.lean",
+        "lean/ModalFixedFrequencyNormalization.lean",
+        "lean/ModalVolumeNormalization.lean",
+        "lean/ComplexDilationVolume.lean",
+        "lean/ConicalCommonRungeNonzero.lean",
+        "lean/ConicalCommonBinaryPeaks.lean",
+        "lean/CommonBinaryInterface.lean",
+        "lean/CommonBinaryCollar.lean",
+        "lean/CommonBinaryValues.lean"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "checkpoints/2026-10-27-continuation/STAGE65.md",
+      "sha256": "14e074802ec49070969cbb9395039fb75980440274ff4c097af8c211be9481e7",
+      "bytes": 4785,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/ComplexKernelDebye.lean",
+      "sha256": "d0b886d773defab6d937ec6803c76b4ad98048341e373bd35a01209758628ff4",
+      "bytes": 5314,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/DebyeScalarL2.lean",
+      "sha256": "4ca3028f7250c0ced4e19a155e7d3eba42ae277fd25404fbf2822cd13bf2c2ec",
+      "bytes": 4145,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/WeakDebyeScalar.lean",
+      "sha256": "14a740dcf2abdd38c520c7141bd9a61595cbf95ddd94ec2109637aa2684d7b1c",
+      "bytes": 3130,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/HarmonicMomentIntegrability.lean",
+      "sha256": "dcb2ab486afa0a97b7a23459181dca7039856f51e1b1ab2e344d9f7149d47e13",
+      "bytes": 7001,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/HarmonicMomentCoupling.lean",
+      "sha256": "8fa852f4efd7a0c7736a3358b174afcfcb3616a0643ea67a9e474a7ee676e2c7",
+      "bytes": 4524,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/HarmonicRadialTestGradient.lean",
+      "sha256": "a368acc0744074858070d15b3e81d962cb8b18ea36abb6afa3e6882ba8606b38",
+      "bytes": 2024,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexSpherePolarDivergence.lean",
+      "sha256": "c2780a2768f4ec33d1755dd324db9d3c5a6a0aeff82b51ff5ec05dce35275d5b",
+      "bytes": 2078,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexSphereDivergence.lean",
+      "sha256": "5cbbd782016d9d9c3ff8f27d7fbbad88632b1ca6ef39bad539fae34ca0792ff3",
+      "bytes": 3290,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/KernelRadialMomentBridge.lean",
+      "sha256": "842ffa3db0efdbc1bbee25ba0a602c6595293d277045be4897a7365efdfea117",
+      "bytes": 3154,
+      "status": "PENDING / NOT ACCEPTED: Agent draft compiler passed exit 0 / one report; no final object, final author freeze, or independent review."
+    },
+    {
+      "path": "lean/MonopoleFlux.lean",
+      "sha256": "7d4581d23dbc629e9050370f227ec376581d244ceb67339655ff1d4d90633d74",
+      "bytes": 4151,
+      "status": "PENDING / NOT ACCEPTED: Root draft failed author2 check; remaining cast-of-one simplification in angular identity. No proof repairs made after stop request."
+    },
+    {
+      "path": "lean/WeakDerivativeIdentification.lean",
+      "sha256": "bd70c3320352a90bcf03c2321a94e3e3918699db101992318e6ec0467c03c56f",
+      "bytes": 2276,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/RadialOriginSelection.lean",
+      "sha256": "7f94cbac8a50b6cf2ddd09157ab0be113f16fa441d1836e20b9a219e6feb0e57",
+      "bytes": 6899,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/RegularBallGlobal.lean",
+      "sha256": "bd57257c3656b9d1482e866bc0986f9a0670c55197117ddb9ba53b43c5556ab5",
+      "bytes": 1926,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexMagneticLocal.lean",
+      "sha256": "be7df8f1c3efffa8de5d2c79f241a50c34c7435dc4fffc1400c003620c44003a",
+      "bytes": 5401,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexMagneticResponse.lean",
+      "sha256": "13b82e9d8e97ea124ce6f5bc4280a15f5a318bf1fa50e4822258313d4a5ebb9d",
+      "bytes": 4667,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexMagneticMaxwell.lean",
+      "sha256": "8deed997b1f34a92bde35a27996b4186aad7883ff1fc2a0511e1f5aa1f2cb8ba",
+      "bytes": 8935,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexSphereMaxwell.lean",
+      "sha256": "06154008d0e5e39f4188c4e200183a60f411cd9002ff9d2b62a3cf6f34ffd9f5",
+      "bytes": 5341,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/ComplexMagneticHelmholtz.lean",
+      "sha256": "298813fdaa85d44133b22ea3cf006a91707000aeab51a1bf6c608b5295507a68",
+      "bytes": 2896,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/ComplexMagneticDivergence.lean",
+      "sha256": "72aa4d2af890d5431651c3fe2574ba7b3303fc85100ebbaede4e2488302ac2c3",
+      "bytes": 1405,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/ComplexMagneticDebye.lean",
+      "sha256": "b779c5cd9ac2811c6be606c8992e7bce8cfa51d2b771b67987029f2221dfcccd",
+      "bytes": 6620,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/ComplexMagneticReflection.lean",
+      "sha256": "2f9718c4aad5059ae6924233c1244d8914d9f1b20fc61f5180dc3b89834c3bfd",
+      "bytes": 4016,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/ModalAxialRotation.lean",
+      "sha256": "00f43e3f8a2f39257b6025b103011c4f83a16d4a8ad7422bc64e5d021eb67d88",
+      "bytes": 8651,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalAxialVolume.lean",
+      "sha256": "5d6875b51176578a21993ce5c256225a8f5d3afca1b8912668235c5b48c7f897",
+      "bytes": 3351,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalMeridionalReflection.lean",
+      "sha256": "18509128f0c15fa90bb9d41bf6717f1cb9354296d5e2a16a3019dc67086f69a2",
+      "bytes": 6395,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalMeridionalStatic.lean",
+      "sha256": "f9d695cf5d5b47481e8a3b28fb58ed65d26ab9fb2d28c4facbbbb5a0c0082d37",
+      "bytes": 8549,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalMeridionalVolume.lean",
+      "sha256": "3ce4399481531ab05ada3addedcbca4ef1c7490ccd402569b5941056745cd060",
+      "bytes": 6805,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexGreenKernel.lean",
+      "sha256": "f10a621e145dfab398ff5f35330f6a4f8a1c40e82bf739ebdae1d1bfdb066e56",
+      "bytes": 8071,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/MaxwellInverseCurlCurl.lean",
+      "sha256": "f0eb8074401e69f9fd01fdbeaa7430324c13870e3bd8d9dfbc673d5c4aad9e03",
+      "bytes": 4485,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/MaterialCurlCoercivity.lean",
+      "sha256": "97fb8992be1e9f88d0682b7121ac1548e0e691598f3867d59d3bb9c10acf9604",
+      "bytes": 3140,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/MaxwellDifferenceQuotient.lean",
+      "sha256": "290bdd65d739bc2fe2defcf5416ac683aaab25c72e8fa5b430fa46b8c0f10dca",
+      "bytes": 2445,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/MaxwellWeakTranslation.lean",
+      "sha256": "26f2fcb6e636893d7af02866e2555ed8a3884750b3148367899a793681792a1f",
+      "bytes": 4835,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/FlatDifferenceCoercivity.lean",
+      "sha256": "d31749f40d9adb7ba31c42f3e9cbd72a914c2f47e96f97d3fc3c02303b277d6c",
+      "bytes": 1720,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/FlatMaxwellDifferenceEnergy.lean",
+      "sha256": "88d38a8eaaedbdf28865035d09a9c9e862cd6e03e0eee0d98c21d1aec9b3346f",
+      "bytes": 1426,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/MaxwellQuotientEnergy.lean",
+      "sha256": "c5dec04a0ff37530c7f7ebacdbab3ed3f86d368e628e27200ba8ec2ff8c788ab",
+      "bytes": 1670,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/MaxwellCutoffCommutator.lean",
+      "sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e",
+      "bytes": 7868,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/LocalizedCurlCurlSource.lean",
+      "sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce",
+      "bytes": 1902,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/MaxwellCurlCutoffSource.lean",
+      "sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53",
+      "bytes": 5421,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/FlatLocalCurlSources.lean",
+      "sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b",
+      "bytes": 3644,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/NestedCurlCutoffSource.lean",
+      "sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b",
+      "bytes": 2919,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/FlatNestedMaxwellForcing.lean",
+      "sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816",
+      "bytes": 3271,
+      "status": "PENDING / NOT ACCEPTED: Author-frozen with claimed clean author check; pending independent audit. Not included in accepted ledger."
+    },
+    {
+      "path": "lean/GlobalToRegionalCurl.lean",
+      "sha256": "6d3bb0cbd7195b16054a97826da715844595c5d364c500b92d0055113c335b0f",
+      "bytes": 2732,
+      "status": "PENDING / NOT ACCEPTED: Agent draft: first restriction theorem previously checked; latest restrict_weakMaxwell addition has not been compiled."
+    },
+    {
+      "path": "lean/WeakPoynting/Conservation.lean",
+      "sha256": "e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f",
+      "bytes": 6386,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/ComplexSphereInterface.lean",
+      "sha256": "ad1510dfe80b0e6b93dda6054fef14c33a8450cb237b5cf36026d6fd44ba25f4",
+      "bytes": 4344,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexInterfaceWeak.lean",
+      "sha256": "7d504e7ff9042eb840873dafa310ae5c956c24535be8e5a1660596c5d1912cad",
+      "bytes": 2224,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/AnalyticOutgoingSelection.lean",
+      "sha256": "b61e8adc169354cc332c0ce1e17e1c13f08e8913f66a1c91aa68030582e81f79",
+      "bytes": 8709,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/OutgoingModeGluing.lean",
+      "sha256": "1d0192c84814595af84eb1dcc121927d76848928d990191e803b2dbb62b388b2",
+      "bytes": 5229,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalVectorAngularSlices.lean",
+      "sha256": "c425059c8aec1c51370bab31a4f0bda2475986210c45409003a568a7b0be512c",
+      "bytes": 7473,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalVolumeAngularCoefficients.lean",
+      "sha256": "99e0c4cb998108b15c82306f8bef15345c5401cd28aa8ccebe66edbe238c5287",
+      "bytes": 1829,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalReconstructionOperator.lean",
+      "sha256": "1c7235d8ea61603c1482e64a82a47b38dd1e69b85b34caef7ca1453b77942993",
+      "bytes": 1227,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalReconstructionEnergy.lean",
+      "sha256": "384c6958d6e4f9c934249a8862767a9764f25631797cb9f1077e2c3edea1cb39",
+      "bytes": 3380,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/RiccatiTransmission.lean",
+      "sha256": "9673a92f9cc282fb03f476dbec5ac0259f7715a9cd8e03389f8643a987471035",
+      "bytes": 3881,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/RiccatiDebyeTrace.lean",
+      "sha256": "71f0521ae3e29192d9e9bbd2fb6b64b9178a555a8d698f1a4a2da0d35e924224",
+      "bytes": 3171,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/ModalTMIsolation.lean",
+      "sha256": "68764632f5473c9f53854e62c67e102630cca102d8c93f02f5766638247db1ac",
+      "bytes": 2598,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalWeightedMode.lean",
+      "sha256": "e77232dac540dfcccf9e37cfcb634cd133225fc5de4fffda264f24172135342b",
+      "bytes": 6610,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalSphereVolumeKernel.lean",
+      "sha256": "327c8c0242ffa310ac2be7f01f1b3f6887287387c0de0e3f55ca2ccceeef7044",
+      "bytes": 3381,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalBoundedContrastIsolation.lean",
+      "sha256": "8399e6c71b7a532f956d03fb3cd9afd517651dec7c24acc15aa3751b919026da",
+      "bytes": 3090,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "manuscript/sections/modal_spectral.tex",
+      "sha256": "c51e80d87b541e718159011c96692a929ba6f1e981624dfbde1aab019a2f1364",
+      "bytes": 25057,
+      "status": "MANUSCRIPT ARGUMENT / TARGET: PROVED labels are not evidence of complete Lean verification."
+    },
+    {
+      "path": "lean/CommonBinaryCollar.lean",
+      "sha256": "5fa0084a8873b49d3714da4592c4deb6e08e868a67a72eb25d037cbe5e2b61d1",
+      "bytes": 3629,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/CommonBinaryInterface.lean",
+      "sha256": "56f4714b2fd22e8ed2065c29ee436dbbb2ed184a7fc8996cb0e02f9faa40e0ec",
+      "bytes": 9579,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/CommonBinaryValues.lean",
+      "sha256": "b87ec5edb0fa05965071cc3c47c65324db0dcae9419f2209f75a0220e5d1f5b6",
+      "bytes": 2234,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ConicalCommonBinaryPeaks.lean",
+      "sha256": "c733989690ecdd00c9198941fefd3c6eb44bb2750f5121426796e58022957925",
+      "bytes": 17768,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ConicalCommonSimultaneousPeaks.lean",
+      "sha256": "1736019d4fce544166fc19dc69c6f44b8de4b54f5a5cbaa69b8f971ca4a3b284",
+      "bytes": 3305,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ConicalCommonRungeNonzero.lean",
+      "sha256": "1607810ca742b908795f2b557f02b7c8545198f542c127741cc404f44d65de44",
+      "bytes": 9106,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/WeakPoynting/MagneticCompactness.lean",
+      "sha256": "043f8eb89640e4f0bdeb517c5ed3f0d51de57f6c643458426f8fa79ce12e7961",
+      "bytes": 9230,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "manuscript/sections/hotspot_closure_audit.tex",
+      "sha256": "9821c4174fdb784a1b3efeaa7554af9cd5aaf2dd1743957124741edf6f813dc8",
+      "bytes": 29509,
+      "status": "MANUSCRIPT ARGUMENT / TARGET: PROVED labels are not evidence of complete Lean verification."
+    },
+    {
+      "path": "lean/ModalVolumeNormalization.lean",
+      "sha256": "912c5475401675e3ac149320b69e65bc01469b87ff2cf4888a2ca190f1c71826",
+      "bytes": 4717,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalVolumeDerivativePairing.lean",
+      "sha256": "92948aa8cfca683a9e7024c6de65d4b5b8ec9b9f9f645f21a78095049e0ad726",
+      "bytes": 3884,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ComplexVolumeReciprocity.lean",
+      "sha256": "0b7cb8583b7809a3c85365b0a774c8efc9cce3910190f500b790fc85b00eed1f",
+      "bytes": 7708,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/ComplexConvolutionAnalytic.lean",
+      "sha256": "ad5437eba4131bea730637f709ff1d43b4ef938d2605660f5fbfe6c3f6b4bb12",
+      "bytes": 14279,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/VolumeFredholm.lean",
+      "sha256": "4af79ff8a1465b51cf9fc4f8c68be937dd2141064537bab273bbce5dcf695e72",
+      "bytes": 4891,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/LocalFredholmReduction.lean",
+      "sha256": "19a15e97381efa1338f09c69a0eccad7ff016979c2fc9de95473b3268accfe8b",
+      "bytes": 8525,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/FiniteRankSchur.lean",
+      "sha256": "f9929a95165f1f3844d1a41c1fcf084bcd35731675429b1923bfac4fdf5f622d",
+      "bytes": 6857,
+      "status": "REPOSITORY SUPPORTING SOURCE: individual acceptance not certified by this handoff; inspect hypotheses."
+    },
+    {
+      "path": "lean/SimplePoleResidueForm.lean",
+      "sha256": "95df6da4562bedf364e85bbcd2505394c072b796bd88bf7e66afccad3f0a153b",
+      "bytes": 4218,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalVolumeContinuation.lean",
+      "sha256": "425944fd6a08d406d08a8f2d70b52539d21b02019df6f98ed5ee7c711fe180ba",
+      "bytes": 3788,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "lean/ModalFixedFrequencyNormalization.lean",
+      "sha256": "cda5153e5d06607d221b7d4f66b7d310dd9aa54e69b9be8d882f171e1c4ebe86",
+      "bytes": 4015,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    },
+    {
+      "path": "manuscript/sections/modal_next.tex",
+      "sha256": "adae35eae0da82582d401c27c38a115635ea6e23df1c03137fc2dc0782444e7b",
+      "bytes": 16624,
+      "status": "MANUSCRIPT ARGUMENT / TARGET: PROVED labels are not evidence of complete Lean verification."
+    },
+    {
+      "path": "lean/ComplexDilationVolume.lean",
+      "sha256": "55e79b27edd990d2a86b659917184bb4828c2d3598bba396fad561039df69563",
+      "bytes": 7669,
+      "status": "ACCEPTED IN STAGE-65 INCREMENTAL LEDGER; exact source hash matches frozen record."
+    }
+  ]
+}
