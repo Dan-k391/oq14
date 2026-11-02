@@ -1,0 +1,148 @@
+OQ14 PACKET 06 — LOCAL REVIEW AND EXACT PHYSICAL PAIRING SUPPLEMENT
+Prepared: 2026-11-01
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+
+VERDICT AND SCOPE
+No substantive mathematical error was identified in the returned argument
+under its stated hypotheses. Root reviewed the Fredholm, inverse-pole and
+normalization argument. A separate 6.1 Terra reviewer checked the physical
+operator, Green residue and perturbation arguments; another independently
+checked the omitted pairing/component definitions against local sources.
+The report's one remaining numerical source-identification issue (PAIR) is
+resolved below with coefficient exactly one. This does not constitute a
+new Lean implementation of the complete Packet 06 proof.
+
+The full original report is preserved byte-for-byte as RETURN_REPORT.txt.
+Source chat: Complete Packet Proof Report
+https://chatgpt.com/c/6ae7fe22-de80-83e8-98a5-0b6c92746f22
+Downloaded file: C:/Users/Daniel/Downloads/OQ14_Packet06_Return_Report.txt
+INTAKE.json records report hashes and input/source authentication.
+
+The report's historical statements about missing context and execution are
+preserved. This dated local supplement records the additional context now
+inspected; it does not claim the original author had that context.
+
+MATHEMATICAL REVIEW
+The actual weighted sphere pencil is restricted to the closed axisymmetric,
+reflection-even electric sector. The reviewed Packet 04 classification gives
+its geometric one-dimensional kernel for the selected nonzero dipole root.
+The actual derivative pairing gives a nonzero transverse crossing. Those
+are separate inputs; neither dimension one nor a scalar determinant by itself
+is treated as a proof of a simple inverse pole.
+
+The static restriction is invertible by coercivity, closed range and the
+adjoint argument on the same sector. Compact reduction gives Fredholm index
+zero at complex frequencies. Reciprocity and the nonzero derivative pairing
+identify the one-dimensional cokernel and the exact range. The Schur
+complement uses separate domain/range complements, has a simple scalar zero,
+and constructs the full punctured inverse and analytic remainder. Its residue
+is u tensor ell divided by ell(A'(k)u). The compact-reduction static factor is
+on the correct side. The report correctly distinguishes the pole's rank-one
+residue from an idempotent spectral projection of a single operator.
+
+The physical volume operator retains the distributional static term:
+  K_B(z) = -P_B + R_B(z).
+The remainder is an entire Hilbert-Schmidt operator on the bounded source
+domain. The arbitrary-source bridge uses actual Maxwell source identities,
+regular/outgoing finite-radius Wronskians and vacuum uniqueness, including
+degree zero. It does not infer lower-half-plane uniqueness from decay at
+infinity. Global resonant fields are treated in local L2 observation domains;
+they are not assumed to lie in global L2.
+
+With susceptibility chi, q=chi E, and the bilinear physical pairing beta,
+the unweighted pencil and derivative functional are
+  L(z)=I-K_B(z) M_chi,
+  d_phys(E)=-beta(q,K_B'(k)q),
+  N(E)=-(k/2)*d_phys(E).
+The weighted/unweighted inverse identities and left functionals give the
+same actual pole. With the convention
+  [curl curl-z^2(1+chi)] G(z)f=f,
+the electric Green residue on the SELECTED sector is
+  Res G(k) f = - E_global * [integral E_global dot f]/[2*k*N(E)].
+This is a compact-source to local-observation statement, not a claim that
+the full rotational sphere resolvent has rank one.
+
+Analytic material perturbation is norm-holomorphic into complex L-infinity
+on a common bounded support and preserves the same fixed closed sector.
+Positivity applies to the physical real parameter slice; no positive-valued
+holomorphic material or analytic square root of a vanishing chi is assumed.
+For nonnegative uniformly bounded a.e. rounding on that same support/sector,
+strong static-inverse convergence composed with compact operators and
+Hilbert-Schmidt remainder convergence give norm convergence of the reduced
+pencils locally uniformly in z, including derivatives. The simple roots,
+fixed-functional normalized modes and reciprocal norms then converge.
+The report does not assert multiplier operator-norm convergence from a.e.
+coefficient convergence. A compatible square-root choice gives convergent
+physical unit-normalized modes near the nonzero limiting norm.
+
+PAIR — THE MISSING LITERAL SOURCE IDENTIFICATION IS AVAILABLE
+The actual existing source lean/KernelReciprocity.lean defines
+  scalarPair F G = integral F(x)*G(x),
+  vectorPair F G = sum_i scalarPair (component i F) (component i G).
+The theorem KernelReciprocity.vectorPair_actual already proves, for all
+F,G in VectorFourier.VectorL2,
+  vectorPair F G = sum_{i : Fin 3} integral_{x : Space}
+      F(coordinateMap x)_i * G(coordinateMap x)_i.
+
+The component identity is literal:
+  DynamicConvolution.component i F = NewtonL2.physicalCoordinate F i.
+NewtonL2.physicalCoordinate_ae identifies it almost everywhere with
+F(coordinateMap x)_i. VectorFourier.coordinateMap_preserving proves that
+this coordinate map preserves volume. KernelReciprocity.scalar_product_integrable
+proves product integrability; the finite sum may therefore pass through the
+integral. Thus, with F_phys(x)=F(coordinateMap x),
+  vectorPair F G = integral sum_i F_phys(x)_i * G_phys(x)_i
+                = integral F_phys dot G_phys.
+This proves exactly report equation (1.10), coefficient one.
+
+There is NO conjugation and NO extra normalization or Jacobian factor. The
+auxiliary scalarPair_inner formula first conjugates its first argument;
+the Hermitian inner product then cancels that conjugation. Reading that
+formula as a physical sesquilinear pairing would be incorrect.
+
+The displayed sum-of-integrals theorem has existing clean-build evidence.
+Combining it with finite-sum integration into the exact report notation may
+still deserve a named Lean adapter; this review does not claim to have newly
+compiled that adapter. The mathematical identification itself is settled.
+The supplied source excerpt includes the actual definitions and proof.
+
+EXACT CONSEQUENCE FOR THE PRESCRIBED SOURCE-UNIT VECTOR
+For the existing selected U with d_src(U)=1, report (1.11) specializes to
+  c_U=1,
+  d_phys(E_U)=1,
+  N(E_U)=-k/2.
+To obtain the manuscript's physical unit normalization, choose either local
+square-root branch alpha satisfying
+  alpha^2=-2/k,
+and use alpha E_U (and the correspondingly rescaled weighted vector).
+The original U is not silently replaced. Physical N scales quadratically,
+and the Green residue is unchanged under consistent rescaling. For nearby
+materials use their actual N(E), with alpha^2=1/N(E); do not reuse -2/k unless
+their weighted source derivative pairing has separately been set to one.
+
+WHAT PACKET 07 MAY USE AND MUST STILL PROVE
+Use the complete report's simple-sector continuation and rounding theorem
+with its exact support, sector, positivity and simplicity hypotheses, together
+with the physical pairing conversion above. The full Packet 04 classification
+statement and reviewed source dictionary are supplied in the combined handoff.
+
+Packet 06 does not construct conical modal singular coefficients or prove
+their simultaneous nonvanishing. Packet 07 must prove analytic cone insertion
+through eta=0 for the actual eigenfield and angular branch; then choose one
+material and one mode exciting all vertices. It must preserve the selected
+sector through insertion and rounding, supply the fixed-collar geometry for
+Packet 05, and derive physical dilation and normalization from definitions.
+The final dilation must use the rounded frequency to get exact Re k=k0.
+The original Packet 07 quantifiers and separate driven construction remain
+unchanged. No conclusion about full unrestricted-channel closure follows
+merely from these hotspot prerequisites.
+
+VERIFICATION BOUNDARY
+The author produced no candidate .lean implementation, and explicitly did
+not run Lean. No new Lean compilation, axiom audit, proof acceptance or clean
+aggregate build was run during this local review. Source hashes and selected
+text are checked against existing frozen evidence, with CRLF/LF differences
+explicitly distinguished from raw-byte equality. All new Packet 06 analysis,
+including the actual operator bridges and perturbation construction, remains
+to be implemented and independently verified in the pinned Lean environment.
+No proof source, accepted ledger or frozen checkpoint was modified.

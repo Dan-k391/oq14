@@ -1,0 +1,139 @@
+OQ14 PACKET 05 — LOCAL MATHEMATICAL REVIEW AND SOURCE DICTIONARY
+Prepared: 2026-11-01
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+
+VERDICT AND SCOPE
+No substantive mathematical error was identified in the returned local
+regularity, fixed-collar convergence, one-sided attainment and simultaneous
+localization argument, with the hypotheses stated in the report. Root checked
+the main implications and interfaces; a separate 6.1 Terra reviewer checked
+the complete report and then the requested defining source interfaces.
+This is a mathematical review, not a new Lean verification or full hotspot
+construction. The report's new proof remains to be implemented in Lean.
+
+The full original report is preserved byte-for-byte as RETURN_REPORT.txt.
+Source chat: Formalize Packet Proof
+https://chatgpt.com/c/6ae7f3a5-231c-83ea-83d7-da30cbdb9059
+Downloaded file: C:/Users/Daniel/Downloads/RETURN_REPORT_PACKET05.txt
+Input provenance and source checks are recorded in INTAKE.json.
+
+The chat received the Packet 05 task and Packet 01 return, rather than the
+Packet 03 return. It explicitly records this and supplies an alternative
+regularity proof. Its proof does not depend on assuming Packet 03's result.
+This review does not claim those two different proofs have both been compiled.
+
+WHAT THE REPORT PROVES
+For uniformly positive, piecewise constant scalar permittivity separated by
+fixed C3 smooth interfaces, on patches without edges, corners or junctions,
+local L2 electric fields satisfying curl curl E=F in L2 and div(epsilon E)=0
+gain piecewise H2 regularity on smaller patches, with quantitative local
+bounds. The argument first obtains H(curl) by a mollified Caccioppoli estimate,
+then H1 control of curl E, and decomposes E into a gradient plus an H2 field.
+A flattened scalar transmission problem supplies the remaining H3 potential.
+Tangential difference quotients preserve the two half-spaces; the equation
+recovers normal derivatives in the correct order. Its weak formulation already
+encodes the transmission condition; classical traces are not assumed at the
+start. Piecewise H2 extension and Sobolev embedding give continuous one-sided
+representatives and uniform bounds. The magnetic argument is consistent with
+the stated Maxwell sign convention.
+
+For frequencies k_j -> k_* != 0 and electric L2 convergence, the difference
+equation contains the additional forcing
+  (k_j^2-k_*^2) epsilon E_*.
+It tends to zero in L2 on each fixed patch. The same local estimate therefore
+gives uniform convergence on each material side of fixed collars, provided
+the material agrees on an OPEN neighborhood of those collars and a finite
+fixed chart cover is available. Estimates near changing rounded tips need
+not be uniform. No regularity estimate is claimed across the sharp vertices.
+
+The pointwise convention is the maximum of the magnitudes of all incident
+continuous material-side representatives. For finitely many closed material
+branches it is upper semicontinuous; it need not be continuous. On the compact
+observation ball, each relevant branch is restricted to K intersect closure
+of its phase. This gives an attained maximum. Positive-volume high-value sets
+survive deletion of representative/interface null sets. L2 convergence to an
+essentially unbounded sharp field gives eventual high values by Chebyshev's
+inequality. Finite intersection of eventual tails gives ONE rounding index
+working at every tip, with strict collar/peak separation. The connected-
+component localization proof uses the continuous radius and upper
+semicontinuity and does not assume the superlevel set is open.
+
+EXACT LOCAL SOURCE DICTIONARY
+1. MaterialMaxwell.dielectric c x is literally
+     1 + c.value (VectorFourier.coordinateMap x).
+   Thus the coefficient c is susceptibility and the physical dielectric is
+   1+c. MaterialMaxwell.TestMaxwell uses real k and compact smooth tests.
+   It does not include local L2 assumptions. MaterialHCurl's regional field
+   adapters separately require componentwise MemLp 2 for E, H and epsilon E;
+   those hypotheses must be supplied from the actual field construction.
+
+2. The namespace ConicalCommonMaterial is defined in the actual file
+   lean/CompactCommonMaterial.lean, not a file named ConicalCommonMaterial.lean.
+   Its coefficient has bound B and value the finite sum of translated
+   localValue, expressed using coordinateMap.symm. The existing theorem
+   coefficient_spatial gives its literal physical-coordinate value.
+   ConicalCommonBaseline.common is an alias of that coefficient;
+   ConicalCommonBinaryPeaks.coefficient is an alias of common. These are the
+   same coefficient record after unfolding the aliases, with their displayed
+   parameters and separation hypotheses unchanged.
+
+3. CommonBinaryRounding.coefficient has the same bound B, is below the sharp
+   coefficient, and eventually agrees with it almost everywhere. Its
+   volumeField_tendsto proves convergence in VectorFourier.VectorL2 under
+     R >= 0, |k| <= MaterialVolumeLimit.commonRadius B R.
+   The radius is exactly (2*(1+252*B*R^2))^(-1), positive for B>=0.
+   Almost-everywhere convergence of these coefficients is distinct from the
+   pointwise fixed-collar equality proved by CommonBinaryCollar.
+
+4. ConicalCommonBinaryPeaks.ballField_tendsto passes this convergence through
+   the continuous physical-ball restriction and the extension left inverse.
+   Its volumeField_actual identifies the response componentwise almost
+   everywhere with the actual electric field on the containing closed ball.
+   ConicalMaterialRunge.total_ae and ConicalBallRestriction.vector_ae /
+   extension_leftInverse, together with ConicalBallExtension.vector_ae, provide
+   the physical field dictionary. NewtonL2.physicalCoordinate_ae and the
+   volume-preserving VectorFourier.coordinateMap justify the coordinate change.
+   These equalities must still be assembled into the exact local physical L2
+   hypotheses when formalizing the new local regularity theorem.
+
+5. The real-frequency TestMaxwell interface must not be instantiated at a
+   complex modal frequency. ComplexMagneticMaxwell.actual_maxwell supplies
+   actual complex electric/magnetic SOURCE equations with its support and
+   observation hypotheses; ComplexKernelResponse supplies kernel recovery.
+   Combining them with the actual kernel source relation is the route to
+   interface-crossing modal equations. A constant-permittivity regional
+   equation alone does not encode transmission across an interface.
+
+REMAINING APPLICATION OBLIGATIONS FOR PACKET 07
+The local theorem is conditional on actual Maxwell fields, material positivity,
+the stated chart geometry, local L2 convergence and the peak input. This is
+not a weakness to hide by rewriting its hypotheses. The complete constructions
+must supply those inputs.
+
+For modal packing, Packet 06 now supplies the mathematical simple-pole,
+continuation and normalization results under its fixed-support, fixed-sector
+and simple-crossing hypotheses. Packet 07 must instantiate them for one
+actual cone-inserted material and prove simultaneous nonzero singular
+coefficients, normalized field convergence, compatible rounding and the
+precise geometric and scaling claims. A sphere radial-mode theorem does not
+already prove modal excitation at all tips.
+
+For driven packing, keep the common-radius small-frequency condition until
+a justified scaling/existence argument removes it at the prescribed physical
+frequency. Preserve one fixed normalized illumination before rounding,
+the same common material, exactly 2N smooth disjoint inclusions, the material
+support projection requirement and a dielectric independent of N. The local
+maximum theorem does not independently establish those construction facts.
+
+For Lean, quantitative graph charts from the existing smooth-interface
+certificate, representative/integrability adapters, the new transmission
+estimates and the one-sided maximum arguments remain to be implemented and
+audited. These are listed precisely in the original report, not new axioms.
+
+VERIFICATION BOUNDARY
+No candidate implementation is supplied by this report. No fresh Lean
+compilation, axiom audit, source promotion or aggregate build was performed.
+Source excerpts in the Packet 07 supplement are checked against frozen
+stage-65 or clean-release provenance as recorded in its manifest. Existing
+source evidence and new mathematical arguments remain separate. No proof
+source or accepted ledger was modified. Full OQ14 closure remains unfinished.

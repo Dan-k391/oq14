@@ -1,0 +1,1389 @@
+OQ14 — PACKET 05 RETURN REPORT
+Fixed curved-interface regularity, one-sided uniform convergence, and attained hotspot maxima
+Prepared: 2026-11-01 (America/New_York)
+Checkpoint specified by the packet: aeed697d5224424878d99840d33b67abde175947
+Requested toolchain: Lean 4.19.0; mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+
+RESULT AND VERIFICATION BOUNDARY
+
+This report proves the missing local analysis by a complete alternative to Packet 03. The key estimate is stronger than the source-free statement:
+
+  ||E||_{H²_pw(V)} <= C (||E||_{L²(U)} + ||curl curl E||_{L²(U)}),       (R)
+
+provided div(epsilon E)=0 distributionally, the two positive scalar material values are constant, and their interface is fixed and C³ near the compactly contained target. The proof constructs E=grad v+W, proves W in H² by Fourier div-curl estimates, and proves v piecewise H³ by flattening, two tangential difference-quotient estimates, and explicit normal-derivative recovery. No transmission regularity estimate is assumed.
+
+Consequences proved here are continuous one-sided representatives, fixed-collar uniform convergence for fixed real frequency and varying nonzero complex frequencies, compact maximum attainment, and the simultaneous common-index collar separation argument. The modal frequency-error forcing is retained and controlled in ordinary local L².
+
+The attached prerequisite RETURN_REPORT(1).txt is Packet 01, not Packet 03. Its mathematically reviewed radial/poloidal and monopole results are read and precisely identified below, but none is needed by the alternative proof. Packet 03 is therefore not a missing mathematical premise of this route.
+
+The supplied accepted driven-field results furnish the simultaneous positive-volume peaks and actual electric L² convergence, subject to their exact small-frequency and geometric hypotheses. The manuscript's modal spectral construction and normalization are NOT furnished as accepted theorems. The modal localization implication is proved; existence of its required normalized outgoing eigenfield sequence and simultaneous singular coefficients remains an upstream prerequisite.
+
+VERIFIED NEW LEAN CODE: none. No Lean executable or pinned project is available in this workspace. All Lean declarations in section 4 are UNCOMPILED STATEMENT SPECIFICATIONS. They are not executable source files, axioms, or completed proof terms. No sorry/admit/axiom is used to claim closure. Acceptance labels for quoted existing sources are attributed to the packet and were not independently reproduced.
+
+======================================================================
+1. PACKET ID, EXACT ASSUMPTIONS, AND THEOREMS
+======================================================================
+
+1.1 Packet identity and reconciliation of the supplied prerequisite
+
+Assigned task: Stage 65, Packet 05, "Fixed curved-interface regularity, uniform convergence, and attained hotspot maxima."
+
+The additional attachment is headed "OQ14 — PACKET 01 RETURN REPORT: Electric radial/poloidal coefficients and the missing degree-zero case." Its exact relevant statements are as follows.
+
+Let n>1, z in C with z!=0, u in VectorFourier.VectorL2, and assume the actual kernel equation
+
+  ComplexConvolutionAnalytic.volumeBlock
+    (ModalWeightedMode.coefficient n hn) z 1 u = 0.
+
+The actual field is ComplexKernelResponse.response for that coefficient, frequency, radius 1, and kernel vector. Let p be a homogeneous polynomial of degree L>=1. With the report's literal angular measure and bilinear moment conventions, A_p is the radial moment and B_p is the poloidal moment.
+
+  A. For every p, actual angular integrals and their supplied L²-coordinate representatives agree a.e. on r in (0,1). This representative statement needs neither harmonicity, the kernel condition, nor nonzero z.
+  B. Under the kernel assumptions and positive-degree homogeneity, (r² A_p)'=r B_p in distributions on (0,1); harmonicity is not needed for this identity.
+  C. If p is also harmonic, there exists one c in C with
+       r² A_p(r)=c regular(L,zn,r),
+       B_p(r)=c regularD(L,zn,r)/r
+     simultaneously a.e. The report additionally identifies its supporting regular/regularD derivative interfaces.
+  D. Under the genuine-kernel assumptions, the actual degree-zero electric radial moment A_1 is zero a.e.
+
+These are mathematical prerequisites accepted for the purposes stated by the user, with complete Lean implementation still outstanding. They do not assert curved-interface regularity, modal resonance perturbation, or modal simultaneous conical excitation. None of A–D is invoked below. In particular, this report does not manufacture a Packet 03 theorem from Packet 01, or treat the new report as kernel-verified Lean.
+
+1.2 Geometry, function spaces, and conventions
+
+All fields are the actual complex vector fields on R³, with physical norm
+
+  |E(x)|² = sum_{j=1}^3 |E_j(x)|².
+
+Finite-dimensional norm equivalences may enter constants when adapting the project's L² product types; no incident or modal normalization is changed.
+
+Let V and U be bounded open sets with closure(V) compactly contained in U. Near closure(V), either the material is constant or an embedded C³ interface Gamma separates two open material sides U_+ and U_-. There are no interface edges, vertices, or junctions in these local patches. More generally, finitely many such patches cover closure(V). Every estimate uses enlarged patches compactly contained in U.
+
+On each two-sided patch,
+
+  epsilon(x)=epsilon_+ on U_+, epsilon(x)=epsilon_- on U_-,
+  0<lambda<=epsilon_+,epsilon_-<=Lambda<infinity.
+
+Values on Gamma itself do not affect the weak equations. The fixed quantitative geometry consists of a finite atlas of C³ graph charts, upper bounds for the chart and inverse derivatives through order three, and positive separations between all nested patches. Smooth interfaces satisfy these hypotheses. H^m_pw means H^m separately on the material sides, with the square-sum norm over those sides. Statements on closed sides mean their continuous extensions, not Sobolev spaces on a closed set.
+
+The normalized, source-free Maxwell convention is
+
+  curl E = i k H,          curl H = -i k epsilon E,                 (M)
+
+with permeability 1. H is the impedance-scaled magnetic field used by the packet. All equations initially hold as distributions tested by smooth compactly supported functions on the entire patch, including tests crossing Gamma. k may be complex. The local analysis makes no additional outgoing assumption; actual incident/outgoing fields and their definitions remain those of the source construction. There is no conductor boundary or impressed surface current in the patch.
+
+1.3 Theorem 05.1 — local electric regularity with L² forcing
+
+For every geometry and material pair as in 1.2, there is C=C(V,U,atlas,lambda,Lambda)>0 such that, for every E,F in L²(U;C³) satisfying
+
+  curl curl E=F,             div(epsilon E)=0                     (1.1)
+
+distributionally on U, E is locally H(curl), belongs to H²_pw(V), and
+
+  ||E||_{H²_pw(V)} <= C (||E||_{L²(U)}+||F||_{L²(U)}).             (1.2)
+
+The constant is independent of E, F, and any frequency. It is also independent of a rounding index when the chart geometry and material are fixed. There is no claim of uniformity for charts shrinking towards a sharp vertex.
+
+For nested balls inside a patch, there are fixed linear maps, defined by a cutoff Fourier projection and a mean-zero potential, giving
+
+  E=grad v+W,
+  ||v||_{H¹}+||W||_{H²} <= C(||E||_{L²(U)}+||F||_{L²(U)}),
+  div(epsilon grad v)=-div(epsilon W),
+  ||v||_{H³_pw(V)} <= C(||v||_{H¹}+||W||_{H²}).                  (1.3)
+
+Their construction and all regularity assertions are proved in section 2.
+
+1.4 Theorem 05.2 — actual weak Maxwell fields and one-sided values
+
+Let k in C\{0}; let E,H have finite local energy and solve (M) in the geometry of 1.2. Then E is piecewise H² and H is globally H¹ locally across Gamma. On still smaller fixed patches H is piecewise H³, hence in particular piecewise H². Both fields have continuous representatives on every closed material side. For 0<alpha<1/2 these representatives are locally C^{0,alpha} up to the interface.
+
+If |k|<=K, then
+
+  ||E||_{H²_pw(V)} <= C(1+Lambda K²)||E||_{L²(U)}.                (1.4)
+
+After inserting a further fixed intermediate patch, a valid pair bound is
+
+  ||E||_{H²_pw(V)}+||H||_{H²_pw(V)}
+    <= C(1+K Lambda)(1+K² Lambda)
+          (||E||_{L²(U)}+||H||_{L²(U)}).                         (1.5)
+
+C depends only on the geometry and material bounds. Using only E to bound H introduces a factor 1/|k|. No such lower-frequency bound is concealed in (1.4) or the pair estimate (1.5).
+
+With a common unit normal nu directed from the minus side to the plus side, the physical transmission conditions are
+
+  nu x [E]=0,  nu x [H]=0,  [epsilon E] dot nu=0,  [H] dot nu=0.  (1.6)
+
+They hold first in the weak trace sense and then for the continuous one-sided traces. E need not be continuous across Gamma: its normal component can jump. H has equal values on the two sides when permeability is 1.
+
+1.5 Theorem 05.3 — fixed-collar convergence, including complex frequencies
+
+Let the material equal the same epsilon on an open set U for all sufficiently large n. Let actual source-free Maxwell fields E_n,H_n at frequencies k_n converge electrically to E_* in L²_loc(U), and suppose k_n -> k_* !=0. Equivalently, one may assume the local electric curl-curl and weighted-divergence equations and the indicated L² limit; the limit equations follow by passing to distributions.
+
+For every V compactly contained in U, covered by the fixed charts of 1.2, choose a fixed enlarged U' compactly contained in U containing those charts. For a bound K on the tail frequencies,
+
+  ||E_n-E_*||_{H²_pw(V)}
+    <= C[(1+Lambda K²)||E_n-E_*||_{L²(U')}
+          +Lambda |k_n²-k_*²| ||E_*||_{L²(U')}]
+      ->0.                                                     (1.7)
+
+In particular the convergence is uniform, and even C^{0,alpha}, on each closed material side of a compact collar inside V, for any 0<alpha<1/2. Magnetic convergence on smaller fixed patches follows, rather than requiring a separate initial magnetic L² convergence assumption. In the electric-equation-only formulation define H_*=(ik_*)^{-1}curl E_*; the proved local H(curl) regularity makes this L², and the limit equations show it satisfies both Maxwell equations.
+
+For driven fields at a fixed real k!=0, k_n=k_*=k and the second term vanishes. For modal fields it is essential and is not discarded. The forcing needed in (1.7) converges in ordinary local L², not in global H¹ across the dielectric jump.
+
+1.6 Theorem 05.4 — finite attained one-sided maxima
+
+Fix an individual smooth rounded configuration. Let K be a nonempty closed observation ball contained in an open neighborhood on which the actual weak field has the regularity of 1.4. Let Omega_1,...,Omega_m be the finitely many material regions, whose closures cover that neighborhood; a region is allowed to be disconnected. Let E^a denote its continuous one-sided representative from an ambient neighborhood of K. Define
+
+  E_up(x)=max_{a : x in closure(Omega_a)} |E^a(x)|.               (1.8)
+
+This is the packet's E_*(x); the name E_up avoids confusing this envelope with the limiting field E_* of 1.5. In a material interior it is the ordinary magnitude; on an interface it is the maximum of all incident one-sided values.
+
+E_up is upper semicontinuous on K, finite everywhere, and attains a finite maximum m_K. The maximizing point may be on a dielectric interface. A one-sided value incident from outside the observation ball is included even when that material side only touches the ball tangentially at its boundary.
+
+1.7 Theorem 05.5 — one common eventual index for localization
+
+Let I be a finite nonempty set of tips. Fix r_i>0 and centers c_i, with disjoint observation balls Q_i=B(c_i,r_i). Define
+
+  C_i={x:3r_i/4 <= |x-c_i| <= 5r_i/4},
+  A_i={x:r_i/2 < |x-c_i| < 3r_i/2}.                              (1.9)
+
+Assume that, for every sufficiently late n and every i, the actual E_n,H_n solve the source-free finite-local-energy Maxwell system at k_n on an open neighborhood of closure(Q_i) union C_i, with finitely many smooth material sides and the positive bounds of 1.2. Assume these configurations share one fixed smooth material on A_i, and their actual electric fields converge in local L² on A_i at k_n -> k_* !=0. Assume the already established simultaneous peak input, in its exact eventual form:
+
+  for every real threshold vector T=(T_i), eventually for every i,
+  vol{x in B(c_i,r_i/2): |(E_n)_{j_i}(x)|>T_i}>0,                (1.10)
+
+where the input field/normalization is fixed, and the component choices j_i are fixed before T. The vector-norm version of (1.10) also suffices.
+
+Then for every target vector M=(M_i), there exists one N such that for EVERY n>=N and EVERY i, the maximum
+
+  m_{n,i}=max_{closure(Q_i)} E_{n,up}
+
+is finite and attained, and
+
+  m_{n,i}>M_i,
+  sup_{C_i}E_{n,up}<m_{n,i}/2.                                 (1.11)
+
+Every maximizing point lies in B(c_i,3r_i/4), but may lie on a material interface. With the ambient upper-envelope convention, take the component in any open neighborhood of closure(Q_i) union C_i on which that envelope is defined (or in the global field when available). The connected component of {E_{n,up}>m_{n,i}/2} containing any such maximum has compact closure inside B(c_i,3r_i/4). No openness of this strict superlevel set is asserted.
+
+The driven source hypotheses that discharge (1.10), the material assumptions, and L² convergence are listed exactly in section 3. The modal version requires the separate spectral and simultaneous-excitation inputs listed in section 6. These are not assumptions of the new local regularity theorem.
+
+======================================================================
+2. COMPLETE NUMBERED MATHEMATICAL PROOF
+======================================================================
+
+2.1 Distributional consequences of actual Maxwell equations
+
+Because epsilon is bounded and E,H are locally L², (M) gives locally L² curls. Taking distributional divergences and using div curl=0 gives
+
+  ik div H=0,        -ik div(epsilon E)=0.
+
+Since k!=0,
+
+  div H=0,          div(epsilon E)=0.
+
+Taking the curl of the first equation, with k a spatial constant, gives
+
+  curl curl E=ik(-ik epsilon E)=k² epsilon E.                    (2.1)
+
+The square is k², not |k|². No derivative of epsilon is introduced. These identities use the actual global-on-the-patch weak equations, not independent equations on each side with assumed interface matching.
+
+For completeness, the stronger theorem 05.1 only assumes E and F in L² and the distributional equation curl curl E=F. The next step derives its initially missing H(curl) regularity.
+
+2.2 Curl Caccioppoli estimate, justified from L² data
+
+Fix real eta in C_c^infinity(U), 0<=eta<=1. Choose a slightly larger compact neighborhood of its support still inside U. Mollify E and the entire field F there, using the same mollifier scale t, small enough that the convolution sees only U. Since curl curl has constant coefficients,
+
+  curl curl E_t=F_t
+
+on a neighborhood of supp eta. We do NOT replace the convolution of epsilon E by epsilon times the convolution of E.
+
+For the smooth fields integrate by parts using the compactly supported test eta² conjugate(E_t). With q_t=curl E_t, the Hermitian pairing and its real part give
+
+  integral eta² |q_t|²
+   = Re integral F_t dot eta² conjugate(E_t)
+       -2 Re integral eta q_t dot (grad eta x conjugate(E_t)).
+
+All integrals are finite: the fields are smooth on the compact test support, and the same estimates below use only local L² norms. There are no material-boundary terms because the identity is applied on the whole patch.
+
+Set X=||eta q_t||_2 and D=||grad eta||_infinity ||E_t||_2, using an enlarged fixed set for the norms. Cauchy-Schwarz and 2XD <= X²/2+2D² yield
+
+  ||eta q_t||_2²
+     <=2||F_t||_2||E_t||_2
+          +4||grad eta||_infinity² ||E_t||_2².                   (2.2)
+
+Convolution is locally L² bounded on that enlarged set, and E_t -> E, F_t -> F in the local L² norms. Thus q_t is uniformly L² on a smaller set where eta=1. A weakly convergent L² subsequence has distributional limit curl E, because differentiation is continuous on distributions and E_t -> E there. It follows that q=curl E belongs to L² locally. Weak lower semicontinuity, followed if necessary by a slightly larger cutoff, gives (2.2) for E,F,q.
+
+In particular, for nested fixed patches U_1 compactly contained in U,
+
+  ||q||_{L²(U_1)} <= C(||E||_{L²(U)}+||F||_{L²(U)}).             (2.3)
+
+One can instead test directly after H(curl) membership is known: compactly supported H(curl) tests are approximated in their graph norm by whole-space zero extension and mollification. Both sides of the weak curl identity are continuous in that norm. The preliminary mollification argument shows that no H(curl) assumption is being hidden in theorem 05.1.
+
+The argument uses neither real k nor positivity of Re(k²). This is why it also applies to complex-frequency differences.
+
+2.3 The Fourier div-curl estimate, including the order-one version
+
+For real xi and complex z in C³,
+
+  |xi|²|z|²=|xi x z|²+|xi dot z|².                              (2.4)
+
+This follows by choosing an orthonormal basis with first vector xi/|xi| and summing the longitudinal and two transverse squared moduli. It remains valid for complex z because the norm is Hermitian and xi is real.
+
+Plancherel and the distributional Fourier differentiation rule imply: if Z, curl Z and div Z belong to L²(R³), then Z belongs to H¹ and
+
+  ||grad Z||_2²=||curl Z||_2²+||div Z||_2².                      (2.5)
+
+Conversely, the Fourier functions i xi_j Zhat are L² by (2.4), so they define the weak derivatives; one is not first assuming Z in H¹. Multiplying (2.4) by 1+|xi|² gives, with the ordinary equivalence of integer Sobolev and Fourier norms,
+
+  ||Z||_{H²} <= C(||Z||_2+||curl Z||_{H¹}+||div Z||_{H¹}).        (2.6)
+
+These whole-space estimates localize by cutoffs. If theta is smooth and compactly supported,
+
+  curl(theta Z)=theta curl Z+grad theta x Z,
+  div(theta Z)=theta div Z+grad theta dot Z.                      (2.7)
+
+The identities follow by the distributional product rule. First use (2.5) on an outer cutoff to obtain local H¹. On a smaller cutoff the commutator terms in (2.7) are then H¹, and (2.6) yields local H² if curl Z and div Z are locally H¹. This order accounts for the derivatives of cutoff terms without circularity.
+
+Apply (2.5) to a cutoff of q=curl E. Since curl q=F and div q=0, (2.3) gives on a smaller fixed patch
+
+  ||q||_{H¹(U_2)} <= C(||E||_{L²(U)}+||F||_{L²(U)}).             (2.8)
+
+This H¹ regularity holds across the interface. Derivatives of epsilon have not been used.
+
+2.4 A fixed linear local decomposition E=grad v+W
+
+Choose a physical ball B inside U large enough to contain the enlarged interface patch of interest. Choose theta in C_c^infinity(U), equal to 1 on a slightly larger neighborhood of B. Extend theta E by zero to R³. Define the bounded Fourier transverse projection
+
+  W=P_T(theta E),
+  W_hat(xi)=(I-xi tensor xi/|xi|²)(theta E)_hat(xi), xi!=0.      (2.9)
+
+The value of the multiplier at xi=0 is arbitrary and immaterial to L². It is an orthogonal projection at every nonzero xi, so
+
+  ||W||_{L²(R³)} <= ||theta E||_2 <= ||E||_{L²(U)},
+  div W=0,
+  curl W=curl(theta E)                                         (2.10)
+
+distributionally. The last equality follows because xi x P_T(xi)z=xi x z. Thus curl W=q wherever theta=1.
+
+The nested versions of (2.5) and (2.6), together with (2.8), give
+
+  ||W||_{H²(B)} <= C(||E||_{L²(U)}+||F||_{L²(U)}).               (2.11)
+
+On B, curl(E-W)=0. Here is the weak potential argument on a slightly smaller ball B'. Mollify the curl-free L² vector on B and restrict to B'. For each small scale the result is smooth and curl free. A classical potential is obtained by integration along the straight segment from the center of B' to x. Differentiation of that segment formula and curl-freeness give gradient equal to the mollified vector. Subtract its mean on B'.
+
+The mean-zero Poincare inequality bounds the H¹ norm of the potential by its gradient L² norm. Applying the same inequality to the difference of two mean-zero potentials shows they are Cauchy in H¹, because their gradients converge in L². Their limit v therefore satisfies
+
+  grad v=E-W,
+  integral_{B'}v=0,
+  ||v||_{H¹(B')} <= C||E-W||_{L²(B')} <= C||E||_{L²(U)}.         (2.12)
+
+All constructions are linear. Uniqueness of the mean-zero potential follows because an H¹ function with zero gradient on the connected ball is constant. The latter fact follows by mollifying locally, noting that the smooth gradients are zero, and using connected overlapping balls. In particular the potential is independent of the chosen approximation sequence.
+
+For reference, the mean-zero Poincare inequality on a ball is the usual bounded-domain inequality ||v-v_B||_2 <= C radius(B)||grad v||_2. It follows first for smooth functions by the segment/averaging proof on a ball and then by H¹ density; the assumptions here are exactly a fixed ball and the mean-zero normalization. No boundary condition is imposed on E or on the physical problem.
+
+This supplies the local decomposition required by the manuscript without invoking its unquoted regularized-lifting lemma. The estimates for v and W do not depend on derivatives of epsilon.
+
+2.5 The scalar equation and the initial conormal trace
+
+The global-on-the-patch identity div(epsilon E)=0 and (2.12) give, for every smooth compact scalar test phi,
+
+  integral epsilon grad v dot grad conjugate(phi)
+    =-integral epsilon W dot grad conjugate(phi).                (2.13)
+
+Both products are integrable by L², boundedness of epsilon, and the compact support. The identity extends to H¹ tests with compact support by smooth density and Cauchy-Schwarz.
+
+Since v is H¹ on the entire ball, its two scalar traces on Gamma agree in H^{1/2}. The flux
+
+  p=epsilon(grad v+W)=epsilon E
+
+belongs to L² and has distributional divergence zero. Restrict to local Lipschitz half-patches given by the smooth interface charts; on each it is an H(div) field. Its normal trace is initially an H^{-1/2} functional: for boundary datum psi with an H¹ lifting Phi, define the normal pairing by integral p dot grad Phi + integral (div p)Phi. The definition is independent of the lifting because their difference is H¹_0 and the distributional divergence identity extends by density. The bounded lifting/trace inequality, explicitly justified in 2.12, gives the H^{-1/2} bound. Also div(grad v)=-div W in each material side, so grad v is itself locally H(div) there and its initial normal trace is defined.
+
+Adding the two side Green identities and comparing with the whole-patch identity yields matching normal flux. With the common normal convention,
+
+  [v]=0,       [epsilon partial_nu v]=-[epsilon W dot nu]        (2.14)
+
+initially as weak traces. We have not assumed H³ for v or classical normal derivatives. W in H² already gives an H^{3/2} trace of its values on the fixed smooth interface, so the known right-hand jump has that regularity. The proof below uses (2.13) directly and derives the regularity of the unknown side derivatives.
+
+2.6 Actual flattening and transformed equations
+
+After a rigid orientation-preserving coordinate change, write the interface as
+
+  x_3=gamma(x_1,x_2)
+
+on a fixed patch, with gamma in C³. Use the graph map
+
+  Phi(y)=(y_1,y_2,y_3+gamma(y_1,y_2)),
+  J=D Phi,    det J=1,
+  G=(det J)J^{-1}J^{-T}.                                       (2.15)
+
+Phi maps Q^+={y_3>0} and Q^-={y_3<0} to the material sides. G is real symmetric positive definite, belongs to W^{2,infinity} on a smaller fixed cube, and in this graph map depends only on y_1,y_2. Bounds for gamma through its third derivatives control G and its derivatives through order two. More general orientation-preserving C³ charts give the same formulas with their positive Jacobian.
+
+Put
+
+  u=v composed with Phi,
+  w=J^T(W composed with Phi),
+  A(y)=epsilon_± G(y) on Q^±,
+  g(y)=-epsilon_± (det J)J^{-1}(W composed with Phi)=-A w.        (2.16)
+
+Change of variables and grad_x v=J^{-T}grad_y u transform (2.13) into
+
+  integral_Q A grad u dot grad conjugate(psi)
+    =integral_Q g dot grad conjugate(psi)                       (2.17)
+
+for every compactly supported H¹ test psi on the full cube. The substitution is justified for H¹ functions by smooth approximation and the bounded chart Jacobians; the chain rule and change of variables pass in L². Applying the same argument through orders two and three proves the Sobolev norm comparisons used below.
+
+There are fixed lambda_0,Lambda_0>0 with
+
+  lambda_0 |z|² <= conjugate(z) dot A(y)z <= Lambda_0 |z|²,
+  max_± ||A||_{W^{2,infinity}(Q^±)} < infinity,
+  ||g||_{H²_pw(Q)} <= C Lambda ||W||_{H²(Phi(Q))}.              (2.18)
+
+For example lambda_0 >= lambda inf(det J)/sup||J||² and
+Lambda_0 <= Lambda sup(det J) sup||J^{-1}||². The derivative constants are controlled by the fixed chart data. Products of a W^{2,infinity} matrix and an H² function are H² by the weak product rule and the L-infinity coefficient bounds.
+
+For clarity, the corresponding transformed first-order Maxwell fields are the covariant fields e=J^T(E composed with Phi), h=J^T(H composed with Phi). The curl and Piola identities give
+
+  curl_y e=ik G h,
+  curl_y h=-ik epsilon G e,
+  div_y(epsilon G e)=0,       div_y(G h)=0.                     (2.19)
+
+The curl identity is curl_y(J^T E composed with Phi)=(det J)J^{-1}(curl_x E composed with Phi); the derivative-of-J terms cancel by symmetry of second derivatives. The divergence identity is the corresponding change-of-variables identity for compact tests. Smooth approximation proves both distributionally for the present fields. Thus flattening does not preserve the naive constant-coefficient Maxwell equations. Our scalar proof uses the correctly transformed equation (2.17), not that naive replacement.
+
+The next five subsections prove the required transmission estimate for (2.17) from its weak formulation.
+
+2.7 Scalar transmission lemma and difference-quotient facts
+
+Here is the precise scalar lemma we prove. Let Q_R=(-R,R)^3, Q_R^±=Q_R intersect {±y_3>0}, 0<r<R. Let A^± be real symmetric W^{2,infinity} matrices on the half-cubes, with common ellipticity bounds lambda_0,Lambda_0. Let g^± be H² vector fields. Let u in H¹(Q_R) satisfy (2.17) for every compact H¹ test. Then
+
+  ||u||_{H³_pw(Q_r)}
+   <= C(lambda_0,Lambda_0,M_1,M_2,R-r)
+        (||u||_{H¹(Q_R)}+||g||_{H²_pw(Q_R)}),                   (2.20)
+
+where M_j=max_±||D^j A^±||_infinity, j=1,2. In particular no estimate on an unknown conormal trace is a hypothesis. This slightly more general lemma includes (2.16); it does not require A to be independent of y_3.
+
+For alpha=1,2, write T_h f(y)=f(y+h e_alpha) and D_h f=(T_h f-f)/h. Use h small compared with the distance between the chosen nested cubes. Tangential translation preserves each half-cube. Consequently,
+
+  ||D_h u||_{L²(inner)} <= ||partial_alpha u||_{L²(outer)},
+  ||D_h g||_{L²(inner)} <= ||partial_alpha g||_{L²_pw(outer)},
+  ||D_h A||_infinity <= M_1.                                  (2.21)
+
+For smooth functions the first two inequalities follow from
+D_h f=integral_0^1 partial_alpha f(y+t h e_alpha)dt, Jensen's inequality, and translation of the integral. Density gives the Sobolev versions. The coefficients' inequality follows from their Lipschitz representatives on the individual sides. Boundary terms at y_3=0 do not occur for tangential differentiation, because the interface normal has zero alpha-component. Hence the piecewise tangential derivatives of g and A are their global distributional tangential derivatives.
+
+The difference-quotient compactness criterion used below is: if f in L² and D_h f is uniformly bounded in L² on every smaller domain for h ->0 in a fixed coordinate direction, that weak partial derivative belongs to L² with the same bound. To see it, take a weakly convergent subsequence of D_h f and use
+
+  integral D_h f phi = -integral f D_{-h} phi.
+
+For each compact smooth test, D_{-h}phi converges uniformly with fixed compact support to partial_alpha phi; Cauchy-Schwarz passes the integral to the limit. The weak limit is the distributional derivative. Apply this also to the components of grad u when estimating D_h u in H¹. These arguments use weak compactness in the Hilbert space L² and no unproved differentiability of u.
+
+2.8 First tangential derivatives: the energy calculation
+
+Translate (2.17), subtract, and use the exact product rule
+
+  D_h(A grad u)=(T_h A) grad D_h u+(D_h A)grad u.
+
+On a smaller cube the difference w=D_h u satisfies
+
+  integral (T_h A) grad w dot grad conjugate(phi)
+   =integral R_h dot grad conjugate(phi),
+  R_h=D_h g-(D_h A)grad u.                                   (2.22)
+
+For a fixed smooth cutoff eta supported in that cube, phi=eta²w belongs to H¹_0 and is admissible by the density extension of the weak equation. For each fixed nonzero h, w is H¹ because u is H¹. Put
+
+  a=||eta grad w||_2, b=||w grad eta||_2, d=||eta R_h||_2.
+
+Taking real parts, ellipticity and boundedness give
+
+  lambda_0 a² <= 2 Lambda_0 a b + d a + 2 d b.
+
+Apply Young's inequality to the first two terms, with lambda_0 a²/4 allocated to each, and use 2db<=d²+b²:
+
+  (lambda_0/2)a²
+   <= (4 Lambda_0²/lambda_0+1)b²+(1/lambda_0+1)d².              (2.23)
+
+The b term is bounded by ||grad eta||_infinity ||partial_alpha u||_2 using (2.21). The d term is bounded by
+
+  ||partial_alpha g||_{L²_pw}+M_1||grad u||_2.
+
+Therefore, on nested cubes with gap d_0>0,
+
+  ||partial_alpha u||_{H¹(inner)}
+   <= C(lambda_0,Lambda_0)
+      [||partial_alpha g||_{L²_pw(outer)}
+        +(1+M_1+d_0^{-1})||u||_{H¹(outer)}].                   (2.24)
+
+The passage h ->0 is the weak compactness argument of 2.7. This proves, across the whole flat interface, that u_1 and u_2 are H¹. All second derivatives with at least one tangential index are now L². The proof also establishes the same estimate for any weak solution whose forcing and its derivative in the selected tangential direction are L²; no normal derivative of that forcing was used.
+
+2.9 Recover the second normal derivative
+
+Restrict (2.17) to either open half-cube. In distributions there,
+
+  sum_{i,j} partial_i(A_ij u_j)=sum_i partial_i g_i.
+
+Let a=A_33. Expanding the weak product rule and separating u_33 gives
+
+  a u_33
+   =sum_i partial_i g_i
+      -sum_{(i,j)!=(3,3)} A_ij u_ij
+      -sum_{i,j}(partial_i A_ij)u_j.                           (2.25)
+
+Every term on the right other than the initially unknown u_33 is L²: g is piecewise H¹, all u_ij with (i,j)!=(3,3) have a tangential index and are controlled by (2.24), and coefficient derivatives are bounded. To make division rigorous before u_33 is known to be a function, first keep the term partial_3(a u_3) unexpanded in the divergence equation. All remaining terms are L², so partial_3(a u_3) is L². Since a u_3 is L² and 1/a is W^{1,infinity}, the directional weak product rule applied to u_3=(1/a)(a u_3) proves u_33 is L² and then yields (2.25) as an equality of L² functions. The norm bound follows by the triangle inequality and lambda_0^{-1}. Thus u is piecewise H², proved before any third derivative is used.
+
+All normal differentiations here and below take place separately inside the open material sides. No normal derivative of the discontinuous whole coefficient is suppressed.
+
+2.10 Two tangential derivatives
+
+The distributional tangential derivative of (2.17), justified by 2.8 and tangential difference quotients, is
+
+  integral A grad u_alpha dot grad conjugate(phi)
+   =integral g^alpha dot grad conjugate(phi),
+  g^alpha=partial_alpha g-(partial_alpha A)grad u.              (2.26)
+
+For alpha,beta in {1,2},
+
+  partial_beta g^alpha
+   =partial_{alpha beta}g
+      -(partial_{alpha beta}A)grad u
+      -(partial_alpha A)grad u_beta.                           (2.27)
+
+This is L² on a slightly smaller full cube: the data have two tangential derivatives, the coefficients have two bounded derivatives, and u_beta is H¹ by (2.24). In particular this step does not presume u_alpha already has two derivatives, and no derivative crossing the coefficient jump is taken.
+
+Apply the proved first-tangential estimate (2.24), in direction beta, to the H¹ function u_alpha and equation (2.26). It gives
+
+  u_{alpha beta} in H¹(inner),
+  sum_{alpha,beta=1}^2 ||u_{alpha beta}||_{H¹(inner)}
+    <= C(||u||_{H¹(Q_R)}+||g||_{H²_pw(Q_R)}).                  (2.28)
+
+All third derivatives containing at least two tangential indices are therefore L², with the claimed data bound. Nested cutoffs are fixed before applying these estimates.
+
+2.11 Recover every third derivative, with no circular step
+
+Differentiate (2.25) tangentially in alpha=1,2, within either material side:
+
+  a u_{33 alpha}
+   =sum_i partial_{alpha i}g_i -(partial_alpha a)u_33
+     -sum_{(i,j)!=(3,3)}[(partial_alpha A_ij)u_ij+A_ij u_{ij alpha}]
+     -sum_{i,j}[(partial_{alpha i}A_ij)u_j
+                                      +(partial_i A_ij)u_{j alpha}]. (2.29)
+
+All third derivatives on the right have at least two tangential indices and are controlled by (2.28). All second derivatives are controlled by 2.9. Data and coefficient derivatives of the required orders are controlled by H²_pw and W^{2,infinity}. Division by a>=lambda_0 gives u_{33 alpha} in L².
+
+Now differentiate (2.25) in the normal direction, still separately on each side:
+
+  a u_333
+   =sum_i partial_{3i}g_i -(partial_3 a)u_33
+     -sum_{(i,j)!=(3,3)}[(partial_3 A_ij)u_ij+A_ij u_{ij3}]
+     -sum_{i,j}[(partial_{3i}A_ij)u_j+(partial_i A_ij)u_{j3}].    (2.30)
+
+A derivative u_{ij3} on the right either has two tangential indices, controlled by (2.28), or has two normal and one tangential index, controlled by (2.29). Thus the right-hand side is L². Division by a proves u_333 in L². In the special graph map (2.15) all normal coefficient derivatives vanish on each side, but the calculation above does not need that simplification.
+
+These formulas identify the weak derivatives: the equations were distributional identities and their right sides have now been proved L². As in 2.9, one can first recover partial_alpha(a u_33), then partial_3(a u_33), in L² and apply the weak product rule with 1/a; this rigorously justifies each displayed division. They do not differentiate an arbitrary pointwise representative. All derivatives of order at most three are accounted for. This proves the scalar estimate (2.20).
+
+For quantitative bookkeeping take, for example, eight nested cubes with equal gaps (R-r)/8. Equations (2.23)–(2.30) construct C using finitely many sums and products of dimension-dependent constants, 1+lambda_0^{-1}, 1+Lambda_0, 1+M_1+M_2, and 1+(R-r)^{-1}. No field amplitude, frequency, or rounding index enters it. This specifies its dependence without claiming a sharp or unnecessary numerical value.
+
+2.12 Completion of the local electric estimate and trace regularity
+
+Apply (2.20) to (2.16). Sobolev chain rules, bounded Jacobians, and (2.18) give on smaller physical side patches
+
+  ||v||_{H³_pw} <= C(||v||_{H¹}+||W||_{H²}).                   (2.31)
+
+Equations (2.11)–(2.12) and E=grad v+W now prove (1.2). In a patch wholly inside one material the same proof works with a constant scalar coefficient, or one can apply difference quotients in all three directions. A finite cover proves the assertion on V. There is no global topological assumption on the material sides: the potentials were constructed on full physical balls, not on possibly non-simply-connected individual phases.
+
+The Sobolev trace facts used above have the following exact scope. On a fixed smooth graph patch the value trace maps H¹ to H^{1/2} and H² to H^{3/2}; the normal derivative trace of an H³ scalar is H^{3/2}. A local verification is obtained by flattening and taking the Fourier transform in the two tangential variables. For a smooth compact function h on the upper half-space, integration of partial_3 |hhat(xi',y_3)|² and Cauchy-Schwarz give
+
+  |hhat(xi',0)|²
+   <= t integral_0^infinity |hhat|² dy_3
+       +t^{-1} integral_0^infinity |partial_3 hhat|² dy_3,
+
+where t=(1+|xi'|²)^{1/2}. Multiply by t for H¹ traces or by t³ for H² traces and integrate xi'. The resulting right sides are bounded by the corresponding H¹ or H² norms. Approximation and a bounded local half-space extension define the trace for general Sobolev functions. Apply the H² value result to the first derivatives of an H³ function for its derivative traces. Smooth chart changes and multiplication by the smooth normal preserve these local trace spaces. The H(div) normal trace in 2.5 is the bounded dual construction using H¹ lifts of H^{1/2} boundary functions.
+
+The bounded H¹ lifting used in 2.5 is explicit on the half-space: for psi in H^{1/2}(R²), set
+
+  Phi_hat(xi',y_3)=exp(-y_3 sqrt(1+|xi'|²)) psi_hat(xi'), y_3>0.
+
+Direct integration in y_3 gives ||Phi||_{H¹}²<=C integral sqrt(1+|xi'|²)|psi_hat(xi')|² dxi'. Its boundary trace is psi, by the just-proved trace estimate and approximation. Fixed cutoffs and flattening provide local lifts on the half-patches; a partition of unity supplies the usual full-boundary lift when needed in the normal-trace definition. Thus the dual normal-trace construction has the asserted bound.
+
+After (2.31), both sides of (2.14) belong to H^{3/2}; the identity is the same identity previously derived in H^{-1/2}. Thus the conormal compatibility was present in the weak formulation, and stronger unknown traces were conclusions, not premises.
+
+For Maxwell fields, (2.1) gives ||F||_2<=|k|² Lambda ||E||_2. Substitution into (1.2) proves (1.4), including for complex k.
+
+2.13 One-sided Sobolev embedding and representative gluing
+
+Here is a local extension/embedding argument that also handles an observation ball tangent to the interface. Work on a flat half-patch slightly larger than the desired closed-side compact set. Multiply by a cutoff supported away from the artificial lateral and top boundaries. A function h in H² of the positive half-space has a bounded H² extension across y_3=0 given, on the negative side, by
+
+  Ext h(y',y_3)=3h(y',-y_3)-2h(y',-2y_3), y_3<0.              (2.32)
+
+For smooth h, the value and first normal derivative match at zero because 3-2=1 and -3+4=1. Therefore weak derivatives through order two have no interface delta terms. Change of variables bounds the L² norms of all the piecewise derivatives. Approximation by smooth functions up to the half-space boundary proves the bounded extension for general H² h. Such approximation follows by translating the function a small distance into the half-space and then mollifying at a smaller scale; the derivatives converge in L² by continuity of translations. The cutoff handles the artificial edges. Pulling this extension back through the fixed chart gives the local extension needed on a curved material side.
+
+For f in H²(R³), Cauchy-Schwarz in Fourier space gives
+
+  ||fhat||_1 <= (integral_R³ (1+|xi|²)^(-2) dxi)^(1/2)||f||_{H²}<infinity.
+
+Thus the inverse Fourier integral is a continuous representative and controls its supremum. For 0<alpha<1/2,
+
+  |exp(i xi dot x)-exp(i xi dot y)| <= C_alpha |xi|^alpha |x-y|^alpha,
+
+and integral |xi|^{2alpha}(1+|xi|²)^(-2) dxi is finite. At infinity its radial integrand is of order r^{2alpha-2}, which is integrable precisely for this chosen alpha-range. Consequently
+
+  ||f||_{C^{0,alpha}} <= C_alpha ||f||_{H²}.                    (2.33)
+
+This proves the needed one-sided embedding; alpha=1/4 is one fixed admissible choice. Endpoint Holder exponents are unnecessary.
+
+The continuous representatives are unique: continuous functions equal a.e. on an open material side agree there, because a nonzero difference at a point persists on an open set of positive volume. Their boundary values agree by continuity from that side. The locally constructed representatives therefore glue on overlapping patches, including at their one-sided boundary points.
+
+2.14 Magnetic regularity and physical transmission conditions
+
+The direct cutoff div-curl estimate applied to H, using div H=0 and curl H=-ik epsilon E, gives
+
+  ||H||_{H¹(U_1)} <= C(||H||_{L²(U)}+|k| Lambda ||E||_{L²(U)}).  (2.34)
+
+This is global H¹ across the interface. To obtain higher one-sided regularity, use curl curl H=grad div H-Delta H and the second Maxwell equation:
+
+  Delta H=ik curl(epsilon E).
+
+For each component a define the vector g^a by
+
+  (g^a)_b=ik sum_c LeviCivita(a,b,c) epsilon E_c.
+
+Then Delta H_a=div g^a, equivalently
+
+  integral grad H_a dot grad conjugate(phi)
+    =integral g^a dot grad conjugate(phi).
+
+On a fixed intermediate patch, E is piecewise H², so g^a is piecewise H² with norm <=C|k|Lambda||E||_{H²_pw}. Apply the already proved scalar transmission lemma with principal coefficient 1, transformed by the same charts, to H_a in H¹. It gives piecewise H³ for H on a smaller patch, with
+
+  ||H||_{H³_pw(V)}
+    <= C(||H||_{H¹(U_1)}+|k|Lambda||E||_{H²_pw(U_1)}).
+
+Use (1.4) and (2.34), with suitable nested patches, to obtain (1.5). We do not claim global H² for H; its normal derivatives can jump.
+
+The distributional curls of piecewise H² fields have surface terms proportional to nu x [E] and nu x [H]. This is obtained by the ordinary side integration-by-parts formula, extended to Sobolev fields by density. The actual Maxwell right sides are L² and have no surface measure contribution, so the tangential jumps vanish as trace distributions. Similarly the zero global divergences give [epsilon E] dot nu=0 and [H] dot nu=0. This proves (1.6). The trace functions are continuous on the smooth interface after 2.13. A continuous trace function that is zero as a distribution is pointwise zero, since a nonzero value would persist on a surface-open set of positive area. Thus the one-sided continuous traces satisfy the physical conditions everywhere in the patch.
+
+2.15 The modal frequency-error forcing and its exact topology
+
+On a fixed open neighborhood where all late coefficients equal epsilon, put
+
+  e_n=E_n-E_*,
+  f_n=k_n² epsilon e_n+(k_n²-k_*²)epsilon E_*.
+
+The actual equations imply
+
+  curl curl e_n=f_n,          div(epsilon e_n)=0.                (2.35)
+
+If only E_n -> E_* in local L² is initially given, the limit's identities follow by testing against compact smooth functions: multiplication by the bounded fixed epsilon is L² continuous, k_n² -> k_*², and derivatives are transferred to the tests. Hence no separate identification of the limiting field with an abstract regular solution is needed.
+
+Fix an enlarged patch U' and choose K with |k_n|<=K eventually. Then
+
+  ||f_n||_{L²(U')}
+    <= Lambda K² ||e_n||_{L²(U')}
+       +Lambda |k_n²-k_*²| ||E_*||_{L²(U')} ->0.                 (2.36)
+
+This is ordinary L² convergence on the full interface-crossing patch. It uses no derivative of epsilon E_*. Generally epsilon E_* is not global H¹, because its tangential component can jump. Requiring global H¹ convergence of this forcing would be an unjustified extra hypothesis.
+
+Apply theorem 05.1 to (2.35). It gives (1.7) directly. On closed material sides, (2.33) gives uniform and C^{0,alpha} convergence. With fixed real frequency the forcing reduces to f_n=k²epsilon e_n and exactly the same estimate applies.
+
+To display the corresponding first-order equations, let h_n=H_n-H_* and delta_n=k_n-k_*. Then
+
+  curl e_n=ik_n h_n+F_n,       F_n=i delta_n H_*,
+  curl h_n=-ik_n epsilon e_n+G_n, G_n=-i delta_n epsilon E_*.
+
+Since H_* is global H¹ locally by (2.34), F_n ->0 in that H¹ topology. G_n ->0 in L² and, after the electric regularity theorem, in piecewise H² on smaller patches; it need not be global H¹. Both have zero distributional divergence. The second-order proof uses exactly the weaker, sufficient L² quantity (2.36).
+
+2.16 Magnetic convergence from electric convergence
+
+Equations (2.2)–(2.8), applied to e_n and f_n, give
+
+  curl e_n ->0 in H¹ on smaller fixed patches.
+
+Since k_n ->k_*!=0, choose a tail with |k_n|>=|k_*|/2. On that tail,
+
+  H_n-H_*=(curl e_n)/(ik_n)
+     +(1/(ik_n)-1/(ik_*))curl E_* ->0 in H¹_loc.                (2.37)
+
+This proves the magnetic convergence needed when an upstream theorem supplies only electric local L² convergence. For higher one-sided convergence, the component equations for h_n have divergence data obtained from
+
+  i(k_n epsilon E_n-k_*epsilon E_*)
+    =i k_n epsilon e_n+i(k_n-k_*)epsilon E_*.
+
+These data tend to zero in piecewise H² on a fixed intermediate patch by (1.7). The scalar transmission estimate applied componentwise, together with (2.37), gives h_n ->0 piecewise H³ on a smaller patch, and therefore uniformly one-sided. This step uses the same fixed material charts.
+
+2.17 Fixed collars: a finite atlas independent of the late rounding index
+
+The local convergence theorem requires equality of material on an OPEN neighborhood of the collar, not only on the collar as a closed set. In the binary construction choose radii
+
+  0<r_i<=b_i/2,              0<b_i<a_i.
+
+The collars C_i and enlarged annuli A_i of (1.9) then satisfy C_i compactly contained in A_i and 3r_i/2<=3b_i/4<a_i. Apply the accepted CommonBinaryCollar.eventually_annuli_agree to the CLOSED annuli with lower radii r_i/2 and upper radii 3r_i/2. It gives one common tail on which every rounded susceptibility equals the same limiting susceptibility there.
+
+The accepted CommonBinaryInterface.eventually_body_smooth gives another common tail of smooth configurations. For a common contrast d_mat>0, coefficient_body identifies the rounded susceptibility exactly as d_mat on body_n and 0 outside. Pick one n_0 on the intersection of those two tails. On each open A_i, every later susceptibility equals that of n_0. Because d_mat!=0, their material body sets agree there as well. Consequently all those interfaces are exactly the fixed smooth interface of n_0 within A_i.
+
+For every point of C_i, choose a sufficiently small enlarged physical ball inside A_i that either lies in one material or crosses one regular smooth interface chart of n_0. Compactness of C_i yields a finite such cover. Fix it once, together with all smaller balls and cutoffs needed in 2.2–2.13. Its chart bounds and separations are independent of n>=n_0. Apply (1.7) on those fixed charts. Taking the maximum of their finitely many constants gives one-sided uniform convergence on all C_i.
+
+This also obtains the fixed smooth geometry of the limiting coefficient locally; a separate unquoted theorem about smoothness of the sharp conical surface is unnecessary. If the precise Lean names of the limiting coefficients differ between source modules, pass the late actual weak equations to their L² limit on A_i, as in 2.15, to get the local limiting equation directly.
+
+The constants needed to establish continuity on the ENTIRE observation ball for a single n can depend on that smooth rounded geometry. Only the collar estimates are uniform in n. Neither the argument nor the conclusion requires an estimate uniform on a neighborhood shrinking into the vertex.
+
+2.18 Compact attainment with the exact one-sided convention
+
+Let K be the closed observation ball. For each material region define
+
+  K_a=K intersect closure(Omega_a).
+
+It is compact, and E^a is continuous on K_a because it is the one-sided extension from an ambient open neighborhood of K. If K_a is nonempty, |E^a| attains a finite maximum m_a on K_a. There is at least one nonempty K_a, and there are finitely many regions. Therefore max_a m_a is finite and attained and equals max_K E_up. This proves theorem 05.4.
+
+The use of K intersect closure(Omega_a) is deliberate. Replacing it by closure(K intersect Omega_a) can remove a physically incident one-sided value when Omega_a lies outside K and touches its boundary tangentially.
+
+For each real t,
+
+  {x in K:E_up(x)>=t}
+    = union_a {x in K_a:|E^a(x)|>=t}.
+
+Each set on the right is compact, so the finite union is closed in K. Thus E_up is upper semicontinuous. In general it is not continuous, because the magnitudes of the normal electric traces can differ.
+
+On a region where the phase geometry is shared, the elementary finite-maximum inequality and the reverse triangle inequality give
+
+  |E_{n,up}(x)-E_{*,up}(x)|
+    <= max_{a active at x}|E_n^a(x)-E_*^a(x)|.                 (2.38)
+
+Consequently one-sided uniform convergence gives uniform convergence of the upper envelopes, even though the envelopes may have jumps.
+
+2.19 Positive-volume peaks give strict maxima of the continuous envelope
+
+On each compact smooth patch an interface is a graph. A graph in R³ has three-dimensional Lebesgue measure zero by Fubini (each vertical section is a singleton); rotations and smooth Lipschitz chart changes preserve nullity. A finite chart cover gives nullity of the interfaces in K.
+
+The actual weak field and its continuous representative on each open material side agree almost everywhere by construction. Removing these finitely many representative exceptional sets and the interfaces from an actual positive-volume coordinate superlevel leaves a nonempty, indeed positive-volume, set. At any remaining point,
+
+  E_{n,up}(x)=|E_n^a(x)|>=|(E_n)_j(x)|.
+
+Thus a positive-volume coordinate superlevel above T inside Q_i implies
+
+  max_{closure(Q_i)}E_{n,up}>T.                                (2.39)
+
+The high-field point can be chosen in an ordinary material interior; the eventual maximizing point need not be there.
+
+Here is also the exact L² peak-preservation argument for a modal input when the sharp limiting field is known to be essentially unbounded in each tip ball. In a finite-volume ball D, for any T choose a>0 with
+
+  A={x in D:|E_*(x)|>T+2a}
+
+of positive volume. Such an A exists if |E_*| is not essentially bounded there. Chebyshev gives
+
+  vol{x in D:|E_n(x)-E_*(x)|>=a}
+    <= a^{-2}||E_n-E_*||_{L²(D)}² ->0.
+
+For all sufficiently late n that volume is less than vol(A). The remaining subset of A has positive volume and |E_n|>T+a>T. A finite intersection of these tails gives simultaneous peaks at all finitely many tips. This needs actual essential unboundedness (or a proved positive-volume singularity theorem), not arbitrary pointwise values assigned to a weak field on a null set.
+
+2.20 One common index, parameter order, and strict margins
+
+All illumination choices precede the following construction. For the driven case retain the one fixed input d_in supplied by the accepted simultaneous theorem, with its exact incoming-power normalization. For the modal case retain the already normalized sequence with the compatible scale/phase from its upstream theorem. No field is rescaled after selecting the peak threshold.
+
+First fix the finite geometry and frequency/input, then the observation radii r_i and the fixed collars, then n_0 and the fixed collar atlas of 2.17. By regularity the limiting envelope is bounded on each C_i. Define the finite numbers
+
+  L_i=sup_{C_i}E_{*,up},       B_i=L_i+1.
+
+Uniform convergence of the side representatives and (2.38) provide a common tail with
+
+  sup_{C_i}E_{n,up}<B_i for every i.                           (2.40)
+
+For the prescribed target vector M_i choose
+
+  T_i=max{M_i,2B_i}+1.                                         (2.41)
+
+The accepted simultaneous positive-volume theorem, with inner radii r_i/2 and these thresholds, provides another common tail on which (1.10) holds. The coordinate choices j_i precede the thresholds, as required by that source theorem.
+
+Intersect the four tails for:
+
+  (i) smoothness on the rounded observation neighborhoods;
+  (ii) exact material agreement on all enlarged annuli;
+  (iii) the simultaneous collar bounds (2.40);
+  (iv) the simultaneous positive-volume superlevels at (2.41).
+
+Each is an eventual statement in the natural index. Their finite intersection is eventual, so there exists one N such that EVERY n>=N satisfies all four for EVERY i. This is stronger than separately selecting different rounding indices for different tips.
+
+For each such n, compact attainment and (2.39) give
+
+  m_{n,i}>T_i>M_i,
+  sup_{C_i}E_{n,up}<B_i<m_{n,i}/2.                             (2.42)
+
+The +1 choices make every inequality strict. Nothing depends on finding an ordinary point of the limiting field first or on pointwise convergence near the shrinking tip.
+
+Because the part of closure(Q_i) with radius >=3r_i/4 lies in C_i, no maximizing point can lie there. Therefore every maximizer has |x-c_i|<3r_i/4. This is a spatial separation from the observation-ball boundary, not a separation from the dielectric interface.
+
+If diameter <ell is requested, choose 2r_i<ell at the radius-selection step. Pairwise disjointness follows from the already disjoint available neighborhoods and choosing the radii inside them. Restrictions on the planar projection and the existence of the initial geometry belong to their separate construction theorem; they are not inferred from local regularity.
+
+The logical order of the driven conclusion is
+
+  fixed finite geometry -> delta>0 -> chosen k in (0,delta)
+  -> one normalized input d_in -> observation radii and collars
+  -> fixed collar bounds -> arbitrary target vector M
+  -> one N -> every n>=N works for all tips.
+
+In particular, d_in does not depend on M or n. The source theorem even permits the radii to be selected after d_in, and all its component choices precede the thresholds.
+
+2.21 Exact superlevel-component convention with jumps
+
+Use the ambient upper-envelope convention: physical interface points are single points, their amplitude is the maximum of the incident side values, and
+
+  S={x:E_{n,up}(x)>m_{n,i}/2}.
+
+Take S in an ambient open neighborhood containing closure(Q_i) union C_i where the one-sided envelope is defined, or use the global field when available. Take the connected component D of S containing a selected maximizing point. A connected component is taken in the subspace topology of S. S need not be open, and D need not be an open subset of R³ or lie in one material phase.
+
+By (2.42), S is disjoint from C_i. The continuous radial map x -> |x-c_i| maps the connected set D to a connected subset of R. Its image contains a value <3r_i/4. If it contained a value >=3r_i/4, connectedness of subsets of R would force a value in the forbidden collar. Hence D is contained in B(c_i,3r_i/4).
+
+For the closure assertion, {E_{n,up}>=m_{n,i}/2} is closed locally by upper semicontinuity and contains S. Therefore it contains closure(D), which cannot meet C_i. The closure is bounded, and it is closed in the ambient neighborhood of the compact observation ball, hence compact. It is contained in the open ball B(c_i,3r_i/4); equivalently it has a positive distance from the collar.
+
+One could instead retain distinct copies of interface points in the disjoint union of closed material sides and take components there. Their projections are also localized, but that is a different convention. This report uses the ambient upper-envelope convention required by the packet and makes no assertion that a strict superlevel component is open.
+
+This completes the new mathematical local analysis, compact attainment, and common-index localization argument.
+
+======================================================================
+3. SOURCE MAP: EXACT STATEMENTS, HYPOTHESES, AND STATUS
+======================================================================
+
+3.1 Status vocabulary
+
+\"Accepted\" below means the attached Packet 05 labels the source accepted in the Stage-65 incremental ledger, with a matching frozen-record hash. It does not mean this session compiled it or rechecked the ledger. \"Supporting\" means individual acceptance is not certified by the handoff. \"Manuscript\" means a target or prose argument, regardless of a PROVED label. The new proofs are mathematical proofs in this report, with formalization outstanding.
+
+3.2 Exact common driven-source assumptions
+
+The following context is shared by the accepted common binary material/field theorems used here:
+
+  D1. i ranges over a finite type I with decidable equality; I is nonempty for the illumination theorem.
+  D2. p:I -> ConicalStaticVolume.Data, a:I -> R, center:I -> Maxwell.Space.
+  D3. B>=0 and (p i).contrast<=B for all i.
+  D4. a_i>0 and a_i<=(p i).cutoff.rOut for all i.
+  D5. For i!=j, ConicalCommonMaterial.outer p center i and outer p center j are disjoint.
+
+For the normalized simultaneous illumination theorem the additional hypotheses are exactly:
+
+  D6. R>=0 and R<=T.
+  D7. 0<b_i<a_i for all i.
+  D8. (p i).exponent<1 for all i.
+  D9. a_i>=0 for all i (redundant with D4, but present in the source).
+  D10. a_i+a_j<dist(center i,center j) for i!=j.
+  D11. UnionFreeRunge.balls center a is contained in closedBall 0 R, and every ConicalCommonMaterial.outer p center i is contained in closedBall 0 R.
+  D12. a_i<(p i).cutoff.rIn for all i.
+
+For one genuinely common binary dielectric, additionally fix d_mat>0 with
+
+  (p i).contrast=d_mat for every i.
+
+The coefficient is susceptibility, so its two values are 0 and d_mat, whereas the physical dielectric has values 1 and 1+d_mat. If a prescribed upper material bound epsilon_max is required, require 1+d_mat<=epsilon_max. The theorem does not obtain this choice from the local regularity argument; it is part of the conical data/construction supplied upstream.
+
+Use the actual source definitions
+
+  c_n = ConicalCommonBinaryPeaks.rounded ... n
+      = CommonBinaryRounding.coefficient ... n,
+  I_k = FiniteAngularHerglotz.incident k d_in,
+  E_n = ConicalCommonBinaryPeaks.electric ... R k n I_k,
+  H_n = ConicalCommonBinaryPeaks.magnetic ... R k n I_k.
+
+Thus the analysis is attached to the actual physical fields defined by the source volume solution and incident field, not to arbitrary surrogate solutions.
+
+3.3 Source interfaces actually used for the driven application
+
+(S1) lean/ConicalCommonBinaryPeaks.lean:
+     OQ14.ConicalCommonBinaryPeaks.one_input_simultaneous.
+     Status: accepted.
+
+Under D1–D12 this states:
+
+  exists delta>0, for every real k>0 with k<delta,
+  exists hfreq and d_in:Input, with
+    d_in!=0,
+    Tendsto (FiniteMixedScaledFlux.inwardPowerK k d_in)
+      atTop (nhds 1),
+    every actual ConicalCommonAngular.coefficient evaluated at d_in is nonzero,
+    for every n, the actual E_n,H_n satisfy
+      MaterialMaxwell.TestMaxwell k (MaterialMaxwell.dielectric c_n) E_n H_n,
+    and for every radii:I->R with 0<radii_i<=b_i,
+      exists components:I->Fin 3,
+        for every thresholds:I->R,
+          eventually in n, for every i,
+            (volume restricted to ball(center_i,radii_i))
+              {x: thresholds_i < |E_n(x,components_i)|} >0.
+
+Here hfreq is exactly
+
+  |k| <= DynamicStaticLimit.frequencyRadius
+      (ConicalCommonBinaryPeaks.coefficient p a center B hB hcontrast ha hsep) R.
+
+The source Input is ComplexTransverseExpansion.ModeIndex ->_0 C (finite support). Its normalization is the displayed incoming-power limit, not an assertion that an unweighted input coefficient norm is one. We keep this same input for every n and every threshold.
+
+In 2.20 invoke its final clause with radii_i=r_i/2 and thresholds_i=max{M_i,2B_i}+1. These radii are admissible because r_i<=b_i/2. Finiteness is essential to the simultaneous eventual conclusion.
+
+(S2) lean/ConicalCommonBinaryPeaks.lean:
+     OQ14.ConicalCommonBinaryPeaks.ballField_tendsto.
+     Status: accepted.
+
+Under D1–D5, R>=0, the outer support condition of D11, any actual Incident k, and the extra bound
+
+  |k| <= MaterialVolumeLimit.commonRadius
+      (ConicalCommonBinaryPeaks.coefficient ...).bound R,        (3.1)
+
+this gives convergence of the actual rounded totalOperator in the comparison-ball L² type to the sharp totalOperator at the same input.
+
+The output of (S1) does not expose (3.1), even though its proof chooses a minimum that ensures it. A theorem consumer must not recover a hidden existential witness by assuming its construction. Correctly shrink the delta obtained from (S1) to
+
+  delta' = min(delta, MaterialVolumeLimit.commonRadius c.bound R),
+
+where c=ConicalCommonBinaryPeaks.coefficient .... The positive-radius interface
+MaterialVolumeLimit.commonRadius_positive c.bound R hc0, with
+hc0=StaticCoefficient.bound_nonnegative c, is visibly used in the supplied proof of one_input_rounded_superlevels. It gives delta'>0. For 0<k<delta', |k|=k satisfies both the original range and (3.1).
+
+If one wants to avoid importing that unquoted defining file before formalization, state (3.1) as an explicit extra hypothesis. Either choice preserves exact hypotheses. This report uses the minimum choice and lists the defining source as an implementation dependency.
+
+(S3) lean/ConicalCommonBinaryPeaks.lean:
+     OQ14.ConicalCommonBinaryPeaks.volumeField_actual.
+     Status: accepted.
+
+For any StaticCoefficient.Coefficient c supported in closedBall 0 R, any real R,k, any Incident k, and any coordinate j, this identifies the L² physicalCoordinate of the actual MaterialVolumeLimit.volumeField with
+
+  MaterialField.total c k
+    (ConicalMaterialRunge.solutionOperator c k R
+      (ConicalEntireGauge.restricted R I)) I.E
+
+a.e. on closedBall 0 R. The displayed proof also uses the actual comparison-ball restriction and total-field representative identities. This supplies the bridge between the operator L² convergence and actual electric fields, and between positive-volume coordinate statements and our a.e.-invariant continuous side representatives.
+
+Source support is supplied by OQ14.ConicalCommonBinaryPeaks.support under D1–D5 and the outer support inclusion D11. The annuli and observation balls chosen here lie strictly inside the comparison ball, so all cutoffs for the local PDE argument are admissible there.
+
+(S4) lean/ConicalCommonBinaryPeaks.lean:
+     OQ14.ConicalCommonBinaryPeaks.rounded_maxwell.
+     Status: accepted.
+
+Under D1–D5, R>=0, (3.1), the outer support condition, any n and Incident k, the actual electric and magnetic fields satisfy the displayed TestMaxwell equation for the actual rounded dielectric. The final output of (S1) also supplies this for the same d_in. We use it only through the actual distributional equations (M).
+
+The defining TestMaxwell/HCurl files are not attached. Their exact Lean adapter is an implementation dependency. Analytically, no separate unproved magnetic finite-energy theorem is needed: (S3) gives actual E in L², the actual TestMaxwell equations give curl curl E=k²epsilon E, 2.2 gives curl E in local L², and k!=0 gives the actual H=(ik)^{-1}curl E in local L².
+
+(S5) lean/CommonBinaryCollar.lean:
+     OQ14.CommonBinaryCollar.eventually_annuli_agree.
+     Status: accepted.
+
+Under D1–D5, for any r_ann,b_ann:I->R with r_ann,i>0 and b_ann,i<a_i,
+
+  eventually n, for every i and every x,
+    r_ann,i<=||x-center_i||<=b_ann,i
+      implies c_n.value(coordinateMap x)
+       =(ConicalCommonMaterial.coefficient ...).value(coordinateMap x).
+
+Use r_ann,i=r_i/2 and b_ann,i=3r_i/2, as verified in 2.17. This is exact pointwise coefficient equality on an entire common annular neighborhood, not merely almost-everywhere convergence of changing coefficients.
+
+(S6) lean/CommonBinaryInterface.lean:
+     OQ14.CommonBinaryInterface.eventually_body_smooth.
+     Status: accepted.
+
+Under D1, D2, D4, D5, eventually n every x in frontier(body_n) admits a real scalar F smooth at x with F(x)=0 and fderiv F(x)!=0, and an open neighborhood U_x containing x such that
+
+  y in body_n iff 0<F(y) for all y in U_x.
+
+The ordinary implicit-function theorem gives a smooth graph near x; compactness selects finitely many fixed-order charts. If desired, its explicit antecedent in body_frontier_certificate is, for every i,
+
+  (4+(2 slope_i+2)²) radius(n)² + radius(n) < a_i².
+
+eventually_body_smooth proves the eventual availability of these certificates. It asserts no uniform bound on tip-curvature as n varies.
+
+(S7) lean/CommonBinaryInterface.lean:
+     OQ14.CommonBinaryInterface.coefficient_body.
+     Status: accepted.
+
+Under D1–D5 and a common contrast d_mat, for every n and physical x,
+
+  c_n.value(coordinateMap x)
+     = if x in body_n then d_mat else 0.
+
+For d_mat>0, equality of these coefficients on an open annulus implies equality of the body sets there. This is the exact bridge used to fix the n_0 geometry in 2.17.
+
+(S8) lean/CommonBinaryValues.lean:
+     OQ14.CommonBinaryValues.two_values.
+     Status: accepted; supporting rather than essential because (S7) is stronger.
+
+Under D1–D5 and common contrast, for every n and coefficient coordinate xi,
+
+  c_n.value xi=0 or c_n.value xi=d_mat.
+
+It does not itself assert that 0 is a physical permittivity. The actual dielectric is 1 plus susceptibility.
+
+Together (S1)–(S7), the actual weak-equation interpretation, and the new proofs give attained simultaneous driven hotspots for the supplied binary sequence in the stated small-frequency regime. The underlying coordinate/norm/definition adapters remain to be instantiated in the pinned Lean project; their exact files are listed in 6.2.
+
+3.4 Inspected sources that are not additional premises
+
+  - ConicalCommonBinaryPeaks.eventually_high and limiting_unbounded:
+    accepted. They prove the fixed-input coordinate-unboundedness/positive-volume input used internally in (S1). We need not invoke them again after applying the stronger simultaneous theorem.
+
+  - ConicalCommonSimultaneousPeaks.one_input_simultaneous:
+    accepted, but uses ConicalCommonRoundedPeaks.rounded, a different sequence from CommonBinaryRounding.coefficient. It is not substituted for (S1).
+
+  - ConicalCommonRungeNonzero.one_normalized_illumination:
+    accepted. Its shared context includes D1–D3, the upper-bound part a_i<=(p i).cutoff.rOut of D4, and D5–D12; strict positivity of a_i is not needed there in addition to its displayed nonnegativity. It supplies the sharp fixed-input normalization, nonzero actual coefficients, and TestMaxwell statement. It is the source of (S1)'s illumination. We do not choose a second potentially different witness from it. The local sharp limiting equations on collars follow directly by passing the same sequence to its L² limit.
+
+  - MaxwellInverseCurlCurl.inverse_curl_representation:
+    accepted, for real k, epsilon>0, a regional HCurl pair, and the exact WeakMaxwell condition. It gives W with weak curl k²H and W=epsilon^{-1}curl H a.e. It is not the decomposition W of (2.9).
+
+  - MaxwellInverseCurlCurl.magnetic_h1_and_curlcurl:
+    accepted, for an open domain, compact interior target, real k!=0, epsilon>0, and that HCurl/WeakMaxwell pair. It produces a local H¹ representative for H plus the inverse-weight curl representation. It does not supply the missing piecewise H² electric estimate, and it cannot be cited verbatim for complex k. Sections 2.2–2.4 directly prove the required complex-compatible estimate.
+
+  - MaxwellInverseCurlCurl.inverse_weight_coercivity:
+    accepted. It needs measurable epsilon with 1<=epsilon<=M and scalar L² input; its conclusion is the weighted lower energy bound M^{-1} integral|f|²<=integral epsilon^{-1}|f|². It is unnecessary for our scalar decomposition route.
+
+  - MaterialCurlCoercivity.inverse_curl_caccioppoli:
+    accepted, for real k!=0, epsilon>=1, an actual regional weak Maxwell pair, and a compact real test. It controls inverse-weight magnetic curl energy. We do not extrapolate it to complex frequencies; (2.2) is proved separately.
+
+  - MaterialCurlCoercivity.curl_energy:
+    accepted material specialization of the lower coercive bound. Not used.
+
+  - WeakPoynting/MagneticCompactness:
+    supporting source, individual acceptance uncertified. Its fixed-real-frequency bounded-family theorem gives a magnetic L²-convergent subsequence on an interior neighborhood. It is not a full-sequence one-sided convergence theorem and is not used here.
+
+  - manuscript/sections/hotspot_closure_audit.tex:
+    manuscript/target status. The local decomposition and scalar-transmission sketches are completed by sections 2.2–2.14. Its compact-attainment and collar conclusion are supplied by 2.17–2.21. Its full arbitrary-k geometric packing statement is not certified merely by proving these local steps.
+
+  - manuscript/sections/modal_spectral.tex, ms:rounding:
+    manuscript/target status. Sections 2.15–2.16 prove the passage from a given normalized local-L²-convergent actual eigenfield sequence to one-sided uniform convergence. They do not prove the spectral existence, simplicity, or normalization preceding that passage.
+
+  - checkpoints/.../STAGE65.md:
+    checkpoint/evidence context, not a mathematical theorem. Its counts do not measure mathematical completion.
+
+  - RETURN_REPORT(1).txt:
+    mathematically reviewed Packet 01 return report, complete Lean formalization outstanding as stated by the user. Its four statements and hypotheses are identified in 1.1; none is used.
+
+3.5 Generic analytic toolkit and external references
+
+The new transmission estimate and its application above are proved directly, rather than invoked from an external interface-regularity theorem. The generic ingredients are:
+
+  (a) L² completeness, weak compactness, and weak lower semicontinuity;
+  (b) smooth cutoff existence, local mollification, L² continuity of translations, and smooth density in the relevant local Sobolev spaces;
+  (c) the Fourier-Plancherel theorem and distributional differentiation;
+  (d) the mean-zero Poincare inequality on a ball;
+  (e) smooth graph charts from the finite-dimensional implicit-function theorem;
+  (f) elementary Sobolev product and change-of-variables rules;
+  (g) compact extreme-value, finite-cover, and connected-image theorems.
+
+Their specific uses and hypotheses were spelled out in section 2. The quotient criterion, curl-div estimate, weak potential, trace bounds, extension, and embedding needed here were derived there. Their future Lean implementations remain obligations even though the mathematics is standard.
+
+Primary educational reference for the generic toolkit:
+John K. Hunter, Notes on Partial Differential Equations, revised 18 June 2014,
+https://www.math.ucdavis.edu/~hunter/pdes/pde_notes.pdf
+See Chapter 3 (Sobolev spaces), Theorem 4.53 (difference quotients), and Appendix 5.B–5.C (Fourier transform and H^s). These support the background toolkit, not a ready-made curved transmission theorem.
+
+Primary research context, not an invoked black box:
+Martin Costabel, Monique Dauge, Serge Nicaise, Singularities of Maxwell interface problems, M2AN 33(3), 627–649 (1999), DOI 10.1051/m2an:1999155.
+Author copy: https://costabel.perso.math.cnrs.fr/publis/CoDaNi_max.pdf
+This develops the relation between Maxwell interface problems and scalar transmission potentials. Its polygonal/polyhedral singularity results are not substituted for the fixed smooth-interface proof here.
+
+The Costabel–McIntosh regularized Poincare lifting literature was also inspected as possible background, but no lifting theorem from it is assumed: (2.9)–(2.12) provide the local construction used in this report.
+
+======================================================================
+4. MINIMAL ORDERED LEAN LEMMA/MODULE PLAN
+======================================================================
+
+4.1 Implementation boundary and required transparent definitions
+
+Do not edit any accepted/frozen source or evidence bytes to implement this report. Add new modules and adapters against the pinned repository.
+
+The following names are proposed interfaces, not claims about existing mathlib APIs. Every predicate must be defined from actual functions/distributions/Sobolev weak derivatives. In particular no record may contain the desired regularity estimate as an assumption.
+
+  SmoothTwoPhasePatch:
+    open outer and nested inner domains; the two open sides; a C³ graph atlas covering the compact target; side coverage and no-junction hypotheses; actual chart maps and inverses; positive separation and explicit derivative/Jacobian bounds.
+    This is geometric data only.
+
+  PositiveScalarPhases:
+    real constants epsilon_minus, epsilon_plus, real lambda,Lambda with 0<lambda and lambda<=epsilon_±<=Lambda; the actual measurable coefficient equal to those constants almost everywhere on the two sides.
+
+  MemH m U f:
+    weak derivatives through order m of the actual scalar/vector function on U exist in L². For vectors take the finite product. Define HNorm from those derivatives; do not replace it by a norm assumed to satisfy an estimate.
+
+  MemPiecewiseH m patch f:
+    MemH on each open material side of the patch; piecewiseHNorm is the square-sum of the side norms.
+
+  WeakCurlCurl U E F:
+    the actual distributional identity integral E dot curlcurl phi = integral F dot phi for all smooth compact vector tests supported in U. A complex-bilinear test convention is equivalent to the Hermitian convention used for energy estimates by conjugating the tests.
+
+  WeightedDivZero U epsilon E:
+    integral epsilon E dot grad phi=0 for every smooth compact scalar test in U.
+
+  WeakScalarTransmission Q A u g:
+    u in H¹(Q) and integral A grad u dot grad conjugate(phi)=integral g dot grad conjugate(phi) for every compact H¹ test; alternatively initially use smooth tests and prove the density extension.
+
+  ClosedSideRepresentative:
+    a continuous function on closure(side) intersect an ambient neighborhood, agreeing with the actual L² field a.e. on the open side.
+    Such representatives are outputs of the proved embedding theorem.
+
+  upperEnvelope:
+    the maximum of the finitely many magnitudes of the active closed-side representatives at x, with phase coverage ensuring the active finite set is nonempty.
+
+  LocalL2Convergence:
+    on every compactly contained open subdomain, the actual restricted L² norm of the difference tends to zero; equivalently use the fixed cutoff L² representatives and prove the restriction bridge.
+
+The exact existing project's DomainCurl, WeakCurl, NewtonL2, VectorFourier, physical-coordinate and distribution-test definitions should be reused where compatible. Their imported sources must be read before choosing final syntactic names.
+
+4.2 Ordered modules and proof obligations
+
+1. Packet05DistributionAdapters.lean
+   - Convert actual real and complex first-order Maxwell test identities into distributional curl-curl and weighted-divergence identities.
+   - Preserve actual representatives and prove the complex-frequency algebra k², without importing a real-frequency theorem with changed hypotheses.
+   - Establish local L² restriction and cutoff/physical-coordinate compatibility.
+
+2. Packet05CurlCurlLocal.lean
+   - Local simultaneous mollification of E,F and commutation of curl-curl.
+   - Smooth cutoff energy identity and explicit Young absorption (2.2).
+   - Weak-limit identification giving H(curl)_loc from E,F in L².
+   - Fourier div-curl estimate of orders zero and one, with nested cutoff commutators.
+   - Deduce local H¹ regularity of curl E and its estimate.
+
+3. Packet05FixedDecomposition.lean
+   - Define the bounded transverse Fourier projection and prove its actual curl/div identities.
+   - Prove local H² for W=P_T(theta E).
+   - Prove the mean-zero weak potential on a physical ball by smooth approximation and Poincare.
+   - Record linearity, a.e. decomposition, and (1.3)'s low-order bound.
+
+4. Packet05ScalarTransmission.lean
+   - Weak Sobolev chart pullbacks and the exact A,g transformation.
+   - Tangential translation preserves half-spaces; quotient product rule and bounds.
+   - First tangential energy estimate, quotient weak compactness, and normal H² recovery.
+   - Once-differentiated forcing, second tangential estimate, u_33alpha and u_333 recovery.
+   - Prove (2.20) and track geometry/ellipticity dependence.
+   - Weak normal trace and matching from the whole-domain variational identity.
+
+5. Packet05OneSidedRegularity.lean
+   - Combine the fixed decomposition with scalar piecewise H³ to prove the actual electric piecewise H² estimate.
+   - Explicit bounded half-space H² extension, Fourier embedding, representative uniqueness/gluing.
+   - Maxwell specialization for all k in C\\{0}.
+   - Magnetic H¹ and piecewise H³, and pointwise one-sided transmission conditions.
+
+6. Packet05FixedCollarConvergence.lean
+   - Derive the actual complex difference forcing, L² bound, and passage of the weak equation to the limit.
+   - Prove piecewise H² and one-sided C^{0,alpha} convergence using fixed charts.
+   - Optional magnetic-convergence corollary from electric convergence alone.
+   - Transfer exact binary coefficient agreement and one fixed smooth n_0 to a fixed finite collar atlas.
+
+7. Packet05OneSidedMaxima.lean
+   - Define the finite active-branch envelope from the proved side representatives.
+   - Prove compact maximum attainment using K intersect closure(side).
+   - Prove upper semicontinuity.
+   - Prove smooth interface volume-nullity and positive-volume coordinate-peak transfer.
+   - Prove connected-component collar exclusion and compact containment of its closure.
+
+8. Packet05CommonBinaryHotspots.lean
+   - Invoke the exact accepted binary simultaneous theorem.
+   - Add the common-radius smallness by the explicit minimum, or keep it as a visible hypothesis.
+   - Use actual ball-field convergence and representative adapters.
+   - Choose fixed collars, B_i, T_i, and intersect the finite eventual tails.
+   - Conclude the attained maxima with the original incoming-power normalization.
+
+9. Packet05ModalHotspotApplication.lean
+   - Prove the application to an ACTUAL normalized outgoing eigenpair sequence with the spectral and excitation hypotheses explicitly supplied.
+   - Use vector L² peak preservation and the already proved collar theorem.
+   - Do not label the upstream spectral/normalization/excitation inputs proved by this module.
+
+Dependency order:
+1 -> 2 -> 3;
+4 uses only the generic Sobolev/weak-PDE toolkit;
+(3,4) -> 5;
+(1,5) -> 6;
+5 -> 7;
+(6,7,accepted common binary sources) -> 8;
+(6,7,actual modal prerequisites) -> 9.
+
+No independently accepted Packet 03 theorem is required on this route. Existing verified Fourier/div-curl facts can shorten module 2 only after their exact hypotheses and frequency scope are checked.
+
+4.3 Proposed Lean statement catalog — ALL UNCOMPILED
+
+These are signatures with explicitly described proposed predicates. They are not declarations with omitted proof terms presented as completed Lean source. Names such as MemH and SmoothTwoPhasePatch are the proposed definitions of 4.1, not invented assertions that such APIs already exist.
+
+(L1) L² curl-curl data imply local H(curl), with quantitative control:
+
+  theorem curlcurl_l2_implies_local_hcurl
+      (U V : Set Maxwell.Space)
+      (hU : IsOpen U) (hV : IsOpen V)
+      (hcompact : IsCompact (closure V))
+      (hsub : closure V ⊆ U) :
+      ∃ C : ℝ, 0 < C ∧
+        ∀ E F : Maxwell.Field,
+          MemH 0 U E → MemH 0 U F →
+          WeakCurlCurl U E F →
+          ∃ q : Maxwell.Field,
+            HasWeakCurl U E q ∧ MemH 0 V q ∧
+            L2Norm V q ≤ C * (L2Norm U E + L2Norm U F)
+
+The HasWeakCurl U statement here means a distributional weak curl on U; q may be taken locally L² on U, with the displayed finite norm required on V. If the chosen project HCurl type requires finite L² on all of U, state HasWeakCurl V after restriction instead. Do not silently impose an unjustified global bound.
+
+(L2) The actual fixed decomposition:
+
+  theorem fixed_local_decomposition
+      (balls : NestedPhysicalBalls) :
+      ∃ Wmap vmap C, 0 < C ∧
+        IsLinear Wmap ∧ IsLinear vmap ∧
+        ∀ E F,
+          MemH 0 balls.outer E → MemH 0 balls.outer F →
+          WeakCurlCurl balls.outer E F →
+          MemH 2 balls.middle (Wmap E) ∧
+          MemH 1 balls.middle (vmap E) ∧
+          MeanZero balls.middle (vmap E) ∧
+          AEEqOn balls.middle E (grad (vmap E) + Wmap E) ∧
+          HNorm 1 balls.middle (vmap E) +
+            HNorm 2 balls.middle (Wmap E)
+            ≤ C * (L2Norm balls.outer E + L2Norm balls.outer F)
+
+Here vmap is scalar-valued, Wmap is vector-valued, and the linear maps act on actual L² equivalence classes with the restriction/a.e. representatives specified by the adapter. NestedPhysicalBalls encodes fixed radii and cutoffs only.
+
+(L3) The central scalar theorem, not an assumed prerequisite:
+
+  theorem scalar_transmission_piecewise_h3
+      (geom : FlatTwoSideNestedCubes)
+      (A : MatrixField) (g : VectorField)
+      (hA : PiecewiseW2Infinity A geom)
+      (hell : RealSymmetricElliptic A geom lambda0 Lambda0)
+      (hlambda : 0 < lambda0) :
+      ∃ C : ℝ, 0 < C ∧
+        ∀ u : ScalarField,
+          MemH 1 geom.outer u →
+          MemPiecewiseH 2 geom.outerSides g →
+          WeakScalarTransmission geom.outer A u g →
+          MemPiecewiseH 3 geom.innerSides u ∧
+          piecewiseHNorm 3 geom.innerSides u
+            ≤ C * (HNorm 1 geom.outer u
+                     + piecewiseHNorm 2 geom.outerSides g)
+
+The proof is exactly 2.7–2.11; auxiliary lemmas correspond to (2.23), (2.25), (2.27), (2.29), (2.30). No field of hA or hell may include this conclusion.
+
+(L4) Frequency-free local electric regularity:
+
+  theorem electric_piecewise_h2_of_curlcurl
+      (geom : SmoothTwoPhasePatch)
+      (mat : PositiveScalarPhases geom) :
+      ∃ C : ℝ, 0 < C ∧
+        ∀ E F : Maxwell.Field,
+          MemH 0 geom.outer E → MemH 0 geom.outer F →
+          WeakCurlCurl geom.outer E F →
+          WeightedDivZero geom.outer mat.epsilon E →
+          MemPiecewiseH 2 geom.innerSides E ∧
+          piecewiseHNorm 2 geom.innerSides E
+            ≤ C * (L2Norm geom.outer E + L2Norm geom.outer F)
+
+(L5) Closed-side representatives, obtained from the Sobolev theorem:
+
+  theorem piecewise_h2_continuous_representatives
+      (geom : SmoothTwoPhasePatch)
+      (E : Maxwell.Field)
+      (hE : MemPiecewiseH 2 geom.outerSides E) :
+      ∃ reps : ClosedSideRepresentative geom E,
+        HolderOnEachClosedSide reps (1/4 : ℝ) ∧
+        SideSupNorm geom.inner reps
+          ≤ geom.embeddingConstant * piecewiseHNorm 2 geom.outerSides E
+
+The embedding constant is constructed from the actual fixed charts; it is not an arbitrary field of geom postulating an embedding theorem.
+
+(L6) Complex-frequency convergence, with the real case as a specialization:
+
+  theorem same_material_frequency_error_bound
+      (geom : SmoothTwoPhasePatch)
+      (mat : PositiveScalarPhases geom)
+      (k l : ℂ) (E F : Maxwell.Field)
+      (hE : ElectricMaxwellOn geom.outer mat.epsilon k E)
+      (hF : ElectricMaxwellOn geom.outer mat.epsilon l F) :
+      piecewiseHNorm 2 geom.innerSides (E - F)
+        ≤ C geom mat *
+          ((1 + mat.upper * ‖k‖^2) * L2Norm geom.outer (E - F)
+             + mat.upper * ‖k^2 - l^2‖ * L2Norm geom.outer F)
+
+ElectricMaxwellOn must expand to actual L² membership, actual curl-curl equation, and actual weighted divergence, not to regularity or a pre-existing convergence bound. If defined from first-order fields, keep k!=0 visible when deriving divergence.
+
+  theorem fixed_collar_oneSided_tendsto
+      (collar : FixedSmoothCollar)
+      (mat : PositiveScalarPhases collar)
+      (k : ℕ → ℂ) (kstar : ℂ) (hkstar : kstar ≠ 0)
+      (E : ℕ → Maxwell.Field) (Estar : Maxwell.Field)
+      (hfreq : Tendsto k atTop (nhds kstar))
+      (hmaxwell : ∀ᶠ n in atTop,
+        ElectricMaxwellOn collar.outer mat.epsilon (k n) (E n))
+      (hL2 : LocalL2Convergence collar.outer E Estar) :
+      ∃ reps repsStar,
+        ActualClosedSideRepresentatives reps repsStar E Estar collar ∧
+        Tendsto (fun n => SideSupNorm collar (reps n - repsStar))
+          atTop (nhds 0)
+
+The limit equation is proved by distributional passage to the limit; it is not necessary to assume another solution object unrelated to Estar.
+
+(L7) A topology-only finite-branch maximum, with standard mathematical inputs:
+
+  theorem finite_closed_branches_attain_max
+      {J : Type*} [Fintype J]
+      (K : Set Maxwell.Space) (hK : IsCompact K) (hne : K.Nonempty)
+      (D : J → Set Maxwell.Space)
+      (hclosed : ∀ j, IsClosed (D j))
+      (hcover : K ⊆ ⋃ j, D j)
+      (amp : J → Maxwell.Space → ℝ)
+      (hcont : ∀ j, ContinuousOn (amp j) (K ∩ D j)) :
+      ∃ j x, x ∈ K ∩ D j ∧
+        ∀ j' y, y ∈ K ∩ D j' → amp j' y ≤ amp j x
+
+This statement includes empty branches automatically and obtains a nonempty active branch from hne,hcover. Apply it with D_j=closure(Omega_j) and amp_j=|E^j|. Then prove upper-semicontinuity of the active finite maximum by its closed superlevel sets.
+
+(L8) The simultaneous eventual application:
+
+  theorem common_binary_attained_hotspots
+      [Fintype I] [DecidableEq I] [Nonempty I]
+      (data : CommonBinaryGeometryData)
+      (hdata : ExactHypothesesD1ThroughD12 data)
+      (hd : CommonPositiveContrast data)
+      (k : ℝ) (hk : 0 < k)
+      (hsmall : k < data.deltaPrime) :
+      ∃ d_in,
+        OriginalIncomingPowerNormalization k d_in ∧
+        ∀ radii, AdmissibleObservationRadii data radii →
+          ∀ M : I → ℝ,
+            ∀ᶠ n in atTop,
+              ∀ i,
+                ∃ x m,
+                  IsActualOneSidedMaximum data d_in n i radii x m ∧
+                  M i < m ∧
+                  ActualCollarSup data d_in n i radii < m/2 ∧
+                  ‖x - data.center i‖ < 3 * radii i / 4
+
+ExactHypothesesD1ThroughD12 is only a packaging of section 3.2, not a replacement for proving any conclusion. The implementation should either expose those arguments individually or give that record transparent fields. deltaPrime is defined by the two actual source radii as in (S2). The input witness comes from (S1), so its definition does not depend on radii, M, or n.
+
+(L9) Connected-component localization:
+
+  theorem oneSided_superlevel_component_compactly_inside
+      (ambient : Set Maxwell.Space) (hopen : IsOpen ambient)
+      (center : Maxwell.Space) (r m : ℝ) (hr : 0 < r)
+      (f : Maxwell.Space → ℝ)
+      (husc : UpperSemicontinuousOn f ambient)
+      (hneighborhood : closedBall center (5*r/4) ⊆ ambient)
+      (hcollar : ∀ x, 3*r/4 ≤ dist x center →
+        dist x center ≤ 5*r/4 → f x < m/2)
+      (x : Maxwell.Space) (hx : dist x center < 3*r/4)
+      (hpeak : m/2 < f x) :
+      IsCompact (closure
+        (componentContaining x {y ∈ ambient | m/2 < f y})) ∧
+      closure (componentContaining x {y ∈ ambient | m/2 < f y})
+        ⊆ ball center (3*r/4)
+
+componentContaining is the ordinary connected component in the subspace, with no openness assumption on the set. Its actual Lean API must be inspected; the proof is the continuous radial-image and upper-semicontinuity argument of 2.21.
+
+(L10) Modal application:
+
+Propose a theorem with the same conclusion as (L8) for a supplied ACTUAL complex outgoing eigenpair sequence and fixed normalization, with hypotheses exactly (a)–(d) of 6.1 below. Its proof is (1.7), L² peak preservation, and theorem 05.5. This is an application theorem, not a theorem proving existence of that sequence. Do not rename its hypotheses to suggest the spectral gap has been discharged.
+
+4.4 Candidate source-file disposition
+
+No complete candidate .lean implementation file is produced. Supplying guessed imports and untested proof terms would not improve the proof or certify the pinned project. The full mathematical proof and complete statement specifications are contained in this report. The requested implementation can proceed in the ordered new modules above once the pinned repository is supplied.
+
+======================================================================
+5. VERIFICATION: WHAT WAS ACTUALLY RUN
+======================================================================
+
+5.1 Requested versus available environment
+
+Requested by the packet:
+
+  Lean 4.19.0
+  mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+
+Observed in this session:
+
+  - Both attached files were read from their supplied workspace copies.
+  - The source statements, statuses, and source theorem bodies quoted in Packet 05 were inspected.
+  - The additional 799-line report was identified as Packet 01 and read; its conclusions are identified in 1.1.
+  - A workspace rg search found no Lean project, .lean modules, lakefile, lean-toolchain, or dependency tree to compile.
+  - command -v lean, command -v lake, and command -v elan produced no executable path.
+  - lean --version failed with exit 127: lean: command not found.
+  - lake --version failed with exit 127: lake: command not found.
+  - Python SHA-256 calculation of both actual attachment copies completed with exit 0.
+  - The primary sources listed in 3.5 were inspected as background/reference checks.
+  - Independent mathematical reviews checked the local PDE proof, forcing topology, and compact/collar argument. Suggested clarifications to the initial normal trace, weak normal-derivative division, and ambient component domain were incorporated.
+
+Attachment hashes:
+
+  05_one_sided_maxima(1).txt
+  bytes: 91036
+  SHA-256: 57e6d4c8bb1261df547c18fc2d9cbf5a1a3d25672aaeeb5481d94b1c0947300d
+
+  RETURN_REPORT(1).txt
+  bytes: 39349
+  SHA-256: f59fa5162b7f37faa103c8a480acb3179494bc19351c36f5d2238ec301731956
+
+These identify the attachments actually used. They do not independently authenticate the packet's claimed original frozen-source hashes or build ledger.
+
+5.2 What was not verified by Lean
+
+No Lean compilation command succeeded or was possible here. No new .olean exists. No #print axioms was executed. There is no new kernel-verified theorem, no reproduced axiom list, and no new aggregate build or accepted-source promotion.
+
+All declarations in 4.3 are UNCOMPILED specifications, including the topology-only statements. Mathematical review of an argument and an accepted-status label supplied by the packet are not represented as freshly verified Lean code.
+
+The implementation-phase check should compile each new module in the pinned repository with its real imports, run #print axioms on at least scalar_transmission_piecewise_h3, electric_piecewise_h2_of_curlcurl, fixed_collar_oneSided_tendsto, finite_closed_branches_attain_max, and common_binary_attained_hotspots, and record the actual compiler/axiom output. Only then can the applicable project acceptance and aggregate-build procedure be considered.
+
+======================================================================
+6. REMAINING GAPS AND REQUIRED CONTEXT
+======================================================================
+
+6.1 Mathematical status and the exact remaining upstream premises
+
+PROVED HERE, with the stated geometry and positive constant-permittivity assumptions:
+
+  - Actual weak Maxwell reduction, valid at nonzero complex frequency.
+  - Local H(curl) from L² electric curl-curl data.
+  - Controlled fixed linear E=grad v+W decomposition, W in H².
+  - Correct flattening and transformed equations.
+  - Piecewise H³ scalar transmission regularity from the weak equation, including both tangential estimates, every normal derivative, and initial conormal matching.
+  - Actual piecewise H² electric regularity and continuous closed-side representatives.
+  - Magnetic global H¹ and one-sided higher regularity.
+  - Fixed-collar uniform convergence at fixed real frequency and varying complex frequency, with the nonzero frequency-error forcing controlled in L².
+  - Finite attained one-sided maxima, upper semicontinuity, and the correct observation-boundary convention.
+  - One common eventual rounding index for all tips, with strict margins and the unchanged original normalization.
+  - Connected-component localization in the explicitly stated ambient upper-envelope convention.
+
+There is no remaining task-specific analytical gap in those implications. Packet 03 is not a mathematical prerequisite of the proved alternative route. Packet 01 is inspected but unused.
+
+DRIVEN APPLICATION:
+
+Subject to the accepted source statements (S1)–(S7), their exact assumptions D1–D12, the actual-field and dielectric definitional adapters, and the explicit common-radius frequency restriction, the supplied common binary sequence has the attained simultaneous hotspots (1.11). The common-radius condition is added honestly by shrinking delta or kept explicit; it is not silently read out of an existential theorem's proof.
+
+The larger manuscript statement at an arbitrary prescribed real frequency, with the specified planar projection, a chosen count of 2N smooth inclusions, and a fixed material contrast uniform across the entire requested construction, additionally needs its geometric existence/scaling and normalization-preservation theorems. They are not supplied as accepted conclusions by this packet's small-frequency illumination theorem. Packet 05's local closure should not be presented as proving all of those upstream construction claims or the full OQ14 channel/modal program.
+
+MODAL APPLICATION — genuinely absent upstream results:
+
+  (a) An actual nonzero-frequency sharp outgoing resonance k_* and electric/magnetic eigenfield of the prescribed conical material, in the intended selected sector, with the project's exact normalization functional mathcal N satisfying mathcal N(E_*)=1.
+
+  (b) A single common smooth rounded material sequence, preserving the required geometry and material bounds and agreeing on all fixed collars, together with actual outgoing eigenpairs k_n,E_n,H_n such that k_n ->k_*!=0, mathcal N(E_n)=1, and E_n ->E_* in local L² on the needed fixed neighborhoods. The scale/phase must be chosen compatibly so the convergence concerns these normalized fields. Simplicity, operator perturbation, and the nonvanishing normalization needed to produce that sequence must be supplied, not inferred from local PDE regularity.
+
+  (c) Simultaneous nonzero actual conical singular coefficients, with a theorem turning them into essential unboundedness of the normalized limiting modal field in each selected tip ball, or the equivalent already proved simultaneous positive-volume peak input. A theorem about radial moments of a sphere kernel alone does not supply this.
+
+  (d) The exact actual complex Maxwell/representation interfaces linking those eigenfields to the weak equations and physical L² fields, with the same outgoing convention. No arbitrary rescaling or abstract field replacement is allowed at this step.
+
+The supplied modal_spectral.tex excerpt asserts these spectral/normalization continuities in manuscript prose and cites ms:fredholm through ms:normalization, whose complete statements and proofs are not included. It does not make them accepted Lean prerequisites. The new Packet 01 report gives neither (a), (b), nor (c).
+
+Once (a)–(d) are available, 2.19 provides simultaneous eventual high fields and 2.15–2.21 give the attained modal maxima and collar separation with the same normalization. The frequency-error and one-sided continuity parts of that application are now proved; the existence/excitation premises remain explicit.
+
+6.2 Exact context needed for Lean implementation
+
+Supply the pinned repository and relevant dependency objects, especially:
+
+  - MaterialMaxwell.lean and MaterialHCurl.lean:
+    exact TestMaxwell, dielectric, weak-test conventions, local integrability/L² interfaces, and conversion to regional HCurl/WeakMaxwell.
+    Verify explicitly the definitional bridge
+      MaterialMaxwell.dielectric c x =
+        1 + c.value (VectorFourier.coordinateMap x).
+    This relation is the intended susceptibility-to-permittivity convention; its defining source is not printed in the packet.
+
+  - ConicalCommonBaseline.lean and ConicalCommonMaterial.lean:
+    definitions of common and coefficient and the exact value/physical-coordinate compatibility. The visible accepted proofs use those expressions compatibly, but this report does not claim a locally checked whole-record equality or rfl.
+
+  - CommonBinaryRounding.lean and MaterialVolumeLimit.lean:
+    the precise L² convergence type, volumeField_tendsto, commonRadius, commonRadius_positive, and support/representative restrictions.
+
+  - ConicalMaterialRunge.lean, ConicalBallRestriction.lean, ConicalBallExtension.lean, NewtonL2.lean, and the relevant VectorFourier definitions:
+    exact L² spaces, coordinate maps, norms, total_ae/vector_ae/physicalCoordinate adapters. Preserve a.e. equivalence and finite-dimensional norm constants.
+
+  - DomainCurl/WeakCurl, WeakPoynting.LocalRegularity, DivCurlRegularity, and Fourier/Sobolev foundation modules:
+    existing curl/div distribution definitions, compact test density, cutoff rules, Fourier multiplier and weak-derivative interfaces.
+    Reuse already verified generic lemmas only with their actual hypotheses.
+
+  - Existing local graph/implicit-function and measure-zero chart machinery, if any:
+    convert CommonBinaryInterface's smooth defining-function certificate into quantitative finite C³ graph charts. If missing, formalize the finite-dimensional implicit-function/compactness step and graph-nullity calculation used here.
+
+  - The actual complex outgoing resonance, analytic Fredholm, selected-sector simplicity, normalized perturbation, and conical modal coefficient modules corresponding to ms:fredholm–ms:normalization and the modal excitation theorem:
+    these are required for the full modal application, not for the proved local regularity theorem.
+
+No alteration of the attached task, attached Packet 01 report, accepted quoted source files, or evidence archives was made. This deliverable is a new report.
+
+FINAL DISPOSITION
+
+Packet 05's local regularity, fixed-collar convergence, one-sided compact attainment, and common-index localization obligations are mathematically proved by the explicit alternative route above, subject to the exact physical/geometric and upstream peak/convergence hypotheses stated. The source-compatible driven application follows in the accepted small-frequency setting. Modal spectral existence, compatible normalization, and simultaneous modal excitation remain upstream mathematical prerequisites not supplied by these attachments. All new Lean implementation, pinned compilation, axiom auditing, source promotion, and aggregate integration remain outstanding.
