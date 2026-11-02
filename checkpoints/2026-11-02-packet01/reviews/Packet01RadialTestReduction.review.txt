@@ -1,0 +1,9 @@
+Independent final review: Packet01RadialTestReduction.lean
+Frozen normalized source SHA-256: D7761303E0072CCDD06337EB0D62B09A1A559C9E64298C29E54609F614417FA8
+Result: PASS; no actionable issue found.
+
+Independently compiled with pinned Lean 4.19.0 via lake env lean, output to checkpoints/2026-11-02-packet01/evidence/Packet01RadialTestReduction.audit.olean. Source hash matched before and after compilation. The accompanying log prints axioms for all three public theorems: propext, Classical.choice, Quot.sound; no sorryAx or additional axioms.
+
+The inverse-power test psi/r^(l+1) is globally smooth: it is zero near zero, smooth elsewhere, and its topological support is contained in that of psi, hence compact and inside (0,1). Its derivative is established on positive radii. The weak identity specializes HarmonicMomentIntegrability.actual_weak_relation, which derives from actual_moment_divergence and actual sphere-kernel divergence, with the genuine kernel and frequency hypotheses. Integral subtractions use explicit radial and gradient integrability from radial_integrable; support arguments justify extension to the whole line. The term (l+1 : C) agrees with tangentialMoment's definition and the polynomial degree l+1. The final bridge changes the radial representative almost everywhere on (0,1), where the test derivative is supported. No harmonicity premise is needed for this divergence identity.
+
+Scope: reviewed this source and cited interface/provenance; compilation used existing compiled dependencies. This is not a fresh rebuild of all transitive dependencies.

@@ -1,5 +1,13 @@
 # Research change log
 
+- 2026-11-02, stage 66: implemented and independently audited the first complete
+  Packet 01 actual electric-coefficient chain. Every genuine sphere-kernel vector
+  has the same radial/tangential regular amplitude in each positive harmonic
+  degree and zero degree-zero radial coefficient. Eight new modules rebuilt in
+  isolated objects with 22 standard-only axiom reports; 302 upstream source
+  dependencies match frozen evidence. The incremental ledger is 503 modules /
+  3654 reports. Full-project clean build and full OQ14 closure remain outstanding.
+
 - Baseline: froze the ordinary-dielectric, fixed-frequency, fixed-section channel target and separated hotspot normalization variants. Both conjectures remain open.
 - Audited the versioned tutorial, all five requested primary sources, the supplied research PDF and HTML notes. The named companion PDF was absent.
 - Proved simultaneous driven invariant-2D packing by an exact angular projection, total-field Runge argument, finite-k excitation and diagonal rounding. Finite 3D and modal scope were expressly retained as open at this checkpoint.

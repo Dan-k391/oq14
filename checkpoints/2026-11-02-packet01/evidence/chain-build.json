@@ -1,0 +1,333 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261102-030551-49480",
+  "object_directory": "checkpoints/2026-11-02-packet01/objects/20261102-030551-49480",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all eight new chain modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "module_count": 8,
+  "report_count": 22,
+  "records": [
+    {
+      "module": "KernelRadialMomentBridge",
+      "source": "lean/KernelRadialMomentBridge.lean",
+      "source_sha256": "16624be8238cfe638119c98b9f930078ff5d0cf854be81e1f85f4e76b20f9ca9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\KernelRadialMomentBridge.olean",
+        "D:\\oq14\\lean\\KernelRadialMomentBridge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.078,
+      "log": "checkpoints/2026-11-02-packet01/evidence/KernelRadialMomentBridge-chain.log",
+      "log_sha256": "e659e7e42d96305442239768af6dbf6ad1badf553339e60794991ff9a95fa2e2",
+      "reports": [
+        {
+          "declaration": "OQ14.KernelRadialMomentBridge.radial_moment_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.KernelRadialMomentBridge.tangential_moment_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "659bafa33b570047a6e81511365de37a1eb106b12d257dea3922c4edf6e83b80"
+    },
+    {
+      "module": "Packet01MomentIntegrability",
+      "source": "lean/Packet01MomentIntegrability.lean",
+      "source_sha256": "fd2975b1ac00c971d9efe1f5b65e109304393ec71a58ea2e2a2cfe1998db801b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01MomentIntegrability.olean",
+        "D:\\oq14\\lean\\Packet01MomentIntegrability.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.406,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01MomentIntegrability-chain.log",
+      "log_sha256": "c5ac9562617ceda1bf366455a701115be48cd0b6f535aa32895cf0297eadd978",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01MomentIntegrability.moment_locallyIntegrableOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01MomentIntegrability.radialMoment_locallyIntegrableOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01MomentIntegrability.gradientMoment_locallyIntegrableOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01MomentIntegrability.tangentialMoment_locallyIntegrableOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01MomentIntegrability.weighted_tangentialMoment_locallyIntegrableOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f8fb9cd0c900572c38cc5e2738474e8444fb3a2dd4516c55f39334f5cbf67b15"
+    },
+    {
+      "module": "MonopoleFlux",
+      "source": "lean/MonopoleFlux.lean",
+      "source_sha256": "c9adc4cf14a3d6618a7c6b1d7b8ccb2764d60150f311632a79a8413bda817489",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\MonopoleFlux.olean",
+        "D:\\oq14\\lean\\MonopoleFlux.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.516,
+      "log": "checkpoints/2026-11-02-packet01/evidence/MonopoleFlux-chain.log",
+      "log_sha256": "36ac2b8890fad2babb360cb5cb69f08ef662dddc6b5c31942b1551ade1184359",
+      "reports": [
+        {
+          "declaration": "OQ14.MonopoleFlux.constant_test_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.MonopoleFlux.actual_weak_flux",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ac36240babf4f33d6e0210fb15697069d3648597bd49ec47fc477f45b86dcea9"
+    },
+    {
+      "module": "Packet01WeakDerivative",
+      "source": "lean/Packet01WeakDerivative.lean",
+      "source_sha256": "28c5018b80808c2e577ce30647e6805796663b10741e7361560827c3faeb46a6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01WeakDerivative.olean",
+        "D:\\oq14\\lean\\Packet01WeakDerivative.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.062,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01WeakDerivative-chain.log",
+      "log_sha256": "4a45596b01bb27dfd98ed8016a52013154dfbd8c77fd73420a6ab718824a597a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01WeakDerivative.of_complex_tests",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01WeakDerivative.congr_left",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01WeakDerivative.regularD_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01WeakDerivative.identify_regular_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "61c6afba0b529cd18a4180c6ff5475bcb2d13bec1b9801b123a732bd61774fc4"
+    },
+    {
+      "module": "Packet01RadialTestReduction",
+      "source": "lean/Packet01RadialTestReduction.lean",
+      "source_sha256": "d7761303e0072ccdd06337eb0d62b09a1a559c9e64298c29e54609f614417fa8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01RadialTestReduction.olean",
+        "D:\\oq14\\lean\\Packet01RadialTestReduction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.172,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01RadialTestReduction-chain.log",
+      "log_sha256": "83edaa5830b77832f2eace8785ed0a5f9bc2a6750c5a480e2c4bb5b1ac86ac3f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01RadialTestReduction.div_radial_pow_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01RadialTestReduction.actual_radial_tangential_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01RadialTestReduction.radial_tangential_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3a723bd13302ea4d275f0ba71073368ef05a0805e27597c44aeb040bfaea3c4c"
+    },
+    {
+      "module": "Packet01Monopole",
+      "source": "lean/Packet01Monopole.lean",
+      "source_sha256": "6cadef18237d64939c63bff1a19c30c0b28b9b2ac241e63800c334197993fde4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01Monopole.olean",
+        "D:\\oq14\\lean\\Packet01Monopole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.515,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01Monopole-chain.log",
+      "log_sha256": "4d3c74fde3ac25a1215ab0ab80b9c9772c39e70d6bc760ccc7899f80f8d116c7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01Monopole.regular_zero_of_flux",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01Monopole.monopole_radial_coefficient_eq_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fea3134dae67dedfde8d3fdba312f7983bb7c734ab5b4b89a22e3a8eae0b3357"
+    },
+    {
+      "module": "Packet01PoloidalCoefficients",
+      "source": "lean/Packet01PoloidalCoefficients.lean",
+      "source_sha256": "c754e63ecb7bd841587e89180a0764c940fe2bfd887a376bb6c411fec50c83aa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01PoloidalCoefficients.olean",
+        "D:\\oq14\\lean\\Packet01PoloidalCoefficients.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.672,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01PoloidalCoefficients-chain.log",
+      "log_sha256": "e7e9e54fd6fa82d0c109cfda1a25aed94baf90ebe685dc0119406185c8459304",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01PoloidalCoefficients.tangential_of_radial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01PoloidalCoefficients.electric_radial_tangential_regular",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet01PoloidalCoefficients.electric_radial_tangential_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3c7b4b5f7da468ca86f1f8669881e39aab58c969fffae79f60389c5569abc6ce"
+    },
+    {
+      "module": "Packet01CoefficientChain",
+      "source": "lean/Packet01CoefficientChain.lean",
+      "source_sha256": "54e18cfe7a8dcdc6feb14cbbc1cee074627be5c4b3c4ef937082f387cc8390b6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-02-packet01\\objects\\20261102-030551-49480\\Packet01CoefficientChain.olean",
+        "D:\\oq14\\lean\\Packet01CoefficientChain.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.75,
+      "log": "checkpoints/2026-11-02-packet01/evidence/Packet01CoefficientChain-chain.log",
+      "log_sha256": "aec84d90aec289a0ae442c92a2ce7ced8071f58702c0c796fb54875df5e71fbf",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet01CoefficientChain.actual_electric_coefficients",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6ea44430f366a35f95c753da25feb832d3548b2cb58334c437ac5f0f6a55f60d"
+    }
+  ]
+}

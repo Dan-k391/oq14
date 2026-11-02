@@ -1,0 +1,19 @@
+OQ14.Packet01CoefficientChain.actual_electric_coefficients (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+  (u : ↥OQ14.VectorFourier.VectorL2)
+  (hker : (OQ14.ComplexConvolutionAnalytic.volumeBlock (OQ14.ModalWeightedMode.coefficient n hn) z 1) u = 0) :
+  (∀ (p : OQ14.HarmonicPolynomial.Poly) (l : ℕ),
+      MvPolynomial.IsHomogeneous p (l + 1) →
+        OQ14.HarmonicPolynomial.formalLaplacian p = 0 →
+          ∃ c,
+            ∀ᵐ (r : ℝ) ∂MeasureTheory.volume.restrict (Set.Ioo 0 1),
+              ↑r ^ 2 * OQ14.ComplexKernelDebye.radialCoefficient n hn z u p r =
+                  c * OQ14.RadialOriginSelection.regular (l + 1) (z * ↑n) r ∧
+                ∫ (ω : ↑OQ14.AngularPower.Sphere),
+                    ∑ j,
+                      ↑↑(OQ14.ComplexKernelResponse.response (OQ14.ModalWeightedMode.coefficient n hn) z 1 u)
+                          (OQ14.VectorFourier.coordinateMap (r • ↑ω)) j *
+                        (OQ14.HarmonicMomentCoupling.gradientWeight p j ω -
+                          (↑l + 1) * OQ14.HarmonicMomentCoupling.radialWeight p j ω) ∂OQ14.AngularPower.angularMeasure =
+                  c * OQ14.RadialOriginSelection.regularD (l + 1) (z * ↑n) r / ↑r) ∧
+    ∀ᵐ (r : ℝ) ∂MeasureTheory.volume.restrict (Set.Ioo 0 1), OQ14.ComplexKernelDebye.radialCoefficient n hn z u 1 r = 0
+'OQ14.Packet01CoefficientChain.actual_electric_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]

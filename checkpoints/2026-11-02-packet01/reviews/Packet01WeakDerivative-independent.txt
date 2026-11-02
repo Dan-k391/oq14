@@ -1,0 +1,8 @@
+Independent review: Packet01WeakDerivative.lean
+Source SHA-256: 28C5018B80808C2E577CE30647E6805796663B10741E7361560827C3FAEB46A6
+Compiler: pinned Lean 4.19.0 via lake env lean; exit 0. Independent output: ../Packet01WeakDerivative-independent.olean; log: ../weak-derivative-independent.log. All four #print axioms report only propext, Classical.choice, Quot.sound.
+
+Reviewed all four declarations and their assumptions. of_complex_tests legitimately converts smooth real compact tests to complex tests, retaining support and the derivative coercion. congr_left uses restricted a.e. equality inside Ω and, outside Ω, support_deriv_subset and the assumed support inclusion force the derivative of the test to vanish; no equality outside Ω is assumed. regularD_continuousOn obtains continuity from the derivative interface at positive, hence nonzero, radii with k nonzero. identify_regular_derivative transports the weak identity to the regular representative, checks the classical derivative and continuity requirements, and invokes the existing identification theorem with the stated local integrability. No additional assumptions, sorry, or nonstandard axioms found.
+
+This is an independent targeted source and compiler review, not a ledger promotion or an aggregate clean build.
+Final normalized-byte recheck: source hash remains 28C5018B80808C2E577CE30647E6805796663B10741E7361560827C3FAEB46A6. Independent pinned compile exit 0; final log ../weak-derivative-independent-final.log and independent object ../Packet01WeakDerivative-independent-final.olean. All four axiom reports standard-only. The review findings above remain applicable.

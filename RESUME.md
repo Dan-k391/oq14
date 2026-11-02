@@ -1,4 +1,40 @@
-# OQ14 resume state — October 28, 2026 continuation
+# OQ14 resume state — November 2, 2026
+
+Stage 66 is the latest verified incremental proof checkpoint. Its full record
+is [STAGE66.txt](checkpoints/2026-11-02-packet01/STAGE66.txt). The user authorized
+the first complete proof chain and checkpoint commits; that bounded task is
+complete. No compiler or subagent proof task remains running at handoff.
+
+Packet 01 now has a compiled actual-field endpoint combining the same-amplitude
+positive-degree radial/tangential formulas with degree-zero monopole elimination:
+`OQ14.Packet01CoefficientChain.actual_electric_coefficients`. Eight new modules
+and 22 standard-only declaration reports bring the incremental ledger to
+503 modules / 3654 reports; all 495 stage-65 records are unchanged. The complete
+new chain was rebuilt into isolated fresh objects. Its 302 other local source
+dependencies match frozen evidence; upstream dependency objects were cached.
+This is not a clean full-project rebuild. Clean aggregate release 5238 remains
+unchanged, and full OQ14 closure remains unfinished.
+
+The current ledger is
+`checkpoints/2026-11-02-packet01/evidence/audited_after_5238-stage66.json`.
+Use `scripts/check_chain.py` in that checkpoint to reproduce the new-chain build;
+the same folder contains independent reviews, exact source/log hashes, and a raw
+evidence archive. Intermediate monopole commit: `ea946c2`. The prior reviewed
+Pro supplement is committed at `ff15b1e`; its new G1-G4 mathematics passed review
+but is not covered by this Packet 01 formalization.
+
+Next useful proof chain: Packet 02 actual magnetic covariance and radial
+vanishing, then Packet 04 sphere-kernel classification. Full one-sided interface
+regularity, simple-sector residue/continuation, modal/driven assembly, the
+unrestricted-channel construction and final paper/aggregate integration remain.
+The reviewed Pro reports in `handoffs/pro-results/` are the mathematical inputs;
+their unimplemented arguments are not accepted Lean proofs. KernelRadialMomentBridge
+and MonopoleFlux are now accepted; other pre-existing pending files and sites/
+remain outside this work. Do not promote them based on old author-only logs.
+
+Everything below is historical checkpoint context, superseded by this section.
+
+## Historical stage 65 — October 28, 2026
 
 STOPPED at the user's October 28 checkpoint request. Stage 65 is the latest
 verified rollback snapshot: 495 incremental modules / 3632 reports; all previous
@@ -50,7 +86,7 @@ fixed-collar transmission estimates and attained maxima remain. Stage 61 already
 proved one normalized common illumination and simultaneous actual superlevels.
 Work continues. Clean aggregate release 5238 is unchanged.
 
-## Current status (takes precedence over the dated stage history)
+## Historical stage 61 status
 
 Stage 61 supersedes the stage-60 counts and shared-input gaps below. After parent
 `051bfbcd6894a8c2b1174d5a4ea67f8b6bc3115f`, the verified incremental ledger is

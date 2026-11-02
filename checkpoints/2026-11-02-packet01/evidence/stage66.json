@@ -1,0 +1,275 @@
+{
+  "date": "2026-11-02",
+  "previous_proof_checkpoint": "aeed697d5224424878d99840d33b67abde175947",
+  "starting_handoff_commit": "ff15b1e",
+  "intermediate_monopole_commit": "ea946c2",
+  "modules": 503,
+  "reports": 3654,
+  "new_modules": 8,
+  "new_reports": 22,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "c7b356dbf5a930d015fc71a623109bdcec0e5ff2eeaa86b2f26c4ac3469151d7",
+  "ledger_sha256": "7464133c180618d9c0705f44366ee3b33ba95427dc6fe68a2daa347f1961c224",
+  "source_provenance_sha256": "7c14d4187a8fd69bb64887abb962e68f73e44814415fa46b23402c95b3ee5888",
+  "chain_build_sha256": "e12fae60b50138aa290f5596a841b2e79c8d10aa9560f88cf0cf8dfc9866d0ef",
+  "raw_archive_sha256": "72579d798449924dd4a1f8b0eb15fd56cdb95b208d3af5e985a7f670457299f5",
+  "records": [
+    {
+      "module": "KernelRadialMomentBridge",
+      "reports": 2,
+      "source_sha256": "16624be8238cfe638119c98b9f930078ff5d0cf854be81e1f85f4e76b20f9ca9",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/KernelRadialMomentBridge-chain.log",
+      "audit_log_sha256": "e659e7e42d96305442239768af6dbf6ad1badf553339e60794991ff9a95fa2e2",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/MonopoleChain-root.txt",
+      "independent_review_sha256": "00b0c6f9c15cb9f886af6b03dd55fd53e46f2aaed64392be0d83942a2eb63c7f",
+      "declarations": [
+        "OQ14.KernelRadialMomentBridge.radial_moment_actual",
+        "OQ14.KernelRadialMomentBridge.tangential_moment_actual"
+      ]
+    },
+    {
+      "module": "Packet01MomentIntegrability",
+      "reports": 5,
+      "source_sha256": "fd2975b1ac00c971d9efe1f5b65e109304393ec71a58ea2e2a2cfe1998db801b",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01MomentIntegrability-chain.log",
+      "audit_log_sha256": "c5ac9562617ceda1bf366455a701115be48cd0b6f535aa32895cf0297eadd978",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/MomentIntegrability-root.txt",
+      "independent_review_sha256": "f32cc495a63af9f95ee68caa5b20c1437e5bec6800fc38ef966f23266819ec05",
+      "declarations": [
+        "OQ14.Packet01MomentIntegrability.moment_locallyIntegrableOn",
+        "OQ14.Packet01MomentIntegrability.radialMoment_locallyIntegrableOn",
+        "OQ14.Packet01MomentIntegrability.gradientMoment_locallyIntegrableOn",
+        "OQ14.Packet01MomentIntegrability.tangentialMoment_locallyIntegrableOn",
+        "OQ14.Packet01MomentIntegrability.weighted_tangentialMoment_locallyIntegrableOn"
+      ]
+    },
+    {
+      "module": "MonopoleFlux",
+      "reports": 2,
+      "source_sha256": "c9adc4cf14a3d6618a7c6b1d7b8ccb2764d60150f311632a79a8413bda817489",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/MonopoleFlux-chain.log",
+      "audit_log_sha256": "36ac2b8890fad2babb360cb5cb69f08ef662dddc6b5c31942b1551ade1184359",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/MonopoleChain-root.txt",
+      "independent_review_sha256": "00b0c6f9c15cb9f886af6b03dd55fd53e46f2aaed64392be0d83942a2eb63c7f",
+      "declarations": [
+        "OQ14.MonopoleFlux.constant_test_derivative",
+        "OQ14.MonopoleFlux.actual_weak_flux"
+      ]
+    },
+    {
+      "module": "Packet01WeakDerivative",
+      "reports": 4,
+      "source_sha256": "28c5018b80808c2e577ce30647e6805796663b10741e7361560827c3faeb46a6",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01WeakDerivative-chain.log",
+      "audit_log_sha256": "4a45596b01bb27dfd98ed8016a52013154dfbd8c77fd73420a6ab718824a597a",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/Packet01WeakDerivative-independent.txt",
+      "independent_review_sha256": "299741651f45c11797c54dd6aee1205da1ec5e2e267dfa07341fd034aaa77993",
+      "declarations": [
+        "OQ14.Packet01WeakDerivative.of_complex_tests",
+        "OQ14.Packet01WeakDerivative.congr_left",
+        "OQ14.Packet01WeakDerivative.regularD_continuousOn",
+        "OQ14.Packet01WeakDerivative.identify_regular_derivative"
+      ]
+    },
+    {
+      "module": "Packet01RadialTestReduction",
+      "reports": 3,
+      "source_sha256": "d7761303e0072ccdd06337eb0d62b09a1a559c9e64298c29e54609f614417fa8",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01RadialTestReduction-chain.log",
+      "audit_log_sha256": "83edaa5830b77832f2eace8785ed0a5f9bc2a6750c5a480e2c4bb5b1ac86ac3f",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/Packet01RadialTestReduction.review.txt",
+      "independent_review_sha256": "a6c7559b900f51d8ae42e31deb922bc23f1a7fd650cd26104713fb10774513bf",
+      "declarations": [
+        "OQ14.Packet01RadialTestReduction.div_radial_pow_test",
+        "OQ14.Packet01RadialTestReduction.actual_radial_tangential_weak",
+        "OQ14.Packet01RadialTestReduction.radial_tangential_weak"
+      ]
+    },
+    {
+      "module": "Packet01Monopole",
+      "reports": 2,
+      "source_sha256": "6cadef18237d64939c63bff1a19c30c0b28b9b2ac241e63800c334197993fde4",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01Monopole-chain.log",
+      "audit_log_sha256": "4d3c74fde3ac25a1215ab0ab80b9c9772c39e70d6bc760ccc7899f80f8d116c7",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/MonopoleChain-root.txt",
+      "independent_review_sha256": "00b0c6f9c15cb9f886af6b03dd55fd53e46f2aaed64392be0d83942a2eb63c7f",
+      "declarations": [
+        "OQ14.Packet01Monopole.regular_zero_of_flux",
+        "OQ14.Packet01Monopole.monopole_radial_coefficient_eq_zero"
+      ]
+    },
+    {
+      "module": "Packet01PoloidalCoefficients",
+      "reports": 3,
+      "source_sha256": "c754e63ecb7bd841587e89180a0764c940fe2bfd887a376bb6c411fec50c83aa",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01PoloidalCoefficients-chain.log",
+      "audit_log_sha256": "e7e9e54fd6fa82d0c109cfda1a25aed94baf90ebe685dc0119406185c8459304",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/Packet01PoloidalCoefficients-independent.txt",
+      "independent_review_sha256": "f8d822dbea0ef895b5ef94ff4d159bef35b424ec7a0e9ca32c6e0e8ef43bb9b5",
+      "declarations": [
+        "OQ14.Packet01PoloidalCoefficients.tangential_of_radial",
+        "OQ14.Packet01PoloidalCoefficients.electric_radial_tangential_regular",
+        "OQ14.Packet01PoloidalCoefficients.electric_radial_tangential_actual"
+      ]
+    },
+    {
+      "module": "Packet01CoefficientChain",
+      "reports": 1,
+      "source_sha256": "54e18cfe7a8dcdc6feb14cbbc1cee074627be5c4b3c4ef937082f387cc8390b6",
+      "audit_log": "checkpoints/2026-11-02-packet01/evidence/Packet01CoefficientChain-chain.log",
+      "audit_log_sha256": "aec84d90aec289a0ae442c92a2ce7ced8071f58702c0c796fb54875df5e71fbf",
+      "independent_review": "checkpoints/2026-11-02-packet01/reviews/Packet01CoefficientChain-independent.txt",
+      "independent_review_sha256": "175e61ed5dee16c17393e67e547af3516444030fe195ccbdcf4a09894690171e",
+      "declarations": [
+        "OQ14.Packet01CoefficientChain.actual_electric_coefficients"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-02-packet01/coefficient-chain-independent-final.log",
+      "sha256": "50786a0badca781b9944fb093d0286a6c090e83df08d4f8258b5ea27e42a1808"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/audited_after_5238-stage66.json",
+      "sha256": "7464133c180618d9c0705f44366ee3b33ba95427dc6fe68a2daa347f1961c224"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/chain-build.json",
+      "sha256": "e12fae60b50138aa290f5596a841b2e79c8d10aa9560f88cf0cf8dfc9866d0ef"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/KernelRadialMomentBridge-chain.log",
+      "sha256": "e659e7e42d96305442239768af6dbf6ad1badf553339e60794991ff9a95fa2e2"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/MonopoleFlux-chain.log",
+      "sha256": "36ac2b8890fad2babb360cb5cb69f08ef662dddc6b5c31942b1551ade1184359"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01CoefficientChain-chain.log",
+      "sha256": "aec84d90aec289a0ae442c92a2ce7ced8071f58702c0c796fb54875df5e71fbf"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01MomentIntegrability-chain.log",
+      "sha256": "c5ac9562617ceda1bf366455a701115be48cd0b6f535aa32895cf0297eadd978"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01Monopole-chain.log",
+      "sha256": "4d3c74fde3ac25a1215ab0ab80b9c9772c39e70d6bc760ccc7899f80f8d116c7"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01PoloidalCoefficients-chain.log",
+      "sha256": "e7e9e54fd6fa82d0c109cfda1a25aed94baf90ebe685dc0119406185c8459304"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01RadialTestReduction-chain.log",
+      "sha256": "83edaa5830b77832f2eace8785ed0a5f9bc2a6750c5a480e2c4bb5b1ac86ac3f"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01RadialTestReduction.audit.log",
+      "sha256": "2d4506895c26701ad6ab485ca5829483b097a53c91c2faf6db219e0347a3da12"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/evidence/Packet01WeakDerivative-chain.log",
+      "sha256": "4a45596b01bb27dfd98ed8016a52013154dfbd8c77fd73420a6ab718824a597a"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/positive-endpoint-independent-final.log",
+      "sha256": "15f9d7fdb3698d908922e83a4b95a3029050a98273d0f0d8a708ec824848549b"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/positive-endpoint-independent.log",
+      "sha256": "15f9d7fdb3698d908922e83a4b95a3029050a98273d0f0d8a708ec824848549b"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/provenance-audit.json",
+      "sha256": "7c14d4187a8fd69bb64887abb962e68f73e44814415fa46b23402c95b3ee5888"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/MomentIntegrability-root.txt",
+      "sha256": "f32cc495a63af9f95ee68caa5b20c1437e5bec6800fc38ef966f23266819ec05"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/MonopoleChain-root.txt",
+      "sha256": "00b0c6f9c15cb9f886af6b03dd55fd53e46f2aaed64392be0d83942a2eb63c7f"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/Packet01CoefficientChain-independent.txt",
+      "sha256": "175e61ed5dee16c17393e67e547af3516444030fe195ccbdcf4a09894690171e"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/Packet01PoloidalCoefficients-independent.txt",
+      "sha256": "f8d822dbea0ef895b5ef94ff4d159bef35b424ec7a0e9ca32c6e0e8ef43bb9b5"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/Packet01RadialTestReduction.review.txt",
+      "sha256": "a6c7559b900f51d8ae42e31deb922bc23f1a7fd650cd26104713fb10774513bf"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/reviews/Packet01WeakDerivative-independent.txt",
+      "sha256": "299741651f45c11797c54dd6aee1205da1ec5e2e267dfa07341fd034aaa77993"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/scripts/audit_provenance.ps1",
+      "sha256": "de42c0cf3ec2dc570052b1835dbe65dbfdb858a7d80b5bf8169a44eee18f783b"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/scripts/check_chain.py",
+      "sha256": "2366e64061b5da24a5542224dea054d61e67d34474b470f98cab0d5eaabb06e8"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/scripts/freeze_checkpoint.py",
+      "sha256": "a2c933a598e874596ccc5494d1cb1ad344bbf90ca5800e4d330c65384e555f05"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/STAGE66.txt",
+      "sha256": "49ca1550bb97612f3491ad19d90bb31f991e8c4d22c85d9ff70d49db54cf18f6"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/START.txt",
+      "sha256": "66fc3c9d5e5f42ee7a6ff9fb6cf64d7a5bc273f1dfaa3f5dd298d6f2720b8c81"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/weak-derivative-independent-final.log",
+      "sha256": "5523064dfa432d25d5b27d4ee1f8047e94d82614371ea700c49b34c7d7073bad"
+    },
+    {
+      "path": "checkpoints/2026-11-02-packet01/weak-derivative-independent.log",
+      "sha256": "5523064dfa432d25d5b27d4ee1f8047e94d82614371ea700c49b34c7d7073bad"
+    },
+    {
+      "path": "lean/KernelRadialMomentBridge.lean",
+      "sha256": "16624be8238cfe638119c98b9f930078ff5d0cf854be81e1f85f4e76b20f9ca9"
+    },
+    {
+      "path": "lean/MonopoleFlux.lean",
+      "sha256": "c9adc4cf14a3d6618a7c6b1d7b8ccb2764d60150f311632a79a8413bda817489"
+    },
+    {
+      "path": "lean/Packet01CoefficientChain.lean",
+      "sha256": "54e18cfe7a8dcdc6feb14cbbc1cee074627be5c4b3c4ef937082f387cc8390b6"
+    },
+    {
+      "path": "lean/Packet01MomentIntegrability.lean",
+      "sha256": "fd2975b1ac00c971d9efe1f5b65e109304393ec71a58ea2e2a2cfe1998db801b"
+    },
+    {
+      "path": "lean/Packet01Monopole.lean",
+      "sha256": "6cadef18237d64939c63bff1a19c30c0b28b9b2ac241e63800c334197993fde4"
+    },
+    {
+      "path": "lean/Packet01PoloidalCoefficients.lean",
+      "sha256": "c754e63ecb7bd841587e89180a0764c940fe2bfd887a376bb6c411fec50c83aa"
+    },
+    {
+      "path": "lean/Packet01RadialTestReduction.lean",
+      "sha256": "d7761303e0072ccdd06337eb0d62b09a1a559c9e64298c29e54609f614417fa8"
+    },
+    {
+      "path": "lean/Packet01WeakDerivative.lean",
+      "sha256": "28c5018b80808c2e577ce30647e6805796663b10741e7361560827c3faeb46a6"
+    }
+  ],
+  "scope": "Complete new Packet01 chain compiled in isolated objects and independently reviewed; 302 upstream source dependencies authenticated. No full-project clean rebuild or full OQ14 closure."
+}
