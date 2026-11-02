@@ -1,0 +1,142 @@
+OQ14 PACKET 04 — LOCAL REVIEW AND SOURCE SUPPLEMENT FOR PACKET 06
+Prepared: 2026-11-01
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+
+VERDICT AND SCOPE
+Root reviewed the complete returned argument and the missing defining sources.
+A separate 6.1 Terra reviewer checked the complete mathematical argument;
+another Terra reviewer checked the weighted recovery and mode dictionaries.
+No substantive mathematical error was identified. The four missing source
+dictionaries W, O, D and M can be supplied from the actual local definitions
+and existing source lemmas as detailed below. Together with that supplement,
+the report supports the actual sector-kernel classification mathematically.
+The new classification proof is not yet implemented or verified in Lean.
+No proof source, accepted ledger or frozen evidence is modified by this review.
+
+The original report is preserved in RETURN_REPORT.txt without corrections or
+rewriting. Its conditional status accurately describes what its author had
+available. This dated supplement resolves those source-information omissions;
+it does not retroactively claim the author inspected these sources.
+
+PROVENANCE AND PREVIOUS REPORTS
+Source chat: 数学证明报告
+https://chatgpt.com/c/6ae7f372-e664-83e9-8e60-014d07f6ea98
+Downloaded file: C:/Users/Daniel/Downloads/OQ14_Packet04_Return_Report.txt
+Original size: 62,632 bytes. Hashes and source checks are in INTAKE.json.
+The chat received the full Packet 01 report but not the completed Packet 02
+report. It transparently proved the needed interior magnetic-vanishing result
+by a separate mollification argument. FOR_PACKET06.txt includes the complete
+reviewed reports 01 and 02 as well as 04, so the next chat has all prerequisites.
+Packet 05 is not a prerequisite for Packet 06 and is not reviewed here.
+
+MATHEMATICAL REVIEW
+The H/T/Q polynomial decomposition has the correct harmonic component degrees,
+orthogonality and dimensions and proves vector angular completeness. Finite
+weak angular tests yield U'=epsilon V and
+V'=(L(L+1)/(epsilon r^2)-z^2)U across the interface. The L2 estimates give H1
+representatives and actual continuous modal traces without assuming classical
+traces of an infinite angular series. The TE zero-Cauchy-data argument and
+monopole elimination are valid. The raising projection uses scalar degree L+1
+and the complex outgoing theorem to eliminate the incoming physical branch.
+The matching determinant is exactly -(z/n)D_L. Scalar noncoincidence, vector
+reconstruction, axial symmetry and global weighted recovery give the actual
+one-dimensional sector kernel. The auxiliary physical-to-volume converse uses
+global vacuum equations and the regular/outgoing Wronskian, including degree
+zero; it does not use an invalid lower-half-plane decay argument.
+
+W — GLOBAL WEIGHTED RECOVERY AND SOURCE
+Write S_c=StaticCoefficient.sqrtMultiplier c, N=NewtonL2.newtonOperator,
+and R_z=ComplexConvolutionAnalytic.operator z (2*R).
+The definitions give
+  response(c,z,R,u)=N(S_c u)+R_z(S_c u),
+  volumeBlock(c,z,R)u=u-S_c(N(S_c u))-S_c(R_z(S_c u))
+                         =u-S_c(response(c,z,R,u)).
+This is an identity in VectorL2 for every u. Passing to physical representatives
+uses sqrtMultiplier_ae and coordinateMap_preserving, retaining an a.e. equality.
+For kernel vectors, ComplexKernelResponse.kernel_weighted_response and
+kernel_coordinate_ae already prove this global recovery; kernel_zero_outside
+records the support consequence. DynamicVolume.source is definitionally the
+same square-root-weighted physical source, component by component.
+ModalWeightedMode.coefficient_value identifies chi=(n^2-1)1_{|x|<1}.
+At S=T=R=1 the exterior and kernel response definitions coincide. The existing
+response-overlap relation then gives the report's E_T version in the material
+ball. Thus recovery includes the part outside the material ball, where u=0.
+The full arbitrary-u formula may still need a named Lean adapter; it is not a
+new physical assumption or a substitute for kernel classification.
+
+O AND D — OUTGOING BRANCH AND DETERMINANT
+RadialRellich.outgoing l z r is definitionally ModalAlgebra.xi l (z*r).
+ModalAlgebra defines xi by the finite factorial expansion
+  (-i)^(l+1) exp(i*t) sum_{s=0}^l i^s (l+s)!/[2^s s!(l-s)!] t^(-s).
+This is exactly t*h_l^(1)(t), for t!=0, by the finite spherical-Hankel formula.
+The analogous xiMinus expansion is t*h_l^(2)(t). Therefore the report's O
+has gamma_l(z)=1. These identifications follow directly by comparing the
+displayed coefficients with NIST DLMF 10.49.1, 10.49.6 and 10.49.7:
+https://dlmf.nist.gov/10.49
+
+The definition psi=(xi+xiMinus)/2 is consequently t*j_l(t), using the spherical
+Hankel interrelations in DLMF 10.47.10:
+https://dlmf.nist.gov/10.47#E10
+Existing xi_hasDerivAt and psi_hasDerivAt identify xiD and psiD with their
+argument derivatives at nonzero arguments. Hence the literal definition
+  tmDet L n z=n*psi L (n*z)*xiD L z-xi L z*psiD L (n*z)
+is D_L itself: there is no hidden factor in D. The matching matrix contributes
+the separate factor -z/n derived in the report. All uses have z!=0 and n>1.
+RiccatiRaising.xi_raising, xiMinus_raising and psi_raising already give the
+needed raising recurrences for the repository's actual finite functions.
+RiccatiOriginSeries.origin_eq_psi and RadialOriginSelection.regular_hankel
+also provide an entirely local regular-function dictionary. The external
+formulas fix conventional notation; they are not new Lean verification.
+
+M — THE SAME SELECTED NORMALIZED WEIGHTED MODE
+ModalOrigin.entireInnerE n z b is definitionally (b/n) times centerE(n*z).
+ModalVolumeData.numerator_actual gives sqrt(chi)*(i/n)*centerE(n*z).
+More directly, ModalWeightedResidue.residue_eq_numerator already proves
+  weightedMode n hn k f = (b/i) • numerator n hn k.val,
+  b=(ModalMatching.residue 1 (n:C) k.val f).1.
+Since 1/i=-i, this is exactly the report's -i*b factor. The identity applies
+to arbitrary f and nonzero frequency k; no determinant-root hypothesis is
+needed for that identity. For U=a • weightedMode supplied by
+normalized_isolated_poles, U=-i*a*b • numerator. Its established nonzero
+property makes that scalar nonzero. Its existing unit reciprocal derivative
+pairing is preserved because U is unchanged.
+
+EXACT RESULT TO CARRY INTO PACKET 06
+For real n>1 algebraic over Q and z!=0 with tmDet 1 (n:C) z=0, let
+  X=VectorFourier.VectorL2,
+  S=ModalMeridionalReflection.electricSector,
+  A(z)=ComplexConvolutionAnalytic.volumeBlock
+         (ModalWeightedMode.coefficient n hn) z 1,
+  N0=ModalVolumeData.numerator n hn z.
+Then N0!=0, N0 is in S, A(z)N0=0, and for EVERY u in X,
+  (u in S and A(z)u=0) iff there exists a UNIQUE c in C with u=c • N0.
+Equivalently ker(A(z)) intersect S=span_C{N0}; it is finite dimensional with
+dimension one. At the selected high-Q root the same statement holds with
+the prescribed nonzero normalized vector U in place of N0.
+
+The selected-root quantifiers and the unit pairing are those of the full
+normalized_isolated_poles source supplied below. This is a theorem about the
+axisymmetric electric sector, not a one-dimensional full rotational sphere
+kernel. It establishes geometric kernel dimension, not pole order.
+
+WHAT PACKET 06 STILL HAS TO PROVE
+Establish the complex restricted-sector Fredholm/cokernel statements, the
+reciprocal left functional and nonzero derivative pairing on that sector,
+the actual simple inverse pole and rank-one residue, and the weighted,
+unweighted and compact-reduced operator bridges. Track the manuscript Green
+operator sign and N(E)=-(k/2)d(E) normalization. A weighted unit derivative
+pairing is not automatically N(E)=1. Preserve the hypotheses for analytic
+material perturbation versus almost-everywhere bounded material rounding.
+Real-frequency VolumeFredholm statements alone do not establish the complex
+restricted-sector assertions. Packet 06's original task remains authoritative
+for the requested scope; report any additional missing source explicitly.
+
+VERIFICATION BOUNDARY
+INTAKE.json records exact source hashes and their comparison with the stage-65
+incremental ledger or the release-5238 clean-build provenance. Where current
+CRLF line endings differ from the clean build's LF bytes, converting CRLF to LF
+reproduces the original hash; this is explicitly recorded. These are prior
+source-status checks, not fresh compilation of the quoted files. Raw sources
+are preserved in SOURCE_SUPPLEMENT.zip; the TXT uses normalized newlines and
+labels excerpts explicitly. No new Lean proof, axiom report or aggregate build
+was produced in this review. Full OQ14 closure remains unfinished.

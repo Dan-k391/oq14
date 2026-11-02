@@ -1,0 +1,1424 @@
+OQ14 — PACKET 04 RETURN REPORT
+Weak interface matching and the actual electric-sector sphere kernel
+Prepared: 2026-11-01
+Checkpoint named in the packet: aeed697d5224424878d99840d33b67abde175947
+
+RESULT AND VERIFICATION BOUNDARY
+
+The new mathematical analysis below proves angular reconstruction, weak
+transmission, physical-degree outgoing selection, and the one-dimensional
+electric dipole classification. Its application to the exact named repository
+operator remains CONDITIONAL on three explicitly stated source interfaces:
+(W) global weighted recovery/source identification; (O) the outgoing
+Riccati-function normalization; and (D) the identification of tmDet with the
+physical matching determinant. Identification with the particular normalized
+weightedMode additionally uses the explicit profile interface (M).
+
+These interfaces are not being introduced as axioms or advertised as proved
+repository theorems. Their complete defining sources were not supplied.
+The report states exactly what is needed and proves the remaining analysis.
+In particular, source_actual alone does not imply support or recovery of an
+arbitrary volume-kernel vector outside the material ball.
+
+The attached RETURN_REPORT.txt is the complete Packet 01 return report, not a
+combined Packet 01/02 report. Its mathematically reviewed Theorems A, B, C and D
+are used with their actual hypotheses. No reviewed Packet 02 return report
+was available. I additionally retrieved the original 02_magnetic_symmetry.txt
+task packet and inspected its accepted sector/action definitions. Section 2.3
+proves the weaker interior magnetic-scalar result needed here directly from
+those definitions, the actual weak curl equation, and (W). Thus, after (W) is
+discharged, a separate magnetic-integral covariance result is unnecessary for
+this kernel argument. The original Packet 02 task is not misrepresented as
+its completed return report.
+
+No new Lean theorem was compiled. Every Lean declaration below is an
+UNCOMPILED STATEMENT SPECIFICATION. No sorry, admit, new axiom, compiled
+candidate implementation, or new axiom-audit result is supplied.
+
+
+1. PACKET ID, EXACT THEOREMS, AND ASSUMPTIONS
+
+1.1 Actual objects and material convention
+
+Packet ID: OQ14 Stage 65, Packet 04.
+
+Let
+
+  n : R,  n > 1,
+  z : C,  z != 0,
+  X = OQ14.VectorFourier.VectorL2,
+  c_n = ModalWeightedMode.coefficient n hn,
+  A_n(z) = ComplexConvolutionAnalytic.volumeBlock c_n z 1.
+
+The radius is exactly one. Write
+
+  B = {x in R^3 : |x| < 1},
+  chi_n(x) = (n^2-1) 1_B(x),
+  s_n(x) = sqrt(n^2-1) 1_B(x),
+  epsilon_n(x) = 1+chi_n(x).
+
+The supplied coefficient_value theorem gives precisely chi_n after pullback
+by VectorFourier.coordinateMap. Its value on the sphere is zero; changing a
+coefficient on that measure-zero sphere has no effect on the weak equations.
+One-sided traces always use epsilon_-=n^2 and epsilon_+=1.
+
+For u in X, u^phys(x)=u(coordinateMap x). The actual localized electric field is
+
+  E_T[u](x)_i =
+    ComplexExteriorResponse.response c_n z 1 T u (coordinateMap x) i.
+
+For T=1 this agrees with ComplexKernelResponse.response c_n z 1 u.
+On overlapping observation balls the responses agree almost everywhere,
+using the response_overlap interface explicitly invoked in the supplied
+ComplexSphereInterface.source_actual proof. Every argument below can be
+performed on a fixed T>1; larger T only extend the same local field. We write
+E[u] for these compatible actual local fields.
+
+The actual magnetic field is
+
+  H[u](x) =
+    ComplexMagneticLocal.magnetic z (DynamicVolume.source c_n u) x.
+
+All volume statements are almost-everywhere statements about these actual
+representatives. No global L2 assumption is made on E or H. At a lower
+half-plane resonance their outgoing exterior continuations can grow.
+
+The established electric sector S is exactly
+
+  S = ModalMeridionalReflection.electricSector
+    = ModalAxialRotation.axialSector intersect ker(reflectionAction-1),
+  axialSector = intersection over theta in R of ker(rotationAction(theta)-1).
+
+The accepted definitions in the original Packet 02 identify these actions as
+the physical polar-vector actions
+
+  (U_Q F)(x)=Q F(Q^(-1)x),
+
+where Q is either a rotation about coordinate axis 2 or
+S_ref=diag(1,-1,1). These are statements in L2, not simultaneous pointwise
+identities for arbitrary representatives.
+
+1.2 Exact source interfaces still required
+
+(W) Weighted operator and source dictionary.
+
+For the named actual objects, with all coordinates interpreted as above,
+
+  (A_n(z)u)^phys = u^phys-s_n E_1[u]              a.e. on R^3,
+  DynamicVolume.source c_n u = s_n u^phys        a.e. on R^3.
+
+Only the first identity restricted to genuine kernel vectors is necessary for
+the upper bound, but the full identity also gives the converse in Section 2.10.
+In particular,
+
+  A_n(z)u=0  =>  u^phys=s_n E[u] globally,
+
+including u^phys=0 outside B. The exact desired sources are
+ComplexConvolutionAnalytic.lean, ComplexKernelResponse.lean,
+ComplexResponseAnalytic.lean, DynamicVolume.lean and StaticCoefficient.lean,
+or an accepted theorem stating this same global identity.
+
+(O) Outgoing branch dictionary.
+
+For every d in N and every z != 0, there is a gamma_d(z) != 0, independent of r,
+such that for all r>0,
+
+  RadialRellich.outgoing d z r = gamma_d(z) xi_d(z r),
+  xi_d(t)=t h_d^(1)(t).
+
+An exact defining formula implying this statement is equally sufficient.
+The phase need not be guessed: gamma is absorbed into modal amplitudes.
+The requested sources are RadialRellich.lean and its defining outgoing-mode
+module. A nonzero Wronskian alone does not identify which solution is outgoing.
+
+(D) Determinant dictionary.
+
+For every physical degree L>=1, at the selected n,z,
+
+  ModalAlgebra.tmDet L (n:C) z=0  iff
+  D_L(n,z)=0,
+
+where
+
+  D_L(n,z)=n psi_L(nz) xi_L'(z)-xi_L(z) psi_L'(nz),
+  psi_L(t)=t j_L(t).
+
+Equality of the functions, or an explicitly identified nonvanishing factor,
+would supply this zero-set statement. The requested source is
+ModalAlgebra.lean and the files defining its Riccati functions.
+The geometric proof needs zero-set equivalence, not a derivative normalization.
+
+(M) Existing weighted-mode profile dictionary, needed for literal identification
+with the selected normalized weightedMode, beyond the numerator version.
+
+For b=(ModalMatching.residue 1 (n:C) z f).1, the relevant interfaces are
+
+  entireInnerE (n:C) z b = (b/n) centerE ((n:C)*z),
+  numerator n hn z (coordinateMap x)
+    = sqrt(chi_n(x)) (i/n) centerE ((n:C)*z) x       a.e.
+
+The second interface is visible in uses of numerator_actual in the accepted
+sector proofs; the first is visible through reductions in weightedMode_ne_zero.
+Their complete defining files were not supplied. Request ModalOrigin.lean,
+ModalVolumeData.lean and ModalWeightedResidue.lean before certifying the exact
+Lean identity. Section 2.11 proves the resulting relation
+
+  weightedMode n hn <z,hz> f = (-i b) numerator n hn z.
+
+These are precise implementation/source obligations, not additional physical
+regularity, simplicity, or classification assumptions.
+
+1.3 Exact classification target and selected-root corollary
+
+Assume, in addition to n>1 and z!=0,
+
+  IsAlgebraic Q (n:C),
+  ModalAlgebra.tmDet 1 (n:C) z=0.
+
+Put N0=ModalVolumeData.numerator n hn z.
+
+THEOREM 04-A, conditional only on (W), (O), (D) and the listed accepted/reviewed
+premises:
+
+  N0 != 0, N0 in S, A_n(z)N0=0, and
+
+  for every u in X,
+    [u in S and A_n(z)u=0]
+      iff there exists a unique c in C such that u=c N0.
+
+Consequently,
+
+  ker(A_n(z)) intersect S = span_C{N0},
+  dim_C(ker(A_n(z)) intersect S)=1.
+
+The lower bound uses the actual accepted theorems numerator_in_kernel and
+numerator_in_electricSector, not a model-kernel assumption.
+
+THEOREM 04-B, selected normalized mode, with (M) additionally discharged:
+
+For every algebraic real n>1, every real threshold L0, and every real Q>=0,
+choose k:ModalShell.Frequency, f:Amplitudes, and a:C supplied by
+ModalBoundedContrastIsolation.normalized_isolated_poles. Keep the SAME vector
+
+  U=a • ModalWeightedMode.weightedMode n hn k f.
+
+Then U is nonzero, belongs to S, and
+
+  for every u in X,
+    [u in S and A_n(k.val)u=0]
+      iff there exists a unique c in C such that u=c U.
+
+The already supplied properties remain
+
+  L0 < Re k, Im k < 0,
+  Q < Re k/(-2 Im k),
+  pairFunctional(U)(A_n'(k)U)=1.
+
+No new rescaling is performed. Quantifier order is
+for every n,L0,Q, there exist k,f,a, and then for every u in the sector kernel
+there exists a unique c; equivalently the displayed equivalence holds for
+every u in X.
+If a contrast ceiling B0>0 is prescribed, accepted exists_index first chooses
+n>1 algebraic with n^2-1<B0. No quantitative estimate uniform in the resonance
+index or degree is needed for this geometric classification.
+
+The proof actually works at every nonzero dipole root satisfying the same
+algebraic-index hypotheses; the selected high-Q root is included without a
+separate genericity assumption. It does not prove the analytic inverse residue
+or algebraic characteristic multiplicity, which belong to Packet 06.
+
+1.4 Exact reviewed Packet 01 statements used
+
+The genuine-kernel hypotheses used for its Theorems B,C,D are:
+
+  n real, n>1; z complex, z!=0; u in X; A_n(z)u=0.
+
+For positive degree additionally take a real homogeneous harmonic polynomial P
+of degree L>=1, and put Y=P|S^2. With exactly the packet's angularMeasure mu,
+define the bilinear moments
+
+  A_P(r)=integral E(r omega).omega Y(omega) dmu,
+  B_P(r)=integral E(r omega).grad_S Y(omega) dmu.
+
+Theorem A identifies these actual integrals with the supplied L2 moment
+representatives for almost every r; it needs neither z!=0 nor the kernel
+condition, and no polynomial homogeneity/harmonicity.
+Theorem B gives (r^2 A_P)'=r B_P in distributions for positive homogeneous
+degree, without requiring harmonicity.
+Theorem C, adding harmonicity, states that there is ONE c in C such that,
+for almost every r in (0,1), simultaneously
+
+  r^2 A_P(r)=c regular(L,zn,r),
+  B_P(r)=c regularD(L,zn,r)/r.
+
+Its regularD includes the radial chain factor zn. If L=l+1,
+HarmonicMomentIntegrability.tangentialMoment has index l, not L.
+No division by L(L+1) occurs in the definition of B_P.
+
+Theorem D states A_1(r)=0 a.e. on (0,1), for the constant polynomial.
+It does not say Cartesian component degree-zero moments vanish.
+
+There is no algebraicity, sector membership, nonzero-u, or sign-of-Im-z
+hypothesis in these Packet 01 statements. They supply no boundary trace.
+The user identifies this report as mathematically reviewed; its complete
+Lean implementation is still outstanding.
+
+
+2. COMPLETE NUMBERED MATHEMATICAL PROOF
+
+2.1 Recover global weak Maxwell equations from the actual supplied fields
+
+Let u be a genuine kernel vector. Accepted ComplexMagneticMaxwell.actual_maxwell
+holds for every compact smooth scalar coordinate test supported in a chosen
+observation ball, including tests crossing r=1. The coefficient-support
+hypothesis follows from coefficient_support, and choosing T>1 gives 0<=T+1.
+Accepted ComplexSphereInterface.source_actual gives, for this same u,
+
+  rho=DynamicVolume.source c_n u=chi_n E[u] a.e.
+
+Substitute this equality into the two accepted weak curl equations and sum
+coordinate tests. The result, in distributions on every observation ball, is
+
+  curl E= i z H,                 curl H= -i z epsilon_n E.       (2.1)
+
+The signs are those of the actual source theorem. No complex conjugation is
+inserted in its distributional test pairings.
+
+E is locally L2 by its localized-response construction. For H, the accepted
+ComplexMagneticLocal.magnetic_memLp_ball applies to the compact L2 source:
+under (W), rho=s_n u^phys is L2, is supported in the closed unit ball, and is L1
+by Cauchy-Schwarz. Its gradient kernel is locally L1, bounded on a ball by a
+constant depending on |z| and the radius times |x|^(-2)+|z| |x|^(-1).
+The corresponding truncated convolution is locally L2 by Young's inequality.
+Thus E,H are in H(curl) on every bounded collar of the interface.
+
+Taking distributional divergence in (2.1) is legitimate: partial derivatives
+commute on distributions, so div curl=0. Since z!=0,
+
+  div H=0,                       div(epsilon_n E)=0.             (2.2)
+
+Inside each constant-material region, div E=0 and
+(Delta+epsilon_n z^2)E=0, with the analogous equation for H.
+These facts follow from (2.1); pending ComplexSphereMaxwell is not promoted
+to an accepted theorem.
+
+2.2 Angular integrability, completeness, and the correct degree bookkeeping
+
+Choose a real orthonormal scalar spherical-harmonic basis Y_Lm for the supplied
+angular measure. The real choice matters: the Packet 01 bilinear moment then
+equals the corresponding Hermitian coefficient. Complex coefficients remain
+allowed for the field. Write lambda_L=L(L+1), and define
+
+  R_Lm=omega Y_Lm,
+  G_Lm=grad_S Y_Lm,
+  T_Lm=omega cross grad_S Y_Lm.
+
+For L>=1 their squared norms are 1, lambda_L, lambda_L. The radial family
+includes L=0; the two tangent families begin at L=1.
+
+Integration by parts on the closed smooth sphere gives
+integral grad Y.grad Z = -integral Y Delta_S Z, hence gradient orthogonality
+and the norm lambda_L. Also div_S(omega cross grad_S Z)=0: in any oriented
+local chart it is the cancellation of the two mixed second derivatives.
+An integration by parts therefore gives integral grad Y.(omega cross grad Z)=0.
+Rotation by omega cross is an isometry on each tangent plane. This proves
+orthogonality of all the normalized R,G,T families.
+
+Here is a finite-dimensional proof of completeness, rather than an assumed
+Hodge decomposition. Let H_j denote homogeneous harmonic scalar polynomials
+of degree j restricted to the sphere. Its dimension is 2j+1. One way to see
+this and scalar polynomial completeness is the decomposition of homogeneous
+polynomials into |x|^(2s)H_(j-2s). The calculation
+
+  Delta(|x|^(2s) H_d)
+    =2s(2d+2s+1)|x|^(2s-2)H_d
+
+has a nonzero coefficient for s>=1, proving that decomposition inductively.
+The dimension difference is
+binomial(j+2,2)-binomial(j,2)=2j+1. Polynomial restrictions are dense in
+continuous functions on the compact sphere because their real algebra
+contains constants and separates points; continuous functions are dense in
+L2 for the finite spherical measure. Alternatively the supplied accepted
+scalar harmonic expansion gives this last scalar completeness directly.
+
+For a harmonic polynomial P of degree L define vector polynomials
+
+  H(P)=grad P,
+  T(P)=x cross grad P,
+  Q(P)=x P-|x|^2 grad P/(2L+1).
+
+Their Cartesian components are harmonic of degrees L-1, L, L+1 respectively.
+For Q this follows from
+
+  Delta(x_i P)=2 partial_i P,
+  Delta(|x|^2 partial_i P)=2(2L+1) partial_i P.
+
+For T the extra second-derivative terms cancel by antisymmetry. On the sphere,
+
+  H(P)=L R+G,
+  T(P)=T,
+  Q(P)=((L+1)R-G)/(2L+1).
+
+Their squared norms, for ||Y||=1, are respectively
+L(2L+1), L(L+1), and (L+1)/(2L+1). Thus H is injective for L>=1,
+T for L>=1, and Q for L>=0.
+
+For each scalar component degree j>=1, the space H_j tensor C^3 contains
+the mutually orthogonal images
+
+  H(H_(j+1)),     T(H_j),     Q(H_(j-1)).
+
+Their dimensions sum to
+(2j+3)+(2j+1)+(2j-1)=3(2j+1), the entire dimension. For j=0,
+H(H_1) already has dimension 3 and fills the space. Therefore all vector
+polynomial restrictions lie in the span of R,G,T. Scalar density applied
+coordinatewise proves vector completeness.
+
+This proves, for every vector angular L2 field F,
+
+  F = sum a_Lm R_Lm + sum b_Lm G_Lm + sum t_Lm T_Lm
+
+in angular L2, with
+
+  a_Lm=integral F.R_Lm,
+  b_Lm=lambda_L^(-1) integral F.G_Lm,
+  t_Lm=lambda_L^(-1) integral F.T_Lm.
+
+In particular there is no invisible radial or tangent remainder. This proof
+also explains why physical electric vector degree L contains Cartesian scalar
+degrees L-1 and L+1; toroidal degree L has Cartesian scalar degree L.
+They must not be identified.
+
+For actual volume fields, polar integration gives angular L2 slices for
+dr-a.e. r>0. If Q_F(r)^2=integral |F(r omega)|^2 dmu, then
+
+  |a_Lm(r)|<=Q_F(r),
+  |b_Lm(r)|,|t_Lm(r)|<=Q_F(r)/sqrt(lambda_L).
+
+All compact radial test pairings are absolutely integrable by Cauchy-Schwarz.
+The supplied slice_actual_ae theorem identifies the actual slices, and the
+accepted reconstruction bound is consistent with these estimates. Taking
+one countable intersection over L,m, coordinates and rational radial collars
+gives a common full-measure radial set. Angular reconstruction there, followed
+by polar integration, gives genuine volume-a.e. equality.
+
+2.3 Interior magnetic scalar vanishing and removal of the TE part
+
+This section supplies the minimal missing Packet 02 conclusion directly.
+From (W), inside B,
+
+  E=u^phys/sqrt(n^2-1).
+
+The accepted sector actions therefore imply U_Q E=E in L2(B) for every axial
+rotation Q and for the meridional reflection S_ref.
+
+For an orthogonal Q, the distributional identity is
+
+  curl(U_Q F)=det(Q) U_Q(curl F).                              (2.3)
+
+For smooth F it follows from the chain rule and
+(Qa) cross (Qb)=det(Q) Q(a cross b). For a locally L2 field the same identity
+follows by changing variables in a compact smooth test; the Jacobian has
+absolute value one. Alternatively mollify on smaller invariant balls and
+pass to distributions. All test products are integrable.
+
+Use curl E=izH and z!=0 in (2.3). The actual H transforms as an axial vector:
+U_Q H=H for rotations and U_S_ref H=-H for the reflection. Consequently
+f(x)=x.H(x) is rotation-invariant and reflection-odd as an L2(B) scalar.
+
+The a.e. quantifier issue is resolved as follows. Extend f by zero outside
+the invariant ball and convolve with a smooth compactly supported radial
+approximate identity rho_delta. For each fixed Q, a change of variables
+transfers the L2 symmetry to the smooth function f_delta pointwise. Thus the
+smooth f_delta has all these symmetries at every point. For every x,
+S_ref x is on the same axial rotation orbit as x, including the axis itself.
+It follows that
+
+  f_delta(S_ref x)=f_delta(x)=-f_delta(x),
+
+so f_delta=0. Approximate-identity convergence in L2 gives
+
+  x.H(x)=0 a.e. in B.                                         (2.4)
+
+This does not choose an x-dependent rotation within an a.e. identity.
+Approximate-identity convergence follows, for example, from continuity of
+translations in L2, first for continuous compact functions and then by density.
+
+To eliminate the electric toroidal coefficient, fix Y=Y_Lm, L>=1, put
+T=omega cross grad_S Y, and test curl E=izH with eta(r)Y(omega)omega,
+where eta is smooth and compactly supported in (0,1). Since
+
+  curl(eta R)=-(eta/r)T,
+
+the weak equation reads
+
+  -integral r eta(r) integral E(r omega).T(omega) dmu dr
+    = iz integral r^2 eta(r) integral H(r omega).omega Y dmu dr.
+
+The right side is zero by (2.4). Test-annihilation for the locally integrable
+left coefficient gives t_Lm=0 a.e. The radial and gradient projections of
+curl E=izH then also make the radial and gradient coefficients of H zero.
+Thus the interior field has only the physical TM blocks. The electric radial
+L=0 coefficient is separately zero by reviewed Packet 01 Theorem D.
+
+2.4 Global modal equations and one-dimensional H1 regularity
+
+Fix L>=1 and a normalized real Y. Write lambda=L(L+1) and R,G,T as above.
+For a compact radial test eta away from the origin,
+
+  curl(eta R)=-(eta/r)T,
+  curl(eta G)=((r eta)'/r)T,
+  curl(eta T)=-(lambda eta/r)R-((r eta)'/r)G.                   (2.5)
+
+These identities follow by differentiating on spherical-coordinate charts
+and using Delta_S Y=-lambda Y. Each side is smooth on the punctured space,
+so the chart identities agree at chart boundaries. Only these finite smooth
+tests are differentiated; no infinite L2 series is differentiated.
+
+Define actual moments
+
+  a(r)=integral E.R,       b(r)=lambda^(-1) integral E.G,
+  h(r)=lambda^(-1) integral H.T.
+
+Apply curl H=-iz epsilon E to eta R and eta G, and curl E=izH to eta T.
+Polar integration gives, respectively,
+
+  -lambda integral r h eta = -iz integral epsilon r^2 a eta,
+  lambda integral r h (r eta)' =
+       -iz lambda integral epsilon r^2 b eta,
+  -lambda integral [r a eta+r b(r eta)'] =
+       iz lambda integral r^2 h eta.
+
+Let
+
+  U(r)=r h(r)/(iz)=epsilon(r) r^2 a(r)/lambda,
+  V(r)=r b(r).
+
+Because phi=r eta ranges over all compact smooth tests on a positive-radius
+collar, the preceding identities are exactly
+
+  U'=epsilon V,
+  V'=(lambda/(epsilon r^2)-z^2)U                              (2.6)
+
+in distributions, including across r=1. These TM equations hold even before
+any TE block has been eliminated.
+
+Let J=(r0,r1), with 0<r0<1<r1<T, and let shell(J) be its spherical shell.
+Angular Cauchy-Schwarz and the polar Jacobian give the explicit estimates
+
+  ||U||_L2(J) <= ||H||_L2(shell(J))/(|z| sqrt(lambda)),
+  ||V||_L2(J) <= ||E||_L2(shell(J))/sqrt(lambda),
+  ||U'||_L2(J) <= n^2 ||E||_L2(shell(J))/sqrt(lambda),
+  ||V'||_L2(J) <= (lambda/r0^2+|z|^2)||U||_L2(J).             (2.7)
+
+Thus U,V have H1 representatives on a collar crossing the interface.
+For completeness, a locally integrable function with weak derivative g in L2
+equals a constant plus the indefinite integral of g: subtract that integral;
+the difference has distributional derivative zero. Testing against derivatives
+of compact functions shows it annihilates every compact test of integral zero,
+so it is a constant distribution. This proves the absolutely continuous
+representative assertion without assuming classical differentiability of the
+original moment.
+
+Both representatives are continuous at 1. On either constant-material side,
+(2.6) bootstraps to smoothness and gives
+
+  U''+(epsilon z^2-lambda/r^2)U=0.                            (2.8)
+
+Consequently the interface conditions are
+
+  U(1-)=U(1+),
+  U'(1-)/n^2=U'(1+).                                        (2.9)
+
+The trace estimate
+
+  |f(1)| <= |J|^(-1/2)||f||_2+|J|^(1/2)||f'||_2
+
+follows by integrating f(1)=f(t)+integral_t^1 f' over t. The constants in (2.7)
+and this estimate state all dependence needed for the finite-mode proof.
+No estimate uniform in L or z is asserted.
+
+For the TM block the physical pair is
+
+  E_TM= lambda U/(epsilon r^2) R + U'/(epsilon r) G,
+  H_TM= iz U/r T.                                           (2.10)
+
+Equivalently M_L[U]=-(U/r)T and
+N_L[U]=curl M_L[U]=lambda U R/r^2+U'G/r, so
+E_TM=epsilon^(-1)N_L[U], H_TM=-iz M_L[U].
+This agrees with the convention in the quoted RiccatiTransmission source.
+
+2.5 These are actual weak tangential traces; exterior TE cannot remain
+
+For F in H(curl) on one side of a smooth spherical boundary, define its
+distributional tangential trace, on a smooth boundary test phi, by
+
+  <nu cross F,phi>
+     = integral_D [curl F.Phi-F.curl Phi],
+
+where Phi is a smooth extension with any other boundary component suppressed.
+This is independent of the extension. Indeed, an extension difference zero on
+the boundary is O(distance). Cutting it off in a collar of width delta gives
+interior compact tests. The cutoff derivative is O(1/delta), but its product
+with the extension difference is bounded in that collar. The error is bounded
+by a fixed smooth-test constant times the L2 norms of F,curl F in a shrinking
+collar times its volume^(1/2), and tends to zero. This also proves continuity
+as a distribution on smooth boundary tests.
+
+Use the same outward-from-the-ball normal on both sides. Applying the global
+weak curl equations to a test crossing the interface, and splitting its volume
+integral into the two regions, gives
+
+  nu cross E_- = nu cross E_+,
+  nu cross H_- = nu cross H_+
+
+as tangential trace distributions. Their fixed harmonic coefficients are
+precisely the scalar H1 traces above: E_TM,t=V G/r and H_TM,t=iz U T/r.
+Thus (2.9) is derived from actual weak Maxwell fields, not imposed on unknown
+classical boundary values of their infinite angular sum.
+
+Only interior magnetic-scalar vanishing was used. To rule out an exterior
+TE remainder, let t=lambda^(-1) integral E.T, let d=integral H.R and
+e=lambda^(-1) integral H.G, and set K=-r t. The other three projections of
+the same global weak equations give
+
+  d=lambda K/(iz r^2),   K'=iz r e,
+  (r e)'=d+iz epsilon K.
+
+Hence
+
+  K''+(epsilon z^2-lambda/r^2)K=0                            (2.11)
+
+distributionally on the collar. Its coefficients are bounded there and the
+moments are L2. It follows that K and K' have H1 representatives, so both are
+continuous across 1. Interior t=0 implies K(1)=K'(1)=0. On the exterior,
+the ordinary linear ODE has unique solutions for specified Cauchy data; thus
+K=0. Uniqueness follows directly by writing the first-order integral equation
+and applying the elementary Gronwall inequality on each compact interval.
+This eliminates the entire exterior TE block. No exterior symmetry theorem
+and no far-field condition are needed for this step.
+
+For completeness, exterior radial monopoles cannot remain either. Take the
+constant normalized harmonic Y_00 and test curl H=-iz epsilon E with eta R_00
+on any positive-radius annulus. Its curl is zero, so
+0=-iz integral epsilon r^2 eta a_00 for every such test. Since z!=0 and
+epsilon>0, test-annihilation gives a_00=0. Testing curl E=izH in the same way
+kills the magnetic radial monopole. This extends the already reviewed
+interior electric monopole conclusion to the exterior, without applying
+Packet 01 beyond its stated domain.
+
+2.6 Regular interior profile and the Packet 01 normalization
+
+For a real normalized Y coming from P, reviewed Packet 01 gives
+
+  r^2 a=c regular(L,nz,r),
+  lambda b=B_P=c regularD(L,nz,r)/r.
+
+Thus the same c gives U=n^2 c regular/lambda and the associated poloidal
+coefficient; no independent tangent amplitude is left. In particular this
+does not differentiate an arbitrary L2 representative.
+
+To identify the span with the standard psi_L without assuming an unquoted
+normalization of regular, use the newly derived ODE (2.8). Define
+
+  psi_L(t)=t j_L(t),    eta_L(t)=t y_L(t),
+  xi_L=psi_L+i eta_L,   zeta_L=psi_L-i eta_L.
+
+They solve w''+(1-lambda/t^2)w=0 away from zero. The regular series is
+
+  psi_L(t)=sum_(p>=0)
+      (-1)^p t^(L+2p+1)/(2^p p! (2L+2p+1)!!).
+
+It converges on compact subsets with all derivatives, and direct substitution
+checks the ODE. The singular solution can be obtained from eta_0=-cos t,
+eta_1=-cos t/t-sin t and the adjacent-degree recurrence. Its leading behavior
+is
+
+  psi_L(t)~t^(L+1)/(2L+1)!!,
+  eta_L(t)~-(2L-1)!! t^(-L).
+
+The ODE makes their Wronskian constant; these leading terms give
+
+  psi_L eta_L'-psi_L' eta_L=1,
+  W(xi_L,zeta_L)=-2i,       W(psi_L,xi_L)=i.                 (2.12)
+
+Here and below primes on special functions are argument derivatives.
+These conventions and recurrences agree with NIST DLMF 10.47, 10.50, 10.51;
+the series and Wronskian calculation above give the needed normalization.
+
+Since nz!=0, the two radial solutions psi_L(nzr), eta_L(nzr) have nonzero
+radial Wronskian nz. By ordinary ODE uniqueness, every interior profile is
+a linear combination of them on the connected interval (0,1).
+
+Actual L2 integrability and a=lambda U/(n^2 r^2) give
+
+  integral_0^1 |U(r)|^2/r^2 dr
+    <= n^4/lambda^2 ||E||_L2(B)^2 < infinity.
+
+A nonzero eta_L coefficient would have leading magnitude a nonzero constant
+times r^(-L), and this integral would diverge for L>=1. Therefore
+
+  U_-(r)=alpha psi_L(nzr).                                  (2.13)
+
+No exact value for the proportionality between regular and psi_L is needed.
+There is no missing regular-normalization prerequisite in this mathematical
+route. Degree zero is excluded separately by Packet 01 Theorem D.
+
+2.7 Analytically outgoing physical vector degrees
+
+The accepted outgoing theorem is a Cartesian scalar theorem. In its exact
+form, for T>1, a homogeneous harmonic polynomial p of scalar degree d, any
+Cartesian coordinate i, any u in X, and z!=0, it supplies one constant c with
+
+  r integral E_T[u](r omega)_i p(omega) dmu
+      =c RadialRellich.outgoing d z r
+
+for almost every r in (1,T). It requires no kernel hypothesis. Both the
+nonzero-frequency outgoing selection and annular amplitude gluing are
+accepted in the supplied packet. Under (O) this is a multiple of xi_d(zr).
+
+Fix the physical degree L>=1 and its real polynomial P. Define
+
+  Q_i(x)=x_i P(x)-|x|^2 partial_i P(x)/(2L+1).
+
+Every Q_i is homogeneous harmonic of scalar degree L+1, as proved in 2.2.
+On the sphere, the vector Q=((L+1)R-G)/(2L+1). Consequently, for the actual
+coefficients from 2.4,
+
+  integral E.Q dmu
+      =((L+1)a-lambda b)/(2L+1)
+      =lambda[(L+1)U-rU']/((2L+1)r^2)                       (2.14)
+
+in the exterior, where epsilon=1. Only finitely many actual component
+integrals are involved. No assertion identifying scalar degree L+1 with
+physical vector degree L has been made.
+
+By the exterior ODE and its nonzero Wronskian, write initially
+
+  U=A xi_L(zr)+B zeta_L(zr).
+
+Both branches are allowed at this stage. The exact raising recurrence is
+
+  (L+1)w_L(t)-t w_L'(t)=t w_(L+1)(t)                       (2.15)
+
+for either Riccati-Hankel family. Applying the accepted Cartesian outgoing
+theorem to each Q_i and summing, equations (2.14)-(2.15) yield on (1,T)
+
+  [lambda z/(2L+1)] [A xi_(L+1)(zr)+B zeta_(L+1)(zr)]
+       = C xi_(L+1)(zr).
+
+The functions have smooth ODE representatives; equality a.e. on an open
+interval implies equality everywhere there. Their radial Wronskian is -2iz,
+which is nonzero. Since lambda z/(2L+1)!=0, it follows that B=0. Hence
+
+  U_+(r)=beta xi_L(zr).                                    (2.16)
+
+One amplitude holds throughout the observation annulus. On overlapping
+annuli it is unique because xi_L is not identically zero, so the amplitudes
+agree. This extends to the whole exterior when desired.
+
+This argument uses the accepted analytic outgoing selection at complex
+frequency. It is valid when Im z<0. No asymptotic decay or scaled far-field
+limit is used to reject an incoming solution.
+
+For later sufficiency, the explicit Cartesian formula is also useful.
+Writing P_i=partial_i P and using the same Q_i, for U=xi_L(zr),
+
+  (E_TM)_i =
+      (L z/r) xi_(L+1)(zr) Q_i(omega)
+    + ((L+1)z/((2L+1)r)) xi_(L-1)(zr) P_i(omega).            (2.17)
+
+It follows by substituting R=Q+grad P/(2L+1) and
+G=(L+1)grad P/(2L+1)-LQ into (2.10), then using both adjacent-degree
+recurrences. Thus the constructed outgoing physical TM block has outgoing
+Cartesian scalar degrees L+1 and L-1. Multiplying by beta restores its
+amplitude. The regular formula is identical with xi replaced by psi,
+z replaced by nz, and an overall factor alpha/n^2.
+
+2.8 The finite matching system, with every n and z factor
+
+Substitute (2.13) and (2.16) into the actual weak trace conditions (2.9).
+The radial derivatives are
+
+  d/dr [alpha psi_L(nzr)] = alpha nz psi_L'(nzr),
+  d/dr [beta xi_L(zr)] = beta z xi_L'(zr).
+
+At r=1 the equations are exactly
+
+  alpha psi_L(nz) - beta xi_L(z)=0,
+  alpha (z/n) psi_L'(nz) - beta z xi_L'(z)=0.                (2.18)
+
+The matching matrix is
+
+  [ psi_L(nz)           -xi_L(z)       ]
+  [ (z/n)psi_L'(nz)     -z xi_L'(z)    ].
+
+Its determinant is
+
+  -(z/n)[n psi_L(nz)xi_L'(z)-xi_L(z)psi_L'(nz)]
+     =-(z/n)D_L(n,z).                                    (2.19)
+
+Here n and z are nonzero. Dividing the second equation by z would instead
+give determinant -D_L/n. Dividing the interior derivative by n^2 before
+cancelling z is essential; the original radial derivative includes nz.
+
+If D_L!=0 the two amplitudes vanish. If D_L=0 the matrix has rank exactly one:
+its exterior column cannot vanish because xi_L and xi_L' cannot both vanish
+at a nonzero argument, by (2.12). Its nullspace therefore has dimension one.
+Moreover a nonzero null vector has alpha!=0 and beta!=0. If alpha=0, both
+beta xi_L and beta xi_L' vanish, forcing beta=0. If beta=0 the same argument
+uses the nonzero Wronskian of psi_L with eta_L at nz!=0.
+No division by a possibly zero individual Bessel value has occurred.
+
+2.9 Isolation, reconstruction, and the actual one-dimensional kernel
+
+Apply the exact accepted theorem ModalTMIsolation.isolated_degree with
+
+  l=1, n_complex=(n:C), z=z,
+  IsAlgebraic Q (n:C),
+  (n:C)!=0, (n:C)!=1, (n:C)!=-1, z!=0,
+  tmDet 1 (n:C) z=0.
+
+All three index exclusions follow from real n>1. Its conclusion is
+
+  deriv(tmDet 1 (n:C)) z != 0,
+  for every j in N, tmDet j (n:C) z=0 iff j=1.
+
+Under (D), D_L(n,z)!=0 for every positive L other than 1. Thus (2.18)
+eliminates every such physical degree and every azimuthal coefficient.
+The radial degree zero has already vanished, and all toroidal coefficients
+have vanished. Completeness in 2.2 leaves only the physical degree-one TM
+field, with a constant vector of its three angular amplitudes.
+
+Only one of those three amplitudes is allowed by the actual sector.
+Indeed a degree-one scalar harmonic is v.omega for v in C^3. The radial
+coefficient of the polar rotation-invariant E is an invariant scalar.
+Its degree-one part therefore has v fixed by every rotation about axis 2.
+Taking rotation angle pi gives v_0=v_1=0; v_2 is unrestricted. This argument
+is an identity in the finite-dimensional coefficient space, so it does not
+require a common pointwise representative for uncountably many rotations.
+Equivalently average the angular action in L2 over the compact rotation group.
+
+More generally the fixed scalar harmonic space in each degree has dimension
+one: a rotation-invariant homogeneous polynomial has the form
+sum_j c_j(x_0^2+x_1^2)^j x_2^(L-2j). Harmonicity gives
+
+  4(j+1)^2 c_(j+1)+(L-2j)(L-2j-1)c_j=0,
+
+so all coefficients are determined by c_0. The degree-one case is all that
+the final rank-one conclusion needs.
+
+It follows that for one fixed axial degree-one profile F_dip and every
+genuine sector-kernel vector u there is one alpha_u with
+
+  E[u]=alpha_u F_dip a.e. in B.
+
+This is equality of actual volume fields: the countable full-measure
+intersection and angular-to-volume reconstruction were justified in 2.2.
+Under (W),
+
+  u^phys=alpha_u s_n F_dip a.e. on ALL R^3.                 (2.20)
+
+The global qualification is essential. It eliminates vectors invisible to
+the material source outside B.
+
+Now use the supplied accepted
+ModalSphereVolumeKernel.numerator_in_kernel. At our n,z it gives N0!=0
+and A_n(z)N0=0. The additionally inspected accepted
+ModalMeridionalReflection.numerator_in_electricSector gives N0 in S.
+Apply the preceding arbitrary-vector analysis to N0 itself:
+
+  N0^phys=alpha_0 s_n F_dip.
+
+Because N0!=0, alpha_0!=0. Hence every u in the sector kernel satisfies
+u=(alpha_u/alpha_0)N0. Conversely every scalar multiple of N0 lies in the
+sector and kernel by linearity. Uniqueness of its scalar follows from N0!=0.
+This proves Theorem 04-A and its dimension statement.
+
+Scalar simplicity was not used as a substitute for this geometric argument.
+Noncoincidence eliminates degrees; the vector reconstruction, traces, sector
+symmetry and weighted recovery prove the actual upper bound.
+
+Full-space rotational degeneracy is compatible with the conclusion: before
+restricting to the axial sector, the degree-one TM harmonic space has three
+angular amplitudes. No claim that the full volume kernel has dimension one
+has been made.
+
+2.10 Sufficiency in both the physical and weighted-volume formulations
+
+For any L>=1, z!=0, n>1 and nonzero null vector (alpha,beta) of (2.18), define
+U by (2.13) inside and (2.16) outside, and define E,H by (2.10).
+The exterior is taken only locally on finite observation balls; outgoing
+growth in the lower half-plane is permitted.
+
+The interior field is smooth at the origin. For example
+psi_L(nzr)=r^(L+1)A(r^2) for an entire function A. If P is the harmonic
+solid polynomial, then
+
+  M_L[U]= -alpha A(|x|^2) (x cross grad P(x)),
+
+which extends smoothly to x=0; N_L[U]=curl M_L[U] is smooth too.
+In particular E=O(r^(L-1)) and H=O(r^L). The regional Maxwell equations
+follow by substituting the ODE into the curl formulas (2.5).
+
+The fields are locally L2 and smooth up to r=1 from each side. The matching
+conditions give equal tangential E,H. Splitting integration by parts on the
+two regions therefore cancels their surface terms; no interface delta occurs
+in either curl. This proves the global weak Maxwell equations, not merely
+regional ones. Also epsilon E_r=lambda U/r^2 is continuous and H_r=0,
+so both normal constraints are satisfied. Equation (2.17) verifies the
+analytically outgoing Cartesian convention.
+
+To prove the weighted converse, put u^phys=s_n E. This is a compactly
+supported L2 vector. Under (W), its actual source is
+
+  rho=s_n u^phys=chi_n E.
+
+Fix any T>1. Apply accepted actual_maxwell to this u without any kernel
+assumption. Subtract its actual response pair E_T[u],H[u] from the
+constructed physical pair. The difference F,G satisfies on B_T
+
+  curl F=izG,        curl G=-izF.
+
+Therefore div F=0 and (Delta+z^2)F=0 distributionally.
+
+Here is a supporting smoothness proof including the origin. For a scalar
+component w in L2_loc satisfying (Delta_3+z^2)w=0, define
+v(x,t)=exp(zt)w(x) on B_T times an open real interval. Then Delta_4 v=0
+distributionally. Mollifying v gives smooth harmonic functions on smaller
+balls. For any smooth normalized radial kernel rho_R supported in such a
+ball, the harmonic mean-value property gives v_delta=rho_R*v_delta.
+Let delta tend to zero in local L2. Convolution with the fixed smooth kernel
+converges with all derivatives on a still smaller ball by Cauchy-Schwarz,
+so v=rho_R*v a.e. and has a smooth representative. The identity
+partial_t v=zv then identifies v=exp(zt)v(x,0), giving a smooth representative
+of w. This proves the required local Helmholtz regularity without a boundary
+regularity assumption.
+
+Every Cartesian scalar harmonic coefficient of this smooth F, multiplied
+by r, solves the scalar Riccati equation and is regular at the origin.
+Thus for every scalar degree d>=0 it equals c psi_d(zr) on (0,T).
+Smoothness explicitly excludes the d=0 Neumann branch as well: its scalar
+field behaves as 1/r, which mere local L2 would not have excluded.
+
+On (1,T), the same coefficient is a multiple of xi_d(zr), because the
+constructed E has that property by (2.17) and the actual response has it
+by accepted OutgoingModeGluing.actual_exterior_moment and (O). The radial
+Wronskian of psi_d(zr) and xi_d(zr) is iz!=0. Thus both coefficients are zero.
+Scalar angular completeness gives F=0 throughout B_T a.e.; then G=0 by
+curl F=izG. In particular E=E_1[u] inside the material ball.
+
+Finally (W) gives A_n(z)u=u-s_n E_1[u]=0. This establishes sufficiency for
+the concrete actual volume formulation once its defining dictionary is
+provided. It does not assume a general Maxwell-to-volume representation
+theorem as a substitute for the proof.
+
+For the selected dipole specifically, the accepted theorem
+weighted_mode_in_volume_kernel already supplies actual kernel membership
+for every amplitude f. Its nontriviality/normalization theorems supply the
+chosen nonzero vector. The converse above is nevertheless useful to make
+the finite matching equivalence explicit.
+
+2.11 Identify the existing normalized weighted mode without changing it
+
+Let k=<z,hz>, f be the existing amplitude datum, and
+b=(residue 1 (n:C) z f).1. Accepted weightedMode_actual shows that the
+weighted mode is zero outside B. Accepted weightedMode_inner gives inside B
+
+  W_f^phys=sqrt(n^2-1) entireInnerE (n:C) z b.
+
+Under (M), this is sqrt(n^2-1)(b/n)centerE(nz). The numerator's corresponding
+global representative is sqrt(chi_n)(i/n)centerE(nz). Hence, on all space a.e.,
+
+  W_f=(-i b)N0,                                             (2.21)
+
+because (-i b)(i/n)=b/n. The sphere is a null set and both weighted vectors
+vanish outside B. This also proves W_f belongs to S from the already
+accepted N0-sector theorem, with no extra covariance assumption.
+
+For the particular selected vector U=a W_f supplied by
+normalized_isolated_poles, equation (2.21) gives U=(-i a b)N0.
+That theorem already states U!=0, so this factor is nonzero. Consequently
+span{U}=span{N0}, and Theorem 04-A proves the unique-scalar classification
+with this SAME U. Its unit reciprocal pairing remains exactly 1.
+
+Every hypothesis of the supplied high-Q theorem is used literally:
+n>1 real, IsAlgebraic Q (n:C), real L0,Q, Q>=0. Its Frequency type includes
+k.val!=0; its conclusion gives the nonzero determinant root, all-degree
+isolation, scalar simplicity, nonzero scaled weighted vector, and its actual
+kernel equation. No theorem about inverse residue rank is inferred.
+
+
+3. SOURCE MAP, EXACT USES, AND STATUS
+
+The word ACCEPTED below means labeled accepted by the supplied or retrieved
+packet. It is not a claim of fresh compilation or original-log authentication.
+
+3.1 Full returned prerequisite report
+
+RETURN_REPORT.txt, OQ14 Packet 01:
+
+  Section 1.3 Theorem A: actual radial and tangential integral bridges.
+  Section 1.3 Theorem B: distributional (r^2 A_P)'=r B_P for positive
+    homogeneous degree; harmonicity is not required.
+  Section 1.3 Theorem C: common regular radial/poloidal amplitude for every
+    positive homogeneous harmonic degree.
+  Section 1.3 Theorem D: the actual radial moment for P=1 is zero.
+
+Exact hypotheses and indexing are restated in 1.4. Status: mathematically
+reviewed according to the user; complete Lean formalization outstanding.
+The prior report's regular-derivative source certification limitations are
+not silently upgraded. This proof uses its mathematical conclusion, and
+Section 2.6 supplies a separate standard-psi span argument.
+
+No full Packet 02 return report was attached or retrieved. The original
+Packet 02 task source is used only for the exact source blocks listed next.
+
+3.2 Accepted original Packet 02 source blocks additionally inspected
+
+Original file: 02_magnetic_symmetry.txt,
+Library id: libfile_15a630ba5fc081918412e2c700e7233a.
+The retrieved text is a task packet, not a reviewed return proof.
+
+  lean/ModalAxialRotation.lean:
+    action_ae; rotation/spatial/matrix definitions; axialSector definition;
+    electric_covariant; numerator_in_axialSector.
+    These identify physical rotations and the actual fixed subspace.
+    No kernel or nonzero-frequency condition is needed for the definitions
+    or electric_covariant; numerator-sector statements require n>1.
+
+  lean/ModalMeridionalReflection.lean:
+    reflection_coordinate; action_ae; electricSector definition;
+    centerE_polar; numerator_in_electricSector.
+    The last theorem states for every n>1 and every complex z that the
+    actual numerator belongs to the established electric sector.
+
+  lean/ComplexMagneticLocal.lean:
+    magnetic definition; gradient_bound_ball; gradient_locallyIntegrable;
+    magnetic_memLp_ball.
+    For the L2 theorem, the source is L1, supported in a prescribed ball,
+    and a.e. represented by an actual vector L2 datum.
+    These hypotheses follow from rho=s_n u under (W).
+
+  lean/ModalMeridionalStatic.lean:
+    source_action was inspected for provenance. It concerns reflection
+    covariance of the actual source but does not itself state the complete
+    source definition or global kernel recovery. It is not used as a
+    substitute for (W).
+
+Status of all the foregoing blocks: accepted Stage-65 according to Packet 02.
+Pending ComplexMagneticReflection, ComplexMagneticDebye and the other pending
+magnetic regional modules were not used as accepted premises.
+
+3.3 Accepted supplied Packet 04 source blocks used
+
+  lean/ComplexMagneticMaxwell.lean, actual_maxwell:
+    for any u, complex z, coefficient supported in the source ball,
+    observation radius with 0<=T+S, and compact tests supported in the
+    observation ball, both actual source Maxwell equations hold.
+    Used in necessity and sufficiency, including interface-crossing tests.
+
+  lean/ComplexSphereInterface.lean, source_actual:
+    n>1, T>=1, actual sphere kernel equation; gives rho=chi_n E_T a.e.
+    Used to obtain the piecewise-material global Maxwell equations.
+    Does not imply u=0 where chi_n=0.
+
+  lean/ComplexSphereInterface.lean, weak_normal_transmission, and
+  lean/ComplexInterfaceWeak.lean, displacement_divergence_zero:
+    consistent with (2.2); the latter is also derived directly from the
+    global first-order equations. They are not tangential trace theorems.
+
+  lean/ComplexKernelDebye.lean, regular_radial_coefficient:
+    n>1,z!=0,actual kernel, homogeneous harmonic polynomial of degree L;
+    supplies the regular radial amplitude. Used through reviewed Packet 01.
+    scalar_weak, scalar_actual and moment_actual are that report's exact
+    actual-field prerequisites.
+
+  lean/HarmonicMomentIntegrability.lean:
+    definitions radialMoment, gradientMoment, tangentialMoment and accepted
+    actual_radial_tangential_relation. Used through the full Packet 01 report,
+    retaining its positive-degree index and bilinear moments.
+
+  lean/ModalVectorAngularSlices.lean:
+    slice_memLp_ae, slice_actual_ae, radial_expansion, transverse_expansion,
+    vector_decomposition_ae. They supply actual L2 slices and accepted
+    abstract angular reconstruction. Section 2.2 proves the physical R,G,T
+    completeness/identification rather than assuming an unspecified basis
+    is already the physical TM decomposition.
+
+  lean/ModalVolumeAngularCoefficients.lean:
+    coefficient_weighted_memLp, for any continuous angular vector mode.
+    It agrees with the explicitly proved finite-mode estimates.
+
+  lean/ModalReconstructionOperator.lean and
+  lean/ModalReconstructionEnergy.lean:
+    reconstructOperator_actual and reconstruction_bound, with operator bound
+    ||m||_L2(S^2)^2. Useful implementation interfaces; no implicit convergence
+    in a boundary trace norm is inferred from this volume-L2 bound.
+
+  lean/AnalyticOutgoingSelection.lean, outgoing_moment:
+    n>1,z!=0,1<a<b<=T, homogeneous harmonic scalar p, any coordinate i and u;
+    one scalar outgoing amplitude a.e. on [a,b].
+
+  lean/OutgoingModeGluing.lean, actual_exterior_moment:
+    same scalar/component hypotheses with T>1; one amplitude a.e. on (1,T).
+    No kernel, real-frequency, or Im-z hypothesis. Its exact scope is used
+    in the finite raising projection in 2.7.
+
+  lean/ModalTMIsolation.lean, isolated_degree:
+    all exact hypotheses are checked in 2.9. Gives scalar simplicity and
+    all-degree noncoincidence for the named tmDet. Adapter (D) remains needed.
+
+  lean/ModalMeridionalVolume.lean, electricSector_invariant:
+    n>1, arbitrary complex z and u in S imply A_n(z)u in S.
+    This identifies a legitimate restricted operator. It does not by itself
+    prove covariance of E or H.
+
+  lean/ModalSphereVolumeKernel.lean:
+    numerator_in_kernel: n>1,z!=0,tmDet_1=0 gives N0!=0 and A_n(z)N0=0.
+    weighted_mode_in_volume_kernel: same root hypotheses with k:Frequency,
+      arbitrary f; supplies actual kernel membership of weightedMode.
+    exists_nonzero_weighted_residue: adds scalar simplicity and supplies a
+      nonzero weighted residue with its actual kernel equation.
+
+  lean/ModalWeightedMode.lean:
+    coefficient_value/support; weightedMode_actual/inner;
+    weightedMode_ne_zero, whose extra hypothesis is nonzero interior residue
+      amplitude; exists_nonzero_weighted_residue.
+    The selected high-Q theorem already discharges the nonzero-vector
+    requirement. We do not silently infer sector membership from nonzero.
+
+  lean/ModalBoundedContrastIsolation.lean:
+    exists_index: B0>0 gives algebraic real n>1 with n^2-1<B0.
+    normalized_isolated_poles: exact quantifiers and conclusions in 1.3/2.11.
+    Its negative meromorphic inverse order is retained as supplied but is
+    not used to assert an inverse pole of order one.
+
+3.4 Supporting source and external formula references
+
+  RiccatiTransmission.lean and RiccatiDebyeTrace.lean are marked supporting
+  source, with individual acceptance uncertified. Their conventions are
+  checked by the explicit curl computation in 2.4. The theorem tm_matches
+  is only a sufficient matching result for already smooth Debye fields;
+  it is not used to assume necessity for arbitrary weak fields.
+
+  The manuscript excerpt is a target/exposition, not a proof of the missing
+  arbitrary-vector classification or analytic inverse residue.
+
+  NIST Digital Library of Mathematical Functions:
+    https://dlmf.nist.gov/10.47 — spherical Bessel equation and definitions.
+    https://dlmf.nist.gov/10.50 — Wronskians.
+    https://dlmf.nist.gov/10.51 — adjacent-degree and derivative recurrences.
+
+  These references fix the standard psi/eta/xi conventions used here.
+  They do not identify an unquoted local Lean definition. The finite
+  harmonic decomposition, weak-trace argument and outgoing raising argument
+  in this report are derived explicitly.
+
+
+4. MINIMAL ORDERED LEAN LEMMA/MODULE PLAN
+
+No accepted/frozen source is to be silently edited. The following are new
+module suggestions and declaration specifications, not compiled code.
+
+4.1 Ordered modules
+
+1. ActualSphereDictionary.lean
+   Inspect and prove (W), (O), (D), and the optional (M) adapter from the actual
+   definitions. Record kernel support, weighted recovery, and source equality.
+   Do not add them as axioms or opaque user hypotheses in a final closure theorem.
+
+2. SphereVectorMomentBasis.lean
+   Prove the H/T/Q polynomial identities, vector angular completeness,
+   normalized coefficient formulas, countable a.e. reconstruction, and the
+   degree-one fixed-axis coefficient lemma. Identify the existing accepted
+   angular-basis definitions with these physical modes if reusing them.
+
+3. InteriorMagneticScalarFromSector.lean
+   Combine actual sector actions, weighted recovery, weak curl covariance,
+   radial mollification and test-annihilation. Prove actual x.H=0 in B and
+   actual electric toroidal moments zero. This is an alternative proof of
+   the precise part of Packet 02 needed here, not a promotion of its drafts.
+
+4. WeakSphereModalTransmission.lean
+   Establish the three compact angular curl tests, the actual distributional
+   U,V system across r=1, L2 bounds, H1 representatives/traces, and TE
+   K-equation with zero-Cauchy-data elimination. Prove the Riccati equation.
+
+5. VectorOutgoingFromScalar.lean
+   Prove the harmonic raising test Q_i, apply the actual accepted outgoing
+   scalar theorem, and use the nonzero Wronskian to eliminate incoming U.
+   Prove interior regular psi selection by the ODE/L2 argument or a fully
+   identified existing regular-mode bridge.
+
+6. SphereTMMatchingMatrix.lean
+   Prove the exact factor -(z/n)D_L, invertibility when D_L!=0, and rank one
+   when D_L=0 without dividing by an individual special-function value.
+
+7. ActualSphereKernelClassification.lean
+   Apply ModalTMIsolation with all coercion hypotheses; reconstruct the actual
+   field; use global weighted recovery; use the accepted nonzero sector
+   numerator; conclude unique scalar, submodule equality and dimension one.
+
+8. SelectedWeightedModeIdentification.lean
+   Prove weightedMode=(-i b)numerator from the actual definitions, then
+   instantiate the selected normalized_isolated_poles vector unchanged.
+
+Optional supporting module, if the general physical/volume equivalence is
+desired independently of the already accepted selected-mode membership:
+SingleModeVolumeConverse.lean, formalizing Section 2.10.
+
+Reviewed Packet 01's positive-degree/monopole lemmas must be formalized or
+imported from their eventual accepted implementations. Their mathematical
+review does not produce .olean objects.
+
+4.2 Proposed statements — ALL UNCOMPILED
+
+The following are statement specifications only. There are no proof bodies
+and no placeholder declarations to be imported as axioms.
+
+Within namespace OQ14, a suitable exact recovery target is:
+
+  theorem kernel_weighted_recovery
+      (n : ℝ) (hn : 1 < n) (z : ℂ)
+      (u : VectorFourier.VectorL2)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0) :
+      ∀ᵐ x : Maxwell.Space ∂MeasureTheory.volume, ∀ i : Fin 3,
+        u (VectorFourier.coordinateMap x) i =
+          (Real.sqrt ((ModalWeightedMode.coefficient n hn).value
+            (VectorFourier.coordinateMap x)) : ℂ) *
+          ComplexKernelResponse.response
+            (ModalWeightedMode.coefficient n hn) z 1 u
+              (VectorFourier.coordinateMap x) i
+
+These signatures require the usual MeasureTheory/Topology notation scopes.
+Unlike the classification, recovery should not require z!=0 if it follows
+directly from the defining operator identity; confirm this against the source.
+
+The actual magnetic target, with no abstract replacement field, is:
+
+  theorem electricSector_magnetic_radial_zero_interior
+      (n : ℝ) (hn : 1 < n) (z : ℂ) (hz : z ≠ 0)
+      (u : VectorFourier.VectorL2)
+      (hu : u ∈ ModalMeridionalReflection.electricSector)
+      (hker : ComplexConvolutionAnalytic.volumeBlock
+        (ModalWeightedMode.coefficient n hn) z 1 u = 0) :
+      ∀ᵐ x : Maxwell.Space
+          ∂MeasureTheory.volume.restrict (Metric.ball 0 1),
+        (∑ j : Fin 3, (x j : ℂ) *
+          ComplexMagneticLocal.magnetic z
+            (DynamicVolume.source
+              (ModalWeightedMode.coefficient n hn) u) x j) = 0
+
+For the intermediate analytic lemmas introduce definitions literally matching
+the integrals in Sections 2.2 and 2.4, rather than guessing existing names:
+
+  vector_harmonic_moments_determine:
+    equality of every radial, gradient and cross-gradient moment of two
+    angular vector L2 functions implies their L2 equality.
+
+  actual_tm_coefficients_weak_system:
+    for every genuine kernel u, L>=1, normalized real degree-L harmonic Y
+    and collar 0<r0<1<r1<T, the actual U,V satisfy (2.6).
+    Sector membership is unnecessary for this lemma.
+
+  actual_tm_coefficients_H1_and_trace:
+    the same hypotheses imply the four bounds (2.7), H1 representatives,
+    and (2.9). Do not put H1 or trace continuity among the hypotheses.
+
+  actual_te_profile_eq_zero:
+    genuine sector kernel plus the derived interior magnetic scalar gives
+    K=0 on both sides by (2.11).
+
+  actual_vector_degree_regular_outgoing:
+    for each L>=1 and each harmonic Y, there exist alpha,beta such that
+    the actual TM profile equals alpha psi_L(nzr) a.e. on (0,1) and
+    beta xi_L(zr) a.e. on (1,T), with the same representatives used for traces.
+    Outgoingness is derived from the Cartesian scalar theorem.
+
+  actual_tm_matching:
+    those alpha,beta satisfy both equations (2.18).
+
+The final target can be written using known actual repository names:
+
+  theorem sphere_kernel_unique_smul_numerator
+      (n : ℝ) (hn : 1 < n)
+      (hna : IsAlgebraic ℚ (n : ℂ))
+      (z : ℂ) (hz : z ≠ 0)
+      (hd : ModalAlgebra.tmDet 1 (n : ℂ) z = 0)
+      (u : VectorFourier.VectorL2) :
+      (u ∈ ModalMeridionalReflection.electricSector ∧
+        ComplexConvolutionAnalytic.volumeBlock
+          (ModalWeightedMode.coefficient n hn) z 1 u = 0)
+      ↔ ∃! a : ℂ,
+        u = a • ModalVolumeData.numerator n hn z
+
+A submodule conclusion is the equality
+
+  LinearMap.ker (A_n(z) as a complex linear map)
+    intersect ModalMeridionalReflection.electricSector
+      = Submodule.span C {ModalVolumeData.numerator n hn z}.
+
+Finite-dimensionality and finrank=1 follow from this equality and N0!=0.
+Do not rely on a bare finrank=1 without establishing finite-dimensionality.
+
+The existing-mode bridge target is:
+
+  theorem weightedMode_eq_scalar_numerator
+      (n : ℝ) (hn : 1 < n)
+      (k : ModalShell.Frequency) (f : ModalMatching.Amplitudes) :
+      ModalWeightedMode.weightedMode n hn k f =
+        (-Complex.I *
+          (ModalMatching.residue 1 (n : ℂ) k.val f).1) •
+        ModalVolumeData.numerator n hn k.val
+
+The exact namespace of Amplitudes/residue must be checked in its defining
+source; the supplied files open ModalMatching. This is not a compilation claim.
+Thereafter the selected-mode unique-scalar theorem assumes only the genuine
+root hypotheses and a • weightedMode != 0, then concludes the same statement
+with that a • weightedMode in place of N0. The high-Q theorem supplies all
+these hypotheses while retaining its reciprocal pairing.
+
+
+5. VERIFICATION ACTUALLY PERFORMED
+
+Requested pinned environment:
+  Lean 4.19.0
+  mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b
+
+Actual local checks:
+
+  lean --version
+    exit 127: /bin/bash: lean: command not found
+
+  lake --version
+    exit 127: /bin/bash: lake: command not found
+
+  Python shutil.which for lean, lake, elan
+    all returned None; command exit 0.
+
+  Search of the working tree for lean-toolchain
+    found no project toolchain file.
+
+  Python SHA-256 calculation, exit 0:
+
+    upload/RETURN_REPORT.txt
+    39349 bytes
+    f59fa5162b7f37faa103c8a480acb3179494bc19351c36f5d2238ec301731956
+
+    upload/04_sphere_kernel_classification(1).txt
+    115913 bytes
+    ff7180b22305c5d11f786eb136775da92635ccd1a21f80474ed099ec27f091a0
+
+Both attachments were read, including the full returned prerequisite report.
+The original Packet 02 source was additionally retrieved in contiguous text
+windows, and the sector/action, numerator and local magnetic blocks used here
+were inspected. A retrieved text rendering is not presented as independently
+authenticated original repository bytes.
+
+NIST DLMF definitions, Wronskians and recurrences were inspected as the primary
+external formula reference. Mathematical derivations were independently
+reviewed for angular completeness, weak interface factors, outgoing degree
+transfer, selected-root assumptions and the weighted converse.
+
+No new Lean implementation was compiled. No #print axioms command was run.
+No .olean file, compiler acceptance log or clean aggregate build was produced.
+Printed #print axioms commands inside quoted source are not execution output.
+The accepted-source statuses remain attributed to the packets.
+
+Verified new Lean code: NONE.
+Complete candidate implementation source files: NONE.
+Uncompiled proposed Lean statements: Section 4.
+New mathematical proof: Section 2, relative to the exact source interfaces
+and accepted/reviewed premises stated in Section 1.
+
+
+6. REMAINING GAPS AND REQUIRED CONTEXT
+
+6.1 What has been mathematically proved here
+
+The new argument proves:
+
+  - complete vector angular reconstruction, with explicit scalar/vector
+    degree distinction and no invisible radial or tangential remainder;
+  - the needed interior magnetic scalar and electric TE elimination from
+    actual weak curl and the inspected physical sector actions, after (W);
+  - the actual interface-crossing modal distribution system;
+  - H1 traces and tangential transmission from global weak Maxwell;
+  - regular interior and analytically outgoing exterior physical TM profiles;
+  - the exact matrix determinant -(z/n)D_L;
+  - elimination of all other physical degrees using the exact scalar
+    noncoincidence theorem, once (D) is identified;
+  - an actual numerator-based one-dimensional sector kernel, after global
+    weighted recovery and the special-function dictionaries;
+  - physical and weighted-volume sufficiency, without a lower-half-plane
+    far-field argument;
+  - identification of the same prescribed normalized weighted mode, after
+    its one-line profile definition is confirmed.
+
+Packet 01's radial/poloidal and monopole results are no longer left as missing
+mathematical prerequisites. They are used by theorem statement and hypothesis.
+The missing Packet 02 returned report is still a provenance omission, but its
+minimal analytical role has been independently supplied in Section 2.3.
+That proof becomes unconditional from the inspected sector definitions as
+soon as (W) is established for the actual named operator.
+
+6.2 Exact unresolved interfaces, with minimal requested source
+
+1. Global weighted recovery/source identity (W).
+   Supply ComplexConvolutionAnalytic.lean, ComplexKernelResponse.lean,
+   ComplexResponseAnalytic.lean, DynamicVolume.lean and StaticCoefficient.lean,
+   or exact accepted lemmas giving the two identities in 1.2.
+   This is essential for arbitrary genuine X-kernel vectors. A necessary
+   relation rho=chi E cannot exclude an invisible vector outside B.
+
+2. Outgoing branch identity (O).
+   Supply RadialRellich.lean and the defining outgoing formulas, or an exact
+   proved nonzero-multiple relation with xi_d. The analytic outgoing theorem
+   is accepted; its translation into the standard physical determinant must
+   not rely on an uninspected phase or branch convention.
+
+3. Actual determinant identity (D).
+   Supply ModalAlgebra.lean and its special-function definitions, or the
+   precise nonzero-factor equality with D_L. Without this bridge, scalar
+   isolation of a named function cannot be applied to a different expression.
+
+4. Existing normalized-mode identity (M).
+   Supply ModalOrigin.lean, ModalVolumeData.lean and ModalWeightedResidue.lean.
+   The decisive remaining definition is
+   entireInnerE n z b=(b/n)centerE(nz). The numerator_actual interface is
+   visible in the accepted rotation proof. This item affects the literal
+   selected-weightedMode identification, not the N0-based dimension theorem.
+
+5. Lean implementation and verification.
+   Packet 01's reviewed results, the new interior symmetry argument, vector
+   reconstruction, weak radial traces, normalization adapters and all new
+   classification lemmas still need formal implementation in the pinned
+   project. Compile there, inspect #print axioms for the final theorem, and
+   perform the project's required independent audit before promoting sources.
+
+No full repository, its exact transitive definitions, or pinned compiler
+was available here. Source-interface uncertainty is kept separate from a
+mathematical gap in the newly derived analysis. No replacement abstract
+kernel is claimed to be the actual volume kernel without (W).
+
+6.3 Why the remaining weighted identity cannot simply be omitted
+
+At the level of the supplied necessary Maxwell/source statements,
+source(u)=chi E controls only the material-supported part. If an ambient
+operator were extended by a zero block on an invisible supplementary space,
+and the response ignored that space, those necessary statements would remain
+true while its kernel dimension increased. This is not a counterexample to
+the actual sphere operator. It explains exactly why its defining
+identity A=I-weighted response, or an equivalent support/recovery theorem,
+must be used to prove an actual arbitrary-vector kernel statement.
+
+Final disposition:
+
+  COMPLETE NEW MATHEMATICAL CLASSIFICATION ARGUMENT, CONDITIONAL ON THE
+  EXPLICIT REMAINING SOURCE DICTIONARIES (W), (O), (D), AND ON (M) FOR THE
+  PRESCRIBED NORMALIZED WEIGHTED-MODE IDENTIFICATION.
+
+  NO CLAIM OF NEW LEAN VERIFICATION, UNCONDITIONAL PACKET 04 SOURCE CLOSURE,
+  ANALYTIC INVERSE RESIDUE, OR FULL OQ14 CLOSURE.
