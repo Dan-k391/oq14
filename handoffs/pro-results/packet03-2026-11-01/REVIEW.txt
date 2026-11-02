@@ -1,0 +1,81 @@
+OQ14 PACKET 03 — REVIEW OF RETURNED PRO REPORT
+Date: 2026-11-01
+Scope: full mathematical report, actual regional interfaces and supplied Lean.
+
+VERDICT
+No substantive mathematical error was identified. Root and a separate 6.1
+Terra reviewer independently checked the full report. The argument proves the
+requested flat-interface tangential estimate under its stated weak Maxwell,
+positive coefficient and nested-domain hypotheses, including the complex
+frequency version. It supplies the mathematical input needed by Packet 05.
+The analytic proof has not yet been implemented in Lean.
+
+PROVENANCE
+Chat: https://chatgpt.com/c/6ae7e955-e730-83e9-b4d8-c5494c05f5d6
+Downloaded original: C:/Users/Daniel/Downloads/03_flat_interface_report.txt
+RETURN_REPORT.txt preserves all 42,840 original bytes.
+SHA256: 34ef081f7972d37d66e8fa51960f4c303581d80235c630f241036a566cc94c78
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+INTAKE.json authenticates all 16 quoted source blocks against their original
+archive bytes, manifest hashes and current working files. Quoted text agrees
+after newline normalization. Both candidate files were extracted verbatim
+from the report's fenced appendices, with final newlines; their hashes are
+recorded in INTAKE.json. Original report and candidate proof bodies are intact.
+
+MATHEMATICAL CHECKS
+1. The assumptions are genuine regional H(curl) Maxwell equations across the
+   whole interface, not unrelated equations on two half-spaces. With a=1/epsilon,
+   W=a curl H=-ikE satisfies curl W=k^2 H. For k!=0, div H=0 distributionally.
+2. The nested cutoff construction has explicit separation R, gradient bound
+   4/R and step bound |h|<R/8. All required translated segments lie where the
+   outer cutoff equals one. The translated equations hold on the common open
+   domain where both original and shifted fields are defined.
+3. Compact H(curl) testing follows by zero extension of supported fields and
+   mollification. The proof does not presuppose the H1 regularity it derives.
+4. Taking real parts of the complex energy identity and applying Young's
+   inequality yields A <= 2 max(Re(k^2),0) Q + 4D. The signs and coercivity
+   constants are correct, including the complex-frequency case.
+5. The compactly supported div-curl identity first bounds the H1 norm of a
+   cutoff H. This controls the lower-order tangential quotient independently
+   of the differentiated curl being estimated. Applying the energy identity
+   to that quotient then closes the highest-order estimate without circularity.
+6. With M=1+d, L=4/R and B=sqrt(2 max(Re(k^2),0)+64/R^2), the mixed bound is
+   sqrt(M) B (|k| M ||E|| + L ||H||), and the H-only bound is
+   (M B^2 + sqrt(M) B L) ||H||. The norms use physical vector L2 sums.
+7. The family estimate is uniform for bounded frequencies and fixed/bounded
+   contrast. It still requires a bound on the fields themselves. The report
+   treats k=0 separately and does not infer div H=0 from a zero frequency.
+   It does not claim curved-interface regularity or attainment of maxima.
+
+LOCAL LEAN CHECKS
+Pinned toolchain: Lean 4.19.0, mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b.
+Commands ran from D:/oq14/lean using the pinned lake.exe and `env lean` on
+the three review candidate paths; exact commands and hashes are recorded in
+LEAN_CHECKS.json. No project source was edited and no whole build was run.
+
+- Packet03EnergyAlgebra.lean: exit 1 before elaboration, because the local
+  cache has no aggregate Mathlib.olean for its broad `import Mathlib`.
+- Packet03EnergyAlgebraAudit.lean: exit 0, no warnings. This review harness
+  replaces only that import with Mathlib.Data.Real.Basic and
+  Mathlib.Tactic.Linarith, adding a provenance comment. All three original
+  theorem statements and proof bodies are unchanged. Each computed axiom
+  report contains only propext, Classical.choice and Quot.sound.
+- Packet03Targets.lean: exit 0 unchanged, no warnings. It contains definitions
+  and a structure specifying the actual regional equations, geometry and
+  desired estimate. In particular, uniformFlatEstimateStatement is a Prop
+  definition with no supplied proof. Successful elaboration proves no PDE
+  estimate and contributes no new Maxwell theorem to the acceptance ledger.
+
+The three checked algebra lemmas are elementary absorption/real-part facts.
+They do not certify the analytic test-admissibility, regularity, translation
+or estimate arguments. The original candidates' UNCOMPILED comments describe
+their delivery status; the dated local evidence above refines that status.
+
+REMAINING FORMAL WORK
+Implement compact test approximation, the cutoff div-curl regularity result,
+the regional tangential difference equations and lower-order quotient bound,
+then the final real/complex estimates and family wrappers. Compile and audit
+the actual analytic theorems before accepting them. Packet 05 still has to
+derive the needed one-sided regularity, convergence and maxima consequences.
+
+No existing proof source, frozen evidence or acceptance count was changed.

@@ -1,0 +1,776 @@
+# Packet 02 — Actual magnetic axial covariance and vanishing magnetic Debye scalar
+
+Return report for OQ14 stage 65 • 2026-11-01
+
+STATUS: COMPLETE MATHEMATICAL PROOF OF THE CONVOLUTION SYMMETRY AND RADIAL-MOMENT RESULTS, SUBJECT TO THE EXPLICIT DEFINING INTERFACES BELOW. NO NEW LEAN THEOREM WAS COMPILED OR KERNEL-VERIFIED IN THIS SESSION. THE DELIVERED LEAN ALGEBRA FILE IS AN UNCOMPILED PROPOSAL. VECTOR-HARMONIC RECONSTRUCTION AND PROJECT-WIDE TE/CHANNEL CLASSIFICATION ARE NOT CLAIMED.
+
+## 1. Packet ID, exact theorem, assumptions, and quantifiers
+
+Packet: 02_magnetic_symmetry.txt, “Actual magnetic axial covariance and vanishing magnetic Debye scalar.” Target checkpoint: aeed697d5224424878d99840d33b67abde175947. Requested formal environment: Lean 4.19.0, mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b. This report is independent of packets 01 and 03; it invokes no theorem from an earlier returned report.
+
+### 1.1 Exact conventions
+
+Space is R^3, with the packet's zero-based coordinates (x_0,x_1,x_2). The established axis is e_2=(0,0,1). Set
+
+  R_theta = [[cos(theta),-sin(theta),0],
+             [sin(theta), cos(theta),0],
+             [0,0,1]],                 S = diag(1,-1,1).
+
+S fixes the meridional plane x_1=0. Real matrices act complex-linearly on C^3. Write
+
+  |v|_2 = (sum_{j=0}^2 |v_j|^2)^(1/2),
+  x dot v = sum_{j=0}^2 (x_j : C) v_j.
+
+The first is the Hermitian Euclidean norm; the second is a BILINEAR pairing, with no conjugation. Do not silently substitute the default norm on `Fin 3 → C`: that norm can be a supremum norm and is not rotation invariant.
+
+The actual outgoing kernel is exactly the supplied one:
+
+  Phi_z(v) = exp(i z |v|)/(4 pi |v|),
+  g_z(v) = exp(i z |v|)/(4 pi) [i z/|v| - 1/|v|^2] v/|v|   (v != 0),
+  g_z(0) = 0.
+
+Here g_z,j is `ComplexGreenKernel.phiGradient z v j`; its zero value agrees with the totalized divisions in the displayed Lean definition. The outgoing sign is +i z |v|. There is no restriction on Im(z).
+
+For a source rho, write H_z[rho] for precisely `ComplexMagneticLocal.magnetic z rho`, namely
+
+  H_i(x) = -i z [ integral rho_previous(i)(y) g_z,next(i)(x-y) dy
+                  - integral rho_next(i)(y) g_z,previous(i)(x-y) dy ].       (1)
+
+These are the componentwise scalar Lebesgue/Bochner integrals used by Lean, including their totalized value at a nonintegrable integrand. On the absolute-convergence set proved below, and only after that justification, (1) equals
+
+  H_z[rho](x) = -i z integral [g_z(x-y) cross rho(y)] dy.                  (2)
+
+The cross-product order is gradient CROSS source. An electric source transforms as a polar vector; the magnetic field transforms as an axial vector.
+
+### 1.2 Exact defining interfaces needed to instantiate the project
+
+The packet quotes the actual magnetic definition, sector definitions, and action laws. Some imported DEFINITIONS are not quoted. The following identities are the exact interfaces used, not claims that their omitted source files were inspected:
+
+(I1) With c_n = `ModalWeightedMode.coefficient n hn`, n>1, and U_j(x)=u(coordinateMap x)_j,
+
+  c_n.value(coordinateMap x) = (n^2-1) 1_{|x|<1},
+  DynamicVolume.source c_n u j x
+    = (sqrt(c_n.value(coordinateMap x)) : C) U_j(x),
+
+at least almost everywhere, and U is a physical L^2(C^3) representative. The expected source identity is consistent with the supplied accepted proof of `ModalMeridionalStatic.source_action`, which unfolds `DynamicVolume.source`. To close the literal repository bridge, supply `DynamicVolume.source`, `ModalWeightedMode.coefficient_value`, and the physical-coordinate L^2 identification from their original files. Exact norm equality with the repository's abstract VectorL2 norm is not assumed here.
+
+(I2) `KernelConvolution.response g f x = integral f(y) g(x-y) dy`, and the cyclic identities are next(0,1,2)=(1,2,0), previous(0,1,2)=(2,0,1). This convolution interface is exposed by the supplied proofs that unfold `response`, but its defining file and the definitions of next/previous are omitted. Request those declarations for formal integration.
+
+(I3) For translating the all-radius result to `ComplexMagneticDebye.radialCoefficient`, the packet's `Sphere` is the unit sphere and `angularMeasure` is absolutely continuous with respect to ordinary area measure sigma. The usual interface angularMeasure = c sigma, 0<c<infinity, is more than sufficient. Its exact normalization is not quoted. All explicit surface constants in this report use sigma(S^2)=4 pi. No normalization is silently imposed on the project.
+
+(I4, only for the global Debye-datum wrapper) `DebyeScalarL2.datum_actual` identifies the datum almost everywhere with the closed-ball-clipped sum x_j F_j(x), and it is zero outside that ball. The original declarations of `datum_actual` and `clipped` are required before claiming that wrapper as a repository theorem.
+
+These are source-definition, coordinate, and measure interfaces. None assumes magnetic covariance, radial vanishing, a regularity estimate, or a modal classification.
+
+### 1.3 Theorem A: actual sphere magnetic covariance and radial vanishing
+
+For every real n>1, every u in the supplied closed electric sector
+
+  electricSector = axialSector intersect ker(reflection_action - identity),
+  axialSector = intersection over theta in R of ker(rotation_action(theta) - identity),
+
+let rho = DynamicVolume.source c_n u. Subject to (I1)-(I2), there exists one Borel set D_rho, depending on rho but NOT on z or theta, with the following properties.
+
+(A1) R^3 minus D_rho has volume zero. For EVERY r>0, the set of omega in S^2 with r omega outside D_rho has area measure zero. D_rho is invariant under every R_theta and under S.
+
+(A2) For EVERY z in C, EVERY theta in R, and EVERY x in D_rho,
+
+  H_z[rho](R_theta x) = R_theta H_z[rho](x),
+  H_z[rho](S x) = - S H_z[rho](x),
+  x dot H_z[rho](x) = 0.
+
+(A3) Define H_z^sharp(x)=H_z[rho](x) on D_rho, and zero otherwise. Then H_z^sharp is the same L^2_loc field as the actual expression (1), with the covariance and radial-zero laws in (A2) valid for ALL x. It is zero at every point of the axis. Every weak pairing of the actual magnetic field against a compact smooth test is unchanged.
+
+(A4) The original, unmodified componentwise field (1) is zero at EVERY axis point, including the origin. It is smooth on |x|>1; its rotation, reflection, and radial-zero identities hold pointwise there. No assertion of all-point interior absolute convergence is made.
+
+(A5) For EVERY z in C and EVERY r>0, the original field omega -> H_z[rho](r omega) belongs to L^1(S^2,d sigma), and
+
+  omega dot H_z[rho](r omega) = 0 for sigma-almost every omega.
+
+Consequently, for every bounded measurable angular weight b,
+
+  integral_{S^2} [omega dot H_z[rho](r omega)] b(omega) d sigma = 0.       (3)
+
+Under (I3), in the packet's EXACT bilinear, unconjugated convention,
+
+  for all r>0 and all p : HarmonicPolynomial.Poly,
+    ComplexMagneticDebye.radialCoefficient n hn z u p r = 0.             (4)
+
+No homogeneity or harmonicity assumption on p is needed for (4). These are radial magnetic moments, not all magnetic vector moments. Toroidal magnetic moments can be nonzero.
+
+Neither z!=0 nor `volumeBlock c_n z 1 u = 0` is assumed in Theorem A. At z=0 the actual magnetic field is zero by its prefactor. A kernel equation becomes relevant only for subsequent homogeneous interior Maxwell reconstruction.
+
+### 1.4 Explicit constants
+
+The proof applies more generally to any L^2 source supported in the closed ball of radius a>0, satisfying the source symmetry laws derived below. For R>=0 and L=R+a, set
+
+  C_z(L) = exp(|z| L) [L + |z| L^2/2],
+  B_z(L) = exp(|z| L) [1+|z| L]/(4 pi).
+
+Then
+
+  ||H_z[rho]||_{L^2(B_R)} <= |z| C_z(R+a) ||rho||_2.                    (5)
+
+For each r>0,
+
+  integral_{S^2} |H_z[rho](r omega)|_2 d sigma
+    <= 2 sqrt(pi) |z| exp(|z|(r+a)) [1+|z|(r+a)]
+       sqrt(r+a)/r ||rho||_2.                                          (6)
+
+For the sphere source a=1,
+
+  ||rho||_2 <= sqrt(n^2-1) ||U||_2,
+  ||rho||_1 <= sqrt(4 pi/3) sqrt(n^2-1) ||U||_2.
+
+There is no material-frequency restriction beyond n>1 for this family. Bounds (5)-(6) are local and do not assert that the outgoing kernel or field is globally integrable at complex frequency.
+
+## 2. Complete numbered proof
+
+### Step 1. Measurable representatives and the actual scalar integrals
+
+Choose a Borel representative of rho, zero outside its support ball. This is permitted for a finite-dimensional Lebesgue-measurable L^2 function: replace each set in a countable sequence of measurable simple approximants by a Borel set equal to it modulo a null set, and take the almost-everywhere limit, set to zero on the remaining null set. Finite-dimensional coordinate measurability suffices.
+
+This choice DOES NOT CHANGE (1) AT ANY OBSERVATION POINT. For a fixed x and a fixed pair of indices, the old and new integrands differ only where the source representatives differ. Integral congruence almost everywhere therefore gives exactly the same scalar integral, whether or not it is integrable. The same statement holds for every nonnegative majorant introduced below. Fixed-Q source symmetry is preserved, since orthogonal transformations preserve null sets.
+
+All parameter-integral functions used below can consequently be taken Borel. For clarity, if f(x,y) is one of the scalar integrands, its absolute integral is a measurable nonnegative parameter integral by Tonelli. Its totalized complex integral is measurable as well: on the measurable set where the absolute integral is finite, it is the limit of integrals of f 1_{|f|<=N} over the finite source ball; those bounded parameter integrals are measurable. On the complement the totalized scalar integral is zero. This also justifies restriction of the actual field to an individual sphere; an arbitrary volume-a.e. representative alone would not justify such a restriction.
+
+### Step 2. Derive the source covariance from the actual electric sector
+
+The accepted `ModalAxialRotation.action_ae`, together with `matrix_vector`, says for each fixed theta,
+
+  U_{A_theta u}(y) = R_theta U_u(R_{-theta} y) for almost every y.        (7)
+
+The accepted `material_invariant` identifies the material weight at y and R_{-theta}y. Multiply (7) by the scalar square-root weight in (I1), and move this scalar through the finite coordinate sum. This proves the NEW source-action identity
+
+  rho_{A_theta u}(y) = R_theta rho_u(R_{-theta} y) for almost every y.     (8)
+
+Membership in axialSector is precisely A_theta u=u as an L^2 vector for every theta. Equality of these L^2 objects, followed by the measure-preserving substitution y=R_theta v in (8), yields
+
+  for every theta, rho(R_theta v)=R_theta rho(v) for almost every v.      (9)
+
+For reflection, the accepted `ModalMeridionalStatic.source_action` gives
+
+  rho_{A_S u}(y)=S rho_u(Sy) for almost every y.
+
+The reflection-fixed part of electricSector gives A_S u=u. Substitution by S, or multiplication by S and use of S^2=I, proves
+
+  rho(Sv)=S rho(v) for almost every v.                                  (10)
+
+The null set in (9) MAY depend on theta. No common pointwise source representative has been assumed or obtained here.
+
+By (I1), rho is L^2 and supported in the unit ball. Cauchy-Schwarz on that finite-volume ball proves rho is L^1 and gives the material-dependent bounds in Section 1.4. This verifies all analytic source assumptions, rather than postulating them for a new abstract magnetic field.
+
+### Step 3. Kernel covariance and orientation
+
+For any real orthogonal Q, |Qv|=|v|. The explicit radial formula therefore gives
+
+  g_z(Qv)=Q g_z(v) for every v, including v=0.                          (11)
+
+Real orthogonal Q is unitary for the Hermitian Euclidean norm, so |Qg|_2=|g|_2. The cross-product identity is
+
+  (Qv) cross (Qw) = det(Q) Q(v cross w).                               (12)
+
+One proof is to pair both sides with Qa using the bilinear dot product. The scalar triple product acquires det(Q), while the dot product is preserved by Q^T Q=I. Nondegeneracy gives (12) for real vectors, and complex bilinearity extends it to complex vectors. In particular det(R_theta)=1 and det(S)=-1. Reflection does not conjugate z or the source.
+
+Expanding coordinates also gives
+
+  |v cross w|_2^2 = |v|_2^2 |w|_2^2 - |sum_j v_j conjugate(w_j)|^2,
+
+so |v cross w|_2 <= |v|_2 |w|_2. This supplies the norm inequality used below.
+
+### Step 4. One absolute-convergence set for all complex frequencies
+
+Define b(v)=|v|^{-2} for v!=0 and b(0)=0. Define an EXTENDED nonnegative integral
+
+  W_rho(x) = integral b(x-y) |rho(y)|_2 dy in [0,infinity],
+  D_rho = {x : W_rho(x)<infinity}.                                     (13)
+
+This majorant does not depend on z. Nonnegative integration is used here; infinity is never silently replaced by Lean's totalized real integral zero.
+
+For |x|<=R and |y|<=a, x-y lies in B_{R+a}. Polar integration gives
+
+  integral_{B_L} b(v) dv = 4 pi L.
+
+Tonelli and translation invariance, with L=R+a, imply
+
+  integral_{B_R} W_rho(x) dx <= 4 pi (R+a) ||rho||_1 < infinity.         (14)
+
+Thus W_rho is finite almost everywhere in each integer-radius ball, and the countable union of these balls proves volume(D_rho^c)=0. Its Borel measurability follows from Step 1 and Tonelli.
+
+For 0<|v|<=L,
+
+  |g_z(v)|_2 <= exp(|z|L)/(4 pi) [|z|/|v|+1/|v|^2]
+              <= B_z(L) b(v).                                         (15)
+
+At zero both sides are zero. For a fixed x choose L=|x|+a>0. It follows that, whenever x is in D_rho, all nine scalar functions
+
+  y -> g_z,j(x-y) rho_l(y), j,l in {0,1,2},
+
+are absolutely integrable, for EVERY z. This is the promised justification of all finite sums, differences, and vector integrals in (2).
+
+### Step 5. Local L^2 bounds, with the limiting passages justified
+
+Set J_z(x)=integral |g_z(x-y)|_2 |rho(y)|_2 dy as another extended nonnegative integral. Direct radial integration of the first bound in (15) gives
+
+  integral_{B_L} |g_z(v)|_2 dv <= C_z(L).                              (16)
+
+The needed L^1*L^2 estimate can be proved without invoking an unverified regularity theorem. If k>=0 is L^1 and f>=0 is L^2, let f_N=min(f,N). For each x, Cauchy-Schwarz with measure k(v)dv gives
+
+  [integral k(v) f_N(x-v) dv]^2
+    <= ||k||_1 integral k(v) f_N(x-v)^2 dv.
+
+Integrate in x. Tonelli applies to the nonnegative right side and translation preserves the inner L^2 integral. Consequently
+
+  ||k*f_N||_2^2 <= ||k||_1^2 ||f||_2^2.
+
+Monotone convergence as N tends to infinity gives the same bound for k*f, including its almost-everywhere finiteness. This argument verifies, rather than assumes, the local convolution estimate.
+
+Apply it with f=|rho|_2 and k=1_{B_{R+a}} |g_z|_2. On B_R the convolution is J_z, because rho vanishes outside B_a. Thus
+
+  ||J_z||_{L^2(B_R)} <= C_z(R+a) ||rho||_2.
+
+On D_rho, (2) and Step 3 give |H_z|_2<=|z|J_z. Its complement is null, so the same L^2 estimate holds for the actual field (1) and for H_z^sharp. This proves (5). Replacing k by 1_{B_{R+a}}b also gives ||W_rho||_{L^2(B_R)}<=4 pi(R+a)||rho||_2.
+
+These estimates identify H_z^sharp with the SAME locally L^2 actual magnetic field. In particular, against any compactly supported smooth scalar test f, both integral H_i f and integral H_i partial_j f agree for the two representatives. The products are integrable by Cauchy-Schwarz on a containing ball. No Maxwell equation has been assumed to obtain this representative.
+
+### Step 6. Invariance of D_rho without an uncountable intersection
+
+Fix Q=R_theta or S. Equations (9)-(10) and Euclidean norm preservation give |rho(Qy)|_2=|rho(y)|_2 for almost every y. For EVERY fixed observation point x, change variables y=Qv in the extended nonnegative integral:
+
+  W_rho(Qx)
+    = integral b(Qx-y)|rho(y)|_2 dy
+    = integral b(Q(x-v))|rho(Qv)|_2 dv
+    = integral b(x-v)|rho(v)|_2 dv
+    = W_rho(x).                                                        (17)
+
+The substitution is legitimate even when the value is infinity: Q is a Borel bijection with |det Q|=1, and the integrand is nonnegative and measurable. The source null set occurs in v and can be discarded inside the integral for each x.
+
+Thus (17) has the quantifiers FOR EVERY theta, FOR EVERY x. It is not merely a separate almost-everywhere identity in x. Hence D_rho is invariant under every rotation and S, and the SAME set works for all z. No uncountable intersection of conull observation sets is taken.
+
+### Step 7. Covariance of the actual magnetic integral
+
+Let x be in D_rho. By (17), Qx is also in D_rho, so every integral and finite linear combination below is absolutely integrable. Using (11), the source law, the measure-preserving change of variables, and finally (12),
+
+  H_z[rho](Qx)
+    = -i z integral g_z(Qx-y) cross rho(y) dy
+    = -i z integral Qg_z(x-v) cross Qrho(v) dv
+    = -i z det(Q) Q integral g_z(x-v) cross rho(v) dv
+    = det(Q) Q H_z[rho](x).                                            (18)
+
+Bounded complex-linear maps commute with these integrals because their integrands are absolutely integrable. Inserting det(R_theta)=1 and det(S)=-1 proves the actual rotation and axial-reflection laws in (A2).
+
+The operator form is also valid. If rho_Q(y)=Qrho(Q^{-1}y), then W_{rho_Q}(Qx)=W_rho(x) and
+
+  H_z[rho_Q](Qx)=det(Q)QH_z[rho](x) for x in D_rho.
+
+By the source-action identity (8), this applies to the actual source of A_theta u. It supplies covariance of the magnetic source-to-field construction, not just covariance of the explicit `centerH` model.
+
+Define H_z^sharp as in (A3). D_rho and its complement are Q-invariant. Equation (18) applies on D_rho; off D_rho both sides are zero. Therefore
+
+  for all z, theta, x,
+    H_z^sharp(R_theta x)=R_theta H_z^sharp(x),
+    H_z^sharp(Sx)=-S H_z^sharp(x).                                      (19)
+
+This is the simultaneous pointwise representative needed before choosing a rotation as a function of x.
+
+### Step 8. Reflection plus rotation forces the radial scalar to vanish
+
+Put s_z(x)=x dot H_z^sharp(x). Orthogonality and (19) give
+
+  s_z(R_theta x)=s_z(x),      s_z(Sx)=-s_z(x).                          (20)
+
+For any x off the axis, let q=sqrt(x_0^2+x_1^2)>0 and choose theta with cos(theta)=x_0/q, sin(theta)=x_1/q. The standard parametrization of the real unit circle guarantees such an angle; alternatively this rotation is the explicit 2 by 2 orthogonal matrix with those entries. Then y=R_{-theta}x=(q,0,x_2) is fixed by S. Consequently
+
+  s_z(y)=s_z(Sy)=-s_z(y),
+
+so s_z(y)=0 over C, and (20) gives s_z(x)=0. On the axis Sx=x already, so the same reflection argument proves the radial scalar is zero there as well.
+
+The point-dependent angle is used only AFTER (19), whose quantifiers are all theta and all x. This is the resolution of the rotation-dependent-null-set problem; evaluating (9) at a point-dependent angle would not have been legitimate.
+
+In fact reflection at (q,0,t) forces the 0 and 2 coordinates of H_z^sharp to be zero. Thus, for q>0,
+
+  H_z^sharp(q cos(theta),q sin(theta),t)
+    = h_z(q,t) (-sin(theta),cos(theta),0),
+  h_z(q,t)=H_z^sharp(q,0,t)_1.                                         (21)
+
+On the axis rotation by pi forces the first two coordinates to vanish, and axial reflection forces the third to vanish. Hence H_z^sharp=0 there. Away from the axis H_z^sharp may be nonzero: (21) is a cylindrical azimuthal magnetic field, not a claim that H vanishes identically.
+
+Since H_z^sharp=H_z[rho] on D_rho and D_rho is conull, the original actual field has x dot H_z[rho](x)=0 almost everywhere. This completes the core radial-zero proof.
+
+### Step 9. The raw field on the axis, and review of the pending reflection proof
+
+There is a useful pointwise statement even at axis points outside D_rho. Both S=diag(1,-1,1) and R_pi=diag(-1,-1,1) are diagonal sign transformations. For Q in {S,R_pi}, write Q=diag(q_0,q_1,q_2), q_j in {-1,1}, and set
+
+  A_jl(x)=integral rho_l(y) g_z,j(x-y) dy.
+
+The same source a.e. congruence and substitution as before give, at EVERY x,
+
+  A_jl(Qx)=q_j q_l A_jl(x).                                           (22)
+
+Unlike a general rotation, this identity does not distribute an integral over any sum. Multiplication by a nonzero scalar preserves both integrability and nonintegrability; negation and a measure-preserving substitution therefore commute even with a totalized scalar integral. Thus (22) is valid without x in D_rho. Since q_next(i) q_previous(i)=det(Q)q_i, (1) implies the raw axial law H(Qx)=det(Q)QH(x) at every x for these two transformations.
+
+At an axis point x=(0,0,t), Q=R_pi fixes x and forces H_0=H_1=0. Reflection S fixes x and its axial law forces H_2=0. Hence the original expression (1) is zero at every axis point.
+
+This also reviews the mathematics of the PENDING `ComplexMagneticReflection` file: its `gradient_response_reflection` uses integral a.e. congruence, a measure-preserving substitution, and one coordinate sign at a time; `magnetic_reflection` then uses q_next q_previous=-q_i. Those steps are valid even for totalized integrals. The review does NOT certify that file's Lean compilation, imports, frozen object, or independent audit. Its formal status remains PENDING.
+
+It is unsafe to extend that proof to an arbitrary rotation without an integrability argument. For example, on (0,1), f(t)=1/t and g(t)=-1/t+1 both have totalized scalar integral zero, but f+g=1 has integral one. A rotation mixing the two coordinates therefore does not in general commute with componentwise totalized integration. This is a counterexample to the unrestricted proof rule, not a claim of a counterexample to this particular magnetic field.
+
+Nor does sector membership imply absolute convergence at every point. The source rho(y)=1_{0<|y|<1/2}|y|^(-5/4)e_2 is L^2, rotation-covariant and polar-reflection-even. Its W_rho(0)=4 pi integral_0^(1/2) t^(-5/4) dt is infinite. At z=1, |g_1(v)|_2=sqrt(1+|v|^2)/(4 pi |v|^2)>=1/(4 pi |v|^2), so J_1(0) is infinite as well; the angular factors in the nonzero coordinate products have positive absolute integral, making those scalar products nonintegrable. At the physical L^2 level, dividing by sqrt(n^2-1) on its support gives an electric-sector vector. Realizing that vector as a literal repository VectorL2 element also uses the bidirectional physical-coordinate identification. This demonstrates why an everywhere absolutely convergent interior formula cannot be assumed.
+
+The current mathlib Bochner-integral documentation explicitly defines the integral to be zero outside L^1 and requires integrability in its addition theorem. This is background verification of the issue; it is not a check of the pinned project's API or binaries. Primary reference [E1] below.
+
+### Step 10. Exterior pointwise covariance and smoothness
+
+If |x|>a, put d=|x|-a>0 and L=|x|+a. For y in the source support, d<=|x-y|<=L. Hence
+
+  W_rho(x)<=d^(-2)||rho||_1<infinity,
+  J_z(x)<=exp(|z|L)/(4 pi) [|z|/d+1/d^2] ||rho||_1.                    (23)
+
+Every exterior point belongs to D_rho, so the original field obeys all of the covariance and radial-zero identities pointwise there.
+
+Smoothness follows directly from the actual kernel, with its differentiation-under-the-integral premise verified: on any compact set K contained in {|x|>a}, the set of differences x-y, x in K, y in the support ball, is compact and stays a positive distance from zero. Every spatial derivative of g_z is bounded on that difference set. The differentiated integrands are bounded by a constant times |rho(y)|_2, an L^1 function. Dominated convergence, applied to difference quotients on a slightly larger compact exterior neighborhood, permits each derivative under the integral. Repeating for all orders gives C^infinity exterior regularity.
+
+No interior regularity theorem or limiting argument across the material interface is used.
+
+### Step 11. Every positive-radius sphere meets D_rho in full area measure
+
+Volume-a.e. zero by itself would give only an a.e.-radius result. The following additional estimate proves the stronger actual-convolution conclusion (4).
+
+Fix r>0, and for y in R^3 define the nonnegative, possibly infinite quantity
+
+  A_r(y)=integral_{S^2} b(r omega-y) d sigma(omega).
+
+Let t=|y|. By rotational invariance of area, for t>0 and t!=r,
+
+  A_r(t)=2 pi integral_{-1}^1 [r^2+t^2-2rt s]^(-1) ds
+        = (2 pi/(rt)) log((r+t)/|r-t|).                               (24)
+
+At t=0 the value is 4 pi/r^2. At t=r the integral is infinite, even though b(0)=0 at a single angular point. That exceptional sphere has three-dimensional measure zero. We treat A_r as a finite-a.e. L^2 representative when applying Cauchy-Schwarz; changing its values on that null sphere does not change an integral in y.
+
+Polar integration in y gives
+
+  ||A_r||_{L^2(B_a)}^2
+    = (16 pi^3/r^2) integral_0^a [log((r+t)/|r-t|)]^2 dt.              (25)
+
+Put L=r+a>0. For 0<=t<=a, t!=r,
+
+  0 <= log((r+t)/|r-t|) <= log(L/|r-t|).
+
+The interval for s=t-r lies in [-L,L]. Therefore
+
+  integral_0^a [log((r+t)/|r-t|)]^2 dt
+    <= 2 integral_0^L [log(L/s)]^2 ds
+    = 2L integral_0^infinity v^2 exp(-v) dv
+    = 4L.                                                             (26)
+
+The substitution s=L exp(-v) proves the middle equality. Two integrations by parts give the last integral as 2; v^2 exp(-v) and v exp(-v) have zero endpoint limits at infinity, so these integrations by parts have no omitted boundary terms. Consequently
+
+  ||A_r||_{L^2(B_a)} <= 8 pi^(3/2) sqrt(r+a)/r.                         (27)
+
+Tonelli is applicable to b(r omega-y)|rho(y)|_2 because it is nonnegative and jointly measurable. Equations (13), (27), and Cauchy-Schwarz give
+
+  integral_{S^2} W_rho(r omega) d sigma
+    = integral_{B_a} |rho(y)|_2 A_r(y) dy
+    <= 8 pi^(3/2) sqrt(r+a)/r ||rho||_2 < infinity.                     (28)
+
+This holds for EACH fixed r>0, not just almost every r. It proves sigma({omega:r omega not in D_rho})=0 for every positive radius. The exceptional angular set in (28) depends on rho and r, but not on z or on a harmonic weight.
+
+On this sphere, |g_z|<=B_z(r+a)b over the support differences, so (28) also gives
+
+  integral_{S^2} J_z(r omega) d sigma
+    <= 2 sqrt(pi) exp(|z|(r+a)) [1+|z|(r+a)]
+       sqrt(r+a)/r ||rho||_2.
+
+Since |H_z|_2<=|z|J_z on D_rho, this proves (6). All fixed-radius restrictions used here are measurable by Step 1, and all asserted magnetic surface integrals are genuine finite integrals, not zeros caused by totalization.
+
+### Step 12. Actual magnetic harmonic moments and the L^2 Debye datum
+
+Fix any r>0. Outside the angular-null set in (28), x=r omega belongs to D_rho, and Step 8 yields
+
+  0=(r omega) dot H_z[rho](r omega)=r [omega dot H_z[rho](r omega)].
+
+Divide by the nonzero real number r. The resulting angular radial component is zero almost everywhere, before any weight is selected. Multiplication by any bounded measurable weight and integration proves (3), simultaneously for all such weights at this radius.
+
+In the supplied `radialCoefficient`, the weight is exactly `SphericalMomentEquation.angularPolynomial p`; the definition has no conjugation and no normalization factor. Under (I3), the same angular-null set is null for angularMeasure, so its scalar integrand is almost everywhere zero and hence integrable with integral zero. This proves (4) for all polynomials p, all r>0, and all z. It also proves vanishing against the usual conjugated spherical-harmonic weights, if those are used for a separate normalized basis. A fixed normalization only rescales the integrals and cannot affect zero.
+
+The r=1 conclusion is an angular integral of the actual convolution evaluated on the interface sphere. It is NOT an identification with an interior or exterior trace and does not establish their equality. If a separately proved theorem supplies one-sided continuous representatives up to the interface, their radial dot products are zero by continuity from their open regions. That extra theorem is not assumed here or claimed as proved.
+
+For the project's localized L^2 magnetic response, the ACCEPTED `ComplexMagneticResponse.response_actual`, with c=c_n, source radius 1, observation radius T=1, and `coefficient_support`, identifies each coordinate with H_z[rho] almost everywhere on the closed unit ball. Finite intersection over the three coordinates preserves this equality for the bilinear radial sum. Thus its radial scalar is zero almost everywhere there.
+
+Under the exact clipping identity (I4), `DebyeScalarL2.datum 1 (ComplexMagneticDebye.coordinates n hn z u)` is therefore the ZERO L^2 element: it is zero almost everywhere inside its support and identically zero outside in the asserted representative. This derivation uses accepted `response_actual` plus the explicitly requested datum interface, rather than treating pending scalar theorems as independently accepted.
+
+Alternatively, the stated PENDING `ComplexMagneticDebye.scalar_actual`, if audited and promoted, immediately gives the restricted equality to zero on the open unit ball. Its `moment_actual` then gives
+
+  RadialMoment.moment (datum 1 coordinates) (angularPolynomial p) r = 0
+    for almost every r in (0,1).                                       (29)
+
+Do not upgrade (29) to every r for an arbitrary chosen L^2-datum representative: it could differ from zero on an entire sphere. The all-radii statement (4) is specific to the actual convolution representative and rests on (28). The usual polar null-set theorem supplies one a.e.-radius set independent of p for (29).
+
+No magnetic Helmholtz equation or regular radial mode is needed for these conclusions. The existence statement in the pending `regular_radial_coefficient` can now use amplitude c=0 without solving an ODE. To prove that an already named amplitude c in c*regular(l,z*n,r) is zero, one additionally needs nontriviality of that regular mode on a set of positive radial measure; that interface is not supplied and is not silently invoked.
+
+Steps 1-12 prove all claims in Theorem A, subject to the exact defining interfaces stated in Section 1.2.
+
+## 3. Exact additional vector-harmonic reconstruction needed for TE exclusion
+
+This section separates a weak coefficient identity that can be derived directly from Maxwell from the full reconstruction theorem still needed for the project's TE terminology. It does not declare TE classification already proved.
+
+### 3.1 Normalization and the required reconstruction statement
+
+Let J=(a,b) with 0<=a<b<=infinity, and Omega_J={x:|x| in J}. On this open spherical shell, suppose E,H are actual L^2_loc fields and
+
+  curl E = i z H,       curl H = -i z epsilon E                         (30)
+
+as distributions against every compact smooth vector test. Assume z!=0, constant epsilon!=0, and permeability normalized to 1. Take scalar spherical harmonics Y_lm orthonormal for standard area sigma, satisfying -Delta_S Y_lm=lambda_l Y_lm, lambda_l=l(l+1). For l>=1 put
+
+  R_lm=Y_lm omega,
+  Psi_lm=grad_S Y_lm/sqrt(lambda_l),
+  Phi_lm=omega cross Psi_lm.
+
+Use R_00=Y_00 omega separately. If the project instead uses a constant multiple of sigma, renormalize the Y_lm for that measure; the coefficient formulas below then retain the same form.
+
+For F=E,H, define
+
+  d^F_lm(r)=integral_{S^2} [r omega dot F(r omega)] conjugate(Y_lm) d sigma,
+  a^F_lm(r)=d^F_lm(r)/r,
+  b^F_lm(r)=integral F(r omega) dot conjugate(Psi_lm) d sigma,
+  c^F_lm(r)=integral F(r omega) dot conjugate(Phi_lm) d sigma.
+
+These coefficients are defined for almost every radius using L^2 polar slices. The conjugations in these normalized harmonic coordinates are explicit; the packet's polynomial moment definition remains the unconjugated one in (4).
+
+REQUIRED ADDITIONAL THEOREM, NOT SUPPLIED OR FORMALLY PROVED HERE:
+
+(V1) {R_00} together with {R_lm,Psi_lm,Phi_lm : l>=1, |m|<=l} is a complete orthonormal basis of L^2(S^2;C^3).
+
+(V2) For every pair satisfying (30), d^E_lm,d^H_lm belong to H^1_loc(J), the degree-zero coefficients are zero, and the pair reconstructs as
+
+  E(r omega) = sum_{l>=1,m} [
+      (d^E_lm/r) R_lm
+      + ((r d^E_lm)'/(sqrt(lambda_l) r)) Psi_lm
+      - (i z d^H_lm/sqrt(lambda_l)) Phi_lm ],                           (31)
+
+  H(r omega) = sum_{l>=1,m} [
+      (d^H_lm/r) R_lm
+      + ((r d^H_lm)'/(sqrt(lambda_l) r)) Psi_lm
+      + (i z epsilon d^E_lm/sqrt(lambda_l)) Phi_lm ].                   (32)
+
+Derivatives are weak radial derivatives. The series converge in angular L^2 for almost every r and in L^2 on every compact subannulus. This statement includes the absence of an invisible tangential remainder: that is why completeness cannot be replaced by merely naming some scalar coefficients.
+
+The radial, surface-gradient, and surface-curl vector harmonics and their completeness are classical; a primary reference is Barrera, Estevez and Giraldo (1985), Section 3 [E2]. The exact weak-field theorem (V1)-(V2), with the stated normalization, topology, and project-field identification, remains a Lean obligation. Theorem A does not depend on it.
+
+### 3.2 Weak radial-curl identity proved here
+
+The coefficient relation relevant to TE exclusion can be justified directly without assuming differentiable E or H. Fix l>=1 and a smooth radial eta compactly supported in J. The vector test
+
+  V(x)=eta(r) conjugate(Y_lm(omega)) omega, r=|x|, omega=x/r,
+
+is smooth with compact support away from r=0 and from the shell's endpoints. Direct differentiation of this smooth test gives
+
+  curl V = -eta(r) sqrt(lambda_l)/r conjugate(Phi_lm(omega)).           (33)
+
+The radial derivative of eta contributes zero because its gradient is parallel to omega. The remaining angular gradient gives (33), with the displayed minus sign from grad_S Y cross omega = -omega cross grad_S Y.
+
+By the definition of distributional curl, integral E dot curl V = integral (i z H) dot V. All these integrals are absolutely convergent: the tests and their derivatives are bounded on a compact shell, and E,H are L^2 there. Polar Fubini is consequently valid. Substituting (33) yields
+
+  -sqrt(lambda_l) integral_J eta(r) r c^E_lm(r) dr
+    = i z integral_J eta(r) r^2 a^H_lm(r) dr.                          (34)
+
+The coefficient functions are L^2 on every compact radial interval by Cauchy-Schwarz on the sphere and polar disintegration; on such intervals r is bounded above and below. Thus the difference of the two sides' densities is L^1_loc. The fundamental lemma for distributions represented by locally integrable functions gives
+
+  c^E_lm(r) = -i z d^H_lm(r)/sqrt(lambda_l) for almost every r.         (35)
+
+For completeness, that fundamental lemma does not assume hidden regularity: convolving a locally integrable density which annihilates every compact smooth test with a compact mollifier gives zero on each smaller interval; the usual local L^1 convergence of mollification then gives zero almost everywhere. It applies separately to real and imaginary parts.
+
+The same test in the second Maxwell equation gives
+
+  c^H_lm(r) = i z epsilon d^E_lm(r)/sqrt(lambda_l).                     (36)
+
+The signs agree with curl(c Phi)'s radial coefficient -sqrt(lambda_l)c/r. Taking divergence in (30) gives div E=div H=0 under z!=0 and epsilon!=0; weak scalar-gradient tests justify div curl=0. The radial/poloidal divergence identity is
+
+  (r^2 a^F_lm)'=sqrt(lambda_l) r b^F_lm.                              (37)
+
+To check (37), use the compact scalar test eta(r) conjugate(Y_lm). Its gradient is eta'(r) conjugate(Y_lm) omega + eta(r) sqrt(lambda_l)/r conjugate(Psi_lm). Distributional divergence and absolutely convergent polar integration give integral r^2 a^F_lm eta' + sqrt(lambda_l) integral r b^F_lm eta = 0, which is precisely (37). The right side of (37) is L^2 on each compact radial interval, so r^2 a^F_lm, and therefore d^F_lm=r a^F_lm, belong to H^1_loc. This identifies the poloidal coefficients in (31)-(32). A complete formal proof must implement these compact-test steps and establish (V1) separately for reconstruction. For l=0 the radial vector test has zero curl; (30) and the nonzero constants force both a^E_00 and a^H_00 to vanish. No Psi_00 or Phi_00 is defined or divided by.
+
+Equation (35), proved in (33)-(34), plus Theorem A implies every toroidal electric coefficient is zero on each spherical annulus where E,H are L^2_loc and the first Maxwell equation holds distributionally. This forward implication itself needs neither epsilon!=0 nor z!=0. The stronger two-field reconstruction and nonstatic interpretation require the assumptions of (V1)-(V2).
+
+After the reconstruction theorem is established, (31)-(32) with d^H=0 show that the electric field has only radial/poloidal terms and the magnetic field only toroidal terms. This is the precise TE-exclusion consequence in this convention. It does not say the magnetic field is zero or select a single harmonic degree.
+
+### 3.3 Applying that future theorem to the actual sphere pair
+
+In the sphere interior use epsilon=n^2, retaining z in the first-order curl equations. The necessary homogeneous-Maxwell bridge requires
+
+  ComplexConvolutionAnalytic.volumeBlock c_n z 1 u = 0,
+
+and an observation radius T>=1 for the supplied actual electric response. The pending `ComplexSphereMaxwell.interior_maxwell` also depends on the omitted `ComplexSphereInterface.source_actual`, which identifies rho=(n^2-1)E there. Neither this identification nor that pending file is a premise of Theorem A.
+
+Outside the sphere use epsilon=1 and tests inside the supplied observation region, for example 1<|x|<T. The accepted `ComplexMagneticMaxwell.actual_maxwell` has the exact weak source-inclusive equations; the source vanishes outside the ball, producing the exterior homogeneous equation. The pending exterior wrapper still needs its independent formal audit.
+
+Interface matching, equality with one-sided traces, interior regular-mode classification, outgoing radial selection, nonzero amplitude uniqueness, selected-sector dimension, and rank-one residues are separate obligations. This packet proves the source symmetry and magnetic scalar/moment vanishing needed before them; it does not count them as completed.
+
+## 4. Source map and formal status
+
+“Accepted” below means the attached packet reports stage-65 incremental acceptance. I did not obtain its frozen repository, audit logs, or dependency objects and did not reverify those acceptance claims. “Pending” remains pending even where the displayed argument is mathematically sound.
+
+| Exact supplied source / declaration | Packet status | Use and limit in this report |
+| --- | --- | --- |
+| ComplexMagneticLocal.lean: magnetic; gradient_measurable; gradient_bound_ball; gradient_integrable_ball; gradient_locallyIntegrable; magnetic_memLp_ball; magnetic_locallyIntegrable | Accepted | Actual field definition and kernel estimates. The proof above also derives explicit vector bounds. The accepted L^2 theorem requires coordinatewise L^1, support, and an actual physical L^2 source representative; those hypotheses must not be dropped. |
+| ComplexMagneticResponse.lean: response_actual | Accepted | Localized L^2 magnetic response equals the actual field a.e. on closedBall 0 T, under the source-support hypothesis. Used for the scalar-datum bridge. |
+| ComplexMagneticMaxwell.lean: actual_maxwell | Accepted | Both actual weak curl pairings with the true source. Exact hypotheses: coefficient support in closedBall 0 S, 0<=T+S, and test support in closedBall 0 T. Arbitrary complex z. Relevant to the later weak coefficient identity, not required by Theorem A. |
+| ModalAxialRotation.lean: rotation; spatial_norm; spatial_inverse; action_ae; matrix_vector; material_invariant; axialSector | Accepted | Establishes the real rotations, their actual L^2 actions, material invariance, and the all-angle fixed-point sector. |
+| ModalAxialRotation.magnetic_covariant | Accepted | Only concerns explicit centerH. It is NOT the requested covariance of the actual magnetic convolution and is not substituted for it. |
+| ModalAxialVolume.lean: complex_comm; axial_invariant | Accepted | Volume-block sector preservation; not a magnetic-field covariance theorem and not needed for the main proof. |
+| ModalMeridionalReflection.lean: reflection; reflection_coordinate; sign_sq; action_ae; sphere_symmetric; electricSector; electricSector_closed | Accepted | The polar reflection action, radial material symmetry, and exact closed electric sector. |
+| ModalMeridionalStatic.lean: source_action | Accepted | Reflected-source a.e. identity, with n>1, arbitrary u, and each coordinate. This is the only static/parity theorem directly needed for source reflection. |
+| ModalMeridionalVolume.lean: electricSector_invariant | Accepted | Optional context about volume-block invariance; not needed for Theorem A. |
+| ComplexGreenKernel.lean: radialD; phi; phiGradient | Supporting source; individual acceptance not certified | Explicit outgoing formulas inspected and used directly. Their analytic formulas are checked mathematically here; no formal acceptance promotion is implied. |
+| ComplexSphereMaxwell.lean: magnetic | Pending | Merely an alias of the accepted raw magnetic source convolution. The main proof can avoid importing this pending file. |
+| ComplexSphereMaxwell.interior_maxwell; exterior_maxwell | Pending | Conditional homogeneous regional Maxwell bridges, with the kernel hypothesis in the interior and observation/support hypotheses as displayed. Not premises for symmetry. |
+| ComplexMagneticHelmholtz.lean: magnetic_lapPair; magnetic_weak_helmholtz; interior; exterior | Pending | Not used. The displayed reasoning is conditional on the regional Maxwell and test-integrability interfaces; it does not independently close them. |
+| ComplexMagneticDivergence.lean: magnetic_divergence; interior; exterior | Pending | Not used. The displayed div-curl consequence is appropriate under nonzero frequency and its Maxwell premise, whose formal status is unchanged. |
+| ComplexMagneticDebye.lean: coordinates; coordinates_ae; scalar_actual; radialCoefficient; moment_actual; regular_radial_coefficient | Pending | Target definitions and candidate wrappers. The actual all-radius moment proof is independent of pending regular-mode/Helmholtz results. The L^2-datum radial bridge remains a.e. in r. |
+| ComplexMagneticReflection.lean: gradient_reflection; gradient_response_reflection; magnetic_reflection; sector_magnetic_axial; radialDot_odd | Pending | Mathematically reviewed in Step 9. The diagonal sign argument is valid; this is not an independent Lean audit. Reflection oddness alone does not establish off-plane radial zero. |
+| STAGE65.md | Supporting checkpoint description | Establishes the stated handoff boundary only. No aggregate build or full OQ14 closure is inferred from its counts. |
+
+For Theorem A and its datum wrapper, the missing defining interfaces are (I1)-(I4). Section 3 separately requires the actual electric L^2-response identification, the source-to-electric interior identity, and vector-harmonic reconstruction. Standard supporting infrastructure still to be formalized or located includes: Borel representatives; nonnegative Tonelli; orthogonal change of variables; finite-dimensional norm and integral rules; the elementary spherical integral (24); and compact-shell polar disintegration. The report proves their task-specific applications and constants rather than assuming an unproved electromagnetic regularity estimate.
+
+### External primary references
+
+[E1] Lean community, Mathlib.MeasureTheory.Integral.Bochner.Basic, current official documentation, inspected 2026-11-01: https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner/Basic.html . Used only to confirm the totalized-integral convention and the need for integrability in addition. The pinned commit was not compiled or locally inspected. Attempting to retrieve its raw Basic.lean through the web tool did not succeed.
+
+[E2] R. G. Barrera, G. A. Estevez and J. Giraldo, “Vector spherical harmonics and their application to magnetostatics,” European Journal of Physics 6 (1985), 287-294, DOI: https://doi.org/10.1088/0143-0807/6/4/014 . Author-hosted primary paper inspected: https://www.fisica.unam.mx/personales/rbarrera/pdf/pub/int/29-EuroJP-6-287-85.pdf . Section 3 is background for the additional vector-basis obligation; it is not treated as an accepted local Lean theorem.
+
+## 5. Minimal ordered Lean module and lemma plan
+
+All names prefixed `Packet02` below are PROPOSED, not claims about existing declarations. The principal proof should import accepted `ComplexMagneticLocal`, `ModalAxialRotation`, and `ModalMeridionalStatic`, and avoid importing the pending regional magnetic modules. Give it an alias of the exact actual expression (1); a later wrapper can use the definitionally equal `ComplexSphereMaxwell.magnetic`.
+
+| Order | Proposed module | Minimal content and dependency |
+| --- | --- | --- |
+| 1 | ComplexMagneticSourceSymmetry | Source formula/physical L^2 bridges; source_axial_action; sector_source_axial; sector_source_reflection. Uses accepted action and material lemmas, plus the explicit defining interfaces. |
+| 2 | ComplexMagneticCovarianceGeometry | Euclidean complex norm; gradient_axial; cross rotation/reflection; dot invariance; signed diagonal transformations; existence of an angle moving a point into the meridional plane. Depends only on geometry and the visible kernel. |
+| 3 | ComplexMagneticAbsoluteConvergence | Borel representative invariance of each raw scalar integral; W and Good; W local integrability; good_full; good_rotation; good_reflection; scalar-product integrability on Good; local magnetic L^2 bounds. Uses Steps 1, 4-6. |
+| 4 | ComplexMagneticAxialCovariance | Actual covariance on Good; sharp representative a.e. equality; simultaneous all-angle covariance; radial zero; signed-diagonal raw reflection and raw axis zero; exterior pointwise corollaries. Uses modules 1-3. |
+| 5 | ComplexMagneticSphereMoments | A_r logarithmic formula and L^2 bound; Good full on each sphere; raw spherical L^1; radialCoefficient_eq_zero; optional Debye datum wrappers. Uses modules 3-4 and the exact angular/datum interfaces. |
+| Later, separate | WeakVectorHarmonicReconstruction | Weak radial curl projection (35)-(36), divergence projection (37), vector-basis completeness and reconstruction (31)-(32), including degree zero. This is not a premise of modules 1-5. |
+
+For a smaller first integration, module 5's volume-a.e./a.e.-radius corollary can be proved before its stronger every-sphere estimate. Do not silently relabel the weaker corollary as the all-radius theorem.
+
+### 5.1 Proposed definitions and theorem statements — UNCOMPILED SPECIFICATIONS
+
+The following code blocks are specifications for the coding agent. The theorem statements have no submitted proof bodies and are NOT source declarations to import. They introduce no new axiom or proof placeholder. The separate complete candidate file contains only elementary algebra proof scripts.
+
+```lean
+-- UNCOMPILED proposed definitions; resolve the quoted project imports first.
+namespace OQ14.Packet02
+open Complex MeasureTheory Metric Set OQ14.Maxwell
+
+abbrev VectorL2 := VectorFourier.VectorL2
+
+def source (n : ℝ) (hn : 1 < n) (u : VectorL2) : Fin 3 → Space → ℂ :=
+  DynamicVolume.source (ModalWeightedMode.coefficient n hn) u
+
+def actual (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2) : Field :=
+  ComplexMagneticLocal.magnetic z (source n hn u)
+
+def euclideanAbs (v : Fin 3 → ℂ) : ℝ :=
+  Real.sqrt (∑ j : Fin 3, ‖v j‖ ^ 2)
+
+def potential (ρ : Fin 3 → Space → ℂ) (x : Space) : ℝ≥0∞ :=
+  ∫⁻ y, ENNReal.ofReal
+    (((‖x-y‖⁻¹)^2) * euclideanAbs (fun j => ρ j y))
+
+def Good (ρ : Fin 3 → Space → ℂ) (x : Space) : Prop :=
+  potential ρ x < ⊤
+
+def sharp (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2) : Field :=
+  fun x i => if Good (source n hn u) x then actual n hn z u x i else 0
+
+end OQ14.Packet02
+```
+
+Critical implementation point: `potential` is a LINTEGRAL valued in ENNReal. Defining it using the totalized real-valued integral would invalidate the Good predicate, since a divergent nonnegative integral could then become zero.
+
+```lean
+-- UNCOMPILED theorem-statement specifications, in the above namespace.
+
+theorem source_axial_action
+    (n : ℝ) (hn : 1 < n) (θ : ℝ) (u : VectorL2) (i : Fin 3) :
+    (fun y => source n hn (ModalAxialRotation.action θ u) i y) =ᵐ[volume]
+      (fun y => ∑ j : Fin 3, ModalAxialRotation.matrix θ i j *
+        source n hn u j (ModalAxialRotation.rotation (-θ) y))
+
+theorem sector_source_axial
+    (n : ℝ) (hn : 1 < n) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector) (θ : ℝ) :
+    ∀ᵐ y ∂(volume : Measure Space), ∀ i : Fin 3,
+      source n hn u i (ModalAxialRotation.rotation θ y) =
+        ModalAxialRotation.vector θ (fun j => source n hn u j y) i
+
+theorem gradient_axial (z : ℂ) (θ : ℝ) (x : Space) :
+    (fun j => ComplexGreenKernel.phiGradient z
+      (ModalAxialRotation.rotation θ x) j) =
+    ModalAxialRotation.vector θ
+      (fun j => ComplexGreenKernel.phiGradient z x j)
+
+theorem good_full
+    (ρ : Fin 3 → Space → ℂ)
+    (hρ : ∀ j, MemLp (ρ j) 2 volume)
+    (a : ℝ) (ha : 0 < a)
+    (hs : ∀ j, ∀ᵐ y ∂(volume : Measure Space),
+      y ∉ closedBall 0 a → ρ j y = 0) :
+    ∀ᵐ x ∂(volume : Measure Space), Good ρ x
+
+theorem integrable_entries_of_good
+    (ρ : Fin 3 → Space → ℂ)
+    (hρ : ∀ j, MemLp (ρ j) 2 volume)
+    (a : ℝ) (ha : 0 < a)
+    (hs : ∀ j, ∀ᵐ y ∂(volume : Measure Space),
+      y ∉ closedBall 0 a → ρ j y = 0)
+    (x : Space) (hx : Good ρ x) (z : ℂ) (j l : Fin 3) :
+    Integrable (fun y => ρ l y * ComplexGreenKernel.phiGradient z (x-y) j)
+
+theorem good_rotation
+    (n : ℝ) (hn : 1 < n) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (θ : ℝ) (x : Space) :
+    Good (source n hn u) (ModalAxialRotation.rotation θ x) ↔
+      Good (source n hn u) x
+
+theorem magnetic_rotation_on_good
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (θ : ℝ) (x : Space) (hx : Good (source n hn u) x) :
+    actual n hn z u (ModalAxialRotation.rotation θ x) =
+      ModalAxialRotation.vector θ (actual n hn z u x)
+
+theorem sharp_actual_ae
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2) :
+    sharp n hn z u =ᵐ[volume] actual n hn z u
+
+theorem sharp_axial
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (θ : ℝ) (x : Space) :
+    sharp n hn z u (ModalAxialRotation.rotation θ x) =
+      ModalAxialRotation.vector θ (sharp n hn z u x)
+
+theorem sharp_reflection
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (x : Space) (i : Fin 3) :
+    sharp n hn z u (ModalMeridionalReflection.reflection x) i =
+      -(ModalMeridionalReflection.sign i : ℂ) * sharp n hn z u x i
+
+theorem sharp_radial_zero
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector) (x : Space) :
+    (∑ j : Fin 3, (x j : ℂ) * sharp n hn z u x j) = 0
+
+theorem actual_radial_zero_ae
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector) :
+    ∀ᵐ x ∂(volume : Measure Space),
+      (∑ j : Fin 3, (x j : ℂ) * actual n hn z u x j) = 0
+
+theorem actual_axis_zero
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (x : Space) (hx0 : x 0 = 0) (hx1 : x 1 = 0) :
+    actual n hn z u x = 0
+```
+
+The exact every-sphere lemma should state, with the same `Sphere` and `angularMeasure` as the quoted Debye definition and after proving (I3),
+
+  for all r>0, for angularMeasure-almost every omega,
+    Good (source n hn u) (r • (omega : Space)).
+
+This statement's concrete surface-measure API must be chosen only after inspecting the omitted measure declarations. Its full mathematical proof and constants are Step 11, so the analytic content is not being deferred as an assumed gap theorem.
+
+The target wrappers, once the pending-definition imports and (I3)-(I4) are audited, are:
+
+```lean
+-- UNCOMPILED statement specifications; no hker or hz hypothesis is needed.
+
+theorem radialCoefficient_eq_zero
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector)
+    (p : HarmonicPolynomial.Poly) (r : ℝ) (hr : 0 < r) :
+    ComplexMagneticDebye.radialCoefficient n hn z u p r = 0
+
+-- Requires the exact omitted datum/clipping interface (I4).
+theorem magnetic_datum_eq_zero
+    (n : ℝ) (hn : 1 < n) (z : ℂ) (u : VectorL2)
+    (hu : u ∈ ModalMeridionalReflection.electricSector) :
+    DebyeScalarL2.datum 1 (ComplexMagneticDebye.coordinates n hn z u) = 0
+```
+
+### 5.2 Complete candidate source delivered
+
+`Packet02SymmetryAlgebra.lean` is a COMPLETE, standalone candidate importing Mathlib. It contains finite-coordinate proof scripts for cross-product rotation and reflection, dot-product invariance and oddness, inverse rotations, meridional radial zero, and the axis stabilizer argument. It is deliberately independent of the project imports.
+
+Its status is UNCOMPILED. It does not implement source covariance, the nonnegative-convolution analysis, the good-set construction, harmonic moments, or Maxwell reconstruction. Those obligations are proved mathematically and specified above. No source excerpt or frozen file supplied in the packet was modified.
+
+The file's candidate declarations are:
+
+- Packet02SymmetryAlgebra.axialReflect_eq_neg_reflect
+- Packet02SymmetryAlgebra.cross_rotate
+- Packet02SymmetryAlgebra.bilinearDot_rotate
+- Packet02SymmetryAlgebra.complex_trig_relation
+- Packet02SymmetryAlgebra.cross_rotate_angle
+- Packet02SymmetryAlgebra.rotate_inverse
+- Packet02SymmetryAlgebra.cross_reflect
+- Packet02SymmetryAlgebra.bilinearDot_reflect_axial
+- Packet02SymmetryAlgebra.meridional_radial_zero
+- Packet02SymmetryAlgebra.axis_vector_zero
+
+## 6. Verification actually performed
+
+No Lean implementation in this return is labeled verified.
+
+| Actual command / check | Exit result | Meaning |
+| --- | --- | --- |
+| lean --version | 127: lean: command not found | No Lean executable available through the session PATH. |
+| lake --version | 127: lake: command not found | No Lake executable available through the session PATH. |
+| rg --files --hidden -g 'lean-toolchain' -g 'lakefile.lean' -g 'lakefile.toml' -g 'lake-manifest.json' -g '*.olean' . | 1, no matches | No pinned Lean project or compiled objects found in this workspace. This is not a claim to have searched every filesystem location. |
+| rg -n '\b(sorry|admit)\b|^\s*(axiom|constant)\b' Packet02SymmetryAlgebra.lean | 1, no matches | Text scan found no proof holes or new axiom/constant declarations. This is not an elaboration check or axiom audit. |
+| sha256sum upload/02_magnetic_symmetry.txt Packet02SymmetryAlgebra.lean | 0 | Recorded hashes below. |
+| Independent mathematical reviews of the source/representative proof and harmonic/surface estimate | Completed | Mathematical cross-checks, not Lean kernel verification. |
+
+Input packet SHA-256:
+  63a0d2d7c7e056e68ba6a37f5a58bbc91e775a05170f01cc7720a4446ecd1f55
+
+Candidate Lean file SHA-256:
+  39b49dab3f0d812092935ff51a83ca46928a585521ec0f64f56a6677e7397d85
+
+No `lake env lean` command was run successfully; no `.olean` was generated. The candidate's `#print axioms` commands were not executed. Therefore there is NO computed axiom list to report, and no claim that the file has only the standard axioms. The pinned Lean/mathlib versions are requested targets, not verified environment versions.
+
+The next formal audit must compile the candidate and each implemented analytic module in the pinned repository and run `#print axioms` for the final covariance, radial-zero, and moment theorems. Exact commands depend on that repository's actual Lake layout. Compilation of the algebra file alone would still not verify the convolution proof or complete this packet's formal integration.
+
+## 7. Remaining gaps and exact required context
+
+### 7.1 Mathematical result obtained
+
+All new task-specific mathematical obligations for actual convolution covariance, a valid simultaneous representative, zero magnetic radial scalar, raw axis behavior, exterior pointwise behavior, and all-positive-radius actual radial harmonic moments have been proved in this report, subject to (I1)-(I3). The optional global L^2 Debye-datum statement additionally uses (I4).
+
+The proof neither assumes its magnetic conclusion nor assumes interior smoothness, a uniform regularity estimate, or TE classification. It resolves the angle-dependent null sets through the invariant NONNEGATIVE source majorant. It gives all-radius moments through the separate surface-integrability estimate, preserving the weaker quantifier for arbitrary L^2-datum representatives.
+
+### 7.2 Defining context still required for literal repository instantiation
+
+Request the following specific declarations, rather than an unspecified full dependency tree:
+
+1. `DynamicVolume.lean`: definition of `source`, and `source_integrable` / `source_zero` if the coding agent chooses the accepted local-L^2 theorem route.
+2. `ModalWeightedMode.lean`: `coefficient`, `coefficient_value`, and `coefficient_support`, confirming the exact unit-ball material convention and square-root weight.
+3. Physical-coordinate interfaces: `VectorFourier.coordinateMap_preserving` and the relevant `VectorL2`/physical-coordinate definition or `StaticNewton.material_source_ae` with its dependencies. The minimum required fact is coordinatewise L^2 of the actual physical source, not a new magnetic regularity assumption.
+4. `KernelConvolution.lean`: exact definition of `response`; and the declarations of `WeakCurl.next` / `previous` confirming the cyclic orientation.
+5. The declarations resolving `Sphere` and `angularMeasure` in `ComplexMagneticDebye` (from its AngularPower/ExteriorGreen imports), together with the relation to ordinary area or an equivalent polar formula. For moment zero it suffices to prove angularMeasure is absolutely continuous with respect to area; exact normalization is needed only for numerical surface bounds and normalized basis conventions.
+6. Only for the global datum wrapper: `DebyeScalarL2.datum_actual` and `clipped`, including support behavior. For the representative-based radial moments also inspect `RadialMoment.moment`, `SphericalMomentEquation.angularPolynomial`, and the exact polar-a.e. bridge used by the pending wrapper.
+
+These omitted definitions are the remaining source-context boundary. The supplied accepted proofs strongly indicate the expected interfaces, but they are not substitutes for inspecting those declarations before producing an unconditional compiled repository theorem.
+
+### 7.3 Formal and later mathematical obligations left open
+
+- Implement and compile the analytic lemmas in Section 5 with the pinned toolchain, and independently audit their axiom outputs. No such verification is claimed here.
+- Independently audit the pending reflection, regional Maxwell, Helmholtz, divergence, and Debye files before promoting them. The core new symmetry module need not depend on their pending theorems.
+- Establish the exact vector-harmonic completeness and weak reconstruction theorem (V1)-(V2), and bridge the actual sphere fields to its homogeneous Maxwell hypotheses. The weak radial-curl identity (35) is proved here, but completeness and the full reconstruction are not.
+- Keep one-sided interface values and trace matching separate. The ordinary convolution surface moment at r=1 does not close the interface/hotspot problem.
+- No all-degree channel classification, simple residue, rank-one theorem, or new clean aggregate OQ14 build follows from this return.
+
+END OF RETURN REPORT.

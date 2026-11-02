@@ -1,0 +1,56 @@
+{
+  "review_date": "2026-11-01",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "audit_changes": "One provenance comment and narrowed imports only; original proof bodies unchanged.",
+  "proof_body_equality_checked": true,
+  "checks": [
+    {
+      "source": "candidates/Packet03EnergyAlgebra.lean",
+      "source_sha256": "986aa6537b2790c14dd1ae517b89822a2e07322effb255b09776a9468e86cac3",
+      "command": [
+        "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe",
+        "env",
+        "lean",
+        "../handoffs/pro-results/packet03-2026-11-01/candidates/Packet03EnergyAlgebra.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 1,
+      "log": "Packet03EnergyAlgebra-check.log",
+      "log_sha256": "310d8c319e8b385a3edf3ea40ee84ed49879cb02b8f96a8462f7694a80868173",
+      "exit_record": "Packet03EnergyAlgebra-exit.txt"
+    },
+    {
+      "source": "candidates/Packet03EnergyAlgebraAudit.lean",
+      "source_sha256": "91d5aae91c15a33086118d558ab9cfc551ac69bd8d731b8e2c20e44e6db1bf90",
+      "command": [
+        "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe",
+        "env",
+        "lean",
+        "../handoffs/pro-results/packet03-2026-11-01/candidates/Packet03EnergyAlgebraAudit.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "log": "Packet03EnergyAlgebraAudit-check.log",
+      "log_sha256": "eb331e691d908e400723155eca3ae98c51a82cb7f0f3843e4f68f0e70a1a74e2",
+      "exit_record": "Packet03EnergyAlgebraAudit-exit.txt"
+    },
+    {
+      "source": "candidates/Packet03Targets.lean",
+      "source_sha256": "52417bf0a5a8e08e77a3844a9f441ddb6a032ab386d349c42ab249117e213019",
+      "command": [
+        "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe",
+        "env",
+        "lean",
+        "../handoffs/pro-results/packet03-2026-11-01/candidates/Packet03Targets.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "log": "Packet03Targets-check.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_record": "Packet03Targets-exit.txt"
+    }
+  ],
+  "accepted_maxwell_theorems_added": 0,
+  "scope": "Review-only candidate checks; no object output requested, no project sources edited, no full build."
+}

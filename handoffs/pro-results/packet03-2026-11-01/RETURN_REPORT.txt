@@ -1,0 +1,871 @@
+# Packet 03 — Uniform differentiated-curl estimate across a flat dielectric interface
+
+Packet: OQ14 Stage 65, 03_flat_interface_estimate.txt.
+Checkpoint supplied by the packet: aeed697d5224424878d99840d33b67abde175947.
+Requested toolchain: Lean 4.19.0; mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b.
+
+STATUS: COMPLETE MATHEMATICAL PROOF UNDER THE ASSUMPTIONS BELOW.
+NEW LEAN VERIFICATION: NONE. ALL ATTACHED LEAN MATERIAL IS UNCOMPILED.
+
+The requested estimate holds. In fact, a second application of the same local energy argument gives a stronger bound involving only the local L2 norm of H. The proof derives the quantitative H1 input rather than assuming it, retains every cutoff term, and absorbs the highest-derivative term. It uses no pending forcing module.
+
+## 1. Exact theorems and quantifiers
+
+### 1.1 Conventions and hypotheses
+
+All integrals use Lebesgue measure. For a complex vector field F,
+\[
+ \|F\|_A^2=\int_A |F(x)|^2\,dx
+ =\sum_{j=1}^3\int_A |F_j(x)|^2\,dx.
+\]
+The pointwise vector norm is the Euclidean Hermitian norm; dot products appearing with an explicit conjugate are complex bilinear before that conjugation.
+
+Let Omega, U, V be open subsets of R3, with U nonempty and
+\[
+ \overline U\ \text{compact},\quad \overline U\subset V,\qquad
+ \overline V\ \text{compact},\quad \overline V\subset\Omega.
+\]
+No connectedness or boundary smoothness is assumed. The empty-U case is trivial.
+
+Fix d >= 0, set M=1+d, and define
+\[
+ \epsilon(x)=
+ \begin{cases}1,&x_3<0,\\ M,&x_3\ge0,\end{cases}
+ \qquad a=\epsilon^{-1}.
+\]
+Thus M >= 1 and M^{-1} <= a <= 1.
+
+Assume E,H belong to H(curl;Omega), meaning their actual distributional curls on ALL of Omega are in L2, and assume
+\[
+ \operatorname{curl}E=ikH,\qquad
+ \operatorname{curl}H=-ik\epsilon E
+ \tag{M}
+\]
+as these actual weak curls. Tests may cross the interface. Separate equations on the two open half-regions, without the regional weak equations or appropriate transmission conditions, are not this hypothesis.
+
+Set
+\[
+ K=\overline U,\quad
+ R=\operatorname{dist}(K,\mathbb R^3\setminus V)>0,\quad
+ L=4/R,\quad h_0=R/8.
+ \tag{G}
+\]
+For physical tangential coordinates i=1,2 and real h != 0, use
+\[
+ \delta_{h,i}F(x)=\frac{F(x+he_i)-F(x)}h.
+\]
+These are Lean indices 0 and 1; the normal coordinate is 2 : Fin 3.
+
+### 1.2 Real-frequency theorem
+
+For EVERY choice of sets and d above, EVERY real k>0, and EVERY pair of actual fields satisfying (M), define
+\[
+ B=\sqrt{2k^2+4L^2}=\sqrt{2k^2+64/R^2}.
+\]
+Then, for BOTH tangential directions,
+\[
+ \boxed{
+ \sup_{0<|h|<h_0}\|\delta_{h,i}\operatorname{curl}H\|_U
+ \le \sqrt M\,B\bigl(kM\|E\|_V+L\|H\|_V\bigr).
+ }\tag{T1}
+\]
+A stronger estimate is
+\[
+ \boxed{
+ \sup_{0<|h|<h_0}\|\delta_{h,i}\operatorname{curl}H\|_U
+ \le C_H\|H\|_V,\qquad
+ C_H=MB^2+\sqrt M\,BL.
+ }\tag{T2}
+\]
+Consequently the requested bound with C(||E||_V+||H||_V) holds with C=C_H. Alternatively, (T1) gives
+\[
+ C_{\rm mixed}=\sqrt M\,B\max\{kM,L\}.
+\]
+All constants are independent of the fields, h, and the tangential direction. Only M, k, and the displayed separation R enter. No controlling patch larger than V is needed.
+
+### 1.3 Complex-frequency theorem
+
+For EVERY k in C minus {0}, assume (M) with that same complex k and the same positive real epsilon. Put
+\[
+ \lambda(k)=\max\{\operatorname{Re}(k^2),0\},\qquad
+ B(k)=\sqrt{2\lambda(k)+64/R^2}.
+\]
+Then
+\[
+ \boxed{
+ \sup_{0<|h|<h_0}\|\delta_{h,i}\operatorname{curl}H\|_U
+ \le \sqrt M\,B(k)\bigl(|k|M\|E\|_V+L\|H\|_V\bigr),
+ }\tag{T3}
+\]
+and
+\[
+ \boxed{
+ \sup_{0<|h|<h_0}\|\delta_{h,i}\operatorname{curl}H\|_U
+ \le \bigl(MB(k)^2+\sqrt M\,B(k)L\bigr)\|H\|_V.
+ }\tag{T4}
+\]
+No sign condition on Re k, Im k, or Re(k^2) is needed. Section 3 gives the exact complex calculation and uniform family statement.
+
+These are local results. They do not use or alter an outgoing condition, normalization, or the convention for one-sided interface values. Changing epsilon on the plane itself has no effect on the L2 assertions.
+
+## 2. Complete numbered proof for real k>0
+
+### Step 1. Construct cutoffs with the stated numerical constants
+
+Let s(x)=dist(x,K), a 1-Lipschitz function. Define f_eta to be 1 for s<=R/8, linear from 1 to 0 on [R/8,3R/8], and 0 for s>=3R/8. Define f_zeta to be 1 for s<=5R/8, linear from 1 to 0 on [5R/8,7R/8], and 0 for s>=7R/8.
+
+Both functions are compactly supported and have Lipschitz constant at most L=4/R. Convolve each with a nonnegative C-infinity mollifier of integral 1 supported in the ball of radius R/16. Call the results eta and zeta. They are real, smooth, compactly supported, and satisfy
+\[
+ 0\le\eta,\zeta\le1,\qquad
+ \|\nabla\eta\|_\infty,\|\nabla\zeta\|_\infty\le L,
+\]
+\[
+ \eta=1\ \text{when }s\le R/16,\qquad
+ \operatorname{supp}\eta\subset\{s\le7R/16\},
+\]
+\[
+ \zeta=1\ \text{when }s\le9R/16,\qquad
+ \operatorname{supp}\zeta\subset\{s\le15R/16\}\Subset V.
+ \tag{1}
+\]
+Convolution preserves the Lipschitz bound because it is an average of translates; for the smooth result that bound controls the Euclidean gradient.
+
+Write S=supp eta. If |h|<R/8, x is in S, and 0<=t<=1, then
+\[
+ s(x+the_i)\le s(x)+|h|<9R/16.
+ \tag{2}
+\]
+Thus eta=1 on U, zeta=1 on all required translated segments from S, and those segments lie in V. For
+\[
+ D_h=V\cap(V-he_i)=\{x\in V:x+he_i\in V\},
+\]
+we have S compactly contained in D_h. Both signs of h are covered.
+
+### Step 2. State the elementary approximation facts used below
+
+Choose a nonnegative smooth compactly supported kernel rho with integral 1 and set rho_t(x)=t^{-3}rho(x/t). For every f in L2(R3;C^m),
+\[
+ \rho_t*f\longrightarrow f\quad\text{in }L^2,\qquad
+ \|\rho_t*f\|_2\le\|f\|_2.
+ \tag{3}
+\]
+For f with compact support, rho_t*f is smooth with compact support. Convolution commutes with every constant-coefficient distributional derivative.
+
+Here is why these facts apply without additional regularity. Minkowski's inequality and translation invariance give the norm bound. Strong continuity of translations in L2 gives
+\[
+ \|\rho_t*f-f\|_2
+ \le\int\rho(y)\|f(\,\cdot-ty)-f\|_2\,dy\longrightarrow0
+\]
+by dominated convergence, with dominating function 2 rho(y)||f||_2. Translation continuity follows first for continuous compactly supported functions and then for L2 functions by density and the translation isometry.
+
+All fields mollified below are L2 and have compact support, hence are L1 on a bounded set. Differentiating their convolution is justified by the bounded compactly supported derivatives of the kernel and dominated convergence. Commutation with distributional derivatives follows by Fubini and integration against smooth compact tests; the relevant integrals are absolutely integrable by local L1 integrability. Completeness of L2 is also used.
+
+For a primary author-hosted reference to the approximation fact, see Juha Kinnunen, Real Analysis, Theorems 3.18 and 3.21:
+https://math.aalto.fi/~jkkinnun/files/real_analysis.pdf
+No external Maxwell or transmission regularity theorem is being invoked.
+
+### Step 3. Derive divergence and the actual inverse-weight curl equation
+
+Distributional derivatives commute, so div(curl E)=0: componentwise, each mixed second derivative cancels its counterpart. Applying divergence to the first equation in (M) gives
+\[
+ ik\,\operatorname{div}H=0.
+\]
+Since k is nonzero,
+\[
+ \operatorname{div}H=0\quad\text{in }\mathcal D'(\Omega).
+ \tag{4}
+\]
+
+Define
+\[
+ W=-ikE.
+\]
+The second equation in (M), with epsilon positive, gives
+\[
+ W=a\,\operatorname{curl}H.
+\]
+Because E is a genuine H(curl) field, so is W. The first equation gives
+\[
+ \operatorname{curl}W=(-ik)(ikH)=k^2H.
+ \tag{5}
+\]
+No derivative of epsilon has been taken.
+
+For a smooth compactly supported vector test phi in Omega, the weak-curl identity, with conjugation explicitly placed on the test, is
+\[
+ \int_\Omega a\,\operatorname{curl}H\cdot
+       \overline{\operatorname{curl}\phi}
+ =k^2\int_\Omega H\cdot\overline\phi.
+ \tag{6}
+\]
+Both products are integrable by Cauchy-Schwarz. This is the genuine regional equation.
+
+### Step 4. Justify compact H(curl) tests and every cutoff product
+
+We need the following precise testing lemma.
+
+Let D be open and w,g be L2(D) fields with curl w=g in distributions. If phi belongs to H(curl;D) and has compact support inside D, then
+\[
+ \int_D w\cdot\overline{\operatorname{curl}\phi}
+ =\int_D g\cdot\overline\phi.
+ \tag{7}
+\]
+
+To prove it, extend phi by zero only after using its compact support. Its global weak curl is the zero extension of its regional curl. Indeed, a smooth cutoff equal to 1 near the support reduces any global compact test to a regional test; all cutoff-derivative terms are outside that support and vanish. Thus no boundary distribution is created.
+
+Mollify this extension with radii smaller than its support's distance to D-complement. The approximants are smooth compact tests inside D. Equation (3), applied to both phi and its weak curl, gives convergence in the H(curl) graph norm. The two pairings converge by Cauchy-Schwarz, proving (7).
+
+The weak product rule used here and below is
+\[
+ \operatorname{curl}(\chi v)
+ =\chi\operatorname{curl}v+\nabla\chi\times v
+ \tag{8}
+\]
+for smooth scalar chi and v in H(curl) locally. It follows directly by testing each component and applying the scalar distributional product rule. Likewise,
+\[
+ \operatorname{div}(\chi v)
+ =\chi\operatorname{div}v+\nabla\chi\cdot v.
+ \tag{9}
+\]
+All terms in the applications below are L2, since the cutoff and its derivatives are bounded with compact support.
+
+In particular chi^2 v is an admissible test whenever chi is smooth and compactly supported in D, and
+\[
+ \operatorname{curl}(\chi^2v)
+ =\chi^2\operatorname{curl}v+2\chi\nabla\chi\times v.
+ \tag{10}
+\]
+These arguments work across the material plane. We never integrate separately over the two half-regions or invoke an unproved trace identity.
+
+### Step 5. Prove the local weighted energy absorption
+
+Let v be a genuine H(curl;D) field, let a be real with M^{-1}<=a<=1, and suppose a curl v belongs to H(curl;D) with
+\[
+ \operatorname{curl}(a\operatorname{curl}v)=k^2v.
+\]
+Take a real smooth compact cutoff chi. Step 4 makes phi=chi^2 v admissible. Define
+\[
+ A_\chi=\int_D a\chi^2|\operatorname{curl}v|^2,\quad
+ Q_\chi=\int_D\chi^2|v|^2,
+\]
+\[
+ T_\chi=\int_D a\chi\,\operatorname{curl}v\cdot
+                      \overline{\nabla\chi\times v},\quad
+ D_\chi=\int_D a|\nabla\chi\times v|^2.
+\]
+The exact complex equality is
+\[
+ A_\chi+2T_\chi=k^2Q_\chi.
+ \tag{11}
+\]
+Here A_chi,Q_chi,D_chi are real nonnegative finite quantities; T_chi may be complex. Taking real parts, weighted Cauchy-Schwarz yields
+\[
+ A_\chi=k^2Q_\chi-2\operatorname{Re}T_\chi
+ \le k^2Q_\chi+2\sqrt{A_\chi D_\chi}.
+\]
+The inequality
+\[
+ 2\sqrt{A_\chi D_\chi}
+ \le\tfrac12 A_\chi+2D_\chi
+\]
+is the expansion of the nonnegative square
+(sqrt(A_chi)-2sqrt(D_chi))^2. Therefore
+\[
+ \boxed{
+ A_\chi\le2k^2Q_\chi+4D_\chi.
+ }\tag{12}
+\]
+The highest-derivative energy has actually been absorbed.
+
+When 0<=chi<=1 and ||grad chi||_infinity<=L, this gives
+\[
+ A_\chi\le(2k^2+4L^2)\|v\|_{\operatorname{supp}\chi}^2
+ =B^2\|v\|_{\operatorname{supp}\chi}^2,
+ \tag{13}
+\]
+because |grad chi cross v|<=L|v| and a<=1. There is no unbounded quotient on the right of this lemma apart from the lower-order field v, which is controlled independently below.
+
+Apply (12) first to the ORIGINAL H with chi=zeta in V. This uses only H(curl) regularity. Coercivity gives
+\[
+ \|\zeta\operatorname{curl}H\|_2
+ \le\sqrt M\,B\|H\|_V.
+ \tag{14}
+\]
+
+### Step 6. Prove the quantitative compact div-curl regularity lemma
+
+Lemma: if F is a compactly supported L2(R3;C3) field and its distributional curl C and divergence D belong to L2, then F belongs to H1(R3;C3), and
+\[
+ \boxed{\|\nabla F\|_2^2=\|C\|_2^2+\|D\|_2^2.}
+ \tag{15}
+\]
+
+For a smooth compactly supported complex vector field G, expansion gives
+\[
+ \|\operatorname{curl}G\|_2^2
+ =\|\nabla G\|_2^2
+ -\sum_{p,q}\int\partial_pG_q\,\overline{\partial_qG_p}.
+\]
+Two integrations by parts, with no boundary term, show
+\[
+ \int\partial_pG_q\,\overline{\partial_qG_p}
+ =\int\partial_qG_q\,\overline{\partial_pG_p}.
+\]
+Summing gives ||div G||_2^2, proving the identity for G.
+
+Now let F_n=rho_{1/n}*F. These fields are smooth and compactly supported, and
+\[
+ \operatorname{curl}F_n=\rho_{1/n}*C,\qquad
+ \operatorname{div}F_n=\rho_{1/n}*D.
+\]
+Applying the smooth identity to F_n-F_m gives
+\[
+ \|\nabla F_n-\nabla F_m\|_2^2
+ =\|\rho_{1/n}*C-\rho_{1/m}*C\|_2^2
+  +\|\rho_{1/n}*D-\rho_{1/m}*D\|_2^2.
+\]
+The right side tends to zero by (3). Hence the gradients are Cauchy in L2. If G is their L2 limit, then F_n->F in L2 and integration against a compact smooth scalar test identifies G_{pq} as the weak derivative partial_p F_q. This proves F in H1. Passing to the limit in the smooth identity proves (15).
+
+This proof establishes the needed regularity. It does not assume a pre-existing H1 estimate or invoke a transmission regularity theorem.
+
+### Step 7. Apply the div-curl lemma to the valid cutoff extension
+
+Let F=zeta H in Omega, extended by zero outside Omega. Compact support of zeta inside V justifies the global product equations
+\[
+ \operatorname{curl}F
+ =\zeta\operatorname{curl}H+\nabla\zeta\times H,\qquad
+ \operatorname{div}F=\nabla\zeta\cdot H.
+ \tag{16}
+\]
+Their right sides are understood as the corresponding compactly supported extensions. They are L2. The terms involving grad zeta are retained; no homogeneous whole-space Maxwell equation is claimed for F.
+
+For real p and complex z, direct expansion, or applying the real identity separately to Re z and Im z, gives
+\[
+ |p\times z|^2+|p\cdot z|^2=|p|^2|z|^2.
+ \tag{17}
+\]
+By (15), followed by the triangle inequality in
+L2(C3) direct-sum L2(C),
+\[
+ \begin{aligned}
+ \|\nabla F\|_2
+ &=\|(\operatorname{curl}F,\operatorname{div}F)\|\\
+ &\le\|\zeta\operatorname{curl}H\|_2
+       +\||\nabla\zeta|\,|H|\|_2.
+ \end{aligned}
+ \tag{18}
+\]
+Consequently there are TWO independently available bounds:
+\[
+ \boxed{\|\nabla F\|_2\le kM\|E\|_V+L\|H\|_V,}
+ \tag{19}
+\]
+using curl H=-ik epsilon E, and
+\[
+ \boxed{\|\nabla F\|_2\le(\sqrt M\,B+L)\|H\|_V,}
+ \tag{20}
+\]
+using the original-field energy estimate (14). The cutoff constant in these formulas is 1, rather than an extra sqrt(2), because (17) treats curl and divergence together.
+
+### Step 8. Bound quotients of H independently of quotients of its curl
+
+For any F in H1(R3;C3) and h!=0,
+\[
+ \delta_{h,i}F
+ =\int_0^1\partial_iF(\,\cdot+the_i\,)\,dt
+ \quad\text{in }L^2,
+\]
+and hence
+\[
+ \|\delta_{h,i}F\|_2\le\|\partial_iF\|_2\le\|\nabla F\|_2.
+ \tag{21}
+\]
+For smooth F the equality is the fundamental theorem of calculus, for either sign of h. For our compactly supported H1 field, its mollifications converge in H1 by (3). At fixed h the quotient operator is bounded on L2 with norm at most 2/|h|, so the equality passes to the limit. The Bochner integral converges because translations are L2 isometries and strongly continuous; Minkowski gives (21).
+
+Equation (2) implies zeta=1 at both x and x+he_i when x is in S. Translation preserves Lebesgue null sets, so
+\[
+ \delta_{h,i}H=\delta_{h,i}F\quad\text{a.e. on }S.
+\]
+Thus N_h:=||delta_{h,i}H||_S satisfies
+\[
+ N_h\le kM\|E\|_V+L\|H\|_V,\qquad
+ N_h\le(\sqrt M\,B+L)\|H\|_V.
+ \tag{22}
+\]
+No tangential derivative of curl H has been used.
+
+### Step 9. Derive the regional quotient equations on the translated overlap
+
+Fix i tangential and 0<|h|<h0. On D_h put
+\[
+ q_h=\delta_{h,i}H,\quad
+ c_h=\delta_{h,i}\operatorname{curl}H,\quad
+ w_h=\delta_{h,i}W.
+\]
+For this fixed h all three are L2(D_h): each translated difference has norm at most 2/|h| times the corresponding L2(V) norm. This finite, nonuniform bound suffices to make the forthcoming test legal.
+
+Regional translation of the weak-curl equation gives
+\[
+ \operatorname{curl}q_h=c_h,\qquad
+ \operatorname{curl}w_h=k^2q_h.
+ \tag{23}
+\]
+To see the regional translation rigorously, take phi in C_c-infinity(D_h) and use phi_h(y)=phi(y-he_i) as a test on V. Its support lies in V. The substitution y=x+he_i transforms the weak-curl pairing into the shifted pairing. Subtract the unshifted identity and divide by the real h. All pairings are absolutely integrable L2 products.
+
+Tangential translation leaves x3 unchanged, so a(x+he_i)=a(x), including at the plane. The full product-quotient identity is
+\[
+ \delta_{h,i}(aC)(x)
+ =a(x)\delta_{h,i}C(x)
+  +\delta_{h,i}a(x)\,C(x+he_i).
+\]
+The second term is EXACTLY ZERO here. With C=curl H this yields
+\[
+ w_h=a c_h=a\operatorname{curl}q_h.
+ \tag{24}
+\]
+Therefore q_h and w_h are genuine regional H(curl) fields on D_h and
+\[
+ \int_{D_h}a c_h\cdot\overline{\operatorname{curl}\phi}
+ =k^2\int_{D_h}q_h\cdot\overline\phi.
+ \tag{25}
+\]
+
+This argument does not apply a global homogeneous equation to zero extensions of H, W, or curl H. The equation is proved directly on the translated overlap.
+
+### Step 10. Test the quotient equation, display its commutator, and absorb
+
+Since S is compactly contained in D_h, Step 4 permits
+\[
+ \phi=\eta^2q_h,\qquad
+ \operatorname{curl}\phi=\eta^2c_h+2\eta\nabla\eta\times q_h.
+\]
+Let
+\[
+ A_h=\int_{D_h}a\eta^2|c_h|^2,\qquad
+ T_h=\int_{D_h}a\eta c_h\cdot\overline{\nabla\eta\times q_h}.
+\]
+The exact energy identity is
+\[
+ A_h+2T_h=k^2\|\eta q_h\|_2^2.
+ \tag{26}
+\]
+Weighted Cauchy-Schwarz gives
+\[
+ |T_h|
+ \le\sqrt{A_h}
+      \left(\int_{D_h}a|\nabla\eta\times q_h|^2\right)^{1/2}
+ \le\sqrt{A_h}\,L N_h.
+\]
+Consequently
+\[
+ A_h\le k^2N_h^2+2\sqrt{A_h}\,L N_h
+ \le k^2N_h^2+\tfrac12A_h+2L^2N_h^2,
+\]
+so
+\[
+ A_h\le B^2N_h^2.
+ \tag{27}
+\]
+Finally eta=1 on U and a>=1/M imply
+\[
+ \|\delta_{h,i}\operatorname{curl}H\|_U^2
+ =\|c_h\|_U^2\le M A_h\le MB^2N_h^2.
+ \tag{28}
+\]
+Substituting the two versions of (22) proves (T1) and (T2), respectively. The right sides do not contain h or any uncontrolled quotient of curl H. Taking the supremum is now justified.
+
+The original-field test in Step 5 used only H(curl), the H1 estimate in Step 7 was derived independently, and the quotient test only used fixed-h H(curl) membership. There is no circular regularity assumption.
+
+### Step 11. Weak tangential derivatives, if desired
+
+The estimate also proves that partial_i(curl H) belongs to L2(U), with the same bound. This conclusion is not needed to obtain the uniform quotient estimate.
+
+Indeed, choose h_n->0 with 0<|h_n|<h0. A bounded sequence in the Hilbert space L2(U;C3) has a weakly convergent subsequence. For any smooth compactly supported vector test phi in U, extend phi by zero; for all sufficiently small h its translated support lies inside V. Change of variables gives
+\[
+ \int_U\delta_{h,i}(\operatorname{curl}H)\cdot\overline\phi
+ =-\int_V\operatorname{curl}H\cdot
+                   \overline{\delta_{-h,i}\phi}.
+\]
+The test quotients converge to partial_i phi in L2(V), by smoothness and a fixed compact support bound. Passing to the weak limit identifies it as the distributional derivative. Weak lower semicontinuity preserves the norm bound.
+
+The standard directional difference-quotient argument is also covered by Kinnunen, Sobolev Spaces, Section 2.5, Theorem 2.32:
+https://math.aalto.fi/~jkkinnun/files/sobolev_spaces.pdf
+The use of weak compactness here is only for this optional derivative conclusion; the div-curl regularity proof above used a Cauchy sequence instead.
+
+## 3. Complex frequencies and uniform sequences
+
+### 3.1 The identities that change, and those that do not
+
+For complex k!=0, divergence still gives div H=0, and
+\[
+ W=-ikE=a\operatorname{curl}H,\qquad
+ \operatorname{curl}W=k^2H
+\]
+remain exact complex identities. The norm identity becomes
+\[
+ a|\operatorname{curl}H|^2=|k|^2\epsilon|E|^2.
+ \tag{29}
+\]
+Replacing |k|^2 here by k^2 is incorrect unless k is real.
+
+In the Hermitian test calculation, the EXACT equality remains
+\[
+ A_\chi+2T_\chi=k^2Q_\chi.
+\]
+Its real part is
+\[
+ A_\chi=\operatorname{Re}(k^2)Q_\chi
+           -2\operatorname{Re}T_\chi.
+ \tag{30}
+\]
+There is no conjugation of k^2 in this convention: conjugation is on the test, and k^2 multiplies the un-conjugated field. If the opposite inner-product convention is used, the conjugated equation has the same real part.
+
+Set lambda(k)=max(Re(k^2),0). Since Q_chi>=0, exactly the same absorption gives
+\[
+ A_\chi\le2\lambda(k)Q_\chi+4D_\chi.
+ \tag{31}
+\]
+Both original-field and quotient energy estimates now use B(k). In the direct div-curl bound, ||curl H|| is bounded with |k|M||E||. The mollification, cutoff, translation, and coercivity arguments are unchanged because a is still positive real. This proves (T3) and (T4). It does not assert a real-frequency Poynting identity at complex frequency.
+
+### 3.2 Uniform statement with correct quantifier order
+
+Fix the patches, hence R,L,h0, and fix d, hence M. Let (k_j) be any complex sequence with
+\[
+ |k_j|\le K_0<\infty.
+\]
+For EACH j choose ANY actual regional pair E_j,H_j satisfying (M) with frequency k_j. Define
+\[
+ B_*=\sqrt{2K_0^2+64/R^2},\qquad
+ C_{H,*}=MB_*^2+\sqrt M\,B_*L.
+ \tag{32}
+\]
+Then for every j with k_j!=0, both tangential i, and all 0<|h|<h0,
+\[
+ \|\delta_{h,i}\operatorname{curl}H_j\|_U
+ \le C_{H,*}\|H_j\|_V
+ \le C_{H,*}(\|E_j\|_V+\|H_j\|_V).
+ \tag{33}
+\]
+This follows from
+\[
+ \operatorname{Re}(k_j^2)
+ =(\operatorname{Re}k_j)^2-(\operatorname{Im}k_j)^2
+ \le |k_j|^2\le K_0^2.
+\]
+
+If k_j=0 for some index, (M) gives curl H_j=0, so (33) is trivially true there as well; div H_j=0 is not claimed for that index.
+
+In particular, k_j->k_*!=0 supplies boundedness and a nonzero tail. No factor 1/|k_j| occurs in the constant. If additionally sup_j ||H_j||_V<=N, then the supremum over j and h in (33) is at most C_{H,*}N. A bounded frequency sequence alone does not assert bounded field norms.
+
+If d varies with j, the same result is uniform when 0<=d_j<=D, replacing M by 1+D. The hypotheses do not give contrast-independent constants for unbounded d.
+
+### 3.3 Why a dependence on material contrast is appropriate
+
+For example, on fixed patches wholly in x3>0, take real k>0 and
+\[
+ H=e_2e^{ik\sqrt M x_1},\qquad
+ E=-M^{-1/2}e_3e^{ik\sqrt M x_1}.
+\]
+Direct calculation verifies both Maxwell equations with epsilon=M. Yet
+\[
+ \|\partial_1\operatorname{curl}H\|_U=k^2M|U|^{1/2},
+\]
+whereas
+\[
+ \|E\|_V+\|H\|_V=(1+M^{-1/2})|V|^{1/2}.
+\]
+Thus no contrast-independent constant can hold throughout the class of local patches in the theorem. The H-only constant above grows at most linearly with M for fixed frequency and geometry. No optimal numerical constant is claimed.
+
+## 4. Source map and verification boundaries
+
+There are NO prerequisites from earlier returned reports.
+
+The proof above rederives its analytic inputs. The following table identifies reusable supplied interfaces and their limitations. “Accepted” means accepted ACCORDING TO THE PACKET; this session did not reproduce the ledger, compiler runs, or axiom audit. Paths are source identifiers supplied by the packet, not claims that the repository is present here.
+
+| Supplied source / exact theorem | Exact relevant interface and status |
+| --- | --- |
+| lean/MaxwellInverseCurlCurl.lean: inverse_curl_representation | Accepted. Real k; pointwise positive epsilon; actual regional E,H and WeakMaxwell. Produces regional W with weak curl k^2 H and W=epsilon^{-1} curl H a.e. Does not require k!=0. Corresponds to Step 3. |
+| Same file: magnetic_h1_and_curlcurl | Accepted. Additionally Omega open, compact K subset Omega, real k!=0. Gives a neighborhood of K and global weak partials of a representative equal to H there. It is qualitative, not the quantitative estimate used here. |
+| Same file: inverse_weight_coercivity | Accepted. Measurable epsilon, pointwise 1<=epsilon<=M, scalar f in L2 of the region. Gives M^{-1} integral |f|^2 <= integral epsilon^{-1}|f|^2. Applies componentwise to cutoff quotients. |
+| lean/MaterialCurlCoercivity.lean: inverse_curl_energy_ae | Accepted. Actual real-frequency Maxwell fields and positive epsilon. Gives a|curl H|^2=k^2 epsilon|E|^2 a.e. For complex frequency the norm identity is (29). |
+| Same file: inverse_curl_caccioppoli | Accepted. Omega open, real compact C1 test zeta, real k!=0, epsilon>=1, actual regional fields. Gives integral zeta^2 a|curl H|^2 <= 2k^2 integral zeta^2|H|^2 + 4 integral |grad zeta|^2|H|^2. It does not itself supply the regional quotient bridge. |
+| lean/MaxwellDifferenceQuotient.lean: quotient, quotient_bound, maxwell_cutoff_quotients | Accepted. Translation convention is u(x+h e_i). The scalar quotient bound requires a global compact representative and its global weak partials, and concludes ||quotient u|| <= sum of coordinate derivative norms. The Maxwell cutoff theorem supplies such derivatives for real k!=0, but no displayed quantitative bound on them. |
+| lean/MaxwellWeakTranslation.lean: translate_weakCurl, quotient_weakCurl | Accepted. They require a genuine GLOBAL weak-curl graph. They cannot be applied directly to arbitrary regional zero extensions. Step 9 supplies the regional overlap argument needed here. |
+| Same file: quotient_commutes_invariant_weight, flatWeight_tangential | Accepted. A.e. W=wC and exact translation invariance of w imply the quotient relation. flatWeight is invariant when i!=2. This is the flat coefficient input in (24). |
+| Same file: flat_curlcurl_quotient | Accepted. Requires a genuine global equation curl W=k^2 H, global weight relation, and real k. Its hypotheses cannot be inferred merely by extending regional fields by zero. |
+| lean/FlatDifferenceCoercivity.lean: dielectric_measurable, dielectric_bounds, flatWeight_eq_inverse, quotient_curl_energy | Accepted. Supplies measurability, 1<=epsilon_d<=1+d, inverse-weight identification, and componentwise LOWER quotient coercivity. No upper differentiated-curl estimate is included. |
+| lean/FlatMaxwellDifferenceEnergy.lean: flat_difference_green | Accepted. Requires genuine GLOBAL curl H=C and curl W=k^2 H, global flat-weight relation, real k, tangential index, and compact test. Its localGreenIntegral identity is not automatically an identity for regional zero extensions. |
+| lean/MaxwellQuotientEnergy.lean: cutoff_quotient_energy | Accepted. Real nonzero k, regional compact C2 cutoff, coefficient/cutoff bounds, actual fields. Controls quotient of cutoff H by the nonhomogeneous polynomial displayed below. It is not already the linear target estimate. |
+| lean/WeakPoynting/Conservation.lean: WeakConservation.WeakMaxwell | Supporting source; individual acceptance not certified. Exact definition uses actual regional graph curls, real frequency, and real coefficients. The complex definition proposed below is new. |
+| lean/MaxwellCutoffCommutator.lean: cutoff_quotient_commutator, derivative_cutoff_commutator, cutoff_quotient_norm | Pending, not accepted. Supplies cutoff product-quotient formulas and bounds. Not invoked by this proof. |
+| lean/LocalizedCurlCurlSource.lean: cutoff_curlcurl_source | Pending, not accepted. Its localized field is genuine, but its curl contains chi k^2 H + grad chi cross W. This source cannot be dropped. Not invoked here. |
+| lean/MaxwellCurlCutoffSource.lean: quotient_source_bound, flat_quotient_source_bound | Pending, not accepted. Source estimates still contain quotients of W or curl H. They do not perform the needed absorption. Not invoked here. |
+| lean/FlatLocalCurlSources.lean: actual_flat_local_sources | Pending, not accepted. Connects fields to the preceding source estimate. It does not make plain extensions solve homogeneous whole-space equations. Not invoked here. |
+| lean/NestedCurlCutoffSource.lean: nested_flat_source_bound | Pending, not accepted. Assumes outer cutoff equals 1 on the inner support, but still retains quotient(localize eta C) on the right. Its statement does not require eta supported inside Omega. Not invoked here. |
+| lean/FlatNestedMaxwellForcing.lean: actual_nested_forcing | Pending, not accepted. Combines the preceding forcing bounds; no final energy absorption. Not invoked here. |
+| lean/GlobalToRegionalCurl.lean: restrict_global_hcurl, restrict_weakMaxwell | Supplied file pending. Packet reports an earlier check of the first theorem; the later restrict_weakMaxwell addition is explicitly uncompiled. No reliance on either here. |
+| checkpoints/2026-10-27-continuation/STAGE65.md | Supporting checkpoint description. Its ledger counts and stated progress are not substitutes for this new mathematical proof or a clean aggregate Lean build. |
+
+The accepted cutoff_quotient_energy right side is literally
+~~~
+3 * (3 * (A * (|k| * M * ‖E.val.1‖) + 2 * B * ‖H.val.1‖)^2 +
+  (3 * B * ‖H.val.1‖)^2 + 1)
+~~~
+It must not be silently restated as a homogeneous linear field estimate. Steps 6–8 provide the required homogeneous input directly.
+
+The external analytic references supply only elementary approximation and difference-quotient background. Their exact uses and hypotheses are stated in Steps 2 and 11. They are not accepted local Lean implementations.
+
+## 5. Minimal ordered Lean plan and exact proposed contracts
+
+### 5.1 Norms and actual fields
+
+Preserve DomainCurl.HCurl and its actual graph curl. Do not replace E,H by unrelated abstract fields with an assumed regularity estimate.
+
+For F : Fin 3 -> L2Scalar, the default finite Pi norm is a componentwise supremum. The physical vector L2 norm in this report is
+\[
+ N(F)=\sqrt{\sum_{j:\mathrm{Fin}\ 3}\|F_j\|_{L^2}^2}.
+\]
+One must either use this explicit sum or prove and apply
+\[
+ \|F\|_{\rm Pi}\le N(F)\le\sqrt3\,\|F\|_{\rm Pi}.
+\]
+The numerical constants above use N. In particular, do not insert the report's constants unchanged into a theorem using the default Pi norm for every displayed vector norm.
+
+The attached Packet03Targets.lean defines physical vectorL2Sq/vectorL2, fieldValue, actualCurl, the literal quotient, and a complex WeakMaxwellC using actual regional graph curls. It defines the exact proposed target proposition uniformFlatEstimateStatement. It DOES NOT prove or assume that proposition.
+
+Its PatchGeometry takes any positive tubular radius r such that every ball of radius r centered on closure U lies in V. Choosing r=R from (G) gives the stated theorem. This avoids guessing a particular set-distance API and does not change the mathematical geometry.
+
+For real k, add a bridge proving that WeakMaxwellC (k:C) epsilon is equivalent to the supplied WeakConservation.WeakMaxwell k (fun _ => 1) epsilon. This is definitional algebra; it has not been compiled here.
+
+### 5.2 Ordered modules / lemma contracts
+
+The following names are PROPOSED NEW declarations, not claims that these names already exist. Each contract is an exact mathematical statement to encode after inspecting the foundational definitions.
+
+1. RegionalCompactTesting.compact_curl_pairing.
+   For open D, w,g in L2(D) with actual weak curl w=g, and phi in H(curl;D) with compact support in D, prove (7). Also prove cutoff curl/div product rules and their compactly supported global extensions, (8)–(10). Proof: Step 4. No H1 hypothesis on phi.
+
+2. ComplexMaxwellRegional.magnetic_div_and_inverse_curl.
+   For actual regional WeakMaxwellC fields, k!=0, and positive epsilon, construct W=-ikE with W=a curl H and curl W=k^2 H, and prove div H=0. For the flat coefficient also retain 1/M<=a<=1. Proof: Step 3 and Section 3. This is the bridge from physical fields to every later equation.
+
+3. CompactDivCurlEnergy.h1_energy_identity.
+   A compactly supported global L2 vector with L2 distributional curl C and divergence D has L2 weak partials G and sum_{p,q}||G_{pq}||_2^2=||C||_2^2+||D||_2^2. Proof: Step 6. Implement the mollified gradients as a Cauchy sequence; no assumed Maxwell regularity.
+
+4. FlatPatchGeometry.exists_nested_cutoffs and H1Translations.directional_quotient_bound.
+   Under (G), construct eta,zeta satisfying every bound and support inclusion in (1)–(2). For global H1 F and every real h!=0, prove ||delta_{h,i}F||_2<=||partial_i F||_2. Proofs: Steps 1 and 8. Translation of null sets ensures representative independence.
+
+5. RegionalCurlEnergy.complex_caccioppoli.
+   Let D be open, M>=1, a measurable real coefficient with 1/M<=a<=1 a.e., v in regional H(curl), w=a curl v in regional H(curl), and curl w=k^2 v for complex k. For every real smooth compact chi, prove
+   \[
+   \int a\chi^2|\operatorname{curl}v|^2
+   \le2\max(\operatorname{Re}(k^2),0)\int\chi^2|v|^2
+      +4\int a|\nabla\chi\times v|^2.
+   \]
+   No k!=0 or H1 assumption is needed for THIS energy lemma. Proof: Step 5 and (30)–(31). The attached elementary algebra file covers only the final real-polynomial absorption step.
+
+6. RegionalFlatQuotients.actual_quotient_equations.
+   Under the actual Maxwell hypotheses, tangential i, and 0<|h|<R/8, construct genuine regional q_h,w_h on D_h, with actual curl q_h=delta curl H, w_h=a curl q_h, and actual curl w_h=k^2 q_h. Proof: Step 9. This is the new regional bridge; do not silently use the global theorem on raw extensions.
+
+7. FlatTangentialCurlEstimate.uniform_bound.
+   Under precisely Section 1's hypotheses, prove BOTH mixedConclusion and magneticConclusion in Packet03Targets.lean, i.e. (T3) and (T4) for every tangential i and every allowed h. Use the original-field Caccioppoli estimate, compact div-curl identity, quotient bound, and the quotient Caccioppoli estimate. Neither conclusion is an input assumption.
+
+8. FlatTangentialCurlEstimate.bounded_complex_family.
+   For fixed geometry, bounded |k_j|, and fixed d or uniformly bounded d_j, prove (32)–(33), with the zero-frequency case separated. Optionally add has_weak_tangential_curl_derivative using Step 11.
+
+Dependency order: compact testing and complex Maxwell algebra precede the energy lemma; the div-curl lemma and geometry/translation lemmas are independent supporting branches; these combine with the regional quotient equations only in the final estimate. Pending nested-forcing modules are not on this dependency path.
+
+### 5.3 Exact missing source context for implementation
+
+No additional source is required to assess the mathematical proof. To integrate it into the repository and reuse existing implementations, obtain the exact files declaring:
+
+- DomainCurl.HCurl, DomainCurl.Test, DomainCurl.HasWeakCurl, and the regional weak-test characterization.
+- LocalPower.cutExtend and the regional cutoff product rule: the supplied imports point to WeakPoynting/Local.lean and its dependencies.
+- WeakPoynting/LocalRegularity.lean and WeakPoynting/RegularityBounds.lean, especially maxwell_cutoff_magnetic_regularity and maxwell_cutoff_h1_bound. A stronger homogeneous energy bound may exist before the displayed coarse estimate, but it was not supplied and is not assumed.
+- WeakPoynting/Translations.lean: translateL2, its representative/norm lemmas, weak_translation_bound, and CompactRepresentative.
+- The actual modules defining DivCurlCompact.HasWeakPartial, DivCurlRegularity.DerivativeIndex, the compact div-curl identity, and compact H(curl) test density.
+- WeakPoynting/Poynting.lean if the existing weak_local_Green implementation is reused.
+- Any accepted complex-frequency regional Maxwell definition, if one exists.
+
+These are interface requests, not claims of having inspected absent imports. Use the actual defining file when the repository layout differs from a namespace.
+
+## 6. Verification
+
+Actual commands run in this session:
+
+| Command | Exit / result |
+| --- | --- |
+| lean --version | 127: /bin/bash: line 1: lean: command not found |
+| lake --version | 127: /bin/bash: line 1: lake: command not found |
+
+The supplied packet was read and its stated theorem signatures/statuses were inspected. Independent mathematical checks agreed on the absorption, compact div-curl argument, explicit cutoff geometry, and stronger H-only corollary.
+
+No pinned toolchain compilation was run successfully. No new #print axioms result was obtained. The #print axioms commands in Packet03EnergyAlgebra.lean are proposed future checks, not evidence from this session. No new theorem is claimed to be kernel-verified. No aggregate OQ14 build or accepted-module re-audit is claimed.
+
+The two candidate source files contain no added axiom, sorry, admit, or assumed gap theorem. Packet03EnergyAlgebra.lean has uncompiled elementary proof candidates; Packet03Targets.lean contains definitions and the target proposition only. Neither file constitutes a Lean implementation of the PDE proof. Supplied/frozen sources were not changed.
+
+## 7. Remaining gaps and scope
+
+Mathematics: all obligations of this packet's flat, positive-dielectric, local tangential differentiated-curl estimate have been proved under the exact actual-regional-Maxwell hypotheses above. The required quantitative H1 input and the energy absorption are derived, not assumed. There is no unbounded differentiated curl term remaining on the right.
+
+Formalization: the analytic modules in Section 5 still require implementation, compilation against the specified Lean/mathlib versions, and axiom auditing. The provided source candidates are explicitly uncompiled. Existing acceptance labels remain only the packet's supplied evidence.
+
+This result does not prove curved-interface estimates, one-sided continuous representatives or sup bounds, compact attainment of a maximum, channel classification, or full OQ14 closure. Those are separate tasks. No such result is assumed or claimed here.
+
+## Appendix A. Complete candidate source: Packet03EnergyAlgebra.lean
+
+The exact complete file follows. UNCOMPILED.
+
+
+~~~lean
+import Mathlib
+
+/-!
+UNCOMPILED PROPOSAL -- NOT LEAN-VERIFIED IN THIS SESSION.
+
+Packet 03: elementary real algebra for the energy absorption.
+Target toolchain: Lean 4.19.0.
+Target mathlib: c44e0c8ee63ca166450922a373c7409c5d26b00b.
+
+These lemmas address only the algebra AFTER the analytic energy inequality
+has been proved. They do not assert test admissibility, Maxwell regularity,
+or the differentiated-curl estimate. No project source is changed.
+-/
+
+set_option autoImplicit false
+
+namespace OQ14.Packet03EnergyAlgebra
+
+/-- Young absorption after x is the square root of the weighted energy. -/
+theorem half_absorb
+    (x y r : ℝ)
+    (h : x ^ 2 ≤ r + 2 * x * y) :
+    x ^ 2 ≤ 2 * r + 4 * y ^ 2 := by
+  nlinarith [sq_nonneg (x - 2 * y)]
+
+/-- A variant retaining a nonnegative coercivity factor explicitly. -/
+theorem weighted_half_absorb
+    (α x y r : ℝ)
+    (hα : 0 ≤ α)
+    (h : α * x ^ 2 ≤ r + 2 * x * y) :
+    α ^ 2 * x ^ 2 ≤ 2 * α * r + 4 * y ^ 2 := by
+  have hh := mul_le_mul_of_nonneg_left h hα
+  nlinarith [sq_nonneg (α * x - 2 * y)]
+
+/-- In real coordinates, Re(k^2) is at most |k|^2. -/
+theorem complex_mass_real_bound
+    (kr ki : ℝ) :
+    kr ^ 2 - ki ^ 2 ≤ kr ^ 2 + ki ^ 2 := by
+  nlinarith [sq_nonneg ki]
+
+end OQ14.Packet03EnergyAlgebra
+
+#print axioms OQ14.Packet03EnergyAlgebra.half_absorb
+#print axioms OQ14.Packet03EnergyAlgebra.weighted_half_absorb
+#print axioms OQ14.Packet03EnergyAlgebra.complex_mass_real_bound
+~~~
+
+## Appendix B. Complete candidate source: Packet03Targets.lean
+
+The exact complete file follows. UNCOMPILED; definitions and statement only.
+
+~~~lean
+import FlatDifferenceCoercivity
+
+/-!
+UNCOMPILED INTERFACE PROPOSAL -- NOT A PDE PROOF.
+
+Packet 03 target statements, using actual regional DomainCurl.HCurl objects.
+Target toolchain: Lean 4.19.0.
+Target mathlib: c44e0c8ee63ca166450922a373c7409c5d26b00b.
+
+Every declaration below is a definition or a structure. In particular,
+uniformFlatEstimateStatement is the proposition still to be implemented in
+Lean, not an assumption, axiom, or proved theorem. Its mathematical proof is
+in 03_flat_interface_report.txt. This file deliberately contains no proof
+stubs. It does not modify any supplied or frozen project source.
+
+The explicit sum-of-components norm avoids confusing the physical vector
+L2 norm with the default Pi norm on Fin 3 -> L2Scalar.
+-/
+
+noncomputable section
+set_option autoImplicit false
+
+namespace OQ14.Packet03Targets
+
+open MeasureTheory OQ14.Maxwell
+open scoped BigOperators
+
+abbrev Field := Space → Fin 3 → ℂ
+
+/-- The genuine regional equations, now with complex frequency. -/
+def WeakMaxwellC {Ω : Set Space} (k : ℂ) (ε : Space → ℝ)
+    (E H : DomainCurl.HCurl Ω) : Prop :=
+  (∀ᵐ x ∂DomainCurl.regionMeasure Ω, ∀ j : Fin 3,
+    E.val.2 j x = Complex.I * k * H.val.1 j x) ∧
+  (∀ᵐ x ∂DomainCurl.regionMeasure Ω, ∀ j : Fin 3,
+    H.val.2 j x = -(Complex.I * k) * (ε x : ℂ) * E.val.1 j x)
+
+def fieldValue {Ω : Set Space} (u : DomainCurl.HCurl Ω) : Field :=
+  fun x j => u.val.1 j x
+
+def actualCurl {Ω : Set Space} (u : DomainCurl.HCurl Ω) : Field :=
+  fun x j => u.val.2 j x
+
+def vectorL2Sq (S : Set Space) (F : Field) : ℝ :=
+  ∑ j : Fin 3, ∫ x in S, ‖F x j‖ ^ 2
+
+def vectorL2 (S : Set Space) (F : Field) : ℝ :=
+  Real.sqrt (vectorL2Sq S F)
+
+/-- Use on regions whose translated points lie in the source domain. -/
+def difference (F : Field) (i : Fin 3) (h : ℝ) : Field :=
+  fun x j => ((h : ℂ)⁻¹) * (F (x + h • basis i) j - F x j)
+
+/-- A supplied positive tubular margin; choosing the actual separation
+distance in the report gives these hypotheses. No smooth boundary is needed. -/
+structure PatchGeometry (Ω U V : Set Space) (r : ℝ) : Prop where
+  openOmega : IsOpen Ω
+  openU : IsOpen U
+  openV : IsOpen V
+  nonemptyU : U.Nonempty
+  compactClosureU : IsCompact (closure U)
+  compactClosureV : IsCompact (closure V)
+  closureU_subset_V : closure U ⊆ V
+  closureV_subset_Omega : closure V ⊆ Ω
+  radius_pos : 0 < r
+  tube_inside : ∀ y ∈ closure U, Metric.ball y r ⊆ V
+
+def massPlus (k : ℂ) : ℝ := max ((k ^ 2).re) 0
+
+def frequencyFactor (k : ℂ) (r : ℝ) : ℝ :=
+  Real.sqrt (2 * massPlus k + 64 / r ^ 2)
+
+def magneticConstant (d : ℝ) (k : ℂ) (r : ℝ) : ℝ :=
+  (1 + d) * (frequencyFactor k r) ^ 2 +
+    Real.sqrt (1 + d) * frequencyFactor k r * (4 / r)
+
+def mixedConclusion {Ω : Set Space} (U V : Set Space)
+    (r d : ℝ) (k : ℂ) (E H : DomainCurl.HCurl Ω) : Prop :=
+  ∀ i : Fin 3, i ≠ 2 → ∀ h : ℝ, 0 < |h| → |h| < r / 8 →
+    vectorL2 U (difference (actualCurl H) i h) ≤
+      Real.sqrt (1 + d) * frequencyFactor k r *
+        (‖k‖ * (1 + d) * vectorL2 V (fieldValue E) +
+          (4 / r) * vectorL2 V (fieldValue H))
+
+def magneticConclusion {Ω : Set Space} (U V : Set Space)
+    (r d : ℝ) (k : ℂ) (H : DomainCurl.HCurl Ω) : Prop :=
+  ∀ i : Fin 3, i ≠ 2 → ∀ h : ℝ, 0 < |h| → |h| < r / 8 →
+    vectorL2 U (difference (actualCurl H) i h) ≤
+      magneticConstant d k r * vectorL2 V (fieldValue H)
+
+/-- Exact proposed theorem TYPE. No term inhabiting it is supplied here. -/
+def uniformFlatEstimateStatement : Prop :=
+  ∀ (Ω U V : Set Space) (r d : ℝ) (k : ℂ),
+    PatchGeometry Ω U V r → 0 ≤ d → k ≠ 0 →
+    ∀ E H : DomainCurl.HCurl Ω,
+      WeakMaxwellC k (FlatDifferenceCoercivity.dielectric d) E H →
+      mixedConclusion U V r d k E H ∧
+      magneticConclusion U V r d k H
+
+end OQ14.Packet03Targets
+~~~

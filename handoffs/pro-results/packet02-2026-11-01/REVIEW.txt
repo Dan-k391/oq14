@@ -1,0 +1,77 @@
+OQ14 PACKET 02 — REVIEW OF RETURNED PRO REPORT
+Date: 2026-11-01
+Scope: full mathematical report, actual repository interfaces and evidence status.
+
+VERDICT
+No substantive mathematical error was identified in the packet-specific proofs.
+Root reviewed the full report and relevant actual source declarations; a separate
+6.1 Terra reviewer independently checked the full report and agreed. The magnetic
+covariance and radial-vanishing arguments are suitable mathematical inputs to
+Packet 04. They are not newly Lean-verified theorems or full sphere classification.
+
+PROVENANCE
+Chat: https://chatgpt.com/c/6ae7e94d-208c-83e8-b292-a09ab67154ac
+Downloaded original: C:/Users/Daniel/Downloads/02_magnetic_symmetry_report.txt
+RETURN_REPORT.txt preserves all 59,975 original bytes.
+SHA256: 3622a72ef2beeef2b04be865bd27378a4191d725fbdb9c8b2617c6ff2050a833
+Proof baseline: stage 65, aeed697d5224424878d99840d33b67abde175947.
+INTAKE.json authenticates all 15 quoted source blocks against their original
+archive bytes, manifest hashes and current working files. Quoted text agrees
+after newline normalization; no substantive source discrepancy was found.
+
+MATHEMATICAL CHECKS
+1. The nonnegative source majorant W_rho(x)=integral |x-y|^(-2)|rho(y)| dy
+   supplies one conull invariant good set, independent of angle and frequency.
+   Its extended nonnegative integral is essential. Source covariance with
+   angle-dependent exceptional sets still gives invariance of this good set.
+2. On that set, all scalar products entering the convolution are absolutely
+   integrable. Changes of variables and rotation/reflection covariance are
+   justified there. Zero extension off the good set gives a simultaneous
+   representative with all-point covariance, allowing a point-dependent angle.
+3. The meridional reflection and axial rotation force the bilinear radial
+   magnetic scalar to vanish. The raw componentwise integral is also zero on
+   the axis: diagonal stabilizer signs permit this argument even where general
+   mixing of nonintegrable component integrals would be invalid.
+4. The separate surface estimate gives finite sphere integral of W_rho for
+   every fixed r>0, using the logarithmic angular kernel and Cauchy-Schwarz in
+   the compactly supported L2 source. Its r-dependent constants and singularity
+   at source radius r are handled correctly. Thus the actual radial harmonic
+   moment is zero at every positive radius, including r=1 as an ordinary
+   convolution surface integral. This does not assert an interface trace.
+5. The weak radial-curl coupling has the correct signs for the stated toroidal
+   convention, and the radial divergence relation has the correct factors.
+   The report explicitly leaves full vector-harmonic completeness and weak
+   reconstruction (V1)-(V2) for subsequent work.
+
+SOURCE-CONTEXT CAVEATS RESOLVED LOCALLY
+The Pro report lacked some imported defining context. The actual local source
+confirms the expected interfaces: DynamicVolume.source is the square-root
+material-weighted physical source; ModalWeightedMode.coefficient_value gives
+the unit-ball coefficient n^2-1; the coordinate map has the physical L2 bridge;
+ComplexSphereMaxwell.magnetic is the actual complex magnetic field; and the
+Debye coefficient integrates that field's literal radial scalar. The optional
+global datum wrapper must use DebyeScalarL2's actual clipping interface.
+
+AngularPower.angularMeasure is the geometric sphere measure. The existing
+SphereAxialMeasure.direction_preserving and integration identities identify
+it with ordinary latitude-azimuth area, with no additional normalization.
+Its current SHA256 matches the prior independent audit:
+bdc4611138aedfbf0a93f91861f22d53bbf2f0bc1f478f62330471c7e58f07c6.
+See reviews/sphere_axial_measure.md and its recorded 20 standard-only reports.
+That is prior audit evidence, not a fresh compilation in this review. The new
+surface logarithm estimate and rotation arguments still require formal proofs.
+
+FORMAL STATUS AND REMAINING WORK
+The report's analytic Lean declarations are specifications, not proof terms.
+The separately advertised Packet02SymmetryAlgebra.lean attachment was not
+obtained for local inspection or compilation. Its claimed hash and properties
+remain claims of the preserved return report; this review does not certify it.
+
+Implement and audit the source-covariance, good-set, integrability, convolution,
+surface estimate and actual Debye adapters in Lean. Pending regional Maxwell,
+reflection, divergence, Helmholtz and Debye files retain their pending status.
+Packet 04 must also establish the required completeness/reconstruction and
+interface matching before concluding sphere kernel classification. No simple
+residue, hotspot closure or new aggregate build follows from this review.
+
+No existing proof source, frozen evidence or acceptance count was changed.
