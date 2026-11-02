@@ -1,0 +1,147 @@
+OQ14 PACKET 07 G1-G4 SUPPLEMENT - LOCAL REVIEW
+Reviewed: 2026-11-02 (America/New_York)
+Proof checkpoint: stage 65, aeed697d5224424878d99840d33b67abde175947.
+Prior report/follow-up commit: e027f7d.
+
+VERDICT AND SCOPE
+No substantive mathematical error was identified in the supplement. Under
+the previously reviewed Packet 05/06 prerequisites, it discharges the four
+mathematical source-assembly gaps G1-G4 identified in the original Packet 07
+review. In particular it uses the existing CommonBinaryRounding sequence
+and the same common-input witness. The previous requirement to return to
+Pro for these four gaps is now satisfied; no further user input is needed
+for this packet.
+
+This is a mathematical review, not Lean acceptance. No new proof source
+was implemented, compiled or axiom-audited during this review. The separate
+unrestricted-channel theorem remains outstanding. Full OQ14 closure and
+complete Maxwell formalization have NOT been established.
+
+PROVENANCE AND REVIEW COVERAGE
+Chat: Complete Packet07 Proof Plan
+https://chatgpt.com/c/6ae8088b-0ccc-83ea-9a59-85687dd2cd2f
+Original download:
+C:/Users/Daniel/Downloads/OQ14_Packet07_G1-G4_Supplemental_Proof.txt
+RETURN_REPORT.txt preserves that complete download byte for byte. INTAKE.json
+records its hash, the four verified input hashes, and checks against the
+previously authenticated source archive. The original Packet 07 report and
+its earlier review are preserved unchanged; this dated review updates their
+G1-G4 status rather than rewriting that historical record.
+
+Root reviewed the mathematical arguments in Parts A-E and the source/status
+boundaries. Three independent 6.1 Terra reviews covered (i) the actual old
+rounding's topology and smoothness, (ii) incident fields, physical power and
+dilation, and (iii) the exact source dictionary and final quantifier order.
+The named definitions and theorem scopes were compared with local sources.
+The pinned mathlib HaarToSphere source was also checked locally; the
+supplement's use of current online documentation is not treated as pinned
+source evidence. No numerical experiment is being substituted for a proof.
+
+G1 - EXISTING DATA AND MATERIAL DICTIONARY
+ConicalFamily.exists_data supplies the angular data at any fixed positive
+contrast and admissible threshold. Updating only its cutoff leaves those
+angular fields unchanged. The supplement handles the actual closed radial
+cutoff, strict angular boundary, and origin convention pointwise, and the
+open-bicone description almost everywhere. The null-set argument and the
+distinct rIn/local-field and rOut/material-support roles are consistent.
+
+The explicit finite geometry satisfies the source theorem's positive radii,
+disjoint outer balls, containing ball and approximation hypotheses. Contrast
+is fixed before N and the later geometric/peak parameters. N=0 is handled
+separately instead of invoking a theorem requiring a nonempty index type.
+
+G2 - EXACTLY TWO COMPONENTS OF EACH EXISTING ROUNDING
+The proof concerns the actual cap, coneMargin, ballMargin and smoothTransition
+correction, not the original report's alternative convex rounded set.
+
+Writing e=1/(n+1), slope m>0 and radius a>0, the existing eventual condition
+  (4+(2m+2)^2)*e^2 + e < a^2
+provides an interior disk at height (2m+2)e and radius 2e. Outside that
+radius the cap equals mr, so radial contraction increases both margins.
+Inside it the proof uses vertical paths to the disk and then paths within
+the disk; it does not assume cap monotonicity in the transition region.
+This proves path connectedness and nonemptiness of each signed half.
+
+The positive lower bound e*min(1,m) on the cap separates the two closures.
+The three frontier cases give a nonzero level-set derivative: when one
+margin vanishes the other is at least e; when both are positive the point
+lies beyond radius 2e and the radial derivative is strictly negative.
+The local positive-level set is the actual inclusion in each case. Thus
+both components have smooth boundary, and there are exactly two of them.
+
+The disjoint closed outer balls separate the translated sites. A finite
+intersection of eventual tails gives exactly 2N components for the common
+material together with the collar and peak conditions at one final index.
+Early roundings are not incorrectly asserted to be nonempty.
+
+Minor binder precision for implementation: Part B section 8 should retain
+coefficient_body's bounds B>=0 and each contrast<=B in its abstract theorem
+statement. They are already satisfied by the concrete choice B=d>0 in
+Parts A/E, so this does not leave a gap in the assembled result.
+
+G3 - SAME INPUT, SIGNS, MEASURE AND UNIT PHYSICAL POWER
+The witness c is chosen once before every rounding index and threshold.
+Uniqueness of the two limits of the same incoming-half-field flux gives
+  integral |A_c|^2 dS = kappa^2/(2*pi^2).
+This does not assume that an opaque existential witness unfolds to normalizeK.
+The electric negative phase, magnetic minus cross product, direction reversal,
+ordinary sphere area measure, and the existing Poynting factor 1/2 agree
+with the named source definitions.
+
+The physical conversion is
+  E_phys=sqrt(Z0)*E_src, H_phys=H_src/sqrt(Z0),
+which preserves power. Converting H alone while leaving E unchanged would
+not preserve the source unit-power convention when Z0 is not one.
+The normalized density and its deterministic affine image produce exactly
+the same incident pair at the final prescribed frequency. The density is
+fixed before n; translation is not claimed to preserve finite harmonic
+support about a new origin. The outgoing-kernel calculation transports the
+actual response and retains the static distributional term.
+
+G4 - NAMED DILATION AND NORMALIZATION
+DilationL2.physicalCoordinate_dilate gives D_(1/s)=s^(-1)*T_s in physical
+representatives. scaleCoeff has the asserted material pullback and unchanged
+bound. The supplement correctly distinguishes the existing frequency-one
+testMaxwell_scaleCoeff theorem from its newly proved mathematical extension
+to arbitrary reference frequency; that extension still needs Lean code.
+
+The actual volume-operator covariance and its derivative yield
+  d_phys(A*T_s E)=A^2*s^4*d_phys(E),
+  N(A*T_s E)=A^2*s^3*N(E).
+These are bilinear squares, not absolute-value squares. Consequently the
+driven unit-power field uses D_(1/s), the unit-N modal field uses
+s^(-1/2)*D_(1/s), and unit derivative pairing uses s^(-1)*D_(1/s).
+Global lower-half-plane outgoing modes are not assumed to be in all-space
+L2: the named dilation acts on their compact weighted sources or restricted
+fields, with global fields recovered through the actual kernel.
+
+FINAL ASSEMBLY AND PARAMETER ORDER
+The additional explicit cap by commonRadius supplies the convergence premise
+that the opaque public delta alone does not expose. Reference frequency,
+affine scale and one input precede the eventual rounding index. Source peak
+thresholds include the physical sqrt(Z0)/s factor. The amplitude is the
+Euclidean vector amplitude, not Lean's default Pi sup norm.
+
+Strict-superlevel components are confined by inclusion in a closed nonstrict
+superlevel component; upper semicontinuity is not incorrectly used to assert
+openness of the strict superlevel set. The final material is the affine image
+of the actual chosen old rounding, not a radius substitution with the old
+rounding parameter held fixed in a different formula.
+
+For the modal assembly, s=Re(k_n)/k0 uses the actual rounded pole, preserving
+the exact final real frequency, quality ratio and unit-N normalization.
+The supplement also records the P06-H/P06-T reference corrections, the
+supported universal algebraic-index premise, and the regularized-integral
+correction across lambda=1 from the original report.
+
+REMAINING PROJECT WORK
+Implement the reviewed new lemmas and assemblies, including their Packet
+05/06 prerequisites, against the pinned Lean/mathlib environment. Inspect
+elaborated statement scopes and actual axiom outputs, then perform the
+required clean aggregate integration before increasing any acceptance count.
+The unrestricted-channel project theorem remains a separate obligation.
+
+Accepted proof status remains stage 65: 495 incremental modules and 3632
+standard-only declaration reports beyond the clean 5238 baseline. This
+review changes no accepted ledger, manuscript, frozen checkpoint or proof
+source. INTAKE.json records zero accepted Maxwell theorems added.

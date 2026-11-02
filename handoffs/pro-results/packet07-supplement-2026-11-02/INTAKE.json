@@ -1,0 +1,250 @@
+{
+  "reviewed_date": "2026-11-02",
+  "proof_checkpoint": "aeed697d5224424878d99840d33b67abde175947",
+  "prior_report_and_followup_commit": "e027f7d",
+  "source_thread_id": "6ae8088b-0ccc-83ea-9a59-85687dd2cd2f",
+  "source_thread_title": "Complete Packet07 Proof Plan",
+  "report_original_filename": "OQ14_Packet07_G1-G4_Supplemental_Proof.txt",
+  "report_bytes": 93470,
+  "report_sha256": "94977bb3c9c95a873f6e15ad3be57ed1933c6c1710140339042e38615705e351",
+  "report_preserved_byte_for_byte": true,
+  "inputs": [
+    {
+      "path": "handoffs/pro-results/packet07-2026-11-02/FOR_PACKET07_FOLLOWUP.txt",
+      "bytes": 220591,
+      "sha256": "dc9ed0a28dc62973fcf675be3845f7c24d6598e2b7684dc44bbb2f9b8b403896",
+      "report_claim_matches": true
+    },
+    {
+      "path": "handoffs/pro-results/packet06-2026-11-01/FOR_PACKET07.txt",
+      "bytes": 283932,
+      "sha256": "c591f77e52969a33535629b7147fb9f3e083540169d856aaf184c27c546a26e0",
+      "report_claim_matches": true
+    },
+    {
+      "path": "handoffs/pro-chat-stage65-2026-11-01/07_modal_and_driven_assembly.txt",
+      "bytes": 149930,
+      "sha256": "f184a82e0db76c33828077aee367fc21ca204bf07fb2397cde00aeb970d07a23",
+      "report_claim_matches": true
+    },
+    {
+      "path": "handoffs/pro-results/packet07-2026-11-02/RETURN_REPORT.txt",
+      "bytes": 103949,
+      "sha256": "cd37e0c616b2fada07a491b069b61493e06235e31aa6c5325bf39f9d16b71e77",
+      "report_claim_matches": true
+    }
+  ],
+  "local_review_sha256": "de5ddd5409591827b52d659dba3e6501746a4e93ee3b78225f05373a5f5269e1",
+  "reused_source_archive": "handoffs/pro-results/packet07-2026-11-02/SOURCE_SUPPLEMENT.zip",
+  "reused_source_archive_sha256": "96874ce8df17c6cbd66a1cf479c459098774096757da2712f19265df7c0dad27",
+  "prior_source_intake": "handoffs/pro-results/packet07-2026-11-02/INTAKE.json",
+  "prior_source_intake_sha256": "4bdcf0214c682a673540ca1a6b11d04c1b885efd4a66e16577e3425808da2c75",
+  "source_checks": [
+    {
+      "path": "lean/ConicalFamily.lean",
+      "sha256": "c81116925588e228d02b43f4e8c0fb5802b4fa06351661a184165597e2b1a15a",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalStaticVolume.lean",
+      "sha256": "8bf636e2c1746a38ba9c2ad7b28b73d068932c8ba14f0a14168afc5114e4d5cf",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalSeparatedSource.lean",
+      "sha256": "1b0de4e950dc379d4dbec30e65045d9d76e9dae131f9fc597b97a0acfc0c945d",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalAnnularSource.lean",
+      "sha256": "115a25dec94dc0c9f23e65c04227e96c26f5af59fc7b269c04775ddd00fd9ad1",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalCapField.lean",
+      "sha256": "a54516fc04b820e15ea088f076333ae84bb199339946a79c90a2dac9be140246",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CapSturmLiouville.lean",
+      "sha256": "fbc4db08d9fb30f81cf1826c0f353158885a9cf185dbf1171245502bb7422557",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CapAngularShooting.lean",
+      "sha256": "81d5005801c73454fc340c5b9cc38cb6a46059d281abc75654e305c7e57b00a0",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/WeakPoynting.lean",
+      "sha256": "74b49995d65c7e6ef3722481c706d321f27e2f73ea0c9da2628ba65bfe44e102",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CompactCommonMaterial.lean",
+      "sha256": "b0dc571cf72b1eb6649644456df6128573d2afc12afcdb4a931fb9c5cde966cc",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalCommonBaseline.lean",
+      "sha256": "43e375bd604f1f9ac858468e0adbd54b3efbe05d7df853de1f767058a1cd042c",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalTipRounding.lean",
+      "sha256": "e88f1d6114928deba49d2d10e5e49e78f872742c467199692afb18613da43010",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalSmoothCapGraph.lean",
+      "sha256": "b41eaa90a63e846c74856f301fc72809830226f73097590169395c23724d7972",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalSmoothJunction.lean",
+      "sha256": "f618021d115ad76cdd2f66523f9bd0408de098d2cb139825169bc53186a809c2",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalJunctionRadial.lean",
+      "sha256": "ecb9f5786f7a79b1f945f4eec9e5bb3594c22e70cc61ad2472340d453624683b",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalJunctionPhysical.lean",
+      "sha256": "007aa91f37f9d3e85035aa572542f0db2d0193246f880ce74cf5214c41b73532",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CommonBinaryRounding.lean",
+      "sha256": "8ca6c7e6ef5b258856e912a5ac366c568e6e7fe23eaf61afc27fcff3a0bcae2a",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CommonBinaryInterface.lean",
+      "sha256": "56f4714b2fd22e8ed2065c29ee436dbbb2ed184a7fc8996cb0e02f9faa40e0ec",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CommonBinaryCollar.lean",
+      "sha256": "5fa0084a8873b49d3714da4592c4deb6e08e868a67a72eb25d037cbe5e2b61d1",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/CommonBinaryValues.lean",
+      "sha256": "b87ec5edb0fa05965071cc3c47c65324db0dcae9419f2209f75a0220e5d1f5b6",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalCommonRungeNonzero.lean",
+      "sha256": "1607810ca742b908795f2b557f02b7c8545198f542c127741cc404f44d65de44",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ConicalCommonBinaryPeaks.lean",
+      "sha256": "c733989690ecdd00c9198941fefd3c6eb44bb2750f5121426796e58022957925",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteAngularHerglotz.lean",
+      "sha256": "d749f6979fd1509a7cb99e9d2a103af7742dbc6918da38e70201c11f01e9a192",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/AngularHerglotz.lean",
+      "sha256": "ea99fb7f0079a70ffc340b408e0e10e63e1c6ad676a7496cfb2b2248d13c4cae",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteVectorAngular.lean",
+      "sha256": "7e8d51d78d1478958ab81760418ef81f3beb08d6804e7602e9cb193d8a52770c",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteMixedHerglotz.lean",
+      "sha256": "f5b68aae61abbfb6d8dac807ac9e53f51d99e8b10e3bde80093676d847620a93",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteMixedFields.lean",
+      "sha256": "735f7fdd1031565e2212da8cfb394043331b5aa2fe7877c5e2ee76febd770746",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteMixedTraces.lean",
+      "sha256": "7fe060085fb475a5d48a986bf2bab36ad1026478b1a70bb89bef963d13b5b9a9",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteMixedInwardFlux.lean",
+      "sha256": "3429f638006aac9d9d0da4a31f72bb1c0ea962eb43039068746585f27e1e3f1e",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FiniteMixedScaledFlux.lean",
+      "sha256": "d6f491581db9a1a54b5d4d3c17600566faaa4877e563f7f23f4ad8f879023149",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/SphereWaveCalculus.lean",
+      "sha256": "9d2092e1177448b750782634b5ad6411d66d8d71121a7e4c4cca385c96867727",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/SphereReactionKernel.lean",
+      "sha256": "084f2baa0bf822258bd6c5658be3624f981a697309fa29e766aed04157a6b5ce",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/AngularPower.lean",
+      "sha256": "23a23d2572d4d5640cc710ebb69c2c23f49b5f6b61292efef1f90d721ee89630",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/Maxwell.lean",
+      "sha256": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FarFieldPower.lean",
+      "sha256": "0d510b5c7cb24df54d91acac1275e524c4d4e1f685d958e015e1d9c61310ec05",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/DilationL2.lean",
+      "sha256": "9feab774cdeda9d6d8b508bb835659a511085da776d929762eecec7a7ab45bf7",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/FrequencyScalingMaxwell.lean",
+      "sha256": "9a61a32ab2f351fdece7cda4dcae72682dd34e2db6b1b5366203f3699c566adf",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/ModalBoundedContrastIsolation.lean",
+      "sha256": "8399e6c71b7a532f956d03fb3cd9afd517651dec7c24acc15aa3751b919026da",
+      "archived_bytes_match_current": true
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/SmoothTransition.lean",
+      "sha256": "b2bba0689dbc15fd85a166dfe0a9a56b39761d3ff93295bc40450a65b386bd86",
+      "archived_bytes_match_current": true
+    }
+  ],
+  "verified_quoted_source_blocks": 45,
+  "additional_pinned_source": {
+    "path": "lean/.lake/packages/mathlib/Mathlib/MeasureTheory/Constructions/HaarToSphere.lean",
+    "pin": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "current_sha256": "f1e97a8919ed7246f8d016cf0e9461eedb12123819da3b6dac336d2647141b41",
+    "pinned_blob_sha256": "24447f303e438c646e73d4fc10adc71c5885c88afd270538790e83bf7508f1bb",
+    "match": "Text matches pinned Git blob after CRLF-to-LF normalization"
+  },
+  "independent_reviews": [
+    "6.1 Terra: exact old-rounding topology and smoothness",
+    "6.1 Terra: same-input power and physical dilation",
+    "6.1 Terra: exact source dictionary and final assembly"
+  ],
+  "new_lean_verification": false,
+  "accepted_maxwell_theorems_added": 0,
+  "verdict": "No substantive mathematical error found. G1-G4 discharged under reviewed prerequisites. No further Pro follow-up required for this packet. New Lean formalization and verification, and the separate unrestricted-channel theorem, remain outstanding. No full OQ14 closure."
+}
