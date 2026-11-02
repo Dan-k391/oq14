@@ -1,0 +1,160 @@
+OQ14 PACKET 07 — LOCAL REVIEW AND REMAINING EXACT-SOURCE ASSEMBLY
+Reviewed: 2026-11-02 (America/New_York)
+Proof checkpoint: stage 65, aeed697d5224424878d99840d33b67abde175947.
+Prior handoff commit: ae3df34.
+
+VERDICT
+The report is useful and substantially advances the mathematical argument.
+No substantive mathematical error was identified in its analytic cone
+coefficient proof, modal construction, or independently defined physical
+driven construction, subject to the reviewed Packet 05/06 premises and the
+standard functional-analytic background explicitly used.
+
+It does NOT finish the original Packet 07 deliverable. The task specifically
+requires the existing SAME common binary material/rounding and one normalized
+input. Section 4 instead proves a physical alternative using a newly defined
+convex rounding. The report openly states that its equality/adapters to the
+named existing records are missing. The old rounding's connected-component
+count cannot be inferred from the new one's proof. These are remaining
+mathematical source-assembly obligations, not merely formatting issues.
+
+No new complete proof from this report is implemented or verified in Lean.
+The unrestricted-channel theorem is a separate outstanding project obligation.
+Neither this review nor the report establishes full OQ14 closure.
+
+PROVENANCE
+Chat: Complete Packet07 Proof Plan
+https://chatgpt.com/c/6ae8088b-0ccc-83ea-9a59-85687dd2cd2f
+Original download: C:/Users/Daniel/Downloads/OQ14_Packet07_Full_Proof_Report.txt
+Original size: 103,949 bytes.
+SHA256: cd37e0c616b2fada07a491b069b61493e06235e31aa6c5325bf39f9d16b71e77
+RETURN_REPORT.txt preserves the complete original bytes, including its author's
+2026-11-01 preparation date. This local review was performed on 2026-11-02.
+Its two reported input hashes match the original Packet 07 task and the
+283,932-byte FOR_PACKET07 prerequisite package. INTAKE.json records checks.
+
+REVIEW COVERAGE
+Root read the complete analytical argument in Sections 1-4 and the source/
+verification obligations. Independent 6.1 Terra reviewers checked (i) modal
+assembly and then the analytic cone proof, (ii) the detailed driven Maxwell,
+Runge, geometry and power arguments, and (iii) actual repository definitions.
+No fresh compilation or implementation was performed during this review.
+
+The analytic angular branch uses an invertible stiffness form, a compact
+mass operator and a rank-one Riesz projection on the fixed axisymmetric odd
+space. Bilinear mass normalization preserves holomorphy. Its exact derivative
+lambda'(0)=-t(1-t^2), the weak radial forcing signs, and the constant-vector
+identity B0=lambda(lambda+1)A0 are consistent.
+
+The graph-space construction justifies holomorphy of a FIXED Fourier H2
+lifting without presuming that improved regularity automatically preserves
+analytic dependence. Subtracting W(0) gives uniform integrable majorants
+through lambda=1. The derivative of the regularized particular solution
+contains the necessary -A_tilde term. Finite H1 energy excludes the second
+Euler mode. The annular functional is holomorphic and yields exactly
+c0=sqrt(4*pi/3) E0(0) dot axis. Lift independence, essential blowup and finite
+simultaneous nonvanishing concern the actual fields.
+
+The modal construction maintains one support ball, the same closed electric
+sector, real-slice material positivity, and compatible reciprocal
+normalization. The explicit cap and tip geometry supplies fixed smooth
+collars. The derived physical laws d_s=a^2*s^4*d and N_s=a^2*s^3*N give the
+correct unit-N amplitude s^(-3/2). Using the ROUNDED pole in s=Re(k_j)/k0
+preserves exact final frequency. Full axial rotations, promoted to continuous
+material-side traces, give plane maximizers. Geometry, amplitude and frequency
+margins are chosen before the final common rounding index.
+
+The independent driven proof retains the static distributional term, gives
+a uniform small-contrast inverse, proves the ordinary-ball Maxwell estimate
+and the variational local comparison field, and uses bilinear reciprocity
+for total-field Runge in the common material. The zero-side continuation
+argument across a smooth interface follows from the distributional equation.
+The compact-support H(curl) test avoids assumed observation-ball boundary
+traces. Its new convex rounding has exactly two connected smooth lobes per
+tip, and unit incoming power scales with amplitude s^(-1). These arguments
+support the independently defined physical construction; they do not prove
+that the existing implementation uses that same rounding.
+
+MINOR CORRECTIONS TO THE RETURNED TEXT
+1. Section 3.D refers to P06-B and P06-D. The matching premise labels in
+   Section 1.6 are P06-H and P06-T.
+2. Section 3.D.1 chooses an arbitrary algebraic n between 1 and sqrt(epsilon_+),
+   whereas its P06-H summary states only existence of a suitable n. The actual
+   ModalBoundedContrastIsolation.normalized_isolated_poles source supports
+   every algebraic n>1, so the stronger choice is valid. Align the summary.
+3. The report correctly identifies a manuscript correction: the unregularized
+   constant-vector integrals converge as ordinary integrals for Re(lambda)<1.
+   Their subtracted continuation, not the divergent integrals themselves,
+   defines the analytic formula across lambda=1. This correction is recorded
+   here; no manuscript source was edited.
+
+CURRENT STATUS OF G1-G4 AFTER INSPECTING THE REPOSITORY
+G1: The missing defining sources already exist. ConicalStaticVolume.Data and
+its coefficient are explicit; ConicalSeparatedSource.material truncates that
+coefficient to a closed ball. ConicalAnnularSource.dielectric and
+ConicalCapField.permittivity give the exact physical material value.
+ConicalFamily.exists_data ALREADY constructs Data for arbitrary positive
+contrast d, threshold 0<t<1 and any supplied ContDiffBump, with exponent<1
+and eigenvalue in (0,2). WeakPoynting.shrinkingBump supplies arbitrarily small
+cutoffs. Do not leave that constructor as an absent mathematical theorem.
+Still assemble these exact records into the requested finite geometry and
+prove the literal/a.e. truncated-double-cone indicator identity, with boundary
+and origin conventions accounted for. The cutoff rIn condition used for the
+local static field differs from the rOut material-support condition.
+
+G2: This is the main remaining exact-construction proof. The old material is
+CommonBinaryRounding.coefficient, built from translated
+ConicalJunctionPhysical.binaryMaterial. Its inclusion is the physical
+pullback of ConicalSmoothJunction.inclusion, involving the existing smooth
+cap, coneMargin, ballMargin and smoothTransition correction. It is NOT the
+convex smooth-maximum set newly defined in Section 4.F. Prove that for every
+fixed admissible slope and radius, every sufficiently late old rounding has
+exactly two nonempty connected bounded components with separated closures;
+then prove the common finite union has exactly 2N. Include a common late
+index for all geometric and hotspot requirements. Early roundings can be
+empty at small radii, so do not claim nonemptiness for every n. Smooth
+boundary certificates alone do not imply connectedness or cardinality.
+
+G3: The exact input/flux definitions are also available. FiniteAngularHerglotz
+uses AngularHerglotz fields of its finite amplitude. The latter uses moment
+at -k and magnetic amplitude -direction cross amplitude; preserve this sign
+and the actual surface measure. FiniteMixedHerglotz already identifies BOTH
+electric and magnetic incident fields with the scaled finite mixed fields.
+FiniteMixedScaledFlux.inwardPowerK is the incoming half-field flux, with
+limit E(c)/k^2. Its normalizeK and normalizedK_limit ALREADY give a unit
+limit for k>0 and nonzero c. Reuse the actual common-material input witness;
+do not infer unit power from an unweighted coefficient norm, select a
+different input after rounding, or silently replace the finite input by
+Section 4's independent smooth density. Prove the physical field/flux and
+rigid-dilation adapters, explicitly tracking direction reversal, frequency
+factors, and any physical impedance convention.
+
+G4: The omitted representative theorem is already proved in
+DilationL2.physicalCoordinate_dilate. For k>0 it states almost everywhere
+  physicalCoordinate(dilate k F)_i(x)
+    = k * physicalCoordinate(F)_i(k*x).
+Thus with length factor s>0 and raw pullback T_s F(x)=F(x/s),
+  dilate(1/s) F = s^(-1) T_s F
+at the level of these physical representatives. In particular unit-N modal
+scaling s^(-3/2)T_s corresponds to s^(-1/2) times dilate(1/s), while the
+power-preserving driven amplitude is precisely the latter dilation's
+physical amplitude. This source dictionary resolves the convention; named
+integration lemmas and the material/frequency adapters still need to be
+written when formalizing the result.
+
+WHAT IS NEEDED FROM THE USER
+No additional source upload is needed at present. The requested definitions
+are local and are supplied in FOR_PACKET07_FOLLOWUP.txt with authenticated
+source excerpts. Send that file back to the existing Packet 07 chat to close
+the exact-source assembly G1-G4, concentrating on G2 and G3. The file gives
+the task and current dictionary without requiring access to this chat.
+If a further genuinely missing declaration is needed, request its exact name.
+
+FORMALIZATION BOUNDARY
+All new analytic and assembly arguments in Packets 05-07, and prerequisites
+not yet implemented from earlier reports, remain Lean obligations. Existing
+source lemmas are identified with their frozen provenance; this does not
+promote the new reports into accepted code. The source supplement is context,
+not a fresh build. No proof source, accepted ledger, manuscript or frozen
+checkpoint is changed. The separate unrestricted-channel theorem and a full
+clean aggregate verification are outside this report review and remain open.

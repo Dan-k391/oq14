@@ -1,0 +1,1827 @@
+OQ14 — PACKET 07 RETURN REPORT
+Analytic cone insertion; quantified modal and driven hotspot assembly
+Prepared 2026-11-01 (America/New_York)
+
+Inputs read: FOR_PACKET07.txt and 07_modal_and_driven_assembly.txt, supplied in
+this conversation. No earlier conversation or unsupplied repository checkout
+is used. The referenced checkpoint is aeed697d5224424878d99840d33b67abde175947,
+with requested Lean 4.19.0 and mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b.
+
+STATUS AND HOW TO READ THIS REPORT
+
+The new local analytic coefficient theorem and the complete modal existence
+theorem are proved mathematically below, using the exact reviewed mathematical
+results of Packets 05 and 06 and the physical dictionary in FOR_PACKET07.
+All their hypotheses are instantiated for the actual physical volume fields.
+No modal excitation is inferred from a driven Runge theorem.
+
+For driven packing, two questions must be separated. The supplied common-field
+theorems do give one common sharp material, one fixed normalized angular input,
+and eventual simultaneous high values under their exact hypotheses. Their
+quoted interface certificates do not, by themselves, prove that the opaque
+rounded inclusion has exactly two connected components at each vertex. This
+report gives an explicit geometric construction and a physical common-material
+excitation/rounding proof with exactly 2N inclusions, as well as the precise
+small-frequency scaling needed when reusing the existing source theorems.
+The existence theorem's quantifiers are preserved. Equality of the explicit
+geometric realization with the particular opaque source records is not claimed;
+the exact source adapters still required are listed at the end. In particular,
+a theorem-level construction is not mislabeled as a completed integration of
+the named CommonBinaryRounding implementation.
+
+No Lean compilation was performed. lean, lake and elan are not available on
+PATH; no pinned project is present in the supplied workspace. The new proofs
+below and their proposed Lean statements are mathematical work, not verified
+Lean code. Existing source acceptance labels are attributed to the attachments.
+No proof count, new accepted module, clean aggregate build, or unrestricted-
+channel closure is asserted.
+
+The manuscript requires one local wording correction: the original unregularized
+constant-vector integrals exist as ordinary integrals when Re(lambda)<1. Their
+value there is -r A0. The subtracted formula proved below extends that expression
+holomorphically across lambda=1; it is not an evaluation of a divergent integral.
+
+The physical normalization and scaling conclusions are
+
+  d_phys(E_U)=1,           N(E_U)=-k/2,
+  N(alpha E_U)=1          when alpha^2=-2/k,
+  d_phys,s(a T_s E)=a^2 s^4 d_phys(E),
+  N_s(a T_s E)=a^2 s^3 N(E),
+
+where T_s is raw physical pullback under a length dilation by s>0. Thus unit
+physical reciprocal norm uses amplitude s^(-3/2); unit derivative pairing uses
+s^(-2). A unit-power driven illumination instead uses amplitude s^(-1).
+The modal final dilation uses the ROUNDED pole: s=Re(k_rounded)/k0.
+
+CONTENTS
+
+1. Exact statements, conventions, and reviewed premises.
+2. Complete analytic cone insertion proof.
+3. Complete modal construction, geometry, normalization, and final assembly.
+4. Driven common-material assembly and source-boundary audit.
+5. Dependency/source map.
+6. Ordered Lean formalization plan and proposed statement specifications.
+7. Verification record and precise remaining obligations.
+
+==========================================================================
+1. EXACT STATEMENTS, CONVENTIONS, AND REVIEWED PREMISES
+==========================================================================
+
+1.1 Physical conventions
+
+Space is R^3; fields have values in C^3. Dot products in angular analytic
+pairings, reciprocity, d_phys, and N are complex BILINEAR. Norms and energy
+estimates use the usual Hermitian Euclidean norm. Surface measure on S^2 is
+ordinary area measure, total area 4 pi. The physical susceptibility is chi;
+permittivity is epsilon=1+chi. This is exactly MaterialMaxwell.dielectric.
+
+Unless physical impedance is displayed in the driven normalization calculation,
+write the source-free weak Maxwell equations in the packet's normalized units:
+
+  curl E = i k H,          curl H = -i k epsilon E.           (1.1)
+
+Physical H is this H divided by Z0. The electric field E is unchanged.
+For complex k, outgoing means analytic continuation of
+Phi_k(x)=exp(i k |x|)/(4 pi |x|). No spatial decay is asserted in Im(k)<0,
+and no resonant field is assumed to be in all-space L2.
+
+On a fixed containing ball B, define the actual physical operator
+
+  K_B(k) f = [(k^2 I + grad div)(Phi_k * extend_B(f))]|_B,
+  L_chi(k) = I - K_B(k) M_chi,
+  beta_B(f,g) = integral_B f(x) dot g(x) dx,
+  d_phys(E,k,chi) = -beta_B(chi E, K_B'(k)(chi E)),
+  N(E,k,chi) = -(k/2) d_phys(E,k,chi).                        (1.2)
+
+The distributional static term is retained: K_B=-P_B+R_B. R_B is entire
+Hilbert-Schmidt, and P_B is the compressed longitudinal projection. Formula
+(1.2) is a finite support integral. Its value is independent of the containing
+ball because both factors chi E are supported in the same physical material.
+
+For a fixed smooth rounded device, let E^a be the continuous representative
+from each open material region Omega_a. The pointwise convention is
+
+  E_up(x)=max { |E^a(x)| : x belongs to closure(Omega_a) }.    (1.3)
+
+All incident material sides are included, including a side exterior to an
+observation ball. E_up is upper semicontinuous, rather than necessarily
+continuous, at a dielectric interface. An interface maximizer is allowed.
+
+1.2 Theorem 07-A — analytic coefficient through the homogeneous material
+
+For every R>0, epsilon_b>0, real unit vector e, and
+t in (1/sqrt(3),1), put
+
+  a(omega)=1_{|omega dot e|>t},    q_eta(omega)=1+eta a(omega).
+
+Let k_eta and E_eta be holomorphic on a complex neighborhood of 0 with values
+in C and L2(B_{3R};C^3), with k_eta!=0, and assume on that ball in distributions
+
+  curl curl E_eta = k_eta^2 epsilon_b q_eta E_eta.             (1.4)
+
+The H_loc(curl) condition in the packet may also be included; it follows from
+the displayed equation and local L2. There is a smaller complex disk, an
+H1(S^2)-holomorphic axisymmetric odd branch phi_eta, holomorphic nu_eta and
+lambda_eta, and a holomorphic scalar c_eta such that
+
+  -div_S(q_eta grad_S phi_eta)=nu_eta q_eta phi_eta,
+  nu_eta=lambda_eta(lambda_eta+1), integral_S q_eta phi_eta^2=1,
+  phi_0=sqrt(3/(4pi)) omega dot e, nu_0=2, lambda_0=1,
+  nu'_0=-3t(1-t^2), lambda'_0=-t(1-t^2),
+  c_0=sqrt(4pi/3) E_0(0) dot e.                              (1.5)
+
+For every sufficiently small REAL eta>0, 0<lambda_eta<1 and c_eta is the
+actual intrinsic singular coefficient of E_eta. If E_0(0) dot e!=0, c_eta
+is nonzero for every sufficiently small positive eta. E_eta is then essentially
+unbounded on every neighborhood of the vertex; high values occur at ordinary
+points inside the homogeneous phases. The field still has finite local energy.
+
+For a single simultaneous material perturbation and one holomorphic eigenmode,
+the same conclusion holds at every member of any finite collection of vertices
+with nonzero seed axial values, on ONE common interval 0<eta<eta_N. This is
+a universal small-eta interval, not a separately chosen parameter per vertex.
+
+1.3 Theorem 07-M — exact modal target ms:modal-packing
+
+For EVERY epsilon_+>1, EVERY real k0>0, EVERY nonempty relatively open patch
+P in an affine plane Pi, EVERY integer N>=1, and EVERY ell,M,Q0>0, there exist
+a finite smooth piecewise-constant scalar dielectric epsilon with vacuum
+exterior and 1<=epsilon<=epsilon_+, and ONE nonzero actual outgoing Maxwell
+mode (E,H,k), such that
+
+  Re(k)=k0,   Im(k)<0,   Re(k)/[-2 Im(k)]>Q0,   N(E,k,chi)=1. (1.6)
+
+There are N pairwise disjoint closed observation balls with positive radii,
+centers in P, orthogonal projections into Pi contained in P, and diameter<ell.
+On each ball E_up attains a finite maximum m_j>M, and on a fixed annular
+collar C_j of its boundary
+
+  sup_{C_j} E_up < m_j/2.                                   (1.7)
+
+A maximizing point of every ball is selectable in P. Every half-amplitude
+connected component through such a maximum has compact closure inside that
+ball. Rotational rings of maximizers are allowed. No support projection
+condition is imposed on the surrounding modal resonator. The insertion
+contrast may depend on N. The prescribed material bounds do not.
+
+The common host epsilon_b=n^2 may be chosen depending only on epsilon_+,
+before N, ell, M or Q0. Geometry, the chosen resonance, the insertion parameter,
+and the final rounding can depend on the requested data. No uniform feature
+size, mode energy fraction, or isolation radius over all N is needed.
+
+1.4 Theorem 07-D — exact driven target hs:three-packing
+
+For EVERY real k0>0 and epsilon_+>1 there EXISTS one
+epsilon_h in (1,epsilon_+] such that, for EVERY nonempty relatively open
+planar patch P, EVERY finite N>=1, and EVERY ell,M>0, there are EXACTLY 2N
+nonempty bounded connected inclusions with pairwise disjoint closures and
+C-infinity boundaries, with epsilon=epsilon_h inside their union and epsilon=1
+outside, and ONE unit-incoming-power physical Maxwell illumination at k0,
+for which N disjoint observation balls have diameter<ell, centers in P,
+projections contained in P, and the same attained one-sided peak/collar
+inequalities (1.7) with m_j>M. The projection of the ENTIRE material support
+is also contained in P. The normalized input is chosen before rounding and
+is the same for every member of the rounded sequence. Maximizing points need
+not belong to P. For N=0, if 'finite N' includes zero, take vacuum and any
+unit-power illumination; all inclusion/observation requirements are empty.
+
+In particular epsilon_h is fixed before P,N,ell,M. It is not replaced by an
+epsilon_{h,N}. Every peak belongs to the response of one common physical
+material under one input, rather than separate responses added together.
+
+1.5 Exact reviewed premises from Packet 05
+
+The following are used as mathematical prerequisites, whose full proofs are
+included in FOR_PACKET07. They have not been newly formalized here.
+
+P05-R: On nested patches V compactly contained in U, with a fixed C3 interface
+separating two positive CONSTANT scalar permittivities lambda<=epsilon<=Lambda,
+an L2 field E satisfying curl curl E=F in L2 and div(epsilon E)=0 on the WHOLE
+patch has piecewise H2 regularity on V, with
+
+  ||E||_{H2_pw(V)} <= C (||E||_{L2(U)}+||F||_{L2(U)}).         (1.8)
+
+The constant depends on nested cutoffs, the two positive bounds, and the fixed
+C3 charts. No corners, junctions or sharp vertices belong to the target patch.
+The proof also supplies the fixed Fourier lift and mean-zero potential used
+in section 2. It applies to complex E,F. Positivity concerns epsilon, not k^2.
+
+P05-C: If k_j->k!=0 and E_j->E locally in L2, with actual distributional
+Maxwell equations, and the materials are identical on an OPEN neighborhood
+of a fixed smooth collar, then their continuous material-side representatives
+converge uniformly there. Applied to U_j=E_j-E, the right side includes
+
+  k_j^2 epsilon U_j + (k_j^2-k^2) epsilon E.                 (1.9)
+
+The second term is retained. Uniformity is asserted on fixed collars only.
+
+P05-A: For each fixed rounded configuration with finitely many smooth material
+regions, the envelope (1.3) has a finite attained maximum on a compact
+observation ball. With eventual positive-volume high-value sets in inner
+balls, local L2 convergence, fixed smooth collars, and the same input or
+normalization, one common eventual tail gives every strict peak/collar
+inequality at every one of finitely many balls. A connected component cannot
+cross a collar on which E_up<m_j/2; upper semicontinuity also excludes its
+closure from that collar. P05 does NOT independently construct the modal
+branch, the nonzero singular coefficients, or the driven geometry/cardinality.
+
+1.6 Exact reviewed premises from Packet 06 and the resolved pairing dictionary
+
+P06-S: For an algebraic real n>1 and a nonzero dipole TM determinant root,
+the actual weighted electric-sector volume pencil has a one-dimensional
+kernel, a one-dimensional cokernel, and nonzero derivative crossing pairing.
+The inverse on this fixed sector has an exact rank-one simple pole. The
+sector is the closed L2 space fixed by every axial polar-vector rotation
+and an even meridional polar-vector reflection. The theorem concerns this
+selected sector; it does not assert a rank-one full-space sphere residue.
+
+P06-H: For every contrast ceiling C>0, one may first choose one algebraic
+n>1 with n^2-1<C. For every L in R and Q>=0 there are k,f,a from the actual
+ModalBoundedContrastIsolation.normalized_isolated_poles construction with
+
+  Re(k)>L, Im(k)<0, Re(k)/[-2 Im(k)]>Q,
+  U=a weightedMode(n,k,f)!=0, U in the fixed electric sector,
+  A(k)U=0, d_src(U)=1.                                      (1.10)
+
+The quoted theorem also gives all-degree TM separation and a nonzero
+derivative of the dipole determinant. Packet 06 proves that these data have
+the actual operator simple-pole consequences; determinant simplicity is
+not substituted for that proof. The reviewed Packet 04 dictionary identifies
+the actual core field as a nonzero regular electric dipole.
+
+P06-P: With the actual physical kernel K and weighted-to-physical recovery,
+the corresponding physical field E_U has d_phys(E_U)=d_src(U). The coefficient
+is EXACTLY one: KernelReciprocity.vectorPair_actual, its integrability lemmas,
+DynamicConvolution.component, NewtonL2.physicalCoordinate_ae and the
+volume-preserving coordinateMap identify the source pairing with
+integral f dot g, without conjugation or Jacobian factor. Thus for (1.10),
+
+  d_phys(E_U)=1, N(E_U)=-k/2.                                (1.11)
+
+At every nonzero simple physical pole N!=0, N(alpha E)=alpha^2 N(E), and
+the actual selected-sector electric Green residue, with source convention
+[curl curl-k^2 epsilon]G(k)f=f, is
+
+  Res G = -E_global tensor E_global / [2k N(E)].             (1.12)
+
+This is a compact-source to local-L2-observation statement, not an all-space
+energy integral. The historical PAIR uncertainty in the original 06 report
+is resolved by the supplement and is not retained as a gap here.
+
+P06-T: Fix one symmetry-invariant containing ball B, the same fixed closed
+conjugation-invariant electric sector, and a real base 0<=chi<=C with a
+one-dimensional kernel and cokernel and NONZERO crossing at k!=0.
+For frequency-independent, complex-L-infinity-holomorphic chi_eta near the
+base, preserving that sector and support, there is a holomorphic simple
+frequency/eigenfield branch. A compatible holomorphic square root gives
+N=1. For real 0<=chi_j<=C supported in that SAME B and preserving that
+sector, with chi_j->chi almost everywhere, there are unique nearby simple
+poles k_j->k and consistently normalized modes E_j->E in local L2, with
+chi_j E_j->chi E and N_j->N!=0. This uses norm convergence of the compact
+REDUCED pencils. It does not require or assert multiplier norm convergence.
+
+The analytic case does not require a positive complex-valued material or a
+holomorphic square root of susceptibility. Positivity is imposed only on
+the physical real slice. All inserted and rounded families below meet these
+support, sector, simplicity and material hypotheses explicitly.
+
+1.7 What is proved here rather than imported
+
+Sections 2 and 3 prove the entire new modal excitation and assembly chain:
+analytic angular branch; graph-space holomorphic lifting; regularized radial
+coefficient; exact c_0; simultaneous nonvanishing; actual complex source-free
+equations; concrete geometry; physical dilation; exact-frequency normalization;
+full-rotation one-sided maximum selection; and valid parameter ordering.
+Section 4 treats the separate driven construction and the literal-source
+interfaces. The dependency map and verification record distinguish theorem-
+level mathematical closure from implementation and source-identification work.
+
+
+==========================================================================
+2. COMPLETE ANALYTIC CONE INSERTION PROOF
+==========================================================================
+
+Local step labels B1, C1, and so on are retained for the proof references.
+
+2.A. EXACT LOCAL STATEMENT
+
+Fix R>0, a unit real axis e, epsilon_b>0, and t in (1/sqrt(3),1). Let
+a(omega)=1_{|omega.e|>t}, q_eta=1+eta a. Suppose k_eta and E_eta are holomorphic
+on a complex disk about 0, with values in C and L²(B_{3R};C³), respectively,
+k_eta nonzero, and, distributionally on B_{3R},
+  curl curl E_eta = k_eta² epsilon_b q_eta E_eta.
+The initial H_loc(curl) premise in the manuscript may be retained, although
+Packet05's mollified Caccioppoli argument derives it from this equation.
+
+There is a smaller parameter disk and an analytic angular branch
+  -div_S(q_eta grad_S phi_eta)=nu_eta q_eta phi_eta,
+  nu_eta=lambda_eta(lambda_eta+1), integral_S q_eta phi_eta²=1,
+  phi_0=sqrt(3/(4pi))(omega.e), lambda_0=1,
+such that its actual intrinsic conical coefficient for sufficiently small real
+eta>0 has a holomorphic extension c_eta and
+  c_0=sqrt(4pi/3) E_0(0).e.
+If this last quantity is nonzero, then for every sufficiently small real
+eta>0 the actual E_eta is essentially unbounded on every ball about the
+vertex. High values can be selected in the open homogeneous material regions.
+
+No spatial derivatives of q_eta, positivity of complex q_eta, exterior Runge
+approximation, or a pointwise convergence assertion at the vertex is used.
+
+2.B. ANGULAR BRANCH AND ITS EXACT DERIVATIVE
+
+B1. Let V be the complex H¹(S²) subspace invariant under every rotation about e
+and odd under the reflection of the axial coordinate omega.e. Its constants
+vanish. On V, define sesquilinear forms
+  a_eta(u,v)=integral q_eta grad u . conjugate(grad v),
+  m_eta(u,v)=integral q_eta u conjugate(v).
+At zero, the Poincare inequality makes a_0 coercive. With the a_0 inner
+product, A_eta=A_0+eta A_1 is invertible for |eta|<1/||A_0^{-1}A_1|| by its
+operator Neumann series. M_eta is compact V→V* because H¹(S²)→L²(S²) is
+compact. Thus T_eta=A_eta^{-1}M_eta is norm holomorphic and compact.
+
+B2. At eta=0, the spherical harmonics in V are exactly the m=0, odd-degree
+harmonics. Their Laplace eigenvalues are l(l+1), l=1,3,5,... . Consequently
+1/2 is an isolated algebraically simple eigenvalue of T_0. A small contour
+around 1/2, excluding all other spectral values, has uniformly invertible
+resolvent for small |eta| by another Neumann series. The Riesz integral P_eta
+is a holomorphic rank-one projection; rank remains one since ||P_eta-P_0||<1.
+v_eta=P_eta phi_0 is nonzero. For a fixed continuous functional L with
+L(phi_0)=1, put mu_eta=L(T_eta v_eta)/L(v_eta); then
+T_eta v_eta=mu_eta v_eta. Let nu_eta=1/mu_eta.
+
+B3. The bilinear mass b_eta=integral q_eta v_eta² is holomorphic and b_0=1.
+Use the square root with value +1 at zero and put phi_eta=v_eta/sqrt(b_eta).
+This gives integral q_eta phi_eta²=1. The generalized eigen-equation holds
+against every test in V. Averaging an arbitrary H¹ test over axial rotations
+and then taking its odd part gives a bounded projection Pi onto V. Invariance
+of q_eta and the parity of phi_eta show that both form pairings against a test
+equal their pairings against Pi(test). Thus the equation holds for every
+H¹(S²) test, including the bilinear version obtained by conjugating the test.
+The weighted mean integral q_eta phi_eta is zero by oddness.
+
+B4. Define lambda_eta=(-1+sqrt(1+4nu_eta))/2, choosing the square root with
+value 3. All quantities are holomorphic. For real eta near zero, conjugation
+preserves the eigenproblem and the normalization and initial sign, so the
+branches are real. Differentiating the bilinear eigenproblem at zero cancels
+the phi'_0 terms and gives
+  nu'_0=integral a (|grad phi_0|²-2phi_0²)
+       =3 integral_t^1 (1-3s²) ds
+       =-3t(1-t²).
+The factor 3 includes both caps, the 2pi azimuth integral, and phi_0²'s
+normalization. Since 3lambda'_0=nu'_0,
+  lambda'_0=-t(1-t²)<0.
+Therefore 0<lambda_eta<1 for all sufficiently small real eta>0.
+
+2.C. FIXED LOCAL H² LIFT AND HOLOMORPHY
+
+C1. Put F_eta=k_eta² epsilon_b q_eta E_eta. Multiplication by q_eta is a
+bounded operator on L², affine in eta. Thus eta↦(E_eta,F_eta) is holomorphic
+in L²×L² and uniformly bounded on every compact parameter disk.
+
+C2. The closed graph space
+  G={E∈L²(B_{3R}):curl curl E∈L²(B_{3R})}
+has norm ||E||_2+||curl curl E||_2. It is a closed subspace of L²×L² under
+E↦(E,curl curl E), since derivatives are continuous into distributions.
+The pair in C1 lies in this closed subspace. A holomorphic map into a Banach
+space whose values lie in a closed complex subspace is holomorphic into that
+subspace: its difference quotients/Cauchy integrals remain there. Therefore
+eta↦E_eta is holomorphic into G.
+
+C3. For E∈G, the mollified compact-cutoff identity from Packet05 gives
+  ||curl E||_{L²(U1)}≤C(||E||_{L²(B3R)}+||F||_{L²(B3R)}).
+It is legitimate for complex F and uses the real part of the Hermitian energy
+pairing, with F mollified as a whole. No identity
+(qE)*rho=q(E*rho) is asserted. If Z=curl E, then div Z=0 and curl Z=F. The
+Fourier identity |xi|²|z|²=|xi×z|²+|xi.z|², localized with a cutoff, yields
+  ||Z||_{H¹(U2)}≤C(||E||_2+||F||_2)
+on a smaller ball U2.
+
+C4. Keep the original R fixed. Use the nested balls
+  B_R < B_(3R/2) < B_(2R) < B_(9R/4) < B_(5R/2) < B_(11R/4) < B_(3R),
+where < denotes compact containment. Choose once and for all a smooth chi
+supported in B_(11R/4) and equal to one on B_(5R/2). The preceding estimates
+give curl E in L2 on B_(11R/4) and in H1 on B_(5R/2). Extend chi E by zero
+to R³ and set
+  W=P_T(chi E),
+  Fourier(P_T f)(xi)=(I-xi⊗xi/|xi|²) Fourier(f)(xi), xi≠0.
+This is a fixed bounded linear map on L². Distributionally,
+  div W=0, curl W=curl(chi E), ||W||_2≤||chi E||_2.
+On B_(5R/2), curl W=Z. The first localized Fourier div/curl estimate gives
+W in H1(B_(9R/4)); the second gives W in H2(B_(2R)), and
+  ||W||_{H²}≤C(||E||_2+||F||_2).
+For the second estimate, the cutoff commutator is H¹ because the first
+estimate has already given W∈H¹ on a larger ball. There is no circularity.
+Thus E↦W|_{B_(2R)} is a bounded linear map G→H². C2 proves W_eta is
+holomorphic H² directly. This avoids any unproved upgrading of distributional
+holomorphy or any external regularized-lifting theorem.
+
+C5. E_eta-W_eta is curl-free on B_(2R). The closed subspace
+Z_cf={Z∈L²:curl Z=0} has a bounded linear inverse of the gradient into the
+mean-zero H¹ potentials: mollify locally, integrate the smooth curl-free
+fields along segments, subtract the mean, and use the ball Poincare inequality
+to pass to the H¹ limit. The inverse is unique and bounded. Consequently
+  E_eta=grad v_eta+W_eta.
+Construct the potential on B_(3R/2), subtract its mean on B_R, and restrict
+to B_R. This is a fixed bounded linear operation, so v_eta is holomorphic
+H¹(B_R) and mean zero there. No relabeling or shrinking of the original R
+is needed in the coefficient formula below.
+
+C6. Fix any 0<gamma<1/2. The continuous embedding H²(BR)→C^{0,gamma}(BRbar)
+and bounded point evaluation give holomorphic
+  w_eta=W_eta(0), Wtilde_eta(x)=W_eta(x)-w_eta.
+On a closed parameter disk,
+  |Wtilde_eta(r omega)|≤C r^gamma.
+All constants depend only on the fixed radii/cutoffs, the compact parameter
+disk, sup||E_eta||_2, sup|k_eta|² epsilon_b sup||q_eta||_infinity, and gamma.
+No derivatives of the conical material enter these constants.
+
+2.D. WEAK RADIAL EQUATION AND CONSTANT-VECTOR IDENTITY
+
+D1. Taking the divergence of the Maxwell equation gives
+k_eta² epsilon_b div(q_eta E_eta)=0. Since k_eta≠0 and epsilon_b>0,
+  div(q_eta(grad v_eta+W_eta))=0.
+This identity holds for compact H¹ tests by smooth density and boundedness
+of q_eta; it encodes the actual transmission law across the cone interfaces.
+
+D2. All angular pairings below are bilinear, not Hermitian. Define
+  U(r)=integral_S q v(r omega) phi,
+  A(r)=integral_S q (W(r omega).omega) phi,
+  B(r)=integral_S q W_t(r omega).grad_S phi.
+Fubini and Sobolev slicing give U∈H¹_loc(0,R) and
+  integral_0^R r²|U'(r)|² dr<infinity.
+The q phi L² norm controls this last quantity by ||grad v||². Testing with
+zeta(r)phi(omega), zeta smooth compactly supported in (0,R), gives exactly
+  integral_0^R [r²(U'+A)zeta'+nu U zeta+r B zeta] dr=0.
+The angular eigen-equation is applicable to v's H¹ angular slices. Hence
+  (r²U')'-lambda(lambda+1)U=-(r²A)'+rB                         (D.1)
+in one-dimensional distributions. No classical flux at the cone boundary or
+vertex was assumed.
+
+D3. Let
+  A0=integral_S q(w.omega)phi,
+  Atilde=A-A0,
+  Btilde=integral_S q Wtilde_t.grad_S phi.
+Since grad_S(w.omega)=w-(w.omega)omega=w_t, testing the angular equation
+against w.omega proves
+  B0:=integral_S q w_t.grad_S phi=nu A0.                      (D.2)
+Uniform q∞ and phi H¹ bounds imply
+  |Atilde(r)|+|Btilde(r)|≤C r^gamma.
+For each r>0 these are holomorphic functions of eta, since restrictions of
+W_eta are continuous linear maps from C^{0,gamma}, and the angular pairings
+are bounded complex multilinear maps.
+
+2.E. REGULARIZED PARTICULAR SOLUTION AND MAJORANTS
+
+E1. Shrink the disk so that
+  a_*:=inf Re lambda>1/2,
+  b_*:=sup Re lambda<1+gamma/2,
+and sup|lambda|<infinity. Then 2lambda+1 stays uniformly away from zero. Put
+  I(r)=integral_0^r s^{-lambda}
+                  [Btilde(s)-(lambda+1)Atilde(s)] ds,
+  J(r)=integral_0^r s^{lambda+1}
+                  [Btilde(s)+lambda Atilde(s)] ds,
+  ptilde(r)=[r^lambda I(r)-r^{-lambda-1}J(r)]/(2lambda+1),
+  p(r)=-r A0+ptilde(r).                                     (E.1)
+Here r^lambda=exp(lambda log r), with real log r for r>0.
+
+E2. Near zero, uniformly on the parameter disk, the first integrand is bounded
+by C s^{gamma-b_*}, and gamma-b_*>-1+gamma/2. The second is bounded by
+C s^{gamma+a_*+1}. On an interval with upper endpoint exceeding 1 one simply
+splits at 1; the remainder is away from zero. Both majorants are integrable.
+Every parameter derivative adds only a finite polynomial in |log s| on a
+smaller parameter disk (Cauchy bounds control derivatives of all coefficients).
+The majorants s^{-1+gamma/2}(1+|log s|^m) and
+s^{gamma+a_*+1}(1+|log s|^m) are integrable for every integer m≥0. Alternatively
+Morera plus Fubini proves holomorphy without differentiating. Thus I,J,p are
+holomorphic in eta for each r>0, including eta=0.
+
+E3. Keeping the actual Re lambda in the elementary integrals gives
+  |I(r)|≤C r^{1+gamma-Re lambda}/(1+gamma-Re lambda),
+  |J(r)|≤C r^{2+gamma+Re lambda}/(2+gamma+Re lambda).
+The denominators have uniform positive lower bounds gamma/2 and
+2+gamma+a_*. Consequently
+  |ptilde(r)|≤C r^{1+gamma}.                                  (E.2)
+Differentiating only in r, the endpoint terms cancel to give the important
+formula
+  ptilde'(r)=[lambda r^{lambda-1}I(r)
+           +(lambda+1)r^{-lambda-2}J(r)]/(2lambda+1)-Atilde(r).
+Therefore |ptilde'(r)|≤C r^gamma. The derivative formula is initially a.e.
+for integrals of measurable data and extends wherever the displayed data are
+continuous. These estimates are uniform on the whole closed parameter disk.
+
+E4. Direct differentiation in distributions shows ptilde solves (D.1) for
+the tilde forcing. For the constant part, D.2 gives forcing
+  -(r²A0)'+rB0=(nu-2)r A0.
+The radial operator applied to -rA0 equals (nu-2)rA0. Thus -rA0 is an exact
+particular solution for every parameter, including lambda=1. At lambda=1
+both are zero; the choice is fixed by analytic continuation.
+
+E5. The manuscript needs one wording correction. For the unregularized
+formula with bounded A,B, its constant-vector integrals converge when
+Re lambda<1. In that region,
+  B0-(lambda+1)A0=(lambda+1)(lambda-1)A0,
+  B0+lambda A0=lambda(lambda+2)A0,
+so the two integrated terms are respectively -(lambda+1)rA0 and
+lambda rA0, producing exactly -rA0 after division by 2lambda+1.
+It is not legitimate to call the original divergent integral an ordinary
+integral for Re lambda≥1, lambda≠1. Equation (E.1) is its holomorphic extension.
+The removable pole is the algebraic cancellation
+(lambda-1)/(1-lambda)=-1 before taking lambda→1. No arbitrary homogeneous
+term is added on the physical eta>0 branch.
+
+2.F. COEFFICIENT, HOLOMORPHY, LIMIT, AND INTRINSIC CHARACTER
+
+F1. U-p solves the homogeneous Euler equation on (0,R). Since U∈H¹_loc and
+p has the stated regularity, the distributional equation implies classical
+regularity locally. Equivalently, use the first-order system for
+(U-p,r²(U-p)') and ODE uniqueness. The two independent solutions are
+r^lambda and r^{-lambda-1}, since 2lambda+1≠0. Thus
+  U(r)=c r^lambda+d r^{-lambda-1}+p(r).
+The weighted derivative integral of U is finite. The derivatives of p and
+c r^lambda are square integrable with weight r², since p'=O(1) and
+Re lambda>1/2. If d≠0, its squared weighted derivative integral is a positive
+constant times integral_0^R r^{-2Re lambda-2} dr, which diverges. Hence d=0.
+
+F2. It follows that
+  c_eta=(2/R) integral_{R/2}^R
+             r^{-lambda_eta}[U_eta(r)-p_eta(r)] dr.           (F.1)
+The annular map v↦U is bounded from L²(BR) to L²(R/2,R), since r is bounded
+away from zero there. Its dependence on eta is holomorphic through the
+bounded bilinear q phi pairing. All powers and p factors are holomorphic
+with uniform annular bounds. Thus c_eta is holomorphic across eta=0.
+
+F3. For real eta>0, lambda∈(0,1) and p=O(r), p'=O(1). E5 identifies F.1
+with the physical intrinsic coefficient in hotspot_closure_audit. Its
+independence of the lifting can also be proved directly: two H² liftings
+differ by a bounded curl-free field, and the potentials differ by a Lipschitz
+function. The weighted zero mean of phi removes its constant at the vertex,
+so their U difference is O(r); their p difference is also O(r). Dividing by
+r^lambda and taking r→0 gives equality of c. Additive constants in v cancel
+for the same weighted-mean reason. Different analytic lift choices agree on
+the positive real interval and hence throughout their common disk by the
+identity theorem.
+
+F4. At eta=0, q=1. Taking divergence gives div E_0=0, and the Maxwell equation
+becomes the constant-coefficient Helmholtz system
+  -Delta E_0=k_0² epsilon_b E_0.
+Localized Fourier elliptic estimates and bootstrapping give smoothness near
+zero. Since grad v_0=E_0-W_0 is C^{0,gamma}, v_0 has a C^{1,gamma}
+representative, and
+  v_0(r omega)=v_0(0)+r(E_0(0)-w_0).omega+O(r^{1+gamma}).
+Projecting, the constant term vanishes. Divide U_0-p_0=c_0 r by r and use
+E.2 to obtain
+  c_0=integral_S (E_0(0).omega)phi_0(omega) dS.
+Since integral_S omega_i omega_j dS=(4pi/3)delta_ij,
+  c_0=sqrt(4pi/3) E_0(0).e.
+This exact constant includes no extra factor epsilon_b: the constant host
+factor cancels out of div(epsilon_b q E)=0, while angular normalization is
+integral q phi²=1, as required by the packet.
+
+2.G. ESSENTIAL BLOWUP AT ORDINARY POINTS
+
+For real eta>0, q>0 and phi is real. The angular eigen-equation and
+Cauchy–Schwarz give for a.e. r
+  sqrt(nu)|U(r)|≤(integral_S q|grad_S v(r,omega)|²)^{1/2}.
+If c≠0, then |U(r)|≥(|c|/2)r^lambda for every sufficiently small admissible
+r, since p=O(r). Hence
+  esssup_omega |grad v(r,omega)|
+    ≥sqrt(nu)|c|/[2sqrt(4pi q_max)] r^{lambda-1}.
+Subtract the bounded W. Since lambda<1, this forces E to be essentially
+unbounded in every ball about the vertex. Equivalently, assuming E bounded
+on any such ball would make v Lipschitz and U=O(r), a contradiction.
+The interface cone surfaces and the vertex have zero three-dimensional
+measure. In each open phase, div E=0 and the constant-coefficient Helmholtz
+equation yield an analytic representative. Thus for each radius delta and
+threshold T, the positive-measure set {|E|>T} in B_delta contains ordinary
+points off the interfaces. A strict high point has a neighborhood of high
+values by continuity. Choosing delta→0 gives the required ordinary sequence.
+The field remains L² by hypothesis; no infinite-energy singularity is used.
+
+2.H. ONE PARAMETER, ONE MATERIAL, ONE MODE AT ALL FINITELY MANY VERTICES
+
+Suppose the actual simultaneous inserted material has one holomorphic
+nonzero eigenbranch (k_eta,E_eta), supplied by the actual selected-sector
+continuation theorem, and in disjoint balls at p_j it equals
+epsilon_b(1+eta a_j). Assume E_0(p_j).e_j≠0 for j=1,...,N. Apply the proved
+local theorem after each translation and proper rotation. Let c_j(eta) be
+the resulting coefficient. Each is holomorphic with c_j(0)≠0. For every j
+there is delta_j>0 such that |c_j(eta)-c_j(0)|<|c_j(0)|/2 for |eta|<delta_j.
+Take delta=min_j delta_j, also below the common angular, material, and global
+continuation radii. Then for every real 0<eta<delta all N coefficients of
+the same E_eta at the same k_eta and in the same material are nonzero.
+If epsilon_b<epsilon_+, also require eta<epsilon_+/epsilon_b-1. The final
+contrast may depend on N and the selected points; epsilon_+ does not.
+A holomorphic nonzero normalization alpha_eta multiplies every c_j by the
+same alpha_eta and preserves this statement. This is an analytic modal proof;
+no driven Runge lemma is used.
+
+
+==========================================================================
+3. COMPLETE MODAL CONSTRUCTION AND FINAL ASSEMBLY
+==========================================================================
+
+3.A. PHYSICAL DILATION AND NORMALIZATION — DERIVATION
+
+Let D_s(x)=o+s(x-o), s>0, B_s=D_s(B), and T_s f=f composed with D_s^{-1}.
+Write chi_s=T_s chi. With Phi_w(x)=exp(i w |x|)/(4 pi |x|),
+
+ Phi_w(s(x-y))=s^(-1) Phi_{s w}(x-y).
+
+Changing variables y_s=D_s(y), dy_s=s^3dy, and differentiating with respect to
+physical x_s gives, in distributions including the static local term,
+
+ K_{B_s}(w) T_s = T_s K_B(s w).
+
+Indeed the w^2 term picks up w^2 s^2=(s w)^2, while the Hessian picks up s^-2
+and cancels the s^2 from kernel and Jacobian. This identity can first be checked
+against smooth compact test/source functions and then extended by the bounded
+L2 operators of Packet 06. No pointwise treatment of the Hessian singularity is
+needed. Differentiating the bounded holomorphic operator identity yields
+
+ K_{B_s}'(k/s)T_s = s T_s K_B'(k).
+
+The bilinear physical integral obeys beta_{B_s}(T_s f,T_s g)=s^3 beta_B(f,g).
+Consequently, for an arbitrary complex scalar a,
+
+ d_phys( a T_s E, k/s, chi_s ) = a^2 s^4 d_phys(E,k,chi),
+ N( a T_s E, k/s, chi_s )      = a^2 s^3 N(E,k,chi).
+
+Hence a=s^(-3/2) preserves physical N=1. Amplitude a=s^(-2) instead preserves
+unit derivative pairing, and then N is divided by s, as it must be when
+N=-k/2. The amplitude factors are squared, not absolute-value squared: this is
+the unconjugated reciprocal norm. The displayed s powers are real positive.
+
+The actual Maxwell equations transport with E_s=a T_s E, H_s=a T_s H,
+k_s=k/s and epsilon_s=T_s epsilon because curl T_s=(1/s)T_s curl. The
+continued outgoing representation transports by the same Phi identity, for
+complex k including Im k<0. There is no use of decay at infinity. Quality factor
+is invariant: Re(k/s)/[-2 Im(k/s)]=Q(k).
+
+Independent consistency check from the actual Green operator convention:
+G_s(w)=s^2 T_s G(s w)T_s^{-1}. Its physical integral kernel is
+G_s(w;x_s,y_s)=s^-1 G(s w;x,y), so its residue at k/s is s^-2 times the old
+kernel residue. The formula -E_s(x_s) tensor E_s(y_s)/(2(k/s)N(E_s)) with
+a=s^-3/2 gives exactly that s^-2 factor.
+
+Rigid translations and orthogonal rotations preserve d and N by the radial
+kernel identity and the unconjugated Euclidean dot product. We may therefore
+put the sphere center at any o in P and its axis along any unit e in P.
+
+The supplied excerpt uses an abstract DilationL2.dilate with inverse frequency
+parameter convention. Its literal amplitude definition is not supplied here.
+Do not identify it with raw physical pullback or with a unitary L2 dilation
+without reading that definition. The physical theorem above is independently
+derived from the defining K and beta and is sufficient mathematically; a Lean
+adapter to that exact existing symbol is a separate source/API obligation.
+
+3.B. EXPLICIT AXISYMMETRIC CONICAL INSERTIONS AND SMOOTH ROUNDING
+
+This closes the geometric premise rather than assuming arbitrary smooth
+roundings exist. Fix t in (1/sqrt(3),1), alpha=sqrt(1-t^2)/t. In cylindrical
+coordinates x=z e+y, y perpendicular e, the positive cone is |y|<alpha z, z>0.
+Choose L>0 and a C∞ function f on a neighborhood of (0,L] satisfying
+
+ f(z)=alpha^2 z^2 for 0<z<L/3,
+ f(z)=c(L-z) near L, c>0,
+ f(z)>0 for 0<z<L.
+
+Such f is the convex blend of the two positive formulas using a smooth cutoff
+in the compact intermediate interval. With appropriate fixed c=O(L), one has
+f=O(L^2) throughout. Define
+
+ Omega^+={z e+y:0<z<L, |y|^2<f(z)},
+ Omega^-=-Omega^+.
+
+Each lobe is bounded and connected. Its boundary away from the origin is a
+C∞ embedded surface: for |y|>0 the y-gradient of |y|^2-f(z) is nonzero; at the
+far axial tip z=L its z-gradient is -f'(L)=c>0. Near the origin it is precisely
+the desired cone. The two closures meet only at that vertex. Scaling the whole
+construction makes it fit inside any prescribed neighborhood. On a sufficiently
+small B_{3R}(0), its union has indicator exactly 1_{|omega dot e|>t} almost
+everywhere. The interfaces on a fixed annulus inside that core are C∞ and have
+finite fixed charts.
+
+For an explicit inward rounding choose constants 0<a<b and a smooth theta on
+[a,infinity) such that theta(a)=0, theta'(a)>0, 0<theta<=1 on (a,infinity), and
+theta=1 on [b,infinity), with all derivatives matching there. Extend theta smoothly a little below a;
+its positive derivative makes that extension negative just below a. This
+gives an open-neighborhood defining function at the new tip. For rho small
+with b rho<L/3, use
+
+ f_rho(z)=alpha^2 z^2 theta(z/rho) for a rho<=z<=b rho,
+ f_rho(z)=f(z) for z>=b rho,
+ Omega_rho^+={z e+y:a rho<z<L, |y|^2<f_rho(z)},
+ Omega_rho^-=-Omega_rho^+.
+
+The new axial tip z=a rho is smooth because
+f_rho'(a rho)=alpha^2 a^2 rho theta'(a)>0. The seam is C∞ because theta is
+constant near the matching side. Both lobes remain connected, their closures
+are disjoint, and all changed points have |x|<=C rho. They agree exactly with
+the sharp lobes outside that shrinking ball. The two-material values are
+unchanged. The construction preserves every rotation about e and every
+meridional reflection. Translate copies along the common axis and put their
+closures inside disjoint small containing balls. All inserted and rounded
+materials preserve the same fixed electric sector. For the modal device the
+containing dielectric sphere is an additional outer smooth interface, disjoint
+from all inserted interfaces. The modal theorem does not prescribe a count of
+material components; this construction happens to yield 2N inserted lobes.
+
+3.C. NONZERO BACKGROUND AXIAL INTERVAL FOR THE ACTUAL MODE
+
+The reviewed P04 dictionary and P06 kernel theorem identify the physical core
+mode with a nonzero regular TM dipole. Writing u=n k r, Y(omega)=C0 e dot omega,
+its angular/radial form, up to a nonzero scalar A, is
+
+ E(r,omega)=A[2 psi_1(u)/u^2 Y(omega) omega
+                  +psi_1'(u)/u grad_S Y(omega)].
+
+The removable regular series psi_1(u)=u^2/3+O(u^4) gives
+
+ E(0)=(2 A C0/3)e !=0.
+
+Here Y omega+grad_S Y=C0 e. The scalar A is nonzero: otherwise the regular
+interior mode is zero, and tangential matching and the regular/outgoing
+Wronskian force the whole actual kernel mode to be zero. This contradicts the
+specified nonzero source/kernel vector. The core solution is analytic in x,
+so E(o+z e) dot e remains nonzero on some open interval around z=0. A nonzero
+normalization scalar and a positive dilation preserve this property. No Runge
+or driven excitation premise appears here.
+
+3.D. QUANTIFIED MODAL CONSTRUCTION WITH VALID PARAMETER ORDER
+
+Inputs: every epsilon_+>1, k0>0, nonempty relatively open plane patch P, N>=1,
+and ell,M,Q0>0. The following choices retain precisely that order.
+
+3.D.1 Fix once an algebraic n with 1<n<sqrt(epsilon_+). This can depend only on
+epsilon_+. Put epsilon_b=n^2 and reserve epsilon_+-epsilon_b>0. By P06-B choose
+one actual dipole pole with Q_b>2Q0+1, Re k>0, Im k<0. Convert its prescribed
+source-unit vector to a physical unit-N mode using alpha^2=-2/k. Physically
+dilate by Re k/k0 and multiply by the derived s^-3/2 amplitude. Let the resulting
+background frequency be k_b=k0-i b, b>0. It has the same Q_b and N=1.
+
+3.D.2 Choose o in P, a unit axis e lying in its plane, and delta_P>0 with the
+closed planar disk of radius delta_P about o contained in P. Rigidly place the
+sphere there. Let its radius be A, and let I be the nonzero axial interval from
+section 3.C.
+
+3.D.3 Fix in advance a frequency disk D={|k-k_b|<r_f}, with
+r_f<min(k0/8,b/8). Every k in D has
+
+ 7k0/8<Re k<9k0/8,
+ 7b/8<-Im k<9b/8,
+ Q(k)>(7/9)Q_b>Q0.
+
+In particular every final scale Re k/k0 lies in (7/8,9/8). Use the convenient
+closed envelope s in [1/2,2] (or a tighter one) for all geometry/amplitude
+choices below. Denote its upper endpoint by S=2.
+
+3.D.4 Choose N distinct points c_i=o+z_i e inside an arbitrarily short subinterval
+of I, so small that S max_i |c_i-o|<delta_P/4. Choose disjoint containing balls
+for all lobes, entirely inside the homogeneous sphere. Choose local core radii
+R_i and observation radii r_i inside those balls such that the local coefficient
+is conical on B_{3R_i}(c_i), all observation/collar neighborhoods fit there, and
+
+ 2 S r_i<ell,
+ S(|c_i-o|+5r_i/4)<delta_P,
+ |c_i-c_j|>r_i+r_j for i!=j.
+
+These simultaneous choices are possible for every finite N because the points
+are distinct and every upper radius bound is strictly positive. One may use
+r_i<R_i and the explicit conical geometry above. The larger insertion-support
+balls are also chosen disjoint. This guarantees material closures disjoint and
+all frequency-envelope-scaled projected observation balls contained in P. The
+surrounding sphere is not required to project into P.
+
+3.D.5 Fix these lobes G_i and a containing support ball B centered at o and
+invariant under the full axial symmetry group. Apply the P06 centered-ball
+statements in coordinates x-o (or translate the final construction). For simultaneous insertions set
+
+ chi_eta=chi_sphere+epsilon_b eta sum_i 1_{G_i}.
+
+This is norm-entire as a complex L∞(B) function; its derivative is a fixed bounded
+multiplier. It is frequency independent. The disjoint supports imply the added
+multiplier is at most epsilon_b in magnitude before eta, independent of N. Every
+chi_eta preserves the same electric sector. For real 0<eta<epsilon_+/epsilon_b-1,
+0<=chi_eta<=epsilon_+-1. Positivity is asserted only on this real slice, not on
+the complex parameter neighborhood.
+
+Apply P06-D to the background simple pole and specified field. The physical
+mode and frequency continue holomorphically. Normalize by a compatible local
+square root so N=1 throughout. The physical field on each local cone ball is
+holomorphic into local L2 and satisfies the actual complex Maxwell equations.
+For every auxiliary complex eta, set J_eta=chi_eta E_eta and use
+E_global=K_global(k_eta)J_eta. The distributional identity
+(curl curl-k_eta^2)K_global(k_eta)J_eta=k_eta^2 J_eta proves the
+whole-patch equation. The localized K operators and J_eta are holomorphic
+into local L2, and the graph estimate gives H_eta=(i k_eta)^(-1)curl E_eta
+in local L2. For real eta the supplied ComplexMagneticMaxwell source
+equations plus kernel recovery identify these with the actual physical
+electric/magnetic fields and give the same interface-crossing equations.
+No real-k TestMaxwell theorem is instantiated at a complex frequency, and
+no nonnegative susceptibility record is fabricated for complex eta.
+
+3.D.6 Apply the new local analytic cone theorem at every vertex. Its value at zero
+is sqrt(4pi/3) E_b(c_i) dot e !=0. There are finitely many vertices; intersect
+their nonvanishing neighborhoods, the continuation/simplicity neighborhood,
+the material-bound interval, and the neighborhood where k_eta lies in the
+smaller concentric disk |k_eta-k_b|<r_f/2. Choose ONE positive eta in that
+intersection. This fixes ONE sharp material and ONE unit-N mode with nonzero
+actual singular coefficient at every vertex. This eta may depend on N, geometry,
+background mode, and all requested parameters. No uniform lower bound on eta
+or tip size is claimed or needed. The ambient bounds and fixed epsilon_b remain
+valid.
+
+3.D.7 Fix that eta and round all lobes with a common rho_j tending to zero. The
+sharp and rounded susceptibilities have the same support bound, values and
+sector, are nonnegative bounded, and agree eventually at every nonvertex point
+away from the unchanged interfaces (indeed our sets agree outside shrinking
+balls). They therefore converge a.e. Applying P06-D at the SHARP simple pole
+gives one rounded pole k_j->k_eta and unit-N field E_j->E_eta in local L2 after
+compatible normalization. All sufficiently late k_j lie in D. Actual source
+identities yield distributionally
+
+ curl E_j=i k_j H_j,
+ curl H_j=-i k_j (1+chi_j)E_j,
+ div((1+chi_j)E_j)=0.
+
+The source/observation operator supplies local L2 also beyond B. Thus every
+P05 weak-equation and convergence premise is instantiated for these actual
+fields; no global L2 assertion is made for a lower-half-plane mode.
+
+3.D.8 Fix collar C_i={3r_i/4<=|x-c_i|<=5r_i/4} and enlarged open annulus
+A_i={r_i/2<|x-c_i|<3r_i/2}. Rounding takes place inside sufficiently small balls,
+so all late coefficients equal the sharp coefficient on A_i. The only interfaces
+there are the fixed smooth conical sheets. P05 gives one-sided uniform convergence
+and bounded collar values. Let B_i=sup_{C_i}E_eta,up+1<infinity, fixed before
+the final rounding choice. Put
+
+ T_i=max(S^(3/2) M, 2B_i)+1.
+
+The sharp field is essentially unbounded in each B(c_i,r_i/2) by the local cone
+theorem. The P05 Chebyshev argument and local L2 convergence give, for every i,
+eventually a positive-volume set with |E_j|>T_i there. Finite intersection gives
+ONE eventual tail working at every tip. Further intersect with frequency,
+coefficient-agreement and collar tails. For any index j in the resulting tail,
+P05 compact attainment yields
+
+ m_{j,i}=max_{closed B(c_i,r_i)} E_j,up>T_i,
+ sup_{C_i} E_j,up<B_i<m_{j,i}/2.
+
+No regularity constant near the shrinking rounded tip is claimed uniform.
+Every individual rounded interface is smooth, which suffices for finite attained
+maxima; uniform estimates are used only on the fixed collars. All thresholds,
+clearances, frequency ranges and geometry preceded this final index choice.
+
+3.D.9 NOW define s_j=Re k_j/k0 from the ROUNDED frequency, and set
+
+ epsilon_final(x)=epsilon_j(D_{s_j}^{-1}x),
+ E_final(x)=s_j^(-3/2)E_j(D_{s_j}^{-1}x),
+ H_final(x)=s_j^(-3/2)H_j(D_{s_j}^{-1}x),
+ k_final=k_j/s_j.
+
+Section 3.A proves Re k_final=k0, Im k_final<0, Q(k_final)>Q0, N(E_final)=1.
+Material bounds, smoothness and finite support remain. Observation balls and
+collars are their D_s images. Their diameters are <ell, they remain disjoint,
+and their centers and projections are in P by 3.D.4. Peak/collar ratios are
+unchanged; the final peak is s_j^-3/2 m_{j,i}>M because s_j<=S. This resolves the
+rounding-frequency issue without changing any quantifier.
+
+3.E. EXACT PLANE MAXIMIZERS FROM FULL ROTATIONS
+
+Every selected-sector field is fixed by all axial polar-vector rotations in L2:
+E_j(Rx)=R E_j(x) a.e. for each axial R. The actual material regions are invariant
+under those rotations. To promote this to one-sided representatives, fix one R
+and one material side. The two continuous representatives agree a.e. in the
+open side, hence everywhere there (a continuous nonzero difference would be
+nonzero on an open set of positive volume), and then on its closure by limits.
+This gives rotation covariance of all incident traces. Taking their finite
+maximum and using |Rv|=|v| gives E_j,up(Rx)=E_j,up(x). An uncountable common
+null set is unnecessary: the argument works for each R separately and yields a
+pointwise statement for its continuous representatives.
+
+A ball centered on the common axis is invariant under every such R. Given any
+attained maximizer x, its rotation orbit intersects the chosen plane through
+that axis: write x=o+ze+v with v perpendicular e and rotate v to a direction in
+the plane. The rotated point remains in the SAME ball and has the same upper
+one-sided amplitude, so it is still a maximizer. Since that ball's planar
+projection lies in P, the plane representative lies in P. Positive dilation
+about o preserves this property. If x is off-axis, the orbit can be a whole
+ring of maximizers; no uniqueness or nondegeneracy is needed. Meridional
+reflection alone would not prove the assertion and is not used for this step.
+
+The strict collar gap puts every maximizer in the inner radius 3r_i/4. The
+connected component of {E_up>m_i/2} through it cannot cross the collar: the
+continuous radius maps a connected set to an interval, which would otherwise
+meet forbidden radii. Upper semicontinuity makes its closure avoid the collar
+as well, giving compact closure strictly inside the ball, exactly as P05.
+
+
+==========================================================================
+4. DRIVEN COMMON-MATERIAL CONSTRUCTION AND ASSEMBLY
+==========================================================================
+
+This section proves the physical theorem for an explicit common material.
+It also gives the exact compatible scaling when consuming the supplied
+common-source theorems. It does not assert equality with an omitted source
+definition; the remaining literal adapters are listed in section 7.2.
+
+4.B. A FIXED MATERIAL AND A UNIFORM ACTUAL VOLUME INVERSE
+
+Work first in the reference ball B_1, at a real reference frequency 0<kappa<=1. Write
+ K_kappa f=(kappa^2 I+grad grad) Phi_kappa * f,
+ Phi_kappa(x)=exp(i kappa |x|)/(4 pi |x|),
+with f zero extended from B_1 and the output restricted to B_1. Let P be the longitudinal Fourier
+projection. Then
+ K_kappa=-P+R_kappa.
+The delta contribution in grad grad Phi_0 is included in -P; it is not discarded.
+
+A convenient completely explicit bound is ||R_kappa||<=13 kappa^2/3, hence ||K_kappa||<=16/3 for
+0<kappa<=1. Indeed, put f_kappa(r)=(exp(i kappa r)-1)/(4 pi r). The identity
+ f_kappa(r)=i kappa/(4 pi) int_0^1 exp(i kappa r t) dt
+implies |f'_kappa|<=kappa^2/(8 pi) and |f''_kappa|<=kappa^3/(12 pi). For 0<r<=2,
+ ||kappa^2 I Phi_kappa+Hess f_kappa||
+ <=3 kappa^2/(8 pi r)+kappa^3/(12 pi)
+ <=13 kappa^2/(24 pi r).
+The L1 norm of the last bound on B_2 is 13 kappa^2/3. Young's inequality for vector convolution
+proves the estimate. There is no extra distribution supported at r=0 in Hess f_kappa: its first
+derivatives are bounded and the integration-by-parts sphere errors vanish like r^2. The operator
+norm of -P is at most one.
+
+Choose ONCE
+ d=min((epsilon_max-1)/2, 3/64)>0,
+ epsilon_h=1+d.
+For every measurable 0<=chi<=d supported in B_1,
+ ||K_kappa chi||<=1/4,
+so I-K_kappa chi is invertible by Neumann series, with inverse norm<=4/3. These constants do not
+depend on N, separations, rounded curvatures, or the number of interfaces. They are valid for the
+sharp material and every rounded material below.
+
+For an entire incident Maxwell field E_in, define on B_1
+ E=(I-K_kappa chi)^(-1) E_in.
+Set J=chi E, extend J by zero, and define globally
+ E_total=E_in+K_kappa J,
+ H_total=(i kappa Z0)^(-1)curl E_total
+in physical magnetic units. The dyadic identity
+ (curl curl-kappa^2)K_kappa=kappa^2 I
+shows (curl curl-kappa^2(1+chi))E_total=0 distributionally, including interface-crossing tests. Curl
+K_kappa J=kappa^2 curl Phi_kappa*J is locally L2, because the gradient kernel is locally L1 and J is
+compactly supported L2. Thus the actual fields have local finite energy and satisfy both first-order
+Maxwell equations. The scattered field is outgoing by its actual outgoing convolution kernel.
+Conversely any outgoing solution with this incidence obeys the volume representation (subtract the
+outgoing convolution and use the vacuum outgoing uniqueness argument), so the definition is the
+actual unique scattering field.
+
+For f in L2 supported in B_1 the source equation L_chi W=f, where L_chi=curl curl-kappa^2(1+chi), is
+solved the same way from the incident volume field kappa^(-2)K_kappa f. Explicitly
+W=kappa^(-2)K_kappa J_f, where
+ J_f=f+kappa^2 chi W=(I-chi K_kappa)^(-1) f.
+It has local H(curl) regularity and is outgoing. No sources occur in the final physical scattering
+problem; this source solution is used only in the density proof.
+
+The same reasoning proves bounded-a.e. rounding continuity for any chi_n,chi as above: with one fixed E_in,
+ E_n-E=(I-K_kappa chi_n)^(-1)K_kappa[(chi_n-chi)E].
+Dominated convergence makes the bracket tend to zero in L2(B_1), and the two operator bounds are
+uniform. Therefore E_n -> E in L2(B_1). This is the mathematical analogue of supplied
+MaterialVolumeLimit.volumeField_tendsto and is valid for our explicit sequence, not merely for the
+existing opaque rounding.
+
+4.C. ANGULAR DATA AT A FIXED DIELECTRIC
+
+Fix t=3/4 (any t in (1/sqrt(3),1) works), axis e3, beta=t/sqrt(1-t^2)=3/sqrt(7), and
+ q(omega)=1+d 1_{|omega dot e3|>t}.
+Minimize the weighted Rayleigh quotient on the odd, axisymmetric closed H1 subspace. Oddness
+eliminates constants, giving coercivity and compactness; a real minimizer phi exists, normalized by
+int q phi^2=1. Averaging arbitrary tests over rotations and odd reflection shows its restricted
+eigen-equation is the full-sphere weak equation. The trial omega_3 has weighted quotient
+ [2+d(2-3t+t^3)]/[1+d(1-t^3)]<2.
+Thus the positive eigenvalue nu satisfies 0<nu<2, and its positive indicial root
+lambda=(-1+sqrt(1+4nu))/2 lies in (0,1). Also int q phi=0. These angular quantities depend only on
+the already fixed d,t, not N.
+
+The electrostatic field E0=grad(r^lambda phi) is L2, curl free, and div(qE0)=0 in the whole ball.
+The angular weak equation proves the last fact away from zero; the sphere flux term tends to zero
+like r^(lambda+1), hence there is no point source. Its weighted energy on B_R is exactly lambda
+R^(2lambda+1).
+
+4.D. LOCAL POSITIVE-FREQUENCY EXCITATION (NO UNPROVED RUNGE HYPOTHESIS)
+
+D1. Ordinary-ball Maxwell inequality, proved with a Fourier projection.
+For w in H0(curl,B_1) with div w=0 in B_1, we prove
+  ||w||_2 <= C ||curl w||_2.
+H0(curl) means closure of compact smooth vector fields in the H(curl) norm.
+Their zero extensions show that u=extend_0(w) belongs to H(curl,R^3), with
+curl u=extend_0(curl w). Its divergence need NOT vanish globally.
+
+Set W=P_T u. Plancherel and the real transverse Fourier symbol give
+  div W=0, curl W=curl u,
+  ||grad W||_{L2(R3)}=||curl u||_{L2(R3)}.
+W is also in L2 because P_T is bounded. The homogeneous three-dimensional
+Sobolev inequality ||W||_6<=C||grad W||_2, followed by Holder on B_1, gives
+  ||W||_{H1(B_1)} <= C ||curl w||_{L2(B_1)}.
+Every hypothesis of that Sobolev inequality holds: W belongs to H1(R3),
+as established by the Fourier identity; no boundary extension regularity
+beyond the proved H(curl) zero extension is assumed.
+
+Inside B_1 the curl-free field w-W is grad p for p in H1, by the same weak
+ball potential construction as section 2. Since div w=div W=0 there, p is
+weakly harmonic. Let h=Tr p in H^(1/2)(S2). The zero tangential trace of w
+gives, in surface distributions,
+  grad_S h=-W_t|_{S2}.
+For rigor, the H(curl) tangential trace is the weak integration-by-parts
+functional. Zero trace follows from the compact smooth approximants defining
+H0(curl). The gradient trace identity follows by smooth H1 approximation of p:
+their gradients converge in the H(curl) graph norm because all curls are zero.
+The usual H1 trace estimate for W on the smooth ball puts W_t in H^(1/2),
+hence in L2(S2). A distribution with L2 weak first derivatives and L2 value
+on the sphere is H1 in its smooth charts. Thus h is H1, and surface Poincare
+gives
+  ||h-mean(h)||_{H1(S2)} <= C||W_t||_{L2(S2)} <= C||W||_{H1(B1)}.
+
+Choose a fixed smooth radial cutoff zeta, zero on r<=1/2 and one near r=1.
+The explicit shell extension v(r,omega)=zeta(r)(h(omega)-mean(h)) is H1(B1)
+and ||grad v||_2<=C||h-mean(h)||_{H1(S2)}. Now
+p-mean(h)-v has zero trace, hence belongs to H0^1(B1). Testing harmonicity
+against this function gives
+  ||grad p||_2^2 = int grad p dot conjugate(grad v)
+                <= ||grad p||_2 ||grad v||_2
+after taking real parts where needed. Consequently
+  ||grad p||_2 <= C||W||_{H1(B1)} <= C||curl w||_2,
+and w=W+grad p proves the desired estimate. The initial construction of p
+may use ||w||_2 for existence, but the final bound does not: there is no
+circular coercivity argument. This proof requires only the standard trace,
+surface Poincare, and whole-space Sobolev facts, with their precise domains;
+it does not import a conical compactness theorem, a regularized lifting,
+a Gaffney identity, or boundary H2 regularity.
+
+D2. Weighted ball estimate and the exact finite-frequency local field.
+Define X_q={w in H0(curl,B_1): div(qw)=0}. Decompose w=w_T+grad p, p in H0^1, div w_T=0, by the
+ordinary Dirichlet Helmholtz decomposition. Since div w_T=0,
+ int q grad p dot grad conj(psi)=-int(q-1)w_T dot grad conj(psi).
+Testing psi=p gives ||grad p||<=d||w_T||, hence
+ ||w||<=C_q||curl w||, C_q<=(1+d)C.
+
+For 0<xi with xi^2(1+d)C_q^2<1/2, solve on X_q by Lax-Milgram
+ int curl w dot curl conj(z)-xi^2 q w dot conj(z)
+ =xi^2 int q E0 dot conj(z).
+Then ||w||_Hcurl<=C xi^2 ||E0||. The weighted Helmholtz decomposition of any test into X_q plus grad
+H0^1 shows the same equation holds for every H0(curl) test, because both sides vanish on the
+gradient part. Thus E_xi=E0+w is an actual local Maxwell electric field with div(q E_xi)=0 and curl
+curl E_xi=xi^2 q E_xi.
+
+On a smaller ball F=curl w has div F=0 and curl F=xi^2 q(E0+w) in L2. The cutoff Fourier curl/div
+identity implies ||F||_H1=O(xi^2). Apply section 2's fixed graph lift to w, whose L2 norm and
+curl-curl L2
+norm are both O(xi^2). It gives W in H2 with ||W||_H2=O(xi^2), and
+E_xi=grad v+W with ||v-r^lambda phi||_H1=O(xi^2), after constants
+are fixed. Thus no extra lifting theorem is needed here either.
+
+For the fixed real exponent lambda<1, the coefficient functional is obtained by the radial projected equation
+ (r^2 U')'-lambda(lambda+1)U=-(r^2 A)'+rB,
+ U=int q v phi, A=int q W_r phi, B=int q W_t dot grad_S phi.
+Its finite-energy solutions have U=c r^lambda+p_W(r), with
+ p_W(r)=(1/(2lambda+1))[r^lambda int_0^r s^(-lambda)(B-(lambda+1)A)ds
+   -r^(-lambda-1)int_0^r s^(lambda+1)(B+lambda A)ds].
+Because W is bounded, p_W=O(r), p'_W=O(1). Averaging r^(-lambda)(U-p_W) over a fixed annulus defines
+c as a bounded linear functional of v in H1 and W in H2. The singular r^(-lambda-1) homogeneous
+solution is excluded by finite H1 energy. A different bounded curl lifting changes v by a Lipschitz
+potential; weighted mean zero makes its angular projection O(r), so c is intrinsic. Therefore
+c(E_xi)=1+O(xi^2), and is nonzero for all sufficiently small positive xi.
+
+If c!=0, U=c r^lambda+O(r). The angular eigen-equation/Cauchy-Schwarz bound gives sqrt(nu)|U(r)| <=
+(int q |grad_S v|^2)^(1/2). A bound on E in an entire vertex ball would bound grad v=E-W and give
+U=O(r), impossible. This proves essential unboundedness in every smaller ball, not merely a formal
+ray asymptotic. Interior Helmholtz regularity on each homogeneous region permits ordinary high-value
+points away from interface null sets. This is the real-parameter specialization of the main Packet07
+coefficient analysis.
+
+Rescaling the unit local construction gives a nonzero-coefficient local Maxwell
+solution at any fixed kappa on a sufficiently small ball: set xi=kappa r_local.
+Indeed E_local(x)=E_xi((x-c)/r_local) solves the equation at kappa; its
+potential is r_local*v((x-c)/r_local), so its conical coefficient is
+r_local^(1-lambda)c(E_xi), still nonzero. It does not create an internal source or a physical PEC
+boundary. Tangential boundary data were only used to construct a local comparison field for the
+density argument.
+
+4.E. TOTAL-FIELD RUNGE FOR THIS SAME COMMON MATERIAL
+
+Let Q be a finite disjoint union of closed balls compactly contained in B_1. Assume the coefficient
+is the single finite collection of truncated double cones defined in F below. The complement R3\Q is
+connected. Let V be any actual local Maxwell electric field on a neighborhood U of Q for that same
+coefficient.
+
+Suppose f in L2(Q)^3 annihilates all total fields generated by smooth tangential Herglotz densities,
+under the complex BILINEAR integral int f dot E_g. Extend f by zero. Let W be the source solution
+from B, J=f+kappa^2 chi W. Reciprocity of the actual volume operator gives
+ int f dot E_g = int J dot E_in,g.
+Indeed f=(I-chi K)J, E_in,g=(I-K chi)E_g, and K is bilinear symmetric. For its static part this
+follows from the real even symmetric Fourier multiplier -xi xi^T/|xi|^2; for its dynamic part it
+follows from its even symmetric matrix kernel and Fubini/Young. Thus no unverified Green boundary
+identity is hidden here.
+
+With the physical incident normalization in G, annihilation for all smooth tangential g implies
+ (I-dd^T) int J(y) exp(i kappa d dot y)dy=0, for every d in S2.
+The Fourier integral is continuous (J compactly supported L2, hence L1), and all smooth tangent
+tests suffice. The actual outgoing representation W=kappa^(-2)KJ has far field
+ W_infty(omega)=(1/(4pi))(I-omega omega^T) int J(y)exp(-i kappa omega dot y)dy.
+It is zero. Each exterior component satisfies scalar Helmholtz and is outgoing; its outgoing
+spherical-Hankel expansion has far-field coefficients equal to nonzero constants times the expansion
+coefficients. Orthogonality on S2 therefore makes every coefficient zero. Hence W=0 outside a large
+sphere.
+
+Propagate zero throughout R3\Q. Within each material, the homogeneous Maxwell equations imply the
+constant-coefficient vector Helmholtz equation and hence analyticity. Across any smooth interface
+patch disjoint from Q, if W vanishes on one side, then epsilon W equals the other side's constant
+epsilon times W on the whole patch. Thus the original weak equation becomes a constant-coefficient
+Maxwell equation on the whole crossing ball, with no distributional interface term. Its divergence
+is zero because kappa!=0; it is a weak Helmholtz equation, hence analytic, and vanishes throughout
+the ball. This supplies the crossing argument directly from the weak equations; classical traces are
+not assumed.
+
+For our finite cones and sphere caps, any two ordinary points in R3\Q can be joined by a polygonal
+path avoiding the finite vertex/joining-circle set and crossing interfaces finitely and
+transversely. Start with an exterior path, possible since finitely many disjoint balls have
+connected/path-connected complement, then perturb its finitely many vertices in small open
+neighborhoods. The excluded exceptional choices are finitely many algebraic tangency/intersection
+constraints for cones/spheres. Their complements are dense; line/interface intersections are finite
+polynomial-root sets. A finite chain of the preceding continuation arguments proves W=0 a.e. off Q.
+The lower-dimensional exceptional sets have volume zero.
+
+Now choose zeta in C_c^infinity(U) equal to one near Q. W is H(curl), supported in Q, and curl curl
+W=f+kappa^2 epsilon W is L2. Since V satisfies the homogeneous equation on U, use W as its weak
+H(curl) test by compact mollification inside U. Equivalently, use the bilinear identity with zeta V
+and W; all cutoff terms are outside supp W. It follows that int_Q f dot V=0. This step uses H(curl)
+density and compact support, not tangential traces on the possibly interface-crossing boundary of Q.
+
+Every continuous complex-linear functional on L2(Q)^3 has the form int f dot V after absorbing
+conjugation in its representing vector. Hahn-Banach therefore proves that total electric fields for
+the actual common material are L2(Q)-dense among the displayed local solutions. This is total-field
+Runge in the material, not vacuum approximation inside the material.
+
+Choose one local nonzero-coefficient comparison field near each tip. On disjoint neighborhoods they
+form one local V. Approximate V on the union Q to enough L2 accuracy that the bounded coefficient
+functional at every tip remains nonzero. A finite collection of positive tolerances has a positive
+minimum. This produces ONE smooth density g0 and ONE actual total field with all coefficients
+nonzero. Since they are nonzero g0!=0. Dividing by ||g0||_L2 fixes the incoming power to one and
+preserves every nonzero coefficient. This g is chosen once before ANY rounding and is kept fixed for
+every rounded coefficient.
+
+4.F. EXPLICIT GEOMETRY AND EXACTLY 2N SMOOTH INCLUSIONS
+
+For N>=1 use reference centers
+ c_j=((2j-N+1)/(4N),0,0), j=0,...,N-1,
+ r_out=1/(16N), r_in=1/(32N), a=1/(64N).
+Their outer balls are pairwise closure-disjoint (center separation 1/(2N)>2r_out) and contained in
+B_1. The sharp common material is
+ D_j^+={x: |x-c_j|<a, z_j>beta rho_j},
+ D_j^-=-D_j^+ relative to c_j,
+ chi=d sum_j 1_{D_j^+ union D_j^-},
+where z_j=(x-c_j) dot e3 and rho_j=|(x-c_j)-z_j e3|. It is one binary coefficient, values 0,d, with
+no overlaps. In B(c_j,a) it is exactly the conical coefficient q; elsewhere it is vacuum.
+Cone/sphere joining circles are allowed in this SHARP comparison device and will be rounded too.
+
+Here is an explicit inward smooth rounding with exactly two connected inclusions per center. Take a
+smooth nondecreasing theta:[0,infinity)->[0,1], theta=0 near 0, theta=1 for s>=3/4. Define for
+0<=s<=1
+ h(s)=1-int_s^1 theta(t)dt,
+and h(s)=s for s>=1. It is smooth, nondecreasing, convex, constant near zero, h(s)>=s, h(0)>0, and
+0<=h(s)-s<=1. Thus h_eps(rho)=eps h(rho/eps) is a smooth convex radial function of the transverse
+vector, equals rho for rho>=eps, and is >=eps h(0).
+
+Define H_eps(u)=eps h(|u|/eps); it is smooth even convex, H_eps>=|u|, |H'_eps|<=1, and H_eps=|u|
+when |u|>=eps. Set
+ m_eps(u,v)=(u+v+H_eps(u-v))/2.
+This is smooth, jointly convex and nondecreasing in both arguments;
+max(u,v)<=m_eps(u,v)<=max(u,v)+eps/2, with equality to max when |u-v|>=eps.
+
+In coordinates centered at a tip define
+ f_eps(x)=beta h_eps(rho)-z,
+ b(x)=(|x|^2-a^2)/a,
+ F_eps(x)=m_eps(f_eps(x),b(x)),
+ D_eps^+={F_eps<0}, D_eps^-=-D_eps^+.
+Both inputs to m_eps are smooth convex functions, so F_eps is smooth convex. Since F_eps>=max(beta
+rho-z,b), D_eps^+ lies inside the original sharp upper truncated cone. It is bounded and open. At
+x=(0,0,a/2), it is negative whenever eps<a/[8(beta+1)], so the set is nonempty. Every boundary point
+has F_eps=0 and grad F_eps!=0: a zero gradient for a differentiable convex function would give a
+global minimum at value zero, contradicting the interior negative point. Conversely every F_eps=0
+point is approached by negative points along its segment to the interior point. Thus the boundary is
+precisely the regular level F_eps=0 and is C-infinity. D_eps^+ is convex, hence connected. Its
+closure has z>=beta eps h(0)>0. The reflected lower closure has z<=-beta eps h(0), so their closures
+are disjoint. Different tips' closures lie in disjoint radius-a balls. Consequently the union
+contains EXACTLY 2N nonempty connected smooth inclusions and no other components. This argument
+proves cardinality, not merely smooth local defining functions.
+
+Choose eps_n=eps_0/(n+1), eps_0<a/[8(beta+1)], common across the finite collection. F_eps converges
+uniformly on bounded sets to max(beta rho-z,b); hence indicators converge at every point off the
+sharp cone/sphere boundary, and those finitely many surfaces have measure zero. The common rounded
+susceptibilities chi_n=d sum_j 1_{D_{j,eps_n}^+ union D_{j,eps_n}^-} satisfy 0<=chi_n<=chi<=d, all
+have support in the SAME B_1, and converge a.e. to the SAME sharp common chi.
+
+Exact fixed-collar agreement is also proved, not presumed. Fix any compact annulus r0<=|x|<=b0 with
+0<r0<b0<a. There b(x)<=-sigma<0. On its intersection with the sharp cone boundary beta rho-z=0,
+rho>=r0/sqrt(1+beta^2)>0. By compactness, in a uniform neighborhood |beta rho-z|<tau of that
+boundary, rho is bounded below. For sufficiently small eps, h_eps=rho there and |f_eps-b|>eps, so
+F_eps=f_0 exactly and the signs match. Outside that neighborhood, f_0 is uniformly positive or
+uniformly negative. The uniform inequalities 0<=f_eps-f_0<=beta eps and 0<=m_eps-max<=eps/2 then
+preserve its sign relative to zero, using b<=-sigma. Thus D_eps^+ and D_0^+ agree POINTWISE on the
+entire annulus for all sufficiently small eps. Reflection proves the lower case. Choose an enlarged
+annulus to get equality on an open neighborhood of every desired compact collar. This permits the
+exact hypotheses of Packet05, while the outer joining circles are rounded near |x|=a.
+
+4.G. INPUT NORMALIZATION AND PHYSICAL DILATION
+
+For smooth tangent g, use exactly the manuscript physical incident fields
+ E_in,kappa,g(x)=kappa sqrt(Z0)/(sqrt(2)pi) int_S2 g(d)exp(i kappa d dot x)dS,
+ H_in,kappa,g(x)=kappa/(sqrt(2Z0)pi) int_S2 d cross g(d)exp(i kappa d dot x)dS.
+Their incoming power is ||g||_2^2. The asymptotic can be proved without an opaque stationary-phase
+citation. For fixed omega, average g over latitude circles and write the sphere integral as int_-1^1
+A_omega(u)exp(i kappa r u)du. Smoothness makes A smooth at both endpoints (rotational averaging
+removes odd transverse Taylor terms) and A(+-1)=2pi g(+-omega). Twice integrating by parts gives
+ int g(d)exp(i kappa r d dot omega)dS
+ =(2pi/(i kappa r))[exp(i kappa r)g(omega)-exp(-i kappa r)g(-omega)]+O(r^-2),
+uniformly in omega. The incoming electric amplitude therefore has magnitude sqrt(2Z0)|g(-omega)|/r.
+Its inward Poynting density is |E_incoming|^2/(2Z0), proving power ||g||_2^2.
+
+For a proper rotation O, a translation p0 and s>0 put x=p0+s O y, k0=kappa/s. The transformed
+material is chi_s(x)=chi(O^T(x-p0)/s), and the transformed ACTUAL fields are
+ E_s(x)=s^-1 O E(y), H_s(x)=s^-1 O H(y).
+Direct curl differentiation proves both Maxwell equations at k0; outgoing scattering is preserved by
+the outgoing kernel/asymptotic. A field amplitude factor A would multiply incoming power by |A|^2
+s^2, since sphere areas scale by s^2. Thus s^-1 is exactly the factor preserving unit incoming
+power.
+
+More concretely the transformed density is
+ g_s(d)=exp(-i k0 d dot p0) O g(O^T d).
+It is smooth tangential and ||g_s||_2=||g||_2=1. Substitution into the actual incident formula gives
+E_in,k0,g_s=s^-1 O E_in,kappa,g. This verifies normalization at the level of the physical
+definitions. Translation may turn a finite angular expansion into a smooth infinite expansion; the
+target theorem asks only for a normalized Maxwell illumination and allows it. The field maximum and
+collar supremum are both multiplied by s^-1, so their ratio is unchanged. A base amplitude target
+must be s M, not M or s^(3/2)M.
+
+4.H. QUANTIFIER ORDER AND FINAL ASSEMBLY
+
+1. Fix k0>0, epsilon_max>1, and choose d,epsilon_h as in B BEFORE any N or geometry. This d is
+actually independent of k0 as well.
+2. Given P in Pi, N, ell,M, choose p0 in P and rho>0 with the closed planar disk of radius rho
+around p0 contained in P. Choose a proper rotation O taking the reference z=0 plane to the linear
+plane parallel to Pi; translation by p0 then places it in Pi.
+3. Choose the finite reference geometry F. Pick local comparison balls within its exact conical
+regions, and the observation radius r=a/32 (any fixed sufficiently small positive radius works). The
+Runge approximation compact balls can have radius a/4 and local witness neighborhoods radius a/2.
+All closure/collar separations are strict.
+4. Choose a positive reference kappa so small that kappa<1, kappa<k0 min(rho/2,ell/4), and every
+unit-ball local excitation parameter xi=kappa a/2 is below its local nonzero threshold. If using
+supplied common-material source statements, ALSO impose
+ kappa<MaterialVolumeLimit.commonRadius(d,1)=1/[2(1+252d)]
+and kappa<delta_N from ConicalCommonRungeNonzero.one_normalized_illumination. All bounds are
+positive, so this never changes the arbitrary-prescribed-k0 quantifier. In the independent physical
+proof delta_N is unnecessary because D/E prove the input existence directly; retaining the explicit
+commonRadius inequality is harmless and source-compatible. Put s=kappa/k0 NOW, before illumination
+and rounding.
+5. In the one fixed common sharp material, choose ONE g by D/E with every coefficient nonzero, and
+normalize it to ||g||2=1. Keep it fixed for all n. Neither g nor its normalization is chosen
+separately at the different tips or later changed during rounding.
+6. On every fixed collar C_j={3r/4<=|x-c_j|<=5r/4}, the sharp material has only smooth interfaces
+and the field has bounded one-sided representatives by Packet05. Let B be a finite common bound. On
+a slightly larger fixed annulus the rounded materials eventually agree exactly, so Packet05 gives
+uniform material-side convergence on C_j; eventually collar sup<=B+1.
+7. Each sharp local coefficient is nonzero, hence the sharp field is essentially unbounded in
+B(c_j,r/2). For any target T, the set {|E|>2T} there has positive volume (or use a fixed component
+from the supplied limiting_unbounded theorem). If a late E_n failed to exceed T on a positive-volume
+subset, its L2 distance to E would have a fixed positive lower bound. Thus for every threshold
+vector, eventually ALL rounded fields exceed their thresholds on positive-volume subsets of the
+inner balls. The input g remains fixed. This is exactly Packet05's peak hypothesis, derived from the
+actual fields.
+8. Choose T>max(sM,2(B+1)). Packet05's finite-side compactness/upper-envelope argument gives one
+sufficiently large n for which all one-sided maxima m_j are attained, finite, >T, and all collars
+are <m_j/2. Strict inequality can be forced with T=max(sM,2(B+1))+1. The same common n also
+satisfies the smoothness/exact-component geometry proved in F (indeed ours is smooth for every n
+once eps_0 was chosen).
+9. Apply the already fixed rigid dilation. Every final max is m_j/s>M; collar ratio is unchanged.
+Every material support point and every observation-ball point lies in p0+s O B_1. Its projection
+lies in the planar closed disk of radius s<rho, hence in P. Ball centers lie in Pi and P. Their
+diameter is 2sr<=2s<ell/2<ell. Rigid dilation preserves pairwise disjointness and exactly 2N smooth
+connected inclusions. The one transformed density g_s is still unit incoming power and was fixed
+before the final rounding choice. The final frequency is EXACTLY k0, since s=kappa/k0.
+
+Nothing requires the final maximizing points to lie in the plane. The ambient one-sided maximum
+convention is exactly Packet05's, and its half-maximum connected-component localization follows
+unchanged. No conducting boundaries or impressed sources were added to the physical device.
+
+==========================================================================
+5. DEPENDENCY MAP, SOURCE STATUS, AND CONSTANT DEPENDENCE
+==========================================================================
+
+5.1 Mathematical dependency map
+
+The proof uses the following directed dependencies. All objects at the end of
+each branch are actual physical fields or explicitly defined material sets.
+
+  P05 fixed Fourier decomposition + angular compact spectral construction
+    -> graph-space H2 holomorphy + vertex-subtracted radial formula
+    -> exact holomorphic coefficient with c0=sqrt(4pi/3) E0(0) dot e
+    -> simultaneous nonzero coefficients for one continued mode.
+
+  Reviewed P04 actual sphere kernel + P06 simple crossing/high-Q theorem
+    -> actual simple electric-sector sphere mode
+    -> physical N=1 using the resolved pairing dictionary
+    -> nonzero axial core interval
+    -> explicit simultaneous axisymmetric material family
+    -> P06 holomorphic continuation
+    -> the preceding simultaneous coefficient conclusion.
+
+  Explicit smooth inward modal rounding + P06 bounded-a.e. perturbation
+    -> normalized actual local L2 mode convergence
+    -> P05 fixed-collar uniform convergence
+       + sharp essential blowup -> eventual positive-volume high sets
+    -> one common rounded index, attained one-sided maxima and collar gap
+    -> full-rotation plane selection + rounded-frequency physical dilation
+    -> all conclusions of ms:modal-packing.
+
+  Fixed d + explicit common truncated bicones
+    -> uniform actual volume inverse
+    -> ordinary-ball Maxwell inequality and local cone excitation
+    -> common-material total-field Runge
+    -> ONE normalized physical density before rounding
+    -> explicit convex rounding with exactly 2N connected inclusions
+    -> actual local L2 convergence + fixed open-collar agreement
+    -> P05 simultaneous attained peaks
+    -> unit-power physical dilation and patch embedding
+    -> all conclusions of the physical hs:three-packing theorem.
+
+The optional route through the supplied named driven sources substitutes
+ConicalCommonRungeNonzero.one_normalized_illumination and
+ConicalCommonBinaryPeaks.one_input_simultaneous for the new direct Runge and
+peak proofs. It retains their exact data and small-frequency hypotheses.
+Its literal geometry/power adapters, described in 7.2, must first be supplied.
+
+5.2 Exact source map
+
+Source: FOR_PACKET07, complete Packet 05 return, Theorems 05.1--05.5.
+Status: mathematically reviewed prerequisite, complete new formalization absent.
+Use: piecewise H2 from whole-patch L2 curl-curl/div equations and fixed C3
+positive interfaces; fixed-collar convergence with the frequency-error term;
+finite upper-envelope attainment; positive-volume-to-peak transfer; common
+eventual index and connected-component localization. Its section 2.4 supplies
+the fixed cutoff Fourier projection used in the new holomorphic graph space.
+
+Source: FOR_PACKET07, complete Packet 06 return, Theorems 06-A--06-D.
+Status: mathematically reviewed prerequisite, complete new formalization absent.
+Use: actual selected-sector simple pole and nonzero crossing; arbitrary high Q
+at one fixed admissible algebraic index; exact local physical operator/Green
+bridge; holomorphic material continuation and bounded-a.e. rounding on one
+fixed symmetry-invariant support domain. These are invoked with the exact
+hypotheses stated in section 1.6, not as unconditional global mode assertions.
+
+Source: FOR_PACKET07, reviewed Packet 04 kernel classification and W/O/D/M
+dictionary; ModalWeightedResidue.residue_eq_numerator and the regular dipole
+core dictionary reproduced there.
+Status: reviewed mathematical classification plus source identities identified
+by the supplement; not independently rebuilt here.
+Use: actual selected-sector kernel and nonzero regular TM dipole; its elementary
+origin series proves the nonzero axial seed. No new all-degree separation or
+Lindemann--Weierstrass argument is required in this packet.
+
+Source: lean/ModalBoundedContrastIsolation.lean, exists_index and
+normalized_isolated_poles, quoted in the original packet.
+Status: attachment marks these accepted in the stage-65 incremental ledger.
+Use: first choose one algebraic n below the fixed contrast ceiling; then choose
+high-Q roots with nonzero actual weighted vector and unit derivative pairing.
+The simple inverse consequences are taken from reviewed P06, not inferred only
+from the final meromorphic-pole clause in this older source theorem.
+
+Source: lean/KernelReciprocity.lean, scalar_product_integrable,
+scalarPair, vectorPair, vectorPair_actual; DynamicConvolution.component;
+NewtonL2.physicalCoordinate_ae; VectorFourier.coordinateMap_preserving.
+Status: supplied defining excerpts and resolved physical-pairing review, with
+the cited existing clean-build provenance. No new compile in this session.
+Use: exact unconjugated physical integral with coefficient one, finite-sum
+integration, and N(E_U)=-k/2. No numerical normalization gap remains here.
+
+Source: lean/ComplexMagneticMaxwell.lean, actual_maxwell, and
+lean/ComplexKernelResponse.lean, kernel_weighted_response,
+kernel_coordinate_ae, kernel_zero_outside.
+Status: supplied stage-65 accepted sources.
+Use: the actual complex source equations and physical kernel recovery. For
+real physical susceptibility and u=sqrt(chi)E, the actual source is chi E.
+For the auxiliary complex-eta material, use the same arbitrary complex L2
+source in the physical K formula and its distributional fundamental identity;
+do not try to form a nonnegative susceptibility record for complex eta.
+
+Source: lean/MaterialMaxwell.lean, TestMaxwell and dielectric;
+lean/MaterialHCurl.lean, regional finite-energy adapters.
+Status: supplied clean-build defining excerpts.
+Use: epsilon=1+chi; real-frequency weak equations and separate local L2
+requirements for the driven fields. TestMaxwell's real k is never passed a
+complex modal k. TestMaxwell alone is not used as a local L2 theorem.
+
+Source: lean/CompactCommonMaterial.lean, namespace ConicalCommonMaterial,
+coefficient_spatial, localValue_eq_inside, localValue_zero, sum_eq_local;
+ConicalCommonBaseline.common and ConicalCommonBinaryPeaks.coefficient.
+Status: supplied accepted excerpts/aliases.
+Use: the existing named common material is the finite sum of translated local
+records, with disjoint outer supports and a bound independent of their number.
+Those aliases do not define the opaque local cone record by themselves.
+
+Source: lean/ConicalCommonRungeNonzero.lean, one_normalized_illumination;
+lean/ConicalCommonBinaryPeaks.lean, one_input_simultaneous,
+limiting_unbounded, eventually_high, rounded_maxwell, ballField_tendsto,
+volumeField_actual, and support.
+Status: supplied stage-65 accepted sources.
+Use: the same common coefficient and one finite angular input, fixed before
+every rounded index and threshold, with the exact positive small-frequency
+interval and the componentwise positive-volume conclusion. The output
+Tendsto(inwardPowerK) to 1 is not silently replaced by an unweighted coefficient
+norm. Section 4 proves the physical illumination power formula independently.
+
+Source: lean/CommonBinaryRounding.lean and lean/MaterialVolumeLimit.lean.
+Status: supplied authenticated sources, accepted as described in the supplement.
+Use: common coefficient bounds and a.e. convergence; general actual volume
+convergence under |k|<=1/[2(1+252 B R^2)]. Choosing a smaller reference kappa
+before the input, then dilating, removes this restriction at arbitrary prescribed
+physical k0 without asserting the source theorem at an unsupported frequency.
+
+Source: lean/CommonBinaryCollar.lean, eventually_annuli_agree;
+lean/CommonBinaryInterface.lean, eventually_body_smooth, coefficient_body,
+body_support; lean/CommonBinaryValues.lean, two_values.
+Status: supplied stage-65 accepted sources.
+Use: exact open-collar material agreement, smooth local boundary certificates,
+support, and binary values for the named sequence. These statements do not
+contain connectedness or a count of two lobes; section 4 proves those properties
+for an explicit sequence rather than inventing a missing source theorem.
+
+Source: lean/ModalFixedFrequencyNormalization.lean,
+lean/ModalVolumeNormalization.lean, lean/ComplexDilationVolume.lean.
+Status: supplied source evidence for weighted operator transport and unit
+derivative pairing. Use: corroborating source-level transport only.
+The physical powers in section 3 are derived from K and beta, not guessed from
+the symbol DilationL2.dilate, whose amplitude definition was not supplied.
+
+Source: manuscript/sections/modal_next.tex, modal_spectral.tex,
+hotspot_closure_audit.tex.
+Status: targets/proposed proofs requiring review. Their PROVED labels are not
+Lean evidence. Use: exact targets and physical conventions. The new arguments
+above verify the local analytic proof, the rounding/geometry/normalization and
+parameter choices, and the separate common-material driven proof.
+
+5.3 Constants and dependence
+
+Fixed independently of N: prescribed epsilon_+, k0; an admissible modal host
+epsilon_b=n^2 chosen from epsilon_+; cone threshold t; the driven value
+d=min((epsilon_+-1)/2,3/64), hence epsilon_h=1+d; reference volume bounds
+||K_kappa||<=16/3 and ||(I-K_kappa chi)^-1||<=4/3 for 0<kappa<=1.
+
+Allowed to depend on N and geometry: center separation, reference support
+radii, local conical radii, P05 chart constants on the selected collars, all
+Runge approximation tolerances and the normalized input density, the admissible
+modal insertion radius eta_N and chosen eta, the rounding index, and, in the
+named-source route, delta_N. The modal dipole pole can be chosen before N;
+its high-Q isolation/continuation radius need not be uniform in Q.
+
+The holomorphic coefficient estimates on a fixed compact parameter disk depend
+on R, gamma, epsilon_b, sup|k_eta|, sup||q_eta||_infinity,
+sup||E_eta||_L2, the bounded angular H1 branch, and the exponent margins
+inf Re(lambda)>1/2 and sup Re(lambda)<1+gamma/2. They do not depend on
+derivatives of the discontinuous conical coefficient.
+
+P05 estimates are uniform on fixed collars because the actual material is
+unchanged on their open neighborhoods. Their constants near a moving rounded
+tip may diverge. Such a uniform tip estimate is neither used nor asserted.
+
+==========================================================================
+6. MINIMAL ORDERED LEAN FORMALIZATION PLAN
+==========================================================================
+
+6.1 Boundary of the plan
+
+Every item in this section is an UNCOMPILED STATEMENT SPECIFICATION. The names
+below are proposed new modules/predicates, not claims about existing mathlib
+APIs. No executable .lean source file is being delivered, no proof hole is
+being passed as a theorem, and no axiom is introduced. The complete mathematical
+arguments to implement are in sections 1--4. Implement the reviewed P05/P06
+analysis first; the checkpoint's source excerpts alone do not replace it.
+
+The abstract records suggested below must encode the actual hypotheses, and
+their constructors must be proved from the actual physical K/pencil/material
+objects. They must not assume 'has large peaks', 'all coefficients nonzero',
+'analytic singular coefficient', 'exactly 2N inclusions', or 'N=1' in place
+of proving the corresponding construction.
+
+6.2 Ordered modules
+
+0. Packet05/Packet06 integration. Finish their distribution, local Sobolev,
+piecewise transmission, representative, Fredholm/Schur, physical operator,
+normalization, and material-continuity modules against the pinned checkpoint.
+The physical pairing coefficient-one adapter may reuse vectorPair_actual and
+finite-sum integration. Keep the exact reviewed P04 operator-kernel interface.
+
+1. PhysicalMaxwellAdapters. Define complex-frequency weak source-free Maxwell
+and local L2 fields, with test support and physical coordinates. Prove kernel
+source=chi E and derive both first-order equations and divergence, using the
+actual source construction. Include fixed local observation holomorphy and
+convergence for source vectors on a larger fixed support ball.
+
+2. CurlCurlGraphLift. Define the closed curl-curl graph subspace of L2 x L2;
+prove the fixed cutoff P_T lift is bounded from that graph to H2 on nested
+balls, and the fixed mean-zero potential is bounded into H1. Derive the
+holomorphic graph-valued family directly. Explicit nested radii avoid any
+unrecorded shrinking of the theorem's domain.
+
+3. AnalyticAngularConeBranch. Construct the axisymmetric odd H1 subspace,
+test averaging, compact mass map, rank-one Riesz projection, bilinear analytic
+mass normalization, lambda branch, and exact derivatives. Prove positivity
+and lambda<1 on a real positive parameter interval. Do not insert complex
+conjugation into the holomorphic normalization.
+
+4. ConicalWeakRadialProjection. Prove the H1 angular-slice and weighted radial
+integrability lemmas, compact H1 test extension, the Euler equation, and
+B0=lambda(lambda+1) A0. All angular moments refer to the actual scalar
+potential/lifting, and physical epsilon_b cancels from divergence.
+
+5. RegularizedConicalParticular. Define both subtracted integrals; prove
+uniform s^(gamma-Re(lambda)) and s^(gamma+Re(lambda)+1) majorants,
+log-weighted parameter bounds, holomorphy, ptilde=O(r^(1+gamma)),
+ptilde'=O(r^gamma), and the exact inhomogeneous equation. Identify the
+unregularized formula only on Re(lambda)<1, then its removable continuation.
+
+6. AnalyticConicalCoefficient. Prove finite-energy exclusion of the second
+Euler solution, the bounded annular coefficient formula, lifting independence,
+equality with the intrinsic physical coefficient, exact c0, and essential
+unboundedness/ordinary high points. The coefficient is a function of the
+actual field family, not supplied as an extra assumption.
+
+7. FiniteModalConeExcitation. Prove finite intersection of nonvanishing
+parameter neighborhoods, with one common eta and one continued mode. Track
+the host margin epsilon_b(1+eta)<epsilon_+ and simultaneous normalization.
+
+8. PhysicalRigidDilation. Define raw physical pullback on changing balls;
+prove weak Maxwell, outgoing representation, K-conjugacy, K'-factor s,
+beta-factor s^3, derivative-pairing factor s^4, and N-factor s^3.
+Only then add an adapter to any existing DilationL2 symbol after inspecting
+its definition. Include rigid rotations/translations and Green residue scaling.
+
+9. AxialConeGeometry. Formalize the explicit f/theta modal lobes: support,
+local exact angular coefficient, smooth caps and rounded tips, connectedness,
+closure separation, fixed-collar equality, a.e. convergence and invariance
+under all axial rotations/meridional reflections. Construct the invariant
+support ball in coordinates centered at the eventual placement point.
+
+10. ActualDipoleAxialSeed. Use the reviewed actual numerator/regular-core
+dictionary and psi_1(u)=u^2/3+O(u^4) to prove E(0) dot e!=0, then continuity
+on an open axial interval. The nonzero amplitude follows from actual kernel
+nonzero and matching; it is not postulated.
+
+11. ModalMaterialFamilies. Construct chi_eta=chi_sphere+epsilon_b eta 1_G,
+prove L-infinity holomorphy and fixed sector/support, apply P06 to the actual
+simple sphere, then to its fixed sharp insertion under bounded-a.e. rounding.
+Supply compatible N=1 square roots and physical local L2 convergence.
+
+12. RotationOneSidedMaxima. Promote each fixed rotation's a.e. equality to
+continuous material-side equality and boundary traces. Prove E_up invariant,
+axis-centered balls invariant, each orbit meets the target plane, and projection
+containment yields membership in P. No reflection-only replacement is valid.
+
+13. ModalPacking. Assemble the finite geometry, parameter interval, collar
+and amplitude envelope, one late rounding index, and final scale
+Re(k_rounded)/k0. The final statement quantifies the original epsilon_+,k0,
+P,N,ell,M,Q0 without additional central assumptions.
+
+14. OrdinaryBallMaxwellPoincare. Implement the zero-extension/Fourier/surface-
+trace proof in section 4, then weighted Helmholtz decomposition and coercivity.
+This removes any need to assume a special cone compactness theorem or smooth
+coefficients in the local excitation variational argument.
+
+15. DrivenActualVolumeAndRunge. Formalize the explicit kernel bound, inverse,
+arbitrary source solution and bilinear reciprocity identity, far-field formula,
+vacuum uniqueness, interface propagation and compact H(curl) annihilator test.
+Then prove total-field Runge for the ONE common coefficient and local excitation.
+If the supplied accepted Runge interfaces are reused, first discharge the exact
+Data/geometry/power dictionary in 7.2; no hidden weakening is permitted.
+
+16. SmoothConvexConeRounding. Define h_epsilon and the smooth maximum, prove
+convexity and monotonicity, regular nonzero-gradient zero level, nonempty
+connected upper/lower bodies, disjoint closures, exactly 2N components,
+inward a.e. convergence, and eventual EXACT open-collar equality. Instantiate
+the general MaterialVolumeLimit theorem if desired; equality to the old
+opaque rounded sequence is not needed for this new implementation path.
+
+17. DrivenPowerAndPatchEmbedding. Implement the actual Herglotz input formula,
+incoming asymptotic/flux, power=||g||2^2, rotation/translation/dilation of g,
+power factor |A|^2 s^2, finite patch embedding, and preservation of the exact
+component count and support projection. Keep epsilon_h outside the N quantifier.
+
+18. DrivenPacking. Choose reference frequency before input and rounding;
+retain commonRadius when consuming the named source theorem; fix one input,
+derive every P05 hypothesis for the actual fields, take one common index,
+and apply the preselected dilation to exact k0. Prove the target including
+material-support projection and exactly 2N inclusions.
+
+6.3 Proposed statement signatures, expressed mathematically
+
+These are precise targets for the modules, not executable declarations.
+
+SPEC 1  curlCurlGraphLift:
+  For every R>0 there are bounded complex-linear maps on
+  G_R={(E,F) in L2(B3R)^2 : curl curl E=F},
+  (E,F) -> W in H2(B2R), and (E,F) -> v in H1(BR),
+  with E=grad v+W on BR, mean_BR(v)=0, and the graph-norm bounds in section 2.
+
+SPEC 2  analyticAngularBranch:
+  For every real unit e and 1/sqrt(3)<t<1, there exist delta>0 and analytic
+  nu,lambda,phi on |eta|<delta satisfying every identity in (1.5), the full
+  weak angular problem, weighted zero mean, and
+  forall eta in R, 0<eta<delta -> 0<lambda_eta<1.
+
+SPEC 3  regularizedCoefficient:
+  For every family satisfying (1.4), there are delta>0 and an analytic
+  c:disk(0,delta)->C such that
+  c(0)=sqrt(4pi/3)*(E0(0) dot e), and
+  forall eta in R, 0<eta<delta -> c(eta)=intrinsicCoefficient(E_eta).
+  Its construction is the annular integral of section 2, with fixed lifts.
+
+SPEC 4  finiteModeExcitation:
+  For every finite nonempty I and ONE constructed global analytic family,
+  if its base values E0(p_i) dot e_i are nonzero, then
+  exists delta>0, forall eta in R, 0<eta<delta ->
+  forall i:I, intrinsicCoefficient(E_eta,p_i,e_i)!=0.
+  This lemma is instantiated by ActualDipoleAxialSeed and ModalMaterialFamilies
+  in the final modal theorem; those hypotheses do not remain in that theorem.
+
+SPEC 5  reciprocalDilation:
+  forall s>0, a:C, nonzero k and compactly supported chi,
+  d(a T_s E,k/s,T_s chi)=a^2 s^4 d(E,k,chi),
+  N(a T_s E,k/s,T_s chi)=a^2 s^3 N(E,k,chi).
+  K, K', beta, and the actual Maxwell/output restrictions use the exact
+  definitions of (1.2); raw T_s has no implicit amplitude factor.
+
+SPEC 6  smoothTwoLobeRounding:
+  For each a>0,beta>0, sufficiently small epsilon>0 yields bounded nonempty
+  convex C-infinity domains D_epsilon^+,D_epsilon^-, disjoint closures,
+  contained in the respective sharp truncated cones; their indicators converge
+  a.e. inward, and for every 0<r0<b0<a they eventually equal the sharp indicators
+  on the whole closed annulus r0<=|x|<=b0.
+
+SPEC 7  commonExactCardinality:
+  Given N pairwise closure-disjoint containing balls and the translated
+  smoothTwoLobeRounding construction in each, the positive-susceptibility
+  region has exactly 2N connected components, each a nonempty bounded smooth
+  domain. In Lean one may encode this as an indexed family over Fin N x Bool
+  whose images are exactly the connected components, with injective indexing.
+
+SPEC 8  physicalUnitPowerDilation:
+  For real kappa>0,s>0, k0=kappa/s, O in SO(3), p0:R3, and smooth tangent g,
+  define g_s(d)=exp(-i k0 d dot p0) O g(O^T d).
+  Then ||g_s||_L2=||g||_L2 and the physical incident fields at k0 are
+  s^-1 O times those at kappa pulled back by x=p0+s O y.
+  More generally incomingPower(A T_s E)=|A|^2 s^2 incomingPower(E).
+
+SPEC 9  modalPacking:
+  forall epsilon_+>1, k0>0, nonempty relatively open plane patch P,
+  N:Nat with 0<N, ell>0, M>0, Q0>0,
+  exists actual smooth finite material, actual selected-sector outgoing mode,
+  and N balls, satisfying EVERY clause of Theorem 07-M.
+
+SPEC 10 drivenPacking:
+  forall k0>0, epsilon_+>1,
+  exists epsilon_h with 1<epsilon_h<=epsilon_+,
+  forall nonempty relatively open plane patch P, finite N, ell>0,M>0,
+  exists ONE common binary smooth material with EXACTLY 2N inclusions,
+  ONE physical unit-incoming-power input at k0, and N balls,
+  satisfying EVERY clause of Theorem 07-D, including support projection.
+
+6.4 Meaningful verification gates after implementation
+
+First compile prerequisite modules individually in the exact pinned project;
+then the new modules in the stated dependency order. Check that theorem
+signatures preserve the same physical coefficient, one input/mode, the
+unconjugated pairing, all source support conditions, the complex frequency,
+and the quantifier order. Inspect #print axioms for every new top-level result;
+reject new axioms or proof holes. Only then run an authorized clean aggregate
+integration build. Source excerpts or earlier acceptance counts cannot stand
+in for these checks. No source or evidence file supplied here is modified.
+
+==========================================================================
+7. VERIFICATION AND PRECISE REMAINING OBLIGATIONS
+==========================================================================
+
+7.1 What is actually verified in this session
+
+The two local attachments were read and used. Independent parallel reviewers
+worked on analytic cone insertion, modal geometry/normalization/quantifiers,
+and driven geometry/Runge/scaling. The analytic and modal derivations were
+then cross-reviewed. The ordinary-ball Maxwell inequality was separately
+checked in its Fourier/trace form. These are mathematical checks, not proof-
+assistant verification.
+
+Commands actually run included local source enumeration and segmented reads,
+searches for exact supplied definitions/theorems, and a Python check of
+executable availability and attachment SHA-256 hashes. Those commands exited 0.
+
+  lean: not available on PATH
+  lake: not available on PATH
+  elan: not available on PATH
+
+  07_modal_and_driven_assembly.txt
+    149930 bytes; 2882 lines
+    sha256 f184a82e0db76c33828077aee367fc21ca204bf07fb2397cde00aeb970d07a23
+
+  FOR_PACKET07.txt
+    283932 bytes; 5215 lines
+    sha256 c591f77e52969a33535629b7147fb9f3e083540169d856aaf184c27c546a26e0
+
+No Lean executable was run, no candidate source was compiled, no axiom audit
+was executed, and no incremental or aggregate proof build was reproduced.
+The requested toolchain and mathlib revision are recorded, not claimed installed.
+The source hashes quoted INSIDE the attachments describe earlier evidence;
+the two hashes above identify the actual attachments read in this session.
+
+7.2 Exact remaining source-identification and implementation gaps
+
+(G1) Literal conical data constructor/dictionary. The supplied excerpt defines
+the common coefficient through ConicalSeparatedSource.material and
+ConicalStaticVolume.coefficient, but does not supply their defining bodies or
+the Data constructor. To reuse those exact records for section 4's explicit
+geometry, inspect those named source files and prove the a.e. identity
+
+  material(p,a).value(coordinateMap x)
+    = d * 1_{|x|<a and |x dot axis|>t|x|},
+
+under a<cutoff.rIn, the chosen angular data, and p.contrast=d. Supply a Data
+constructor at fixed d with arbitrarily small admissible inner/outer radii.
+Boundary assignments on the cone/cap surfaces may differ on null sets only.
+The physical theorem above does not assume this opaque identity; it defines
+and proves the material directly. This remains a genuine interface gap if
+the deliverable is required to use those EXACT named existing records.
+
+(G2) Literal old rounded inclusion count. None of the supplied statements
+proves that ConicalJunctionPhysical.inclusion is the disjoint union of two
+nonempty connected bounded domains. Smooth local boundary certificates and
+binary values do not imply that statement. To claim exactly 2N for the old
+named CommonBinaryRounding sequence, inspect the inclusion/physicalDef
+definitions and prove this two-component theorem, including closure separation.
+Alternatively implement section 4's explicit convex rounding and use the
+general bounded-a.e. convergence theorem; equality to the old rounded sequence
+is unnecessary for that implementation path. This alternative retains the
+same sharp common coefficient and the same already chosen input throughout.
+
+(G3) Literal source illumination/power dictionary. The accepted source gives
+Tendsto(FiniteMixedScaledFlux.inwardPowerK k d_in) to 1, with
+FiniteAngularHerglotz.incident. Their full defining formulas are not supplied.
+Before identifying that named normalized input with the physical Herglotz
+formula in section 4, inspect these definitions and prove the exact field and
+incoming-flux adapter. Do not assume its raw finite coefficient norm is one,
+or guess frequency/impedance factors. The physical normalization proof above
+is complete for its explicitly defined g and fields; it does not certify an
+unseen definition by name.
+
+(G4) Existing L2 dilation convention. DilationL2.dilate's amplitude definition
+is not provided. Before rewriting the new physical scaling results using that
+symbol, prove its physical representative formula. The s^4 and s^3 factors
+in section 3 are independently proved from the actual physical K and beta;
+there is no unresolved physical scaling ambiguity.
+
+(G5) Formalization. All new arguments of this report, plus the new complete
+P05/P06 arguments, remain to be implemented and compiled in the pinned project.
+This includes Banach graph holomorphy, spherical weak testing and majorants,
+representative/trace adapters, finite geometry/component cardinality, exact
+incoming-power scaling, and the final quantifier assembly. The module plan
+lists these as proof tasks, not assumptions or axioms of a final theorem.
+
+No requested theorem is replaced by a theorem conditional on its own excitation,
+regularity conclusion, peak existence, or classification. The local analytic
+lemma necessarily has local-family hypotheses; section 3 constructs and checks
+that family from the reviewed simple sphere. The physical driven proof supplies
+its own common-material local excitation and Runge theorem. Missing literal
+source adapters are displayed, rather than inferred from suggestive names.
+
+7.3 Mathematical disposition
+
+Subject to the EXACT reviewed Packet 05/06 premises stated in section 1 and
+the ordinary explicitly stated Sobolev/Hilbert/complex-analysis background
+used in their proofs, the new analytic cone insertion and complete modal
+hotspot theorem are proved. The physical driven hotspot existence theorem
+is also proved, with a fixed dielectric before N, one common material, one
+input fixed before rounding, exactly 2N smooth connected inclusions, prescribed
+frequency, and the stronger support-projection condition.
+
+The mathematical proof is complete for the explicit constructions given here.
+The literal old common-record/rounding/input assembly and end-to-end Lean
+integration are NOT certified complete; G1--G5 are the precise remaining
+interfaces and implementation obligations. No conclusion about the separate
+unrestricted-channel theorem or full OQ14 closure follows from this packet.
+
+7.4 Primary-source reference checked
+
+The manuscript cites M. Costabel and A. McIntosh, "On Bogovskii and regularized
+Poincare integral operators for de Rham complexes on Lipschitz domains,"
+Mathematische Zeitschrift 265 (2010), 297--320,
+DOI 10.1007/s00209-009-0517-8; arXiv:0808.2614.
+Author manuscript: https://costabel.perso.math.cnrs.fr/publis/PoiBogdeRhv2.pdf
+
+Its order-minus-one lifting is a valid supporting reference for the manuscript's
+ball lifting statement. The present proof uses the fixed Fourier graph lift
+and the explicit ordinary-ball trace argument instead, so that reference is
+not an extra assumed cone or scattering theorem. No outside source was used
+as evidence that the supplied repository had compiled a missing result.
+
+END OF FULL PACKET 07 RETURN REPORT
