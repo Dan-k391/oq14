@@ -1,0 +1,61 @@
+[
+  {
+    "module": "Packet04VectorAngular",
+    "declarations": [
+      "OQ14.Packet04VectorAngular.eq_of_polynomial_integral_moments",
+      "OQ14.Packet04VectorAngular.eq_of_polynomial_moments",
+      "OQ14.Packet04VectorAngular.continuous_mode_coefficient_integral",
+      "OQ14.Packet04VectorAngular.polynomial_integral_moments_separate",
+      "OQ14.Packet04VectorAngular.real_mode_coefficient",
+      "OQ14.Packet04VectorAngular.polynomial_moments_separate",
+      "OQ14.Packet04VectorAngular.radial_coefficient_integral",
+      "OQ14.Packet04VectorAngular.eq_of_radial_transverse_coefficients"
+    ]
+  },
+  {
+    "module": "Packet04RadialCurl",
+    "declarations": [
+      "OQ14.Packet04RadialCurl.curl_radial_mul_gradient",
+      "OQ14.Packet04RadialCurl.radial_test_curl_curl_on_ray",
+      "OQ14.Packet04RadialCurl.radial_test_curl_on_ray",
+      "OQ14.Packet04RadialCurl.radial_test_curl_curl"
+    ]
+  },
+  {
+    "module": "Packet04WeakSphereMaxwell",
+    "declarations": [
+      "OQ14.Packet04WeakSphereMaxwell.permittivity_value",
+      "OQ14.Packet04WeakSphereMaxwell.actual_maxwell",
+      "OQ14.Packet04WeakSphereMaxwell.electric_local"
+    ]
+  },
+  {
+    "module": "Packet04VectorTests",
+    "declarations": [
+      "OQ14.Packet04VectorTests.curl_component",
+      "OQ14.Packet04VectorTests.vector_integrable",
+      "OQ14.Packet04VectorTests.vector_pair",
+      "OQ14.Packet04VectorTests.vector_rhs",
+      "OQ14.Packet04VectorTests.weak_vector_curl"
+    ]
+  },
+  {
+    "module": "Packet04ElectricToroidal",
+    "declarations": [
+      "OQ14.Packet04ElectricToroidal.radial_test_annihilation",
+      "OQ14.Packet04ElectricToroidal.actual_test_annihilation"
+    ]
+  },
+  {
+    "module": "Packet04ToroidalMoments",
+    "declarations": [
+      "OQ14.Packet04ToroidalMoments.weight_continuous",
+      "OQ14.Packet04ToroidalMoments.weight_memLp",
+      "OQ14.Packet04ToroidalMoments.coefficient_local",
+      "OQ14.Packet04ToroidalMoments.coefficient_actual",
+      "OQ14.Packet04ToroidalMoments.actual_weighted_annihilation",
+      "OQ14.Packet04ToroidalMoments.actual_coefficient_zero",
+      "OQ14.Packet04ToroidalMoments.actual_toroidal_zero"
+    ]
+  }
+]

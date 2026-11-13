@@ -1,0 +1,353 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261112-234728-8408",
+  "object_directory": "checkpoints/2026-11-12-vector-chain/objects/20261112-234728-8408",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all six Packet04 vector-chain modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet04VectorAngular",
+      "source": "lean/Packet04VectorAngular.lean",
+      "source_sha256": "a83295dcb1ec0ac21a8e97eb94155081b6e2b7f4ec5f2343adb9d6b7c6a08315",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04VectorAngular.olean",
+        "D:\\oq14\\lean\\Packet04VectorAngular.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.016,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorAngular-chain.log",
+      "log_sha256": "a3c66683d060d8ad9839ae39f4fe6c3a87142887bad776298260cc4dc81aed19",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04VectorAngular.eq_of_polynomial_integral_moments",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.eq_of_polynomial_moments",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.continuous_mode_coefficient_integral",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.polynomial_integral_moments_separate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.real_mode_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.polynomial_moments_separate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.radial_coefficient_integral",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorAngular.eq_of_radial_transverse_coefficients",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "058b371fef73c31f777020b969e0450d540e848b4344fb1d1bc64597c0005421"
+    },
+    {
+      "module": "Packet04RadialCurl",
+      "source": "lean/Packet04RadialCurl.lean",
+      "source_sha256": "2eb8610b6a3c2ae1251a5c51c8bd1fc93587be1030f09b72aabcfe15c6197763",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04RadialCurl.olean",
+        "D:\\oq14\\lean\\Packet04RadialCurl.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.75,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04RadialCurl-chain.log",
+      "log_sha256": "58e118686272afadef99ee6fdb92cc680989222752569d1a093ef5a70ddc9ead",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04RadialCurl.curl_radial_mul_gradient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RadialCurl.radial_test_curl_curl_on_ray",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RadialCurl.radial_test_curl_on_ray",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RadialCurl.radial_test_curl_curl",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b4e1306f94db37ade3e1c3e547f9cdf0f887bf4cde47e2fc1d3fb15d9cedab9a"
+    },
+    {
+      "module": "Packet04WeakSphereMaxwell",
+      "source": "lean/Packet04WeakSphereMaxwell.lean",
+      "source_sha256": "64674698f78c2f885f0039209af7e77b3aa588a969cd0c4111836f4189c66690",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04WeakSphereMaxwell.olean",
+        "D:\\oq14\\lean\\Packet04WeakSphereMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.219,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04WeakSphereMaxwell-chain.log",
+      "log_sha256": "3ad776500ca03a926c597fc883999d6adbbf50967ecf359c5df7908b338ef6b3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04WeakSphereMaxwell.permittivity_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04WeakSphereMaxwell.actual_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04WeakSphereMaxwell.electric_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1a1c57b42fde60fd60e9c4cc9c0b2bc3eb458c39f5a90c744ba39ddf35f9ca90"
+    },
+    {
+      "module": "Packet04VectorTests",
+      "source": "lean/Packet04VectorTests.lean",
+      "source_sha256": "9ba085c3147cba48ad2f499d787cc4e3aac05d548e851dd411c1ded16a136d77",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04VectorTests.olean",
+        "D:\\oq14\\lean\\Packet04VectorTests.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.609,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorTests-chain.log",
+      "log_sha256": "abbd62a31971fbeab22a949d7cd230c5d5b52f822121108676c87d6b32fa62bc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04VectorTests.curl_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorTests.vector_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorTests.vector_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorTests.vector_rhs",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04VectorTests.weak_vector_curl",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3f702fff42d3fbc0a910fc6d9c909e254a25b203c9211daec22ae44a7c391d1d"
+    },
+    {
+      "module": "Packet04ElectricToroidal",
+      "source": "lean/Packet04ElectricToroidal.lean",
+      "source_sha256": "cbaa78f0ca41d714c18563532249db1c68b5b9cd1084df818b1ec935e8b2eefa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04ElectricToroidal.olean",
+        "D:\\oq14\\lean\\Packet04ElectricToroidal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.359,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ElectricToroidal-chain.log",
+      "log_sha256": "29895790372d30cd7f4d4385d726ddba48bc08f6bcfe84f3fd0317435be79bf7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04ElectricToroidal.radial_test_annihilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ElectricToroidal.actual_test_annihilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1188afddb8c0493669f7a918314f2496ffb9432c4db18db0b1c9278f6462ca02"
+    },
+    {
+      "module": "Packet04ToroidalMoments",
+      "source": "lean/Packet04ToroidalMoments.lean",
+      "source_sha256": "079860073a42558384884081dd8d5129d2f45c6b2661450ce5ee7a4ac7895675",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-vector-chain\\objects\\20261112-234728-8408\\Packet04ToroidalMoments.olean",
+        "D:\\oq14\\lean\\Packet04ToroidalMoments.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.969,
+      "log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ToroidalMoments-chain.log",
+      "log_sha256": "a8b6d420e753b10b234e02c77eb05f6939ee6029b19f13c2962b38379d40403c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.weight_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.weight_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.coefficient_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.coefficient_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.actual_weighted_annihilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.actual_coefficient_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04ToroidalMoments.actual_toroidal_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d172695bd60c3e5308b7c68d396aa079814efce385692ae7126f291acffdb42f"
+    }
+  ],
+  "module_count": 6,
+  "report_count": 29
+}

@@ -1,0 +1,12 @@
+# Independent six-module source review
+
+Scope: source statements and proof transitions, read independently against the current local Lean APIs. Hashes are SHA-256 of the reviewed source bytes. This is a scoped formal review, not a proof of the full modal closure.
+
+- Packet04WeakSphereMaxwell.lean: 64674698f78c2f885f0039209af7e77b3aa588a969cd0c4111836f4189c66690. Correctly states weak curl E = iz H and curl H = -iz εE; the dielectric remains under the integral across the interface. The conclusion requires n > 1, T ≥ 1 and the actual volume-block kernel hypothesis; z is arbitrary complex.
+- Packet04VectorTests.lean: 9ba085c3147cba48ad2f499d787cc4e3aac05d548e851dd411c1ded16a136d77. The component-index reshuffle gives ∫E·curl F = a∫H·F, with compactly supported smooth test components and local integrability. No complex conjugation is introduced.
+- Packet04ElectricToroidal.lean: cbaa78f0ca41d714c18563532249db1c68b5b9cd1084df818b1ec935e8b2eefa. The test curl is toroidal φ = curl(x φ), and zero radial magnetic field yields zero electric toroidal test pairing. The actual specialization depends on electric-sector membership and the volume-kernel equation.
+- Packet04ToroidalMoments.lean: 079860073a42558384884081dd8d5129d2f45c6b2661450ce5ee7a4ac7895675. Polar integration contributes r² and degree-l homogeneity r^l; test density is eliminated only on r∈(0,T), then its positive power is cancelled. The endpoint is a.e. radius, for homogeneous polynomial p, all complex z, not a pointwise radius assertion or full mode classification.
+- Packet04VectorAngular.lean: a83295dcb1ec0ac21a8e97eb94155081b6e2b7f4ec5f2343adb9d6b7c6a08315. Radial, poloidal, toroidal real polynomial modes separate complex L² vector fields by decomposition into real and imaginary parts. Coefficients use real test modes, making the resulting sphere integral bilinear in the field. It is an L² equality, not pointwise equality.
+- Packet04RadialCurl.lean: 2eb8610b6a3c2ae1251a5c51c8bd1fc93587be1030f09b72aabcfe15c6197763. The first-curl sign agrees with angularToroidal = grad(P) × x; the radial-multiplier gradient curl carries the negative sign. Second-curl formulas require harmonicity; ray formulas require r > 0 and the stated polynomial homogeneity.
+
+No `sorry`, `admit`, or custom `axiom` declarations occur in the six reviewed sources. Each public theorem has a corresponding #print axioms audit. Independent compilation logs are in this directory; the dependency package is the existing pinned build, not a clean transitive rebuild.

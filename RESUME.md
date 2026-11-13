@@ -1,3 +1,28 @@
+# OQ14 active full-closure work — November 12, 2026
+
+Stage 68 is the latest verified incremental checkpoint:
+[STAGE68.txt](checkpoints/2026-11-12-vector-chain/STAGE68.txt).
+Full OQ14 work is active at the user's request; this checkpoint does not stop it.
+Actual electric toroidal harmonic moments vanish almost everywhere on (0,T),
+including intervals crossing the sphere interface. The actual weak Maxwell
+identities and complex vector angular separation are also checked. Six modules
+and 29 reports bring the ledger to 533 modules / 3785 reports; all stage67
+records are preserved. The new chain used fresh isolated objects and 506
+authenticated upstream source dependencies, with cached upstream objects.
+An independent Terra source review and compilation passed. Only standard
+axioms occur. This is not a clean full-project build or full OQ14 closure.
+
+Current ledger: `checkpoints/2026-11-12-vector-chain/evidence/audited_after_5238-stage68.json`.
+Active author drafts/evidence are under `checkpoints/2026-11-12-full-closure/`.
+Three Terra agents continue actual TM interface projection, one-sided interface
+regularity and full angular-input scattering. Root continues outgoing-degree
+selection and integration. These concurrent drafts remain outside stage68.
+Remaining closure: continuous TM traces and sphere-kernel classification;
+one-sided regularity/maxima; residue/continuation and modal/driven assembly;
+global physical channel endpoint; final manuscript and clean aggregate build.
+
+Everything below is historical context, superseded by stage68.
+
 # OQ14 resume state — November 12, 2026
 
 Stage 67 is the latest verified incremental proof checkpoint. The full record is

@@ -1,0 +1,226 @@
+{
+  "date": "2026-11-12",
+  "previous_proof_checkpoint": "36a2f98",
+  "modules": 533,
+  "reports": 3785,
+  "new_modules": 6,
+  "new_reports": 29,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "aa169b5611b4fa7bad32bfafcc8d20565aeaadf61963f079664485afd0b8ed38",
+  "ledger_sha256": "625ad7b208f403a8c1b96866dfd2bbc1b1d5ca4d59f5ce60274875680f768cb4",
+  "source_provenance_sha256": "2400c89894f0adaa2062585606a3cec05848f50dc551057e6570e79d8e010eaa",
+  "chain_build_sha256": "f81ac4adda3bda6cd446bc8e0a5118af89c17e9daad9fc5813ad32f7f468c2d0",
+  "raw_archive_sha256": "e581c0f77004f6bd3b17eb1b46429bbddb50b2a74e49e04ca6f3b267b6efafab",
+  "records": [
+    {
+      "module": "Packet04VectorAngular",
+      "reports": 8,
+      "source_sha256": "a83295dcb1ec0ac21a8e97eb94155081b6e2b7f4ec5f2343adb9d6b7c6a08315",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorAngular-chain.log",
+      "audit_log_sha256": "a3c66683d060d8ad9839ae39f4fe6c3a87142887bad776298260cc4dc81aed19",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04VectorAngular.eq_of_polynomial_integral_moments",
+        "OQ14.Packet04VectorAngular.eq_of_polynomial_moments",
+        "OQ14.Packet04VectorAngular.continuous_mode_coefficient_integral",
+        "OQ14.Packet04VectorAngular.polynomial_integral_moments_separate",
+        "OQ14.Packet04VectorAngular.real_mode_coefficient",
+        "OQ14.Packet04VectorAngular.polynomial_moments_separate",
+        "OQ14.Packet04VectorAngular.radial_coefficient_integral",
+        "OQ14.Packet04VectorAngular.eq_of_radial_transverse_coefficients"
+      ]
+    },
+    {
+      "module": "Packet04RadialCurl",
+      "reports": 4,
+      "source_sha256": "2eb8610b6a3c2ae1251a5c51c8bd1fc93587be1030f09b72aabcfe15c6197763",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04RadialCurl-chain.log",
+      "audit_log_sha256": "58e118686272afadef99ee6fdb92cc680989222752569d1a093ef5a70ddc9ead",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04RadialCurl.curl_radial_mul_gradient",
+        "OQ14.Packet04RadialCurl.radial_test_curl_curl_on_ray",
+        "OQ14.Packet04RadialCurl.radial_test_curl_on_ray",
+        "OQ14.Packet04RadialCurl.radial_test_curl_curl"
+      ]
+    },
+    {
+      "module": "Packet04WeakSphereMaxwell",
+      "reports": 3,
+      "source_sha256": "64674698f78c2f885f0039209af7e77b3aa588a969cd0c4111836f4189c66690",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04WeakSphereMaxwell-chain.log",
+      "audit_log_sha256": "3ad776500ca03a926c597fc883999d6adbbf50967ecf359c5df7908b338ef6b3",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04WeakSphereMaxwell.permittivity_value",
+        "OQ14.Packet04WeakSphereMaxwell.actual_maxwell",
+        "OQ14.Packet04WeakSphereMaxwell.electric_local"
+      ]
+    },
+    {
+      "module": "Packet04VectorTests",
+      "reports": 5,
+      "source_sha256": "9ba085c3147cba48ad2f499d787cc4e3aac05d548e851dd411c1ded16a136d77",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorTests-chain.log",
+      "audit_log_sha256": "abbd62a31971fbeab22a949d7cd230c5d5b52f822121108676c87d6b32fa62bc",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04VectorTests.curl_component",
+        "OQ14.Packet04VectorTests.vector_integrable",
+        "OQ14.Packet04VectorTests.vector_pair",
+        "OQ14.Packet04VectorTests.vector_rhs",
+        "OQ14.Packet04VectorTests.weak_vector_curl"
+      ]
+    },
+    {
+      "module": "Packet04ElectricToroidal",
+      "reports": 2,
+      "source_sha256": "cbaa78f0ca41d714c18563532249db1c68b5b9cd1084df818b1ec935e8b2eefa",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ElectricToroidal-chain.log",
+      "audit_log_sha256": "29895790372d30cd7f4d4385d726ddba48bc08f6bcfe84f3fd0317435be79bf7",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04ElectricToroidal.radial_test_annihilation",
+        "OQ14.Packet04ElectricToroidal.actual_test_annihilation"
+      ]
+    },
+    {
+      "module": "Packet04ToroidalMoments",
+      "reports": 7,
+      "source_sha256": "079860073a42558384884081dd8d5129d2f45c6b2661450ce5ee7a4ac7895675",
+      "audit_log": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ToroidalMoments-chain.log",
+      "audit_log_sha256": "a8b6d420e753b10b234e02c77eb05f6939ee6029b19f13c2962b38379d40403c",
+      "independent_review": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "independent_review_sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2",
+      "declarations": [
+        "OQ14.Packet04ToroidalMoments.weight_continuous",
+        "OQ14.Packet04ToroidalMoments.weight_memLp",
+        "OQ14.Packet04ToroidalMoments.coefficient_local",
+        "OQ14.Packet04ToroidalMoments.coefficient_actual",
+        "OQ14.Packet04ToroidalMoments.actual_weighted_annihilation",
+        "OQ14.Packet04ToroidalMoments.actual_coefficient_zero",
+        "OQ14.Packet04ToroidalMoments.actual_toroidal_zero"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/audited_after_5238-stage68.json",
+      "sha256": "625ad7b208f403a8c1b96866dfd2bbc1b1d5ca4d59f5ce60274875680f768cb4"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/chain-build.json",
+      "sha256": "f81ac4adda3bda6cd446bc8e0a5118af89c17e9daad9fc5813ad32f7f468c2d0"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ElectricToroidal-chain.log",
+      "sha256": "29895790372d30cd7f4d4385d726ddba48bc08f6bcfe84f3fd0317435be79bf7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04RadialCurl-chain.log",
+      "sha256": "58e118686272afadef99ee6fdb92cc680989222752569d1a093ef5a70ddc9ead"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04ToroidalMoments-chain.log",
+      "sha256": "a8b6d420e753b10b234e02c77eb05f6939ee6029b19f13c2962b38379d40403c"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorAngular-chain.log",
+      "sha256": "a3c66683d060d8ad9839ae39f4fe6c3a87142887bad776298260cc4dc81aed19"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04VectorTests-chain.log",
+      "sha256": "abbd62a31971fbeab22a949d7cd230c5d5b52f822121108676c87d6b32fa62bc"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/evidence/Packet04WeakSphereMaxwell-chain.log",
+      "sha256": "3ad776500ca03a926c597fc883999d6adbbf50967ecf359c5df7908b338ef6b3"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/modules.json",
+      "sha256": "e6dd78344b17e888ee8554921437708b6d9bc9b79f1f43eac6180541f85f0e71"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/provenance-audit.json",
+      "sha256": "2400c89894f0adaa2062585606a3cec05848f50dc551057e6570e79d8e010eaa"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04ElectricToroidal-independent.log",
+      "sha256": "e8be2b9edf97a79b3d090039dc7d7b32fe15044b86af0503ab41c2af895859f6"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04RadialCurl-independent.log",
+      "sha256": "50f7a021b5387f66d3369ea31ee81893462f49c781d712aaaef549de32744147"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04ToroidalMoments-independent.log",
+      "sha256": "57a9943bca4916957523025fba5a98d2e50587e82200ea0033f83cfc057e5376"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04VectorAngular-independent.log",
+      "sha256": "d78503edd064edee051d5c4dc1433b93575cba6ca8ecec8083a3653e27ad7469"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04VectorTests-independent.log",
+      "sha256": "8ffe28907a4c0ca6a1f6e5367199945e26b214d65f4ed83993074239aa239592"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/Packet04WeakSphereMaxwell-independent.log",
+      "sha256": "5af4d9148df317bffe640e8103d3bc164eca4f335b241e0a41dab1616a8d2f0f"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/reviews/six-module-review.md",
+      "sha256": "8d82ac1e3b51e7ead8ea76b54574b396427716094ab47dd064f53639db83eae2"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/scripts/audit_provenance.ps1",
+      "sha256": "764a719dfc9fcefb92de7ae70b9144afe621944367c8ec56def595084050efe4"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/scripts/check_chain.py",
+      "sha256": "e77e59f6b1978310421b81839f6804a05f010c0c40b7bb15a632465fe61dd50e"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/scripts/freeze_checkpoint.py",
+      "sha256": "7041bb925ae2189de6ee230c64ef479cdbbad333a4b6ecc9395bf7335c748840"
+    },
+    {
+      "path": "checkpoints/2026-11-12-vector-chain/STAGE68.txt",
+      "sha256": "b05414b36419b2e397351a637c7c7d16f99256d80ba2558477836d8e3a9483d4"
+    },
+    {
+      "path": "lean/Packet04ElectricToroidal.lean",
+      "sha256": "cbaa78f0ca41d714c18563532249db1c68b5b9cd1084df818b1ec935e8b2eefa"
+    },
+    {
+      "path": "lean/Packet04RadialCurl.lean",
+      "sha256": "2eb8610b6a3c2ae1251a5c51c8bd1fc93587be1030f09b72aabcfe15c6197763"
+    },
+    {
+      "path": "lean/Packet04ToroidalMoments.lean",
+      "sha256": "079860073a42558384884081dd8d5129d2f45c6b2661450ce5ee7a4ac7895675"
+    },
+    {
+      "path": "lean/Packet04VectorAngular.lean",
+      "sha256": "a83295dcb1ec0ac21a8e97eb94155081b6e2b7f4ec5f2343adb9d6b7c6a08315"
+    },
+    {
+      "path": "lean/Packet04VectorTests.lean",
+      "sha256": "9ba085c3147cba48ad2f499d787cc4e3aac05d548e851dd411c1ded16a136d77"
+    },
+    {
+      "path": "lean/Packet04WeakSphereMaxwell.lean",
+      "sha256": "64674698f78c2f885f0039209af7e77b3aa588a969cd0c4111836f4189c66690"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "e9263d0009a756d0c96201000133b333a739fa111db27873f66a9ec215c23fbc"
+    }
+  ],
+  "scope": "Actual weak sphere Maxwell, vector angular separation, and electric toroidal zero ae in radius. Six fresh isolated module objects; 506 authenticated upstream sources, cached upstream objects. Full OQ14 closure remains active and incomplete."
+}
