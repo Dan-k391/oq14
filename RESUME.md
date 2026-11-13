@@ -1,5 +1,44 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 94 is the latest verified incremental checkpoint:
+[STAGE94.txt](checkpoints/2026-11-13-excited-rounded-modes/STAGE94.txt).
+
+For every finite number of centers, the proof selects one actual positive
+cone insertion with every intrinsic singular coefficient nonzero. The base
+sphere mode is fixed first, its cone cluster can fit any prescribed positive
+frequency-dependent ball, and the insertion contrast and real-frequency drift
+can be arbitrarily small. Uniform source bounds and the conical excitation
+inputs are derived from the certified physical branch.
+
+The same certified sharp mode continues through the literal rounded family.
+For every positive tip radius and every level, all tip balls have positive-volume
+electric coordinate superlevels eventually, on the same high-Q, outgoing,
+physically N=1 branch with a selected observed pole. The actual geometry has
+C4 oriented boundary charts. These superlevels are not yet attained maxima.
+
+Actual cyclic rotation, dilation and translation transport the material kernel
+and preserve physical N=1 with amplitude sqrt(s). The placed mode solves the
+global weak Maxwell equations and has the actual outgoing fields at any target
+positive real frequency, with quality ratio unchanged. Rational algebraic base
+indices and a small insertion margin give every prescribed index ceiling >1.
+The placed dielectric has the exact inverse-coordinate values and bounds.
+
+Curved-interface continuity and uniform collars, attained planar hotspots,
+the complete physical external-source residue and final theorem/paper assembly
+remain active. No transformed selected pole or peak identity is claimed by
+the placement theorem alone. No whole-project clean build is claimed.
+
+13 modules / 23 reports passed independent root review and a fresh
+ordered build. 1194 upstream sources were authenticated, with cached objects.
+The ledger is 995 modules / 4982 reports, all prior records unchanged:
+`checkpoints/2026-11-13-excited-rounded-modes/evidence/audited_after_5238-stage94.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage94.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 93 is the latest verified incremental checkpoint:
 [STAGE93.txt](checkpoints/2026-11-13-curved-scalar/STAGE93.txt).
 

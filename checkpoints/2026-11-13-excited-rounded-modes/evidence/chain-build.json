@@ -1,0 +1,431 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-043645-55688",
+  "object_directory": "checkpoints/2026-11-13-excited-rounded-modes/objects/20261113-043645-55688",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 13 excited rounded mode modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06SmallClusterBranch",
+      "source": "lean/Packet06SmallClusterBranch.lean",
+      "source_sha256": "7a7428449336e7ca3a3cc0d08bbdb3898ef6e74db3cf5810ee9fb0bb5bb47db2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06SmallClusterBranch.olean",
+        "D:\\oq14\\lean\\Packet06SmallClusterBranch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.75,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterBranch-chain.log",
+      "log_sha256": "f3fbe83c7e8c808a6f20b259c9ea294aee85678644d6e386ed62f0acff515107",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SmallClusterBranch.small_cluster_branch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5d480a93203132c2ddc8f7d86f45840416e97c9f4251d618367c58e6db485cb7"
+    },
+    {
+      "module": "Packet06PlacedKernel",
+      "source": "lean/Packet06PlacedKernel.lean",
+      "source_sha256": "7d4f56a0daefee7b525981487f4f5215d6fc2d8d996ae37cb50109463cde768b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06PlacedKernel.olean",
+        "D:\\oq14\\lean\\Packet06PlacedKernel.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.922,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PlacedKernel-chain.log",
+      "log_sha256": "a5d83324a6381f68f933562c2d41784abbccdc9f39d9d829bdf9ef90b33c979a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedKernel.placed_normalized_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dab39d7d56dca618539b8e94c331db9d3d149bc2d03f05f22b1f51303f7801b6"
+    },
+    {
+      "module": "Packet06PhysicalPlacement",
+      "source": "lean/Packet06PhysicalPlacement.lean",
+      "source_sha256": "2882c7b6b065f175ce8a12e5a964dc332584ccdd1eaccbbb159f56d6aa9589e1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06PhysicalPlacement.olean",
+        "D:\\oq14\\lean\\Packet06PhysicalPlacement.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.328,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PhysicalPlacement-chain.log",
+      "log_sha256": "700a623f0a7c9740fc7b57a16b2d70dbb00e4ac5e6f70ac1e392b580de223fcb",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PhysicalPlacement.point_distance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalPlacement.cluster_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalPlacement.frequency_cluster",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalPlacement.normalized_outgoing_at_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "878118d9ae05d805eed3ce9167deab36b0aea9e040583c09daa600bd37a1ac48"
+    },
+    {
+      "module": "Packet06BoundedModalMaterial",
+      "source": "lean/Packet06BoundedModalMaterial.lean",
+      "source_sha256": "fab72d7503426a93dd0fca66e8fea4cc666d99de8c5b7ed36c795979e0ea3ae5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06BoundedModalMaterial.olean",
+        "D:\\oq14\\lean\\Packet06BoundedModalMaterial.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.735,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06BoundedModalMaterial-chain.log",
+      "log_sha256": "c20bbaf2b84f23f793464c78083ece352750edace9f2201df954c4d792aa8c55",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06BoundedModalMaterial.choose_index",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06BoundedModalMaterial.rounded_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06BoundedModalMaterial.placed_dielectric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06BoundedModalMaterial.placed_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8f5580f5d9330cebd8b5d8ad5e24dcf3093e5e2015e92ba64b97f2aa6acbd392"
+    },
+    {
+      "module": "Packet06ActualBranchExcitation",
+      "source": "lean/Packet06ActualBranchExcitation.lean",
+      "source_sha256": "397d1b6783a78546b169c910100e05c5ab42e8eb98304c3a0eb4138c04bf3948",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06ActualBranchExcitation.olean",
+        "D:\\oq14\\lean\\Packet06ActualBranchExcitation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.829,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ActualBranchExcitation-chain.log",
+      "log_sha256": "a44720cfedb196179eac1fa4ccbdd0b3cb62fd95cd9a9311391c9f85a4bbbdfd",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualBranchExcitation.eventual_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "43afc8cd5b256b6b05dc946dccd3b7cc9e4d39d82d52c147c3602ac47fb389af"
+    },
+    {
+      "module": "Packet06ConcreteExcitation",
+      "source": "lean/Packet06ConcreteExcitation.lean",
+      "source_sha256": "c16eae1baf03edd84ad7dce8e4d9de160394d208af690f9eba1ee5a9a40ac965",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06ConcreteExcitation.olean",
+        "D:\\oq14\\lean\\Packet06ConcreteExcitation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.843,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ConcreteExcitation-chain.log",
+      "log_sha256": "808843d3ad84c0017aab06c3c2934121f0452e9c95bcda97e61dabf28bc6ab50",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConcreteExcitation.local_geometry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConcreteExcitation.concrete_eventual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c1064485f8b0425ccd0df3d64d49bad586a88361fd2df974d9ca3840f655fee0"
+    },
+    {
+      "module": "Packet06ExcitationTail",
+      "source": "lean/Packet06ExcitationTail.lean",
+      "source_sha256": "e6e27c15353e9984899999bb00fc8fcf868b832ba35b8dc823911cbc9b18176f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06ExcitationTail.olean",
+        "D:\\oq14\\lean\\Packet06ExcitationTail.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.375,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ExcitationTail-chain.log",
+      "log_sha256": "cb452d608f2e47a9d64cc8fb37716203a0ebf1d1eb71ce98a26004a722064e7a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ExcitationTail.uniform_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6e8d5425cac136e1c7390677109a4cf9afa843e434a9d5b8d2daf2e15be0e458"
+    },
+    {
+      "module": "Packet06SelectedExcitation",
+      "source": "lean/Packet06SelectedExcitation.lean",
+      "source_sha256": "1cc8fa2cbc059b96b7bc9f6261883b2fef198190ce32f7bcde4993f964ce6113",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06SelectedExcitation.olean",
+        "D:\\oq14\\lean\\Packet06SelectedExcitation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.235,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SelectedExcitation-chain.log",
+      "log_sha256": "64488671fb97f98fbe66d20ae5cc49bdae791954fda6f78563f9e37cccbfb601",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SelectedExcitation.selected_from_branch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "253cb45230d9044c732e8ed79d0b2d732d869a1339053fc102d9be94e9469cb1"
+    },
+    {
+      "module": "Packet06SmallClusterExcited",
+      "source": "lean/Packet06SmallClusterExcited.lean",
+      "source_sha256": "9dc02ac4fe43e1dd958606082730e708203cb0dca8d95123c447e01e29af89af",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06SmallClusterExcited.olean",
+        "D:\\oq14\\lean\\Packet06SmallClusterExcited.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.141,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterExcited-chain.log",
+      "log_sha256": "47bab051d2e20a745a97eb44ede9ba4b72b001c84a74d615c2a31823fd30027d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SmallClusterExcited.exists_excited_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f8c2c4113ec63d15b57f1e08a26e6dd827a5d4d303e9c7b07fa82d45972bc5f0"
+    },
+    {
+      "module": "Packet06IntrinsicPeaks",
+      "source": "lean/Packet06IntrinsicPeaks.lean",
+      "source_sha256": "42266a5387636792149c7b19023f506c46ed0fd7513adbee540df5d90fbb7676",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06IntrinsicPeaks.olean",
+        "D:\\oq14\\lean\\Packet06IntrinsicPeaks.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.687,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06IntrinsicPeaks-chain.log",
+      "log_sha256": "ea71d58ab40c9cbafc17d39bd4728022b85acea7309033d129d917a0440cac3b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06IntrinsicPeaks.unbounded_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06IntrinsicPeaks.rounded_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dd6df2b3d73ba9c62781c000528eb0c5303311480c0c2462edac248306102c42"
+    },
+    {
+      "module": "Packet06RoundedIntrinsicPeaks",
+      "source": "lean/Packet06RoundedIntrinsicPeaks.lean",
+      "source_sha256": "ee6f3ee6576abc381cf8e2a7246d833d4ebf8c546c8819582d842d69331c8939",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet06RoundedIntrinsicPeaks.olean",
+        "D:\\oq14\\lean\\Packet06RoundedIntrinsicPeaks.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.313,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06RoundedIntrinsicPeaks-chain.log",
+      "log_sha256": "caacf5fb55c9fde9eef84a82181ef618e01a7e4b6be943644faf93c71ab84cb4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedIntrinsicPeaks.sharp_coordinate_unbounded",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RoundedIntrinsicPeaks.rounded_peaks",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8d13354e8af102d5134cf3d31578b82d28509762d1d76c6c7fdc280b82b293f0"
+    },
+    {
+      "module": "Packet07BoundaryC4Refined",
+      "source": "lean/Packet07BoundaryC4Refined.lean",
+      "source_sha256": "951931ac4a5f0280af667723797c0de33c606b88e5a4e9fa4b7353e0a91767a5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet07BoundaryC4Refined.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryC4Refined.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.078,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Refined-chain.log",
+      "log_sha256": "3edebb76522225517581d86ed57bb137d1cfb28ad0c7d6364ac3c412ace280e1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryC4Refined.chart_of_regular_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5c86fea4c50fb5cc70519521bda5cf085ea8f10b749bfb6c99717d63e07fedde"
+    },
+    {
+      "module": "Packet07BoundaryC4Oriented",
+      "source": "lean/Packet07BoundaryC4Oriented.lean",
+      "source_sha256": "6af3797d23f87f95b28b65481c08c78166a1dd5a4852ead07fa3ce2887795265",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-excited-rounded-modes\\objects\\20261113-043645-55688\\Packet07BoundaryC4Oriented.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryC4Oriented.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.422,
+      "log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Oriented-chain.log",
+      "log_sha256": "a272e603b49fab23dc72fc0b71fd35ffa0cc8e43b5e3f89781471ceee1c10310",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryC4Oriented.oriented_chart_of_regular_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07BoundaryC4Oriented.actual_affine_body_oriented_charts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0ae79001bc863a35542c951bbb73a4f5eefce4ec2e0bc8892853b434cd800813"
+    }
+  ],
+  "module_count": 13,
+  "report_count": 23
+}

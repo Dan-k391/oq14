@@ -1,0 +1,460 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "8823952",
+  "modules": 995,
+  "reports": 4982,
+  "new_modules": 13,
+  "new_reports": 23,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "146564e9caffce1cbac362af3886ada4780f8c2de139b8621c3a91c29d1cf28a",
+  "ledger_sha256": "374f579d89793baa20e91b22abbb8d135fe0fbc411459f545931f53621b79c08",
+  "raw_archive_sha256": "cbd2a702738e17fd0fa568b45e90af436f492f8fdc09ef13e7a9cd5c86041c7e",
+  "records": [
+    {
+      "module": "Packet06SmallClusterBranch",
+      "reports": 1,
+      "source_sha256": "7a7428449336e7ca3a3cc0d08bbdb3898ef6e74db3cf5810ee9fb0bb5bb47db2",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterBranch-chain.log",
+      "audit_log_sha256": "f3fbe83c7e8c808a6f20b259c9ea294aee85678644d6e386ed62f0acff515107",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/small-branch-review.txt",
+      "independent_review_sha256": "a0ff4a8670e2fc6c38ef6f94e417b73657c9e1a0191ebb99fd343fcb35e5dc48",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/reviews/small-branch-manifest.json",
+      "independent_build_sha256": "0ee34c2ad518d88a995a6af9e226f69fda615f973c295a85ec8ae85b550c30d3",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06SmallClusterBranch.log",
+      "independent_log_sha256": "f3fbe83c7e8c808a6f20b259c9ea294aee85678644d6e386ed62f0acff515107",
+      "declarations": [
+        "OQ14.Packet06SmallClusterBranch.small_cluster_branch"
+      ]
+    },
+    {
+      "module": "Packet06PlacedKernel",
+      "reports": 1,
+      "source_sha256": "7d4f56a0daefee7b525981487f4f5215d6fc2d8d996ae37cb50109463cde768b",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PlacedKernel-chain.log",
+      "audit_log_sha256": "a5d83324a6381f68f933562c2d41784abbccdc9f39d9d829bdf9ef90b33c979a",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placed-review.md",
+      "independent_review_sha256": "63bf7f2c9e27f01983abea5a391872dbc80a0a60420ff2d1600a052d0e831691",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placed-manifest.json",
+      "independent_build_sha256": "508207f04456dc6ff2fe0cc055ff93db66fdf3610797079a1e687275ed11d8a4",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06PlacedKernel.log",
+      "independent_log_sha256": "52506ca1ddccb1a84363111674d7f285392fbb0e0a90654ec3dd335ae58ce768",
+      "declarations": [
+        "OQ14.Packet06PlacedKernel.placed_normalized_kernel"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalPlacement",
+      "reports": 4,
+      "source_sha256": "2882c7b6b065f175ce8a12e5a964dc332584ccdd1eaccbbb159f56d6aa9589e1",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PhysicalPlacement-chain.log",
+      "audit_log_sha256": "700a623f0a7c9740fc7b57a16b2d70dbb00e4ac5e6f70ac1e392b580de223fcb",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placement-review.md",
+      "independent_review_sha256": "404fb2cfc11794e2a568a99ee5c0170a99ea34fb3e53154ba024c4fdac0307a7",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placement-manifest.json",
+      "independent_build_sha256": "3c4dfa2f2ae1abdd325d7f1ceabc058e31aee3aa0a048aa28977b5628aa3de08",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06PhysicalPlacement.log",
+      "independent_log_sha256": "9fa3d42abc7a745a6b6a829aa64802fb35cffb6b167a7d20c9bcca65e87b033c",
+      "declarations": [
+        "OQ14.Packet06PhysicalPlacement.point_distance",
+        "OQ14.Packet06PhysicalPlacement.cluster_inside",
+        "OQ14.Packet06PhysicalPlacement.frequency_cluster",
+        "OQ14.Packet06PhysicalPlacement.normalized_outgoing_at_frequency"
+      ]
+    },
+    {
+      "module": "Packet06BoundedModalMaterial",
+      "reports": 4,
+      "source_sha256": "fab72d7503426a93dd0fca66e8fea4cc666d99de8c5b7ed36c795979e0ea3ae5",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06BoundedModalMaterial-chain.log",
+      "audit_log_sha256": "c20bbaf2b84f23f793464c78083ece352750edace9f2201df954c4d792aa8c55",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/bounded-review.txt",
+      "independent_review_sha256": "7c664d4d2f9b3a5b1566deb48725c8b05fbb289fe5cd03030e328e04d3261d9a",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/reviews/bounded-manifest.json",
+      "independent_build_sha256": "a4ba8e7374b0a9cd08804b6197cf28ad657d7fefa956e25a5b5605f68f9bedbc",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06BoundedModalMaterial.log",
+      "independent_log_sha256": "c20bbaf2b84f23f793464c78083ece352750edace9f2201df954c4d792aa8c55",
+      "declarations": [
+        "OQ14.Packet06BoundedModalMaterial.choose_index",
+        "OQ14.Packet06BoundedModalMaterial.rounded_bounds",
+        "OQ14.Packet06BoundedModalMaterial.placed_dielectric",
+        "OQ14.Packet06BoundedModalMaterial.placed_bounds"
+      ]
+    },
+    {
+      "module": "Packet06ActualBranchExcitation",
+      "reports": 1,
+      "source_sha256": "397d1b6783a78546b169c910100e05c5ab42e8eb98304c3a0eb4138c04bf3948",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ActualBranchExcitation-chain.log",
+      "audit_log_sha256": "a44720cfedb196179eac1fa4ccbdd0b3cb62fd95cd9a9311391c9f85a4bbbdfd",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ActualBranchExcitation-chain.log",
+      "independent_log_sha256": "a44720cfedb196179eac1fa4ccbdd0b3cb62fd95cd9a9311391c9f85a4bbbdfd",
+      "declarations": [
+        "OQ14.Packet06ActualBranchExcitation.eventual_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06ConcreteExcitation",
+      "reports": 2,
+      "source_sha256": "c16eae1baf03edd84ad7dce8e4d9de160394d208af690f9eba1ee5a9a40ac965",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ConcreteExcitation-chain.log",
+      "audit_log_sha256": "808843d3ad84c0017aab06c3c2934121f0452e9c95bcda97e61dabf28bc6ab50",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ConcreteExcitation-chain.log",
+      "independent_log_sha256": "808843d3ad84c0017aab06c3c2934121f0452e9c95bcda97e61dabf28bc6ab50",
+      "declarations": [
+        "OQ14.Packet06ConcreteExcitation.local_geometry",
+        "OQ14.Packet06ConcreteExcitation.concrete_eventual"
+      ]
+    },
+    {
+      "module": "Packet06ExcitationTail",
+      "reports": 1,
+      "source_sha256": "e6e27c15353e9984899999bb00fc8fcf868b832ba35b8dc823911cbc9b18176f",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ExcitationTail-chain.log",
+      "audit_log_sha256": "cb452d608f2e47a9d64cc8fb37716203a0ebf1d1eb71ce98a26004a722064e7a",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ExcitationTail-chain.log",
+      "independent_log_sha256": "cb452d608f2e47a9d64cc8fb37716203a0ebf1d1eb71ce98a26004a722064e7a",
+      "declarations": [
+        "OQ14.Packet06ExcitationTail.uniform_tail"
+      ]
+    },
+    {
+      "module": "Packet06SelectedExcitation",
+      "reports": 1,
+      "source_sha256": "1cc8fa2cbc059b96b7bc9f6261883b2fef198190ce32f7bcde4993f964ce6113",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SelectedExcitation-chain.log",
+      "audit_log_sha256": "64488671fb97f98fbe66d20ae5cc49bdae791954fda6f78563f9e37cccbfb601",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SelectedExcitation-chain.log",
+      "independent_log_sha256": "64488671fb97f98fbe66d20ae5cc49bdae791954fda6f78563f9e37cccbfb601",
+      "declarations": [
+        "OQ14.Packet06SelectedExcitation.selected_from_branch"
+      ]
+    },
+    {
+      "module": "Packet06SmallClusterExcited",
+      "reports": 1,
+      "source_sha256": "9dc02ac4fe43e1dd958606082730e708203cb0dca8d95123c447e01e29af89af",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterExcited-chain.log",
+      "audit_log_sha256": "47bab051d2e20a745a97eb44ede9ba4b72b001c84a74d615c2a31823fd30027d",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterExcited-chain.log",
+      "independent_log_sha256": "47bab051d2e20a745a97eb44ede9ba4b72b001c84a74d615c2a31823fd30027d",
+      "declarations": [
+        "OQ14.Packet06SmallClusterExcited.exists_excited_mode"
+      ]
+    },
+    {
+      "module": "Packet06IntrinsicPeaks",
+      "reports": 2,
+      "source_sha256": "42266a5387636792149c7b19023f506c46ed0fd7513adbee540df5d90fbb7676",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06IntrinsicPeaks-chain.log",
+      "audit_log_sha256": "ea71d58ab40c9cbafc17d39bd4728022b85acea7309033d129d917a0440cac3b",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06IntrinsicPeaks-chain.log",
+      "independent_log_sha256": "ea71d58ab40c9cbafc17d39bd4728022b85acea7309033d129d917a0440cac3b",
+      "declarations": [
+        "OQ14.Packet06IntrinsicPeaks.unbounded_component",
+        "OQ14.Packet06IntrinsicPeaks.rounded_positive"
+      ]
+    },
+    {
+      "module": "Packet06RoundedIntrinsicPeaks",
+      "reports": 2,
+      "source_sha256": "ee6f3ee6576abc381cf8e2a7246d833d4ebf8c546c8819582d842d69331c8939",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06RoundedIntrinsicPeaks-chain.log",
+      "audit_log_sha256": "caacf5fb55c9fde9eef84a82181ef618e01a7e4b6be943644faf93c71ab84cb4",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06RoundedIntrinsicPeaks-chain.log",
+      "independent_log_sha256": "caacf5fb55c9fde9eef84a82181ef618e01a7e4b6be943644faf93c71ab84cb4",
+      "declarations": [
+        "OQ14.Packet06RoundedIntrinsicPeaks.sharp_coordinate_unbounded",
+        "OQ14.Packet06RoundedIntrinsicPeaks.rounded_peaks"
+      ]
+    },
+    {
+      "module": "Packet07BoundaryC4Refined",
+      "reports": 1,
+      "source_sha256": "951931ac4a5f0280af667723797c0de33c606b88e5a4e9fa4b7353e0a91767a5",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Refined-chain.log",
+      "audit_log_sha256": "3edebb76522225517581d86ed57bb137d1cfb28ad0c7d6364ac3c412ace280e1",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Refined-chain.log",
+      "independent_log_sha256": "3edebb76522225517581d86ed57bb137d1cfb28ad0c7d6364ac3c412ace280e1",
+      "declarations": [
+        "OQ14.Packet07BoundaryC4Refined.chart_of_regular_boundary"
+      ]
+    },
+    {
+      "module": "Packet07BoundaryC4Oriented",
+      "reports": 2,
+      "source_sha256": "6af3797d23f87f95b28b65481c08c78166a1dd5a4852ead07fa3ce2887795265",
+      "audit_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Oriented-chain.log",
+      "audit_log_sha256": "a272e603b49fab23dc72fc0b71fd35ffa0cc8e43b5e3f89781471ceee1c10310",
+      "independent_review": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "independent_review_sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "independent_build_sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b",
+      "independent_log": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Oriented-chain.log",
+      "independent_log_sha256": "a272e603b49fab23dc72fc0b71fd35ffa0cc8e43b5e3f89781471ceee1c10310",
+      "declarations": [
+        "OQ14.Packet07BoundaryC4Oriented.oriented_chart_of_regular_boundary",
+        "OQ14.Packet07BoundaryC4Oriented.actual_affine_body_oriented_charts"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/audited_after_5238-stage94.json",
+      "sha256": "374f579d89793baa20e91b22abbb8d135fe0fbc411459f545931f53621b79c08"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/chain-build.json",
+      "sha256": "f6a8feec9239135918c48d02098be581bd0aa9df3d8ba0f935c9575dddae008b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ActualBranchExcitation-chain.log",
+      "sha256": "a44720cfedb196179eac1fa4ccbdd0b3cb62fd95cd9a9311391c9f85a4bbbdfd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06BoundedModalMaterial-chain.log",
+      "sha256": "c20bbaf2b84f23f793464c78083ece352750edace9f2201df954c4d792aa8c55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ConcreteExcitation-chain.log",
+      "sha256": "808843d3ad84c0017aab06c3c2934121f0452e9c95bcda97e61dabf28bc6ab50"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06ExcitationTail-chain.log",
+      "sha256": "cb452d608f2e47a9d64cc8fb37716203a0ebf1d1eb71ce98a26004a722064e7a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06IntrinsicPeaks-chain.log",
+      "sha256": "ea71d58ab40c9cbafc17d39bd4728022b85acea7309033d129d917a0440cac3b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PhysicalPlacement-chain.log",
+      "sha256": "700a623f0a7c9740fc7b57a16b2d70dbb00e4ac5e6f70ac1e392b580de223fcb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06PlacedKernel-chain.log",
+      "sha256": "a5d83324a6381f68f933562c2d41784abbccdc9f39d9d829bdf9ef90b33c979a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06RoundedIntrinsicPeaks-chain.log",
+      "sha256": "caacf5fb55c9fde9eef84a82181ef618e01a7e4b6be943644faf93c71ab84cb4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SelectedExcitation-chain.log",
+      "sha256": "64488671fb97f98fbe66d20ae5cc49bdae791954fda6f78563f9e37cccbfb601"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterBranch-chain.log",
+      "sha256": "f3fbe83c7e8c808a6f20b259c9ea294aee85678644d6e386ed62f0acff515107"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet06SmallClusterExcited-chain.log",
+      "sha256": "47bab051d2e20a745a97eb44ede9ba4b72b001c84a74d615c2a31823fd30027d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Oriented-chain.log",
+      "sha256": "a272e603b49fab23dc72fc0b71fd35ffa0cc8e43b5e3f89781471ceee1c10310"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/evidence/Packet07BoundaryC4Refined-chain.log",
+      "sha256": "3edebb76522225517581d86ed57bb137d1cfb28ad0c7d6364ac3c412ace280e1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/modules.json",
+      "sha256": "8d124803db32b2589327b7a0cf07dd5402b5f7b9133f2d1fe7d1a3e1b3a77501"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/provenance-audit.json",
+      "sha256": "bfea11f3ab4f000da2188580a834ae51518aea45511cfb5916b2573d65d6eb42"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/author-inventory.json",
+      "sha256": "ecc36667618c245b7070ba975770b6a4cddea9ed38384d5aa9396c6a8b3a5764"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/bounded-manifest.json",
+      "sha256": "a4ba8e7374b0a9cd08804b6197cf28ad657d7fefa956e25a5b5605f68f9bedbc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/bounded-review.txt",
+      "sha256": "7c664d4d2f9b3a5b1566deb48725c8b05fbb289fe5cd03030e328e04d3261d9a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/metadata-normalization.json",
+      "sha256": "1aa9a9dd4bb452a14a9e8dbb5da3176d100ee1159f7f5e5ae7278053946b702f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06BoundedModalMaterial.log",
+      "sha256": "c20bbaf2b84f23f793464c78083ece352750edace9f2201df954c4d792aa8c55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06PhysicalPlacement.log",
+      "sha256": "9fa3d42abc7a745a6b6a829aa64802fb35cffb6b167a7d20c9bcca65e87b033c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06PlacedKernel.log",
+      "sha256": "52506ca1ddccb1a84363111674d7f285392fbb0e0a90654ec3dd335ae58ce768"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/Packet06SmallClusterBranch.log",
+      "sha256": "f3fbe83c7e8c808a6f20b259c9ea294aee85678644d6e386ed62f0acff515107"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placed-manifest.json",
+      "sha256": "508207f04456dc6ff2fe0cc055ff93db66fdf3610797079a1e687275ed11d8a4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placed-review.md",
+      "sha256": "63bf7f2c9e27f01983abea5a391872dbc80a0a60420ff2d1600a052d0e831691"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placed-source-normalization.json",
+      "sha256": "4901fc5f38e64957173dcc690c2352b82a9cd599e2d80525ac8901af5040a18f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placement-manifest.json",
+      "sha256": "3c4dfa2f2ae1abdd325d7f1ceabc058e31aee3aa0a048aa28977b5628aa3de08"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/placement-review.md",
+      "sha256": "404fb2cfc11794e2a568a99ee5c0170a99ea34fb3e53154ba024c4fdac0307a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/root-actual-review.txt",
+      "sha256": "fd65fa9248ee0c31cafb81a6c29ea7439611f1906c891068cd426b6d1f2a6c05"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/small-branch-manifest.json",
+      "sha256": "0ee34c2ad518d88a995a6af9e226f69fda615f973c295a85ec8ae85b550c30d3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/reviews/small-branch-review.txt",
+      "sha256": "a0ff4a8670e2fc6c38ef6f94e417b73657c9e1a0191ebb99fd343fcb35e5dc48"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/scripts/audit_provenance.ps1",
+      "sha256": "4844359b35f8c4a7596905e34bd854d721a3375633ab308dd841bd36015d4021"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/scripts/check_chain.py",
+      "sha256": "4fd23e03a07dc447c113736a112f2598d1f3385072e06b4ff98fef5d413cb185"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/scripts/freeze_checkpoint.py",
+      "sha256": "f8516c7b52a4dba0129e3253e316eae734a22928433cfe7118c2e0aeb6d5e053"
+    },
+    {
+      "path": "checkpoints/2026-11-13-excited-rounded-modes/STAGE94.txt",
+      "sha256": "7f4a590bddbc9bb08d13d387ddda8cc7642322b36c0ec55124d126ff33c435ce"
+    },
+    {
+      "path": "lean/Packet06ActualBranchExcitation.lean",
+      "sha256": "397d1b6783a78546b169c910100e05c5ab42e8eb98304c3a0eb4138c04bf3948"
+    },
+    {
+      "path": "lean/Packet06BoundedModalMaterial.lean",
+      "sha256": "fab72d7503426a93dd0fca66e8fea4cc666d99de8c5b7ed36c795979e0ea3ae5"
+    },
+    {
+      "path": "lean/Packet06ConcreteExcitation.lean",
+      "sha256": "c16eae1baf03edd84ad7dce8e4d9de160394d208af690f9eba1ee5a9a40ac965"
+    },
+    {
+      "path": "lean/Packet06ExcitationTail.lean",
+      "sha256": "e6e27c15353e9984899999bb00fc8fcf868b832ba35b8dc823911cbc9b18176f"
+    },
+    {
+      "path": "lean/Packet06IntrinsicPeaks.lean",
+      "sha256": "42266a5387636792149c7b19023f506c46ed0fd7513adbee540df5d90fbb7676"
+    },
+    {
+      "path": "lean/Packet06PhysicalPlacement.lean",
+      "sha256": "2882c7b6b065f175ce8a12e5a964dc332584ccdd1eaccbbb159f56d6aa9589e1"
+    },
+    {
+      "path": "lean/Packet06PlacedKernel.lean",
+      "sha256": "7d4f56a0daefee7b525981487f4f5215d6fc2d8d996ae37cb50109463cde768b"
+    },
+    {
+      "path": "lean/Packet06RoundedIntrinsicPeaks.lean",
+      "sha256": "ee6f3ee6576abc381cf8e2a7246d833d4ebf8c546c8819582d842d69331c8939"
+    },
+    {
+      "path": "lean/Packet06SelectedExcitation.lean",
+      "sha256": "1cc8fa2cbc059b96b7bc9f6261883b2fef198190ce32f7bcde4993f964ce6113"
+    },
+    {
+      "path": "lean/Packet06SmallClusterBranch.lean",
+      "sha256": "7a7428449336e7ca3a3cc0d08bbdb3898ef6e74db3cf5810ee9fb0bb5bb47db2"
+    },
+    {
+      "path": "lean/Packet06SmallClusterExcited.lean",
+      "sha256": "9dc02ac4fe43e1dd958606082730e708203cb0dca8d95123c447e01e29af89af"
+    },
+    {
+      "path": "lean/Packet07BoundaryC4Oriented.lean",
+      "sha256": "6af3797d23f87f95b28b65481c08c78166a1dd5a4852ead07fa3ce2887795265"
+    },
+    {
+      "path": "lean/Packet07BoundaryC4Refined.lean",
+      "sha256": "951931ac4a5f0280af667723797c0de33c606b88e5a4e9fa4b7353e0a91767a5"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "38df47efbcbbe1254ba8ee294ac495dfbfd36d3bba34b8cd10ede5288cdaffe1"
+    }
+  ],
+  "scope": "concrete excited modes, rounded peaks and exact physical placement. Actual finite-center excitation and rounded positive-volume peaks are proved. Attained hotspots and full OQ14 remain active."
+}

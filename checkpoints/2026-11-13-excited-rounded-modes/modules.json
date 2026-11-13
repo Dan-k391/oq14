@@ -1,0 +1,90 @@
+[
+  {
+    "module": "Packet06SmallClusterBranch",
+    "declarations": [
+      "OQ14.Packet06SmallClusterBranch.small_cluster_branch"
+    ]
+  },
+  {
+    "module": "Packet06PlacedKernel",
+    "declarations": [
+      "OQ14.Packet06PlacedKernel.placed_normalized_kernel"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalPlacement",
+    "declarations": [
+      "OQ14.Packet06PhysicalPlacement.point_distance",
+      "OQ14.Packet06PhysicalPlacement.cluster_inside",
+      "OQ14.Packet06PhysicalPlacement.frequency_cluster",
+      "OQ14.Packet06PhysicalPlacement.normalized_outgoing_at_frequency"
+    ]
+  },
+  {
+    "module": "Packet06BoundedModalMaterial",
+    "declarations": [
+      "OQ14.Packet06BoundedModalMaterial.choose_index",
+      "OQ14.Packet06BoundedModalMaterial.rounded_bounds",
+      "OQ14.Packet06BoundedModalMaterial.placed_dielectric",
+      "OQ14.Packet06BoundedModalMaterial.placed_bounds"
+    ]
+  },
+  {
+    "module": "Packet06ActualBranchExcitation",
+    "declarations": [
+      "OQ14.Packet06ActualBranchExcitation.eventual_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06ConcreteExcitation",
+    "declarations": [
+      "OQ14.Packet06ConcreteExcitation.local_geometry",
+      "OQ14.Packet06ConcreteExcitation.concrete_eventual"
+    ]
+  },
+  {
+    "module": "Packet06ExcitationTail",
+    "declarations": [
+      "OQ14.Packet06ExcitationTail.uniform_tail"
+    ]
+  },
+  {
+    "module": "Packet06SelectedExcitation",
+    "declarations": [
+      "OQ14.Packet06SelectedExcitation.selected_from_branch"
+    ]
+  },
+  {
+    "module": "Packet06SmallClusterExcited",
+    "declarations": [
+      "OQ14.Packet06SmallClusterExcited.exists_excited_mode"
+    ]
+  },
+  {
+    "module": "Packet06IntrinsicPeaks",
+    "declarations": [
+      "OQ14.Packet06IntrinsicPeaks.unbounded_component",
+      "OQ14.Packet06IntrinsicPeaks.rounded_positive"
+    ]
+  },
+  {
+    "module": "Packet06RoundedIntrinsicPeaks",
+    "declarations": [
+      "OQ14.Packet06RoundedIntrinsicPeaks.sharp_coordinate_unbounded",
+      "OQ14.Packet06RoundedIntrinsicPeaks.rounded_peaks"
+    ]
+  },
+  {
+    "module": "Packet07BoundaryC4Refined",
+    "declarations": [
+      "OQ14.Packet07BoundaryC4Refined.chart_of_regular_boundary"
+    ]
+  },
+  {
+    "module": "Packet07BoundaryC4Oriented",
+    "declarations": [
+      "OQ14.Packet07BoundaryC4Oriented.oriented_chart_of_regular_boundary",
+      "OQ14.Packet07BoundaryC4Oriented.actual_affine_body_oriented_charts"
+    ]
+  }
+]
