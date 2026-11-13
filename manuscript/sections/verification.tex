@@ -346,8 +346,8 @@ with Tectonic~0.17.0, followed or preceded by
 and reference passes. The build script rejects unresolved final-pass
 citations, references and overfull boxes. Rendered pages are inspected
 separately; compilation never counts as mathematical verification.
-The delivered \texttt{output/build-manifest.json} records the exact
-source commit, clean/dirty state, engine, source hashes and PDF hash;
-\texttt{output/verification.json} records the analogous diagnostic
-provenance. The release record supplies the clean-checkout build result,
-branch, tag, and Git bundle. No repository was published.
+The build manifest records the source revision, working-tree state, engine,
+source hashes and PDF hash. The saved manuscript snapshot and its
+provenance are described in \texttt{paper/README.md}. The historical
+release record separately identifies its clean-checkout build and formal
+audit. These records do not establish independent human review.

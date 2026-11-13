@@ -40,7 +40,7 @@ permittivity of its initially homogeneous host.  The contrast parameter is real 
 real angular family; analytic continuation of its singular coefficient
 or of its angular eigenfunction is not required.
 
-\begin{lemma}[PROVED: a positive-contrast angular family]
+\begin{lemma}[A positive-contrast angular family]
 \label{hs:modal-angular-branch}
 Fix $1/2\leq t<1$ and any sequence $\eta_j>0$ tending to zero.
 There are real, axisymmetric, odd angular eigenfunctions $\phi_j$
@@ -93,14 +93,15 @@ The singular coefficient need not be continued analytically, or even
 shown to converge, as the contrast tends to zero.
 
 The proof tests each mode against a localized angular pattern on an
-annulus around the tip.  If the singular coefficient vanished, the
-pairing would be small compared with the annulus size.  But the same
-pairing converges to a nonzero multiple of the original mode's axial
-field.  Choosing the annulus sufficiently close to the tip makes these
-two conclusions incompatible.  This supplies the quantitative step that
-simple $L^2$ convergence alone cannot provide.
+annulus around the tip. The key estimate is uniform as the contrast tends
+to zero: if the singular coefficient vanished, the pairing would be small
+compared with the annulus size. The same pairing converges to a nonzero
+multiple of the original mode's axial field. Choosing the annulus
+sufficiently close to the tip makes these conclusions incompatible. The
+uniform estimate depends on cancellation of the constant part of the
+regular correction; simple $L^2$ convergence alone cannot provide it.
 
-\begin{theorem}[PROVED: eventual excitation by a convergent mode family]
+\begin{theorem}[Eventual excitation by a convergent mode family]
 \label{hs:modal-coefficient-continuation}
 Let $\eta_j>0$ tend to zero and let $E_j$ be actual outgoing
 volume-response Maxwell fields in a fixed conical ball $B_b(p)$ with material
@@ -171,7 +172,7 @@ their local $L^2$ limit; it does not infer nonvanishing merely from
 $L^2$ closeness without this quantitative projection estimate.
 \end{proof}
 
-\begin{corollary}[PROVED: simultaneous excitation by one mode]
+\begin{corollary}[Simultaneous excitation by one mode]
 \label{hs:modal-all-coefficients}
 Suppose one family of actual resonant fields satisfies the theorem
 at each of finitely many disjoint conical balls, with the same
@@ -188,15 +189,15 @@ Apply the theorem at each center and take the maximum of the finitely
 many resulting indices.  The selected coefficients belong to the
 same actual eigenfield and the same complex resonance.
 \end{proof}
-\subsection{The exact remaining global hypotheses}
+\subsection{Conditional transfer to rounded modal peaks}
 
-The next proposition isolates what the local argument still needs from
-the global spectral problem: one continuing resonance, a stable nonzero
-normalization, and control of the rounded fields on collars.  It is a
-conditional transfer statement; the next section verifies its hypotheses
-for an explicit sphere-based family.
+The next proposition isolates the global spectral assumptions needed by
+the local argument: one continuing resonance, a stable nonzero normalization,
+and control of the rounded fields on collars. It is a conditional transfer
+statement; the next section verifies its hypotheses for an explicit
+sphere-based family.
 
-\begin{proposition}[PROVED: transfer from a simple resonance to rounded modal peaks]
+\begin{proposition}[Transfer from a simple resonance to rounded modal peaks]
 \label{hs:modal-transfer}
 Assume a finite homogeneous dielectric sphere with permittivity
 $\varepsilon_b\in(1,\varepsilon_+)$ has a simple resonance in the

@@ -1,19 +1,17 @@
 \section{Coherent bypass and limits of local constructions}
 \label{ca:section}
 
-\noindent\textbf{Scope: local bypass and radiative-accessibility audit.}
-The later Theorem~\ref{uc:counterexample} supplies a different physical
-construction for $\delta>\eta$.
-This section tests whether the all-superposition passage and absolute-bypass
-conditions can supply the missing resource bound in Section~\ref{ch:section}.
-They do supply a global feasibility restriction.  They do not impose a finite
-positive-flux dimension on local Maxwell solutions, even when bypass is
-certified on the entire transverse plane.  The distinction is proved below,
-with an explicit construction and its failure of radiative accessibility.
+Theorem~\ref{uc:counterexample} gives a physical construction for
+$\delta>\eta$. Here we examine the implications of coherent passage and
+absolute bypass separately from that construction. These conditions imply
+a global feasibility restriction, but they do not bound the dimension of
+local Maxwell solutions normalized by total plane flux, even when bypass is
+controlled on the entire transverse plane. The local fields constructed
+below do not by themselves have the required far-field accessibility.
 
 \subsection{A global power-budget restriction}
 
-\begin{proposition}[PROVED: a necessary threshold condition]
+\begin{proposition}[A necessary threshold condition]
 \label{ca:powerbudget}
 Consider the compact-scatterer vacuum-exterior class of
 Assumptions~\ref{pr:class}--\ref{pr:scattering}, with a legitimate integrable
@@ -61,7 +59,7 @@ Finally the counted inequalities give
 $\eta\tau\|a\|^2\leq P_D(a)\leq(1+\delta)\|a\|^2$.
 \end{proof}
 
-\begin{remark}[PROVED: Loewner bounds do not count dimension]
+\begin{remark}[Loewner bounds do not count dimension]
 \label{ca:loewner}
 On any finite counted input space let $Q_D$ be its Hermitian section-flux
 matrix.  Polarization and Proposition~\ref{ca:powerbudget} give
@@ -85,7 +83,7 @@ $\Pi\setminus D$, rather than only vanishing flux on the sides of a
 finite collar.  Its normalization is total \emph{local plane flux}, not
 power supplied by asymptotic incoming channels.
 
-\begin{theorem}[PROVED: coherent local passage with arbitrarily small bypass]
+\begin{theorem}[Coherent local passage with arbitrarily small bypass]
 \label{ca:localpackets}
 Fix $k_0>0$, $L>0$, $h>0$, an integer $N\geq1$, and $0<\delta<1$.
 Let $D=(-L/2,L/2)^2$ and
@@ -184,7 +182,7 @@ basis fields or a sample of random inputs.  Nonzero $f_a$ also proves
 linear independence of the fields.
 \end{proof}
 
-\begin{proposition}[PROVED: the flux normalization permits unbounded field resource]
+\begin{proposition}[The flux normalization permits unbounded field resource]
 \label{ca:packetresource}
 For the fields in Theorem~\ref{ca:localpackets}, set $q_{\min}=Q+2b$.
 Their local slab resource satisfies
@@ -217,7 +215,7 @@ which is bounded above by the total resource.
 
 \subsection{Why the local theorem is not the requested counterexample}
 
-\begin{proposition}[PROVED: failure of a vacuum outgoing completion]
+\begin{proposition}[Failure of a vacuum outgoing completion]
 \label{ca:outgoingfailure}
 No nonzero field of Theorem~\ref{ca:localpackets} can be continued into an
 entire homogeneous vacuum upper half-space with the outgoing condition
@@ -245,7 +243,7 @@ channel space.  Formally appending $T=I_N$ would satisfy throughput and,
 for $\eta\leq1-\delta$, passage, but it would not construct the global
 field-to-port map required in Assumption~\ref{pr:scattering}.
 
-\begin{proposition}[PROVED: no exact realization of these entire slab data by a compact exterior device]
+\begin{proposition}[No exact realization of these entire slab data by a compact exterior device]
 \label{ca:compactcompletion}
 Suppose a proposed dielectric perturbation is compactly supported outside
 $\Omega_h$ and the exterior convention consists of propagating incoming
@@ -286,11 +284,10 @@ different accessible fields, with input power and every coherent error
 tracked.  Proposition~\ref{ca:compactcompletion} does not exclude that
 possibility, nor does it exclude arbitrary external resonant matching.
 
-\subsection{Matching theory and the decisive missing statement}
+\subsection{Matching theory and the global realization problem}
 
-The primary reflectionless-scattering analysis of
-\href{https://doi.org/10.1515/nanoph-2020-0403}{Stone, Sweeney, Hsu,
-Wisal, and Wang (2021)} gives a Maxwell formulation of reflection zeros
+The reflectionless-scattering analysis of Stone and coauthors~\cite{stone2021}
+gives a Maxwell formulation of reflection zeros
 and structural tuning to a real-frequency reflectionless state.  Its
 multichannel state is a selected coherent input vector.  Such a state
 does not assert an $N$-dimensional subspace with uniformly high
@@ -301,7 +298,7 @@ identified in Remark~\ref{cx:missing-bridge}.
 
 \begin{remark}[Global bridge required beyond these local packets]
 \label{ca:decisivebridge}
-The renewed audit reduces the choice to two substantive global tasks.
+The local analysis identifies two substantive global tasks.
 A proof must restrict the radiatively accessible trace subspaces of all
 admitted bounded-index devices strongly enough to give the uniform
 finite-rank estimate of Lemma~\ref{ch:ranklemma}, despite arbitrary

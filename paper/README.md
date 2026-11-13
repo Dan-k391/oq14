@@ -1,31 +1,36 @@
 # Saved manuscript
 
-[Read the current manuscript](oq14-manuscript.pdf) (111 pages).
+[Read the current manuscript](oq14-manuscript.pdf) (113 pages).
 
-This PDF includes the revised exposition and both explanatory figures saved at
-source commit `f520a315e5bf177dd865e248068a10bb248eb880`. It was built with
-Tectonic 0.17.0 on November 13, 2026. The final TeX pass reported no unresolved
-references or overfull boxes. The opening, figures, and nearby section
-transitions were visually inspected.
+This snapshot was built on 13 November 2026 with Tectonic 0.17.0 and Python
+3.14.2 using `python scripts/build.py --cached`. The final TeX pass reported
+no unresolved references or citations and no overfull boxes. The abstract,
+introduction, both figures, verification appendix, and bibliography were
+rendered and visually inspected. Compilation and layout checks are not a
+mathematical proof review.
 
 SHA-256:
 
 ```text
-c0cdcf52c10c395de49d7cc9a1a471a5437f9bddc3cea477403a972fdc5b6b98
+4404858348ef1822812c899a07241adb53a8f52799f465232701850bad2816d8
 ```
 
-The [build manifest](build-manifest.json) preserves the source hashes and the
-working-tree status exactly as recorded. Its `dirty_worktree: true` flag reflects
-local untracked research files; all manuscript sources used for this build are
-committed at the source revision above. Compilation and layout checks do not
-constitute a new mathematical review.
+The [build manifest](build-manifest.json) records the exact SHA-256 hash of
+each manuscript source and of the PDF. At build time the working tree
+contained the article edits on top of checkpoint
+`ba7691ed84b320341103e58be5842638170418a3`, so the manifest correctly says
+`dirty_worktree: true`: that checkpoint alone is not the source of this
+PDF. The per-file hashes identify the actual built sources, which are saved
+with this snapshot in the subsequent article revision commit.
 
 The [older frozen release PDF](../checkpoints/2026-11-13-closure-release/artifacts/oq14-manuscript.pdf)
 has 104 pages and its own clean-checkout provenance. It remains unchanged.
 The final formal proof audit is linked from the [main README](../README.md).
+This editorial revision did not rerun that audit.
 
-**Full closure of original OQ14 is not claimed.** Read the README's scope
-qualifications together with the theorem statements before citing the results.
+**Full closure of original OQ14 is not claimed.** See the
+[editorial and mathematical review notes](EDITORIAL-NOTES.md) for outstanding
+author, reference, and proof-review issues.
 
 To rebuild, run `python scripts/build.py` from the repository root. That command
 writes to ignored `output/pdf/`; it does not replace this saved snapshot.

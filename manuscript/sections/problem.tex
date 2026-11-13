@@ -1,47 +1,44 @@
 \section{Introduction: concentration and power channels}\label{pr:section}
 
-The wavelength of light sets a familiar scale for focusing and for the
-number of spatial patterns that can be communicated through an aperture.
-But an inhomogeneous dielectric can produce strong near fields and store
-energy in resonances.  This raises two related, but distinct, questions:
-how many small electric-field hotspots can one field produce, and how many
-independent inputs can carry power through a specified cross section?
-Miller and Monticone pose both questions in their discussion of OQ14
-\cite[Section 5.6]{millerMonticone2026}.  An answer depends on what is
-counted and which physical resources are held fixed.
+Diffraction provides familiar scales for focusing and for the number of
+spatial patterns communicated through an aperture. Inhomogeneous dielectric
+media also support strong near fields and resonant energy storage. Motivated
+by OQ14 of Miller and Monticone~\cite[Section 5.6]{millerMonticone2026},
+we study two related questions: how many localized electric-field maxima
+can a single field produce, and how many independent inputs can carry power
+through a prescribed section? Both questions require explicit choices of
+normalization, geometric resources, and admissibility conditions.
 
-For the \emph{hotspot} question, imagine marking several small,
-disjoint observation regions.  We seek one field whose electric amplitude
-has a large, localized maximum in every region at once.  A strong field near
-one sharp dielectric corner suggests a mechanism, but it is not yet a
-packing result: a single globally admissible field must excite all the
-regions, and finite, rounded geometries must retain the peaks.  We consider
-both a driven field, normalized by incoming power, and an outgoing resonant
-mode, whose normalization is of a different kind.  The peaks need not each
-contain a fixed fraction of the total energy.
+For the \emph{hotspot} question, we seek finitely many disjoint observation
+regions and one field with a large, localized electric-field maximum in each.
+A local singularity at a dielectric corner suggests a mechanism,
+but a packing theorem also requires a globally admissible field that excites
+all regions and retains the peaks after rounding. We distinguish driven
+fields, normalized by incoming power, from outgoing resonant modes, for
+which a different normalization is required. No fixed fraction of the
+total energy is required in each peak.
 
 For the \emph{channel} question, fix a square $D$ in a plane and consider
-an entire linear space of incident fields.  Each field, including every
-coherent combination of the chosen inputs, must meet three tests: a minimum
-amount of power reaches the selected outputs; a minimum signed power flux
-passes through $D$; and the integral of the absolute flux over the rest of
-the plane is at most an allowed bypass.  Counting basis vectors alone would
-not ensure these properties for their superpositions.  The square is a
-measurement section; it need not be the only topological route between an
-input and an output.
+a linear space of incident fields. Every field in the space must satisfy
+three tests: a lower bound on power in selected outputs, a lower bound on
+signed power flux through $D$, and an upper bound on the integral of absolute
+flux over the rest of the plane. Requiring these inequalities for each basis
+vector alone would not control their coherent superpositions. The square is
+a measurement section and need not be the only topological route between
+input and output.
 
 Figure~\ref{fig:channel-geometry} shows the measurement geometry and the
 distinction between flux through the square and flux elsewhere in its plane.
 \input{sections/channel_figure}
 
-In both questions the frequency and material bounds are fixed across the
-family of devices.  For the channel question, the square and all thresholds
-are fixed as well.  The surrounding device is allowed to grow, and no
-positive lower bound is imposed on feature size, and no uniform upper bound
-is imposed on quality factor, number of interfaces or matching complexity.
-This choice matters: a bound that also
-depends on one of these resources answers a different, more restricted
-question.  The detailed admissibility and power conventions follow below.
+Across each device family, the driving frequency or the real part of the
+resonance frequency, as appropriate, and the material bounds are fixed.
+For channels, the square and the thresholds are also fixed. The surrounding
+device may grow; the formulation imposes no
+positive lower bound on feature size and no uniform upper bound on quality
+factor, number of interfaces, or matching complexity. A bound depending on
+one of these additional resources addresses a more restricted question.
+The precise admissibility and power conventions follow below.
 
 \subsection{Main results and their meaning}
 The following summary is informal; the linked statements give the exact
@@ -57,10 +54,11 @@ hypotheses and conclusions.
   arbitrarily many localized peaks in one normalized outgoing mode of a
   finite smooth dielectric.  The real part of its resonance frequency, its
   quality-factor target and common material bounds can be prescribed. The
-  norm is a reciprocal
-  resonance-residue normalization, not an all-space positive-energy norm;
+  norm is a reciprocal resonance-residue normalization, not an all-space
+  positive-energy norm;
   the modal-volume conclusions are stated separately in
-  Corollary~\ref{ms:modal-volume}.
+  Corollary~\ref{ms:modal-volume}. Equivalence to other possible
+  interpretations of the original modal-volume question is not established.
 \item \textbf{Unrestricted channels.}  Theorem~\ref{uc:counterexample}
   constructs an $N$-dimensional counted input subspace for every finite
   $N$, while the frequency, material interval, square and thresholds remain
@@ -68,7 +66,8 @@ hypotheses and conclusions.
   scattering map selected.  Thus the proposed uniform finite count, as
   quantified below over these allowed parameters, is false.  This does not
   settle $\delta\leq\eta$, a specified receiving-only output, or fixed total
-  device support.
+  device support. These results do not settle the original broad OQ14 for
+  every possible interpretation of its undefined thresholds and outputs.
 \end{itemize}
 For intuition, the channel construction uses a distant radial dielectric
 stack to amplify independent local field patterns.  Small dielectric
@@ -85,7 +84,7 @@ resonant mode.  Section~\ref{ch:section} gives channel bounds that retain an
 explicit field resource; the intervening channel sections examine the
 passage, control and physical-construction issues.  The unrestricted
 counterexample is stated and proved in Section~\ref{uc:section}.
-Section~\ref{ver:section} separates mathematical results, formal checks
+Appendix~\ref{ver:section} separates mathematical results, formal checks
 and numerical diagnostics.  A reader interested in the central conclusion
 can read this introduction and the theorem statements first, then return to
 the supporting estimates.
@@ -107,12 +106,29 @@ The medium is real, scalar, reciprocal and nonmagnetic. There are no impressed i
 The case $\eps_+=1$ is homogeneous and is excluded only from hotspot constructions that need contrast. A broader positive class fixes the \emph{same} $0<\eps_-\leq\eps_r\leq\eps_+$ for every member. Allowing $\eps_-\to0$ is a different target. Tensor permittivity requires separate statements. Losslessness here concerns one frequency; a nondispersive energy interpretation is an additional assumption.
 
 \begin{assumption}[Scattering and power]\label{pr:scattering}
-For each device specify a well-posed outgoing Maxwell scattering problem with incoming and selected outgoing Hilbert spaces $\mathcal H_{\rm in},\mathcal H_{\rm out}$. Incoming coordinates have physical power $\|a\|^2$ and delivered power is $\|Ta\|^2$. The total field depends linearly on $a$, belongs to $H_{\rm loc}(\operatorname{curl})$, and includes all feedback. The full scattering map includes reflected and unselected radiation. Thus $T^*T\leq I$. At any exceptional frequency a finite, unique limiting-absorption field must be justified separately; adding a freely chosen trapped mode is forbidden.
+For each device specify a well-posed outgoing Maxwell scattering problem
+with incoming and selected outgoing Hilbert spaces
+$\mathcal H_{\rm in},\mathcal H_{\rm out}$. Let
+$T:\mathcal H_{\rm in}\to\mathcal H_{\rm out}$ be the selected scattering
+map. The physical incoming power is $\|a\|^2$ and the selected output
+power is $\|Ta\|^2$. The total field depends linearly on $a$, belongs to
+$H_{\rm loc}(\operatorname{curl})$, and includes all feedback. The full
+scattering map includes reflected and unselected radiation. Thus
+$T^*T\leq I$. At any exceptional frequency a finite, unique
+limiting-absorption field must be justified separately; adding a freely
+chosen trapped mode is forbidden.
 \end{assumption}
 This assumption is an admissibility condition, not a theorem that arbitrary rough coefficients yield a scattering theory. Radiation channels can be normalized by incoming spherical-wave flux. An ideal waveguide uses its complete propagating-mode power form. Neither convention counts an infinite-power plane wave as a unit-power input.
 
 \begin{definition}[Counted subspaces through one physical section]\label{pr:count}
-Fix the square $D=(-L/2,L/2)^2\times\{0\}$, its orientation $+\hat z$, and $A=L^2$, together with a source-free neighborhood of $\overline D$. Fix $0<\tau<1$, $\eta>0$ and $\delta\geq0$. A linear subspace $W\subset\mathcal H_{\rm in}$ is counted if \emph{every} $a\in W$ satisfies
+Fix the square $D=(-L/2,L/2)^2\times\{0\}$, its orientation $+\hat z$, and
+$A=L^2$, together with a source-free neighborhood of $\overline D$.
+Fix $0<\tau<1$, $\eta>0$ and $\delta\geq0$. For the total fields
+$(E_a,H_a)$ corresponding to $a\in\mathcal H_{\rm in}$, write
+$S_z(a)=\tfrac12\operatorname{Re}(E_a\times\overline{H_a})\cdot\hat z$
+for the normal component of the time-averaged Poynting vector. A linear
+subspace $W\subset\mathcal H_{\rm in}$ is counted if \emph{every}
+$a\in W$ satisfies
 \begin{align}
  \|Ta\|^2&\geq\tau\|a\|^2,\label{pr:transmission}\\
  P_D(a):=\tfrac12\operatorname{Re}\int_D(E_a\times\overline{H_a})\cdot\hat z\,\dd A
@@ -140,18 +156,28 @@ Fix contrast, frequency, a nonempty open patch $\mathcal P$, $N\in\N$, a localiz
 \end{definition}
 No $N$-independent excitation coefficient or nonvanishing fraction of total energy per hotspot is required. Such conditions would define substantially stronger problems.
 
-\subsection{Primary-source audit and earlier artifacts}
-Table~\ref{pr:prior-art} records the actual role of each primary source. The proofs below do not use a title containing ``bound'' as an assumption.
+\subsection{Relation to previous work}
+Table~\ref{pr:prior-art} summarizes relevant results and the hypotheses
+needed to compare them with the formulations above.
 \begin{longtable}{@{}p{.20\textwidth}p{.38\textwidth}p{.35\textwidth}@{}}
-\caption{Prior art and the hypotheses that must survive transfer.}\label{pr:prior-art}\\
-\toprule Source & Scope actually used & What remains to reach OQ14\\\midrule\endfirsthead
-\toprule Source & Scope actually used & What remains to reach OQ14\\\midrule\endhead
+\caption{Selected prior work and its relation to the present questions.}\label{pr:prior-art}\\
+\toprule Source & Scope & Distinction from the present questions\\\midrule\endfirsthead
+\toprule Source & Scope & Distinction from the present questions\\\midrule\endhead
 Miller (2023), S2/S12~\cite{miller2023} & Uniform-medium channel counting motivates thickness estimates. S2 labels the nonuniform-index replacement conjectural; S12 distinguishes approximate aperture counting and design-specific Green operators. & A uniform estimate for actual structured interiors, including their total resonant response.\\[4pt]
 Kuang et al. (2025), II/E~\cite{kuang2025} & Background Green operators between domains separable by a spherical surface; sizes and separations enter. Power normalization adds source/receiver response factors. & Their Eq.~(1) retains the norms of those factors. Appendix E rejects general monotonicity of singular-value ratios and a step-shaped spectrum assumption.\\[4pt]
 Costabel et al. (1999)~\cite{costabel1999} & Piecewise constant positive coefficients on a bounded polyhedral partition; singular parts are linked to scalar transmission problems with stated boundary conditions. & Local singular structure alone does not prove global excitation, outgoing scattering, or simultaneous peaks.\\[4pt]
 Zhao et al. (2020)~\cite{zhao2020} & Mode-volume optimization with Maxwell constraints, refractive-index limits, minimum feature constraints and numerical dual bounds; polarization matters. & Numerical feature-size scaling is neither a packing proof nor a channel theorem. Driven fields need a different normalization.\\
 \bottomrule
 \end{longtable}
+
+Harrach, Lin, and Liu~\cite{harrach2018} establish field localization and
+a partial-boundary-data Runge approximation result for Maxwell equations
+in bounded domains. Their boundary-input setting differs from the present
+open-scattering constructions and their power normalization. Bille-Lauridsen
+and M\o rk~\cite{billeLauridsen2026} analyze singularity regularization in
+dielectric bowtie geometries using electrostatic and quasinormal-mode
+calculations; their local scaling results do not imply simultaneous global
+hotspot packing.
 
 The supplied 33-page report~\cite{priorreport} proves a full-vector count with an explicit local field-norm resource, and identifies Bragg amplification, evanescent local flux, and resonant-feedback obstructions. We audit and retain these with their restrictions. Its ENZ slot construction varies both the lower permittivity bound and the section shape; that observation alone excludes it as a counterexample to Conjecture~\ref{pr:channel-target}. We do not claim an independent recertification of every ENZ numerical result.
 

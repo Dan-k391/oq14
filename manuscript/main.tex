@@ -7,36 +7,36 @@
 \usepackage{microtype}
 \input{macros}
 \setlength{\emergencystretch}{3em}
-\title{OQ14: Maxwell Hotspot Packing\\and Unrestricted Power Channels}
-\author{AI-assisted research manuscript}
-\date{13 November 2026 (America/New\_York)}
+\title{Electric-field hotspot packing and power channels\\in dielectric media}
+\author{\emph{Author information to be supplied}}
+\date{13 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-How tightly can optical fields be concentrated, and how many independent
-power-carrying channels can pass through a fixed section of a dielectric
-device?  We study explicit versions of these questions motivated by
-Miller and Monticone's OQ14. With a common positive permittivity bound,
-we construct arbitrarily many simultaneous localized electric-field peaks
-in dielectric scattering at a fixed driving frequency, and in a single
-normalized outgoing mode of a finite smooth dielectric. The modal
-construction allows a prescribed real part of the complex resonance
-frequency and arbitrarily high prescribed quality factor. For channels, we show that the area of a
-fixed square does not impose a uniform finite count under our unrestricted
-definition: for every finite count there is a device meeting the passage
-and absolute-bypass tests for every coherent input, provided the allowed
-bypass threshold exceeds the required passage threshold.  The selected
-output in this construction is the complete scattering map.  Stronger
-bypass requirements and specified receiving-only outputs are separate
-versions of the question, which we do not settle here.  Lean checks the continuum Maxwell
-constructions and the stated modal-volume limits; Section~\ref{ver:lean}
-describes the formal endpoints and the scope of those checks.
+We study quantified versions of two questions on field concentration and
+power channels posed by Miller and Monticone in OQ14. At a fixed driving
+frequency and under a common positive permittivity bound, we construct
+arbitrarily many simultaneous localized electric-field peaks in a single
+driven field, both in a two-dimensional invariant setting and in finite
+three-dimensional dielectrics. We also construct arbitrarily many localized
+peaks in a single normalized outgoing mode of a finite smooth dielectric,
+with prescribed real part of the complex resonance frequency and an
+arbitrarily high quality-factor target. The modal normalization is a
+reciprocal-residue normalization.
+Its relation to other possible interpretations of the original modal-volume
+question requires separate justification.
+
+For a specified channel definition, we construct, for every finite $N$,
+an $N$-dimensional counted input space through the same square section
+at fixed frequency, material bounds, and thresholds. The construction
+applies when the permitted absolute-bypass threshold exceeds the required
+passage threshold and when the selected output is the complete outgoing
+scattering map, including reflection. Thus the corresponding unrestricted
+uniform finiteness assertion fails. The result does not decide stricter
+bypass conditions or receiving-only output formulations. These quantified
+results do not resolve every interpretation of the original OQ14. The
+formal verification and its scope are described in Appendix~\ref{ver:lean}.
 \end{abstract}
-\noindent\textbf{Reading guide.} The introduction explains the two questions
-and summarizes the results before stating their precise definitions. Status
-words refer to the labeled statement, not to every possible interpretation
-of OQ14. Section~\ref{ver:lean} specifies the formal coverage;
-Section~\ref{ver:verdicts} records the separate conclusions and limitations.
 \clearpage
 {\small\linespread{0.92}\selectfont\tableofcontents}
 \clearpage
@@ -59,6 +59,8 @@ Section~\ref{ver:verdicts} records the separate conclusions and limitations.
 \input{sections/channel_transducer_limit}
 \input{sections/radial_green_limit}
 \input{sections/channel_unrestricted}
+\clearpage
+\appendix
 \input{sections/verification}
 \clearpage
 \bibliographystyle{plain}

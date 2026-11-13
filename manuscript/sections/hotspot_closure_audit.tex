@@ -6,14 +6,14 @@ Small positive contrast supplies a convenient uniform scattering inverse;
 it does not remove the point singularity.  The material bounds and frequency
 remain fixed.  The modal question is separated at the end.
 
-The two-dimensional construction is a useful guide, but cutting off its
+The two-dimensional construction suggests a mechanism, but truncating its
 invariant direction would introduce new boundaries and radiation.  Here
 each sharp reference point instead has two opposite dielectric cones
 meeting at their tips.  The resulting high-field region is localized in
 all three spatial directions.  We again first prove excitation of the
 sharp points by one physical illumination and then round the tips.
 
-\begin{theorem}[PROVED: finite three-dimensional driven point localization]
+\begin{theorem}[Finite three-dimensional driven point localization]
 \label{hs:three-packing}
 Fix $k>0$ and an upper bound $\varepsilon_+>1$.  There is a number
 $\varepsilon_h\in(1,\varepsilon_+]$ that can be kept fixed in the
@@ -41,8 +41,8 @@ source, and no conducting boundary in the physical device.
 \end{theorem}
 
 The prescribed patch is therefore a projection constraint, while the
-localized neighborhoods themselves are three-dimensional.  This exact
-quantifier avoids silently replacing a point by an infinitely long edge.
+localized neighborhoods themselves are three-dimensional.  In particular,
+the theorem concerns finite point neighborhoods rather than invariant ridges.
 As before, no minimum energy fraction in an individual peak is required.
 
 The proof follows the same logic as the cross-sectional case, but each
@@ -67,7 +67,7 @@ energy.  This electrostatic calculation identifies the candidate
 singularity; the following subsection is needed to establish its role in
 the finite-frequency Maxwell field.
 
-\begin{lemma}[PROVED: strict positive contrast gives a conical exponent below one]
+\begin{lemma}[Strict positive contrast gives a conical exponent below one]
 \label{hs:three-angular}
 Choose $t\in(1/\sqrt3,1)$ and set, on the unit sphere,
 \begin{equation}
@@ -147,7 +147,7 @@ Use normalized units $\operatorname{curl}E=ikH$,
 $\operatorname{curl}H=-ikqE$ in the local arguments; the magnetic
 field here is the physical magnetic field multiplied by $Z_0$.
 
-\begin{lemma}[PROVED: local regular decomposition with controlled remainder]
+\begin{lemma}[Local regular decomposition with controlled remainder]
 \label{hs:three-decomposition}
 Suppose $E,H$ solve the source-free Maxwell system with
 $1\leq q\leq\varepsilon_h$ on $B_{3R}$ and have finite local energy.
@@ -183,7 +183,12 @@ the ordinary Poincare inequality.  All operations are bounded and
 linear.
 \end{proof}
 
-\begin{lemma}[PROVED: intrinsic conical singular coefficient]
+The local decomposition separates the singular potential from a bounded
+remainder. The coefficient below is defined by an angular projection;
+its independence of the chosen lifting makes it a property of the field,
+rather than of the decomposition.
+
+\begin{lemma}[Intrinsic conical singular coefficient]
 \label{hs:three-coefficient}
 In the conical material of Lemma~\ref{hs:three-angular}, every local
 Maxwell solution as above has a linear coefficient $c(E)$, continuous
@@ -259,7 +264,12 @@ the large values can be selected away from interfaces.  Its energy
 is finite by the starting local $L^2$ assumption.
 \end{proof}
 
-\begin{lemma}[PROVED: local positive-frequency excitation of the point coefficient]
+The local coefficient alone does not determine whether a prescribed
+illumination excites the singularity. We next construct a local
+finite-frequency solution with a nonzero coefficient; the subsequent
+Runge argument supplies a physical illumination.
+
+\begin{lemma}[Local positive-frequency excitation of the point coefficient]
 \label{hs:three-local-excitation}
 For the conical coefficient $q$, at every fixed $k>0$ there are local
 source-free Maxwell solutions on a sufficiently small ball with
@@ -350,7 +360,7 @@ contrast makes the volume operator invertible uniformly over the family
 used for rounding.  It is a device for controlling the global problem;
 the local conical exponent remains below one at every positive contrast.
 
-\begin{lemma}[PROVED: uniform volume-integral inverse]
+\begin{lemma}[Uniform volume-integral inverse]
 \label{hs:three-volume}
 Fix a ball $B_L$ and $k>0$.  There is $C_{kL}<\infty$ such that
 the electric volume operator
@@ -442,7 +452,7 @@ The radial incoming flux is $|E^{\rm in}_{\rm incoming}|^2/(2Z_0)$,
 so the total incoming power is exactly $\|g\|_{L^2(S^2)}^2$.
 This is finite total power, rather than power per invariant length.
 
-\begin{lemma}[PROVED: total-field Maxwell Runge approximation for these devices]
+\begin{lemma}[Total-field Maxwell Runge approximation for these devices]
 \label{hs:three-runge}
 Let the small-contrast coefficient be piecewise constant, with finitely
 many smooth interface pieces and finitely many conical vertices and
@@ -492,7 +502,13 @@ This is density of total fields in the actual material, not an
 assumed free-space approximation inside it.
 \end{proof}
 
-\begin{lemma}[PROVED: finite-device rounding continuity]
+The rounding estimate has two distinct roles: $L^2$ convergence transfers
+large values from the sharp reference field, while the collar bound confines
+the resulting peaks. The latter depends on regularity estimates in fixed
+smooth-interface charts away from the shrinking tips; convergence in
+$L^2$ alone does not supply a pointwise bound on the collars.
+
+\begin{lemma}[Finite-device rounding continuity]
 \label{hs:three-rounding}
 Let $\chi_\rho,\chi$ be supported in the common comparison ball,
 $0\leq\chi_\rho,\chi\leq d$, with $\chi_\rho\to\chi$ almost
@@ -586,7 +602,7 @@ All choices of illumination precede rounding; the same normalized
 input is used for every rounded field.
 \end{proof}
 
-\begin{corollary}[PROVED: finite-region volume-to-peak ratios in three dimensions]
+\begin{corollary}[Finite-region volume-to-peak ratios in three dimensions]
 \label{hs:three-regional-volume}
 Along the rounded sequence for one fixed sharp configuration and
 one normalized input, electromagnetic energy in a fixed bounded
@@ -611,7 +627,7 @@ along the same family.  The material factors are bounded above and below.
 \subsection{What an exact mode can mean in a finite dielectric device}
 \label{hs:three-modal-subsection}
 
-\begin{proposition}[PROVED: absence of real-frequency finite-energy modes]
+\begin{proposition}[Absence of real-frequency finite-energy modes]
 \label{hs:three-no-real-mode}
 Let the real positive scalar permittivity be constant on finitely
 many material pieces with piecewise smooth interfaces, and equal
@@ -653,8 +669,8 @@ open-cavity generalizations of its mode-volume definition.
 
 \begin{remark}[The driven proof and the separate modal construction]
 \label{hs:three-modal-gap}
-Theorem~\ref{hs:three-packing} closes the finite-device \emph{driven}
-point-localization target just stated.  It does not turn the chosen
+Theorem~\ref{hs:three-packing} establishes the finite-device \emph{driven}
+point-localization statement given above.  It does not turn the chosen
 illumination into a resonator mode.  A possible modal route starts
 with a simple isolated dielectric resonance, inserts finitely many
 small conical inclusions where its electric field is nonzero, and
@@ -666,8 +682,9 @@ not consequences of Runge approximation: Runge varies external
 illumination, whereas a pole's eigenfield is fixed by its homogeneous
 outgoing eigenproblem.  Strong local field convergence without a
 coefficient topology also does not prove nonzero singular coefficients.
-Sections~\ref{hs:modal-next-section} and~\ref{ms:section} now discharge
-these conditions by a separate argument. Eventual nonzero excitation
+Sections~\ref{hs:modal-next-section} and~\ref{ms:section} establish
+these conditions for the particular modal family considered there.
+Eventual nonzero excitation
 is proved by a strict annular pairing in
 Theorem~\ref{hs:modal-coefficient-continuation}, without requiring
 continuation of the intrinsic coefficient through zero contrast; a simple pole,

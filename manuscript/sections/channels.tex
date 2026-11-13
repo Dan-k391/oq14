@@ -25,8 +25,8 @@ Theorem~\ref{uc:counterexample} for $\delta>\eta$. The stronger small-bypass
 regime of the resource bounds below remains a separate question.
 This section proves three usable conclusions: an exact finite-rank reduction,
 a local full-vector field-resource estimate, and a bridge from the prescribed
-absolute-bypass condition to that estimate.  The local estimates reproduce,
-with a complete audit, the argument in the supplied report
+absolute-bypass condition to that estimate.  The local estimates reproduce
+the argument in the supplied report and make its assumptions explicit
 \cite[Section 3]{priorreport}.  The outer-window construction below avoids that
 report's extra conserved-collar assumption for a sharp section.  None of these
 results bounds resonant amplification by external passivity.
@@ -73,7 +73,7 @@ operator, and fix $0<\tau<1$.  A counted linear subspace $W$ satisfies
 \end{equation}
 The other passage requirements are imposed separately below.
 
-\begin{lemma}[PROVED: finite-rank obstruction]
+\begin{lemma}[Finite-rank obstruction]
 \label{ch:ranklemma}
 If a linear map $R:W\to\mathcal H_{\rm out}$ has rank at most $M$ and
 $\|T|_W-R\|<\sqrt\tau$, then $\dim W\leq M$.
@@ -98,7 +98,7 @@ No compactness is required for this definition.  Thus
 $a_{M+1}(T|_W)<\sqrt\tau$ is sufficient in Lemma~\ref{ch:ranklemma}.
 \end{definition}
 
-\begin{proposition}[PROVED: factorization with every amplification factor retained]
+\begin{proposition}[Factorization with every amplification factor retained]
 \label{ch:factorization}
 Suppose $T=AGB+E$, where all maps are bounded between their stated Hilbert
 spaces and $\|E\|\leq e$.  If $\operatorname{rank}G_M\leq M$, then
@@ -119,7 +119,7 @@ For compact $G$, its singular expansion is an orthogonal expansion and the
 norm of its discarded tail is exactly its next singular value.
 \end{proof}
 
-\begin{remark}[PROVED algebraic counteraudit; no Maxwell counterexample]
+\begin{remark}[Algebraic examples; no Maxwell realization]
 \label{ch:algebraaudit}
 For $G_N=\operatorname{diag}(1,2^{-1},\ldots,N^{-1})$ and
 $A_N=\operatorname{diag}(1,2,\ldots,N)$, the full map $A_NG_N=I_N$
@@ -202,7 +202,7 @@ $\rho=1$ on $\operatorname{supp}\zeta$.  Introduce explicit constants
  \label{ch:constants}
 \end{equation}
 
-\begin{lemma}[PROVED: canonical weak flux]
+\begin{lemma}[Canonical weak flux]
 \label{ch:fluxlemma}
 Define the Hermitian cross-Poynting vector
 \begin{equation}
@@ -258,7 +258,7 @@ $L^2$ norm controls the weighted flux.  Together, these estimates prevent an
 input with substantial passage and bounded resource from living entirely in
 arbitrarily fine box eigenfunctions.
 
-\begin{lemma}[PROVED: uniform magnetic regularity]
+\begin{lemma}[Uniform magnetic regularity]
 \label{ch:magneticHone}
 The zero extension of $\rho h_a$ is in $H^1_0(B)^3$, and
 \begin{equation}
@@ -290,7 +290,7 @@ and $|u\times v|^2+|u\cdot v|^2=|u|^2|v|^2$ for real $u$, give
 No derivative of $\varepsilon_r$ occurs.
 \end{proof}
 
-\begin{lemma}[PROVED: Caccioppoli and flux domination]
+\begin{lemma}[Caccioppoli and flux domination]
 \label{ch:caccioppoli}
 The complete physical fields obey
 \begin{equation}
@@ -343,7 +343,7 @@ bound would make its remaining magnetic field too small to carry the required
 flux.  The count is therefore finite at fixed $B_W$, with an explicit cost
 when $B_W$ increases.
 
-\begin{theorem}[PROVED: through-flux resource bound]
+\begin{theorem}[Through-flux resource bound]
 \label{ch:resourcecount}
 Let $W$ have finite dimension $N$, and suppose
 $q_\psi(a,a)\geq p\|a\|^2$ for every $a\in W$, where $p>0$.
@@ -391,7 +391,7 @@ Multiplication by three proves \eqref{ch:count} without a Weyl asymptotic
 or a remainder depending on fine material interfaces.
 \end{proof}
 
-\begin{theorem}[PROVED: cost averaged over an orthonormal input basis]
+\begin{theorem}[Cost averaged over an orthonormal input basis]
 \label{ch:average}
 Under the hypotheses of Theorem~\ref{ch:resourcecount}, let
 $a_1,\ldots,a_N$ be any orthonormal basis of $W$, and set
@@ -471,7 +471,7 @@ when that classical trace exists.  A separately specified regularized
 measurement may be used if it establishes these identities.
 \end{assumption}
 
-\begin{lemma}[PROVED: an outer window preserves passage up to bypass]
+\begin{lemma}[An outer window preserves passage up to bypass]
 \label{ch:outerwindow}
 Take $\psi=1$ on the same fixed section $D$, with $0\leq\psi\leq1$
 and compact support in a slightly larger transverse region.  Under
@@ -506,7 +506,7 @@ compatibility in Assumption~\ref{ch:tracecompatibility} is likewise outside
 the conclusion.
 \end{remark}
 
-\begin{theorem}[PROVED under stated resources: approximation of the complete transmission map]
+\begin{theorem}[Approximation of the complete transmission map under stated resources]
 \label{ch:fulloutput}
 Let $W$ be a closed input subspace satisfying passage and absolute bypass,
 Assumption~\ref{ch:tracecompatibility}, and the preceding local Maxwell
@@ -556,7 +556,7 @@ precludes a nonzero counted subspace).  Lemma~\ref{ch:ranklemma} and
 the explicit box count finish the proof.
 \end{proof}
 
-\begin{corollary}[CONDITIONAL as a uniform family bound]
+\begin{corollary}[Conditional uniform family bound]
 \label{ch:spectralcor}
 Let $V_\tau=\operatorname{Ran}\mathbf1_{[\tau,\infty)}(T^*T)$.
 If passage, absolute bypass, trace compatibility, common local geometry,
@@ -583,7 +583,7 @@ Its cost is the explicitly retained norm $B_*$ of the actual full field.
 Thus Theorem~\ref{ch:fulloutput} discharges the output-approximation step
 under a resource hypothesis; it does not discharge that hypothesis.
 
-\begin{corollary}[PROVED: essential-norm consequence]
+\begin{corollary}[Essential-norm consequence]
 \label{ch:essential}
 Under Theorem~\ref{ch:fulloutput}'s hypotheses, without assuming a
 throughput lower bound, the distance of $T|_W$ from the compact operators
@@ -603,7 +603,7 @@ then the uniform approximation makes its images under $T$ Cauchy.
 \subsection{An explicit area scaling with its extra resource exposed}
 \label{ch:explicitconstants}
 
-\begin{corollary}[CONDITIONAL: square-enclosure area scaling]
+\begin{corollary}[Conditional square-enclosure area scaling]
 \label{ch:arearesource}
 Suppose $D\subset[-L/2,L/2]^2$ and there is a source-free comparison box
 \begin{equation}
@@ -656,7 +656,7 @@ Finally $(x+8)^2\leq2x^2+128$ proves the asserted order with every
 additional dependency retained.
 \end{proof}
 
-\begin{corollary}[PROVED: local extension to real symmetric anisotropy]
+\begin{corollary}[Local extension to real symmetric anisotropy]
 \label{ch:anisotropy}
 All local estimates and their conditional channel consequences remain
 valid for measurable real symmetric tensors $\varepsilon_r(x)$ satisfying
@@ -683,7 +683,7 @@ essential to this proof of $\operatorname{div}h=0$.
 \subsection{The scope of the resource route}
 \label{ch:open}
 
-\begin{remark}[OPEN: removing the resource in the small-bypass regime]
+\begin{remark}[Open question: removing the resource in the small-bypass regime]
 \label{ch:missing}
 There is no estimate here, from $1\leq\varepsilon_r\leq\varepsilon_+$,
 the fixed section, passivity, passage, and absolute bypass alone, that

@@ -21,7 +21,7 @@ device and uses one incident field to excite them all.
 
 \input{figures/hotspot-schematic}
 
-\noindent\textbf{Status and scope.}
+\noindent\textbf{Scope.}
 Theorem~\ref{hs:packing} proves a driven, two-dimensional cross-sectional
 version of hotspot packing, with physical incoming power per unit invariant
 length.  It uses ordinary binary dielectrics at one fixed positive frequency,
@@ -108,7 +108,7 @@ component is contained in it, since $P_j/\sqrt2>P_j/2$.
 No positive lower bound on the energy in each peak is stipulated.
 \end{definition}
 
-\begin{theorem}[PROVED: simultaneous rounded driven hotspot packing]
+\begin{theorem}[Simultaneous rounded driven hotspot packing]
 \label{hs:packing}
 For every fixed $k>0$ and $\varepsilon_+>1$, every nonempty open
 patch $\mathcal P\subset\mathbb R^2$, every finite $N\geq1$, and every
@@ -163,7 +163,7 @@ makes the squared gradient locally integrable.  A nonzero coefficient of
 this angular pattern is essential; the existence of the pattern alone
 does not say that a particular illumination excites it.
 
-\begin{lemma}[PROVED: a binary checkerboard angular exponent]
+\begin{lemma}[A binary checkerboard angular exponent]
 \label{hs:angular}
 Let $a(\theta)$ alternate between $1$ and $b$ in successive sectors of
 angle $\pi/2$.  There is a nonzero real periodic $\phi\in H^1(S^1)$ such
@@ -198,7 +198,12 @@ It satisfies the stated weak eigenproblem.  Integrating that equation
 and then testing it against $\phi$ proves the two identities.
 \end{proof}
 
-\begin{lemma}[PROVED: continuous finite-frequency singular coefficient]
+The coefficient in the next lemma identifies the part of the physical
+finite-frequency field associated with this angular profile. Its continuity
+in the local $L^2$ topology is needed later: an approximation of a locally
+excited field must preserve a nonzero singular coefficient.
+
+\begin{lemma}[Continuous finite-frequency singular coefficient]
 \label{hs:coefficient}
 Suppose the checkerboard coefficient of Lemma~\ref{hs:angular} holds in
 $B_R(0)$ and $u\in H^1(B_R)$ weakly satisfies $L_au=0$ there.
@@ -307,7 +312,7 @@ components is needed for the lower-bound argument.  In particular,
 finite local energy does not bound the peak electric field.
 \end{remark}
 
-\begin{lemma}[PROVED: a local finite-frequency solution with $c\ne0$]
+\begin{lemma}[A local finite-frequency solution with $c\ne0$]
 \label{hs:local-excitation}
 For every fixed $k>0$ there is $R_*>0$, depending on $k$ and $b$, such
 that for $0<R<R_*$ the checkerboard equation in $B_R$ has an $H^1$
@@ -362,7 +367,7 @@ different corners may differ; Proposition~\ref{hs:simultaneous} then
 combines them into one field.  Because only finitely many coefficients
 must be kept nonzero, no uniform lower bound on their magnitudes is needed.
 
-\begin{lemma}[PROVED: scattering for the finite polygonal geometry]
+\begin{lemma}[Scattering for the finite polygonal geometry]
 \label{hs:wellposed}
 Let $a$ be real, take values in $[b,1]$, equal one outside a disk, and
 be constant on a finite polygonal partition.  The outgoing scattering
@@ -430,7 +435,12 @@ derivatives on bounded sets are bounded by $C\|g\|_2$, directly from
 \eqref{hs:herglotz}.  The bounded inverse gives the asserted continuity.
 \end{proof}
 
-\begin{lemma}[PROVED: local Runge approximation by total scattering fields]
+The density result is used only after a locally excited field has been
+constructed. It turns that local field into the restriction of an outgoing
+scattering solution to the chosen accuracy; the coefficient estimate above
+then preserves excitation.
+
+\begin{lemma}[Local Runge approximation by total scattering fields]
 \label{hs:runge}
 Under Lemma~\ref{hs:wellposed}, let $Q$ be a closed disk whose
 complement is connected.  A solution of $L_av=0$ in an open
@@ -490,7 +500,12 @@ the invertible outgoing source problem, not an inverse of an
 interior transmission operator.
 \end{proof}
 
-\begin{proposition}[PROVED: one incident field excites every selected corner]
+Nonvanishing at each corner separately is insufficient for simultaneous
+packing. The following proposition obtains all nonvanishing coefficients
+from a single incident density. Its finite-dimensional polynomial argument
+does not assert a uniform lower bound on those coefficients.
+
+\begin{proposition}[One incident field excites every selected corner]
 \label{hs:simultaneous}
 In a fixed finite polygonal geometry with $N$ disjoint checkerboard
 disks of the same contrast, each local coefficient $c_j(u_g)$ is a
@@ -530,7 +545,7 @@ regularity away from those tips supplies a bound on each disk's collar.
 We do not need to predict the peak as an explicit function of the
 rounding radius.
 
-\begin{lemma}[PROVED: outgoing solutions converge under local rounding]
+\begin{lemma}[Outgoing solutions converge under local rounding]
 \label{hs:rounding-convergence}
 Let $a$ be as in Lemma~\ref{hs:wellposed}.  Let $a_\rho$ equal one
 in a common exterior collar, satisfy $b\leq a_\rho\leq1$, and
@@ -666,7 +681,7 @@ $\mathcal P$, and the fixed $g$ still has the same unit incoming
 power.  This proves the theorem.
 \end{proof}
 
-\subsection{Exact scope, costs, and remaining hotspot questions}
+\subsection{Scope and limitations of the two-dimensional construction}
 \label{hs:limits}
 
 The order of choices in the proof is
@@ -686,7 +701,7 @@ peaks as communication channels, and no finite spectral bandwidth.
 All square dimensions can be chosen inside the given patch, so even
 the total \emph{cross-sectional} material support is small.
 
-\begin{proposition}[PROVED: bounded-region energy-to-peak ratios]
+\begin{proposition}[Bounded-region energy-to-peak ratios]
 \label{hs:regional-ratio}
 For the fixed sharp geometry and one illumination used above, along
 the rounded sequence the electromagnetic energy on any fixed bounded
