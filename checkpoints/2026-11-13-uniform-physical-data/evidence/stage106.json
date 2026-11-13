@@ -1,0 +1,1454 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "b451f8f",
+  "modules": 1281,
+  "reports": 5487,
+  "new_modules": 44,
+  "new_reports": 69,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "ef678d500b8987f368018430ac1272117dc3f8dbc8c03f9f88ae103a2ab03da0",
+  "ledger_sha256": "85200c59a2e678d9b3a7b6b7aebc0fce48b547b0752e0d65b7f8b27cfe14db01",
+  "raw_archive_sha256": "22f18f5ff42ceee3940d0abf35770f350dd0938ad08c3caeed10407c06fbdb25",
+  "records": [
+    {
+      "module": "Packet05PhaseAEBound",
+      "reports": 1,
+      "source_sha256": "cfe74d397a6dddca5466c71ce0d8e505ef82c4c9050ad3d84d788ffcdb4867b3",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PhaseAEBound-chain.log",
+      "audit_log_sha256": "0065732af3ad1e563256fa839c65a962471418091fc8e910e95fa898259e54a3",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/ae-review.txt",
+      "independent_review_sha256": "18d678a9324d867cfffdf0f542f612ba535a3fbd1e77de2cfab28365cd7aeaf7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/ae-build.json",
+      "independent_build_sha256": "5246109f3c10d85b5fbb39e60d57aded69c3b674fddd3d04877a3be68d32d487",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PhaseAEBound.log",
+      "independent_log_sha256": "0065732af3ad1e563256fa839c65a962471418091fc8e910e95fa898259e54a3",
+      "declarations": [
+        "OQ14.Packet05PhaseAEBound.phase_ae_bound"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeLocalArrays",
+      "reports": 3,
+      "source_sha256": "3a0588f048f695804f027dae3a6bf320f7379616d20d002fcd226f36296fd873",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeLocalArrays-chain.log",
+      "audit_log_sha256": "62d38f86317252bc169c80c6f699f4231ed15821c334d27175b3f474081a9040",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeLocalArrays.log",
+      "independent_log_sha256": "62d38f86317252bc169c80c6f699f4231ed15821c334d27175b3f474081a9040",
+      "declarations": [
+        "OQ14.Packet05QuantitativeLocalArrays.local_arrays",
+        "OQ14.Packet05QuantitativeLocalArrays.first_norm",
+        "OQ14.Packet05QuantitativeLocalArrays.second_norm"
+      ]
+    },
+    {
+      "module": "Packet05AssembleTangentialArrays",
+      "reports": 1,
+      "source_sha256": "a80080849c17b6d0311be1d154b9e0ba5b1bb014178dd763b1ed8f9d716d37fc",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05AssembleTangentialArrays-chain.log",
+      "audit_log_sha256": "5f4708d69fed9f88ad4b5fe23460e0a2e5f3c4a477e90ade20d86cbf12cea275",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05AssembleTangentialArrays.log",
+      "independent_log_sha256": "5f4708d69fed9f88ad4b5fe23460e0a2e5f3c4a477e90ade20d86cbf12cea275",
+      "declarations": [
+        "OQ14.Packet05AssembleTangentialArrays.assemble"
+      ]
+    },
+    {
+      "module": "Packet05PhysicalHalfspaceClosure",
+      "reports": 2,
+      "source_sha256": "61f034e6889923a48c434aac45132af42c1947a994937859f17ea1fe9115a5f1",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PhysicalHalfspaceClosure-chain.log",
+      "audit_log_sha256": "eb3f477c565b0236716158ae02ce3ba7dcbab3d691dbcf1761c58f3325192164",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PhysicalHalfspaceClosure.log",
+      "independent_log_sha256": "eb3f477c565b0236716158ae02ce3ba7dcbab3d691dbcf1761c58f3325192164",
+      "declarations": [
+        "OQ14.Packet05PhysicalHalfspaceClosure.flat_negative_closure",
+        "OQ14.Packet05PhysicalHalfspaceClosure.physical_negative_closure"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeMaterialPhases",
+      "reports": 1,
+      "source_sha256": "540b071100bb2dc9999a8f19a293cd2f9c04e1de37a52f7a555cae546af69619",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeMaterialPhases-chain.log",
+      "audit_log_sha256": "3e6821e8f1b137ce770abda475ec2ab4188faa94cd7d552db0832bd370420e66",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeMaterialPhases.log",
+      "independent_log_sha256": "3e6821e8f1b137ce770abda475ec2ab4188faa94cd7d552db0832bd370420e66",
+      "declarations": [
+        "OQ14.Packet05QuantitativeMaterialPhases.quantitative_material_phases"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeMaterialClosures",
+      "reports": 1,
+      "source_sha256": "c1cb840376322f0f76e1882d2fca9790bd66a509d0f287c93dd695a965259f38",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeMaterialClosures-chain.log",
+      "audit_log_sha256": "e14d9e571843c012b19d6ff8666585c829bba59c5565f2169ab52540c533ec5d",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeMaterialClosures.log",
+      "independent_log_sha256": "e14d9e571843c012b19d6ff8666585c829bba59c5565f2169ab52540c533ec5d",
+      "declarations": [
+        "OQ14.Packet05QuantitativeMaterialClosures.material_phase_closure_bounds"
+      ]
+    },
+    {
+      "module": "Packet05PlateauGraphFlux",
+      "reports": 2,
+      "source_sha256": "1ef5c003e187a2aec693afdba125997c5edfdd0e5acb538ffbd677e9a41ab087",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PlateauGraphFlux-chain.log",
+      "audit_log_sha256": "31e9484db58043e5b56c9fb1ed2b1a73e378b64f5b9b6f9c3b19956fab82dfab",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PlateauGraphFlux.log",
+      "independent_log_sha256": "31e9484db58043e5b56c9fb1ed2b1a73e378b64f5b9b6f9c3b19956fab82dfab",
+      "declarations": [
+        "OQ14.Packet05PlateauGraphFlux.plateau_flux",
+        "OQ14.Packet05PlateauGraphFlux.plateau_divergence"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedNormalFluxBound",
+      "reports": 1,
+      "source_sha256": "a58048109e486ab253c6a1448c073ff3d8a28d5d2cffea5cda00d575ef0c39af",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedNormalFluxBound-chain.log",
+      "audit_log_sha256": "c053fad965fe18b775421893bd578214c290827b8e0ff38ff1ed8c3c727360bd",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedNormalFluxBound.log",
+      "independent_log_sha256": "c053fad965fe18b775421893bd578214c290827b8e0ff38ff1ed8c3c727360bd",
+      "declarations": [
+        "OQ14.Packet05LocalizedNormalFluxBound.localized_normal_flux_bound"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedChartScalarAdapter",
+      "reports": 1,
+      "source_sha256": "b9edd2500a75f62950ac489e9bd48602b446c364a83c07cb3eef11fc98e15509",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedChartScalarAdapter-chain.log",
+      "audit_log_sha256": "1e3de5b9ad7798d1cd31fbad07d5968eeded9621f870bb9a0bd60129d95ebe2e",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedChartScalarAdapter.log",
+      "independent_log_sha256": "1e3de5b9ad7798d1cd31fbad07d5968eeded9621f870bb9a0bd60129d95ebe2e",
+      "declarations": [
+        "OQ14.Packet05LocalizedChartScalarAdapter.localized_chart_scalar_adapter"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedChartArrayAdapter",
+      "reports": 1,
+      "source_sha256": "37293444a70285e688fd4398dc339e2fae83808d2596afe2af091ab040f7d073",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedChartArrayAdapter-chain.log",
+      "audit_log_sha256": "7892c5842de3cb388c20f0e7a8960ddddccfbd18f6fd199bc62512e80a47f7d1",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "independent_review_sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "independent_build_sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedChartArrayAdapter.log",
+      "independent_log_sha256": "7892c5842de3cb388c20f0e7a8960ddddccfbd18f6fd199bc62512e80a47f7d1",
+      "declarations": [
+        "OQ14.Packet05LocalizedChartArrayAdapter.localized_chart_array_adapter"
+      ]
+    },
+    {
+      "module": "Packet05TangentialGradientArrays",
+      "reports": 1,
+      "source_sha256": "d3b6e6209c5c1a2458cb24f374634c690513464662d95e9333e6f4156ee8ca11",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05TangentialGradientArrays-chain.log",
+      "audit_log_sha256": "1c4fce524f422f2a8cc2cf7a10cd1d8334918ce6100d8d12d5f9a1383862ff6b",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "independent_review_sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "independent_build_sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05TangentialGradientArrays.log",
+      "independent_log_sha256": "1c4fce524f422f2a8cc2cf7a10cd1d8334918ce6100d8d12d5f9a1383862ff6b",
+      "declarations": [
+        "OQ14.Packet05TangentialGradientArrays.tangential_gradient_arrays"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedTangentialGradient",
+      "reports": 1,
+      "source_sha256": "d9517f49ad6bbd0aa279b1ee700acdd29c8508a97f0d5bc7c2eab5289a1ab2f7",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedTangentialGradient-chain.log",
+      "audit_log_sha256": "845b2d8379759216d8eca71fa9a63e2bcfb9f61675392c061a7bdf7e0ea3e467",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "independent_review_sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "independent_build_sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedTangentialGradient.log",
+      "independent_log_sha256": "845b2d8379759216d8eca71fa9a63e2bcfb9f61675392c061a7bdf7e0ea3e467",
+      "declarations": [
+        "OQ14.Packet05LocalizedTangentialGradient.localized_gradient_derivatives"
+      ]
+    },
+    {
+      "module": "Packet05NestedTangentialRepresentative",
+      "reports": 1,
+      "source_sha256": "f4e2cb43770446d9196a675c8b3ed87aa098130c082825ea5f497a7268b5c13a",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedTangentialRepresentative-chain.log",
+      "audit_log_sha256": "817b84fefe81579806830e84dc583d6cb792a07fb2df44e90e60c433fbcfd3af",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "independent_review_sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "independent_build_sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedTangentialRepresentative.log",
+      "independent_log_sha256": "817b84fefe81579806830e84dc583d6cb792a07fb2df44e90e60c433fbcfd3af",
+      "declarations": [
+        "OQ14.Packet05NestedTangentialRepresentative.nested_tangential_representative"
+      ]
+    },
+    {
+      "module": "Packet05NestedTangentialUniform",
+      "reports": 1,
+      "source_sha256": "581db7e359f91974a0142509bf25550576942caab424c6727aa6584445086f53",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedTangentialUniform-chain.log",
+      "audit_log_sha256": "ca6f3ebac32afded26856c745329e99839c826b1d622ac9198d03d9ed056eced",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "independent_review_sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "independent_build_sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedTangentialUniform.log",
+      "independent_log_sha256": "ca6f3ebac32afded26856c745329e99839c826b1d622ac9198d03d9ed056eced",
+      "declarations": [
+        "OQ14.Packet05NestedTangentialUniform.nested_tangential_uniform"
+      ]
+    },
+    {
+      "module": "Packet05NestedChartPhysicalAdapter",
+      "reports": 1,
+      "source_sha256": "5f8023696913ebad8f0dd48afc8dc3041068527e05a62d3fdec60ee649282d8e",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedChartPhysicalAdapter-chain.log",
+      "audit_log_sha256": "651d33e01e8a80083c7b7f6eea00098aa74be047953ad2e554a74ee3d2dab63b",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "independent_review_sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "independent_build_sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedChartPhysicalAdapter.log",
+      "independent_log_sha256": "651d33e01e8a80083c7b7f6eea00098aa74be047953ad2e554a74ee3d2dab63b",
+      "declarations": [
+        "OQ14.Packet05NestedChartPhysicalAdapter.nested_chart_physical_adapter"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeBinaryForcing",
+      "reports": 1,
+      "source_sha256": "96ff26b12ff1671eebc5dbe40c6b97dd19b060d94a062335619db39f63206406",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeBinaryForcing-chain.log",
+      "audit_log_sha256": "f261973f171b5eef889b1141f1cc0d307df28b8a7bef271333d157b09eacb77e",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "independent_review_sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "independent_build_sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeBinaryForcing.log",
+      "independent_log_sha256": "f261973f171b5eef889b1141f1cc0d307df28b8a7bef271333d157b09eacb77e",
+      "declarations": [
+        "OQ14.Packet05QuantitativeBinaryForcing.binary_forcing_arrays"
+      ]
+    },
+    {
+      "module": "Packet05GraphH2Norm",
+      "reports": 4,
+      "source_sha256": "3e2cd1b0a168393d4a7275030e5f8c80532a54a3850f1105835a918eaf54b661",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05GraphH2Norm-chain.log",
+      "audit_log_sha256": "fe2d7e7edbaf6e84b3bf30a7e90f187430f44c5423dc94b84720c0a7ef5d4883",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "independent_review_sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "independent_build_sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05GraphH2Norm.log",
+      "independent_log_sha256": "fe2d7e7edbaf6e84b3bf30a7e90f187430f44c5423dc94b84720c0a7ef5d4883",
+      "declarations": [
+        "OQ14.Packet05GraphH2Norm.bounded_multiply_norm",
+        "OQ14.Packet05GraphH2Norm.slope_multiply_norm",
+        "OQ14.Packet05GraphH2Norm.pulled_gradient_norm",
+        "OQ14.Packet05GraphH2Norm.graph_pullback_h2_bounded"
+      ]
+    },
+    {
+      "module": "Packet05MultiplierH2Norm",
+      "reports": 1,
+      "source_sha256": "382a90091dedd17d11a99f9f64254d94f6b84c8249048d961c00f9f0d98893a7",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05MultiplierH2Norm-chain.log",
+      "audit_log_sha256": "b3af73454062a0bbb116f162606b9d35ff89ca7a66e8acb4bb41a026aa0acd6a",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "independent_review_sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "independent_build_sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05MultiplierH2Norm.log",
+      "independent_log_sha256": "b3af73454062a0bbb116f162606b9d35ff89ca7a66e8acb4bb41a026aa0acd6a",
+      "declarations": [
+        "OQ14.Packet05MultiplierH2Norm.bounded_multiplier_h2_norm"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeGraphPiola",
+      "reports": 1,
+      "source_sha256": "3c2c09eb5551c2bff0e19fbfe5547d1f5944eadc671101e09afa88bf5e8d96d8",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeGraphPiola-chain.log",
+      "audit_log_sha256": "e02e31cdb00664a840a380ecb62d0b2a118c8c58ca2981d3d06cd9d4d3537f21",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "independent_review_sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "independent_build_sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeGraphPiola.log",
+      "independent_log_sha256": "e02e31cdb00664a840a380ecb62d0b2a118c8c58ca2981d3d06cd9d4d3537f21",
+      "declarations": [
+        "OQ14.Packet05QuantitativeGraphPiola.graph_piola_h2_uniform"
+      ]
+    },
+    {
+      "module": "Packet05UniformGraphForcing",
+      "reports": 1,
+      "source_sha256": "0eb771c269099ccbfebcd8fabca71c64d6b5e815fa32fc729675e82037582b1e",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformGraphForcing-chain.log",
+      "audit_log_sha256": "627b9403ff5b6c5f49fd31fdf9c5083319fc8cc7a5fc6fe1aaca1f0c389ad409",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "independent_review_sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "independent_build_sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformGraphForcing.log",
+      "independent_log_sha256": "627b9403ff5b6c5f49fd31fdf9c5083319fc8cc7a5fc6fe1aaca1f0c389ad409",
+      "declarations": [
+        "OQ14.Packet05UniformGraphForcing.graph_binary_forcing_uniform"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeNestedAlignment",
+      "reports": 1,
+      "source_sha256": "16b76dd23f116e16fd57d31640021b93cdf269cefd0c50351346ba70409b3a90",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeNestedAlignment-chain.log",
+      "audit_log_sha256": "9cb43a00745b4ea72d68b26d22ff870d81f23edda6e8b74de4cec418c7c9e53c",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "independent_review_sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "independent_build_sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeNestedAlignment.log",
+      "independent_log_sha256": "9cb43a00745b4ea72d68b26d22ff870d81f23edda6e8b74de4cec418c7c9e53c",
+      "declarations": [
+        "OQ14.Packet05QuantitativeNestedAlignment.align_nested_derivatives"
+      ]
+    },
+    {
+      "module": "Packet05EnergyEnvelopeMonotone",
+      "reports": 1,
+      "source_sha256": "461db91550e06191414ec73c41ab9cfd548dde00270752097d1076e1456ed6b2",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05EnergyEnvelopeMonotone-chain.log",
+      "audit_log_sha256": "db03139f38315edd585ec2388beea80aba82f2efdfb92a20e6c117cdf95faeec",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "independent_review_sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "independent_build_sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05EnergyEnvelopeMonotone.log",
+      "independent_log_sha256": "db03139f38315edd585ec2388beea80aba82f2efdfb92a20e6c117cdf95faeec",
+      "declarations": [
+        "OQ14.Packet05EnergyEnvelopeMonotone.envelope_mono"
+      ]
+    },
+    {
+      "module": "Packet05SecondEnvelope",
+      "reports": 4,
+      "source_sha256": "da97301ba188ebaa7e3acca8532b06746ff9c1d99b8a2dde53bbd87e6f3c0941",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05SecondEnvelope-chain.log",
+      "audit_log_sha256": "6be11e67dbb41bef1273c5d9f21493f4f225229c6172b0609df97e5b24019840",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "independent_review_sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "independent_build_sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05SecondEnvelope.log",
+      "independent_log_sha256": "6be11e67dbb41bef1273c5d9f21493f4f225229c6172b0609df97e5b24019840",
+      "declarations": [
+        "OQ14.Packet05SecondEnvelope.first_nonneg",
+        "OQ14.Packet05SecondEnvelope.first_mono",
+        "OQ14.Packet05SecondEnvelope.gradient_mono",
+        "OQ14.Packet05SecondEnvelope.forcing_mono"
+      ]
+    },
+    {
+      "module": "Packet05SecondEnvelopeOriginal",
+      "reports": 2,
+      "source_sha256": "6d9a0ad89c8c0c23d48e7de200c31366431d3ac2a40befb44dbf4e0444dc42d5",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05SecondEnvelopeOriginal-chain.log",
+      "audit_log_sha256": "bb4a829b4274ed9af920b3a4738c84c6530758bc5d6670a3ede69ba6d318df9c",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "independent_review_sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "independent_build_sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05SecondEnvelopeOriginal.log",
+      "independent_log_sha256": "bb4a829b4274ed9af920b3a4738c84c6530758bc5d6670a3ede69ba6d318df9c",
+      "declarations": [
+        "OQ14.Packet05SecondEnvelopeOriginal.actual_first_le",
+        "OQ14.Packet05SecondEnvelopeOriginal.actual_second_numerical_le"
+      ]
+    },
+    {
+      "module": "Packet05ActualSecondUniformBound",
+      "reports": 1,
+      "source_sha256": "1fc685f90d27fdd3d1b5f44bad32a92947dd7f6afdc63569ae67d1d4b6eab390",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05ActualSecondUniformBound-chain.log",
+      "audit_log_sha256": "c133d064fd2187c9105126ab9f56554581c94eeab7dcb70f218cb1c08f6bdf47",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "independent_review_sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "independent_build_sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05ActualSecondUniformBound.log",
+      "independent_log_sha256": "c133d064fd2187c9105126ab9f56554581c94eeab7dcb70f218cb1c08f6bdf47",
+      "declarations": [
+        "OQ14.Packet05ActualSecondUniformBound.actual_second_uniform_bound"
+      ]
+    },
+    {
+      "module": "Packet06UniformGreenOperators",
+      "reports": 5,
+      "source_sha256": "627fe461f07fc43e1391ab47f3d422882792b2d599d615c1aba727a5a44eba6f",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet06UniformGreenOperators-chain.log",
+      "audit_log_sha256": "57948c7ac9c79c71b357f11b3ae67a36dce6555ffa1a25b3d6cc0f75a7c00e44",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/operator-root-review.txt",
+      "independent_review_sha256": "139468033bd324f650588d207ec8bdaff0fc67edc8cc370457c2751f961427de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/operator-root-build.json",
+      "independent_build_sha256": "b609fe28adf41f4566862ae9af4d80f730cb7c19a88ba11d7cdcd3ceda3145fd",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet06UniformGreenOperators.log",
+      "independent_log_sha256": "57948c7ac9c79c71b357f11b3ae67a36dce6555ffa1a25b3d6cc0f75a7c00e44",
+      "declarations": [
+        "OQ14.Packet06UniformGreenOperators.hessian_eq",
+        "OQ14.Packet06UniformGreenOperators.hessian_uniform",
+        "OQ14.Packet06UniformGreenOperators.phi_uniform",
+        "OQ14.Packet06UniformGreenOperators.gradient_eq",
+        "OQ14.Packet06UniformGreenOperators.gradient_uniform"
+      ]
+    },
+    {
+      "module": "Packet05GreenRepresentativeBounds",
+      "reports": 4,
+      "source_sha256": "44cdb96757c4d843874413d0edc1fb6b04f108d608d5616cc8078168616324ea",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05GreenRepresentativeBounds-chain.log",
+      "audit_log_sha256": "61cd8215e216746c8d635422ecff83129909ec5d9b8ae5b62f54bb9b6931cd43",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05GreenRepresentativeBounds.log",
+      "independent_log_sha256": "61cd8215e216746c8d635422ecff83129909ec5d9b8ae5b62f54bb9b6931cd43",
+      "declarations": [
+        "OQ14.Packet05GreenRepresentativeBounds.ball_norm_le",
+        "OQ14.Packet05GreenRepresentativeBounds.response_representative_norm",
+        "OQ14.Packet05GreenRepresentativeBounds.scalarSource_eq_insert",
+        "OQ14.Packet05GreenRepresentativeBounds.static_hessian_norm"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeCompactGreen",
+      "reports": 1,
+      "source_sha256": "809d516a11fe67131376e2ea3ef4ebc147ff0eb265c276da1a7828e10776ef72",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeCompactGreen-chain.log",
+      "audit_log_sha256": "34f0c9ba591fe4c42afda5d44b5f949a7bce48e6668176b87d4bded743f88873",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeCompactGreen.log",
+      "independent_log_sha256": "34f0c9ba591fe4c42afda5d44b5f949a7bce48e6668176b87d4bded743f88873",
+      "declarations": [
+        "OQ14.Packet05QuantitativeCompactGreen.quantitative_compact_green"
+      ]
+    },
+    {
+      "module": "Packet05ContinuousH2Bound",
+      "reports": 1,
+      "source_sha256": "4cdb86c8f61dc7ac3f62bc7033b1690476cff29e3eff42c12378ffbb927b3090",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05ContinuousH2Bound-chain.log",
+      "audit_log_sha256": "d85021cd06f941bd0fa1c807058fe69c8c06a74cba8c88044723e986502fb48d",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05ContinuousH2Bound.log",
+      "independent_log_sha256": "d85021cd06f941bd0fa1c807058fe69c8c06a74cba8c88044723e986502fb48d",
+      "declarations": [
+        "OQ14.Packet05ContinuousH2Bound.continuous_h2_bound"
+      ]
+    },
+    {
+      "module": "Packet05UniformCompactGreen",
+      "reports": 2,
+      "source_sha256": "68c2b073d650b02c74214adc2578ef8aad106491c95512c23a859dc7b2bc12e9",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformCompactGreen-chain.log",
+      "audit_log_sha256": "172277c14fcc12b8cb720e5295216c2e958af4cef5ae4eaade48e7fc4b0752a9",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformCompactGreen.log",
+      "independent_log_sha256": "172277c14fcc12b8cb720e5295216c2e958af4cef5ae4eaade48e7fc4b0752a9",
+      "declarations": [
+        "OQ14.Packet05UniformCompactGreen.test_bounds",
+        "OQ14.Packet05UniformCompactGreen.uniform_compact_green"
+      ]
+    },
+    {
+      "module": "Packet05UniformCompactCorrection",
+      "reports": 1,
+      "source_sha256": "19346c736252c9f0722948f672bb3f3dc76b9a00eb8f59b0a4b6987fd83e004e",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformCompactCorrection-chain.log",
+      "audit_log_sha256": "dcffa4cb4ce4a8c8ae774420f3873c3f9e14f3cd36b9f7931aee6a833dd6e214",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformCompactCorrection.log",
+      "independent_log_sha256": "dcffa4cb4ce4a8c8ae774420f3873c3f9e14f3cd36b9f7931aee6a833dd6e214",
+      "declarations": [
+        "OQ14.Packet05UniformCompactCorrection.uniform_compact_correction"
+      ]
+    },
+    {
+      "module": "Packet05UniformMaterialCorrection",
+      "reports": 2,
+      "source_sha256": "cb4aac7a96bb66b7fa181102959e3ff006558fb6733a3e0d06aeec5fcc5255dd",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformMaterialCorrection-chain.log",
+      "audit_log_sha256": "4355a7932072521cbdd8d254630361ff8a3b7569e6b104ea0ed9cb71c7e0d060",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "independent_review_sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "independent_build_sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformMaterialCorrection.log",
+      "independent_log_sha256": "4355a7932072521cbdd8d254630361ff8a3b7569e6b104ea0ed9cb71c7e0d060",
+      "declarations": [
+        "OQ14.Packet05UniformMaterialCorrection.material_source_norm",
+        "OQ14.Packet05UniformMaterialCorrection.material_family_correction"
+      ]
+    },
+    {
+      "module": "Packet05RoundedCorrectionBounds",
+      "reports": 2,
+      "source_sha256": "37a1b4302196d9df1b3844e743395916e4650ed935a723ac68f13f3b1ad35bea",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedCorrectionBounds-chain.log",
+      "audit_log_sha256": "b5ede9de7b0c2f6cbb32caf755346e9729c596fe061ca683d51a6f2288bc322b",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/rounded-review.txt",
+      "independent_review_sha256": "c2d82a8b786d7c3507426958d1df1803a9c2bd5762d11f5e1bdf4a46e9459f09",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/rounded-build.json",
+      "independent_build_sha256": "beec96fcb734c31bda04a3fd2bb0692d9db0ed4fbadfeb9d0c4306aab82c3d65",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedCorrectionBounds.log",
+      "independent_log_sha256": "b5ede9de7b0c2f6cbb32caf755346e9729c596fe061ca683d51a6f2288bc322b",
+      "declarations": [
+        "OQ14.Packet05RoundedCorrectionBounds.rounded_family_envelope",
+        "OQ14.Packet05RoundedCorrectionBounds.rounded_family_correction"
+      ]
+    },
+    {
+      "module": "Packet05RoundedActualCorrection",
+      "reports": 1,
+      "source_sha256": "bf87b206de3b5ff1b285b8aef6ffc1a9b3923e5f233d1fbdda45c530bf3776e4",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedActualCorrection-chain.log",
+      "audit_log_sha256": "4e6b430f43669204219862d2992009303a38ea280462ee9c761799ac8e3a88b5",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/actual-review.txt",
+      "independent_review_sha256": "c2d82a8b786d7c3507426958d1df1803a9c2bd5762d11f5e1bdf4a46e9459f09",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/actual-build.json",
+      "independent_build_sha256": "5b6e67580759c2ae23438ddfbc700507084ef6c2d2bdc6ee68e936ebc5d45210",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedActualCorrection.log",
+      "independent_log_sha256": "4e6b430f43669204219862d2992009303a38ea280462ee9c761799ac8e3a88b5",
+      "declarations": [
+        "OQ14.Packet05RoundedActualCorrection.rounded_actual_correction"
+      ]
+    },
+    {
+      "module": "Packet05NormalFluxEnvelope",
+      "reports": 4,
+      "source_sha256": "942741ce93b53cfb9f5f32fe82a5a0f218cad9fbcd286adc216e9e727e5bec64",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NormalFluxEnvelope-chain.log",
+      "audit_log_sha256": "ff865b6cda941b6c739be2ead0e08183cdd19079307e4cdbd0d6492247f918a3",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NormalFluxEnvelope.log",
+      "independent_log_sha256": "ff865b6cda941b6c739be2ead0e08183cdd19079307e4cdbd0d6492247f918a3",
+      "declarations": [
+        "OQ14.Packet05NormalFluxEnvelope.size_le_three",
+        "OQ14.Packet05NormalFluxEnvelope.first_bound_envelope",
+        "OQ14.Packet05NormalFluxEnvelope.second_bound_envelope",
+        "OQ14.Packet05NormalFluxEnvelope.total_flux_envelope"
+      ]
+    },
+    {
+      "module": "Packet05AssembledArrayCeiling",
+      "reports": 1,
+      "source_sha256": "e3e8226ea94cfa7b68fab75d0f33fad07c390174c3df9472e92471f2d4ed1c93",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05AssembledArrayCeiling-chain.log",
+      "audit_log_sha256": "8a5c7097243cb63022ef12dc52fb9fa13a56f450b2b6f577803025acfe8d6a7f",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05AssembledArrayCeiling.log",
+      "independent_log_sha256": "8a5c7097243cb63022ef12dc52fb9fa13a56f450b2b6f577803025acfe8d6a7f",
+      "declarations": [
+        "OQ14.Packet05AssembledArrayCeiling.assembled_ceiling"
+      ]
+    },
+    {
+      "module": "Packet05TangentialAssemblyCeiling",
+      "reports": 2,
+      "source_sha256": "dd998f988b4c16ada80ea516e6500b2d44ce70ec03256ce213fb6f884d55e1bd",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05TangentialAssemblyCeiling-chain.log",
+      "audit_log_sha256": "3a6c99263c07486ebeabf3aaab5a0db272f8e550d60eb7d31f8fd22bf52e91a3",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05TangentialAssemblyCeiling.log",
+      "independent_log_sha256": "3a6c99263c07486ebeabf3aaab5a0db272f8e550d60eb7d31f8fd22bf52e91a3",
+      "declarations": [
+        "OQ14.Packet05TangentialAssemblyCeiling.first_local_ceiling",
+        "OQ14.Packet05TangentialAssemblyCeiling.second_local_ceiling"
+      ]
+    },
+    {
+      "module": "Packet05NormalFluxUniformCeiling",
+      "reports": 1,
+      "source_sha256": "9e45019014050dae48d9aefc3e9e9e4e759e96630eb8249a8a6a0ca3d228b3a4",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NormalFluxUniformCeiling-chain.log",
+      "audit_log_sha256": "90585e6d221a459666ce3bbef78faed95da9c3f06570b8d05d56a8746f5db407",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NormalFluxUniformCeiling.log",
+      "independent_log_sha256": "90585e6d221a459666ce3bbef78faed95da9c3f06570b8d05d56a8746f5db407",
+      "declarations": [
+        "OQ14.Packet05NormalFluxUniformCeiling.uniform_flux_ceiling"
+      ]
+    },
+    {
+      "module": "Packet05PairedArrayCeiling",
+      "reports": 1,
+      "source_sha256": "e039ab2cf9d416dc1f84577ceabbbc743c79dc06bf2a14f608283aa2c1a3f9e3",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PairedArrayCeiling-chain.log",
+      "audit_log_sha256": "9c40d117670c92e7ff4b3b6f1c0cc8488da6395f1964ecf3d24bc54c77650468",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PairedArrayCeiling.log",
+      "independent_log_sha256": "9c40d117670c92e7ff4b3b6f1c0cc8488da6395f1964ecf3d24bc54c77650468",
+      "declarations": [
+        "OQ14.Packet05PairedArrayCeiling.paired_ceiling"
+      ]
+    },
+    {
+      "module": "Packet05UniformChartPhysicalAdapter",
+      "reports": 1,
+      "source_sha256": "075f81a82bd91e20869d4eed5572e64ad041e4fdd20397cbb79ba8285fb6d4bb",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformChartPhysicalAdapter-chain.log",
+      "audit_log_sha256": "028531ec60f2200a943ada181d44ece8275f6b2407a212c50927278aee2f0477",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformChartPhysicalAdapter.log",
+      "independent_log_sha256": "028531ec60f2200a943ada181d44ece8275f6b2407a212c50927278aee2f0477",
+      "declarations": [
+        "OQ14.Packet05UniformChartPhysicalAdapter.uniform_chart_physical_adapter"
+      ]
+    },
+    {
+      "module": "Packet05RegionalUniformChart",
+      "reports": 1,
+      "source_sha256": "40e6e219d885f499f87ac964d93b6fedecd6498736484358a2f14baef1717e27",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RegionalUniformChart-chain.log",
+      "audit_log_sha256": "6367d8262e3de5bc25cdf9f079d0df84754840c724e01a4ac28b92b3495cc1fd",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RegionalUniformChart.log",
+      "independent_log_sha256": "6367d8262e3de5bc25cdf9f079d0df84754840c724e01a4ac28b92b3495cc1fd",
+      "declarations": [
+        "OQ14.Packet05RegionalUniformChart.regional_uniform_chart"
+      ]
+    },
+    {
+      "module": "Packet05RoundedFixedCollar",
+      "reports": 1,
+      "source_sha256": "8fe0bc21c82520e6bddee343400c45d14c57fa09a191d48b36c8bb5ee03f2488",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedFixedCollar-chain.log",
+      "audit_log_sha256": "5799cedef7b3060876a34c045acee53d3783620603c42aa2514833358f346a13",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedFixedCollar.log",
+      "independent_log_sha256": "5799cedef7b3060876a34c045acee53d3783620603c42aa2514833358f346a13",
+      "declarations": [
+        "OQ14.Packet05RoundedFixedCollar.eventually_body_annulus"
+      ]
+    },
+    {
+      "module": "Packet05RoundedFixedCollarMaterial",
+      "reports": 1,
+      "source_sha256": "e162bed99e59784aeaab1f7561576b2b93a00773d8d471e53cd42b2df5681468",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedFixedCollarMaterial-chain.log",
+      "audit_log_sha256": "fb0f6554aa40cf0a6eed59215e16340d9fe98a4d53dec5db3f27bc5d22958d94",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedFixedCollarMaterial.log",
+      "independent_log_sha256": "fb0f6554aa40cf0a6eed59215e16340d9fe98a4d53dec5db3f27bc5d22958d94",
+      "declarations": [
+        "OQ14.Packet05RoundedFixedCollarMaterial.eventually_fixed_annulus_material"
+      ]
+    },
+    {
+      "module": "Packet05FixedCollarReference",
+      "reports": 1,
+      "source_sha256": "1d7a6abf31abcf288cf5d30e39de09692e96d2d7376767788e5802e38114faa8",
+      "audit_log": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05FixedCollarReference-chain.log",
+      "audit_log_sha256": "980b3f52620cdb871fdbd16382655bacefda558ad8e71f18a2639074660913d8",
+      "independent_review": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "independent_review_sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "independent_build_sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f",
+      "independent_log": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05FixedCollarReference.log",
+      "independent_log_sha256": "980b3f52620cdb871fdbd16382655bacefda558ad8e71f18a2639074660913d8",
+      "declarations": [
+        "OQ14.Packet05FixedCollarReference.fixed_reference_body"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/audited_after_5238-stage106.json",
+      "sha256": "85200c59a2e678d9b3a7b6b7aebc0fce48b547b0752e0d65b7f8b27cfe14db01"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/chain-build.json",
+      "sha256": "3f2b8fc93a54bd284fcd2c9a7eadf207124bbe38777ed800242760e051871832"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05ActualSecondUniformBound-chain.log",
+      "sha256": "c133d064fd2187c9105126ab9f56554581c94eeab7dcb70f218cb1c08f6bdf47"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05AssembledArrayCeiling-chain.log",
+      "sha256": "8a5c7097243cb63022ef12dc52fb9fa13a56f450b2b6f577803025acfe8d6a7f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05AssembleTangentialArrays-chain.log",
+      "sha256": "5f4708d69fed9f88ad4b5fe23460e0a2e5f3c4a477e90ade20d86cbf12cea275"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05ContinuousH2Bound-chain.log",
+      "sha256": "d85021cd06f941bd0fa1c807058fe69c8c06a74cba8c88044723e986502fb48d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05EnergyEnvelopeMonotone-chain.log",
+      "sha256": "db03139f38315edd585ec2388beea80aba82f2efdfb92a20e6c117cdf95faeec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05FixedCollarReference-chain.log",
+      "sha256": "980b3f52620cdb871fdbd16382655bacefda558ad8e71f18a2639074660913d8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05GraphH2Norm-chain.log",
+      "sha256": "fe2d7e7edbaf6e84b3bf30a7e90f187430f44c5423dc94b84720c0a7ef5d4883"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05GreenRepresentativeBounds-chain.log",
+      "sha256": "61cd8215e216746c8d635422ecff83129909ec5d9b8ae5b62f54bb9b6931cd43"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedChartArrayAdapter-chain.log",
+      "sha256": "7892c5842de3cb388c20f0e7a8960ddddccfbd18f6fd199bc62512e80a47f7d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedChartScalarAdapter-chain.log",
+      "sha256": "1e3de5b9ad7798d1cd31fbad07d5968eeded9621f870bb9a0bd60129d95ebe2e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedNormalFluxBound-chain.log",
+      "sha256": "c053fad965fe18b775421893bd578214c290827b8e0ff38ff1ed8c3c727360bd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05LocalizedTangentialGradient-chain.log",
+      "sha256": "845b2d8379759216d8eca71fa9a63e2bcfb9f61675392c061a7bdf7e0ea3e467"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05MultiplierH2Norm-chain.log",
+      "sha256": "b3af73454062a0bbb116f162606b9d35ff89ca7a66e8acb4bb41a026aa0acd6a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedChartPhysicalAdapter-chain.log",
+      "sha256": "651d33e01e8a80083c7b7f6eea00098aa74be047953ad2e554a74ee3d2dab63b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedTangentialRepresentative-chain.log",
+      "sha256": "817b84fefe81579806830e84dc583d6cb792a07fb2df44e90e60c433fbcfd3af"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NestedTangentialUniform-chain.log",
+      "sha256": "ca6f3ebac32afded26856c745329e99839c826b1d622ac9198d03d9ed056eced"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NormalFluxEnvelope-chain.log",
+      "sha256": "ff865b6cda941b6c739be2ead0e08183cdd19079307e4cdbd0d6492247f918a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05NormalFluxUniformCeiling-chain.log",
+      "sha256": "90585e6d221a459666ce3bbef78faed95da9c3f06570b8d05d56a8746f5db407"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PairedArrayCeiling-chain.log",
+      "sha256": "9c40d117670c92e7ff4b3b6f1c0cc8488da6395f1964ecf3d24bc54c77650468"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PhaseAEBound-chain.log",
+      "sha256": "0065732af3ad1e563256fa839c65a962471418091fc8e910e95fa898259e54a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PhysicalHalfspaceClosure-chain.log",
+      "sha256": "eb3f477c565b0236716158ae02ce3ba7dcbab3d691dbcf1761c58f3325192164"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05PlateauGraphFlux-chain.log",
+      "sha256": "31e9484db58043e5b56c9fb1ed2b1a73e378b64f5b9b6f9c3b19956fab82dfab"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeBinaryForcing-chain.log",
+      "sha256": "f261973f171b5eef889b1141f1cc0d307df28b8a7bef271333d157b09eacb77e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeCompactGreen-chain.log",
+      "sha256": "34f0c9ba591fe4c42afda5d44b5f949a7bce48e6668176b87d4bded743f88873"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeGraphPiola-chain.log",
+      "sha256": "e02e31cdb00664a840a380ecb62d0b2a118c8c58ca2981d3d06cd9d4d3537f21"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeLocalArrays-chain.log",
+      "sha256": "62d38f86317252bc169c80c6f699f4231ed15821c334d27175b3f474081a9040"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeMaterialClosures-chain.log",
+      "sha256": "e14d9e571843c012b19d6ff8666585c829bba59c5565f2169ab52540c533ec5d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeMaterialPhases-chain.log",
+      "sha256": "3e6821e8f1b137ce770abda475ec2ab4188faa94cd7d552db0832bd370420e66"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05QuantitativeNestedAlignment-chain.log",
+      "sha256": "9cb43a00745b4ea72d68b26d22ff870d81f23edda6e8b74de4cec418c7c9e53c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RegionalUniformChart-chain.log",
+      "sha256": "6367d8262e3de5bc25cdf9f079d0df84754840c724e01a4ac28b92b3495cc1fd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedActualCorrection-chain.log",
+      "sha256": "4e6b430f43669204219862d2992009303a38ea280462ee9c761799ac8e3a88b5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedCorrectionBounds-chain.log",
+      "sha256": "b5ede9de7b0c2f6cbb32caf755346e9729c596fe061ca683d51a6f2288bc322b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedFixedCollar-chain.log",
+      "sha256": "5799cedef7b3060876a34c045acee53d3783620603c42aa2514833358f346a13"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05RoundedFixedCollarMaterial-chain.log",
+      "sha256": "fb0f6554aa40cf0a6eed59215e16340d9fe98a4d53dec5db3f27bc5d22958d94"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05SecondEnvelope-chain.log",
+      "sha256": "6be11e67dbb41bef1273c5d9f21493f4f225229c6172b0609df97e5b24019840"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05SecondEnvelopeOriginal-chain.log",
+      "sha256": "bb4a829b4274ed9af920b3a4738c84c6530758bc5d6670a3ede69ba6d318df9c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05TangentialAssemblyCeiling-chain.log",
+      "sha256": "3a6c99263c07486ebeabf3aaab5a0db272f8e550d60eb7d31f8fd22bf52e91a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05TangentialGradientArrays-chain.log",
+      "sha256": "1c4fce524f422f2a8cc2cf7a10cd1d8334918ce6100d8d12d5f9a1383862ff6b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformChartPhysicalAdapter-chain.log",
+      "sha256": "028531ec60f2200a943ada181d44ece8275f6b2407a212c50927278aee2f0477"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformCompactCorrection-chain.log",
+      "sha256": "dcffa4cb4ce4a8c8ae774420f3873c3f9e14f3cd36b9f7931aee6a833dd6e214"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformCompactGreen-chain.log",
+      "sha256": "172277c14fcc12b8cb720e5295216c2e958af4cef5ae4eaade48e7fc4b0752a9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformGraphForcing-chain.log",
+      "sha256": "627b9403ff5b6c5f49fd31fdf9c5083319fc8cc7a5fc6fe1aaca1f0c389ad409"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet05UniformMaterialCorrection-chain.log",
+      "sha256": "4355a7932072521cbdd8d254630361ff8a3b7569e6b104ea0ed9cb71c7e0d060"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/evidence/Packet06UniformGreenOperators-chain.log",
+      "sha256": "57948c7ac9c79c71b357f11b3ae67a36dce6555ffa1a25b3d6cc0f75a7c00e44"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/modules.json",
+      "sha256": "54eb2527b52917495ba62b969fed536e8d58ce5560307755fc2a5c6239998ce7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/provenance-audit.json",
+      "sha256": "e5de926b1f7150f6376ed05b4ddbaaaa36a8c5bd8eab35ac2087b17caa7869a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/actual-build.json",
+      "sha256": "5b6e67580759c2ae23438ddfbc700507084ef6c2d2bdc6ee68e936ebc5d45210"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/actual-review.txt",
+      "sha256": "c2d82a8b786d7c3507426958d1df1803a9c2bd5762d11f5e1bdf4a46e9459f09"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/ae-build.json",
+      "sha256": "5246109f3c10d85b5fbb39e60d57aded69c3b674fddd3d04877a3be68d32d487"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/ae-review.txt",
+      "sha256": "18d678a9324d867cfffdf0f542f612ba535a3fbd1e77de2cfab28365cd7aeaf7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/author-inventory.json",
+      "sha256": "80eaa865cc76923be410f8bed1ae3d44d7bd050fe891bdad698168587f46540b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-build.json",
+      "sha256": "e7466db200bc2a00ddeee72665dfd475a173af3bb664a931679d741714a10937"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/forcing-review.txt",
+      "sha256": "3d29b97499a487db00cf7fe82eacbf60ae77a39e9ba23ea61ec992cfaaea9ee7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-build.json",
+      "sha256": "6b1e24b1409f70ef6a467ac24cee580a044046eeed22ad300720ab703229f8af"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/green-review.txt",
+      "sha256": "27bb17f13f29d3c1bca8f29ced7609314f360d90a4a201bb01ce53af1a9a2245"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/independent-index.json",
+      "sha256": "0df8ece9fe906ae17eeb8e54167817f1f6eddb30e628d3a77fc1f12332c8ce85"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-build.json",
+      "sha256": "14cba252cef4f9d79ae842bc32b9e9738b0af84baf3e329f0c2797add0ca2399"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/iteration-review.txt",
+      "sha256": "c352449fadba8028c5c67527b19e88e8a7231119a4db9d7bc7cb6f2f3293a15b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-build.json",
+      "sha256": "764888a6e816cbdf4bc2d3a22046eeffe7cb45f6c6c0c54f17dec765535a5172"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/localized-review.txt",
+      "sha256": "6f7a2af46398d153ec4a0995e35dca05786be0b81de6f7e3b9e3c62745a5ba3f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/metadata-normalization.json",
+      "sha256": "00232ba0f87a195dd07e75621ee3f38f49ef767e04ca1718cdeefc47ca1bcf99"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-build.json",
+      "sha256": "1768da3e80f3c29d871da16a0dfe5dc0227554d11bc97c653dad2034f2061131"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/nested-review.txt",
+      "sha256": "1d11e1ae26b9f991d5b8fc1ef182e4d3869ce44bf2553cafe1a6b3e790b76cef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/operator-root-build.json",
+      "sha256": "b609fe28adf41f4566862ae9af4d80f730cb7c19a88ba11d7cdcd3ceda3145fd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/operator-root-review.txt",
+      "sha256": "139468033bd324f650588d207ec8bdaff0fc67edc8cc370457c2751f961427de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05ActualSecondUniformBound.log",
+      "sha256": "c133d064fd2187c9105126ab9f56554581c94eeab7dcb70f218cb1c08f6bdf47"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05AssembledArrayCeiling.log",
+      "sha256": "8a5c7097243cb63022ef12dc52fb9fa13a56f450b2b6f577803025acfe8d6a7f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05AssembleTangentialArrays.log",
+      "sha256": "5f4708d69fed9f88ad4b5fe23460e0a2e5f3c4a477e90ade20d86cbf12cea275"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05ContinuousH2Bound.log",
+      "sha256": "d85021cd06f941bd0fa1c807058fe69c8c06a74cba8c88044723e986502fb48d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05EnergyEnvelopeMonotone.log",
+      "sha256": "db03139f38315edd585ec2388beea80aba82f2efdfb92a20e6c117cdf95faeec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05FixedCollarReference.log",
+      "sha256": "980b3f52620cdb871fdbd16382655bacefda558ad8e71f18a2639074660913d8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05GraphH2Norm.log",
+      "sha256": "fe2d7e7edbaf6e84b3bf30a7e90f187430f44c5423dc94b84720c0a7ef5d4883"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05GreenRepresentativeBounds.log",
+      "sha256": "61cd8215e216746c8d635422ecff83129909ec5d9b8ae5b62f54bb9b6931cd43"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedChartArrayAdapter.log",
+      "sha256": "7892c5842de3cb388c20f0e7a8960ddddccfbd18f6fd199bc62512e80a47f7d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedChartScalarAdapter.log",
+      "sha256": "1e3de5b9ad7798d1cd31fbad07d5968eeded9621f870bb9a0bd60129d95ebe2e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedNormalFluxBound.log",
+      "sha256": "c053fad965fe18b775421893bd578214c290827b8e0ff38ff1ed8c3c727360bd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05LocalizedTangentialGradient.log",
+      "sha256": "845b2d8379759216d8eca71fa9a63e2bcfb9f61675392c061a7bdf7e0ea3e467"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05MultiplierH2Norm.log",
+      "sha256": "b3af73454062a0bbb116f162606b9d35ff89ca7a66e8acb4bb41a026aa0acd6a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedChartPhysicalAdapter.log",
+      "sha256": "651d33e01e8a80083c7b7f6eea00098aa74be047953ad2e554a74ee3d2dab63b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedTangentialRepresentative.log",
+      "sha256": "817b84fefe81579806830e84dc583d6cb792a07fb2df44e90e60c433fbcfd3af"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NestedTangentialUniform.log",
+      "sha256": "ca6f3ebac32afded26856c745329e99839c826b1d622ac9198d03d9ed056eced"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NormalFluxEnvelope.log",
+      "sha256": "ff865b6cda941b6c739be2ead0e08183cdd19079307e4cdbd0d6492247f918a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05NormalFluxUniformCeiling.log",
+      "sha256": "90585e6d221a459666ce3bbef78faed95da9c3f06570b8d05d56a8746f5db407"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PairedArrayCeiling.log",
+      "sha256": "9c40d117670c92e7ff4b3b6f1c0cc8488da6395f1964ecf3d24bc54c77650468"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PhaseAEBound.log",
+      "sha256": "0065732af3ad1e563256fa839c65a962471418091fc8e910e95fa898259e54a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PhysicalHalfspaceClosure.log",
+      "sha256": "eb3f477c565b0236716158ae02ce3ba7dcbab3d691dbcf1761c58f3325192164"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05PlateauGraphFlux.log",
+      "sha256": "31e9484db58043e5b56c9fb1ed2b1a73e378b64f5b9b6f9c3b19956fab82dfab"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeBinaryForcing.log",
+      "sha256": "f261973f171b5eef889b1141f1cc0d307df28b8a7bef271333d157b09eacb77e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeCompactGreen.log",
+      "sha256": "34f0c9ba591fe4c42afda5d44b5f949a7bce48e6668176b87d4bded743f88873"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeGraphPiola.log",
+      "sha256": "e02e31cdb00664a840a380ecb62d0b2a118c8c58ca2981d3d06cd9d4d3537f21"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeLocalArrays.log",
+      "sha256": "62d38f86317252bc169c80c6f699f4231ed15821c334d27175b3f474081a9040"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeMaterialClosures.log",
+      "sha256": "e14d9e571843c012b19d6ff8666585c829bba59c5565f2169ab52540c533ec5d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeMaterialPhases.log",
+      "sha256": "3e6821e8f1b137ce770abda475ec2ab4188faa94cd7d552db0832bd370420e66"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05QuantitativeNestedAlignment.log",
+      "sha256": "9cb43a00745b4ea72d68b26d22ff870d81f23edda6e8b74de4cec418c7c9e53c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RegionalUniformChart.log",
+      "sha256": "6367d8262e3de5bc25cdf9f079d0df84754840c724e01a4ac28b92b3495cc1fd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedActualCorrection.log",
+      "sha256": "4e6b430f43669204219862d2992009303a38ea280462ee9c761799ac8e3a88b5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedCorrectionBounds.log",
+      "sha256": "b5ede9de7b0c2f6cbb32caf755346e9729c596fe061ca683d51a6f2288bc322b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedFixedCollar.log",
+      "sha256": "5799cedef7b3060876a34c045acee53d3783620603c42aa2514833358f346a13"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05RoundedFixedCollarMaterial.log",
+      "sha256": "fb0f6554aa40cf0a6eed59215e16340d9fe98a4d53dec5db3f27bc5d22958d94"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05SecondEnvelope.log",
+      "sha256": "6be11e67dbb41bef1273c5d9f21493f4f225229c6172b0609df97e5b24019840"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05SecondEnvelopeOriginal.log",
+      "sha256": "bb4a829b4274ed9af920b3a4738c84c6530758bc5d6670a3ede69ba6d318df9c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05TangentialAssemblyCeiling.log",
+      "sha256": "3a6c99263c07486ebeabf3aaab5a0db272f8e550d60eb7d31f8fd22bf52e91a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05TangentialGradientArrays.log",
+      "sha256": "1c4fce524f422f2a8cc2cf7a10cd1d8334918ce6100d8d12d5f9a1383862ff6b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformChartPhysicalAdapter.log",
+      "sha256": "028531ec60f2200a943ada181d44ece8275f6b2407a212c50927278aee2f0477"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformCompactCorrection.log",
+      "sha256": "dcffa4cb4ce4a8c8ae774420f3873c3f9e14f3cd36b9f7931aee6a833dd6e214"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformCompactGreen.log",
+      "sha256": "172277c14fcc12b8cb720e5295216c2e958af4cef5ae4eaade48e7fc4b0752a9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformGraphForcing.log",
+      "sha256": "627b9403ff5b6c5f49fd31fdf9c5083319fc8cc7a5fc6fe1aaca1f0c389ad409"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet05UniformMaterialCorrection.log",
+      "sha256": "4355a7932072521cbdd8d254630361ff8a3b7569e6b104ea0ed9cb71c7e0d060"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/Packet06UniformGreenOperators.log",
+      "sha256": "57948c7ac9c79c71b357f11b3ae67a36dce6555ffa1a25b3d6cc0f75a7c00e44"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-build.json",
+      "sha256": "db74e2b0257037b117e465511db728cbf2d5f1c21a0d21c044c33a8216ffb42f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/reference-review.txt",
+      "sha256": "1fc84da5a28b00f590a9678f0fce1e9d303eb7d73621bcd8aa7fc77884d71eba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/rounded-build.json",
+      "sha256": "beec96fcb734c31bda04a3fd2bb0692d9db0ed4fbadfeb9d0c4306aab82c3d65"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/reviews/rounded-review.txt",
+      "sha256": "c2d82a8b786d7c3507426958d1df1803a9c2bd5762d11f5e1bdf4a46e9459f09"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/scripts/audit_provenance.ps1",
+      "sha256": "e274e9f294b42fec78ee00278e318db3248cf5f6be916660c772971a79078aae"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/scripts/check_chain.py",
+      "sha256": "4ad1cc2c2380f0a24ceabd7929588b7e1c0b8ef56491d1ed2818a0aa404cfe87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/scripts/freeze_checkpoint.py",
+      "sha256": "1b5cfecfebdaac53ef29c61fa0d979255d8e2d065fe842985114b4250df26890"
+    },
+    {
+      "path": "checkpoints/2026-11-13-uniform-physical-data/STAGE106.txt",
+      "sha256": "99e9a8c463a8b44b00112ee2c66d0726049a23ce29bdf75e8c405f58a9eaa403"
+    },
+    {
+      "path": "lean/Packet05ActualSecondUniformBound.lean",
+      "sha256": "1fc685f90d27fdd3d1b5f44bad32a92947dd7f6afdc63569ae67d1d4b6eab390"
+    },
+    {
+      "path": "lean/Packet05AssembledArrayCeiling.lean",
+      "sha256": "e3e8226ea94cfa7b68fab75d0f33fad07c390174c3df9472e92471f2d4ed1c93"
+    },
+    {
+      "path": "lean/Packet05AssembleTangentialArrays.lean",
+      "sha256": "a80080849c17b6d0311be1d154b9e0ba5b1bb014178dd763b1ed8f9d716d37fc"
+    },
+    {
+      "path": "lean/Packet05ContinuousH2Bound.lean",
+      "sha256": "4cdb86c8f61dc7ac3f62bc7033b1690476cff29e3eff42c12378ffbb927b3090"
+    },
+    {
+      "path": "lean/Packet05EnergyEnvelopeMonotone.lean",
+      "sha256": "461db91550e06191414ec73c41ab9cfd548dde00270752097d1076e1456ed6b2"
+    },
+    {
+      "path": "lean/Packet05FixedCollarReference.lean",
+      "sha256": "1d7a6abf31abcf288cf5d30e39de09692e96d2d7376767788e5802e38114faa8"
+    },
+    {
+      "path": "lean/Packet05GraphH2Norm.lean",
+      "sha256": "3e2cd1b0a168393d4a7275030e5f8c80532a54a3850f1105835a918eaf54b661"
+    },
+    {
+      "path": "lean/Packet05GreenRepresentativeBounds.lean",
+      "sha256": "44cdb96757c4d843874413d0edc1fb6b04f108d608d5616cc8078168616324ea"
+    },
+    {
+      "path": "lean/Packet05LocalizedChartArrayAdapter.lean",
+      "sha256": "37293444a70285e688fd4398dc339e2fae83808d2596afe2af091ab040f7d073"
+    },
+    {
+      "path": "lean/Packet05LocalizedChartScalarAdapter.lean",
+      "sha256": "b9edd2500a75f62950ac489e9bd48602b446c364a83c07cb3eef11fc98e15509"
+    },
+    {
+      "path": "lean/Packet05LocalizedNormalFluxBound.lean",
+      "sha256": "a58048109e486ab253c6a1448c073ff3d8a28d5d2cffea5cda00d575ef0c39af"
+    },
+    {
+      "path": "lean/Packet05LocalizedTangentialGradient.lean",
+      "sha256": "d9517f49ad6bbd0aa279b1ee700acdd29c8508a97f0d5bc7c2eab5289a1ab2f7"
+    },
+    {
+      "path": "lean/Packet05MultiplierH2Norm.lean",
+      "sha256": "382a90091dedd17d11a99f9f64254d94f6b84c8249048d961c00f9f0d98893a7"
+    },
+    {
+      "path": "lean/Packet05NestedChartPhysicalAdapter.lean",
+      "sha256": "5f8023696913ebad8f0dd48afc8dc3041068527e05a62d3fdec60ee649282d8e"
+    },
+    {
+      "path": "lean/Packet05NestedTangentialRepresentative.lean",
+      "sha256": "f4e2cb43770446d9196a675c8b3ed87aa098130c082825ea5f497a7268b5c13a"
+    },
+    {
+      "path": "lean/Packet05NestedTangentialUniform.lean",
+      "sha256": "581db7e359f91974a0142509bf25550576942caab424c6727aa6584445086f53"
+    },
+    {
+      "path": "lean/Packet05NormalFluxEnvelope.lean",
+      "sha256": "942741ce93b53cfb9f5f32fe82a5a0f218cad9fbcd286adc216e9e727e5bec64"
+    },
+    {
+      "path": "lean/Packet05NormalFluxUniformCeiling.lean",
+      "sha256": "9e45019014050dae48d9aefc3e9e9e4e759e96630eb8249a8a6a0ca3d228b3a4"
+    },
+    {
+      "path": "lean/Packet05PairedArrayCeiling.lean",
+      "sha256": "e039ab2cf9d416dc1f84577ceabbbc743c79dc06bf2a14f608283aa2c1a3f9e3"
+    },
+    {
+      "path": "lean/Packet05PhaseAEBound.lean",
+      "sha256": "cfe74d397a6dddca5466c71ce0d8e505ef82c4c9050ad3d84d788ffcdb4867b3"
+    },
+    {
+      "path": "lean/Packet05PhysicalHalfspaceClosure.lean",
+      "sha256": "61f034e6889923a48c434aac45132af42c1947a994937859f17ea1fe9115a5f1"
+    },
+    {
+      "path": "lean/Packet05PlateauGraphFlux.lean",
+      "sha256": "1ef5c003e187a2aec693afdba125997c5edfdd0e5acb538ffbd677e9a41ab087"
+    },
+    {
+      "path": "lean/Packet05QuantitativeBinaryForcing.lean",
+      "sha256": "96ff26b12ff1671eebc5dbe40c6b97dd19b060d94a062335619db39f63206406"
+    },
+    {
+      "path": "lean/Packet05QuantitativeCompactGreen.lean",
+      "sha256": "809d516a11fe67131376e2ea3ef4ebc147ff0eb265c276da1a7828e10776ef72"
+    },
+    {
+      "path": "lean/Packet05QuantitativeGraphPiola.lean",
+      "sha256": "3c2c09eb5551c2bff0e19fbfe5547d1f5944eadc671101e09afa88bf5e8d96d8"
+    },
+    {
+      "path": "lean/Packet05QuantitativeLocalArrays.lean",
+      "sha256": "3a0588f048f695804f027dae3a6bf320f7379616d20d002fcd226f36296fd873"
+    },
+    {
+      "path": "lean/Packet05QuantitativeMaterialClosures.lean",
+      "sha256": "c1cb840376322f0f76e1882d2fca9790bd66a509d0f287c93dd695a965259f38"
+    },
+    {
+      "path": "lean/Packet05QuantitativeMaterialPhases.lean",
+      "sha256": "540b071100bb2dc9999a8f19a293cd2f9c04e1de37a52f7a555cae546af69619"
+    },
+    {
+      "path": "lean/Packet05QuantitativeNestedAlignment.lean",
+      "sha256": "16b76dd23f116e16fd57d31640021b93cdf269cefd0c50351346ba70409b3a90"
+    },
+    {
+      "path": "lean/Packet05RegionalUniformChart.lean",
+      "sha256": "40e6e219d885f499f87ac964d93b6fedecd6498736484358a2f14baef1717e27"
+    },
+    {
+      "path": "lean/Packet05RoundedActualCorrection.lean",
+      "sha256": "bf87b206de3b5ff1b285b8aef6ffc1a9b3923e5f233d1fbdda45c530bf3776e4"
+    },
+    {
+      "path": "lean/Packet05RoundedCorrectionBounds.lean",
+      "sha256": "37a1b4302196d9df1b3844e743395916e4650ed935a723ac68f13f3b1ad35bea"
+    },
+    {
+      "path": "lean/Packet05RoundedFixedCollar.lean",
+      "sha256": "8fe0bc21c82520e6bddee343400c45d14c57fa09a191d48b36c8bb5ee03f2488"
+    },
+    {
+      "path": "lean/Packet05RoundedFixedCollarMaterial.lean",
+      "sha256": "e162bed99e59784aeaab1f7561576b2b93a00773d8d471e53cd42b2df5681468"
+    },
+    {
+      "path": "lean/Packet05SecondEnvelope.lean",
+      "sha256": "da97301ba188ebaa7e3acca8532b06746ff9c1d99b8a2dde53bbd87e6f3c0941"
+    },
+    {
+      "path": "lean/Packet05SecondEnvelopeOriginal.lean",
+      "sha256": "6d9a0ad89c8c0c23d48e7de200c31366431d3ac2a40befb44dbf4e0444dc42d5"
+    },
+    {
+      "path": "lean/Packet05TangentialAssemblyCeiling.lean",
+      "sha256": "dd998f988b4c16ada80ea516e6500b2d44ce70ec03256ce213fb6f884d55e1bd"
+    },
+    {
+      "path": "lean/Packet05TangentialGradientArrays.lean",
+      "sha256": "d3b6e6209c5c1a2458cb24f374634c690513464662d95e9333e6f4156ee8ca11"
+    },
+    {
+      "path": "lean/Packet05UniformChartPhysicalAdapter.lean",
+      "sha256": "075f81a82bd91e20869d4eed5572e64ad041e4fdd20397cbb79ba8285fb6d4bb"
+    },
+    {
+      "path": "lean/Packet05UniformCompactCorrection.lean",
+      "sha256": "19346c736252c9f0722948f672bb3f3dc76b9a00eb8f59b0a4b6987fd83e004e"
+    },
+    {
+      "path": "lean/Packet05UniformCompactGreen.lean",
+      "sha256": "68c2b073d650b02c74214adc2578ef8aad106491c95512c23a859dc7b2bc12e9"
+    },
+    {
+      "path": "lean/Packet05UniformGraphForcing.lean",
+      "sha256": "0eb771c269099ccbfebcd8fabca71c64d6b5e815fa32fc729675e82037582b1e"
+    },
+    {
+      "path": "lean/Packet05UniformMaterialCorrection.lean",
+      "sha256": "cb4aac7a96bb66b7fa181102959e3ff006558fb6733a3e0d06aeec5fcc5255dd"
+    },
+    {
+      "path": "lean/Packet06UniformGreenOperators.lean",
+      "sha256": "627fe461f07fc43e1391ab47f3d422882792b2d599d615c1aba727a5a44eba6f"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "c384ca90153b281e4d54ea98d9e3b3d84d6b21a918f13739526650bb27b25049"
+    }
+  ],
+  "scope": "uniform actual Green data and fixed physical collar charts. Actual rounded-family correction H2 data and fixed smooth collar reference are proved; quantitative regional bootstrap, complete collars and full OQ14 remain active."
+}

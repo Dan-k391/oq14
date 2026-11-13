@@ -1,5 +1,46 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 106 is the latest verified incremental checkpoint:
+[STAGE106.txt](checkpoints/2026-11-13-uniform-physical-data/STAGE106.txt).
+
+The actual compact-source scalar Green, gradient and Hessian-difference
+operators have uniform bounds on bounded complex frequency disks. Genuine
+compact H2 correction fields are constructed with explicit cutoff/source
+norm control. Their continuous actual pointwise values obey the resulting
+bound on the cutoff plateau. For any convergent literal rounded mode family,
+frequency, susceptibility and source norms are bounded uniformly for every
+index. The H2 witnesses are identified with the exact compact correction used
+by the Maxwell scalar equation through L2 uniqueness.
+
+The graph Piola and binary forcing constructions retain quantitative first
+and second derivative bounds. Nested scalar iterations align by uniqueness,
+and monotone envelopes remove the field-dependent intermediate arrays.
+Plateau localization preserves the regional PDE and original physical flux.
+The quantitative chart reconstructs the actual physical phase branches,
+including the literal material-side matching and phase-closure bounds.
+
+One actually smooth rounded body is selected as the fixed reference before
+the later mode index. Every sufficiently late rounded body agrees exactly
+with that reference on the prescribed open collars, simultaneously for all
+finite centers. Fixed chart constants and reference geometry therefore do
+not depend on the later peak threshold or rounding index.
+
+The full family collar bound still requires quantitative regional bootstrap
+and final actual-chart composition. Collar-to-hotspot isolation, prescribed
+placement, driven counterparts, paper alignment and aggregate verification
+remain active. Full OQ14 is not declared closed.
+
+44 modules / 69 reports passed independent root review and a fresh
+ordered build. 1507 upstream sources were authenticated, with cached objects.
+The ledger is 1281 modules / 5487 reports, all prior records unchanged:
+`checkpoints/2026-11-13-uniform-physical-data/evidence/audited_after_5238-stage106.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage106.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 105 is the latest verified incremental checkpoint:
 [STAGE105.txt](checkpoints/2026-11-13-meridional-original-bounds/STAGE105.txt).
 

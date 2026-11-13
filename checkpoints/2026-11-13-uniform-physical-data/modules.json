@@ -1,0 +1,291 @@
+[
+  {
+    "module": "Packet05PhaseAEBound",
+    "declarations": [
+      "OQ14.Packet05PhaseAEBound.phase_ae_bound"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeLocalArrays",
+    "declarations": [
+      "OQ14.Packet05QuantitativeLocalArrays.local_arrays",
+      "OQ14.Packet05QuantitativeLocalArrays.first_norm",
+      "OQ14.Packet05QuantitativeLocalArrays.second_norm"
+    ]
+  },
+  {
+    "module": "Packet05AssembleTangentialArrays",
+    "declarations": [
+      "OQ14.Packet05AssembleTangentialArrays.assemble"
+    ]
+  },
+  {
+    "module": "Packet05PhysicalHalfspaceClosure",
+    "declarations": [
+      "OQ14.Packet05PhysicalHalfspaceClosure.flat_negative_closure",
+      "OQ14.Packet05PhysicalHalfspaceClosure.physical_negative_closure"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeMaterialPhases",
+    "declarations": [
+      "OQ14.Packet05QuantitativeMaterialPhases.quantitative_material_phases"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeMaterialClosures",
+    "declarations": [
+      "OQ14.Packet05QuantitativeMaterialClosures.material_phase_closure_bounds"
+    ]
+  },
+  {
+    "module": "Packet05PlateauGraphFlux",
+    "declarations": [
+      "OQ14.Packet05PlateauGraphFlux.plateau_flux",
+      "OQ14.Packet05PlateauGraphFlux.plateau_divergence"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedNormalFluxBound",
+    "declarations": [
+      "OQ14.Packet05LocalizedNormalFluxBound.localized_normal_flux_bound"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedChartScalarAdapter",
+    "declarations": [
+      "OQ14.Packet05LocalizedChartScalarAdapter.localized_chart_scalar_adapter"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedChartArrayAdapter",
+    "declarations": [
+      "OQ14.Packet05LocalizedChartArrayAdapter.localized_chart_array_adapter"
+    ]
+  },
+  {
+    "module": "Packet05TangentialGradientArrays",
+    "declarations": [
+      "OQ14.Packet05TangentialGradientArrays.tangential_gradient_arrays"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedTangentialGradient",
+    "declarations": [
+      "OQ14.Packet05LocalizedTangentialGradient.localized_gradient_derivatives"
+    ]
+  },
+  {
+    "module": "Packet05NestedTangentialRepresentative",
+    "declarations": [
+      "OQ14.Packet05NestedTangentialRepresentative.nested_tangential_representative"
+    ]
+  },
+  {
+    "module": "Packet05NestedTangentialUniform",
+    "declarations": [
+      "OQ14.Packet05NestedTangentialUniform.nested_tangential_uniform"
+    ]
+  },
+  {
+    "module": "Packet05NestedChartPhysicalAdapter",
+    "declarations": [
+      "OQ14.Packet05NestedChartPhysicalAdapter.nested_chart_physical_adapter"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeBinaryForcing",
+    "declarations": [
+      "OQ14.Packet05QuantitativeBinaryForcing.binary_forcing_arrays"
+    ]
+  },
+  {
+    "module": "Packet05GraphH2Norm",
+    "declarations": [
+      "OQ14.Packet05GraphH2Norm.bounded_multiply_norm",
+      "OQ14.Packet05GraphH2Norm.slope_multiply_norm",
+      "OQ14.Packet05GraphH2Norm.pulled_gradient_norm",
+      "OQ14.Packet05GraphH2Norm.graph_pullback_h2_bounded"
+    ]
+  },
+  {
+    "module": "Packet05MultiplierH2Norm",
+    "declarations": [
+      "OQ14.Packet05MultiplierH2Norm.bounded_multiplier_h2_norm"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeGraphPiola",
+    "declarations": [
+      "OQ14.Packet05QuantitativeGraphPiola.graph_piola_h2_uniform"
+    ]
+  },
+  {
+    "module": "Packet05UniformGraphForcing",
+    "declarations": [
+      "OQ14.Packet05UniformGraphForcing.graph_binary_forcing_uniform"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeNestedAlignment",
+    "declarations": [
+      "OQ14.Packet05QuantitativeNestedAlignment.align_nested_derivatives"
+    ]
+  },
+  {
+    "module": "Packet05EnergyEnvelopeMonotone",
+    "declarations": [
+      "OQ14.Packet05EnergyEnvelopeMonotone.envelope_mono"
+    ]
+  },
+  {
+    "module": "Packet05SecondEnvelope",
+    "declarations": [
+      "OQ14.Packet05SecondEnvelope.first_nonneg",
+      "OQ14.Packet05SecondEnvelope.first_mono",
+      "OQ14.Packet05SecondEnvelope.gradient_mono",
+      "OQ14.Packet05SecondEnvelope.forcing_mono"
+    ]
+  },
+  {
+    "module": "Packet05SecondEnvelopeOriginal",
+    "declarations": [
+      "OQ14.Packet05SecondEnvelopeOriginal.actual_first_le",
+      "OQ14.Packet05SecondEnvelopeOriginal.actual_second_numerical_le"
+    ]
+  },
+  {
+    "module": "Packet05ActualSecondUniformBound",
+    "declarations": [
+      "OQ14.Packet05ActualSecondUniformBound.actual_second_uniform_bound"
+    ]
+  },
+  {
+    "module": "Packet06UniformGreenOperators",
+    "declarations": [
+      "OQ14.Packet06UniformGreenOperators.hessian_eq",
+      "OQ14.Packet06UniformGreenOperators.hessian_uniform",
+      "OQ14.Packet06UniformGreenOperators.phi_uniform",
+      "OQ14.Packet06UniformGreenOperators.gradient_eq",
+      "OQ14.Packet06UniformGreenOperators.gradient_uniform"
+    ]
+  },
+  {
+    "module": "Packet05GreenRepresentativeBounds",
+    "declarations": [
+      "OQ14.Packet05GreenRepresentativeBounds.ball_norm_le",
+      "OQ14.Packet05GreenRepresentativeBounds.response_representative_norm",
+      "OQ14.Packet05GreenRepresentativeBounds.scalarSource_eq_insert",
+      "OQ14.Packet05GreenRepresentativeBounds.static_hessian_norm"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeCompactGreen",
+    "declarations": [
+      "OQ14.Packet05QuantitativeCompactGreen.quantitative_compact_green"
+    ]
+  },
+  {
+    "module": "Packet05ContinuousH2Bound",
+    "declarations": [
+      "OQ14.Packet05ContinuousH2Bound.continuous_h2_bound"
+    ]
+  },
+  {
+    "module": "Packet05UniformCompactGreen",
+    "declarations": [
+      "OQ14.Packet05UniformCompactGreen.test_bounds",
+      "OQ14.Packet05UniformCompactGreen.uniform_compact_green"
+    ]
+  },
+  {
+    "module": "Packet05UniformCompactCorrection",
+    "declarations": [
+      "OQ14.Packet05UniformCompactCorrection.uniform_compact_correction"
+    ]
+  },
+  {
+    "module": "Packet05UniformMaterialCorrection",
+    "declarations": [
+      "OQ14.Packet05UniformMaterialCorrection.material_source_norm",
+      "OQ14.Packet05UniformMaterialCorrection.material_family_correction"
+    ]
+  },
+  {
+    "module": "Packet05RoundedCorrectionBounds",
+    "declarations": [
+      "OQ14.Packet05RoundedCorrectionBounds.rounded_family_envelope",
+      "OQ14.Packet05RoundedCorrectionBounds.rounded_family_correction"
+    ]
+  },
+  {
+    "module": "Packet05RoundedActualCorrection",
+    "declarations": [
+      "OQ14.Packet05RoundedActualCorrection.rounded_actual_correction"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxEnvelope",
+    "declarations": [
+      "OQ14.Packet05NormalFluxEnvelope.size_le_three",
+      "OQ14.Packet05NormalFluxEnvelope.first_bound_envelope",
+      "OQ14.Packet05NormalFluxEnvelope.second_bound_envelope",
+      "OQ14.Packet05NormalFluxEnvelope.total_flux_envelope"
+    ]
+  },
+  {
+    "module": "Packet05AssembledArrayCeiling",
+    "declarations": [
+      "OQ14.Packet05AssembledArrayCeiling.assembled_ceiling"
+    ]
+  },
+  {
+    "module": "Packet05TangentialAssemblyCeiling",
+    "declarations": [
+      "OQ14.Packet05TangentialAssemblyCeiling.first_local_ceiling",
+      "OQ14.Packet05TangentialAssemblyCeiling.second_local_ceiling"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxUniformCeiling",
+    "declarations": [
+      "OQ14.Packet05NormalFluxUniformCeiling.uniform_flux_ceiling"
+    ]
+  },
+  {
+    "module": "Packet05PairedArrayCeiling",
+    "declarations": [
+      "OQ14.Packet05PairedArrayCeiling.paired_ceiling"
+    ]
+  },
+  {
+    "module": "Packet05UniformChartPhysicalAdapter",
+    "declarations": [
+      "OQ14.Packet05UniformChartPhysicalAdapter.uniform_chart_physical_adapter"
+    ]
+  },
+  {
+    "module": "Packet05RegionalUniformChart",
+    "declarations": [
+      "OQ14.Packet05RegionalUniformChart.regional_uniform_chart"
+    ]
+  },
+  {
+    "module": "Packet05RoundedFixedCollar",
+    "declarations": [
+      "OQ14.Packet05RoundedFixedCollar.eventually_body_annulus"
+    ]
+  },
+  {
+    "module": "Packet05RoundedFixedCollarMaterial",
+    "declarations": [
+      "OQ14.Packet05RoundedFixedCollarMaterial.eventually_fixed_annulus_material"
+    ]
+  },
+  {
+    "module": "Packet05FixedCollarReference",
+    "declarations": [
+      "OQ14.Packet05FixedCollarReference.fixed_reference_body"
+    ]
+  }
+]
