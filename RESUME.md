@@ -1,5 +1,29 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 81 is the latest verified incremental checkpoint:
+[STAGE81.txt](checkpoints/2026-11-13-oriented-boundary/STAGE81.txt).
+The actual smooth rounded affine binary boundary has a derived local C2
+Cartesian graph and the exact oriented material side at every frontier point.
+These follow from the actual regular-level certificate, not a chart assumption.
+
+13 modules / 23 reports passed independent root semantic review and an ordered
+fresh isolated build. 827 upstream sources were authenticated against the
+stage79/release5238 source records, with cached objects. The stage80 ledger
+is unchanged; totals are 750 modules / 4494 reports:
+`checkpoints/2026-11-13-oriented-boundary/evidence/audited_after_5238-stage81.json`.
+Standard axioms only, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: actual frontier nullity and the same-device geometric
+endpoint compile; positive cone root convergence at fixed aperture >=1/2 and
+pointwise angular-field convergence compile; complex magnetic outgoing limits
+and actual complex affine Maxwell transport compile. Quantitative curved
+regularity, actual modal cone excitation, attained maxima/collars, modal
+packing, final manuscript and aggregate validation remain. Full OQ14 is active.
+
+Everything below is historical context, superseded by stage81.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 80 is the latest verified incremental checkpoint:
 [STAGE80.txt](checkpoints/2026-11-13-actual-mode-poles/STAGE80.txt).
 Actual fixed-geometry positive-contrast insertion preserves convergent selected
