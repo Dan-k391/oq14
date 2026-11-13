@@ -1,0 +1,505 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "44c0067",
+  "modules": 1469,
+  "reports": 5783,
+  "new_modules": 14,
+  "new_reports": 24,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "e644ad2c3fe8bd95629e7fc04076c232615ac01c68ce462fe5a46e1743a0306b",
+  "ledger_sha256": "0b822d977db1f1f42318c426c23d63d898ddee69078a1714e10b4054290f812b",
+  "raw_archive_sha256": "7b6428ba3c5dc23ba5fec5ee4353a7be74fbc5d3c5c6d2ede73bc2eee16e9df5",
+  "records": [
+    {
+      "module": "Packet06AxialEquivalence",
+      "reports": 1,
+      "source_sha256": "a70510b7c6a2afe39a52d4019b30c54ae7ea01252f015af669afbb508080952a",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialEquivalence-chain.log",
+      "audit_log_sha256": "bb070bd2e98210c51f140f4b0fbf0a2a4c41b87f3727913f96619837c58e4c45",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AxialEquivalence.log",
+      "independent_log_sha256": "bb070bd2e98210c51f140f4b0fbf0a2a4c41b87f3727913f96619837c58e4c45",
+      "declarations": [
+        "OQ14.Packet06AxialEquivalence.action_inverse"
+      ]
+    },
+    {
+      "module": "Packet06AxialPencilTransport",
+      "reports": 3,
+      "source_sha256": "84e03f01c223236f7c8e53335a3c2501ab5612b82dd095c54547585525cf6686",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialPencilTransport-chain.log",
+      "audit_log_sha256": "ec464363e59e8d7285f192e1a2f9642786f4bd8c55d33f4c513e646bce7b6bdc",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AxialPencilTransport.log",
+      "independent_log_sha256": "ec464363e59e8d7285f192e1a2f9642786f4bd8c55d33f4c513e646bce7b6bdc",
+      "declarations": [
+        "OQ14.Packet06AxialPencilTransport.volume_intertwines",
+        "OQ14.Packet06AxialPencilTransport.static_intertwines",
+        "OQ14.Packet06AxialPencilTransport.pencil_intertwines"
+      ]
+    },
+    {
+      "module": "Packet06GenericSectorConjugate",
+      "reports": 4,
+      "source_sha256": "4231194391c67f36fc589eb9c6dc7dcf1895a49edd63bfb164734fc65b03600b",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06GenericSectorConjugate-chain.log",
+      "audit_log_sha256": "0c6bc36beb7fa72172b6e75b4591d478b55c1436b7608981f51d188812d0eef6",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06GenericSectorConjugate.log",
+      "independent_log_sha256": "0c6bc36beb7fa72172b6e75b4591d478b55c1436b7608981f51d188812d0eef6",
+      "declarations": [
+        "OQ14.Packet06GenericSectorConjugate.conjugate_eq",
+        "OQ14.Packet06GenericSectorConjugate.sector_conjugate_eq",
+        "OQ14.Packet06GenericSectorConjugate.axial_pencil_conjugate",
+        "OQ14.Packet06GenericSectorConjugate.nested_sector_conjugate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicActualPhaseGeneral",
+      "reports": 1,
+      "source_sha256": "8f72648c3b1b2c5451e673403815fb38884e858ad1567728bf31efbadd50c852",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicActualPhaseGeneral-chain.log",
+      "audit_log_sha256": "9d1ae027b90b07fcddeb6363ae762b975baafab7b5f24aa2068246947e2c865c",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicActualPhaseGeneral.log",
+      "independent_log_sha256": "9d1ae027b90b07fcddeb6363ae762b975baafab7b5f24aa2068246947e2c865c",
+      "declarations": [
+        "OQ14.Packet06CyclicActualPhaseGeneral.component_image_general_ae"
+      ]
+    },
+    {
+      "module": "Packet06CyclicTraceGeneral",
+      "reports": 1,
+      "source_sha256": "0be0b4d4926c22932ce659da7dcd132612a4c870cd8ed7b3ee170e41822c8991",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTraceGeneral-chain.log",
+      "audit_log_sha256": "5102e65bd895dd37694b8a80bd9170f4313a9b679eec211f81bf639269fcc6bc",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTraceGeneral.log",
+      "independent_log_sha256": "5102e65bd895dd37694b8a80bd9170f4313a9b679eec211f81bf639269fcc6bc",
+      "declarations": [
+        "OQ14.Packet06CyclicTraceGeneral.cyclic_trace_general"
+      ]
+    },
+    {
+      "module": "Packet06CyclicHotspotGeneral",
+      "reports": 1,
+      "source_sha256": "a62ac770dca9e1c9f0924c34e26e1b9786e441d234a4b76f1f4b9d097ad3f6ba",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicHotspotGeneral-chain.log",
+      "audit_log_sha256": "589e4ec0d82fe11c8ec5884b88fa29d23c15892d712e40b39746819a3c418e54",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicHotspotGeneral.log",
+      "independent_log_sha256": "589e4ec0d82fe11c8ec5884b88fa29d23c15892d712e40b39746819a3c418e54",
+      "declarations": [
+        "OQ14.Packet06CyclicHotspotGeneral.cyclic_hotspot_general"
+      ]
+    },
+    {
+      "module": "Packet06CyclicOneSidedGeneral",
+      "reports": 1,
+      "source_sha256": "bb9c50d28518fca40cebb8c377b9d9c1f2c7a275298cbbe7721164ded8a14f39",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicOneSidedGeneral-chain.log",
+      "audit_log_sha256": "998f06b8877504c4627745b8aa91f556759404e6f16ed34897b55a11c7cea23a",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicOneSidedGeneral.log",
+      "independent_log_sha256": "998f06b8877504c4627745b8aa91f556759404e6f16ed34897b55a11c7cea23a",
+      "declarations": [
+        "OQ14.Packet06CyclicOneSidedGeneral.cyclic_one_sided_general"
+      ]
+    },
+    {
+      "module": "Packet06CyclicTwiceGeneral",
+      "reports": 3,
+      "source_sha256": "e980ee66000ce7fbdded0ecf9d5f6d830be6f60b67db6f2d535209b919b8b207",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceGeneral-chain.log",
+      "audit_log_sha256": "6ddc927d58f045fc6a3a58883a432fc2d3aa220fdc35cb10ba1ca01d55f93cef",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTwiceGeneral.log",
+      "independent_log_sha256": "6ddc927d58f045fc6a3a58883a432fc2d3aa220fdc35cb10ba1ca01d55f93cef",
+      "declarations": [
+        "OQ14.Packet06CyclicTwiceGeneral.coefficient_image",
+        "OQ14.Packet06CyclicTwiceGeneral.ball_image",
+        "OQ14.Packet06CyclicTwiceGeneral.twice_hotspot"
+      ]
+    },
+    {
+      "module": "Packet06CyclicTwiceCollar",
+      "reports": 1,
+      "source_sha256": "f4953a087214bb56b72279f6cc1f3a0b60dcc77c9246b907df0de78c00b6784d",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceCollar-chain.log",
+      "audit_log_sha256": "66a77d227873abb2f196f7aaf408bc539abbfc70f1aab9604e309015222219d4",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTwiceCollar.log",
+      "independent_log_sha256": "66a77d227873abb2f196f7aaf408bc539abbfc70f1aab9604e309015222219d4",
+      "declarations": [
+        "OQ14.Packet06CyclicTwiceCollar.twice_collar"
+      ]
+    },
+    {
+      "module": "Packet06CyclicSectorConjugate",
+      "reports": 4,
+      "source_sha256": "0eae57f0f0da027c4d6fd534daaf4bd331d5d3383c14e248028962b37c173ed8",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicSectorConjugate-chain.log",
+      "audit_log_sha256": "18da3faa7b11f47e2301839a8ea515ca03a135aab5eabc832c68f05c83023424",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "independent_review_sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "independent_build_sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicSectorConjugate.log",
+      "independent_log_sha256": "18da3faa7b11f47e2301839a8ea515ca03a135aab5eabc832c68f05c83023424",
+      "declarations": [
+        "OQ14.Packet06CyclicSectorConjugate.one_support",
+        "OQ14.Packet06CyclicSectorConjugate.cyclic_intertwines",
+        "OQ14.Packet06CyclicSectorConjugate.cyclic_pencil_conjugate",
+        "OQ14.Packet06CyclicSectorConjugate.twice_sector_conjugate"
+      ]
+    },
+    {
+      "module": "Packet06AffineActualPhaseGeneral",
+      "reports": 1,
+      "source_sha256": "ef5ab85a2df10eacb107d5ea22e5c57013c7f5f7042b9c743df61ac5b933a329",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineActualPhaseGeneral-chain.log",
+      "audit_log_sha256": "aa1444a742aac756958869c7c47fa66d3cdac9d5e9b1f4fc250cf3acf58f5054",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-review.txt",
+      "independent_review_sha256": "717a50346bda9792d8a58059a32d4577537b819bb27d24e21d7c7c6cf8373f3b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-build.json",
+      "independent_build_sha256": "7fd51a49cfceb22e24fe8fc4f3760d5688fb59327aee1aae624bfcca7c2d2342",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineActualPhaseGeneral.log",
+      "independent_log_sha256": "aa1444a742aac756958869c7c47fa66d3cdac9d5e9b1f4fc250cf3acf58f5054",
+      "declarations": [
+        "OQ14.Packet06AffineActualPhaseGeneral.component_image_general_ae"
+      ]
+    },
+    {
+      "module": "Packet06AffineTraceGeneral",
+      "reports": 1,
+      "source_sha256": "21b029d4ee07fc288b9fb015912ae96cb75cb6132c401cb15097f877b28411e1",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineTraceGeneral-chain.log",
+      "audit_log_sha256": "b7fa692d541affc93a64541ccd7fabc4eed10fedd25b7a13fe6a127518b66c13",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-review.txt",
+      "independent_review_sha256": "717a50346bda9792d8a58059a32d4577537b819bb27d24e21d7c7c6cf8373f3b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-build.json",
+      "independent_build_sha256": "7fd51a49cfceb22e24fe8fc4f3760d5688fb59327aee1aae624bfcca7c2d2342",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineTraceGeneral.log",
+      "independent_log_sha256": "b7fa692d541affc93a64541ccd7fabc4eed10fedd25b7a13fe6a127518b66c13",
+      "declarations": [
+        "OQ14.Packet06AffineTraceGeneral.affine_trace_general"
+      ]
+    },
+    {
+      "module": "Packet06AffineHotspotGeneral",
+      "reports": 1,
+      "source_sha256": "4a23af87d3c2bdeac6d9e720454923382f087d3460440ca0a205c72742c21bc4",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineHotspotGeneral-chain.log",
+      "audit_log_sha256": "d51ee4e20d57110ef8a3e99469f77a59ce2220fec317e1c380b9c450a623e6a8",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-review.txt",
+      "independent_review_sha256": "717a50346bda9792d8a58059a32d4577537b819bb27d24e21d7c7c6cf8373f3b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-build.json",
+      "independent_build_sha256": "7fd51a49cfceb22e24fe8fc4f3760d5688fb59327aee1aae624bfcca7c2d2342",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineHotspotGeneral.log",
+      "independent_log_sha256": "d51ee4e20d57110ef8a3e99469f77a59ce2220fec317e1c380b9c450a623e6a8",
+      "declarations": [
+        "OQ14.Packet06AffineHotspotGeneral.affine_hotspot_general"
+      ]
+    },
+    {
+      "module": "Packet06AffineOneSidedGeneral",
+      "reports": 1,
+      "source_sha256": "8a45a0b5ff69ebff65eaad9e8b8dfdf51804756fee369427e078a18cacd262da",
+      "audit_log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineOneSidedGeneral-chain.log",
+      "audit_log_sha256": "9ec86bd9604b501ac37e71e364eeb268970cb7f9ead6b91e38ba3fa1577c095d",
+      "independent_review": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-review.txt",
+      "independent_review_sha256": "717a50346bda9792d8a58059a32d4577537b819bb27d24e21d7c7c6cf8373f3b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-build.json",
+      "independent_build_sha256": "7fd51a49cfceb22e24fe8fc4f3760d5688fb59327aee1aae624bfcca7c2d2342",
+      "independent_log": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineOneSidedGeneral.log",
+      "independent_log_sha256": "9ec86bd9604b501ac37e71e364eeb268970cb7f9ead6b91e38ba3fa1577c095d",
+      "declarations": [
+        "OQ14.Packet06AffineOneSidedGeneral.affine_one_sided_general"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/audited_after_5238-stage111.json",
+      "sha256": "0b822d977db1f1f42318c426c23d63d898ddee69078a1714e10b4054290f812b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/chain-build.json",
+      "sha256": "18604ec7d5c4d6edbca6d43d0715e7595250bfd179548568147744692a4be7fd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineActualPhaseGeneral-chain.log",
+      "sha256": "aa1444a742aac756958869c7c47fa66d3cdac9d5e9b1f4fc250cf3acf58f5054"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineHotspotGeneral-chain.log",
+      "sha256": "d51ee4e20d57110ef8a3e99469f77a59ce2220fec317e1c380b9c450a623e6a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineOneSidedGeneral-chain.log",
+      "sha256": "9ec86bd9604b501ac37e71e364eeb268970cb7f9ead6b91e38ba3fa1577c095d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineTraceGeneral-chain.log",
+      "sha256": "b7fa692d541affc93a64541ccd7fabc4eed10fedd25b7a13fe6a127518b66c13"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialEquivalence-chain.log",
+      "sha256": "bb070bd2e98210c51f140f4b0fbf0a2a4c41b87f3727913f96619837c58e4c45"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialPencilTransport-chain.log",
+      "sha256": "ec464363e59e8d7285f192e1a2f9642786f4bd8c55d33f4c513e646bce7b6bdc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicActualPhaseGeneral-chain.log",
+      "sha256": "9d1ae027b90b07fcddeb6363ae762b975baafab7b5f24aa2068246947e2c865c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicHotspotGeneral-chain.log",
+      "sha256": "589e4ec0d82fe11c8ec5884b88fa29d23c15892d712e40b39746819a3c418e54"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicOneSidedGeneral-chain.log",
+      "sha256": "998f06b8877504c4627745b8aa91f556759404e6f16ed34897b55a11c7cea23a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicSectorConjugate-chain.log",
+      "sha256": "18da3faa7b11f47e2301839a8ea515ca03a135aab5eabc832c68f05c83023424"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTraceGeneral-chain.log",
+      "sha256": "5102e65bd895dd37694b8a80bd9170f4313a9b679eec211f81bf639269fcc6bc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceCollar-chain.log",
+      "sha256": "66a77d227873abb2f196f7aaf408bc539abbfc70f1aab9604e309015222219d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceGeneral-chain.log",
+      "sha256": "6ddc927d58f045fc6a3a58883a432fc2d3aa220fdc35cb10ba1ca01d55f93cef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06GenericSectorConjugate-chain.log",
+      "sha256": "0c6bc36beb7fa72172b6e75b4591d478b55c1436b7608981f51d188812d0eef6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/modules.json",
+      "sha256": "cba4f07f77afb2e8044ecbb40ba1bed2b8e82423d0c05b787fe63dd1e4580bab"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/provenance-audit.json",
+      "sha256": "38a4ce63b4ba26bb26ba33a5ea8ef9d602e657186b99ecfc3755d46b6b16c8bd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-build.json",
+      "sha256": "7fd51a49cfceb22e24fe8fc4f3760d5688fb59327aee1aae624bfcca7c2d2342"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/affine-review.txt",
+      "sha256": "717a50346bda9792d8a58059a32d4577537b819bb27d24e21d7c7c6cf8373f3b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/author-inventory.json",
+      "sha256": "6a5289af6aa6d3802885acd63e25d96cacc0ac76e3f4f0fa2eec07da579e683c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-build.json",
+      "sha256": "acdf873553445826c2a4fd11b3d8326f05a4f41f56fa96052e646b3765997ba8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/cyclic-review.txt",
+      "sha256": "470eb06dce0416621f4ef2e0016c6f7fc13bafd83501f13d7426b467b280d32f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/independent-index.json",
+      "sha256": "4418a589fdd7a0d7a9dd0828aa3edec13809d73acbff6454dafab706f2c694c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/metadata-normalization.json",
+      "sha256": "b4a71c5e19908c373297ca63852a9b22e2c4dbfd67d227579daf454e4d288557"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineActualPhaseGeneral.log",
+      "sha256": "aa1444a742aac756958869c7c47fa66d3cdac9d5e9b1f4fc250cf3acf58f5054"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineHotspotGeneral.log",
+      "sha256": "d51ee4e20d57110ef8a3e99469f77a59ce2220fec317e1c380b9c450a623e6a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineOneSidedGeneral.log",
+      "sha256": "9ec86bd9604b501ac37e71e364eeb268970cb7f9ead6b91e38ba3fa1577c095d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AffineTraceGeneral.log",
+      "sha256": "b7fa692d541affc93a64541ccd7fabc4eed10fedd25b7a13fe6a127518b66c13"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AxialEquivalence.log",
+      "sha256": "bb070bd2e98210c51f140f4b0fbf0a2a4c41b87f3727913f96619837c58e4c45"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06AxialPencilTransport.log",
+      "sha256": "ec464363e59e8d7285f192e1a2f9642786f4bd8c55d33f4c513e646bce7b6bdc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicActualPhaseGeneral.log",
+      "sha256": "9d1ae027b90b07fcddeb6363ae762b975baafab7b5f24aa2068246947e2c865c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicHotspotGeneral.log",
+      "sha256": "589e4ec0d82fe11c8ec5884b88fa29d23c15892d712e40b39746819a3c418e54"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicOneSidedGeneral.log",
+      "sha256": "998f06b8877504c4627745b8aa91f556759404e6f16ed34897b55a11c7cea23a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicSectorConjugate.log",
+      "sha256": "18da3faa7b11f47e2301839a8ea515ca03a135aab5eabc832c68f05c83023424"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTraceGeneral.log",
+      "sha256": "5102e65bd895dd37694b8a80bd9170f4313a9b679eec211f81bf639269fcc6bc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTwiceCollar.log",
+      "sha256": "66a77d227873abb2f196f7aaf408bc539abbfc70f1aab9604e309015222219d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06CyclicTwiceGeneral.log",
+      "sha256": "6ddc927d58f045fc6a3a58883a432fc2d3aa220fdc35cb10ba1ca01d55f93cef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/reviews/Packet06GenericSectorConjugate.log",
+      "sha256": "0c6bc36beb7fa72172b6e75b4591d478b55c1436b7608981f51d188812d0eef6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/scripts/audit_provenance.ps1",
+      "sha256": "e2e447b2521302a775548f58d0064ae47b2cf89c8d16aa1d051fcec5f7e4c468"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/scripts/check_chain.py",
+      "sha256": "7f120017ebda3e62f51035f16e015e98883bb23086b8d5f1a553a3abfb101a4c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/scripts/freeze_checkpoint.py",
+      "sha256": "33115c1854bbe33274f8f07e1d6492d5572be4935ff800f6afd6695afb716fb1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-affine-sector-transport/STAGE111.txt",
+      "sha256": "20d209c60f1fe8a08f4f99b5eb0d6b6722077366fd0eaadf1100a90128495c38"
+    },
+    {
+      "path": "lean/Packet06AffineActualPhaseGeneral.lean",
+      "sha256": "ef5ab85a2df10eacb107d5ea22e5c57013c7f5f7042b9c743df61ac5b933a329"
+    },
+    {
+      "path": "lean/Packet06AffineHotspotGeneral.lean",
+      "sha256": "4a23af87d3c2bdeac6d9e720454923382f087d3460440ca0a205c72742c21bc4"
+    },
+    {
+      "path": "lean/Packet06AffineOneSidedGeneral.lean",
+      "sha256": "8a45a0b5ff69ebff65eaad9e8b8dfdf51804756fee369427e078a18cacd262da"
+    },
+    {
+      "path": "lean/Packet06AffineTraceGeneral.lean",
+      "sha256": "21b029d4ee07fc288b9fb015912ae96cb75cb6132c401cb15097f877b28411e1"
+    },
+    {
+      "path": "lean/Packet06AxialEquivalence.lean",
+      "sha256": "a70510b7c6a2afe39a52d4019b30c54ae7ea01252f015af669afbb508080952a"
+    },
+    {
+      "path": "lean/Packet06AxialPencilTransport.lean",
+      "sha256": "84e03f01c223236f7c8e53335a3c2501ab5612b82dd095c54547585525cf6686"
+    },
+    {
+      "path": "lean/Packet06CyclicActualPhaseGeneral.lean",
+      "sha256": "8f72648c3b1b2c5451e673403815fb38884e858ad1567728bf31efbadd50c852"
+    },
+    {
+      "path": "lean/Packet06CyclicHotspotGeneral.lean",
+      "sha256": "a62ac770dca9e1c9f0924c34e26e1b9786e441d234a4b76f1f4b9d097ad3f6ba"
+    },
+    {
+      "path": "lean/Packet06CyclicOneSidedGeneral.lean",
+      "sha256": "bb9c50d28518fca40cebb8c377b9d9c1f2c7a275298cbbe7721164ded8a14f39"
+    },
+    {
+      "path": "lean/Packet06CyclicSectorConjugate.lean",
+      "sha256": "0eae57f0f0da027c4d6fd534daaf4bd331d5d3383c14e248028962b37c173ed8"
+    },
+    {
+      "path": "lean/Packet06CyclicTraceGeneral.lean",
+      "sha256": "0be0b4d4926c22932ce659da7dcd132612a4c870cd8ed7b3ee170e41822c8991"
+    },
+    {
+      "path": "lean/Packet06CyclicTwiceCollar.lean",
+      "sha256": "f4953a087214bb56b72279f6cc1f3a0b60dcc77c9246b907df0de78c00b6784d"
+    },
+    {
+      "path": "lean/Packet06CyclicTwiceGeneral.lean",
+      "sha256": "e980ee66000ce7fbdded0ecf9d5f6d830be6f60b67db6f2d535209b919b8b207"
+    },
+    {
+      "path": "lean/Packet06GenericSectorConjugate.lean",
+      "sha256": "4231194391c67f36fc589eb9c6dc7dcf1895a49edd63bfb164734fc65b03600b"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "615e1d2cff6be7236d6dbb2365f5a31e344f85dd42732635530a8cb5fff97e0d"
+    }
+  ],
+  "scope": "actual cyclic and affine phase transport and analytic pencil conjugacy. Actual cyclic and affine phase/hotspot/collar transport and exact analytic pencil conjugacies are proved. Final arbitrary-plane existence witnesses, their complete observed residue, paper alignment and aggregate verification remain active."
+}

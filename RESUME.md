@@ -1,5 +1,40 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 111 is the latest verified incremental checkpoint:
+[STAGE111.txt](checkpoints/2026-11-13-affine-sector-transport/STAGE111.txt).
+
+Actual electric phase traces and complete hotspots now transport under
+arbitrary translations combined with a proper cyclic rotation, for arbitrary
+compact material support and positivity only on the actual observation set.
+The translated observation radius is controlled by T+norm(a). True maxima,
+both material-side representatives, the entire connected half-amplitude
+component and low one-sided collar bounds are preserved. The four affine
+modules passed separate Terra review and direct-compiler isolated builds.
+
+Two cyclic rotations give the inverse cyclic leg, deriving intermediate
+support, kernel, reciprocal normalization and local positivity internally.
+The actual axial L2 action is a continuous linear equivalence. It intertwines
+the full actual analytic pencil, and exact nested conjugacies retain the
+same compressed sector under one or two cyclic rotations. The ten cyclic
+and operator modules passed root semantic review and isolated builds.
+
+These helpers supply the physical phase and operator transports used in
+the arbitrary-plane construction. The final unconditional arbitrary-plane
+modal/driven witnesses, complete transported observed residue, aggregate
+fresh rebuild and final paper checks remain active. Full OQ14 is not yet
+declared closed.
+
+14 modules / 24 reports passed independent root review and a fresh
+ordered build. 1668 upstream sources were authenticated, with cached objects.
+The ledger is 1469 modules / 5783 reports, all prior records unchanged:
+`checkpoints/2026-11-13-affine-sector-transport/evidence/audited_after_5238-stage111.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage111.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 110 is the latest verified incremental checkpoint:
 [STAGE110.txt](checkpoints/2026-11-13-passivity-plane-transport/STAGE110.txt).
 

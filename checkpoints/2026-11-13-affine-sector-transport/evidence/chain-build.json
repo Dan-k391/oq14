@@ -1,0 +1,437 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-affine-sector-transport/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06AxialEquivalence",
+      "source": "lean/Packet06AxialEquivalence.lean",
+      "source_sha256": "a70510b7c6a2afe39a52d4019b30c54ae7ea01252f015af669afbb508080952a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06AxialEquivalence.olean",
+        "D:\\oq14\\lean\\Packet06AxialEquivalence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.609,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialEquivalence-chain.log",
+      "log_sha256": "bb070bd2e98210c51f140f4b0fbf0a2a4c41b87f3727913f96619837c58e4c45",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialEquivalence.action_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "42808c2f5c0d85ab0efb3aeab69d789104f11b765daadebbc5e934f29659830d"
+    },
+    {
+      "module": "Packet06AxialPencilTransport",
+      "source": "lean/Packet06AxialPencilTransport.lean",
+      "source_sha256": "84e03f01c223236f7c8e53335a3c2501ab5612b82dd095c54547585525cf6686",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06AxialPencilTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialPencilTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.625,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AxialPencilTransport-chain.log",
+      "log_sha256": "ec464363e59e8d7285f192e1a2f9642786f4bd8c55d33f4c513e646bce7b6bdc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialPencilTransport.volume_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialPencilTransport.static_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialPencilTransport.pencil_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cd772d8f64b6e76a7b5da7004963dd61e9767cf053966a26c363d9af7aa06ced"
+    },
+    {
+      "module": "Packet06GenericSectorConjugate",
+      "source": "lean/Packet06GenericSectorConjugate.lean",
+      "source_sha256": "4231194391c67f36fc589eb9c6dc7dcf1895a49edd63bfb164734fc65b03600b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06GenericSectorConjugate.olean",
+        "D:\\oq14\\lean\\Packet06GenericSectorConjugate.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.078,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06GenericSectorConjugate-chain.log",
+      "log_sha256": "0c6bc36beb7fa72172b6e75b4591d478b55c1436b7608981f51d188812d0eef6",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GenericSectorConjugate.conjugate_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GenericSectorConjugate.sector_conjugate_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GenericSectorConjugate.axial_pencil_conjugate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GenericSectorConjugate.nested_sector_conjugate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8ce30f34b5c57bbfbe4f0dd22778ad2ebd48ab0a0887b5d6fdcba6aaa1cccf35"
+    },
+    {
+      "module": "Packet06CyclicActualPhaseGeneral",
+      "source": "lean/Packet06CyclicActualPhaseGeneral.lean",
+      "source_sha256": "8f72648c3b1b2c5451e673403815fb38884e858ad1567728bf31efbadd50c852",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicActualPhaseGeneral.olean",
+        "D:\\oq14\\lean\\Packet06CyclicActualPhaseGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.969,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicActualPhaseGeneral-chain.log",
+      "log_sha256": "9d1ae027b90b07fcddeb6363ae762b975baafab7b5f24aa2068246947e2c865c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicActualPhaseGeneral.component_image_general_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6b7c12e10724e9b7957dfd03f63c51bdbbf4a60aa5a8107e19325052c9994b91"
+    },
+    {
+      "module": "Packet06CyclicTraceGeneral",
+      "source": "lean/Packet06CyclicTraceGeneral.lean",
+      "source_sha256": "0be0b4d4926c22932ce659da7dcd132612a4c870cd8ed7b3ee170e41822c8991",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicTraceGeneral.olean",
+        "D:\\oq14\\lean\\Packet06CyclicTraceGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.203,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTraceGeneral-chain.log",
+      "log_sha256": "5102e65bd895dd37694b8a80bd9170f4313a9b679eec211f81bf639269fcc6bc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicTraceGeneral.cyclic_trace_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0eee21367405008cef28cd1b8a92001766572c1bf0aaf810176da1e8c32cee43"
+    },
+    {
+      "module": "Packet06CyclicHotspotGeneral",
+      "source": "lean/Packet06CyclicHotspotGeneral.lean",
+      "source_sha256": "a62ac770dca9e1c9f0924c34e26e1b9786e441d234a4b76f1f4b9d097ad3f6ba",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicHotspotGeneral.olean",
+        "D:\\oq14\\lean\\Packet06CyclicHotspotGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.547,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicHotspotGeneral-chain.log",
+      "log_sha256": "589e4ec0d82fe11c8ec5884b88fa29d23c15892d712e40b39746819a3c418e54",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicHotspotGeneral.cyclic_hotspot_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "21a6fb2462a7bcdc4569ab524f22c0026a9b57e60e3e57ee5e93f4ec35e71c2e"
+    },
+    {
+      "module": "Packet06CyclicOneSidedGeneral",
+      "source": "lean/Packet06CyclicOneSidedGeneral.lean",
+      "source_sha256": "bb9c50d28518fca40cebb8c377b9d9c1f2c7a275298cbbe7721164ded8a14f39",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicOneSidedGeneral.olean",
+        "D:\\oq14\\lean\\Packet06CyclicOneSidedGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.797,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicOneSidedGeneral-chain.log",
+      "log_sha256": "998f06b8877504c4627745b8aa91f556759404e6f16ed34897b55a11c7cea23a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicOneSidedGeneral.cyclic_one_sided_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d47bbfae5b63bc1831f5649574b784934a9fb40a36a59a73ae3acfee950c44f0"
+    },
+    {
+      "module": "Packet06CyclicTwiceGeneral",
+      "source": "lean/Packet06CyclicTwiceGeneral.lean",
+      "source_sha256": "e980ee66000ce7fbdded0ecf9d5f6d830be6f60b67db6f2d535209b919b8b207",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicTwiceGeneral.olean",
+        "D:\\oq14\\lean\\Packet06CyclicTwiceGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.922,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceGeneral-chain.log",
+      "log_sha256": "6ddc927d58f045fc6a3a58883a432fc2d3aa220fdc35cb10ba1ca01d55f93cef",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicTwiceGeneral.coefficient_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicTwiceGeneral.ball_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicTwiceGeneral.twice_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "36d5c1aff904152a222b6dcdbe58ee4c1a7258cc7b58ea30efbf5904db552c42"
+    },
+    {
+      "module": "Packet06CyclicTwiceCollar",
+      "source": "lean/Packet06CyclicTwiceCollar.lean",
+      "source_sha256": "f4953a087214bb56b72279f6cc1f3a0b60dcc77c9246b907df0de78c00b6784d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicTwiceCollar.olean",
+        "D:\\oq14\\lean\\Packet06CyclicTwiceCollar.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.75,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicTwiceCollar-chain.log",
+      "log_sha256": "66a77d227873abb2f196f7aaf408bc539abbfc70f1aab9604e309015222219d4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicTwiceCollar.twice_collar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "012b840785e8f0aaee062424b71e555e66dfbe8f9390fb5d9bd0675a6dc2b7ec"
+    },
+    {
+      "module": "Packet06CyclicSectorConjugate",
+      "source": "lean/Packet06CyclicSectorConjugate.lean",
+      "source_sha256": "0eae57f0f0da027c4d6fd534daaf4bd331d5d3383c14e248028962b37c173ed8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cyclic-sector-transport\\reviews\\root-objects\\Packet06CyclicSectorConjugate.olean",
+        "D:\\oq14\\lean\\Packet06CyclicSectorConjugate.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 23.36,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06CyclicSectorConjugate-chain.log",
+      "log_sha256": "18da3faa7b11f47e2301839a8ea515ca03a135aab5eabc832c68f05c83023424",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicSectorConjugate.one_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicSectorConjugate.cyclic_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicSectorConjugate.cyclic_pencil_conjugate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicSectorConjugate.twice_sector_conjugate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "03905723eaaf5dd75440e55ef8c4e1e54230801b9f6e1f24bf4220e4d5a670eb"
+    },
+    {
+      "module": "Packet06AffineActualPhaseGeneral",
+      "source": "lean/Packet06AffineActualPhaseGeneral.lean",
+      "source_sha256": "ef5ab85a2df10eacb107d5ea22e5c57013c7f5f7042b9c743df61ac5b933a329",
+      "command": null,
+      "exit_code": 0,
+      "elapsed_seconds": 10.89,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineActualPhaseGeneral-chain.log",
+      "log_sha256": "aa1444a742aac756958869c7c47fa66d3cdac9d5e9b1f4fc250cf3acf58f5054",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AffineActualPhaseGeneral.component_image_general_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2c1630804c997ab499e2b91323b9479533545ad09bfca2955ea7a1b0d802f4e0"
+    },
+    {
+      "module": "Packet06AffineTraceGeneral",
+      "source": "lean/Packet06AffineTraceGeneral.lean",
+      "source_sha256": "21b029d4ee07fc288b9fb015912ae96cb75cb6132c401cb15097f877b28411e1",
+      "command": null,
+      "exit_code": 0,
+      "elapsed_seconds": 9.96,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineTraceGeneral-chain.log",
+      "log_sha256": "b7fa692d541affc93a64541ccd7fabc4eed10fedd25b7a13fe6a127518b66c13",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AffineTraceGeneral.affine_trace_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c9b83fde7319f2d7b1cb848b8290e12f2ed358bb1de7fbe0e2e4d1030d570db7"
+    },
+    {
+      "module": "Packet06AffineHotspotGeneral",
+      "source": "lean/Packet06AffineHotspotGeneral.lean",
+      "source_sha256": "4a23af87d3c2bdeac6d9e720454923382f087d3460440ca0a205c72742c21bc4",
+      "command": null,
+      "exit_code": 0,
+      "elapsed_seconds": 10.46,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineHotspotGeneral-chain.log",
+      "log_sha256": "d51ee4e20d57110ef8a3e99469f77a59ce2220fec317e1c380b9c450a623e6a8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AffineHotspotGeneral.affine_hotspot_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ca6cb50cc330ad79db4959ca8206ce4c25d3fa30d1100ab059922df1ae08258f"
+    },
+    {
+      "module": "Packet06AffineOneSidedGeneral",
+      "source": "lean/Packet06AffineOneSidedGeneral.lean",
+      "source_sha256": "8a45a0b5ff69ebff65eaad9e8b8dfdf51804756fee369427e078a18cacd262da",
+      "command": null,
+      "exit_code": 0,
+      "elapsed_seconds": 9.21,
+      "log": "checkpoints/2026-11-13-affine-sector-transport/evidence/Packet06AffineOneSidedGeneral-chain.log",
+      "log_sha256": "9ec86bd9604b501ac37e71e364eeb268970cb7f9ead6b91e38ba3fa1577c095d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AffineOneSidedGeneral.affine_one_sided_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fa76bbbdb03d190e83b210c8ab1a792eb0c161bbbaa3383852effc7eb59b0bb9"
+    }
+  ],
+  "module_count": 14,
+  "report_count": 24
+}
