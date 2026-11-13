@@ -1,5 +1,36 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 97 is the latest verified incremental checkpoint:
+[STAGE97.txt](checkpoints/2026-11-13-placed-pole/STAGE97.txt).
+
+The actual rotation, normalized dilation and translation form an invertible
+continuous linear map on the full L2 field space. Both the full complex volume
+operator and its statically preconditioned pencil intertwine with this map.
+The selected pencil is defined in coordinates on the transported electric
+sector, with its actual ambient action proved explicitly.
+
+At the scaled frequency, the original simple certificate gives a simple
+Schur zero whose derivative is divided by the positive scale. On every
+containing observation ball, the actual placed electric response therefore
+has a nonzero rank-one Laurent residue and an analytic regular part. Its
+nonvanishing follows from the true placed kernel and field observation.
+No ambient simplicity or unchanged original-axis sector is asserted.
+
+Actual curved continuity, fixed-collar estimates and attained hotspot
+components, projected-source Green integration, the final paper and aggregate
+validation remain active. Full OQ14 is not yet declared closed.
+
+5 modules / 18 reports passed independent root review and a fresh
+ordered build. 1059 upstream sources were authenticated, with cached objects.
+The ledger is 1011 modules / 5029 reports, all prior records unchanged:
+`checkpoints/2026-11-13-placed-pole/evidence/audited_after_5238-stage97.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage97.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 96 is the latest verified incremental checkpoint:
 [STAGE96.txt](checkpoints/2026-11-13-physical-peak-existence/STAGE96.txt).
 

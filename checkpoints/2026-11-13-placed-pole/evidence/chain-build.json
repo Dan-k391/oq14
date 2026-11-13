@@ -1,0 +1,247 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-050536-59368",
+  "object_directory": "checkpoints/2026-11-13-placed-pole/objects/20261113-050536-59368",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 5 transported-sector pole modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06PlacedEquivalence",
+      "source": "lean/Packet06PlacedEquivalence.lean",
+      "source_sha256": "8d2f375f738af4d536a72db574852533caf715e590812cd1353c8549b55f120d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368\\Packet06PlacedEquivalence.olean",
+        "D:\\oq14\\lean\\Packet06PlacedEquivalence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.187,
+      "log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedEquivalence-chain.log",
+      "log_sha256": "ceddb58fa787f8f72b1c39d45b4f1f643504fce5d030d5dafceb27ccd782531c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedEquivalence.cyclic_cube",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedEquivalence.translation_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedEquivalence.placed_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedEquivalence.placed_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedEquivalence.placed_surjective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b537021acf09afd23e231a1d9b4ba0149b9bcaa5f8472fa5dffd05ccae6af7b6"
+    },
+    {
+      "module": "Packet06PlacedConjugacy",
+      "source": "lean/Packet06PlacedConjugacy.lean",
+      "source_sha256": "a3d0db405e3edfbbe0bdf6f2bad2d3af6e24ba127bd2c9773387aedc12090152",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368\\Packet06PlacedConjugacy.olean",
+        "D:\\oq14\\lean\\Packet06PlacedConjugacy.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.188,
+      "log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedConjugacy-chain.log",
+      "log_sha256": "d19a968f8adcc895b1f3f027996fa6d6379f4f47e58d9476bf70c151a0049a84",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedConjugacy.volume_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedConjugacy.volume_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedConjugacy.static_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedConjugacy.pencil_intertwines",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ff9bec0c45e59accd130b921cd9d8556bae8818c831bf0812e762cb98419e191"
+    },
+    {
+      "module": "Packet06PlacedSector",
+      "source": "lean/Packet06PlacedSector.lean",
+      "source_sha256": "a69f47b410e2d03c06b4c72d8f3099f7ee8e3bfb05b50c315433907a2e42aafb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368\\Packet06PlacedSector.olean",
+        "D:\\oq14\\lean\\Packet06PlacedSector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.39,
+      "log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSector-chain.log",
+      "log_sha256": "25333d9a5d713c0f80a114b263aa39cb4d692e6495ebec32db502f57eafa9405",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedSector.pencil_scaled",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedSector.pencil_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedSector.pencil_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "179fefc297ebc63d0168b2d057c9bcfbe9302ded8024160620b05b6666717ca6"
+    },
+    {
+      "module": "Packet06PlacedSchur",
+      "source": "lean/Packet06PlacedSchur.lean",
+      "source_sha256": "54a1c55738bbe5faa4093c2349f687b39576448bc156df1945e158e6ac6c2d7d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368\\Packet06PlacedSchur.olean",
+        "D:\\oq14\\lean\\Packet06PlacedSchur.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.75,
+      "log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSchur-chain.log",
+      "log_sha256": "94651f8565f5c50a78ac5985611f3d634c0a6eb8ad1ccc3752bc70e87b7463ce",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedSchur.pencil_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedSchur.scalar_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedSchur.certified_schur",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e30fd09cf006781e4644817486828896d54cafd37025d41ce6ee6805ef54678d"
+    },
+    {
+      "module": "Packet06PlacedPole",
+      "source": "lean/Packet06PlacedPole.lean",
+      "source_sha256": "7f69c7e8f3567ea2358deffec698a3a35acc004e07f73c9f3e7eff38e63422b3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-pole\\objects\\20261113-050536-59368\\Packet06PlacedPole.olean",
+        "D:\\oq14\\lean\\Packet06PlacedPole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.437,
+      "log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedPole-chain.log",
+      "log_sha256": "3b1c560902525cb295b818e4040c48da2cf1e08e27f2b10de9cfc397dd896457",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedPole.observation_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPole.coefficient_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPole.certified_observed_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "22f8081df754814f19f27a27dbff6a20852dd62044fdd674c390f1bf6762cbf5"
+    }
+  ],
+  "module_count": 5,
+  "report_count": 18
+}

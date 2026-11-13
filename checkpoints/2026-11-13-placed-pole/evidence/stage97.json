@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "6c70a2c",
+  "modules": 1011,
+  "reports": 5029,
+  "new_modules": 5,
+  "new_reports": 18,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "d0993c20a6c36d36eea743b4fdcebccfde4c14cee0051b4f426c188e66d72356",
+  "ledger_sha256": "f1c92a35427a2c42198149b151ab0d43cb51934d987fbfab5ff7b207c77303ec",
+  "raw_archive_sha256": "8081a6339b71d8e4bec42eafae040ff18e170c2fbe0f9370035661dd4a7d98e6",
+  "records": [
+    {
+      "module": "Packet06PlacedEquivalence",
+      "reports": 5,
+      "source_sha256": "8d2f375f738af4d536a72db574852533caf715e590812cd1353c8549b55f120d",
+      "audit_log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedEquivalence-chain.log",
+      "audit_log_sha256": "ceddb58fa787f8f72b1c39d45b4f1f643504fce5d030d5dafceb27ccd782531c",
+      "independent_review": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "independent_build_sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d",
+      "independent_log": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedEquivalence.log",
+      "independent_log_sha256": "ceddb58fa787f8f72b1c39d45b4f1f643504fce5d030d5dafceb27ccd782531c",
+      "declarations": [
+        "OQ14.Packet06PlacedEquivalence.cyclic_cube",
+        "OQ14.Packet06PlacedEquivalence.translation_inverse",
+        "OQ14.Packet06PlacedEquivalence.placed_apply",
+        "OQ14.Packet06PlacedEquivalence.placed_injective",
+        "OQ14.Packet06PlacedEquivalence.placed_surjective"
+      ]
+    },
+    {
+      "module": "Packet06PlacedConjugacy",
+      "reports": 4,
+      "source_sha256": "a3d0db405e3edfbbe0bdf6f2bad2d3af6e24ba127bd2c9773387aedc12090152",
+      "audit_log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedConjugacy-chain.log",
+      "audit_log_sha256": "d19a968f8adcc895b1f3f027996fa6d6379f4f47e58d9476bf70c151a0049a84",
+      "independent_review": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "independent_build_sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d",
+      "independent_log": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedConjugacy.log",
+      "independent_log_sha256": "d19a968f8adcc895b1f3f027996fa6d6379f4f47e58d9476bf70c151a0049a84",
+      "declarations": [
+        "OQ14.Packet06PlacedConjugacy.volume_intertwines",
+        "OQ14.Packet06PlacedConjugacy.volume_conjugacy",
+        "OQ14.Packet06PlacedConjugacy.static_intertwines",
+        "OQ14.Packet06PlacedConjugacy.pencil_intertwines"
+      ]
+    },
+    {
+      "module": "Packet06PlacedSector",
+      "reports": 3,
+      "source_sha256": "a69f47b410e2d03c06b4c72d8f3099f7ee8e3bfb05b50c315433907a2e42aafb",
+      "audit_log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSector-chain.log",
+      "audit_log_sha256": "25333d9a5d713c0f80a114b263aa39cb4d692e6495ebec32db502f57eafa9405",
+      "independent_review": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "independent_build_sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d",
+      "independent_log": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedSector.log",
+      "independent_log_sha256": "25333d9a5d713c0f80a114b263aa39cb4d692e6495ebec32db502f57eafa9405",
+      "declarations": [
+        "OQ14.Packet06PlacedSector.pencil_scaled",
+        "OQ14.Packet06PlacedSector.pencil_formula",
+        "OQ14.Packet06PlacedSector.pencil_actual"
+      ]
+    },
+    {
+      "module": "Packet06PlacedSchur",
+      "reports": 3,
+      "source_sha256": "54a1c55738bbe5faa4093c2349f687b39576448bc156df1945e158e6ac6c2d7d",
+      "audit_log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSchur-chain.log",
+      "audit_log_sha256": "94651f8565f5c50a78ac5985611f3d634c0a6eb8ad1ccc3752bc70e87b7463ce",
+      "independent_review": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "independent_build_sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d",
+      "independent_log": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedSchur.log",
+      "independent_log_sha256": "94651f8565f5c50a78ac5985611f3d634c0a6eb8ad1ccc3752bc70e87b7463ce",
+      "declarations": [
+        "OQ14.Packet06PlacedSchur.pencil_analyticAt",
+        "OQ14.Packet06PlacedSchur.scalar_derivative",
+        "OQ14.Packet06PlacedSchur.certified_schur"
+      ]
+    },
+    {
+      "module": "Packet06PlacedPole",
+      "reports": 3,
+      "source_sha256": "7f69c7e8f3567ea2358deffec698a3a35acc004e07f73c9f3e7eff38e63422b3",
+      "audit_log": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedPole-chain.log",
+      "audit_log_sha256": "3b1c560902525cb295b818e4040c48da2cf1e08e27f2b10de9cfc397dd896457",
+      "independent_review": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "independent_build_sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d",
+      "independent_log": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedPole.log",
+      "independent_log_sha256": "3b1c560902525cb295b818e4040c48da2cf1e08e27f2b10de9cfc397dd896457",
+      "declarations": [
+        "OQ14.Packet06PlacedPole.observation_analyticAt",
+        "OQ14.Packet06PlacedPole.coefficient_support",
+        "OQ14.Packet06PlacedPole.certified_observed_pole"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/.gitignore",
+      "sha256": "d32678dd506e8a423e32317ee9de78832683fca2b3d3fab9cb62e880e6b8bdba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/audited_after_5238-stage97.json",
+      "sha256": "f1c92a35427a2c42198149b151ab0d43cb51934d987fbfab5ff7b207c77303ec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/chain-build.json",
+      "sha256": "36864c0bf5c7555b16fa166273104f5f8c00f4655c180b6781155b2363fdc475"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedConjugacy-chain.log",
+      "sha256": "d19a968f8adcc895b1f3f027996fa6d6379f4f47e58d9476bf70c151a0049a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedEquivalence-chain.log",
+      "sha256": "ceddb58fa787f8f72b1c39d45b4f1f643504fce5d030d5dafceb27ccd782531c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedPole-chain.log",
+      "sha256": "3b1c560902525cb295b818e4040c48da2cf1e08e27f2b10de9cfc397dd896457"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSchur-chain.log",
+      "sha256": "94651f8565f5c50a78ac5985611f3d634c0a6eb8ad1ccc3752bc70e87b7463ce"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/evidence/Packet06PlacedSector-chain.log",
+      "sha256": "25333d9a5d713c0f80a114b263aa39cb4d692e6495ebec32db502f57eafa9405"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/modules.json",
+      "sha256": "1e622351c14531bfb9673b24b60c0711c218e95d8b5fc74cd24adfa869a26392"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/provenance-audit.json",
+      "sha256": "a65e45dbac8e8fc0f53180a73de2bc0b3a0fdcbaeb1245038b8819b312d08e0c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/author-inventory.json",
+      "sha256": "88a9519ac6a5d8968ffc3109e5a07e41a3ee5ff33b7e3e54e6d357386259a85b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/independent-build.json",
+      "sha256": "8e632950583c9791dcaa354c02f1f471d6587539bdb32ffec1ba0baa8372684d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/independent-review.txt",
+      "sha256": "20be91869ff2e9e17546ca0d20be2c17694f4a39bfb96dbdccab0595e1789a08"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/metadata-normalization.json",
+      "sha256": "a151302f8912e6b84f675f351fd0c048b9daaa98c59075dba1701fcfb507002c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedConjugacy.log",
+      "sha256": "d19a968f8adcc895b1f3f027996fa6d6379f4f47e58d9476bf70c151a0049a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedEquivalence.log",
+      "sha256": "ceddb58fa787f8f72b1c39d45b4f1f643504fce5d030d5dafceb27ccd782531c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedPole.log",
+      "sha256": "3b1c560902525cb295b818e4040c48da2cf1e08e27f2b10de9cfc397dd896457"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedSchur.log",
+      "sha256": "94651f8565f5c50a78ac5985611f3d634c0a6eb8ad1ccc3752bc70e87b7463ce"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/Packet06PlacedSector.log",
+      "sha256": "25333d9a5d713c0f80a114b263aa39cb4d692e6495ebec32db502f57eafa9405"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/reviews/run-independent.py",
+      "sha256": "041601e25961ed3a65f26f4e62831f14c289153630dfcd3c13953162b68a7bcf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/scripts/audit_provenance.ps1",
+      "sha256": "cf6b52d6ac07f1f3c6ad0336f60ee80006f84117b5353afce19d87b8a1c0a68f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/scripts/check_chain.py",
+      "sha256": "c44b0ca8312a5063a900468d8fbb64778cb6c04f4ce1abbea609d1456b709cd5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/scripts/freeze_checkpoint.py",
+      "sha256": "ba618069aa7d36fa47c29a64fc663f2242d2c601bffd14c3c964e5fed3434ef8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-placed-pole/STAGE97.txt",
+      "sha256": "52b9d8ed7b6b1ad141934307f359b5a51d5733b107d3975217d86e7345335d36"
+    },
+    {
+      "path": "lean/Packet06PlacedConjugacy.lean",
+      "sha256": "a3d0db405e3edfbbe0bdf6f2bad2d3af6e24ba127bd2c9773387aedc12090152"
+    },
+    {
+      "path": "lean/Packet06PlacedEquivalence.lean",
+      "sha256": "8d2f375f738af4d536a72db574852533caf715e590812cd1353c8549b55f120d"
+    },
+    {
+      "path": "lean/Packet06PlacedPole.lean",
+      "sha256": "7f69c7e8f3567ea2358deffec698a3a35acc004e07f73c9f3e7eff38e63422b3"
+    },
+    {
+      "path": "lean/Packet06PlacedSchur.lean",
+      "sha256": "54a1c55738bbe5faa4093c2349f687b39576448bc156df1945e158e6ac6c2d7d"
+    },
+    {
+      "path": "lean/Packet06PlacedSector.lean",
+      "sha256": "a69f47b410e2d03c06b4c72d8f3099f7ee8e3bfb05b50c315433907a2e42aafb"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "e3700e09a8c44e451eb27c34d88aa1ed5df656bc9af67ffe0155628010a0e6d0"
+    }
+  ],
+  "scope": "actual transported-sector physical simple poles. Actual excitation, placed positive-volume peaks and transported selected poles are proved; attained hotspots and full OQ14 remain active."
+}
