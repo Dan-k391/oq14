@@ -1,0 +1,745 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "d51b534",
+  "modules": 1508,
+  "reports": 5876,
+  "new_modules": 21,
+  "new_reports": 52,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "6fc6347274c08bc8742ff1d2e0b8cda0de8cc0f428dbde66644a13abe8a396a1",
+  "ledger_sha256": "694eb755f7951c57f9ad7ac770b9d1def4eadf2587e27ae27385dd37c17c4355",
+  "raw_archive_sha256": "6f6d1bd71e7bcd0e4e0bb794b386b52eb6505b17b901c3caa80fde7547eea9ac",
+  "records": [
+    {
+      "module": "Packet07DrivenCyclicAngularVector",
+      "reports": 3,
+      "source_sha256": "7ec7c8ebd1bb41fc8ca0c0566494a3a44a4727b56e3861363367b2ddde28931c",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngularVector-chain.log",
+      "audit_log_sha256": "9ca0af014a78f25dce6dab047051589d051c53da1ce8a89b3da24d8cef810e7a",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngularVector.log",
+      "independent_log_sha256": "9ca0af014a78f25dce6dab047051589d051c53da1ce8a89b3da24d8cef810e7a",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicAngularVector.rotate_norm",
+        "OQ14.Packet07DrivenCyclicAngularVector.rotate_sub",
+        "OQ14.Packet07DrivenCyclicAngularVector.rotate_continuous"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicAngular",
+      "reports": 2,
+      "source_sha256": "d1ffd4b141665ddb411f2474420f759dd38a907a6f8641c316e99247f176fe1d",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngular-chain.log",
+      "audit_log_sha256": "e6a2d38f77c39d543ea0dbaea7e4f891dfff4dcc0a650b66ee296a6292a9a07d",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngular.log",
+      "independent_log_sha256": "e6a2d38f77c39d543ea0dbaea7e4f891dfff4dcc0a650b66ee296a6292a9a07d",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicAngular.pull_norm",
+        "OQ14.Packet07DrivenCyclicAngular.rotated_norm"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicTangency",
+      "reports": 2,
+      "source_sha256": "8cf39fa16738784fed4baf54e84cbdd6c690dd10edcc3ba54f4e3bdb176d2672",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicTangency-chain.log",
+      "audit_log_sha256": "a5a69ac34ac7e979f343a76cb54879788834f767aedeb0057a3762220e8ff247",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicTangency.log",
+      "independent_log_sha256": "a5a69ac34ac7e979f343a76cb54879788834f767aedeb0057a3762220e8ff247",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicTangency.normal_pair",
+        "OQ14.Packet07DrivenCyclicTangency.rotated_tangent"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicAngularSmooth",
+      "reports": 2,
+      "source_sha256": "0f4e1d442588179960a921f5358100f2474df26aa55faf1c536ade2fc4ec03a2",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngularSmooth-chain.log",
+      "audit_log_sha256": "bfa86d54e842925e5d2916ecf5add89c67c0c97e10f1f2719acaff8d4d819589",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngularSmooth.log",
+      "independent_log_sha256": "bfa86d54e842925e5d2916ecf5add89c67c0c97e10f1f2719acaff8d4d819589",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicAngularSmooth.extension_smooth",
+        "OQ14.Packet07DrivenCyclicAngularSmooth.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicHerglotz",
+      "reports": 6,
+      "source_sha256": "2823138610b53f68027b8ec379f7526a83c4337de95f2eaa0524c3840ffc82c4",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicHerglotz-chain.log",
+      "audit_log_sha256": "6f08807ba0bc306444cd24494416f4262fe15a343bdc73720f535811df66b6a2",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicHerglotz.log",
+      "independent_log_sha256": "6f08807ba0bc306444cd24494416f4262fe15a343bdc73720f535811df66b6a2",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicHerglotz.wave_rotate",
+        "OQ14.Packet07DrivenCyclicHerglotz.sphere_inverse",
+        "OQ14.Packet07DrivenCyclicHerglotz.electric_covariant",
+        "OQ14.Packet07DrivenCyclicHerglotz.magnetic_amplitude_rotate",
+        "OQ14.Packet07DrivenCyclicHerglotz.rotated_magneticMap",
+        "OQ14.Packet07DrivenCyclicHerglotz.magnetic_covariant"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameAngular",
+      "reports": 4,
+      "source_sha256": "44898227f5a21e8fb728510b730f5bd5e0014ef71a94a85cdb5748003632c28d",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAngular-chain.log",
+      "audit_log_sha256": "7dfd846d7e49fc5eb6169b7a36aa34561ffd3e1e9b57e2bb3542e4a13c95914a",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAngular.log",
+      "independent_log_sha256": "7dfd846d7e49fc5eb6169b7a36aa34561ffd3e1e9b57e2bb3542e4a13c95914a",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameAngular.amplitude_norm",
+        "OQ14.Packet07DrivenFrameAngular.amplitude_tangent",
+        "OQ14.Packet07DrivenFrameAngular.electric_covariant",
+        "OQ14.Packet07DrivenFrameAngular.magnetic_covariant"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameAngularSmooth",
+      "reports": 2,
+      "source_sha256": "0238d2dca1b43721957890f4381c58938695fb5a0f36b2e017fe97f7964e43fd",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAngularSmooth-chain.log",
+      "audit_log_sha256": "1382a418c2a4b0e6c901c4944ee33ead5832b240de8cb973fc9cbfc098eded82",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAngularSmooth.log",
+      "independent_log_sha256": "1382a418c2a4b0e6c901c4944ee33ead5832b240de8cb973fc9cbfc098eded82",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameAngularSmooth.extension_smooth",
+        "OQ14.Packet07DrivenFrameAngularSmooth.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRotatedOutgoing",
+      "reports": 2,
+      "source_sha256": "e8863cc39d0ba82c4e61c01983f91e53f79ea040f7bf432c5a5ef1e98caf1e19",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRotatedOutgoing-chain.log",
+      "audit_log_sha256": "127143a90c5cb6201eb0c08a4e94e181eef0fb238a0f9965059f6abcbeeb7887",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRotatedOutgoing.log",
+      "independent_log_sha256": "127143a90c5cb6201eb0c08a4e94e181eef0fb238a0f9965059f6abcbeeb7887",
+      "declarations": [
+        "OQ14.Packet07DrivenRotatedOutgoing.axial_outgoing",
+        "OQ14.Packet07DrivenRotatedOutgoing.cyclic_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameOutgoing",
+      "reports": 1,
+      "source_sha256": "0779570b99fb2500cd83ed8314083fda0403bb17fca4e423df28bfe367db3d9b",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameOutgoing-chain.log",
+      "audit_log_sha256": "3e89abb3df8db9d9a9faf2f99ab0d027792d001a04166ea5f95d521d4c6d2ec8",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "independent_review_sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "independent_build_sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameOutgoing.log",
+      "independent_log_sha256": "3e89abb3df8db9d9a9faf2f99ab0d027792d001a04166ea5f95d521d4c6d2ec8",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameOutgoing.frame_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFixedTargetStrong",
+      "reports": 1,
+      "source_sha256": "aa139eaa6266971c178973190dff5691aad60f084f80c8446a1881f56290f190",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenUniformFixedTargetStrong-chain.log",
+      "audit_log_sha256": "e3e3f2c03a98def8cbb473344fa13632ace348abb6e380dead84ff07dedf21d2",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenUniformFixedTargetStrong.log",
+      "independent_log_sha256": "e3e3f2c03a98def8cbb473344fa13632ace348abb6e380dead84ff07dedf21d2",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFixedTargetStrong.fixed_target_hotspots"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameAffine",
+      "reports": 4,
+      "source_sha256": "b883f30e5b1b844c4afcb7b43ba93bf039919d24affbb448dcce62621a3ae9c8",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAffine-chain.log",
+      "audit_log_sha256": "d070e625fc249344c1f6d43c28803c7b749d99a7b7917515c816d486646763fe",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAffine.log",
+      "independent_log_sha256": "d070e625fc249344c1f6d43c28803c7b749d99a7b7917515c816d486646763fe",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameAffine.axial_affine",
+        "OQ14.Packet07DrivenFrameAffine.cyclic_affine",
+        "OQ14.Packet07DrivenFrameAffine.inverse_cyclic_affine",
+        "OQ14.Packet07DrivenFrameAffine.frame_affine"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAffineLocal",
+      "reports": 2,
+      "source_sha256": "a7f34ac263b6950ecc05b000943e3fa7294168bbb55be4d8cfb31ddb2e2d97af",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAffineLocal-chain.log",
+      "audit_log_sha256": "2fa6b09410bbc58dc38a8bc019ffe32732b1bd26b7f1523184c26401b2345adc",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAffineLocal.log",
+      "independent_log_sha256": "2fa6b09410bbc58dc38a8bc019ffe32732b1bd26b7f1523184c26401b2345adc",
+      "declarations": [
+        "OQ14.Packet07DrivenAffineLocal.affine_map_measure",
+        "OQ14.Packet07DrivenAffineLocal.affine_local"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAffineGood",
+      "reports": 1,
+      "source_sha256": "8d5affaac4874e023f246761324d66df0be807b411920cacc83f9fd00057b39a",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAffineGood-chain.log",
+      "audit_log_sha256": "0e79ac48442efa471d2bf8aabd5b2f1d4c391fc3e53bd916d48543ac5241b5fc",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAffineGood.log",
+      "independent_log_sha256": "0e79ac48442efa471d2bf8aabd5b2f1d4c391fc3e53bd916d48543ac5241b5fc",
+      "declarations": [
+        "OQ14.Packet07DrivenAffineGood.affine_good"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAngularTranslationSmooth",
+      "reports": 2,
+      "source_sha256": "41d78669e3e2c525e22ed98442bd148b105da28af9786b333ed698bd11e167c8",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAngularTranslationSmooth-chain.log",
+      "audit_log_sha256": "5c60c919507259ba265a4c77d52c250f2f57f983aec19d911e00efd3b44a78d5",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAngularTranslationSmooth.log",
+      "independent_log_sha256": "5c60c919507259ba265a4c77d52c250f2f57f983aec19d911e00efd3b44a78d5",
+      "declarations": [
+        "OQ14.Packet07DrivenAngularTranslationSmooth.extension_smooth",
+        "OQ14.Packet07DrivenAngularTranslationSmooth.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidHotspot",
+      "reports": 3,
+      "source_sha256": "d1351fed698b096c88858113b41c704bee832165c0c1c8a80ea6e41f963ed516",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidHotspot-chain.log",
+      "audit_log_sha256": "ce45ee32ee22898e7cd3309357b76255a5b3ec42d4501eb864cd7c32925f9e20",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidHotspot.log",
+      "independent_log_sha256": "ce45ee32ee22898e7cd3309357b76255a5b3ec42d4501eb864cd7c32925f9e20",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidHotspot.placement_embed",
+        "OQ14.Packet07DrivenRigidHotspot.placement_image",
+        "OQ14.Packet07DrivenRigidHotspot.rigid_hotspot"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidFields",
+      "reports": 2,
+      "source_sha256": "5f29a8ee638d26e110d43b97c8e673f74b7761966c72701f97c03bc35ec84497",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidFields-chain.log",
+      "audit_log_sha256": "03cb6833e47a73cf1a87cb12a9fd3644afaedae3ded6a826d15dcc324addf333",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidFields.log",
+      "independent_log_sha256": "03cb6833e47a73cf1a87cb12a9fd3644afaedae3ded6a826d15dcc324addf333",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidFields.rigid_maxwell",
+        "OQ14.Packet07DrivenRigidFields.rigid_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidAngular",
+      "reports": 4,
+      "source_sha256": "2160c0c267c3b18ac6cd9093626dd99bc9d9d32748b73b4e029651f07a190405",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidAngular-chain.log",
+      "audit_log_sha256": "c79469dd43dcbbf76779393533881356b4f181b207ea1cbdfe1ba6921cee5df9",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidAngular.log",
+      "independent_log_sha256": "c79469dd43dcbbf76779393533881356b4f181b207ea1cbdfe1ba6921cee5df9",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidAngular.amplitude_norm",
+        "OQ14.Packet07DrivenRigidAngular.amplitude_tangent",
+        "OQ14.Packet07DrivenRigidAngular.electric",
+        "OQ14.Packet07DrivenRigidAngular.magnetic"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidGeometry",
+      "reports": 3,
+      "source_sha256": "62eff4cf4fa74f543acfebccf6803b1e01879c6ccc37d97c70f850301781b67f",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidGeometry-chain.log",
+      "audit_log_sha256": "8493f4c222ffe86493d7637e528051236fdf11edee2175ce0928fc7bac085c0f",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "independent_review_sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "independent_build_sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidGeometry.log",
+      "independent_log_sha256": "8493f4c222ffe86493d7637e528051236fdf11edee2175ce0928fc7bac085c0f",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidGeometry.placement_dist",
+        "OQ14.Packet07DrivenRigidGeometry.placement_ball",
+        "OQ14.Packet07DrivenRigidGeometry.placement_projection"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidBoundary",
+      "reports": 1,
+      "source_sha256": "01d27d1805d8450caf300ee8946a26e437ccdff79339dc934c028a72d4f519b4",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidBoundary-chain.log",
+      "audit_log_sha256": "f09b51c8e20ee4d4fad805429e12498a9d39f85c787b5e7dc7f0bf800bb7724e",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/boundary-review.txt",
+      "independent_review_sha256": "b71c8ac913ac9c6cec822c6f092a6a08f454ce58f0c87dde4294ce20a4cbb118",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/boundary-build.json",
+      "independent_build_sha256": "1ad9881d4b53ba2909b567ccdce8d1387f9ae4776974ad75780bc9c14074a1ef",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidBoundary.log",
+      "independent_log_sha256": "f09b51c8e20ee4d4fad805429e12498a9d39f85c787b5e7dc7f0bf800bb7724e",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidBoundary.smooth_boundary"
+      ]
+    },
+    {
+      "module": "Packet06ModalRetainedExistence",
+      "reports": 1,
+      "source_sha256": "fdc9db779597266639ef9c430b7287bc29fa8eb54ce06d12fdb2c0054a13a1dd",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet06ModalRetainedExistence-chain.log",
+      "audit_log_sha256": "708ceb41cf6e881868366e714bf0032b638bbf618c7d4b2131cc617fc302d083",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-review.txt",
+      "independent_review_sha256": "e95a6048adf3dd4d2656dfe376286a7d3c27ed146855ee993cbdecbde2dc4ada",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-build.json",
+      "independent_build_sha256": "30f058d058cc598f7fdb54af0056d31cf1ca541de89fe407a68a3bbbf73fe64a",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet06ModalRetainedExistence.log",
+      "independent_log_sha256": "708ceb41cf6e881868366e714bf0032b638bbf618c7d4b2131cc617fc302d083",
+      "declarations": [
+        "OQ14.Packet06ModalRetainedExistence.exists_retained_modal_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06ModalRetainedHost",
+      "reports": 4,
+      "source_sha256": "36312e7dfadf030298257895c2d207af4d8a4fe70c54bd7ff175d2951a9e0df7",
+      "audit_log": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet06ModalRetainedHost-chain.log",
+      "audit_log_sha256": "e8337763b15990f3199f31ef161380d3d4fa0e937f18e9602581371ee4988baa",
+      "independent_review": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-review.txt",
+      "independent_review_sha256": "e95a6048adf3dd4d2656dfe376286a7d3c27ed146855ee993cbdecbde2dc4ada",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-build.json",
+      "independent_build_sha256": "30f058d058cc598f7fdb54af0056d31cf1ca541de89fe407a68a3bbbf73fe64a",
+      "independent_log": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet06ModalRetainedHost.log",
+      "independent_log_sha256": "e8337763b15990f3199f31ef161380d3d4fa0e937f18e9602581371ee4988baa",
+      "declarations": [
+        "OQ14.Packet06ModalRetainedHost.observation_in_host",
+        "OQ14.Packet06ModalRetainedHost.supportRadius_nonneg",
+        "OQ14.Packet06ModalRetainedHost.host_enclosed",
+        "OQ14.Packet06ModalRetainedHost.host_positive"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/audited_after_5238-stage113.json",
+      "sha256": "694eb755f7951c57f9ad7ac770b9d1def4eadf2587e27ae27385dd37c17c4355"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/chain-build.json",
+      "sha256": "db1063712df347353d2f205ed4a96023e94b2994fd2bf8600da2a998c29eab1e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet06ModalRetainedExistence-chain.log",
+      "sha256": "708ceb41cf6e881868366e714bf0032b638bbf618c7d4b2131cc617fc302d083"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet06ModalRetainedHost-chain.log",
+      "sha256": "e8337763b15990f3199f31ef161380d3d4fa0e937f18e9602581371ee4988baa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAffineGood-chain.log",
+      "sha256": "0e79ac48442efa471d2bf8aabd5b2f1d4c391fc3e53bd916d48543ac5241b5fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAffineLocal-chain.log",
+      "sha256": "2fa6b09410bbc58dc38a8bc019ffe32732b1bd26b7f1523184c26401b2345adc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenAngularTranslationSmooth-chain.log",
+      "sha256": "5c60c919507259ba265a4c77d52c250f2f57f983aec19d911e00efd3b44a78d5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngular-chain.log",
+      "sha256": "e6a2d38f77c39d543ea0dbaea7e4f891dfff4dcc0a650b66ee296a6292a9a07d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngularSmooth-chain.log",
+      "sha256": "bfa86d54e842925e5d2916ecf5add89c67c0c97e10f1f2719acaff8d4d819589"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicAngularVector-chain.log",
+      "sha256": "9ca0af014a78f25dce6dab047051589d051c53da1ce8a89b3da24d8cef810e7a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicHerglotz-chain.log",
+      "sha256": "6f08807ba0bc306444cd24494416f4262fe15a343bdc73720f535811df66b6a2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenCyclicTangency-chain.log",
+      "sha256": "a5a69ac34ac7e979f343a76cb54879788834f767aedeb0057a3762220e8ff247"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAffine-chain.log",
+      "sha256": "d070e625fc249344c1f6d43c28803c7b749d99a7b7917515c816d486646763fe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAngular-chain.log",
+      "sha256": "7dfd846d7e49fc5eb6169b7a36aa34561ffd3e1e9b57e2bb3542e4a13c95914a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameAngularSmooth-chain.log",
+      "sha256": "1382a418c2a4b0e6c901c4944ee33ead5832b240de8cb973fc9cbfc098eded82"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenFrameOutgoing-chain.log",
+      "sha256": "3e89abb3df8db9d9a9faf2f99ab0d027792d001a04166ea5f95d521d4c6d2ec8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidAngular-chain.log",
+      "sha256": "c79469dd43dcbbf76779393533881356b4f181b207ea1cbdfe1ba6921cee5df9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidBoundary-chain.log",
+      "sha256": "f09b51c8e20ee4d4fad805429e12498a9d39f85c787b5e7dc7f0bf800bb7724e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidFields-chain.log",
+      "sha256": "03cb6833e47a73cf1a87cb12a9fd3644afaedae3ded6a826d15dcc324addf333"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidGeometry-chain.log",
+      "sha256": "8493f4c222ffe86493d7637e528051236fdf11edee2175ce0928fc7bac085c0f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRigidHotspot-chain.log",
+      "sha256": "ce45ee32ee22898e7cd3309357b76255a5b3ec42d4501eb864cd7c32925f9e20"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenRotatedOutgoing-chain.log",
+      "sha256": "127143a90c5cb6201eb0c08a4e94e181eef0fb238a0f9965059f6abcbeeb7887"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/evidence/Packet07DrivenUniformFixedTargetStrong-chain.log",
+      "sha256": "e3e3f2c03a98def8cbb473344fa13632ace348abb6e380dead84ff07dedf21d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/modules.json",
+      "sha256": "6980091044c17b0443bd3705ffb666d9af0ff967a0c14405eb1b18be4ae095f1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/provenance-audit.json",
+      "sha256": "88c518b20a9e1d8e11a775bbc0ae4978b4fbdf1caf3e9b5b8e08266246392db8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-build.json",
+      "sha256": "b9df08afd365ae3740f00a3efeed77ee291f1f01b1bf0dd1530d1396dc41702e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/angular-review.txt",
+      "sha256": "8d112fb81300abcb9aae5d137b3f479bdfe37de010e19d543332a879d723dd5e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/author-inventory.json",
+      "sha256": "fb2bd116c48766bf2a20d172196bb6c0584d97ce816cd0cf25e8cab0de1563f2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/boundary-build.json",
+      "sha256": "1ad9881d4b53ba2909b567ccdce8d1387f9ae4776974ad75780bc9c14074a1ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/boundary-review.txt",
+      "sha256": "b71c8ac913ac9c6cec822c6f092a6a08f454ce58f0c87dde4294ce20a4cbb118"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/independent-index.json",
+      "sha256": "e4d8d7fe8f1f119d9a5c03efcf1b01e79b93e3c94aca41abec518264c5775331"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/metadata-normalization.json",
+      "sha256": "cba4e6c38548ccff3381608e2f094d655876f9cc184010fd35415d6b1923363b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet06ModalRetainedExistence.log",
+      "sha256": "708ceb41cf6e881868366e714bf0032b638bbf618c7d4b2131cc617fc302d083"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet06ModalRetainedHost.log",
+      "sha256": "e8337763b15990f3199f31ef161380d3d4fa0e937f18e9602581371ee4988baa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAffineGood.log",
+      "sha256": "0e79ac48442efa471d2bf8aabd5b2f1d4c391fc3e53bd916d48543ac5241b5fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAffineLocal.log",
+      "sha256": "2fa6b09410bbc58dc38a8bc019ffe32732b1bd26b7f1523184c26401b2345adc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenAngularTranslationSmooth.log",
+      "sha256": "5c60c919507259ba265a4c77d52c250f2f57f983aec19d911e00efd3b44a78d5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngular.log",
+      "sha256": "e6a2d38f77c39d543ea0dbaea7e4f891dfff4dcc0a650b66ee296a6292a9a07d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngularSmooth.log",
+      "sha256": "bfa86d54e842925e5d2916ecf5add89c67c0c97e10f1f2719acaff8d4d819589"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicAngularVector.log",
+      "sha256": "9ca0af014a78f25dce6dab047051589d051c53da1ce8a89b3da24d8cef810e7a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicHerglotz.log",
+      "sha256": "6f08807ba0bc306444cd24494416f4262fe15a343bdc73720f535811df66b6a2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenCyclicTangency.log",
+      "sha256": "a5a69ac34ac7e979f343a76cb54879788834f767aedeb0057a3762220e8ff247"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAffine.log",
+      "sha256": "d070e625fc249344c1f6d43c28803c7b749d99a7b7917515c816d486646763fe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAngular.log",
+      "sha256": "7dfd846d7e49fc5eb6169b7a36aa34561ffd3e1e9b57e2bb3542e4a13c95914a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameAngularSmooth.log",
+      "sha256": "1382a418c2a4b0e6c901c4944ee33ead5832b240de8cb973fc9cbfc098eded82"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenFrameOutgoing.log",
+      "sha256": "3e89abb3df8db9d9a9faf2f99ab0d027792d001a04166ea5f95d521d4c6d2ec8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidAngular.log",
+      "sha256": "c79469dd43dcbbf76779393533881356b4f181b207ea1cbdfe1ba6921cee5df9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidBoundary.log",
+      "sha256": "f09b51c8e20ee4d4fad805429e12498a9d39f85c787b5e7dc7f0bf800bb7724e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidFields.log",
+      "sha256": "03cb6833e47a73cf1a87cb12a9fd3644afaedae3ded6a826d15dcc324addf333"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidGeometry.log",
+      "sha256": "8493f4c222ffe86493d7637e528051236fdf11edee2175ce0928fc7bac085c0f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRigidHotspot.log",
+      "sha256": "ce45ee32ee22898e7cd3309357b76255a5b3ec42d4501eb864cd7c32925f9e20"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenRotatedOutgoing.log",
+      "sha256": "127143a90c5cb6201eb0c08a4e94e181eef0fb238a0f9965059f6abcbeeb7887"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/Packet07DrivenUniformFixedTargetStrong.log",
+      "sha256": "e3e3f2c03a98def8cbb473344fa13632ace348abb6e380dead84ff07dedf21d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-build.json",
+      "sha256": "30f058d058cc598f7fdb54af0056d31cf1ca541de89fe407a68a3bbbf73fe64a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/retained-review.txt",
+      "sha256": "e95a6048adf3dd4d2656dfe376286a7d3c27ed146855ee993cbdecbde2dc4ada"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-build.json",
+      "sha256": "a1c2e24af2759c24d7998e81b1c67285cf5e59614d60d54f6466ae5a54cc5217"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/reviews/rigid-review.txt",
+      "sha256": "f53fbfc73f94fce4a453b59f1286a4447057fdee45004b1ef6e86b281a1d0380"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/scripts/audit_provenance.ps1",
+      "sha256": "0d29a8de6c26c4f5424070e2f021b325c47deaf4af233adc264e7e8a1a5fcc22"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/scripts/check_chain.py",
+      "sha256": "e93e81ee768a753da0d2217ab0e1573da07fa6545b1a83d93e1dee9e990cbb35"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/scripts/freeze_checkpoint.py",
+      "sha256": "85d1179e738ee23ed87ccfaa3140dd97d8bb2c9d81590aafbba3a856a4e1f631"
+    },
+    {
+      "path": "checkpoints/2026-11-13-rigid-fields-retained-host/STAGE113.txt",
+      "sha256": "465fff5c3fb23f34794dd6f4b130e9fe86b1defde9f4f06d0a918aecc6493b99"
+    },
+    {
+      "path": "lean/Packet06ModalRetainedExistence.lean",
+      "sha256": "fdc9db779597266639ef9c430b7287bc29fa8eb54ce06d12fdb2c0054a13a1dd"
+    },
+    {
+      "path": "lean/Packet06ModalRetainedHost.lean",
+      "sha256": "36312e7dfadf030298257895c2d207af4d8a4fe70c54bd7ff175d2951a9e0df7"
+    },
+    {
+      "path": "lean/Packet07DrivenAffineGood.lean",
+      "sha256": "8d5affaac4874e023f246761324d66df0be807b411920cacc83f9fd00057b39a"
+    },
+    {
+      "path": "lean/Packet07DrivenAffineLocal.lean",
+      "sha256": "a7f34ac263b6950ecc05b000943e3fa7294168bbb55be4d8cfb31ddb2e2d97af"
+    },
+    {
+      "path": "lean/Packet07DrivenAngularTranslationSmooth.lean",
+      "sha256": "41d78669e3e2c525e22ed98442bd148b105da28af9786b333ed698bd11e167c8"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicAngular.lean",
+      "sha256": "d1ffd4b141665ddb411f2474420f759dd38a907a6f8641c316e99247f176fe1d"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicAngularSmooth.lean",
+      "sha256": "0f4e1d442588179960a921f5358100f2474df26aa55faf1c536ade2fc4ec03a2"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicAngularVector.lean",
+      "sha256": "7ec7c8ebd1bb41fc8ca0c0566494a3a44a4727b56e3861363367b2ddde28931c"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicHerglotz.lean",
+      "sha256": "2823138610b53f68027b8ec379f7526a83c4337de95f2eaa0524c3840ffc82c4"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicTangency.lean",
+      "sha256": "8cf39fa16738784fed4baf54e84cbdd6c690dd10edcc3ba54f4e3bdb176d2672"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameAffine.lean",
+      "sha256": "b883f30e5b1b844c4afcb7b43ba93bf039919d24affbb448dcce62621a3ae9c8"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameAngular.lean",
+      "sha256": "44898227f5a21e8fb728510b730f5bd5e0014ef71a94a85cdb5748003632c28d"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameAngularSmooth.lean",
+      "sha256": "0238d2dca1b43721957890f4381c58938695fb5a0f36b2e017fe97f7964e43fd"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameOutgoing.lean",
+      "sha256": "0779570b99fb2500cd83ed8314083fda0403bb17fca4e423df28bfe367db3d9b"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidAngular.lean",
+      "sha256": "2160c0c267c3b18ac6cd9093626dd99bc9d9d32748b73b4e029651f07a190405"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidBoundary.lean",
+      "sha256": "01d27d1805d8450caf300ee8946a26e437ccdff79339dc934c028a72d4f519b4"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidFields.lean",
+      "sha256": "5f29a8ee638d26e110d43b97c8e673f74b7761966c72701f97c03bc35ec84497"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidGeometry.lean",
+      "sha256": "62eff4cf4fa74f543acfebccf6803b1e01879c6ccc37d97c70f850301781b67f"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidHotspot.lean",
+      "sha256": "d1351fed698b096c88858113b41c704bee832165c0c1c8a80ea6e41f963ed516"
+    },
+    {
+      "path": "lean/Packet07DrivenRotatedOutgoing.lean",
+      "sha256": "e8863cc39d0ba82c4e61c01983f91e53f79ea040f7bf432c5a5ef1e98caf1e19"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFixedTargetStrong.lean",
+      "sha256": "aa139eaa6266971c178973190dff5691aad60f084f80c8446a1881f56290f190"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "e89316d2c8914f88a08b8f5946719328d8329655fb0251c7e2f87de8f2cdb164"
+    }
+  ],
+  "scope": "actual rigid Maxwell fields and retained positive modal host. Actual rigid Maxwell, illumination, outgoing, hotspot and regular-boundary transport are proved, with the original modal certificate and positive host retained. Final unconditional arbitrary-plane witnesses, paper release and latest aggregate verification remain active."
+}

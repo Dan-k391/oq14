@@ -1,5 +1,43 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 113 is the latest verified incremental checkpoint:
+[STAGE113.txt](checkpoints/2026-11-13-rigid-fields-retained-host/STAGE113.txt).
+
+The same coordinate modal construction now retains its original certified
+base pole, original reciprocal normalization, strict observation-radius margin
+and collar inclusion in the positive host. Observation balls lie in that host,
+the host lies in the actual enclosing support ball, and its susceptibility
+is strictly positive. The two root modules passed independent Terra review.
+
+The full arbitrary-normal frame preserves the physical angular L2 input norm,
+transversality, smooth density, both actual Herglotz fields and both centered
+outgoing far-field limits. Actual rigid Maxwell covariance uses the derived
+local integrability of the same finite-angular volume solution. The fixed-target
+construction now retains the auxiliary-frequency common-radius bound needed
+for that integrability. Actual driven hotspots, exact closed observation balls,
+orthogonal projections and regular smooth material boundaries are preserved.
+Nineteen Terra modules passed root semantic review and isolated compilation.
+
+The aggregate fresh build through stage112 passed 2072 project modules and
+10769 printed standard-only axiom reports, excluding all cached project
+objects. The stage111 audit checked every kernel-safe project declaration,
+including private and unprinted declarations; unsafe executable compiler
+helpers are separately listed, without filtering any safe proof dependency.
+
+Final unconditional arbitrary-plane witnesses, the final aggregate extension
+and the paper release remain active. Full OQ14 is not yet declared closed.
+
+21 modules / 52 reports passed independent root review and a fresh
+ordered build. 1756 upstream sources were authenticated, with cached objects.
+The ledger is 1508 modules / 5876 reports, all prior records unchanged:
+`checkpoints/2026-11-13-rigid-fields-retained-host/evidence/audited_after_5238-stage113.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage113.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 112 is the latest verified incremental checkpoint:
 [STAGE112.txt](checkpoints/2026-11-13-frame-fields-observed-pole/STAGE112.txt).
 

@@ -1,0 +1,159 @@
+[
+  {
+    "module": "Packet07DrivenCyclicAngularVector",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicAngularVector.rotate_norm",
+      "OQ14.Packet07DrivenCyclicAngularVector.rotate_sub",
+      "OQ14.Packet07DrivenCyclicAngularVector.rotate_continuous"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicAngular",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicAngular.pull_norm",
+      "OQ14.Packet07DrivenCyclicAngular.rotated_norm"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicTangency",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicTangency.normal_pair",
+      "OQ14.Packet07DrivenCyclicTangency.rotated_tangent"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicAngularSmooth",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicAngularSmooth.extension_smooth",
+      "OQ14.Packet07DrivenCyclicAngularSmooth.extension_on_sphere"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicHerglotz",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicHerglotz.wave_rotate",
+      "OQ14.Packet07DrivenCyclicHerglotz.sphere_inverse",
+      "OQ14.Packet07DrivenCyclicHerglotz.electric_covariant",
+      "OQ14.Packet07DrivenCyclicHerglotz.magnetic_amplitude_rotate",
+      "OQ14.Packet07DrivenCyclicHerglotz.rotated_magneticMap",
+      "OQ14.Packet07DrivenCyclicHerglotz.magnetic_covariant"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameAngular",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameAngular.amplitude_norm",
+      "OQ14.Packet07DrivenFrameAngular.amplitude_tangent",
+      "OQ14.Packet07DrivenFrameAngular.electric_covariant",
+      "OQ14.Packet07DrivenFrameAngular.magnetic_covariant"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameAngularSmooth",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameAngularSmooth.extension_smooth",
+      "OQ14.Packet07DrivenFrameAngularSmooth.extension_on_sphere"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRotatedOutgoing",
+    "declarations": [
+      "OQ14.Packet07DrivenRotatedOutgoing.axial_outgoing",
+      "OQ14.Packet07DrivenRotatedOutgoing.cyclic_outgoing"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameOutgoing",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameOutgoing.frame_outgoing"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFixedTargetStrong",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFixedTargetStrong.fixed_target_hotspots"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameAffine",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameAffine.axial_affine",
+      "OQ14.Packet07DrivenFrameAffine.cyclic_affine",
+      "OQ14.Packet07DrivenFrameAffine.inverse_cyclic_affine",
+      "OQ14.Packet07DrivenFrameAffine.frame_affine"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAffineLocal",
+    "declarations": [
+      "OQ14.Packet07DrivenAffineLocal.affine_map_measure",
+      "OQ14.Packet07DrivenAffineLocal.affine_local"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAffineGood",
+    "declarations": [
+      "OQ14.Packet07DrivenAffineGood.affine_good"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAngularTranslationSmooth",
+    "declarations": [
+      "OQ14.Packet07DrivenAngularTranslationSmooth.extension_smooth",
+      "OQ14.Packet07DrivenAngularTranslationSmooth.extension_on_sphere"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidHotspot.placement_embed",
+      "OQ14.Packet07DrivenRigidHotspot.placement_image",
+      "OQ14.Packet07DrivenRigidHotspot.rigid_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidFields",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidFields.rigid_maxwell",
+      "OQ14.Packet07DrivenRigidFields.rigid_outgoing"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidAngular",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidAngular.amplitude_norm",
+      "OQ14.Packet07DrivenRigidAngular.amplitude_tangent",
+      "OQ14.Packet07DrivenRigidAngular.electric",
+      "OQ14.Packet07DrivenRigidAngular.magnetic"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidGeometry",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidGeometry.placement_dist",
+      "OQ14.Packet07DrivenRigidGeometry.placement_ball",
+      "OQ14.Packet07DrivenRigidGeometry.placement_projection"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidBoundary",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidBoundary.smooth_boundary"
+    ]
+  },
+  {
+    "module": "Packet06ModalRetainedExistence",
+    "declarations": [
+      "OQ14.Packet06ModalRetainedExistence.exists_retained_modal_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06ModalRetainedHost",
+    "declarations": [
+      "OQ14.Packet06ModalRetainedHost.observation_in_host",
+      "OQ14.Packet06ModalRetainedHost.supportRadius_nonneg",
+      "OQ14.Packet06ModalRetainedHost.host_enclosed",
+      "OQ14.Packet06ModalRetainedHost.host_positive"
+    ]
+  }
+]
