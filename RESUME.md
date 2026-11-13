@@ -1,5 +1,41 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 101 is the latest verified incremental checkpoint:
+[STAGE101.txt](checkpoints/2026-11-13-global-physical-green/STAGE101.txt).
+
+One globally defined outgoing selected-source electric Green field now
+agrees with all containing-ball responses and satisfies the actual weak
+Maxwell equation against every compact test, with the orthogonal sector
+projection of its source. The physical residue is nonzero and couples to
+the one actual global outgoing mode. The normalized placement is unitary,
+transports the orthogonal projector and compact source support, preserves
+the unconjugated pairing, and gives the transported residue with denominator
+2 times the placed frequency. Identification with the actual placed Maxwell
+equation remains in the following active batch.
+
+The quantitative anisotropic embedding bounds the continuous representative
+by the original weak derivative norms with a universal constant. Actual
+compact graph data supplies metric and slope bounds. The driven scalar
+equation follows from the actual material solution and smooth entire vacuum
+illumination, with Gauss derived from Maxwell rather than supplied separately.
+
+Independent source reviews and isolated fresh builds passed all 15 modules.
+Retained objects were hash checked and revalidated without duplicate builds.
+Actual chart composition and uniform physical collars, attained hotspot
+assembly, placed Green identification, paper alignment and aggregate
+validation remain active. Full OQ14 is not yet closed.
+
+15 modules / 37 reports passed independent root review and a fresh
+ordered build. 1229 upstream sources were authenticated, with cached objects.
+The ledger is 1116 modules / 5219 reports, all prior records unchanged:
+`checkpoints/2026-11-13-global-physical-green/evidence/audited_after_5238-stage101.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage101.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 100 is the latest verified incremental checkpoint:
 [STAGE100.txt](checkpoints/2026-11-13-hotspot-cutoffs/STAGE100.txt).
 

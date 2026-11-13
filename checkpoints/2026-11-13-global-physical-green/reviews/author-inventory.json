@@ -1,0 +1,159 @@
+{
+  "modules": [
+    {
+      "module": "Packet05FourierDerivativeNorm",
+      "source_sha256": "9418bfedc397b9fe6111de317941645c66f23a6163c9964e99475ae8b618a6e1",
+      "object_sha256": "c71116126944fe9751021361790cc8e97f024d16a1ee636fb42c9d7cfd8e49cb",
+      "log_sha256": "927a3dcc6f87b3f50c19859b19413863902a2602122883435f6789c51fad93c0",
+      "reports": 5,
+      "exit_code": 0,
+      "seconds": 24.28,
+      "authorship": "root"
+    },
+    {
+      "module": "Packet05AnisotropicNormBound",
+      "source_sha256": "8329414613b4c4b49f953ad6b678c2ce08a65d6a884ba1721c59cffe55e40666",
+      "object_sha256": "5e5577869ca46dbc4c6c166bca1fa86b670c9c97fd2b8df4e7832597178d60b1",
+      "log_sha256": "f9da85d5c141c38e8ca828e77e8e049a1b499782bdaba009ea80d2d7c549d24c",
+      "reports": 1,
+      "exit_code": 0,
+      "seconds": 11.14
+    },
+    {
+      "module": "Packet05ExplicitAnisotropic",
+      "source_sha256": "c6b319dcd5180058771df4295d91e82961cc2ccdd156382e08d5cdb9f036e426",
+      "object_sha256": "e3aad987037fb4a0fc84fab24395250a3b94ec3b1eb8c80a4d89057a24d42784",
+      "log_sha256": "f9c30483c6261e157bdfb0980258a8a509b4ddef768c7ffac463b1d156f0274a",
+      "reports": 1,
+      "exit_code": 0,
+      "seconds": 12.9
+    },
+    {
+      "module": "Packet05ExplicitAnisotropicBound",
+      "source_sha256": "204f6550ac82d0cc702be1f19e8a6d6d7897223f4f0c22849f29ac6266e7a643",
+      "object_sha256": "65d6f1885953ca4d7847d5e70ad3215fedab6976020db00e3767e053d27ccbda",
+      "log_sha256": "f6214e23ced983f83fdb742ccf30d72d5f04dc2bfcfcf1c1fedc63bf8fc4c8c5",
+      "reports": 2,
+      "exit_code": 0,
+      "seconds": 38.44
+    },
+    {
+      "module": "Packet05ChartMetricData",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet05ChartMetricData.olean",
+        "Packet05ChartMetricData.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.36,
+      "source_sha256": "8ecc7d23fbb3fd406c522c80ba7f506ddc8615bcdfc52e1a66a32db3c7e3f13b",
+      "log": "Packet05ChartMetricData-root-author.log",
+      "log_sha256": "d496a58c23da878e9069ec749ba2e3511eb2f1d326ea9c8a717ec0c33275af71",
+      "reports": 1
+    },
+    {
+      "module": "Packet07DrivenScalarEquation",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet07DrivenScalarEquation.olean",
+        "Packet07DrivenScalarEquation.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 12.36,
+      "source_sha256": "392df697c91f4d06f0145881d374a669e6f93f0ac332cdc7196da2cc5baf644f",
+      "log": "Packet07DrivenScalarEquation-root-author.log",
+      "log_sha256": "c1bdd8a27a05177f4ed553d1bf285bb21d90612326fc1acc3c5e3d8433091b17",
+      "reports": 3
+    },
+    {
+      "module": "Packet07IncidentScalarEquation",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet07IncidentScalarEquation.olean",
+        "Packet07IncidentScalarEquation.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 20.937,
+      "source_sha256": "d9b6aa8c1826572eade800f9f042c49938c09bcd267eec2b15d4d065e8c5e8cf",
+      "log": "Packet07IncidentScalarEquation-root-author.log",
+      "log_sha256": "b4a76bfcf5c8e71009f7f838637a7bc507387818dffc49a589bc6d5a97384555",
+      "reports": 1
+    },
+    {
+      "module": "Packet06ProjectedNonzero",
+      "source_sha256": "1d607f6e9a1c510bd21912aafa56f0ed05168c247b91ddba0d2792216b2d28d3",
+      "object_sha256": "bca67d3bbe039a0433ed0078ecbe511fdb54453e7d1d9c589838b6a78e28ae4d",
+      "log_sha256": "fa92753c1281bce69061562a420e6a9a0160536fddbba54d27eb9f1627083259",
+      "reports": 3,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06ProjectedGlobal",
+      "source_sha256": "9579f47f2ac1ff636c92090389eff1e0256525e56f1934a530bb9e0ff306a83a",
+      "object_sha256": "37cb4bb259cb6dbcd8c4ce03535681a8676fe2cb8c657220627b5c3e7f63c63d",
+      "log_sha256": "31766d49787e9532e2c5c3fd4ad1a18601adab17388fe780bc9fe755ba83500d",
+      "reports": 5,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06ProjectedGlobalResidue",
+      "source_sha256": "96dc872f4c6c0293e638d3f53701931b88438763f975fb4ed91de9c339284a2d",
+      "object_sha256": "04310b1135499bfb69e28ff8ee8eda80cc057fb9fef9028d98dbd834f1a2ffe6",
+      "log_sha256": "0764bdda718eb66b0ecff7c6aad18dbcc143498706511369b3eabdee72822c3c",
+      "reports": 3,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedProjection",
+      "source_sha256": "ff6bcf944984282dbeb55a8ee892a727ee8508a5341ab534f8654cd06badef92",
+      "object_sha256": "a063f344a426c6599f6a5331cb73c8b3e912b7d53f5f60fa2ad215354b06d702",
+      "log_sha256": "e6d7f838baa2f539b8a01747717952fa5c8611b4a6ed656121acb29748368c04",
+      "reports": 5,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenPairing",
+      "source_sha256": "b4d8aae6947dd0b12f3433a7b4296f508b9ecc9d750f3f83754ae79d856a84c6",
+      "object_sha256": "ab05026e95615b19c92a36790027ba9fc75a52cfed9bc0c15c4a71f14cd4999c",
+      "log_sha256": "10dfc3f4622dee72ad6561e2ab06c8114460a9ebca06ec0cf58f81b6928d4cbd",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenSupport",
+      "source_sha256": "58bab31a68da6e2d935eb333edf23d0cbd951c91d15c60ea53d01fddbb5f9857",
+      "object_sha256": "eb87cc18e255202236d68eb71258a731ef7445f165c889cea2e86659aceaa580",
+      "log_sha256": "a94eb291438d819a6594dd5a858e7b28624da7d69f754cec5e7c9db05c7b916a",
+      "reports": 4,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenObservation",
+      "source_sha256": "395e92040781b69d3fc1a76a223242a097385b787823cdd3a0176e49f5ad026f",
+      "object_sha256": "80135a940272d3051e630af1cd92d5266c3e916305118565ba56d03c85513382",
+      "log_sha256": "0fbc3a2a1ff050bca47796f83dd0fe337cf953a3059f9ade190af099e4376511",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenResidue",
+      "source_sha256": "1168320310bf17ab7bee43058bb7b0000105a0481a0504704a9147e83b224038",
+      "object_sha256": "e88245a47a74ffdd34099bfc5df32fcbc62bf5e536fca7a1756adb8a2e7c963a",
+      "log_sha256": "66f8abe10de46a24253406bc4214a755c5db8051abf3799bf3fb8861d7c91850",
+      "reports": 1,
+      "status": "pass"
+    }
+  ]
+}

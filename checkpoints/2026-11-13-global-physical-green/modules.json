@@ -1,0 +1,114 @@
+[
+  {
+    "module": "Packet05FourierDerivativeNorm",
+    "declarations": [
+      "OQ14.Packet05FourierDerivativeNorm.fourierConstant_ne_zero",
+      "OQ14.Packet05FourierDerivativeNorm.coordinate_factor_l2",
+      "OQ14.Packet05FourierDerivativeNorm.coordinate_factor_norm",
+      "OQ14.Packet05FourierDerivativeNorm.mixed_factor_l2",
+      "OQ14.Packet05FourierDerivativeNorm.mixed_factor_norm"
+    ]
+  },
+  {
+    "module": "Packet05AnisotropicNormBound",
+    "declarations": [
+      "OQ14.Packet05AnisotropicNormBound.finite_majorant"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitAnisotropic",
+    "declarations": [
+      "OQ14.Packet05ExplicitAnisotropic.spectral_majorant"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitAnisotropicBound",
+    "declarations": [
+      "OQ14.Packet05ExplicitAnisotropicBound.term_norm",
+      "OQ14.Packet05ExplicitAnisotropicBound.continuous_sup_bound"
+    ]
+  },
+  {
+    "module": "Packet05ChartMetricData",
+    "declarations": [
+      "OQ14.Packet05ChartMetricData.actual_metric_data"
+    ]
+  },
+  {
+    "module": "Packet07DrivenScalarEquation",
+    "declarations": [
+      "OQ14.Packet07DrivenScalarEquation.complex_electric_real",
+      "OQ14.Packet07DrivenScalarEquation.test_maxwell_gauss",
+      "OQ14.Packet07DrivenScalarEquation.actual_driven_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet07IncidentScalarEquation",
+    "declarations": [
+      "OQ14.Packet07IncidentScalarEquation.actual_incident_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet06ProjectedNonzero",
+    "declarations": [
+      "OQ14.Packet06ProjectedNonzero.conjugate_involutive",
+      "OQ14.Packet06ProjectedNonzero.conjugate_support",
+      "OQ14.Packet06ProjectedNonzero.physical_residue_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06ProjectedGlobal",
+    "declarations": [
+      "OQ14.Packet06ProjectedGlobal.field_memLp_ball",
+      "OQ14.Packet06ProjectedGlobal.field_test_integral",
+      "OQ14.Packet06ProjectedGlobal.field_global_maxwell",
+      "OQ14.Packet06ProjectedGlobal.field_matches_local",
+      "OQ14.Packet06ProjectedGlobal.field_outgoing"
+    ]
+  },
+  {
+    "module": "Packet06ProjectedGlobalResidue",
+    "declarations": [
+      "OQ14.Packet06ProjectedGlobalResidue.global_mode_source_pair",
+      "OQ14.Packet06ProjectedGlobalResidue.global_mode_observation_ae",
+      "OQ14.Packet06ProjectedGlobalResidue.residue_global_mode"
+    ]
+  },
+  {
+    "module": "Packet06PlacedProjection",
+    "declarations": [
+      "OQ14.Packet06PlacedProjection.cyclic_inner",
+      "OQ14.Packet06PlacedProjection.translation_inner",
+      "OQ14.Packet06PlacedProjection.placed_inner",
+      "OQ14.Packet06PlacedProjection.placed_norm",
+      "OQ14.Packet06PlacedProjection.projected_transport"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenPairing",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenPairing.placed_pair"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenSupport",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenSupport.placed_projected_supported",
+      "OQ14.Packet06PlacedGreenSupport.placed_source_supported",
+      "OQ14.Packet06PlacedGreenSupport.point_qmp",
+      "OQ14.Packet06PlacedGreenSupport.inverse_source_supported"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenObservation",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenObservation.transport_restriction"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenResidue",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenResidue.transported_residue"
+    ]
+  }
+]

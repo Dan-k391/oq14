@@ -1,0 +1,550 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "2035bb3",
+  "modules": 1116,
+  "reports": 5219,
+  "new_modules": 15,
+  "new_reports": 37,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "1ed3a02a34f2771839567d98902f6d403495c1d4fa4c579f97626e66bfea3663",
+  "ledger_sha256": "0b26171f2c7fcd94a0b220c4d4be427ed817a76583cb90f10c888fc5b5604831",
+  "raw_archive_sha256": "65ba52acebb03fc2661bc4fe64898cb2b9ac9ca289496c6986e240e429616610",
+  "records": [
+    {
+      "module": "Packet05FourierDerivativeNorm",
+      "reports": 5,
+      "source_sha256": "9418bfedc397b9fe6111de317941645c66f23a6163c9964e99475ae8b618a6e1",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05FourierDerivativeNorm-chain.log",
+      "audit_log_sha256": "927a3dcc6f87b3f50c19859b19413863902a2602122883435f6789c51fad93c0",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-review.txt",
+      "independent_review_sha256": "5d3240616ed81f7f357d4d777be81ae8fb0709dae7d92841b7c56b314e5eb6bb",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-build.json",
+      "independent_build_sha256": "8e1d2806dcf109b09bc9d0a34e120593bb6acd00284b51dda950344782ca3c06",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05FourierDerivativeNorm.log",
+      "independent_log_sha256": "927a3dcc6f87b3f50c19859b19413863902a2602122883435f6789c51fad93c0",
+      "declarations": [
+        "OQ14.Packet05FourierDerivativeNorm.fourierConstant_ne_zero",
+        "OQ14.Packet05FourierDerivativeNorm.coordinate_factor_l2",
+        "OQ14.Packet05FourierDerivativeNorm.coordinate_factor_norm",
+        "OQ14.Packet05FourierDerivativeNorm.mixed_factor_l2",
+        "OQ14.Packet05FourierDerivativeNorm.mixed_factor_norm"
+      ]
+    },
+    {
+      "module": "Packet05AnisotropicNormBound",
+      "reports": 1,
+      "source_sha256": "8329414613b4c4b49f953ad6b678c2ce08a65d6a884ba1721c59cffe55e40666",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05AnisotropicNormBound-chain.log",
+      "audit_log_sha256": "f9da85d5c141c38e8ca828e77e8e049a1b499782bdaba009ea80d2d7c549d24c",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-review.txt",
+      "independent_review_sha256": "5d3240616ed81f7f357d4d777be81ae8fb0709dae7d92841b7c56b314e5eb6bb",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-build.json",
+      "independent_build_sha256": "8e1d2806dcf109b09bc9d0a34e120593bb6acd00284b51dda950344782ca3c06",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05AnisotropicNormBound.log",
+      "independent_log_sha256": "f9da85d5c141c38e8ca828e77e8e049a1b499782bdaba009ea80d2d7c549d24c",
+      "declarations": [
+        "OQ14.Packet05AnisotropicNormBound.finite_majorant"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitAnisotropic",
+      "reports": 1,
+      "source_sha256": "c6b319dcd5180058771df4295d91e82961cc2ccdd156382e08d5cdb9f036e426",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ExplicitAnisotropic-chain.log",
+      "audit_log_sha256": "f9c30483c6261e157bdfb0980258a8a509b4ddef768c7ffac463b1d156f0274a",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-review.txt",
+      "independent_review_sha256": "5d3240616ed81f7f357d4d777be81ae8fb0709dae7d92841b7c56b314e5eb6bb",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-build.json",
+      "independent_build_sha256": "8e1d2806dcf109b09bc9d0a34e120593bb6acd00284b51dda950344782ca3c06",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ExplicitAnisotropic.log",
+      "independent_log_sha256": "f9c30483c6261e157bdfb0980258a8a509b4ddef768c7ffac463b1d156f0274a",
+      "declarations": [
+        "OQ14.Packet05ExplicitAnisotropic.spectral_majorant"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitAnisotropicBound",
+      "reports": 2,
+      "source_sha256": "204f6550ac82d0cc702be1f19e8a6d6d7897223f4f0c22849f29ac6266e7a643",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ExplicitAnisotropicBound-chain.log",
+      "audit_log_sha256": "f6214e23ced983f83fdb742ccf30d72d5f04dc2bfcfcf1c1fedc63bf8fc4c8c5",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-review.txt",
+      "independent_review_sha256": "5d3240616ed81f7f357d4d777be81ae8fb0709dae7d92841b7c56b314e5eb6bb",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-build.json",
+      "independent_build_sha256": "8e1d2806dcf109b09bc9d0a34e120593bb6acd00284b51dda950344782ca3c06",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ExplicitAnisotropicBound.log",
+      "independent_log_sha256": "f6214e23ced983f83fdb742ccf30d72d5f04dc2bfcfcf1c1fedc63bf8fc4c8c5",
+      "declarations": [
+        "OQ14.Packet05ExplicitAnisotropicBound.term_norm",
+        "OQ14.Packet05ExplicitAnisotropicBound.continuous_sup_bound"
+      ]
+    },
+    {
+      "module": "Packet05ChartMetricData",
+      "reports": 1,
+      "source_sha256": "8ecc7d23fbb3fd406c522c80ba7f506ddc8615bcdfc52e1a66a32db3c7e3f13b",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ChartMetricData-chain.log",
+      "audit_log_sha256": "d496a58c23da878e9069ec749ba2e3511eb2f1d326ea9c8a717ec0c33275af71",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/chart-review.txt",
+      "independent_review_sha256": "a550c6acda52fa155847bed309c72b79f5b0f01ce024eae10ab24668eaa23655",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/chart-build.json",
+      "independent_build_sha256": "c7026b6e22c89380f7c88d10ef31b95480b78f35b66666376d34a236327598d9",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ChartMetricData.log",
+      "independent_log_sha256": "d496a58c23da878e9069ec749ba2e3511eb2f1d326ea9c8a717ec0c33275af71",
+      "declarations": [
+        "OQ14.Packet05ChartMetricData.actual_metric_data"
+      ]
+    },
+    {
+      "module": "Packet07DrivenScalarEquation",
+      "reports": 3,
+      "source_sha256": "392df697c91f4d06f0145881d374a669e6f93f0ac332cdc7196da2cc5baf644f",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet07DrivenScalarEquation-chain.log",
+      "audit_log_sha256": "c1bdd8a27a05177f4ed553d1bf285bb21d90612326fc1acc3c5e3d8433091b17",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/chart-review.txt",
+      "independent_review_sha256": "a550c6acda52fa155847bed309c72b79f5b0f01ce024eae10ab24668eaa23655",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/chart-build.json",
+      "independent_build_sha256": "c7026b6e22c89380f7c88d10ef31b95480b78f35b66666376d34a236327598d9",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet07DrivenScalarEquation.log",
+      "independent_log_sha256": "c1bdd8a27a05177f4ed553d1bf285bb21d90612326fc1acc3c5e3d8433091b17",
+      "declarations": [
+        "OQ14.Packet07DrivenScalarEquation.complex_electric_real",
+        "OQ14.Packet07DrivenScalarEquation.test_maxwell_gauss",
+        "OQ14.Packet07DrivenScalarEquation.actual_driven_scalar_equation"
+      ]
+    },
+    {
+      "module": "Packet07IncidentScalarEquation",
+      "reports": 1,
+      "source_sha256": "d9b6aa8c1826572eade800f9f042c49938c09bcd267eec2b15d4d065e8c5e8cf",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet07IncidentScalarEquation-chain.log",
+      "audit_log_sha256": "b4a76bfcf5c8e71009f7f838637a7bc507387818dffc49a589bc6d5a97384555",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/chart-review.txt",
+      "independent_review_sha256": "a550c6acda52fa155847bed309c72b79f5b0f01ce024eae10ab24668eaa23655",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/chart-build.json",
+      "independent_build_sha256": "c7026b6e22c89380f7c88d10ef31b95480b78f35b66666376d34a236327598d9",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet07IncidentScalarEquation.log",
+      "independent_log_sha256": "b4a76bfcf5c8e71009f7f838637a7bc507387818dffc49a589bc6d5a97384555",
+      "declarations": [
+        "OQ14.Packet07IncidentScalarEquation.actual_incident_scalar_equation"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedNonzero",
+      "reports": 3,
+      "source_sha256": "1d607f6e9a1c510bd21912aafa56f0ed05168c247b91ddba0d2792216b2d28d3",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedNonzero-chain.log",
+      "audit_log_sha256": "7a7cbe627b40294af99b82df2b819bbd9381d22b43f90e571c764f133c150cb3",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedNonzero.log",
+      "independent_log_sha256": "7a7cbe627b40294af99b82df2b819bbd9381d22b43f90e571c764f133c150cb3",
+      "declarations": [
+        "OQ14.Packet06ProjectedNonzero.conjugate_involutive",
+        "OQ14.Packet06ProjectedNonzero.conjugate_support",
+        "OQ14.Packet06ProjectedNonzero.physical_residue_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedGlobal",
+      "reports": 5,
+      "source_sha256": "9579f47f2ac1ff636c92090389eff1e0256525e56f1934a530bb9e0ff306a83a",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedGlobal-chain.log",
+      "audit_log_sha256": "d115f2869804f7c3b993914238e3f040130d4116a911ef090d0d26e3176ba1cb",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedGlobal.log",
+      "independent_log_sha256": "d115f2869804f7c3b993914238e3f040130d4116a911ef090d0d26e3176ba1cb",
+      "declarations": [
+        "OQ14.Packet06ProjectedGlobal.field_memLp_ball",
+        "OQ14.Packet06ProjectedGlobal.field_test_integral",
+        "OQ14.Packet06ProjectedGlobal.field_global_maxwell",
+        "OQ14.Packet06ProjectedGlobal.field_matches_local",
+        "OQ14.Packet06ProjectedGlobal.field_outgoing"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedGlobalResidue",
+      "reports": 3,
+      "source_sha256": "96dc872f4c6c0293e638d3f53701931b88438763f975fb4ed91de9c339284a2d",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedGlobalResidue-chain.log",
+      "audit_log_sha256": "e6ce16d4cb4a5fdbb9fe8d702725c9bb9cc3438020c4c0b58a8997688607111c",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedGlobalResidue.log",
+      "independent_log_sha256": "e6ce16d4cb4a5fdbb9fe8d702725c9bb9cc3438020c4c0b58a8997688607111c",
+      "declarations": [
+        "OQ14.Packet06ProjectedGlobalResidue.global_mode_source_pair",
+        "OQ14.Packet06ProjectedGlobalResidue.global_mode_observation_ae",
+        "OQ14.Packet06ProjectedGlobalResidue.residue_global_mode"
+      ]
+    },
+    {
+      "module": "Packet06PlacedProjection",
+      "reports": 5,
+      "source_sha256": "ff6bcf944984282dbeb55a8ee892a727ee8508a5341ab534f8654cd06badef92",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedProjection-chain.log",
+      "audit_log_sha256": "2603af1e80eba9d16c537dd484f5946b472e81e945f0a44de9bd5960a79a6560",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedProjection.log",
+      "independent_log_sha256": "2603af1e80eba9d16c537dd484f5946b472e81e945f0a44de9bd5960a79a6560",
+      "declarations": [
+        "OQ14.Packet06PlacedProjection.cyclic_inner",
+        "OQ14.Packet06PlacedProjection.translation_inner",
+        "OQ14.Packet06PlacedProjection.placed_inner",
+        "OQ14.Packet06PlacedProjection.placed_norm",
+        "OQ14.Packet06PlacedProjection.projected_transport"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenPairing",
+      "reports": 1,
+      "source_sha256": "b4d8aae6947dd0b12f3433a7b4296f508b9ecc9d750f3f83754ae79d856a84c6",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenPairing-chain.log",
+      "audit_log_sha256": "61f59025c086026e35ab468101aa4c506706cae2bc6bf41c3acb54fa66a1643a",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenPairing.log",
+      "independent_log_sha256": "61f59025c086026e35ab468101aa4c506706cae2bc6bf41c3acb54fa66a1643a",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenPairing.placed_pair"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenSupport",
+      "reports": 4,
+      "source_sha256": "58bab31a68da6e2d935eb333edf23d0cbd951c91d15c60ea53d01fddbb5f9857",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenSupport-chain.log",
+      "audit_log_sha256": "47340ff46a88265325c5ed6f641a09ac141ff43f0fbc7e285d344c9e510ff741",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenSupport.log",
+      "independent_log_sha256": "47340ff46a88265325c5ed6f641a09ac141ff43f0fbc7e285d344c9e510ff741",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenSupport.placed_projected_supported",
+        "OQ14.Packet06PlacedGreenSupport.placed_source_supported",
+        "OQ14.Packet06PlacedGreenSupport.point_qmp",
+        "OQ14.Packet06PlacedGreenSupport.inverse_source_supported"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenObservation",
+      "reports": 1,
+      "source_sha256": "395e92040781b69d3fc1a76a223242a097385b787823cdd3a0176e49f5ad026f",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenObservation-chain.log",
+      "audit_log_sha256": "ca8adc0b074a68204666aa82d1e04d9d00a8c98049fb4e7814d619783160e2cf",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenObservation.log",
+      "independent_log_sha256": "ca8adc0b074a68204666aa82d1e04d9d00a8c98049fb4e7814d619783160e2cf",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenObservation.transport_restriction"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenResidue",
+      "reports": 1,
+      "source_sha256": "1168320310bf17ab7bee43058bb7b0000105a0481a0504704a9147e83b224038",
+      "audit_log": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenResidue-chain.log",
+      "audit_log_sha256": "b6b42a2b90827d5e97ecd15fbbd7212bf0cf2a57b069e7b7eb207afd033fa047",
+      "independent_review": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "independent_review_sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52",
+      "independent_review_mode": "Independent semantic review and fresh ordered isolated build; review file identifies root or Terra authorship and reviewer",
+      "independent_build": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "independent_build_sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0",
+      "independent_log": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenResidue.log",
+      "independent_log_sha256": "b6b42a2b90827d5e97ecd15fbbd7212bf0cf2a57b069e7b7eb207afd033fa047",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenResidue.transported_residue"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/audited_after_5238-stage101.json",
+      "sha256": "0b26171f2c7fcd94a0b220c4d4be427ed817a76583cb90f10c888fc5b5604831"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/chain-build.json",
+      "sha256": "cd18949a46cd443326783063fc435f97c0b81e3208712cf125c27f4d6f8e71b6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05AnisotropicNormBound-chain.log",
+      "sha256": "f9da85d5c141c38e8ca828e77e8e049a1b499782bdaba009ea80d2d7c549d24c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ChartMetricData-chain.log",
+      "sha256": "d496a58c23da878e9069ec749ba2e3511eb2f1d326ea9c8a717ec0c33275af71"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ExplicitAnisotropic-chain.log",
+      "sha256": "f9c30483c6261e157bdfb0980258a8a509b4ddef768c7ffac463b1d156f0274a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05ExplicitAnisotropicBound-chain.log",
+      "sha256": "f6214e23ced983f83fdb742ccf30d72d5f04dc2bfcfcf1c1fedc63bf8fc4c8c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet05FourierDerivativeNorm-chain.log",
+      "sha256": "927a3dcc6f87b3f50c19859b19413863902a2602122883435f6789c51fad93c0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenObservation-chain.log",
+      "sha256": "ca8adc0b074a68204666aa82d1e04d9d00a8c98049fb4e7814d619783160e2cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenPairing-chain.log",
+      "sha256": "61f59025c086026e35ab468101aa4c506706cae2bc6bf41c3acb54fa66a1643a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenResidue-chain.log",
+      "sha256": "b6b42a2b90827d5e97ecd15fbbd7212bf0cf2a57b069e7b7eb207afd033fa047"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedGreenSupport-chain.log",
+      "sha256": "47340ff46a88265325c5ed6f641a09ac141ff43f0fbc7e285d344c9e510ff741"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06PlacedProjection-chain.log",
+      "sha256": "2603af1e80eba9d16c537dd484f5946b472e81e945f0a44de9bd5960a79a6560"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedGlobal-chain.log",
+      "sha256": "d115f2869804f7c3b993914238e3f040130d4116a911ef090d0d26e3176ba1cb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedGlobalResidue-chain.log",
+      "sha256": "e6ce16d4cb4a5fdbb9fe8d702725c9bb9cc3438020c4c0b58a8997688607111c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet06ProjectedNonzero-chain.log",
+      "sha256": "7a7cbe627b40294af99b82df2b819bbd9381d22b43f90e571c764f133c150cb3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet07DrivenScalarEquation-chain.log",
+      "sha256": "c1bdd8a27a05177f4ed553d1bf285bb21d90612326fc1acc3c5e3d8433091b17"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/evidence/Packet07IncidentScalarEquation-chain.log",
+      "sha256": "b4a76bfcf5c8e71009f7f838637a7bc507387818dffc49a589bc6d5a97384555"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/modules.json",
+      "sha256": "d748bb2094dcc9381ce5556851593e7b367387ca543b16df83c5cb1f0ed2d850"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/provenance-audit.json",
+      "sha256": "a8d79f1dfdd0862bcf2b234c12a749a23e6446b0a4bde67204083977867c6ae5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/author-inventory.json",
+      "sha256": "b6c1db6f809c0db255b3ab18a1a26049af1be40ecab4f8b41f22983c0aa95379"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/chart-build.json",
+      "sha256": "c7026b6e22c89380f7c88d10ef31b95480b78f35b66666376d34a236327598d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/chart-review.txt",
+      "sha256": "a550c6acda52fa155847bed309c72b79f5b0f01ce024eae10ab24668eaa23655"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/green-build.json",
+      "sha256": "342e2bd8180a1ed02a77eb64a69bf29c06caa6a2def786b9f11147a754f685f0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/green-review.txt",
+      "sha256": "b6cbbc4c6d7ba4c8ee9eac8621f43f57142be7760a7457fcb11f0fa422d85f52"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/metadata-normalization.json",
+      "sha256": "6f94a503df32175704728243004eef8161d30d7939b54e88d3d11efbd5090309"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05AnisotropicNormBound.log",
+      "sha256": "f9da85d5c141c38e8ca828e77e8e049a1b499782bdaba009ea80d2d7c549d24c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ChartMetricData.log",
+      "sha256": "d496a58c23da878e9069ec749ba2e3511eb2f1d326ea9c8a717ec0c33275af71"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ExplicitAnisotropic.log",
+      "sha256": "f9c30483c6261e157bdfb0980258a8a509b4ddef768c7ffac463b1d156f0274a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05ExplicitAnisotropicBound.log",
+      "sha256": "f6214e23ced983f83fdb742ccf30d72d5f04dc2bfcfcf1c1fedc63bf8fc4c8c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet05FourierDerivativeNorm.log",
+      "sha256": "927a3dcc6f87b3f50c19859b19413863902a2602122883435f6789c51fad93c0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenObservation.log",
+      "sha256": "ca8adc0b074a68204666aa82d1e04d9d00a8c98049fb4e7814d619783160e2cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenPairing.log",
+      "sha256": "61f59025c086026e35ab468101aa4c506706cae2bc6bf41c3acb54fa66a1643a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenResidue.log",
+      "sha256": "b6b42a2b90827d5e97ecd15fbbd7212bf0cf2a57b069e7b7eb207afd033fa047"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedGreenSupport.log",
+      "sha256": "47340ff46a88265325c5ed6f641a09ac141ff43f0fbc7e285d344c9e510ff741"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06PlacedProjection.log",
+      "sha256": "2603af1e80eba9d16c537dd484f5946b472e81e945f0a44de9bd5960a79a6560"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedGlobal.log",
+      "sha256": "d115f2869804f7c3b993914238e3f040130d4116a911ef090d0d26e3176ba1cb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedGlobalResidue.log",
+      "sha256": "e6ce16d4cb4a5fdbb9fe8d702725c9bb9cc3438020c4c0b58a8997688607111c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet06ProjectedNonzero.log",
+      "sha256": "7a7cbe627b40294af99b82df2b819bbd9381d22b43f90e571c764f133c150cb3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet07DrivenScalarEquation.log",
+      "sha256": "c1bdd8a27a05177f4ed553d1bf285bb21d90612326fc1acc3c5e3d8433091b17"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/Packet07IncidentScalarEquation.log",
+      "sha256": "b4a76bfcf5c8e71009f7f838637a7bc507387818dffc49a589bc6d5a97384555"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-build.json",
+      "sha256": "8e1d2806dcf109b09bc9d0a34e120593bb6acd00284b51dda950344782ca3c06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/reviews/quantitative-review.txt",
+      "sha256": "5d3240616ed81f7f357d4d777be81ae8fb0709dae7d92841b7c56b314e5eb6bb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/scripts/audit_provenance.ps1",
+      "sha256": "c2d1d3caa78aaaea71ea4d6759a81a34794c3a76057378d063a33b52b01ae0be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/scripts/check_chain.py",
+      "sha256": "e82c6f013d43bf2640addb7a2220cba833f7ec0f88331fbda31101ea482bee87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/scripts/freeze_checkpoint.py",
+      "sha256": "d65da8357612aadbdc26132fc4d70d0ca87ddbcc1210c3e47313305b9df1c376"
+    },
+    {
+      "path": "checkpoints/2026-11-13-global-physical-green/STAGE101.txt",
+      "sha256": "3e5096f47120b70da7b5eae4f5b7edfac279001435a34787a0a878b40344167a"
+    },
+    {
+      "path": "lean/Packet05AnisotropicNormBound.lean",
+      "sha256": "8329414613b4c4b49f953ad6b678c2ce08a65d6a884ba1721c59cffe55e40666"
+    },
+    {
+      "path": "lean/Packet05ChartMetricData.lean",
+      "sha256": "8ecc7d23fbb3fd406c522c80ba7f506ddc8615bcdfc52e1a66a32db3c7e3f13b"
+    },
+    {
+      "path": "lean/Packet05ExplicitAnisotropic.lean",
+      "sha256": "c6b319dcd5180058771df4295d91e82961cc2ccdd156382e08d5cdb9f036e426"
+    },
+    {
+      "path": "lean/Packet05ExplicitAnisotropicBound.lean",
+      "sha256": "204f6550ac82d0cc702be1f19e8a6d6d7897223f4f0c22849f29ac6266e7a643"
+    },
+    {
+      "path": "lean/Packet05FourierDerivativeNorm.lean",
+      "sha256": "9418bfedc397b9fe6111de317941645c66f23a6163c9964e99475ae8b618a6e1"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenObservation.lean",
+      "sha256": "395e92040781b69d3fc1a76a223242a097385b787823cdd3a0176e49f5ad026f"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenPairing.lean",
+      "sha256": "b4d8aae6947dd0b12f3433a7b4296f508b9ecc9d750f3f83754ae79d856a84c6"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenResidue.lean",
+      "sha256": "1168320310bf17ab7bee43058bb7b0000105a0481a0504704a9147e83b224038"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenSupport.lean",
+      "sha256": "58bab31a68da6e2d935eb333edf23d0cbd951c91d15c60ea53d01fddbb5f9857"
+    },
+    {
+      "path": "lean/Packet06PlacedProjection.lean",
+      "sha256": "ff6bcf944984282dbeb55a8ee892a727ee8508a5341ab534f8654cd06badef92"
+    },
+    {
+      "path": "lean/Packet06ProjectedGlobal.lean",
+      "sha256": "9579f47f2ac1ff636c92090389eff1e0256525e56f1934a530bb9e0ff306a83a"
+    },
+    {
+      "path": "lean/Packet06ProjectedGlobalResidue.lean",
+      "sha256": "96dc872f4c6c0293e638d3f53701931b88438763f975fb4ed91de9c339284a2d"
+    },
+    {
+      "path": "lean/Packet06ProjectedNonzero.lean",
+      "sha256": "1d607f6e9a1c510bd21912aafa56f0ed05168c247b91ddba0d2792216b2d28d3"
+    },
+    {
+      "path": "lean/Packet07DrivenScalarEquation.lean",
+      "sha256": "392df697c91f4d06f0145881d374a669e6f93f0ac332cdc7196da2cc5baf644f"
+    },
+    {
+      "path": "lean/Packet07IncidentScalarEquation.lean",
+      "sha256": "d9b6aa8c1826572eade800f9f042c49938c09bcd267eec2b15d4d065e8c5e8cf"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "e863cf87ed4b949b939c145f64c775b4fc455e28d1a48e6109b40d9b214027ab"
+    }
+  ],
+  "scope": "global selected Green fields and quantitative scalar data. Global selected-source field and quantitative scalar data are proved; physical collars and full OQ14 remain active."
+}
