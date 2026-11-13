@@ -1,0 +1,185 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-030757-60048",
+  "object_directory": "checkpoints/2026-11-13-boundary-null/objects/20261113-030757-60048",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 6 actual boundary-nullity modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07BoundaryFrontier",
+      "source": "lean/Packet07BoundaryFrontier.lean",
+      "source_sha256": "2573b399e7c694a172086f480c104a98f11a6fbbcd1a3b52a0bd400b72c66ef0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07BoundaryFrontier.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryFrontier.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.36,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07BoundaryFrontier-chain.log",
+      "log_sha256": "4fdc8077e3f30a2067187f204c51cae8fecb35e3acbbffb98276e9a0d3d0c7d1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryFrontier.frontier_level_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dae4ee8da79211c032b376549abb9a953007b2025dd742deaff991531cf706d4"
+    },
+    {
+      "module": "Packet07BoundaryGraphNull",
+      "source": "lean/Packet07BoundaryGraphNull.lean",
+      "source_sha256": "6e1a1d6d352a8e754ca14e5038834e340037d3d3d4dcc71e9dafd688f7e1ba41",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07BoundaryGraphNull.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryGraphNull.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.469,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07BoundaryGraphNull-chain.log",
+      "log_sha256": "6d99b25796bcf3163b8648cb2cbf4dc494114758d0afedbc46d2556089d7f9ba",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryGraphNull.measurable_graph_subset_null",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "786a0b320c2f7a8a33e11535453ee9caaff9e5b20d16ef4f6e9e489d02177293"
+    },
+    {
+      "module": "Packet07BoundarySwapMeasure",
+      "source": "lean/Packet07BoundarySwapMeasure.lean",
+      "source_sha256": "a113f424e510d79d5c8575e9f95f872eae88d2b8a2b916553f45738adf994b5d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07BoundarySwapMeasure.olean",
+        "D:\\oq14\\lean\\Packet07BoundarySwapMeasure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.188,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07BoundarySwapMeasure-chain.log",
+      "log_sha256": "0e01aae83b2fc9e236fb638d553b54fae41d4f8d186ef609d0bbd3c2384d08f4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundarySwapMeasure.swap_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "66729586b68f674300febf1ba0f48cd1edb3f9d554735d9aeb1010395a297189"
+    },
+    {
+      "module": "Packet07BoundaryRotatedNull",
+      "source": "lean/Packet07BoundaryRotatedNull.lean",
+      "source_sha256": "c2526780e9ff6287532e0001503b9d20bdbd74cb116e278354d321021b82627b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07BoundaryRotatedNull.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryRotatedNull.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.547,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07BoundaryRotatedNull-chain.log",
+      "log_sha256": "5467058dc3669553b9ede6e4556eeda504c0ab4c1ee88da25055da924938ff07",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryRotatedNull.measurable_chart_graph_null",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3e7f7a2ce2c45f04a707cdc63758c8990ffafff5ac6731298f484d2198f50e31"
+    },
+    {
+      "module": "Packet07BoundaryNull",
+      "source": "lean/Packet07BoundaryNull.lean",
+      "source_sha256": "25bfa937592ff60c6b7d04707ceef5dc4802ac70904aff509d27c76b20faceed",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07BoundaryNull.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryNull.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.406,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07BoundaryNull-chain.log",
+      "log_sha256": "0dbf5adf0836697cf96777c08f62a0c5b662c32aba75a4773374aee44ac32fd2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryNull.regular_boundary_locally_null",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07BoundaryNull.compact_regular_boundary_null",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07BoundaryNull.bounded_regular_body_boundary_null",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "99b0f77d30e776db0711aa3d6e4637cc261aaecd31c5bd9525952b62c1de32bf"
+    },
+    {
+      "module": "Packet07FixedBoundary",
+      "source": "lean/Packet07FixedBoundary.lean",
+      "source_sha256": "25f17283853405dbf9a2a53d325f8d68cf028292855c00a18c7ec92682f004d8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-boundary-null\\objects\\20261113-030757-60048\\Packet07FixedBoundary.olean",
+        "D:\\oq14\\lean\\Packet07FixedBoundary.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 53.641,
+      "log": "checkpoints/2026-11-13-boundary-null/evidence/Packet07FixedBoundary-chain.log",
+      "log_sha256": "c282925310baafebd52e5bae51dcb5492bd87f64b08aaf1d6422140afe478ce4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FixedBoundary.fixed_frequency_planar_superlevels",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e68a0f1118a8cbc17bcefcd675c01df7de5469290e08ea67e3c1290adcbc91bd"
+    }
+  ],
+  "module_count": 6,
+  "report_count": 8
+}

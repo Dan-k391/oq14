@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 82 is the latest verified incremental checkpoint:
+[STAGE82.txt](checkpoints/2026-11-13-boundary-null/STAGE82.txt).
+The same actual driven fixed-frequency device now includes zero frontier
+volume and true oriented C2 charts at every boundary point, alongside its
+exact 2N components, smooth normalized input, outgoing fields and positive-
+volume peaks. Attained maxima and low collars remain unproved.
+
+6 modules / 8 reports passed independent root source review and fresh ordered
+compilation. 840 upstream sources were authenticated, with cached objects.
+The ledger is 756 modules / 4502 reports, all prior records unchanged:
+`checkpoints/2026-11-13-boundary-null/evidence/audited_after_5238-stage82.json`.
+Standard axioms only, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: complete actual outgoing E/H modes and physical unit
+normalization passed separate independent review/build; preserving the same
+observed pole under scalar normalization compiles. Complex affine/rotation
+Maxwell and true reciprocal dilation transport compile. The actual cone
+angular branch and its L2 limit compile. Quantitative curved regularity,
+actual modal excitation, attained hotspots/collars, packing, final manuscript
+and aggregate checks remain. Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage82.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 81 is the latest verified incremental checkpoint:
 [STAGE81.txt](checkpoints/2026-11-13-oriented-boundary/STAGE81.txt).
 The actual smooth rounded affine binary boundary has a derived local C2
