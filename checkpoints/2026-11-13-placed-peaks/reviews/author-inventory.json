@@ -1,0 +1,90 @@
+{
+  "modules": [
+    {
+      "module": "Packet06VectorPeak",
+      "source_sha256": "7a0c24b45197fd564b225f3187f01cd91f370d747f4edc2764367bded5e32c8e",
+      "log_sha256": "8d181f0e43d2c2f41dd433630fb5cd9c6650610b9af95f76c63541cca5490024",
+      "object_sha256": "e22515d6d946fa8ac304dbbd465c708bdb0c7dcfadbe8263dfeec9e557c8eee6",
+      "exit_code": 0,
+      "reports": 1,
+      "warning": false,
+      "sorry": false
+    },
+    {
+      "module": "Packet06PlacedAction",
+      "source_sha256": "f3f0d497ad87837ced8249c183666d4028eacff6e3fa4f5674d73668ff272fa3",
+      "log_sha256": "265c47e7bd3bce2d07dd64660ac25000143aa97a55304a15880250e6ae18fce8",
+      "object_sha256": "6e80034c6f827ffade5da73ca3b6d4e767aa6486d7819b77620d013787f55f3f",
+      "exit_code": 0,
+      "reports": 2,
+      "warning": false,
+      "sorry": false
+    },
+    {
+      "module": "Packet06PlacedMaterialField",
+      "source_sha256": "d4c550e80ae64c3957206a71498204d5304cb66876ba4b8ff7fec48f2fb4dd28",
+      "log_sha256": "0ffe2133fe2aea035c2c10d674843e240cc64550fd607218b4b3fa2170f3284f",
+      "object_sha256": "7e35a1faee354fc47d926a125f00697da6c396a2104bdebf5e8dae5bae4c1c98",
+      "exit_code": 0,
+      "reports": 3,
+      "warning": false,
+      "sorry": false
+    },
+    {
+      "module": "Packet06PlacedPeaks",
+      "source_sha256": "235f4f66882eed753902fd1f88b0f65da997ecbc2655c3bdcee120b8fb8d2161",
+      "log_sha256": "2de8895becd72fc7bc64b4fc15ab175f26c7e147980e7612890581e7246febd7",
+      "object_sha256": "67d6b418818122b88ed4bc437d03e3bff30cb7b738bd4b8330e5a66a7db46ac2",
+      "exit_code": 0,
+      "reports": 4,
+      "warning": false,
+      "sorry": false
+    },
+    {
+      "module": "Packet06RoundedPlacement",
+      "source_sha256": "95317a1a2161148a86e780d565c42124f956708076024367b8ad4ee18086e848",
+      "log_sha256": "06feb0783ee3c3ea6376f888609f837a1d8d85342d18fc8a5c59991cf6488ea1",
+      "object_sha256": "9c5d6504cd037e53432d42b433082c946e5d3062fccc0a7616f746cbb20c7060",
+      "exit_code": 0,
+      "reports": 2,
+      "warning": false,
+      "sorry": false
+    },
+    {
+      "module": "Packet06AxialAmplitude",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet06AxialAmplitude.olean",
+        "Packet06AxialAmplitude.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 11.218,
+      "source_sha256": "5f9ea673efdf68da01f30262277ff37c0974e608ad799e678ca928eebb49786e",
+      "log": "Packet06AxialAmplitude-root-author.log",
+      "log_sha256": "f3736de65f820090bbc52f118a92caa37d2ed05724bec6505737c4fa8a5c9da3",
+      "reports": 3
+    },
+    {
+      "module": "Packet07MeridionalMaximum",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet07MeridionalMaximum.olean",
+        "Packet07MeridionalMaximum.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.641,
+      "source_sha256": "8ea895d8abac9779a433ddb0f12bd4db74d4c93e314f5df66ff7a536d72e82bd",
+      "log": "Packet07MeridionalMaximum-root-author.log",
+      "log_sha256": "9551491f37f94aed3ef614bd91f89233b0b8ef54cd54fe4e12c2d6be60d1697b",
+      "reports": 3
+    }
+  ]
+}

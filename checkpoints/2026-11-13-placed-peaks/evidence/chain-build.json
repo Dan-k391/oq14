@@ -1,0 +1,283 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-044750-67920",
+  "object_directory": "checkpoints/2026-11-13-placed-peaks/objects/20261113-044750-67920",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 7 physical peak and symmetry modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06VectorPeak",
+      "source": "lean/Packet06VectorPeak.lean",
+      "source_sha256": "7a0c24b45197fd564b225f3187f01cd91f370d747f4edc2764367bded5e32c8e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06VectorPeak.olean",
+        "D:\\oq14\\lean\\Packet06VectorPeak.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.125,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06VectorPeak-chain.log",
+      "log_sha256": "8d181f0e43d2c2f41dd433630fb5cd9c6650610b9af95f76c63541cca5490024",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06VectorPeak.coordinate_to_vector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e22515d6d946fa8ac304dbbd465c708bdb0c7dcfadbe8263dfeec9e557c8eee6"
+    },
+    {
+      "module": "Packet06PlacedAction",
+      "source": "lean/Packet06PlacedAction.lean",
+      "source_sha256": "f3f0d497ad87837ced8249c183666d4028eacff6e3fa4f5674d73668ff272fa3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06PlacedAction.olean",
+        "D:\\oq14\\lean\\Packet06PlacedAction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.266,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06PlacedAction-chain.log",
+      "log_sha256": "265c47e7bd3bce2d07dd64660ac25000143aa97a55304a15880250e6ae18fce8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedAction.dilate_spatial_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedAction.placed_unknown_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6e80034c6f827ffade5da73ca3b6d4e767aa6486d7819b77620d013787f55f3f"
+    },
+    {
+      "module": "Packet06PlacedMaterialField",
+      "source": "lean/Packet06PlacedMaterialField.lean",
+      "source_sha256": "d4c550e80ae64c3957206a71498204d5304cb66876ba4b8ff7fec48f2fb4dd28",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06PlacedMaterialField.olean",
+        "D:\\oq14\\lean\\Packet06PlacedMaterialField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.859,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06PlacedMaterialField-chain.log",
+      "log_sha256": "0ffe2133fe2aea035c2c10d674843e240cc64550fd607218b4b3fa2170f3284f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedMaterialField.coefficient_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedMaterialField.kernel_weighted_response_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedMaterialField.placed_response_material_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7e35a1faee354fc47d926a125f00697da6c396a2104bdebf5e8dae5bae4c1c98"
+    },
+    {
+      "module": "Packet06PlacedPeaks",
+      "source": "lean/Packet06PlacedPeaks.lean",
+      "source_sha256": "235f4f66882eed753902fd1f88b0f65da997ecbc2655c3bdcee120b8fb8d2161",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06PlacedPeaks.olean",
+        "D:\\oq14\\lean\\Packet06PlacedPeaks.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.406,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06PlacedPeaks-chain.log",
+      "log_sha256": "2de8895becd72fc7bc64b4fc15ab175f26c7e147980e7612890581e7246febd7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedPeaks.point_qmp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPeaks.inverse_point",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPeaks.point_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPeaks.material_peak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "67d6b418818122b88ed4bc437d03e3bff30cb7b738bd4b8330e5a66a7db46ac2"
+    },
+    {
+      "module": "Packet06RoundedPlacement",
+      "source": "lean/Packet06RoundedPlacement.lean",
+      "source_sha256": "95317a1a2161148a86e780d565c42124f956708076024367b8ad4ee18086e848",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06RoundedPlacement.olean",
+        "D:\\oq14\\lean\\Packet06RoundedPlacement.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.735,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06RoundedPlacement-chain.log",
+      "log_sha256": "06feb0783ee3c3ea6376f888609f837a1d8d85342d18fc8a5c59991cf6488ea1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedPlacement.sphere_susceptibility_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RoundedPlacement.scaled_threshold",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9c5d6504cd037e53432d42b433082c946e5d3062fccc0a7616f746cbb20c7060"
+    },
+    {
+      "module": "Packet06AxialAmplitude",
+      "source": "lean/Packet06AxialAmplitude.lean",
+      "source_sha256": "5f9ea673efdf68da01f30262277ff37c0974e608ad799e678ca928eebb49786e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet06AxialAmplitude.olean",
+        "D:\\oq14\\lean\\Packet06AxialAmplitude.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.187,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet06AxialAmplitude-chain.log",
+      "log_sha256": "f3736de65f820090bbc52f118a92caa37d2ed05724bec6505737c4fa8a5c9da3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialAmplitude.rotation_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialAmplitude.sector_energy_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialAmplitude.response_energy_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "91b729cceb4adef6d30a061d5bf7bbdb00e225e4ab08b01e95c80a5a97127384"
+    },
+    {
+      "module": "Packet07MeridionalMaximum",
+      "source": "lean/Packet07MeridionalMaximum.lean",
+      "source_sha256": "8ea895d8abac9779a433ddb0f12bd4db74d4c93e314f5df66ff7a536d72e82bd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-peaks\\objects\\20261113-044750-67920\\Packet07MeridionalMaximum.olean",
+        "D:\\oq14\\lean\\Packet07MeridionalMaximum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.984,
+      "log": "checkpoints/2026-11-13-placed-peaks/evidence/Packet07MeridionalMaximum-chain.log",
+      "log_sha256": "9551491f37f94aed3ef614bd91f89233b0b8ef54cd54fe4e12c2d6be60d1697b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07MeridionalMaximum.orbit_meets_meridian",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07MeridionalMaximum.finite_branches_meridional_maximum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07MeridionalMaximum.placed_meridian_is_planar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fb2aaf146cc5b270f84d01daaae0790d34899be5fa8c447ae3d9f36b73009fe2"
+    }
+  ],
+  "module_count": 7,
+  "report_count": 18
+}

@@ -1,5 +1,39 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 95 is the latest verified incremental checkpoint:
+[STAGE95.txt](checkpoints/2026-11-13-placed-peaks/STAGE95.txt).
+
+The actual L2 source action under cyclic rotation, dilation and translation
+has amplitude sqrt(s)*s. On positive material, the actual kernel equations
+identify u=sqrt(chi)E and prove the corresponding electric response covariance
+almost everywhere. Nonsingular measure transport then carries positive-volume
+coordinate peaks to the placed balls, and coordinate peaks bound the full
+Euclidean electric amplitude. The material condition is proved throughout
+the literal rounded sphere interior, with a uniform lower-dilation threshold.
+
+For actual sector modes, the Euclidean energy of the physical local response
+is rotationally invariant almost everywhere on positive material. Separately,
+every axial orbit meets the meridian, and compact finite continuous phase
+branches with rotation invariance attain a maximum there; the cyclic placement
+sends that meridian into the reference plane. These statements retain their
+explicit continuity, phase-cover and symmetry inputs where applicable.
+
+Actual curved one-sided continuity, uniform collars and attained hotspot
+components still need final assembly. Exact-frequency finite packing,
+transported-sector poles, complete projected-source Green verification,
+the final paper and aggregate validation remain active.
+
+7 modules / 18 reports passed independent root review and a fresh
+ordered build. 1167 upstream sources were authenticated, with cached objects.
+The ledger is 1002 modules / 5000 reports, all prior records unchanged:
+`checkpoints/2026-11-13-placed-peaks/evidence/audited_after_5238-stage95.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage95.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 94 is the latest verified incremental checkpoint:
 [STAGE94.txt](checkpoints/2026-11-13-excited-rounded-modes/STAGE94.txt).
 

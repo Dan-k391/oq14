@@ -1,0 +1,55 @@
+[
+  {
+    "module": "Packet06VectorPeak",
+    "declarations": [
+      "OQ14.Packet06VectorPeak.coordinate_to_vector"
+    ]
+  },
+  {
+    "module": "Packet06PlacedAction",
+    "declarations": [
+      "OQ14.Packet06PlacedAction.dilate_spatial_ae",
+      "OQ14.Packet06PlacedAction.placed_unknown_ae"
+    ]
+  },
+  {
+    "module": "Packet06PlacedMaterialField",
+    "declarations": [
+      "OQ14.Packet06PlacedMaterialField.coefficient_value",
+      "OQ14.Packet06PlacedMaterialField.kernel_weighted_response_ae",
+      "OQ14.Packet06PlacedMaterialField.placed_response_material_ae"
+    ]
+  },
+  {
+    "module": "Packet06PlacedPeaks",
+    "declarations": [
+      "OQ14.Packet06PlacedPeaks.point_qmp",
+      "OQ14.Packet06PlacedPeaks.inverse_point",
+      "OQ14.Packet06PlacedPeaks.point_ball",
+      "OQ14.Packet06PlacedPeaks.material_peak"
+    ]
+  },
+  {
+    "module": "Packet06RoundedPlacement",
+    "declarations": [
+      "OQ14.Packet06RoundedPlacement.sphere_susceptibility_positive",
+      "OQ14.Packet06RoundedPlacement.scaled_threshold"
+    ]
+  },
+  {
+    "module": "Packet06AxialAmplitude",
+    "declarations": [
+      "OQ14.Packet06AxialAmplitude.rotation_energy",
+      "OQ14.Packet06AxialAmplitude.sector_energy_ae",
+      "OQ14.Packet06AxialAmplitude.response_energy_ae"
+    ]
+  },
+  {
+    "module": "Packet07MeridionalMaximum",
+    "declarations": [
+      "OQ14.Packet07MeridionalMaximum.orbit_meets_meridian",
+      "OQ14.Packet07MeridionalMaximum.finite_branches_meridional_maximum",
+      "OQ14.Packet07MeridionalMaximum.placed_meridian_is_planar"
+    ]
+  }
+]
