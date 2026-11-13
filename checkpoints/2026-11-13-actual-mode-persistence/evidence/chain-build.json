@@ -1,0 +1,609 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-023427-57840",
+  "object_directory": "checkpoints/2026-11-13-actual-mode-persistence/objects/20261113-023427-57840",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 14 actual-mode persistence modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06MaterialSymmetry",
+      "source": "lean/Packet06MaterialSymmetry.lean",
+      "source_sha256": "9cae8f7dda298fdf38c3b434b3dc04f853c22df8fbb9da4a9fe39187e9b7eaa7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06MaterialSymmetry.olean",
+        "D:\\oq14\\lean\\Packet06MaterialSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 82.734,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSymmetry-chain.log",
+      "log_sha256": "63921efc7bd49ece3dfbc875b26339d507fa63b430f7bb8c18876892b8119d08",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialSymmetry.axial_sqrt_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSymmetry.meridional_sqrt_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSymmetry.axial_static_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSymmetry.meridional_static_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e912a835b012f351163b250542d10f39822b81946ad4e4babbe84761a51ce594"
+    },
+    {
+      "module": "Packet06AxialSource",
+      "source": "lean/Packet06AxialSource.lean",
+      "source_sha256": "69ce3becafbf29632cfbda8f874bff471e878d72f3d26f35936366d2c5ac16b5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06AxialSource.olean",
+        "D:\\oq14\\lean\\Packet06AxialSource.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.031,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialSource-chain.log",
+      "log_sha256": "8c02280ac44d34b4d2a29ad191fd3fc901e74bc8d76ec100f6203d18ccda9503",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialSource.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialSource.source_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialSource.source_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "770651e8e83da1d84b32b65cf418add5b5da724200543c359fa6db5127ea5c31"
+    },
+    {
+      "module": "Packet06AxialConvolution",
+      "source": "lean/Packet06AxialConvolution.lean",
+      "source_sha256": "db7e19a349766335f4ba82db3935028bb2d91424ea7df6b49ae86bc9cdf75617",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06AxialConvolution.olean",
+        "D:\\oq14\\lean\\Packet06AxialConvolution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.578,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialConvolution-chain.log",
+      "log_sha256": "6fa02f6d017e47209cd431e3506846c916440869cf3fd7ff7fce3e74b2fb0a8d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialConvolution.cross_integrable_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialConvolution.weightedRemainder_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialConvolution.potential_cov_at",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e804eee1d30ea48d18836d0d4f317f8664e9707cde542ad783487b7e6024b5e7"
+    },
+    {
+      "module": "Packet06MeridionalConvolution",
+      "source": "lean/Packet06MeridionalConvolution.lean",
+      "source_sha256": "b05ab0bcc5f391c5dbf7d156d8d12cc55e7f95919659499b4cd7678535c5797e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06MeridionalConvolution.olean",
+        "D:\\oq14\\lean\\Packet06MeridionalConvolution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.343,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MeridionalConvolution-chain.log",
+      "log_sha256": "c6fabb09d3e8f9d9e97aacffb3d1be2de671b8715da1fe455087bdcb4a53eefc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MeridionalConvolution.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MeridionalConvolution.weighted_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8a6cb15e74886f0234058a379a8d4c4b11c78aaa8f72a25d2f7f402cd4eaa207"
+    },
+    {
+      "module": "Packet06SymmetryVolume",
+      "source": "lean/Packet06SymmetryVolume.lean",
+      "source_sha256": "8e213f9aee584369184675aa280ef30da9efaff8e063c79eb490e9650631e3ec",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06SymmetryVolume.olean",
+        "D:\\oq14\\lean\\Packet06SymmetryVolume.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 40.734,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryVolume-chain.log",
+      "log_sha256": "5611cc6c521f10196f83e773f48cc0c0a585d7c269cb3ab066208d5452225c04",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SymmetryVolume.real_comm_extension",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryVolume.axial_volume_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryVolume.meridional_volume_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0e1fc157dbca786adc6fd137b79b1aab4c702ec2e71dfd324114d44e5a0d1a0b"
+    },
+    {
+      "module": "Packet06SymmetryPencil",
+      "source": "lean/Packet06SymmetryPencil.lean",
+      "source_sha256": "328ee9cae9019312bf05d854adebe5f792b421debe8e23386dbe7022d9f0c2e1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06SymmetryPencil.olean",
+        "D:\\oq14\\lean\\Packet06SymmetryPencil.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.985,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryPencil-chain.log",
+      "log_sha256": "49067a5aaca2370f393031e1fda98e5c027d18f314d23162dba6cc1d68a5b397",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SymmetryPencil.comm_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryPencil.action_pencil_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryPencil.axial_pencil_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryPencil.meridional_pencil_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SymmetryPencil.pencil_mem_electricSector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cb35832f742def5fc6ac014af8f241cb305874efb2e27ec727b952a39baa8a6c"
+    },
+    {
+      "module": "Packet06ConeSymmetry",
+      "source": "lean/Packet06ConeSymmetry.lean",
+      "source_sha256": "a3a3646854d28788fab35282f75192e69aa714322fe3aba1f46889f50f3f9b0c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06ConeSymmetry.olean",
+        "D:\\oq14\\lean\\Packet06ConeSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.765,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ConeSymmetry-chain.log",
+      "log_sha256": "6027f864f0945fbe4c0c86f188846696853dff1bec9bcab26cd8500cb06045f0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeSymmetry.horizontal_norm_of_norm_axis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeSymmetry.rounded_inclusion_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeSymmetry.literal_material_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeSymmetry.binary_material_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "eedce5f2e3263a1fdee27c7b18e42981e8e98cc820de1895d2223061d2e507be"
+    },
+    {
+      "module": "Packet06SphereSymmetry",
+      "source": "lean/Packet06SphereSymmetry.lean",
+      "source_sha256": "e7e4401822521a505ce5669dfd5aa2448d177d9225835b11a2f3ea686861aa94",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06SphereSymmetry.olean",
+        "D:\\oq14\\lean\\Packet06SphereSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.516,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SphereSymmetry-chain.log",
+      "log_sha256": "379a6e27388e26ae7ede4a33e143b007564f4d86086fdd4dc4113dfced443366",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereSymmetry.sphere_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereSymmetry.sphere_meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "eddc0419673bf6052886ff4e2ccb64001aea9ca156e33d6d4f0e71aa5344f0c5"
+    },
+    {
+      "module": "Packet06SectorFamily",
+      "source": "lean/Packet06SectorFamily.lean",
+      "source_sha256": "95d83cf5ff940170519d0c573e54a1819e58d50df4a129d36d7f6fd5e878d54c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06SectorFamily.olean",
+        "D:\\oq14\\lean\\Packet06SectorFamily.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 102.062,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SectorFamily-chain.log",
+      "log_sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SectorFamily.compression_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorFamily.compression_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorFamily.compression_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorFamily.sphere_pencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorFamily.compression_kernel_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a6b71e31df4dc9674f1ccbf236ca90ce3c57e5c203642ccba766ad56e8630482"
+    },
+    {
+      "module": "Packet06MaterialSector",
+      "source": "lean/Packet06MaterialSector.lean",
+      "source_sha256": "ca641c914b9923c2f76cd143101d38876294896bd1662659879c46ad8097812b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06MaterialSector.olean",
+        "D:\\oq14\\lean\\Packet06MaterialSector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 39.109,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSector-chain.log",
+      "log_sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialSector.pencil_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSector.pencil_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSector.pencil_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSector.pencil_kernel_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialSector.sphere_pencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c08edeeaa523d7c15574f99cb0fd143649b88436e2a568d5d5062ec4508c9275"
+    },
+    {
+      "module": "Packet06ResponseLimit",
+      "source": "lean/Packet06ResponseLimit.lean",
+      "source_sha256": "b8783124d3e8992e4a4fd5f1be9e332ec5d133cd0f23becd330db659ec8e9163",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06ResponseLimit.olean",
+        "D:\\oq14\\lean\\Packet06ResponseLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.312,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ResponseLimit-chain.log",
+      "log_sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ResponseLimit.response_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ResponseLimit.reciprocalNorm_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ResponseLimit.reciprocalNorm_eventually_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2a0fc90d2716f494efadb504f2ead7defddb3380cf1809e15fa7d7469af46464"
+    },
+    {
+      "module": "Packet06ActualModePersistence",
+      "source": "lean/Packet06ActualModePersistence.lean",
+      "source_sha256": "461ca951b4e74029d57adfb15738dfbd1964ddd8518363bc895df763c6e4e290",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06ActualModePersistence.olean",
+        "D:\\oq14\\lean\\Packet06ActualModePersistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 30.453,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ActualModePersistence-chain.log",
+      "log_sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualModePersistence.actual_kernel_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3cf68d771cb7c643766ee8a4895f0f176e89150655de0fde7ec0c70465843e4e"
+    },
+    {
+      "module": "Packet06SpherePerturbation",
+      "source": "lean/Packet06SpherePerturbation.lean",
+      "source_sha256": "6814670aabf8578723167bfde844e775f1d6ddaf2403b4abbe117899eb73be19",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06SpherePerturbation.olean",
+        "D:\\oq14\\lean\\Packet06SpherePerturbation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.985,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SpherePerturbation-chain.log",
+      "log_sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SpherePerturbation.actual_sphere_mode_persistence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6ccc1dcadd8f78059ef84545c48aae77d1f2f000c9489de9e47eac6dea26209d"
+    },
+    {
+      "module": "Packet06NormalizationLimit",
+      "source": "lean/Packet06NormalizationLimit.lean",
+      "source_sha256": "c5737b6ad81a3acbec0ba2731354b59147e3c3764d6a7cfa67380ecd1fc6dcb5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-persistence\\objects\\20261113-023427-57840\\Packet06NormalizationLimit.olean",
+        "D:\\oq14\\lean\\Packet06NormalizationLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.281,
+      "log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06NormalizationLimit-chain.log",
+      "log_sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NormalizationLimit.compatible_scales",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NormalizationLimit.compatible_mode_scales",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "21cd9974c3cac1d48c378a7cbff6f9420f76257594175cf2ffb953275e4754e0"
+    }
+  ],
+  "module_count": 14,
+  "report_count": 43
+}

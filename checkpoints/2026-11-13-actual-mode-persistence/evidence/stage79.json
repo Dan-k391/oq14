@@ -1,0 +1,490 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "afb8730",
+  "modules": 723,
+  "reports": 4429,
+  "new_modules": 14,
+  "new_reports": 43,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "814ef1c65a08c8d066b3038a1ac8c24e3f2f991632f342e7204dc12597337511",
+  "ledger_sha256": "f602a6a97cd2014eae05502f76d32dfb8cdaf7bec4a1e774b721c285ab507266",
+  "source_provenance_sha256": "34d6a9fbe897a9872f7fc4329a2538d5920e0d4dd21819bb0080219ee1a30410",
+  "chain_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+  "raw_archive_sha256": "49734c8b53adc4dfd2e4d019ba4bc694964a7dc1edefefebd6c79d4fa0df48cf",
+  "records": [
+    {
+      "module": "Packet06MaterialSymmetry",
+      "reports": 4,
+      "source_sha256": "9cae8f7dda298fdf38c3b434b3dc04f853c22df8fbb9da4a9fe39187e9b7eaa7",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSymmetry-chain.log",
+      "audit_log_sha256": "63921efc7bd49ece3dfbc875b26339d507fa63b430f7bb8c18876892b8119d08",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSymmetry-chain.log",
+      "independent_log_sha256": "63921efc7bd49ece3dfbc875b26339d507fa63b430f7bb8c18876892b8119d08",
+      "declarations": [
+        "OQ14.Packet06MaterialSymmetry.axial_sqrt_comm",
+        "OQ14.Packet06MaterialSymmetry.meridional_sqrt_comm",
+        "OQ14.Packet06MaterialSymmetry.axial_static_comm",
+        "OQ14.Packet06MaterialSymmetry.meridional_static_comm"
+      ]
+    },
+    {
+      "module": "Packet06AxialSource",
+      "reports": 3,
+      "source_sha256": "69ce3becafbf29632cfbda8f874bff471e878d72f3d26f35936366d2c5ac16b5",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialSource-chain.log",
+      "audit_log_sha256": "8c02280ac44d34b4d2a29ad191fd3fc901e74bc8d76ec100f6203d18ccda9503",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialSource-chain.log",
+      "independent_log_sha256": "8c02280ac44d34b4d2a29ad191fd3fc901e74bc8d76ec100f6203d18ccda9503",
+      "declarations": [
+        "OQ14.Packet06AxialSource.source_action",
+        "OQ14.Packet06AxialSource.source_integrable",
+        "OQ14.Packet06AxialSource.source_zero"
+      ]
+    },
+    {
+      "module": "Packet06AxialConvolution",
+      "reports": 3,
+      "source_sha256": "db7e19a349766335f4ba82db3935028bb2d91424ea7df6b49ae86bc9cdf75617",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialConvolution-chain.log",
+      "audit_log_sha256": "6fa02f6d017e47209cd431e3506846c916440869cf3fd7ff7fce3e74b2fb0a8d",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialConvolution-chain.log",
+      "independent_log_sha256": "6fa02f6d017e47209cd431e3506846c916440869cf3fd7ff7fce3e74b2fb0a8d",
+      "declarations": [
+        "OQ14.Packet06AxialConvolution.cross_integrable_ae",
+        "OQ14.Packet06AxialConvolution.weightedRemainder_comm",
+        "OQ14.Packet06AxialConvolution.potential_cov_at"
+      ]
+    },
+    {
+      "module": "Packet06MeridionalConvolution",
+      "reports": 2,
+      "source_sha256": "b05ab0bcc5f391c5dbf7d156d8d12cc55e7f95919659499b4cd7678535c5797e",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MeridionalConvolution-chain.log",
+      "audit_log_sha256": "c6fabb09d3e8f9d9e97aacffb3d1be2de671b8715da1fe455087bdcb4a53eefc",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MeridionalConvolution-chain.log",
+      "independent_log_sha256": "c6fabb09d3e8f9d9e97aacffb3d1be2de671b8715da1fe455087bdcb4a53eefc",
+      "declarations": [
+        "OQ14.Packet06MeridionalConvolution.source_action",
+        "OQ14.Packet06MeridionalConvolution.weighted_comm"
+      ]
+    },
+    {
+      "module": "Packet06SymmetryVolume",
+      "reports": 3,
+      "source_sha256": "8e213f9aee584369184675aa280ef30da9efaff8e063c79eb490e9650631e3ec",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryVolume-chain.log",
+      "audit_log_sha256": "5611cc6c521f10196f83e773f48cc0c0a585d7c269cb3ab066208d5452225c04",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryVolume-chain.log",
+      "independent_log_sha256": "5611cc6c521f10196f83e773f48cc0c0a585d7c269cb3ab066208d5452225c04",
+      "declarations": [
+        "OQ14.Packet06SymmetryVolume.real_comm_extension",
+        "OQ14.Packet06SymmetryVolume.axial_volume_comm",
+        "OQ14.Packet06SymmetryVolume.meridional_volume_comm"
+      ]
+    },
+    {
+      "module": "Packet06SymmetryPencil",
+      "reports": 5,
+      "source_sha256": "328ee9cae9019312bf05d854adebe5f792b421debe8e23386dbe7022d9f0c2e1",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryPencil-chain.log",
+      "audit_log_sha256": "49067a5aaca2370f393031e1fda98e5c027d18f314d23162dba6cc1d68a5b397",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryPencil-chain.log",
+      "independent_log_sha256": "49067a5aaca2370f393031e1fda98e5c027d18f314d23162dba6cc1d68a5b397",
+      "declarations": [
+        "OQ14.Packet06SymmetryPencil.comm_inverse",
+        "OQ14.Packet06SymmetryPencil.action_pencil_comm",
+        "OQ14.Packet06SymmetryPencil.axial_pencil_comm",
+        "OQ14.Packet06SymmetryPencil.meridional_pencil_comm",
+        "OQ14.Packet06SymmetryPencil.pencil_mem_electricSector"
+      ]
+    },
+    {
+      "module": "Packet06ConeSymmetry",
+      "reports": 4,
+      "source_sha256": "a3a3646854d28788fab35282f75192e69aa714322fe3aba1f46889f50f3f9b0c",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ConeSymmetry-chain.log",
+      "audit_log_sha256": "6027f864f0945fbe4c0c86f188846696853dff1bec9bcab26cd8500cb06045f0",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ConeSymmetry-chain.log",
+      "independent_log_sha256": "6027f864f0945fbe4c0c86f188846696853dff1bec9bcab26cd8500cb06045f0",
+      "declarations": [
+        "OQ14.Packet06ConeSymmetry.horizontal_norm_of_norm_axis",
+        "OQ14.Packet06ConeSymmetry.rounded_inclusion_invariant",
+        "OQ14.Packet06ConeSymmetry.literal_material_invariant",
+        "OQ14.Packet06ConeSymmetry.binary_material_invariant"
+      ]
+    },
+    {
+      "module": "Packet06SphereSymmetry",
+      "reports": 2,
+      "source_sha256": "e7e4401822521a505ce5669dfd5aa2448d177d9225835b11a2f3ea686861aa94",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SphereSymmetry-chain.log",
+      "audit_log_sha256": "379a6e27388e26ae7ede4a33e143b007564f4d86086fdd4dc4113dfced443366",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SphereSymmetry-chain.log",
+      "independent_log_sha256": "379a6e27388e26ae7ede4a33e143b007564f4d86086fdd4dc4113dfced443366",
+      "declarations": [
+        "OQ14.Packet06SphereSymmetry.sphere_axial",
+        "OQ14.Packet06SphereSymmetry.sphere_meridional"
+      ]
+    },
+    {
+      "module": "Packet06SectorFamily",
+      "reports": 5,
+      "source_sha256": "95d83cf5ff940170519d0c573e54a1819e58d50df4a129d36d7f6fd5e878d54c",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SectorFamily-chain.log",
+      "audit_log_sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06SectorFamily.log",
+      "independent_log_sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad",
+      "declarations": [
+        "OQ14.Packet06SectorFamily.compression_actual",
+        "OQ14.Packet06SectorFamily.compression_analyticAt",
+        "OQ14.Packet06SectorFamily.compression_locally_uniform",
+        "OQ14.Packet06SectorFamily.sphere_pencil",
+        "OQ14.Packet06SectorFamily.compression_kernel_actual"
+      ]
+    },
+    {
+      "module": "Packet06MaterialSector",
+      "reports": 5,
+      "source_sha256": "ca641c914b9923c2f76cd143101d38876294896bd1662659879c46ad8097812b",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSector-chain.log",
+      "audit_log_sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06MaterialSector.log",
+      "independent_log_sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87",
+      "declarations": [
+        "OQ14.Packet06MaterialSector.pencil_actual",
+        "OQ14.Packet06MaterialSector.pencil_analyticAt",
+        "OQ14.Packet06MaterialSector.pencil_locally_uniform",
+        "OQ14.Packet06MaterialSector.pencil_kernel_actual",
+        "OQ14.Packet06MaterialSector.sphere_pencil"
+      ]
+    },
+    {
+      "module": "Packet06ResponseLimit",
+      "reports": 3,
+      "source_sha256": "b8783124d3e8992e4a4fd5f1be9e332ec5d133cd0f23becd330db659ec8e9163",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ResponseLimit-chain.log",
+      "audit_log_sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06ResponseLimit.log",
+      "independent_log_sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5",
+      "declarations": [
+        "OQ14.Packet06ResponseLimit.response_tendsto",
+        "OQ14.Packet06ResponseLimit.reciprocalNorm_tendsto",
+        "OQ14.Packet06ResponseLimit.reciprocalNorm_eventually_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06ActualModePersistence",
+      "reports": 1,
+      "source_sha256": "461ca951b4e74029d57adfb15738dfbd1964ddd8518363bc895df763c6e4e290",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ActualModePersistence-chain.log",
+      "audit_log_sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06ActualModePersistence.log",
+      "independent_log_sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689",
+      "declarations": [
+        "OQ14.Packet06ActualModePersistence.actual_kernel_modes"
+      ]
+    },
+    {
+      "module": "Packet06SpherePerturbation",
+      "reports": 1,
+      "source_sha256": "6814670aabf8578723167bfde844e775f1d6ddaf2403b4abbe117899eb73be19",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SpherePerturbation-chain.log",
+      "audit_log_sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06SpherePerturbation.log",
+      "independent_log_sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35",
+      "declarations": [
+        "OQ14.Packet06SpherePerturbation.actual_sphere_mode_persistence"
+      ]
+    },
+    {
+      "module": "Packet06NormalizationLimit",
+      "reports": 2,
+      "source_sha256": "c5737b6ad81a3acbec0ba2731354b59147e3c3764d6a7cfa67380ecd1fc6dcb5",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06NormalizationLimit-chain.log",
+      "audit_log_sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "independent_review_sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "independent_build_sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06NormalizationLimit.log",
+      "independent_log_sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b",
+      "declarations": [
+        "OQ14.Packet06NormalizationLimit.compatible_scales",
+        "OQ14.Packet06NormalizationLimit.compatible_mode_scales"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/audited_after_5238-stage79.json",
+      "sha256": "f602a6a97cd2014eae05502f76d32dfb8cdaf7bec4a1e774b721c285ab507266"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/chain-build.json",
+      "sha256": "edeaf94e65ef2467d660789ed00ee2710d8547504f118a1b060f690881308df3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ActualModePersistence-chain.log",
+      "sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialConvolution-chain.log",
+      "sha256": "6fa02f6d017e47209cd431e3506846c916440869cf3fd7ff7fce3e74b2fb0a8d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06AxialSource-chain.log",
+      "sha256": "8c02280ac44d34b4d2a29ad191fd3fc901e74bc8d76ec100f6203d18ccda9503"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ConeSymmetry-chain.log",
+      "sha256": "6027f864f0945fbe4c0c86f188846696853dff1bec9bcab26cd8500cb06045f0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSector-chain.log",
+      "sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MaterialSymmetry-chain.log",
+      "sha256": "63921efc7bd49ece3dfbc875b26339d507fa63b430f7bb8c18876892b8119d08"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06MeridionalConvolution-chain.log",
+      "sha256": "c6fabb09d3e8f9d9e97aacffb3d1be2de671b8715da1fe455087bdcb4a53eefc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06NormalizationLimit-chain.log",
+      "sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06ResponseLimit-chain.log",
+      "sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SectorFamily-chain.log",
+      "sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SpherePerturbation-chain.log",
+      "sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SphereSymmetry-chain.log",
+      "sha256": "379a6e27388e26ae7ede4a33e143b007564f4d86086fdd4dc4113dfced443366"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryPencil-chain.log",
+      "sha256": "49067a5aaca2370f393031e1fda98e5c027d18f314d23162dba6cc1d68a5b397"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/evidence/Packet06SymmetryVolume-chain.log",
+      "sha256": "5611cc6c521f10196f83e773f48cc0c0a585d7c269cb3ab066208d5452225c04"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/modules.json",
+      "sha256": "71525bc84c8bb7342550f59054e5deb6c59e40ccda04f708c369709807649242"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/provenance-audit.json",
+      "sha256": "34d6a9fbe897a9872f7fc4329a2538d5920e0d4dd21819bb0080219ee1a30410"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/concrete-normalization.json",
+      "sha256": "6eb5c7be1cc3088d8c1fb0e8a0458717a3bd907fdb255e7bc0b4dfc5b65c935c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-build.json",
+      "sha256": "49dbc7b056d7a8fd2833fd133f6b472dd4b91f2bac36470273f92b5f28832b3a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/independent-review.txt",
+      "sha256": "4ada797cfb3457b64fa20de6fcdf931ae37a161e3afde892dd32981ae0545368"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/metadata-normalization.json",
+      "sha256": "802fff3688d2c6aacdb2d658a525b1122732242853e9cea80001846409eb1512"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06ActualModePersistence.log",
+      "sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06MaterialSector.log",
+      "sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06NormalizationLimit.log",
+      "sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06ResponseLimit.log",
+      "sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06SectorFamily.log",
+      "sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/Packet06SpherePerturbation.log",
+      "sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/root-actual-review.txt",
+      "sha256": "d75a6e4808aeaac283b4ff3679b56f56bd4ce15cb2984ff373de82a1f89b3113"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/reviews/run-independent.py",
+      "sha256": "d7e32135c3f3229d7c0e9ae6297ffd6f9de9ddd33309e3ddddc6ad1534d19f02"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/scripts/audit_provenance.ps1",
+      "sha256": "3bb38ad128c0b5e6efd008cd3d389f149007b2fd6753e53d7914d01afe4a5425"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/scripts/check_chain.py",
+      "sha256": "cfc64e4d4aea9a326986b23299cf3ef99cde2dc0c54a66286fc17a1d072d1a64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/scripts/freeze_checkpoint.py",
+      "sha256": "b36c8474adf689092b04e74c5ddc2b3c6a77294911fabf2788f980d93f869d9f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-persistence/STAGE79.txt",
+      "sha256": "7d5f345b2d6ddc1a4c2dfc532b44753634b027c0dddaa9db2f512db99b4ca08d"
+    },
+    {
+      "path": "lean/Packet06ActualModePersistence.lean",
+      "sha256": "461ca951b4e74029d57adfb15738dfbd1964ddd8518363bc895df763c6e4e290"
+    },
+    {
+      "path": "lean/Packet06AxialConvolution.lean",
+      "sha256": "db7e19a349766335f4ba82db3935028bb2d91424ea7df6b49ae86bc9cdf75617"
+    },
+    {
+      "path": "lean/Packet06AxialSource.lean",
+      "sha256": "69ce3becafbf29632cfbda8f874bff471e878d72f3d26f35936366d2c5ac16b5"
+    },
+    {
+      "path": "lean/Packet06ConeSymmetry.lean",
+      "sha256": "a3a3646854d28788fab35282f75192e69aa714322fe3aba1f46889f50f3f9b0c"
+    },
+    {
+      "path": "lean/Packet06MaterialSector.lean",
+      "sha256": "ca641c914b9923c2f76cd143101d38876294896bd1662659879c46ad8097812b"
+    },
+    {
+      "path": "lean/Packet06MaterialSymmetry.lean",
+      "sha256": "9cae8f7dda298fdf38c3b434b3dc04f853c22df8fbb9da4a9fe39187e9b7eaa7"
+    },
+    {
+      "path": "lean/Packet06MeridionalConvolution.lean",
+      "sha256": "b05ab0bcc5f391c5dbf7d156d8d12cc55e7f95919659499b4cd7678535c5797e"
+    },
+    {
+      "path": "lean/Packet06NormalizationLimit.lean",
+      "sha256": "c5737b6ad81a3acbec0ba2731354b59147e3c3764d6a7cfa67380ecd1fc6dcb5"
+    },
+    {
+      "path": "lean/Packet06ResponseLimit.lean",
+      "sha256": "b8783124d3e8992e4a4fd5f1be9e332ec5d133cd0f23becd330db659ec8e9163"
+    },
+    {
+      "path": "lean/Packet06SectorFamily.lean",
+      "sha256": "95d83cf5ff940170519d0c573e54a1819e58d50df4a129d36d7f6fd5e878d54c"
+    },
+    {
+      "path": "lean/Packet06SpherePerturbation.lean",
+      "sha256": "6814670aabf8578723167bfde844e775f1d6ddaf2403b4abbe117899eb73be19"
+    },
+    {
+      "path": "lean/Packet06SphereSymmetry.lean",
+      "sha256": "e7e4401822521a505ce5669dfd5aa2448d177d9225835b11a2f3ea686861aa94"
+    },
+    {
+      "path": "lean/Packet06SymmetryPencil.lean",
+      "sha256": "328ee9cae9019312bf05d854adebe5f792b421debe8e23386dbe7022d9f0c2e1"
+    },
+    {
+      "path": "lean/Packet06SymmetryVolume.lean",
+      "sha256": "8e213f9aee584369184675aa280ef30da9efaff8e063c79eb490e9650631e3ec"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "10ea8fdd06ff79f8af66a486eca93efd9b9efe205ff04c5fce31977d5ca71503"
+    }
+  ],
+  "scope": "Actual symmetric-material sphere mode persistence, convergent electric responses and reciprocal normalization, with concrete material symmetries. Fourteen fresh isolated objects, 962 authenticated upstream sources with cached objects. Full OQ14 remains active and incomplete."
+}

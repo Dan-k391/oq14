@@ -1,0 +1,115 @@
+[
+  {
+    "module": "Packet06MaterialSymmetry",
+    "declarations": [
+      "OQ14.Packet06MaterialSymmetry.axial_sqrt_comm",
+      "OQ14.Packet06MaterialSymmetry.meridional_sqrt_comm",
+      "OQ14.Packet06MaterialSymmetry.axial_static_comm",
+      "OQ14.Packet06MaterialSymmetry.meridional_static_comm"
+    ]
+  },
+  {
+    "module": "Packet06AxialSource",
+    "declarations": [
+      "OQ14.Packet06AxialSource.source_action",
+      "OQ14.Packet06AxialSource.source_integrable",
+      "OQ14.Packet06AxialSource.source_zero"
+    ]
+  },
+  {
+    "module": "Packet06AxialConvolution",
+    "declarations": [
+      "OQ14.Packet06AxialConvolution.cross_integrable_ae",
+      "OQ14.Packet06AxialConvolution.weightedRemainder_comm",
+      "OQ14.Packet06AxialConvolution.potential_cov_at"
+    ]
+  },
+  {
+    "module": "Packet06MeridionalConvolution",
+    "declarations": [
+      "OQ14.Packet06MeridionalConvolution.source_action",
+      "OQ14.Packet06MeridionalConvolution.weighted_comm"
+    ]
+  },
+  {
+    "module": "Packet06SymmetryVolume",
+    "declarations": [
+      "OQ14.Packet06SymmetryVolume.real_comm_extension",
+      "OQ14.Packet06SymmetryVolume.axial_volume_comm",
+      "OQ14.Packet06SymmetryVolume.meridional_volume_comm"
+    ]
+  },
+  {
+    "module": "Packet06SymmetryPencil",
+    "declarations": [
+      "OQ14.Packet06SymmetryPencil.comm_inverse",
+      "OQ14.Packet06SymmetryPencil.action_pencil_comm",
+      "OQ14.Packet06SymmetryPencil.axial_pencil_comm",
+      "OQ14.Packet06SymmetryPencil.meridional_pencil_comm",
+      "OQ14.Packet06SymmetryPencil.pencil_mem_electricSector"
+    ]
+  },
+  {
+    "module": "Packet06ConeSymmetry",
+    "declarations": [
+      "OQ14.Packet06ConeSymmetry.horizontal_norm_of_norm_axis",
+      "OQ14.Packet06ConeSymmetry.rounded_inclusion_invariant",
+      "OQ14.Packet06ConeSymmetry.literal_material_invariant",
+      "OQ14.Packet06ConeSymmetry.binary_material_invariant"
+    ]
+  },
+  {
+    "module": "Packet06SphereSymmetry",
+    "declarations": [
+      "OQ14.Packet06SphereSymmetry.sphere_axial",
+      "OQ14.Packet06SphereSymmetry.sphere_meridional"
+    ]
+  },
+  {
+    "module": "Packet06SectorFamily",
+    "declarations": [
+      "OQ14.Packet06SectorFamily.compression_actual",
+      "OQ14.Packet06SectorFamily.compression_analyticAt",
+      "OQ14.Packet06SectorFamily.compression_locally_uniform",
+      "OQ14.Packet06SectorFamily.sphere_pencil",
+      "OQ14.Packet06SectorFamily.compression_kernel_actual"
+    ]
+  },
+  {
+    "module": "Packet06MaterialSector",
+    "declarations": [
+      "OQ14.Packet06MaterialSector.pencil_actual",
+      "OQ14.Packet06MaterialSector.pencil_analyticAt",
+      "OQ14.Packet06MaterialSector.pencil_locally_uniform",
+      "OQ14.Packet06MaterialSector.pencil_kernel_actual",
+      "OQ14.Packet06MaterialSector.sphere_pencil"
+    ]
+  },
+  {
+    "module": "Packet06ResponseLimit",
+    "declarations": [
+      "OQ14.Packet06ResponseLimit.response_tendsto",
+      "OQ14.Packet06ResponseLimit.reciprocalNorm_tendsto",
+      "OQ14.Packet06ResponseLimit.reciprocalNorm_eventually_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06ActualModePersistence",
+    "declarations": [
+      "OQ14.Packet06ActualModePersistence.actual_kernel_modes"
+    ]
+  },
+  {
+    "module": "Packet06SpherePerturbation",
+    "declarations": [
+      "OQ14.Packet06SpherePerturbation.actual_sphere_mode_persistence"
+    ]
+  },
+  {
+    "module": "Packet06NormalizationLimit",
+    "declarations": [
+      "OQ14.Packet06NormalizationLimit.compatible_scales",
+      "OQ14.Packet06NormalizationLimit.compatible_mode_scales"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "scope": "Independent ordered six-module build using fresh objects and cached upstream dependencies.",
+  "records": [
+    {
+      "module": "Packet06SectorFamily",
+      "source_sha256": "95d83cf5ff940170519d0c573e54a1819e58d50df4a129d36d7f6fd5e878d54c",
+      "log_sha256": "25aaff37bef74362a789ad106a28eaebdb4a9b2b0d991c1109350b3f74e47cad",
+      "object_sha256": "a6b71e31df4dc9674f1ccbf236ca90ce3c57e5c203642ccba766ad56e8630482",
+      "exit_code": 0,
+      "reports": 5,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 55.71
+    },
+    {
+      "module": "Packet06MaterialSector",
+      "source_sha256": "ca641c914b9923c2f76cd143101d38876294896bd1662659879c46ad8097812b",
+      "log_sha256": "b0a5fbd1ae3b568db64e7247d50f6a1d9f80e9b7662e8c7d4a2b608c5b732a87",
+      "object_sha256": "c08edeeaa523d7c15574f99cb0fd143649b88436e2a568d5d5062ec4508c9275",
+      "exit_code": 0,
+      "reports": 5,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 36.51
+    },
+    {
+      "module": "Packet06ResponseLimit",
+      "source_sha256": "b8783124d3e8992e4a4fd5f1be9e332ec5d133cd0f23becd330db659ec8e9163",
+      "log_sha256": "f46fcfd0851c3cf5ea60f00c496f56206dc29257504171ed1562424651ce88a5",
+      "object_sha256": "2a0fc90d2716f494efadb504f2ead7defddb3380cf1809e15fa7d7469af46464",
+      "exit_code": 0,
+      "reports": 3,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 56.08
+    },
+    {
+      "module": "Packet06ActualModePersistence",
+      "source_sha256": "461ca951b4e74029d57adfb15738dfbd1964ddd8518363bc895df763c6e4e290",
+      "log_sha256": "f750714fdd819352a03158ad28f05182bcbc4151872149a3de79a60423ec6689",
+      "object_sha256": "3cf68d771cb7c643766ee8a4895f0f176e89150655de0fde7ec0c70465843e4e",
+      "exit_code": 0,
+      "reports": 1,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 104.16
+    },
+    {
+      "module": "Packet06SpherePerturbation",
+      "source_sha256": "6814670aabf8578723167bfde844e775f1d6ddaf2403b4abbe117899eb73be19",
+      "log_sha256": "bdd6f6f0d3124c9c6b0d8bc989fd6f4a65f8ba24563461188a4d2d2d209cad35",
+      "object_sha256": "6ccc1dcadd8f78059ef84545c48aae77d1f2f000c9489de9e47eac6dea26209d",
+      "exit_code": 0,
+      "reports": 1,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 48.22
+    },
+    {
+      "module": "Packet06NormalizationLimit",
+      "source_sha256": "c5737b6ad81a3acbec0ba2731354b59147e3c3764d6a7cfa67380ecd1fc6dcb5",
+      "log_sha256": "1c648ca433f1f15ce800e5d01380ba8a7c515bb954b4584c49d0d632ff4ad32b",
+      "object_sha256": "21cd9974c3cac1d48c378a7cbff6f9420f76257594175cf2ffb953275e4754e0",
+      "exit_code": 0,
+      "reports": 2,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 24.6
+    }
+  ],
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "report_count": 17
+}

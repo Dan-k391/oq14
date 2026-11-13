@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 79 is the latest verified incremental checkpoint:
+[STAGE79.txt](checkpoints/2026-11-13-actual-mode-persistence/STAGE79.txt).
+Actual symmetric material perturbations preserve a selected simple sphere
+kernel mode with convergent frequencies, kernels, local electric responses
+and physical reciprocal normalizations. Compatible physical unit scales
+converge. Exact material symmetries and electric-sector preservation are proved.
+
+14 modules / 43 reports passed independent source review and fresh isolated
+compilation; six root modules also passed a separate independent fresh build.
+962 upstream sources were authenticated, with cached objects. The ledger is
+723 modules / 4429 reports, all prior records unchanged:
+`checkpoints/2026-11-13-actual-mode-persistence/evidence/audited_after_5238-stage79.json`.
+Standard axioms only, no warnings; no whole-project clean build claimed.
+
+Full OQ14 remains active. Actual fixed-cone positive contrast insertion and
+first-order complex Maxwell kernel equations compile outside this ledger.
+Curved graph scalar PDE transport and transverse div/curl decomposition also
+compile. Quantitative curved regularity, attained device maxima/collars,
+modal conical excitation/packing, final manuscript and aggregate validation
+remain. The selected kernel is one-dimensional in the electric sector only.
+
+Everything below is historical context, superseded by stage79.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 78 is the latest verified incremental checkpoint:
 [STAGE78.txt](checkpoints/2026-11-13-driven-physical/STAGE78.txt).
 The same driven fixed-frequency, exact-2N-component peak device now includes a
