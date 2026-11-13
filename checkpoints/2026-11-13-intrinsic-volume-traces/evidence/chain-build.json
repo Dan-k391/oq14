@@ -1,0 +1,471 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-intrinsic-volume-traces/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06StrongRoundedMaximum",
+      "source": "lean/Packet06StrongRoundedMaximum.lean",
+      "source_sha256": "dbfac9f86b7a42bfa90422ad2553999c3d9dae7b66f0976e790126c32a035025",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-strong-localized-volume-review\\objects\\Packet06StrongRoundedMaximum.olean D:\\oq14\\lean\\Packet06StrongRoundedMaximum.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 12.2791984,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongRoundedMaximum-chain.log",
+      "log_sha256": "ce5b2e6a437839acf0f58c1c1ffe8968a22ad9a61bbd40063c224c63d8f95698",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06StrongRoundedMaximum.strong_maximum_family",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0dad6f6b92ea8f40abb6bb88b4edd585cf61c9f4d51d20974f42494f9c41c967"
+    },
+    {
+      "module": "Packet06AllStrongWeightedVolumes",
+      "source": "lean/Packet06AllStrongWeightedVolumes.lean",
+      "source_sha256": "148a00b2512e677507698ba28e673933a27b21a74989097caa9bd390b574cf62",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-strong-localized-volume-review\\objects\\Packet06AllStrongWeightedVolumes.olean D:\\oq14\\lean\\Packet06AllStrongWeightedVolumes.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 12.7530551,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06AllStrongWeightedVolumes-chain.log",
+      "log_sha256": "00b55f1af79d939db363f73482f186d8508d3253206259bf6f9fcee03f5450ed",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AllStrongWeightedVolumes.all_strong_weighted_volumes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0d3d8bc8181e9b7e7dc32698b6c48a911e4c8ac83953090d923893f09db165f9"
+    },
+    {
+      "module": "Packet06StrongPlacedWeighted",
+      "source": "lean/Packet06StrongPlacedWeighted.lean",
+      "source_sha256": "847a89696a15fe309742f590cdb084f8c32a618e9ea4485af3a22c665ad0c5f1",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-strong-localized-volume-review\\objects\\Packet06StrongPlacedWeighted.olean D:\\oq14\\lean\\Packet06StrongPlacedWeighted.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 11.8813458,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongPlacedWeighted-chain.log",
+      "log_sha256": "2f4a12ffe1aa52e276997ff2b4844123d2a85440941bce397d246d3dc78572ad",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06StrongPlacedWeighted.strong_placed_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1d83e2b9ada0425fd0d13180f5df22de4944f5e43b2b21dadf2fbaa588b9915f"
+    },
+    {
+      "module": "Packet06InteriorTraceUnique",
+      "source": "lean/Packet06InteriorTraceUnique.lean",
+      "source_sha256": "5914bcc975d7d8b6cbc18da7545e69af8f5d756b039c07c32f053459e17d5846",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-interior-trace-review\\reviews\\root-objects\\Packet06InteriorTraceUnique.olean",
+        "D:\\oq14\\lean\\Packet06InteriorTraceUnique.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.875,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06InteriorTraceUnique-chain.log",
+      "log_sha256": "94c1c96ce5e87d01c36e288ef070be20a6063f67b84d68c2c51e32fc368a1501",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06InteriorTraceUnique.unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "05de9ca0f251975fc28e0cae556ca9e06c5a303f5b38a3ef618971e73d5a58b1"
+    },
+    {
+      "module": "Packet06NeighborhoodWeighted",
+      "source": "lean/Packet06NeighborhoodWeighted.lean",
+      "source_sha256": "ebeab5f5354934eac0cac421fbba047ac63c0e302a69457a3efde57746cd2760",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-neighborhood-frame-review\\reviews\\root-objects\\Packet06NeighborhoodWeighted.olean",
+        "D:\\oq14\\lean\\Packet06NeighborhoodWeighted.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.688,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeighted-chain.log",
+      "log_sha256": "3ffcdd8c76d37154664ab6042d1a6cbebf6cd06cd26dfcaefca5b26c2fe4bd85",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeighted.axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "02d464ec82e53b57d62fdf433a8f778164c9a26d7f93d3073ea7c2d254b13ace"
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedAffine",
+      "source": "lean/Packet06NeighborhoodWeightedAffine.lean",
+      "source_sha256": "77a6f8c728cd67bfc46cee5b74ab615a0e8b7beb0ee771a86594852bc36b6659",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-neighborhood-frame-review\\reviews\\root-objects\\Packet06NeighborhoodWeightedAffine.olean",
+        "D:\\oq14\\lean\\Packet06NeighborhoodWeightedAffine.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.843,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedAffine-chain.log",
+      "log_sha256": "8680c4ab71e5f9812099904760c8e8cf94a5bc33e4e25c9292b01fb643256cfa",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeightedAffine.affine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeightedAffine.cyclic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a38ccadb676714d0dd86e9d60887dcbfca527dd3eec5be069f250b12cf91750a"
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedFrame",
+      "source": "lean/Packet06NeighborhoodWeightedFrame.lean",
+      "source_sha256": "ec0c8f49e937b2fbbcb9294303746840680d7865c775fc750551aca246cd4d83",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-neighborhood-frame-review\\reviews\\root-objects\\Packet06NeighborhoodWeightedFrame.olean",
+        "D:\\oq14\\lean\\Packet06NeighborhoodWeightedFrame.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.891,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedFrame-chain.log",
+      "log_sha256": "42f82832355d02a5d7eca09284c64ad908488fb87f78286136d8a5c8b4cead6a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeightedFrame.frame",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeightedFrame.sets_eq_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ec923bcde4b93dd12fe5bcbc83a4bede3e2ed52227a78f6341bb52b7449b6e8d"
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedBall",
+      "source": "lean/Packet06NeighborhoodWeightedBall.lean",
+      "source_sha256": "ab5c7ee2431e085998dff24bd047c1afb6034e2ec4c1f27cf79c35b3f6023b1c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-neighborhood-frame-review\\reviews\\root-objects\\Packet06NeighborhoodWeightedBall.olean",
+        "D:\\oq14\\lean\\Packet06NeighborhoodWeightedBall.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.938,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedBall-chain.log",
+      "log_sha256": "31777173d6669ca3f5cb5c92715d77cfa34e1ba800509970461fceb657d7286d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NeighborhoodWeightedBall.frame_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d5aa4a11ce40d101b7c5228190cb88e8b695e8ad89f5dd6100629abefcb68a69"
+    },
+    {
+      "module": "Packet06NeighborhoodTraceIntrinsic",
+      "source": "lean/Packet06NeighborhoodTraceIntrinsic.lean",
+      "source_sha256": "f52d61d23c5ae6d0ed8a833212b7c3723073e099936d6543b618cf5d793c2793",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-trace-intrinsic-review\\reviews\\root-objects\\Packet06NeighborhoodTraceIntrinsic.olean",
+        "D:\\oq14\\lean\\Packet06NeighborhoodTraceIntrinsic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.485,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodTraceIntrinsic-chain.log",
+      "log_sha256": "39c4af57f11d13a1346284fa88fb1ef22385e31cd965e05aab603b0b260b7d04",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NeighborhoodTraceIntrinsic.intrinsic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d52a1fba6de4486fce70c8f88ad3655e8509a72d9e3ddc55dccf55bb864857ed"
+    },
+    {
+      "module": "Packet06StrongLocalizedVolumeFamily",
+      "source": "lean/Packet06StrongLocalizedVolumeFamily.lean",
+      "source_sha256": "e92c4d3d2f6caf73993e755eedc4924f4f7b3dedf5b78d7628fc5921010d8904",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-strong-localized-volume-review\\objects\\Packet06StrongLocalizedVolumeFamily.olean D:\\oq14\\lean\\Packet06StrongLocalizedVolumeFamily.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 28.5935359,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongLocalizedVolumeFamily-chain.log",
+      "log_sha256": "537b02e54b477f4c00e0a8d9f09fe6a3be168e12eb56ec891aecacf60bf9941b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06StrongLocalizedVolumeFamily.exists_strong_localized_volume_family",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "45cfb2f15051813c9117abd5ca6ed1dcd3269223936e927067a868c384ba9fc3"
+    },
+    {
+      "module": "Packet06LocalizedVolumeCollars",
+      "source": "lean/Packet06LocalizedVolumeCollars.lean",
+      "source_sha256": "8a297a0feac452ceae10b8e08f4da811f8a46b3a3b1ddbd47d00d28ac3ca0ea4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-localized-collars-review\\reviews\\root-objects\\Packet06LocalizedVolumeCollars.olean",
+        "D:\\oq14\\lean\\Packet06LocalizedVolumeCollars.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.25,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06LocalizedVolumeCollars-chain.log",
+      "log_sha256": "13eb8eb56f08ad71ed53776917c57a0b606e6bc0ea4557be7415587bfad4897a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06LocalizedVolumeCollars.initial_collars",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9833e134842ad30a2bd69a630f147f679108c690e1ee6fe7f12f7de0b3cab4f0"
+    },
+    {
+      "module": "Packet07DrivenLocalL2Transport",
+      "source": "lean/Packet07DrivenLocalL2Transport.lean",
+      "source_sha256": "b8efb5911ef0ff3cd7c54d9ac2904fdf27aaa223c3043ee723dffb4bec760ba5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-hcurl-review\\reviews\\root-objects\\Packet07DrivenLocalL2Transport.olean",
+        "D:\\oq14\\lean\\Packet07DrivenLocalL2Transport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.36,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenLocalL2Transport-chain.log",
+      "log_sha256": "8c65577142b5f7e3989f8768cb833b2998ee3b65450e1b929d7b2199d1ca1c32",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenLocalL2Transport.comp_scaled",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenLocalL2Transport.isometry_comp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenLocalL2Transport.affine_comp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9b23efd4669f8758d40bd291c20689b74e0061146095f6af9eb2e5add3641cb9"
+    },
+    {
+      "module": "Packet07DrivenPlacedHCurl",
+      "source": "lean/Packet07DrivenPlacedHCurl.lean",
+      "source_sha256": "1ec16d0bab4e1141ba485b7aa5997f1df0d01bfa6e1a482f8d0f48ac6ed66a3f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-hcurl-review\\reviews\\root-objects\\Packet07DrivenPlacedHCurl.olean",
+        "D:\\oq14\\lean\\Packet07DrivenPlacedHCurl.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.828,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedHCurl-chain.log",
+      "log_sha256": "c3b86ba07c3da41247b0859fa6380bbc1816f7f9d05ab9be0fbbe21ca8b05009",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.actual_fields",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.axial_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.cyclic_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.frame_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.affine_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.rigid_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedHCurl.placed_fields",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5d8b75c773ad0ff63abaa670c92f1c5753029a4a065f1bc3a20c7259da033e7a"
+    },
+    {
+      "module": "Packet07DrivenPlacedRegionalHCurl",
+      "source": "lean/Packet07DrivenPlacedRegionalHCurl.lean",
+      "source_sha256": "ee48a7e2aee6075a2e3b882eda5cb40d1a7659a78203c646e76e2bc16d882a4f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-hcurl-review\\reviews\\root-objects\\Packet07DrivenPlacedRegionalHCurl.olean",
+        "D:\\oq14\\lean\\Packet07DrivenPlacedRegionalHCurl.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.109,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedRegionalHCurl-chain.log",
+      "log_sha256": "1c52dd1b4c2203ff67c79b669ec74d421ef8f1356548fb8c2b19a36414920c12",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedRegionalHCurl.dielectric_electric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenPlacedRegionalHCurl.placed_regional_hcurl",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9f35341a9971a758c231f17aab3eb085c2fdb71d028d63e21416dfeae109b546"
+    },
+    {
+      "module": "Packet07DrivenExportedHCurl",
+      "source": "lean/Packet07DrivenExportedHCurl.lean",
+      "source_sha256": "4fff6aa33e03d97104979507b7f9ab078873ffe41fc5fb4d35da75f32106160e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-hcurl-review\\reviews\\root-objects\\Packet07DrivenExportedHCurl.olean",
+        "D:\\oq14\\lean\\Packet07DrivenExportedHCurl.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.047,
+      "log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenExportedHCurl-chain.log",
+      "log_sha256": "1c9e5640d4237acf780a6dff47d036eb278b18bbe141cff712570734773d9a07",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenExportedHCurl.placed_regional_hcurl_of_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bfb0d6c6be51851ebaf404ff114b67b104e823326008817fc446e7c3e4a39c5d"
+    }
+  ],
+  "module_count": 15,
+  "report_count": 26
+}

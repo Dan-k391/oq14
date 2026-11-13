@@ -1,5 +1,44 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 115 is the latest verified incremental checkpoint:
+[STAGE115.txt](checkpoints/2026-11-13-intrinsic-volume-traces/STAGE115.txt).
+
+SEMANTIC CORRECTION: the earlier small-closed-ball-only maximum predicates
+did not by themselves exclude arbitrary values at tangential phase contact.
+Their Lean proofs remain valid for those predicates, but previous descriptions
+of every such maximum as an intrinsic physical trace were too strong.
+
+The replacement StrongValid predicate retains the SAME actual continuous
+phase representatives on a strictly larger closed ball BEFORE any choice.
+The localized family and StrongPlaced preserve those exact functions through
+maximum selection and physical dilation/translation. All proper frame steps
+retain the same representatives, larger neighborhood and maximum value.
+InteriorTraceUnique and NeighborhoodTraceIntrinsic prove independence of
+the chosen larger-neighborhood representatives, including tangencies.
+This supersedes the weak-volume semantic descriptions in stages109-114.
+
+Actual driven E, H and epsilon E are locally square integrable through the
+entire physical frame. The exact Maxwell identity exported by PlaneFinal
+therefore yields H(curl) fields on every bounded open region, with AE identity
+to the same physical fields. Actual initialized modal collars are retained.
+
+The final unconditional arbitrary-plane volume-family wrapper is being
+assembled with these stronger certificates. The fresh aggregate build through
+stage114 passed 2144 modules / 10898 inline axiom reports, with 14 historical
+linter warnings. Final aggregate extension, every-safe-declaration axiom audit
+and paper release remain active. Full OQ14 is not yet declared closed.
+
+15 modules / 26 reports passed independent root review and a fresh
+ordered build. 1810 upstream sources were authenticated, with cached objects.
+The ledger is 1574 modules / 5979 reports, all prior records unchanged:
+`checkpoints/2026-11-13-intrinsic-volume-traces/evidence/audited_after_5238-stage115.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage115.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 114 is the latest verified incremental checkpoint:
 [STAGE114.txt](checkpoints/2026-11-13-arbitrary-plane-endpoints/STAGE114.txt).
 

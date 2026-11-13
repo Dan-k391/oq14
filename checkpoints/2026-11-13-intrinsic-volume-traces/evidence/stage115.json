@@ -1,0 +1,575 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "d1df66d",
+  "modules": 1574,
+  "reports": 5979,
+  "new_modules": 15,
+  "new_reports": 26,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "5702c5ce842c040d4e6403433b7795184188016baa2c71669961559892bbd937",
+  "ledger_sha256": "4f135aa5ca05c1f65eee7879a270fcb88f32adec10921cb4f103c77c1e568bed",
+  "raw_archive_sha256": "c99ec47f07c9a97ad502ce9e80720d610ab4f2b57ed278ec17e18c5e2c6a2795",
+  "records": [
+    {
+      "module": "Packet06StrongRoundedMaximum",
+      "reports": 1,
+      "source_sha256": "dbfac9f86b7a42bfa90422ad2553999c3d9dae7b66f0976e790126c32a035025",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongRoundedMaximum-chain.log",
+      "audit_log_sha256": "ce5b2e6a437839acf0f58c1c1ffe8968a22ad9a61bbd40063c224c63d8f95698",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-review.txt",
+      "independent_review_sha256": "8d8b6de44aad4c932740c0afb696433aa605b0ba049f02b6c98f834c06ce8d95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-build.json",
+      "independent_build_sha256": "13ea724a51674ec6c8d9c02dff3c84eb6d059d65193b421d5b69a6ab277848ec",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongRoundedMaximum.log",
+      "independent_log_sha256": "ce5b2e6a437839acf0f58c1c1ffe8968a22ad9a61bbd40063c224c63d8f95698",
+      "declarations": [
+        "OQ14.Packet06StrongRoundedMaximum.strong_maximum_family"
+      ]
+    },
+    {
+      "module": "Packet06AllStrongWeightedVolumes",
+      "reports": 1,
+      "source_sha256": "148a00b2512e677507698ba28e673933a27b21a74989097caa9bd390b574cf62",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06AllStrongWeightedVolumes-chain.log",
+      "audit_log_sha256": "00b55f1af79d939db363f73482f186d8508d3253206259bf6f9fcee03f5450ed",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-review.txt",
+      "independent_review_sha256": "8d8b6de44aad4c932740c0afb696433aa605b0ba049f02b6c98f834c06ce8d95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-build.json",
+      "independent_build_sha256": "13ea724a51674ec6c8d9c02dff3c84eb6d059d65193b421d5b69a6ab277848ec",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06AllStrongWeightedVolumes.log",
+      "independent_log_sha256": "00b55f1af79d939db363f73482f186d8508d3253206259bf6f9fcee03f5450ed",
+      "declarations": [
+        "OQ14.Packet06AllStrongWeightedVolumes.all_strong_weighted_volumes"
+      ]
+    },
+    {
+      "module": "Packet06StrongPlacedWeighted",
+      "reports": 1,
+      "source_sha256": "847a89696a15fe309742f590cdb084f8c32a618e9ea4485af3a22c665ad0c5f1",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongPlacedWeighted-chain.log",
+      "audit_log_sha256": "2f4a12ffe1aa52e276997ff2b4844123d2a85440941bce397d246d3dc78572ad",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-review.txt",
+      "independent_review_sha256": "8d8b6de44aad4c932740c0afb696433aa605b0ba049f02b6c98f834c06ce8d95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-build.json",
+      "independent_build_sha256": "13ea724a51674ec6c8d9c02dff3c84eb6d059d65193b421d5b69a6ab277848ec",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongPlacedWeighted.log",
+      "independent_log_sha256": "2f4a12ffe1aa52e276997ff2b4844123d2a85440941bce397d246d3dc78572ad",
+      "declarations": [
+        "OQ14.Packet06StrongPlacedWeighted.strong_placed_certificate"
+      ]
+    },
+    {
+      "module": "Packet06InteriorTraceUnique",
+      "reports": 1,
+      "source_sha256": "5914bcc975d7d8b6cbc18da7545e69af8f5d756b039c07c32f053459e17d5846",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06InteriorTraceUnique-chain.log",
+      "audit_log_sha256": "94c1c96ce5e87d01c36e288ef070be20a6063f67b84d68c2c51e32fc368a1501",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/unique-review.txt",
+      "independent_review_sha256": "2c740c9a7a0a61213bdd06bdbc44176972e98e5f8bff2ff4971ee4df97a3d64e",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/unique-build.json",
+      "independent_build_sha256": "87bd20c9f73967578f5015089575431acb1597f9396089da14bfeaf104d0fa40",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06InteriorTraceUnique.log",
+      "independent_log_sha256": "94c1c96ce5e87d01c36e288ef070be20a6063f67b84d68c2c51e32fc368a1501",
+      "declarations": [
+        "OQ14.Packet06InteriorTraceUnique.unique"
+      ]
+    },
+    {
+      "module": "Packet06NeighborhoodWeighted",
+      "reports": 1,
+      "source_sha256": "ebeab5f5354934eac0cac421fbba047ac63c0e302a69457a3efde57746cd2760",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeighted-chain.log",
+      "audit_log_sha256": "3ffcdd8c76d37154664ab6042d1a6cbebf6cd06cd26dfcaefca5b26c2fe4bd85",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-review.txt",
+      "independent_review_sha256": "33e68c26d4fbca3c513f6a336e912bc46fae177db14c3993e4b5f379acc1b45a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-build.json",
+      "independent_build_sha256": "6d63d342d8bb95b73911f82ef903f594c76db7df985ab55ee3ca325865c7b186",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeighted.log",
+      "independent_log_sha256": "3ffcdd8c76d37154664ab6042d1a6cbebf6cd06cd26dfcaefca5b26c2fe4bd85",
+      "declarations": [
+        "OQ14.Packet06NeighborhoodWeighted.axial"
+      ]
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedAffine",
+      "reports": 2,
+      "source_sha256": "77a6f8c728cd67bfc46cee5b74ab615a0e8b7beb0ee771a86594852bc36b6659",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedAffine-chain.log",
+      "audit_log_sha256": "8680c4ab71e5f9812099904760c8e8cf94a5bc33e4e25c9292b01fb643256cfa",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-review.txt",
+      "independent_review_sha256": "33e68c26d4fbca3c513f6a336e912bc46fae177db14c3993e4b5f379acc1b45a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-build.json",
+      "independent_build_sha256": "6d63d342d8bb95b73911f82ef903f594c76db7df985ab55ee3ca325865c7b186",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedAffine.log",
+      "independent_log_sha256": "8680c4ab71e5f9812099904760c8e8cf94a5bc33e4e25c9292b01fb643256cfa",
+      "declarations": [
+        "OQ14.Packet06NeighborhoodWeightedAffine.affine",
+        "OQ14.Packet06NeighborhoodWeightedAffine.cyclic"
+      ]
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedFrame",
+      "reports": 2,
+      "source_sha256": "ec0c8f49e937b2fbbcb9294303746840680d7865c775fc750551aca246cd4d83",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedFrame-chain.log",
+      "audit_log_sha256": "42f82832355d02a5d7eca09284c64ad908488fb87f78286136d8a5c8b4cead6a",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-review.txt",
+      "independent_review_sha256": "33e68c26d4fbca3c513f6a336e912bc46fae177db14c3993e4b5f379acc1b45a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-build.json",
+      "independent_build_sha256": "6d63d342d8bb95b73911f82ef903f594c76db7df985ab55ee3ca325865c7b186",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedFrame.log",
+      "independent_log_sha256": "42f82832355d02a5d7eca09284c64ad908488fb87f78286136d8a5c8b4cead6a",
+      "declarations": [
+        "OQ14.Packet06NeighborhoodWeightedFrame.frame",
+        "OQ14.Packet06NeighborhoodWeightedFrame.sets_eq_image"
+      ]
+    },
+    {
+      "module": "Packet06NeighborhoodWeightedBall",
+      "reports": 1,
+      "source_sha256": "ab5c7ee2431e085998dff24bd047c1afb6034e2ec4c1f27cf79c35b3f6023b1c",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedBall-chain.log",
+      "audit_log_sha256": "31777173d6669ca3f5cb5c92715d77cfa34e1ba800509970461fceb657d7286d",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-review.txt",
+      "independent_review_sha256": "33e68c26d4fbca3c513f6a336e912bc46fae177db14c3993e4b5f379acc1b45a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-build.json",
+      "independent_build_sha256": "6d63d342d8bb95b73911f82ef903f594c76db7df985ab55ee3ca325865c7b186",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedBall.log",
+      "independent_log_sha256": "31777173d6669ca3f5cb5c92715d77cfa34e1ba800509970461fceb657d7286d",
+      "declarations": [
+        "OQ14.Packet06NeighborhoodWeightedBall.frame_ball"
+      ]
+    },
+    {
+      "module": "Packet06NeighborhoodTraceIntrinsic",
+      "reports": 1,
+      "source_sha256": "f52d61d23c5ae6d0ed8a833212b7c3723073e099936d6543b618cf5d793c2793",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodTraceIntrinsic-chain.log",
+      "audit_log_sha256": "39c4af57f11d13a1346284fa88fb1ef22385e31cd965e05aab603b0b260b7d04",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/intrinsic-review.txt",
+      "independent_review_sha256": "0896b64ff18e78702577d4b57fa333b81a77006828c59a567fa4a7635a565d83",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/intrinsic-build.json",
+      "independent_build_sha256": "cd54a34af4df82fb65d8136c882e4f8d62bb2958cdabb103df3822be47525833",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodTraceIntrinsic.log",
+      "independent_log_sha256": "39c4af57f11d13a1346284fa88fb1ef22385e31cd965e05aab603b0b260b7d04",
+      "declarations": [
+        "OQ14.Packet06NeighborhoodTraceIntrinsic.intrinsic"
+      ]
+    },
+    {
+      "module": "Packet06StrongLocalizedVolumeFamily",
+      "reports": 1,
+      "source_sha256": "e92c4d3d2f6caf73993e755eedc4924f4f7b3dedf5b78d7628fc5921010d8904",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongLocalizedVolumeFamily-chain.log",
+      "audit_log_sha256": "537b02e54b477f4c00e0a8d9f09fe6a3be168e12eb56ec891aecacf60bf9941b",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-review.txt",
+      "independent_review_sha256": "8d8b6de44aad4c932740c0afb696433aa605b0ba049f02b6c98f834c06ce8d95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-build.json",
+      "independent_build_sha256": "13ea724a51674ec6c8d9c02dff3c84eb6d059d65193b421d5b69a6ab277848ec",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongLocalizedVolumeFamily.log",
+      "independent_log_sha256": "537b02e54b477f4c00e0a8d9f09fe6a3be168e12eb56ec891aecacf60bf9941b",
+      "declarations": [
+        "OQ14.Packet06StrongLocalizedVolumeFamily.exists_strong_localized_volume_family"
+      ]
+    },
+    {
+      "module": "Packet06LocalizedVolumeCollars",
+      "reports": 1,
+      "source_sha256": "8a297a0feac452ceae10b8e08f4da811f8a46b3a3b1ddbd47d00d28ac3ca0ea4",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06LocalizedVolumeCollars-chain.log",
+      "audit_log_sha256": "13eb8eb56f08ad71ed53776917c57a0b606e6bc0ea4557be7415587bfad4897a",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/collars-review.txt",
+      "independent_review_sha256": "b0e7ffa601c400374725e77ec700192d533f48c3c2eab3202fa8acb4ac898846",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/collars-build.json",
+      "independent_build_sha256": "12e9fbd5c3ea2ceba3a73210feddfa86c71159725c98c775cf1e32d333afb46d",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06LocalizedVolumeCollars.log",
+      "independent_log_sha256": "13eb8eb56f08ad71ed53776917c57a0b606e6bc0ea4557be7415587bfad4897a",
+      "declarations": [
+        "OQ14.Packet06LocalizedVolumeCollars.initial_collars"
+      ]
+    },
+    {
+      "module": "Packet07DrivenLocalL2Transport",
+      "reports": 3,
+      "source_sha256": "b8efb5911ef0ff3cd7c54d9ac2904fdf27aaa223c3043ee723dffb4bec760ba5",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenLocalL2Transport-chain.log",
+      "audit_log_sha256": "8c65577142b5f7e3989f8768cb833b2998ee3b65450e1b929d7b2199d1ca1c32",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-review.txt",
+      "independent_review_sha256": "418b3faa911f25574e8d77b267e00b6ed4551be4c7c98e0d5cc706f74bdbc791",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-build.json",
+      "independent_build_sha256": "092a28fa42034dcfe13bcde16ad2561dc6d47eb36e0433c125bc36de85d8687a",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenLocalL2Transport.log",
+      "independent_log_sha256": "8c65577142b5f7e3989f8768cb833b2998ee3b65450e1b929d7b2199d1ca1c32",
+      "declarations": [
+        "OQ14.Packet07DrivenLocalL2Transport.comp_scaled",
+        "OQ14.Packet07DrivenLocalL2Transport.isometry_comp",
+        "OQ14.Packet07DrivenLocalL2Transport.affine_comp"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlacedHCurl",
+      "reports": 7,
+      "source_sha256": "1ec16d0bab4e1141ba485b7aa5997f1df0d01bfa6e1a482f8d0f48ac6ed66a3f",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedHCurl-chain.log",
+      "audit_log_sha256": "c3b86ba07c3da41247b0859fa6380bbc1816f7f9d05ab9be0fbbe21ca8b05009",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-review.txt",
+      "independent_review_sha256": "418b3faa911f25574e8d77b267e00b6ed4551be4c7c98e0d5cc706f74bdbc791",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-build.json",
+      "independent_build_sha256": "092a28fa42034dcfe13bcde16ad2561dc6d47eb36e0433c125bc36de85d8687a",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenPlacedHCurl.log",
+      "independent_log_sha256": "c3b86ba07c3da41247b0859fa6380bbc1816f7f9d05ab9be0fbbe21ca8b05009",
+      "declarations": [
+        "OQ14.Packet07DrivenPlacedHCurl.actual_fields",
+        "OQ14.Packet07DrivenPlacedHCurl.axial_field",
+        "OQ14.Packet07DrivenPlacedHCurl.cyclic_field",
+        "OQ14.Packet07DrivenPlacedHCurl.frame_field",
+        "OQ14.Packet07DrivenPlacedHCurl.affine_field",
+        "OQ14.Packet07DrivenPlacedHCurl.rigid_field",
+        "OQ14.Packet07DrivenPlacedHCurl.placed_fields"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlacedRegionalHCurl",
+      "reports": 2,
+      "source_sha256": "ee48a7e2aee6075a2e3b882eda5cb40d1a7659a78203c646e76e2bc16d882a4f",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedRegionalHCurl-chain.log",
+      "audit_log_sha256": "1c52dd1b4c2203ff67c79b669ec74d421ef8f1356548fb8c2b19a36414920c12",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-review.txt",
+      "independent_review_sha256": "418b3faa911f25574e8d77b267e00b6ed4551be4c7c98e0d5cc706f74bdbc791",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-build.json",
+      "independent_build_sha256": "092a28fa42034dcfe13bcde16ad2561dc6d47eb36e0433c125bc36de85d8687a",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenPlacedRegionalHCurl.log",
+      "independent_log_sha256": "1c52dd1b4c2203ff67c79b669ec74d421ef8f1356548fb8c2b19a36414920c12",
+      "declarations": [
+        "OQ14.Packet07DrivenPlacedRegionalHCurl.dielectric_electric",
+        "OQ14.Packet07DrivenPlacedRegionalHCurl.placed_regional_hcurl"
+      ]
+    },
+    {
+      "module": "Packet07DrivenExportedHCurl",
+      "reports": 1,
+      "source_sha256": "4fff6aa33e03d97104979507b7f9ab078873ffe41fc5fb4d35da75f32106160e",
+      "audit_log": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenExportedHCurl-chain.log",
+      "audit_log_sha256": "1c9e5640d4237acf780a6dff47d036eb278b18bbe141cff712570734773d9a07",
+      "independent_review": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-review.txt",
+      "independent_review_sha256": "418b3faa911f25574e8d77b267e00b6ed4551be4c7c98e0d5cc706f74bdbc791",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-build.json",
+      "independent_build_sha256": "092a28fa42034dcfe13bcde16ad2561dc6d47eb36e0433c125bc36de85d8687a",
+      "independent_log": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenExportedHCurl.log",
+      "independent_log_sha256": "1c9e5640d4237acf780a6dff47d036eb278b18bbe141cff712570734773d9a07",
+      "declarations": [
+        "OQ14.Packet07DrivenExportedHCurl.placed_regional_hcurl_of_maxwell"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/audited_after_5238-stage115.json",
+      "sha256": "4f135aa5ca05c1f65eee7879a270fcb88f32adec10921cb4f103c77c1e568bed"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/chain-build.json",
+      "sha256": "3da60663d4af58d382673e8898a065c4220063a2c0871f8def55971b4df8d28f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06AllStrongWeightedVolumes-chain.log",
+      "sha256": "00b55f1af79d939db363f73482f186d8508d3253206259bf6f9fcee03f5450ed"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06InteriorTraceUnique-chain.log",
+      "sha256": "94c1c96ce5e87d01c36e288ef070be20a6063f67b84d68c2c51e32fc368a1501"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06LocalizedVolumeCollars-chain.log",
+      "sha256": "13eb8eb56f08ad71ed53776917c57a0b606e6bc0ea4557be7415587bfad4897a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodTraceIntrinsic-chain.log",
+      "sha256": "39c4af57f11d13a1346284fa88fb1ef22385e31cd965e05aab603b0b260b7d04"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeighted-chain.log",
+      "sha256": "3ffcdd8c76d37154664ab6042d1a6cbebf6cd06cd26dfcaefca5b26c2fe4bd85"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedAffine-chain.log",
+      "sha256": "8680c4ab71e5f9812099904760c8e8cf94a5bc33e4e25c9292b01fb643256cfa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedBall-chain.log",
+      "sha256": "31777173d6669ca3f5cb5c92715d77cfa34e1ba800509970461fceb657d7286d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06NeighborhoodWeightedFrame-chain.log",
+      "sha256": "42f82832355d02a5d7eca09284c64ad908488fb87f78286136d8a5c8b4cead6a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongLocalizedVolumeFamily-chain.log",
+      "sha256": "537b02e54b477f4c00e0a8d9f09fe6a3be168e12eb56ec891aecacf60bf9941b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongPlacedWeighted-chain.log",
+      "sha256": "2f4a12ffe1aa52e276997ff2b4844123d2a85440941bce397d246d3dc78572ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet06StrongRoundedMaximum-chain.log",
+      "sha256": "ce5b2e6a437839acf0f58c1c1ffe8968a22ad9a61bbd40063c224c63d8f95698"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenExportedHCurl-chain.log",
+      "sha256": "1c9e5640d4237acf780a6dff47d036eb278b18bbe141cff712570734773d9a07"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenLocalL2Transport-chain.log",
+      "sha256": "8c65577142b5f7e3989f8768cb833b2998ee3b65450e1b929d7b2199d1ca1c32"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedHCurl-chain.log",
+      "sha256": "c3b86ba07c3da41247b0859fa6380bbc1816f7f9d05ab9be0fbbe21ca8b05009"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/evidence/Packet07DrivenPlacedRegionalHCurl-chain.log",
+      "sha256": "1c52dd1b4c2203ff67c79b669ec74d421ef8f1356548fb8c2b19a36414920c12"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/modules.json",
+      "sha256": "8ce294c1a576118b9cde8d1ac7071a13aedcd7c921f7a6a9ca2d984671e2e140"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/provenance-audit.json",
+      "sha256": "c30638ef7252870701a221311f2307da35fbed328183ac60b18402b05adb6d14"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/author-inventory.json",
+      "sha256": "af02fb6255fbd9e0a11419f09be84d721ed549c95563a4afe25df175c23c4595"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/collars-build.json",
+      "sha256": "12e9fbd5c3ea2ceba3a73210feddfa86c71159725c98c775cf1e32d333afb46d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/collars-review.txt",
+      "sha256": "b0e7ffa601c400374725e77ec700192d533f48c3c2eab3202fa8acb4ac898846"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-build.json",
+      "sha256": "092a28fa42034dcfe13bcde16ad2561dc6d47eb36e0433c125bc36de85d8687a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/hcurl-review.txt",
+      "sha256": "418b3faa911f25574e8d77b267e00b6ed4551be4c7c98e0d5cc706f74bdbc791"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/independent-index.json",
+      "sha256": "846fea194c285feced88600367aa5e8c2255ae60a023f7d5395c9f4b7adda915"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/intrinsic-build.json",
+      "sha256": "cd54a34af4df82fb65d8136c882e4f8d62bb2958cdabb103df3822be47525833"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/intrinsic-review.txt",
+      "sha256": "0896b64ff18e78702577d4b57fa333b81a77006828c59a567fa4a7635a565d83"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-build.json",
+      "sha256": "13ea724a51674ec6c8d9c02dff3c84eb6d059d65193b421d5b69a6ab277848ec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/localized-review.txt",
+      "sha256": "8d8b6de44aad4c932740c0afb696433aa605b0ba049f02b6c98f834c06ce8d95"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/metadata-normalization.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-build.json",
+      "sha256": "6d63d342d8bb95b73911f82ef903f594c76db7df985ab55ee3ca325865c7b186"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/neighborhood-review.txt",
+      "sha256": "33e68c26d4fbca3c513f6a336e912bc46fae177db14c3993e4b5f379acc1b45a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06AllStrongWeightedVolumes.log",
+      "sha256": "00b55f1af79d939db363f73482f186d8508d3253206259bf6f9fcee03f5450ed"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06InteriorTraceUnique.log",
+      "sha256": "94c1c96ce5e87d01c36e288ef070be20a6063f67b84d68c2c51e32fc368a1501"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06LocalizedVolumeCollars.log",
+      "sha256": "13eb8eb56f08ad71ed53776917c57a0b606e6bc0ea4557be7415587bfad4897a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodTraceIntrinsic.log",
+      "sha256": "39c4af57f11d13a1346284fa88fb1ef22385e31cd965e05aab603b0b260b7d04"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeighted.log",
+      "sha256": "3ffcdd8c76d37154664ab6042d1a6cbebf6cd06cd26dfcaefca5b26c2fe4bd85"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedAffine.log",
+      "sha256": "8680c4ab71e5f9812099904760c8e8cf94a5bc33e4e25c9292b01fb643256cfa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedBall.log",
+      "sha256": "31777173d6669ca3f5cb5c92715d77cfa34e1ba800509970461fceb657d7286d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06NeighborhoodWeightedFrame.log",
+      "sha256": "42f82832355d02a5d7eca09284c64ad908488fb87f78286136d8a5c8b4cead6a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongLocalizedVolumeFamily.log",
+      "sha256": "537b02e54b477f4c00e0a8d9f09fe6a3be168e12eb56ec891aecacf60bf9941b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongPlacedWeighted.log",
+      "sha256": "2f4a12ffe1aa52e276997ff2b4844123d2a85440941bce397d246d3dc78572ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet06StrongRoundedMaximum.log",
+      "sha256": "ce5b2e6a437839acf0f58c1c1ffe8968a22ad9a61bbd40063c224c63d8f95698"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenExportedHCurl.log",
+      "sha256": "1c9e5640d4237acf780a6dff47d036eb278b18bbe141cff712570734773d9a07"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenLocalL2Transport.log",
+      "sha256": "8c65577142b5f7e3989f8768cb833b2998ee3b65450e1b929d7b2199d1ca1c32"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenPlacedHCurl.log",
+      "sha256": "c3b86ba07c3da41247b0859fa6380bbc1816f7f9d05ab9be0fbbe21ca8b05009"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/Packet07DrivenPlacedRegionalHCurl.log",
+      "sha256": "1c52dd1b4c2203ff67c79b669ec74d421ef8f1356548fb8c2b19a36414920c12"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/strong-build.json",
+      "sha256": "4f3e3cdccd564cfb22e914b4a4f91608853981671a1305343affcb47b5fe338e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/strong-review.txt",
+      "sha256": "2b9c561c1d33beda125a17173a5e37e21bcb215bca8609b2748e02fe0fedf723"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/unique-build.json",
+      "sha256": "87bd20c9f73967578f5015089575431acb1597f9396089da14bfeaf104d0fa40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/reviews/unique-review.txt",
+      "sha256": "2c740c9a7a0a61213bdd06bdbc44176972e98e5f8bff2ff4971ee4df97a3d64e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/scripts/audit_provenance.ps1",
+      "sha256": "77bcfbd75b039ac564e4a799c449cd0d28286904d3caed0cd4c6c2a4976c0fbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/scripts/check_chain.py",
+      "sha256": "f9ded0fc2ea659ed36ce36677391f5c41261ad7e1399d4140b647fb1b060f1d8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/scripts/freeze_checkpoint.py",
+      "sha256": "5877b05783809c8e3c104ed7dddf2a48399372447e57f34d3666e8a876397750"
+    },
+    {
+      "path": "checkpoints/2026-11-13-intrinsic-volume-traces/STAGE115.txt",
+      "sha256": "e6e5b27537779787bd98628591bfdda49726502ad4b60b41bdbaeb169b0ade17"
+    },
+    {
+      "path": "lean/Packet06AllStrongWeightedVolumes.lean",
+      "sha256": "148a00b2512e677507698ba28e673933a27b21a74989097caa9bd390b574cf62"
+    },
+    {
+      "path": "lean/Packet06InteriorTraceUnique.lean",
+      "sha256": "5914bcc975d7d8b6cbc18da7545e69af8f5d756b039c07c32f053459e17d5846"
+    },
+    {
+      "path": "lean/Packet06LocalizedVolumeCollars.lean",
+      "sha256": "8a297a0feac452ceae10b8e08f4da811f8a46b3a3b1ddbd47d00d28ac3ca0ea4"
+    },
+    {
+      "path": "lean/Packet06NeighborhoodTraceIntrinsic.lean",
+      "sha256": "f52d61d23c5ae6d0ed8a833212b7c3723073e099936d6543b618cf5d793c2793"
+    },
+    {
+      "path": "lean/Packet06NeighborhoodWeighted.lean",
+      "sha256": "ebeab5f5354934eac0cac421fbba047ac63c0e302a69457a3efde57746cd2760"
+    },
+    {
+      "path": "lean/Packet06NeighborhoodWeightedAffine.lean",
+      "sha256": "77a6f8c728cd67bfc46cee5b74ab615a0e8b7beb0ee771a86594852bc36b6659"
+    },
+    {
+      "path": "lean/Packet06NeighborhoodWeightedBall.lean",
+      "sha256": "ab5c7ee2431e085998dff24bd047c1afb6034e2ec4c1f27cf79c35b3f6023b1c"
+    },
+    {
+      "path": "lean/Packet06NeighborhoodWeightedFrame.lean",
+      "sha256": "ec0c8f49e937b2fbbcb9294303746840680d7865c775fc750551aca246cd4d83"
+    },
+    {
+      "path": "lean/Packet06StrongLocalizedVolumeFamily.lean",
+      "sha256": "e92c4d3d2f6caf73993e755eedc4924f4f7b3dedf5b78d7628fc5921010d8904"
+    },
+    {
+      "path": "lean/Packet06StrongPlacedWeighted.lean",
+      "sha256": "847a89696a15fe309742f590cdb084f8c32a618e9ea4485af3a22c665ad0c5f1"
+    },
+    {
+      "path": "lean/Packet06StrongRoundedMaximum.lean",
+      "sha256": "dbfac9f86b7a42bfa90422ad2553999c3d9dae7b66f0976e790126c32a035025"
+    },
+    {
+      "path": "lean/Packet07DrivenExportedHCurl.lean",
+      "sha256": "4fff6aa33e03d97104979507b7f9ab078873ffe41fc5fb4d35da75f32106160e"
+    },
+    {
+      "path": "lean/Packet07DrivenLocalL2Transport.lean",
+      "sha256": "b8efb5911ef0ff3cd7c54d9ac2904fdf27aaa223c3043ee723dffb4bec760ba5"
+    },
+    {
+      "path": "lean/Packet07DrivenPlacedHCurl.lean",
+      "sha256": "1ec16d0bab4e1141ba485b7aa5997f1df0d01bfa6e1a482f8d0f48ac6ed66a3f"
+    },
+    {
+      "path": "lean/Packet07DrivenPlacedRegionalHCurl.lean",
+      "sha256": "ee48a7e2aee6075a2e3b882eda5cb40d1a7659a78203c646e76e2bc16d882a4f"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "96d7b38e496642a470afaeb66553aef1e9e5eefb51149fb60d981a96f6b9a591"
+    }
+  ],
+  "scope": "intrinsic modal-volume traces and actual driven Hcurl fields. Intrinsic larger-neighborhood volume traces and actual driven Hcurl fields are proved. Earlier small-ball-only physical-maximum interpretations are superseded. Final arbitrary-plane volume assembly, aggregate audit and paper release remain active."
+}
