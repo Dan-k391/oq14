@@ -1,0 +1,21 @@
+Independent rotation, reflection and vanishing review, 2026-11-12
+
+SHA-256 of reviewed source files:
+468BE759CA382A1D637F424CD5C2D08B7593D6F5A1708445F7E142FD16D71513  Packet02SourceSymmetry.lean
+1511AB216CDF854FFBAC82E5894A8B6323EB807A09C440E1F042F9F0834DBEAB  Packet02MagneticRotation.lean
+D236F4E660F9A3F1CF7516A727D02031FDF6D2846AAD6DD9937B289A77A40297  Packet02GoodRotation.lean
+FB1BF9A18A94C2583086B226F93596E7A24B351E73833390FB5B89FC579B433D  Packet02VanishingAlgebra.lean
+AE9189D967C339C5A9047865B9840562C18161B4DF79D973E4493D137E73ED3D  ComplexSphereMaxwell.lean
+3287196D7FE196AB401DF63183651ABEA1CC181E3C89CB57B85FC5EE019DF703  ComplexMagneticHelmholtz.lean
+01A7471451A6B0CDF549F47ECD80300588BDE5730FF75DBE355DF8B66CC15047  ComplexMagneticDivergence.lean
+EC7AE6E1DF405E2A060E625049D3E851CCE3EFE1BB6A7C73DE12ACD50AD0BAB8  ComplexMagneticDebye.lean
+9522AD2FD8DE85A34DD96166CBEFF546C0651870682B9660CF2C01B8FAB12FA6  ComplexMagneticReflection.lean
+
+API and proof audit:
+source_action follows the concrete source definition and invariant material weight; source_covariant uses the axialSector fixed-point condition and a measure-preserving substitution. Source covariance holds a.e. for each fixed angle, with no common null-set claim.
+gradient_covariant uses the concrete phiGradient and rotation norm preservation.
+response_rotation requires integrability of every one of the nine products at the original point. Its integral expansion invokes integrable_finset_sum with those hypotheses before splitting sums; the change of variables and a.e. congruence do not need an integrability premise. magnetic_covariant is coordinate algebra from response_rotation and the trigonometric identity. No unguarded addition of totalized integrals is used.
+integrable_rotation assumes all three source-coordinate products integrable and transfers them by measure-preserving substitution, fixed-angle source covariance, and an integrable finite sum. integrable_reflection uses a scalar multiple and the electric-sector fixed condition. The Good equivalences instantiate these at the inverse-square kernel and use inverse transformations.
+VanishingAlgebra.radial_zero assumes pointwise, all-angle Good preservation and field covariance, and reflection covariance at Good points. It chooses the angle only after these uniform hypotheses; it never selects a point-dependent angle inside a fixed-angle a.e. source law. The bilinear radial dot is unconjugated.
+ComplexMagneticReflection uses measure-preserving substitution and scalar multiplication of totalized integrals; it does not distribute integrals over sums. Its magnetic theorem has axial sign -sign i. ComplexMagneticDebye.moment_actual is explicitly almost everywhere in radius; it is not an all-radii result.
+Each public theorem in the four Packet02 modules has #print axioms. The five promoted Complex files print axioms for their public theorems; definitions are not theorem declarations. Independent compile output is recorded in neighboring logs; the first three Packet02 module logs are in the parent checkpoint directory. This audit does not cover the evolving GoodSet source or claim a final surface/moment result.

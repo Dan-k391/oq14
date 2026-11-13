@@ -1,0 +1,413 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261112-212026-60784",
+  "object_directory": "checkpoints/2026-11-12-packet02/objects/20261112-212026-60784",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all eight new chain modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "module_count": 8,
+  "report_count": 32,
+  "records": [
+    {
+      "module": "ComplexSphereMaxwell",
+      "source": "lean/ComplexSphereMaxwell.lean",
+      "source_sha256": "ae9189d967c339c5a9047865b9840562c18161b4df79d973e4493d137e73ed3d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\ComplexSphereMaxwell.olean",
+        "D:\\oq14\\lean\\ComplexSphereMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.578,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexSphereMaxwell-foundation.log",
+      "log_sha256": "c2f78fa79a0ee541f249a48081c423a024e9e9967d0c43125098614af21e1cd5",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.exterior_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.interior_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.source_pair_interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cfb45f69271d7a9b0cc88f275a9e49ca0d73e4015016318f031ca114a16cabf5"
+    },
+    {
+      "module": "ComplexMagneticHelmholtz",
+      "source": "lean/ComplexMagneticHelmholtz.lean",
+      "source_sha256": "3287196d7fe196ab401df63183651abea1cc181e3c89cb57b85fc5ee019df703",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\ComplexMagneticHelmholtz.olean",
+        "D:\\oq14\\lean\\ComplexMagneticHelmholtz.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.172,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticHelmholtz-foundation.log",
+      "log_sha256": "790f51963b64a6c62123210698dcc5057164a2658872519d1714968b4f61e3cd",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.exterior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_lapPair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_weak_helmholtz",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bbb666bde8c7b07b1a39bf0d6c3fc0840b9644b8d2588cec19377c1b532be893"
+    },
+    {
+      "module": "ComplexMagneticDivergence",
+      "source": "lean/ComplexMagneticDivergence.lean",
+      "source_sha256": "01a7471451a6b0cdf549f47ecd80300588bde5730ff75dbe355df8b66cc15047",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\ComplexMagneticDivergence.olean",
+        "D:\\oq14\\lean\\ComplexMagneticDivergence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.813,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDivergence-foundation.log",
+      "log_sha256": "ae83505703d3f8232fdb383ef6774f252a6b0e7bac54ad44146c1d10f016cef7",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.exterior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.magnetic_divergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7b456f1c279688f4ddfe2459d2c00131810e58262e501f02a3ff47bee79df2fb"
+    },
+    {
+      "module": "ComplexMagneticDebye",
+      "source": "lean/ComplexMagneticDebye.lean",
+      "source_sha256": "ec7ae6e1df405e2a060e625049d3e851cce3efe1bb6a7c73de12acd50ad0bab8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\ComplexMagneticDebye.olean",
+        "D:\\oq14\\lean\\ComplexMagneticDebye.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.64,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDebye-foundation.log",
+      "log_sha256": "e6a760f78bfc5d1f6e0f9f6bd90e3dfaa6c3a61e192bc03ce2ca29b8466cd801",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.coordinate_helmholtz",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.divergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.scalar_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.regular_radial_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.coordinates_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.scalar_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.moment_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4689ecf588080897e79b3ff1dcda86d6beabbf71c31a51b74f69fcc917f95641"
+    },
+    {
+      "module": "ComplexMagneticReflection",
+      "source": "lean/ComplexMagneticReflection.lean",
+      "source_sha256": "9522ad2fd8de85a34dd96166cbeff546c0651870682b9660cf2c01b8fab12fa6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\ComplexMagneticReflection.olean",
+        "D:\\oq14\\lean\\ComplexMagneticReflection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.032,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticReflection-foundation.log",
+      "log_sha256": "44c38822123f165ad3106bdb0687c6b0a138ce8ed5a9f8eaeacdd97b2450d99e",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.radialDot_odd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.gradient_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.magnetic_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.gradient_response_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.sector_magnetic_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "72b4548d92d82e14e9824d4128eb02d87487cd7976ddc8166c43396c3899629e"
+    },
+    {
+      "module": "Packet02SourceSymmetry",
+      "source": "lean/Packet02SourceSymmetry.lean",
+      "source_sha256": "468be759ca382a1d637f424cd5c2d08b7593d6f5a1708445f7e142fd16d71513",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\Packet02SourceSymmetry.olean",
+        "D:\\oq14\\lean\\Packet02SourceSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.797,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02SourceSymmetry-foundation.log",
+      "log_sha256": "d7400b3ee8989bebd11a27fda928c4f0307f5ea7286c35b5511aa93072c63a1a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02SourceSymmetry.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SourceSymmetry.source_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c6de1891824a54d88ca1fe978eac482e86b5868ca67dcc6ad7ff5be5bebe11e2"
+    },
+    {
+      "module": "Packet02MagneticRotation",
+      "source": "lean/Packet02MagneticRotation.lean",
+      "source_sha256": "1511ab216cdf854ffbac82e5894a8b6323eb807a09c440e1f042f9f0834dbeab",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\Packet02MagneticRotation.olean",
+        "D:\\oq14\\lean\\Packet02MagneticRotation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.265,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticRotation-foundation.log",
+      "log_sha256": "13e1bcbd913ae8d8a0ea9e58294756000402cd6ea66f4bdfad029036081f4d1a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.gradient_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.response_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.magnetic_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d78e725d2236e2b50b7f6a9dc5e4920ec20944945e6cbf84a9b91c6719e78f24"
+    },
+    {
+      "module": "Packet02VanishingAlgebra",
+      "source": "lean/Packet02VanishingAlgebra.lean",
+      "source_sha256": "fb1bf9a18a94c2583086b226f93596e7a24b351e73833390fb5b89fc579b433d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-212026-60784\\Packet02VanishingAlgebra.olean",
+        "D:\\oq14\\lean\\Packet02VanishingAlgebra.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.329,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02VanishingAlgebra-foundation.log",
+      "log_sha256": "689a0e9e68c5e280f610ba45cd05ff671ce91031aac22dcad0417b495a925e50",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.radial_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.rotate_to_plane",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.plane_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "97a950257927f3254d17eb950b7191680bc1275af76f6cdfd9cab925fbb6501f"
+    }
+  ]
+}
