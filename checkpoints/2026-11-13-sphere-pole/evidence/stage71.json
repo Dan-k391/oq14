@@ -1,0 +1,519 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "f9232d3",
+  "modules": 590,
+  "reports": 4049,
+  "new_modules": 14,
+  "new_reports": 72,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "8024f11410ed2846a8614ef391904c804702b661dfce818da0c1c7b7ab15d115",
+  "ledger_sha256": "d99bd125989a78ae09c728ab9096e3d07b07850923308496bacee5996df372ca",
+  "source_provenance_sha256": "e66b34544a6d3c212123bca48932e95d314b254bbdc39a58acab2d6ce5bd485f",
+  "chain_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+  "raw_archive_sha256": "58cd46ae734a8249cdb7d7277d6de7b6f9550dde3777d5fe9bfde3dfc3d5ba2d",
+  "records": [
+    {
+      "module": "Packet06PoleOrder",
+      "reports": 3,
+      "source_sha256": "c4907e77f40c15624c4459e4dca8aea3f12f480195a50603f0f4b0393eae3fcc",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PoleOrder-chain.log",
+      "audit_log_sha256": "8032d33f0c3452861258a1869ccf115c12f04ee70ca5d3a08e59808e911b9672",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PoleOrder-independent.log",
+      "independent_log_sha256": "8032d33f0c3452861258a1869ccf115c12f04ee70ca5d3a08e59808e911b9672",
+      "declarations": [
+        "OQ14.Packet06PoleOrder.inverse_order_negative",
+        "OQ14.Packet06PoleOrder.higher_pole_impossible",
+        "OQ14.Packet06PoleOrder.inverse_order_eq_neg_one"
+      ]
+    },
+    {
+      "module": "Packet06Laurent",
+      "reports": 2,
+      "source_sha256": "99db5a1253c2b57f716796bc2ddbf05088750eb2dfc87a128bbb17037fe6516d",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Laurent-chain.log",
+      "audit_log_sha256": "f77e50a1ad2f9dcbb804a3bf3b0158a3c0a0c71542e33dc024a39a6b20315aa4",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06Laurent-independent.log",
+      "independent_log_sha256": "f77e50a1ad2f9dcbb804a3bf3b0158a3c0a0c71542e33dc024a39a6b20315aa4",
+      "declarations": [
+        "OQ14.Packet06Laurent.analytic_dslope",
+        "OQ14.Packet06Laurent.simple_inverse_expansion"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalPairing",
+      "reports": 3,
+      "source_sha256": "093bb9e6ea3ade76638fda50f4774d2c9451fbd4f1c68394093a9669383c85d4",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalPairing-chain.log",
+      "audit_log_sha256": "9b160b09f1ca19cbee51f410f09e09229a6b7613c908a5af5fa3ac4bbccc5864",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalPairing-independent.log",
+      "independent_log_sha256": "4e5ffacd03e64c155324dae881dee2ef83f0d768c449491b6e9176bf7b7291cf",
+      "declarations": [
+        "OQ14.Packet06PhysicalPairing.component_product_integrable",
+        "OQ14.Packet06PhysicalPairing.physical_product_integrable",
+        "OQ14.Packet06PhysicalPairing.vectorPair_physical"
+      ]
+    },
+    {
+      "module": "Packet06SectorOperator",
+      "reports": 12,
+      "source_sha256": "8b6abf7a5462d419eebea29287f20a983f895702dbb8bed44b32f14ce3ae78e6",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorOperator-chain.log",
+      "audit_log_sha256": "414a2eadf628d4f9cf9b4b86b66bab187d6fab811e6177d19ff13d4f80463c6e",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "independent_review_sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "independent_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorOperator-chain.log",
+      "independent_log_sha256": "414a2eadf628d4f9cf9b4b86b66bab187d6fab811e6177d19ff13d4f80463c6e",
+      "declarations": [
+        "OQ14.Packet06SectorOperator.ambient_inverse_mem_sector",
+        "OQ14.Packet06SectorOperator.compressedInverse_two_sided",
+        "OQ14.Packet06SectorOperator.block_punctured_isUnit",
+        "OQ14.Packet06SectorOperator.inverse_eq_compressed_eventually",
+        "OQ14.Packet06SectorOperator.inverse_meromorphicAt",
+        "OQ14.Packet06SectorOperator.block_actual",
+        "OQ14.Packet06SectorOperator.numerator_kernel",
+        "OQ14.Packet06SectorOperator.kernel_iff_unique_multiple",
+        "OQ14.Packet06SectorOperator.kernel_eq_span",
+        "OQ14.Packet06SectorOperator.kernel_finrank_one",
+        "OQ14.Packet06SectorOperator.block_not_isUnit",
+        "OQ14.Packet06SectorOperator.compressedInverse_meromorphicAt"
+      ]
+    },
+    {
+      "module": "Packet06SectorCrossing",
+      "reports": 5,
+      "source_sha256": "9717b2778a7c6bb39cd5ee751aee978819bc6b2fc45d4fa945809d212ebc5e6e",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorCrossing-chain.log",
+      "audit_log_sha256": "79b8f7e263968f349236f406cdf6073a800ae16b6c9b78a11264381e156f7708",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "independent_review_sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "independent_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorCrossing-chain.log",
+      "independent_log_sha256": "79b8f7e263968f349236f406cdf6073a800ae16b6c9b78a11264381e156f7708",
+      "declarations": [
+        "OQ14.Packet06SectorCrossing.block_eq_compression",
+        "OQ14.Packet06SectorCrossing.block_hasDerivAt",
+        "OQ14.Packet06SectorCrossing.block_derivative_actual",
+        "OQ14.Packet06SectorCrossing.left_annihilates",
+        "OQ14.Packet06SectorCrossing.crossing_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06Cokernel",
+      "reports": 4,
+      "source_sha256": "728f0b25dfb3b24ef26b939b55286f8067748ea6c9f8963ca91cc519fd9a91bb",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Cokernel-chain.log",
+      "audit_log_sha256": "0ea0cdabfbe4077928cd7f87876904a156f6fc546d04b8ebaf8d14ce307ef06c",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "independent_review_sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "independent_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Cokernel-chain.log",
+      "independent_log_sha256": "0ea0cdabfbe4077928cd7f87876904a156f6fc546d04b8ebaf8d14ce307ef06c",
+      "declarations": [
+        "OQ14.Packet06Cokernel.laurent_constant_identity",
+        "OQ14.Packet06Cokernel.range_eq_kernel",
+        "OQ14.Packet06Cokernel.range_closed",
+        "OQ14.Packet06Cokernel.quotient_finrank_one"
+      ]
+    },
+    {
+      "module": "Packet06SpherePole",
+      "reports": 4,
+      "source_sha256": "e31d19485713ec520c0abb97ce1640a2306e8a40e5866f8880ef174c0ef439fc",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SpherePole-chain.log",
+      "audit_log_sha256": "acbaa87e640fba75f325344e897f89e8b99f8467cc5bdf8c9f6e21ba49b40c38",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "independent_review_sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "independent_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SpherePole-chain.log",
+      "independent_log_sha256": "acbaa87e640fba75f325344e897f89e8b99f8467cc5bdf8c9f6e21ba49b40c38",
+      "declarations": [
+        "OQ14.Packet06SpherePole.determinant_simple",
+        "OQ14.Packet06SpherePole.actual_sector_pole_and_cokernel",
+        "OQ14.Packet06SpherePole.inverse_order_eq_neg_one",
+        "OQ14.Packet06SpherePole.inverse_simple_expansion"
+      ]
+    },
+    {
+      "module": "Packet06NormalizedMode",
+      "reports": 5,
+      "source_sha256": "75b5f9b20e0b78c501d805c847ff733ad3680f2e5649639b7161ac9389fe5a2a",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06NormalizedMode-chain.log",
+      "audit_log_sha256": "d59e67376a6468f3a0258a289bd458297ad9ec65960740b3b3fab401e83f899e",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "independent_review_sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "independent_build_sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06NormalizedMode-chain.log",
+      "independent_log_sha256": "d59e67376a6468f3a0258a289bd458297ad9ec65960740b3b3fab401e83f899e",
+      "declarations": [
+        "OQ14.Packet06NormalizedMode.pairing_crossing_actual",
+        "OQ14.Packet06NormalizedMode.pairing_left_annihilates",
+        "OQ14.Packet06NormalizedMode.kernel_generator",
+        "OQ14.Packet06NormalizedMode.normalized_residue",
+        "OQ14.Packet06NormalizedMode.selected_highQ_normalized_residue"
+      ]
+    },
+    {
+      "module": "Packet06WeightedTransport",
+      "reports": 7,
+      "source_sha256": "726851231d334bf34b4819e4065a95b81c2f3ff02eba3a1df95fd8a985b94333",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06WeightedTransport-chain.log",
+      "audit_log_sha256": "69222c17bd094f60e87eca58db52900da41c0d720952f30301de40e814ffddda",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06WeightedTransport-independent.log",
+      "independent_log_sha256": "69222c17bd094f60e87eca58db52900da41c0d720952f30301de40e814ffddda",
+      "declarations": [
+        "OQ14.Packet06WeightedTransport.inverse_switch",
+        "OQ14.Packet06WeightedTransport.isUnit_switch",
+        "OQ14.Packet06WeightedTransport.ring_inverse_switch",
+        "OQ14.Packet06WeightedTransport.kernel_forward",
+        "OQ14.Packet06WeightedTransport.kernel_backward",
+        "OQ14.Packet06WeightedTransport.kernel_forward_inverse",
+        "OQ14.Packet06WeightedTransport.weighted_inverse_formula"
+      ]
+    },
+    {
+      "module": "Packet06LaurentTransport",
+      "reports": 5,
+      "source_sha256": "d4c00c7ad699e77bc5245342691338d20d9ea52cb4a86083753c11205cc455a3",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LaurentTransport-chain.log",
+      "audit_log_sha256": "a3be55ae76ec02ed86b0d2a48c04483a562de35aaf1c8cc1d81a59d64d2b3dea",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06LaurentTransport-independent.log",
+      "independent_log_sha256": "a3be55ae76ec02ed86b0d2a48c04483a562de35aaf1c8cc1d81a59d64d2b3dea",
+      "declarations": [
+        "OQ14.Packet06LaurentTransport.analytic_dslope",
+        "OQ14.Packet06LaurentTransport.observation_expansion",
+        "OQ14.Packet06LaurentTransport.observation_residue_limit",
+        "OQ14.Packet06LaurentTransport.observed_residue_form",
+        "OQ14.Packet06LaurentTransport.observed_residue_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06LocalPencil",
+      "reports": 9,
+      "source_sha256": "bac431ba139ede93959e70fc4ddec20e236e336d80e967f7e9bd76376df5cdb8",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LocalPencil-chain.log",
+      "audit_log_sha256": "466cd4c789ca8899fb7d6f01a3e067399281c68c3a7838276352abcb9f05d50f",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06LocalPencil-independent.log",
+      "independent_log_sha256": "466cd4c789ca8899fb7d6f01a3e067399281c68c3a7838276352abcb9f05d50f",
+      "declarations": [
+        "OQ14.Packet06LocalPencil.response_actual",
+        "OQ14.Packet06LocalPencil.kernel_analyticAt",
+        "OQ14.Packet06LocalPencil.response_analyticAt",
+        "OQ14.Packet06LocalPencil.weighted_block_eq",
+        "OQ14.Packet06LocalPencil.unweighted_analyticAt",
+        "OQ14.Packet06LocalPencil.actual_inverse_transport",
+        "OQ14.Packet06LocalPencil.actual_kernel_transport",
+        "OQ14.Packet06LocalPencil.response_nonzero",
+        "OQ14.Packet06LocalPencil.response_overlap"
+      ]
+    },
+    {
+      "module": "Packet06Observation",
+      "reports": 4,
+      "source_sha256": "4c8b2f7bf8292846df1e22d244c35df98065fc8b72f069e5aa1d15e0626bccf1",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Observation-chain.log",
+      "audit_log_sha256": "6ef18a80086555f0aa06fc170af15ce51714f696a37c910ba2b99a36582ec4d4",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06Observation-independent.log",
+      "independent_log_sha256": "6ef18a80086555f0aa06fc170af15ce51714f696a37c910ba2b99a36582ec4d4",
+      "declarations": [
+        "OQ14.Packet06Observation.weighted_observation_independent",
+        "OQ14.Packet06Observation.kernel_observation_nonzero",
+        "OQ14.Packet06Observation.observation_analyticAt",
+        "OQ14.Packet06Observation.actual_observed_simple_pole"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalNormalization",
+      "reports": 6,
+      "source_sha256": "48355d55220ac535220ac0b64fcecd51c665517d66b7e2d9dcb31d5492b46fad",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalNormalization-chain.log",
+      "audit_log_sha256": "56ef15fa3dbaed35f91c7cc9044bfb73993bebe5dfdeea305950f1c8be04ed73",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalNormalization-independent.log",
+      "independent_log_sha256": "56ef15fa3dbaed35f91c7cc9044bfb73993bebe5dfdeea305950f1c8be04ed73",
+      "declarations": [
+        "OQ14.Packet06PhysicalNormalization.volume_derivative",
+        "OQ14.Packet06PhysicalNormalization.derivative_pairing",
+        "OQ14.Packet06PhysicalNormalization.reciprocalNorm_eq_crossing",
+        "OQ14.Packet06PhysicalNormalization.reciprocalNorm_physical",
+        "OQ14.Packet06PhysicalNormalization.reciprocalNorm_nonzero",
+        "OQ14.Packet06PhysicalNormalization.source_unit_value"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalScale",
+      "reports": 3,
+      "source_sha256": "6a248d648e081fd51468e4c76386cb4cc6c283b10bce67ccb26e2e993247d59a",
+      "audit_log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalScale-chain.log",
+      "audit_log_sha256": "3468a18c2effb94063a82c91cfe0d333461c9a15345e3f264885795c1227bbbc",
+      "independent_review": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "independent_review_sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "independent_build_sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958",
+      "independent_log": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalScale-independent.log",
+      "independent_log_sha256": "3468a18c2effb94063a82c91cfe0d333461c9a15345e3f264885795c1227bbbc",
+      "declarations": [
+        "OQ14.Packet06PhysicalScale.reciprocalNorm_scale",
+        "OQ14.Packet06PhysicalScale.physical_unit_scale",
+        "OQ14.Packet06PhysicalScale.kernel_physical_unit_scale"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/.gitignore",
+      "sha256": "45c4ec074ed496fb7d34727d3b3bdbaf2fe9dafee4061eef71235ff68a87d68a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/audited_after_5238-stage71.json",
+      "sha256": "d99bd125989a78ae09c728ab9096e3d07b07850923308496bacee5996df372ca"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/chain-build.json",
+      "sha256": "2fd3796883010c9395141c0d4f54253c935d53d2b81b088b17bfd8029acf3e4b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Cokernel-chain.log",
+      "sha256": "0ea0cdabfbe4077928cd7f87876904a156f6fc546d04b8ebaf8d14ce307ef06c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Laurent-chain.log",
+      "sha256": "f77e50a1ad2f9dcbb804a3bf3b0158a3c0a0c71542e33dc024a39a6b20315aa4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LaurentTransport-chain.log",
+      "sha256": "a3be55ae76ec02ed86b0d2a48c04483a562de35aaf1c8cc1d81a59d64d2b3dea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LocalPencil-chain.log",
+      "sha256": "466cd4c789ca8899fb7d6f01a3e067399281c68c3a7838276352abcb9f05d50f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06NormalizedMode-chain.log",
+      "sha256": "d59e67376a6468f3a0258a289bd458297ad9ec65960740b3b3fab401e83f899e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Observation-chain.log",
+      "sha256": "6ef18a80086555f0aa06fc170af15ce51714f696a37c910ba2b99a36582ec4d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalNormalization-chain.log",
+      "sha256": "56ef15fa3dbaed35f91c7cc9044bfb73993bebe5dfdeea305950f1c8be04ed73"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalPairing-chain.log",
+      "sha256": "9b160b09f1ca19cbee51f410f09e09229a6b7613c908a5af5fa3ac4bbccc5864"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalScale-chain.log",
+      "sha256": "3468a18c2effb94063a82c91cfe0d333461c9a15345e3f264885795c1227bbbc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PoleOrder-chain.log",
+      "sha256": "8032d33f0c3452861258a1869ccf115c12f04ee70ca5d3a08e59808e911b9672"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorCrossing-chain.log",
+      "sha256": "79b8f7e263968f349236f406cdf6073a800ae16b6c9b78a11264381e156f7708"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorOperator-chain.log",
+      "sha256": "414a2eadf628d4f9cf9b4b86b66bab187d6fab811e6177d19ff13d4f80463c6e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SpherePole-chain.log",
+      "sha256": "acbaa87e640fba75f325344e897f89e8b99f8467cc5bdf8c9f6e21ba49b40c38"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06WeightedTransport-chain.log",
+      "sha256": "69222c17bd094f60e87eca58db52900da41c0d720952f30301de40e814ffddda"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/modules.json",
+      "sha256": "815dca9192d9b71f38750d46d63dab68e48e09ab52c74e84f5708e51516d652d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/provenance-audit.json",
+      "sha256": "e66b34544a6d3c212123bca48932e95d314b254bbdc39a58acab2d6ce5bd485f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/independent-build.json",
+      "sha256": "d5ac4dd4cd8906ba109e85d292b09cc799ab6b90517326c6a730b1cdbd619958"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/independent-review.txt",
+      "sha256": "e45ac0d5cd423d95a5083ea9504ec9a8217b10ac5721a2ec485196f3622b5c48"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06Laurent-independent.log",
+      "sha256": "f77e50a1ad2f9dcbb804a3bf3b0158a3c0a0c71542e33dc024a39a6b20315aa4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06LaurentTransport-independent.log",
+      "sha256": "a3be55ae76ec02ed86b0d2a48c04483a562de35aaf1c8cc1d81a59d64d2b3dea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06LocalPencil-independent.log",
+      "sha256": "466cd4c789ca8899fb7d6f01a3e067399281c68c3a7838276352abcb9f05d50f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06Observation-independent.log",
+      "sha256": "6ef18a80086555f0aa06fc170af15ce51714f696a37c910ba2b99a36582ec4d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalNormalization-independent.log",
+      "sha256": "56ef15fa3dbaed35f91c7cc9044bfb73993bebe5dfdeea305950f1c8be04ed73"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalPairing-independent.log",
+      "sha256": "4e5ffacd03e64c155324dae881dee2ef83f0d768c449491b6e9176bf7b7291cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PhysicalScale-independent.log",
+      "sha256": "3468a18c2effb94063a82c91cfe0d333461c9a15345e3f264885795c1227bbbc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06PoleOrder-independent.log",
+      "sha256": "8032d33f0c3452861258a1869ccf115c12f04ee70ca5d3a08e59808e911b9672"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/Packet06WeightedTransport-independent.log",
+      "sha256": "69222c17bd094f60e87eca58db52900da41c0d720952f30301de40e814ffddda"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/reviews/root-actual-review.txt",
+      "sha256": "0e0dbd8502bcab4bcabd1b554222ba04b4a7bc5cf16a869f44f31ba206aad26b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/scripts/audit_provenance.ps1",
+      "sha256": "6ee108a3a9f08b78e8f32413e45ab0e02ce9597143e25abf3efed0eab8778587"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/scripts/check_chain.py",
+      "sha256": "6a3c6e7a11c9ab151f05a91f297698e3eeb142bef07bd00402fefbce962c0883"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/scripts/freeze_checkpoint.py",
+      "sha256": "1ff2cc370fb48739ebcf7380657d27ec42941e0db08de6edb6588d5af9cadb99"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-pole/STAGE71.txt",
+      "sha256": "aed699c98d4abb16e93b5727fc61ece891c7a92d927c0f9b69cb9f0770973135"
+    },
+    {
+      "path": "lean/Packet06Cokernel.lean",
+      "sha256": "728f0b25dfb3b24ef26b939b55286f8067748ea6c9f8963ca91cc519fd9a91bb"
+    },
+    {
+      "path": "lean/Packet06Laurent.lean",
+      "sha256": "99db5a1253c2b57f716796bc2ddbf05088750eb2dfc87a128bbb17037fe6516d"
+    },
+    {
+      "path": "lean/Packet06LaurentTransport.lean",
+      "sha256": "d4c00c7ad699e77bc5245342691338d20d9ea52cb4a86083753c11205cc455a3"
+    },
+    {
+      "path": "lean/Packet06LocalPencil.lean",
+      "sha256": "bac431ba139ede93959e70fc4ddec20e236e336d80e967f7e9bd76376df5cdb8"
+    },
+    {
+      "path": "lean/Packet06NormalizedMode.lean",
+      "sha256": "75b5f9b20e0b78c501d805c847ff733ad3680f2e5649639b7161ac9389fe5a2a"
+    },
+    {
+      "path": "lean/Packet06Observation.lean",
+      "sha256": "4c8b2f7bf8292846df1e22d244c35df98065fc8b72f069e5aa1d15e0626bccf1"
+    },
+    {
+      "path": "lean/Packet06PhysicalNormalization.lean",
+      "sha256": "48355d55220ac535220ac0b64fcecd51c665517d66b7e2d9dcb31d5492b46fad"
+    },
+    {
+      "path": "lean/Packet06PhysicalPairing.lean",
+      "sha256": "093bb9e6ea3ade76638fda50f4774d2c9451fbd4f1c68394093a9669383c85d4"
+    },
+    {
+      "path": "lean/Packet06PhysicalScale.lean",
+      "sha256": "6a248d648e081fd51468e4c76386cb4cc6c283b10bce67ccb26e2e993247d59a"
+    },
+    {
+      "path": "lean/Packet06PoleOrder.lean",
+      "sha256": "c4907e77f40c15624c4459e4dca8aea3f12f480195a50603f0f4b0393eae3fcc"
+    },
+    {
+      "path": "lean/Packet06SectorCrossing.lean",
+      "sha256": "9717b2778a7c6bb39cd5ee751aee978819bc6b2fc45d4fa945809d212ebc5e6e"
+    },
+    {
+      "path": "lean/Packet06SectorOperator.lean",
+      "sha256": "8b6abf7a5462d419eebea29287f20a983f895702dbb8bed44b32f14ce3ae78e6"
+    },
+    {
+      "path": "lean/Packet06SpherePole.lean",
+      "sha256": "e31d19485713ec520c0abb97ce1640a2306e8a40e5866f8880ef174c0ef439fc"
+    },
+    {
+      "path": "lean/Packet06WeightedTransport.lean",
+      "sha256": "726851231d334bf34b4819e4065a95b81c2f3ff02eba3a1df95fd8a985b94333"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "4c820edeead941024468753b0b2efa022250e24e35d7876a53cd76bed52db2ea"
+    }
+  ],
+  "scope": "Actual sphere inverse simple pole, rank-one residue, analytic regular part, closed range/cokernel one, exact physical pairing and reciprocal normalization, local observation and weighted transport. 14 fresh isolated objects; 689 authenticated upstream sources with cached objects. Full OQ14 remains active and incomplete."
+}

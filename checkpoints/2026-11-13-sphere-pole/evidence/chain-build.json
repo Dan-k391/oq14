@@ -1,0 +1,837 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-010810-72440",
+  "object_directory": "checkpoints/2026-11-13-sphere-pole/objects/20261113-010810-72440",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 14 sphere-pole modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06PoleOrder",
+      "source": "lean/Packet06PoleOrder.lean",
+      "source_sha256": "c4907e77f40c15624c4459e4dca8aea3f12f480195a50603f0f4b0393eae3fcc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06PoleOrder.olean",
+        "D:\\oq14\\lean\\Packet06PoleOrder.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.922,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PoleOrder-chain.log",
+      "log_sha256": "8032d33f0c3452861258a1869ccf115c12f04ee70ca5d3a08e59808e911b9672",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PoleOrder.inverse_order_negative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PoleOrder.higher_pole_impossible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PoleOrder.inverse_order_eq_neg_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "79c7907dd75cdbb687758b9175a3862178aff40b6f98a0a8a7b243b2951a8b7a"
+    },
+    {
+      "module": "Packet06Laurent",
+      "source": "lean/Packet06Laurent.lean",
+      "source_sha256": "99db5a1253c2b57f716796bc2ddbf05088750eb2dfc87a128bbb17037fe6516d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06Laurent.olean",
+        "D:\\oq14\\lean\\Packet06Laurent.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.5,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Laurent-chain.log",
+      "log_sha256": "f77e50a1ad2f9dcbb804a3bf3b0158a3c0a0c71542e33dc024a39a6b20315aa4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06Laurent.analytic_dslope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Laurent.simple_inverse_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dcff90d66d2d083b5695b13d218ac7c54aa164c5997516edb207a82a84d37bcd"
+    },
+    {
+      "module": "Packet06PhysicalPairing",
+      "source": "lean/Packet06PhysicalPairing.lean",
+      "source_sha256": "093bb9e6ea3ade76638fda50f4774d2c9451fbd4f1c68394093a9669383c85d4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06PhysicalPairing.olean",
+        "D:\\oq14\\lean\\Packet06PhysicalPairing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.297,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalPairing-chain.log",
+      "log_sha256": "9b160b09f1ca19cbee51f410f09e09229a6b7613c908a5af5fa3ac4bbccc5864",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PhysicalPairing.component_product_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalPairing.physical_product_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalPairing.vectorPair_physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8d07510005c90b5ccba85bf5b86346c893c77c5ac0ffc63145c5def659550cc2"
+    },
+    {
+      "module": "Packet06SectorOperator",
+      "source": "lean/Packet06SectorOperator.lean",
+      "source_sha256": "8b6abf7a5462d419eebea29287f20a983f895702dbb8bed44b32f14ce3ae78e6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06SectorOperator.olean",
+        "D:\\oq14\\lean\\Packet06SectorOperator.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 49.64,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorOperator-chain.log",
+      "log_sha256": "414a2eadf628d4f9cf9b4b86b66bab187d6fab811e6177d19ff13d4f80463c6e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SectorOperator.ambient_inverse_mem_sector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.compressedInverse_two_sided",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.block_punctured_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.inverse_eq_compressed_eventually",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.inverse_meromorphicAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.block_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.numerator_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.kernel_iff_unique_multiple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.kernel_eq_span",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.kernel_finrank_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.block_not_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorOperator.compressedInverse_meromorphicAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e57ae3a7778da6759e432b5ffcdbd9005b59ade9382a5f053076a29c1ece52d9"
+    },
+    {
+      "module": "Packet06SectorCrossing",
+      "source": "lean/Packet06SectorCrossing.lean",
+      "source_sha256": "9717b2778a7c6bb39cd5ee751aee978819bc6b2fc45d4fa945809d212ebc5e6e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06SectorCrossing.olean",
+        "D:\\oq14\\lean\\Packet06SectorCrossing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.109,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SectorCrossing-chain.log",
+      "log_sha256": "79b8f7e263968f349236f406cdf6073a800ae16b6c9b78a11264381e156f7708",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SectorCrossing.block_eq_compression",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorCrossing.block_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorCrossing.block_derivative_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorCrossing.left_annihilates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SectorCrossing.crossing_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c0faadddb1b9cf9c5dd4017c679c8312343fd16db2754209a9d89bbcc6de7e7d"
+    },
+    {
+      "module": "Packet06Cokernel",
+      "source": "lean/Packet06Cokernel.lean",
+      "source_sha256": "728f0b25dfb3b24ef26b939b55286f8067748ea6c9f8963ca91cc519fd9a91bb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06Cokernel.olean",
+        "D:\\oq14\\lean\\Packet06Cokernel.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.235,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Cokernel-chain.log",
+      "log_sha256": "0ea0cdabfbe4077928cd7f87876904a156f6fc546d04b8ebaf8d14ce307ef06c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06Cokernel.laurent_constant_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Cokernel.range_eq_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Cokernel.range_closed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Cokernel.quotient_finrank_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8d5db4bb0100c247d9d06020c4f5cf8b4b087e099daf2b943855b03db20b207a"
+    },
+    {
+      "module": "Packet06SpherePole",
+      "source": "lean/Packet06SpherePole.lean",
+      "source_sha256": "e31d19485713ec520c0abb97ce1640a2306e8a40e5866f8880ef174c0ef439fc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06SpherePole.olean",
+        "D:\\oq14\\lean\\Packet06SpherePole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 28.36,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06SpherePole-chain.log",
+      "log_sha256": "acbaa87e640fba75f325344e897f89e8b99f8467cc5bdf8c9f6e21ba49b40c38",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SpherePole.determinant_simple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SpherePole.actual_sector_pole_and_cokernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SpherePole.inverse_order_eq_neg_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SpherePole.inverse_simple_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "12dddfb5725be57a05e050c6ee89ebc4cc267f71d308739f9f110e199c0fec41"
+    },
+    {
+      "module": "Packet06NormalizedMode",
+      "source": "lean/Packet06NormalizedMode.lean",
+      "source_sha256": "75b5f9b20e0b78c501d805c847ff733ad3680f2e5649639b7161ac9389fe5a2a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06NormalizedMode.olean",
+        "D:\\oq14\\lean\\Packet06NormalizedMode.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 35.828,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06NormalizedMode-chain.log",
+      "log_sha256": "d59e67376a6468f3a0258a289bd458297ad9ec65960740b3b3fab401e83f899e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06NormalizedMode.pairing_crossing_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NormalizedMode.pairing_left_annihilates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NormalizedMode.kernel_generator",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NormalizedMode.normalized_residue",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06NormalizedMode.selected_highQ_normalized_residue",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "58518cfac629adf8ca62029591de3cd342d5e561625797192e7fffe61a414c24"
+    },
+    {
+      "module": "Packet06WeightedTransport",
+      "source": "lean/Packet06WeightedTransport.lean",
+      "source_sha256": "726851231d334bf34b4819e4065a95b81c2f3ff02eba3a1df95fd8a985b94333",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06WeightedTransport.olean",
+        "D:\\oq14\\lean\\Packet06WeightedTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.422,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06WeightedTransport-chain.log",
+      "log_sha256": "69222c17bd094f60e87eca58db52900da41c0d720952f30301de40e814ffddda",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.inverse_switch",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.isUnit_switch",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.ring_inverse_switch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.kernel_forward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.kernel_backward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.kernel_forward_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedTransport.weighted_inverse_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "49d9ad46b35d195b64fc2cf592c9e988153152cf9f54195772189a3366e409c1"
+    },
+    {
+      "module": "Packet06LaurentTransport",
+      "source": "lean/Packet06LaurentTransport.lean",
+      "source_sha256": "d4c00c7ad699e77bc5245342691338d20d9ea52cb4a86083753c11205cc455a3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06LaurentTransport.olean",
+        "D:\\oq14\\lean\\Packet06LaurentTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.906,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LaurentTransport-chain.log",
+      "log_sha256": "a3be55ae76ec02ed86b0d2a48c04483a562de35aaf1c8cc1d81a59d64d2b3dea",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06LaurentTransport.analytic_dslope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LaurentTransport.observation_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LaurentTransport.observation_residue_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LaurentTransport.observed_residue_form",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LaurentTransport.observed_residue_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "76944f11702c6afb2c30022821d0602c01c797c11a962d5296397a570c990904"
+    },
+    {
+      "module": "Packet06LocalPencil",
+      "source": "lean/Packet06LocalPencil.lean",
+      "source_sha256": "bac431ba139ede93959e70fc4ddec20e236e336d80e967f7e9bd76376df5cdb8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06LocalPencil.olean",
+        "D:\\oq14\\lean\\Packet06LocalPencil.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 34.172,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06LocalPencil-chain.log",
+      "log_sha256": "466cd4c789ca8899fb7d6f01a3e067399281c68c3a7838276352abcb9f05d50f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06LocalPencil.response_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.kernel_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.response_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.weighted_block_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.unweighted_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.actual_inverse_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.actual_kernel_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.response_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LocalPencil.response_overlap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0f84598359055acfe4102db95cbfc5afa7baa8688e31c1718ca5cdf8a868cce5"
+    },
+    {
+      "module": "Packet06Observation",
+      "source": "lean/Packet06Observation.lean",
+      "source_sha256": "4c8b2f7bf8292846df1e22d244c35df98065fc8b72f069e5aa1d15e0626bccf1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06Observation.olean",
+        "D:\\oq14\\lean\\Packet06Observation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 30.937,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06Observation-chain.log",
+      "log_sha256": "6ef18a80086555f0aa06fc170af15ce51714f696a37c910ba2b99a36582ec4d4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06Observation.weighted_observation_independent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Observation.kernel_observation_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Observation.observation_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06Observation.actual_observed_simple_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "18f7096d4f51fe2414a8e3e86ed91d621ce06c036d613b06a43a6deef05e87ef"
+    },
+    {
+      "module": "Packet06PhysicalNormalization",
+      "source": "lean/Packet06PhysicalNormalization.lean",
+      "source_sha256": "48355d55220ac535220ac0b64fcecd51c665517d66b7e2d9dcb31d5492b46fad",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06PhysicalNormalization.olean",
+        "D:\\oq14\\lean\\Packet06PhysicalNormalization.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.782,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalNormalization-chain.log",
+      "log_sha256": "56ef15fa3dbaed35f91c7cc9044bfb73993bebe5dfdeea305950f1c8be04ed73",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.volume_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.derivative_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.reciprocalNorm_eq_crossing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.reciprocalNorm_physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.reciprocalNorm_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalNormalization.source_unit_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5b4d0bb19e1c811b92a0fce7a9fe38e397e77fb2e98e6492efc245711c7c6c5f"
+    },
+    {
+      "module": "Packet06PhysicalScale",
+      "source": "lean/Packet06PhysicalScale.lean",
+      "source_sha256": "6a248d648e081fd51468e4c76386cb4cc6c283b10bce67ccb26e2e993247d59a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-pole\\objects\\20261113-010810-72440\\Packet06PhysicalScale.olean",
+        "D:\\oq14\\lean\\Packet06PhysicalScale.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.796,
+      "log": "checkpoints/2026-11-13-sphere-pole/evidence/Packet06PhysicalScale-chain.log",
+      "log_sha256": "3468a18c2effb94063a82c91cfe0d333461c9a15345e3f264885795c1227bbbc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PhysicalScale.reciprocalNorm_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalScale.physical_unit_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PhysicalScale.kernel_physical_unit_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7b0eb20fa5fe4a03f1a29c9fae4ed388c67cc4c13c1cb069fd91967fce6d4083"
+    }
+  ],
+  "module_count": 14,
+  "report_count": 72
+}

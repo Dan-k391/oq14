@@ -1,0 +1,144 @@
+[
+  {
+    "module": "Packet06PoleOrder",
+    "declarations": [
+      "OQ14.Packet06PoleOrder.inverse_order_negative",
+      "OQ14.Packet06PoleOrder.higher_pole_impossible",
+      "OQ14.Packet06PoleOrder.inverse_order_eq_neg_one"
+    ]
+  },
+  {
+    "module": "Packet06Laurent",
+    "declarations": [
+      "OQ14.Packet06Laurent.analytic_dslope",
+      "OQ14.Packet06Laurent.simple_inverse_expansion"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalPairing",
+    "declarations": [
+      "OQ14.Packet06PhysicalPairing.component_product_integrable",
+      "OQ14.Packet06PhysicalPairing.physical_product_integrable",
+      "OQ14.Packet06PhysicalPairing.vectorPair_physical"
+    ]
+  },
+  {
+    "module": "Packet06SectorOperator",
+    "declarations": [
+      "OQ14.Packet06SectorOperator.ambient_inverse_mem_sector",
+      "OQ14.Packet06SectorOperator.compressedInverse_two_sided",
+      "OQ14.Packet06SectorOperator.block_punctured_isUnit",
+      "OQ14.Packet06SectorOperator.inverse_eq_compressed_eventually",
+      "OQ14.Packet06SectorOperator.inverse_meromorphicAt",
+      "OQ14.Packet06SectorOperator.block_actual",
+      "OQ14.Packet06SectorOperator.numerator_kernel",
+      "OQ14.Packet06SectorOperator.kernel_iff_unique_multiple",
+      "OQ14.Packet06SectorOperator.kernel_eq_span",
+      "OQ14.Packet06SectorOperator.kernel_finrank_one",
+      "OQ14.Packet06SectorOperator.block_not_isUnit",
+      "OQ14.Packet06SectorOperator.compressedInverse_meromorphicAt"
+    ]
+  },
+  {
+    "module": "Packet06SectorCrossing",
+    "declarations": [
+      "OQ14.Packet06SectorCrossing.block_eq_compression",
+      "OQ14.Packet06SectorCrossing.block_hasDerivAt",
+      "OQ14.Packet06SectorCrossing.block_derivative_actual",
+      "OQ14.Packet06SectorCrossing.left_annihilates",
+      "OQ14.Packet06SectorCrossing.crossing_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06Cokernel",
+    "declarations": [
+      "OQ14.Packet06Cokernel.laurent_constant_identity",
+      "OQ14.Packet06Cokernel.range_eq_kernel",
+      "OQ14.Packet06Cokernel.range_closed",
+      "OQ14.Packet06Cokernel.quotient_finrank_one"
+    ]
+  },
+  {
+    "module": "Packet06SpherePole",
+    "declarations": [
+      "OQ14.Packet06SpherePole.determinant_simple",
+      "OQ14.Packet06SpherePole.actual_sector_pole_and_cokernel",
+      "OQ14.Packet06SpherePole.inverse_order_eq_neg_one",
+      "OQ14.Packet06SpherePole.inverse_simple_expansion"
+    ]
+  },
+  {
+    "module": "Packet06NormalizedMode",
+    "declarations": [
+      "OQ14.Packet06NormalizedMode.pairing_crossing_actual",
+      "OQ14.Packet06NormalizedMode.pairing_left_annihilates",
+      "OQ14.Packet06NormalizedMode.kernel_generator",
+      "OQ14.Packet06NormalizedMode.normalized_residue",
+      "OQ14.Packet06NormalizedMode.selected_highQ_normalized_residue"
+    ]
+  },
+  {
+    "module": "Packet06WeightedTransport",
+    "declarations": [
+      "OQ14.Packet06WeightedTransport.inverse_switch",
+      "OQ14.Packet06WeightedTransport.isUnit_switch",
+      "OQ14.Packet06WeightedTransport.ring_inverse_switch",
+      "OQ14.Packet06WeightedTransport.kernel_forward",
+      "OQ14.Packet06WeightedTransport.kernel_backward",
+      "OQ14.Packet06WeightedTransport.kernel_forward_inverse",
+      "OQ14.Packet06WeightedTransport.weighted_inverse_formula"
+    ]
+  },
+  {
+    "module": "Packet06LaurentTransport",
+    "declarations": [
+      "OQ14.Packet06LaurentTransport.analytic_dslope",
+      "OQ14.Packet06LaurentTransport.observation_expansion",
+      "OQ14.Packet06LaurentTransport.observation_residue_limit",
+      "OQ14.Packet06LaurentTransport.observed_residue_form",
+      "OQ14.Packet06LaurentTransport.observed_residue_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06LocalPencil",
+    "declarations": [
+      "OQ14.Packet06LocalPencil.response_actual",
+      "OQ14.Packet06LocalPencil.kernel_analyticAt",
+      "OQ14.Packet06LocalPencil.response_analyticAt",
+      "OQ14.Packet06LocalPencil.weighted_block_eq",
+      "OQ14.Packet06LocalPencil.unweighted_analyticAt",
+      "OQ14.Packet06LocalPencil.actual_inverse_transport",
+      "OQ14.Packet06LocalPencil.actual_kernel_transport",
+      "OQ14.Packet06LocalPencil.response_nonzero",
+      "OQ14.Packet06LocalPencil.response_overlap"
+    ]
+  },
+  {
+    "module": "Packet06Observation",
+    "declarations": [
+      "OQ14.Packet06Observation.weighted_observation_independent",
+      "OQ14.Packet06Observation.kernel_observation_nonzero",
+      "OQ14.Packet06Observation.observation_analyticAt",
+      "OQ14.Packet06Observation.actual_observed_simple_pole"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalNormalization",
+    "declarations": [
+      "OQ14.Packet06PhysicalNormalization.volume_derivative",
+      "OQ14.Packet06PhysicalNormalization.derivative_pairing",
+      "OQ14.Packet06PhysicalNormalization.reciprocalNorm_eq_crossing",
+      "OQ14.Packet06PhysicalNormalization.reciprocalNorm_physical",
+      "OQ14.Packet06PhysicalNormalization.reciprocalNorm_nonzero",
+      "OQ14.Packet06PhysicalNormalization.source_unit_value"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalScale",
+    "declarations": [
+      "OQ14.Packet06PhysicalScale.reciprocalNorm_scale",
+      "OQ14.Packet06PhysicalScale.physical_unit_scale",
+      "OQ14.Packet06PhysicalScale.kernel_physical_unit_scale"
+    ]
+  }
+]

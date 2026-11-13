@@ -1,0 +1,32 @@
+Independent review of Packet 06 pole, transport and normalization modules
+Date: 2026-11-13
+
+Nine root-authored modules and 42 public declaration reports were independently
+compiled into fresh objects, without warnings and with only propext,
+Classical.choice, Quot.sound in each report. The pinned compiler is Lean 4.19.0
+(commit 6caaee842e94); mathlib revision is c44e0c8ee63ca166450922a373c7409c5d26b00b.
+Raw logs and source/log/fresh-object SHA-256 hashes are recorded in
+independent-build.json. Previously successful independent logs were reused only
+after checking source and object hashes were unchanged. Upstream and actual
+sector dependencies were cached; this is not a clean whole-project rebuild.
+
+No actionable mathematical or scope defect was found. PoleOrder uses a
+punctured genuine inverse and a nonzero crossing to rule out order at most -2;
+Laurent uses the meromorphic leading coefficient and dslope to construct the
+analytic regular part and rank-one residue. The physical pairing is the exact
+unconjugated coefficient-one volume integral, with integrability proved.
+The weighted/unweighted switch proves both inverse sides and preserves actual
+kernel vectors. LaurentTransport keeps the derivative-of-observation term in
+the regular part. The LocalPencil operator is a global L2 representative but
+its physical interpretation is explicitly confined to the stated observation
+ball; no global outgoing L2 assertion is made. Observation transport proves the
+observed residue remains nonzero using actual weighted recovery and the
+source support. PhysicalNormalization differentiates the true weighted block,
+retaining the sign and factor N=-(z/2)d; PhysicalScale makes the separate
+quadratic rescaling to physical unit normalization and does not relabel a
+source-unit mode as physical-unit normalized.
+
+These nine modules plus cached inputs do not establish arbitrary material
+continuation, rounded-material norm convergence, unrestricted channels, a full
+OQ14 proof or a final manuscript. Actual-sector pole/cokernel modules are
+reviewed independently by the root agent and are not included in this build.

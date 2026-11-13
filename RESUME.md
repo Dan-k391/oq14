@@ -1,6 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
-Stage 70 is the latest verified incremental checkpoint:
+Stage 71 is the latest verified incremental checkpoint:
+[STAGE71.txt](checkpoints/2026-11-13-sphere-pole/STAGE71.txt).
+The actual electric-sector sphere inverse has a proved simple pole, reciprocal
+rank-one residue, analytic regular part, closed range and cokernel dimension
+one at every nonzero dipole root for real algebraic n>1. The unchanged high-Q
+normalized mode now has its actual operator residue. The exact coefficient-one
+physical pairing dictionary is proved. Local observation preserves a nonzero
+pole on every containing region. Source-unit normalization gives physical
+reciprocal N=-z/2; a distinct physical-unit rescaling is proved.
+
+Fourteen modules / 72 reports passed fresh isolated compilation and independent
+review; 689 other local sources were authenticated with cached upstream objects.
+The accepted ledger is 590 modules / 4049 standard-only reports, warning-free:
+`checkpoints/2026-11-13-sphere-pole/evidence/audited_after_5238-stage71.json`.
+Full OQ14 remains active and incomplete. Root continues direct physical Green
+source/observation transport. Terra continues bounded-a.e. material/compact
+pencil convergence and pole persistence; anisotropic Fourier embedding from
+actual transmission derivatives for one-sided continuity; and fixed-frequency
+translated driven hotspot geometry, illumination and power. Curved/complex
+regularity, attained maxima, modal assembly and final manuscript/aggregate
+verification remain. Later Packet05/06/07 drafts are outside stage71.
+
+Everything below is historical context, superseded by stage71.
+
+Stage 70 was the previous verified incremental checkpoint:
 [STAGE70.txt](checkpoints/2026-11-13-full-channel/STAGE70.txt).
 The unrestricted physical counted-channel endpoint is compiled and independently
 reviewed for the exact delta>eta>0, full-outgoing-selection regime. It constructs

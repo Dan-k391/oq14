@@ -1,0 +1,41 @@
+Stage 71: actual sphere inverse simple pole and reciprocal normalization
+Date: 2026-11-13
+Parent verified checkpoint: f9232d3 (stage70)
+
+For real algebraic n>1 and every nonzero complex dipole determinant root,
+the actual electric-sector inverse has order exactly -1. It has a nonzero
+rank-one reciprocal residue, an analytic regular part and an operator-norm
+scaled inverse limit. The actual range equals the kernel of its reciprocal
+left functional, is closed, and has cokernel dimension one. Determinant
+simplicity is proved internally; no spectral-classification premise remains.
+
+The generic proof excludes higher meromorphic poles by differentiating the
+pole-cleared inverse identity and applying the nonzero reciprocal crossing.
+The actual high-Q normalized-mode witness is retained unchanged. Its residue
+uses the physical unconjugated pairing, whose coefficient-one equality with
+the source pairing and integral finiteness are now proved.
+
+Exact weighted/unweighted inverse and kernel transports are proved for the
+actual truncated local kernel. Analytic observation gives a nonzero simple
+pole in local physical response representatives for every containing ball.
+These representatives are physical only on the stated observation ball;
+the resonant field is not claimed to lie in all-space physical L2.
+
+Actual differentiation gives W'=-sqrt(chi) K' sqrt(chi), d=-beta(K'q,q) and
+N=(z/2)beta(K'q,q)=-z*d/2. Source-unit d=1 therefore gives N=-z/2. A separate
+nonzero quadratic rescaling gives physical unit N while preserving the
+nonzero kernel mode. This does not conflate source and physical normalization.
+
+14 modules / 72 standard-only reports passed fresh isolated compilation.
+689 other local sources were authenticated against stage70/release5238.
+Terra independently reviewed/rebuilt the nine root modules; root independently
+reviewed/rebuilt the five Terra actual-sector modules. No warnings. The ledger
+is 590 modules / 4049 reports, preserving every prior record. Upstream objects
+were cached, so this is not a clean full-project rebuild.
+
+Full OQ14 remains active and incomplete. Remaining work includes direct
+electric Green source/observation transport, perturbed pole and normalized
+mode persistence, curved one-sided regularity/continuous maxima, actual
+driven/modal hotspot assembly, final manuscript and aggregate build.
+Concurrent later Packet06 material/ball-observation drafts and Packet05/07
+drafts are not promoted here. Aggregate release5238 is unchanged.
