@@ -1,5 +1,41 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 103 is the latest verified incremental checkpoint:
+[STAGE103.txt](checkpoints/2026-11-13-mode-chart-green/STAGE103.txt).
+
+The original regional scalar PDE now supplies its three continuous
+transmission representatives through both tangential iterations. Combining
+these with the actual kernel-mode decomposition gives continuous physical
+phase branches. Every compact C4 graph and open chart neighborhood supplies
+all metric, slope and nested-cutoff inputs automatically; the resulting
+smaller open chart still contains the chosen point. Actual regular boundary
+certificates also give the correctly oriented compact C4 graph and a flat
+neighborhood with the exact material-side correspondence.
+
+The transported selected-source Green operator is now identified with the
+bounded-ball restriction of an actual globally defined placed field. That
+field satisfies the full second-order weak Maxwell equation against compact
+tests with the transported orthogonal source projection. The proof derives
+the exact s-squared source scaling and its cancellation. This batch proves
+outgoing limits on rays centered at the placed device; the origin-centered
+limit is a separately authored following extension.
+
+Independent source reviews and fresh isolated builds passed all 14 modules,
+with retained object/source/log hashes verified. Actual material phase atlas
+assembly, uniform collar estimates, attained hotspot endpoints, final paper
+alignment and aggregate verification remain active. Full OQ14 is not closed.
+
+14 modules / 28 reports passed independent root review and a fresh
+ordered build. 1386 upstream sources were authenticated, with cached objects.
+The ledger is 1167 modules / 5314 reports, all prior records unchanged:
+`checkpoints/2026-11-13-mode-chart-green/evidence/audited_after_5238-stage103.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage103.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 102 is the latest verified incremental checkpoint:
 [STAGE102.txt](checkpoints/2026-11-13-physical-phase-gluing/STAGE102.txt).
 

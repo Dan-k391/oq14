@@ -1,0 +1,167 @@
+{
+  "modules": [
+    {
+      "module": "Packet05RegionalTransmissionContinuous",
+      "source": "lean/Packet05RegionalTransmissionContinuous.lean",
+      "source_sha256": "58f3b39355333698cf3a76717b12657ab67ea2ae2f38bb2a6e027e122e022ccb",
+      "imports": [
+        "Packet05RegionalBootstrappedScalar",
+        "Packet05ActualTransmissionContinuous",
+        "Packet05BootstrapRepresentativeTransfer"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalTransmissionContinuous.log",
+      "log_sha256": "0b01fe367d9b67f128fac41d3e9f20ef7fe1b72dbc467b75d74cd86760fdb030",
+      "reports": 1
+    },
+    {
+      "module": "Packet05RegionalPhysicalBranches",
+      "source": "lean/Packet05RegionalPhysicalBranches.lean",
+      "source_sha256": "a20fc034bdd286046ea961fb7530d6afdbced42fecf9784e1684fc98cc8b3d41",
+      "imports": [
+        "Packet05RegionalTransmissionContinuous",
+        "Packet05TwoPhysicalPhaseBranches",
+        "Packet05ActualTransmissionContinuous",
+        "Packet05BootstrapRepresentativeTransfer"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalPhysicalBranches.log",
+      "log_sha256": "6f241d028e847cc507ae287e279279ada89e71271b52396959884887bd7f4c55",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualModePhaseBranches",
+      "source": "lean/Packet05ActualModePhaseBranches.lean",
+      "source_sha256": "8206a9f47117c95a94f54747267aa516c8531b9cb4cf2856478bc925c0987532",
+      "imports": [
+        "Packet05RegionalPhysicalBranches",
+        "Packet05ActualHostModeGraph"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualModePhaseBranches.log",
+      "log_sha256": "7e9a379ac865c3efce9db7dc3e9708e23928b1e59401a7f0b8397d2d29cfc5a8",
+      "reports": 1
+    },
+    {
+      "module": "Packet05BoundarySign",
+      "source": "lean/Packet05BoundarySign.lean",
+      "source_sha256": "8461302d8c3a791a8a3fdf284a3d1428bc9d321bbe51aa70aa81fdfa68cf202b",
+      "imports": [
+        "Packet05ActualModePhaseBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BoundarySign.log",
+      "log_sha256": "d5098a9a151ee6836c1fdd0c696948d5ed1acfb2cafb367bd819f515d35e57ae",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualOrientedGraph",
+      "source": "lean/Packet05ActualOrientedGraph.lean",
+      "source_sha256": "9033c5810a449ee896892af2c62b14302cdd90b1da9c354d569d4d53589e430b",
+      "imports": [
+        "Packet05BoundarySign",
+        "Packet05ActualGraphExtensionC4",
+        "Packet05ChartOrientationMeasure"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualOrientedGraph.log",
+      "log_sha256": "e479415fa0c78e59554b73487da404e636e8dd7f5acc3cf4d3f423e1aadcc818",
+      "reports": 2
+    },
+    {
+      "module": "Packet05ActualFlatNeighborhood",
+      "source": "lean/Packet05ActualFlatNeighborhood.lean",
+      "source_sha256": "d2de654a7930690d23af726b22436b7aca0509af722ed24a6d50188ab3789a5d",
+      "imports": [
+        "Packet05ActualOrientedGraph",
+        "Packet05PhysicalChartBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualFlatNeighborhood.log",
+      "log_sha256": "7d4a7f52f10d21b94070f526efdfc2b291713594a8212e54024ef2f958e5c758",
+      "reports": 2
+    },
+    {
+      "module": "Packet05PhaseSymmetry",
+      "source": "lean/Packet05PhaseSymmetry.lean",
+      "source_sha256": "9fe51a6ecefa0bab547b8aad7a6b823c83cf2ed15106c1bb49948de24f26ae83",
+      "imports": [
+        "Packet05ActualScalarTangentialContinuity",
+        "Mathlib.MeasureTheory.Measure.OpenPos"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05PhaseSymmetry.log",
+      "log_sha256": "e2d2305b0e0ed56193077f888ef6d3c008b39627065f450d9367d0ed38733acd",
+      "reports": 1
+    },
+    {
+      "module": "Packet05NestedCutoffSupport",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet05NestedCutoffSupport.olean",
+        "Packet05NestedCutoffSupport.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 16.281,
+      "source_sha256": "2cc99221bba8df89c4eff82662ce25d2007790564d90ed86e3ae61e9a3604e85",
+      "log": "Packet05NestedCutoffSupport-root-author.log",
+      "log_sha256": "08ca50061595e21b4acbfdc47d668eed95c6f7cea7387ff49009f3d8d1b5633e",
+      "reports": 6
+    },
+    {
+      "module": "Packet05OpenModeChart",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet05OpenModeChart.olean",
+        "Packet05OpenModeChart.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 14.031,
+      "source_sha256": "58b95279cead84a36acedf423a37938960889c9b980d5632c4935cbfb8e1bdc6",
+      "log": "Packet05OpenModeChart-root-author.log",
+      "log_sha256": "33d6c16baf0c78dc20ee342863796802f7dbf92e8bd56973918f089bcc109707",
+      "reports": 1
+    },
+    {
+      "module": "Packet06PlacedGreenMaxwell",
+      "source_sha256": "6f9895948d350c34799e7c3a3c5919f1aceda837ddecd4f34b78e2ee09c7705b",
+      "object_sha256": "141c1c93ab4c95a903e4a404208ece9da416d8151f4c3c7ea64d0621f78aaa0f",
+      "log_sha256": "ea34436f6595eb735c1dabd22f8583caed6f5172aee94f3f652712b3f35ba2dc",
+      "reports": 7,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenActual",
+      "source_sha256": "f768642f861ae9d648627b6e84d492d1301967b95f3aee8712b73c7228cf3be8",
+      "object_sha256": "cbdc276f08191d85962ed297ab20dbe027668597ce777b02c199295002c92671",
+      "log_sha256": "7f2e175fe59e7555c3deaef40433d1beb5cf24ef5cf5d9da186f1df597ebfdd2",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenSource",
+      "source_sha256": "b7aef1162c2643e71a8b931480b1bc56e0b6f7971c145958aad69ef648e763f9",
+      "object_sha256": "e691708a664258323bae09fdfb410a51d51277edc3d60ed7257bd20f3af9e366",
+      "log_sha256": "244532f25e7509a0766214fddbf6cae376e87b529da5781136d3e7144271e188",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenOutgoing",
+      "source_sha256": "d09f9f87a984dab29e9aef088f92f44359a603d0262a68b3c90a2f5d87046271",
+      "object_sha256": "a4ffa6b0ece14d7b19a9dcf3feff5a9f29439b946e97b6134f587dee9efb079e",
+      "log_sha256": "7ecdedd60c0bec68df6577879164d628eecef8b4892744d04e7d930078bef30d",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PlacedGreenIdentification",
+      "source_sha256": "92c1bda0f1fd6b697b9effa0437815e92a384af4a0a1f19cb734d97ed27ff897",
+      "object_sha256": "e0a7efad4472aea289359ff04655c3130cf5053dce495e3cee2e2790479a7bda",
+      "log_sha256": "3bb3fcde74c96a9258266bc8d888cfa266eacf97da500fd93cc077cb1e5ecac3",
+      "reports": 1,
+      "status": "pass"
+    }
+  ]
+}
