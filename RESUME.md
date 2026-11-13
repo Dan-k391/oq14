@@ -1,5 +1,47 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 112 is the latest verified incremental checkpoint:
+[STAGE112.txt](checkpoints/2026-11-13-frame-fields-observed-pole/STAGE112.txt).
+
+The exact arbitrary-normal frame now transports genuine driven weak
+Maxwell fields. The actual finite-angular volume solution discharges the
+required local integrability of E, H and epsilon E. Axial rotation preserves
+physical angular L2 power, transverse polarization and smooth density,
+and both literal electric and magnetic Herglotz integrals are covariant.
+
+Actual driven hotspots transport through the same exact frameField and
+normalRotation. Both one-sided phase representatives remain identified
+almost everywhere with the transported field, and physical Euclidean
+amplitude, true maxima, sphere bounds and full compact connected half-height
+components are retained. A separate local-independence lemma proves that
+these components do not depend on arbitrary extensions beyond the closed
+observation ball when the local traces agree and the sphere is below threshold.
+These seven root-authored modules passed independent Terra review and build.
+
+For a certified actual modal pole, an arbitrary axial rotation after the
+physical placement preserves the actual selected-sector pencil and a nonzero
+physical observed residue, with analytic remainder and the correct punctured
+limit. It does not assert ambient rank-one simplicity. All physical operator
+and observation identities are proved from the actual transformed volume mode.
+
+The first aggregate fresh build passed 1895 project modules and 10480 printed
+axiom reports; its stage111 extension passed 2054 modules and 10728 reports.
+All cached project objects were excluded. The all-project-constant axiom
+audit and extension to the latest accepted stage are recorded separately.
+Final arbitrary-plane unconditional witnesses and final paper checks remain
+active. Full OQ14 is not yet declared closed.
+
+18 modules / 41 reports passed independent root review and a fresh
+ordered build. 1716 upstream sources were authenticated, with cached objects.
+The ledger is 1487 modules / 5824 reports, all prior records unchanged:
+`checkpoints/2026-11-13-frame-fields-observed-pole/evidence/audited_after_5238-stage112.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage112.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 111 is the latest verified incremental checkpoint:
 [STAGE111.txt](checkpoints/2026-11-13-affine-sector-transport/STAGE111.txt).
 

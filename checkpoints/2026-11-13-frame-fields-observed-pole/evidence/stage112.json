@@ -1,0 +1,642 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "a14be37",
+  "modules": 1487,
+  "reports": 5824,
+  "new_modules": 18,
+  "new_reports": 41,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "0b822d977db1f1f42318c426c23d63d898ddee69078a1714e10b4054290f812b",
+  "ledger_sha256": "6fc6347274c08bc8742ff1d2e0b8cda0de8cc0f428dbde66644a13abe8a396a1",
+  "raw_archive_sha256": "06271ced3637a11c54b3a5f3094effffd095f0fe04311e5a866436a5f8da59a1",
+  "records": [
+    {
+      "module": "Packet07DrivenRotationLocal",
+      "reports": 3,
+      "source_sha256": "25bd094f0fdd269f05006fbf7fe144e0fe6cb58469956e011d6cbcf79b6d42cc",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenRotationLocal-chain.log",
+      "audit_log_sha256": "d6908f1f727f2d99158939f3ced8ac0803de2d69e5a08f6b0576e40939a12d01",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenRotationLocal.log",
+      "independent_log_sha256": "d6908f1f727f2d99158939f3ced8ac0803de2d69e5a08f6b0576e40939a12d01",
+      "declarations": [
+        "OQ14.Packet07DrivenRotationLocal.isometry_comp",
+        "OQ14.Packet07DrivenRotationLocal.axial_field_local",
+        "OQ14.Packet07DrivenRotationLocal.cyclic_field_local"
+      ]
+    },
+    {
+      "module": "Packet07DrivenInverseCyclic",
+      "reports": 4,
+      "source_sha256": "f48efcbc913e08ddb23d5cc71b932ae5f59fc53a432a5022220bcc1e12d3c715",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenInverseCyclic-chain.log",
+      "audit_log_sha256": "cc122cfa378dee5b289c7cb2f910c6b82b1f9b010585376b776a83a7b0c3763a",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenInverseCyclic.log",
+      "independent_log_sha256": "cc122cfa378dee5b289c7cb2f910c6b82b1f9b010585376b776a83a7b0c3763a",
+      "declarations": [
+        "OQ14.Packet07DrivenInverseCyclic.unrotate_twice",
+        "OQ14.Packet07DrivenInverseCyclic.twice_field",
+        "OQ14.Packet07DrivenInverseCyclic.complex_maxwell_inverse",
+        "OQ14.Packet07DrivenInverseCyclic.inverse_field_local"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameMaxwell",
+      "reports": 4,
+      "source_sha256": "1b52b1537d72caad49a97a25a86d3bfa0c3441ee8562171577761a17c75d18f8",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameMaxwell-chain.log",
+      "audit_log_sha256": "d3d1d3517bc37809b3a6f319303fdefbc6ee44978530e2b2fde2bd59bd94e515",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenFrameMaxwell.log",
+      "independent_log_sha256": "d3d1d3517bc37809b3a6f319303fdefbc6ee44978530e2b2fde2bd59bd94e515",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameMaxwell.axial_good",
+        "OQ14.Packet07DrivenFrameMaxwell.cyclic_good",
+        "OQ14.Packet07DrivenFrameMaxwell.inverse_cyclic_good",
+        "OQ14.Packet07DrivenFrameMaxwell.frame_good"
+      ]
+    },
+    {
+      "module": "Packet07DrivenActualGood",
+      "reports": 1,
+      "source_sha256": "7e71853961d9603ec17540dc3cff645d1b631c67e14009add441415865926e4b",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenActualGood-chain.log",
+      "audit_log_sha256": "f0d8bd8b55c599c1feef23174e0e6e723ba7fd8aeeb6a8b53ce2b217f8c6ebff",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenActualGood.log",
+      "independent_log_sha256": "f0d8bd8b55c599c1feef23174e0e6e723ba7fd8aeeb6a8b53ce2b217f8c6ebff",
+      "declarations": [
+        "OQ14.Packet07DrivenActualGood.actual_good"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialAngularVector",
+      "reports": 3,
+      "source_sha256": "b00465ebf9840883ac443946562266139d8915fe98a0535228036ea3ee280a6e",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularVector-chain.log",
+      "audit_log_sha256": "860e7914f23339abf31baae967ff2e7d86dc988efd80ed62209dcfdfe2fb2764",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngularVector.log",
+      "independent_log_sha256": "860e7914f23339abf31baae967ff2e7d86dc988efd80ed62209dcfdfe2fb2764",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialAngularVector.rotate_norm",
+        "OQ14.Packet07DrivenAxialAngularVector.rotate_sub",
+        "OQ14.Packet07DrivenAxialAngularVector.rotate_continuous"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialAngular",
+      "reports": 2,
+      "source_sha256": "54425a03e5393285aee0ce3d938993c6ff0f0fe26e421a12607868aee7c12078",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngular-chain.log",
+      "audit_log_sha256": "14824fe6f357145de7ff957b49f7110bd866e36e11b8ed2061d1000ef558dd71",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngular.log",
+      "independent_log_sha256": "14824fe6f357145de7ff957b49f7110bd866e36e11b8ed2061d1000ef558dd71",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialAngular.pull_norm",
+        "OQ14.Packet07DrivenAxialAngular.rotated_norm"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialTangency",
+      "reports": 2,
+      "source_sha256": "67a47f030eb6998439dcd2789740b5ef6a11e39006c3587973769bfdcdce7c48",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialTangency-chain.log",
+      "audit_log_sha256": "712165b3a73aed1571eed1d5c960ebcee7586b2afa4cf0b30a421431823c4597",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialTangency.log",
+      "independent_log_sha256": "712165b3a73aed1571eed1d5c960ebcee7586b2afa4cf0b30a421431823c4597",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialTangency.normal_pair",
+        "OQ14.Packet07DrivenAxialTangency.rotated_tangent"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialAngularSmooth",
+      "reports": 2,
+      "source_sha256": "0d7c4060e46811633cf76e83d0c554a6df23118820c4237f40a0f72722c164b2",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularSmooth-chain.log",
+      "audit_log_sha256": "b2338ef1d26f2fa01a8fbaa2788cb43e9c8f26f8ea3386cc74bc4fe2f457407f",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngularSmooth.log",
+      "independent_log_sha256": "b2338ef1d26f2fa01a8fbaa2788cb43e9c8f26f8ea3386cc74bc4fe2f457407f",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialAngularSmooth.extension_smooth",
+        "OQ14.Packet07DrivenAxialAngularSmooth.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialHerglotz",
+      "reports": 3,
+      "source_sha256": "fa7500daaa56af292820e656716e2a60012968479efe0b0a4df1d4b99150e203",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotz-chain.log",
+      "audit_log_sha256": "93e2a2c07493465a4a0bd0aa1b9f89b72d662513f23005e7129ef224ca1d1288",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHerglotz.log",
+      "independent_log_sha256": "93e2a2c07493465a4a0bd0aa1b9f89b72d662513f23005e7129ef224ca1d1288",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialHerglotz.wave_rotate",
+        "OQ14.Packet07DrivenAxialHerglotz.sphere_rotate_inverse",
+        "OQ14.Packet07DrivenAxialHerglotz.electric_covariant"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialHerglotzMagnetic",
+      "reports": 3,
+      "source_sha256": "d102d1f82e06fe0a3f5e6b289bebdeb446f5735aa1a86be13b5a7b6c1bb84c4f",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotzMagnetic-chain.log",
+      "audit_log_sha256": "682f636ee1d223321c0f4722468b51da792f21a782ab47a1d87f1a6dabed55dd",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "independent_review_sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "independent_build_sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHerglotzMagnetic.log",
+      "independent_log_sha256": "682f636ee1d223321c0f4722468b51da792f21a782ab47a1d87f1a6dabed55dd",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_amplitude_rotate",
+        "OQ14.Packet07DrivenAxialHerglotzMagnetic.rotated_magneticMap",
+        "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_covariant"
+      ]
+    },
+    {
+      "module": "Packet06AxialObservedPole",
+      "reports": 3,
+      "source_sha256": "2219cc1147dd91b1ccb4d0c7fb5d61cbfb0296da681e4edd90c0b6bab4948ffa",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet06AxialObservedPole-chain.log",
+      "audit_log_sha256": "02634b9c57d72a81130afb08d72e92205036eeb42ac6f5f5ca8fb43c4b339eec",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/pole-review.txt",
+      "independent_review_sha256": "384776338ffc395493ef8692ca2dd26b69318750a3c9a1a2dc0bc0f63f660587",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/pole-build.json",
+      "independent_build_sha256": "d60fcbfdf0ba5ea6bddf9f321d25618499360f69f502f23a68a9d4cd73171d7a",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet06AxialObservedPole.log",
+      "independent_log_sha256": "02634b9c57d72a81130afb08d72e92205036eeb42ac6f5f5ca8fb43c4b339eec",
+      "declarations": [
+        "OQ14.Packet06AxialObservedPole.pencil_eq",
+        "OQ14.Packet06AxialObservedPole.observation_analyticAt",
+        "OQ14.Packet06AxialObservedPole.certified_observed_pole"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialPhaseAE",
+      "reports": 1,
+      "source_sha256": "ff8852fd240a94e1825a79407f177de986b4dfd97d1b1423a9e7d6d8d55d25c4",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialPhaseAE-chain.log",
+      "audit_log_sha256": "aaa1e96c70b574a2ad347aa88d7538e45a5d2003d1f798bf335930af1a920d2f",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialPhaseAE.log",
+      "independent_log_sha256": "aaa1e96c70b574a2ad347aa88d7538e45a5d2003d1f798bf335930af1a920d2f",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialPhaseAE.component_image_ae"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialHotspot",
+      "reports": 1,
+      "source_sha256": "5726748a2092763bde9b71d0e3a0befdceb7347ebcef28c4ab43c12c66595c99",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHotspot-chain.log",
+      "audit_log_sha256": "ce9665763b4a8f6dafbc36c7526d084da4e898a1e8835654155f40837740b6c1",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHotspot.log",
+      "independent_log_sha256": "ce9665763b4a8f6dafbc36c7526d084da4e898a1e8835654155f40837740b6c1",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialHotspot.rotate_hotspot"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicPhaseAE",
+      "reports": 1,
+      "source_sha256": "383f5e8c07fda71e84ebeabf052cc871b4bd172e88171aef0c9db08570e99a13",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicPhaseAE-chain.log",
+      "audit_log_sha256": "2f95c907f909008778a5493532ba77352311ab7d58403e0be8288c69c0092009",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicPhaseAE.log",
+      "independent_log_sha256": "2f95c907f909008778a5493532ba77352311ab7d58403e0be8288c69c0092009",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicPhaseAE.component_image_ae"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicTrace",
+      "reports": 1,
+      "source_sha256": "2a9a98c8281b09790898d36f5b621081b26fbe10fa2af1598d58ba2cd45c7838",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicTrace-chain.log",
+      "audit_log_sha256": "cd50991964f6e456d792b4233a51c467d0d0d2bc14e72aecd8119e7266d7a582",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicTrace.log",
+      "independent_log_sha256": "cd50991964f6e456d792b4233a51c467d0d0d2bc14e72aecd8119e7266d7a582",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicTrace.cyclic_trace"
+      ]
+    },
+    {
+      "module": "Packet07DrivenCyclicHotspot",
+      "reports": 1,
+      "source_sha256": "62a347cd2bda5bfb1ae2f651827cdbb53c3ff78f15562b6cb4e0d128ec3b517a",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicHotspot-chain.log",
+      "audit_log_sha256": "2a3b9ec6d05d54908ced5e14a8ec07c6c38ac0f569dee628130b5be8cb586f3b",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicHotspot.log",
+      "independent_log_sha256": "2a3b9ec6d05d54908ced5e14a8ec07c6c38ac0f569dee628130b5be8cb586f3b",
+      "declarations": [
+        "OQ14.Packet07DrivenCyclicHotspot.cyclic_hotspot"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameHotspot",
+      "reports": 4,
+      "source_sha256": "62b24008e764a7771039344d53f5766340821cdf80deb3b1789b1c9688f4ad71",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameHotspot-chain.log",
+      "audit_log_sha256": "413ed459cf49a7e3e94489c29ce96648f35f1c62f979eeb4404752dfb5e261fc",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenFrameHotspot.log",
+      "independent_log_sha256": "413ed459cf49a7e3e94489c29ce96648f35f1c62f979eeb4404752dfb5e261fc",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameHotspot.cyclic_hotspot",
+        "OQ14.Packet07DrivenFrameHotspot.rotate_twice",
+        "OQ14.Packet07DrivenFrameHotspot.inverse_hotspot",
+        "OQ14.Packet07DrivenFrameHotspot.frame_hotspot"
+      ]
+    },
+    {
+      "module": "Packet07HotspotLocalIndependence",
+      "reports": 2,
+      "source_sha256": "ed56911b32472868172e37e062775a883ee09abc1d862734af5530e672d1f0b9",
+      "audit_log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07HotspotLocalIndependence-chain.log",
+      "audit_log_sha256": "e254eb7bc341e893fdef30532ab0c6d7e095d6ad03c4f8727fc5b4d0a6cf0b46",
+      "independent_review": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "independent_review_sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "independent_build_sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0",
+      "independent_log": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07HotspotLocalIndependence.log",
+      "independent_log_sha256": "e254eb7bc341e893fdef30532ab0c6d7e095d6ad03c4f8727fc5b4d0a6cf0b46",
+      "declarations": [
+        "OQ14.Packet07HotspotLocalIndependence.component_eq_of_local_eq",
+        "OQ14.Packet07HotspotLocalIndependence.branch_component_eq_of_local_eq"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/audited_after_5238-stage112.json",
+      "sha256": "6fc6347274c08bc8742ff1d2e0b8cda0de8cc0f428dbde66644a13abe8a396a1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/chain-build.json",
+      "sha256": "b33693b55b83fc1ac37c567c94a0b08ff9c8bf8475f21217ae2c03a6b8587c62"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet06AxialObservedPole-chain.log",
+      "sha256": "02634b9c57d72a81130afb08d72e92205036eeb42ac6f5f5ca8fb43c4b339eec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenActualGood-chain.log",
+      "sha256": "f0d8bd8b55c599c1feef23174e0e6e723ba7fd8aeeb6a8b53ce2b217f8c6ebff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngular-chain.log",
+      "sha256": "14824fe6f357145de7ff957b49f7110bd866e36e11b8ed2061d1000ef558dd71"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularSmooth-chain.log",
+      "sha256": "b2338ef1d26f2fa01a8fbaa2788cb43e9c8f26f8ea3386cc74bc4fe2f457407f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularVector-chain.log",
+      "sha256": "860e7914f23339abf31baae967ff2e7d86dc988efd80ed62209dcfdfe2fb2764"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotz-chain.log",
+      "sha256": "93e2a2c07493465a4a0bd0aa1b9f89b72d662513f23005e7129ef224ca1d1288"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotzMagnetic-chain.log",
+      "sha256": "682f636ee1d223321c0f4722468b51da792f21a782ab47a1d87f1a6dabed55dd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHotspot-chain.log",
+      "sha256": "ce9665763b4a8f6dafbc36c7526d084da4e898a1e8835654155f40837740b6c1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialPhaseAE-chain.log",
+      "sha256": "aaa1e96c70b574a2ad347aa88d7538e45a5d2003d1f798bf335930af1a920d2f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialTangency-chain.log",
+      "sha256": "712165b3a73aed1571eed1d5c960ebcee7586b2afa4cf0b30a421431823c4597"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicHotspot-chain.log",
+      "sha256": "2a3b9ec6d05d54908ced5e14a8ec07c6c38ac0f569dee628130b5be8cb586f3b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicPhaseAE-chain.log",
+      "sha256": "2f95c907f909008778a5493532ba77352311ab7d58403e0be8288c69c0092009"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicTrace-chain.log",
+      "sha256": "cd50991964f6e456d792b4233a51c467d0d0d2bc14e72aecd8119e7266d7a582"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameHotspot-chain.log",
+      "sha256": "413ed459cf49a7e3e94489c29ce96648f35f1c62f979eeb4404752dfb5e261fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameMaxwell-chain.log",
+      "sha256": "d3d1d3517bc37809b3a6f319303fdefbc6ee44978530e2b2fde2bd59bd94e515"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenInverseCyclic-chain.log",
+      "sha256": "cc122cfa378dee5b289c7cb2f910c6b82b1f9b010585376b776a83a7b0c3763a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenRotationLocal-chain.log",
+      "sha256": "d6908f1f727f2d99158939f3ced8ac0803de2d69e5a08f6b0576e40939a12d01"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07HotspotLocalIndependence-chain.log",
+      "sha256": "e254eb7bc341e893fdef30532ab0c6d7e095d6ad03c4f8727fc5b4d0a6cf0b46"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/modules.json",
+      "sha256": "aaab516c131a2e9e498f6610e644caf7d85b6e8072c79f5dc0eacc64fd947ec0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/provenance-audit.json",
+      "sha256": "214c2ab668d02c5b3d726c6af40649ab8168383af015866f6815cc0c7a010319"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-build.json",
+      "sha256": "014ec94828f18e29f25a4e4f457909b5c6368d356d1cd2e1c9a9a3030bba6c75"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/angular-review.txt",
+      "sha256": "757fceaadb7079c24033314499e0d1f6cdf902de82b1ab57a5ac0071b71f378a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/author-inventory.json",
+      "sha256": "0112614d8ac2693f785ac115449ee3dbb832b1b10be88bf7fe170163f31494b9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-build.json",
+      "sha256": "ccac0fa8de3fc3426a2b9a0123bde743b0ac944372775e159122a4927cc975d0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/hotspot-review.txt",
+      "sha256": "2a67e2fd882117e8a129e2526f3cb1de55726a345341d4453aea937ad318e23a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/independent-index.json",
+      "sha256": "96c39abc39705f7bdfdcae9d9e3abba73081a4cb96d12c6d74c7b290873e77fa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/metadata-normalization.json",
+      "sha256": "72ce84cd9391063f22ed2cb6679e3ecd006403dc40424b522b3519612371df30"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet06AxialObservedPole.log",
+      "sha256": "02634b9c57d72a81130afb08d72e92205036eeb42ac6f5f5ca8fb43c4b339eec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenActualGood.log",
+      "sha256": "f0d8bd8b55c599c1feef23174e0e6e723ba7fd8aeeb6a8b53ce2b217f8c6ebff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngular.log",
+      "sha256": "14824fe6f357145de7ff957b49f7110bd866e36e11b8ed2061d1000ef558dd71"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngularSmooth.log",
+      "sha256": "b2338ef1d26f2fa01a8fbaa2788cb43e9c8f26f8ea3386cc74bc4fe2f457407f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialAngularVector.log",
+      "sha256": "860e7914f23339abf31baae967ff2e7d86dc988efd80ed62209dcfdfe2fb2764"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHerglotz.log",
+      "sha256": "93e2a2c07493465a4a0bd0aa1b9f89b72d662513f23005e7129ef224ca1d1288"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHerglotzMagnetic.log",
+      "sha256": "682f636ee1d223321c0f4722468b51da792f21a782ab47a1d87f1a6dabed55dd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialHotspot.log",
+      "sha256": "ce9665763b4a8f6dafbc36c7526d084da4e898a1e8835654155f40837740b6c1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialPhaseAE.log",
+      "sha256": "aaa1e96c70b574a2ad347aa88d7538e45a5d2003d1f798bf335930af1a920d2f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenAxialTangency.log",
+      "sha256": "712165b3a73aed1571eed1d5c960ebcee7586b2afa4cf0b30a421431823c4597"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicHotspot.log",
+      "sha256": "2a3b9ec6d05d54908ced5e14a8ec07c6c38ac0f569dee628130b5be8cb586f3b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicPhaseAE.log",
+      "sha256": "2f95c907f909008778a5493532ba77352311ab7d58403e0be8288c69c0092009"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenCyclicTrace.log",
+      "sha256": "cd50991964f6e456d792b4233a51c467d0d0d2bc14e72aecd8119e7266d7a582"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenFrameHotspot.log",
+      "sha256": "413ed459cf49a7e3e94489c29ce96648f35f1c62f979eeb4404752dfb5e261fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenFrameMaxwell.log",
+      "sha256": "d3d1d3517bc37809b3a6f319303fdefbc6ee44978530e2b2fde2bd59bd94e515"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenInverseCyclic.log",
+      "sha256": "cc122cfa378dee5b289c7cb2f910c6b82b1f9b010585376b776a83a7b0c3763a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07DrivenRotationLocal.log",
+      "sha256": "d6908f1f727f2d99158939f3ced8ac0803de2d69e5a08f6b0576e40939a12d01"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/Packet07HotspotLocalIndependence.log",
+      "sha256": "e254eb7bc341e893fdef30532ab0c6d7e095d6ad03c4f8727fc5b4d0a6cf0b46"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/pole-build.json",
+      "sha256": "d60fcbfdf0ba5ea6bddf9f321d25618499360f69f502f23a68a9d4cd73171d7a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/reviews/pole-review.txt",
+      "sha256": "384776338ffc395493ef8692ca2dd26b69318750a3c9a1a2dc0bc0f63f660587"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/scripts/audit_provenance.ps1",
+      "sha256": "21d48c261d4740617cbad743156c8f68307c343550ffff72bfd40b8c06643f89"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/scripts/check_chain.py",
+      "sha256": "407941dff227cd919b53615624cfc6cd567d0147954c1bf29f3702f4d5bf2bef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/scripts/freeze_checkpoint.py",
+      "sha256": "ce9b7ee5583e1491ae3e46f06f729207b29ac6bfcdafcd4d64621c816a33663d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-frame-fields-observed-pole/STAGE112.txt",
+      "sha256": "b0ab42a0922d5742a014fe4a522e1f9b34a2e66d7c900955b03cae197b9deada"
+    },
+    {
+      "path": "lean/Packet06AxialObservedPole.lean",
+      "sha256": "2219cc1147dd91b1ccb4d0c7fb5d61cbfb0296da681e4edd90c0b6bab4948ffa"
+    },
+    {
+      "path": "lean/Packet07DrivenActualGood.lean",
+      "sha256": "7e71853961d9603ec17540dc3cff645d1b631c67e14009add441415865926e4b"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialAngular.lean",
+      "sha256": "54425a03e5393285aee0ce3d938993c6ff0f0fe26e421a12607868aee7c12078"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialAngularSmooth.lean",
+      "sha256": "0d7c4060e46811633cf76e83d0c554a6df23118820c4237f40a0f72722c164b2"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialAngularVector.lean",
+      "sha256": "b00465ebf9840883ac443946562266139d8915fe98a0535228036ea3ee280a6e"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialHerglotz.lean",
+      "sha256": "fa7500daaa56af292820e656716e2a60012968479efe0b0a4df1d4b99150e203"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialHerglotzMagnetic.lean",
+      "sha256": "d102d1f82e06fe0a3f5e6b289bebdeb446f5735aa1a86be13b5a7b6c1bb84c4f"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialHotspot.lean",
+      "sha256": "5726748a2092763bde9b71d0e3a0befdceb7347ebcef28c4ab43c12c66595c99"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialPhaseAE.lean",
+      "sha256": "ff8852fd240a94e1825a79407f177de986b4dfd97d1b1423a9e7d6d8d55d25c4"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialTangency.lean",
+      "sha256": "67a47f030eb6998439dcd2789740b5ef6a11e39006c3587973769bfdcdce7c48"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicHotspot.lean",
+      "sha256": "62a347cd2bda5bfb1ae2f651827cdbb53c3ff78f15562b6cb4e0d128ec3b517a"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicPhaseAE.lean",
+      "sha256": "383f5e8c07fda71e84ebeabf052cc871b4bd172e88171aef0c9db08570e99a13"
+    },
+    {
+      "path": "lean/Packet07DrivenCyclicTrace.lean",
+      "sha256": "2a9a98c8281b09790898d36f5b621081b26fbe10fa2af1598d58ba2cd45c7838"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameHotspot.lean",
+      "sha256": "62b24008e764a7771039344d53f5766340821cdf80deb3b1789b1c9688f4ad71"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameMaxwell.lean",
+      "sha256": "1b52b1537d72caad49a97a25a86d3bfa0c3441ee8562171577761a17c75d18f8"
+    },
+    {
+      "path": "lean/Packet07DrivenInverseCyclic.lean",
+      "sha256": "f48efcbc913e08ddb23d5cc71b932ae5f59fc53a432a5022220bcc1e12d3c715"
+    },
+    {
+      "path": "lean/Packet07DrivenRotationLocal.lean",
+      "sha256": "25bd094f0fdd269f05006fbf7fe144e0fe6cb58469956e011d6cbcf79b6d42cc"
+    },
+    {
+      "path": "lean/Packet07HotspotLocalIndependence.lean",
+      "sha256": "ed56911b32472868172e37e062775a883ee09abc1d862734af5530e672d1f0b9"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "f5b34adcd17dbeb27dbd3e7c9bfc0c2e27508dfb56bd1ebdcca94df32a954539"
+    }
+  ],
+  "scope": "actual frame Maxwell fields, driven hotspots and nonzero observed pole. Actual driven frame Maxwell and hotspot transports, smooth unit-power axial illumination and nonzero physical observed modal pole are proved. Final arbitrary-plane existence witnesses, paper alignment and latest aggregate verification remain active."
+}

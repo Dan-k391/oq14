@@ -1,0 +1,133 @@
+[
+  {
+    "module": "Packet07DrivenRotationLocal",
+    "declarations": [
+      "OQ14.Packet07DrivenRotationLocal.isometry_comp",
+      "OQ14.Packet07DrivenRotationLocal.axial_field_local",
+      "OQ14.Packet07DrivenRotationLocal.cyclic_field_local"
+    ]
+  },
+  {
+    "module": "Packet07DrivenInverseCyclic",
+    "declarations": [
+      "OQ14.Packet07DrivenInverseCyclic.unrotate_twice",
+      "OQ14.Packet07DrivenInverseCyclic.twice_field",
+      "OQ14.Packet07DrivenInverseCyclic.complex_maxwell_inverse",
+      "OQ14.Packet07DrivenInverseCyclic.inverse_field_local"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameMaxwell",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameMaxwell.axial_good",
+      "OQ14.Packet07DrivenFrameMaxwell.cyclic_good",
+      "OQ14.Packet07DrivenFrameMaxwell.inverse_cyclic_good",
+      "OQ14.Packet07DrivenFrameMaxwell.frame_good"
+    ]
+  },
+  {
+    "module": "Packet07DrivenActualGood",
+    "declarations": [
+      "OQ14.Packet07DrivenActualGood.actual_good"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialAngularVector",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialAngularVector.rotate_norm",
+      "OQ14.Packet07DrivenAxialAngularVector.rotate_sub",
+      "OQ14.Packet07DrivenAxialAngularVector.rotate_continuous"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialAngular",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialAngular.pull_norm",
+      "OQ14.Packet07DrivenAxialAngular.rotated_norm"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialTangency",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialTangency.normal_pair",
+      "OQ14.Packet07DrivenAxialTangency.rotated_tangent"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialAngularSmooth",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialAngularSmooth.extension_smooth",
+      "OQ14.Packet07DrivenAxialAngularSmooth.extension_on_sphere"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialHerglotz",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialHerglotz.wave_rotate",
+      "OQ14.Packet07DrivenAxialHerglotz.sphere_rotate_inverse",
+      "OQ14.Packet07DrivenAxialHerglotz.electric_covariant"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialHerglotzMagnetic",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_amplitude_rotate",
+      "OQ14.Packet07DrivenAxialHerglotzMagnetic.rotated_magneticMap",
+      "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_covariant"
+    ]
+  },
+  {
+    "module": "Packet06AxialObservedPole",
+    "declarations": [
+      "OQ14.Packet06AxialObservedPole.pencil_eq",
+      "OQ14.Packet06AxialObservedPole.observation_analyticAt",
+      "OQ14.Packet06AxialObservedPole.certified_observed_pole"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialPhaseAE",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialPhaseAE.component_image_ae"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialHotspot.rotate_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicPhaseAE",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicPhaseAE.component_image_ae"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicTrace",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicTrace.cyclic_trace"
+    ]
+  },
+  {
+    "module": "Packet07DrivenCyclicHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenCyclicHotspot.cyclic_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameHotspot.cyclic_hotspot",
+      "OQ14.Packet07DrivenFrameHotspot.rotate_twice",
+      "OQ14.Packet07DrivenFrameHotspot.inverse_hotspot",
+      "OQ14.Packet07DrivenFrameHotspot.frame_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07HotspotLocalIndependence",
+    "declarations": [
+      "OQ14.Packet07HotspotLocalIndependence.component_eq_of_local_eq",
+      "OQ14.Packet07HotspotLocalIndependence.branch_component_eq_of_local_eq"
+    ]
+  }
+]

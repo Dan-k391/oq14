@@ -1,0 +1,665 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-frame-fields-observed-pole/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07DrivenRotationLocal",
+      "source": "lean/Packet07DrivenRotationLocal.lean",
+      "source_sha256": "25bd094f0fdd269f05006fbf7fe144e0fe6cb58469956e011d6cbcf79b6d42cc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenRotationLocal.olean",
+        "D:\\oq14\\lean\\Packet07DrivenRotationLocal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.719,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenRotationLocal-chain.log",
+      "log_sha256": "d6908f1f727f2d99158939f3ced8ac0803de2d69e5a08f6b0576e40939a12d01",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenRotationLocal.isometry_comp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenRotationLocal.axial_field_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenRotationLocal.cyclic_field_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d557392919b524e76508bd242793516db516043d6765e116fd784f538ca2b8ca"
+    },
+    {
+      "module": "Packet07DrivenInverseCyclic",
+      "source": "lean/Packet07DrivenInverseCyclic.lean",
+      "source_sha256": "f48efcbc913e08ddb23d5cc71b932ae5f59fc53a432a5022220bcc1e12d3c715",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenInverseCyclic.olean",
+        "D:\\oq14\\lean\\Packet07DrivenInverseCyclic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.641,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenInverseCyclic-chain.log",
+      "log_sha256": "cc122cfa378dee5b289c7cb2f910c6b82b1f9b010585376b776a83a7b0c3763a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenInverseCyclic.unrotate_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenInverseCyclic.twice_field",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenInverseCyclic.complex_maxwell_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenInverseCyclic.inverse_field_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "90dc5467e3ddb08ababda28bacebb5958707405688b40a8e73b695bf8949091f"
+    },
+    {
+      "module": "Packet07DrivenFrameMaxwell",
+      "source": "lean/Packet07DrivenFrameMaxwell.lean",
+      "source_sha256": "1b52b1537d72caad49a97a25a86d3bfa0c3441ee8562171577761a17c75d18f8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenFrameMaxwell.olean",
+        "D:\\oq14\\lean\\Packet07DrivenFrameMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.125,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameMaxwell-chain.log",
+      "log_sha256": "d3d1d3517bc37809b3a6f319303fdefbc6ee44978530e2b2fde2bd59bd94e515",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenFrameMaxwell.axial_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameMaxwell.cyclic_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameMaxwell.inverse_cyclic_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameMaxwell.frame_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fcc616cf4de42efffd42acad97ceb376dd1a478f5c8153ef2e01dbeee0bff4f1"
+    },
+    {
+      "module": "Packet07DrivenActualGood",
+      "source": "lean/Packet07DrivenActualGood.lean",
+      "source_sha256": "7e71853961d9603ec17540dc3cff645d1b631c67e14009add441415865926e4b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenActualGood.olean",
+        "D:\\oq14\\lean\\Packet07DrivenActualGood.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.218,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenActualGood-chain.log",
+      "log_sha256": "f0d8bd8b55c599c1feef23174e0e6e723ba7fd8aeeb6a8b53ce2b217f8c6ebff",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenActualGood.actual_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8d841f0f717835967787a032eb3566ae9993e8fa9fbeac8d1f1aedb593a4ebd3"
+    },
+    {
+      "module": "Packet07DrivenAxialAngularVector",
+      "source": "lean/Packet07DrivenAxialAngularVector.lean",
+      "source_sha256": "b00465ebf9840883ac443946562266139d8915fe98a0535228036ea3ee280a6e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialAngularVector.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialAngularVector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.75,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularVector-chain.log",
+      "log_sha256": "860e7914f23339abf31baae967ff2e7d86dc988efd80ed62209dcfdfe2fb2764",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngularVector.rotate_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngularVector.rotate_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngularVector.rotate_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e9bbaab019d0d920c2c0b140ddc0dfa282d231b5febe441141b704e10c733273"
+    },
+    {
+      "module": "Packet07DrivenAxialAngular",
+      "source": "lean/Packet07DrivenAxialAngular.lean",
+      "source_sha256": "54425a03e5393285aee0ce3d938993c6ff0f0fe26e421a12607868aee7c12078",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialAngular.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialAngular.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.61,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngular-chain.log",
+      "log_sha256": "14824fe6f357145de7ff957b49f7110bd866e36e11b8ed2061d1000ef558dd71",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngular.pull_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngular.rotated_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dfd4aae032b97001fa53f3934d124fbb3345dee661a011ac96e992272d569de3"
+    },
+    {
+      "module": "Packet07DrivenAxialTangency",
+      "source": "lean/Packet07DrivenAxialTangency.lean",
+      "source_sha256": "67a47f030eb6998439dcd2789740b5ef6a11e39006c3587973769bfdcdce7c48",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialTangency.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialTangency.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.063,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialTangency-chain.log",
+      "log_sha256": "712165b3a73aed1571eed1d5c960ebcee7586b2afa4cf0b30a421431823c4597",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTangency.normal_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTangency.rotated_tangent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "34ee1b90b404fc67fb3e430d8e90a96ceb086406285f4ab3bcb07bcdb1f83aba"
+    },
+    {
+      "module": "Packet07DrivenAxialAngularSmooth",
+      "source": "lean/Packet07DrivenAxialAngularSmooth.lean",
+      "source_sha256": "0d7c4060e46811633cf76e83d0c554a6df23118820c4237f40a0f72722c164b2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialAngularSmooth.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialAngularSmooth.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.765,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialAngularSmooth-chain.log",
+      "log_sha256": "b2338ef1d26f2fa01a8fbaa2788cb43e9c8f26f8ea3386cc74bc4fe2f457407f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngularSmooth.extension_smooth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialAngularSmooth.extension_on_sphere",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1c77e2540bef02df4b7fecb4f49ac7ae2715b787e2306caa2c32d0c10ece4c37"
+    },
+    {
+      "module": "Packet07DrivenAxialHerglotz",
+      "source": "lean/Packet07DrivenAxialHerglotz.lean",
+      "source_sha256": "fa7500daaa56af292820e656716e2a60012968479efe0b0a4df1d4b99150e203",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialHerglotz.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialHerglotz.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.907,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotz-chain.log",
+      "log_sha256": "93e2a2c07493465a4a0bd0aa1b9f89b72d662513f23005e7129ef224ca1d1288",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotz.wave_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotz.sphere_rotate_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotz.electric_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "156556e1648b4b01055c225e1f4fd3f4e2a80c8e261aa4cb2c96f55509c787b1"
+    },
+    {
+      "module": "Packet07DrivenAxialHerglotzMagnetic",
+      "source": "lean/Packet07DrivenAxialHerglotzMagnetic.lean",
+      "source_sha256": "d102d1f82e06fe0a3f5e6b289bebdeb446f5735aa1a86be13b5a7b6c1bb84c4f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-angular-review\\reviews\\root-objects\\Packet07DrivenAxialHerglotzMagnetic.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialHerglotzMagnetic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.297,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHerglotzMagnetic-chain.log",
+      "log_sha256": "682f636ee1d223321c0f4722468b51da792f21a782ab47a1d87f1a6dabed55dd",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_amplitude_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotzMagnetic.rotated_magneticMap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHerglotzMagnetic.magnetic_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5493568ca5ab828cb4e3d28070b8a820a2e8d444311afad5907ef9d5464b7aa6"
+    },
+    {
+      "module": "Packet06AxialObservedPole",
+      "source": "lean/Packet06AxialObservedPole.lean",
+      "source_sha256": "2219cc1147dd91b1ccb4d0c7fb5d61cbfb0296da681e4edd90c0b6bab4948ffa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-observed-pole\\reviews\\root-objects\\Packet06AxialObservedPole.olean",
+        "D:\\oq14\\lean\\Packet06AxialObservedPole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 123.844,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet06AxialObservedPole-chain.log",
+      "log_sha256": "02634b9c57d72a81130afb08d72e92205036eeb42ac6f5f5ca8fb43c4b339eec",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialObservedPole.pencil_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialObservedPole.observation_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialObservedPole.certified_observed_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3803896e8fb4b22d7f6fa403ff1c7bc4577c2d02d0c3487b861761d95b8b42c0"
+    },
+    {
+      "module": "Packet07DrivenAxialPhaseAE",
+      "source": "lean/Packet07DrivenAxialPhaseAE.lean",
+      "source_sha256": "ff8852fd240a94e1825a79407f177de986b4dfd97d1b1423a9e7d6d8d55d25c4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenAxialPhaseAE.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialPhaseAE.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.32,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialPhaseAE-chain.log",
+      "log_sha256": "aaa1e96c70b574a2ad347aa88d7538e45a5d2003d1f798bf335930af1a920d2f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialPhaseAE.component_image_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "556732c7495e7841aa7d247923ec95e81bdc0bbcd6db2be15a40239b6d22566f"
+    },
+    {
+      "module": "Packet07DrivenAxialHotspot",
+      "source": "lean/Packet07DrivenAxialHotspot.lean",
+      "source_sha256": "5726748a2092763bde9b71d0e3a0befdceb7347ebcef28c4ab43c12c66595c99",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenAxialHotspot.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialHotspot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.12,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenAxialHotspot-chain.log",
+      "log_sha256": "ce9665763b4a8f6dafbc36c7526d084da4e898a1e8835654155f40837740b6c1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialHotspot.rotate_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4e9e0f7ccab5bb2c61dda6c1e56404886d4461015f9431527f01f3a30b2ca878"
+    },
+    {
+      "module": "Packet07DrivenCyclicPhaseAE",
+      "source": "lean/Packet07DrivenCyclicPhaseAE.lean",
+      "source_sha256": "383f5e8c07fda71e84ebeabf052cc871b4bd172e88171aef0c9db08570e99a13",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenCyclicPhaseAE.olean",
+        "D:\\oq14\\lean\\Packet07DrivenCyclicPhaseAE.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.42,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicPhaseAE-chain.log",
+      "log_sha256": "2f95c907f909008778a5493532ba77352311ab7d58403e0be8288c69c0092009",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenCyclicPhaseAE.component_image_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ea09f1c8e81765bf54d52c10214ff346b8b4b2e1d17ad2bdbcc375a0e7f9886c"
+    },
+    {
+      "module": "Packet07DrivenCyclicTrace",
+      "source": "lean/Packet07DrivenCyclicTrace.lean",
+      "source_sha256": "2a9a98c8281b09790898d36f5b621081b26fbe10fa2af1598d58ba2cd45c7838",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenCyclicTrace.olean",
+        "D:\\oq14\\lean\\Packet07DrivenCyclicTrace.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.95,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicTrace-chain.log",
+      "log_sha256": "cd50991964f6e456d792b4233a51c467d0d0d2bc14e72aecd8119e7266d7a582",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenCyclicTrace.cyclic_trace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "06561084e04bcd7075de47e8506c2f1c915ce90c62e378f7e5f93ead72434f01"
+    },
+    {
+      "module": "Packet07DrivenCyclicHotspot",
+      "source": "lean/Packet07DrivenCyclicHotspot.lean",
+      "source_sha256": "62a347cd2bda5bfb1ae2f651827cdbb53c3ff78f15562b6cb4e0d128ec3b517a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenCyclicHotspot.olean",
+        "D:\\oq14\\lean\\Packet07DrivenCyclicHotspot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.22,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenCyclicHotspot-chain.log",
+      "log_sha256": "2a3b9ec6d05d54908ced5e14a8ec07c6c38ac0f569dee628130b5be8cb586f3b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenCyclicHotspot.cyclic_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "367417d6bbc4bdd0b6e6ab3e81f5190646fb2b66c78f6e1f019dd282b0376987"
+    },
+    {
+      "module": "Packet07DrivenFrameHotspot",
+      "source": "lean/Packet07DrivenFrameHotspot.lean",
+      "source_sha256": "62b24008e764a7771039344d53f5766340821cdf80deb3b1789b1c9688f4ad71",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07DrivenFrameHotspot.olean",
+        "D:\\oq14\\lean\\Packet07DrivenFrameHotspot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.22,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07DrivenFrameHotspot-chain.log",
+      "log_sha256": "413ed459cf49a7e3e94489c29ce96648f35f1c62f979eeb4404752dfb5e261fc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenFrameHotspot.cyclic_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameHotspot.rotate_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameHotspot.inverse_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenFrameHotspot.frame_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bfc40b99f6d5ed85017031bfa64e05b3703d54375cd365e7620cb78e8ad3f53a"
+    },
+    {
+      "module": "Packet07HotspotLocalIndependence",
+      "source": "lean/Packet07HotspotLocalIndependence.lean",
+      "source_sha256": "ed56911b32472868172e37e062775a883ee09abc1d862734af5530e672d1f0b9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frame-hotspot\\reviews\\objects\\Packet07HotspotLocalIndependence.olean",
+        "D:\\oq14\\lean\\Packet07HotspotLocalIndependence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.16,
+      "log": "checkpoints/2026-11-13-frame-fields-observed-pole/evidence/Packet07HotspotLocalIndependence-chain.log",
+      "log_sha256": "e254eb7bc341e893fdef30532ab0c6d7e095d6ad03c4f8727fc5b4d0a6cf0b46",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07HotspotLocalIndependence.component_eq_of_local_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotLocalIndependence.branch_component_eq_of_local_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "69c9a7e519ccf1983f2648b515af1ab82d48e014475f6ab97c3c08e59f80a197"
+    }
+  ],
+  "module_count": 18,
+  "report_count": 41
+}
