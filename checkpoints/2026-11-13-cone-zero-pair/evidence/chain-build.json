@@ -1,0 +1,373 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-035641-75740",
+  "object_directory": "checkpoints/2026-11-13-cone-zero-pair/objects/20261113-035641-75740",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 12 uniform cone and zero-pair modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06ConeConstantCorrection",
+      "source": "lean/Packet06ConeConstantCorrection.lean",
+      "source_sha256": "786bc433ec182da77939fb884b170e78ef151136fdbfa238c9f55d29f8b8400f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeConstantCorrection.olean",
+        "D:\\oq14\\lean\\Packet06ConeConstantCorrection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.781,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeConstantCorrection-chain.log",
+      "log_sha256": "7455249862bd634d32245bfaa716e012fe2b7eb60232e3e493eae2fdfd0e0374",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeConstantCorrection.primitive_constant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeConstantCorrection.constant_particular",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeConstantCorrection.angular_constant_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7a9ebd3daacf4ccc04950c090f53e773a7008959d6139b0edc4f5aab0e92961e"
+    },
+    {
+      "module": "Packet06ConeHolderParticular",
+      "source": "lean/Packet06ConeHolderParticular.lean",
+      "source_sha256": "ca94d655589930b5967b8d4ead484672c25fb9bf852d6c758963312d86545454",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeHolderParticular.olean",
+        "D:\\oq14\\lean\\Packet06ConeHolderParticular.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.516,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeHolderParticular-chain.log",
+      "log_sha256": "11009007ae3334324120cb09e88ffee4ebc372f1b14598b516029cb1fa3d6bff",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeHolderParticular.primitive_holder_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeHolderParticular.particular_holder_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3306929ce8f1a476d89f7f30d7cd3d8b6e5d45f6c84f2b9979068976ab13ad58"
+    },
+    {
+      "module": "Packet06ConeHolderMoments",
+      "source": "lean/Packet06ConeHolderMoments.lean",
+      "source_sha256": "f98e638b01aa1fd9b96f8acd1675727f092ff876bdd968db98b2b5fc1e44fd27",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeHolderMoments.olean",
+        "D:\\oq14\\lean\\Packet06ConeHolderMoments.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.468,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeHolderMoments-chain.log",
+      "log_sha256": "c96f2e52a3549546fb7a282b3376034974e36b91f6b020a5b78739b6691f4f35",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeHolderMoments.moment_holder",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "40d83f200a5582be790894715aec60bba39273154cf4ea72f8632b219d4b23ca"
+    },
+    {
+      "module": "Packet06ConeUniformWeights",
+      "source": "lean/Packet06ConeUniformWeights.lean",
+      "source_sha256": "b4e4c0399fdf255c38f71a3e4994ff61b7007c6e7f16145aebcd1d7877d9e6ec",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeUniformWeights.olean",
+        "D:\\oq14\\lean\\Packet06ConeUniformWeights.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.86,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeUniformWeights-chain.log",
+      "log_sha256": "90aa0d6e5faa84a6db1ee09327ce446bd38bef023ecf995573e4837f171e7150",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeUniformWeights.uniform_weights",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4c05ccbc4588c2ed6e48ca469e84cef0f782b104c022798860ac97201c563fbd"
+    },
+    {
+      "module": "Packet06ConeUniformParticular",
+      "source": "lean/Packet06ConeUniformParticular.lean",
+      "source_sha256": "eaabb4ee5796edfaf2e670a8fe666162a0a8ff8f6b04110baa6bd2fc29c2a918",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeUniformParticular.olean",
+        "D:\\oq14\\lean\\Packet06ConeUniformParticular.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.953,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeUniformParticular-chain.log",
+      "log_sha256": "8c3f0d76080480e1a8ee9165959edca3af01a40fc76951d232b26d479f53b787",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeUniformParticular.estimate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "562b66cf2ce87f7db7e9e404cb0beb936308cc905cc15fdcbeaa668dd0f9aa71"
+    },
+    {
+      "module": "Packet06ConeRenormalized",
+      "source": "lean/Packet06ConeRenormalized.lean",
+      "source_sha256": "18c6af395726c47674b269ea261de95f31ab84aa6be998763c3ab478b03c3faa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeRenormalized.olean",
+        "D:\\oq14\\lean\\Packet06ConeRenormalized.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.015,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeRenormalized-chain.log",
+      "log_sha256": "477d66998bc5681ed5fc6b30dc33a947f5a4881cfc6007ebd2d81c49f67a212f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeRenormalized.particular_constant_renormalized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeRenormalized.zero_mode_projection_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "693f815473472ff74610ec0628ce778c9402f173a7f2271899bb6b0429fa03f3"
+    },
+    {
+      "module": "Packet06ConeMomentCancellation",
+      "source": "lean/Packet06ConeMomentCancellation.lean",
+      "source_sha256": "274224f28fb7432478e8b51efe7eb3b540b80abf56325100b734818a2fce3d03",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeMomentCancellation.olean",
+        "D:\\oq14\\lean\\Packet06ConeMomentCancellation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.469,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeMomentCancellation-chain.log",
+      "log_sha256": "cea713c96d35a692fb480d66448a48d6b3f2614e0e9a0c89dfa736360a1394fa",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeMomentCancellation.correction_origin_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeMomentCancellation.moment_sub_origin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeMomentCancellation.moment_difference_holder",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9e7b964388e28fc06043f51132233c0d364adcf1e382eed5a1fa284a318d82e5"
+    },
+    {
+      "module": "Packet06ConeZeroBound",
+      "source": "lean/Packet06ConeZeroBound.lean",
+      "source_sha256": "911c9949d4a45b1d452b15a98b5da79847acf4b40cc2a099ca1c32f621f8de6b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeZeroBound.olean",
+        "D:\\oq14\\lean\\Packet06ConeZeroBound.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.563,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeZeroBound-chain.log",
+      "log_sha256": "823d2228b5d6a0fda5e97ef1eab2c8c1ca328b9e8b9068ada7681efb0a7587b8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeZeroBound.correction_remainder",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bc5efb16e0dcbee9be2db0cf5b61bcb3499b7309523c6ac7ebba87302973b8e5"
+    },
+    {
+      "module": "Packet06ConeZeroProjection",
+      "source": "lean/Packet06ConeZeroProjection.lean",
+      "source_sha256": "eebee510e02d207a5b28993e8c6897c04dd9de72efc879324611a43cd28d1d43",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ConeZeroProjection.olean",
+        "D:\\oq14\\lean\\Packet06ConeZeroProjection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.75,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ConeZeroProjection-chain.log",
+      "log_sha256": "eb40b1cbc506539cd32759f1799892933514e1f7ba4d242a609439c716068fd7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeZeroProjection.zero_coefficient_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4b43c47a4d2ee2be94a71cf04adc4247a91a4179a49daebddb6676cd417ec498"
+    },
+    {
+      "module": "Packet06AngularPairLimit",
+      "source": "lean/Packet06AngularPairLimit.lean",
+      "source_sha256": "675ef7988d017e867dfbad6c3a9781f43ba80151adef3b95f3234b0553c7de04",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06AngularPairLimit.olean",
+        "D:\\oq14\\lean\\Packet06AngularPairLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.797,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06AngularPairLimit-chain.log",
+      "log_sha256": "345c3b66b1754976146f4c3f4bc85b57207dbef780629a271d50b8884e52d026",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AngularPairLimit.scalar_pair_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "29e77f9d6c94909f3bfb15fda843b404cb723a46cc570d4093fe261a641751e4"
+    },
+    {
+      "module": "Packet06TotalProjectionPair",
+      "source": "lean/Packet06TotalProjectionPair.lean",
+      "source_sha256": "9c640d637ff9705bce6bebb671eb7cb442308f9a70a6388a34a65b8a4995f53d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06TotalProjectionPair.olean",
+        "D:\\oq14\\lean\\Packet06TotalProjectionPair.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.218,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06TotalProjectionPair-chain.log",
+      "log_sha256": "058ef2a203beff79d77661a367f37b9389e8157fe465bfb309f96572b9f919f2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TotalProjectionPair.total_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cd572794793109b80d45f263734f3fe28780d66d04961e021a2b7d66825c8d49"
+    },
+    {
+      "module": "Packet06ZeroPairBound",
+      "source": "lean/Packet06ZeroPairBound.lean",
+      "source_sha256": "895ae21478da583597171d4fd58b86ca1a1655b39e054be7598ecc54a1f6e883",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-cone-zero-pair\\objects\\20261113-035641-75740\\Packet06ZeroPairBound.olean",
+        "D:\\oq14\\lean\\Packet06ZeroPairBound.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.844,
+      "log": "checkpoints/2026-11-13-cone-zero-pair/evidence/Packet06ZeroPairBound-chain.log",
+      "log_sha256": "690779ed41ebe7006c3d42199b5b0a6b359b2f883195131752d6b75165ec43e9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ZeroPairBound.estimate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "67d37116fd83b1633b630974a8fdab1fe9398d4fda1d3e1334b6ee5971719c9b"
+    }
+  ],
+  "module_count": 12,
+  "report_count": 18
+}

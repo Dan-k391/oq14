@@ -1,5 +1,32 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 89 is the latest verified incremental checkpoint:
+[STAGE89.txt](checkpoints/2026-11-13-cone-zero-pair/STAGE89.txt).
+
+The actual angular weak identity makes the constant radial correction cancel
+exactly from the total electric-field projection. Holder increments then give
+a uniform O(r^(1+alpha)) remainder for 1/2<=nu<1, fixed aperture and bounded
+nonnegative contrast, including the limit nu approaching one. For actual
+conical Systems, a zero intrinsic coefficient forces the actual annular
+total-field pairing to obey C M integral r^(2+alpha)|zeta|. The proof includes
+the exact polar pairing identity and continuity of complex L2 pairing.
+
+The physical Green correction Holder bound and strict limiting-pair comparison
+are still inputs to the excitation argument. This checkpoint does not assert
+nonzero modal excitation, attained hotspots or full OQ14 closure. Those proof
+chains remain active.
+
+12 modules / 18 reports passed independent root review and a fresh
+ordered build. 997 upstream sources were authenticated, with cached objects.
+The ledger is 843 modules / 4691 reports, all prior records unchanged:
+`checkpoints/2026-11-13-cone-zero-pair/evidence/audited_after_5238-stage89.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage89.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 88 is the latest verified incremental checkpoint:
 [STAGE88.txt](checkpoints/2026-11-13-rounded-modal-branch/STAGE88.txt).
 The actual fixed-contrast rounding sequence preserves the same selected

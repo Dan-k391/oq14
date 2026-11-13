@@ -1,0 +1,39 @@
+Independent root semantic review of the uniform cone zero-pair chain
+
+All twelve source proofs reviewed. No defect found. The angular weak equation
+forces the constant correction moments B0=lambda*A0. Its exact radial
+particular solution is -r*A0, which cancels the r/lambda*B0 contribution to
+the total-field projection. Subtracting this constant before estimation gives
+a remainder controlled by Holder increments, uniformly as the singular
+exponent approaches one. The bounds require alpha>0 and, for the total
+projection, 1/2<=nu<1. Angular weights are bounded uniformly at a fixed
+aperture and bounded nonnegative contrast; no uniformity as the aperture
+approaches its endpoints is asserted.
+
+The correction moment increment estimate follows from actual angular
+integration and the assumed Holder bound for W(x)-W(0). The intrinsic
+expansion then shows that a zero coefficient forces the actual total
+projection to be O(r^(1+alpha)). Exact polar integration identifies the
+annular total-field pairing with lambda times the radial projected integral.
+Its norm is bounded by C M integral r^(2+alpha)|zeta|, uniformly for the
+stated branch. Complex scalar pairing is continuous in both L2 arguments.
+
+These are actual System identities, but the common Holder bound for the
+physical Green correction is still an input. The estimates do not by
+themselves prove that an actual Maxwell mode has nonzero excitation: the
+strict limiting-pair comparison and actual mode/weight convergence remain.
+They do not assert curved regularity, attained hotspots or full OQ14 closure.
+
+Reviewed frozen source hashes:
+Packet06ConeConstantCorrection 786bc433ec182da77939fb884b170e78ef151136fdbfa238c9f55d29f8b8400f
+Packet06ConeHolderParticular ca94d655589930b5967b8d4ead484672c25fb9bf852d6c758963312d86545454
+Packet06ConeHolderMoments f98e638b01aa1fd9b96f8acd1675727f092ff876bdd968db98b2b5fc1e44fd27
+Packet06ConeUniformWeights b4e4c0399fdf255c38f71a3e4994ff61b7007c6e7f16145aebcd1d7877d9e6ec
+Packet06ConeUniformParticular eaabb4ee5796edfaf2e670a8fe666162a0a8ff8f6b04110baa6bd2fc29c2a918
+Packet06ConeRenormalized 18c6af395726c47674b269ea261de95f31ab84aa6be998763c3ab478b03c3faa
+Packet06ConeMomentCancellation 274224f28fb7432478e8b51efe7eb3b540b80abf56325100b734818a2fce3d03
+Packet06ConeZeroBound 911c9949d4a45b1d452b15a98b5da79847acf4b40cc2a099ca1c32f621f8de6b
+Packet06ConeZeroProjection eebee510e02d207a5b28993e8c6897c04dd9de72efc879324611a43cd28d1d43
+Packet06AngularPairLimit 675ef7988d017e867dfbad6c3a9781f43ba80151adef3b95f3234b0553c7de04
+Packet06TotalProjectionPair 9c640d637ff9705bce6bebb671eb7cb442308f9a70a6388a34a65b8a4995f53d
+Packet06ZeroPairBound 895ae21478da583597171d4fd58b86ca1a1655b39e054be7598ecc54a1f6e883
