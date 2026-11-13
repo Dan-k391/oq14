@@ -1,0 +1,203 @@
+{
+  "scope": "Actual cyclic rotation and translation of material volume blocks, kernels, and physical reciprocal normalization",
+  "modules": [
+    {
+      "module": "Packet06CyclicPairing",
+      "source": "lean/Packet06CyclicPairing.lean",
+      "source_sha256": "480ce2495df26c78557144912687ff09efbbb3e786e26e8ef174a95bb9b82efc",
+      "reports": [
+        "OQ14.Packet06CyclicPairing.vectorPair_rotation"
+      ]
+    },
+    {
+      "module": "Packet06CyclicL2",
+      "source": "lean/Packet06CyclicL2.lean",
+      "source_sha256": "1b101d5c81370de259b258b301c8d04e0625307d8919614821ad72640ef2dcf8",
+      "reports": [
+        "OQ14.Packet06CyclicL2.pullback_ae",
+        "OQ14.Packet06CyclicL2.component_action",
+        "OQ14.Packet06CyclicL2.action_ae",
+        "OQ14.Packet06CyclicL2.vectorPair_invariant"
+      ]
+    },
+    {
+      "module": "Packet06CyclicMaterial",
+      "source": "lean/Packet06CyclicMaterial.lean",
+      "source_sha256": "deee30210b26d31ecf514f10f4ff0409ad4d3f8f560b2dcf1d9dba0ac99e2024",
+      "reports": [
+        "OQ14.Packet06CyclicMaterial.coefficient_value",
+        "OQ14.Packet06CyclicMaterial.dielectric_value",
+        "OQ14.Packet06CyclicMaterial.multiplier_action"
+      ]
+    },
+    {
+      "module": "Packet06CyclicKernel",
+      "source": "lean/Packet06CyclicKernel.lean",
+      "source_sha256": "cfea7acb805094eadac7356a8d70b82d836a6972c2c2af872730ff767e86b335",
+      "reports": [
+        "OQ14.Packet06CyclicKernel.remainder_rotate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicFourier",
+      "source": "lean/Packet06CyclicFourier.lean",
+      "source_sha256": "79c29e2344d2031c1057372ed6a76c498991991a7ed1502cd74091cdccece475",
+      "reports": [
+        "OQ14.Packet06CyclicFourier.schwartzRot_apply",
+        "OQ14.Packet06CyclicFourier.pullback_embed",
+        "OQ14.Packet06CyclicFourier.fourier_schwartzRot",
+        "OQ14.Packet06CyclicFourier.fourier_pullback",
+        "OQ14.Packet06CyclicFourier.action_fourier"
+      ]
+    },
+    {
+      "module": "Packet06CyclicProjection",
+      "source": "lean/Packet06CyclicProjection.lean",
+      "source_sha256": "a5cb6cae796ee561718b93157f96ee2fdc5dfc38b258378a3aab6ab2e328209c",
+      "reports": [
+        "OQ14.Packet06CyclicProjection.symbol_cov",
+        "OQ14.Packet06CyclicProjection.action_multiplier",
+        "OQ14.Packet06CyclicProjection.action_fourier_symm",
+        "OQ14.Packet06CyclicProjection.action_projection",
+        "OQ14.Packet06CyclicProjection.static_volume_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06CyclicSource",
+      "source": "lean/Packet06CyclicSource.lean",
+      "source_sha256": "02dd277503957cc0a45307c4eccc77a8e59e1ffb01b14279726b1134751e1953",
+      "reports": [
+        "OQ14.Packet06CyclicSource.source_action"
+      ]
+    },
+    {
+      "module": "Packet06CyclicPotential",
+      "source": "lean/Packet06CyclicPotential.lean",
+      "source_sha256": "573d05bc6f6c0070a2b9463968830e8d28fed9961360c442e0ad5d0fd3eede85",
+      "reports": [
+        "OQ14.Packet06CyclicPotential.potential_rotate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicDynamic",
+      "source": "lean/Packet06CyclicDynamic.lean",
+      "source_sha256": "cbebe49ce3b47b67b7c376cedf9651f25cbd7033813bb21a6141b7ac290ae88c",
+      "reports": [
+        "OQ14.Packet06CyclicDynamic.coefficient_support",
+        "OQ14.Packet06CyclicDynamic.weightedRemainder_conjugacy",
+        "OQ14.Packet06CyclicDynamic.real_volume_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06CyclicComplex",
+      "source": "lean/Packet06CyclicComplex.lean",
+      "source_sha256": "959c460ae30784e159bfafdd1a4666106d7c832a40c83e2ddaf99be3fa4793bf",
+      "reports": [
+        "OQ14.Packet06CyclicComplex.complex_conjugacy",
+        "OQ14.Packet06CyclicComplex.derivative_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06CyclicReciprocal",
+      "source": "lean/Packet06CyclicReciprocal.lean",
+      "source_sha256": "5917e1ea55e073bc24f6dc8bf6c41890834e75fe4f7357956a6d676aee55793d",
+      "reports": [
+        "OQ14.Packet06CyclicReciprocal.reciprocalNorm_rotation",
+        "OQ14.Packet06CyclicReciprocal.kernel_rotation"
+      ]
+    },
+    {
+      "module": "Packet06RadiusIndependence",
+      "source": "lean/Packet06RadiusIndependence.lean",
+      "source_sha256": "a5a7066d968fc7198e0352be98e95623c48e7030a78ca36e388ac68c0e6501da",
+      "reports": [
+        "OQ14.Packet06RadiusIndependence.real_radius_independent",
+        "OQ14.Packet06RadiusIndependence.complex_radius_independent"
+      ]
+    },
+    {
+      "module": "Packet06TranslationL2",
+      "source": "lean/Packet06TranslationL2.lean",
+      "source_sha256": "c9c6f7cf0b6d7fd54f7f8e295946066428b90f03b540e2a1129658ee3c6bcd30",
+      "reports": [
+        "OQ14.Packet06TranslationL2.component_action",
+        "OQ14.Packet06TranslationL2.action_ae",
+        "OQ14.Packet06TranslationL2.vectorPair_invariant"
+      ]
+    },
+    {
+      "module": "Packet06TranslationNewtonPairing",
+      "source": "lean/Packet06TranslationNewtonPairing.lean",
+      "source_sha256": "eed0ab7e7004ac88a0a27d273bb977ccbdf916020e0d32c748756c5c72c246a8",
+      "reports": [
+        "OQ14.Packet06TranslationNewtonPairing.translate_comp",
+        "OQ14.Packet06TranslationNewtonPairing.weakConvolution_translate"
+      ]
+    },
+    {
+      "module": "Packet06TranslationSchwartz",
+      "source": "lean/Packet06TranslationSchwartz.lean",
+      "source_sha256": "7968b58a47c9f1c13da2076466ef76e87b41843c5f056878f4fbe3a4e627af25",
+      "reports": [
+        "OQ14.Packet06TranslationSchwartz.action_schwartz"
+      ]
+    },
+    {
+      "module": "Packet06TranslationNewton",
+      "source": "lean/Packet06TranslationNewton.lean",
+      "source_sha256": "4d12d05dfa881ab80461099b3e46da41f8521f66335515b6bbc98d3a841a722a",
+      "reports": [
+        "OQ14.Packet06TranslationNewton.newton_action"
+      ]
+    },
+    {
+      "module": "Packet06TranslationMaterial",
+      "source": "lean/Packet06TranslationMaterial.lean",
+      "source_sha256": "6d57041740b94c3efb82ce15bab09a59c9e507912a1f8e359cf4e23255bfcd20",
+      "reports": [
+        "OQ14.Packet06TranslationMaterial.coefficient_value",
+        "OQ14.Packet06TranslationMaterial.dielectric_value",
+        "OQ14.Packet06TranslationMaterial.coefficient_support",
+        "OQ14.Packet06TranslationMaterial.multiplier_action",
+        "OQ14.Packet06TranslationMaterial.newton_action",
+        "OQ14.Packet06TranslationMaterial.static_volume_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06TranslationPotential",
+      "source": "lean/Packet06TranslationPotential.lean",
+      "source_sha256": "55c1f099912ecf35cc91ec4fef7f6261fa03783c6ab72f54d0baadda7e6027ef",
+      "reports": [
+        "OQ14.Packet06TranslationPotential.source_action",
+        "OQ14.Packet06TranslationPotential.potential_translate"
+      ]
+    },
+    {
+      "module": "Packet06TranslationDynamic",
+      "source": "lean/Packet06TranslationDynamic.lean",
+      "source_sha256": "0659373d8d4bdb58b6e7745f955d2ec28982f39c1b197b511c2dfff05ae322a1",
+      "reports": [
+        "OQ14.Packet06TranslationDynamic.weightedRemainder_conjugacy",
+        "OQ14.Packet06TranslationDynamic.real_volume_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06TranslationComplex",
+      "source": "lean/Packet06TranslationComplex.lean",
+      "source_sha256": "145c98b5a7405fe38bf6fc237101095310d8d70aba4a16e6de74612106b98254",
+      "reports": [
+        "OQ14.Packet06TranslationComplex.complex_conjugacy",
+        "OQ14.Packet06TranslationComplex.derivative_conjugacy"
+      ]
+    },
+    {
+      "module": "Packet06TranslationReciprocal",
+      "source": "lean/Packet06TranslationReciprocal.lean",
+      "source_sha256": "686fe54082928b2c74c824a1dfbd1ec55d4129a085477e14e976ebb2b4236ca4",
+      "reports": [
+        "OQ14.Packet06TranslationReciprocal.reciprocalNorm_translation",
+        "OQ14.Packet06TranslationReciprocal.kernel_translation"
+      ]
+    }
+  ]
+}

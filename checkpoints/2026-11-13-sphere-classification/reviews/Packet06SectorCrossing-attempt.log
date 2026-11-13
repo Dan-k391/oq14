@@ -1,0 +1,24 @@
+Packet06SectorCrossing.lean:44:6: error: application type mismatch
+  Differentiable.clm_comp
+    (ComplexConvolutionAnalytic.volumeBlock_differentiable (coefficient n hn) 1
+      (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+        (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl true)))
+    (differentiable_const Sector.subtypeL)
+argument
+  differentiable_const Sector.subtypeL
+has type
+  @Differentiable ?m.65738 ?m.65739 ?m.65740 NormedAddCommGroup.toAddCommGroup NormedSpace.toModule
+    UniformSpace.toTopologicalSpace (↥Sector →L[ℂ] ↥VectorFourier.VectorL2) NormedAddCommGroup.toAddCommGroup
+    NormedSpace.toModule UniformSpace.toTopologicalSpace fun x => Sector.subtypeL : Prop
+but is expected to have type
+  @Differentiable ℂ DenselyNormedField.toNontriviallyNormedField ℂ NormedAddCommGroup.toAddCommGroup
+    NormedSpace.toModule UniformSpace.toTopologicalSpace (↥Sector →L[ℂ] ↥DynamicConvolution.VectorL2)
+    ContinuousLinearMap.addCommGroup ContinuousLinearMap.module ContinuousLinearMap.topologicalSpace fun w =>
+    Sector.subtypeL : Prop
+'OQ14.Packet06SectorCrossing.block_eq_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.block_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.block_differentiable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.block_analyticAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.block_derivative_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.left_annihilates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OQ14.Packet06SectorCrossing.crossing_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

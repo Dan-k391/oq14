@@ -1,0 +1,28 @@
+Independent root source review: actual electric and phase placement
+
+The actual physical complex electric representative is identified with the
+material response only on the respective containing balls. The component
+identity is obtained from the proved normalized weighted-kernel placement,
+with source support and reciprocalNorm=1 supplied explicitly. Both the
+forward and inverse affine rotation-dilation maps preserve null sets.
+
+The Euclidean physical amplitude is a square root of the sum of three
+component norm squares; the cyclic permutation and real positive factor
+sqrt(s)*s are proved exactly. No use is made of the Pi sup norm as a proxy
+for this amplitude. The unit-image specialization derives containment in
+the target observation ball and uses the strictly positive susceptibility.
+
+Actual one-sided representatives are transported component by component.
+The restricted-measure endpoint is on the literal image of a measurable
+base phase contained in the unit interior, not on its boundary by an AE
+claim. Boundary traces must be transported using continuity on the phase
+closure, which is supplied separately by the root geometry and hotspot
+modules. No collar bound, peak existence, or smoothness is assumed proved
+by these two identification modules.
+
+The root build uses a direct lean.exe invocation with the fresh object
+directory first in LEAN_PATH; the two reviewed modules are rebuilt in
+dependency order. Other upstream objects are cached. The reviewer did not
+author these two modules. Source hashes are checked against the author's
+frozen manifest, and all emitted declarations and standard-only axiom
+reports are checked. This is not a whole-project clean build.

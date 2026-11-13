@@ -1,0 +1,21 @@
+Root independent semantic review of actual uniform Green operators
+
+Packet06UniformGreenOperators was read in full and freshly rebuilt by the
+pinned compiler, with the isolated output directory first in LEAN_PATH.
+The source SHA-256 is
+627fe461f07fc43e1391ab47f3d422882792b2d599d615c1aba727a5a44eba6f.
+
+The scalar estimate bounds the actual truncated kernel mass using its
+pointwise exponential factor and the integrable static scalar kernel. The
+gradient operator is identified with the actual analytic magnetic entry;
+continuity on the compact frequency disk supplies a finite norm bound.
+The Hessian-difference operator is identified exactly as the dynamic dyadic
+entry minus the scalar z-squared diagonal contribution. Its uniform bound
+uses that identity and the scalar estimate. No assumed derivative estimate
+or regularity of the source appears in these operator bounds. The bounds
+depend on fixed cutoff radius, frequency ceiling and finite component index.
+
+Five public reports passed with only propext, Classical.choice and Quot.sound,
+without warnings or errors. The fresh object, log and source hashes are in
+root-build.json. Cached upstream objects were used; no whole-project clean
+build is claimed. Actual family correction H2 assembly is a separate theorem.

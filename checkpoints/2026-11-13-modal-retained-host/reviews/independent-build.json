@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "scope": "Fresh isolated ordered objects ahead of cached upstream imports",
+  "records": [
+    {
+      "module": "Packet06ModalRetainedExistence",
+      "source_sha256": "fdc9db779597266639ef9c430b7287bc29fa8eb54ce06d12fdb2c0054a13a1dd",
+      "author_hash_match": true,
+      "log_sha256": "708ceb41cf6e881868366e714bf0032b638bbf618c7d4b2131cc617fc302d083",
+      "object_sha256": "d4c312645c381fafbf7d2166bcacc5d4751f34b1c19b641bc8cb1d44e4f84838",
+      "exit_code": 0,
+      "reports": 1,
+      "expected_reports": 1,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 17.49,
+      "source": "D:\\oq14\\lean\\Packet06ModalRetainedExistence.lean",
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-modal-retained-host\\reviews\\Packet06ModalRetainedExistence.log",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-modal-retained-host\\reviews\\objects\\Packet06ModalRetainedExistence.olean",
+      "declarations": [
+        "OQ14.Packet06ModalRetainedExistence.exists_retained_modal_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06ModalRetainedHost",
+      "source_sha256": "36312e7dfadf030298257895c2d207af4d8a4fe70c54bd7ff175d2951a9e0df7",
+      "author_hash_match": true,
+      "log_sha256": "e8337763b15990f3199f31ef161380d3d4fa0e937f18e9602581371ee4988baa",
+      "object_sha256": "bba493de09afe556a1f870e3e41b13ca320ef81a749e43c15b2a78e421e7a700",
+      "exit_code": 0,
+      "reports": 4,
+      "expected_reports": 4,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 13.11,
+      "source": "D:\\oq14\\lean\\Packet06ModalRetainedHost.lean",
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-modal-retained-host\\reviews\\Packet06ModalRetainedHost.log",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-modal-retained-host\\reviews\\objects\\Packet06ModalRetainedHost.olean",
+      "declarations": [
+        "OQ14.Packet06ModalRetainedHost.observation_in_host",
+        "OQ14.Packet06ModalRetainedHost.supportRadius_nonneg",
+        "OQ14.Packet06ModalRetainedHost.host_enclosed",
+        "OQ14.Packet06ModalRetainedHost.host_positive"
+      ]
+    }
+  ]
+}

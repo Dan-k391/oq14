@@ -1,0 +1,5 @@
+# Analytic outgoing selection author review
+
+PASS. `lean/logs/analytic_outgoing_selection_author_final.log` is the full compiler log; `lean/logs/analytic_outgoing_selection_author_final.exit.log` records exit 0. Source SHA256 B61E8ADC169354CC332C0CE1E17E1C13F08E8913F66A1C91AA68030582E81F79; log SHA256 14F5B8CE6D098C34D33DFF19A4EB9D04067D1B8AAF429C614365F10CCCD2A825; receipt SHA256 5E0E6077065598E0B3B20A5D8BDA3CF3D641EE1039780467E49ABEED04B6903C.
+
+For any actual compact sphere-material source, every nonzero complex frequency, any harmonic degree and Cartesian coordinate, proves the exterior radial harmonic moment on any nondegenerate compact interval is a scalar multiple of the outgoing Riccati-Hankel mode. It analytically continues two-test determinants from established positive-real-frequency outgoing selection and proves nonvanishing of the outgoing mode via its actual Wronskian. No incoming-mode exclusion is inferred from the lower-half-plane far-field limit. The result is scalar-component harmonic selection; vector-harmonic coupling and material interface matching are not asserted. Reported dependencies are only propext, Classical.choice, and Quot.sound.

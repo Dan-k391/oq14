@@ -1,0 +1,4 @@
+Author review: UnionFreeRunge.lean
+Source SHA256 FDF0328F1D4755CB570F6190703E0298B254B9B933132F209288ABEBCA7DE118
+Final log SHA256 4040440A44E4787F99A89B4675ED78173CD467151AEBEDFE5A64ED183C7B1206
+The target is the actual electric response restricted to the finite union of closed balls. The wave family is one common finite transverse plane-wave sum in the union L2 norm. Compact L2 source support may occupy the annulus inside the enclosing ball but must vanish on the union. Strict separation, nonnegative radii, a positive wave number, and an enclosing ball are explicit. Orthogonal annihilators are extended by zero and the actual reciprocity theorem supplies the annihilation. No material assembly or hotspot result is asserted. Object build exit 0; reported dependencies are propext, Classical.choice, Quot.sound.

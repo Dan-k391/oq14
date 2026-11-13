@@ -1,0 +1,5 @@
+# Physical binary conical material: author review
+
+PASS for the stated results. Source SHA256 `007AA91F37F9D3E85035AA572542F0DB2D0193246F880CE74CF5214C41B73532`; final log `lean/logs/ConicalJunctionPhysical-author-final.log` SHA256 `A45321465BC9BAF9A6FDA0C2923CD35D8B679FFCBD98CCE65F547E705B6F1EB7`; exit 0, no errors or warnings, nine reports containing only propext, Classical.choice, Quot.sound.
+
+The physical-coordinate split and slope explicitly identify the inward cone with the existing angular material convention off the origin. The actual binary coefficient is measurable, carries the same contrast bound, is supported inside the given ball, and lies below the existing sharp physical coefficient pointwise. For positive ball radius and ball contained in the cutoff, the binary coefficients equal the existing coefficient eventually almost everywhere, excluding a Haar-null coordinate hyperplane and sphere. This does not establish global smoothness of the physical interface, simultaneous common-material assembly, volume-resolvent convergence, collar transmission regularity, or attained maxima.

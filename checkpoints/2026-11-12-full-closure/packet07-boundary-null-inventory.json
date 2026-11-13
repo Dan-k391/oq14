@@ -1,0 +1,47 @@
+{
+  "scope": "Actual bounded regular binary device boundary has zero physical volume",
+  "modules": [
+    {
+      "module": "Packet07BoundaryFrontier",
+      "source": "lean/Packet07BoundaryFrontier.lean",
+      "source_sha256": "2573b399e7c694a172086f480c104a98f11a6fbbcd1a3b52a0bd400b72c66ef0",
+      "reports": [
+        "OQ14.Packet07BoundaryFrontier.frontier_level_local"
+      ]
+    },
+    {
+      "module": "Packet07BoundaryGraphNull",
+      "source": "lean/Packet07BoundaryGraphNull.lean",
+      "source_sha256": "6e1a1d6d352a8e754ca14e5038834e340037d3d3d4dcc71e9dafd688f7e1ba41",
+      "reports": [
+        "OQ14.Packet07BoundaryGraphNull.measurable_graph_subset_null"
+      ]
+    },
+    {
+      "module": "Packet07BoundarySwapMeasure",
+      "source": "lean/Packet07BoundarySwapMeasure.lean",
+      "source_sha256": "a113f424e510d79d5c8575e9f95f872eae88d2b8a2b916553f45738adf994b5d",
+      "reports": [
+        "OQ14.Packet07BoundarySwapMeasure.swap_measure_preserving"
+      ]
+    },
+    {
+      "module": "Packet07BoundaryRotatedNull",
+      "source": "lean/Packet07BoundaryRotatedNull.lean",
+      "source_sha256": "c2526780e9ff6287532e0001503b9d20bdbd74cb116e278354d321021b82627b",
+      "reports": [
+        "OQ14.Packet07BoundaryRotatedNull.measurable_chart_graph_null"
+      ]
+    },
+    {
+      "module": "Packet07BoundaryNull",
+      "source": "lean/Packet07BoundaryNull.lean",
+      "source_sha256": "25bfa937592ff60c6b7d04707ceef5dc4802ac70904aff509d27c76b20faceed",
+      "reports": [
+        "OQ14.Packet07BoundaryNull.regular_boundary_locally_null",
+        "OQ14.Packet07BoundaryNull.compact_regular_boundary_null",
+        "OQ14.Packet07BoundaryNull.bounded_regular_body_boundary_null"
+      ]
+    }
+  ]
+}

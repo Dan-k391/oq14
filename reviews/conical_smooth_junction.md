@@ -1,0 +1,5 @@
+# Conical binary junction: author review
+
+PASS for the stated geometric lemmas. Source SHA256 `F618021D115AD76CDD2F66523F9BD0408DE098D2CB139825169BC53186A809C2`; final log `lean/logs/ConicalSmoothJunction-author-final.log` SHA256 `79C039CB1A34E52BBCA2EB88BFD3E10D407C3DEF375D36C37F0C41E3874A2EC2`; exit 0, no errors or warnings, 12 reports using only propext, Classical.choice, Quot.sound.
+
+The explicit open binary set uses the smooth inward cap and a compactly supported correction at the cone–sphere junction. It is bounded, contained in the sharp cone-ball intersection, agrees exactly where the cap and corner correction are inactive, and eventually agrees pointwise away from the axis and junction. Its corner defining function is smooth for nonzero axial coordinate and has positive partial derivatives in both positive constraint variables. The physical gradient nonvanishing, global smooth boundary, identification with the existing three-dimensional coefficient, and almost-everywhere convergence are not proved here; nor are transmission regularity or attained maxima.

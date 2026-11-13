@@ -1,0 +1,5 @@
+# Complex magnetic Maxwell author review
+
+PASS. `lean/logs/complex_magnetic_maxwell_author_final.log` is the full compiler log; `lean/logs/complex_magnetic_maxwell_author_final.exit.log` records exit 0. Source SHA256 8DEED997B1F34A92BDE35A27996B4186AAD7883FF1FC2A0511E1F5AA1F2CB8BA; log SHA256 EEB2EBE226E31069AE993852ED480B879CBB6BF189D1F12D07B92A26D3756642; receipt SHA256 5E0E6077065598E0B3B20A5D8BDA3CF3D641EE1039780467E49ABEED04B6903C.
+
+Proves both genuine first-order weak Maxwell equations, on arbitrary compact smooth tests in the observation ball, for the actual localized complex-frequency electric L2 response and literal locally L2 magnetic source field. The proof analytically continues their established real-frequency physical equations, with no Maxwell hypothesis and with actual source terms. The dielectric source relation for sphere kernel vectors is supplied separately by ComplexSphereInterface; scalar magnetic Helmholtz and interface traces are not yet asserted here. Reported dependencies are only propext, Classical.choice, and Quot.sound.

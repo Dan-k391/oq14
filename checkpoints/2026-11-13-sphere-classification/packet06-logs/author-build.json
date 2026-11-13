@@ -1,0 +1,77 @@
+{
+  "complete": true,
+  "scope": "5 sequential author builds, cached dependencies; not a clean build",
+  "modules": [
+    {
+      "module": "Packet06SectorOperator",
+      "source_sha256": "8b6abf7a5462d419eebea29287f20a983f895702dbb8bed44b32f14ce3ae78e6",
+      "log_sha256": "1b05a66c06731e6408bd69144be76bb2ec02babca80f3f11db91e7b7e6ca384a",
+      "reports": 12,
+      "declarations": [
+        "OQ14.Packet06SectorOperator.ambient_inverse_mem_sector",
+        "OQ14.Packet06SectorOperator.compressedInverse_two_sided",
+        "OQ14.Packet06SectorOperator.block_punctured_isUnit",
+        "OQ14.Packet06SectorOperator.inverse_eq_compressed_eventually",
+        "OQ14.Packet06SectorOperator.inverse_meromorphicAt",
+        "OQ14.Packet06SectorOperator.block_actual",
+        "OQ14.Packet06SectorOperator.numerator_kernel",
+        "OQ14.Packet06SectorOperator.kernel_iff_unique_multiple",
+        "OQ14.Packet06SectorOperator.kernel_eq_span",
+        "OQ14.Packet06SectorOperator.kernel_finrank_one",
+        "OQ14.Packet06SectorOperator.block_not_isUnit",
+        "OQ14.Packet06SectorOperator.compressedInverse_meromorphicAt"
+      ]
+    },
+    {
+      "module": "Packet06SectorCrossing",
+      "source_sha256": "9717b2778a7c6bb39cd5ee751aee978819bc6b2fc45d4fa945809d212ebc5e6e",
+      "log_sha256": "3d8e546a259ea543801f3f5dfe3fb4396ed1246f752d3ba32ddba63bccddcfda",
+      "reports": 5,
+      "declarations": [
+        "OQ14.Packet06SectorCrossing.block_eq_compression",
+        "OQ14.Packet06SectorCrossing.block_hasDerivAt",
+        "OQ14.Packet06SectorCrossing.block_derivative_actual",
+        "OQ14.Packet06SectorCrossing.left_annihilates",
+        "OQ14.Packet06SectorCrossing.crossing_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06Cokernel",
+      "source_sha256": "728f0b25dfb3b24ef26b939b55286f8067748ea6c9f8963ca91cc519fd9a91bb",
+      "log_sha256": "0cec8e3442d0e3920a4aa29bf3f2f759dcf9cffbec326b4b85e1d467c5f1f530",
+      "reports": 4,
+      "declarations": [
+        "OQ14.Packet06Cokernel.laurent_constant_identity",
+        "OQ14.Packet06Cokernel.range_eq_kernel",
+        "OQ14.Packet06Cokernel.range_closed",
+        "OQ14.Packet06Cokernel.quotient_finrank_one"
+      ]
+    },
+    {
+      "module": "Packet06SpherePole",
+      "source_sha256": "e31d19485713ec520c0abb97ce1640a2306e8a40e5866f8880ef174c0ef439fc",
+      "log_sha256": "573f19d0900653f70af29181920082af7c8939b23bc988238579b3cd74eb23e3",
+      "reports": 4,
+      "declarations": [
+        "OQ14.Packet06SpherePole.determinant_simple",
+        "OQ14.Packet06SpherePole.actual_sector_pole_and_cokernel",
+        "OQ14.Packet06SpherePole.inverse_order_eq_neg_one",
+        "OQ14.Packet06SpherePole.inverse_simple_expansion"
+      ]
+    },
+    {
+      "module": "Packet06NormalizedMode",
+      "source_sha256": "75b5f9b20e0b78c501d805c847ff733ad3680f2e5649639b7161ac9389fe5a2a",
+      "log_sha256": "abeb143d7b96a0ee9742c7bb9574fb645c9db5960955cf709bf7a8b139fb51b7",
+      "reports": 5,
+      "declarations": [
+        "OQ14.Packet06NormalizedMode.pairing_crossing_actual",
+        "OQ14.Packet06NormalizedMode.pairing_left_annihilates",
+        "OQ14.Packet06NormalizedMode.kernel_generator",
+        "OQ14.Packet06NormalizedMode.normalized_residue",
+        "OQ14.Packet06NormalizedMode.selected_highQ_normalized_residue"
+      ]
+    }
+  ],
+  "report_count": 30
+}

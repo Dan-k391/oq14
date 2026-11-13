@@ -1,0 +1,5 @@
+# Complex sphere weak kernel equations author review
+
+PASS. `lean/logs/complex_sphere_weak_author_final.log` is the full compiler log; `lean/logs/complex_sphere_weak_author_final.exit.log` records exit 0. Source SHA256 1013C3ED1BCAB371F00BF137C0018FFBD94348B0766E3400E02CBC781AEBE830; log SHA256 7C5E6A9C510689DC225F8C8A25371797E18FB32860E734AAAD67CE452F1D1E56; receipt SHA256 5E0E6077065598E0B3B20A5D8BDA3CF3D641EE1039780467E49ABEED04B6903C.
+
+For every actual complex sphere volume-kernel vector and compact smooth Schwartz tests supported in the interior, derives the homogeneous curl-curl equation, divergence-free identity, and componentwise weak Helmholtz identity. Nonzero frequency is required for the latter two identities. These are direct consequences of the actual analytic response and kernel equation. Conversion to the unrestricted smooth compact-test interface, exterior field, interface matching, and classification remain open. Reported axioms are propext, Classical.choice, and Quot.sound.

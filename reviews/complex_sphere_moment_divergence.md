@@ -1,0 +1,5 @@
+# Actual sphere harmonic moment divergence: author review
+
+PASS. Full compiler log `lean/logs/ComplexSphereMomentDivergence-author-final.log`, exit 0, no warnings or errors. Source SHA256 `21BBBC6CE5FA3E9AB6CEF7304224B182A60C4FE61A96D4CD5F22D6249B6DBA57`; log SHA256 `E76E91FA5883360CB353686E1CE75F13B1E993F38F2ACBE35F61648FBCE12825`; exit receipt SHA256 `13BF7B3039C63BF5A50491FA3CFD8EB4E699D1BA1436315AEF9CBE5711530354`. One qualified report contains only propext, Classical.choice and Quot.sound; no forbidden tokens.
+
+For any actual sphere kernel response and every homogeneous polynomial p of degree l+1, the genuine weak divergence identity is reduced in polar coordinates to the exact integrated relation between the ω_j p(ω) radial weights and the ∂_j p(ω) gradient weights, with the appropriate η, η-prime and radial powers. This is an unnormalized general-degree coupling with both terms inside the angular integral; extraction of normalized radial and tangential coefficients, their differential relation, TE coupling and full vector classification remain separate.

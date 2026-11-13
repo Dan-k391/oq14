@@ -1,0 +1,5 @@
+# Actual flat-interface localized curl sources: author review
+
+PASS for the stated regional source construction and conditional norm bound. Source SHA256 `7D69DCEF68F1D501B9ED7E8E5C9CF3D1C77F93E79B89C5A6799A41C4A243D51B`; final log `lean/logs/FlatLocalCurlSources-author-final.log` SHA256 `CFFEF64E3017BC801E34249C7B7EE64683D2552F82D720ADD055441715A965F8`; exit 0, no errors or warnings, one report using only propext, Classical.choice, Quot.sound.
+
+Starting from genuine regional H(curl) Maxwell fields with the explicit positive flat binary dielectric, the theorem constructs W=ε⁻¹curl H, global zero extensions of W and curl H with their actual multiplier relation, and a compact cutoff with the actual χk²H+∇χ×W weak-curl source. Tangential finite differences of the gradient cutoff source satisfy an explicit bound involving the differentiated global zero extension of curl H and the undifferentiated W. The right-hand differentiated norm is not uniformly bounded here and may be affected by the region boundary; nested localization, absorption, curved flattening and interface regularity remain open.

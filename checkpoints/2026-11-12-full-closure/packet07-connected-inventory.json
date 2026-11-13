@@ -1,0 +1,149 @@
+{
+  "scope": "Frozen author chain: actual exact connected components for the selected fixed-frequency binary peak device",
+  "modules": [
+    {
+      "module": "Packet07LobeCorridor",
+      "source": "lean/Packet07LobeCorridor.lean",
+      "source_sha256": "6acf5afa0b26d64832c423a9c4af2f03ac3be4407457d25572c5917c2a63a3c0",
+      "reports": [
+        "OQ14.Packet07LobeCorridor.positive_corridor",
+        "OQ14.Packet07LobeCorridor.corridor_connected",
+        "OQ14.Packet07LobeCorridor.corridor_subset_inclusion"
+      ]
+    },
+    {
+      "module": "Packet07CorridorEventually",
+      "source": "lean/Packet07CorridorEventually.lean",
+      "source_sha256": "1769c63e3946c5e4b53e7725c7ed640a725cc9e9925746bedbbb62d9229b1c50",
+      "reports": [
+        "OQ14.Packet07CorridorEventually.eventually_corridor_bounds",
+        "OQ14.Packet07CorridorEventually.negative_corridor"
+      ]
+    },
+    {
+      "module": "Packet07RadialMonotone",
+      "source": "lean/Packet07RadialMonotone.lean",
+      "source_sha256": "7d83aad862db79ebdb9edf949553f3ca979d6757e7c5a23a87c9b0f98326796f",
+      "reports": [
+        "OQ14.Packet07RadialMonotone.radial_strictAnti",
+        "OQ14.Packet07RadialMonotone.radial_positive_inward",
+        "OQ14.Packet07RadialMonotone.inclusion_inward"
+      ]
+    },
+    {
+      "module": "Packet07VerticalAccess",
+      "source": "lean/Packet07VerticalAccess.lean",
+      "source_sha256": "ddd9a783da1b8ced591ab121440a062f784eea5198240985be77026af1e8501b",
+      "reports": [
+        "OQ14.Packet07VerticalAccess.inner_vertical",
+        "OQ14.Packet07VerticalAccess.eventually_vertical_bounds"
+      ]
+    },
+    {
+      "module": "Packet07VerticalPath",
+      "source": "lean/Packet07VerticalPath.lean",
+      "source_sha256": "eba27c7576b7b32745c64cd6a51d4012242a715cba5a5c3a511b6a6013c6d3ce",
+      "reports": [
+        "OQ14.Packet07VerticalPath.vertical_joined"
+      ]
+    },
+    {
+      "module": "Packet07RadialPath",
+      "source": "lean/Packet07RadialPath.lean",
+      "source_sha256": "dd7f0a1975d2184d9a77dd16a6bb32995f3c572b2853c4b8982ba6bd72a111dd",
+      "reports": [
+        "OQ14.Packet07RadialPath.radial_joined"
+      ]
+    },
+    {
+      "module": "Packet07PositiveConnected",
+      "source": "lean/Packet07PositiveConnected.lean",
+      "source_sha256": "dccc39e73844a510a22dac1ff7c68176d99586fbe3395ff16f5624b46ee8edff",
+      "reports": [
+        "OQ14.Packet07PositiveConnected.positive_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07SignedConnected",
+      "source": "lean/Packet07SignedConnected.lean",
+      "source_sha256": "5e1053b818fec5a7f4d3102eef808221269b6b447337c592da7e451513e88645",
+      "reports": [
+        "OQ14.Packet07SignedConnected.flip_continuous",
+        "OQ14.Packet07SignedConnected.flip_inclusion_iff",
+        "OQ14.Packet07SignedConnected.negative_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07PhysicalLobes",
+      "source": "lean/Packet07PhysicalLobes.lean",
+      "source_sha256": "a3944ea14607784dff23f37e9f2f86c2b3addf5bb7fa8e9ed3d93bcc62411065",
+      "reports": [
+        "OQ14.Packet07PhysicalLobes.unsplit_continuous",
+        "OQ14.Packet07PhysicalLobes.split_unsplit",
+        "OQ14.Packet07PhysicalLobes.unsplit_split",
+        "OQ14.Packet07PhysicalLobes.physical_lobe_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07LobesEventually",
+      "source": "lean/Packet07LobesEventually.lean",
+      "source_sha256": "10a3fac125558df4a15db09052c8299ff3621e29e0d8c020a79cd43048368361",
+      "reports": [
+        "OQ14.Packet07LobesEventually.eventually_lobes_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07ComponentPartition",
+      "source": "lean/Packet07ComponentPartition.lean",
+      "source_sha256": "8189c48f03b258625259d3931f167420e9f64d1f7c1d6f42ff909b7c85228f80",
+      "reports": [
+        "OQ14.Packet07ComponentPartition.component_eq_piece",
+        "OQ14.Packet07ComponentPartition.every_component_unique_piece"
+      ]
+    },
+    {
+      "module": "Packet07ExactComponents",
+      "source": "lean/Packet07ExactComponents.lean",
+      "source_sha256": "be3793bc97d3dd7e6f40f25f1aa8b4c88f1939a7bc1974a8a54a02f6b18a48d5",
+      "reports": [
+        "OQ14.Packet07ExactComponents.eventually_exact_components"
+      ]
+    },
+    {
+      "module": "Packet07BinaryExact",
+      "source": "lean/Packet07BinaryExact.lean",
+      "source_sha256": "f8ca0955910dbad5e99288062a047344626bac5548fdc03b6d944179ef37d31a",
+      "reports": [
+        "OQ14.Packet07BinaryExact.one_smooth_binary_lobes"
+      ]
+    },
+    {
+      "module": "Packet07PlanarExact",
+      "source": "lean/Packet07PlanarExact.lean",
+      "source_sha256": "bfd4c38338f1435ffd28b0e13ec7f82aef71d6fdad785137f9d48d2c54855268",
+      "reports": [
+        "OQ14.Packet07PlanarExact.planar_binary_peaks_small_frequency"
+      ]
+    },
+    {
+      "module": "Packet07AffineComponents",
+      "source": "lean/Packet07AffineComponents.lean",
+      "source_sha256": "90742016e2bb50125fed677de7247b41e71a158fca874733e1f5734070c37f7f",
+      "reports": [
+        "OQ14.Packet07AffineComponents.place_map",
+        "OQ14.Packet07AffineComponents.preimage_path_connected",
+        "OQ14.Packet07AffineComponents.preimage_connected",
+        "OQ14.Packet07AffineComponents.affine_partition",
+        "OQ14.Packet07AffineComponents.affine_exact_partition"
+      ]
+    },
+    {
+      "module": "Packet07FixedExact",
+      "source": "lean/Packet07FixedExact.lean",
+      "source_sha256": "0ec685facfe679f9034608d0dedff5fd2f683cdb671082281808a75ea370a089",
+      "reports": [
+        "OQ14.Packet07FixedExact.fixed_frequency_planar_superlevels"
+      ]
+    }
+  ]
+}

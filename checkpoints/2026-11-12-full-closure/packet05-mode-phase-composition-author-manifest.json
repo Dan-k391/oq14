@@ -1,0 +1,116 @@
+{
+  "scope": "Author-only regional PDE to actual complex-mode physical phase branches, plus regular-boundary oriented graph and bounded flat-neighborhood construction. Nested cutoff and local material premises remain explicit; uniform fixed-collar convergence and full OQ14 closure remain open. Depends on preceding Packet05 author manifests.",
+  "seeds": [
+    "Packet05ActualModePhaseBranches",
+    "Packet05ActualFlatNeighborhood",
+    "Packet05PhaseSymmetry"
+  ],
+  "external_dependencies": [
+    "Mathlib.MeasureTheory.Measure.OpenPos"
+  ],
+  "modules": [
+    {
+      "module": "Packet05RegionalTransmissionContinuous",
+      "source": "lean/Packet05RegionalTransmissionContinuous.lean",
+      "source_sha256": "58f3b39355333698cf3a76717b12657ab67ea2ae2f38bb2a6e027e122e022ccb",
+      "imports": [
+        "Packet05RegionalBootstrappedScalar",
+        "Packet05ActualTransmissionContinuous",
+        "Packet05BootstrapRepresentativeTransfer"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalTransmissionContinuous.log",
+      "log_sha256": "0b01fe367d9b67f128fac41d3e9f20ef7fe1b72dbc467b75d74cd86760fdb030",
+      "reports": [
+        "OQ14.Packet05RegionalTransmissionContinuous.regional_transmission_continuous"
+      ]
+    },
+    {
+      "module": "Packet05RegionalPhysicalBranches",
+      "source": "lean/Packet05RegionalPhysicalBranches.lean",
+      "source_sha256": "a20fc034bdd286046ea961fb7530d6afdbced42fecf9784e1684fc98cc8b3d41",
+      "imports": [
+        "Packet05RegionalTransmissionContinuous",
+        "Packet05TwoPhysicalPhaseBranches",
+        "Packet05ActualTransmissionContinuous",
+        "Packet05BootstrapRepresentativeTransfer"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalPhysicalBranches.log",
+      "log_sha256": "6f241d028e847cc507ae287e279279ada89e71271b52396959884887bd7f4c55",
+      "reports": [
+        "OQ14.Packet05RegionalPhysicalBranches.regional_physical_branches"
+      ]
+    },
+    {
+      "module": "Packet05ActualModePhaseBranches",
+      "source": "lean/Packet05ActualModePhaseBranches.lean",
+      "source_sha256": "8206a9f47117c95a94f54747267aa516c8531b9cb4cf2856478bc925c0987532",
+      "imports": [
+        "Packet05RegionalPhysicalBranches",
+        "Packet05ActualHostModeGraph"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualModePhaseBranches.log",
+      "log_sha256": "7e9a379ac865c3efce9db7dc3e9708e23928b1e59401a7f0b8397d2d29cfc5a8",
+      "reports": [
+        "OQ14.Packet05ActualModePhaseBranches.actual_mode_phase_branches"
+      ]
+    },
+    {
+      "module": "Packet05BoundarySign",
+      "source": "lean/Packet05BoundarySign.lean",
+      "source_sha256": "8461302d8c3a791a8a3fdf284a3d1428bc9d321bbe51aa70aa81fdfa68cf202b",
+      "imports": [
+        "Packet05ActualModePhaseBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BoundarySign.log",
+      "log_sha256": "d5098a9a151ee6836c1fdd0c696948d5ed1acfb2cafb367bd819f515d35e57ae",
+      "reports": [
+        "OQ14.Packet05BoundarySign.frontier_sign_zero"
+      ]
+    },
+    {
+      "module": "Packet05ActualOrientedGraph",
+      "source": "lean/Packet05ActualOrientedGraph.lean",
+      "source_sha256": "9033c5810a449ee896892af2c62b14302cdd90b1da9c354d569d4d53589e430b",
+      "imports": [
+        "Packet05BoundarySign",
+        "Packet05ActualGraphExtensionC4",
+        "Packet05ChartOrientationMeasure"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualOrientedGraph.log",
+      "log_sha256": "e479415fa0c78e59554b73487da404e636e8dd7f5acc3cf4d3f423e1aadcc818",
+      "reports": [
+        "OQ14.Packet05ActualOrientedGraph.chart_oriented_horizontal",
+        "OQ14.Packet05ActualOrientedGraph.actual_oriented_graph"
+      ]
+    },
+    {
+      "module": "Packet05ActualFlatNeighborhood",
+      "source": "lean/Packet05ActualFlatNeighborhood.lean",
+      "source_sha256": "d2de654a7930690d23af726b22436b7aca0509af722ed24a6d50188ab3789a5d",
+      "imports": [
+        "Packet05ActualOrientedGraph",
+        "Packet05PhysicalChartBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualFlatNeighborhood.log",
+      "log_sha256": "7d4a7f52f10d21b94070f526efdfc2b291713594a8212e54024ef2f958e5c758",
+      "reports": [
+        "OQ14.Packet05ActualFlatNeighborhood.chart_point_on_interface",
+        "OQ14.Packet05ActualFlatNeighborhood.actual_flat_neighborhood"
+      ]
+    },
+    {
+      "module": "Packet05PhaseSymmetry",
+      "source": "lean/Packet05PhaseSymmetry.lean",
+      "source_sha256": "9fe51a6ecefa0bab547b8aad7a6b823c83cf2ed15106c1bb49948de24f26ae83",
+      "imports": [
+        "Packet05ActualScalarTangentialContinuity",
+        "Mathlib.MeasureTheory.Measure.OpenPos"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05PhaseSymmetry.log",
+      "log_sha256": "e2d2305b0e0ed56193077f888ef6d3c008b39627065f450d9367d0ed38733acd",
+      "reports": [
+        "OQ14.Packet05PhaseSymmetry.continuous_phase_symmetry"
+      ]
+    }
+  ]
+}

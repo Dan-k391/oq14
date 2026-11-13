@@ -1,0 +1,5 @@
+# Localized Maxwell difference commutators: author review
+
+PASS for the stated actual L² commutator identities and bounds. Source SHA256 `36FA977105870D2226C68844A94B6C6B2B2CB4F567EE1A912E5AFE83C515309E`; final log `lean/logs/MaxwellCutoffCommutator-author-final.log` SHA256 `3BEE2D86FA63A791FBA12B1EEC405E596D0AA36778E14445FFA4DA98AB5FA330`; exit 0, no errors or warnings, six reports using only propext, Classical.choice, Quot.sound.
+
+For a compact C¹ cutoff and actual global L² field, the proof establishes the finite-difference product identity almost everywhere and as an L² equality. It constructs the translation commutator source and bounds its L² norm uniformly by 3B times the original field norm, with B a bound for first cutoff derivatives. For a C² cutoff, the same identity and source bound apply to each derivative cutoff, with B bounding second derivatives; these are the scalar components occurring in the curl localization source. The module does not establish the final differentiated-curl energy inequality or boundary regularity.

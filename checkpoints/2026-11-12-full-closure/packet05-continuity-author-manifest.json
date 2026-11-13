@@ -1,0 +1,99 @@
+{
+  "scope": "Author-only frozen flat-interface continuity and maximum chain; does not establish curved-interface regularity",
+  "modules": [
+    {
+      "module": "Packet05AnisotropicEmbedding",
+      "source": "lean/Packet05AnisotropicEmbedding.lean",
+      "source_sha256": "88993f5dd0a48e1542dfa857e8a47cfce46ff23a107c7e87df0606019b74d887",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05AnisotropicEmbedding-continuity-freeze.log",
+      "log_sha256": "128893b791eb514335a0071a63adb13e087ee66cd493de0eb19ef9106e6d590a",
+      "reports": [
+        "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_le_majorant",
+        "OQ14.Packet05AnisotropicEmbedding.coordinateMajorant_integrable",
+        "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_integrable",
+        "OQ14.Packet05AnisotropicEmbedding.spectralFactor_pos",
+        "OQ14.Packet05AnisotropicEmbedding.spectralInverse_memLp",
+        "OQ14.Packet05AnisotropicEmbedding.continuous_of_anisotropic_fourier"
+      ]
+    },
+    {
+      "module": "Packet05WeakFourier",
+      "source": "lean/Packet05WeakFourier.lean",
+      "source_sha256": "29dfa20009813b78f57e791cd7da485eba417e53e9d7826b3131bd10d8ea7d58",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05WeakFourier-continuity-freeze.log",
+      "log_sha256": "4733d081c46bf86f58c31495a3d850039b36b926f20626eaa075a6f93df4a567",
+      "reports": [
+        "OQ14.Packet05WeakFourier.inverse_fourier_weak_partial",
+        "OQ14.Packet05WeakFourier.weak_partial_compact",
+        "OQ14.Packet05WeakFourier.frequency_coordinate_memLp",
+        "OQ14.Packet05WeakFourier.frequency_mixed_memLp"
+      ]
+    },
+    {
+      "module": "Packet05AnisotropicWeakEmbedding",
+      "source": "lean/Packet05AnisotropicWeakEmbedding.lean",
+      "source_sha256": "542a21762e49607d54ce29a2061a977db9383a8c4fa61d4417a1d3da692b5066",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05AnisotropicWeakEmbedding-continuity-freeze.log",
+      "log_sha256": "d931cfe8ef6abc580a1e112282fab900e23d60a8dcf462c2fdeaf44190b8e62c",
+      "reports": [
+        "OQ14.Packet05AnisotropicWeakEmbedding.anisotropic_weight_memLp_of_weak_partials",
+        "OQ14.Packet05AnisotropicWeakEmbedding.continuous_of_weak_tangential_h1"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedAnisotropic",
+      "source": "lean/Packet05LocalizedAnisotropic.lean",
+      "source_sha256": "ccb7f89a1e7ab44058b61fd9d95bf622b61a7f4ccde685f5d5b60c37cbc7be1a",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalizedAnisotropic-continuity-freeze.log",
+      "log_sha256": "2d6f62e922a83353ebcf41f42b82d115efc17f095262d55bd6b1a790dd6106bf",
+      "reports": [
+        "OQ14.Packet05LocalizedAnisotropic.weak_partial_add",
+        "OQ14.Packet05LocalizedAnisotropic.cutoff_continuous_of_tangential_h1"
+      ]
+    },
+    {
+      "module": "Packet05TransmissionContinuity",
+      "source": "lean/Packet05TransmissionContinuity.lean",
+      "source_sha256": "fdae9dc763156fbbe55d3ff5c4a63a5dc15640dd5ec42b9085250b3536f65b19",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TransmissionContinuity-continuity-freeze.log",
+      "log_sha256": "72bfcbce4b39bf4c04b4137da37b3c6f7391b6588780a294f2a30d47bc1b94c5",
+      "reports": [
+        "OQ14.Packet05TransmissionContinuity.weight_scale_commute",
+        "OQ14.Packet05TransmissionContinuity.cutoff_transmission_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualContinuous",
+      "source": "lean/Packet05ActualContinuous.lean",
+      "source_sha256": "f681166b31e0f7623c2d542a3db4b9735a32f94b1f0994336bbb08c1ab87fbb6",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualContinuous-continuity-freeze.log",
+      "log_sha256": "d0f42661faf2097060e46d6966daf93109f0425c71bed243accda981e9f2cf9d",
+      "reports": [
+        "OQ14.Packet05ActualContinuous.actual_flat_one_sided_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualMaximum",
+      "source": "lean/Packet05ActualMaximum.lean",
+      "source_sha256": "d5363e5bc477f44a8bfc451ec437bbb50341e5f1e2574b4340e96d795cd223dd",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualMaximum-continuity-freeze.log",
+      "log_sha256": "92344203b22fdb619aa067670f51c87988104fa650f2dc075897cf52b1f328cb",
+      "reports": [
+        "OQ14.Packet05ActualMaximum.actual_flat_two_sided_maximum",
+        "OQ14.Packet05ActualMaximum.physicalAmplitude_continuous"
+      ]
+    },
+    {
+      "module": "Packet05HighMaximum",
+      "source": "lean/Packet05HighMaximum.lean",
+      "source_sha256": "ca6e759804aab778a253c2c6d46acf243cf5db853350704853e2b9b36943887c",
+      "log": "checkpoints/2026-11-12-full-closure/Packet05HighMaximum-continuity-freeze.log",
+      "log_sha256": "ef731fc079bacbca21f857e1561ce4b6781b25f81b2b7313a8adee4d0e8e016a",
+      "reports": [
+        "OQ14.Packet05HighMaximum.component_le_physicalAmplitude",
+        "OQ14.Packet05HighMaximum.flat_phase_cover_ae",
+        "OQ14.Packet05HighMaximum.attained_max_exceeds_positive_volume_peak"
+      ]
+    }
+  ]
+}

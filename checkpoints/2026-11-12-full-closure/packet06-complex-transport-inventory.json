@@ -1,0 +1,84 @@
+{
+  "scope": "Actual complex Maxwell cyclic rotation, translation, positive frequency dilation, outgoing and physical reciprocal scaling",
+  "modules": [
+    {
+      "module": "Packet06ComplexAffine",
+      "source": "lean/Packet06ComplexAffine.lean",
+      "source_sha256": "fb4b5aa6a886666f46961163e5f947555bad6e9b29a2941bf5ee04dd63254b16",
+      "reports": [
+        "OQ14.Packet06ComplexAffine.global_actual_test",
+        "OQ14.Packet06ComplexAffine.translate",
+        "OQ14.Packet06ComplexAffine.dilate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotation",
+      "source": "lean/Packet06CyclicRotation.lean",
+      "source_sha256": "34d97f65c7a3cd8101ff12316496aa77e0a360bc997f0508ddc2c3348898e89a",
+      "reports": [
+        "OQ14.Packet06CyclicRotation.rotate_unrotate",
+        "OQ14.Packet06CyclicRotation.unrotate_rotate",
+        "OQ14.Packet06CyclicRotation.rotate_norm",
+        "OQ14.Packet06CyclicRotation.rotate_axis",
+        "OQ14.Packet06CyclicRotation.rotation_basis"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotationTests",
+      "source": "lean/Packet06CyclicRotationTests.lean",
+      "source_sha256": "e5bb1e3cd8f9422a2dbb300b56b4de14810b8ce511534560a593bd85f0161833",
+      "reports": [
+        "OQ14.Packet06CyclicRotationTests.rotateTest_apply",
+        "OQ14.Packet06CyclicRotationTests.rotateTest_partial",
+        "OQ14.Packet06CyclicRotationTests.pairing_rotate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotationMaxwell",
+      "source": "lean/Packet06CyclicRotationMaxwell.lean",
+      "source_sha256": "b711bf696f9a0aa672999184b988bbbd490d308c555f4f3d1607d2e6b629cd8c",
+      "reports": [
+        "OQ14.Packet06CyclicRotationMaxwell.rotateTest_partial_comm",
+        "OQ14.Packet06CyclicRotationMaxwell.fieldPair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.curlPair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.dielectric_pair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.complex_maxwell_rotate"
+      ]
+    },
+    {
+      "module": "Packet06ComplexReciprocal",
+      "source": "lean/Packet06ComplexReciprocal.lean",
+      "source_sha256": "4f56d0beb7e099a4d5d0ec443a7dab27219def29d9edc50bb365941fad409399",
+      "reports": [
+        "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate",
+        "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate_rescale"
+      ]
+    },
+    {
+      "module": "Packet06FrequencyPlacement",
+      "source": "lean/Packet06FrequencyPlacement.lean",
+      "source_sha256": "48abd1a6b060b9b32e7676930ebf67380750ab250b38531841121ae1f0cb03de",
+      "reports": [
+        "OQ14.Packet06FrequencyPlacement.positive_real_frequency"
+      ]
+    },
+    {
+      "module": "Packet06CyclicOutgoing",
+      "source": "lean/Packet06CyclicOutgoing.lean",
+      "source_sha256": "c565eb51d0d3a025e53dfdb913df50637cf8ca3dbd24f3ad56e484635aaeb1f4",
+      "reports": [
+        "OQ14.Packet06CyclicOutgoing.factor_scale",
+        "OQ14.Packet06CyclicOutgoing.rotated_scaled_centered_limit"
+      ]
+    },
+    {
+      "module": "Packet06CyclicAffine",
+      "source": "lean/Packet06CyclicAffine.lean",
+      "source_sha256": "15e9846c8b98f74c112b3de39f2fb9fd9dffd2258594820a0f4fd300929e6b0f",
+      "reports": [
+        "OQ14.Packet06CyclicAffine.placed_maxwell",
+        "OQ14.Packet06CyclicAffine.placed_frequency"
+      ]
+    }
+  ]
+}

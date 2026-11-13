@@ -1,0 +1,36 @@
+Independent root source review: quantitative regional forcing bootstrap
+
+The explicit second forcing derivative retains all terms: mixed cutoff
+products of the original F, first matrix derivatives times first cutoff
+products, and the second matrix derivative times the cutoff correction.
+Only tangential differentiation is used through the discontinuous flat
+weight. No derivative of the material jump in the normal direction is
+discarded. Compact cutoff derivatives through order three and matrix
+derivatives through order two are bounded explicitly.
+
+RegionalForcingUniform obtains the actual mixed scalar derivative from the
+previous regional tangential quotient theorem. The starting hypotheses
+are the regional divergence equation, the actual first scalar gradient,
+and the original forcing derivatives. It does not assume the original
+scalar is H2 on the outer cutoff annulus. The intermediate derivative is
+bounded by the regional energy envelope before insertion into the second
+forcing estimate. All coefficients of ceiling replacements are proved
+nonnegative, and the displayed bound depends only on the original data
+ceilings and the fixed chart and cutoff constants.
+
+RegionalBootstrapUniform uses the literal cutScalar, localizedGradient,
+localizedForcing and cutFluxSource definitions. The global divergence is
+retained with its actual source; the source is zero only on the specified
+inner plateau. It does not claim global zero divergence. Local first and
+second forcing derivatives are genuine weak derivatives of these exact
+fields. Weak derivative uniqueness identifies the witnesses from the
+regional construction with the chosen first forcing arrays. A single max
+ceiling controls U, all G/R components and both tangential forcing arrays.
+
+The six modules are independently rebuilt with lean.exe directly, isolated
+fresh objects first in LEAN_PATH and dependency order checked. Frozen
+author hashes are checked before and after compilation, all declared axiom
+reports must occur, and only standard axioms and warning-free output are
+accepted. Upstream objects outside this batch are cached; this is not a
+whole-project clean build. Full actual collar composition remains a
+separate theorem and is not supplied merely by these input estimates.

@@ -1,0 +1,5 @@
+# Actual sphere divergence against radial polynomial tests: author review
+
+PASS. Full compiler log `lean/logs/ComplexSphereDivergence-author-final.log`, exit 0, no warnings or errors. Source SHA256 `5CBBD782016D9D9C3FF8F27D7FBBAD88632B1CA6EF39BAD539FAE34CA0792FF3`; log SHA256 `EB07B99AC9E67F8C157E63260C59545E95CEFD690746EBF481D7857320892D30`; exit receipt SHA256 `13BF7B3039C63BF5A50491FA3CFD8EB4E699D1BA1436315AEF9CBE5711530354`. Two qualified reports contain only propext, Classical.choice and Quot.sound; no forbidden tokens.
+
+For each actual sphere volume kernel and nonzero complex frequency, the first theorem extends the proved Schwartz-test divergence identity to all smooth compact tests supported inside the unit ball. The second chooses the genuine smooth test η(|x|)p(x), for arbitrary polynomial p and smooth η compactly supported in (0,1), and expands its derivative into radial and polynomial-gradient terms. This establishes an actual three-dimensional weak coupling identity without assuming a mode expansion. Polar reduction to radial/poloidal moment ODEs and vector classification remain to prove.

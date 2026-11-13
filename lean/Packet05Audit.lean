@@ -1,0 +1,37 @@
+import MaxwellCutoffCommutator
+import MaxwellCurlCutoffSource
+import LocalizedCurlCurlSource
+import FlatLocalCurlSources
+import NestedCurlCutoffSource
+import FlatNestedMaxwellForcing
+import GlobalToRegionalCurl
+import MaxwellQuotientEnergy
+import Packet05FlatActualForcing
+import Packet05FiniteBranchMaximum
+#print axioms OQ14.MaxwellCutoffCommutator.quotient_ae
+#print axioms OQ14.MaxwellCutoffCommutator.cutoff_quotient_commutator
+#print axioms OQ14.MaxwellCutoffCommutator.cutoff_difference_bound
+#print axioms OQ14.MaxwellCutoffCommutator.cutoffSource_memLp
+#print axioms OQ14.MaxwellCutoffCommutator.cutoffSource_norm
+#print axioms OQ14.MaxwellCutoffCommutator.cutoff_quotient_decomposition
+#print axioms OQ14.MaxwellCutoffCommutator.cutoff_quotient_norm
+#print axioms OQ14.MaxwellCutoffCommutator.derivative_cutoff_commutator
+#print axioms OQ14.MaxwellCutoffCommutator.derivative_cutoff_source_norm
+#print axioms OQ14.MaxwellCurlCutoffSource.quotient_sub
+#print axioms OQ14.MaxwellCurlCutoffSource.source_ae
+#print axioms OQ14.MaxwellCurlCutoffSource.quotient_source_bound
+#print axioms OQ14.MaxwellCurlCutoffSource.flat_weight_norm
+#print axioms OQ14.MaxwellCurlCutoffSource.flat_quotient_weight_bound
+#print axioms OQ14.MaxwellCurlCutoffSource.flat_quotient_source_bound
+#print axioms OQ14.LocalizedCurlCurlSource.cutoff_curlcurl_source
+#print axioms OQ14.FlatLocalCurlSources.extend_weighted
+#print axioms OQ14.FlatLocalCurlSources.actual_flat_local_sources
+#print axioms OQ14.NestedCurlCutoffSource.source_localize
+#print axioms OQ14.NestedCurlCutoffSource.localize_weighted
+#print axioms OQ14.NestedCurlCutoffSource.nested_flat_source_bound
+#print axioms OQ14.FlatNestedMaxwellForcing.actual_nested_forcing
+#print axioms OQ14.GlobalToRegionalCurl.restrict_global_hcurl
+#print axioms OQ14.GlobalToRegionalCurl.restrict_weakMaxwell
+#print axioms OQ14.MaxwellQuotientEnergy.cutoff_quotient_energy
+#print axioms OQ14.Packet05FlatActualForcing.actual_flat_forcing_and_magnetic_quotient
+#print axioms OQ14.Packet05FiniteBranchMaximum.finite_closed_branches_attain_max

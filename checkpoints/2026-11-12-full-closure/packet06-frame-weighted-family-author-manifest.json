@@ -1,0 +1,59 @@
+{
+  "description": "Actual phase-weighted maxima transported through full frame with directional volume limits",
+  "modules": [
+    {
+      "module": "Packet06RigidWeightedMaximum",
+      "source_sha256": "99059f11b2c9505817cc5906bf7bea7bd132dafa8a37d77a7d7dc1bc95509503",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reports": 0
+    },
+    {
+      "module": "Packet06AxialWeightedMaximum",
+      "source_sha256": "88b0804587b332c6f0ed82cbd539f1d201aabff6ac5b98172d97e5a59e181294",
+      "log_sha256": "d3a43e11cf676955189a70035b8c3a5d2aaf8f44c6ad646368e45b172d917251",
+      "reports": 1
+    },
+    {
+      "module": "Packet06AffineWeightedMaximum",
+      "source_sha256": "9926f36adee2366a34587254d6a74833b8eaea33ce0a706f82be955423acdbdb",
+      "log_sha256": "ee3f5e5db7a305f34b0183d5ae9eda2ff1123ade9d973bba27e6608cbbdd503a",
+      "reports": 1
+    },
+    {
+      "module": "Packet06RigidWeightedStep",
+      "source_sha256": "8b069c9550a1564c72c16bc3086733088e605528af7e2e7e383243fb3ed0b141",
+      "log_sha256": "158f8a5117f88a5248fc19fa11dda3d0fe5613ec64213f0f39df1cd1fb59b9c4",
+      "reports": 3
+    },
+    {
+      "module": "Packet06FrameWeightedMaximum",
+      "source_sha256": "f33d02c3e1516ccf11e6fa79e8c6274ca15f35320a919abd6c092e91baa2c5cb",
+      "log_sha256": "b1b6e10450afc9f9e5c233247ca4d1e796a1e64b567fe0e6b2ef3d16517e0c6b",
+      "reports": 4
+    },
+    {
+      "module": "Packet06WeightedDirectionalFamily",
+      "source_sha256": "da75dbb6d318ea5236f9cb34186bbebe43a7fd766786a34654b376ab3f854e9e",
+      "log_sha256": "256d3cdddece1d413f3421e39f5f9004a91e48d640bdcb112c751733cc35f73e",
+      "reports": 1
+    },
+    {
+      "module": "Packet06WeightedMaximumDivergence",
+      "source_sha256": "2057d81a0acbdfe62e5ebf979bd76243a644ee37db7afae84a495f35cfa140ee",
+      "log_sha256": "db334d32b962d7b7b307f9c9c60026431da0ce946b832f0aa043f7f8ea26ec6e",
+      "reports": 1
+    },
+    {
+      "module": "Packet06PlacedWeightedState",
+      "source_sha256": "7fd4771a2c62cba1775af506c9d7f4e89b68fd02dfe8f936a11a00eff80f86e1",
+      "log_sha256": "ceab5db666c01565295f5d3670ca830c43a625fde5d3f910bb4bf78bd5d8a101",
+      "reports": 1
+    },
+    {
+      "module": "Packet06FrameWeightedFamily",
+      "source_sha256": "f5e592bc23c74db9d3474c2b3329b3bd22e6bb14e3be41fd7efe1534e326aca3",
+      "log_sha256": "25f1fcfcf1c3e4db8393c08ea74e3f844adf7e58ec388e0320ec54d696aa74f1",
+      "reports": 1
+    }
+  ]
+}

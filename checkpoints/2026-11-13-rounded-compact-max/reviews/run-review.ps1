@@ -1,0 +1,14 @@
+$ErrorActionPreference='Stop'
+$dir=(Resolve-Path '../checkpoints/2026-11-13-rounded-compact-max/reviews').Path
+$objs=Join-Path $dir 'objects';$quant=(Resolve-Path '../checkpoints/2026-11-13-quantitative-independent/reviews/objects').Path;$correction=(Resolve-Path '../checkpoints/2026-11-13-review-path-correction/objects').Path
+$lake='D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lake.exe';$lean='D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe';$base=& $lake env powershell -NoProfile -Command '$env:LEAN_PATH';$env:LEAN_PATH="$objs;$quant;$correction;$base"
+$own=Get-Content -Raw '../checkpoints/2026-11-13-homogeneous-actual-mode/author-manifest.json'|ConvertFrom-Json
+$mods=@('Packet05HomogeneousChartGeometry','Packet05HomogeneousActualMode','Packet05RoundedModeSupport','Packet05RoundedModeActualPhases','Packet05CompactModePhase','Packet05CompactBinaryMode','Packet05RoundedCompactBranches','Packet05BinaryPhaseMaximum','Packet05RoundedModeMaximum');$records=@()
+foreach($m in $mods){
+ $src=(Resolve-Path "$m.lean").Path;$hash=(Get-FileHash $src).Hash.ToLower();$rootEvidence="../checkpoints/2026-11-12-full-closure/evidence/$m-root-author.json";$authentication='pending-interface-manifest'
+ if(Test-Path $rootEvidence){$e=Get-Content -Raw $rootEvidence|ConvertFrom-Json;if($hash -ne $e.source_sha256){throw "root source mismatch $m"};$lp=Join-Path (Split-Path $rootEvidence) $e.log;if((Get-FileHash $lp).Hash.ToLower() -ne $e.log_sha256){throw "root log mismatch $m"};$authentication='root-author-source-and-log'}
+ if($m -like 'Packet05Homogeneous*'){$e=$own|Where-Object module -eq $m;if($hash -ne $e.source_sha256){throw "homogeneous source mismatch $m"};$authentication='homogeneous-author-source'}
+ $obj=Join-Path $objs "$m.olean";$log=Join-Path $dir "$m.log";$watch=[Diagnostics.Stopwatch]::StartNew();& $lean -o $obj $src *> $log;$rc=$LASTEXITCODE;$watch.Stop();if($rc -ne 0){throw "build failed $m"};$out=Get-Content -Raw $log;if($out -match 'warning:|sorryAx|error:'){throw "bad diagnostics $m"};$count=([regex]::Matches($out,'depends on axioms:')).Count;$decl=@(Select-String -Path $src -Pattern '^#print axioms (.+)$'|ForEach-Object {$_.Matches[0].Groups[1].Value});if($count -ne $decl.Count){throw "report mismatch $m"}
+ $records += [ordered]@{module=$m;source_path=$src;source_sha256=$hash;author_authentication=$authentication;object_path=$obj;object_sha256=(Get-FileHash $obj).Hash.ToLower();log_path=$log;log_sha256=(Get-FileHash $log).Hash.ToLower();exit_code=$rc;seconds=$watch.Elapsed.TotalSeconds;declarations=$decl;reports=$count;command="$lean -o $obj $src";cwd=(Get-Location).Path;lean_path=$env:LEAN_PATH;retained_object_verified=$true;status='pass'};Write-Output "$m $count passed"
+}
+[IO.File]::WriteAllText((Join-Path $dir 'independent-build.json'),(($records|ConvertTo-Json -Depth 5)+"`n"),[Text.UTF8Encoding]::new($false))

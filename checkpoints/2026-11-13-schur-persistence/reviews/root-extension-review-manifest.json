@@ -1,0 +1,56 @@
+{
+  "scope": "Independent isolated rebuild and semantic review of six frozen reduced-pencil/Schur extension modules",
+  "modules": [
+    {
+      "module": "Packet06LeftPreconditioner",
+      "source_sha256": "80a41110971871b21ebe086cd4646683fccd486393628daecc84ad7c3fc18730",
+      "log_sha256": "524c54f9315ee3f228002305ecd013812f15f7e0ae86c14c5adc8faabcd22995",
+      "object_sha256": "302f40820423136a44eebc3df345a37442978973d2a61506f811efb825d6e4ef",
+      "reports": 6,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06ReducedPencil",
+      "source_sha256": "d582aa6173bf4e560da1a7f424d4f932baf51fb4abbe7b1f3cbf841485fd80d7",
+      "log_sha256": "ac9794bb27a58ff385f1c9ca9ebd8090b3324620800d435ef852b4fa1f9fa751",
+      "object_sha256": "9a9ec7fad4fad834475e27b3b753599f2ff87a283e0e76af59f7b96e3659ec4f",
+      "reports": 7,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SphereReduced",
+      "source_sha256": "6fb7a70c29fdd722a16c999fbba068fc6d5c9cd872efc265d02e15cd0667c1d7",
+      "log_sha256": "1f2574b589cfc4ceee7a57c03a54b4ce335740bc7f2d7638ef6f30b1997bd59b",
+      "object_sha256": "f02f032bf9f82ba047b1edc5601e55538fce164d02bbfb0651cede6837d651b2",
+      "reports": 9,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SphereReducedSchur",
+      "source_sha256": "010f95ca127462105a359f0b511cd3a8c43185ca994d1e33b3f308938135aac3",
+      "log_sha256": "733bbe3ca1a08d9a19ada320c1509c5953d4bc46a6d9006761c06f96bf86254e",
+      "object_sha256": "882c99464852aee61d9ac2883d455980954ab92e00f5435de6451f2d032e237c",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SchurInverse",
+      "source_sha256": "174047048271d64f1d96d2a2cd75b951c9ef583f55ea8b650f749406bbecb3cb",
+      "log_sha256": "bb4c274bd6a1a59d7588153046fab587f5dfbe4fd2f4541dd03030610e7a055b",
+      "object_sha256": "1a7e409bf164bb41588cd0e9936878b75895af91d2d642795d769302fbc90b71",
+      "reports": 3,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SchurPole",
+      "source_sha256": "22651cc0310679fe2ed1d751907b6c1ca7d5d3ec15a3fd64b516d0cc37e05794",
+      "log_sha256": "e769c8894641a9eaaad7a26179f8a5be3410669aadf8fa315ee5347cbc74f78d",
+      "object_sha256": "ed59c8ddbcb0e1dabeb097fdc1058b66d6e4b71be7855fc0fbb50f0e71117d25",
+      "reports": 5,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 31,
+  "status": "pass",
+  "review": "root-extension-semantic-review.md"
+}

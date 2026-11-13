@@ -1,0 +1,26 @@
+Independent root source review: exact placed smooth material geometry
+
+The actual placedCoefficient dielectric is evaluated at the inverse
+rotation-dilation-translation point. The exact rounded dielectric formula
+then gives the three values (1+eta)*n^2 on the placed inserted body, n^2 in
+the placed unit sphere outside that body, and 1 elsewhere. Membership in
+the image regions is justified by the actual placement homeomorphism.
+
+The outer unit sphere uses the explicit defining function 1-norm(x)^2.
+It is smooth everywhere and its derivative is shown nonzero at norm(x)=1
+by evaluation on x. The defining inequality has the correct interior
+orientation. The previously proved smooth placement theorem preserves
+the defining differential and the local material-side equivalence.
+
+The package keeps the actual rounded inner body's eventual smoothness,
+openness, containment in the outer sphere and both interface certificates.
+It does not manufacture a connected-component count or additional
+interfaces. The eventual quantifier is for fixed placement parameters;
+the individual outer smoothness and material-value theorems may also be
+used when the final placement depends on the selected rounding index.
+
+Root did not author this module. The frozen author hash is verified before
+and after a direct fresh lean.exe build, with fresh objects first in the
+search path and cached upstream objects. All four declaration reports are
+required, with only standard axioms and no warnings. This is an incremental
+independent check, not the separate aggregate project rebuild.

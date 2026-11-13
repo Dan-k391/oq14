@@ -1,0 +1,5 @@
+# Independent semantic review
+
+Passed. The retained construction uses the same selected rounded mode and device as the coordinate endpoint, preserving the original base Certified and reciprocal normalization; the strict base-radius bound follows from the chosen minimum. The retained collars are images of sets already inside the original unit host ball, so they lie inside the same placed outer body.
+
+The closed observation ball is contained in that outer body by the strict radius bound, nested-ball inclusion and the exact placed closed-ball image. The enclosing support radius 1/dilation + ‖translation‖ is nonnegative and contains the placed host by triangle inequality and cyclic norm preservation. Positive susceptibility follows from the actual three-valued material identity: both host branches have relative dielectric strictly greater than one. The proof does not assume positivity outside the host or alter the selected mode. Fresh isolated ordered builds passed 2 modules / 5 standard-axiom reports; source hashes matched the author inventory and no warnings appeared.

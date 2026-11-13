@@ -1,0 +1,101 @@
+{
+  "complete": true,
+  "scope": "Root fresh ordered isolated literal arbitrary-plane coordinates and proper rotation reachability with cached upstream objects.",
+  "records": [
+    {
+      "module": "Packet07PlaneFrame",
+      "source": "D:\\oq14\\lean\\Packet07PlaneFrame.lean",
+      "source_sha256": "d934b8dc36b488e0860718b9b0c266100026173d4c5eb2d1d547be3de82e0036",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneFrame.olean",
+        "D:\\oq14\\lean\\Packet07PlaneFrame.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\Packet07PlaneFrame.log",
+      "log_sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneFrame.olean",
+      "object_sha256": "ef8be4a31b7e20f17eb25510f634db3ede4f3a7b1be4b10a9451710fc7b4491d",
+      "exit_code": 0,
+      "seconds": 8.671,
+      "reports": 2,
+      "declarations": [
+        "OQ14.Packet07PlaneFrame.normal_rotation_basis",
+        "OQ14.Packet07PlaneFrame.exists_frame"
+      ]
+    },
+    {
+      "module": "Packet07PlaneCoordinates",
+      "source": "D:\\oq14\\lean\\Packet07PlaneCoordinates.lean",
+      "source_sha256": "3c838fbeabdfe4a221c7f96ecbfbae5534aaaaaa4d1213dae9dfd4e0b0ae6337",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneCoordinates.olean",
+        "D:\\oq14\\lean\\Packet07PlaneCoordinates.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\Packet07PlaneCoordinates.log",
+      "log_sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneCoordinates.olean",
+      "object_sha256": "ba959ebee3bc7a8708598e72233fb561ea2148ff365fab32f704c6cbe2baec5b",
+      "exit_code": 0,
+      "seconds": 44.156,
+      "reports": 8,
+      "declarations": [
+        "OQ14.Packet07PlaneCoordinates.embed_plane",
+        "OQ14.Packet07PlaneCoordinates.coordinates_embed",
+        "OQ14.Packet07PlaneCoordinates.embed_coordinates",
+        "OQ14.Packet07PlaneCoordinates.embed_injective",
+        "OQ14.Packet07PlaneCoordinates.embed_dist",
+        "OQ14.Packet07PlaneCoordinates.coordinates_dist_le",
+        "OQ14.Packet07PlaneCoordinates.projection_fixed",
+        "OQ14.Packet07PlaneCoordinates.projection_dist_le"
+      ]
+    },
+    {
+      "module": "Packet07PlanePatch",
+      "source": "D:\\oq14\\lean\\Packet07PlanePatch.lean",
+      "source_sha256": "dd2f3ba6ce092a03ac6f4041a092ac22c85380900884c22c513e5fe15255e4a6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlanePatch.olean",
+        "D:\\oq14\\lean\\Packet07PlanePatch.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\Packet07PlanePatch.log",
+      "log_sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlanePatch.olean",
+      "object_sha256": "c2e4cdc9ee15729eecbd3907971550e1d203aa30c3df07211663c615a67a4ce1",
+      "exit_code": 0,
+      "seconds": 43.281,
+      "reports": 4,
+      "declarations": [
+        "OQ14.Packet07PlanePatch.projection_remainder",
+        "OQ14.Packet07PlanePatch.projection_orthogonal",
+        "OQ14.Packet07PlanePatch.embed_continuous",
+        "OQ14.Packet07PlanePatch.patch_pullback"
+      ]
+    },
+    {
+      "module": "Packet07PlaneArbitrary",
+      "source": "D:\\oq14\\lean\\Packet07PlaneArbitrary.lean",
+      "source_sha256": "f9179695ed403fc302c1f3f7f85efa027e3ae1b6cd3985086f674b2200987e13",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneArbitrary.olean",
+        "D:\\oq14\\lean\\Packet07PlaneArbitrary.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\Packet07PlaneArbitrary.log",
+      "log_sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneArbitrary.olean",
+      "object_sha256": "13380d66ef2db7e0af68a6afe96d859696f7fadc42137c85f4bbc31141d829bf",
+      "exit_code": 0,
+      "seconds": 7.25,
+      "reports": 1,
+      "declarations": [
+        "OQ14.Packet07PlaneArbitrary.arbitrary_plane_patch"
+      ]
+    }
+  ]
+}

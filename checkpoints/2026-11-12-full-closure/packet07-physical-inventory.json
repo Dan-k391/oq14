@@ -1,0 +1,49 @@
+{
+  "scope": "Fixed-frequency actual smooth incident density and centered outgoing radiation, preserving exact connected components",
+  "modules": [
+    {
+      "module": "Packet07AffineRadiation",
+      "source": "lean/Packet07AffineRadiation.lean",
+      "source_sha256": "3197cd9f6437a82f443fdc4aefe4ed0c6884fd1336d3b9431dd1233b2e22c970",
+      "reports": [
+        "OQ14.Packet07AffineRadiation.factor_dilation",
+        "OQ14.Packet07AffineRadiation.centered_far_dilation",
+        "OQ14.Packet07AffineRadiation.centered_electric_outgoing",
+        "OQ14.Packet07AffineRadiation.centered_magnetic_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07ActualRadiation",
+      "source": "lean/Packet07ActualRadiation.lean",
+      "source_sha256": "ddb9f1f091da358d5e2270b963f8d427d7958640707462f25ec3afb4c25f9579",
+      "reports": [
+        "OQ14.Packet07ActualRadiation.actual_affine_exterior"
+      ]
+    },
+    {
+      "module": "Packet07SelectedRadiation",
+      "source": "lean/Packet07SelectedRadiation.lean",
+      "source_sha256": "1e9b6589f1c3e7b88de532124a4039f10f7e6ab8419d745680ea18741cc507da",
+      "reports": [
+        "OQ14.Packet07SelectedRadiation.selected_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07SmoothAngular",
+      "source": "lean/Packet07SmoothAngular.lean",
+      "source_sha256": "521135241666919b85b637333fafb3271e84f4489aeea6a18920eccf5a40273d",
+      "reports": [
+        "OQ14.Packet07SmoothAngular.extension_smooth",
+        "OQ14.Packet07SmoothAngular.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07FixedPhysical",
+      "source": "lean/Packet07FixedPhysical.lean",
+      "source_sha256": "88653b1469edd3799351e285a5c1dcf77853843d406ee5d48e4d9921ea4b8987",
+      "reports": [
+        "OQ14.Packet07FixedPhysical.fixed_frequency_planar_superlevels"
+      ]
+    }
+  ]
+}

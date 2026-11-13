@@ -1,0 +1,5 @@
+# Binary conical inclusion interface: author review
+
+PASS for the stated regular-level-set certificate. Source SHA256 `118366CEFC0B7E5F9FE7533792E21D58322103D6BC5CCAE6449B897A77F9A72A`; final log `lean/logs/ConicalJunctionInterface-author-final.log` SHA256 `CB4EA20979F86D1EF571245961001E7D4AB3659606877ED42229DF51F3125823`; exit 0, no errors or warnings, nine reports containing only propext, Classical.choice, Quot.sound.
+
+On Plane × ℝ, every frontier point has nonzero axial coordinate and locally the explicit open binary inclusion is exactly the positive side of the smooth defining function. Its value is zero on the frontier and its full Fréchet derivative is nonzero for all sufficiently small rounding scales satisfying the explicit displayed inequality. The proof covers the rounded apex, lateral and spherical portions and the junction by actual radial or axial paths. This is a concrete regular-level-set certificate; it is not yet packaged as a Mathlib manifold or transported to physical Maxwell.Space, and it does not establish transmission regularity or maxima.

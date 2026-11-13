@@ -1,0 +1,114 @@
+[
+  {
+    "module": "Packet06AxialHotspotStart",
+    "object_sha256": "fb59dca2060b89faa55f6d881b55d6f3c6de39e98d644032c98f85af793773fd",
+    "status": "pass",
+    "source_sha256": "01450e556a9074825df49cbde673819f5bc776f68416541ef3fd0a7158d30861",
+    "log_sha256": "3d61684649c98f9736f95c9c408340a6b04a625df6d965d01653d8d059163934",
+    "declarations": [
+      "OQ14.Packet06AxialHotspotStart.coordinate_hotspot"
+    ],
+    "reports": 1
+  },
+  {
+    "module": "Packet06RigidHotspotState",
+    "object_sha256": "965b20f167b4f2ecef9eeec825f7f192a3b7ae615deda68075335c3f34db89d6",
+    "status": "pass",
+    "source_sha256": "7324e2b261ad52c728ee772b807c5969c4870cebda3e95ab79a09aa2c7be044d",
+    "log_sha256": "1c194342a2fde85402966f416be7852f8cc28ada677e1a6fb8ff7d8e0ab522c8",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotState.axial",
+      "OQ14.Packet06RigidHotspotState.cyclic"
+    ],
+    "reports": 2
+  },
+  {
+    "module": "Packet06RigidHotspotAffine",
+    "object_sha256": "bddc95a0e77a4bc1940dd1407441c674fdf5210f7900a1b09dd8fff09b217119",
+    "status": "pass",
+    "source_sha256": "df19b78d4c28ff6078a0252364852eacc4ef5fe5456dc52c0a6427c59fc08f03",
+    "log_sha256": "25c5337409e37d8e60e3bdfb73ba87c6fcd1c06610ac2a410c51c99aa178889e",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotState.affine"
+    ],
+    "reports": 1
+  },
+  {
+    "module": "Packet06RigidHotspotFrame",
+    "object_sha256": "f1eaef8f3f637b414f5c2b4b835ea27341145901f9ca33176545fd72b989e512",
+    "status": "pass",
+    "source_sha256": "d5827fc4436c1e7a858a83dd5061d4875c8176f88c903afdb1d705999c1d34a2",
+    "log_sha256": "c54eb09a4442345063f1954824b0bf7ffbdab19c448fbe97e2fc493b51767faa",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotFrame.cyclic_thrice",
+      "OQ14.Packet06RigidHotspotFrame.twice_rotate",
+      "OQ14.Packet06RigidHotspotFrame.frame_center",
+      "OQ14.Packet06RigidHotspotFrame.frame_plane",
+      "OQ14.Packet06RigidHotspotFrame.frame_body"
+    ],
+    "reports": 5
+  },
+  {
+    "module": "Packet06RigidCollar",
+    "object_sha256": "344939215ec61147b59a795c3eb46faa4b27fd254bc89acc5dbfdedc803ba2b7",
+    "status": "pass",
+    "source_sha256": "1f3ea90d5b490638fd7586895142762709571aab4890d2c38c9e2a5aa2267cca",
+    "log_sha256": "f37257a3eaa23a69c43f3779a89587b75d887f5d4eb8580ea8cf9f942480a1cb",
+    "declarations": [
+      "OQ14.Packet06RigidCollar.axial_collar",
+      "OQ14.Packet06RigidCollar.cyclic_collar",
+      "OQ14.Packet06RigidCollar.affine_collar"
+    ],
+    "reports": 3
+  },
+  {
+    "module": "Packet06RigidCollarFrame",
+    "object_sha256": "8d742668f5987a29b7cee7c04106f3ff267a070796a7674fcc5ed0cc06123466",
+    "status": "pass",
+    "source_sha256": "bcdbb528d90256cedb3487a760b7fc5c355a0d319f541480b9609a068e676ebf",
+    "log_sha256": "a2cf147aed504c09b64591a9fb54a624409d6bd4e725fc47e7cbc80d13a8a9a3",
+    "declarations": [
+      "OQ14.Packet06RigidCollarFrame.transform_collars"
+    ],
+    "reports": 1
+  },
+  {
+    "module": "Packet06RigidStateOutgoing",
+    "object_sha256": "7ab09e8899c2f6b356137e6804b4d2002a8d618fed73cecad6127190f412102e",
+    "status": "pass",
+    "source_sha256": "1113d6e835ef72fa54b9cfaaa4e26e2c3a61e8a9653aad90afd2094d04192ebb",
+    "log_sha256": "134f10b4e49dd192acb45122dc54b3c2a81cee5675ec41eb8e4b54e8e584d935",
+    "declarations": [
+      "OQ14.Packet06RigidStateOutgoing.actual_outgoing"
+    ],
+    "reports": 1
+  },
+  {
+    "module": "Packet06RigidMaterialValues",
+    "object_sha256": "96ca07008d0846e7b9c27c23e5d5b039ab23196ec136872b83db7805447318e6",
+    "status": "pass",
+    "source_sha256": "04bdba28af1fa98466b43e55058e6922dff122b0bce57cf44e6aa7c49a958373",
+    "log_sha256": "9dc5599fd487ce119e96f89f257f5588bb9605c77b48f868b341f38879699427",
+    "declarations": [
+      "OQ14.Packet06RigidMaterialValues.axial_value",
+      "OQ14.Packet06RigidMaterialValues.cyclic_value",
+      "OQ14.Packet06RigidMaterialValues.affine_value",
+      "OQ14.Packet06RigidMaterialValues.frame_value"
+    ],
+    "reports": 4
+  },
+  {
+    "module": "Packet06RigidFrameGeometry",
+    "object_sha256": "11a9181f5d5ff70bdc6acbbba31277f20d5184fd2d95da9b5bf825704ac8f2a4",
+    "status": "pass",
+    "source_sha256": "2a19cf05c252393c5b29ef5ee9d6ec0df4e74270a34cbf4d1996ca902bc2661d",
+    "log_sha256": "072634092b780a2ad3577252640be740dc3986f8426f313eec4abae93d71f96a",
+    "declarations": [
+      "OQ14.Packet06RigidFrameGeometry.frame_projection",
+      "OQ14.Packet06RigidFrameGeometry.plane_image",
+      "OQ14.Packet06RigidFrameGeometry.frame_balls",
+      "OQ14.Packet06RigidFrameGeometry.transformed_geometry"
+    ],
+    "reports": 4
+  }
+]

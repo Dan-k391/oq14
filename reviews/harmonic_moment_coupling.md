@@ -1,0 +1,5 @@
+# Actual harmonic moment coupling: author review
+
+PASS. Full compiler log `lean/logs/HarmonicMomentCoupling-author-final.log`, exit 0, no warnings or errors. Source SHA256 `8FA852F4EFD7A0C7736A3358B174AFCFCB3616A0643EA67A9E474A7EE676E2C7`; log SHA256 `5A19DC767BCB66DA2F75880A3EBAF8CCBE7DDEE1FC09DF413612DFEA26322016`; exit receipt SHA256 `13BF7B3039C63BF5A50491FA3CFD8EB4E699D1BA1436315AEF9CBE5711530354`. Three qualified reports contain only propext, Classical.choice and Quot.sound; no forbidden tokens.
+
+For every actual sphere kernel vector and any homogeneous polynomial p of degree l+1, the actual weak divergence yields a radial test integral coupling the actual scalar L2 angular moments with weights ω_j p and ∂_j p. The angular splitting is justified by L2 slice integrability; almost-everywhere identification with the physical-coordinate representative is carried through polar coordinates. The result is a general-degree distributional moment relation, not yet an explicit normalized radial/poloidal ODE, TE coupling, or full vector classification.

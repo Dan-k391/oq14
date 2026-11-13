@@ -1,0 +1,12 @@
+import MaxwellCutoffCommutator
+import MaxwellCurlCutoffSource
+import FlatLocalCurlSources
+import NestedCurlCutoffSource
+#print axioms OQ14.MaxwellCutoffCommutator.quotient_ae
+#print axioms OQ14.MaxwellCutoffCommutator.cutoffSource_memLp
+#print axioms OQ14.MaxwellCutoffCommutator.cutoff_quotient_decomposition
+#print axioms OQ14.MaxwellCurlCutoffSource.quotient_sub
+#print axioms OQ14.MaxwellCurlCutoffSource.flat_weight_norm
+#print axioms OQ14.FlatLocalCurlSources.extend_weighted
+#print axioms OQ14.NestedCurlCutoffSource.source_localize
+#print axioms OQ14.NestedCurlCutoffSource.localize_weighted

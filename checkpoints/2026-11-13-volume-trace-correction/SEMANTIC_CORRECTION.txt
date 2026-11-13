@@ -1,0 +1,28 @@
+Modal-volume trace provenance correction
+November 13, 2026
+
+The stage114 weighted-volume helpers compile and use only standard axioms,
+but their stated trace certificate alone is too weak to identify a maximum
+at every possible boundary tangency with an intrinsic physical one-sided
+trace. Packet06RoundedVolumeLimits.Valid constrains its representatives
+only on the closed observation ball. Classical.choose over that predicate
+does not retain any stronger neighborhood provenance of an earlier witness.
+The corresponding HasWeightedMaximum transport retains the same weakness.
+
+This is a semantic adequacy issue in the physical interpretation, not a
+Lean kernel or logical-consistency failure. Stage114 review descriptions
+calling those weighted maxima genuine physical traces are superseded by
+this correction. The old immutable modules and evidence remain as history;
+they must not be used alone to claim the full physical volume conclusion.
+
+The repair constructs the SAME representatives on a strictly larger compact
+ball, retains continuity and a.e. equality there through every choice, and
+only then maximizes their restrictions on the smaller ball. Their physical
+placement and rigid-frame transport must retain that larger-ball certificate
+for the same functions and maximizing point. Packet06InteriorTraceUnique.unique
+proves that any two such representatives agree on the smaller closed ball,
+including a tangential phase contact, without a transversality assumption.
+
+The source selection, localized family and frame-family endpoints are being
+strengthened accordingly. Final acceptance requires independent compilation,
+statement review, and the updated aggregate and safe-declaration audits.

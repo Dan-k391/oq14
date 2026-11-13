@@ -1,0 +1,770 @@
+{
+  "scope": "Author-only curved chart transport, scalar transmission, and div-curl chain. Curved regularity and full closure remain unproved.",
+  "modules": [
+    {
+      "module": "Packet05CurlSourceH1",
+      "source": "lean/Packet05CurlSourceH1.lean",
+      "source_sha256": "4b313c7762004d313b42a0bd9273d72124fc36a470aaf8bc093e3d213105a804",
+      "imports": [
+        "Packet05PartialProduct",
+        "MaxwellCurlCutoffSource"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CurlSourceH1.log",
+      "log_sha256": "a31f1e5760c8c43c054131a7751a26a7992bfa0c4b6cdfacc2ae74d68bc54696",
+      "reports": [
+        "OQ14.Packet05CurlSourceH1.curl_source_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05DivergenceCommutation",
+      "source": "lean/Packet05DivergenceCommutation.lean",
+      "source_sha256": "6d6a9f2a6b2fcdf2d1f88752694b4194f7ec3cfd5bfde5579b0a563bc9b0a80d",
+      "imports": [
+        "Packet05CurlCommutation"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05DivergenceCommutation.log",
+      "log_sha256": "f79454982a68faacd78cc1f84d660e5e6cffdad490e75f2f48eb9a0bc5567c6d",
+      "reports": [
+        "OQ14.Packet05DivergenceCommutation.partial_commutes_weakDivergence"
+      ]
+    },
+    {
+      "module": "Packet05DivSourceH1",
+      "source": "lean/Packet05DivSourceH1.lean",
+      "source_sha256": "1cd13f9e8728a3646b2ba6d0867ac472927d38e0b68ad7be69a90abd2ee83db5",
+      "imports": [
+        "Packet05CurlSourceH1"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05DivSourceH1.log",
+      "log_sha256": "07fc374fbed016663933d28cfd305d862ad4064d3b2478a8e30c3a79ccbfcbba",
+      "reports": [
+        "OQ14.Packet05DivSourceH1.divergence_source_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05GraphBoundaryNull",
+      "source": "lean/Packet05GraphBoundaryNull.lean",
+      "source_sha256": "bb351bf78731b3573e985bfb3c6216aaf88e6cbba0aa3da58716223785bae345",
+      "imports": [
+        "Packet05PhysicalGraphChart",
+        "WeakPoynting.Slices"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphBoundaryNull.log",
+      "log_sha256": "20ca28c54b5c9308b4e0fd62eca9f9849c1474b6f6e77f1e08727f10e6f80a68",
+      "reports": [
+        "OQ14.Packet05GraphBoundaryNull.continuous_graph_volume_zero"
+      ]
+    },
+    {
+      "module": "Packet05GraphPhaseCover",
+      "source": "lean/Packet05GraphPhaseCover.lean",
+      "source_sha256": "528a68e540424870aceb10a978b185628d814da80044cac5cfc61154915ebadc",
+      "imports": [
+        "Packet05GraphBoundaryNull",
+        "Packet05HighMaximum"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPhaseCover.log",
+      "log_sha256": "252e952507d155786f3642fdc228dd74ddb6c9821f1e335f9e482f938d05d707",
+      "reports": [
+        "OQ14.Packet05GraphPhaseCover.continuous_graph_phase_cover_ae"
+      ]
+    },
+    {
+      "module": "Packet05GraphVolume",
+      "source": "lean/Packet05GraphVolume.lean",
+      "source_sha256": "b71ba605acf1a69dd37d9a8ff3864c9feb7f42c79e4c939d28e5d4ccdbea0247",
+      "imports": [
+        "Packet05PhysicalGraphChart",
+        "WeakPoynting.Slices",
+        "Mathlib.MeasureTheory.Group.Prod"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphVolume.log",
+      "log_sha256": "26580cd3f9765291b2922be1770fa5b3d6e9752c179e8f3130e2be33d4248ff9",
+      "reports": [
+        "OQ14.Packet05GraphVolume.graphSplit_measurePreserving",
+        "OQ14.Packet05GraphVolume.graph_map_volume_preserving"
+      ]
+    },
+    {
+      "module": "Packet05TensorCommutator",
+      "source": "lean/Packet05TensorCommutator.lean",
+      "source_sha256": "05d3efed0c4b953627cf5d4e438972eadfc4acb70511a5def4794722c3eac7b6",
+      "imports": [
+        "MaxwellCurlCutoffSource"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TensorCommutator.log",
+      "log_sha256": "b0329f7c8d26343814c7253cb8286d8797893721f5b3361367b05f39f6e3e926",
+      "reports": [
+        "OQ14.Packet05TensorCommutator.quotient_add",
+        "OQ14.Packet05TensorCommutator.matrixField_quotient_bound"
+      ]
+    },
+    {
+      "module": "Packet05TransverseDivergence",
+      "source": "lean/Packet05TransverseDivergence.lean",
+      "source_sha256": "fcc7ecde9df9f289703e36a6492021850d0972cecb4927a4d9aaf3c44c69d37d",
+      "imports": [
+        "HelmholtzProjection",
+        "WeakPotentialProjection",
+        "WeakPoynting.InteriorTestDensity",
+        "WeakPoynting.DivCurlCompact"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TransverseDivergence.log",
+      "log_sha256": "0fc73a2053e19a5c2c43ca6426a59cfb634a1d6bd19d40c038d33fade5855fb9",
+      "reports": [
+        "OQ14.Packet05TransverseDivergence.transverse_projection_zero",
+        "OQ14.Packet05TransverseDivergence.transverse_schwartz_divergence_zero",
+        "OQ14.Packet05TransverseDivergence.transverse_weak_divergence"
+      ]
+    },
+    {
+      "module": "Packet05DivCurlH2",
+      "source": "lean/Packet05DivCurlH2.lean",
+      "source_sha256": "6736ebb4d0f1ec484e774b8822b9b5ec06c81c68ddb258c84f2a83bb63809895",
+      "imports": [
+        "Packet05DivergenceCommutation",
+        "Packet05WeakFourier",
+        "WeakPoynting.DivCurlRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05DivCurlH2.log",
+      "log_sha256": "362e68cb97b471642fabd7839d420adc8d546d1a20bb12a517e5b3a4b430292d",
+      "reports": [
+        "OQ14.Packet05DivCurlH2.compact_divcurl_h2"
+      ]
+    },
+    {
+      "module": "Packet05DivCurlH2Actual",
+      "source": "lean/Packet05DivCurlH2Actual.lean",
+      "source_sha256": "61d074d3883289db8b8b50031f56569654ed31f08d7c3681c397106725b8d22d",
+      "imports": [
+        "Packet05DivCurlH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05DivCurlH2Actual.log",
+      "log_sha256": "42a65166f1ea7be8d2fbeb9e1b378c67ca25afaf014b8cbcb8362aa429c8b7fc",
+      "reports": [
+        "OQ14.Packet05DivCurlH2Actual.compact_divcurl_h2_from_h1_sources"
+      ]
+    },
+    {
+      "module": "Packet05GraphPullback",
+      "source": "lean/Packet05GraphPullback.lean",
+      "source_sha256": "af397a61236fc3c932e46e0e5121904c14cbf43fa1bac724ff3fd0a17cc0d160",
+      "imports": [
+        "Packet05GraphVolume"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPullback.log",
+      "log_sha256": "50745c5244804bbfc2be22d0ce4946cb0d0dfadcf9baec74bf724e7babbef782",
+      "reports": [
+        "OQ14.Packet05GraphPullback.pullback_ae",
+        "OQ14.Packet05GraphPullback.pullback_norm",
+        "OQ14.Packet05GraphPullback.graph_change_of_variables"
+      ]
+    },
+    {
+      "module": "Packet05GraphSmooth",
+      "source": "lean/Packet05GraphSmooth.lean",
+      "source_sha256": "1e19ff7facb43027d7429341bc49674d42d648b32f2b0d4c99eb3517a7d95d8c",
+      "imports": [
+        "Packet05GraphPullback"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSmooth.log",
+      "log_sha256": "6dfc904042d85bb0d5cd4f8018a855ba3675560b68139b1d9e57544e5bfc501b",
+      "reports": [
+        "OQ14.Packet05GraphSmooth.liftedHeight_contDiff",
+        "OQ14.Packet05GraphSmooth.graphMap_contDiff",
+        "OQ14.Packet05GraphSmooth.inverseGraphMap_contDiff",
+        "OQ14.Packet05GraphSmooth.horizontal_basis_normal",
+        "OQ14.Packet05GraphSmooth.liftedHeight_normal_derivative",
+        "OQ14.Packet05GraphSmooth.graphMap_normal_derivative",
+        "OQ14.Packet05GraphSmooth.inverseGraphMap_normal_derivative"
+      ]
+    },
+    {
+      "module": "Packet05LongitudinalCurl",
+      "source": "lean/Packet05LongitudinalCurl.lean",
+      "source_sha256": "29a7ac3792823b7620f9ede59b2e14ea08a5c732766377152580a63eb5831e53",
+      "imports": [
+        "Packet05TransverseDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LongitudinalCurl.log",
+      "log_sha256": "8c0d0aaaf21fa2fb37edf5f8baaff65ab23f89f139332443cdb857c00e586033",
+      "reports": [
+        "OQ14.Packet05LongitudinalCurl.curlFree_closed",
+        "OQ14.Packet05LongitudinalCurl.gradient_curl_free",
+        "OQ14.Packet05LongitudinalCurl.longitudinal_weak_curl_zero"
+      ]
+    },
+    {
+      "module": "Packet05ScalarTransmissionCommutator",
+      "source": "lean/Packet05ScalarTransmissionCommutator.lean",
+      "source_sha256": "3b0e0b47c91e66fa0aca80db91f71aa8e16cea7d44f4a106fe5121188c210a02",
+      "imports": [
+        "Packet05TensorCommutator"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarTransmissionCommutator.log",
+      "log_sha256": "a72793983cd8c7216758e7ddb09b14c3c99bb757d6c875d01fafbb0b1f02d3f9",
+      "reports": [
+        "OQ14.Packet05ScalarTransmissionCommutator.matrix_quotient_decomposition",
+        "OQ14.Packet05ScalarTransmissionCommutator.matrixResidual_norm"
+      ]
+    },
+    {
+      "module": "Packet05ScalarTransmissionFlux",
+      "source": "lean/Packet05ScalarTransmissionFlux.lean",
+      "source_sha256": "e82085460278460e0410f043e738b0e80efae7ef966d8f94d4918a3787000d24",
+      "imports": [
+        "Packet05ScalarTransmissionCommutator",
+        "Packet05ForcedDifferenceGreen"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarTransmissionFlux.log",
+      "log_sha256": "e98172d671a24e2aad418d14a223e2e22208ddb597e5367be57b2f03b1a3d932",
+      "reports": [
+        "OQ14.Packet05ScalarTransmissionFlux.flat_jump_matrix_quotient"
+      ]
+    },
+    {
+      "module": "Packet05TransverseDivCurl",
+      "source": "lean/Packet05TransverseDivCurl.lean",
+      "source_sha256": "072e06e8b397cd8bdb2ef25307d166a52dc981736eaed30bbb0c9fab871521fe",
+      "imports": [
+        "Packet05LongitudinalCurl"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TransverseDivCurl.log",
+      "log_sha256": "ba57142a8885403c61d83194d7b7820592881f807690134e23b35413aa207268",
+      "reports": [
+        "OQ14.Packet05TransverseDivCurl.transverse_divcurl"
+      ]
+    },
+    {
+      "module": "Packet05TransverseLocalH1",
+      "source": "lean/Packet05TransverseLocalH1.lean",
+      "source_sha256": "20197776d97ceb46f80ba0f1b503213e3f373985c972f6cbe1b3ce875073c01a",
+      "imports": [
+        "Packet05TransverseDivCurl",
+        "GlobalToRegionalCurl",
+        "WeakPoynting.LocalRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TransverseLocalH1.log",
+      "log_sha256": "f1be9bf359e3726e9132326ba9afd649c2a94a8af12725cd843b7fd3ad0ca378",
+      "reports": [
+        "OQ14.Packet05TransverseLocalH1.transverse_cutoff_h1"
+      ]
+    },
+    {
+      "module": "Packet05GraphNormalWeakDerivative",
+      "source": "lean/Packet05GraphNormalWeakDerivative.lean",
+      "source_sha256": "34c84502f8fc4b1e33582d45be71bcb6af7aacaa7912f119c6b3a361feaa90a5",
+      "imports": [
+        "Packet05GraphSmooth",
+        "WeakPoynting.DivCurlCompact"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphNormalWeakDerivative.log",
+      "log_sha256": "868381e2b8861131b761505f8c1b8c4a550ad0630f0d710f43311da07429c2e9",
+      "reports": [
+        "OQ14.Packet05GraphNormalWeakDerivative.inverseTest_normal",
+        "OQ14.Packet05GraphNormalWeakDerivative.pullback_normal_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05GraphTestChain",
+      "source": "lean/Packet05GraphTestChain.lean",
+      "source_sha256": "a974ab2a642d755057f29456ec8fd5ad238aa5a7315259b8d4b4002bc59c2a71",
+      "imports": [
+        "Packet05GraphNormalWeakDerivative"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphTestChain.log",
+      "log_sha256": "a04673cfae6593c0f85ba846df6ce4832e9e3d9a6bfb4c42efc8117753152f69",
+      "reports": [
+        "OQ14.Packet05GraphTestChain.inverseGraphMap_derivative",
+        "OQ14.Packet05GraphTestChain.inverseTest_partial"
+      ]
+    },
+    {
+      "module": "Packet05ScalarDifferenceDivergence",
+      "source": "lean/Packet05ScalarDifferenceDivergence.lean",
+      "source_sha256": "0cb0f4c4d01275a3accf914b079ce6005504e2074654ff9c82debd27b1b11b1a",
+      "imports": [
+        "Packet05DivergenceUpgrade",
+        "Packet05ScalarTransmissionFlux"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarDifferenceDivergence.log",
+      "log_sha256": "0944dade76005adb92c3383cafd2c43ef51d77dadf451a898f70bba52d427feb",
+      "reports": [
+        "OQ14.Packet05ScalarDifferenceDivergence.translate_weak_divergence",
+        "OQ14.Packet05ScalarDifferenceDivergence.quotient_weak_divergence"
+      ]
+    },
+    {
+      "module": "Packet05ScalarDifferencePartial",
+      "source": "lean/Packet05ScalarDifferencePartial.lean",
+      "source_sha256": "b02fdb924c8a06daa7d1037c7ccbfc7b4769fdc8934da2322e3eb79debe5429f",
+      "imports": [
+        "Packet05ScalarDifferenceDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarDifferencePartial.log",
+      "log_sha256": "a176f2f4a9d077335b2181b663ff390dba78d771362967584ee9d6bf1d331883",
+      "reports": [
+        "OQ14.Packet05ScalarDifferencePartial.translate_weak_partial",
+        "OQ14.Packet05ScalarDifferencePartial.quotient_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05ScalarEnergyAbsorption",
+      "source": "lean/Packet05ScalarEnergyAbsorption.lean",
+      "source_sha256": "a17864bdf98b800e4b03c6c368dd30b4d837ea155f1870fdf83abc453f212814",
+      "imports": [
+        "Packet05ScalarTransmissionFlux"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarEnergyAbsorption.log",
+      "log_sha256": "fe23edecd81b4fbbd840d6e038873b4c010a082bca3a07ebd948f27e4dd7c014",
+      "reports": [
+        "OQ14.Packet05ScalarEnergyAbsorption.absorb_scalar_cutoff_energy"
+      ]
+    },
+    {
+      "module": "Packet05ScalarH1Testing",
+      "source": "lean/Packet05ScalarH1Testing.lean",
+      "source_sha256": "d04b48548d02feae041c8ba3496494889a328d0053d4237f4d3435b2149c9ee7",
+      "imports": [
+        "Packet05ScalarDifferencePartial",
+        "WeakPoynting.PartialSmoothing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarH1Testing.log",
+      "log_sha256": "b8d47b32c9bb1d71f535a9c0b4c645abe634b0d39c5a9f7277eda9ff126f29a4",
+      "reports": [
+        "OQ14.Packet05ScalarH1Testing.weak_divergence_test_compact_h1"
+      ]
+    },
+    {
+      "module": "Packet05ScalarHermitianTesting",
+      "source": "lean/Packet05ScalarHermitianTesting.lean",
+      "source_sha256": "a463783873334f612a952a6fe716812fb69006ffd38609935471e0ee0f2eb8a0",
+      "imports": [
+        "Packet05ScalarH1Testing",
+        "WeakPoynting.Poynting"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarHermitianTesting.log",
+      "log_sha256": "08fb670c247e57d8dcc825ecf65a00cc10f4b045486a31063e852f9c013edce7",
+      "reports": [
+        "OQ14.Packet05ScalarHermitianTesting.conjugate_weak_partial",
+        "OQ14.Packet05ScalarHermitianTesting.conjugate_compact",
+        "OQ14.Packet05ScalarHermitianTesting.weak_divergence_test_compact_h1_conj"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetric",
+      "source": "lean/Packet05GraphMetric.lean",
+      "source_sha256": "7f5984a98abe46e2f0b26607f19c0b6970d77c858ed02e1f69ab2a87278873ca",
+      "imports": [
+        "Packet05ScalarEnergyAbsorption"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetric.log",
+      "log_sha256": "3023117c30765dce3ba4926d3f9f234273306a3dc20352fd36eb72cf134d9561",
+      "reports": [
+        "OQ14.Packet05GraphMetric.graph_metric_coercive",
+        "OQ14.Packet05GraphMetric.graph_metric_form"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetricComplex",
+      "source": "lean/Packet05GraphMetricComplex.lean",
+      "source_sha256": "275604241a587fbd9b9a435dcc14ce445251ff0992cf67bc8ff3db6781dcdb1c",
+      "imports": [
+        "Packet05GraphMetric"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetricComplex.log",
+      "log_sha256": "6950d0acddb57024e97816318201d9078568a65d0cc0d8472be3d0138af4f205",
+      "reports": [
+        "OQ14.Packet05GraphMetricComplex.complex_graph_metric_coercive"
+      ]
+    },
+    {
+      "module": "Packet05GraphSlope",
+      "source": "lean/Packet05GraphSlope.lean",
+      "source_sha256": "553c6c4a6ee6a2657b906eb16e60bdcde4ba8ca9aee5e6ff7d5ab2f4a56e70fd",
+      "imports": [
+        "Packet05GraphTestChain"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSlope.log",
+      "log_sha256": "4fe207d2054bec509271358440496ce3c44ac863d3c4e2c198f155284a557a83",
+      "reports": [
+        "OQ14.Packet05GraphSlope.liftedHeight_fderiv",
+        "OQ14.Packet05GraphSlope.slope_normal_invariant",
+        "OQ14.Packet05GraphSlope.slope_continuous",
+        "OQ14.Packet05GraphSlope.slope_contDiff"
+      ]
+    },
+    {
+      "module": "Packet05GraphSlopeNormal",
+      "source": "lean/Packet05GraphSlopeNormal.lean",
+      "source_sha256": "55d71acdafdc8590659a366d50e19fd9f4878585bdffea113373ae8308b7fd63",
+      "imports": [
+        "Packet05GraphSlope"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSlopeNormal.log",
+      "log_sha256": "5ed25f92e672c8bae329dff06acadc258d52e97dcab0c443ccb42426c73f770a",
+      "reports": [
+        "OQ14.Packet05GraphSlopeNormal.slope_factor",
+        "OQ14.Packet05GraphSlopeNormal.slope_normal_derivative"
+      ]
+    },
+    {
+      "module": "Packet05ScalarCutoffTesting",
+      "source": "lean/Packet05ScalarCutoffTesting.lean",
+      "source_sha256": "ea2dc84729f71039310af8ee797dcac77fef7016f0a3da2ad645864a71b7a125",
+      "imports": [
+        "Packet05ScalarHermitianTesting",
+        "Packet05ScalarDifferencePartial",
+        "Packet05PartialProduct",
+        "WeakPoynting.Compactness"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarCutoffTesting.log",
+      "log_sha256": "fd7db0a03daad5989ca61fa8e96a120c3d440d246e083f2fc97d254d81cf3cdb",
+      "reports": [
+        "OQ14.Packet05ScalarCutoffTesting.cutoff_compact",
+        "OQ14.Packet05ScalarCutoffTesting.differentiated_divergence_cutoff_test"
+      ]
+    },
+    {
+      "module": "Packet05ScalarDielectricFlux",
+      "source": "lean/Packet05ScalarDielectricFlux.lean",
+      "source_sha256": "cf457103418646170ac528af709c2b9e724529540f211ce351d547fc73e517fa",
+      "imports": [
+        "Packet05ScalarCutoffTesting",
+        "Packet05FlatWeight"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarDielectricFlux.log",
+      "log_sha256": "8b28a484257cdbeb0a55e07eab5ec0c247ab03d612347a6e038b41bd74fd4208",
+      "reports": [
+        "OQ14.Packet05ScalarDielectricFlux.dielectric_flux_quotient"
+      ]
+    },
+    {
+      "module": "Packet05ScalarTransmissionTest",
+      "source": "lean/Packet05ScalarTransmissionTest.lean",
+      "source_sha256": "fe0ad204424cd9f3bf4e78345ad680b80b4a5b77d3515ea2e79bd22222a65a08",
+      "imports": [
+        "Packet05ScalarDielectricFlux"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarTransmissionTest.log",
+      "log_sha256": "a0cb852a87f7dbf2e84e4b68789ed0dc018ca9dbbe634e9357b0c387005b427a",
+      "reports": [
+        "OQ14.Packet05ScalarTransmissionTest.differentiated_flux_test"
+      ]
+    },
+    {
+      "module": "Packet05UniformGraphMetric",
+      "source": "lean/Packet05UniformGraphMetric.lean",
+      "source_sha256": "fcac9232b6de22a5b28d569433ec7522d75b5b8a9d31a4be877b1195002b3728",
+      "imports": [
+        "Packet05GraphMetricComplex"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05UniformGraphMetric.log",
+      "log_sha256": "c893a80cdccee54a0579e53dea3585b92e4c1f94beb94d53f9732cb1c498bb1d",
+      "reports": [
+        "OQ14.Packet05UniformGraphMetric.complex_graph_metric_uniform"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetricUpper",
+      "source": "lean/Packet05GraphMetricUpper.lean",
+      "source_sha256": "7bbb456c851acfe27851272bb3ae10c9e6f53068459441bd487b0c6de2cf9e6c",
+      "imports": [
+        "Packet05UniformGraphMetric"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetricUpper.log",
+      "log_sha256": "d8d87067c39453bf8094246d55cc5ec1e606c4bad11f2f229cb573f6ff89bddb",
+      "reports": [
+        "OQ14.Packet05GraphMetricUpper.real_graph_metric_upper",
+        "OQ14.Packet05GraphMetricUpper.complex_graph_metric_upper"
+      ]
+    },
+    {
+      "module": "Packet05GraphSlopeMultiplier",
+      "source": "lean/Packet05GraphSlopeMultiplier.lean",
+      "source_sha256": "32d23bcbb06efb773d5d2a669e718b28a55dc0cb71ae275642220dbff5130e45",
+      "imports": [
+        "Packet05GraphSlopeNormal",
+        "WeakPoynting.Green"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSlopeMultiplier.log",
+      "log_sha256": "7bd2b9bc25cbdb54abf6103ad41341726d6d42691ba6a35aeb1637f2a24d3331",
+      "reports": [
+        "OQ14.Packet05GraphSlopeMultiplier.slopeC_contDiff",
+        "OQ14.Packet05GraphSlopeMultiplier.slopeC_normal_derivative",
+        "OQ14.Packet05GraphSlopeMultiplier.slopeC_memLp_top",
+        "OQ14.Packet05GraphSlopeMultiplier.slopeMul_ae"
+      ]
+    },
+    {
+      "module": "Packet05GraphSlopeTest",
+      "source": "lean/Packet05GraphSlopeTest.lean",
+      "source_sha256": "c7906ed1c3024dfc6dbfc9e86e492ee6f11cb8e4ef63370ee48aecca5db49339",
+      "imports": [
+        "Packet05GraphSlopeMultiplier",
+        "Packet05GraphNormalWeakDerivative"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSlopeTest.log",
+      "log_sha256": "42678b53964c095938455289e71d7b489e45cac4f1a983541b5f8b178d1a6c0f",
+      "reports": [
+        "OQ14.Packet05GraphSlopeTest.slopeC_graph_invariant",
+        "OQ14.Packet05GraphSlopeTest.slopeTest_normal"
+      ]
+    },
+    {
+      "module": "Packet05GraphTangentialWeakDerivative",
+      "source": "lean/Packet05GraphTangentialWeakDerivative.lean",
+      "source_sha256": "bfdbf228dd6068ea9dd738921c38988495114a3eb79d4f61d50b9bae2b5b7c64",
+      "imports": [
+        "Packet05GraphSlopeTest",
+        "Packet05GraphPullback",
+        "WeakPoynting.DivCurlCompact"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphTangentialWeakDerivative.log",
+      "log_sha256": "b02ad1d695646290f01c0feed8da87c380739d557c039416f98cd6571580888a",
+      "reports": [
+        "OQ14.Packet05GraphTangentialWeakDerivative.pullback_tangential_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05GraphWeakDivergence",
+      "source": "lean/Packet05GraphWeakDivergence.lean",
+      "source_sha256": "e1be41d42fbba8da18762b543b2b17d795221c9fac63de1e09eb8f2e35575a62",
+      "imports": [
+        "Packet05GraphTangentialWeakDerivative"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphWeakDivergence.log",
+      "log_sha256": "3b7c596939a81e1290f5ac9625ddf72c77386241ce1a86afa8b0a2fbdff816cb",
+      "reports": [
+        "OQ14.Packet05GraphWeakDivergence.inverseTest_derivative_pair",
+        "OQ14.Packet05GraphWeakDivergence.inverseTest_value_pair",
+        "OQ14.Packet05GraphWeakDivergence.graph_pullback_weak_divergence"
+      ]
+    },
+    {
+      "module": "Packet05ScalarResidualBound",
+      "source": "lean/Packet05ScalarResidualBound.lean",
+      "source_sha256": "99e86f1c7c3755619aed99250c026c0a2296c59012dcc72594822a2b5fc1b67f",
+      "imports": [
+        "Packet05ScalarTransmissionTest"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarResidualBound.log",
+      "log_sha256": "1c7005d109ccf91a2d0ceae957d1b84abc3bc48fef6c9d0feffacef7f121e302",
+      "reports": [
+        "OQ14.Packet05ScalarResidualBound.weight_norm_bound",
+        "OQ14.Packet05ScalarResidualBound.dielectric_matrix_residual_bound"
+      ]
+    },
+    {
+      "module": "Packet05GraphChartMatrix",
+      "source": "lean/Packet05GraphChartMatrix.lean",
+      "source_sha256": "54099143fad7bb2c71db9987d9e17cf25d998c2ce575871318b5ddd91a390388",
+      "imports": [
+        "Packet05GraphMetricUpper",
+        "Mathlib.Data.Matrix.Notation"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphChartMatrix.log",
+      "log_sha256": "209bdebd409f743734cd545743384ffa3b0e1d2b506dde7a72181d62299663d3",
+      "reports": [
+        "OQ14.Packet05GraphChartMatrix.inverse_jacobian_left",
+        "OQ14.Packet05GraphChartMatrix.inverse_jacobian_right",
+        "OQ14.Packet05GraphChartMatrix.metric_eq_pullback",
+        "OQ14.Packet05GraphChartMatrix.jacobian_determinant"
+      ]
+    },
+    {
+      "module": "Packet05GraphConstitutive",
+      "source": "lean/Packet05GraphConstitutive.lean",
+      "source_sha256": "638524ad85069e0f77d3b0c0197cae46523f500aa7a93017e4a163cff585c7d1",
+      "imports": [
+        "Packet05GraphWeakDivergence",
+        "Packet05GraphChartMatrix"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphConstitutive.log",
+      "log_sha256": "0b1ac206dfcb945e4e70c27292df917109ff3cd1735acb993c1c5ba454afbca2",
+      "reports": [
+        "OQ14.Packet05GraphConstitutive.transformed_scalar_flux"
+      ]
+    },
+    {
+      "module": "Packet05GraphH1Pullback",
+      "source": "lean/Packet05GraphH1Pullback.lean",
+      "source_sha256": "31fe406360c064170151134da42f42c0838eaf7b182559272cd81991c9baf8ad",
+      "imports": [
+        "Packet05GraphTangentialWeakDerivative"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphH1Pullback.log",
+      "log_sha256": "ccb442bf3605a204744545dd079b97dd52ef89ff64425006f02cdfb63b59731b",
+      "reports": [
+        "OQ14.Packet05GraphH1Pullback.graph_pullback_h1"
+      ]
+    },
+    {
+      "module": "Packet05ScalarEnergyIdentity",
+      "source": "lean/Packet05ScalarEnergyIdentity.lean",
+      "source_sha256": "e8a883f6f2b8d798f390db2b531aea898a218236b454921a8b5922277ec499b1",
+      "imports": [
+        "Packet05ScalarResidualBound"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarEnergyIdentity.log",
+      "log_sha256": "766d4dc9f1f35ebe72c7f8cebd787dcde4297d6017b3e738065465efb78f782d",
+      "reports": [
+        "OQ14.Packet05ScalarEnergyIdentity.mulWeight_add",
+        "OQ14.Packet05ScalarEnergyIdentity.scalarProduct_add_left",
+        "OQ14.Packet05ScalarEnergyIdentity.differentiatedFlux_split",
+        "OQ14.Packet05ScalarEnergyIdentity.principal_energy_balance"
+      ]
+    },
+    {
+      "module": "Packet05GraphChartMap",
+      "source": "lean/Packet05GraphChartMap.lean",
+      "source_sha256": "56160323686092871893a205a0167cd6f5ddaf7b89c1785231976cf67ee1ce0e",
+      "imports": [
+        "Packet05GraphChartMatrix",
+        "Maxwell"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphChartMap.log",
+      "log_sha256": "bbd0521308f39fa57bde50dd31079c5aad78b1992c45936db4750083c22a506e",
+      "reports": [
+        "OQ14.Packet05GraphChartMap.graph_map_left_inverse",
+        "OQ14.Packet05GraphChartMap.graph_map_right_inverse",
+        "OQ14.Packet05GraphChartMap.graph_map_has_fderiv",
+        "OQ14.Packet05GraphChartMap.graph_derivative_coordinate"
+      ]
+    },
+    {
+      "module": "Packet05GraphGradientValues",
+      "source": "lean/Packet05GraphGradientValues.lean",
+      "source_sha256": "1c06aa0f04646b31f1a1cbdd88bdd4f93236b6928309836531ff558d09118284",
+      "imports": [
+        "Packet05GraphH1Pullback",
+        "Packet05GraphConstitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphGradientValues.log",
+      "log_sha256": "a66b21a7ef7cbf4abf778f35e38aab890bf3ddeac8783fa1feb7c91d7a3b39c5",
+      "reports": [
+        "OQ14.Packet05GraphGradientValues.normal_slope_zero",
+        "OQ14.Packet05GraphGradientValues.pulledGradient_ae",
+        "OQ14.Packet05GraphGradientValues.pulledGradient_matches_chart"
+      ]
+    },
+    {
+      "module": "Packet05GraphL2Constitutive",
+      "source": "lean/Packet05GraphL2Constitutive.lean",
+      "source_sha256": "36919e38293e46e4e7443973055e54ff13220b2406ae3b96558ad9d519656e18",
+      "imports": [
+        "Packet05GraphGradientValues",
+        "Packet05GraphWeakDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphL2Constitutive.log",
+      "log_sha256": "d0ce8be12189ac170dabf3c2c0e182d9838e4893193ae8e26846b658ed018407",
+      "reports": [
+        "OQ14.Packet05GraphL2Constitutive.pulled_constitutive_ae",
+        "OQ14.Packet05GraphL2Constitutive.transformedFlux_ae",
+        "OQ14.Packet05GraphL2Constitutive.graph_constitutive_l2"
+      ]
+    },
+    {
+      "module": "Packet05GraphPiolaLinear",
+      "source": "lean/Packet05GraphPiolaLinear.lean",
+      "source_sha256": "f6489e6bff3c734d80b842d3be8a913b713479703b5fb6cd26df68b6e79a3302",
+      "imports": [
+        "Packet05GraphL2Constitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPiolaLinear.log",
+      "log_sha256": "2c863e348a26076fcaba77224d1fc36da4666fe03a19cb71bc8eaad9537bf5b8",
+      "reports": [
+        "OQ14.Packet05GraphPiolaLinear.pullback_add",
+        "OQ14.Packet05GraphPiolaLinear.slopeMul_add",
+        "OQ14.Packet05GraphPiolaLinear.transformedFlux_add"
+      ]
+    },
+    {
+      "module": "Packet05GraphScalarEquation",
+      "source": "lean/Packet05GraphScalarEquation.lean",
+      "source_sha256": "3fa30077ab7e838fd7adbe0f68523647a6209c8275965b39e62fb1f996784b98",
+      "imports": [
+        "Packet05GraphPiolaLinear",
+        "Packet05GraphH1Pullback"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphScalarEquation.log",
+      "log_sha256": "7077ddc6868fd4c83cc796e1b34621c4ff2449c79a27f59404f929ef36cdf4b0",
+      "reports": [
+        "OQ14.Packet05GraphScalarEquation.graph_scalar_equation"
+      ]
+    },
+    {
+      "module": "Packet05ScalarEnergyBound",
+      "source": "lean/Packet05ScalarEnergyBound.lean",
+      "source_sha256": "849fc2d177df3d6723958a3856652068a29f3f9df83bf9b6551fa9595b36c451",
+      "imports": [
+        "Packet05ScalarEnergyIdentity",
+        "WeakPoynting.Translations"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarEnergyBound.log",
+      "log_sha256": "020466c267c2a043a9872b700be43e84326de2f42b3b025b68f5c2855aabe244",
+      "reports": [
+        "OQ14.Packet05ScalarEnergyBound.conjugate_norm_le",
+        "OQ14.Packet05ScalarEnergyBound.principal_energy_residual_bound"
+      ]
+    },
+    {
+      "module": "Packet05GraphChartHomeomorph",
+      "source": "lean/Packet05GraphChartHomeomorph.lean",
+      "source_sha256": "8fc2b3923b032bb2220846bf02a6d933b4d288b735fa24ef4739f1ed48cac766",
+      "imports": [
+        "Packet05GraphChartMap"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphChartHomeomorph.log",
+      "log_sha256": "ede6dba4f63a998f241dde5bd201fab00737854da85c7bb321808c43ed820e03",
+      "reports": [
+        "OQ14.Packet05GraphChartHomeomorph.graph_map_height",
+        "OQ14.Packet05GraphChartHomeomorph.graph_map_positive_side",
+        "OQ14.Packet05GraphChartHomeomorph.graph_map_negative_side"
+      ]
+    },
+    {
+      "module": "Packet05GraphDielectric",
+      "source": "lean/Packet05GraphDielectric.lean",
+      "source_sha256": "402c435236f860e5e302e898f202267957d2f6ed5530c11893c732037ff83f64",
+      "imports": [
+        "Packet05GraphConstitutive",
+        "FlatDifferenceCoercivity",
+        "Packet05GraphChartHomeomorph"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphDielectric.log",
+      "log_sha256": "e6d328b4de799f5b315274f5f1dbe259a66f78bbf28ee96a5a9e038718e3c59d",
+      "reports": [
+        "OQ14.Packet05GraphDielectric.graph_dielectric_pullback"
+      ]
+    },
+    {
+      "module": "Packet05ScalarCutoffBound",
+      "source": "lean/Packet05ScalarCutoffBound.lean",
+      "source_sha256": "bd9122e02205252f42c469dc7f25415ae7b2e0ebc3753eae4238d511b99df4b1",
+      "imports": [
+        "Packet05ScalarEnergyBound",
+        "WeakPoynting.InteriorTestDensity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarCutoffBound.log",
+      "log_sha256": "ad00da8fe70bd1511effdf68ee92e8610f47dfabacf1a0ece757ca1ec5623294",
+      "reports": [
+        "OQ14.Packet05ScalarCutoffBound.cutoffDerivative_norm"
+      ]
+    },
+    {
+      "module": "Packet05GraphBinaryEquation",
+      "source": "lean/Packet05GraphBinaryEquation.lean",
+      "source_sha256": "393d19c097870aca3cce2f32e7febfd97d37b6d8632b03f89566bb43f714125a",
+      "imports": [
+        "Packet05GraphScalarEquation",
+        "Packet05GraphDielectric"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphBinaryEquation.log",
+      "log_sha256": "9731c8a3fa581603aca7ec7a1e3883c649573b8cbe08aeacf59d1d126179577a",
+      "reports": [
+        "OQ14.Packet05GraphBinaryEquation.graph_binary_scalar_equation"
+      ]
+    }
+  ]
+}
