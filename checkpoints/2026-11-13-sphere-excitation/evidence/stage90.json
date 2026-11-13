@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "fdbe060",
+  "modules": 845,
+  "reports": 4696,
+  "new_modules": 2,
+  "new_reports": 5,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "299caa042e2f5ec0c0a343ae5e63034371d574c4d0ba503c3e084f2c357a50b0",
+  "ledger_sha256": "a74bc80b1e891cd1021bc5efa01eefa3c030c2accafe22e72e3f1c126bcd34a3",
+  "raw_archive_sha256": "c223c9642318fab7d5e008b0120b2d945c17c5e57df8eabf467fb41fdc61aee6",
+  "records": [
+    {
+      "module": "Packet06ExcitationCenters",
+      "reports": 2,
+      "source_sha256": "9ac92bde756cd58e80dc826f9159516a35764ae2c9f57dccfd427834575af917",
+      "audit_log": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06ExcitationCenters-chain.log",
+      "audit_log_sha256": "832e7df157d4168730ba270535d504a407d27710d8825076aff39d74e1638b0b",
+      "independent_review": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-review.txt",
+      "independent_review_sha256": "09787effc5b0f22e101f6804c2a07a2b91be7e74677ed295e9aa1cf79756bdad",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-build.json",
+      "independent_build_sha256": "83dd233cdc4a8853a8826425660339a73d9b1a31d5241a6adfa8f834792a7db5",
+      "independent_log": "checkpoints/2026-11-13-sphere-excitation/reviews/Packet06ExcitationCenters.log",
+      "independent_log_sha256": "832e7df157d4168730ba270535d504a407d27710d8825076aff39d74e1638b0b",
+      "declarations": [
+        "OQ14.Packet06ExcitationCenters.finite_centers",
+        "OQ14.Packet06ExcitationCenters.sphere_excitation_centers"
+      ]
+    },
+    {
+      "module": "Packet06SphereProjection",
+      "reports": 3,
+      "source_sha256": "5eb7f9a9692c51d9a5cc880eae65e0dc0d9c95b19cc1b823f46f71d4222308fe",
+      "audit_log": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06SphereProjection-chain.log",
+      "audit_log_sha256": "fffa27cc80386dd18dc0b4a3c60a52b4fd7a329c534445f8e04570b6d5bf461c",
+      "independent_review": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-review.txt",
+      "independent_review_sha256": "09787effc5b0f22e101f6804c2a07a2b91be7e74677ed295e9aa1cf79756bdad",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-build.json",
+      "independent_build_sha256": "83dd233cdc4a8853a8826425660339a73d9b1a31d5241a6adfa8f834792a7db5",
+      "independent_log": "checkpoints/2026-11-13-sphere-excitation/reviews/Packet06SphereProjection.log",
+      "independent_log_sha256": "fffa27cc80386dd18dc0b4a3c60a52b4fd7a329c534445f8e04570b6d5bf461c",
+      "declarations": [
+        "OQ14.Packet06SphereProjection.average_continuous",
+        "OQ14.Packet06SphereProjection.average_zero",
+        "OQ14.Packet06SphereProjection.sphere_average_near_center"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/evidence/audited_after_5238-stage90.json",
+      "sha256": "a74bc80b1e891cd1021bc5efa01eefa3c030c2accafe22e72e3f1c126bcd34a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/evidence/chain-build.json",
+      "sha256": "ea264634ab9b1db7770cb6ec2d5ecff1af5e4f0a35408d084d4fcb5093d82465"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06ExcitationCenters-chain.log",
+      "sha256": "832e7df157d4168730ba270535d504a407d27710d8825076aff39d74e1638b0b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06SphereProjection-chain.log",
+      "sha256": "fffa27cc80386dd18dc0b4a3c60a52b4fd7a329c534445f8e04570b6d5bf461c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/modules.json",
+      "sha256": "72b876b2bf1362b8e3a5bddefe1a0e152f18cbbd69ee500d8aadf00e9be706fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/provenance-audit.json",
+      "sha256": "8d2e3baae573003c9ebabace8dcc450de290df9c1739a093318dea1441d3e7e1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/author-inventory.json",
+      "sha256": "0c7d0952938a547912651b4d15a2c2d1014e49cb0096653d88c5492cad722605"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-build.json",
+      "sha256": "83dd233cdc4a8853a8826425660339a73d9b1a31d5241a6adfa8f834792a7db5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/independent-review.txt",
+      "sha256": "09787effc5b0f22e101f6804c2a07a2b91be7e74677ed295e9aa1cf79756bdad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/metadata-normalization.json",
+      "sha256": "c3459e6bc9189f7831f0e1ac861a407ef492453299fc1b02a317bd2fa7a8a45b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/Packet06ExcitationCenters.log",
+      "sha256": "832e7df157d4168730ba270535d504a407d27710d8825076aff39d74e1638b0b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/reviews/Packet06SphereProjection.log",
+      "sha256": "fffa27cc80386dd18dc0b4a3c60a52b4fd7a329c534445f8e04570b6d5bf461c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/scripts/audit_provenance.ps1",
+      "sha256": "5e46c00ac7e011433f6e417117f05deb78f98da829c37d7b230607baefcb5450"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/scripts/check_chain.py",
+      "sha256": "bafd4adaf96843c16481aeb623e7641a40a47489060bf6a4e4ac7db86f5db0a4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/scripts/freeze_checkpoint.py",
+      "sha256": "803cc5bd64450d19dd3e2e1814e5105ecb69a2067d6405ceda6f085457aa63f0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-sphere-excitation/STAGE90.txt",
+      "sha256": "bd5f7fbb1f4fc72f9b2f76d3bbf2234ca2454ca8beb61160b58dd35d1e022e88"
+    },
+    {
+      "path": "lean/Packet06ExcitationCenters.lean",
+      "sha256": "9ac92bde756cd58e80dc826f9159516a35764ae2c9f57dccfd427834575af917"
+    },
+    {
+      "path": "lean/Packet06SphereProjection.lean",
+      "sha256": "5eb7f9a9692c51d9a5cc880eae65e0dc0d9c95b19cc1b823f46f71d4222308fe"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "417e92ec82f38c0acfc881be9d50883d72dd0e47abdd822d724a6ee9fc2b633f"
+    }
+  ],
+  "scope": "Concrete finite on-axis sphere excitation centers and nonzero limiting tangential projection. Full OQ14 remains active; actual excitation and attained hotspots are not closed."
+}

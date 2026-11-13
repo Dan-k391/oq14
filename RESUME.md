@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 90 is the latest verified incremental checkpoint:
+[STAGE90.txt](checkpoints/2026-11-13-sphere-excitation/STAGE90.txt).
+
+Arbitrarily many finite on-axis centers are constructed with a common positive
+clearance, pairwise disjoint outer balls, and all outer balls inside the unit
+sphere where the actual normalized sphere mode has nonzero axial component.
+The actual limiting tangential spherical projection at each axial center is
+(2/3)*area*E_z(center), which is nonzero, and remains within half its norm on
+a genuine radial neighborhood by continuity of the actual parametric integral.
+
+This supplies the geometric and limiting-field inputs for modal excitation.
+It does not alone establish the strict small-annulus comparison or nonzero
+coefficients of the perturbed mode. Actual excitation, curved regularity,
+attained hotspots, packing, final paper and aggregate validation remain active.
+
+2 modules / 5 reports passed independent Terra review and combined fresh build.
+Ledger: 845 modules / 4696 reports, all previous records unchanged:
+`checkpoints/2026-11-13-sphere-excitation/evidence/audited_after_5238-stage90.json`.
+1048 authenticated upstream sources, cached upstream objects; no whole-project
+clean build claimed. Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage90.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 89 is the latest verified incremental checkpoint:
 [STAGE89.txt](checkpoints/2026-11-13-cone-zero-pair/STAGE89.txt).
 

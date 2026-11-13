@@ -1,0 +1,89 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-040402-80784",
+  "object_directory": "checkpoints/2026-11-13-sphere-excitation/objects/20261113-040402-80784",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-sphere-excitation\\objects\\20261113-040402-80784;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 2 sphere center and projection modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06ExcitationCenters",
+      "source": "lean/Packet06ExcitationCenters.lean",
+      "source_sha256": "9ac92bde756cd58e80dc826f9159516a35764ae2c9f57dccfd427834575af917",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-excitation\\objects\\20261113-040402-80784\\Packet06ExcitationCenters.olean",
+        "D:\\oq14\\lean\\Packet06ExcitationCenters.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.266,
+      "log": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06ExcitationCenters-chain.log",
+      "log_sha256": "832e7df157d4168730ba270535d504a407d27710d8825076aff39d74e1638b0b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ExcitationCenters.finite_centers",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ExcitationCenters.sphere_excitation_centers",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4c33fdf6b57ebc0d5ec4776356770bf17400a9634abe9d6154e7dea655087750"
+    },
+    {
+      "module": "Packet06SphereProjection",
+      "source": "lean/Packet06SphereProjection.lean",
+      "source_sha256": "5eb7f9a9692c51d9a5cc880eae65e0dc0d9c95b19cc1b823f46f71d4222308fe",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-excitation\\objects\\20261113-040402-80784\\Packet06SphereProjection.olean",
+        "D:\\oq14\\lean\\Packet06SphereProjection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.922,
+      "log": "checkpoints/2026-11-13-sphere-excitation/evidence/Packet06SphereProjection-chain.log",
+      "log_sha256": "fffa27cc80386dd18dc0b4a3c60a52b4fd7a329c534445f8e04570b6d5bf461c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereProjection.average_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereProjection.average_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereProjection.sphere_average_near_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ac5b4bfe13bd549cf54473650895080bf9ffed539e7685dcf3c3c88fea02f1af"
+    }
+  ],
+  "module_count": 2,
+  "report_count": 5
+}
