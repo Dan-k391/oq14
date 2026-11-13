@@ -1,6 +1,99 @@
-\section{Frozen targets and evidence audit}\label{pr:section}
-\subsection{The source question and the quantifiers supplied here}
-Miller and Monticone~\cite{millerMonticone2026}, Sections 3.4, 3.5 and 5.6, distinguish communication operators, thickness heuristics, and electric-field concentration. Their OQ14 asks about arbitrary packing of electric hotspots and a diffraction limitation on power channels. It does not fix every normalization, threshold, geometric resource, or interpretation of a mode. The targets below make those choices explicit; they are not quotations of an already quantified theorem.
+\section{Introduction: concentration and power channels}\label{pr:section}
+
+The wavelength of light sets a familiar scale for focusing and for the
+number of spatial patterns that can be communicated through an aperture.
+But an inhomogeneous dielectric can produce strong near fields and store
+energy in resonances.  This raises two related, but distinct, questions:
+how many small electric-field hotspots can one field produce, and how many
+independent inputs can carry power through a specified cross section?
+Miller and Monticone pose both questions in their discussion of OQ14
+\cite[Section 5.6]{millerMonticone2026}.  An answer depends on what is
+counted and which physical resources are held fixed.
+
+For the \emph{hotspot} question, imagine marking several small,
+disjoint observation regions.  We seek one field whose electric amplitude
+has a large, localized maximum in every region at once.  A strong field near
+one sharp dielectric corner suggests a mechanism, but it is not yet a
+packing result: a single globally admissible field must excite all the
+regions, and finite, rounded geometries must retain the peaks.  We consider
+both a driven field, normalized by incoming power, and an outgoing resonant
+mode, whose normalization is of a different kind.  The peaks need not each
+contain a fixed fraction of the total energy.
+
+For the \emph{channel} question, fix a square $D$ in a plane and consider
+an entire linear space of incident fields.  Each field, including every
+coherent combination of the chosen inputs, must meet three tests: a minimum
+amount of power reaches the selected outputs; a minimum signed power flux
+passes through $D$; and the integral of the absolute flux over the rest of
+the plane is at most an allowed bypass.  Counting basis vectors alone would
+not ensure these properties for their superpositions.  The square is a
+measurement section; it need not be the only topological route between an
+input and an output.
+
+Figure~\ref{fig:channel-geometry} shows the measurement geometry and the
+distinction between flux through the square and flux elsewhere in its plane.
+\input{sections/channel_figure}
+
+In both questions the frequency and material bounds are fixed across the
+family of devices.  For the channel question, the square and all thresholds
+are fixed as well.  The surrounding device is allowed to grow, and no
+positive lower bound is imposed on feature size, and no uniform upper bound
+is imposed on quality factor, number of interfaces or matching complexity.
+This choice matters: a bound that also
+depends on one of these resources answers a different, more restricted
+question.  The detailed admissibility and power conventions follow below.
+
+\subsection{Main results and their meaning}
+The following summary is informal; the linked statements give the exact
+hypotheses and conclusions.
+\begin{itemize}
+\item \textbf{Driven hotspots.}  Theorem~\ref{hs:packing} gives
+  simultaneous peaks in a two-dimensional invariant geometry, with incoming
+  power normalized per unit invariant length.  Theorem~\ref{hs:three-packing}
+  gives a finite three-dimensional construction driven by one unit-power
+  illumination.  In that theorem the observation neighborhoods project into
+  a prescribed planar patch; their maxima need not lie on the plane.
+\item \textbf{Modal hotspots.}  Theorem~\ref{ms:modal-packing} constructs
+  arbitrarily many localized peaks in one normalized outgoing mode of a
+  finite smooth dielectric.  The real part of its resonance frequency, its
+  quality-factor target and common material bounds can be prescribed. The
+  norm is a reciprocal
+  resonance-residue normalization, not an all-space positive-energy norm;
+  the modal-volume conclusions are stated separately in
+  Corollary~\ref{ms:modal-volume}.
+\item \textbf{Unrestricted channels.}  Theorem~\ref{uc:counterexample}
+  constructs an $N$-dimensional counted input subspace for every finite
+  $N$, while the frequency, material interval, square and thresholds remain
+  fixed.  It applies when $0<\eta<\delta$, with the complete outgoing
+  scattering map selected.  Thus the proposed uniform finite count, as
+  quantified below over these allowed parameters, is false.  This does not
+  settle $\delta\leq\eta$, a specified receiving-only output, or fixed total
+  device support.
+\end{itemize}
+For intuition, the channel construction uses a distant radial dielectric
+stack to amplify independent local field patterns.  Small dielectric
+inclusions turn those patterns into local flux circulation near the square's
+edge.  The proof must control both the full self-consistent field and the
+absolute flux over the \emph{whole} plane, uniformly over coherent inputs;
+a large local field by itself would not establish the conclusion.
+
+\subsection{How to read the argument}
+Sections~\ref{hs:section} and~\ref{hs:three-section} develop the driven
+hotspot constructions.  Sections~\ref{hs:modal-next-section}
+and~\ref{ms:section} treat excitation and normalization of a single
+resonant mode.  Section~\ref{ch:section} gives channel bounds that retain an
+explicit field resource; the intervening channel sections examine the
+passage, control and physical-construction issues.  The unrestricted
+counterexample is stated and proved in Section~\ref{uc:section}.
+Section~\ref{ver:section} separates mathematical results, formal checks
+and numerical diagnostics.  A reader interested in the central conclusion
+can read this introduction and the theorem statements first, then return to
+the supporting estimates.
+
+\subsection{Precise targets and conventions}
+The source question does not fix every normalization, threshold, geometric
+resource, or interpretation of a mode.  The definitions below make our
+choices explicit; they are not quotations of an already quantified theorem.
 
 \begin{assumption}[Ordinary dielectric class]\label{pr:class}
 Fix $\omega>0$, $k_0=\omega\sqrt{\eps_0\mu_0}$, and $1<\eps_+<\infty$. Use $e^{-i\omega t}$ and

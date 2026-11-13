@@ -1,6 +1,23 @@
 \section{Disproof of the unrestricted fixed-section channel bound}
 \label{uc:section}
 
+The construction in this section exploits the distinction between power
+crossing a chosen square and power delivered to a receiver on its far side.
+Near an edge, a circulating field can cross into the square and return
+outside it.  The positive contribution inside the square counts as passage;
+the return flow contributes to absolute bypass.  The definition permits this
+provided both are within their prescribed thresholds.  Selecting the complete
+outgoing scattering map also counts reflected radiation in the output power.
+
+The construction makes this picture work simultaneously for any prescribed
+finite number of coherent input directions.  Small dielectric spheres near
+paired edges produce localized circulation.  A distant radial stack amplifies
+the incident fields that drive them, compensating for their shrinking size.
+The stack and spheres are ordinary finite dielectrics; their size and number
+of layers may depend on the requested dimension.  A uniform estimate for all
+superpositions, including interference terms and the whole measurement plane,
+connects this picture to the actual Maxwell fields.
+
 The unrestricted target quantifies over all fixed passage and bypass
 thresholds in Definition~\ref{pr:count}. The following counterexample
 uses a permitted range of those thresholds. It does not address the
@@ -26,6 +43,20 @@ Conjecture~\ref{pr:channel-target}, and hence its stronger area bound,
 is false. The frequency, material interval, square and thresholds
 are common to the whole sequence of devices.
 \end{theorem}
+The strict inequality $\eta<\delta$ leaves room to choose an intermediate
+power $p_0$: in the limiting construction the passage and absolute bypass
+both approach $p_0$ for every unit input in the counted subspace.  The proof
+then chooses a finite device close enough to this limit to satisfy both
+inequalities.  Since the complete lossless scattering map preserves incident
+power, the throughput condition holds for every $\tau<1$.  This does not
+require that power leaving on a particular side be collected by a receiver.
+
+The order of limits matters.  For each requested dimension, first choose
+the independent incident data; then increase the stack gain while shrinking
+the spheres; finally take the stack radius large enough to approximate the
+limiting Green kernel for that particular choice.  No single device or
+uniform radius is claimed to work for all dimensions at once.
+
 \begin{proof}
 Choose once and for all an index $1<q<\sqrt{\eps_+}$, a sphere
 permittivity $1<\eps_p\leq\eps_+$, and constants $h>\rho>0$.

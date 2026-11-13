@@ -11,7 +11,32 @@ scalar, nondispersive, and equal to vacuum outside a bounded set.
 The normalization below is a reciprocal Green-function residue norm.
 It is not a positive all-space energy integral.
 
+The construction starts with a dielectric sphere whose selected electric
+resonance has a nonzero axial field.  A sequence of radial dipole
+resonances provides arbitrarily high quality factor.  Small conical
+insertions preserve one simple resonance in a specified symmetry sector;
+the preceding section shows that the continued field excites all their
+tips.  Rounding then yields a smooth finite device with large, localized
+peaks in that same mode.  Finally, a spatial dilation restores the exact
+target real frequency without changing the quality factor.
+
+There are two distinct reasons for the spectral machinery.  The pole
+must survive changes of the material and remain a genuine outgoing
+Maxwell solution; separately, the amplitude of its eigenfield must be
+fixed by a nonzero normalization that also survives those changes.  The
+following subsections establish those properties before combining them
+in Theorem~\ref{ms:modal-packing}.
+
 \subsection{A compact analytic pencil and continuity under rounding}
+
+An eigenfield can be multiplied by any nonzero constant, so convergence
+of modes requires a choice of scale.  The operator pencil below first
+locates resonances as values of $k$ at which the source-free volume
+equation has a nonzero solution.  Splitting off the static part leaves
+a compact analytic problem.  This form also controls changes in the
+material that converge almost everywhere, as happens when tips are
+rounded; pointwise material convergence alone would not generally give
+operator-norm convergence of the original multiplication operator.
 
 Let $B$ be a ball containing all material changes, let
 $X=L^2(B;\C^3)$, and extend its elements by zero when applying
@@ -160,6 +185,13 @@ value's multiplicity or its right kernel.
 
 \subsection{A simple sphere resonance without a genericity assumption}
 
+We use a sphere because its modes can be separated into angular and
+radial factors and its resonance condition can be written explicitly.
+The selected dipole-like mode has nonzero axial electric field near the
+center, providing places for the cone tips.  Simplicity is required only
+within the invariant sector used for the construction; the familiar
+degeneracy among other azimuthal directions is not asserted to disappear.
+
 Choose an algebraic real refractive index
 $1<n<\sqrt{\varepsilon_+}$, leaving a positive margin for the
 subsequent insertions.  Rational numbers already provide this
@@ -289,6 +321,14 @@ on a short axial interval.
 \end{proof}
 
 \subsection{A genuine reciprocal mode norm}
+
+An outgoing mode at a complex resonance frequency grows at real spatial
+infinity, so its ordinary positive all-space energy is not a finite
+normalization.  Instead, we use the coefficient of the Green operator's
+pole.  A simple pole has a nonzero derivative pairing, and this pairing
+sets the scale of the mode.  The definition below is bilinear and may be
+complex; setting it to one is a choice of mode amplitude, not a claim
+that it equals positive stored energy.
 
 The bilinear pairing in the remainder of this section has no
 complex conjugation.  Reciprocity gives $K(k)^T=K(k)$ on $X$.
@@ -427,6 +467,13 @@ threshold.
 \end{proof}
 
 \subsection{Closed modal hotspot statement}
+
+The theorem assembles the local excitation and global continuation steps.
+Its one mode has all the stated peaks simultaneously.  The target
+frequency is the real part of the complex resonance frequency, and the
+norm is the reciprocal residue normalization defined above.  The theorem
+allows the support and fine feature scales to vary with the requested
+number and strength of peaks.
 
 \begin{theorem}[PROVED: arbitrarily many peaks in one normalized finite-device mode]
 \label{ms:modal-packing}

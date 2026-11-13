@@ -1,11 +1,17 @@
-\section{Finite three-dimensional driven packing and the modal normalization audit}
+\section{Finite three-dimensional driven hotspot packing}
 \label{hs:three-section}
 
-This section replaces the unproved finite-extrusion step by a different
-construction: finite inclusions with conical \emph{point} tips.  Small
-positive contrast supplies a convenient uniform scattering inverse; it
-does not remove the point singularity.  The material bounds and frequency
+This section constructs finite inclusions with conical \emph{point} tips.
+Small positive contrast supplies a convenient uniform scattering inverse;
+it does not remove the point singularity.  The material bounds and frequency
 remain fixed.  The modal question is separated at the end.
+
+The two-dimensional construction is a useful guide, but cutting off its
+invariant direction would introduce new boundaries and radiation.  Here
+each sharp reference point instead has two opposite dielectric cones
+meeting at their tips.  The resulting high-field region is localized in
+all three spatial directions.  We again first prove excitation of the
+sharp points by one physical illumination and then round the tips.
 
 \begin{theorem}[PROVED: finite three-dimensional driven point localization]
 \label{hs:three-packing}
@@ -39,8 +45,27 @@ localized neighborhoods themselves are three-dimensional.  This exact
 quantifier avoids silently replacing a point by an infinitely long edge.
 As before, no minimum energy fraction in an individual peak is required.
 
+The proof follows the same logic as the cross-sectional case, but each
+step is a three-dimensional Maxwell statement.  A spherical angular
+problem supplies a conical exponent below one; a coefficient functional
+detects whether the corresponding electric singularity is present.  A
+scattering inverse and total-field approximation provide an illumination
+with a nonzero coefficient at every chosen point.  Finally, convergence
+under rounding retains high values inside each ball, and bounds on its
+collar separate the resulting maximum from the boundary.  The small
+contrast is selected once within the prescribed material bound; the
+number and size of the peaks may then be chosen as stated in the theorem.
+
 \subsection{A genuine conical point exponent}
 \label{hs:three-angular-subsection}
+
+The two caps in \eqref{hs:three-caps} describe the directions occupied
+by the opposing cones.  The angular eigenfunction determines the shape of
+a potential $r^\lambda\phi$ near their common tip.  Because
+$0<\lambda<1$, its gradient is unbounded at the tip but has finite local
+energy.  This electrostatic calculation identifies the candidate
+singularity; the following subsection is needed to establish its role in
+the finite-frequency Maxwell field.
 
 \begin{lemma}[PROVED: strict positive contrast gives a conical exponent below one]
 \label{hs:three-angular}
@@ -97,6 +122,13 @@ $(\lambda^2+\nu)\int_0^Rr^{2\lambda}\,dr
 
 \subsection{An exact Maxwell coefficient functional at the conical point}
 \label{hs:three-functional-subsection}
+
+At positive frequency the Maxwell field is not simply the electrostatic
+field just described.  The decomposition below separates a gradient
+part, which can contain the conical singularity, from a more regular
+remainder.  Projecting the gradient part onto the angular eigenfunction
+then defines a coefficient that can be tested for the actual total field.
+This is the bridge from the local model to a physical scattering solution.
 
 We use one standard regularity theorem in a precise local form.  On a
 ball there is a bounded linear regularized Poincare lifting
@@ -312,6 +344,12 @@ PEC boundary.
 \subsection{A uniform finite-device Maxwell inverse at fixed small contrast}
 \label{hs:three-volume-subsection}
 
+The following inverse controls the complete response of the finite
+dielectric, including multiple scattering among the inclusions.  Small
+contrast makes the volume operator invertible uniformly over the family
+used for rounding.  It is a device for controlling the global problem;
+the local conical exponent remains below one at every positive contrast.
+
 \begin{lemma}[PROVED: uniform volume-integral inverse]
 \label{hs:three-volume}
 Fix a ball $B_L$ and $k>0$.  There is $C_{kL}<\infty$ such that
@@ -378,6 +416,12 @@ the inverse; it is not extra material.
 
 \subsection{Physical illumination, total-field density, and rounding}
 \label{hs:three-global-subsection}
+
+The incoming field is a superposition of plane waves with a square
+integrable angular density.  Its incoming power is finite and can be
+normalized to one.  The density result below concerns the resulting
+\emph{total} fields in the actual dielectric, not just the incident waves.
+It connects the local conical solutions to one globally admissible source.
 
 We now restore physical units: $E$ is the physical electric field
 and $H$ is the physical magnetic field, without the local $Z_0$

@@ -1,6 +1,25 @@
 \section[Channel bounds with an explicit field resource]{Channel bounds: complete operators and a resource-dependent Maxwell theorem}
 \label{ch:section}
 
+An efficient channel is an input pattern whose selected output retains a
+specified fraction of its incident power.  The question here is more
+restrictive: every coherent combination of the counted inputs must also
+carry positive power through the \emph{same} section, while the absolute
+flux outside it stays small.  Counting individual basis fields is not enough,
+because interference changes their flux.  Nor does a count of modes of an
+empty aperture automatically control the fields inside an arbitrary device.
+
+The route in this section makes explicit the missing physical resource.  A
+bound on the field in a box around the section limits how many independent
+inputs can each produce a prescribed through-flux.  The argument first
+replaces the sharp section by a smooth window, then controls that window's
+flux by the local magnetic field.  Maxwell's equations provide a derivative
+bound on that field, allowing a finite-dimensional approximation in the box.
+The resulting count depends on the local field resource; a resonator can make
+that resource large even when its incident power is fixed.  Thus the estimate
+is useful when the resource is separately controlled, but it is not an
+area-only bound for the unrestricted class.
+
 The unrestricted fixed-section assertion is disproved later in
 Theorem~\ref{uc:counterexample} for $\delta>\eta$. The stronger small-bypass
 regime of the resource bounds below remains a separate question.
@@ -36,6 +55,14 @@ inverse in an infinite-dimensional current space.
 
 \subsection{Exact operator reduction}
 \label{ch:operators}
+
+We begin with a simple observation about the complete input-to-output map.
+Suppose it can be approximated, uniformly on the candidate input space, by a
+map with only $M$ output directions.  If there were more than $M$ independent
+efficient inputs, some nonzero combination would disappear under the
+approximating map.  The approximation error would then have to carry its
+entire output, contradicting the efficiency threshold.  The following
+lemma states this argument without assuming that the full map is compact.
 
 Throughout, norms in the incident and delivered channel spaces are physical
 power norms.  Let $T:\mathcal H_{\rm in}\to\mathcal H_{\rm out}$ be a bounded
@@ -109,6 +136,15 @@ section or bypass certificate.
 
 \subsection{Local Maxwell hypotheses and a legitimate weighted flux}
 \label{ch:local}
+
+To apply a finite-dimensional argument to passage through a section, we need
+a measurement that is defined for the actual fields and can be estimated by
+volume norms.  The smooth weight $\psi$ below measures flux through a window
+on the section plane; it is a mathematical aid, not a change in the physical
+square.  A cutoff in the longitudinal direction turns this weighted plane
+measurement into a volume integral.  The term involving the transverse gradient
+of $\psi$ records power crossing the side of that window, so conservation
+does not require us to assume that this lateral flux vanishes.
 
 Let $B\subset\mathbb R^3$ be an open rectangular box with side lengths
 $L_1,L_2,L_3$ and volume $V_B$.  The physical dielectric extends beyond $B$;
@@ -214,6 +250,14 @@ Maxwell field.
 \subsection{Magnetic compactness and its quantitative cost}
 \label{ch:magnetic}
 
+The counting step uses the magnetic field because its curl and divergence
+give a local first-derivative estimate even when the dielectric coefficient
+is only measurable.  The cutoff $\rho$ localizes the field inside the box.
+We first bound its gradient by the local field resource, then show that its
+$L^2$ norm controls the weighted flux.  Together, these estimates prevent an
+input with substantial passage and bounded resource from living entirely in
+arbitrarily fine box eigenfunctions.
+
 \begin{lemma}[PROVED: uniform magnetic regularity]
 \label{ch:magneticHone}
 The zero extension of $\rho h_a$ is in $H^1_0(B)^3$, and
@@ -291,6 +335,13 @@ Cauchy--Schwarz then give
 This is a vector Maxwell estimate, including the actual reflected and
 evanescent fields, not a scalar reduction or a propagating-wave cutoff.
 \end{proof}
+
+The next theorem implements that idea.  If the input space had more
+dimensions than the retained box eigenfunctions, a nonzero combination would
+have no component in any of those low-frequency directions.  Its gradient
+bound would make its remaining magnetic field too small to carry the required
+flux.  The count is therefore finite at fixed $B_W$, with an explicit cost
+when $B_W$ increases.
 
 \begin{theorem}[PROVED: through-flux resource bound]
 \label{ch:resourcecount}
@@ -388,6 +439,15 @@ resource quadratic form restricted to $W$.
 
 \subsection{Absolute bypass supplies the sharp-section bridge}
 \label{ch:bypassbridge}
+
+The preceding theorem concerns a smooth window, whereas the question is
+posed for the sharp square $D$.  Choose a window equal to one on $D$ and
+tapering to zero outside it.  The correction introduced by the taper can
+have either sign, but its magnitude is at most the allowed absolute bypass.
+Passage and throughput supply the positive contribution $\eta\tau$ per unit
+incident power, leaving a positive margin precisely when the sufficient
+condition $\delta<\eta\tau$ holds.  This is a condition for this bridge;
+it does not settle the other threshold regimes.
 
 The following trace hypothesis states explicitly how the physical section
 measurement is related to Lemma~\ref{ch:fluxlemma}.  It is automatic for

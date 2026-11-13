@@ -1,6 +1,26 @@
 \section{Simultaneous driven hotspots in an invariant Maxwell geometry}
 \label{hs:section}
 
+Can one finite-power illumination produce many strong, sharply localized
+electric-field peaks at once?  We first answer a cross-sectional version
+of this question.  The dielectric pattern and the fields are invariant
+along one direction, so each peak in the picture represents an infinitely
+long ridge.  The three-dimensional construction in
+Section~\ref{hs:three-section} removes that invariant direction by a
+separate argument.
+
+The mechanism begins with two dielectric regions meeting at a sharp
+corner.  At an excited corner, the field can grow without bound even
+though its local energy remains finite.  A physical device in our
+construction has rounded, smooth interfaces: rounding cuts off this
+growth, leaving a finite peak.  The proof chooses the rounding small
+enough that this peak is high while the field on a surrounding collar
+remains bounded.  Figure~\ref{hs:fig-corner} shows the local geometry;
+the full construction places finitely many such neighborhoods in one
+device and uses one incident field to excite them all.
+
+\input{figures/hotspot-schematic}
+
 \noindent\textbf{Status and scope.}
 Theorem~\ref{hs:packing} proves a driven, two-dimensional cross-sectional
 version of hotspot packing, with physical incoming power per unit invariant
@@ -110,6 +130,17 @@ parameters change.  The physical construction is infinitely extruded
 in $z$ and is not a finite-volume three-dimensional device.
 \end{theorem}
 
+The proof has four steps.  First, a sharp checkerboard corner admits a
+finite-energy field with an electric singularity.  Second, an outgoing
+scattering and approximation argument shows that an incident field can
+excite each prescribed corner.  Linearity then lets us choose one field
+that excites all finitely many corners simultaneously.  Third, the total
+fields converge as the corners are rounded.  Finally, the sharp field
+provides large values near each corner, while a uniform collar bound keeps
+the boundary of each observation disk low.  This last comparison gives
+actual localized maxima in the smooth devices, not merely large values in
+an ideal singular geometry.
+
 The strict contrast assumption matters: for $\varepsilon_+=1$ the material
 is vacuum.  Cauchy--Schwarz in \eqref{hs:herglotz} then gives a finite
 pointwise electric-field bound at fixed unit incoming power and fixed $k$,
@@ -123,6 +154,14 @@ problems are established in \cite{costabel1999}.  Here we give the needed
 two-dimensional construction directly.  In particular, we do not transfer
 a bounded-domain boundary condition from that paper into an unproved
 scattering claim.
+
+The angular eigenvalue below controls the radial behavior near the
+corner.  Its exponent lies between zero and one: the corresponding
+singular model term tends to zero like $r^\alpha$, but its gradient, and hence
+the electric field, can grow like $r^{\alpha-1}$.  The exponent also
+makes the squared gradient locally integrable.  A nonzero coefficient of
+this angular pattern is essential; the existence of the pattern alone
+does not say that a particular illumination excites it.
 
 \begin{lemma}[PROVED: a binary checkerboard angular exponent]
 \label{hs:angular}
@@ -316,6 +355,13 @@ the total field in a material.  General Herglotz approximation results
 such as \cite{ochs1989} motivate the method, but are not substituted for
 the following transmission argument.
 
+The approximation is applied to \emph{total} fields in the dielectric,
+including the scattered response.  For each corner it gives an incident
+field whose singular coefficient is nonzero.  The fields chosen for
+different corners may differ; Proposition~\ref{hs:simultaneous} then
+combines them into one field.  Because only finitely many coefficients
+must be kept nonzero, no uniform lower bound on their magnitudes is needed.
+
 \begin{lemma}[PROVED: scattering for the finite polygonal geometry]
 \label{hs:wellposed}
 Let $a$ be real, take values in $[b,1]$, equal one outside a disk, and
@@ -475,6 +521,14 @@ coefficients and uses exactly one illumination.
 
 \subsection{Rounding without an assumed rounding power law}
 \label{hs:rounding}
+
+The sharp corner is a device for proving the existence of large fields,
+not the final geometry.  We first fix the illumination and observation
+disks, then round all the corners.  Convergence on bounded regions lets
+us retain large fields at selected points away from the original tips;
+regularity away from those tips supplies a bound on each disk's collar.
+We do not need to predict the peak as an explicit function of the
+rounding radius.
 
 \begin{lemma}[PROVED: outgoing solutions converge under local rounding]
 \label{hs:rounding-convergence}
