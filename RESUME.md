@@ -1,5 +1,54 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 109 is the latest verified incremental checkpoint:
+[STAGE109.txt](checkpoints/2026-11-13-physical-volume-driven-target/STAGE109.txt).
+
+The actual modal-volume endpoint now constructs one common normalized
+rounded family for arbitrary finite N, with eventual exact prescribed real
+frequency, negative imaginary part, quality bound, actual placed kernel,
+reciprocal norm one, outgoing Maxwell mode, selected-sector observed pole and
+common material bounds. For every observation ball it selects a genuine
+attained maximum of the continuous one-sided phase-weighted intensity.
+Interface values use the permittivity of the same material side. The exact
+normalized placement scales this maximum by (sqrt(s)*s)^2. Both transported
+phase branches are identified almost everywhere with the actual placed
+electric field. Its reciprocal weighted maximum tends to zero, and each
+tip has a fixed Cartesian component subsequence with vanishing complex
+directional mode volume. No all-space positive resonance energy is assumed.
+
+The driven construction now reaches the prescribed positive frequency with
+one fixed smooth transverse Herglotz illumination of unit incoming power.
+The literal affine electric/magnetic fields satisfy weak Maxwell and actual
+outgoing scattered-field limits. The same family has binary positive material,
+smooth interfaces and exactly 2N nonempty disjoint connected material lobes.
+All support and observation-ball projections lie in the planar patch; closed
+peak balls are disjoint and have strict prescribed diameter. For every finite
+set of thresholds, all sufficiently late members have the actual attained
+maxima and compact connected full half-amplitude components inside the balls.
+
+Arbitrary-material axial rotation now transports the actual static, dynamic
+and complex volume blocks and their frequency derivative, preserves the
+physical unconjugated pairing and reciprocal norm, and reconstructs an actual
+rotated normalized outgoing Maxwell mode. This batch does not yet transport
+its selected pole or hotspot traces to a general oriented plane.
+
+The modal paper-parameter corollary derives the literal permittivity ceiling,
+strict ball diameter and global outgoing electric-field identification.
+General oriented-plane endpoints, the final admissibility audit, paper
+alignment and aggregate clean verification remain active. Full OQ14 is not
+yet declared closed.
+
+27 modules / 46 reports passed independent root review and a fresh
+ordered build. 1715 upstream sources were authenticated, with cached objects.
+The ledger is 1433 modules / 5693 reports, all prior records unchanged:
+`checkpoints/2026-11-13-physical-volume-driven-target/evidence/audited_after_5238-stage109.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage109.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 108 is the latest verified incremental checkpoint:
 [STAGE108.txt](checkpoints/2026-11-13-actual-hotspot-existence/STAGE108.txt).
 

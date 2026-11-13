@@ -1,0 +1,183 @@
+[
+  {
+    "module": "Packet06RoundedVolumeLimits",
+    "declarations": [
+      "OQ14.Packet06RoundedVolumeLimits.actual_rounded_maximum_volume"
+    ]
+  },
+  {
+    "module": "Packet06PlacedRoundedVolumeLimits",
+    "declarations": [
+      "OQ14.Packet06PlacedRoundedVolumeLimits.amplitude_placedVector",
+      "OQ14.Packet06PlacedRoundedVolumeLimits.variable_placement_volume"
+    ]
+  },
+  {
+    "module": "Packet06ActualFamilyVolume",
+    "declarations": [
+      "OQ14.Packet06ActualFamilyVolume.actual_family_volume"
+    ]
+  },
+  {
+    "module": "Packet06ModalPlacementScale",
+    "declarations": [
+      "OQ14.Packet06ModalPlacementScale.target_scale"
+    ]
+  },
+  {
+    "module": "Packet06ModalVolumeExistence",
+    "declarations": [
+      "OQ14.Packet06ModalVolumeExistence.exists_modal_volume_family"
+    ]
+  },
+  {
+    "module": "Packet06ModalVolumePlacedProperties",
+    "declarations": [
+      "OQ14.Packet06ModalVolumePlacedProperties.eventual_placed_properties"
+    ]
+  },
+  {
+    "module": "Packet06FinalModalVolume",
+    "declarations": [
+      "OQ14.Packet06FinalModalVolume.exists_final_modal_volume_family"
+    ]
+  },
+  {
+    "module": "Packet06PhaseWeightedMaximum",
+    "declarations": [
+      "OQ14.Packet06PhaseWeightedMaximum.weighted_attains"
+    ]
+  },
+  {
+    "module": "Packet06AllPhaseWeightedVolumes",
+    "declarations": [
+      "OQ14.Packet06AllPhaseWeightedVolumes.all_weighted_volumes"
+    ]
+  },
+  {
+    "module": "Packet06FinalAllModalVolumes",
+    "declarations": [
+      "OQ14.Packet06FinalAllModalVolumes.exists_all_modal_volume_families"
+    ]
+  },
+  {
+    "module": "Packet06PlacedWeightedMaximum",
+    "declarations": [
+      "OQ14.Packet06PlacedWeightedMaximum.actual_placed_weighted_maximum"
+    ]
+  },
+  {
+    "module": "Packet06PlacedWeightedCertificate",
+    "declarations": [
+      "OQ14.Packet06PlacedWeightedCertificate.actual_certificate"
+    ]
+  },
+  {
+    "module": "Packet06ActualPlacedAllVolumes",
+    "declarations": [
+      "OQ14.Packet06ActualPlacedAllVolumes.exists_actual_placed_all_volumes"
+    ]
+  },
+  {
+    "module": "Packet06AxialMaterialTransport",
+    "declarations": [
+      "OQ14.Packet06AxialMaterialTransport.coefficient_value",
+      "OQ14.Packet06AxialMaterialTransport.dielectric_value",
+      "OQ14.Packet06AxialMaterialTransport.sqrt_transport",
+      "OQ14.Packet06AxialMaterialTransport.source_transport",
+      "OQ14.Packet06AxialMaterialTransport.static_transport"
+    ]
+  },
+  {
+    "module": "Packet06AxialDynamicTransport",
+    "declarations": [
+      "OQ14.Packet06AxialDynamicTransport.potential_cov_at",
+      "OQ14.Packet06AxialDynamicTransport.cross_integrable_ae",
+      "OQ14.Packet06AxialDynamicTransport.weightedRemainder_transport"
+    ]
+  },
+  {
+    "module": "Packet06AxialComplexTransport",
+    "declarations": [
+      "OQ14.Packet06AxialComplexTransport.complex_conjugacy",
+      "OQ14.Packet06AxialComplexTransport.derivative_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06AxialReciprocalTransport",
+    "declarations": [
+      "OQ14.Packet06AxialReciprocalTransport.vectorPair_rotation",
+      "OQ14.Packet06AxialReciprocalTransport.reciprocalNorm_rotation"
+    ]
+  },
+  {
+    "module": "Packet06AxialOutgoingTransport",
+    "declarations": [
+      "OQ14.Packet06AxialOutgoingTransport.rotated_normalized_mode"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAffineGeometry",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAffineGeometry.image_phase",
+      "OQ14.Packet07DrivenUniformAffineGeometry.image_ball",
+      "OQ14.Packet07DrivenUniformAffineGeometry.image_closedBall",
+      "OQ14.Packet07DrivenUniformAffineGeometry.image_phase_ball"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAffinePhase",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAffinePhase.amplitude_transport",
+      "OQ14.Packet07DrivenUniformAffinePhase.continuous_transport",
+      "OQ14.Packet07DrivenUniformAffinePhase.phase_transport"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAffineHotspotGeometry",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAffineHotspotGeometry.image_superlevel",
+      "OQ14.Packet07DrivenUniformAffineHotspotGeometry.phase_superlevel_image",
+      "OQ14.Packet07DrivenUniformAffineHotspotGeometry.maximum_transport",
+      "OQ14.Packet07DrivenUniformAffineHotspotGeometry.half_component_transport"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAffineAE",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAffineAE.map_qmp",
+      "OQ14.Packet07DrivenUniformAffineAE.component_image_ae"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAffineHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAffineHotspot.distance_placement",
+      "OQ14.Packet07DrivenUniformAffineHotspot.affine_actual_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFixedTarget",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFixedTarget.fixed_target_hotspots"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformMaterialCeiling",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformMaterialCeiling.positive_contrast_below"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformDiameter",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformDiameter.closed_ball_diameter_lt"
+    ]
+  },
+  {
+    "module": "Packet06ModalPaperParameters",
+    "declarations": [
+      "OQ14.Packet06ModalPaperParameters.exists_modal_packing"
+    ]
+  }
+]

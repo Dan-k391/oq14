@@ -1,0 +1,817 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-physical-volume-driven-target/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06RoundedVolumeLimits",
+      "source": "lean/Packet06RoundedVolumeLimits.lean",
+      "source_sha256": "8a3ce9dd14d94450a076322b34edb91168f7417e05e963591b224946668580f8",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-actual-modal-volume\\reviews\\objects\\Packet06RoundedVolumeLimits.olean D:\\oq14\\lean\\Packet06RoundedVolumeLimits.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 13.9880031,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06RoundedVolumeLimits-chain.log",
+      "log_sha256": "0f6fc3923d697519305d4c008dedc737a727262188806834a6803b57baa4fe39",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedVolumeLimits.actual_rounded_maximum_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5e9a3eabe0de9500dbf1f460c0efe2ae185eb4a8d679775159d6a28febf2506a"
+    },
+    {
+      "module": "Packet06PlacedRoundedVolumeLimits",
+      "source": "lean/Packet06PlacedRoundedVolumeLimits.lean",
+      "source_sha256": "dd5d7aa6c064e9a84535ec4c83d077bd6775bec1c3be8ac34bcafe63b68c2323",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-actual-modal-volume\\reviews\\objects\\Packet06PlacedRoundedVolumeLimits.olean D:\\oq14\\lean\\Packet06PlacedRoundedVolumeLimits.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 11.4123851,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06PlacedRoundedVolumeLimits-chain.log",
+      "log_sha256": "3e1eb42e6f87447380d71666bc3ce2c150e29e0b22b925486b20ba6409712253",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedRoundedVolumeLimits.amplitude_placedVector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedRoundedVolumeLimits.variable_placement_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8cb90520bcfcfb3b6010107a8942b3e829e0fc0eb24b470ab40a391f0cd95a67"
+    },
+    {
+      "module": "Packet06ActualFamilyVolume",
+      "source": "lean/Packet06ActualFamilyVolume.lean",
+      "source_sha256": "17875e5d57b1e55227b5a35c00488c2a86afad0b9c8a666b72fe240864d517d0",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-actual-modal-volume\\reviews\\objects\\Packet06ActualFamilyVolume.olean D:\\oq14\\lean\\Packet06ActualFamilyVolume.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 14.0929107,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ActualFamilyVolume-chain.log",
+      "log_sha256": "f17866206d135918c8197ab0fbaf55f55bc07fcf03cfc0aec29f26da6725c7a3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualFamilyVolume.actual_family_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c92aa8cc6a48fe4dbe91664b451ce7ac6b984ea1f42aab1779cb1897d724c2c9"
+    },
+    {
+      "module": "Packet06ModalPlacementScale",
+      "source": "lean/Packet06ModalPlacementScale.lean",
+      "source_sha256": "b224a3a3cc3bed1ab15d8485a0f01191ccd00d96b2706913b4d97918cd5a03d3",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-actual-modal-volume\\reviews\\objects\\Packet06ModalPlacementScale.olean D:\\oq14\\lean\\Packet06ModalPlacementScale.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.9456921,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ModalPlacementScale-chain.log",
+      "log_sha256": "6fa271cb4c3aefa9084b4a4f24a721bdd50410902a0613870a21435c263ba17d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModalPlacementScale.target_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cbd9bd19aa0e088686c470d610cb2989c027259ff558024171a92af1fe04fb22"
+    },
+    {
+      "module": "Packet06ModalVolumeExistence",
+      "source": "lean/Packet06ModalVolumeExistence.lean",
+      "source_sha256": "82432b1aa78d1a955c0bd7de01e2863456b23e26e9fceffbed454728a124a259",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-volume-lf\\reviews\\root-objects\\Packet06ModalVolumeExistence.olean",
+        "D:\\oq14\\lean\\Packet06ModalVolumeExistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.891,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ModalVolumeExistence-chain.log",
+      "log_sha256": "ee67e15dd610add22e06b530e88874f25355567a7dfa06d5c80454f74a96308d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModalVolumeExistence.exists_modal_volume_family",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6649537207bbe3096bb072d42566d56d29c3fc04efbf958bb2d6d9279f0892f6"
+    },
+    {
+      "module": "Packet06ModalVolumePlacedProperties",
+      "source": "lean/Packet06ModalVolumePlacedProperties.lean",
+      "source_sha256": "a3e0cf06dcab3b8602ba693f08078e0c15d331c139c437c04368f7222c427c58",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-final-modal-volume\\reviews\\objects\\Packet06ModalVolumePlacedProperties.olean D:\\oq14\\lean\\Packet06ModalVolumePlacedProperties.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 13.6677379,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ModalVolumePlacedProperties-chain.log",
+      "log_sha256": "d9dcdb203f4fa0c0ece982bcc5d14455ddb3f7096be4d2a9c6605e32ead88b5f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModalVolumePlacedProperties.eventual_placed_properties",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6862293386e88bd227f0ca019834cbbf6152bb2c186a7b4086bcab22e58de459"
+    },
+    {
+      "module": "Packet06FinalModalVolume",
+      "source": "lean/Packet06FinalModalVolume.lean",
+      "source_sha256": "b2ffad965b53475f1d56821905996fdd91252aa30924c0784d3015503181efd4",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-final-modal-volume\\reviews\\objects\\Packet06FinalModalVolume.olean D:\\oq14\\lean\\Packet06FinalModalVolume.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 17.2505493,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06FinalModalVolume-chain.log",
+      "log_sha256": "278c194e48e7e48167e617f7efcfccbb98d0c0a85e9ae3da32debf1670f8d7ad",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06FinalModalVolume.exists_final_modal_volume_family",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e7dd16a421171f01d0c274251b917c38888c72b96d95392d9d47bfd7a8921b49"
+    },
+    {
+      "module": "Packet06PhaseWeightedMaximum",
+      "source": "lean/Packet06PhaseWeightedMaximum.lean",
+      "source_sha256": "80f97fae84991cfc601c3cc8b634dc1dfc50902c2486bc8972c494413e2643a1",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-final-modal-volume\\reviews\\objects\\Packet06PhaseWeightedMaximum.olean D:\\oq14\\lean\\Packet06PhaseWeightedMaximum.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 12.9166885,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06PhaseWeightedMaximum-chain.log",
+      "log_sha256": "eef65a8962c6fe3ade8c8090678060f81792021d44dca96b45b30427c1e6ddca",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PhaseWeightedMaximum.weighted_attains",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fb53a6efa035e4e7d675463294dc46fdf3a8a6b39deeb1d79f2edf2319c057fb"
+    },
+    {
+      "module": "Packet06AllPhaseWeightedVolumes",
+      "source": "lean/Packet06AllPhaseWeightedVolumes.lean",
+      "source_sha256": "d70114b184e1bc72fc4d1a80bb4e689b9a6ad8adf5ec935e3c94c2dc5f525d06",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-final-modal-volume\\reviews\\objects\\Packet06AllPhaseWeightedVolumes.olean D:\\oq14\\lean\\Packet06AllPhaseWeightedVolumes.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 13.2725061,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AllPhaseWeightedVolumes-chain.log",
+      "log_sha256": "ce9a9e24265bee6ff3e251dadee8c445f9d761d4c2947c28ceb18d31f89f6d0a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AllPhaseWeightedVolumes.all_weighted_volumes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4241a54f70d027b805818c95e7c036a14a9419a0b4af126c39626fe680474b30"
+    },
+    {
+      "module": "Packet06FinalAllModalVolumes",
+      "source": "lean/Packet06FinalAllModalVolumes.lean",
+      "source_sha256": "42ff9be66d180d192965d28f89b5b2cd252f0a31155584ca0df7f16abb9bdc89",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-final-modal-volume\\reviews\\objects\\Packet06FinalAllModalVolumes.olean D:\\oq14\\lean\\Packet06FinalAllModalVolumes.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 15.7778684,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06FinalAllModalVolumes-chain.log",
+      "log_sha256": "ed5f0598cf03a70e09af40be9b5a2e064d208ff310d012889ccb90bd38472a2a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06FinalAllModalVolumes.exists_all_modal_volume_families",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "192f6ca312f83b2db0d887b374d7d2778c47df92f383f1b85fd7cbeac7d56fe5"
+    },
+    {
+      "module": "Packet06PlacedWeightedMaximum",
+      "source": "lean/Packet06PlacedWeightedMaximum.lean",
+      "source_sha256": "2f4d1659db7e2742698d9dd9b8af434fd1d8adce0d19e9c148aacbd0a1cd8698",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-placed-volume\\reviews\\root-objects\\Packet06PlacedWeightedMaximum.olean",
+        "D:\\oq14\\lean\\Packet06PlacedWeightedMaximum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.938,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06PlacedWeightedMaximum-chain.log",
+      "log_sha256": "753853422ab8505c245cde05ddfa7d29deadc218e0b0c31e14db0f657ab1bc24",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedWeightedMaximum.actual_placed_weighted_maximum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e25a60a7f49678b9dd30890e56dbed4072ba836a600c91f7c4aa9526557425be"
+    },
+    {
+      "module": "Packet06PlacedWeightedCertificate",
+      "source": "lean/Packet06PlacedWeightedCertificate.lean",
+      "source_sha256": "943b2e38434512fb90b1051fb5118a98123e99a90dd42829780d565d837c4951",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-placed-volume\\reviews\\root-objects\\Packet06PlacedWeightedCertificate.olean",
+        "D:\\oq14\\lean\\Packet06PlacedWeightedCertificate.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.0,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06PlacedWeightedCertificate-chain.log",
+      "log_sha256": "bb3b13e321787fb5c91adccd05a6e14559f6442c5e071b9ec7777e57a5b6bcd5",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedWeightedCertificate.actual_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dd2bc62831ee5313b35f0e54ac06a597313834c53683958814846fb745c0ff89"
+    },
+    {
+      "module": "Packet06ActualPlacedAllVolumes",
+      "source": "lean/Packet06ActualPlacedAllVolumes.lean",
+      "source_sha256": "6060cfdf197a0a0a3ed62d302c8f3deab7e68073ef1565a4f26bc3bbb487ec7b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-placed-volume\\reviews\\root-objects\\Packet06ActualPlacedAllVolumes.olean",
+        "D:\\oq14\\lean\\Packet06ActualPlacedAllVolumes.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.25,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ActualPlacedAllVolumes-chain.log",
+      "log_sha256": "c1503a513b520d6865a2884c2a6870d8b2c1a9f53b32db9d9532e2ccd4bc823b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualPlacedAllVolumes.exists_actual_placed_all_volumes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3e4692608493e9f91ef6839202c4e9b9d03897001ab8d4d9f0bcb377054e463d"
+    },
+    {
+      "module": "Packet06AxialMaterialTransport",
+      "source": "lean/Packet06AxialMaterialTransport.lean",
+      "source_sha256": "97d4ce7d3a0f0f01ad7bed56223db1df909fa5462452d279f5bff1744cfb3d2c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-arbitrary-material\\reviews\\root-objects\\Packet06AxialMaterialTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialMaterialTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.828,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AxialMaterialTransport-chain.log",
+      "log_sha256": "08adc42eeb292a62b58f76fccc498624802dde0347e6928e154198f9fe2a4bdd",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialMaterialTransport.coefficient_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialMaterialTransport.dielectric_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialMaterialTransport.sqrt_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialMaterialTransport.source_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialMaterialTransport.static_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "35c65c1f51bee812ddc18be0a21819f00aef8394e3b869d8c52c08e4abd95a58"
+    },
+    {
+      "module": "Packet06AxialDynamicTransport",
+      "source": "lean/Packet06AxialDynamicTransport.lean",
+      "source_sha256": "197e96c053cd9a79a7b30bb7b41646079993ec5f5e8fc11d6b142ff3010f6c9a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-arbitrary-material\\reviews\\root-objects\\Packet06AxialDynamicTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialDynamicTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.625,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AxialDynamicTransport-chain.log",
+      "log_sha256": "b7ee2504b9d8fbe3e7c5aebcea7ec3db313d28d46a79515b31aac7331ce811ac",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialDynamicTransport.potential_cov_at",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialDynamicTransport.cross_integrable_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialDynamicTransport.weightedRemainder_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "31da4768cc0873fd3c7e6ef015f3bd599da7c24eea13b530dd27ca26e933b5b9"
+    },
+    {
+      "module": "Packet06AxialComplexTransport",
+      "source": "lean/Packet06AxialComplexTransport.lean",
+      "source_sha256": "a8e94b09e5509f32f306b49dfd0a46e22bac65e03c1323122f50830975b32861",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-arbitrary-material\\reviews\\root-objects\\Packet06AxialComplexTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialComplexTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.641,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AxialComplexTransport-chain.log",
+      "log_sha256": "bf46c9b43fed0ce591c0b423bc683f0b084c21510a5e7668e961ae2554ecd8b9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialComplexTransport.complex_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialComplexTransport.derivative_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e9a8a5c129c3b4590313e2dbd98553dbeac62feb7ddf9d27e7b3916bece0aba1"
+    },
+    {
+      "module": "Packet06AxialReciprocalTransport",
+      "source": "lean/Packet06AxialReciprocalTransport.lean",
+      "source_sha256": "f2cb6d64720f4c0b91e693bf5b16e7ddbf323f0cd62d2af88857e931426eaad2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-arbitrary-material\\reviews\\root-objects\\Packet06AxialReciprocalTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialReciprocalTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.937,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AxialReciprocalTransport-chain.log",
+      "log_sha256": "9ee315e702a1d3cd47d049a64a631a05b54a1b3afb396aac2389326749d713be",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialReciprocalTransport.vectorPair_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialReciprocalTransport.reciprocalNorm_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e5b9509156c9622f7589c4aa2cfb819b149cfa41590d8cddb537731b13f1358e"
+    },
+    {
+      "module": "Packet06AxialOutgoingTransport",
+      "source": "lean/Packet06AxialOutgoingTransport.lean",
+      "source_sha256": "56025e9dc8048c3ad7e3dc1616ad43a8e7d0d3354f1ab1357a87e4cce5bf9ae3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-arbitrary-material\\reviews\\root-objects\\Packet06AxialOutgoingTransport.olean",
+        "D:\\oq14\\lean\\Packet06AxialOutgoingTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.078,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06AxialOutgoingTransport-chain.log",
+      "log_sha256": "bdd2e21dc4bc3771010b1ad54db7fb0fd9ded189b8150423ed308656188e9a39",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialOutgoingTransport.rotated_normalized_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "317d970075987b9a0b517ee0d021e4d126aa4e5544db33f90ace4a4ae002f11f"
+    },
+    {
+      "module": "Packet07DrivenUniformAffineGeometry",
+      "source": "lean/Packet07DrivenUniformAffineGeometry.lean",
+      "source_sha256": "d432431b97db4ff26e34012b797cc7521d563e2f102813e6143dc609005d463e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformAffineGeometry.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformAffineGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.86,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformAffineGeometry-chain.log",
+      "log_sha256": "01eb145008820aeceecdbedd611ced88c0f681edf04d4b54c7d46d05cc909b93",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineGeometry.image_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineGeometry.image_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineGeometry.image_closedBall",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineGeometry.image_phase_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c201a3e59cf7bcbb2f39f82464f7d3c6241f9b978bb53bf5c0c8fad611abad0c"
+    },
+    {
+      "module": "Packet07DrivenUniformAffinePhase",
+      "source": "lean/Packet07DrivenUniformAffinePhase.lean",
+      "source_sha256": "bdfe452cad643787be3992c84eaa43f4aed80ab6be47c17fe3ff488a55f993f9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformAffinePhase.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformAffinePhase.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.297,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformAffinePhase-chain.log",
+      "log_sha256": "45613fe8b0d951003bdbc91eaed0d62aab09db67e24fea8a6e84ba2f348553c8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffinePhase.amplitude_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffinePhase.continuous_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffinePhase.phase_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0b38cb65bf94ea4d305d49d1aece8a1c2d0f8ac345b9b4b5342d1d8b18df8c47"
+    },
+    {
+      "module": "Packet07DrivenUniformAffineHotspotGeometry",
+      "source": "lean/Packet07DrivenUniformAffineHotspotGeometry.lean",
+      "source_sha256": "1a1c618301d89a0ff87dd4d523d2675f0d813cd68f20bb899150eff4d56cf253",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformAffineHotspotGeometry.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformAffineHotspotGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.703,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformAffineHotspotGeometry-chain.log",
+      "log_sha256": "04c0fda788213e5117fa85ca517daef18754bdfd529f33d834cc905f368e5b9a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspotGeometry.image_superlevel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspotGeometry.phase_superlevel_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspotGeometry.maximum_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspotGeometry.half_component_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e935a075604df817db352a6d5486cfde4cbf235f2672565fa3210be56a000a20"
+    },
+    {
+      "module": "Packet07DrivenUniformAffineAE",
+      "source": "lean/Packet07DrivenUniformAffineAE.lean",
+      "source_sha256": "9de5246687dfc20c78924385f338ba21346e9df9730f6b58014dd056240745b0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformAffineAE.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformAffineAE.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.297,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformAffineAE-chain.log",
+      "log_sha256": "d3fc6bad4273ee05b8402b33851162d44958c6f54ea1b44bed60d1087d0fbed1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineAE.map_qmp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineAE.component_image_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "67467ad4640c313239725d1159a82e8cb94b6faf7d8e6a2a64a0bdfc119cc4f2"
+    },
+    {
+      "module": "Packet07DrivenUniformAffineHotspot",
+      "source": "lean/Packet07DrivenUniformAffineHotspot.lean",
+      "source_sha256": "7df6d9f053d40a25ff64bc3a2e719e2ecf4615be1bab8e6d7ccc8942fa903b04",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformAffineHotspot.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformAffineHotspot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.656,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformAffineHotspot-chain.log",
+      "log_sha256": "9a7d4ceb34de4a20ec91c5cfe580c29ca1500c3d482de375824826ce259a9eb7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspot.distance_placement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenUniformAffineHotspot.affine_actual_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c315a5f03f3d57cfc3a4e4dcf7066f6f0ba18b6cfd1bd589bde2f135b1c03d73"
+    },
+    {
+      "module": "Packet07DrivenUniformFixedTarget",
+      "source": "lean/Packet07DrivenUniformFixedTarget.lean",
+      "source_sha256": "b1e76c222874abf1abfc65a636dc9be4a47e5c3084d7d5a5b4d5681c1517dc2a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformFixedTarget.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformFixedTarget.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.594,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformFixedTarget-chain.log",
+      "log_sha256": "27538c5095a3f155e748fcaf3bb2fc74fea709a9379bc085c3427ecb9b4328c8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformFixedTarget.fixed_target_hotspots",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3c11483e4061a545d708f899af0549628b676a3e40ce91cfac82a212a30444e7"
+    },
+    {
+      "module": "Packet07DrivenUniformMaterialCeiling",
+      "source": "lean/Packet07DrivenUniformMaterialCeiling.lean",
+      "source_sha256": "cb6cc6b56ce19e7943642ce63001cb5af306806231247485f8f1a1afc2dbb48a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformMaterialCeiling.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformMaterialCeiling.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.484,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformMaterialCeiling-chain.log",
+      "log_sha256": "f4b4b6afb84212b83c6de7b23e89960d2e6c5555e3d0022a5fa34a382c05634f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformMaterialCeiling.positive_contrast_below",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f724008e305065907f44ca5b131a2d27f9ab02575629a87bfa3110b0b62cbe32"
+    },
+    {
+      "module": "Packet07DrivenUniformDiameter",
+      "source": "lean/Packet07DrivenUniformDiameter.lean",
+      "source_sha256": "1cff98698920b9bc5542370c12ecd267b455cd389cd2e0dcc8a4bf961250baa4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-fixed-target\\reviews\\root-objects\\Packet07DrivenUniformDiameter.olean",
+        "D:\\oq14\\lean\\Packet07DrivenUniformDiameter.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.906,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet07DrivenUniformDiameter-chain.log",
+      "log_sha256": "9ae35112c08364ede9c20e299a471e0f6aa583e795e6747b68b53d79c50f1b48",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenUniformDiameter.closed_ball_diameter_lt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "36a1aae4d5a2535f080c5a29ff2f1024bbb39dd2176a0a840f9104069ab9b0f9"
+    },
+    {
+      "module": "Packet06ModalPaperParameters",
+      "source": "lean/Packet06ModalPaperParameters.lean",
+      "source_sha256": "959af7687aeb93df51f27315ea87aabb96778745e538961dedc600f66f342c86",
+      "command": null,
+      "exit_code": 0,
+      "elapsed_seconds": 11.19,
+      "log": "checkpoints/2026-11-13-physical-volume-driven-target/evidence/Packet06ModalPaperParameters-chain.log",
+      "log_sha256": "fa35d6e9ca05cec57fe3dd19f9c721ffe43c63435444efc3fe8d407d8144e98f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModalPaperParameters.exists_modal_packing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e5049e60e528075fa3a405ef80f1f0b92bdb29cccba4dce333aef61a6fc6c3de"
+    }
+  ],
+  "module_count": 27,
+  "report_count": 46
+}
