@@ -29,9 +29,9 @@ a fully vetted publication:
    identified. Establish accurate attribution, availability, and permission
    before distributing or relying on them externally. The missing companion
    file noted in the introduction has not been independently inspected.
-4. The title page intentionally leaves author information to be supplied.
-   Identify the responsible human contributor(s) and prepare an accurate
-   account of AI assistance appropriate for the chosen venue.
+4. The title page identifies Daniel Wang. Confirm any additional contributor
+   information and prepare an accurate account of AI assistance appropriate
+   for the chosen venue.
 5. The paper is 113 pages in the present layout. A journal submission may
    require a focused article and separate supporting material; any such
    reorganization must retain the hypotheses and proof dependencies.
