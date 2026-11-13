@@ -1,0 +1,1135 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "a936671",
+  "modules": 624,
+  "reports": 4155,
+  "new_modules": 34,
+  "new_reports": 106,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "d99bd125989a78ae09c728ab9096e3d07b07850923308496bacee5996df372ca",
+  "ledger_sha256": "4900ca8fa24973915a3e5f0fc18cb2b48735f4e4a126ab861ffb2c7e189f2035",
+  "raw_archive_sha256": "7d7f29c4f2e567156c5330b415ce9ed69fd484582ff7374d1f9c492ee159ef7f",
+  "records": [
+    {
+      "module": "MaxwellCutoffCommutator",
+      "reports": 9,
+      "source_sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/MaxwellCutoffCommutator.log",
+      "independent_log_sha256": "53f83300e5e9f43a144acd7c4a89e8fb2d5af9d56513eb357f6d858d1f27235f",
+      "declarations": [
+        "OQ14.MaxwellCutoffCommutator.quotient_ae",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_commutator",
+        "OQ14.MaxwellCutoffCommutator.cutoff_difference_bound",
+        "OQ14.MaxwellCutoffCommutator.cutoffSource_memLp",
+        "OQ14.MaxwellCutoffCommutator.cutoffSource_norm",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_decomposition",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_norm",
+        "OQ14.MaxwellCutoffCommutator.derivative_cutoff_commutator",
+        "OQ14.MaxwellCutoffCommutator.derivative_cutoff_source_norm"
+      ]
+    },
+    {
+      "module": "MaxwellCurlCutoffSource",
+      "reports": 6,
+      "source_sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/MaxwellCurlCutoffSource.log",
+      "independent_log_sha256": "088e711b76314f9090a7cd71f710f5c8cdf0349f187f58bb375fc97bfe20a01d",
+      "declarations": [
+        "OQ14.MaxwellCurlCutoffSource.quotient_sub",
+        "OQ14.MaxwellCurlCutoffSource.source_ae",
+        "OQ14.MaxwellCurlCutoffSource.quotient_source_bound",
+        "OQ14.MaxwellCurlCutoffSource.flat_weight_norm",
+        "OQ14.MaxwellCurlCutoffSource.flat_quotient_weight_bound",
+        "OQ14.MaxwellCurlCutoffSource.flat_quotient_source_bound"
+      ]
+    },
+    {
+      "module": "LocalizedCurlCurlSource",
+      "reports": 1,
+      "source_sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/LocalizedCurlCurlSource.log",
+      "independent_log_sha256": "df8b32748ef1f06a6c8bf4df9e33d70bdb4d7ed2916d9f747b74833f1302dc58",
+      "declarations": [
+        "OQ14.LocalizedCurlCurlSource.cutoff_curlcurl_source"
+      ]
+    },
+    {
+      "module": "FlatLocalCurlSources",
+      "reports": 2,
+      "source_sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/FlatLocalCurlSources.log",
+      "independent_log_sha256": "f0623c03dd43c494c3db8c70f3ced2a0f5d859245608ca35da7dde1d15535acc",
+      "declarations": [
+        "OQ14.FlatLocalCurlSources.extend_weighted",
+        "OQ14.FlatLocalCurlSources.actual_flat_local_sources"
+      ]
+    },
+    {
+      "module": "NestedCurlCutoffSource",
+      "reports": 3,
+      "source_sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/NestedCurlCutoffSource.log",
+      "independent_log_sha256": "84c26ec18ae6641311661634a6b527397541c259a458923eb9cc83518579cf56",
+      "declarations": [
+        "OQ14.NestedCurlCutoffSource.source_localize",
+        "OQ14.NestedCurlCutoffSource.localize_weighted",
+        "OQ14.NestedCurlCutoffSource.nested_flat_source_bound"
+      ]
+    },
+    {
+      "module": "FlatNestedMaxwellForcing",
+      "reports": 1,
+      "source_sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/FlatNestedMaxwellForcing.log",
+      "independent_log_sha256": "f56cdaa7a6e29810277f84eb87e38ae5ec31dca1844338e2771f2575bced8e4b",
+      "declarations": [
+        "OQ14.FlatNestedMaxwellForcing.actual_nested_forcing"
+      ]
+    },
+    {
+      "module": "GlobalToRegionalCurl",
+      "reports": 2,
+      "source_sha256": "5d4fbeac1537e5f012dfe4574555567d5f6250a60aa97ef4c5d98c7fc7655be4",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/GlobalToRegionalCurl.log",
+      "independent_log_sha256": "4d63d07233816a5ffabd25289e614cdd3021c3061918ca7c8f7851b47d6f1c10",
+      "declarations": [
+        "OQ14.GlobalToRegionalCurl.restrict_global_hcurl",
+        "OQ14.GlobalToRegionalCurl.restrict_weakMaxwell"
+      ]
+    },
+    {
+      "module": "Packet05FiniteBranchMaximum",
+      "reports": 1,
+      "source_sha256": "c26e5283d6df27fa182637aa9fef904b8663676ab3dd6f2ea946810c26c1b3ec",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FiniteBranchMaximum.log",
+      "independent_log_sha256": "f8266bec95ce45d4167378a3c48d142e2b5ae311e1d52cf21ea8acd3db0a36f4",
+      "declarations": [
+        "OQ14.Packet05FiniteBranchMaximum.finite_closed_branches_attain_max"
+      ]
+    },
+    {
+      "module": "Packet05FlatActualForcing",
+      "reports": 1,
+      "source_sha256": "c47280ebd84da61c4083be6b1c76e4aacca31e0d2833380b50b0680028b82281",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatActualForcing.log",
+      "independent_log_sha256": "2cc571f979ae23ebea5523aaf97ac47102345e368fcf512fe6a993c8491d3072",
+      "declarations": [
+        "OQ14.Packet05FlatActualForcing.actual_flat_forcing_and_magnetic_quotient"
+      ]
+    },
+    {
+      "module": "Packet05ForcedDifferenceGreen",
+      "reports": 3,
+      "source_sha256": "5ed587ae68eeb07d11af5a4823089a121f5c9b9c5415dd517f551ae8bcab1c95",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ForcedDifferenceGreen.log",
+      "independent_log_sha256": "5d06e37527b9170ed8e0a0813641ae8b0350e0acad432e96cc9622daa6caa1be",
+      "declarations": [
+        "OQ14.Packet05ForcedDifferenceGreen.localized_weight_quotient",
+        "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green",
+        "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green_with_commutator"
+      ]
+    },
+    {
+      "module": "Packet05ActualLocalizedGreen",
+      "reports": 2,
+      "source_sha256": "5c1079c027477e740e55c8495a834c0deb75429a123fc37f531a3b101dab8d23",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualLocalizedGreen.log",
+      "independent_log_sha256": "77511ae4c830830bb8eacb0fbe1d47fdf2746243920ebe6cd9a55fb3da63d000",
+      "declarations": [
+        "OQ14.Packet05ActualLocalizedGreen.actual_localized_flat_fields",
+        "OQ14.Packet05ActualLocalizedGreen.actual_flat_tangential_green"
+      ]
+    },
+    {
+      "module": "Packet05DifferenceMaxwell",
+      "reports": 7,
+      "source_sha256": "9fdea86c0e662375dcbe9c85820b34fbacd206e45809bf2f3d43a74ef2f5d389",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferenceMaxwell.log",
+      "independent_log_sha256": "9b6387b41e9dc0deea9719df8b9ad9e1bfa63ccb705fc47fe5d2a4bfa8034384",
+      "declarations": [
+        "OQ14.Packet05DifferenceMaxwell.ball_tangential_step",
+        "OQ14.Packet05DifferenceMaxwell.cutField_global_ae",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_maxwell",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_energy",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_cutoff_bound",
+        "OQ14.Packet05DifferenceMaxwell.actual_ball_tangential_difference_uniform",
+        "OQ14.Packet05DifferenceMaxwell.actual_ball_cutoff_electric_difference_uniform"
+      ]
+    },
+    {
+      "module": "Packet05DifferenceConverse",
+      "reports": 2,
+      "source_sha256": "2f0fe8824058d8b0472794d9b50296fd3e0619ff972be752a43eee5f675df773",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferenceConverse.log",
+      "independent_log_sha256": "e2542a9a392042f2dbdc25db5fc86cbcd615473d61d589cad06568c119952f4e",
+      "declarations": [
+        "OQ14.Packet05DifferenceConverse.quotient_pair_tendsto",
+        "OQ14.Packet05DifferenceConverse.weakPartial_of_bounded_quotients"
+      ]
+    },
+    {
+      "module": "Packet05FlatWeight",
+      "reports": 5,
+      "source_sha256": "d9ac587eb2c0c91c1e3a1d63bca9e554447013a68da9f4abb67e88a5a6fe2e48",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatWeight.log",
+      "independent_log_sha256": "38d11970090ab0c81b4f7dc46d08433cc7d9e0c8018ba150cdef5ec0f96bf0d4",
+      "declarations": [
+        "OQ14.Packet05FlatWeight.weight_memLp_top",
+        "OQ14.Packet05FlatWeight.mulWeight_ae",
+        "OQ14.Packet05FlatWeight.weight_tangential",
+        "OQ14.Packet05FlatWeight.weighted_quotient_bound",
+        "OQ14.Packet05FlatWeight.weighted_weakPartial_of_bounded_quotients"
+      ]
+    },
+    {
+      "module": "Packet05DivergenceUpgrade",
+      "reports": 2,
+      "source_sha256": "46fddfc6dc318aabd12d25b8b3dda39fbc04eaca1c0106789ce7127df3767bae",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DivergenceUpgrade.log",
+      "independent_log_sha256": "40ec56e6f6bcb8086ce827c43e11b6b084c8c055badbf297cf44258a60bbb8c3",
+      "declarations": [
+        "OQ14.Packet05DivergenceUpgrade.smooth_divergence_to_weak",
+        "OQ14.Packet05DivergenceUpgrade.normal_from_divergence"
+      ]
+    },
+    {
+      "module": "Packet05WeightedDivergence",
+      "reports": 3,
+      "source_sha256": "47731d7019828204bc4efdab9a1317bdf4fbcf7c4e655fde73fe4eaf9f4d1dea",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05WeightedDivergence.log",
+      "independent_log_sha256": "bbc85eedcabc92d259e37d05fb99462d79affb6d5e5cca68bc460f8e457709b6",
+      "declarations": [
+        "OQ14.Packet05WeightedDivergence.cutoff_divergence_vanishes_on",
+        "OQ14.Packet05WeightedDivergence.actual_cutoff_weighted_divergence",
+        "OQ14.Packet05WeightedDivergence.complex_cutoff_weighted_divergence"
+      ]
+    },
+    {
+      "module": "Packet05PhaseRegularity",
+      "reports": 4,
+      "source_sha256": "c1cea5f9ab2e43c603828c23b2a7836f4e5a0127c86cb12d3c5e48649183a216",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05PhaseRegularity.log",
+      "independent_log_sha256": "e3f953654fa2f21d6c651eab0f850aa2bad8a660613e3f76812fd7ea4817479e",
+      "declarations": [
+        "OQ14.Packet05PhaseRegularity.constant_phase_electric_divergence",
+        "OQ14.Packet05PhaseRegularity.constant_phase_electric_cutoff_h1",
+        "OQ14.Packet05PhaseRegularity.complex_constant_phase_electric_cutoff_h1",
+        "OQ14.Packet05PhaseRegularity.complex_magnetic_cutoff_h1"
+      ]
+    },
+    {
+      "module": "Packet05CurlCommutation",
+      "reports": 3,
+      "source_sha256": "d15edeee2cc81c751e00a4854ac4374efc24cfc5c6e5c5ace187fad6755f1b3f",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05CurlCommutation.log",
+      "independent_log_sha256": "903f94c95340cb4078f46a027eb76440ab84f70e4e14cfbbff088589dd67f00c",
+      "declarations": [
+        "OQ14.Packet05CurlCommutation.derivativePair_partial_comm",
+        "OQ14.Packet05CurlCommutation.smooth_curl_to_weak",
+        "OQ14.Packet05CurlCommutation.partial_commutes_weakCurl"
+      ]
+    },
+    {
+      "module": "Packet05CurlNormal",
+      "reports": 4,
+      "source_sha256": "502d4064417fdb8acdd542989f6ac022c9978420cda9c60fc6d23ed362cda829",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05CurlNormal.log",
+      "independent_log_sha256": "51a8c1e7ebfd2ffef2d6ed88e602fd68f7de409877710a750a5d39e51856816a",
+      "declarations": [
+        "OQ14.Packet05CurlNormal.normal_first_from_curl",
+        "OQ14.Packet05CurlNormal.normal_second_from_curl",
+        "OQ14.Packet05CurlNormal.cutoff_has_weakCurl",
+        "OQ14.Packet05CurlNormal.cutoff_normal_tangential_components"
+      ]
+    },
+    {
+      "module": "Packet05TangentialRegularity",
+      "reports": 4,
+      "source_sha256": "f0e1ce2a79578295498adaf806d25a0f04c8f57f84005c92130578abfce8e3d9",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05TangentialRegularity.log",
+      "independent_log_sha256": "71cf1d75b82e366040431049f8a3bac5e1e9eadcfd1793c584beba5b6938506f",
+      "declarations": [
+        "OQ14.Packet05TangentialRegularity.actual_ball_electric_tangential_weak_derivative",
+        "OQ14.Packet05TangentialRegularity.actual_ball_electric_normal_tangential_components",
+        "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_tangential_derivative",
+        "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_normal_derivative"
+      ]
+    },
+    {
+      "module": "Packet05FlatTransmissionH1",
+      "reports": 1,
+      "source_sha256": "3579d121ac73400be18c57c91bb2eb06d7790e7d03169b4c79098b0d3bff1ad3",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatTransmissionH1.log",
+      "independent_log_sha256": "87efee006407a61366486f379d8073dd477c3f5a1f97bb4409ef80eda0daa41a",
+      "declarations": [
+        "OQ14.Packet05FlatTransmissionH1.actual_flat_transmission_h1"
+      ]
+    },
+    {
+      "module": "Packet05LocalDerivative",
+      "reports": 9,
+      "source_sha256": "9558548d20b5fda6c182c77949f9a8594c6f384a44ce5f7f7a5581afddaee352",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05LocalDerivative.log",
+      "independent_log_sha256": "b678e64b229a4514750583ddd94121477257f902834c6a0493307a79cf85a4a5",
+      "declarations": [
+        "OQ14.Packet05LocalDerivative.weak_partial_local_constant_relation",
+        "OQ14.Packet05LocalDerivative.weak_partial_unique",
+        "OQ14.Packet05LocalDerivative.weighted_partial_on_constant_phase",
+        "OQ14.Packet05LocalDerivative.interface_plane_null",
+        "OQ14.Packet05LocalDerivative.weighted_partial_eq",
+        "OQ14.Packet05LocalDerivative.weighted_partial_gives_phase_partial",
+        "OQ14.Packet05LocalDerivative.divergence_eq_sum_partials",
+        "OQ14.Packet05LocalDerivative.local_partial_of_ae_eq",
+        "OQ14.Packet05LocalDerivative.normal_displacement_from_divergence"
+      ]
+    },
+    {
+      "module": "Packet05ActualPhaseDerivatives",
+      "reports": 1,
+      "source_sha256": "90c2d77dddd43413be36b341986819eabc7a4e07276781396a7cc91a4af55207",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualPhaseDerivatives.log",
+      "independent_log_sha256": "3795243c9b3c84f3fc071fd3a6374a6c8820de1e580bf01c75b2710ad119c863",
+      "declarations": [
+        "OQ14.Packet05ActualPhaseDerivatives.actual_tangential_phase_constitutive"
+      ]
+    },
+    {
+      "module": "Packet05PartialProduct",
+      "reports": 1,
+      "source_sha256": "3719dae235ddf0b79b02d2c571cec75424c83fcdb1300545bec745c238e5500e",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05PartialProduct.log",
+      "independent_log_sha256": "b9ebd7456170e01df94482529a6eab822cdbc85c6975ddc3486ca864cbe119ea",
+      "declarations": [
+        "OQ14.Packet05PartialProduct.cutoff_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05DifferentiatedCurl",
+      "reports": 3,
+      "source_sha256": "17500204e786fbc06e4b53f4aecfeb1df3092f827c008da16c18d1857c514fbe",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferentiatedCurl.log",
+      "independent_log_sha256": "7a1a53a72c4c8646dfc0523c589ea88717be7cadc802139324b5f38a2ef57b55",
+      "declarations": [
+        "OQ14.Packet05DifferentiatedCurl.differentiated_local_curl_pairing",
+        "OQ14.Packet05DifferentiatedCurl.differentiated_local_maxwell_pairing",
+        "OQ14.Packet05DifferentiatedCurl.regional_maxwell_of_differentiated_pairings"
+      ]
+    },
+    {
+      "module": "Packet05ActualDifferentiatedMaxwell",
+      "reports": 3,
+      "source_sha256": "ed5a4dec4c8e67f03eda76a41e62f990700b6731ea902715289367d6134c0053",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualDifferentiatedMaxwell.log",
+      "independent_log_sha256": "57390d39bcf8926a46f1a8a71b3809f70dc5507fa96685ce0caa2b6be88595d3",
+      "declarations": [
+        "OQ14.Packet05ActualDifferentiatedMaxwell.nested_cutoff_field",
+        "OQ14.Packet05ActualDifferentiatedMaxwell.actual_cutoff_local_maxwell",
+        "OQ14.Packet05ActualDifferentiatedMaxwell.actual_tangential_differentiated_maxwell"
+      ]
+    },
+    {
+      "module": "Packet05SecondTangential",
+      "reports": 3,
+      "source_sha256": "8dbf9bb1c31584b5ccac8e46c5232e0d785a7e604915a0c1503083a43471467f",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05SecondTangential.log",
+      "independent_log_sha256": "5bf78b7852e9f4e8b5cc2f0915010ce73ae30018e1a6d285831df0ba476814db",
+      "declarations": [
+        "OQ14.Packet05SecondTangential.nested_scale",
+        "OQ14.Packet05SecondTangential.second_stage_regional_tangential",
+        "OQ14.Packet05SecondTangential.actual_second_tangential_derivatives"
+      ]
+    },
+    {
+      "module": "Packet05NormalSecond",
+      "reports": 4,
+      "source_sha256": "1f24397806316100ee59500e057a85da90c8b4cf887af2e9828f59a3098e759d",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05NormalSecond.log",
+      "independent_log_sha256": "81dbe73f4ce98e3547096bb7df037591a0d72b99f4b97e1d630cf8c2043659b0",
+      "declarations": [
+        "OQ14.Packet05NormalSecond.smooth_partial_to_weak",
+        "OQ14.Packet05NormalSecond.normal_second_from_laplacian",
+        "OQ14.Packet05NormalSecond.weak_mixed_partial_commute",
+        "OQ14.Packet05NormalSecond.hessian_from_tangential_and_laplacian"
+      ]
+    },
+    {
+      "module": "Packet05NormalNormal",
+      "reports": 5,
+      "source_sha256": "01be3874cdc922f129708ce5d8fe87afd45ccbe292da69eb248e1883dec40f82",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05NormalNormal.log",
+      "independent_log_sha256": "a730791ab05f6465fa512cb22d7ecef2e49f3b9dfbfcbe08f80af21747902f00",
+      "declarations": [
+        "OQ14.Packet05NormalNormal.phase_normal_normal_from_flux",
+        "OQ14.Packet05NormalNormal.normal_first_component_from_local_curl",
+        "OQ14.Packet05NormalNormal.normal_second_component_from_local_curl",
+        "OQ14.Packet05NormalNormal.valuePair_cutoff_on",
+        "OQ14.Packet05NormalNormal.phase_tangential_normal_normal"
+      ]
+    },
+    {
+      "module": "Packet05ActualNormalFlux",
+      "reports": 1,
+      "source_sha256": "059cc50021da678da05eab9c2e9c9eac48ce5bf7e91cb8d3051cd41f8462a7d6",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualNormalFlux.log",
+      "independent_log_sha256": "5ea6e1174c078694f1b1fd541a2019692658582b137573d0c012e805881ed292",
+      "declarations": [
+        "OQ14.Packet05ActualNormalFlux.actual_normal_displacement_relation"
+      ]
+    },
+    {
+      "module": "Packet05ActualNormalNormal",
+      "reports": 2,
+      "source_sha256": "075bf2b2ec5e1bb5f3fc0d01096d456ffcb37f8ec1bc4f6e70bef038d30532f0",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualNormalNormal.log",
+      "independent_log_sha256": "ffc8facea6cd814853e7508ef664339d6d08cb280a4cd9cfbd6ffab63ea52351",
+      "declarations": [
+        "OQ14.Packet05ActualNormalNormal.actual_phase_normal_normal",
+        "OQ14.Packet05ActualNormalNormal.actual_phase_tangential_normal_normal"
+      ]
+    },
+    {
+      "module": "Packet05RegionalPartial",
+      "reports": 5,
+      "source_sha256": "75e8017aa85033d0407b94f3fc4cba2b8a9da3a81da7018849f75ee4ab1b6369",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05RegionalPartial.log",
+      "independent_log_sha256": "4749df24c4c2eb8894149448e95e4d5627f6e5fca5b0ab111f80d2710af7a2df",
+      "declarations": [
+        "OQ14.Packet05RegionalPartial.global_partial_on",
+        "OQ14.Packet05RegionalPartial.cutoff_partial_on",
+        "OQ14.Packet05RegionalPartial.partial_on_of_ae_eq",
+        "OQ14.Packet05RegionalPartial.smooth_partial_on_to_weak",
+        "OQ14.Packet05RegionalPartial.mixed_partial_on_commute"
+      ]
+    },
+    {
+      "module": "Packet05ActualFlatH2",
+      "reports": 1,
+      "source_sha256": "524155e806e26cc3fd0422c925c791910e565880c912e27ca393f70f05990260",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualFlatH2.log",
+      "independent_log_sha256": "208d3d08c207dfb81ad22c3b0a3e4c7615da67d8ed78b074e0484f4ce230228f",
+      "declarations": [
+        "OQ14.Packet05ActualFlatH2.actual_flat_phase_h2"
+      ]
+    },
+    {
+      "module": "Packet05FourierRepresentative",
+      "reports": 2,
+      "source_sha256": "9c34ede39b92996fa10464f31d4c1c1e4499299d658887f9ae5d6a32147580bf",
+      "audit_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "audit_log_sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e",
+      "independent_review": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "independent_review_sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a",
+      "independent_review_mode": "Terra independent source review and separate ordered fresh-object compilation",
+      "independent_build": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "independent_build_sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850",
+      "independent_log": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FourierRepresentative.log",
+      "independent_log_sha256": "2bf62613bee3277aedee180143b003cc0774f1097f5787ec1f14039b2ef97b19",
+      "declarations": [
+        "OQ14.Packet05FourierRepresentative.continuous_of_integrable_inverse_fourier",
+        "OQ14.Packet05FourierRepresentative.continuous_of_weighted_inverse_fourier"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/.gitignore",
+      "sha256": "04aaea0eed91ec681e2a1fc420101996a5b3d116c200aba8ef30a22400ab08e2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/FlatLocalCurlSources.log",
+      "sha256": "cffef64e3017bc801e34249c7b7ee64683d2552f82d720add055441715a965f8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/FlatNestedMaxwellForcing.log",
+      "sha256": "bb403593fc9f750c2fd1d43b256fefc27cfb7c83683c55a2e59995c95903d839"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/GlobalToRegionalCurl.log",
+      "sha256": "4ceae3d96a280969500a0d58393e805d55b7b13e8b12d9ad2cb4318e9d7887d3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/LocalizedCurlCurlSource.log",
+      "sha256": "148154de8761e34906fecafa70feedd37c3a722f458e1b1dfc5325008562d511"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/manifest.json",
+      "sha256": "0ad5df3c3a0e22e27f7d0f165c79db90836ada75d1bbe3cf8ad96ce1f98f6ef8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/MaxwellCurlCutoffSource.log",
+      "sha256": "f71de06396c6fcd7b9be5feaf29b7cdd85f1d83a7e2d1961222b50c8392ab740"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/MaxwellCutoffCommutator.log",
+      "sha256": "3bee2d86fa63a791fba12b1eec405e596d0aa36778e14445ffa4da98ab5fa330"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/NestedCurlCutoffSource.log",
+      "sha256": "7d0aaffe4651c3b9452b9d9292d0ef88a2260b803d38e4869e559a70a6e8d71c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualDifferentiatedMaxwell.log",
+      "sha256": "3e2c7bf9a6d4aac21995c0d96fda0ea92696cf5f6d094c88339faeba71e0016a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualFlatH2.log",
+      "sha256": "be5c657f900e08c4484c3735ae7c81829c4d21c522fb173a197e50cd50a756f8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualLocalizedGreen.log",
+      "sha256": "9c9cd669e3782939fb11d24b8bb02f2f7b760c7718301c8a6b82bc36e98fa02d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualNormalFlux.log",
+      "sha256": "2267990c733e45381fd7f2e2f18eb4264d6ebe81659da27b0b46672bc3940f96"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualNormalNormal.log",
+      "sha256": "567d9ff9fe97ce5255c7f7054a2fffd1896f7e60ab13d5f589479e2b729cd77f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ActualPhaseDerivatives.log",
+      "sha256": "dd79ff794078856b2099da4db2614ba898f9f1922544d8535bb5f664a7fc8d0e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05CurlCommutation.log",
+      "sha256": "d69ba79041a17241bc630d17e4ac652dbba11032b07ae506c816762af5c6a82c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05CurlNormal.log",
+      "sha256": "6a29c4d65b72093a50cbc81a7efa978d134ce9ab2d71929b29fb86c08248d5ec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05DifferenceConverse.log",
+      "sha256": "8590cee792def11e94857a96b95aedce0e416fb62f22aec3acb123bea0eff035"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05DifferenceMaxwell.log",
+      "sha256": "bbfa0a9052184623f7fbd2cd928d80e3ec339c31bf36561a8873b6399107629e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05DifferentiatedCurl.log",
+      "sha256": "b75a23d3dc34d9b84ec996c7d3f37e03c9328ee3b77f4f0c81adbad828be9d7f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05DivergenceUpgrade.log",
+      "sha256": "6db890f2174744a612d559c36967c7633ae561271485c2b864336c9caa5c6811"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05FiniteBranchMaximum.log",
+      "sha256": "fcfb775a02b1a5efff85877f9882f78021ca9b7e98727a616f510247d10c75c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05FlatActualForcing.log",
+      "sha256": "f2a569f48bcc2e1da4a8fadcee46aab37b6ac4a65036cb0edbcd8df50ef4cbeb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05FlatTransmissionH1.log",
+      "sha256": "42431cac89447a6ff1a1d3cb4fc9786b2fed901e9d2dcc7ae934bdcc855a08b1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05FlatWeight.log",
+      "sha256": "33038b8a8527b67fe85e0d505e99c420c19a9acc60b8abdb20750656668a13e0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05ForcedDifferenceGreen.log",
+      "sha256": "05df23c26a0b0c3078884f58f83ca49f43b7a2165f0040dc55238f56f283195d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05FourierRepresentative.log",
+      "sha256": "a60fddfa0cacbbe50976dd0d1f28c43ad33ea33b59e7c427c1aa98f1f7367dd6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05LocalDerivative.log",
+      "sha256": "e1e7e1bb21d1db51ce2f2f8c030b825c908c9ef01cf0ae479ae6de20f24b63f2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05NormalNormal.log",
+      "sha256": "7f6de13e80625669fb2229c7bea4b791b0d7fba909e27c9824475fc6971f6341"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05NormalSecond.log",
+      "sha256": "4d7354a46f9680b544210162c1b7c7ed306bf2b2fb86e2803546e5beb021afb9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05PartialProduct.log",
+      "sha256": "29aecf57756e4e8fb6db12ea4326524a8991fd88b25a897c8da1d54604cf9f32"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05PhaseRegularity.log",
+      "sha256": "806a92914bd1ef20acc94c3992b13dcf1d820e238a866de511fab135fb7c24f6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05RegionalPartial.log",
+      "sha256": "b1526e7e4c0baf47d33c15fc30a294a41bd15a8e6f75fbe9b94f2be359fea726"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05SecondTangential.log",
+      "sha256": "4bcd74caa52cb63bf5dfd1cd7f95bff1687e5b78526a6347611cf8f10e5e1c06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05TangentialRegularity.log",
+      "sha256": "360e8719459e531da093867955a26b7e57e709b333b8534f0e4c6f9f6b009fd7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/author/Packet05WeightedDivergence.log",
+      "sha256": "e8d0e486bdbf3f2205d533b43b0c7e7aacf1cf9883182e7b3d25092f89039cd6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/evidence/audited_after_5238-stage72.json",
+      "sha256": "4900ca8fa24973915a3e5f0fc18cb2b48735f4e4a126ab861ffb2c7e189f2035"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/modules.json",
+      "sha256": "c68b7e69af9a9bb0a661e6b4c72d3d64388464403f21882c26a17f5515889f74"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/provenance-audit.json",
+      "sha256": "9f8c64276fc70a6d19b57611d9deec17ac4fbd4811384ef84c4e24baebdfaa35"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/FlatLocalCurlSources.log",
+      "sha256": "f0623c03dd43c494c3db8c70f3ced2a0f5d859245608ca35da7dde1d15535acc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/FlatNestedMaxwellForcing.log",
+      "sha256": "f56cdaa7a6e29810277f84eb87e38ae5ec31dca1844338e2771f2575bced8e4b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/GlobalToRegionalCurl.log",
+      "sha256": "4d63d07233816a5ffabd25289e614cdd3021c3061918ca7c8f7851b47d6f1c10"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/independent-build.json",
+      "sha256": "cb806dd4035c3f4d6599dea967fb2f7d8b27913c1a37fda88d7889aebf9d6850"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/independent-review.txt",
+      "sha256": "7997e97e6e9ebfe0542f4376bafb6382c64433d54501f6f2d2474e5377ccd07a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/LocalizedCurlCurlSource.log",
+      "sha256": "df8b32748ef1f06a6c8bf4df9e33d70bdb4d7ed2916d9f747b74833f1302dc58"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/MaxwellCurlCutoffSource.log",
+      "sha256": "088e711b76314f9090a7cd71f710f5c8cdf0349f187f58bb375fc97bfe20a01d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/MaxwellCutoffCommutator.log",
+      "sha256": "53f83300e5e9f43a144acd7c4a89e8fb2d5af9d56513eb357f6d858d1f27235f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/NestedCurlCutoffSource.log",
+      "sha256": "84c26ec18ae6641311661634a6b527397541c259a458923eb9cc83518579cf56"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualDifferentiatedMaxwell.log",
+      "sha256": "57390d39bcf8926a46f1a8a71b3809f70dc5507fa96685ce0caa2b6be88595d3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualFlatH2.log",
+      "sha256": "208d3d08c207dfb81ad22c3b0a3e4c7615da67d8ed78b074e0484f4ce230228f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualLocalizedGreen.log",
+      "sha256": "77511ae4c830830bb8eacb0fbe1d47fdf2746243920ebe6cd9a55fb3da63d000"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualNormalFlux.log",
+      "sha256": "5ea6e1174c078694f1b1fd541a2019692658582b137573d0c012e805881ed292"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualNormalNormal.log",
+      "sha256": "ffc8facea6cd814853e7508ef664339d6d08cb280a4cd9cfbd6ffab63ea52351"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ActualPhaseDerivatives.log",
+      "sha256": "3795243c9b3c84f3fc071fd3a6374a6c8820de1e580bf01c75b2710ad119c863"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05CurlCommutation.log",
+      "sha256": "903f94c95340cb4078f46a027eb76440ab84f70e4e14cfbbff088589dd67f00c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05CurlNormal.log",
+      "sha256": "51a8c1e7ebfd2ffef2d6ed88e602fd68f7de409877710a750a5d39e51856816a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferenceConverse.log",
+      "sha256": "e2542a9a392042f2dbdc25db5fc86cbcd615473d61d589cad06568c119952f4e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferenceMaxwell.log",
+      "sha256": "9b6387b41e9dc0deea9719df8b9ad9e1bfa63ccb705fc47fe5d2a4bfa8034384"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DifferentiatedCurl.log",
+      "sha256": "7a1a53a72c4c8646dfc0523c589ea88717be7cadc802139324b5f38a2ef57b55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05DivergenceUpgrade.log",
+      "sha256": "40ec56e6f6bcb8086ce827c43e11b6b084c8c055badbf297cf44258a60bbb8c3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FiniteBranchMaximum.log",
+      "sha256": "f8266bec95ce45d4167378a3c48d142e2b5ae311e1d52cf21ea8acd3db0a36f4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatActualForcing.log",
+      "sha256": "2cc571f979ae23ebea5523aaf97ac47102345e368fcf512fe6a993c8491d3072"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatTransmissionH1.log",
+      "sha256": "87efee006407a61366486f379d8073dd477c3f5a1f97bb4409ef80eda0daa41a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FlatWeight.log",
+      "sha256": "38d11970090ab0c81b4f7dc46d08433cc7d9e0c8018ba150cdef5ec0f96bf0d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05ForcedDifferenceGreen.log",
+      "sha256": "5d06e37527b9170ed8e0a0813641ae8b0350e0acad432e96cc9622daa6caa1be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05FourierRepresentative.log",
+      "sha256": "2bf62613bee3277aedee180143b003cc0774f1097f5787ec1f14039b2ef97b19"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.lean",
+      "sha256": "2e9b4edc987d4278255f5b0490ebd1ebc7f2ce793d8cc9b7a481c10fc51e64bd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05IndependentAudit.log",
+      "sha256": "0899be5d8d915627ad88989cf962a8bd5c063f5fab793ec7ccf656b1eea18f5e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05LocalDerivative.log",
+      "sha256": "b678e64b229a4514750583ddd94121477257f902834c6a0493307a79cf85a4a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05NormalNormal.log",
+      "sha256": "a730791ab05f6465fa512cb22d7ecef2e49f3b9dfbfcbe08f80af21747902f00"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05NormalSecond.log",
+      "sha256": "81dbe73f4ce98e3547096bb7df037591a0d72b99f4b97e1d630cf8c2043659b0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05PartialProduct.log",
+      "sha256": "b9ebd7456170e01df94482529a6eab822cdbc85c6975ddc3486ca864cbe119ea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05PhaseRegularity.log",
+      "sha256": "e3f953654fa2f21d6c651eab0f850aa2bad8a660613e3f76812fd7ea4817479e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05RegionalPartial.log",
+      "sha256": "4749df24c4c2eb8894149448e95e4d5627f6e5fca5b0ab111f80d2710af7a2df"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05SecondTangential.log",
+      "sha256": "5bf78b7852e9f4e8b5cc2f0915010ce73ae30018e1a6d285831df0ba476814db"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05TangentialRegularity.log",
+      "sha256": "71cf1d75b82e366040431049f8a3bac5e1e9eadcfd1793c584beba5b6938506f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/Packet05WeightedDivergence.log",
+      "sha256": "bbc85eedcabc92d259e37d05fb99462d79affb6d5e5cca68bc460f8e457709b6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/reviews/run-independent.py",
+      "sha256": "57a6e24249913d763c36c1b14d9b375209c65aa6d59fb303ff8468cb4dae71ff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/scripts/audit_provenance.ps1",
+      "sha256": "5c2a76ec058358b80a62e9f2c0feaadf0d2095e46b29100e8a6baafc34a70628"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/scripts/freeze_checkpoint.py",
+      "sha256": "4dc7be7791c2a58ba44314fff931fb8962511deeea1c7aa642f12d5695e83258"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-h2/STAGE72.txt",
+      "sha256": "b092c527151dc8ed75ccb62202b4ab4066e087ec8a8d3dbdfe3c5fa351beb0f4"
+    },
+    {
+      "path": "lean/FlatLocalCurlSources.lean",
+      "sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b"
+    },
+    {
+      "path": "lean/FlatNestedMaxwellForcing.lean",
+      "sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816"
+    },
+    {
+      "path": "lean/GlobalToRegionalCurl.lean",
+      "sha256": "5d4fbeac1537e5f012dfe4574555567d5f6250a60aa97ef4c5d98c7fc7655be4"
+    },
+    {
+      "path": "lean/LocalizedCurlCurlSource.lean",
+      "sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce"
+    },
+    {
+      "path": "lean/MaxwellCurlCutoffSource.lean",
+      "sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53"
+    },
+    {
+      "path": "lean/MaxwellCutoffCommutator.lean",
+      "sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e"
+    },
+    {
+      "path": "lean/NestedCurlCutoffSource.lean",
+      "sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b"
+    },
+    {
+      "path": "lean/Packet05ActualDifferentiatedMaxwell.lean",
+      "sha256": "ed5a4dec4c8e67f03eda76a41e62f990700b6731ea902715289367d6134c0053"
+    },
+    {
+      "path": "lean/Packet05ActualFlatH2.lean",
+      "sha256": "524155e806e26cc3fd0422c925c791910e565880c912e27ca393f70f05990260"
+    },
+    {
+      "path": "lean/Packet05ActualLocalizedGreen.lean",
+      "sha256": "5c1079c027477e740e55c8495a834c0deb75429a123fc37f531a3b101dab8d23"
+    },
+    {
+      "path": "lean/Packet05ActualNormalFlux.lean",
+      "sha256": "059cc50021da678da05eab9c2e9c9eac48ce5bf7e91cb8d3051cd41f8462a7d6"
+    },
+    {
+      "path": "lean/Packet05ActualNormalNormal.lean",
+      "sha256": "075bf2b2ec5e1bb5f3fc0d01096d456ffcb37f8ec1bc4f6e70bef038d30532f0"
+    },
+    {
+      "path": "lean/Packet05ActualPhaseDerivatives.lean",
+      "sha256": "90c2d77dddd43413be36b341986819eabc7a4e07276781396a7cc91a4af55207"
+    },
+    {
+      "path": "lean/Packet05CurlCommutation.lean",
+      "sha256": "d15edeee2cc81c751e00a4854ac4374efc24cfc5c6e5c5ace187fad6755f1b3f"
+    },
+    {
+      "path": "lean/Packet05CurlNormal.lean",
+      "sha256": "502d4064417fdb8acdd542989f6ac022c9978420cda9c60fc6d23ed362cda829"
+    },
+    {
+      "path": "lean/Packet05DifferenceConverse.lean",
+      "sha256": "2f0fe8824058d8b0472794d9b50296fd3e0619ff972be752a43eee5f675df773"
+    },
+    {
+      "path": "lean/Packet05DifferenceMaxwell.lean",
+      "sha256": "9fdea86c0e662375dcbe9c85820b34fbacd206e45809bf2f3d43a74ef2f5d389"
+    },
+    {
+      "path": "lean/Packet05DifferentiatedCurl.lean",
+      "sha256": "17500204e786fbc06e4b53f4aecfeb1df3092f827c008da16c18d1857c514fbe"
+    },
+    {
+      "path": "lean/Packet05DivergenceUpgrade.lean",
+      "sha256": "46fddfc6dc318aabd12d25b8b3dda39fbc04eaca1c0106789ce7127df3767bae"
+    },
+    {
+      "path": "lean/Packet05FiniteBranchMaximum.lean",
+      "sha256": "c26e5283d6df27fa182637aa9fef904b8663676ab3dd6f2ea946810c26c1b3ec"
+    },
+    {
+      "path": "lean/Packet05FlatActualForcing.lean",
+      "sha256": "c47280ebd84da61c4083be6b1c76e4aacca31e0d2833380b50b0680028b82281"
+    },
+    {
+      "path": "lean/Packet05FlatTransmissionH1.lean",
+      "sha256": "3579d121ac73400be18c57c91bb2eb06d7790e7d03169b4c79098b0d3bff1ad3"
+    },
+    {
+      "path": "lean/Packet05FlatWeight.lean",
+      "sha256": "d9ac587eb2c0c91c1e3a1d63bca9e554447013a68da9f4abb67e88a5a6fe2e48"
+    },
+    {
+      "path": "lean/Packet05ForcedDifferenceGreen.lean",
+      "sha256": "5ed587ae68eeb07d11af5a4823089a121f5c9b9c5415dd517f551ae8bcab1c95"
+    },
+    {
+      "path": "lean/Packet05FourierRepresentative.lean",
+      "sha256": "9c34ede39b92996fa10464f31d4c1c1e4499299d658887f9ae5d6a32147580bf"
+    },
+    {
+      "path": "lean/Packet05LocalDerivative.lean",
+      "sha256": "9558548d20b5fda6c182c77949f9a8594c6f384a44ce5f7f7a5581afddaee352"
+    },
+    {
+      "path": "lean/Packet05NormalNormal.lean",
+      "sha256": "01be3874cdc922f129708ce5d8fe87afd45ccbe292da69eb248e1883dec40f82"
+    },
+    {
+      "path": "lean/Packet05NormalSecond.lean",
+      "sha256": "1f24397806316100ee59500e057a85da90c8b4cf887af2e9828f59a3098e759d"
+    },
+    {
+      "path": "lean/Packet05PartialProduct.lean",
+      "sha256": "3719dae235ddf0b79b02d2c571cec75424c83fcdb1300545bec745c238e5500e"
+    },
+    {
+      "path": "lean/Packet05PhaseRegularity.lean",
+      "sha256": "c1cea5f9ab2e43c603828c23b2a7836f4e5a0127c86cb12d3c5e48649183a216"
+    },
+    {
+      "path": "lean/Packet05RegionalPartial.lean",
+      "sha256": "75e8017aa85033d0407b94f3fc4cba2b8a9da3a81da7018849f75ee4ab1b6369"
+    },
+    {
+      "path": "lean/Packet05SecondTangential.lean",
+      "sha256": "8dbf9bb1c31584b5ccac8e46c5232e0d785a7e604915a0c1503083a43471467f"
+    },
+    {
+      "path": "lean/Packet05TangentialRegularity.lean",
+      "sha256": "f0e1ce2a79578295498adaf806d25a0f04c8f57f84005c92130578abfce8e3d9"
+    },
+    {
+      "path": "lean/Packet05WeightedDivergence.lean",
+      "sha256": "47731d7019828204bc4efdab9a1317bdf4fbcf7c4e655fde73fe4eaf9f4d1dea"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "638575a5e8b84f0fbf93f6bf52adfceca87fe5185d65c61ed33b2f8f63fc5ffb"
+    }
+  ],
+  "scope": "Actual real-frequency flat-interface phasewise H2. 34 fresh isolated module objects, 106 audited declarations, 98 authenticated upstream local sources with cached objects. Full OQ14 remains active and incomplete."
+}

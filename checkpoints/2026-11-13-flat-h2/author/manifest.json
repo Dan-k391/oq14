@@ -1,0 +1,637 @@
+{
+  "status": "author compilation evidence only; not independent review, accepted ledger, or full closure",
+  "ordering": "listed sequential build order; frozen 27 new Packet05 modules follow seven forcing modules",
+  "frozen_count": 27,
+  "forcing_count": 7,
+  "records": [
+    {
+      "module": "MaxwellCutoffCommutator",
+      "source": "D:\\oq14\\lean\\MaxwellCutoffCommutator.lean",
+      "source_sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e",
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.RegularityBounds"
+      ],
+      "theorems": [
+        "OQ14.MaxwellCutoffCommutator.quotient_ae",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_commutator",
+        "OQ14.MaxwellCutoffCommutator.cutoff_difference_bound",
+        "OQ14.MaxwellCutoffCommutator.cutoffSource_memLp",
+        "OQ14.MaxwellCutoffCommutator.cutoffSource_norm",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_decomposition",
+        "OQ14.MaxwellCutoffCommutator.cutoff_quotient_norm",
+        "OQ14.MaxwellCutoffCommutator.derivative_cutoff_commutator",
+        "OQ14.MaxwellCutoffCommutator.derivative_cutoff_source_norm"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\MaxwellCutoffCommutator-freeze.log",
+      "log_sha256": "3bee2d86fa63a791fba12b1eec405e596d0aa36778e14445ffa4da98ab5fa330",
+      "report_count": 6,
+      "bad_log": false
+    },
+    {
+      "module": "MaxwellCurlCutoffSource",
+      "source": "D:\\oq14\\lean\\MaxwellCurlCutoffSource.lean",
+      "source_sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53",
+      "imports": [
+        "MaxwellCutoffCommutator"
+      ],
+      "theorems": [
+        "OQ14.MaxwellCurlCutoffSource.quotient_sub",
+        "OQ14.MaxwellCurlCutoffSource.source_ae",
+        "OQ14.MaxwellCurlCutoffSource.quotient_source_bound",
+        "OQ14.MaxwellCurlCutoffSource.flat_weight_norm",
+        "OQ14.MaxwellCurlCutoffSource.flat_quotient_weight_bound",
+        "OQ14.MaxwellCurlCutoffSource.flat_quotient_source_bound"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\MaxwellCurlCutoffSource-freeze.log",
+      "log_sha256": "f71de06396c6fcd7b9be5feaf29b7cdd85f1d83a7e2d1961222b50c8392ab740",
+      "report_count": 4,
+      "bad_log": false
+    },
+    {
+      "module": "LocalizedCurlCurlSource",
+      "source": "D:\\oq14\\lean\\LocalizedCurlCurlSource.lean",
+      "source_sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce",
+      "imports": [
+        "MaxwellWeakTranslation",
+        "MaxwellInverseCurlCurl"
+      ],
+      "theorems": [
+        "OQ14.LocalizedCurlCurlSource.cutoff_curlcurl_source"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\LocalizedCurlCurlSource-freeze.log",
+      "log_sha256": "148154de8761e34906fecafa70feedd37c3a722f458e1b1dfc5325008562d511",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "FlatLocalCurlSources",
+      "source": "D:\\oq14\\lean\\FlatLocalCurlSources.lean",
+      "source_sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b",
+      "imports": [
+        "LocalizedCurlCurlSource",
+        "MaxwellCurlCutoffSource",
+        "FlatDifferenceCoercivity"
+      ],
+      "theorems": [
+        "OQ14.FlatLocalCurlSources.extend_weighted",
+        "OQ14.FlatLocalCurlSources.actual_flat_local_sources"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\FlatLocalCurlSources-freeze.log",
+      "log_sha256": "cffef64e3017bc801e34249c7b7ee64683d2552f82d720add055441715a965f8",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "NestedCurlCutoffSource",
+      "source": "D:\\oq14\\lean\\NestedCurlCutoffSource.lean",
+      "source_sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b",
+      "imports": [
+        "MaxwellCurlCutoffSource",
+        "RegionalMaxwellHelmholtz"
+      ],
+      "theorems": [
+        "OQ14.NestedCurlCutoffSource.source_localize",
+        "OQ14.NestedCurlCutoffSource.localize_weighted",
+        "OQ14.NestedCurlCutoffSource.nested_flat_source_bound"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\NestedCurlCutoffSource-freeze.log",
+      "log_sha256": "7d0aaffe4651c3b9452b9d9292d0ef88a2260b803d38e4869e559a70a6e8d71c",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "FlatNestedMaxwellForcing",
+      "source": "D:\\oq14\\lean\\FlatNestedMaxwellForcing.lean",
+      "source_sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816",
+      "imports": [
+        "FlatLocalCurlSources",
+        "NestedCurlCutoffSource"
+      ],
+      "theorems": [
+        "OQ14.FlatNestedMaxwellForcing.actual_nested_forcing"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\FlatNestedMaxwellForcing-freeze.log",
+      "log_sha256": "bb403593fc9f750c2fd1d43b256fefc27cfb7c83683c55a2e59995c95903d839",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "GlobalToRegionalCurl",
+      "source": "D:\\oq14\\lean\\GlobalToRegionalCurl.lean",
+      "source_sha256": "5d4fbeac1537e5f012dfe4574555567d5f6250a60aa97ef4c5d98c7fc7655be4",
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.RegionalCurlUpgrade"
+      ],
+      "theorems": [
+        "OQ14.GlobalToRegionalCurl.restrict_global_hcurl",
+        "OQ14.GlobalToRegionalCurl.restrict_weakMaxwell"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\GlobalToRegionalCurl-freeze.log",
+      "log_sha256": "4ceae3d96a280969500a0d58393e805d55b7b13e8b12d9ad2cb4318e9d7887d3",
+      "report_count": 2,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05FiniteBranchMaximum",
+      "source": "D:\\oq14\\lean\\Packet05FiniteBranchMaximum.lean",
+      "source_sha256": "c26e5283d6df27fa182637aa9fef904b8663676ab3dd6f2ea946810c26c1b3ec",
+      "imports": [
+        "Mathlib.Topology.Order.Compact",
+        "Mathlib.Topology.Instances.Real.Lemmas"
+      ],
+      "theorems": [
+        "OQ14.Packet05FiniteBranchMaximum.finite_closed_branches_attain_max"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05FiniteBranchMaximum-final.log",
+      "log_sha256": "fcfb775a02b1a5efff85877f9882f78021ca9b7e98727a616f510247d10c75c5",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05FlatActualForcing",
+      "source": "D:\\oq14\\lean\\Packet05FlatActualForcing.lean",
+      "source_sha256": "c47280ebd84da61c4083be6b1c76e4aacca31e0d2833380b50b0680028b82281",
+      "imports": [
+        "FlatNestedMaxwellForcing",
+        "MaxwellQuotientEnergy"
+      ],
+      "theorems": [
+        "OQ14.Packet05FlatActualForcing.actual_flat_forcing_and_magnetic_quotient"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05FlatActualForcing-final.log",
+      "log_sha256": "f2a569f48bcc2e1da4a8fadcee46aab37b6ac4a65036cb0edbcd8df50ef4cbeb",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ForcedDifferenceGreen",
+      "source": "D:\\oq14\\lean\\Packet05ForcedDifferenceGreen.lean",
+      "source_sha256": "5ed587ae68eeb07d11af5a4823089a121f5c9b9c5415dd517f551ae8bcab1c95",
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.Poynting",
+        "MaxwellCurlCutoffSource"
+      ],
+      "theorems": [
+        "OQ14.Packet05ForcedDifferenceGreen.localized_weight_quotient",
+        "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green",
+        "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green_with_commutator"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ForcedDifferenceGreen-final.log",
+      "log_sha256": "05df23c26a0b0c3078884f58f83ca49f43b7a2165f0040dc55238f56f283195d",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualLocalizedGreen",
+      "source": "D:\\oq14\\lean\\Packet05ActualLocalizedGreen.lean",
+      "source_sha256": "5c1079c027477e740e55c8495a834c0deb75429a123fc37f531a3b101dab8d23",
+      "imports": [
+        "Packet05ForcedDifferenceGreen",
+        "MaxwellInverseCurlCurl",
+        "FlatDifferenceCoercivity"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualLocalizedGreen.actual_localized_flat_fields",
+        "OQ14.Packet05ActualLocalizedGreen.actual_flat_tangential_green"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualLocalizedGreen-final.log",
+      "log_sha256": "9c9cd669e3782939fb11d24b8bb02f2f7b760c7718301c8a6b82bc36e98fa02d",
+      "report_count": 2,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05DifferenceMaxwell",
+      "source": "D:\\oq14\\lean\\Packet05DifferenceMaxwell.lean",
+      "source_sha256": "9fdea86c0e662375dcbe9c85820b34fbacd206e45809bf2f3d43a74ef2f5d389",
+      "imports": [
+        "Packet05ActualLocalizedGreen",
+        "GlobalToRegionalCurl",
+        "WeakPoynting.ElectricControl",
+        "MaxwellQuotientEnergy"
+      ],
+      "theorems": [
+        "OQ14.Packet05DifferenceMaxwell.ball_tangential_step",
+        "OQ14.Packet05DifferenceMaxwell.cutField_global_ae",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_maxwell",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_energy",
+        "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_cutoff_bound",
+        "OQ14.Packet05DifferenceMaxwell.actual_ball_tangential_difference_uniform",
+        "OQ14.Packet05DifferenceMaxwell.actual_ball_cutoff_electric_difference_uniform"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05DifferenceMaxwell-final.log",
+      "log_sha256": "bbfa0a9052184623f7fbd2cd928d80e3ec339c31bf36561a8873b6399107629e",
+      "report_count": 7,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05DifferenceConverse",
+      "source": "D:\\oq14\\lean\\Packet05DifferenceConverse.lean",
+      "source_sha256": "2f0fe8824058d8b0472794d9b50296fd3e0619ff972be752a43eee5f675df773",
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.Translations",
+        "Mathlib.Analysis.Calculus.Deriv.Slope",
+        "Mathlib.Analysis.Normed.Module.WeakDual",
+        "Mathlib.Analysis.InnerProductSpace.Dual",
+        "WeakPoynting.Poynting"
+      ],
+      "theorems": [
+        "OQ14.Packet05DifferenceConverse.quotient_pair_tendsto",
+        "OQ14.Packet05DifferenceConverse.weakPartial_of_bounded_quotients"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05DifferenceConverse-final.log",
+      "log_sha256": "8590cee792def11e94857a96b95aedce0e416fb62f22aec3acb123bea0eff035",
+      "report_count": 2,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05FlatWeight",
+      "source": "D:\\oq14\\lean\\Packet05FlatWeight.lean",
+      "source_sha256": "d9ac587eb2c0c91c1e3a1d63bca9e554447013a68da9f4abb67e88a5a6fe2e48",
+      "imports": [
+        "Packet05DifferenceConverse",
+        "FlatDifferenceCoercivity"
+      ],
+      "theorems": [
+        "OQ14.Packet05FlatWeight.weight_memLp_top",
+        "OQ14.Packet05FlatWeight.mulWeight_ae",
+        "OQ14.Packet05FlatWeight.weight_tangential",
+        "OQ14.Packet05FlatWeight.weighted_quotient_bound",
+        "OQ14.Packet05FlatWeight.weighted_weakPartial_of_bounded_quotients"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05FlatWeight-final.log",
+      "log_sha256": "33038b8a8527b67fe85e0d505e99c420c19a9acc60b8abdb20750656668a13e0",
+      "report_count": 5,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05DivergenceUpgrade",
+      "source": "D:\\oq14\\lean\\Packet05DivergenceUpgrade.lean",
+      "source_sha256": "46fddfc6dc318aabd12d25b8b3dda39fbc04eaca1c0106789ce7127df3767bae",
+      "imports": [
+        "WeakPoynting.InteriorTestDensity",
+        "WeakPoynting.LocalRegularity"
+      ],
+      "theorems": [
+        "OQ14.Packet05DivergenceUpgrade.smooth_divergence_to_weak",
+        "OQ14.Packet05DivergenceUpgrade.normal_from_divergence"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05DivergenceUpgrade-final.log",
+      "log_sha256": "6db890f2174744a612d559c36967c7633ae561271485c2b864336c9caa5c6811",
+      "report_count": 2,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05WeightedDivergence",
+      "source": "D:\\oq14\\lean\\Packet05WeightedDivergence.lean",
+      "source_sha256": "47731d7019828204bc4efdab9a1317bdf4fbcf7c4e655fde73fe4eaf9f4d1dea",
+      "imports": [
+        "Packet05FlatWeight",
+        "Packet05DivergenceUpgrade",
+        "Packet05DifferenceMaxwell"
+      ],
+      "theorems": [
+        "OQ14.Packet05WeightedDivergence.cutoff_divergence_vanishes_on",
+        "OQ14.Packet05WeightedDivergence.actual_cutoff_weighted_divergence",
+        "OQ14.Packet05WeightedDivergence.complex_cutoff_weighted_divergence"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05WeightedDivergence-final.log",
+      "log_sha256": "e8d0e486bdbf3f2205d533b43b0c7e7aacf1cf9883182e7b3d25092f89039cd6",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05PhaseRegularity",
+      "source": "D:\\oq14\\lean\\Packet05PhaseRegularity.lean",
+      "source_sha256": "c1cea5f9ab2e43c603828c23b2a7836f4e5a0127c86cb12d3c5e48649183a216",
+      "imports": [
+        "MaxwellInverseCurlCurl"
+      ],
+      "theorems": [
+        "OQ14.Packet05PhaseRegularity.constant_phase_electric_divergence",
+        "OQ14.Packet05PhaseRegularity.constant_phase_electric_cutoff_h1",
+        "OQ14.Packet05PhaseRegularity.complex_constant_phase_electric_cutoff_h1",
+        "OQ14.Packet05PhaseRegularity.complex_magnetic_cutoff_h1"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05PhaseRegularity-final.log",
+      "log_sha256": "806a92914bd1ef20acc94c3992b13dcf1d820e238a866de511fab135fb7c24f6",
+      "report_count": 4,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05CurlCommutation",
+      "source": "D:\\oq14\\lean\\Packet05CurlCommutation.lean",
+      "source_sha256": "d15edeee2cc81c751e00a4854ac4374efc24cfc5c6e5c5ace187fad6755f1b3f",
+      "imports": [
+        "Packet05DivergenceUpgrade",
+        "KernelSource"
+      ],
+      "theorems": [
+        "OQ14.Packet05CurlCommutation.derivativePair_partial_comm",
+        "OQ14.Packet05CurlCommutation.smooth_curl_to_weak",
+        "OQ14.Packet05CurlCommutation.partial_commutes_weakCurl"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05CurlCommutation-final.log",
+      "log_sha256": "d69ba79041a17241bc630d17e4ac652dbba11032b07ae506c816762af5c6a82c",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05CurlNormal",
+      "source": "D:\\oq14\\lean\\Packet05CurlNormal.lean",
+      "source_sha256": "502d4064417fdb8acdd542989f6ac022c9978420cda9c60fc6d23ed362cda829",
+      "imports": [
+        "Packet05DifferenceMaxwell"
+      ],
+      "theorems": [
+        "OQ14.Packet05CurlNormal.normal_first_from_curl",
+        "OQ14.Packet05CurlNormal.normal_second_from_curl",
+        "OQ14.Packet05CurlNormal.cutoff_has_weakCurl",
+        "OQ14.Packet05CurlNormal.cutoff_normal_tangential_components"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05CurlNormal-final.log",
+      "log_sha256": "6a29c4d65b72093a50cbc81a7efa978d134ce9ab2d71929b29fb86c08248d5ec",
+      "report_count": 4,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05TangentialRegularity",
+      "source": "D:\\oq14\\lean\\Packet05TangentialRegularity.lean",
+      "source_sha256": "f0e1ce2a79578295498adaf806d25a0f04c8f57f84005c92130578abfce8e3d9",
+      "imports": [
+        "Packet05DifferenceMaxwell",
+        "Packet05DifferenceConverse",
+        "Packet05CurlNormal",
+        "Packet05WeightedDivergence"
+      ],
+      "theorems": [
+        "OQ14.Packet05TangentialRegularity.actual_ball_electric_tangential_weak_derivative",
+        "OQ14.Packet05TangentialRegularity.actual_ball_electric_normal_tangential_components",
+        "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_tangential_derivative",
+        "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_normal_derivative"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05TangentialRegularity-final.log",
+      "log_sha256": "360e8719459e531da093867955a26b7e57e709b333b8534f0e4c6f9f6b009fd7",
+      "report_count": 4,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05FlatTransmissionH1",
+      "source": "D:\\oq14\\lean\\Packet05FlatTransmissionH1.lean",
+      "source_sha256": "3579d121ac73400be18c57c91bb2eb06d7790e7d03169b4c79098b0d3bff1ad3",
+      "imports": [
+        "Packet05TangentialRegularity"
+      ],
+      "theorems": [
+        "OQ14.Packet05FlatTransmissionH1.actual_flat_transmission_h1"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05FlatTransmissionH1-final.log",
+      "log_sha256": "42431cac89447a6ff1a1d3cb4fc9786b2fed901e9d2dcc7ae934bdcc855a08b1",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05LocalDerivative",
+      "source": "D:\\oq14\\lean\\Packet05LocalDerivative.lean",
+      "source_sha256": "9558548d20b5fda6c182c77949f9a8594c6f384a44ce5f7f7a5581afddaee352",
+      "imports": [
+        "Packet05DifferenceConverse",
+        "RegionalMaxwellHelmholtz",
+        "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+        "Packet05FlatWeight",
+        "Packet05DivergenceUpgrade"
+      ],
+      "theorems": [
+        "OQ14.Packet05LocalDerivative.weak_partial_local_constant_relation",
+        "OQ14.Packet05LocalDerivative.weak_partial_unique",
+        "OQ14.Packet05LocalDerivative.weighted_partial_on_constant_phase",
+        "OQ14.Packet05LocalDerivative.interface_plane_null",
+        "OQ14.Packet05LocalDerivative.weighted_partial_eq",
+        "OQ14.Packet05LocalDerivative.weighted_partial_gives_phase_partial",
+        "OQ14.Packet05LocalDerivative.divergence_eq_sum_partials",
+        "OQ14.Packet05LocalDerivative.local_partial_of_ae_eq",
+        "OQ14.Packet05LocalDerivative.normal_displacement_from_divergence"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05LocalDerivative-final.log",
+      "log_sha256": "e1e7e1bb21d1db51ce2f2f8c030b825c908c9ef01cf0ae479ae6de20f24b63f2",
+      "report_count": 9,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualPhaseDerivatives",
+      "source": "D:\\oq14\\lean\\Packet05ActualPhaseDerivatives.lean",
+      "source_sha256": "90c2d77dddd43413be36b341986819eabc7a4e07276781396a7cc91a4af55207",
+      "imports": [
+        "Packet05TangentialRegularity",
+        "Packet05LocalDerivative"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualPhaseDerivatives.actual_tangential_phase_constitutive"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualPhaseDerivatives-final.log",
+      "log_sha256": "dd79ff794078856b2099da4db2614ba898f9f1922544d8535bb5f664a7fc8d0e",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05PartialProduct",
+      "source": "D:\\oq14\\lean\\Packet05PartialProduct.lean",
+      "source_sha256": "3719dae235ddf0b79b02d2c571cec75424c83fcdb1300545bec745c238e5500e",
+      "imports": [
+        "Packet05CurlCommutation"
+      ],
+      "theorems": [
+        "OQ14.Packet05PartialProduct.cutoff_weak_partial"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05PartialProduct-final.log",
+      "log_sha256": "29aecf57756e4e8fb6db12ea4326524a8991fd88b25a897c8da1d54604cf9f32",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05DifferentiatedCurl",
+      "source": "D:\\oq14\\lean\\Packet05DifferentiatedCurl.lean",
+      "source_sha256": "17500204e786fbc06e4b53f4aecfeb1df3092f827c008da16c18d1857c514fbe",
+      "imports": [
+        "Packet05PartialProduct",
+        "WeakPoynting.RegionalCurlUpgrade",
+        "Packet05FlatWeight"
+      ],
+      "theorems": [
+        "OQ14.Packet05DifferentiatedCurl.differentiated_local_curl_pairing",
+        "OQ14.Packet05DifferentiatedCurl.differentiated_local_maxwell_pairing",
+        "OQ14.Packet05DifferentiatedCurl.regional_maxwell_of_differentiated_pairings"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05DifferentiatedCurl-final.log",
+      "log_sha256": "b75a23d3dc34d9b84ec996c7d3f37e03c9328ee3b77f4f0c81adbad828be9d7f",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualDifferentiatedMaxwell",
+      "source": "D:\\oq14\\lean\\Packet05ActualDifferentiatedMaxwell.lean",
+      "source_sha256": "ed5a4dec4c8e67f03eda76a41e62f990700b6731ea902715289367d6134c0053",
+      "imports": [
+        "Packet05DifferentiatedCurl",
+        "Packet05ActualPhaseDerivatives"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualDifferentiatedMaxwell.nested_cutoff_field",
+        "OQ14.Packet05ActualDifferentiatedMaxwell.actual_cutoff_local_maxwell",
+        "OQ14.Packet05ActualDifferentiatedMaxwell.actual_tangential_differentiated_maxwell"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualDifferentiatedMaxwell-final.log",
+      "log_sha256": "3e2c7bf9a6d4aac21995c0d96fda0ea92696cf5f6d094c88339faeba71e0016a",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05SecondTangential",
+      "source": "D:\\oq14\\lean\\Packet05SecondTangential.lean",
+      "source_sha256": "8dbf9bb1c31584b5ccac8e46c5232e0d785a7e604915a0c1503083a43471467f",
+      "imports": [
+        "Packet05ActualDifferentiatedMaxwell",
+        "Packet05FlatTransmissionH1"
+      ],
+      "theorems": [
+        "OQ14.Packet05SecondTangential.nested_scale",
+        "OQ14.Packet05SecondTangential.second_stage_regional_tangential",
+        "OQ14.Packet05SecondTangential.actual_second_tangential_derivatives"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05SecondTangential-final.log",
+      "log_sha256": "4bcd74caa52cb63bf5dfd1cd7f95bff1687e5b78526a6347611cf8f10e5e1c06",
+      "report_count": 3,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05NormalSecond",
+      "source": "D:\\oq14\\lean\\Packet05NormalSecond.lean",
+      "source_sha256": "1f24397806316100ee59500e057a85da90c8b4cf887af2e9828f59a3098e759d",
+      "imports": [
+        "Packet05CurlCommutation"
+      ],
+      "theorems": [
+        "OQ14.Packet05NormalSecond.smooth_partial_to_weak",
+        "OQ14.Packet05NormalSecond.normal_second_from_laplacian",
+        "OQ14.Packet05NormalSecond.weak_mixed_partial_commute",
+        "OQ14.Packet05NormalSecond.hessian_from_tangential_and_laplacian"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05NormalSecond-final.log",
+      "log_sha256": "4d7354a46f9680b544210162c1b7c7ed306bf2b2fb86e2803546e5beb021afb9",
+      "report_count": 4,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05NormalNormal",
+      "source": "D:\\oq14\\lean\\Packet05NormalNormal.lean",
+      "source_sha256": "01be3874cdc922f129708ce5d8fe87afd45ccbe292da69eb248e1883dec40f82",
+      "imports": [
+        "Packet05LocalDerivative"
+      ],
+      "theorems": [
+        "OQ14.Packet05NormalNormal.phase_normal_normal_from_flux",
+        "OQ14.Packet05NormalNormal.normal_first_component_from_local_curl",
+        "OQ14.Packet05NormalNormal.normal_second_component_from_local_curl",
+        "OQ14.Packet05NormalNormal.valuePair_cutoff_on",
+        "OQ14.Packet05NormalNormal.phase_tangential_normal_normal"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05NormalNormal-final.log",
+      "log_sha256": "7f6de13e80625669fb2229c7bea4b791b0d7fba909e27c9824475fc6971f6341",
+      "report_count": 5,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualNormalFlux",
+      "source": "D:\\oq14\\lean\\Packet05ActualNormalFlux.lean",
+      "source_sha256": "059cc50021da678da05eab9c2e9c9eac48ce5bf7e91cb8d3051cd41f8462a7d6",
+      "imports": [
+        "Packet05TangentialRegularity",
+        "Packet05LocalDerivative"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualNormalFlux.actual_normal_displacement_relation"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualNormalFlux-final.log",
+      "log_sha256": "2267990c733e45381fd7f2e2f18eb4264d6ebe81659da27b0b46672bc3940f96",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualNormalNormal",
+      "source": "D:\\oq14\\lean\\Packet05ActualNormalNormal.lean",
+      "source_sha256": "075bf2b2ec5e1bb5f3fc0d01096d456ffcb37f8ec1bc4f6e70bef038d30532f0",
+      "imports": [
+        "Packet05SecondTangential",
+        "Packet05ActualNormalFlux",
+        "Packet05NormalNormal",
+        "Packet05PartialProduct"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualNormalNormal.actual_phase_normal_normal",
+        "OQ14.Packet05ActualNormalNormal.actual_phase_tangential_normal_normal"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualNormalNormal-final.log",
+      "log_sha256": "567d9ff9fe97ce5255c7f7054a2fffd1896f7e60ab13d5f589479e2b729cd77f",
+      "report_count": 2,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05RegionalPartial",
+      "source": "D:\\oq14\\lean\\Packet05RegionalPartial.lean",
+      "source_sha256": "75e8017aa85033d0407b94f3fc4cba2b8a9da3a81da7018849f75ee4ab1b6369",
+      "imports": [
+        "Packet05NormalNormal",
+        "Packet05NormalSecond"
+      ],
+      "theorems": [
+        "OQ14.Packet05RegionalPartial.global_partial_on",
+        "OQ14.Packet05RegionalPartial.cutoff_partial_on",
+        "OQ14.Packet05RegionalPartial.partial_on_of_ae_eq",
+        "OQ14.Packet05RegionalPartial.smooth_partial_on_to_weak",
+        "OQ14.Packet05RegionalPartial.mixed_partial_on_commute"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05RegionalPartial-final.log",
+      "log_sha256": "b1526e7e4c0baf47d33c15fc30a294a41bd15a8e6f75fbe9b94f2be359fea726",
+      "report_count": 5,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05ActualFlatH2",
+      "source": "D:\\oq14\\lean\\Packet05ActualFlatH2.lean",
+      "source_sha256": "524155e806e26cc3fd0422c925c791910e565880c912e27ca393f70f05990260",
+      "imports": [
+        "Packet05ActualNormalNormal",
+        "Packet05RegionalPartial"
+      ],
+      "theorems": [
+        "OQ14.Packet05ActualFlatH2.actual_flat_phase_h2"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05ActualFlatH2-final.log",
+      "log_sha256": "be5c657f900e08c4484c3735ae7c81829c4d21c522fb173a197e50cd50a756f8",
+      "report_count": 1,
+      "bad_log": false
+    },
+    {
+      "module": "Packet05FourierRepresentative",
+      "source": "D:\\oq14\\lean\\Packet05FourierRepresentative.lean",
+      "source_sha256": "9c34ede39b92996fa10464f31d4c1c1e4499299d658887f9ae5d6a32147580bf",
+      "imports": [
+        "NewtonL1L2",
+        "Mathlib.Analysis.SpecialFunctions.JapaneseBracket"
+      ],
+      "theorems": [
+        "OQ14.Packet05FourierRepresentative.continuous_of_integrable_inverse_fourier",
+        "OQ14.Packet05FourierRepresentative.continuous_of_weighted_inverse_fourier"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05FourierRepresentative-final.log",
+      "log_sha256": "a60fddfa0cacbbe50976dd0d1f28c43ad33ea33b59e7c427c1aa98f1f7367dd6",
+      "report_count": 2,
+      "bad_log": false
+    }
+  ],
+  "forcing_full_audit_log": "D:\\oq14\\checkpoints\\2026-11-12-full-closure\\Packet05Audit.log",
+  "forcing_full_audit_sha256": "4c99b6844e5a2c2e890753dc83475dfcec4c753d20998cd293b1d53c395b17e5"
+}

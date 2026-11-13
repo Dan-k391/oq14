@@ -1,0 +1,2168 @@
+{
+  "toolchain": {
+    "mathlib_manifest_rev": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "lean_toolchain": "leanprover/lean4:v4.19.0",
+    "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+    "mathlib_git_head": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "mathlib_expected": "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+  },
+  "missing_roots": [],
+  "modules": {
+    "StaticNewton": {
+      "path": "lean\\StaticNewton.lean",
+      "sha256": "6bc04f11768ab104ab61bf585e7d266644e733133d087738247c226129b7b776",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "6bc04f11768ab104ab61bf585e7d266644e733133d087738247c226129b7b776"
+        }
+      ],
+      "imports": [
+        "NewtonL1L2",
+        "StaticCoefficient"
+      ],
+      "status": "matched",
+      "normalized_sha256": "6bc04f11768ab104ab61bf585e7d266644e733133d087738247c226129b7b776"
+    },
+    "GreenKernel": {
+      "path": "lean\\GreenKernel.lean",
+      "sha256": "721730a853cff1a637c64b33326ac7742ad0f764cb2a93c4099c57cf07056642",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "721730a853cff1a637c64b33326ac7742ad0f764cb2a93c4099c57cf07056642"
+        }
+      ],
+      "imports": [
+        "Maxwell",
+        "Mathlib.Analysis.InnerProductSpace.Calculus",
+        "Mathlib.Analysis.Calculus.Deriv.Inv",
+        "Mathlib.Tactic.FieldSimp"
+      ],
+      "status": "matched",
+      "normalized_sha256": "721730a853cff1a637c64b33326ac7742ad0f764cb2a93c4099c57cf07056642"
+    },
+    "LocalConvolution": {
+      "path": "lean\\LocalConvolution.lean",
+      "sha256": "d87c7668cef342ccdf13d48dfb2e8b08c41a5a72571829d52f084e3eada26190",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "d87c7668cef342ccdf13d48dfb2e8b08c41a5a72571829d52f084e3eada26190"
+        }
+      ],
+      "imports": [
+        "L1Convolution",
+        "KernelConvolution"
+      ],
+      "status": "matched",
+      "normalized_sha256": "d87c7668cef342ccdf13d48dfb2e8b08c41a5a72571829d52f084e3eada26190"
+    },
+    "FlatDifferenceCoercivity": {
+      "path": "lean\\FlatDifferenceCoercivity.lean",
+      "sha256": "d31749f40d9adb7ba31c42f3e9cbd72a914c2f47e96f97d3fc3c02303b277d6c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "stage71",
+          "expected_sha256": "d31749f40d9adb7ba31c42f3e9cbd72a914c2f47e96f97d3fc3c02303b277d6c"
+        }
+      ],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "MaxwellInverseCurlCurl"
+      ],
+      "status": "matched",
+      "normalized_sha256": "d31749f40d9adb7ba31c42f3e9cbd72a914c2f47e96f97d3fc3c02303b277d6c"
+    },
+    "Packet05FlatWeight": {
+      "path": "lean\\Packet05FlatWeight.lean",
+      "sha256": "d9ac587eb2c0c91c1e3a1d63bca9e554447013a68da9f4abb67e88a5a6fe2e48",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DifferenceConverse",
+        "FlatDifferenceCoercivity"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "d9ac587eb2c0c91c1e3a1d63bca9e554447013a68da9f4abb67e88a5a6fe2e48"
+    },
+    "ExteriorSmooth": {
+      "path": "lean\\ExteriorSmooth.lean",
+      "sha256": "42483008985633e3bf20809bbe4c474f2cef854428910034fcddd22964b5abbd",
+      "frozen_candidates": [
+        {
+          "match": "CRLF_to_LF_expected",
+          "ledger": "release5238",
+          "expected_sha256": "ac6e77542e994fbc61a70a23906f3566d78cb8994d7590e4b8838e8a5e6deb4b"
+        }
+      ],
+      "imports": [
+        "ScalarExteriorRegularity",
+        "ExteriorContinuity",
+        "WeakPoynting.InteriorTestDensity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "ac6e77542e994fbc61a70a23906f3566d78cb8994d7590e4b8838e8a5e6deb4b"
+    },
+    "MagneticLocal": {
+      "path": "lean\\MagneticLocal.lean",
+      "sha256": "cb712faf80404e7a4242169045beaee12cfc8d5bb31e54762e4e3e55c0e06881",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "cb712faf80404e7a4242169045beaee12cfc8d5bb31e54762e4e3e55c0e06881"
+        }
+      ],
+      "imports": [
+        "LocalConvolution",
+        "MagneticResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "cb712faf80404e7a4242169045beaee12cfc8d5bb31e54762e4e3e55c0e06881"
+    },
+    "L1Convolution": {
+      "path": "lean\\L1Convolution.lean",
+      "sha256": "a13c3d9a21408ea59bb05b199a01ec51cbaf169b13b9c6d6e04aba9b5fbac987",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "a13c3d9a21408ea59bb05b199a01ec51cbaf169b13b9c6d6e04aba9b5fbac987"
+        }
+      ],
+      "imports": [
+        "NewtonL1L2"
+      ],
+      "status": "matched",
+      "normalized_sha256": "a13c3d9a21408ea59bb05b199a01ec51cbaf169b13b9c6d6e04aba9b5fbac987"
+    },
+    "RealKernelBounds": {
+      "path": "lean\\RealKernelBounds.lean",
+      "sha256": "3a03a7413037d1b9acecd11f79816f994021cdc9047ea082b3f2440413b8f31d",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "3a03a7413037d1b9acecd11f79816f994021cdc9047ea082b3f2440413b8f31d"
+        }
+      ],
+      "imports": [
+        "DynamicIntegrability"
+      ],
+      "status": "matched",
+      "normalized_sha256": "3a03a7413037d1b9acecd11f79816f994021cdc9047ea082b3f2440413b8f31d"
+    },
+    "Packet05LocalDerivative": {
+      "path": "lean\\Packet05LocalDerivative.lean",
+      "sha256": "9558548d20b5fda6c182c77949f9a8594c6f384a44ce5f7f7a5581afddaee352",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DifferenceConverse",
+        "RegionalMaxwellHelmholtz",
+        "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+        "Packet05FlatWeight",
+        "Packet05DivergenceUpgrade"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "9558548d20b5fda6c182c77949f9a8594c6f384a44ce5f7f7a5581afddaee352"
+    },
+    "WeakPoynting.Axial": {
+      "path": "lean\\WeakPoynting\\Axial.lean",
+      "sha256": "fdb3c0607e14cf468ce7263baa2e7a5adca7b7d8d37b1e167adccb65f11602fa",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "fdb3c0607e14cf468ce7263baa2e7a5adca7b7d8d37b1e167adccb65f11602fa"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Aperture",
+        "Mathlib.Analysis.Calculus.Rademacher"
+      ],
+      "status": "matched",
+      "normalized_sha256": "fdb3c0607e14cf468ce7263baa2e7a5adca7b7d8d37b1e167adccb65f11602fa"
+    },
+    "NewtonL2": {
+      "path": "lean\\NewtonL2.lean",
+      "sha256": "9681b67130ff86461c375d501030e3aa8442cb9d26321bb94f7e84f9ca39edb4",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "9681b67130ff86461c375d501030e3aa8442cb9d26321bb94f7e84f9ca39edb4"
+        }
+      ],
+      "imports": [
+        "NewtonConvolution"
+      ],
+      "status": "matched",
+      "normalized_sha256": "9681b67130ff86461c375d501030e3aa8442cb9d26321bb94f7e84f9ca39edb4"
+    },
+    "Packet05ActualLocalizedGreen": {
+      "path": "lean\\Packet05ActualLocalizedGreen.lean",
+      "sha256": "5c1079c027477e740e55c8495a834c0deb75429a123fc37f531a3b101dab8d23",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05ForcedDifferenceGreen",
+        "MaxwellInverseCurlCurl",
+        "FlatDifferenceCoercivity"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "5c1079c027477e740e55c8495a834c0deb75429a123fc37f531a3b101dab8d23"
+    },
+    "WeakPoynting.MagneticCompactness": {
+      "path": "lean\\WeakPoynting\\MagneticCompactness.lean",
+      "sha256": "043f8eb89640e4f0bdeb517c5ed3f0d51de57f6c643458426f8fa79ce12e7961",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "043f8eb89640e4f0bdeb517c5ed3f0d51de57f6c643458426f8fa79ce12e7961"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Compactness",
+        "WeakPoynting.RegularityBounds"
+      ],
+      "status": "matched",
+      "normalized_sha256": "043f8eb89640e4f0bdeb517c5ed3f0d51de57f6c643458426f8fa79ce12e7961"
+    },
+    "WeakPoynting.Local": {
+      "path": "lean\\WeakPoynting\\Local.lean",
+      "sha256": "b15e9b8de4108e3ce597c1e228690300d2396ac13dbbb50cb0a00e106b9806dc",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b15e9b8de4108e3ce597c1e228690300d2396ac13dbbb50cb0a00e106b9806dc"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Poynting",
+        "HCurlCutoff",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b15e9b8de4108e3ce597c1e228690300d2396ac13dbbb50cb0a00e106b9806dc"
+    },
+    "HelmholtzTestCalculus": {
+      "path": "lean\\HelmholtzTestCalculus.lean",
+      "sha256": "b3fae1ebdfaac66c0548ebd3c993715adb266725493d438827dea8b269608c8d",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b3fae1ebdfaac66c0548ebd3c993715adb266725493d438827dea8b269608c8d"
+        }
+      ],
+      "imports": [
+        "ExteriorHelmholtz",
+        "ModalDipole"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b3fae1ebdfaac66c0548ebd3c993715adb266725493d438827dea8b269608c8d"
+    },
+    "HeatFourier": {
+      "path": "lean\\HeatFourier.lean",
+      "sha256": "61f2183591214739868c469247fee6255d30c0c5795dbf1a7c6bae86885ca3dc",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "61f2183591214739868c469247fee6255d30c0c5795dbf1a7c6bae86885ca3dc"
+        }
+      ],
+      "imports": [
+        "FourierL2",
+        "GreenKernel",
+        "Mathlib.Analysis.Convolution",
+        "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform"
+      ],
+      "status": "matched",
+      "normalized_sha256": "61f2183591214739868c469247fee6255d30c0c5795dbf1a7c6bae86885ca3dc"
+    },
+    "ExteriorHelmholtz": {
+      "path": "lean\\ExteriorHelmholtz.lean",
+      "sha256": "ec9da031304accc3a1c9c2b50056dfdf9f84e2ca7c73841e0508416343e665bb",
+      "frozen_candidates": [
+        {
+          "match": "CRLF_to_LF_expected",
+          "ledger": "release5238",
+          "expected_sha256": "e19234bf28aaccf805f83bec336255f6ce775de03bb5b220ffe35126d93a825b"
+        }
+      ],
+      "imports": [
+        "ExteriorClassical"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e19234bf28aaccf805f83bec336255f6ce775de03bb5b220ffe35126d93a825b"
+    },
+    "Packet05FlatTransmissionH1": {
+      "path": "lean\\Packet05FlatTransmissionH1.lean",
+      "sha256": "3579d121ac73400be18c57c91bb2eb06d7790e7d03169b4c79098b0d3bff1ad3",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05TangentialRegularity"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "3579d121ac73400be18c57c91bb2eb06d7790e7d03169b4c79098b0d3bff1ad3"
+    },
+    "ModalDipole": {
+      "path": "lean\\ModalDipole.lean",
+      "sha256": "610856ae161334346d8cb2675cc26f31a1d3b92ffd86400db3719333d12a14ec",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "610856ae161334346d8cb2675cc26f31a1d3b92ffd86400db3719333d12a14ec"
+        }
+      ],
+      "imports": [
+        "ModalMatching",
+        "GreenKernel"
+      ],
+      "status": "matched",
+      "normalized_sha256": "610856ae161334346d8cb2675cc26f31a1d3b92ffd86400db3719333d12a14ec"
+    },
+    "WeakPoynting.LocalRegularity": {
+      "path": "lean\\WeakPoynting\\LocalRegularity.lean",
+      "sha256": "9f2e673dd274fb9acd7d56fe4068aa10de8e211c88fd7ffed9cbf444a0468861",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "9f2e673dd274fb9acd7d56fe4068aa10de8e211c88fd7ffed9cbf444a0468861"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.DivCurlRegularity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "9f2e673dd274fb9acd7d56fe4068aa10de8e211c88fd7ffed9cbf444a0468861"
+    },
+    "Packet05CurlCommutation": {
+      "path": "lean\\Packet05CurlCommutation.lean",
+      "sha256": "d15edeee2cc81c751e00a4854ac4374efc24cfc5c6e5c5ace187fad6755f1b3f",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DivergenceUpgrade",
+        "KernelSource"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "d15edeee2cc81c751e00a4854ac4374efc24cfc5c6e5c5ace187fad6755f1b3f"
+    },
+    "MaterialMaxwell": {
+      "path": "lean\\MaterialMaxwell.lean",
+      "sha256": "b35771b4ec4db8badd61216d2ce15fd9d63fe799594b9a724a1786b725b52092",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b35771b4ec4db8badd61216d2ce15fd9d63fe799594b9a724a1786b725b52092"
+        }
+      ],
+      "imports": [
+        "MaterialField",
+        "MagneticResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b35771b4ec4db8badd61216d2ce15fd9d63fe799594b9a724a1786b725b52092"
+    },
+    "WeakPoynting.Polarization": {
+      "path": "lean\\WeakPoynting\\Polarization.lean",
+      "sha256": "39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Weighted"
+      ],
+      "status": "matched",
+      "normalized_sha256": "39d9449e74baeabaa657601913ccbbc2e17bcd5aa49e9e927bb90ea79ef63740"
+    },
+    "WaveResponse": {
+      "path": "lean\\WaveResponse.lean",
+      "sha256": "5bdfbfac115d4a561f5b52882d737c464f3ab3031ce11a6298173b187e009c1b",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "5bdfbfac115d4a561f5b52882d737c464f3ab3031ce11a6298173b187e009c1b"
+        }
+      ],
+      "imports": [
+        "KernelConvolution"
+      ],
+      "status": "matched",
+      "normalized_sha256": "5bdfbfac115d4a561f5b52882d737c464f3ab3031ce11a6298173b187e009c1b"
+    },
+    "Packet05PartialProduct": {
+      "path": "lean\\Packet05PartialProduct.lean",
+      "sha256": "3719dae235ddf0b79b02d2c571cec75424c83fcdb1300545bec745c238e5500e",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05CurlCommutation"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "3719dae235ddf0b79b02d2c571cec75424c83fcdb1300545bec745c238e5500e"
+    },
+    "KernelEstimates": {
+      "path": "lean\\KernelEstimates.lean",
+      "sha256": "65ba57149ff9cf21cc9819ce7b8ae3a54546d6d4017f0d3137a2adcdc2e9501f",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "65ba57149ff9cf21cc9819ce7b8ae3a54546d6d4017f0d3137a2adcdc2e9501f"
+        }
+      ],
+      "imports": [
+        "DynamicIntegrability"
+      ],
+      "status": "matched",
+      "normalized_sha256": "65ba57149ff9cf21cc9819ce7b8ae3a54546d6d4017f0d3137a2adcdc2e9501f"
+    },
+    "DynamicVolume": {
+      "path": "lean\\DynamicVolume.lean",
+      "sha256": "2d70da118b77462000df56c4284c87dd8fac7bccc7dbaf7208e715139c9ab228",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "2d70da118b77462000df56c4284c87dd8fac7bccc7dbaf7208e715139c9ab228"
+        }
+      ],
+      "imports": [
+        "DynamicConvolution",
+        "StaticNewton"
+      ],
+      "status": "matched",
+      "normalized_sha256": "2d70da118b77462000df56c4284c87dd8fac7bccc7dbaf7208e715139c9ab228"
+    },
+    "NestedCurlCutoffSource": {
+      "path": "lean\\NestedCurlCutoffSource.lean",
+      "sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellCurlCutoffSource",
+        "RegionalMaxwellHelmholtz"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "5a5055f5ebacedf9cac956ce7077217eb66bd979c968ed45fcbfd3abba558f7b"
+    },
+    "Packet05WeightedDivergence": {
+      "path": "lean\\Packet05WeightedDivergence.lean",
+      "sha256": "47731d7019828204bc4efdab9a1317bdf4fbcf7c4e655fde73fe4eaf9f4d1dea",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05FlatWeight",
+        "Packet05DivergenceUpgrade",
+        "Packet05DifferenceMaxwell"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "47731d7019828204bc4efdab9a1317bdf4fbcf7c4e655fde73fe4eaf9f4d1dea"
+    },
+    "LocalizedCurlCurlSource": {
+      "path": "lean\\LocalizedCurlCurlSource.lean",
+      "sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "MaxwellInverseCurlCurl"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "f19ba76c262408836e91d11ccea3904ab086fa946eb6d0d445368f8117db1fce"
+    },
+    "DynamicIntegrability": {
+      "path": "lean\\DynamicIntegrability.lean",
+      "sha256": "f9ecefa37a6fde22d08e3b08d69c073aba5b37adb2a74d22f8f86ca8feb01bec",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "f9ecefa37a6fde22d08e3b08d69c073aba5b37adb2a74d22f8f86ca8feb01bec"
+        }
+      ],
+      "imports": [
+        "KernelIntegrability"
+      ],
+      "status": "matched",
+      "normalized_sha256": "f9ecefa37a6fde22d08e3b08d69c073aba5b37adb2a74d22f8f86ca8feb01bec"
+    },
+    "WeakPoynting.RegionalCurlUpgrade": {
+      "path": "lean\\WeakPoynting\\RegionalCurlUpgrade.lean",
+      "sha256": "ed980e72403a1b79d4e779565754ed0075fd66582f51c56ce76f3fd1a013392d",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "ed980e72403a1b79d4e779565754ed0075fd66582f51c56ce76f3fd1a013392d"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.InteriorTestDensity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "ed980e72403a1b79d4e779565754ed0075fd66582f51c56ce76f3fd1a013392d"
+    },
+    "Packet05ActualDifferentiatedMaxwell": {
+      "path": "lean\\Packet05ActualDifferentiatedMaxwell.lean",
+      "sha256": "ed5a4dec4c8e67f03eda76a41e62f990700b6731ea902715289367d6134c0053",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DifferentiatedCurl",
+        "Packet05ActualPhaseDerivatives"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "ed5a4dec4c8e67f03eda76a41e62f990700b6731ea902715289367d6134c0053"
+    },
+    "ScalarExterior": {
+      "path": "lean\\ScalarExterior.lean",
+      "sha256": "c888345be5c2830bdaec7b3f32c2615919260280c35446727c7964ec2b31ff7c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "c888345be5c2830bdaec7b3f32c2615919260280c35446727c7964ec2b31ff7c"
+        }
+      ],
+      "imports": [
+        "ScalarRadiation",
+        "Mathlib.Analysis.Calculus.ParametricIntegral"
+      ],
+      "status": "matched",
+      "normalized_sha256": "c888345be5c2830bdaec7b3f32c2615919260280c35446727c7964ec2b31ff7c"
+    },
+    "WeakPoynting.Slices": {
+      "path": "lean\\WeakPoynting\\Slices.lean",
+      "sha256": "7452cd9ff12b0072f5f7cea53bb76f134c898a1d503d2354a924bfcce52953b5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "7452cd9ff12b0072f5f7cea53bb76f134c898a1d503d2354a924bfcce52953b5"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Conservation",
+        "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ],
+      "status": "matched",
+      "normalized_sha256": "7452cd9ff12b0072f5f7cea53bb76f134c898a1d503d2354a924bfcce52953b5"
+    },
+    "ModalRational": {
+      "path": "lean\\ModalRational.lean",
+      "sha256": "a048238309504620781a29a8ecf9aacf437ff04ff29d0f13164d4019b54fd0a9",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "a048238309504620781a29a8ecf9aacf437ff04ff29d0f13164d4019b54fd0a9"
+        }
+      ],
+      "imports": [
+        "ModalWronskian",
+        "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+        "Mathlib.Algebra.Polynomial.Roots"
+      ],
+      "status": "matched",
+      "normalized_sha256": "a048238309504620781a29a8ecf9aacf437ff04ff29d0f13164d4019b54fd0a9"
+    },
+    "IncidentLocalization": {
+      "path": "lean\\IncidentLocalization.lean",
+      "sha256": "b3f220e7087f0806c1410a02e614bc7833f91614b86b21eac1e0486e54219f36",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b3f220e7087f0806c1410a02e614bc7833f91614b86b21eac1e0486e54219f36"
+        }
+      ],
+      "imports": [
+        "MaterialField"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b3f220e7087f0806c1410a02e614bc7833f91614b86b21eac1e0486e54219f36"
+    },
+    "DynamicVolumeConstants": {
+      "path": "lean\\DynamicVolumeConstants.lean",
+      "sha256": "e3110224f54321c43ea107c9e37dae9b6dc08cad007384c5f7e9f1abd676f35c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "e3110224f54321c43ea107c9e37dae9b6dc08cad007384c5f7e9f1abd676f35c"
+        }
+      ],
+      "imports": [
+        "DynamicVolume",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e3110224f54321c43ea107c9e37dae9b6dc08cad007384c5f7e9f1abd676f35c"
+    },
+    "Packet05ActualFlatH2": {
+      "path": "lean\\Packet05ActualFlatH2.lean",
+      "sha256": "524155e806e26cc3fd0422c925c791910e565880c912e27ca393f70f05990260",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05ActualNormalNormal",
+        "Packet05RegionalPartial"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "524155e806e26cc3fd0422c925c791910e565880c912e27ca393f70f05990260"
+    },
+    "WeakPoynting.Conservation": {
+      "path": "lean\\WeakPoynting\\Conservation.lean",
+      "sha256": "e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Local"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e788c2c43bae08e130810338facad3a92cadb8bd7871e1dbab5318695ccea75f"
+    },
+    "WeakPoynting.RegularityBounds": {
+      "path": "lean\\WeakPoynting\\RegularityBounds.lean",
+      "sha256": "3169e2e4f3733b39bb8dc69e154f471e4f25d6a51ebaebd97cdf6b69c220105e",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "3169e2e4f3733b39bb8dc69e154f471e4f25d6a51ebaebd97cdf6b69c220105e"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.LocalRegularity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "3169e2e4f3733b39bb8dc69e154f471e4f25d6a51ebaebd97cdf6b69c220105e"
+    },
+    "StaticCoefficient": {
+      "path": "lean\\StaticCoefficient.lean",
+      "sha256": "3db4c481989c335ae61540449fe31383b2e591176a7108006b79cf03df2bb465",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "3db4c481989c335ae61540449fe31383b2e591176a7108006b79cf03df2bb465"
+        }
+      ],
+      "imports": [
+        "VectorFourier",
+        "StaticVolume",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ],
+      "status": "matched",
+      "normalized_sha256": "3db4c481989c335ae61540449fe31383b2e591176a7108006b79cf03df2bb465"
+    },
+    "KernelGradient": {
+      "path": "lean\\KernelGradient.lean",
+      "sha256": "0ea24554dd8ff16e9a0cc8c8a3345aabe11a9249e38bb8c7b1546b18e804d028",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "0ea24554dd8ff16e9a0cc8c8a3345aabe11a9249e38bb8c7b1546b18e804d028"
+        }
+      ],
+      "imports": [
+        "RealKernelBounds",
+        "PointSingularity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "0ea24554dd8ff16e9a0cc8c8a3345aabe11a9249e38bb8c7b1546b18e804d028"
+    },
+    "LocalHelmholtzRepresentation": {
+      "path": "lean\\LocalHelmholtzRepresentation.lean",
+      "sha256": "f9e59534de347424923cd50bd98423bd528cf8b95364c46140285110f07732ac",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "f9e59534de347424923cd50bd98423bd528cf8b95364c46140285110f07732ac"
+        }
+      ],
+      "imports": [
+        "KernelSource",
+        "ExteriorGreen"
+      ],
+      "status": "matched",
+      "normalized_sha256": "f9e59534de347424923cd50bd98423bd528cf8b95364c46140285110f07732ac"
+    },
+    "WeakPoynting.Compactness": {
+      "path": "lean\\WeakPoynting\\Compactness.lean",
+      "sha256": "28278a61f0a3489ceea09e2ec78f7443d6bd12831f53ad9164610ec4eda054d7",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "28278a61f0a3489ceea09e2ec78f7443d6bd12831f53ad9164610ec4eda054d7"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Translations",
+        "Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli",
+        "Mathlib.MeasureTheory.Function.LpSpace.Indicator"
+      ],
+      "status": "matched",
+      "normalized_sha256": "28278a61f0a3489ceea09e2ec78f7443d6bd12831f53ad9164610ec4eda054d7"
+    },
+    "WeakPoynting.DivCurlRegularity": {
+      "path": "lean\\WeakPoynting\\DivCurlRegularity.lean",
+      "sha256": "b9402e4487eded306ffc4f4c4f5fc5773562a4bf00fa880b897d2ec13578c7d4",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b9402e4487eded306ffc4f4c4f5fc5773562a4bf00fa880b897d2ec13578c7d4"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.DivCurlCompact"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b9402e4487eded306ffc4f4c4f5fc5773562a4bf00fa880b897d2ec13578c7d4"
+    },
+    "ModalExistence": {
+      "path": "lean\\ModalExistence.lean",
+      "sha256": "121e5eed38159fbb7e8cdb866e6093aa2140c3e7f1ea70849aea893c778952b4",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "121e5eed38159fbb7e8cdb866e6093aa2140c3e7f1ea70849aea893c778952b4"
+        }
+      ],
+      "imports": [
+        "ModalRational",
+        "Mathlib.Topology.MetricSpace.Contracting",
+        "Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv",
+        "Mathlib.Analysis.Calculus.ContDiff.RCLike"
+      ],
+      "status": "matched",
+      "normalized_sha256": "121e5eed38159fbb7e8cdb866e6093aa2140c3e7f1ea70849aea893c778952b4"
+    },
+    "GlobalToRegionalCurl": {
+      "path": "lean\\GlobalToRegionalCurl.lean",
+      "sha256": "5d4fbeac1537e5f012dfe4574555567d5f6250a60aa97ef4c5d98c7fc7655be4",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.RegionalCurlUpgrade"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "5d4fbeac1537e5f012dfe4574555567d5f6250a60aa97ef4c5d98c7fc7655be4"
+    },
+    "Packet05DifferentiatedCurl": {
+      "path": "lean\\Packet05DifferentiatedCurl.lean",
+      "sha256": "17500204e786fbc06e4b53f4aecfeb1df3092f827c008da16c18d1857c514fbe",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05PartialProduct",
+        "WeakPoynting.RegionalCurlUpgrade",
+        "Packet05FlatWeight"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "17500204e786fbc06e4b53f4aecfeb1df3092f827c008da16c18d1857c514fbe"
+    },
+    "NewtonExteriorResponse": {
+      "path": "lean\\NewtonExteriorResponse.lean",
+      "sha256": "af89d26ac92da283820e20024b821cfaad9cb4b98f5d9c78142e9125ac1d98ad",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "af89d26ac92da283820e20024b821cfaad9cb4b98f5d9c78142e9125ac1d98ad"
+        }
+      ],
+      "imports": [
+        "NewtonExterior",
+        "LocalConvolution"
+      ],
+      "status": "matched",
+      "normalized_sha256": "af89d26ac92da283820e20024b821cfaad9cb4b98f5d9c78142e9125ac1d98ad"
+    },
+    "WeakPoynting": {
+      "path": "lean\\WeakPoynting.lean",
+      "sha256": "74b49995d65c7e6ef3722481c706d321f27e2f73ea0c9da2628ba65bfe44e102",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "74b49995d65c7e6ef3722481c706d321f27e2f73ea0c9da2628ba65bfe44e102"
+        }
+      ],
+      "imports": [
+        "HCurl",
+        "Mathlib.Analysis.Convolution",
+        "Mathlib.Analysis.Calculus.BumpFunction.Convolution",
+        "Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving"
+      ],
+      "status": "matched",
+      "normalized_sha256": "74b49995d65c7e6ef3722481c706d321f27e2f73ea0c9da2628ba65bfe44e102"
+    },
+    "KernelIntegrability": {
+      "path": "lean\\KernelIntegrability.lean",
+      "sha256": "b03d56ef63e8981df9ecaffd400baf06caec0606cd949054376f58717636006e",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b03d56ef63e8981df9ecaffd400baf06caec0606cd949054376f58717636006e"
+        }
+      ],
+      "imports": [
+        "DyadicKernel",
+        "Mathlib.MeasureTheory.Constructions.HaarToSphere",
+        "Mathlib.MeasureTheory.Function.L2Space"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b03d56ef63e8981df9ecaffd400baf06caec0606cd949054376f58717636006e"
+    },
+    "Packet05SecondTangential": {
+      "path": "lean\\Packet05SecondTangential.lean",
+      "sha256": "8dbf9bb1c31584b5ccac8e46c5232e0d785a7e604915a0c1503083a43471467f",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05ActualDifferentiatedMaxwell",
+        "Packet05FlatTransmissionH1"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "8dbf9bb1c31584b5ccac8e46c5232e0d785a7e604915a0c1503083a43471467f"
+    },
+    "MaterialField": {
+      "path": "lean\\MaterialField.lean",
+      "sha256": "02a36431679e134ab85a170ff0b614936f2be0868f458881586c0189ee2085da",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "02a36431679e134ab85a170ff0b614936f2be0868f458881586c0189ee2085da"
+        }
+      ],
+      "imports": [
+        "DynamicVolume",
+        "LocalVolumeResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "02a36431679e134ab85a170ff0b614936f2be0868f458881586c0189ee2085da"
+    },
+    "ModalAsymptotics": {
+      "path": "lean\\ModalAsymptotics.lean",
+      "sha256": "b99b7e507de9c4c79b5b1e0dc3b60eed10f5da895c72d5ffaec002ee556780d3",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b99b7e507de9c4c79b5b1e0dc3b60eed10f5da895c72d5ffaec002ee556780d3"
+        }
+      ],
+      "imports": [
+        "ModalExistence"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b99b7e507de9c4c79b5b1e0dc3b60eed10f5da895c72d5ffaec002ee556780d3"
+    },
+    "NewtonWeak": {
+      "path": "lean\\NewtonWeak.lean",
+      "sha256": "5ebeb44abeab946d92a387294acaa05a20674a8489b18c717f04c003910d2e32",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "5ebeb44abeab946d92a387294acaa05a20674a8489b18c717f04c003910d2e32"
+        }
+      ],
+      "imports": [
+        "NewtonL2",
+        "WeakPoynting.PartialSmoothing"
+      ],
+      "status": "matched",
+      "normalized_sha256": "5ebeb44abeab946d92a387294acaa05a20674a8489b18c717f04c003910d2e32"
+    },
+    "MaxwellQuotientEnergy": {
+      "path": "lean\\MaxwellQuotientEnergy.lean",
+      "sha256": "c5dec04a0ff37530c7f7ebacdbab3ed3f86d368e628e27200ba8ec2ff8c788ab",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "stage71",
+          "expected_sha256": "c5dec04a0ff37530c7f7ebacdbab3ed3f86d368e628e27200ba8ec2ff8c788ab"
+        }
+      ],
+      "imports": [
+        "MaxwellDifferenceQuotient",
+        "WeakPoynting.MagneticCompactness"
+      ],
+      "status": "matched",
+      "normalized_sha256": "c5dec04a0ff37530c7f7ebacdbab3ed3f86d368e628e27200ba8ec2ff8c788ab"
+    },
+    "WeakPoynting.Weighted": {
+      "path": "lean\\WeakPoynting\\Weighted.lean",
+      "sha256": "ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Representative"
+      ],
+      "status": "matched",
+      "normalized_sha256": "ddfeb07dbf433fbd38a1a6bb1918e8855d9e9381af9de33e7101aca1e82f7783"
+    },
+    "VectorFourier": {
+      "path": "lean\\VectorFourier.lean",
+      "sha256": "90e65ca62ae8882e796eb63e0b692916e1d0ebbc07e6ae77ac7f2d8fbbb71b8d",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "90e65ca62ae8882e796eb63e0b692916e1d0ebbc07e6ae77ac7f2d8fbbb71b8d"
+        }
+      ],
+      "imports": [
+        "FourierL2",
+        "LongitudinalProjection",
+        "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace"
+      ],
+      "status": "matched",
+      "normalized_sha256": "90e65ca62ae8882e796eb63e0b692916e1d0ebbc07e6ae77ac7f2d8fbbb71b8d"
+    },
+    "MaxwellCutoffCommutator": {
+      "path": "lean\\MaxwellCutoffCommutator.lean",
+      "sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.RegularityBounds"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "36fa977105870d2226c68844a94b6c6b2b2cb4f567ee1a912e5afe83c515309e"
+    },
+    "MaxwellDifferenceQuotient": {
+      "path": "lean\\MaxwellDifferenceQuotient.lean",
+      "sha256": "290bdd65d739bc2fe2defcf5416ac683aaab25c72e8fa5b430fa46b8c0f10dca",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "stage71",
+          "expected_sha256": "290bdd65d739bc2fe2defcf5416ac683aaab25c72e8fa5b430fa46b8c0f10dca"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Translations",
+        "MaxwellInverseCurlCurl"
+      ],
+      "status": "matched",
+      "normalized_sha256": "290bdd65d739bc2fe2defcf5416ac683aaab25c72e8fa5b430fa46b8c0f10dca"
+    },
+    "NewtonExterior": {
+      "path": "lean\\NewtonExterior.lean",
+      "sha256": "28e1c51b2cbf7ae1edc5d681c5a6c2f28c36449823c11c56a2eb91872f1e972e",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "28e1c51b2cbf7ae1edc5d681c5a6c2f28c36449823c11c56a2eb91872f1e972e"
+        }
+      ],
+      "imports": [
+        "FieldResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "28e1c51b2cbf7ae1edc5d681c5a6c2f28c36449823c11c56a2eb91872f1e972e"
+    },
+    "FlatLocalCurlSources": {
+      "path": "lean\\FlatLocalCurlSources.lean",
+      "sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b",
+      "frozen_candidates": [],
+      "imports": [
+        "LocalizedCurlCurlSource",
+        "MaxwellCurlCutoffSource",
+        "FlatDifferenceCoercivity"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "7d69dcef68f1d501b9ed7e8e5c9cf3d1c77f93e79b89c5a6799a41c4a243d51b"
+    },
+    "Packet05NormalNormal": {
+      "path": "lean\\Packet05NormalNormal.lean",
+      "sha256": "01be3874cdc922f129708ce5d8fe87afd45ccbe292da69eb248e1883dec40f82",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05LocalDerivative"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "01be3874cdc922f129708ce5d8fe87afd45ccbe292da69eb248e1883dec40f82"
+    },
+    "HCurl": {
+      "path": "lean\\HCurl.lean",
+      "sha256": "b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926"
+        }
+      ],
+      "imports": [
+        "Maxwell",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.MeasureTheory.Function.LpSpace.Indicator",
+        "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b69399a56774c646b2fb74a5f017df3dd7e77670be207a96a01bcaba7b0ec926"
+    },
+    "WeakPoynting.Lipschitz": {
+      "path": "lean\\WeakPoynting\\Lipschitz.lean",
+      "sha256": "8b4f50968e94ffb9028822fe1fc04dbeea50dc9e11afc5e5f8e6d51bcdb7ea5c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "8b4f50968e94ffb9028822fe1fc04dbeea50dc9e11afc5e5f8e6d51bcdb7ea5c"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Polarization",
+        "Mathlib.Analysis.Calculus.Rademacher"
+      ],
+      "status": "matched",
+      "normalized_sha256": "8b4f50968e94ffb9028822fe1fc04dbeea50dc9e11afc5e5f8e6d51bcdb7ea5c"
+    },
+    "ExteriorClassical": {
+      "path": "lean\\ExteriorClassical.lean",
+      "sha256": "410a3d34e158423e66a598957d3522f1f11de0a84ab80c8a5af1a6b2d009901c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "410a3d34e158423e66a598957d3522f1f11de0a84ab80c8a5af1a6b2d009901c"
+        }
+      ],
+      "imports": [
+        "ExteriorSmooth"
+      ],
+      "status": "matched",
+      "normalized_sha256": "410a3d34e158423e66a598957d3522f1f11de0a84ab80c8a5af1a6b2d009901c"
+    },
+    "WeakHelmholtzRegularity": {
+      "path": "lean\\WeakHelmholtzRegularity.lean",
+      "sha256": "7ed5311ff11854bcd6343ceb47da642703782864b63d84d1ad4e6404c4da5d41",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "7ed5311ff11854bcd6343ceb47da642703782864b63d84d1ad4e6404c4da5d41"
+        }
+      ],
+      "imports": [
+        "LocalHelmholtzRepresentation",
+        "WeakPoynting"
+      ],
+      "status": "matched",
+      "normalized_sha256": "7ed5311ff11854bcd6343ceb47da642703782864b63d84d1ad4e6404c4da5d41"
+    },
+    "WeakPoynting.DivCurlCompact": {
+      "path": "lean\\WeakPoynting\\DivCurlCompact.lean",
+      "sha256": "317b3b2169b77f2954ef02a474c47687b3ccca38f2ffe593ec14155271923a13",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "317b3b2169b77f2954ef02a474c47687b3ccca38f2ffe593ec14155271923a13"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.DivCurl"
+      ],
+      "status": "matched",
+      "normalized_sha256": "317b3b2169b77f2954ef02a474c47687b3ccca38f2ffe593ec14155271923a13"
+    },
+    "Packet05FiniteBranchMaximum": {
+      "path": "lean\\Packet05FiniteBranchMaximum.lean",
+      "sha256": "c26e5283d6df27fa182637aa9fef904b8663676ab3dd6f2ea946810c26c1b3ec",
+      "frozen_candidates": [],
+      "imports": [
+        "Mathlib.Topology.Order.Compact",
+        "Mathlib.Topology.Instances.Real.Lemmas"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "c26e5283d6df27fa182637aa9fef904b8663676ab3dd6f2ea946810c26c1b3ec"
+    },
+    "WeakPoynting.PartialSmoothing": {
+      "path": "lean\\WeakPoynting\\PartialSmoothing.lean",
+      "sha256": "fcbc7c5899e51e6ebf789751e2fecdcd419f939dc3918d22da17ab40420626a8",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "fcbc7c5899e51e6ebf789751e2fecdcd419f939dc3918d22da17ab40420626a8"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.DivCurlRegularity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "fcbc7c5899e51e6ebf789751e2fecdcd419f939dc3918d22da17ab40420626a8"
+    },
+    "Packet05NormalSecond": {
+      "path": "lean\\Packet05NormalSecond.lean",
+      "sha256": "1f24397806316100ee59500e057a85da90c8b4cf887af2e9828f59a3098e759d",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05CurlCommutation"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "1f24397806316100ee59500e057a85da90c8b4cf887af2e9828f59a3098e759d"
+    },
+    "FlatNestedMaxwellForcing": {
+      "path": "lean\\FlatNestedMaxwellForcing.lean",
+      "sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816",
+      "frozen_candidates": [],
+      "imports": [
+        "FlatLocalCurlSources",
+        "NestedCurlCutoffSource"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "cc66f02919db164cb3fd0385e2c9c0699072fe97675ce037a56f84ed92c5b816"
+    },
+    "Packet05ActualPhaseDerivatives": {
+      "path": "lean\\Packet05ActualPhaseDerivatives.lean",
+      "sha256": "90c2d77dddd43413be36b341986819eabc7a4e07276781396a7cc91a4af55207",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05TangentialRegularity",
+        "Packet05LocalDerivative"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "90c2d77dddd43413be36b341986819eabc7a4e07276781396a7cc91a4af55207"
+    },
+    "LongitudinalProjection": {
+      "path": "lean\\LongitudinalProjection.lean",
+      "sha256": "fb11b48e57152f5d72ce9324cd3b490d82599aef4fbd4905ffe3c63980dc1a63",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "fb11b48e57152f5d72ce9324cd3b490d82599aef4fbd4905ffe3c63980dc1a63"
+        }
+      ],
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.Analysis.InnerProductSpace.Positive",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+        "Mathlib.Tactic.FunProp",
+        "Mathlib.Tactic.Ring"
+      ],
+      "status": "matched",
+      "normalized_sha256": "fb11b48e57152f5d72ce9324cd3b490d82599aef4fbd4905ffe3c63980dc1a63"
+    },
+    "WeakPoynting.Green": {
+      "path": "lean\\WeakPoynting\\Green.lean",
+      "sha256": "879d621016122fcb3cad5758f2670b60d61a5191ad2539ae87cc11e99b69e3e5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "879d621016122fcb3cad5758f2670b60d61a5191ad2539ae87cc11e99b69e3e5"
+        }
+      ],
+      "imports": [
+        "WeakPoynting"
+      ],
+      "status": "matched",
+      "normalized_sha256": "879d621016122fcb3cad5758f2670b60d61a5191ad2539ae87cc11e99b69e3e5"
+    },
+    "Packet05FourierRepresentative": {
+      "path": "lean\\Packet05FourierRepresentative.lean",
+      "sha256": "9c34ede39b92996fa10464f31d4c1c1e4499299d658887f9ae5d6a32147580bf",
+      "frozen_candidates": [],
+      "imports": [
+        "NewtonL1L2",
+        "Mathlib.Analysis.SpecialFunctions.JapaneseBracket"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "9c34ede39b92996fa10464f31d4c1c1e4499299d658887f9ae5d6a32147580bf"
+    },
+    "NewtonConvolution": {
+      "path": "lean\\NewtonConvolution.lean",
+      "sha256": "e82e4529fea00ca429d5b5f2b5caac93e11ab525f5cf3d0833a14d4ae29ee49a",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "e82e4529fea00ca429d5b5f2b5caac93e11ab525f5cf3d0833a14d4ae29ee49a"
+        }
+      ],
+      "imports": [
+        "NewtonHessian"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e82e4529fea00ca429d5b5f2b5caac93e11ab525f5cf3d0833a14d4ae29ee49a"
+    },
+    "Packet05ActualNormalFlux": {
+      "path": "lean\\Packet05ActualNormalFlux.lean",
+      "sha256": "059cc50021da678da05eab9c2e9c9eac48ce5bf7e91cb8d3051cd41f8462a7d6",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05TangentialRegularity",
+        "Packet05LocalDerivative"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "059cc50021da678da05eab9c2e9c9eac48ce5bf7e91cb8d3051cd41f8462a7d6"
+    },
+    "ModalWronskian": {
+      "path": "lean\\ModalWronskian.lean",
+      "sha256": "fc553bf203757c505cad71ed013c05d872b1fac683ab24c036e4903bbbfdab54",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "fc553bf203757c505cad71ed013c05d872b1fac683ab24c036e4903bbbfdab54"
+        }
+      ],
+      "imports": [
+        "ModalAlgebra",
+        "Lean.Elab.Tactic.Omega",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ],
+      "status": "matched",
+      "normalized_sha256": "fc553bf203757c505cad71ed013c05d872b1fac683ab24c036e4903bbbfdab54"
+    },
+    "SmallVolumeMaxwell": {
+      "path": "lean\\SmallVolumeMaxwell.lean",
+      "sha256": "5df400295190cd1025aa85827188da36936d56ca25e01a125541d1b87e2b04b7",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "5df400295190cd1025aa85827188da36936d56ca25e01a125541d1b87e2b04b7"
+        }
+      ],
+      "imports": [
+        "MaterialMaxwell",
+        "IncidentLocalization",
+        "MagneticLocal",
+        "DynamicVolumeConstants"
+      ],
+      "status": "matched",
+      "normalized_sha256": "5df400295190cd1025aa85827188da36936d56ca25e01a125541d1b87e2b04b7"
+    },
+    "ModalMatching": {
+      "path": "lean\\ModalMatching.lean",
+      "sha256": "a27703b89f0dcd0cf4d2a8f43075ed4e71abfb20f8fea80ec2547904f6ab5e2c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "a27703b89f0dcd0cf4d2a8f43075ed4e71abfb20f8fea80ec2547904f6ab5e2c"
+        }
+      ],
+      "imports": [
+        "ModalAsymptotics",
+        "Mathlib.Analysis.Calculus.Deriv.Slope"
+      ],
+      "status": "matched",
+      "normalized_sha256": "a27703b89f0dcd0cf4d2a8f43075ed4e71abfb20f8fea80ec2547904f6ab5e2c"
+    },
+    "WeakPoynting.LipschitzBoundary": {
+      "path": "lean\\WeakPoynting\\LipschitzBoundary.lean",
+      "sha256": "6e1ebd950ef56ea1741e2a9f8859dc734e55c4cb8a58b716fab319e57dafc377",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "6e1ebd950ef56ea1741e2a9f8859dc734e55c4cb8a58b716fab319e57dafc377"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Axial"
+      ],
+      "status": "matched",
+      "normalized_sha256": "6e1ebd950ef56ea1741e2a9f8859dc734e55c4cb8a58b716fab319e57dafc377"
+    },
+    "ModalAlgebra": {
+      "path": "lean\\ModalAlgebra.lean",
+      "sha256": "fb6dc3cba2a3bfca209be5d1e27a8191cebc287de375c76b5645caaf2296883e",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "fb6dc3cba2a3bfca209be5d1e27a8191cebc287de375c76b5645caaf2296883e"
+        }
+      ],
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.Analysis.Calculus.Deriv.ZPow",
+        "Mathlib.Analysis.Calculus.Deriv.Add",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.FunProp"
+      ],
+      "status": "matched",
+      "normalized_sha256": "fb6dc3cba2a3bfca209be5d1e27a8191cebc287de375c76b5645caaf2296883e"
+    },
+    "ScalarExteriorRegularity": {
+      "path": "lean\\ScalarExteriorRegularity.lean",
+      "sha256": "af076272f72ad315d64cf2498fdd35c3c73b5a1d8651a42f8a72b1f3363d3d94",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "af076272f72ad315d64cf2498fdd35c3c73b5a1d8651a42f8a72b1f3363d3d94"
+        }
+      ],
+      "imports": [
+        "ScalarExteriorSecond"
+      ],
+      "status": "matched",
+      "normalized_sha256": "af076272f72ad315d64cf2498fdd35c3c73b5a1d8651a42f8a72b1f3363d3d94"
+    },
+    "MaterialHCurl": {
+      "path": "lean\\MaterialHCurl.lean",
+      "sha256": "d53dc804f8c8f054992a9b0fc3d1bc4aa98a1f9403fc11609c4d0524334d5616",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "d53dc804f8c8f054992a9b0fc3d1bc4aa98a1f9403fc11609c4d0524334d5616"
+        }
+      ],
+      "imports": [
+        "SmallVolumeMaxwell",
+        "WeakPoynting.RegionalCurlUpgrade"
+      ],
+      "status": "matched",
+      "normalized_sha256": "d53dc804f8c8f054992a9b0fc3d1bc4aa98a1f9403fc11609c4d0524334d5616"
+    },
+    "KernelConvolution": {
+      "path": "lean\\KernelConvolution.lean",
+      "sha256": "8db513e44603919ac03b1824563a9725f74ba638e79ef0d21eedceb4f46a2390",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "8db513e44603919ac03b1824563a9725f74ba638e79ef0d21eedceb4f46a2390"
+        }
+      ],
+      "imports": [
+        "DynamicSource",
+        "NewtonConvolution"
+      ],
+      "status": "matched",
+      "normalized_sha256": "8db513e44603919ac03b1824563a9725f74ba638e79ef0d21eedceb4f46a2390"
+    },
+    "WeakPoynting.Representative": {
+      "path": "lean\\WeakPoynting\\Representative.lean",
+      "sha256": "bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Slices",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+      ],
+      "status": "matched",
+      "normalized_sha256": "bade5cb79e3c7f085d9d73141d9fc1ed97d0dfc1f89805a48625b8857b9a237c"
+    },
+    "StaticVolume": {
+      "path": "lean\\StaticVolume.lean",
+      "sha256": "07d5f45bc9bd02bc4231faba221e5f7aed58fab7098ec59831c4cb364fe27eb8",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "07d5f45bc9bd02bc4231faba221e5f7aed58fab7098ec59831c4cb364fe27eb8"
+        }
+      ],
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.Positive",
+        "Mathlib.Analysis.SpecificLimits.Normed",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ],
+      "status": "matched",
+      "normalized_sha256": "07d5f45bc9bd02bc4231faba221e5f7aed58fab7098ec59831c4cb364fe27eb8"
+    },
+    "MagneticResponse": {
+      "path": "lean\\MagneticResponse.lean",
+      "sha256": "e7f2fbe8bd4e1a2467312ec79e16ce51321e7abd635410c8ef73373691fbff0b",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "e7f2fbe8bd4e1a2467312ec79e16ce51321e7abd635410c8ef73373691fbff0b"
+        }
+      ],
+      "imports": [
+        "FieldResponse",
+        "NewtonWeak"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e7f2fbe8bd4e1a2467312ec79e16ce51321e7abd635410c8ef73373691fbff0b"
+    },
+    "WeakPoynting.Energy": {
+      "path": "lean\\WeakPoynting\\Energy.lean",
+      "sha256": "b755c84e82b73ab9892cb67616ef6adab30768463474d8e1b0e5b66ac99942d5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "b755c84e82b73ab9892cb67616ef6adab30768463474d8e1b0e5b66ac99942d5"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.LipschitzBoundary"
+      ],
+      "status": "matched",
+      "normalized_sha256": "b755c84e82b73ab9892cb67616ef6adab30768463474d8e1b0e5b66ac99942d5"
+    },
+    "Packet05ForcedDifferenceGreen": {
+      "path": "lean\\Packet05ForcedDifferenceGreen.lean",
+      "sha256": "5ed587ae68eeb07d11af5a4823089a121f5c9b9c5415dd517f551ae8bcab1c95",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.Poynting",
+        "MaxwellCurlCutoffSource"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "5ed587ae68eeb07d11af5a4823089a121f5c9b9c5415dd517f551ae8bcab1c95"
+    },
+    "WeakPoynting.EnergyLocalization": {
+      "path": "lean\\WeakPoynting\\EnergyLocalization.lean",
+      "sha256": "31e508428c21f9c797af8b82c325aa7aef7d0f6a3649db24673f290aebdc4dc5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "31e508428c21f9c797af8b82c325aa7aef7d0f6a3649db24673f290aebdc4dc5"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Energy"
+      ],
+      "status": "matched",
+      "normalized_sha256": "31e508428c21f9c797af8b82c325aa7aef7d0f6a3649db24673f290aebdc4dc5"
+    },
+    "HCurlDomain": {
+      "path": "lean\\HCurlDomain.lean",
+      "sha256": "3ade27a9c21ec58e4650dc6943eb0216f99a8196a424b1569cb92e033a3978c6",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "3ade27a9c21ec58e4650dc6943eb0216f99a8196a424b1569cb92e033a3978c6"
+        }
+      ],
+      "imports": [
+        "HCurl"
+      ],
+      "status": "matched",
+      "normalized_sha256": "3ade27a9c21ec58e4650dc6943eb0216f99a8196a424b1569cb92e033a3978c6"
+    },
+    "PointSingularity": {
+      "path": "lean\\PointSingularity.lean",
+      "sha256": "7d9002295b2afad9b87f9b78df3296c8eeefef0b41a53f53a963bb25fdecb325",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "7d9002295b2afad9b87f9b78df3296c8eeefef0b41a53f53a963bb25fdecb325"
+        }
+      ],
+      "imports": [
+        "Maxwell",
+        "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+        "Mathlib.MeasureTheory.Integral.Prod",
+        "Mathlib.MeasureTheory.Function.LocallyIntegrable"
+      ],
+      "status": "matched",
+      "normalized_sha256": "7d9002295b2afad9b87f9b78df3296c8eeefef0b41a53f53a963bb25fdecb325"
+    },
+    "Packet05DivergenceUpgrade": {
+      "path": "lean\\Packet05DivergenceUpgrade.lean",
+      "sha256": "46fddfc6dc318aabd12d25b8b3dda39fbc04eaca1c0106789ce7127df3767bae",
+      "frozen_candidates": [],
+      "imports": [
+        "WeakPoynting.InteriorTestDensity",
+        "WeakPoynting.LocalRegularity"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "46fddfc6dc318aabd12d25b8b3dda39fbc04eaca1c0106789ce7127df3767bae"
+    },
+    "ExteriorContinuity": {
+      "path": "lean\\ExteriorContinuity.lean",
+      "sha256": "dc49c994bdfbf98db265c03e3bdd55e62dce15a39bc996a8818e8d28d437b248",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "dc49c994bdfbf98db265c03e3bdd55e62dce15a39bc996a8818e8d28d437b248"
+        }
+      ],
+      "imports": [
+        "NewtonExteriorResponse",
+        "MagneticResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "dc49c994bdfbf98db265c03e3bdd55e62dce15a39bc996a8818e8d28d437b248"
+    },
+    "WeakPoynting.DivCurl": {
+      "path": "lean\\WeakPoynting\\DivCurl.lean",
+      "sha256": "20c03d9adf1778f494abd6222d0c8eebdab03100bfe7d0fa7c69301c7a24c3cb",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "20c03d9adf1778f494abd6222d0c8eebdab03100bfe7d0fa7c69301c7a24c3cb"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Energy",
+        "GradientProjection"
+      ],
+      "status": "matched",
+      "normalized_sha256": "20c03d9adf1778f494abd6222d0c8eebdab03100bfe7d0fa7c69301c7a24c3cb"
+    },
+    "HCurlCutoff": {
+      "path": "lean\\HCurlCutoff.lean",
+      "sha256": "e4dd5487993ebfc45ee8c13a624eb342346a796b48bb791bc55c011eaa328f1b",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "e4dd5487993ebfc45ee8c13a624eb342346a796b48bb791bc55c011eaa328f1b"
+        }
+      ],
+      "imports": [
+        "HCurlDomain"
+      ],
+      "status": "matched",
+      "normalized_sha256": "e4dd5487993ebfc45ee8c13a624eb342346a796b48bb791bc55c011eaa328f1b"
+    },
+    "KernelSource": {
+      "path": "lean\\KernelSource.lean",
+      "sha256": "c7b394b39030743c227ae48dac19154cab28357231633e1696fe03880027c54a",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "c7b394b39030743c227ae48dac19154cab28357231633e1696fe03880027c54a"
+        }
+      ],
+      "imports": [
+        "KernelGradient",
+        "NewtonHessian"
+      ],
+      "status": "matched",
+      "normalized_sha256": "c7b394b39030743c227ae48dac19154cab28357231633e1696fe03880027c54a"
+    },
+    "MaxwellInverseCurlCurl": {
+      "path": "lean\\MaxwellInverseCurlCurl.lean",
+      "sha256": "f0eb8074401e69f9fd01fdbeaa7430324c13870e3bd8d9dfbc673d5c4aad9e03",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "stage71",
+          "expected_sha256": "f0eb8074401e69f9fd01fdbeaa7430324c13870e3bd8d9dfbc673d5c4aad9e03"
+        }
+      ],
+      "imports": [
+        "MaterialHCurl",
+        "WeakPoynting.LocalRegularity"
+      ],
+      "status": "matched",
+      "normalized_sha256": "f0eb8074401e69f9fd01fdbeaa7430324c13870e3bd8d9dfbc673d5c4aad9e03"
+    },
+    "Packet05DifferenceMaxwell": {
+      "path": "lean\\Packet05DifferenceMaxwell.lean",
+      "sha256": "9fdea86c0e662375dcbe9c85820b34fbacd206e45809bf2f3d43a74ef2f5d389",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05ActualLocalizedGreen",
+        "GlobalToRegionalCurl",
+        "WeakPoynting.ElectricControl",
+        "MaxwellQuotientEnergy"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "9fdea86c0e662375dcbe9c85820b34fbacd206e45809bf2f3d43a74ef2f5d389"
+    },
+    "Packet05ActualNormalNormal": {
+      "path": "lean\\Packet05ActualNormalNormal.lean",
+      "sha256": "075bf2b2ec5e1bb5f3fc0d01096d456ffcb37f8ec1bc4f6e70bef038d30532f0",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05SecondTangential",
+        "Packet05ActualNormalFlux",
+        "Packet05NormalNormal",
+        "Packet05PartialProduct"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "075bf2b2ec5e1bb5f3fc0d01096d456ffcb37f8ec1bc4f6e70bef038d30532f0"
+    },
+    "LocalVolumeResponse": {
+      "path": "lean\\LocalVolumeResponse.lean",
+      "sha256": "cc7cb089b1207a3c5f177a00d09b5f2da07832e0922064d63c84d535647b03fe",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "cc7cb089b1207a3c5f177a00d09b5f2da07832e0922064d63c84d535647b03fe"
+        }
+      ],
+      "imports": [
+        "DynamicConvolution",
+        "FieldResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "cc7cb089b1207a3c5f177a00d09b5f2da07832e0922064d63c84d535647b03fe"
+    },
+    "DynamicConvolution": {
+      "path": "lean\\DynamicConvolution.lean",
+      "sha256": "8911dd1cc2468ecd3d42e88373bf78c0728b418d109672f5ce210ba73d1edb33",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "8911dd1cc2468ecd3d42e88373bf78c0728b418d109672f5ce210ba73d1edb33"
+        }
+      ],
+      "imports": [
+        "L1Convolution",
+        "RealKernelBounds",
+        "KernelEstimates"
+      ],
+      "status": "matched",
+      "normalized_sha256": "8911dd1cc2468ecd3d42e88373bf78c0728b418d109672f5ce210ba73d1edb33"
+    },
+    "ScalarRadiation": {
+      "path": "lean\\ScalarRadiation.lean",
+      "sha256": "d9ec50727a058db1f6f7c00a75a62a60fac7bb1aee30fc85248b0731c93947c5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "d9ec50727a058db1f6f7c00a75a62a60fac7bb1aee30fc85248b0731c93947c5"
+        }
+      ],
+      "imports": [
+        "MagneticResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "d9ec50727a058db1f6f7c00a75a62a60fac7bb1aee30fc85248b0731c93947c5"
+    },
+    "ScalarExteriorSecond": {
+      "path": "lean\\ScalarExteriorSecond.lean",
+      "sha256": "7fd53ad2c7cea56dfda1c539855da59e4efa8fb1080fc6573def57a5d7b08827",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "7fd53ad2c7cea56dfda1c539855da59e4efa8fb1080fc6573def57a5d7b08827"
+        }
+      ],
+      "imports": [
+        "ScalarExterior",
+        "NewtonExteriorResponse"
+      ],
+      "status": "matched",
+      "normalized_sha256": "7fd53ad2c7cea56dfda1c539855da59e4efa8fb1080fc6573def57a5d7b08827"
+    },
+    "NewtonHessian": {
+      "path": "lean\\NewtonHessian.lean",
+      "sha256": "a6719b49c0f35e32aa080dffdfe194c7722054f61c3e3622582db23bf6415244",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "a6719b49c0f35e32aa080dffdfe194c7722054f61c3e3622582db23bf6415244"
+        }
+      ],
+      "imports": [
+        "NewtonFourier",
+        "GradientProjection"
+      ],
+      "status": "matched",
+      "normalized_sha256": "a6719b49c0f35e32aa080dffdfe194c7722054f61c3e3622582db23bf6415244"
+    },
+    "Packet05DifferenceConverse": {
+      "path": "lean\\Packet05DifferenceConverse.lean",
+      "sha256": "2f0fe8824058d8b0472794d9b50296fd3e0619ff972be752a43eee5f675df773",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellWeakTranslation",
+        "WeakPoynting.Translations",
+        "Mathlib.Analysis.Calculus.Deriv.Slope",
+        "Mathlib.Analysis.Normed.Module.WeakDual",
+        "Mathlib.Analysis.InnerProductSpace.Dual",
+        "WeakPoynting.Poynting"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "2f0fe8824058d8b0472794d9b50296fd3e0619ff972be752a43eee5f675df773"
+    },
+    "NewtonL1L2": {
+      "path": "lean\\NewtonL1L2.lean",
+      "sha256": "0c44b76be988e07fe4e816aa074de7414cc69593b3d71d4ded627952f7c5d51a",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "0c44b76be988e07fe4e816aa074de7414cc69593b3d71d4ded627952f7c5d51a"
+        }
+      ],
+      "imports": [
+        "NewtonL2"
+      ],
+      "status": "matched",
+      "normalized_sha256": "0c44b76be988e07fe4e816aa074de7414cc69593b3d71d4ded627952f7c5d51a"
+    },
+    "Packet05PhaseRegularity": {
+      "path": "lean\\Packet05PhaseRegularity.lean",
+      "sha256": "c1cea5f9ab2e43c603828c23b2a7836f4e5a0127c86cb12d3c5e48649183a216",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellInverseCurlCurl"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "c1cea5f9ab2e43c603828c23b2a7836f4e5a0127c86cb12d3c5e48649183a216"
+    },
+    "WeakPoynting.Translations": {
+      "path": "lean\\WeakPoynting\\Translations.lean",
+      "sha256": "0bfff8dc2417e9f9ae2aa475bb50125f32e86811e2211c5bb712538cab3d3229",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "0bfff8dc2417e9f9ae2aa475bb50125f32e86811e2211c5bb712538cab3d3229"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.PartialSmoothing"
+      ],
+      "status": "matched",
+      "normalized_sha256": "0bfff8dc2417e9f9ae2aa475bb50125f32e86811e2211c5bb712538cab3d3229"
+    },
+    "ExteriorGreen": {
+      "path": "lean\\ExteriorGreen.lean",
+      "sha256": "01ff2b9a36e06c5b93ac6a308589d2396f36ede7e1003d690dc314a0c1ebccb7",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "01ff2b9a36e06c5b93ac6a308589d2396f36ede7e1003d690dc314a0c1ebccb7"
+        }
+      ],
+      "imports": [
+        "HelmholtzTestCalculus"
+      ],
+      "status": "matched",
+      "normalized_sha256": "01ff2b9a36e06c5b93ac6a308589d2396f36ede7e1003d690dc314a0c1ebccb7"
+    },
+    "WeakPoynting.InteriorTestDensity": {
+      "path": "lean\\WeakPoynting\\InteriorTestDensity.lean",
+      "sha256": "05dd3b4fd702786febb014f6c93f0064e163fdce1d786d167ffcc00fe02e0d5d",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "05dd3b4fd702786febb014f6c93f0064e163fdce1d786d167ffcc00fe02e0d5d"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.PartialSmoothing"
+      ],
+      "status": "matched",
+      "normalized_sha256": "05dd3b4fd702786febb014f6c93f0064e163fdce1d786d167ffcc00fe02e0d5d"
+    },
+    "DynamicSource": {
+      "path": "lean\\DynamicSource.lean",
+      "sha256": "bb39930c632cf80050c8dcd7f9b8daf21908bcfa56bc43c60e6a7bcee4e13720",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "bb39930c632cf80050c8dcd7f9b8daf21908bcfa56bc43c60e6a7bcee4e13720"
+        }
+      ],
+      "imports": [
+        "KernelSource"
+      ],
+      "status": "matched",
+      "normalized_sha256": "bb39930c632cf80050c8dcd7f9b8daf21908bcfa56bc43c60e6a7bcee4e13720"
+    },
+    "MaxwellWeakTranslation": {
+      "path": "lean\\MaxwellWeakTranslation.lean",
+      "sha256": "26f2fcb6e636893d7af02866e2555ed8a3884750b3148367899a793681792a1f",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "stage71",
+          "expected_sha256": "26f2fcb6e636893d7af02866e2555ed8a3884750b3148367899a793681792a1f"
+        }
+      ],
+      "imports": [
+        "MaxwellDifferenceQuotient"
+      ],
+      "status": "matched",
+      "normalized_sha256": "26f2fcb6e636893d7af02866e2555ed8a3884750b3148367899a793681792a1f"
+    },
+    "Packet05CurlNormal": {
+      "path": "lean\\Packet05CurlNormal.lean",
+      "sha256": "502d4064417fdb8acdd542989f6ac022c9978420cda9c60fc6d23ed362cda829",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DifferenceMaxwell"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "502d4064417fdb8acdd542989f6ac022c9978420cda9c60fc6d23ed362cda829"
+    },
+    "Packet05TangentialRegularity": {
+      "path": "lean\\Packet05TangentialRegularity.lean",
+      "sha256": "f0e1ce2a79578295498adaf806d25a0f04c8f57f84005c92130578abfce8e3d9",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05DifferenceMaxwell",
+        "Packet05DifferenceConverse",
+        "Packet05CurlNormal",
+        "Packet05WeightedDivergence"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "f0e1ce2a79578295498adaf806d25a0f04c8f57f84005c92130578abfce8e3d9"
+    },
+    "MaxwellCurlCutoffSource": {
+      "path": "lean\\MaxwellCurlCutoffSource.lean",
+      "sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53",
+      "frozen_candidates": [],
+      "imports": [
+        "MaxwellCutoffCommutator"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "ce9a1f30299f97098b5d6ac4ef55baaf520ca33b4ef21235b46e0bd2c1923b53"
+    },
+    "DyadicKernel": {
+      "path": "lean\\DyadicKernel.lean",
+      "sha256": "802d5ddb14e410de78304e08a2fa4e18c0fd57abf97e62d174ddad8d51c537ac",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "802d5ddb14e410de78304e08a2fa4e18c0fd57abf97e62d174ddad8d51c537ac"
+        }
+      ],
+      "imports": [
+        "GreenKernel"
+      ],
+      "status": "matched",
+      "normalized_sha256": "802d5ddb14e410de78304e08a2fa4e18c0fd57abf97e62d174ddad8d51c537ac"
+    },
+    "FourierL2": {
+      "path": "lean\\FourierL2.lean",
+      "sha256": "05d8ddafe4a06231e854a6d816f4b1156ff9fdcb9ee7c9a1e37c1de4af3759e7",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "05d8ddafe4a06231e854a6d816f4b1156ff9fdcb9ee7c9a1e37c1de4af3759e7"
+        }
+      ],
+      "imports": [
+        "Mathlib.Analysis.Distribution.FourierSchwartz",
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+        "Mathlib.Analysis.NormedSpace.OperatorNorm.Completeness",
+        "Mathlib.Tactic.FunProp",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.Linarith"
+      ],
+      "status": "matched",
+      "normalized_sha256": "05d8ddafe4a06231e854a6d816f4b1156ff9fdcb9ee7c9a1e37c1de4af3759e7"
+    },
+    "WeakPoynting.Poynting": {
+      "path": "lean\\WeakPoynting\\Poynting.lean",
+      "sha256": "c419f2a94d9cb0d303ad7f5642b821047e06d596a765cc4df7955c6aa0bb6a78",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "c419f2a94d9cb0d303ad7f5642b821047e06d596a765cc4df7955c6aa0bb6a78"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Green"
+      ],
+      "status": "matched",
+      "normalized_sha256": "c419f2a94d9cb0d303ad7f5642b821047e06d596a765cc4df7955c6aa0bb6a78"
+    },
+    "Packet05FlatActualForcing": {
+      "path": "lean\\Packet05FlatActualForcing.lean",
+      "sha256": "c47280ebd84da61c4083be6b1c76e4aacca31e0d2833380b50b0680028b82281",
+      "frozen_candidates": [],
+      "imports": [
+        "FlatNestedMaxwellForcing",
+        "MaxwellQuotientEnergy"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "c47280ebd84da61c4083be6b1c76e4aacca31e0d2833380b50b0680028b82281"
+    },
+    "NewtonFourier": {
+      "path": "lean\\NewtonFourier.lean",
+      "sha256": "db7f04a6f115631931a2d33d050442318edd0d9b8ba32f32d02e961c34cc9f17",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "db7f04a6f115631931a2d33d050442318edd0d9b8ba32f32d02e961c34cc9f17"
+        }
+      ],
+      "imports": [
+        "HeatFourier",
+        "KernelIntegrability"
+      ],
+      "status": "matched",
+      "normalized_sha256": "db7f04a6f115631931a2d33d050442318edd0d9b8ba32f32d02e961c34cc9f17"
+    },
+    "WeakPoynting.Aperture": {
+      "path": "lean\\WeakPoynting\\Aperture.lean",
+      "sha256": "0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.Lipschitz"
+      ],
+      "status": "matched",
+      "normalized_sha256": "0a9b2cb20e09f8c862cec4a3bdb60d82d41c9f7d37d97564003c016bb4ae1c8f"
+    },
+    "Packet05RegionalPartial": {
+      "path": "lean\\Packet05RegionalPartial.lean",
+      "sha256": "75e8017aa85033d0407b94f3fc4cba2b8a9da3a81da7018849f75ee4ab1b6369",
+      "frozen_candidates": [],
+      "imports": [
+        "Packet05NormalNormal",
+        "Packet05NormalSecond"
+      ],
+      "status": "new_or_pending",
+      "normalized_sha256": "75e8017aa85033d0407b94f3fc4cba2b8a9da3a81da7018849f75ee4ab1b6369"
+    },
+    "FieldResponse": {
+      "path": "lean\\FieldResponse.lean",
+      "sha256": "42101e20fc1acc433a908ab35fe2c4871b17db6e36480ce49fcbc4ee280c0e00",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "42101e20fc1acc433a908ab35fe2c4871b17db6e36480ce49fcbc4ee280c0e00"
+        }
+      ],
+      "imports": [
+        "WaveResponse",
+        "NewtonL1L2"
+      ],
+      "status": "matched",
+      "normalized_sha256": "42101e20fc1acc433a908ab35fe2c4871b17db6e36480ce49fcbc4ee280c0e00"
+    },
+    "WeakPoynting.ElectricControl": {
+      "path": "lean\\WeakPoynting\\ElectricControl.lean",
+      "sha256": "0b6231a79a533074da3faef852f724c740d26952d69cf0b7d2f9b14d7e64add4",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "0b6231a79a533074da3faef852f724c740d26952d69cf0b7d2f9b14d7e64add4"
+        }
+      ],
+      "imports": [
+        "WeakPoynting.MagneticCompactness",
+        "WeakPoynting.EnergyLocalization"
+      ],
+      "status": "matched",
+      "normalized_sha256": "0b6231a79a533074da3faef852f724c740d26952d69cf0b7d2f9b14d7e64add4"
+    },
+    "GradientProjection": {
+      "path": "lean\\GradientProjection.lean",
+      "sha256": "65d95eb77e0dac88c599e6e3c5a66dc89f82b5b7c1c44f0ee7affb7e2221c960",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "65d95eb77e0dac88c599e6e3c5a66dc89f82b5b7c1c44f0ee7affb7e2221c960"
+        }
+      ],
+      "imports": [
+        "VectorFourier",
+        "Maxwell"
+      ],
+      "status": "matched",
+      "normalized_sha256": "65d95eb77e0dac88c599e6e3c5a66dc89f82b5b7c1c44f0ee7affb7e2221c960"
+    },
+    "RegionalMaxwellHelmholtz": {
+      "path": "lean\\RegionalMaxwellHelmholtz.lean",
+      "sha256": "60e8a6b30b193d75365a73b98cf4865effb3031c4e45250990716fc056f6f9b5",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "60e8a6b30b193d75365a73b98cf4865effb3031c4e45250990716fc056f6f9b5"
+        }
+      ],
+      "imports": [
+        "WeakHelmholtzRegularity",
+        "WeakPoynting.Conservation"
+      ],
+      "status": "matched",
+      "normalized_sha256": "60e8a6b30b193d75365a73b98cf4865effb3031c4e45250990716fc056f6f9b5"
+    },
+    "Maxwell": {
+      "path": "lean\\Maxwell.lean",
+      "sha256": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4",
+      "frozen_candidates": [
+        {
+          "match": "raw",
+          "ledger": "release5238",
+          "expected_sha256": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4"
+        }
+      ],
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.Analysis.Calculus.FDeriv.Mul",
+        "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+        "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.LinearAlgebra.CrossProduct",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.LinearCombination",
+        "Mathlib.Tactic.Ring"
+      ],
+      "status": "matched",
+      "normalized_sha256": "5ebb3c27d3dfd95f139125f1aafaf75cfbad6f1b284fc37ae785f4e6c74104c4"
+    }
+  },
+  "nonlocal_imports": [
+    "Mathlib.Analysis.InnerProductSpace.PiL2",
+    "Mathlib.Analysis.Calculus.FDeriv.Mul",
+    "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+    "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts",
+    "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+    "Mathlib.LinearAlgebra.CrossProduct",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.LinearCombination",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.MeasureTheory.Function.L2Space",
+    "Mathlib.MeasureTheory.Function.LpSpace.Indicator",
+    "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+    "Mathlib.Analysis.Convolution",
+    "Mathlib.Analysis.Calculus.BumpFunction.Convolution",
+    "Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving",
+    "Mathlib.Geometry.Manifold.PartitionOfUnity",
+    "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+    "Mathlib.MeasureTheory.Integral.Prod",
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+    "Mathlib.Analysis.Calculus.Rademacher",
+    "Mathlib.Analysis.Distribution.FourierSchwartz",
+    "Mathlib.Analysis.NormedSpace.OperatorNorm.Completeness",
+    "Mathlib.Tactic.FunProp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Analysis.InnerProductSpace.Positive",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+    "Mathlib.Analysis.InnerProductSpace.Calculus",
+    "Mathlib.Analysis.Calculus.Deriv.Inv",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform",
+    "Mathlib.MeasureTheory.Constructions.HaarToSphere",
+    "Mathlib.Analysis.SpecificLimits.Normed",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+    "Mathlib.MeasureTheory.Function.LocallyIntegrable",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls",
+    "Mathlib.Analysis.Calculus.ParametricIntegral",
+    "Mathlib.Analysis.Calculus.Deriv.ZPow",
+    "Mathlib.Analysis.Calculus.Deriv.Add",
+    "Lean.Elab.Tactic.Omega",
+    "Mathlib.Analysis.Calculus.MeanValue",
+    "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+    "Mathlib.Algebra.Polynomial.Roots",
+    "Mathlib.Topology.MetricSpace.Contracting",
+    "Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv",
+    "Mathlib.Analysis.Calculus.ContDiff.RCLike",
+    "Mathlib.Analysis.Calculus.Deriv.Slope",
+    "Mathlib.Topology.Order.Compact",
+    "Mathlib.Topology.Instances.Real.Lemmas",
+    "Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli",
+    "Mathlib.Analysis.Normed.Module.WeakDual",
+    "Mathlib.Analysis.InnerProductSpace.Dual",
+    "Mathlib.Analysis.SpecialFunctions.JapaneseBracket"
+  ],
+  "roots": [
+    "MaxwellCutoffCommutator",
+    "MaxwellCurlCutoffSource",
+    "LocalizedCurlCurlSource",
+    "FlatLocalCurlSources",
+    "NestedCurlCutoffSource",
+    "FlatNestedMaxwellForcing",
+    "GlobalToRegionalCurl",
+    "Packet05FiniteBranchMaximum",
+    "Packet05FlatActualForcing",
+    "Packet05ForcedDifferenceGreen",
+    "Packet05ActualLocalizedGreen",
+    "Packet05DifferenceMaxwell",
+    "Packet05DifferenceConverse",
+    "Packet05FlatWeight",
+    "Packet05DivergenceUpgrade",
+    "Packet05WeightedDivergence",
+    "Packet05PhaseRegularity",
+    "Packet05CurlCommutation",
+    "Packet05CurlNormal",
+    "Packet05TangentialRegularity",
+    "Packet05FlatTransmissionH1",
+    "Packet05LocalDerivative",
+    "Packet05ActualPhaseDerivatives",
+    "Packet05PartialProduct",
+    "Packet05DifferentiatedCurl",
+    "Packet05ActualDifferentiatedMaxwell",
+    "Packet05SecondTangential",
+    "Packet05NormalSecond",
+    "Packet05NormalNormal",
+    "Packet05ActualNormalFlux",
+    "Packet05ActualNormalNormal",
+    "Packet05RegionalPartial",
+    "Packet05ActualFlatH2",
+    "Packet05FourierRepresentative"
+  ],
+  "method": "Raw current source hashes against frozen stage71 and release5238 manifests; CRLF-to-LF equivalence only against archive bytes authenticated by raw frozen hash, or normalized current hash equal to frozen raw hash. Root modules classified new or pending.",
+  "counts": {
+    "new_or_pending": 34,
+    "matched": 98
+  }
+}

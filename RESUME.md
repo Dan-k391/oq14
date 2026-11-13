@@ -1,5 +1,34 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 72 is the latest verified incremental checkpoint:
+[STAGE72.txt](checkpoints/2026-11-13-flat-h2/STAGE72.txt).
+The actual flat-interface weak Maxwell field now has all first and second
+phasewise L2 electric derivatives, with explicit a.e. identification with the
+original field. The chain derives the quotient bounds, derivative converse,
+differentiated Maxwell system, weighted normal divergence and normal recovery.
+It retains real nonzero frequency, flat positive scalar material and supplied
+nested cutoffs. Curved/complex regularity and continuous maxima are outside
+this checkpoint.
+
+34 modules / 106 public reports passed an independent ordered fresh-object
+build and semantic review. All 98 other local source dependencies match the
+accepted provenance. Only standard axioms occur; no warnings. Upstream objects
+are cached, so this is not a full clean project build. The accepted ledger is
+624 modules / 4155 reports, preserving all 590 prior records:
+`checkpoints/2026-11-13-flat-h2/evidence/audited_after_5238-stage72.json`.
+
+Full OQ14 remains active. Root continues genuine bounded-ball physical Green
+source and residue normalization. Terra continues actual material pencil
+convergence/pole persistence, curved scalar transmission regularity and collar
+convergence, and fixed-frequency driven packing/connected inclusion geometry.
+Later Packet05 continuity/maxima, Packet06 Green/material and Packet07 driven
+modules are drafts outside this accepted checkpoint. Final modal assembly,
+manuscript and aggregate verification remain.
+
+Everything below is historical context, superseded by stage72.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 71 is the latest verified incremental checkpoint:
 [STAGE71.txt](checkpoints/2026-11-13-sphere-pole/STAGE71.txt).
 The actual electric-sector sphere inverse has a proved simple pole, reciprocal

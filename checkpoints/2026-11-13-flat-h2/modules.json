@@ -1,0 +1,278 @@
+[
+  {
+    "module": "MaxwellCutoffCommutator",
+    "declarations": [
+      "OQ14.MaxwellCutoffCommutator.quotient_ae",
+      "OQ14.MaxwellCutoffCommutator.cutoff_quotient_commutator",
+      "OQ14.MaxwellCutoffCommutator.cutoff_difference_bound",
+      "OQ14.MaxwellCutoffCommutator.cutoffSource_memLp",
+      "OQ14.MaxwellCutoffCommutator.cutoffSource_norm",
+      "OQ14.MaxwellCutoffCommutator.cutoff_quotient_decomposition",
+      "OQ14.MaxwellCutoffCommutator.cutoff_quotient_norm",
+      "OQ14.MaxwellCutoffCommutator.derivative_cutoff_commutator",
+      "OQ14.MaxwellCutoffCommutator.derivative_cutoff_source_norm"
+    ]
+  },
+  {
+    "module": "MaxwellCurlCutoffSource",
+    "declarations": [
+      "OQ14.MaxwellCurlCutoffSource.quotient_sub",
+      "OQ14.MaxwellCurlCutoffSource.source_ae",
+      "OQ14.MaxwellCurlCutoffSource.quotient_source_bound",
+      "OQ14.MaxwellCurlCutoffSource.flat_weight_norm",
+      "OQ14.MaxwellCurlCutoffSource.flat_quotient_weight_bound",
+      "OQ14.MaxwellCurlCutoffSource.flat_quotient_source_bound"
+    ]
+  },
+  {
+    "module": "LocalizedCurlCurlSource",
+    "declarations": [
+      "OQ14.LocalizedCurlCurlSource.cutoff_curlcurl_source"
+    ]
+  },
+  {
+    "module": "FlatLocalCurlSources",
+    "declarations": [
+      "OQ14.FlatLocalCurlSources.extend_weighted",
+      "OQ14.FlatLocalCurlSources.actual_flat_local_sources"
+    ]
+  },
+  {
+    "module": "NestedCurlCutoffSource",
+    "declarations": [
+      "OQ14.NestedCurlCutoffSource.source_localize",
+      "OQ14.NestedCurlCutoffSource.localize_weighted",
+      "OQ14.NestedCurlCutoffSource.nested_flat_source_bound"
+    ]
+  },
+  {
+    "module": "FlatNestedMaxwellForcing",
+    "declarations": [
+      "OQ14.FlatNestedMaxwellForcing.actual_nested_forcing"
+    ]
+  },
+  {
+    "module": "GlobalToRegionalCurl",
+    "declarations": [
+      "OQ14.GlobalToRegionalCurl.restrict_global_hcurl",
+      "OQ14.GlobalToRegionalCurl.restrict_weakMaxwell"
+    ]
+  },
+  {
+    "module": "Packet05FiniteBranchMaximum",
+    "declarations": [
+      "OQ14.Packet05FiniteBranchMaximum.finite_closed_branches_attain_max"
+    ]
+  },
+  {
+    "module": "Packet05FlatActualForcing",
+    "declarations": [
+      "OQ14.Packet05FlatActualForcing.actual_flat_forcing_and_magnetic_quotient"
+    ]
+  },
+  {
+    "module": "Packet05ForcedDifferenceGreen",
+    "declarations": [
+      "OQ14.Packet05ForcedDifferenceGreen.localized_weight_quotient",
+      "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green",
+      "OQ14.Packet05ForcedDifferenceGreen.forced_flat_difference_green_with_commutator"
+    ]
+  },
+  {
+    "module": "Packet05ActualLocalizedGreen",
+    "declarations": [
+      "OQ14.Packet05ActualLocalizedGreen.actual_localized_flat_fields",
+      "OQ14.Packet05ActualLocalizedGreen.actual_flat_tangential_green"
+    ]
+  },
+  {
+    "module": "Packet05DifferenceMaxwell",
+    "declarations": [
+      "OQ14.Packet05DifferenceMaxwell.ball_tangential_step",
+      "OQ14.Packet05DifferenceMaxwell.cutField_global_ae",
+      "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_maxwell",
+      "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_energy",
+      "OQ14.Packet05DifferenceMaxwell.actual_tangential_difference_cutoff_bound",
+      "OQ14.Packet05DifferenceMaxwell.actual_ball_tangential_difference_uniform",
+      "OQ14.Packet05DifferenceMaxwell.actual_ball_cutoff_electric_difference_uniform"
+    ]
+  },
+  {
+    "module": "Packet05DifferenceConverse",
+    "declarations": [
+      "OQ14.Packet05DifferenceConverse.quotient_pair_tendsto",
+      "OQ14.Packet05DifferenceConverse.weakPartial_of_bounded_quotients"
+    ]
+  },
+  {
+    "module": "Packet05FlatWeight",
+    "declarations": [
+      "OQ14.Packet05FlatWeight.weight_memLp_top",
+      "OQ14.Packet05FlatWeight.mulWeight_ae",
+      "OQ14.Packet05FlatWeight.weight_tangential",
+      "OQ14.Packet05FlatWeight.weighted_quotient_bound",
+      "OQ14.Packet05FlatWeight.weighted_weakPartial_of_bounded_quotients"
+    ]
+  },
+  {
+    "module": "Packet05DivergenceUpgrade",
+    "declarations": [
+      "OQ14.Packet05DivergenceUpgrade.smooth_divergence_to_weak",
+      "OQ14.Packet05DivergenceUpgrade.normal_from_divergence"
+    ]
+  },
+  {
+    "module": "Packet05WeightedDivergence",
+    "declarations": [
+      "OQ14.Packet05WeightedDivergence.cutoff_divergence_vanishes_on",
+      "OQ14.Packet05WeightedDivergence.actual_cutoff_weighted_divergence",
+      "OQ14.Packet05WeightedDivergence.complex_cutoff_weighted_divergence"
+    ]
+  },
+  {
+    "module": "Packet05PhaseRegularity",
+    "declarations": [
+      "OQ14.Packet05PhaseRegularity.constant_phase_electric_divergence",
+      "OQ14.Packet05PhaseRegularity.constant_phase_electric_cutoff_h1",
+      "OQ14.Packet05PhaseRegularity.complex_constant_phase_electric_cutoff_h1",
+      "OQ14.Packet05PhaseRegularity.complex_magnetic_cutoff_h1"
+    ]
+  },
+  {
+    "module": "Packet05CurlCommutation",
+    "declarations": [
+      "OQ14.Packet05CurlCommutation.derivativePair_partial_comm",
+      "OQ14.Packet05CurlCommutation.smooth_curl_to_weak",
+      "OQ14.Packet05CurlCommutation.partial_commutes_weakCurl"
+    ]
+  },
+  {
+    "module": "Packet05CurlNormal",
+    "declarations": [
+      "OQ14.Packet05CurlNormal.normal_first_from_curl",
+      "OQ14.Packet05CurlNormal.normal_second_from_curl",
+      "OQ14.Packet05CurlNormal.cutoff_has_weakCurl",
+      "OQ14.Packet05CurlNormal.cutoff_normal_tangential_components"
+    ]
+  },
+  {
+    "module": "Packet05TangentialRegularity",
+    "declarations": [
+      "OQ14.Packet05TangentialRegularity.actual_ball_electric_tangential_weak_derivative",
+      "OQ14.Packet05TangentialRegularity.actual_ball_electric_normal_tangential_components",
+      "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_tangential_derivative",
+      "OQ14.Packet05TangentialRegularity.actual_ball_weighted_electric_normal_derivative"
+    ]
+  },
+  {
+    "module": "Packet05FlatTransmissionH1",
+    "declarations": [
+      "OQ14.Packet05FlatTransmissionH1.actual_flat_transmission_h1"
+    ]
+  },
+  {
+    "module": "Packet05LocalDerivative",
+    "declarations": [
+      "OQ14.Packet05LocalDerivative.weak_partial_local_constant_relation",
+      "OQ14.Packet05LocalDerivative.weak_partial_unique",
+      "OQ14.Packet05LocalDerivative.weighted_partial_on_constant_phase",
+      "OQ14.Packet05LocalDerivative.interface_plane_null",
+      "OQ14.Packet05LocalDerivative.weighted_partial_eq",
+      "OQ14.Packet05LocalDerivative.weighted_partial_gives_phase_partial",
+      "OQ14.Packet05LocalDerivative.divergence_eq_sum_partials",
+      "OQ14.Packet05LocalDerivative.local_partial_of_ae_eq",
+      "OQ14.Packet05LocalDerivative.normal_displacement_from_divergence"
+    ]
+  },
+  {
+    "module": "Packet05ActualPhaseDerivatives",
+    "declarations": [
+      "OQ14.Packet05ActualPhaseDerivatives.actual_tangential_phase_constitutive"
+    ]
+  },
+  {
+    "module": "Packet05PartialProduct",
+    "declarations": [
+      "OQ14.Packet05PartialProduct.cutoff_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedCurl",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedCurl.differentiated_local_curl_pairing",
+      "OQ14.Packet05DifferentiatedCurl.differentiated_local_maxwell_pairing",
+      "OQ14.Packet05DifferentiatedCurl.regional_maxwell_of_differentiated_pairings"
+    ]
+  },
+  {
+    "module": "Packet05ActualDifferentiatedMaxwell",
+    "declarations": [
+      "OQ14.Packet05ActualDifferentiatedMaxwell.nested_cutoff_field",
+      "OQ14.Packet05ActualDifferentiatedMaxwell.actual_cutoff_local_maxwell",
+      "OQ14.Packet05ActualDifferentiatedMaxwell.actual_tangential_differentiated_maxwell"
+    ]
+  },
+  {
+    "module": "Packet05SecondTangential",
+    "declarations": [
+      "OQ14.Packet05SecondTangential.nested_scale",
+      "OQ14.Packet05SecondTangential.second_stage_regional_tangential",
+      "OQ14.Packet05SecondTangential.actual_second_tangential_derivatives"
+    ]
+  },
+  {
+    "module": "Packet05NormalSecond",
+    "declarations": [
+      "OQ14.Packet05NormalSecond.smooth_partial_to_weak",
+      "OQ14.Packet05NormalSecond.normal_second_from_laplacian",
+      "OQ14.Packet05NormalSecond.weak_mixed_partial_commute",
+      "OQ14.Packet05NormalSecond.hessian_from_tangential_and_laplacian"
+    ]
+  },
+  {
+    "module": "Packet05NormalNormal",
+    "declarations": [
+      "OQ14.Packet05NormalNormal.phase_normal_normal_from_flux",
+      "OQ14.Packet05NormalNormal.normal_first_component_from_local_curl",
+      "OQ14.Packet05NormalNormal.normal_second_component_from_local_curl",
+      "OQ14.Packet05NormalNormal.valuePair_cutoff_on",
+      "OQ14.Packet05NormalNormal.phase_tangential_normal_normal"
+    ]
+  },
+  {
+    "module": "Packet05ActualNormalFlux",
+    "declarations": [
+      "OQ14.Packet05ActualNormalFlux.actual_normal_displacement_relation"
+    ]
+  },
+  {
+    "module": "Packet05ActualNormalNormal",
+    "declarations": [
+      "OQ14.Packet05ActualNormalNormal.actual_phase_normal_normal",
+      "OQ14.Packet05ActualNormalNormal.actual_phase_tangential_normal_normal"
+    ]
+  },
+  {
+    "module": "Packet05RegionalPartial",
+    "declarations": [
+      "OQ14.Packet05RegionalPartial.global_partial_on",
+      "OQ14.Packet05RegionalPartial.cutoff_partial_on",
+      "OQ14.Packet05RegionalPartial.partial_on_of_ae_eq",
+      "OQ14.Packet05RegionalPartial.smooth_partial_on_to_weak",
+      "OQ14.Packet05RegionalPartial.mixed_partial_on_commute"
+    ]
+  },
+  {
+    "module": "Packet05ActualFlatH2",
+    "declarations": [
+      "OQ14.Packet05ActualFlatH2.actual_flat_phase_h2"
+    ]
+  },
+  {
+    "module": "Packet05FourierRepresentative",
+    "declarations": [
+      "OQ14.Packet05FourierRepresentative.continuous_of_integrable_inverse_fourier",
+      "OQ14.Packet05FourierRepresentative.continuous_of_weighted_inverse_fourier"
+    ]
+  }
+]
