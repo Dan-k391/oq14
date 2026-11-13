@@ -1,5 +1,48 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 107 is the latest verified incremental checkpoint:
+[STAGE107.txt](checkpoints/2026-11-13-regional-placed-hotspots/STAGE107.txt).
+
+The regional scalar transmission equation now supplies the actual mixed
+derivative used in the localized forcing, with a bound derived from original
+scalar and forcing norms. Exact first and second forcing arrays, the compact
+localized scalar and gradient, and the true global divergence source are
+retained. One explicit ceiling controls all these fields. The divergence
+source is proved zero on the inner plateau; original scalar H2 regularity on
+the outer cutoff annulus is not assumed.
+
+Uniform actual material-family scalar potentials and graph gradients are
+bounded from compact source, frequency, coefficient and mode norm bounds.
+Fixed signed C4 charts cover every point of the collar annulus, including
+interfaces and homogeneous phases, and their actual material laws hold for
+every sufficiently late rounding index. Finite covers and their constants
+are selected before that index.
+
+An actual electric collar bound yields an attained meridional maximum above
+twice the collar ceiling and a compact connected full half-amplitude region
+strictly inside the observation ball. The actual normalized Maxwell field,
+continuous one-sided phase vectors, Euclidean amplitude, maximum, sphere
+bound and full connected component all transport under the prescribed
+rotation, dilation and translation. The maximum lands on the physical plane.
+The exact amplitude factor is sqrt(s)*s. Target phase representatives are
+identified componentwise with the actual electric field almost everywhere.
+
+These hotspot theorems still take an actual uniform collar bound or a base
+hotspot as an explicit input. The final modal chart composition, same-family
+single-index selection, driven counterparts, paper alignment and aggregate
+verification remain active. Full OQ14 is not declared closed.
+
+29 modules / 48 reports passed independent root review and a fresh
+ordered build. 1536 upstream sources were authenticated, with cached objects.
+The ledger is 1310 modules / 5535 reports, all prior records unchanged:
+`checkpoints/2026-11-13-regional-placed-hotspots/evidence/audited_after_5238-stage107.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage107.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 106 is the latest verified incremental checkpoint:
 [STAGE106.txt](checkpoints/2026-11-13-uniform-physical-data/STAGE106.txt).
 

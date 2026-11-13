@@ -1,0 +1,784 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-regional-placed-hotspots/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet05ChartH2Uniform",
+      "source": "lean/Packet05ChartH2Uniform.lean",
+      "source_sha256": "3366d6f274caca907b18a6ef1d033cd93dd7319956743b207f4cfd7ae1c1ae26",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05ChartH2Uniform.olean D:\\oq14\\lean\\Packet05ChartH2Uniform.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.4662775,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05ChartH2Uniform-chain.log",
+      "log_sha256": "c22656f5cfd7449143ac2e887666c73b445fd4da278446b1854373b59ea32c5e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartH2Uniform.chart_pull_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartH2Uniform.chart_sign_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartH2Uniform.chart_vector_h2_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1bef52623613b951f3d180a8cbbaab96e7726d9ac650ddb4851d6d93ccc2c12e"
+    },
+    {
+      "module": "Packet05ScalarGraphNorm",
+      "source": "lean/Packet05ScalarGraphNorm.lean",
+      "source_sha256": "47953d06c7ed232ad011b0354495c9496b1633028724db0db969249f75eaf215",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05ScalarGraphNorm.olean D:\\oq14\\lean\\Packet05ScalarGraphNorm.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 11.4815166,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05ScalarGraphNorm-chain.log",
+      "log_sha256": "1d2cea4f7f77f3198e4e35aca7917b730320d751925ccab12db298d7fec16b06",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ScalarGraphNorm.derivative_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ScalarGraphNorm.localized_scalar_norms",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ScalarGraphNorm.localized_scalar_norms_with_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d4789dc63147bf87255daa91b830fb5823878c0cea4b2a0bc4a3291d2079eab0"
+    },
+    {
+      "module": "Packet05UniformScalarPotential",
+      "source": "lean/Packet05UniformScalarPotential.lean",
+      "source_sha256": "8807c7c9d3c6fadf8b39a043ba4926c309e298af1e21a5d2a934bb38198f0a87",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05UniformScalarPotential.olean D:\\oq14\\lean\\Packet05UniformScalarPotential.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.4586219,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05UniformScalarPotential-chain.log",
+      "log_sha256": "56c7370cd5f742907792f44fdd5a7cba9185371c3ca80b61908602b3120f0f9a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05UniformScalarPotential.uniform_potential_representative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1996a8598e0d67ba7759fd5d8a531514d11163b959353dd7e537ccb054d27309"
+    },
+    {
+      "module": "Packet05UniformPhysicalDerivative",
+      "source": "lean/Packet05UniformPhysicalDerivative.lean",
+      "source_sha256": "07fc51efd88dfa7ed79b7469fff7339a69ca07dc357f0b7d656ed086e514ef42",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05UniformPhysicalDerivative.olean D:\\oq14\\lean\\Packet05UniformPhysicalDerivative.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 11.6932088,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05UniformPhysicalDerivative-chain.log",
+      "log_sha256": "44516b874956d2b7fcda8dac0644c19dfa9d8ee125e31f216ad9b3759e85e6fe",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05UniformPhysicalDerivative.uniform_physical_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6af593d345ae2b06fb64b62a07906ed617f2ee30f5bf9a3154abf8c2ff30ed2d"
+    },
+    {
+      "module": "Packet05UniformScalarGraph",
+      "source": "lean/Packet05UniformScalarGraph.lean",
+      "source_sha256": "15726bddb13aa6fb480751a32a26c0457e599ebee934c60ab41d7b8295e88e84",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05UniformScalarGraph.olean D:\\oq14\\lean\\Packet05UniformScalarGraph.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 10.9358638,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05UniformScalarGraph-chain.log",
+      "log_sha256": "2b29028f76013df3cd084b9ee2a7919d6b6f8171392a7560e5648293b9c6efe7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05UniformScalarGraph.uniform_actual_scalar_graph",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e1cf162c2fa61752cca22a3d67156bde536eceeaf8c8c7bd90ab81c53be846b9"
+    },
+    {
+      "module": "Packet05UniformMaterialScalarGraph",
+      "source": "lean/Packet05UniformMaterialScalarGraph.lean",
+      "source_sha256": "16e28d7b68e6a1ecbf60f07e5357637eb763d04569d68790554c250542bc0d19",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-uniform-scalar-graph\\reviews\\objects\\Packet05UniformMaterialScalarGraph.olean D:\\oq14\\lean\\Packet05UniformMaterialScalarGraph.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.8533753,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05UniformMaterialScalarGraph-chain.log",
+      "log_sha256": "b38f424da2f75221d2da62fe950f31dfdfeb710a06e22b40bd7b4785732f3256",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05UniformMaterialScalarGraph.material_family_scalar_graph",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "246d766335a4c77a6e9574a85594e1bef724064c732966ead314ee7b4221c5cb"
+    },
+    {
+      "module": "Packet05CutoffSecondBound",
+      "source": "lean/Packet05CutoffSecondBound.lean",
+      "source_sha256": "4dcbad25d1afbd26087811f24ede448a9316a19f778c6dc94f4bd9bb437fff99",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05CutoffSecondBound.olean D:\\oq14\\lean\\Packet05CutoffSecondBound.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.094624,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05CutoffSecondBound-chain.log",
+      "log_sha256": "8d4d0bb42890df2ec9d48edb14ee3c8f7021391889ae65363b8845cb852bb37c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05CutoffSecondBound.derivative_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ecc7cf4ccfb38f2bcf6e69221ead9f4983e2cd6e76e445eef96b2fc94ad3b627"
+    },
+    {
+      "module": "Packet05MetricSecondBound",
+      "source": "lean/Packet05MetricSecondBound.lean",
+      "source_sha256": "8a662670c1b8ff90fcf48182dd49e5e6c6b4f16dd16b65ee3fb2606f8b26c8b0",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05MetricSecondBound.olean D:\\oq14\\lean\\Packet05MetricSecondBound.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.8589459,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05MetricSecondBound-chain.log",
+      "log_sha256": "68c8d32d0102217bafc71bd0007640b89ea1ff5196d3be30cb2452de3352ab99",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05MetricSecondBound.matrix_second_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7bebadd55b9c2dc47b4f0a3f8977d860fe1d51e71b781d10782e0d108f0eaa43"
+    },
+    {
+      "module": "Packet05FixedCollarChart",
+      "source": "lean/Packet05FixedCollarChart.lean",
+      "source_sha256": "dc7dba6b1876da820f5b270c939ea5fc24408930d6765282c00cf8c474bb2fe7",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FixedCollarChart.olean D:\\oq14\\lean\\Packet05FixedCollarChart.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.3719231,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FixedCollarChart-chain.log",
+      "log_sha256": "2971ba6561b5341df7107ddc6a94774fc26a465bd6b9b4b69086995b423c9232",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FixedCollarChart.annulus_open",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05FixedCollarChart.fixed_collar_chart",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "adfefc9a10c584ab8cfbc6352784c020c417a6b9c55464b3bebb04d4a33dad31"
+    },
+    {
+      "module": "Packet05FixedCollarHomogeneous",
+      "source": "lean/Packet05FixedCollarHomogeneous.lean",
+      "source_sha256": "15ebda5dcbd9a09cdc5397f7af1a8b556d31e1180cee639c43e51803caa24753",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FixedCollarHomogeneous.olean D:\\oq14\\lean\\Packet05FixedCollarHomogeneous.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.051928,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FixedCollarHomogeneous-chain.log",
+      "log_sha256": "297c0d9b4f3b44c23ccf1e4c2437b90b8e1d84cd000b520b6ab62a652d070846",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FixedCollarHomogeneous.eventually_constant_on_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "70a4bb4a9a3eaf83d891e9111ff85ce2b06bdb2cfa8006121cb5154ad0edd826"
+    },
+    {
+      "module": "Packet05FixedHomogeneousChart",
+      "source": "lean/Packet05FixedHomogeneousChart.lean",
+      "source_sha256": "8e54dec3e5e3a8f6cbfbc7dc57ef5b52b2045a9a39601f58dea4e673e03de165",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FixedHomogeneousChart.olean D:\\oq14\\lean\\Packet05FixedHomogeneousChart.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.8723256,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FixedHomogeneousChart-chain.log",
+      "log_sha256": "dc12f1136dde30b73fbea56043b31f68a5fc3f449d07b565e3593f3385f9f01f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FixedHomogeneousChart.fixed_homogeneous_chart",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "875ae56d50505272784c2097f444cd43968e2166d2e72a88eb58e81049abec0a"
+    },
+    {
+      "module": "Packet05ReferencePhaseNeighborhood",
+      "source": "lean/Packet05ReferencePhaseNeighborhood.lean",
+      "source_sha256": "e84a03c8f4bead82abfcc7e2d653fb6a8948f1dcaf8649b8e5ee95e072c393d8",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05ReferencePhaseNeighborhood.olean D:\\oq14\\lean\\Packet05ReferencePhaseNeighborhood.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.0619135,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05ReferencePhaseNeighborhood-chain.log",
+      "log_sha256": "8d3e142415894a2dcb4a1c332f68bbee6c0836fb1711690b6ec6e4aaacabeb82",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ReferencePhaseNeighborhood.phase_neighborhood",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a2fa75dbdc2e8684897698d67f9cc3e12f49d5e4c2792e1d5648ece73983ee12"
+    },
+    {
+      "module": "Packet05FixedCollarAllCharts",
+      "source": "lean/Packet05FixedCollarAllCharts.lean",
+      "source_sha256": "31e552a3e7cbe0b516355fa041398f1f9552e787591763d06680f59ec631b81b",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FixedCollarAllCharts.olean D:\\oq14\\lean\\Packet05FixedCollarAllCharts.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.0477441,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FixedCollarAllCharts-chain.log",
+      "log_sha256": "d32bed15165c6de2fe608037fb2fd952197aa757a9d17c8d84eae9d46770625e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FixedCollarAllCharts.fixed_chart_at_point",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "104fdd5ac388ff29eab8a3460dd08c2b52d79bcedee5d2ee449f67f8a89af06e"
+    },
+    {
+      "module": "Packet05FixedCollarAtlas",
+      "source": "lean/Packet05FixedCollarAtlas.lean",
+      "source_sha256": "b004dd265f05831beea89e98c132b28c4431af58861a913aa5edd0e961428c7a",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FixedCollarAtlas.olean D:\\oq14\\lean\\Packet05FixedCollarAtlas.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.9073498,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FixedCollarAtlas-chain.log",
+      "log_sha256": "3d8241c051d6079d555fa0ffe0dee88886dca67a06ed20ae1bf2a9499dd009d9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FixedCollarAtlas.actual_fixed_collar_atlas",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c07096474a712e96f3da8fafb2397300771092d92328eb70a9c676c5eb989c2c"
+    },
+    {
+      "module": "Packet05FiniteCollarBound",
+      "source": "lean/Packet05FiniteCollarBound.lean",
+      "source_sha256": "8b56147a21a768bc427473cfe36255842fe7c9dcc348cf60c623796b67b4e187",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-fixed-collar-atlas\\reviews\\objects\\Packet05FiniteCollarBound.olean D:\\oq14\\lean\\Packet05FiniteCollarBound.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.5044675,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05FiniteCollarBound-chain.log",
+      "log_sha256": "129afbb1b5523cbfda5c2d52e7dde02c23491bf67afa3cbb39c782ccebc7bf54",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05FiniteCollarBound.compact_eventual_ae_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0a5780c0457f30b3b152ac1b8269c0852eb7519b2cd471cfa4a11622208bca66"
+    },
+    {
+      "module": "Packet05PhysicalPhaseCollar",
+      "source": "lean/Packet05PhysicalPhaseCollar.lean",
+      "source_sha256": "29f55fe1e146183458f5a9f8add4184b45c620a6ecdfe72e7cea8f6f065a42c4",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-rounded-hotspot\\reviews\\objects\\Packet05PhysicalPhaseCollar.olean D:\\oq14\\lean\\Packet05PhysicalPhaseCollar.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.0568106,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05PhysicalPhaseCollar-chain.log",
+      "log_sha256": "48c97e0051a7d05f38439d3959c8db4f5df528e0256aa47be38cec256eb2b152",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05PhysicalPhaseCollar.physical_phase_collar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3f0a7d1523ef6027b9733e55666f3c782299c36a0a62515996320f484fa0d2e2"
+    },
+    {
+      "module": "Packet06RoundedHotspot",
+      "source": "lean/Packet06RoundedHotspot.lean",
+      "source_sha256": "cf8299ba2455d3f1c0ef46526f7fffe693d58235aec7808b8ae6484e95f94714",
+      "command": "D:/oq14/.tools/lean/lean-4.19.0-windows/bin/lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-rounded-hotspot\\reviews\\objects\\Packet06RoundedHotspot.olean D:\\oq14\\lean\\Packet06RoundedHotspot.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.7059385,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06RoundedHotspot-chain.log",
+      "log_sha256": "ed11e01d7d0445032d9d6e420b0c9f43476d085f58c6819ab7d453d7c427d6f0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedHotspot.eventually_actual_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4bbd0b4fa47cb1a6e0778728d516753671b6dc60216d78fbe2c470545a48c87a"
+    },
+    {
+      "module": "Packet06PlacementHomeomorph",
+      "source": "lean/Packet06PlacementHomeomorph.lean",
+      "source_sha256": "739d9e1554509912b2e300345d5d2ea33e23e35024d633b56abce8ca1a917441",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-placement-geometry\\reviews\\objects\\Packet06PlacementHomeomorph.olean D:\\oq14\\lean\\Packet06PlacementHomeomorph.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.484102,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacementHomeomorph-chain.log",
+      "log_sha256": "cf4220a0c7247bf8fff6feea585585a46a0d4bd0a740c17e3342a5e0256c42e3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacementHomeomorph.image_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacementHomeomorph.image_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacementHomeomorph.image_closedBall",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacementHomeomorph.image_phase_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "358dd233e2b357f9a3880b273653b930c66861b7e5727b3352685ad1410f2617"
+    },
+    {
+      "module": "Packet06PlacedPhaseField",
+      "source": "lean/Packet06PlacedPhaseField.lean",
+      "source_sha256": "30a694e630d5ce4eec6e18e86873d502a46c7fe23716281ec5edd3742d4c346d",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-placement-geometry\\reviews\\objects\\Packet06PlacedPhaseField.olean D:\\oq14\\lean\\Packet06PlacedPhaseField.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 7.9692983,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacedPhaseField-chain.log",
+      "log_sha256": "b63e0f39d1a9ce1542b120cb2604dc07fc605e75be82cae2ef8a5042928d2a20",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedPhaseField.scale_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPhaseField.amplitude_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPhaseField.continuous_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedPhaseField.phase_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3af72648b462e7b2dbc5344edbc580ec8132affadaf97fce23d40fbf1078d98f"
+    },
+    {
+      "module": "Packet06PlacedHotspotGeometry",
+      "source": "lean/Packet06PlacedHotspotGeometry.lean",
+      "source_sha256": "6a6e82a547753a2b106eeeb82e885bfc8917200cf01eca17493e57719302433b",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-placement-geometry\\reviews\\objects\\Packet06PlacedHotspotGeometry.olean D:\\oq14\\lean\\Packet06PlacedHotspotGeometry.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.3131031,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacedHotspotGeometry-chain.log",
+      "log_sha256": "895fbf90efe4d77a424aa0f4fd1b62966be345ab1b54f2bf511e89d4307c8ca2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedHotspotGeometry.image_superlevel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedHotspotGeometry.phase_superlevel_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedHotspotGeometry.maximum_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedHotspotGeometry.half_component_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3341f66f1cc8f0087d6a8fe63ac3b48f774efc3daaee87a2ade1f74e087b5a58"
+    },
+    {
+      "module": "Packet06PlacedActualField",
+      "source": "lean/Packet06PlacedActualField.lean",
+      "source_sha256": "6b5196f8bf65eaf808d2a3e792ac287f607594663d499e02f66a392d9d4fcc98",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-actual-phase\\reviews\\root-objects\\Packet06PlacedActualField.olean",
+        "D:\\oq14\\lean\\Packet06PlacedActualField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.547,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacedActualField-chain.log",
+      "log_sha256": "d45dbe90975de818ef45889dfa20780d6c9226a7f260b76ee07a0cd79ada503a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedActualField.branch_amplitude_target_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedActualField.branch_amplitude_on_unit_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedActualField.amplitude_on_unit_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedActualField.amplitude_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedActualField.electric_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "243a46c1505c05f1b76818555d137cbb1b5fd1bf7c4af583fc19072119393f14"
+    },
+    {
+      "module": "Packet06PlacedActualPhase",
+      "source": "lean/Packet06PlacedActualPhase.lean",
+      "source_sha256": "2ce6e087071f307b2d89652d8a3ec79bce30f08816bd988566ed6891bb0ff237",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-placed-actual-phase\\reviews\\root-objects\\Packet06PlacedActualPhase.olean",
+        "D:\\oq14\\lean\\Packet06PlacedActualPhase.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.719,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacedActualPhase-chain.log",
+      "log_sha256": "a33723b1d4deb48891cef25464088eee4dbcc49bf2db682487191df01b17667b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedActualPhase.component_image_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06PlacedActualPhase.component_target_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3d977bdf13fe1d540f8c78e606c6b313862e857a4de36fa9b432bdcbc1d31267"
+    },
+    {
+      "module": "Packet06PlacedHotspot",
+      "source": "lean/Packet06PlacedHotspot.lean",
+      "source_sha256": "d2e79915e501e44de727473bec57258d0d934b24484e29ec5bb849e93aff26ee",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-placement-geometry\\reviews\\objects\\Packet06PlacedHotspot.olean D:\\oq14\\lean\\Packet06PlacedHotspot.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.9628996,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet06PlacedHotspot-chain.log",
+      "log_sha256": "613d12bd5596146d19d958c23a38921ea96bb8085c9a13526d3e606c78ac01af",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PlacedHotspot.placed_actual_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "15f158a498cf3840846b1336c6c9e7ebaae80aea51a981dfd07201637a08cf57"
+    },
+    {
+      "module": "Packet05ExplicitSecondForcing",
+      "source": "lean/Packet05ExplicitSecondForcing.lean",
+      "source_sha256": "71f99a64ce1c89b1ed4e7b1e27046da5aa62fb5fed37a0079c086f5bc25e4ad6",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05ExplicitSecondForcing.olean D:\\oq14\\lean\\Packet05ExplicitSecondForcing.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.560489,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05ExplicitSecondForcing-chain.log",
+      "log_sha256": "36967ac8bcb641127b9e1ef6fc7fee719a2a59d91e3a4cb10cd3ee3dec0c1e33",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ExplicitSecondForcing.forcing_second_tangential_explicit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "54ae85e58d050e52f089c564370c2989cea7df34ca020a3e103883c11dce2a7a"
+    },
+    {
+      "module": "Packet05SecondRegionalForcingNorm",
+      "source": "lean/Packet05SecondRegionalForcingNorm.lean",
+      "source_sha256": "61b57dd6e895d3b1c5aae8fe33e342ceb1f2de28124bf33b8d6cb90da66f0a2c",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05SecondRegionalForcingNorm.olean D:\\oq14\\lean\\Packet05SecondRegionalForcingNorm.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 26.0657902,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05SecondRegionalForcingNorm-chain.log",
+      "log_sha256": "44ef1766e79f32855053feb9bdb166d51431e46e8e0f2741c59d68b1a4da9fef",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05SecondRegionalForcingNorm.second_forcing_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c21e543fbc02fcfb199972a1287d93a6156057bdddecf97afad740cb5dce8b4a"
+    },
+    {
+      "module": "Packet05RegionalForcingUniform",
+      "source": "lean/Packet05RegionalForcingUniform.lean",
+      "source_sha256": "567d895a48758eee475427415ac2ff7de0b4adbd9bb02eff7601c84d8e0103bf",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05RegionalForcingUniform.olean D:\\oq14\\lean\\Packet05RegionalForcingUniform.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 19.9522028,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05RegionalForcingUniform-chain.log",
+      "log_sha256": "11cf6aec4095b954935a5bb1eec5e116c4791b675b90b4b2b6449efb3cdaf1d0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalForcingUniform.regional_forcing_bootstrap_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b736d1d24e9b16c972a90cb9a262dc9f78c6f6031a553f59d7931536562f2c62"
+    },
+    {
+      "module": "Packet05RegionalLocalizedNorm",
+      "source": "lean/Packet05RegionalLocalizedNorm.lean",
+      "source_sha256": "26f5d4e46c0353fa3a180f3969265114f2a64d58333959ad702ea572395c8784",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05RegionalLocalizedNorm.olean D:\\oq14\\lean\\Packet05RegionalLocalizedNorm.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 9.2964577,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05RegionalLocalizedNorm-chain.log",
+      "log_sha256": "3eb86176c2a4a8811d31a5403a70283a6734ba755a819093543b17df64327867",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalLocalizedNorm.localized_fields_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ddab42cc9fdfe13667170e0e36322ce9068ccd9ba3f23b5e7bad67974f9f8b98"
+    },
+    {
+      "module": "Packet05RegionalFirstForcingUniform",
+      "source": "lean/Packet05RegionalFirstForcingUniform.lean",
+      "source_sha256": "b1eb122493e350adee92cb30aa48ae0d03595eeb78996a57a9a4e2bf8b4665dc",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05RegionalFirstForcingUniform.olean D:\\oq14\\lean\\Packet05RegionalFirstForcingUniform.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 8.3266329,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05RegionalFirstForcingUniform-chain.log",
+      "log_sha256": "7a323e0e4b7bd5d91b443a3c8e75670e8289a7330b6fc3807a3146acd9c138f3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalFirstForcingUniform.first_forcing_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f9d46a1ad31963e8bd606597471bd07aee77f8705f6e8d267bd9fece07f306cc"
+    },
+    {
+      "module": "Packet05RegionalBootstrapUniform",
+      "source": "lean/Packet05RegionalBootstrapUniform.lean",
+      "source_sha256": "72bcefeb75a7bba3279875565683a5da24e3030e94124b534c7454c20ec3758e",
+      "command": "lean.exe -o D:\\oq14\\checkpoints\\2026-11-13-regional-forcing-uniform\\reviews\\objects\\Packet05RegionalBootstrapUniform.olean D:\\oq14\\lean\\Packet05RegionalBootstrapUniform.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 14.8651216,
+      "log": "checkpoints/2026-11-13-regional-placed-hotspots/evidence/Packet05RegionalBootstrapUniform-chain.log",
+      "log_sha256": "7aa78e5f22aba9f65d9415eafc35d9bda174df54dc72539805e5a3b4656f8314",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalBootstrapUniform.regional_bootstrapped_scalar_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4fa843dd40e961a0e7114da7f19b7d43497a439afd73617122cbf9b547569306"
+    }
+  ],
+  "module_count": 29,
+  "report_count": 48
+}
