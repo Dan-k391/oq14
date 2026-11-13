@@ -1,0 +1,3 @@
+# Provenance addendum
+
+The two author manifests reviewed here omit Packet05PhysicalGraphChart, an unaccepted upstream dependency of the 105 new modules. The isolated build in build-manifest.json therefore used the cached object for that dependency and is not an isolated rebuild of the complete new-dependency closure. Root identified and separately source-reviewed it and is freshly rebuilding it and the affected downstream batch against its isolated object. The original 105-module semantic review and source-hash results remain as recorded, but the complete dependency-closure validation depends on root's additional rebuild evidence.

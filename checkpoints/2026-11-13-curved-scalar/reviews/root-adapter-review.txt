@@ -1,0 +1,7 @@
+Independent review: complex Maxwell scalar adapter (2026-11-13)
+
+Packet06ScalarGaussLocalization and Packet06MaxwellScalarEquation were reviewed and separately compiled using the pinned Lean 4.19.0 lake environment. Both builds succeeded without warnings or errors. All seven public theorem reports list only propext, Classical.choice and Quot.sound. Exact source and log SHA-256 hashes and report names are recorded in root-adapter-build.json. These builds reused the existing dependency cache; they are not an independent clean dependency rebuild.
+
+The local potential decomposition uses E = ∇u + W, where u.derivative = E − W. The compact scalar gradient and correction agree with those physical fields on the inner bump ball. flux_ae gives P = ε(gradient + correction), with a plus sign, and compact_scalar_equation proves div P = 0 there. The smooth-test Gauss equation is extended to the actual regional C¹ test class by the existing interior test density argument. actual_scalar_equation supplies the complex-frequency material-mode potential and correction from the volume-kernel Gauss identity and proves the dielectric ε = 1 + c is bounded and measurable.
+
+For the scalar iteration convention div(flux A C − F) = 0, the corresponding forcing is F = −ε times the chart-transformed W; the minus sign must be retained when joining the graph Piola equation to the iteration. This adapter does not establish graph flattening, phasewise continuity, quantitative collar bounds or full OQ14 closure.

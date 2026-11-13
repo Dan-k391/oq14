@@ -1,5 +1,40 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 93 is the latest verified incremental checkpoint:
+[STAGE93.txt](checkpoints/2026-11-13-curved-scalar/STAGE93.txt).
+
+The actual complex Maxwell kernel supplies the dielectric Gauss equation
+for its constructed H1 scalar potential and continuous Green correction.
+The localization retains the actual correction and derives the regional
+scalar divergence equation, rather than assuming a transmission equation.
+
+Actual volume-preserving graph transport, Piola divergence and the Hermitian
+metric identify the flattened positive binary dielectric equation. Quantitative
+difference quotient estimates derive the first and second tangential weak
+derivatives, with cutoff and matrix commutators retained. Phasewise normal
+recovery divides by the actual graph metric diagonal on a localized region.
+The source sign convention, chart regularity and derivative hypotheses remain
+explicit. Curved continuous representatives and uniform collars still require
+the actual forcing, chart and quantitative endpoint assembly.
+
+Independent Terra review and fresh builds cover the original 105 modules and
+two root scalar adapters. Provenance found one omitted physical graph helper;
+root reviewed it, rebuilt it and all 61 affected downstream modules into a new
+isolated directory. Unaffected reviewed fresh objects were copied with hashes
+checked. This is not a whole-project clean build. Attained hotspots, final
+placement, physical external-source residue and full closure remain active.
+
+108 modules / 205 reports passed independent root review and a fresh
+ordered build. 1058 upstream sources were authenticated, with cached objects.
+The ledger is 982 modules / 4959 reports, all prior records unchanged:
+`checkpoints/2026-11-13-curved-scalar/evidence/audited_after_5238-stage93.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage93.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 92 is the latest verified incremental checkpoint:
 [STAGE92.txt](checkpoints/2026-11-13-mode-excitation/STAGE92.txt).
 

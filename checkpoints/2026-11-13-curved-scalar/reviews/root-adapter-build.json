@@ -1,0 +1,46 @@
+{
+  "scope": "Independent interface-agent source review and separate-output pinned-Lean builds; imports resolved from existing build cache, not a clean dependency rebuild.",
+  "records": [
+    {
+      "module": "Packet06ScalarGaussLocalization",
+      "source": "lean/Packet06ScalarGaussLocalization.lean",
+      "source_sha256": "d34e351c20fa6bbbf214a6e5bbb29c71eb241c217fb098b0379d0c80023a2723",
+      "log": "checkpoints/2026-11-12-full-closure/Packet06ScalarGaussLocalization-interface-review.log",
+      "log_sha256": "fcc9b6363d3179ea1c1ab40ce1685088e15c7c04f472c070171a0f64b3151419",
+      "reports": [
+        "OQ14.Packet06ScalarGaussLocalization.correction_ae",
+        "OQ14.Packet06ScalarGaussLocalization.weightL2_ae",
+        "OQ14.Packet06ScalarGaussLocalization.flux_ae",
+        "OQ14.Packet06ScalarGaussLocalization.schwartz_divergence_on",
+        "OQ14.Packet06ScalarGaussLocalization.compact_scalar_equation"
+      ],
+      "report_count": 5,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "Packet06MaxwellScalarEquation",
+      "source": "lean/Packet06MaxwellScalarEquation.lean",
+      "source_sha256": "6b9047b5ecca932bdc319ff041109e88941db662c3d68a237a7533930d8447b8",
+      "log": "checkpoints/2026-11-12-full-closure/Packet06MaxwellScalarEquation-interface-review.log",
+      "log_sha256": "f0c3531c778c7a71a6a22cf19d4e4be5471d7836584d1558c331cff7223e16ac",
+      "reports": [
+        "OQ14.Packet06MaxwellScalarEquation.epsilon_memLp",
+        "OQ14.Packet06MaxwellScalarEquation.actual_scalar_equation"
+      ],
+      "report_count": 2,
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "module_count": 2,
+  "report_count": 7
+}

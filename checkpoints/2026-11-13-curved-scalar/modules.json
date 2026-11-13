@@ -1,0 +1,747 @@
+[
+  {
+    "module": "Packet05CurlSourceH1",
+    "declarations": [
+      "OQ14.Packet05CurlSourceH1.curl_source_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05CutoffDerivativeH1",
+    "declarations": [
+      "OQ14.Packet05CutoffDerivativeH1.cutoff_product_derivative_partial"
+    ]
+  },
+  {
+    "module": "Packet05DirectionalQuotient",
+    "declarations": [
+      "OQ14.Packet05DirectionalQuotient.directional_smooth_difference",
+      "OQ14.Packet05DirectionalQuotient.directional_translated_test_bound",
+      "OQ14.Packet05DirectionalQuotient.directional_quotient_bound"
+    ]
+  },
+  {
+    "module": "Packet05DivSourceH1",
+    "declarations": [
+      "OQ14.Packet05DivSourceH1.divergence_source_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05DivergenceCommutation",
+    "declarations": [
+      "OQ14.Packet05DivergenceCommutation.partial_commutes_weakDivergence"
+    ]
+  },
+  {
+    "module": "Packet05LocalPartialProduct",
+    "declarations": [
+      "OQ14.Packet05LocalPartialProduct.local_cutoff_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05LocalReciprocalDerivative",
+    "declarations": [
+      "OQ14.Packet05LocalReciprocalDerivative.local_reciprocal_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDivergence",
+    "declarations": [
+      "OQ14.Packet05RegionalDivergence.global_divergence_on",
+      "OQ14.Packet05RegionalDivergence.smooth_divergence_on_to_weak",
+      "OQ14.Packet05RegionalDivergence.regional_partial_commutes_divergence"
+    ]
+  },
+  {
+    "module": "Packet05RegionalNormalFlux",
+    "declarations": [
+      "OQ14.Packet05RegionalNormalFlux.regional_normal_flux_partial"
+    ]
+  },
+  {
+    "module": "Packet05RegionalNormalRecovery",
+    "declarations": [
+      "OQ14.Packet05RegionalNormalRecovery.regional_isolate_scaled_partial",
+      "OQ14.Packet05RegionalNormalRecovery.regional_recover_diagonal_normal"
+    ]
+  },
+  {
+    "module": "Packet05TensorCommutator",
+    "declarations": [
+      "OQ14.Packet05TensorCommutator.quotient_add",
+      "OQ14.Packet05TensorCommutator.matrixField_quotient_bound"
+    ]
+  },
+  {
+    "module": "Packet05TransverseDivergence",
+    "declarations": [
+      "OQ14.Packet05TransverseDivergence.transverse_projection_zero",
+      "OQ14.Packet05TransverseDivergence.transverse_schwartz_divergence_zero",
+      "OQ14.Packet05TransverseDivergence.transverse_weak_divergence"
+    ]
+  },
+  {
+    "module": "Packet05WeightTangentialDerivative",
+    "declarations": [
+      "OQ14.Packet05WeightTangentialDerivative.weighted_tangential_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet06ScalarGaussLocalization",
+    "declarations": [
+      "OQ14.Packet06ScalarGaussLocalization.correction_ae",
+      "OQ14.Packet06ScalarGaussLocalization.weightL2_ae",
+      "OQ14.Packet06ScalarGaussLocalization.flux_ae",
+      "OQ14.Packet06ScalarGaussLocalization.schwartz_divergence_on",
+      "OQ14.Packet06ScalarGaussLocalization.compact_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05DirectionalWeightDerivative",
+    "declarations": [
+      "OQ14.Packet05DirectionalWeightDerivative.directional_weighted_tangential_partial"
+    ]
+  },
+  {
+    "module": "Packet05DivCurlH2",
+    "declarations": [
+      "OQ14.Packet05DivCurlH2.compact_divcurl_h2"
+    ]
+  },
+  {
+    "module": "Packet05DivCurlH2Actual",
+    "declarations": [
+      "OQ14.Packet05DivCurlH2Actual.compact_divcurl_h2_from_h1_sources"
+    ]
+  },
+  {
+    "module": "Packet05LongitudinalCurl",
+    "declarations": [
+      "OQ14.Packet05LongitudinalCurl.curlFree_closed",
+      "OQ14.Packet05LongitudinalCurl.gradient_curl_free",
+      "OQ14.Packet05LongitudinalCurl.longitudinal_weak_curl_zero"
+    ]
+  },
+  {
+    "module": "Packet05MatrixWeakDerivative",
+    "declarations": [
+      "OQ14.Packet05MatrixWeakDerivative.matrix_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05ScalarTransmissionCommutator",
+    "declarations": [
+      "OQ14.Packet05ScalarTransmissionCommutator.matrix_quotient_decomposition",
+      "OQ14.Packet05ScalarTransmissionCommutator.matrixResidual_norm"
+    ]
+  },
+  {
+    "module": "Packet05ScalarTransmissionFlux",
+    "declarations": [
+      "OQ14.Packet05ScalarTransmissionFlux.flat_jump_matrix_quotient"
+    ]
+  },
+  {
+    "module": "Packet05TransverseDivCurl",
+    "declarations": [
+      "OQ14.Packet05TransverseDivCurl.transverse_divcurl"
+    ]
+  },
+  {
+    "module": "Packet05TransverseLocalH1",
+    "declarations": [
+      "OQ14.Packet05TransverseLocalH1.transverse_cutoff_h1"
+    ]
+  },
+  {
+    "module": "Packet06MaxwellScalarEquation",
+    "declarations": [
+      "OQ14.Packet06MaxwellScalarEquation.epsilon_memLp",
+      "OQ14.Packet06MaxwellScalarEquation.actual_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05ScalarDifferenceDivergence",
+    "declarations": [
+      "OQ14.Packet05ScalarDifferenceDivergence.translate_weak_divergence",
+      "OQ14.Packet05ScalarDifferenceDivergence.quotient_weak_divergence"
+    ]
+  },
+  {
+    "module": "Packet05ScalarDifferencePartial",
+    "declarations": [
+      "OQ14.Packet05ScalarDifferencePartial.translate_weak_partial",
+      "OQ14.Packet05ScalarDifferencePartial.quotient_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05ScalarEnergyAbsorption",
+    "declarations": [
+      "OQ14.Packet05ScalarEnergyAbsorption.absorb_scalar_cutoff_energy"
+    ]
+  },
+  {
+    "module": "Packet05ScalarH1Testing",
+    "declarations": [
+      "OQ14.Packet05ScalarH1Testing.weak_divergence_test_compact_h1"
+    ]
+  },
+  {
+    "module": "Packet05ScalarHermitianTesting",
+    "declarations": [
+      "OQ14.Packet05ScalarHermitianTesting.conjugate_weak_partial",
+      "OQ14.Packet05ScalarHermitianTesting.conjugate_compact",
+      "OQ14.Packet05ScalarHermitianTesting.weak_divergence_test_compact_h1_conj"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetric",
+    "declarations": [
+      "OQ14.Packet05GraphMetric.graph_metric_coercive",
+      "OQ14.Packet05GraphMetric.graph_metric_form"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricComplex",
+    "declarations": [
+      "OQ14.Packet05GraphMetricComplex.complex_graph_metric_coercive"
+    ]
+  },
+  {
+    "module": "Packet05ScalarCutoffTesting",
+    "declarations": [
+      "OQ14.Packet05ScalarCutoffTesting.cutoff_compact",
+      "OQ14.Packet05ScalarCutoffTesting.differentiated_divergence_cutoff_test"
+    ]
+  },
+  {
+    "module": "Packet05ScalarDielectricFlux",
+    "declarations": [
+      "OQ14.Packet05ScalarDielectricFlux.dielectric_flux_quotient"
+    ]
+  },
+  {
+    "module": "Packet05ScalarTransmissionTest",
+    "declarations": [
+      "OQ14.Packet05ScalarTransmissionTest.differentiated_flux_test"
+    ]
+  },
+  {
+    "module": "Packet05UniformGraphMetric",
+    "declarations": [
+      "OQ14.Packet05UniformGraphMetric.complex_graph_metric_uniform"
+    ]
+  },
+  {
+    "module": "Packet05WeightedMatrixDerivative",
+    "declarations": [
+      "OQ14.Packet05WeightedMatrixDerivative.compact_neg",
+      "OQ14.Packet05WeightedMatrixDerivative.compact_add",
+      "OQ14.Packet05WeightedMatrixDerivative.matrixField_compact",
+      "OQ14.Packet05WeightedMatrixDerivative.weighted_matrix_tangential_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricUpper",
+    "declarations": [
+      "OQ14.Packet05GraphMetricUpper.real_graph_metric_upper",
+      "OQ14.Packet05GraphMetricUpper.complex_graph_metric_upper"
+    ]
+  },
+  {
+    "module": "Packet05RegionalFluxCutoff",
+    "declarations": [
+      "OQ14.Packet05RegionalFluxCutoff.derivativePair_product_cutoff",
+      "OQ14.Packet05RegionalFluxCutoff.regional_flux_cutoff_divergence",
+      "OQ14.Packet05RegionalFluxCutoff.cutoff_source_vanishes_on"
+    ]
+  },
+  {
+    "module": "Packet05ScalarResidualBound",
+    "declarations": [
+      "OQ14.Packet05ScalarResidualBound.weight_norm_bound",
+      "OQ14.Packet05ScalarResidualBound.dielectric_matrix_residual_bound"
+    ]
+  },
+  {
+    "module": "Packet05GraphChartMatrix",
+    "declarations": [
+      "OQ14.Packet05GraphChartMatrix.inverse_jacobian_left",
+      "OQ14.Packet05GraphChartMatrix.inverse_jacobian_right",
+      "OQ14.Packet05GraphChartMatrix.metric_eq_pullback",
+      "OQ14.Packet05GraphChartMatrix.jacobian_determinant"
+    ]
+  },
+  {
+    "module": "Packet05GraphHermitianForm",
+    "declarations": [
+      "OQ14.Packet05GraphHermitianForm.graph_metric_hermitian_form"
+    ]
+  },
+  {
+    "module": "Packet05ScalarEnergyIdentity",
+    "declarations": [
+      "OQ14.Packet05ScalarEnergyIdentity.mulWeight_add",
+      "OQ14.Packet05ScalarEnergyIdentity.scalarProduct_add_left",
+      "OQ14.Packet05ScalarEnergyIdentity.differentiatedFlux_split",
+      "OQ14.Packet05ScalarEnergyIdentity.principal_energy_balance"
+    ]
+  },
+  {
+    "module": "Packet05GraphChartMap",
+    "declarations": [
+      "OQ14.Packet05GraphChartMap.graph_map_left_inverse",
+      "OQ14.Packet05GraphChartMap.graph_map_right_inverse",
+      "OQ14.Packet05GraphChartMap.graph_map_has_fderiv",
+      "OQ14.Packet05GraphChartMap.graph_derivative_coordinate"
+    ]
+  },
+  {
+    "module": "Packet05ScalarEnergyBound",
+    "declarations": [
+      "OQ14.Packet05ScalarEnergyBound.conjugate_norm_le",
+      "OQ14.Packet05ScalarEnergyBound.principal_energy_residual_bound"
+    ]
+  },
+  {
+    "module": "Packet05GraphChartHomeomorph",
+    "declarations": [
+      "OQ14.Packet05GraphChartHomeomorph.graph_map_height",
+      "OQ14.Packet05GraphChartHomeomorph.graph_map_positive_side",
+      "OQ14.Packet05GraphChartHomeomorph.graph_map_negative_side"
+    ]
+  },
+  {
+    "module": "Packet05PhysicalGraphChart",
+    "declarations": [
+      "OQ14.Packet05PhysicalGraphChart.horizontal_normal_invariant",
+      "OQ14.Packet05PhysicalGraphChart.liftedHeight_normal_invariant",
+      "OQ14.Packet05PhysicalGraphChart.liftedHeight_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ScalarCutoffBound",
+    "declarations": [
+      "OQ14.Packet05ScalarCutoffBound.cutoffDerivative_norm"
+    ]
+  },
+  {
+    "module": "Packet05GraphBoundaryNull",
+    "declarations": [
+      "OQ14.Packet05GraphBoundaryNull.continuous_graph_volume_zero"
+    ]
+  },
+  {
+    "module": "Packet05GraphPhaseCover",
+    "declarations": [
+      "OQ14.Packet05GraphPhaseCover.continuous_graph_phase_cover_ae"
+    ]
+  },
+  {
+    "module": "Packet05GraphVolume",
+    "declarations": [
+      "OQ14.Packet05GraphVolume.graphSplit_measurePreserving",
+      "OQ14.Packet05GraphVolume.graph_map_volume_preserving"
+    ]
+  },
+  {
+    "module": "Packet05GraphPullback",
+    "declarations": [
+      "OQ14.Packet05GraphPullback.pullback_ae",
+      "OQ14.Packet05GraphPullback.pullback_norm",
+      "OQ14.Packet05GraphPullback.graph_change_of_variables"
+    ]
+  },
+  {
+    "module": "Packet05GraphSmooth",
+    "declarations": [
+      "OQ14.Packet05GraphSmooth.liftedHeight_contDiff",
+      "OQ14.Packet05GraphSmooth.graphMap_contDiff",
+      "OQ14.Packet05GraphSmooth.inverseGraphMap_contDiff",
+      "OQ14.Packet05GraphSmooth.horizontal_basis_normal",
+      "OQ14.Packet05GraphSmooth.liftedHeight_normal_derivative",
+      "OQ14.Packet05GraphSmooth.graphMap_normal_derivative",
+      "OQ14.Packet05GraphSmooth.inverseGraphMap_normal_derivative"
+    ]
+  },
+  {
+    "module": "Packet05GraphNormalWeakDerivative",
+    "declarations": [
+      "OQ14.Packet05GraphNormalWeakDerivative.inverseTest_normal",
+      "OQ14.Packet05GraphNormalWeakDerivative.pullback_normal_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphTestChain",
+    "declarations": [
+      "OQ14.Packet05GraphTestChain.inverseGraphMap_derivative",
+      "OQ14.Packet05GraphTestChain.inverseTest_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphSlope",
+    "declarations": [
+      "OQ14.Packet05GraphSlope.liftedHeight_fderiv",
+      "OQ14.Packet05GraphSlope.slope_normal_invariant",
+      "OQ14.Packet05GraphSlope.slope_continuous",
+      "OQ14.Packet05GraphSlope.slope_contDiff"
+    ]
+  },
+  {
+    "module": "Packet05GraphSlopeNormal",
+    "declarations": [
+      "OQ14.Packet05GraphSlopeNormal.slope_factor",
+      "OQ14.Packet05GraphSlopeNormal.slope_normal_derivative"
+    ]
+  },
+  {
+    "module": "Packet05GraphSlopeMultiplier",
+    "declarations": [
+      "OQ14.Packet05GraphSlopeMultiplier.slopeC_contDiff",
+      "OQ14.Packet05GraphSlopeMultiplier.slopeC_normal_derivative",
+      "OQ14.Packet05GraphSlopeMultiplier.slopeC_memLp_top",
+      "OQ14.Packet05GraphSlopeMultiplier.slopeMul_ae"
+    ]
+  },
+  {
+    "module": "Packet05GraphSlopeTest",
+    "declarations": [
+      "OQ14.Packet05GraphSlopeTest.slopeC_graph_invariant",
+      "OQ14.Packet05GraphSlopeTest.slopeTest_normal"
+    ]
+  },
+  {
+    "module": "Packet05GraphTangentialWeakDerivative",
+    "declarations": [
+      "OQ14.Packet05GraphTangentialWeakDerivative.pullback_tangential_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphWeakDivergence",
+    "declarations": [
+      "OQ14.Packet05GraphWeakDivergence.inverseTest_derivative_pair",
+      "OQ14.Packet05GraphWeakDivergence.inverseTest_value_pair",
+      "OQ14.Packet05GraphWeakDivergence.graph_pullback_weak_divergence"
+    ]
+  },
+  {
+    "module": "Packet05GraphConstitutive",
+    "declarations": [
+      "OQ14.Packet05GraphConstitutive.transformed_scalar_flux"
+    ]
+  },
+  {
+    "module": "Packet05GraphDielectric",
+    "declarations": [
+      "OQ14.Packet05GraphDielectric.graph_dielectric_pullback"
+    ]
+  },
+  {
+    "module": "Packet05GraphH1Pullback",
+    "declarations": [
+      "OQ14.Packet05GraphH1Pullback.graph_pullback_h1"
+    ]
+  },
+  {
+    "module": "Packet05GraphL2Coercivity",
+    "declarations": [
+      "OQ14.Packet05GraphL2Coercivity.graph_metric_l2_coercive"
+    ]
+  },
+  {
+    "module": "Packet05DielectricEnergy",
+    "declarations": [
+      "OQ14.Packet05DielectricEnergy.dielectric_energy_lower"
+    ]
+  },
+  {
+    "module": "Packet05GraphGradientValues",
+    "declarations": [
+      "OQ14.Packet05GraphGradientValues.normal_slope_zero",
+      "OQ14.Packet05GraphGradientValues.pulledGradient_ae",
+      "OQ14.Packet05GraphGradientValues.pulledGradient_matches_chart"
+    ]
+  },
+  {
+    "module": "Packet05GraphL2Constitutive",
+    "declarations": [
+      "OQ14.Packet05GraphL2Constitutive.pulled_constitutive_ae",
+      "OQ14.Packet05GraphL2Constitutive.transformedFlux_ae",
+      "OQ14.Packet05GraphL2Constitutive.graph_constitutive_l2"
+    ]
+  },
+  {
+    "module": "Packet05GraphPiolaLinear",
+    "declarations": [
+      "OQ14.Packet05GraphPiolaLinear.pullback_add",
+      "OQ14.Packet05GraphPiolaLinear.slopeMul_add",
+      "OQ14.Packet05GraphPiolaLinear.transformedFlux_add"
+    ]
+  },
+  {
+    "module": "Packet05GraphScalarEquation",
+    "declarations": [
+      "OQ14.Packet05GraphScalarEquation.graph_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05GraphWeightedCoercivity",
+    "declarations": [
+      "OQ14.Packet05GraphWeightedCoercivity.weighted_graph_energy_coercive"
+    ]
+  },
+  {
+    "module": "Packet05GraphWeightedPairing",
+    "declarations": [
+      "OQ14.Packet05GraphWeightedPairing.slope_weighted_pairing"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedScalarEquation",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedScalarEquation.differentiated_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedSourceRegularity",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedSourceRegularity.weight_compact",
+      "OQ14.Packet05DifferentiatedSourceRegularity.derivativeMatrix_c2",
+      "OQ14.Packet05DifferentiatedSourceRegularity.differentiated_source_compact",
+      "OQ14.Packet05DifferentiatedSourceRegularity.differentiated_source_tangential_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphBinaryEquation",
+    "declarations": [
+      "OQ14.Packet05GraphBinaryEquation.graph_binary_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05GraphPairingAlgebra",
+    "declarations": [
+      "OQ14.Packet05GraphPairingAlgebra.conjugate_sub",
+      "OQ14.Packet05GraphPairingAlgebra.mulWeight_sub",
+      "OQ14.Packet05GraphPairingAlgebra.scalarProduct_sub_left"
+    ]
+  },
+  {
+    "module": "Packet05GraphPrincipalEnergy",
+    "declarations": [
+      "OQ14.Packet05GraphPrincipalEnergy.graph_principal_square_identity"
+    ]
+  },
+  {
+    "module": "Packet05GraphPrincipalCoercivity",
+    "declarations": [
+      "OQ14.Packet05GraphPrincipalCoercivity.graph_principal_coercive"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricFlux",
+    "declarations": [
+      "OQ14.Packet05GraphMetricFlux.metric_flux_coercivity"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricFluxValues",
+    "declarations": [
+      "OQ14.Packet05GraphMetricFluxValues.metricSquare_ae",
+      "OQ14.Packet05GraphMetricFluxValues.metricFlux_ae"
+    ]
+  },
+  {
+    "module": "Packet05GraphFluxExtension",
+    "declarations": [
+      "OQ14.Packet05GraphFluxExtension.matrixField_ae",
+      "OQ14.Packet05GraphFluxExtension.matrixField_eq_metricFlux"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDivergenceCongruence",
+    "declarations": [
+      "OQ14.Packet05RegionalDivergenceCongruence.divergence_on_of_ae_eq",
+      "OQ14.Packet05RegionalDivergenceCongruence.flux_local_ae_eq"
+    ]
+  },
+  {
+    "module": "Packet05ScalarNormalH2",
+    "declarations": [
+      "OQ14.Packet05ScalarNormalH2.scalar_phase_normal_normal"
+    ]
+  },
+  {
+    "module": "Packet05ScalarPrincipalLocalization",
+    "declarations": [
+      "OQ14.Packet05ScalarPrincipalLocalization.cutVector_ae",
+      "OQ14.Packet05ScalarPrincipalLocalization.square_cutoff_principal_pairing"
+    ]
+  },
+  {
+    "module": "Packet05CutoffReciprocal",
+    "declarations": [
+      "OQ14.Packet05CutoffReciprocal.reciprocalFunction_regular",
+      "OQ14.Packet05CutoffReciprocal.reciprocalTest_support",
+      "OQ14.Packet05CutoffReciprocal.reciprocalTest_identity"
+    ]
+  },
+  {
+    "module": "Packet05GraphDiagonalReciprocal",
+    "declarations": [
+      "OQ14.Packet05GraphDiagonalReciprocal.graph_diagonal_ne_zero",
+      "OQ14.Packet05GraphDiagonalReciprocal.graph_diagonal_reciprocal"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDifferentiatedScalar",
+    "declarations": [
+      "OQ14.Packet05RegionalDifferentiatedScalar.regional_differentiated_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05ScalarCutoffTransfer",
+    "declarations": [
+      "OQ14.Packet05ScalarCutoffTransfer.cutScalar_ae",
+      "OQ14.Packet05ScalarCutoffTransfer.real_cutoff_pairing",
+      "OQ14.Packet05ScalarCutoffTransfer.cutoff_weight_commute",
+      "OQ14.Packet05ScalarCutoffTransfer.cutoff_matrix_commute"
+    ]
+  },
+  {
+    "module": "Packet05ScalarFluxAlgebra",
+    "declarations": [
+      "OQ14.Packet05ScalarFluxAlgebra.cutScalar_sub",
+      "OQ14.Packet05ScalarFluxAlgebra.matrixField_add",
+      "OQ14.Packet05ScalarFluxAlgebra.flux_add",
+      "OQ14.Packet05ScalarFluxAlgebra.cutoff_flux_commute"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalizedCoercivity",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalizedCoercivity.localized_principal_coercivity"
+    ]
+  },
+  {
+    "module": "Packet05ScalarSquareCutoff",
+    "declarations": [
+      "OQ14.Packet05ScalarSquareCutoff.square_cutoff_scale",
+      "OQ14.Packet05ScalarSquareCutoff.square_cutoff_derivative_scale",
+      "OQ14.Packet05ScalarSquareCutoff.square_cutoff_derivative"
+    ]
+  },
+  {
+    "module": "Packet05RegionalScalarLocalization",
+    "declarations": [
+      "OQ14.Packet05RegionalScalarLocalization.localized_scalar_flux_identity",
+      "OQ14.Packet05RegionalScalarLocalization.localize_regional_scalar_equation"
+    ]
+  },
+  {
+    "module": "Packet05ScalarCutoffPairing",
+    "declarations": [
+      "OQ14.Packet05ScalarCutoffPairing.conjScalar_add",
+      "OQ14.Packet05ScalarCutoffPairing.conjScalar_two",
+      "OQ14.Packet05ScalarCutoffPairing.square_cutoff_test_pairing"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalDivergence",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalDivergence.localized_quotient_source_zero",
+      "OQ14.Packet05ScalarLocalDivergence.localized_source_test_zero",
+      "OQ14.Packet05ScalarLocalDivergence.localized_difference_divergence_test"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalFluxTest",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalFluxTest.local_differentiated_flux_test"
+    ]
+  },
+  {
+    "module": "Packet05ScalarVectorBounds",
+    "declarations": [
+      "OQ14.Packet05ScalarVectorBounds.matrixField_norm",
+      "OQ14.Packet05ScalarVectorBounds.vector_pairing_norm"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedScalarForcingDerivative",
+    "declarations": [
+      "OQ14.Packet05LocalizedScalarForcingDerivative.localized_forcing_tangential_derivative"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalizedEnergy",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalizedEnergy.localized_difference_energy_identity"
+    ]
+  },
+  {
+    "module": "Packet05ScalarPreAbsorption",
+    "declarations": [
+      "OQ14.Packet05ScalarPreAbsorption.localized_difference_preabsorption"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalEnergy",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalEnergy.local_difference_energy_identity"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalPreAbsorption",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalPreAbsorption.local_difference_preabsorption"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalizedFieldBounds",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalizedFieldBounds.localized_field_bounds"
+    ]
+  },
+  {
+    "module": "Packet05ScalarAbsorption",
+    "declarations": [
+      "OQ14.Packet05ScalarAbsorption.three_sum_square_le",
+      "OQ14.Packet05ScalarAbsorption.absorb_localized_scalar"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalQuotientEstimate",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalQuotientEstimate.local_difference_quotient_estimate"
+    ]
+  },
+  {
+    "module": "Packet05ScalarQuotientEstimate",
+    "declarations": [
+      "OQ14.Packet05ScalarQuotientEstimate.localized_difference_quotient_estimate"
+    ]
+  },
+  {
+    "module": "Packet05ScalarDirectionalUniformQuotients",
+    "declarations": [
+      "OQ14.Packet05ScalarDirectionalUniformQuotients.directional_uniform_gradient_quotient"
+    ]
+  },
+  {
+    "module": "Packet05ScalarDirectionalTangentialH2",
+    "declarations": [
+      "OQ14.Packet05ScalarDirectionalTangentialH2.directional_tangential_gradient_derivative"
+    ]
+  },
+  {
+    "module": "Packet05ScalarSecondTangential",
+    "declarations": [
+      "OQ14.Packet05ScalarSecondTangential.second_tangential_iteration"
+    ]
+  },
+  {
+    "module": "Packet05ScalarActualSecondTangential",
+    "declarations": [
+      "OQ14.Packet05ScalarActualSecondTangential.actual_second_tangential_derivatives"
+    ]
+  }
+]
