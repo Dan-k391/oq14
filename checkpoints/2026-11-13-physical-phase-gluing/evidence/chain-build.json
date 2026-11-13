@@ -1,0 +1,1215 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-physical-phase-gluing/objects/adopted",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 37 physical phase and gluing modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet05RegionalForcingBootstrap",
+      "source": "lean/Packet05RegionalForcingBootstrap.lean",
+      "source_sha256": "d7b7c04ce873c3270b46ebec0309680e339b69c4bfaa839d7c8c2ed564560c6a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05RegionalForcingBootstrap.olean",
+        "D:\\oq14\\lean\\Packet05RegionalForcingBootstrap.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.98,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05RegionalForcingBootstrap-chain.log",
+      "log_sha256": "64a173a1f84ded2625f5d8beb80f433aa138939c44f127285f6c5eadb6ba0c0a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalForcingBootstrap.regional_forcing_bootstrap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b8ec7405a5823b8e179cb1342683d57a057219170ea30b923d5d685044441357"
+    },
+    {
+      "module": "Packet05RegionalBootstrappedScalar",
+      "source": "lean/Packet05RegionalBootstrappedScalar.lean",
+      "source_sha256": "b9665d8b6048263a0c36e184b8f204464f7cd8c62f9950941bb44ad5546fd958",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05RegionalBootstrappedScalar.olean",
+        "D:\\oq14\\lean\\Packet05RegionalBootstrappedScalar.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.94,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05RegionalBootstrappedScalar-chain.log",
+      "log_sha256": "8fa3c4836ed16d42be7fa1f75f52b9ce4ea7b700f30bf559ba76d1ffb6dd3554",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalBootstrappedScalar.regional_bootstrapped_scalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a6cf7bcda747da2fc41b8c3c088a4c00647068d50c0dd27b1020f1554240f706"
+    },
+    {
+      "module": "Packet05ChartOrientation",
+      "source": "lean/Packet05ChartOrientation.lean",
+      "source_sha256": "1d4e9529af08350b846bad274a8bf8d55f60dd9e92c8533aad7f751f11cd7466",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartOrientation.olean",
+        "D:\\oq14\\lean\\Packet05ChartOrientation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.52,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartOrientation-chain.log",
+      "log_sha256": "47da50de2d19e4e14a0d0502420aa851fd55eebc5c952f9621afb7d93d8477f8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartOrientation.reflect_horizontal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientation.reflect_height",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientation.chart_orientation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientation.oriented_graph_regular",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientation.oriented_graph_compact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8d7fa3c3880233111b19818051c68cd38df81fe8654b7cb3260273d58a5304c7"
+    },
+    {
+      "module": "Packet05ChartOrientationMeasure",
+      "source": "lean/Packet05ChartOrientationMeasure.lean",
+      "source_sha256": "4e7a3cc9896de17b32ac37821ca41e1f297d5e8d596436d78a2a5ffaa1eb2420",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartOrientationMeasure.olean",
+        "D:\\oq14\\lean\\Packet05ChartOrientationMeasure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.81,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartOrientationMeasure-chain.log",
+      "log_sha256": "86703d652c348e7f9d4591949b51018515d8f40ef7dafbb7f3a56b9312cb0d44",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartOrientationMeasure.reflect_involution",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientationMeasure.reflect_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientationMeasure.reflect_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartOrientationMeasure.oriented_coordinates_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3eaa2f87349d343914dbe72314c51bacd77213592db285142dbe9ed6604c963f"
+    },
+    {
+      "module": "Packet05ChartBasis",
+      "source": "lean/Packet05ChartBasis.lean",
+      "source_sha256": "739cdca9d15ecc42280038f8f790a8b4ab58a9d29acf845e7e3886368702a231",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartBasis.olean",
+        "D:\\oq14\\lean\\Packet05ChartBasis.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.45,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartBasis-chain.log",
+      "log_sha256": "f2bc7cf927b3dae0cfd25405c35b139ef1ee1b4311883454adabfcfeee91b328",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartBasis.inverse_oriented_basis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartBasis.inverse_oriented_left",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartBasis.inverse_oriented_right",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "86a6420cfcca8c7d3549a7212479426d958b7dd471bb1dc5d1597c625f021577"
+    },
+    {
+      "module": "Packet05ChartLinearEquiv",
+      "source": "lean/Packet05ChartLinearEquiv.lean",
+      "source_sha256": "b9eb503a51b354629da83207a8c7aac9566cf8fac1fddd1aec6c4ed734c1cf5d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartLinearEquiv.olean",
+        "D:\\oq14\\lean\\Packet05ChartLinearEquiv.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.23,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartLinearEquiv-chain.log",
+      "log_sha256": "8db480c3459da8293edc2c3d980764b85e6b558451a9faa437bef6efac43aa3f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartLinearEquiv.oriented_inverse_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartLinearEquiv.oriented_forward_basis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2149a045b1bf443eead036fecf42488ada41ccae8e8edb77415122437cd0383f"
+    },
+    {
+      "module": "Packet05ChartTestTransport",
+      "source": "lean/Packet05ChartTestTransport.lean",
+      "source_sha256": "efdc5fcdee3e3bbec96b462d6543241b7a93a158f713cd6301daae21cffe595e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartTestTransport.olean",
+        "D:\\oq14\\lean\\Packet05ChartTestTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.42,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartTestTransport-chain.log",
+      "log_sha256": "936517cecbd7858f7f37a3ace566d534d2ffb2e852469cc8646c0921f0700cb3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartTestTransport.forward_test_partial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "78d56835d6987eeb6254c6245c7e35beec232523f1b1f79ea7c46a77c55af544"
+    },
+    {
+      "module": "Packet05ChartWeakGradient",
+      "source": "lean/Packet05ChartWeakGradient.lean",
+      "source_sha256": "45761d51ea5db66050e13c5427bfbed2682938e23f3cb7cf281a1d8956cc1615",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartWeakGradient.olean",
+        "D:\\oq14\\lean\\Packet05ChartWeakGradient.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.87,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartWeakGradient-chain.log",
+      "log_sha256": "a6936d05cc45f0f4637632d1fce1c99e019c82c7afb592ce8f8342da0e463637",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartWeakGradient.chartPull_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartWeakGradient.chart_change_variables",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartWeakGradient.forward_value_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartWeakGradient.forward_derivative_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartWeakGradient.chart_weak_partial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f50c77b6ec48686784b90e63881c722a76ebb5dbdd9d1f6b0b5730fdc9ada9e7"
+    },
+    {
+      "module": "Packet05ChartWeakDivergence",
+      "source": "lean/Packet05ChartWeakDivergence.lean",
+      "source_sha256": "9197be0e96354054b2d3c57080e078a72bfa66dce8f597ba6a853f18db0dc98d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartWeakDivergence.olean",
+        "D:\\oq14\\lean\\Packet05ChartWeakDivergence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.22,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartWeakDivergence-chain.log",
+      "log_sha256": "abd455f558b2b199f8cbb029327dee9b0b826227e4a9a5dd72ba38de86a47c12",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartWeakDivergence.forward_test_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartWeakDivergence.chart_regional_divergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f05c3289560d68522d6b0732d04710b00f14351b7fe9b12dd38d34d80e3f4e18"
+    },
+    {
+      "module": "Packet05ChartH2",
+      "source": "lean/Packet05ChartH2.lean",
+      "source_sha256": "9abed59bc88aeb76ba6e5f3b812b83986460e400f56451bfcd8f4fb8b1aebcd9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartH2.olean",
+        "D:\\oq14\\lean\\Packet05ChartH2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.44,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartH2-chain.log",
+      "log_sha256": "5da2242546b71f93913565717bc99ab76572ebd5083c1f9d713059bfe121c1b8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartH2.chart_pull_compact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartH2.chart_pull_h2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartH2.chart_vector_compact_h2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "95a0a98c2c5c54bbcf49a897746d086d00db1e9aa36f4f66d1caefba847b75c3"
+    },
+    {
+      "module": "Packet05ChartConstitutive",
+      "source": "lean/Packet05ChartConstitutive.lean",
+      "source_sha256": "2d7f6e0d9444f6c01c0bc8b2326e90dff6063292c68ff858e5c6846ffd8a5fe1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartConstitutive.olean",
+        "D:\\oq14\\lean\\Packet05ChartConstitutive.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.92,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartConstitutive-chain.log",
+      "log_sha256": "994b9251958eb4a56a5f48f9c20daaaef5364a5799fdba96fb68e8f85e03b6cb",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartConstitutive.chartVector_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartConstitutive.chart_constitutive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dfc5932893d2cc3dc57e49017f0db08f5f166db069231fc65a5a69934ca2866f"
+    },
+    {
+      "module": "Packet05ModeCorrectionAdapter",
+      "source": "lean/Packet05ModeCorrectionAdapter.lean",
+      "source_sha256": "9da7cb080197d9c44e8f1b849b425c1da1b3290e853a3174687fa96eeb4a9c23",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ModeCorrectionAdapter.olean",
+        "D:\\oq14\\lean\\Packet05ModeCorrectionAdapter.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.91,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ModeCorrectionAdapter-chain.log",
+      "log_sha256": "bf396008f87084b56fe14b63225be7cdd889263f9ceaf793505ed5bfba5f2b97",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ModeCorrectionAdapter.bumpTest_c2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ModeCorrectionAdapter.bumpTest_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ModeCorrectionAdapter.actual_correction_h2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2c2ff6af620713336b71ddd897e8225e75181a314d6411b70a90cb81cd59014b"
+    },
+    {
+      "module": "Packet05ActualOrientedModeScalar",
+      "source": "lean/Packet05ActualOrientedModeScalar.lean",
+      "source_sha256": "501ce985b4fbd45c691f10ca5de6c2755e37053a7b0bf02e9602e5edcc562aa4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualOrientedModeScalar.olean",
+        "D:\\oq14\\lean\\Packet05ActualOrientedModeScalar.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.8,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualOrientedModeScalar-chain.log",
+      "log_sha256": "2f6a74f906ce588f4077a2fd2dbcff801b6c73e3caa2b5ee2ebba11cdc8dc1e8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualOrientedModeScalar.oriented_mode_scalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "410ef1ba58ec5e271cf68624ae016bc3f4bd4a066930880fdbb38e8bfb9d0713"
+    },
+    {
+      "module": "Packet05ChartBinaryMatch",
+      "source": "lean/Packet05ChartBinaryMatch.lean",
+      "source_sha256": "fb4e08ae7847b2ef0de4fe6bc0af0b9ffeeae06db82932633996d262d326286b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartBinaryMatch.olean",
+        "D:\\oq14\\lean\\Packet05ChartBinaryMatch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.24,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartBinaryMatch-chain.log",
+      "log_sha256": "983f744577692ba7675de69f2799f7784383ed015eae10a3fce9feeb63fe4f23",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartBinaryMatch.chart_binary_match_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2b6e1cf2ba4c2a302c9ec84c50f39c40a1e9450ca1a2758189649fdf3198f8ff"
+    },
+    {
+      "module": "Packet05ActualChartSide",
+      "source": "lean/Packet05ActualChartSide.lean",
+      "source_sha256": "d8c4f37b3bfa99847f45555b3e300c1363f7f9e840b4b531f4032b5c46c100bd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualChartSide.olean",
+        "D:\\oq14\\lean\\Packet05ActualChartSide.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.51,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualChartSide-chain.log",
+      "log_sha256": "cb58f8c007dc04d06a51e437de8c0bddfc33f411b0c915a8775ac37d0d99d337",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualChartSide.actual_chart_side",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8f0f9d86385353cc9f13e43e8bb3a8d422da7d29471c7a3295e5c34ff39db25f"
+    },
+    {
+      "module": "Packet05RegionalBinaryScalarAE",
+      "source": "lean/Packet05RegionalBinaryScalarAE.lean",
+      "source_sha256": "84ba6d9c635db402e663df195dee7890c545d551e1a41ec2b42e5b3f127e27da",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05RegionalBinaryScalarAE.olean",
+        "D:\\oq14\\lean\\Packet05RegionalBinaryScalarAE.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.86,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05RegionalBinaryScalarAE-chain.log",
+      "log_sha256": "fb82766edb0f2a41a5dae9875902911b92d862e095541b755690b8b84234983d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05RegionalBinaryScalarAE.regional_binary_scalar_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f0c42f7705674cc587291d628828facd7e9e03eabf60dfcdbe48114d36d602fd"
+    },
+    {
+      "module": "Packet05GraphForcingSign",
+      "source": "lean/Packet05GraphForcingSign.lean",
+      "source_sha256": "6ed49f4d5f45572c34f6656c3dcdb85fa692babda1b1f34d59679be624a94d86",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05GraphForcingSign.olean",
+        "D:\\oq14\\lean\\Packet05GraphForcingSign.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.06,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05GraphForcingSign-chain.log",
+      "log_sha256": "04d76087b72b928151a0522bd8c3d2a55d3753d126df83111827ff67dbf197d7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05GraphForcingSign.negative_binary_forcing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e1e75ba1b328b0ebd882661ecbbd1dd0dbd7f1b226cdef61f8ef373066a5ab18"
+    },
+    {
+      "module": "Packet05OrientedGraphForcing",
+      "source": "lean/Packet05OrientedGraphForcing.lean",
+      "source_sha256": "cfc52b112479a666bdc9448b7d9874b3d322b30e171da4eca0d57d464410373c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05OrientedGraphForcing.olean",
+        "D:\\oq14\\lean\\Packet05OrientedGraphForcing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.48,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05OrientedGraphForcing-chain.log",
+      "log_sha256": "b619abb6dd58b83583d5ae13dc278f8eac95ac73000738a03c3e9ae8a51bfca0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05OrientedGraphForcing.oriented_graph_forcing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cd653878c582c63604c0cf058c0f953090362632b8def1db91bae63fd9fd2b21"
+    },
+    {
+      "module": "Packet05ActualModeGraphEquation",
+      "source": "lean/Packet05ActualModeGraphEquation.lean",
+      "source_sha256": "843d53d612c4b204fee48d0d0e50a828877f15532fef7d402d626fde078faf35",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualModeGraphEquation.olean",
+        "D:\\oq14\\lean\\Packet05ActualModeGraphEquation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.2,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualModeGraphEquation-chain.log",
+      "log_sha256": "09a59b213e5a8e1f6486a1f2cf15a8ce9f28673aa002d78102a71b2ff92e21e9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualModeGraphEquation.actual_mode_graph_equation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "344941da37470c775854745c590694853637a89256a05ba0ccb27c58d178c98f"
+    },
+    {
+      "module": "Packet05HostNormalization",
+      "source": "lean/Packet05HostNormalization.lean",
+      "source_sha256": "f99e68cc195b9b4282be462aed445b47672de023f01013d228b72b240ec34644",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05HostNormalization.olean",
+        "D:\\oq14\\lean\\Packet05HostNormalization.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.4,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05HostNormalization-chain.log",
+      "log_sha256": "6397f8882ba3377df2babeb245493dada31ad29b419bd9bd5aa76a720936ea16",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05HostNormalization.regional_divergence_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05HostNormalization.normalized_constitutive_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05HostNormalization.normalized_binary_match_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "857a4d45eec398221e1a667e8e6c083e27cfbcb0a7a4c8b07b96305025d0a63e"
+    },
+    {
+      "module": "Packet05HostChartMatch",
+      "source": "lean/Packet05HostChartMatch.lean",
+      "source_sha256": "e86b5ff73b2f0118f4dee1f0a359b0a5b5d16969dc74ab6ae4a998abc224eb32",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05HostChartMatch.olean",
+        "D:\\oq14\\lean\\Packet05HostChartMatch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.11,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05HostChartMatch-chain.log",
+      "log_sha256": "1977e915f3a71491511678e0634f4936b8bbab786c057651dff4913441e94558",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05HostChartMatch.host_chart_match_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5a56a814425dc5384f88bb64273251c63a2c2efe83c6fbc6a03651ec47c1d3c9"
+    },
+    {
+      "module": "Packet05ActualHostModeGraph",
+      "source": "lean/Packet05ActualHostModeGraph.lean",
+      "source_sha256": "d23bccfaf5ca3abfcf2ee5e0266426ecffe9231a76fdc2ca55df8cc51c0fccc2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualHostModeGraph.olean",
+        "D:\\oq14\\lean\\Packet05ActualHostModeGraph.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.63,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualHostModeGraph-chain.log",
+      "log_sha256": "49663e57746fdeb6217ba71e4c80f7de72d142439f1a16ec9d0c23f1fea2ba78",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualHostModeGraph.actual_host_mode_graph",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "37990769c90e3583d4e8ac6c1328e6e895b1fa51ef1eb7e7b723fe3a10286b77"
+    },
+    {
+      "module": "Packet05ActualScalarTangentialContinuity",
+      "source": "lean/Packet05ActualScalarTangentialContinuity.lean",
+      "source_sha256": "56f6ac05958e6f08ccf1830a1c36d1d9e5eb1b36b8a83bc1789646e419a53fe2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualScalarTangentialContinuity.olean",
+        "D:\\oq14\\lean\\Packet05ActualScalarTangentialContinuity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.74,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualScalarTangentialContinuity-chain.log",
+      "log_sha256": "9fa0ce384fcc2576bf5cb8563fa1236c759f9ca573dba6da55c77b94e0abb47c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualScalarTangentialContinuity.actual_tangential_gradient_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b4119fa8407ea99fc409cc8f5e6180c05fd9650dfc68d111f4cf360eb20b0c0a"
+    },
+    {
+      "module": "Packet05ScalarCutoffRepresentative",
+      "source": "lean/Packet05ScalarCutoffRepresentative.lean",
+      "source_sha256": "62cb728fd64531a1ea6270fc32c0fe5f1a4a4c6e4bd80be1cee23354af8a55ff",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ScalarCutoffRepresentative.olean",
+        "D:\\oq14\\lean\\Packet05ScalarCutoffRepresentative.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.09,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ScalarCutoffRepresentative-chain.log",
+      "log_sha256": "e6e38293ad0c09a2e7d072602ce9c1563e4b04031dc6c696b5f89a84041b1b64",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ScalarCutoffRepresentative.uncut_on_plateau",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "74ce1369209f91f2ec6e81088fa70da974e377207b1401082816dc39e53c5693"
+    },
+    {
+      "module": "Packet05ActualTransmissionContinuous",
+      "source": "lean/Packet05ActualTransmissionContinuous.lean",
+      "source_sha256": "ba778aff595d0981c8f7c0ee5aca52ba8a35d0fe12e7326fac616889b05bb92a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualTransmissionContinuous.olean",
+        "D:\\oq14\\lean\\Packet05ActualTransmissionContinuous.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.39,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualTransmissionContinuous-chain.log",
+      "log_sha256": "700e1daf33e14e8974eed6c87a4be01b881a9ea4564ab34abe3eeae6b7428620",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualTransmissionContinuous.actual_transmission_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9b472066889ffb48ce7049b5311e601ba4aa25168ec14812ac08cc6ceb51c8b1"
+    },
+    {
+      "module": "Packet05BootstrapRepresentativeTransfer",
+      "source": "lean/Packet05BootstrapRepresentativeTransfer.lean",
+      "source_sha256": "c9b406466e870a97a6777ea5886edd1c6dc194569b80567427aea113b3f78ad9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05BootstrapRepresentativeTransfer.olean",
+        "D:\\oq14\\lean\\Packet05BootstrapRepresentativeTransfer.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.81,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05BootstrapRepresentativeTransfer-chain.log",
+      "log_sha256": "8e95e6167a713f871dbc2967d1332900780bf27876c4d27035b90ae12c49a615",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05BootstrapRepresentativeTransfer.bootstrap_representatives_on_plateau",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a3ed3a8d9fc115b6aa06086866dc43b22f91aa0029c5dfbf6b085ea7e9309b38"
+    },
+    {
+      "module": "Packet05PhysicalPhaseBranches",
+      "source": "lean/Packet05PhysicalPhaseBranches.lean",
+      "source_sha256": "7c4e909730fdb586651cd158147fcc7005275bb0f61ef54fd4c3f8d8ca9be416",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05PhysicalPhaseBranches.olean",
+        "D:\\oq14\\lean\\Packet05PhysicalPhaseBranches.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.4,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05PhysicalPhaseBranches-chain.log",
+      "log_sha256": "6dbd258b9116a9f08182752e397a198437d98d95adce1f9cb6cd88d97be347fe",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05PhysicalPhaseBranches.physical_phase_branches",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f2693392e0716e27600bdb576b52c86325e375671b6786c29a8171718bf540fd"
+    },
+    {
+      "module": "Packet05GraphPhaseReconstruction",
+      "source": "lean/Packet05GraphPhaseReconstruction.lean",
+      "source_sha256": "3a852a22966252361b77f32da573507ad82cfd5eff394b1c4caf577a8e0acd9d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05GraphPhaseReconstruction.olean",
+        "D:\\oq14\\lean\\Packet05GraphPhaseReconstruction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.31,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05GraphPhaseReconstruction-chain.log",
+      "log_sha256": "c267df2cc9350717c5ab3501ea037f95683d0ff5f6f961c0e8c23663efbc3d2a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05GraphPhaseReconstruction.graph_phase_reconstruction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5a8d7b1463f26ce6aee077125537b494d7d9b17554897752516a3a9324dc2fbc"
+    },
+    {
+      "module": "Packet05ChartCorrectionContinuous",
+      "source": "lean/Packet05ChartCorrectionContinuous.lean",
+      "source_sha256": "1f17e8d29e2a9909c546a3e5ae08fa3726c327db56c828ff5ecd7a0ec9a3689d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartCorrectionContinuous.olean",
+        "D:\\oq14\\lean\\Packet05ChartCorrectionContinuous.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.91,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartCorrectionContinuous-chain.log",
+      "log_sha256": "274f2cd385834562b4db1d18f093281bcacd43923c5aa2cc8db1e17d582291b8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartCorrectionContinuous.chartCorrection_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ChartCorrectionContinuous.chartCorrection_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "523886259df194e8b94f93f967051816396d5846779df841b2b6aa1adbe01301"
+    },
+    {
+      "module": "Packet05ChartElectricIdentity",
+      "source": "lean/Packet05ChartElectricIdentity.lean",
+      "source_sha256": "a463f30a50b862d7b2642a5ec3573210d4897ad1674ccf6aaf950feb15010196",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ChartElectricIdentity.olean",
+        "D:\\oq14\\lean\\Packet05ChartElectricIdentity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.12,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ChartElectricIdentity-chain.log",
+      "log_sha256": "648199e26a6896bdf77f37cc6224968f801cdcb01a9c0651af273b0d92d2ea65",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ChartElectricIdentity.chart_electric_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8201ecaf85c85b914eb87201132af8cf06dea40353caf4700591cf50b84010ef"
+    },
+    {
+      "module": "Packet05ActualChartPhaseBranches",
+      "source": "lean/Packet05ActualChartPhaseBranches.lean",
+      "source_sha256": "281081a31e4f848658d8f9f1309c62145b2b74c72c273c2a15b7756e956b199a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05ActualChartPhaseBranches.olean",
+        "D:\\oq14\\lean\\Packet05ActualChartPhaseBranches.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.56,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05ActualChartPhaseBranches-chain.log",
+      "log_sha256": "963f7035beb2a41f3edc0d6f0a87d301171f2f90764961f710333aaa59396e31",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualChartPhaseBranches.actual_chart_phase_branches",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c7542d5efe15794fddd831e03341db7167450b152ede1056df673c11ddcdb22c"
+    },
+    {
+      "module": "Packet05PhysicalChartBranches",
+      "source": "lean/Packet05PhysicalChartBranches.lean",
+      "source_sha256": "f4d5aa33700a1406d9076bf90af9bdeeb5774593377e09fdfa35577c13f92dd8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05PhysicalChartBranches.olean",
+        "D:\\oq14\\lean\\Packet05PhysicalChartBranches.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.04,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05PhysicalChartBranches-chain.log",
+      "log_sha256": "0b5aab2bdec3915b16ae48cea03d905f08dee641becdedd0bfc282aab62a8779",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05PhysicalChartBranches.inverse_graph_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhysicalChartBranches.physicalFlat_measure_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhysicalChartBranches.physicalFlat_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhysicalChartBranches.physical_chart_branches",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e4b9a65304a4cb3fe2481aec9def6720b49d32fa627bf4b2e4bc3ba16dd2a9ad"
+    },
+    {
+      "module": "Packet05TwoPhysicalPhaseBranches",
+      "source": "lean/Packet05TwoPhysicalPhaseBranches.lean",
+      "source_sha256": "3ab7474e3699177bb251c81aa5d51bded6c036432c353a25fbc6f7205f5c39b2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05TwoPhysicalPhaseBranches.olean",
+        "D:\\oq14\\lean\\Packet05TwoPhysicalPhaseBranches.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.7,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05TwoPhysicalPhaseBranches-chain.log",
+      "log_sha256": "d2bc6a962d004726eed5e3b8a952727ce6e45f0dbc56ad46dada40f4eda06d0a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05TwoPhysicalPhaseBranches.two_physical_phase_branches",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "618086eef2ef7eaaf30f0309850979d68cc26c6ee01a4e064abb1e2743c801d7"
+    },
+    {
+      "module": "Packet05SmoothIncidentH2",
+      "source": "lean/Packet05SmoothIncidentH2.lean",
+      "source_sha256": "11a31e9a464612734b53612a52d44464cc9ee427b828315479a78eee82dd84cc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05SmoothIncidentH2.olean",
+        "D:\\oq14\\lean\\Packet05SmoothIncidentH2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.96,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05SmoothIncidentH2-chain.log",
+      "log_sha256": "4b734e2e7cbea845c6b479bb5fc72aeb48e3616d6be9e5ed9a82a3a67bd510f8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05SmoothIncidentH2.compact_smooth_h2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6ac1602be88292c9f34fb67c3443e644cf22aec42869bc5efdb9fd2d48400c89"
+    },
+    {
+      "module": "Packet05IncidentCorrectionH2",
+      "source": "lean/Packet05IncidentCorrectionH2.lean",
+      "source_sha256": "43319a76362ad97570ff42394deaf55d227b7f1f4bed4016ecd21503250f480e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05IncidentCorrectionH2.olean",
+        "D:\\oq14\\lean\\Packet05IncidentCorrectionH2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.16,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05IncidentCorrectionH2-chain.log",
+      "log_sha256": "c6f57b6ccf4836d9eda5213ce499594ef90fdd99e67142c2897f7b6253489487",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05IncidentCorrectionH2.h2_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05IncidentCorrectionH2.incident_plus_correction_h2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7252b4a74888fd7451be899e00aa0610ef9e7ea3e5e86556788898b95a9ab4ee"
+    },
+    {
+      "module": "Packet05PhaseGluing",
+      "source": "lean/Packet05PhaseGluing.lean",
+      "source_sha256": "c81e58d949a36584b845fd6aa36baee08e406eae032d0eb4970b9d33977014d0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05PhaseGluing.olean",
+        "D:\\oq14\\lean\\Packet05PhaseGluing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": null,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05PhaseGluing-chain.log",
+      "log_sha256": "a5569b767873a9879bc9299c382b9403f31f356f60041398d67ed35335e8cebf",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05PhaseGluing.closure_inter_open",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhaseGluing.overlap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhaseGluing.finite_phase_gluing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "08507b9a4bd3d3be925503cd4f8b6167fc96903bbfb3c90ab17fee689fc8563c"
+    },
+    {
+      "module": "Packet05PhaseCoverBound",
+      "source": "lean/Packet05PhaseCoverBound.lean",
+      "source_sha256": "cfe7f70e7270a9b6d2b8a079d88a65e54af22ac1cbf42a5f8c125a26994d91af",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-physical-phase-gluing\\objects\\adopted\\Packet05PhaseCoverBound.olean",
+        "D:\\oq14\\lean\\Packet05PhaseCoverBound.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": null,
+      "log": "checkpoints/2026-11-13-physical-phase-gluing/evidence/Packet05PhaseCoverBound-chain.log",
+      "log_sha256": "52b111dd4146258cf94c4c5714fbdbf79cd01d02192c33d3e986c7872b9fd276",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05PhaseCoverBound.finite_uniform_gluing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05PhaseCoverBound.compact_uniform_gluing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "33d614c953ab2b06982222c0544933bce2a3982f2b5cf4182c6f144ee264e523"
+    }
+  ],
+  "module_count": 37,
+  "report_count": 67
+}

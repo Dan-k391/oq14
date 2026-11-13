@@ -1,0 +1,254 @@
+[
+  {
+    "module": "Packet05RegionalForcingBootstrap",
+    "declarations": [
+      "OQ14.Packet05RegionalForcingBootstrap.regional_forcing_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet05RegionalBootstrappedScalar",
+    "declarations": [
+      "OQ14.Packet05RegionalBootstrappedScalar.regional_bootstrapped_scalar"
+    ]
+  },
+  {
+    "module": "Packet05ChartOrientation",
+    "declarations": [
+      "OQ14.Packet05ChartOrientation.reflect_horizontal",
+      "OQ14.Packet05ChartOrientation.reflect_height",
+      "OQ14.Packet05ChartOrientation.chart_orientation",
+      "OQ14.Packet05ChartOrientation.oriented_graph_regular",
+      "OQ14.Packet05ChartOrientation.oriented_graph_compact"
+    ]
+  },
+  {
+    "module": "Packet05ChartOrientationMeasure",
+    "declarations": [
+      "OQ14.Packet05ChartOrientationMeasure.reflect_involution",
+      "OQ14.Packet05ChartOrientationMeasure.reflect_norm",
+      "OQ14.Packet05ChartOrientationMeasure.reflect_measure_preserving",
+      "OQ14.Packet05ChartOrientationMeasure.oriented_coordinates_measure_preserving"
+    ]
+  },
+  {
+    "module": "Packet05ChartBasis",
+    "declarations": [
+      "OQ14.Packet05ChartBasis.inverse_oriented_basis",
+      "OQ14.Packet05ChartBasis.inverse_oriented_left",
+      "OQ14.Packet05ChartBasis.inverse_oriented_right"
+    ]
+  },
+  {
+    "module": "Packet05ChartLinearEquiv",
+    "declarations": [
+      "OQ14.Packet05ChartLinearEquiv.oriented_inverse_measure_preserving",
+      "OQ14.Packet05ChartLinearEquiv.oriented_forward_basis"
+    ]
+  },
+  {
+    "module": "Packet05ChartTestTransport",
+    "declarations": [
+      "OQ14.Packet05ChartTestTransport.forward_test_partial"
+    ]
+  },
+  {
+    "module": "Packet05ChartWeakGradient",
+    "declarations": [
+      "OQ14.Packet05ChartWeakGradient.chartPull_ae",
+      "OQ14.Packet05ChartWeakGradient.chart_change_variables",
+      "OQ14.Packet05ChartWeakGradient.forward_value_pair",
+      "OQ14.Packet05ChartWeakGradient.forward_derivative_pair",
+      "OQ14.Packet05ChartWeakGradient.chart_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05ChartWeakDivergence",
+    "declarations": [
+      "OQ14.Packet05ChartWeakDivergence.forward_test_support",
+      "OQ14.Packet05ChartWeakDivergence.chart_regional_divergence"
+    ]
+  },
+  {
+    "module": "Packet05ChartH2",
+    "declarations": [
+      "OQ14.Packet05ChartH2.chart_pull_compact",
+      "OQ14.Packet05ChartH2.chart_pull_h2",
+      "OQ14.Packet05ChartH2.chart_vector_compact_h2"
+    ]
+  },
+  {
+    "module": "Packet05ChartConstitutive",
+    "declarations": [
+      "OQ14.Packet05ChartConstitutive.chartVector_ae",
+      "OQ14.Packet05ChartConstitutive.chart_constitutive"
+    ]
+  },
+  {
+    "module": "Packet05ModeCorrectionAdapter",
+    "declarations": [
+      "OQ14.Packet05ModeCorrectionAdapter.bumpTest_c2",
+      "OQ14.Packet05ModeCorrectionAdapter.bumpTest_support",
+      "OQ14.Packet05ModeCorrectionAdapter.actual_correction_h2"
+    ]
+  },
+  {
+    "module": "Packet05ActualOrientedModeScalar",
+    "declarations": [
+      "OQ14.Packet05ActualOrientedModeScalar.oriented_mode_scalar"
+    ]
+  },
+  {
+    "module": "Packet05ChartBinaryMatch",
+    "declarations": [
+      "OQ14.Packet05ChartBinaryMatch.chart_binary_match_ae"
+    ]
+  },
+  {
+    "module": "Packet05ActualChartSide",
+    "declarations": [
+      "OQ14.Packet05ActualChartSide.actual_chart_side"
+    ]
+  },
+  {
+    "module": "Packet05RegionalBinaryScalarAE",
+    "declarations": [
+      "OQ14.Packet05RegionalBinaryScalarAE.regional_binary_scalar_ae"
+    ]
+  },
+  {
+    "module": "Packet05GraphForcingSign",
+    "declarations": [
+      "OQ14.Packet05GraphForcingSign.negative_binary_forcing"
+    ]
+  },
+  {
+    "module": "Packet05OrientedGraphForcing",
+    "declarations": [
+      "OQ14.Packet05OrientedGraphForcing.oriented_graph_forcing"
+    ]
+  },
+  {
+    "module": "Packet05ActualModeGraphEquation",
+    "declarations": [
+      "OQ14.Packet05ActualModeGraphEquation.actual_mode_graph_equation"
+    ]
+  },
+  {
+    "module": "Packet05HostNormalization",
+    "declarations": [
+      "OQ14.Packet05HostNormalization.regional_divergence_smul",
+      "OQ14.Packet05HostNormalization.normalized_constitutive_ae",
+      "OQ14.Packet05HostNormalization.normalized_binary_match_ae"
+    ]
+  },
+  {
+    "module": "Packet05HostChartMatch",
+    "declarations": [
+      "OQ14.Packet05HostChartMatch.host_chart_match_ae"
+    ]
+  },
+  {
+    "module": "Packet05ActualHostModeGraph",
+    "declarations": [
+      "OQ14.Packet05ActualHostModeGraph.actual_host_mode_graph"
+    ]
+  },
+  {
+    "module": "Packet05ActualScalarTangentialContinuity",
+    "declarations": [
+      "OQ14.Packet05ActualScalarTangentialContinuity.actual_tangential_gradient_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ScalarCutoffRepresentative",
+    "declarations": [
+      "OQ14.Packet05ScalarCutoffRepresentative.uncut_on_plateau"
+    ]
+  },
+  {
+    "module": "Packet05ActualTransmissionContinuous",
+    "declarations": [
+      "OQ14.Packet05ActualTransmissionContinuous.actual_transmission_continuous"
+    ]
+  },
+  {
+    "module": "Packet05BootstrapRepresentativeTransfer",
+    "declarations": [
+      "OQ14.Packet05BootstrapRepresentativeTransfer.bootstrap_representatives_on_plateau"
+    ]
+  },
+  {
+    "module": "Packet05PhysicalPhaseBranches",
+    "declarations": [
+      "OQ14.Packet05PhysicalPhaseBranches.physical_phase_branches"
+    ]
+  },
+  {
+    "module": "Packet05GraphPhaseReconstruction",
+    "declarations": [
+      "OQ14.Packet05GraphPhaseReconstruction.graph_phase_reconstruction"
+    ]
+  },
+  {
+    "module": "Packet05ChartCorrectionContinuous",
+    "declarations": [
+      "OQ14.Packet05ChartCorrectionContinuous.chartCorrection_continuous",
+      "OQ14.Packet05ChartCorrectionContinuous.chartCorrection_ae"
+    ]
+  },
+  {
+    "module": "Packet05ChartElectricIdentity",
+    "declarations": [
+      "OQ14.Packet05ChartElectricIdentity.chart_electric_ae"
+    ]
+  },
+  {
+    "module": "Packet05ActualChartPhaseBranches",
+    "declarations": [
+      "OQ14.Packet05ActualChartPhaseBranches.actual_chart_phase_branches"
+    ]
+  },
+  {
+    "module": "Packet05PhysicalChartBranches",
+    "declarations": [
+      "OQ14.Packet05PhysicalChartBranches.inverse_graph_measure_preserving",
+      "OQ14.Packet05PhysicalChartBranches.physicalFlat_measure_preserving",
+      "OQ14.Packet05PhysicalChartBranches.physicalFlat_continuous",
+      "OQ14.Packet05PhysicalChartBranches.physical_chart_branches"
+    ]
+  },
+  {
+    "module": "Packet05TwoPhysicalPhaseBranches",
+    "declarations": [
+      "OQ14.Packet05TwoPhysicalPhaseBranches.two_physical_phase_branches"
+    ]
+  },
+  {
+    "module": "Packet05SmoothIncidentH2",
+    "declarations": [
+      "OQ14.Packet05SmoothIncidentH2.compact_smooth_h2"
+    ]
+  },
+  {
+    "module": "Packet05IncidentCorrectionH2",
+    "declarations": [
+      "OQ14.Packet05IncidentCorrectionH2.h2_add",
+      "OQ14.Packet05IncidentCorrectionH2.incident_plus_correction_h2"
+    ]
+  },
+  {
+    "module": "Packet05PhaseGluing",
+    "declarations": [
+      "OQ14.Packet05PhaseGluing.closure_inter_open",
+      "OQ14.Packet05PhaseGluing.overlap",
+      "OQ14.Packet05PhaseGluing.finite_phase_gluing"
+    ]
+  },
+  {
+    "module": "Packet05PhaseCoverBound",
+    "declarations": [
+      "OQ14.Packet05PhaseCoverBound.finite_uniform_gluing",
+      "OQ14.Packet05PhaseCoverBound.compact_uniform_gluing"
+    ]
+  }
+]

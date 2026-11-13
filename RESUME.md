@@ -1,5 +1,42 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 102 is the latest verified incremental checkpoint:
+[STAGE102.txt](checkpoints/2026-11-13-physical-phase-gluing/STAGE102.txt).
+
+The actual mode scalar equation and Green correction are transported
+through arbitrary signed coordinate charts. A local nonzero host coefficient
+is normalized explicitly; the binary material identity discards only the
+null interface plane. The original regional forcing is bootstrapped without
+assuming scalar H2 on an outer cutoff annulus. Continuous transmission
+representatives reconstruct both literal physical electric phase branches,
+with the actual gradient-plus-correction identity and signed inverse chart.
+This batch still retains the transmission representative and geometry inputs;
+their complete chart composition is in the following active batch.
+
+Continuous local representatives of the same actual open-phase field agree
+on overlapping phase closures. They glue to a continuous representative up
+to that closure, retaining a.e. agreement with the actual field. A compact
+cover can be chosen once for an entire family, and preserves the explicit
+sum of local bound constants times the original data norm. Local physical
+uniform bounds remain inputs to this gluing theorem.
+
+Independent source reviews and isolated fresh builds passed 37 modules.
+All retained objects and source/log hashes were verified. Actual geometric
+chart assembly, uniform physical collars, attained hotspots, placed outgoing
+Green identification, final paper alignment and aggregate validation remain
+active. Full OQ14 is not yet closed.
+
+37 modules / 67 reports passed independent root review and a fresh
+ordered build. 1341 upstream sources were authenticated, with cached objects.
+The ledger is 1153 modules / 5286 reports, all prior records unchanged:
+`checkpoints/2026-11-13-physical-phase-gluing/evidence/audited_after_5238-stage102.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage102.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 101 is the latest verified incremental checkpoint:
 [STAGE101.txt](checkpoints/2026-11-13-global-physical-green/STAGE101.txt).
 

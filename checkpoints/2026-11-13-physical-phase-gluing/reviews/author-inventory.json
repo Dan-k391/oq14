@@ -1,0 +1,452 @@
+{
+  "modules": [
+    {
+      "module": "Packet05RegionalForcingBootstrap",
+      "source": "lean/Packet05RegionalForcingBootstrap.lean",
+      "source_sha256": "d7b7c04ce873c3270b46ebec0309680e339b69c4bfaa839d7c8c2ed564560c6a",
+      "imports": [
+        "Packet05RegionalDirectionalTangentialH2",
+        "Packet05LocalizedForcingBootstrap"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalForcingBootstrap.log",
+      "log_sha256": "a0e2477496f17b0c884d622e18fa3a57bcc42d0a1d3c265c63a8c8e072ff1b5c",
+      "reports": 1
+    },
+    {
+      "module": "Packet05RegionalBootstrappedScalar",
+      "source": "lean/Packet05RegionalBootstrappedScalar.lean",
+      "source_sha256": "b9665d8b6048263a0c36e184b8f204464f7cd8c62f9950941bb44ad5546fd958",
+      "imports": [
+        "Packet05RegionalForcingBootstrap",
+        "Packet05RegionalScalarLocalization"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalBootstrappedScalar.log",
+      "log_sha256": "388a6d30d05ddde4ddd268c12cec8bd91fe2084972fa247c3cc71255b3d02384",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ChartOrientation",
+      "source": "lean/Packet05ChartOrientation.lean",
+      "source_sha256": "1d4e9529af08350b846bad274a8bf8d55f60dd9e92c8533aad7f751f11cd7466",
+      "imports": [
+        "Packet07BoundaryC4Oriented",
+        "Packet05RegionalBootstrappedScalar"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartOrientation.log",
+      "log_sha256": "9508436ef3b3f0bf626763ffbbd2a5decbef319289963539b99e2befb17ab35d",
+      "reports": 5
+    },
+    {
+      "module": "Packet05ChartOrientationMeasure",
+      "source": "lean/Packet05ChartOrientationMeasure.lean",
+      "source_sha256": "4e7a3cc9896de17b32ac37821ca41e1f297d5e8d596436d78a2a5ffaa1eb2420",
+      "imports": [
+        "Packet05ChartOrientation",
+        "Packet07BoundarySwapMeasure"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartOrientationMeasure.log",
+      "log_sha256": "e70f5ba15be3603232c7627c50e051d6a722b74c87f5f127a9a55dfb9cdf8693",
+      "reports": 4
+    },
+    {
+      "module": "Packet05ChartBasis",
+      "source": "lean/Packet05ChartBasis.lean",
+      "source_sha256": "739cdca9d15ecc42280038f8f790a8b4ab58a9d29acf845e7e3886368702a231",
+      "imports": [
+        "Packet05ChartOrientationMeasure"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartBasis.log",
+      "log_sha256": "8bde4e46e36d25dc32f5754b403c265638d7c949160f2437cfb105e29419b9e4",
+      "reports": 3
+    },
+    {
+      "module": "Packet05ChartLinearEquiv",
+      "source": "lean/Packet05ChartLinearEquiv.lean",
+      "source_sha256": "b9eb503a51b354629da83207a8c7aac9566cf8fac1fddd1aec6c4ed734c1cf5d",
+      "imports": [
+        "Packet05ChartBasis"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartLinearEquiv.log",
+      "log_sha256": "2165de2a5a78587212c7f9b7801376e29491c0729d0f45c90fb2d386a9dc49f9",
+      "reports": 2
+    },
+    {
+      "module": "Packet05ChartTestTransport",
+      "source": "lean/Packet05ChartTestTransport.lean",
+      "source_sha256": "efdc5fcdee3e3bbec96b462d6543241b7a93a158f713cd6301daae21cffe595e",
+      "imports": [
+        "Packet05ChartLinearEquiv",
+        "Packet05RegionalDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartTestTransport.log",
+      "log_sha256": "ac08525cbbce42ebe2f64dacdeda1a3f58d6d77cc22c3bdd4d05c477403bc4a3",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ChartWeakGradient",
+      "source": "lean/Packet05ChartWeakGradient.lean",
+      "source_sha256": "45761d51ea5db66050e13c5427bfbed2682938e23f3cb7cf281a1d8956cc1615",
+      "imports": [
+        "Packet05ChartTestTransport"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartWeakGradient.log",
+      "log_sha256": "1d9797a881a900c00060e27c2789c0dafe286dcaaab8047dcc3ec81009e09a15",
+      "reports": 5
+    },
+    {
+      "module": "Packet05ChartWeakDivergence",
+      "source": "lean/Packet05ChartWeakDivergence.lean",
+      "source_sha256": "9197be0e96354054b2d3c57080e078a72bfa66dce8f597ba6a853f18db0dc98d",
+      "imports": [
+        "Packet05ChartWeakGradient"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartWeakDivergence.log",
+      "log_sha256": "daf273a30dc494c3e763ef1e51e5ec505e95f052c2fb0f565d56354a6320231f",
+      "reports": 2
+    },
+    {
+      "module": "Packet05ChartH2",
+      "source": "lean/Packet05ChartH2.lean",
+      "source_sha256": "9abed59bc88aeb76ba6e5f3b812b83986460e400f56451bfcd8f4fb8b1aebcd9",
+      "imports": [
+        "Packet05ChartWeakDivergence",
+        "Packet05GraphPiolaH2",
+        "Packet05ActualCorrectionH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartH2.log",
+      "log_sha256": "edcb425fb0f91cd02a649cde5999d6f29ed072bb5ffbb1062c383aa28c42c8c7",
+      "reports": 3
+    },
+    {
+      "module": "Packet05ChartConstitutive",
+      "source": "lean/Packet05ChartConstitutive.lean",
+      "source_sha256": "2d7f6e0d9444f6c01c0bc8b2326e90dff6063292c68ff858e5c6846ffd8a5fe1",
+      "imports": [
+        "Packet05ChartH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartConstitutive.log",
+      "log_sha256": "1116b63e9992b3e50c271d3b979a2f2da3a37d647db70c433673f879b5da4825",
+      "reports": 2
+    },
+    {
+      "module": "Packet05ModeCorrectionAdapter",
+      "source": "lean/Packet05ModeCorrectionAdapter.lean",
+      "source_sha256": "9da7cb080197d9c44e8f1b849b425c1da1b3290e853a3174687fa96eeb4a9c23",
+      "imports": [
+        "Packet05ChartConstitutive",
+        "Packet05ModeCorrectionH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ModeCorrectionAdapter.log",
+      "log_sha256": "83e369ed40aae74b2fea3c85514e2efffcfd7b97195f7c5d8b342e12dbb72764",
+      "reports": 3
+    },
+    {
+      "module": "Packet05ActualOrientedModeScalar",
+      "source": "lean/Packet05ActualOrientedModeScalar.lean",
+      "source_sha256": "501ce985b4fbd45c691f10ca5de6c2755e37053a7b0bf02e9602e5edcc562aa4",
+      "imports": [
+        "Packet05ModeCorrectionAdapter",
+        "Packet05ChartConstitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualOrientedModeScalar.log",
+      "log_sha256": "2de230ea5dc6d9de9789c4292d91cad2f9ba34dcfeff26c2fda6abaed75ec9e6",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ChartBinaryMatch",
+      "source": "lean/Packet05ChartBinaryMatch.lean",
+      "source_sha256": "fb4e08ae7847b2ef0de4fe6bc0af0b9ffeeae06db82932633996d262d326286b",
+      "imports": [
+        "Packet05ActualOrientedModeScalar",
+        "Packet05ChartOrientation",
+        "Packet05LocalDerivative"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartBinaryMatch.log",
+      "log_sha256": "91e4e65cf9dbd039507817fbd1ea7fa22fa0179e0dff767d81a28412482b582b",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualChartSide",
+      "source": "lean/Packet05ActualChartSide.lean",
+      "source_sha256": "d8c4f37b3bfa99847f45555b3e300c1363f7f9e840b4b531f4032b5c46c100bd",
+      "imports": [
+        "Packet05ChartBinaryMatch"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualChartSide.log",
+      "log_sha256": "e40822c94ec7575091985b69a8d35f9c70382cba0d1a84d30683fa8a8871e3bf",
+      "reports": 1
+    },
+    {
+      "module": "Packet05RegionalBinaryScalarAE",
+      "source": "lean/Packet05RegionalBinaryScalarAE.lean",
+      "source_sha256": "84ba6d9c635db402e663df195dee7890c545d551e1a41ec2b42e5b3f127e27da",
+      "imports": [
+        "Packet05RegionalGraphConstitutive",
+        "Packet05RegionalDivergenceCongruence",
+        "Packet05ScalarDielectricFlux"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalBinaryScalarAE.log",
+      "log_sha256": "637e40e2d126d6c944a75da1122a5974e7f1a0e9ae74084d96bf86c9b8f5570a",
+      "reports": 1
+    },
+    {
+      "module": "Packet05GraphForcingSign",
+      "source": "lean/Packet05GraphForcingSign.lean",
+      "source_sha256": "6ed49f4d5f45572c34f6656c3dcdb85fa692babda1b1f34d59679be624a94d86",
+      "imports": [
+        "Packet05ActualGraphForcing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphForcingSign.log",
+      "log_sha256": "d9859dfa07b734d99898e531e75195bbd6659fb7bbba7b3cf8f7e8ad1aa8da1a",
+      "reports": 1
+    },
+    {
+      "module": "Packet05OrientedGraphForcing",
+      "source": "lean/Packet05OrientedGraphForcing.lean",
+      "source_sha256": "cfc52b112479a666bdc9448b7d9874b3d322b30e171da4eca0d57d464410373c",
+      "imports": [
+        "Packet05ActualOrientedModeScalar",
+        "Packet05GraphForcingSign",
+        "Packet05GraphSlopeBounds"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05OrientedGraphForcing.log",
+      "log_sha256": "aeb37f6f3634d3cf7a99d5f565bd171ebda1d423a34cefa97fc69e6e5dd49111",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualModeGraphEquation",
+      "source": "lean/Packet05ActualModeGraphEquation.lean",
+      "source_sha256": "843d53d612c4b204fee48d0d0e50a828877f15532fef7d402d626fde078faf35",
+      "imports": [
+        "Packet05ActualChartSide",
+        "Packet05RegionalBinaryScalarAE",
+        "Packet05OrientedGraphForcing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualModeGraphEquation.log",
+      "log_sha256": "8ab0501b97d7033b83d5416813764d08b0c70e5df27438b72b811288dfe559be",
+      "reports": 1
+    },
+    {
+      "module": "Packet05HostNormalization",
+      "source": "lean/Packet05HostNormalization.lean",
+      "source_sha256": "f99e68cc195b9b4282be462aed445b47672de023f01013d228b72b240ec34644",
+      "imports": [
+        "Packet05ActualModeGraphEquation"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05HostNormalization.log",
+      "log_sha256": "2708669a0f6387dd586c9e37fc79f9ee33541d0c8e19f013507d8e5984b281b1",
+      "reports": 3
+    },
+    {
+      "module": "Packet05HostChartMatch",
+      "source": "lean/Packet05HostChartMatch.lean",
+      "source_sha256": "e86b5ff73b2f0118f4dee1f0a359b0a5b5d16969dc74ab6ae4a998abc224eb32",
+      "imports": [
+        "Packet05HostNormalization"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05HostChartMatch.log",
+      "log_sha256": "a667588cc9f6928496a1e0784f254a98a6c117ea3052f29694ada4fb4dd6688d",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualHostModeGraph",
+      "source": "lean/Packet05ActualHostModeGraph.lean",
+      "source_sha256": "d23bccfaf5ca3abfcf2ee5e0266426ecffe9231a76fdc2ca55df8cc51c0fccc2",
+      "imports": [
+        "Packet05HostChartMatch"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualHostModeGraph.log",
+      "log_sha256": "befae4eb1a9da44d7ed625ecc6a6dcf9e19167e9b539012a041f08f7bb933d1e",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualScalarTangentialContinuity",
+      "source": "lean/Packet05ActualScalarTangentialContinuity.lean",
+      "source_sha256": "56f6ac05958e6f08ccf1830a1c36d1d9e5eb1b36b8a83bc1789646e419a53fe2",
+      "imports": [
+        "Packet05ScalarTangentialContinuity",
+        "Packet05ScalarActualSecondTangential"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualScalarTangentialContinuity.log",
+      "log_sha256": "915cf3de2cac45636204cff2c9dac9d0ed5f54d05b1b17d1db2e2780377f2854",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ScalarCutoffRepresentative",
+      "source": "lean/Packet05ScalarCutoffRepresentative.lean",
+      "source_sha256": "62cb728fd64531a1ea6270fc32c0fe5f1a4a4c6e4bd80be1cee23354af8a55ff",
+      "imports": [
+        "Packet05ActualNormalFluxContinuous",
+        "Packet05ActualScalarTangentialContinuity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarCutoffRepresentative.log",
+      "log_sha256": "6b63df76663a8052ed62c952a09a01c0e06ae7bc4920c630dde2a40c666df8e6",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualTransmissionContinuous",
+      "source": "lean/Packet05ActualTransmissionContinuous.lean",
+      "source_sha256": "ba778aff595d0981c8f7c0ee5aca52ba8a35d0fe12e7326fac616889b05bb92a",
+      "imports": [
+        "Packet05ActualNormalFluxContinuous",
+        "Packet05ActualScalarTangentialContinuity",
+        "Packet05ScalarCutoffRepresentative",
+        "Packet05LocalNormalFluxContinuity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualTransmissionContinuous.log",
+      "log_sha256": "4658dffd8aeb212e94ada803a2d225a2db0c2248b346289b7d74ae2fe3ae5163",
+      "reports": 1
+    },
+    {
+      "module": "Packet05BootstrapRepresentativeTransfer",
+      "source": "lean/Packet05BootstrapRepresentativeTransfer.lean",
+      "source_sha256": "c9b406466e870a97a6777ea5886edd1c6dc194569b80567427aea113b3f78ad9",
+      "imports": [
+        "Packet05ActualTransmissionContinuous",
+        "Packet05RegionalBootstrappedScalar",
+        "Packet05LocalizedGradientPlateau"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BootstrapRepresentativeTransfer.log",
+      "log_sha256": "365f71be47481ddd7fc306b5e3b9e07e915d69048bfeb52a1c6b166a3342e60a",
+      "reports": 1
+    },
+    {
+      "module": "Packet05PhysicalPhaseBranches",
+      "source": "lean/Packet05PhysicalPhaseBranches.lean",
+      "source_sha256": "7c4e909730fdb586651cd158147fcc7005275bb0f61ef54fd4c3f8d8ca9be416",
+      "imports": [
+        "Packet05BootstrapRepresentativeTransfer",
+        "Packet05GraphTransmissionReconstruction"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05PhysicalPhaseBranches.log",
+      "log_sha256": "765f2bc94bf5dbb4d8c36049349e0bde79b0f06c87880a2bf99ee90e649433c1",
+      "reports": 1
+    },
+    {
+      "module": "Packet05GraphPhaseReconstruction",
+      "source": "lean/Packet05GraphPhaseReconstruction.lean",
+      "source_sha256": "3a852a22966252361b77f32da573507ad82cfd5eff394b1c4caf577a8e0acd9d",
+      "imports": [
+        "Packet05PhysicalPhaseBranches",
+        "Packet05GraphL2Constitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPhaseReconstruction.log",
+      "log_sha256": "794398d98746bba88de17579f0ff0d7808aca0fab78b075ffd2eca78556a50dc",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ChartCorrectionContinuous",
+      "source": "lean/Packet05ChartCorrectionContinuous.lean",
+      "source_sha256": "1f17e8d29e2a9909c546a3e5ae08fa3726c327db56c828ff5ecd7a0ec9a3689d",
+      "imports": [
+        "Packet05GraphPhaseReconstruction",
+        "Packet05ChartConstitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartCorrectionContinuous.log",
+      "log_sha256": "dda4f9ca6c87d0e902afda1b1a1526544db94f168213d76930feab44cd9c5aa3",
+      "reports": 2
+    },
+    {
+      "module": "Packet05ChartElectricIdentity",
+      "source": "lean/Packet05ChartElectricIdentity.lean",
+      "source_sha256": "a463f30a50b862d7b2642a5ec3573210d4897ad1674ccf6aaf950feb15010196",
+      "imports": [
+        "Packet05ChartCorrectionContinuous"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ChartElectricIdentity.log",
+      "log_sha256": "5cabc6fd9e6b1186aaf7f03ed09bc74f6f5f5c3e1f3e74f491d6e514ea9de666",
+      "reports": 1
+    },
+    {
+      "module": "Packet05ActualChartPhaseBranches",
+      "source": "lean/Packet05ActualChartPhaseBranches.lean",
+      "source_sha256": "281081a31e4f848658d8f9f1309c62145b2b74c72c273c2a15b7756e956b199a",
+      "imports": [
+        "Packet05ChartElectricIdentity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualChartPhaseBranches.log",
+      "log_sha256": "c063d68f4c977de253334bd64292718f69d2da1145b3ab0d281bf8dc5e0e621c",
+      "reports": 1
+    },
+    {
+      "module": "Packet05PhysicalChartBranches",
+      "source": "lean/Packet05PhysicalChartBranches.lean",
+      "source_sha256": "f4d5aa33700a1406d9076bf90af9bdeeb5774593377e09fdfa35577c13f92dd8",
+      "imports": [
+        "Packet05ActualChartPhaseBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05PhysicalChartBranches.log",
+      "log_sha256": "6f971cb5591d17d6a54e3803237799e6926fe2ba79dfb636bb312d66fb4cd0bb",
+      "reports": 4
+    },
+    {
+      "module": "Packet05TwoPhysicalPhaseBranches",
+      "source": "lean/Packet05TwoPhysicalPhaseBranches.lean",
+      "source_sha256": "3ab7474e3699177bb251c81aa5d51bded6c036432c353a25fbc6f7205f5c39b2",
+      "imports": [
+        "Packet05PhysicalChartBranches"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TwoPhysicalPhaseBranches.log",
+      "log_sha256": "608030d237e414cba5706c68e34ac01a4f7396da48b4f26d0469ca3b142843b0",
+      "reports": 1
+    },
+    {
+      "module": "Packet05SmoothIncidentH2",
+      "source": "lean/Packet05SmoothIncidentH2.lean",
+      "source_sha256": "11a31e9a464612734b53612a52d44464cc9ee427b828315479a78eee82dd84cc",
+      "imports": [
+        "Packet05ActualHostModeGraph"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05SmoothIncidentH2.log",
+      "log_sha256": "1eeab00969b654448ccbaff0683ee00d4f3eefa37810b3052f65202dc7a9135a",
+      "reports": 1
+    },
+    {
+      "module": "Packet05IncidentCorrectionH2",
+      "source": "lean/Packet05IncidentCorrectionH2.lean",
+      "source_sha256": "43319a76362ad97570ff42394deaf55d227b7f1f4bed4016ecd21503250f480e",
+      "imports": [
+        "Packet05SmoothIncidentH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05IncidentCorrectionH2.log",
+      "log_sha256": "3fd1bcb3d75f242e757d79aec811b11bea7fa5396a7d311f5b4cdda185a222ef",
+      "reports": 2
+    },
+    {
+      "module": "Packet05PhaseGluing",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet05PhaseGluing.olean",
+        "Packet05PhaseGluing.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 12.516,
+      "source_sha256": "c81e58d949a36584b845fd6aa36baee08e406eae032d0eb4970b9d33977014d0",
+      "log": "Packet05PhaseGluing-root-author.log",
+      "log_sha256": "5463fdd28050e3d34d908c69cdd080e6fd8de33ef90a93ae7972cf0d7b81281f",
+      "reports": 3
+    },
+    {
+      "module": "Packet05PhaseCoverBound",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lake.exe",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Packet05PhaseCoverBound.olean",
+        "Packet05PhaseCoverBound.lean"
+      ],
+      "cwd": "D:/oq14/lean",
+      "exit_code": 0,
+      "elapsed_seconds": 17.968,
+      "source_sha256": "cfe7f70e7270a9b6d2b8a079d88a65e54af22ac1cbf42a5f8c125a26994d91af",
+      "log": "Packet05PhaseCoverBound-root-author.log",
+      "log_sha256": "52591f30934cc427b76285c2d4078d4e91c8ac9d6039c84c849ba83822dfcc80",
+      "reports": 2
+    }
+  ]
+}
