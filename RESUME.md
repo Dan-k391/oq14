@@ -1,5 +1,53 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 108 is the latest verified incremental checkpoint:
+[STAGE108.txt](checkpoints/2026-11-13-actual-hotspot-existence/STAGE108.txt).
+
+The complete actual modal collar chain is now composed. Fixed chart
+geometry, uniform original scalar/forcing data, the noncircular regional
+bootstrap, two tangential iterations, normal flux, actual physical branches
+and finite sphere covers produce one family-uniform collar bound. The bound
+is chosen before the threshold and rounding index. Both continuous material
+traces obey it on the same open collar, including the interface.
+
+Packet06ModalHotspotExistence.exists_modal_hotspots is unconditional for the
+coordinate plane. Given the material ceiling, prescribed positive real
+frequency, quality target, radius bound, amplitude threshold, nonempty open
+planar patch and finite N, it constructs a Device satisfying all 27 Valid
+fields. These include exact nested material values with smooth inner and
+outer interfaces, compact material support, the actual volume kernel,
+reciprocal normalization one, a genuine outgoing Maxwell mode and selected-
+sector observed simple pole. All N observation balls are disjoint and project
+into the patch; their actual one-sided maxima lie on the plane. Full compact
+connected half-amplitude components are contained strictly inside the balls.
+The same selected family index retains actual one-sided open low collars.
+No sharp mode, excitation, collar estimate or peak is assumed in this result.
+
+The driven chain now derives actual family-uniform chart and trace bounds
+for the same fixed finite-angular illumination. Actual phase maxima and full
+compact connected half-amplitude components occur simultaneously in all N
+balls for every sufficiently late rounded device, above any thresholds. The
+selected endpoint still uses a sufficiently small frequency; prescribed
+target-frequency transport is the following extension. Its planar centers
+are proved; driven maxima themselves are not asserted to lie in the plane.
+
+Literal arbitrary oriented plane transport, the actual modal-volume endpoint,
+the final fixed-frequency driven endpoint, paper alignment and aggregate
+clean verification remain active. An aggregate rebuild excluding all cached
+project objects is running separately; it is not claimed complete here.
+Full OQ14 is not yet declared closed.
+
+96 modules / 112 reports passed independent root review and a fresh
+ordered build. 1629 upstream sources were authenticated, with cached objects.
+The ledger is 1406 modules / 5647 reports, all prior records unchanged:
+`checkpoints/2026-11-13-actual-hotspot-existence/evidence/audited_after_5238-stage108.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage108.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 107 is the latest verified incremental checkpoint:
 [STAGE107.txt](checkpoints/2026-11-13-regional-placed-hotspots/STAGE107.txt).
 

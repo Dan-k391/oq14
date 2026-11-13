@@ -1,0 +1,3073 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "ea2117f",
+  "modules": 1406,
+  "reports": 5647,
+  "new_modules": 96,
+  "new_reports": 112,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "4c19b78b9557eba2bb26941746ff8e2a24641b3df9b2f4a205ed2c12288549bf",
+  "ledger_sha256": "87edbe49f6e0f752a5badb483ca769d1c99a4f8af3a182499978996516530050",
+  "raw_archive_sha256": "a45e41e19cb8175045a270fb9831a5c96e40ababeb6093e0a4f045f1a3daa135",
+  "records": [
+    {
+      "module": "Packet05BootstrapPhysicalBranches",
+      "reports": 1,
+      "source_sha256": "b265c5679ed103ccaebb2e62d3001540abc80bde4305a74346d5ddebc451300c",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05BootstrapPhysicalBranches-chain.log",
+      "audit_log_sha256": "c69277c71507e9daf117d9e2c7460838d816dc933a7d2cb88f0673e5c85024de",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-review.txt",
+      "independent_review_sha256": "1e93b06fbc10ce2b6874e88d4c1a9e86ddc61a5d68c3ef72472a5588f87ab121",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json",
+      "independent_build_sha256": "1857f9548dd29a89d86c8350876b268327c726a9b60f2082ff9a328697195af7",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05BootstrapPhysicalBranches.log",
+      "independent_log_sha256": "c69277c71507e9daf117d9e2c7460838d816dc933a7d2cb88f0673e5c85024de",
+      "declarations": [
+        "OQ14.Packet05BootstrapPhysicalBranches.bootstrap_physical_branches"
+      ]
+    },
+    {
+      "module": "Packet05RegionalNormalFluxUniform",
+      "reports": 1,
+      "source_sha256": "608497a7cc1dcfa5d751bf6bab7567e42ce32cc1a41122c4ee48be07be3e153b",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalNormalFluxUniform-chain.log",
+      "audit_log_sha256": "503d014d2fc205e02f18aa9850a59fbeee49f41837c573241f354f4a82120713",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-review.txt",
+      "independent_review_sha256": "1e93b06fbc10ce2b6874e88d4c1a9e86ddc61a5d68c3ef72472a5588f87ab121",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json",
+      "independent_build_sha256": "1857f9548dd29a89d86c8350876b268327c726a9b60f2082ff9a328697195af7",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalNormalFluxUniform.log",
+      "independent_log_sha256": "503d014d2fc205e02f18aa9850a59fbeee49f41837c573241f354f4a82120713",
+      "declarations": [
+        "OQ14.Packet05RegionalNormalFluxUniform.regional_normal_flux_uniform"
+      ]
+    },
+    {
+      "module": "Packet05NestedBootstrapPhysicalBranch",
+      "reports": 1,
+      "source_sha256": "1d1a7c4f1358d7027e3b101c88c96c62595addd54547dab6445a075c9e8720d9",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05NestedBootstrapPhysicalBranch-chain.log",
+      "audit_log_sha256": "975a51ea245e4caa35ef97bb764257f31f1a9a58863ba7d688d0246673322091",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05NestedBootstrapPhysicalBranch.log",
+      "independent_log_sha256": "975a51ea245e4caa35ef97bb764257f31f1a9a58863ba7d688d0246673322091",
+      "declarations": [
+        "OQ14.Packet05NestedBootstrapPhysicalBranch.nested_bootstrap_physical_branch"
+      ]
+    },
+    {
+      "module": "Packet05FiveNestedCutoffs",
+      "reports": 2,
+      "source_sha256": "7cc017a98b45036087daf46ac770aa3308cbcb8a9834188728fe4a32a676f93f",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiveNestedCutoffs-chain.log",
+      "audit_log_sha256": "de1b178679c4afb2b3386d3a3ff49e0996454d57c3bd507e24b073a2b425ea67",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiveNestedCutoffs.log",
+      "independent_log_sha256": "de1b178679c4afb2b3386d3a3ff49e0996454d57c3bd507e24b073a2b425ea67",
+      "declarations": [
+        "OQ14.Packet05FiveNestedCutoffs.exists_five",
+        "OQ14.Packet05FiveNestedCutoffs.plateaus"
+      ]
+    },
+    {
+      "module": "Packet05FiveCutoffLayout",
+      "reports": 1,
+      "source_sha256": "a16bcefed64f1998e789e6cd15e0f5050ada7a609d69c0d3a4bfbda9f269962f",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiveCutoffLayout-chain.log",
+      "audit_log_sha256": "6d46c6cf5647bb4ab12e58bcb85efd3154f3882496525843c05c20e47e5aea74",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiveCutoffLayout.log",
+      "independent_log_sha256": "6d46c6cf5647bb4ab12e58bcb85efd3154f3882496525843c05c20e47e5aea74",
+      "declarations": [
+        "OQ14.Packet05FiveCutoffLayout.layout"
+      ]
+    },
+    {
+      "module": "Packet05MetricAllBounds",
+      "reports": 1,
+      "source_sha256": "ed5a2f228190233af47da397d6ebab6d94bd5ae60858e58b3ae4c6403d7ceb99",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05MetricAllBounds-chain.log",
+      "audit_log_sha256": "338cee55e97bd9b8b8c4292efd85a8c111877103ea12323f3ef887742e8c5f16",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05MetricAllBounds.log",
+      "independent_log_sha256": "338cee55e97bd9b8b8c4292efd85a8c111877103ea12323f3ef887742e8c5f16",
+      "declarations": [
+        "OQ14.Packet05MetricAllBounds.matrix_all_bounds"
+      ]
+    },
+    {
+      "module": "Packet05CutoffThirdBound",
+      "reports": 1,
+      "source_sha256": "434e583e8418e1b6aeb4818fcf61f0bf98bcb17e8c0975a17e06c8807ce566ed",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05CutoffThirdBound-chain.log",
+      "audit_log_sha256": "e238e50cb30fa82f36df1b2ce020cff4633cc1879c70f2514e8000a53d4e6aba",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05CutoffThirdBound.log",
+      "independent_log_sha256": "e238e50cb30fa82f36df1b2ce020cff4633cc1879c70f2514e8000a53d4e6aba",
+      "declarations": [
+        "OQ14.Packet05CutoffThirdBound.third_derivative_bound"
+      ]
+    },
+    {
+      "module": "Packet05FiniteFixedAtlas",
+      "reports": 1,
+      "source_sha256": "2fc0d41c29b10069834a0b617a40531d94a6052e65359e5f37f28060c3a2178a",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiniteFixedAtlas-chain.log",
+      "audit_log_sha256": "30a6611f566d0d15cd524ae58b47753a0e7a709287dfce7e5e421285c871baf8",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiniteFixedAtlas.log",
+      "independent_log_sha256": "30a6611f566d0d15cd524ae58b47753a0e7a709287dfce7e5e421285c871baf8",
+      "declarations": [
+        "OQ14.Packet05FiniteFixedAtlas.finite_fixed_atlas"
+      ]
+    },
+    {
+      "module": "Packet05FixedSubchartEquation",
+      "reports": 1,
+      "source_sha256": "798506685b8fcb2313c6f73bb2ce6214625595d05cb42546b0d9776396266c19",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedSubchartEquation-chain.log",
+      "audit_log_sha256": "d7930ac5fa65f1814090da60a7e8e6a9622d3d6003350543006808db22769582",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedSubchartEquation.log",
+      "independent_log_sha256": "d7930ac5fa65f1814090da60a7e8e6a9622d3d6003350543006808db22769582",
+      "declarations": [
+        "OQ14.Packet05FixedSubchartEquation.eventual_actual_subchart_equation"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartActualEquation",
+      "reports": 1,
+      "source_sha256": "3fa51dddd44c8054b9ecbcc9e3772184d3bb262dc29dde937e4c799ee0d61e49",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartActualEquation-chain.log",
+      "audit_log_sha256": "9cba9d7656ee729da19731f36169281b550985d646f2c8965302df2d98862d8a",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartActualEquation.log",
+      "independent_log_sha256": "9cba9d7656ee729da19731f36169281b550985d646f2c8965302df2d98862d8a",
+      "declarations": [
+        "OQ14.Packet05FixedChartActualEquation.eventual_actual_chart_equation"
+      ]
+    },
+    {
+      "module": "Packet05SlopeUniformBounds",
+      "reports": 1,
+      "source_sha256": "1a9ed0b82d152df7afff5d8d6db0239d7416df817304188357a299f90a3145ad",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05SlopeUniformBounds-chain.log",
+      "audit_log_sha256": "0b8e52943c22cc264b476f1261d93e60d99213de22254e84753de14af75d0b5a",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05SlopeUniformBounds.log",
+      "independent_log_sha256": "0b8e52943c22cc264b476f1261d93e60d99213de22254e84753de14af75d0b5a",
+      "declarations": [
+        "OQ14.Packet05SlopeUniformBounds.slope_uniform_bounds"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartUniformForcing",
+      "reports": 1,
+      "source_sha256": "f8897a16d043ab5113c98e1a976ef2ba0b3191f8a4aee2e271965b1f9e141f5d",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformForcing-chain.log",
+      "audit_log_sha256": "02763091c296ee087ba1ac8ca440c93a77beb2e30e13a296ad3e17b44765565c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformForcing.log",
+      "independent_log_sha256": "02763091c296ee087ba1ac8ca440c93a77beb2e30e13a296ad3e17b44765565c",
+      "declarations": [
+        "OQ14.Packet05FixedChartUniformForcing.fixed_chart_uniform_forcing"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartUniformScalar",
+      "reports": 1,
+      "source_sha256": "970b71fec5ea4ec83fee6629823c8ce6f2b0afb478ad9315162243f2fb5c9316",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformScalar-chain.log",
+      "audit_log_sha256": "88e8bed37890ccd6856ca117c6a91698d6c60bd90cbb80542e38a6665d7dd55b",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformScalar.log",
+      "independent_log_sha256": "88e8bed37890ccd6856ca117c6a91698d6c60bd90cbb80542e38a6665d7dd55b",
+      "declarations": [
+        "OQ14.Packet05FixedChartUniformScalar.fixed_chart_uniform_scalar"
+      ]
+    },
+    {
+      "module": "Packet05ActualChartUniformInputs",
+      "reports": 1,
+      "source_sha256": "5329f6ba9476b16924a4209ce730eb3a79f25a4d705f4b4e64106e70e4e1bd84",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartUniformInputs-chain.log",
+      "audit_log_sha256": "7642854faaf518535ec58bf073b6307d25a645c3cf71a76f340a3b58dc08f650",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartUniformInputs.log",
+      "independent_log_sha256": "7642854faaf518535ec58bf073b6307d25a645c3cf71a76f340a3b58dc08f650",
+      "declarations": [
+        "OQ14.Packet05ActualChartUniformInputs.actual_chart_uniform_inputs"
+      ]
+    },
+    {
+      "module": "Packet05ActualChartFields",
+      "reports": 1,
+      "source_sha256": "ff1891c929fac3343581edef3a2d1ea7094e51fb798f185421177e90ea5219e8",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartFields-chain.log",
+      "audit_log_sha256": "641da7d60ef1263b4720d41ed3877127d834d2fcc8efe762a641496743f736a3",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartFields.log",
+      "independent_log_sha256": "641da7d60ef1263b4720d41ed3877127d834d2fcc8efe762a641496743f736a3",
+      "declarations": [
+        "OQ14.Packet05ActualChartFields.correction_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualNamedUniformInputs",
+      "reports": 1,
+      "source_sha256": "4b0788a3cde0b9ce69f0b8e149fb7c44bad59384297e00548277161141bd733d",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualNamedUniformInputs-chain.log",
+      "audit_log_sha256": "c3f0ead4674a557e10012230ef31b27530adb9b5c77ff985e3b30a0783f5ff55",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualNamedUniformInputs.log",
+      "independent_log_sha256": "c3f0ead4674a557e10012230ef31b27530adb9b5c77ff985e3b30a0783f5ff55",
+      "declarations": [
+        "OQ14.Packet05ActualNamedUniformInputs.actual_named_uniform_inputs"
+      ]
+    },
+    {
+      "module": "Packet05RegionalBootstrapCeiling",
+      "reports": 1,
+      "source_sha256": "2ac3609a27267d7aca898b0bffdb84c927c12558f5ab1f1c1a0de2c8dd8d3600",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalBootstrapCeiling-chain.log",
+      "audit_log_sha256": "1913f8a3afb15989716ee09247cfbd83c708978efdb90c99eb49aec9df151aa9",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalBootstrapCeiling.log",
+      "independent_log_sha256": "1913f8a3afb15989716ee09247cfbd83c708978efdb90c99eb49aec9df151aa9",
+      "declarations": [
+        "OQ14.Packet05RegionalBootstrapCeiling.ceiling_nonneg"
+      ]
+    },
+    {
+      "module": "Packet05RegionalFamilyBootstrap",
+      "reports": 1,
+      "source_sha256": "ab852de83a63006e6fd689b9a9ed37141ef92a84e3df31f787efe87ed0b845d0",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalFamilyBootstrap-chain.log",
+      "audit_log_sha256": "7b48ab571127124ab273941e0dc5208dba5bfe66a045590d8d682e42637dd6be",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalFamilyBootstrap.log",
+      "independent_log_sha256": "7b48ab571127124ab273941e0dc5208dba5bfe66a045590d8d682e42637dd6be",
+      "declarations": [
+        "OQ14.Packet05RegionalFamilyBootstrap.regional_family_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet05EventualChoice",
+      "reports": 1,
+      "source_sha256": "fe9c8f18db8510dba0dd05629ec50c71aa997dcda98ab61926ed6d2017d21925",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05EventualChoice-chain.log",
+      "audit_log_sha256": "60f669cb9a3038a22adfe2a779819fcf60ff66c993fd3d297ba600a53d67375a",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05EventualChoice.log",
+      "independent_log_sha256": "60f669cb9a3038a22adfe2a779819fcf60ff66c993fd3d297ba600a53d67375a",
+      "declarations": [
+        "OQ14.Packet05EventualChoice.choose_eventually"
+      ]
+    },
+    {
+      "module": "Packet05RegionalFamilyChosenBootstrap",
+      "reports": 1,
+      "source_sha256": "dac11d846bdd877f4c8768e54ae774903cf0d3cfb8ba2a3a62a2a16a91656282",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalFamilyChosenBootstrap-chain.log",
+      "audit_log_sha256": "346c6887e96bfc0ed1b91ba345f11088e25c5b016dd2b25379562a83beeb05a7",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalFamilyChosenBootstrap.log",
+      "independent_log_sha256": "346c6887e96bfc0ed1b91ba345f11088e25c5b016dd2b25379562a83beeb05a7",
+      "declarations": [
+        "OQ14.Packet05RegionalFamilyChosenBootstrap.regional_family_chosen_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet05ActualChartFamilyBootstrap",
+      "reports": 1,
+      "source_sha256": "0e7a884d59c5c9b31f2ea102d21a6f77f2e201fde7e22906f2d5a5b3286eee0e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartFamilyBootstrap-chain.log",
+      "audit_log_sha256": "b3bcae49d612244615c7ddc3933ae5d79eda43d625dd08134d7dc1897bf09a8e",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartFamilyBootstrap.log",
+      "independent_log_sha256": "b3bcae49d612244615c7ddc3933ae5d79eda43d625dd08134d7dc1897bf09a8e",
+      "declarations": [
+        "OQ14.Packet05ActualChartFamilyBootstrap.actual_chart_family_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartBootstrap",
+      "reports": 1,
+      "source_sha256": "498222b3d5d74d1201786904c1a6a09747f054178f2d38ebec74b67c0337afea",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartBootstrap-chain.log",
+      "audit_log_sha256": "bcd927c0e771e009d62862feadc771394452a7f2649c9a736359ddb2485a34dd",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartBootstrap.log",
+      "independent_log_sha256": "bcd927c0e771e009d62862feadc771394452a7f2649c9a736359ddb2485a34dd",
+      "declarations": [
+        "OQ14.Packet05FixedChartBootstrap.fixed_chart_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet05UniformScalarIteration",
+      "reports": 1,
+      "source_sha256": "9d8482d0cdc5f4edc32c67586d5436c980083a5215cb2b7b597aaec96cea1b0a",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformScalarIteration-chain.log",
+      "audit_log_sha256": "dbf1b5bbf59b8ac5574212ee15066d045f1f7ed0c35c96ee6b1351507886cb06",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformScalarIteration.log",
+      "independent_log_sha256": "dbf1b5bbf59b8ac5574212ee15066d045f1f7ed0c35c96ee6b1351507886cb06",
+      "declarations": [
+        "OQ14.Packet05UniformScalarIteration.uniform_scalar_iteration"
+      ]
+    },
+    {
+      "module": "Packet05UniformTwoDirectionStrong",
+      "reports": 1,
+      "source_sha256": "2aeb877a2f0ac5d57da94c7c4768efd6939dcd79af760f840d7fc93f6671e86b",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirectionStrong-chain.log",
+      "audit_log_sha256": "33d71776fe2a3671c3815232041d111ac9bad9bf10571cce2731ec949e5fae64",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirectionStrong.log",
+      "independent_log_sha256": "33d71776fe2a3671c3815232041d111ac9bad9bf10571cce2731ec949e5fae64",
+      "declarations": [
+        "OQ14.Packet05UniformTwoDirectionStrong.uniform_two_direction_strong"
+      ]
+    },
+    {
+      "module": "Packet05UniformTwoDirectionStrongFamily",
+      "reports": 1,
+      "source_sha256": "2ae1ec7f923c420acbb68e01a6e771cf6b118ea02e4b7fb778d43f4af71a0dd8",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirectionStrongFamily-chain.log",
+      "audit_log_sha256": "7a9e75aa7bc7cebfffeb2666e7adbe39282268ac194e6ce7ff57b6da6ae9b90c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirectionStrongFamily.log",
+      "independent_log_sha256": "7a9e75aa7bc7cebfffeb2666e7adbe39282268ac194e6ce7ff57b6da6ae9b90c",
+      "declarations": [
+        "OQ14.Packet05UniformTwoDirectionStrongFamily.uniform_two_direction_strong_family"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartIteration",
+      "reports": 1,
+      "source_sha256": "2a54d7480610d66ea911030037f8257822865173bb8539b4b1aaaed5e192ad6b",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartIteration-chain.log",
+      "audit_log_sha256": "8308b4ad6d25ce894a422a452d442ddf7d4e6a26bd8756f5026078add0bebd48",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartIteration.log",
+      "independent_log_sha256": "8308b4ad6d25ce894a422a452d442ddf7d4e6a26bd8756f5026078add0bebd48",
+      "declarations": [
+        "OQ14.Packet05FixedChartIteration.fixed_chart_iteration"
+      ]
+    },
+    {
+      "module": "Packet05DivergenceZeroRegion",
+      "reports": 1,
+      "source_sha256": "1dfa66c53058997aa44eb5d3cf6ab76d9ceb15e02ccf8011eeae803fe2a9d95b",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05DivergenceZeroRegion-chain.log",
+      "audit_log_sha256": "bd202c8e95e81185244c145b7cfd791ab07238628865da31d03afeb47b6c6093",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05DivergenceZeroRegion.log",
+      "independent_log_sha256": "bd202c8e95e81185244c145b7cfd791ab07238628865da31d03afeb47b6c6093",
+      "declarations": [
+        "OQ14.Packet05DivergenceZeroRegion.global_divergence_zero_on"
+      ]
+    },
+    {
+      "module": "Packet05ActualFieldIdentity",
+      "reports": 1,
+      "source_sha256": "55562d37e0b6de74f435c753108863e625b8bc4af110697b4554ecab95842314",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualFieldIdentity-chain.log",
+      "audit_log_sha256": "b4dbbbcb56395e54e4b06e26d438d64c741fe025a065747529a0093b4080e580",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualFieldIdentity.log",
+      "independent_log_sha256": "b4dbbbcb56395e54e4b06e26d438d64c741fe025a065747529a0093b4080e580",
+      "declarations": [
+        "OQ14.Packet05ActualFieldIdentity.actual_field_identity"
+      ]
+    },
+    {
+      "module": "Packet05FixedChartUniformField",
+      "reports": 1,
+      "source_sha256": "e55d3fb8690c1f69c183c6e1e8cbe2cd3d7d746fac2310b34d58984dec59731e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformField-chain.log",
+      "audit_log_sha256": "348d91ff2bdd5ddc4fc84bd7f26682c377978ed09489948517864433e09f16ef",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "independent_review_sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "independent_build_sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformField.log",
+      "independent_log_sha256": "348d91ff2bdd5ddc4fc84bd7f26682c377978ed09489948517864433e09f16ef",
+      "declarations": [
+        "OQ14.Packet05FixedChartUniformField.fixed_chart_uniform_field"
+      ]
+    },
+    {
+      "module": "Packet05BootstrapUniformPhysicalBranch",
+      "reports": 1,
+      "source_sha256": "1e8fab46e2aaba8c685dcd446e8cf9aca25f18e5d07dc364b9d18a55bfd2d52e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05BootstrapUniformPhysicalBranch-chain.log",
+      "audit_log_sha256": "a14f8cec9c90468e3c118cea3b28d181c72ed340ae3b9d38e0e6764b29a877f6",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-review.txt",
+      "independent_review_sha256": "1e93b06fbc10ce2b6874e88d4c1a9e86ddc61a5d68c3ef72472a5588f87ab121",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json",
+      "independent_build_sha256": "1857f9548dd29a89d86c8350876b268327c726a9b60f2082ff9a328697195af7",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05BootstrapUniformPhysicalBranch.log",
+      "independent_log_sha256": "a14f8cec9c90468e3c118cea3b28d181c72ed340ae3b9d38e0e6764b29a877f6",
+      "declarations": [
+        "OQ14.Packet05BootstrapUniformPhysicalBranch.bootstrap_uniform_physical_branch"
+      ]
+    },
+    {
+      "module": "Packet05PeakSphereAtlas",
+      "reports": 1,
+      "source_sha256": "9c772df4706c9849e142cd4755bb47af5a7c30f3bd48cc8a37a79b5d8cbb08cf",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05PeakSphereAtlas-chain.log",
+      "audit_log_sha256": "37ee369828eb54f9715bb77a7f490c256777d06f856e55abec81a346405ecba6",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05PeakSphereAtlas.log",
+      "independent_log_sha256": "37ee369828eb54f9715bb77a7f490c256777d06f856e55abec81a346405ecba6",
+      "declarations": [
+        "OQ14.Packet05PeakSphereAtlas.peak_sphere_atlas"
+      ]
+    },
+    {
+      "module": "Packet05UniformTwoDirection",
+      "reports": 1,
+      "source_sha256": "c5e38373ac17276db5b2f77bc5effdf8698e17363599687232dcef816dc43929",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirection-chain.log",
+      "audit_log_sha256": "b6e4cab937fe49acd615cd292bed56bffb3ce927ef4bf2ade95cd298f2f4e7bb",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "independent_review_sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "independent_build_sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirection.log",
+      "independent_log_sha256": "b6e4cab937fe49acd615cd292bed56bffb3ce927ef4bf2ade95cd298f2f4e7bb",
+      "declarations": [
+        "OQ14.Packet05UniformTwoDirection.uniform_two_direction_iteration"
+      ]
+    },
+    {
+      "module": "Packet05FinitePhysicalCollar",
+      "reports": 2,
+      "source_sha256": "f5cdb83eae4aa080674462239a6edd3548c02f3ea3ef4e56214b009a030616f5",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FinitePhysicalCollar-chain.log",
+      "audit_log_sha256": "2762c0943cfa73b32cd268004ac4c161205304ed1c2d06aba594ae3045ac1a78",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-review.txt",
+      "independent_review_sha256": "f33aa26d13f76a38ab02e78c876dede04daf37860542bbd3a8c17bf64be23f2a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-build.json",
+      "independent_build_sha256": "4f64ab4da17a9138fb3498e8dad18e9bd47498da81a06ca9b7806435572aa94c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FinitePhysicalCollar.log",
+      "independent_log_sha256": "2762c0943cfa73b32cd268004ac4c161205304ed1c2d06aba594ae3045ac1a78",
+      "declarations": [
+        "OQ14.Packet05FinitePhysicalCollar.amplitude_bound",
+        "OQ14.Packet05FinitePhysicalCollar.finite_physical_collar"
+      ]
+    },
+    {
+      "module": "Packet05ActualUniformCollar",
+      "reports": 2,
+      "source_sha256": "12f7e5a11a93ac1fdafd83427e2d16e9fa577cf2335f4fe146820c7299cea58e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualUniformCollar-chain.log",
+      "audit_log_sha256": "5053441b7c2686ab61a8d8822a47bc654969f72eb68a7085f0e892d55da3f9d6",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-review.txt",
+      "independent_review_sha256": "f33aa26d13f76a38ab02e78c876dede04daf37860542bbd3a8c17bf64be23f2a",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-build.json",
+      "independent_build_sha256": "4f64ab4da17a9138fb3498e8dad18e9bd47498da81a06ca9b7806435572aa94c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualUniformCollar.log",
+      "independent_log_sha256": "5053441b7c2686ab61a8d8822a47bc654969f72eb68a7085f0e892d55da3f9d6",
+      "declarations": [
+        "OQ14.Packet05ActualUniformCollar.local_actual_bound",
+        "OQ14.Packet05ActualUniformCollar.actual_uniform_collar"
+      ]
+    },
+    {
+      "module": "Packet05TwoPhaseAEFieldBound",
+      "reports": 1,
+      "source_sha256": "df057f07c79c62d40431e759d9a12b15de31ec334f79d98cc7989d94c6016f3e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05TwoPhaseAEFieldBound-chain.log",
+      "audit_log_sha256": "d0ccf29998fe6ad6ab96ac8206c86b29335390215f64a53433805434fc8115d1",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-review.txt",
+      "independent_review_sha256": "58d308d31086c8cdd8009792ec8090e145ccbee088f531353af2efc0a6ad2eb1",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json",
+      "independent_build_sha256": "ac1836e1a7a2db49d22fae94f3a90a9473bef4397cc42723f7776db48411b6cf",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05TwoPhaseAEFieldBound.log",
+      "independent_log_sha256": "d0ccf29998fe6ad6ab96ac8206c86b29335390215f64a53433805434fc8115d1",
+      "declarations": [
+        "OQ14.Packet05TwoPhaseAEFieldBound.two_phase_ae_bound"
+      ]
+    },
+    {
+      "module": "Packet05ActualLocalCollarBound",
+      "reports": 1,
+      "source_sha256": "6d2f265b0bc06c65cc9c4155d2ec214f4a211546be8c42f7301382debd0d66dd",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualLocalCollarBound-chain.log",
+      "audit_log_sha256": "cb8ed8e61d533eedea3317fb6b467a32bd0765a839be806c6190d04a3d441382",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-review.txt",
+      "independent_review_sha256": "58d308d31086c8cdd8009792ec8090e145ccbee088f531353af2efc0a6ad2eb1",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json",
+      "independent_build_sha256": "ac1836e1a7a2db49d22fae94f3a90a9473bef4397cc42723f7776db48411b6cf",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualLocalCollarBound.log",
+      "independent_log_sha256": "cb8ed8e61d533eedea3317fb6b467a32bd0765a839be806c6190d04a3d441382",
+      "declarations": [
+        "OQ14.Packet05ActualLocalCollarBound.actual_local_chart_bound"
+      ]
+    },
+    {
+      "module": "Packet05ActualTraceCollar",
+      "reports": 1,
+      "source_sha256": "99cdb461a8bc5506e7510342d772c170c89bcae0e6825e5f8b5d4cdc85e70ef9",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualTraceCollar-chain.log",
+      "audit_log_sha256": "df8533dcce816bd982cb9064d656ca9103c07fec962f274944b1c835900c1ab6",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-review.txt",
+      "independent_review_sha256": "58d308d31086c8cdd8009792ec8090e145ccbee088f531353af2efc0a6ad2eb1",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json",
+      "independent_build_sha256": "ac1836e1a7a2db49d22fae94f3a90a9473bef4397cc42723f7776db48411b6cf",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualTraceCollar.log",
+      "independent_log_sha256": "df8533dcce816bd982cb9064d656ca9103c07fec962f274944b1c835900c1ab6",
+      "declarations": [
+        "OQ14.Packet05ActualTraceCollar.actual_uniform_trace_collar"
+      ]
+    },
+    {
+      "module": "Packet05GivenTraceCollar",
+      "reports": 1,
+      "source_sha256": "2c760f1da6f94f17e519a14ab1de84a33793f8f53b70a6b05e200db2a12cba44",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05GivenTraceCollar-chain.log",
+      "audit_log_sha256": "20108b4be9541b20dec5ca2c826ae596e3b576858ff46b3141b75c2a579003c9",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05GivenTraceCollar.log",
+      "independent_log_sha256": "20108b4be9541b20dec5ca2c826ae596e3b576858ff46b3141b75c2a579003c9",
+      "declarations": [
+        "OQ14.Packet05GivenTraceCollar.given_uniform_trace_collar"
+      ]
+    },
+    {
+      "module": "Packet06PlacedTraceCollar",
+      "reports": 1,
+      "source_sha256": "a48b6f11b7d973bc0677c645ece698d071eb3386ea9f8febd99300bec191a2a5",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedTraceCollar-chain.log",
+      "audit_log_sha256": "1f6c201b2a083dc383e18e4cb063fc94e481ea7e5ea2a4cf2b01c8ef8efc6474",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedTraceCollar.log",
+      "independent_log_sha256": "1f6c201b2a083dc383e18e4cb063fc94e481ea7e5ea2a4cf2b01c8ef8efc6474",
+      "declarations": [
+        "OQ14.Packet06PlacedTraceCollar.placed_trace_collar"
+      ]
+    },
+    {
+      "module": "Packet05OneSidedCollar",
+      "reports": 1,
+      "source_sha256": "c97edb73f6f4b8f904c8cb0001c081562db87f7424073f0b3298fd0be5461a25",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05OneSidedCollar-chain.log",
+      "audit_log_sha256": "cf4e3a216b8112f48bb01297b73de8d5749dd83b6e08cb98f568ecf090595314",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05OneSidedCollar.log",
+      "independent_log_sha256": "cf4e3a216b8112f48bb01297b73de8d5749dd83b6e08cb98f568ecf090595314",
+      "declarations": [
+        "OQ14.Packet05OneSidedCollar.given_collar_eventually"
+      ]
+    },
+    {
+      "module": "Packet06PlacedOneSidedCollar",
+      "reports": 1,
+      "source_sha256": "20105905fbbc1266005c8a2b72c2fd5e365b8839fa47111d93dc6e505fe3a515",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedOneSidedCollar-chain.log",
+      "audit_log_sha256": "42d0c319921a63ccd8d951d76d70dcea7d1953eaca3b041419f5fc5b8223aa4e",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedOneSidedCollar.log",
+      "independent_log_sha256": "42d0c319921a63ccd8d951d76d70dcea7d1953eaca3b041419f5fc5b8223aa4e",
+      "declarations": [
+        "OQ14.Packet06PlacedOneSidedCollar.placed_one_sided_collar"
+      ]
+    },
+    {
+      "module": "Packet05GivenAllCollars",
+      "reports": 1,
+      "source_sha256": "35a4f6de42744ff2f7ce30fe8d40ebc3cd82409833afb865ad2efae0a8acb223",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05GivenAllCollars-chain.log",
+      "audit_log_sha256": "a083ee165bb2f0dbd6b830d570246ba08ab63d73627d8391b87ad5fd583ecc11",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05GivenAllCollars.log",
+      "independent_log_sha256": "a083ee165bb2f0dbd6b830d570246ba08ab63d73627d8391b87ad5fd583ecc11",
+      "declarations": [
+        "OQ14.Packet05GivenAllCollars.given_all_collars_eventually"
+      ]
+    },
+    {
+      "module": "Packet05AllActualTraceCollars",
+      "reports": 1,
+      "source_sha256": "9279324feb88ed4e2a1523b99dd79558da5a91e5371bd03011da360dd873d465",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05AllActualTraceCollars-chain.log",
+      "audit_log_sha256": "5db79ecae0e9161dfdbe51f81bf1b154cedef5712894d5964ab940cfdb0051c5",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "independent_review_sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "independent_build_sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05AllActualTraceCollars.log",
+      "independent_log_sha256": "5db79ecae0e9161dfdbe51f81bf1b154cedef5712894d5964ab940cfdb0051c5",
+      "declarations": [
+        "OQ14.Packet05AllActualTraceCollars.all_uniform_trace_collars"
+      ]
+    },
+    {
+      "module": "Packet06HotspotFamilyAssembly",
+      "reports": 1,
+      "source_sha256": "548b5dea6d71693aa04718a6f28602795871036b5f253e0fed76760ce6bac495",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06HotspotFamilyAssembly-chain.log",
+      "audit_log_sha256": "68a2a1e35e9b3a36d5bf4851333f71ce18d7b712fb8784b6da28a46abf51ca16",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/family-review.txt",
+      "independent_review_sha256": "e86d9def482d8d5a49b5a3f4697e92676748887748cf524fa5027aaf75174e59",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/family-build.json",
+      "independent_build_sha256": "d8a20bd9689b33a96a943ef9586db295be77e132c796781e8b67c4561b90c6e9",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06HotspotFamilyAssembly.log",
+      "independent_log_sha256": "68a2a1e35e9b3a36d5bf4851333f71ce18d7b712fb8784b6da28a46abf51ca16",
+      "declarations": [
+        "OQ14.Packet06HotspotFamilyAssembly.hotspots_of_uniform_collars"
+      ]
+    },
+    {
+      "module": "Packet06PlacedSmoothBoundary",
+      "reports": 1,
+      "source_sha256": "a74efb48af456ea439ad97009660f5c3279fa8173c54a4a1519fae78f74e4da9",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedSmoothBoundary-chain.log",
+      "audit_log_sha256": "b219e17f242ba638c459688fdd485889cfe7d1f0ec70fe1fd0d21ab1e3b37874",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-review.txt",
+      "independent_review_sha256": "d233622a001254a6a7887a678cf31fea8f1fd589ab80d211420f80a1022b600c",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-build.json",
+      "independent_build_sha256": "d30062746ae576da9f74b1e2e6191318107f347610c9b7a1b84cb016b83ef64d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedSmoothBoundary.log",
+      "independent_log_sha256": "b219e17f242ba638c459688fdd485889cfe7d1f0ec70fe1fd0d21ab1e3b37874",
+      "declarations": [
+        "OQ14.Packet06PlacedSmoothBoundary.smooth_boundary_image"
+      ]
+    },
+    {
+      "module": "Packet06PlaceModeHotspots",
+      "reports": 2,
+      "source_sha256": "2aa443e1ddc881ca8e23e8ca959ff94670e624965d1cba9f8db1a51073c262ac",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlaceModeHotspots-chain.log",
+      "audit_log_sha256": "f30b59d387d1c1ef78b74353b88ffc7eee6e43875a9662ec94cf403c4be85ef2",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-review.txt",
+      "independent_review_sha256": "d233622a001254a6a7887a678cf31fea8f1fd589ab80d211420f80a1022b600c",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-build.json",
+      "independent_build_sha256": "d30062746ae576da9f74b1e2e6191318107f347610c9b7a1b84cb016b83ef64d",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlaceModeHotspots.log",
+      "independent_log_sha256": "f30b59d387d1c1ef78b74353b88ffc7eee6e43875a9662ec94cf403c4be85ef2",
+      "declarations": [
+        "OQ14.Packet06PlaceModeHotspots.threshold_mono",
+        "OQ14.Packet06PlaceModeHotspots.place_mode_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalHotspotSelection",
+      "reports": 1,
+      "source_sha256": "8f1774fb59690c9730291bcfac15f48c8bba7a410be35ad6fd8cf31058117b88",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PhysicalHotspotSelection-chain.log",
+      "audit_log_sha256": "2c3d503f94094d865f734a55f888a92deebfc9a3b1b31182e19ef725d39f8788",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/selection-review.txt",
+      "independent_review_sha256": "f226e64e7fdb71279061105cfacbb87a4c83659978a52a0bbf594b4c4256b692",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/selection-build.json",
+      "independent_build_sha256": "f378b5c85c02793db90df4009d340ea1a059e304b2e16a11a941167d9dfafad4",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PhysicalHotspotSelection.log",
+      "independent_log_sha256": "2c3d503f94094d865f734a55f888a92deebfc9a3b1b31182e19ef725d39f8788",
+      "declarations": [
+        "OQ14.Packet06PhysicalHotspotSelection.select_placed_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06ActualPeakFamily",
+      "reports": 1,
+      "source_sha256": "5b9d0977320d46c1da627f94a8e135a23ac219108390981dda2028a127488cac",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06ActualPeakFamily-chain.log",
+      "audit_log_sha256": "31cf2a23b098b971610ad8b24e84f764734ebe90472ca4db39776a39bb92cd0c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-review.txt",
+      "independent_review_sha256": "814c9a7ff86c15a44fbcfc14a5bf1f734673593e8903cbc92eee83d48ef08554",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-build.json",
+      "independent_build_sha256": "839036f67d92a9b3915e6b5fbba0468ad5afe637b5e402405983e724910d0266",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06ActualPeakFamily.log",
+      "independent_log_sha256": "31cf2a23b098b971610ad8b24e84f764734ebe90472ca4db39776a39bb92cd0c",
+      "declarations": [
+        "OQ14.Packet06ActualPeakFamily.actual_peak_family"
+      ]
+    },
+    {
+      "module": "Packet06PlacedActualCollar",
+      "reports": 1,
+      "source_sha256": "61fc00ee05c98e40b856b53c7055979833160f208244ce94c0cff88440eb1955",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedActualCollar-chain.log",
+      "audit_log_sha256": "a78caa00f72140d17f872f49b439490aef2eef4cf062c78abfe1404f07bdafcc",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-review.txt",
+      "independent_review_sha256": "814c9a7ff86c15a44fbcfc14a5bf1f734673593e8903cbc92eee83d48ef08554",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-build.json",
+      "independent_build_sha256": "839036f67d92a9b3915e6b5fbba0468ad5afe637b5e402405983e724910d0266",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedActualCollar.log",
+      "independent_log_sha256": "a78caa00f72140d17f872f49b439490aef2eef4cf062c78abfe1404f07bdafcc",
+      "declarations": [
+        "OQ14.Packet06PlacedActualCollar.placed_collar"
+      ]
+    },
+    {
+      "module": "Packet06CollaredHotspotFamily",
+      "reports": 1,
+      "source_sha256": "53192bf708756cc50647671c7a73ea6c3b625b5e1ec474e675523dcdc7c1e453",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06CollaredHotspotFamily-chain.log",
+      "audit_log_sha256": "256f255a757667fcd8f81fd8edcfc5a2234274f023ca387e3645ed4d97872d76",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collared-family-review.txt",
+      "independent_review_sha256": "09fa82a9c15396b418c53f8808da5fd8f618f39d1f2c4f74c12cb6700ce74bbf",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collared-family-build.json",
+      "independent_build_sha256": "6caddfb8795bd22ab861b9b853546524d01d114c20927842ef11ed6270e14e03",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06CollaredHotspotFamily.log",
+      "independent_log_sha256": "256f255a757667fcd8f81fd8edcfc5a2234274f023ca387e3645ed4d97872d76",
+      "declarations": [
+        "OQ14.Packet06CollaredHotspotFamily.collared_hotspots_of_uniform_collars"
+      ]
+    },
+    {
+      "module": "Packet06CollaredHotspotSelection",
+      "reports": 1,
+      "source_sha256": "961c847c9a7f61f90ee78a5154a9d6e8d7a7bec32d6b61abc82bc8cdf3640e9a",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06CollaredHotspotSelection-chain.log",
+      "audit_log_sha256": "ac937a5b95034f362f7c5c79a3175397a805d9b40683b608d7c40fe88a79cfa5",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/revised-selection-review.txt",
+      "independent_review_sha256": "09fa82a9c15396b418c53f8808da5fd8f618f39d1f2c4f74c12cb6700ce74bbf",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/revised-selection-build.json",
+      "independent_build_sha256": "1f9747f9d9e18d510282a9664dd06e78032bb20652b9c2f0c54c070b2ad1f325",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06CollaredHotspotSelection.log",
+      "independent_log_sha256": "ac937a5b95034f362f7c5c79a3175397a805d9b40683b608d7c40fe88a79cfa5",
+      "declarations": [
+        "OQ14.Packet06CollaredHotspotSelection.select_placed_collared_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06RoundedPlacedPole",
+      "reports": 2,
+      "source_sha256": "962e5726346f1b8f635e548afdcf6ec56d9159b1ddfd104d6c189b394e598329",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06RoundedPlacedPole-chain.log",
+      "audit_log_sha256": "a0fa03b5094b2bd7651b3a7dc472652c071ca6209fca5990697273c7e232e12d",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-review.txt",
+      "independent_review_sha256": "bedfe74b10e252396e848682144f98ee8011e1792b53fe23269b14d372f500c9",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-build.json",
+      "independent_build_sha256": "a42042c1c13d5ad9c28d329174272d4ac283e65e9ee39ceaed42da54c916ca9a",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06RoundedPlacedPole.log",
+      "independent_log_sha256": "a0fa03b5094b2bd7651b3a7dc472652c071ca6209fca5990697273c7e232e12d",
+      "declarations": [
+        "OQ14.Packet06RoundedPlacedPole.rounded_symmetries",
+        "OQ14.Packet06RoundedPlacedPole.rounded_placed_observed_pole"
+      ]
+    },
+    {
+      "module": "Packet06GlobalElectricIdentification",
+      "reports": 2,
+      "source_sha256": "259e1b3b46c8fb58a636c1576073cbd7f0fe8b9b8b6d6d5ce78640ea339c313f",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06GlobalElectricIdentification-chain.log",
+      "audit_log_sha256": "6522f4cdae326747a183c9cf3d388b5c2009e45ae7426cfb4168e0802e24f9d2",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-review.txt",
+      "independent_review_sha256": "bedfe74b10e252396e848682144f98ee8011e1792b53fe23269b14d372f500c9",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-build.json",
+      "independent_build_sha256": "a42042c1c13d5ad9c28d329174272d4ac283e65e9ee39ceaed42da54c916ca9a",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06GlobalElectricIdentification.log",
+      "independent_log_sha256": "6522f4cdae326747a183c9cf3d388b5c2009e45ae7426cfb4168e0802e24f9d2",
+      "declarations": [
+        "OQ14.Packet06GlobalElectricIdentification.global_electric_ae",
+        "OQ14.Packet06GlobalElectricIdentification.global_phase_representative"
+      ]
+    },
+    {
+      "module": "Packet06RoundedHotspotFamily",
+      "reports": 1,
+      "source_sha256": "6bcc1faaf4c7bfbff7c65d76b0a5fda91ec12e73164898bb8ae1d91068f77f10",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06RoundedHotspotFamily-chain.log",
+      "audit_log_sha256": "68fea2435566d560916a83976de126816d66da2f0707c9ba49755b348a491042",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/rounded-family-review.txt",
+      "independent_review_sha256": "00fed42f5e4bf46ec947c9b7779d98d9af7a0635121bdeb1866139490bb70d68",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/rounded-family-build.json",
+      "independent_build_sha256": "41458c2cc931ff550953dd8fa434c6beee2b914b640cc180afb199dd4f6d0384",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06RoundedHotspotFamily.log",
+      "independent_log_sha256": "68fea2435566d560916a83976de126816d66da2f0707c9ba49755b348a491042",
+      "declarations": [
+        "OQ14.Packet06RoundedHotspotFamily.rounded_hotspot_family"
+      ]
+    },
+    {
+      "module": "Packet06PlacedMaterialGeometry",
+      "reports": 4,
+      "source_sha256": "407c42d52059ad6cabfbebd5413d80db8f313a78f33255a56e387ba8347e5974",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedMaterialGeometry-chain.log",
+      "audit_log_sha256": "1dd7fede754d2fc6d58094ed2ce91dbeb60e5f0f4f10b4c1907fef420c2264e4",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/material-review.txt",
+      "independent_review_sha256": "feac815e0df163a3a8b326aa8693905479c84de45d7015a33069bd9001ebe259",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/material-build.json",
+      "independent_build_sha256": "121097031c1ddf35868e587e7e9cf549e15fca114e57e3f5b4655d93f4f1f81f",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedMaterialGeometry.log",
+      "independent_log_sha256": "1dd7fede754d2fc6d58094ed2ce91dbeb60e5f0f4f10b4c1907fef420c2264e4",
+      "declarations": [
+        "OQ14.Packet06PlacedMaterialGeometry.placed_material_values",
+        "OQ14.Packet06PlacedMaterialGeometry.unit_ball_smooth",
+        "OQ14.Packet06PlacedMaterialGeometry.placed_outer_smooth",
+        "OQ14.Packet06PlacedMaterialGeometry.placed_piecewise_smooth"
+      ]
+    },
+    {
+      "module": "Packet06ModalHotspotExistence",
+      "reports": 1,
+      "source_sha256": "7156adb8ce18ae71bfe9c7a7c4df1b3232ec21f043c1c03392b86a121065fa73",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06ModalHotspotExistence-chain.log",
+      "audit_log_sha256": "0235a5d7194fd1f4040e9da59033ed9c571247de757ab5bf4cb60eefb5b05bac",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/modal-existence-review.txt",
+      "independent_review_sha256": "cbeb0bb6d28085f0b53164511dacd793772f6fab3af6ee61a85e3abeab66bd95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/modal-existence-build.json",
+      "independent_build_sha256": "784d600e2fca75588b18dfbd49b5e71e80a36532737c02c1d7ae14640b2185ae",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06ModalHotspotExistence.log",
+      "independent_log_sha256": "0235a5d7194fd1f4040e9da59033ed9c571247de757ab5bf4cb60eefb5b05bac",
+      "declarations": [
+        "OQ14.Packet06ModalHotspotExistence.exists_modal_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalVolumeLimits",
+      "reports": 3,
+      "source_sha256": "7db688985b1120f379cdbf2bd88f61bf79e068181ac9b269983ab1c7c12c2510",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PhysicalVolumeLimits-chain.log",
+      "audit_log_sha256": "db39683f6a3b7beb4ea644d55ba5cd31abd641335a9a516d5fcca5181ac4bd95",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/volume-review.txt",
+      "independent_review_sha256": "a5357ddd9ad5679eb4db0d6844bfdffdf35fb1e0429f5a5a5471663c0e045cc1",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/volume-build.json",
+      "independent_build_sha256": "95ab0150a903bf6871824ecc10f7828252c0a7cce2b35c2a88ad2198b2f1f033",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PhysicalVolumeLimits.log",
+      "independent_log_sha256": "db39683f6a3b7beb4ea644d55ba5cd31abd641335a9a516d5fcca5181ac4bd95",
+      "declarations": [
+        "OQ14.Packet06PhysicalVolumeLimits.weighted_inverse_square",
+        "OQ14.Packet06PhysicalVolumeLimits.fixed_direction_subsequence",
+        "OQ14.Packet06PhysicalVolumeLimits.physical_and_directional_volumes"
+      ]
+    },
+    {
+      "module": "Packet05IncidentUniformH2",
+      "reports": 1,
+      "source_sha256": "9c06a018171fb2d8cfdc75cc34b11e24d54ec3b48c71aa94dd4621ccb6e86bdb",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05IncidentUniformH2-chain.log",
+      "audit_log_sha256": "12b815770219b7244c71d96eae1ee6ecaad43c6d77aa8340cb6b07c0980b46c6",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05IncidentUniformH2.log",
+      "independent_log_sha256": "12b815770219b7244c71d96eae1ee6ecaad43c6d77aa8340cb6b07c0980b46c6",
+      "declarations": [
+        "OQ14.Packet05IncidentUniformH2.fixed_smooth_addition"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCorrection",
+      "reports": 1,
+      "source_sha256": "159eece0af8bd5169a19f4adeb33589b5e86ded3df4c9ea0bcd36699db0fa551",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCorrection-chain.log",
+      "audit_log_sha256": "8a68dcd604697eaa30508270e22a2788a513b9232a8609862e70f9b0d22b2eba",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCorrection.log",
+      "independent_log_sha256": "8a68dcd604697eaa30508270e22a2788a513b9232a8609862e70f9b0d22b2eba",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCorrection.driven_correction"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFamily",
+      "reports": 2,
+      "source_sha256": "b5f0e07fc16c3109e79fab24d90890d4aadc421ecea8c607efc2f3df87c213f7",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFamily-chain.log",
+      "audit_log_sha256": "ebf97478a8c19feb587cb8921c95de7d02a8b4e16c35708537a489a5c0cdac5c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFamily.log",
+      "independent_log_sha256": "ebf97478a8c19feb587cb8921c95de7d02a8b4e16c35708537a489a5c0cdac5c",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFamily.actual_unknown_tendsto",
+        "OQ14.Packet07DrivenUniformFamily.actual_unknown_bounded"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformActual",
+      "reports": 1,
+      "source_sha256": "69c07d773ef8bb11386d7a409d9c8066fd5d9c1764375b4ad90716b2528f5887",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformActual-chain.log",
+      "audit_log_sha256": "65827ab737dba92e0afad4a65b2c47de0a99861b901cd9db56fccfe716180c5c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformActual.log",
+      "independent_log_sha256": "65827ab737dba92e0afad4a65b2c47de0a99861b901cd9db56fccfe716180c5c",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformActual.actual_driven_correction"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformGraph",
+      "reports": 2,
+      "source_sha256": "9aa64510935e4a936c2d2bab29ebc741843675842ac91d2a982e8a98a15cce7a",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformGraph-chain.log",
+      "audit_log_sha256": "3a09b357764a9b3c60d24b492183a1306d23de7c37f4f703f634314f16031b37",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformGraph.log",
+      "independent_log_sha256": "3a09b357764a9b3c60d24b492183a1306d23de7c37f4f703f634314f16031b37",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformGraph.actual_scalar_graph",
+        "OQ14.Packet07DrivenUniformGraph.actual_correction_pointwise"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformReference",
+      "reports": 1,
+      "source_sha256": "393f4d414f7d876828025ad199b935945cc783cad3c1ff39af8c791e0c10a5db",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformReference-chain.log",
+      "audit_log_sha256": "de467fb538f9d556a8ea4c1cd9e5cbe6285c59457c6c29583799d36b535ef7ad",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "independent_review_sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "independent_build_sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformReference.log",
+      "independent_log_sha256": "de467fb538f9d556a8ea4c1cd9e5cbe6285c59457c6c29583799d36b535ef7ad",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformReference.fixed_reference"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformForcing",
+      "reports": 1,
+      "source_sha256": "85c096a21b5cef1d3eb093ca9f34d463ca8fa5ba82c77cbeee2b18f5704c8573",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformForcing-chain.log",
+      "audit_log_sha256": "d7e7736d6ec94c0976321b583951270b99115bdec1505bd5cec23b43d2586d87",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformForcing.log",
+      "independent_log_sha256": "d7e7736d6ec94c0976321b583951270b99115bdec1505bd5cec23b43d2586d87",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformForcing.actual_graph_forcing"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformOriented",
+      "reports": 1,
+      "source_sha256": "a80103943779620dd0d1b0a70288c93c7ecf7ba7f546d1a0969a925d8f21169c",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformOriented-chain.log",
+      "audit_log_sha256": "e77d75affe92d1a0b06cf17d58d0974eebd952a63c8ec1cbc426659a68c5d730",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformOriented.log",
+      "independent_log_sha256": "e77d75affe92d1a0b06cf17d58d0974eebd952a63c8ec1cbc426659a68c5d730",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformOriented.oriented_driven_scalar"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformHostGraph",
+      "reports": 1,
+      "source_sha256": "dccc7995e6f63d55a304acb9157b72f4ae8bbbe1ca4a60d756b52df5f3d2d830",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHostGraph-chain.log",
+      "audit_log_sha256": "b68cfc505d462578f3302045f882621fcfa2365e2fe2d65367448c66726eed0c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHostGraph.log",
+      "independent_log_sha256": "b68cfc505d462578f3302045f882621fcfa2365e2fe2d65367448c66726eed0c",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformHostGraph.actual_host_driven_graph"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformPhaseBranches",
+      "reports": 1,
+      "source_sha256": "bf75c41f30b21da8542ca055564fc358cec84dac5500990219872335420f9260",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformPhaseBranches-chain.log",
+      "audit_log_sha256": "cfa3972dd3e732575497a66a92f81120f5547ae4856841c48ef3672cd72c1772",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformPhaseBranches.log",
+      "independent_log_sha256": "cfa3972dd3e732575497a66a92f81120f5547ae4856841c48ef3672cd72c1772",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformPhaseBranches.actual_driven_phase_branches"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformOpenChart",
+      "reports": 1,
+      "source_sha256": "59c577b0b2a361e64cc95b27b8dec555d287c3672a98f9d60ca220b837a09e98",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformOpenChart-chain.log",
+      "audit_log_sha256": "778f44cc23a11c406c117aad52c322788d844ba4d8cc5a8efbdb207128d7fe82",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformOpenChart.log",
+      "independent_log_sha256": "778f44cc23a11c406c117aad52c322788d844ba4d8cc5a8efbdb207128d7fe82",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformOpenChart.open_driven_chart"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformBoundary",
+      "reports": 1,
+      "source_sha256": "4a43840370435db3ba113d8ca90e59a4eca2894e33e24353e37b5ee15bf33ea2",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundary-chain.log",
+      "audit_log_sha256": "96a887723c248eaba99f641a2ed0365732cbb9dd5929ac8516f8ffa4236c0974",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "independent_review_sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "independent_build_sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundary.log",
+      "independent_log_sha256": "96a887723c248eaba99f641a2ed0365732cbb9dd5929ac8516f8ffa4236c0974",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformBoundary.actual_boundary_driven"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformHomogeneous",
+      "reports": 1,
+      "source_sha256": "f5d328fa3a67895a7d942f8c7dfb1a6bf7d1396fdff33fd7c6208b9c0f2f2662",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHomogeneous-chain.log",
+      "audit_log_sha256": "618c0bde0bc3249a52751a5eb955e21573915890edb060f3a3bcf932dbdf5248",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHomogeneous.log",
+      "independent_log_sha256": "618c0bde0bc3249a52751a5eb955e21573915890edb060f3a3bcf932dbdf5248",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformHomogeneous.actual_homogeneous_neighborhood"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCollarChart",
+      "reports": 2,
+      "source_sha256": "86add9d07567676cdf9ba6abc42a6e8d083a47666896074487d09c78ef6a21cf",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollarChart-chain.log",
+      "audit_log_sha256": "9b03ec4f785a18a203ace1bb452cb18dcdc37bf23a363d07622d55ca9571d143",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollarChart.log",
+      "independent_log_sha256": "9b03ec4f785a18a203ace1bb452cb18dcdc37bf23a363d07622d55ca9571d143",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCollarChart.annulus_open",
+        "OQ14.Packet07DrivenUniformCollarChart.fixed_collar_chart"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCollarPhase",
+      "reports": 1,
+      "source_sha256": "29390bc25a8a82b09442c0ce3cd2984e115ffbd0419c725eaf79e79578357cca",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollarPhase-chain.log",
+      "audit_log_sha256": "7a0bcdd4e0767df2734de41aa16090a77aaa1f7c98c2d28b98ae478f04cef4e1",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollarPhase.log",
+      "independent_log_sha256": "7a0bcdd4e0767df2734de41aa16090a77aaa1f7c98c2d28b98ae478f04cef4e1",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCollarPhase.eventually_constant_on_phase"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformHomogeneousChart",
+      "reports": 1,
+      "source_sha256": "7eee2e8fa848cb868a24e8207da8fbafcf491ae651dfd741cb73ca5ef79e092c",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHomogeneousChart-chain.log",
+      "audit_log_sha256": "029d58d1876cdfdaea3c34387f0715e2e98cc53f85d9fd83fc18061e1a008e76",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHomogeneousChart.log",
+      "independent_log_sha256": "029d58d1876cdfdaea3c34387f0715e2e98cc53f85d9fd83fc18061e1a008e76",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformHomogeneousChart.fixed_homogeneous_chart"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformAllCharts",
+      "reports": 1,
+      "source_sha256": "a926f4070dee7092147f2577ccbb17642d800510517bb74ca6f37be3f810e1be",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllCharts-chain.log",
+      "audit_log_sha256": "38cbb1c5227416ddaed824920dca5a1a8c230ce525cce5c57466485b721428d4",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllCharts.log",
+      "independent_log_sha256": "38cbb1c5227416ddaed824920dca5a1a8c230ce525cce5c57466485b721428d4",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformAllCharts.fixed_chart_at_point"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformAtlas",
+      "reports": 1,
+      "source_sha256": "393f357c49028c310caed0d0317b0210461e74b4841c2d474b14061c4dc99f76",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAtlas-chain.log",
+      "audit_log_sha256": "bc0cb3383ef7fd3a72826747b27cda9b6771b1c41703c8c600c89c974da0ddc5",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "independent_review_sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "independent_build_sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAtlas.log",
+      "independent_log_sha256": "bc0cb3383ef7fd3a72826747b27cda9b6771b1c41703c8c600c89c974da0ddc5",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformAtlas.actual_fixed_collar_atlas"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformBoundaryChart",
+      "reports": 1,
+      "source_sha256": "5c11b288d81b3f443d139908a9c318f0ad1e3f28e49f838dc4e99d75314e3d8e",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundaryChart-chain.log",
+      "audit_log_sha256": "4a91408085e826cb58c83f589b902a56c90fab08af68bbaba0f15bcb9ec546a2",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "independent_review_sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "independent_build_sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundaryChart.log",
+      "independent_log_sha256": "4a91408085e826cb58c83f589b902a56c90fab08af68bbaba0f15bcb9ec546a2",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformBoundaryChart.actual_boundary_chart"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformBoundaryMaterial",
+      "reports": 1,
+      "source_sha256": "fdb474f7d534bb6bc8c96d2a5eea75af5053b893509340f47ac7938b0e38c9be",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundaryMaterial-chain.log",
+      "audit_log_sha256": "7d8e617ddec1b0067ef095cb553549865df7b3c0ad730cc02d06626918a54cb3",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "independent_review_sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "independent_build_sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundaryMaterial.log",
+      "independent_log_sha256": "7d8e617ddec1b0067ef095cb553549865df7b3c0ad730cc02d06626918a54cb3",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformBoundaryMaterial.boundary_material_driven"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCompactPhase",
+      "reports": 1,
+      "source_sha256": "4fa5b0d6d8831f048c8909533bbd5c6515ea36e02d49140aefd35b02dcbb4834",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactPhase-chain.log",
+      "audit_log_sha256": "a9c4ec5d475867ef63e67080263234e59131172b74001f4875265298b0d6cd16",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "independent_review_sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "independent_build_sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactPhase.log",
+      "independent_log_sha256": "a9c4ec5d475867ef63e67080263234e59131172b74001f4875265298b0d6cd16",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCompactPhase.compact_driven_phase"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCompactBinary",
+      "reports": 1,
+      "source_sha256": "971837518a0ea5dce08376baef88cd4ebb05d6e0784337a85ed44002120443c2",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactBinary-chain.log",
+      "audit_log_sha256": "98cbc99e3f56c29fefe6e268d41ed88c5c484f68e93d61ee97031e2b63203d3e",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "independent_review_sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "independent_build_sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactBinary.log",
+      "independent_log_sha256": "98cbc99e3f56c29fefe6e268d41ed88c5c484f68e93d61ee97031e2b63203d3e",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCompactBinary.compact_binary_driven"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCompactActual",
+      "reports": 1,
+      "source_sha256": "af9dd1c07f753c7fd39a6e55f199f2373fb558d243bb6dd796eaa31740ad5259",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactActual-chain.log",
+      "audit_log_sha256": "5e426fc4f1caa5be5350057b7d2348dc078542e456707e3db79e9e1de7e8f2ed",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "independent_review_sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "independent_build_sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactActual.log",
+      "independent_log_sha256": "5e426fc4f1caa5be5350057b7d2348dc078542e456707e3db79e9e1de7e8f2ed",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCompactActual.eventually_compact_branches"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformAttained",
+      "reports": 1,
+      "source_sha256": "96378209435db23845a1ecd1acd9fe7382f5772c5b02a79b25966ac61281dcde",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAttained-chain.log",
+      "audit_log_sha256": "83176b3dd3325e453d75611c3c7c33d6a6876ca012f875196e6ca93bfc08716e",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-attained-review.txt",
+      "independent_review_sha256": "52654d0b47fb3eab5873e599ef5ad3236b8bc9e7f34ea14fc38ed802879896f1",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-attained-build.json",
+      "independent_build_sha256": "a9ae5760d748bb48f231325dea6f34134cbaa419b6258c4cd374271dcbd7be0e",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAttained.log",
+      "independent_log_sha256": "83176b3dd3325e453d75611c3c7c33d6a6876ca012f875196e6ca93bfc08716e",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformAttained.eventually_attained_above_peak"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFiniteAtlas",
+      "reports": 1,
+      "source_sha256": "68007d3760b18ada5b01e73d3180db7f7d98d5a94188dbbc2de8edde1058d081",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFiniteAtlas-chain.log",
+      "audit_log_sha256": "0ba5a5b304ccba1e357d2e657a7f9131f979d9c0e0123b3ce355220e3d1f7e2c",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFiniteAtlas.log",
+      "independent_log_sha256": "0ba5a5b304ccba1e357d2e657a7f9131f979d9c0e0123b3ce355220e3d1f7e2c",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFiniteAtlas.finite_fixed_atlas"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFields",
+      "reports": 1,
+      "source_sha256": "afde096410888e824cd0a8efcc76acb97dcd73c8cbadc3889989826a735e78b3",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFields-chain.log",
+      "audit_log_sha256": "c54b3055efa0bf1c4e95750ed523db7de61b9a8635da4f800ef71592cf962eb7",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFields.log",
+      "independent_log_sha256": "c54b3055efa0bf1c4e95750ed523db7de61b9a8635da4f800ef71592cf962eb7",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFields.correction_continuous"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformNamedInputs",
+      "reports": 1,
+      "source_sha256": "4bee5bafb219caa56c3e8ce30ee86d4ffd167ea46d9db9394fe22790594cf126",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformNamedInputs-chain.log",
+      "audit_log_sha256": "8012e555d6350c977418118a03ff46f63a61f52559e01b1e818f03c60702b3c4",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformNamedInputs.log",
+      "independent_log_sha256": "8012e555d6350c977418118a03ff46f63a61f52559e01b1e818f03c60702b3c4",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformNamedInputs.actual_named_uniform_inputs"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFamilyBootstrap",
+      "reports": 1,
+      "source_sha256": "89f22288ae7bb22d0b9ab86644fdf6925bf1c7df2574bd952d5e7e82e57ef2c8",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFamilyBootstrap-chain.log",
+      "audit_log_sha256": "3ad97c9a6490c94e5fd7c89689844ceffc2656da7d4a4506e258f1763c659cfe",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFamilyBootstrap.log",
+      "independent_log_sha256": "3ad97c9a6490c94e5fd7c89689844ceffc2656da7d4a4506e258f1763c659cfe",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFamilyBootstrap.actual_chart_family_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFixedBootstrap",
+      "reports": 1,
+      "source_sha256": "3b1e367d845df5a32c8198032d5fbcc1b083b33b5650842925fc9b2a3e53eb03",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedBootstrap-chain.log",
+      "audit_log_sha256": "0778799636cce618b74033fee5545f490781f36cf6fcc77785f9e55dab427254",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedBootstrap.log",
+      "independent_log_sha256": "0778799636cce618b74033fee5545f490781f36cf6fcc77785f9e55dab427254",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFixedBootstrap.fixed_chart_bootstrap"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFieldIdentity",
+      "reports": 1,
+      "source_sha256": "da7120a68b64faf0d2d9f2742ff12c8b3b49a9c6cf1274e16bc456e85539e888",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFieldIdentity-chain.log",
+      "audit_log_sha256": "bc1cb0d3692972b9b5ebcdc795cf86e9427618d145bdcba25689ba52595d7de3",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFieldIdentity.log",
+      "independent_log_sha256": "bc1cb0d3692972b9b5ebcdc795cf86e9427618d145bdcba25689ba52595d7de3",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFieldIdentity.actual_field_identity"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFixedIteration",
+      "reports": 1,
+      "source_sha256": "149d2fffb0947d44e3c5344f0ded44f13617455d6bd66815b0d847c9b9bb0645",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedIteration-chain.log",
+      "audit_log_sha256": "e1fb81cebc20c7f0ccc5691cba2540cdc09dd4848580e7c14d7bad3490a83100",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedIteration.log",
+      "independent_log_sha256": "e1fb81cebc20c7f0ccc5691cba2540cdc09dd4848580e7c14d7bad3490a83100",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFixedIteration.fixed_chart_iteration"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformFixedField",
+      "reports": 1,
+      "source_sha256": "7486cd0748b7db5b1efb26bf1da080f56079de14cdc3e51b207184c71394fcb2",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedField-chain.log",
+      "audit_log_sha256": "3be2bd8a2a6c24cbb7b13a6ae3e30ad51a1d00cf0391d6f14b8500718336cf70",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedField.log",
+      "independent_log_sha256": "3be2bd8a2a6c24cbb7b13a6ae3e30ad51a1d00cf0391d6f14b8500718336cf70",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformFixedField.fixed_chart_uniform_field"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformCollar",
+      "reports": 2,
+      "source_sha256": "f02cf45dff8e869b96480f47dd44a885b4fd5017c8006975bd872e9a79180d90",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollar-chain.log",
+      "audit_log_sha256": "e32747562a8498992852172fcb8b8aa4ed4aafb2e16c5ffdef9439838c7b880d",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollar.log",
+      "independent_log_sha256": "e32747562a8498992852172fcb8b8aa4ed4aafb2e16c5ffdef9439838c7b880d",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformCollar.local_actual_bound",
+        "OQ14.Packet07DrivenUniformCollar.actual_uniform_collar"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformTraceCollar",
+      "reports": 1,
+      "source_sha256": "6b27873b81545828569c08d269e2716931953c780f79ce3b8c10b6a757763af1",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformTraceCollar-chain.log",
+      "audit_log_sha256": "b58867ac4738224b6100d7b1ef66263febc24602873f16e31dc1dee1354f54e8",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformTraceCollar.log",
+      "independent_log_sha256": "b58867ac4738224b6100d7b1ef66263febc24602873f16e31dc1dee1354f54e8",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformTraceCollar.actual_uniform_trace_collar"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformAllTraceCollars",
+      "reports": 1,
+      "source_sha256": "0e8505d8996b0e04cc373253c1518e4e4e52b9c37c634c25f00de58472671898",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllTraceCollars-chain.log",
+      "audit_log_sha256": "9d7965f2fa15ed27a657ec51e3e3acb3eb876b6be10abc708cd52fdea681b5b7",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllTraceCollars.log",
+      "independent_log_sha256": "9d7965f2fa15ed27a657ec51e3e3acb3eb876b6be10abc708cd52fdea681b5b7",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformAllTraceCollars.all_uniform_trace_collars"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformHotspot",
+      "reports": 1,
+      "source_sha256": "949fe483cc89579d25752e0c4d1b5219736fcf5b7a78d5c45cba151c8975c536",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHotspot-chain.log",
+      "audit_log_sha256": "8a861b715aa0997df611edd5cef518e72b339fa9e9eb6491b1454f35a73b6f37",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHotspot.log",
+      "independent_log_sha256": "8a861b715aa0997df611edd5cef518e72b339fa9e9eb6491b1454f35a73b6f37",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformHotspot.eventually_actual_hotspot"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformAllHotspots",
+      "reports": 1,
+      "source_sha256": "d228c284fdaf6a623c47569d92eba2f503ea48e2f0e209226a131f23a7c22dd4",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllHotspots-chain.log",
+      "audit_log_sha256": "7a1ea0f77e029324b777f80b02dc13d9c73f686e8a8539383dee470f3743d43d",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "independent_review_sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "independent_build_sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllHotspots.log",
+      "independent_log_sha256": "7a1ea0f77e029324b777f80b02dc13d9c73f686e8a8539383dee470f3743d43d",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformAllHotspots.eventually_all_hotspots"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformComponentPeak",
+      "reports": 2,
+      "source_sha256": "a9aab25ae175b3186282f7ada0f8079fcccff8f2a2bffb9440b4ae6b6a6c961a",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformComponentPeak-chain.log",
+      "audit_log_sha256": "fa75d6e9a78b194349bc0911cddce35bb0f216fe25237a5eeee49f0b013955c5",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-component-review.txt",
+      "independent_review_sha256": "b747931ac83a3455a02ef9b07b92f7a12bbfce4cc1a33eb2a54e6fbbed5136f4",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-component-build.json",
+      "independent_build_sha256": "19f8790998c67acb9712b3ff60f05dcf068ea8d5dc116bcef1ad067da7dbc981",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformComponentPeak.log",
+      "independent_log_sha256": "fa75d6e9a78b194349bc0911cddce35bb0f216fe25237a5eeee49f0b013955c5",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformComponentPeak.component_le_amplitude",
+        "OQ14.Packet07DrivenUniformComponentPeak.positive_component_peak"
+      ]
+    },
+    {
+      "module": "Packet07DrivenUniformSelectedHotspots",
+      "reports": 1,
+      "source_sha256": "5cafa2537a8586574ca320a06d17d6f138dd9ec544b5345ec633d18612b650a4",
+      "audit_log": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformSelectedHotspots-chain.log",
+      "audit_log_sha256": "1d46c01cd3e27e85d0c6b2881ac7198f53c132bd33019223dd1d91e46d3276c8",
+      "independent_review": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-path-correction-review.txt",
+      "independent_review_sha256": "348e82022aa6b95c81c36b36636855ebe8eafc9207968cc32f8bd0b108d76d94",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-path-correction-build.json",
+      "independent_build_sha256": "620e8db494a7f33e62e068d54e44ce740a9af55693d74979b5671ad09e168206",
+      "independent_log": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformSelectedHotspots.log",
+      "independent_log_sha256": "1d46c01cd3e27e85d0c6b2881ac7198f53c132bd33019223dd1d91e46d3276c8",
+      "declarations": [
+        "OQ14.Packet07DrivenUniformSelectedHotspots.one_input_all_hotspots"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/audited_after_5238-stage108.json",
+      "sha256": "87edbe49f6e0f752a5badb483ca769d1c99a4f8af3a182499978996516530050"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/chain-build.json",
+      "sha256": "0d445da1ef07cbfd59eb16fe435f96a10e041164b8e4a35df560f570e4a64cd6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartFamilyBootstrap-chain.log",
+      "sha256": "b3bcae49d612244615c7ddc3933ae5d79eda43d625dd08134d7dc1897bf09a8e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartFields-chain.log",
+      "sha256": "641da7d60ef1263b4720d41ed3877127d834d2fcc8efe762a641496743f736a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualChartUniformInputs-chain.log",
+      "sha256": "7642854faaf518535ec58bf073b6307d25a645c3cf71a76f340a3b58dc08f650"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualFieldIdentity-chain.log",
+      "sha256": "b4dbbbcb56395e54e4b06e26d438d64c741fe025a065747529a0093b4080e580"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualLocalCollarBound-chain.log",
+      "sha256": "cb8ed8e61d533eedea3317fb6b467a32bd0765a839be806c6190d04a3d441382"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualNamedUniformInputs-chain.log",
+      "sha256": "c3f0ead4674a557e10012230ef31b27530adb9b5c77ff985e3b30a0783f5ff55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualTraceCollar-chain.log",
+      "sha256": "df8533dcce816bd982cb9064d656ca9103c07fec962f274944b1c835900c1ab6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05ActualUniformCollar-chain.log",
+      "sha256": "5053441b7c2686ab61a8d8822a47bc654969f72eb68a7085f0e892d55da3f9d6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05AllActualTraceCollars-chain.log",
+      "sha256": "5db79ecae0e9161dfdbe51f81bf1b154cedef5712894d5964ab940cfdb0051c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05BootstrapPhysicalBranches-chain.log",
+      "sha256": "c69277c71507e9daf117d9e2c7460838d816dc933a7d2cb88f0673e5c85024de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05BootstrapUniformPhysicalBranch-chain.log",
+      "sha256": "a14f8cec9c90468e3c118cea3b28d181c72ed340ae3b9d38e0e6764b29a877f6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05CutoffThirdBound-chain.log",
+      "sha256": "e238e50cb30fa82f36df1b2ce020cff4633cc1879c70f2514e8000a53d4e6aba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05DivergenceZeroRegion-chain.log",
+      "sha256": "bd202c8e95e81185244c145b7cfd791ab07238628865da31d03afeb47b6c6093"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05EventualChoice-chain.log",
+      "sha256": "60f669cb9a3038a22adfe2a779819fcf60ff66c993fd3d297ba600a53d67375a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiniteFixedAtlas-chain.log",
+      "sha256": "30a6611f566d0d15cd524ae58b47753a0e7a709287dfce7e5e421285c871baf8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FinitePhysicalCollar-chain.log",
+      "sha256": "2762c0943cfa73b32cd268004ac4c161205304ed1c2d06aba594ae3045ac1a78"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiveCutoffLayout-chain.log",
+      "sha256": "6d46c6cf5647bb4ab12e58bcb85efd3154f3882496525843c05c20e47e5aea74"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FiveNestedCutoffs-chain.log",
+      "sha256": "de1b178679c4afb2b3386d3a3ff49e0996454d57c3bd507e24b073a2b425ea67"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartActualEquation-chain.log",
+      "sha256": "9cba9d7656ee729da19731f36169281b550985d646f2c8965302df2d98862d8a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartBootstrap-chain.log",
+      "sha256": "bcd927c0e771e009d62862feadc771394452a7f2649c9a736359ddb2485a34dd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartIteration-chain.log",
+      "sha256": "8308b4ad6d25ce894a422a452d442ddf7d4e6a26bd8756f5026078add0bebd48"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformField-chain.log",
+      "sha256": "348d91ff2bdd5ddc4fc84bd7f26682c377978ed09489948517864433e09f16ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformForcing-chain.log",
+      "sha256": "02763091c296ee087ba1ac8ca440c93a77beb2e30e13a296ad3e17b44765565c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedChartUniformScalar-chain.log",
+      "sha256": "88e8bed37890ccd6856ca117c6a91698d6c60bd90cbb80542e38a6665d7dd55b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05FixedSubchartEquation-chain.log",
+      "sha256": "d7930ac5fa65f1814090da60a7e8e6a9622d3d6003350543006808db22769582"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05GivenAllCollars-chain.log",
+      "sha256": "a083ee165bb2f0dbd6b830d570246ba08ab63d73627d8391b87ad5fd583ecc11"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05GivenTraceCollar-chain.log",
+      "sha256": "20108b4be9541b20dec5ca2c826ae596e3b576858ff46b3141b75c2a579003c9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05IncidentUniformH2-chain.log",
+      "sha256": "12b815770219b7244c71d96eae1ee6ecaad43c6d77aa8340cb6b07c0980b46c6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05MetricAllBounds-chain.log",
+      "sha256": "338cee55e97bd9b8b8c4292efd85a8c111877103ea12323f3ef887742e8c5f16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05NestedBootstrapPhysicalBranch-chain.log",
+      "sha256": "975a51ea245e4caa35ef97bb764257f31f1a9a58863ba7d688d0246673322091"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05OneSidedCollar-chain.log",
+      "sha256": "cf4e3a216b8112f48bb01297b73de8d5749dd83b6e08cb98f568ecf090595314"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05PeakSphereAtlas-chain.log",
+      "sha256": "37ee369828eb54f9715bb77a7f490c256777d06f856e55abec81a346405ecba6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalBootstrapCeiling-chain.log",
+      "sha256": "1913f8a3afb15989716ee09247cfbd83c708978efdb90c99eb49aec9df151aa9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalFamilyBootstrap-chain.log",
+      "sha256": "7b48ab571127124ab273941e0dc5208dba5bfe66a045590d8d682e42637dd6be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalFamilyChosenBootstrap-chain.log",
+      "sha256": "346c6887e96bfc0ed1b91ba345f11088e25c5b016dd2b25379562a83beeb05a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05RegionalNormalFluxUniform-chain.log",
+      "sha256": "503d014d2fc205e02f18aa9850a59fbeee49f41837c573241f354f4a82120713"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05SlopeUniformBounds-chain.log",
+      "sha256": "0b8e52943c22cc264b476f1261d93e60d99213de22254e84753de14af75d0b5a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05TwoPhaseAEFieldBound-chain.log",
+      "sha256": "d0ccf29998fe6ad6ab96ac8206c86b29335390215f64a53433805434fc8115d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformScalarIteration-chain.log",
+      "sha256": "dbf1b5bbf59b8ac5574212ee15066d045f1f7ed0c35c96ee6b1351507886cb06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirection-chain.log",
+      "sha256": "b6e4cab937fe49acd615cd292bed56bffb3ce927ef4bf2ade95cd298f2f4e7bb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirectionStrong-chain.log",
+      "sha256": "33d71776fe2a3671c3815232041d111ac9bad9bf10571cce2731ec949e5fae64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet05UniformTwoDirectionStrongFamily-chain.log",
+      "sha256": "7a9e75aa7bc7cebfffeb2666e7adbe39282268ac194e6ce7ff57b6da6ae9b90c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06ActualPeakFamily-chain.log",
+      "sha256": "31cf2a23b098b971610ad8b24e84f764734ebe90472ca4db39776a39bb92cd0c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06CollaredHotspotFamily-chain.log",
+      "sha256": "256f255a757667fcd8f81fd8edcfc5a2234274f023ca387e3645ed4d97872d76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06CollaredHotspotSelection-chain.log",
+      "sha256": "ac937a5b95034f362f7c5c79a3175397a805d9b40683b608d7c40fe88a79cfa5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06GlobalElectricIdentification-chain.log",
+      "sha256": "6522f4cdae326747a183c9cf3d388b5c2009e45ae7426cfb4168e0802e24f9d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06HotspotFamilyAssembly-chain.log",
+      "sha256": "68a2a1e35e9b3a36d5bf4851333f71ce18d7b712fb8784b6da28a46abf51ca16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06ModalHotspotExistence-chain.log",
+      "sha256": "0235a5d7194fd1f4040e9da59033ed9c571247de757ab5bf4cb60eefb5b05bac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PhysicalHotspotSelection-chain.log",
+      "sha256": "2c3d503f94094d865f734a55f888a92deebfc9a3b1b31182e19ef725d39f8788"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PhysicalVolumeLimits-chain.log",
+      "sha256": "db39683f6a3b7beb4ea644d55ba5cd31abd641335a9a516d5fcca5181ac4bd95"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedActualCollar-chain.log",
+      "sha256": "a78caa00f72140d17f872f49b439490aef2eef4cf062c78abfe1404f07bdafcc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedMaterialGeometry-chain.log",
+      "sha256": "1dd7fede754d2fc6d58094ed2ce91dbeb60e5f0f4f10b4c1907fef420c2264e4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedOneSidedCollar-chain.log",
+      "sha256": "42d0c319921a63ccd8d951d76d70dcea7d1953eaca3b041419f5fc5b8223aa4e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedSmoothBoundary-chain.log",
+      "sha256": "b219e17f242ba638c459688fdd485889cfe7d1f0ec70fe1fd0d21ab1e3b37874"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlacedTraceCollar-chain.log",
+      "sha256": "1f6c201b2a083dc383e18e4cb063fc94e481ea7e5ea2a4cf2b01c8ef8efc6474"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06PlaceModeHotspots-chain.log",
+      "sha256": "f30b59d387d1c1ef78b74353b88ffc7eee6e43875a9662ec94cf403c4be85ef2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06RoundedHotspotFamily-chain.log",
+      "sha256": "68fea2435566d560916a83976de126816d66da2f0707c9ba49755b348a491042"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet06RoundedPlacedPole-chain.log",
+      "sha256": "a0fa03b5094b2bd7651b3a7dc472652c071ca6209fca5990697273c7e232e12d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformActual-chain.log",
+      "sha256": "65827ab737dba92e0afad4a65b2c47de0a99861b901cd9db56fccfe716180c5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllCharts-chain.log",
+      "sha256": "38cbb1c5227416ddaed824920dca5a1a8c230ce525cce5c57466485b721428d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllHotspots-chain.log",
+      "sha256": "7a1ea0f77e029324b777f80b02dc13d9c73f686e8a8539383dee470f3743d43d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAllTraceCollars-chain.log",
+      "sha256": "9d7965f2fa15ed27a657ec51e3e3acb3eb876b6be10abc708cd52fdea681b5b7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAtlas-chain.log",
+      "sha256": "bc0cb3383ef7fd3a72826747b27cda9b6771b1c41703c8c600c89c974da0ddc5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformAttained-chain.log",
+      "sha256": "83176b3dd3325e453d75611c3c7c33d6a6876ca012f875196e6ca93bfc08716e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundary-chain.log",
+      "sha256": "96a887723c248eaba99f641a2ed0365732cbb9dd5929ac8516f8ffa4236c0974"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundaryChart-chain.log",
+      "sha256": "4a91408085e826cb58c83f589b902a56c90fab08af68bbaba0f15bcb9ec546a2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformBoundaryMaterial-chain.log",
+      "sha256": "7d8e617ddec1b0067ef095cb553549865df7b3c0ad730cc02d06626918a54cb3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollar-chain.log",
+      "sha256": "e32747562a8498992852172fcb8b8aa4ed4aafb2e16c5ffdef9439838c7b880d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollarChart-chain.log",
+      "sha256": "9b03ec4f785a18a203ace1bb452cb18dcdc37bf23a363d07622d55ca9571d143"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCollarPhase-chain.log",
+      "sha256": "7a0bcdd4e0767df2734de41aa16090a77aaa1f7c98c2d28b98ae478f04cef4e1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactActual-chain.log",
+      "sha256": "5e426fc4f1caa5be5350057b7d2348dc078542e456707e3db79e9e1de7e8f2ed"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactBinary-chain.log",
+      "sha256": "98cbc99e3f56c29fefe6e268d41ed88c5c484f68e93d61ee97031e2b63203d3e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCompactPhase-chain.log",
+      "sha256": "a9c4ec5d475867ef63e67080263234e59131172b74001f4875265298b0d6cd16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformComponentPeak-chain.log",
+      "sha256": "fa75d6e9a78b194349bc0911cddce35bb0f216fe25237a5eeee49f0b013955c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformCorrection-chain.log",
+      "sha256": "8a68dcd604697eaa30508270e22a2788a513b9232a8609862e70f9b0d22b2eba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFamily-chain.log",
+      "sha256": "ebf97478a8c19feb587cb8921c95de7d02a8b4e16c35708537a489a5c0cdac5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFamilyBootstrap-chain.log",
+      "sha256": "3ad97c9a6490c94e5fd7c89689844ceffc2656da7d4a4506e258f1763c659cfe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFieldIdentity-chain.log",
+      "sha256": "bc1cb0d3692972b9b5ebcdc795cf86e9427618d145bdcba25689ba52595d7de3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFields-chain.log",
+      "sha256": "c54b3055efa0bf1c4e95750ed523db7de61b9a8635da4f800ef71592cf962eb7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFiniteAtlas-chain.log",
+      "sha256": "0ba5a5b304ccba1e357d2e657a7f9131f979d9c0e0123b3ce355220e3d1f7e2c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedBootstrap-chain.log",
+      "sha256": "0778799636cce618b74033fee5545f490781f36cf6fcc77785f9e55dab427254"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedField-chain.log",
+      "sha256": "3be2bd8a2a6c24cbb7b13a6ae3e30ad51a1d00cf0391d6f14b8500718336cf70"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformFixedIteration-chain.log",
+      "sha256": "e1fb81cebc20c7f0ccc5691cba2540cdc09dd4848580e7c14d7bad3490a83100"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformForcing-chain.log",
+      "sha256": "d7e7736d6ec94c0976321b583951270b99115bdec1505bd5cec23b43d2586d87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformGraph-chain.log",
+      "sha256": "3a09b357764a9b3c60d24b492183a1306d23de7c37f4f703f634314f16031b37"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHomogeneous-chain.log",
+      "sha256": "618c0bde0bc3249a52751a5eb955e21573915890edb060f3a3bcf932dbdf5248"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHomogeneousChart-chain.log",
+      "sha256": "029d58d1876cdfdaea3c34387f0715e2e98cc53f85d9fd83fc18061e1a008e76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHostGraph-chain.log",
+      "sha256": "b68cfc505d462578f3302045f882621fcfa2365e2fe2d65367448c66726eed0c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformHotspot-chain.log",
+      "sha256": "8a861b715aa0997df611edd5cef518e72b339fa9e9eb6491b1454f35a73b6f37"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformNamedInputs-chain.log",
+      "sha256": "8012e555d6350c977418118a03ff46f63a61f52559e01b1e818f03c60702b3c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformOpenChart-chain.log",
+      "sha256": "778f44cc23a11c406c117aad52c322788d844ba4d8cc5a8efbdb207128d7fe82"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformOriented-chain.log",
+      "sha256": "e77d75affe92d1a0b06cf17d58d0974eebd952a63c8ec1cbc426659a68c5d730"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformPhaseBranches-chain.log",
+      "sha256": "cfa3972dd3e732575497a66a92f81120f5547ae4856841c48ef3672cd72c1772"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformReference-chain.log",
+      "sha256": "de467fb538f9d556a8ea4c1cd9e5cbe6285c59457c6c29583799d36b535ef7ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformSelectedHotspots-chain.log",
+      "sha256": "1d46c01cd3e27e85d0c6b2881ac7198f53c132bd33019223dd1d91e46d3276c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/evidence/Packet07DrivenUniformTraceCollar-chain.log",
+      "sha256": "b58867ac4738224b6100d7b1ef66263febc24602873f16e31dc1dee1354f54e8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/modules.json",
+      "sha256": "65b160cf02b458ed5a064b6303efb17fabe958eebea1bc8223f3169cb5ac2d26"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/provenance-audit.json",
+      "sha256": "8aace8e43baa7f66757a970598b0fd3687b8f3ad9d0884d62ca129608df946d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/author-inventory.json",
+      "sha256": "c91c0f1a14e2210c2772d13c93a67f3598375435d29e5567e323cf2bd9880ef2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json",
+      "sha256": "1857f9548dd29a89d86c8350876b268327c726a9b60f2082ff9a328697195af7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-review.txt",
+      "sha256": "1e93b06fbc10ce2b6874e88d4c1a9e86ddc61a5d68c3ef72472a5588f87ab121"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json",
+      "sha256": "e1ba58dae14a59abdcf1fa68a3305c8abab79b5e183a9de9b2223631d1b538a9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-review.txt",
+      "sha256": "86f0c7c1512f2ffecf1c434ffbcecc9719fa1ac06315ae20daec88a724b6ddf5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-build.json",
+      "sha256": "4f64ab4da17a9138fb3498e8dad18e9bd47498da81a06ca9b7806435572aa94c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-review.txt",
+      "sha256": "f33aa26d13f76a38ab02e78c876dede04daf37860542bbd3a8c17bf64be23f2a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collared-family-build.json",
+      "sha256": "6caddfb8795bd22ab861b9b853546524d01d114c20927842ef11ed6270e14e03"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collared-family-review.txt",
+      "sha256": "09fa82a9c15396b418c53f8808da5fd8f618f39d1f2c4f74c12cb6700ce74bbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json",
+      "sha256": "f85f3b922dc64013f0e8180577c3890c4b92f364bc12cbf5f4c72f98704b7245"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-review.txt",
+      "sha256": "781a5794359be84b5b9ad37a72bd5bde130f2ad32128b8678978c4f831847703"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-attained-build.json",
+      "sha256": "a9ae5760d748bb48f231325dea6f34134cbaa419b6258c4cd374271dcbd7be0e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-attained-review.txt",
+      "sha256": "52654d0b47fb3eab5873e599ef5ad3236b8bc9e7f34ea14fc38ed802879896f1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json",
+      "sha256": "94884003ebb872f67137e2c8322d176c340fa9d2de007e915eb804961dfffb5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json",
+      "sha256": "33e7f7d1c9010637bab70b07fbd2212101395216672881470a7436cfc87e8156"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-review.txt",
+      "sha256": "9f22efe13edfcef67c9d97e9c65dd3ee29718b5100722db9a0e758dca5027e67"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json",
+      "sha256": "ab1ab5bf0cf9615b8a9fa9ad7fc7815ea1ef3da21d0ae67c69e26b59d3f75830"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-review.txt",
+      "sha256": "7a28421d9985eaac29610bd0a9681b31fbc630db7c9c6ac93709f0f4a59acf3d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-component-build.json",
+      "sha256": "19f8790998c67acb9712b3ff60f05dcf068ea8d5dc116bcef1ad067da7dbc981"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-component-review.txt",
+      "sha256": "b747931ac83a3455a02ef9b07b92f7a12bbfce4cc1a33eb2a54e6fbbed5136f4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-path-correction-build.json",
+      "sha256": "620e8db494a7f33e62e068d54e44ce740a9af55693d74979b5671ad09e168206"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-path-correction-review.txt",
+      "sha256": "348e82022aa6b95c81c36b36636855ebe8eafc9207968cc32f8bd0b108d76d94"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-review.txt",
+      "sha256": "6556e6e0ecf12c3a58fe87abd7e8a2f4b2a05be0fe38972916172a8c8ede810b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json",
+      "sha256": "f2f9216f5fe847d99209d1337ff25f3b2545d650356495a0a6d5211d11ac5791"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-review.txt",
+      "sha256": "ab4860c838bd52ba2f95df85fc153971d6869549fdf390bb26f11b2780ca0bd0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/family-build.json",
+      "sha256": "d8a20bd9689b33a96a943ef9586db295be77e132c796781e8b67c4561b90c6e9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/family-review.txt",
+      "sha256": "e86d9def482d8d5a49b5a3f4697e92676748887748cf524fa5027aaf75174e59"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json",
+      "sha256": "41362cc07a253403115b499b8983855ec765e5e624ed6bad8a5fc7ec1db36da3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-review.txt",
+      "sha256": "1bcb7594868f1c97031a14b697c2ff87a8b235272b13afebe697ea0ce303dd72"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/independent-index.json",
+      "sha256": "dfa3c449f9c97c91befd5ffd4b86d8d2e9b898ab0c52e87bb2431dee5a0d6f6e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/material-build.json",
+      "sha256": "121097031c1ddf35868e587e7e9cf549e15fca114e57e3f5b4655d93f4f1f81f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/material-review.txt",
+      "sha256": "feac815e0df163a3a8b326aa8693905479c84de45d7015a33069bd9001ebe259"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/metadata-normalization.json",
+      "sha256": "6a1d3835d2a7e4127cdffa6dc9e2a0f12a2dd3d63496235652e6264a62ae999f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/modal-existence-build.json",
+      "sha256": "784d600e2fca75588b18dfbd49b5e71e80a36532737c02c1d7ae14640b2185ae"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/modal-existence-review.txt",
+      "sha256": "cbeb0bb6d28085f0b53164511dacd793772f6fab3af6ee61a85e3abeab66bd95"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartFamilyBootstrap.log",
+      "sha256": "b3bcae49d612244615c7ddc3933ae5d79eda43d625dd08134d7dc1897bf09a8e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartFields.log",
+      "sha256": "641da7d60ef1263b4720d41ed3877127d834d2fcc8efe762a641496743f736a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualChartUniformInputs.log",
+      "sha256": "7642854faaf518535ec58bf073b6307d25a645c3cf71a76f340a3b58dc08f650"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualFieldIdentity.log",
+      "sha256": "b4dbbbcb56395e54e4b06e26d438d64c741fe025a065747529a0093b4080e580"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualLocalCollarBound.log",
+      "sha256": "cb8ed8e61d533eedea3317fb6b467a32bd0765a839be806c6190d04a3d441382"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualNamedUniformInputs.log",
+      "sha256": "c3f0ead4674a557e10012230ef31b27530adb9b5c77ff985e3b30a0783f5ff55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualTraceCollar.log",
+      "sha256": "df8533dcce816bd982cb9064d656ca9103c07fec962f274944b1c835900c1ab6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05ActualUniformCollar.log",
+      "sha256": "5053441b7c2686ab61a8d8822a47bc654969f72eb68a7085f0e892d55da3f9d6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05AllActualTraceCollars.log",
+      "sha256": "5db79ecae0e9161dfdbe51f81bf1b154cedef5712894d5964ab940cfdb0051c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05BootstrapPhysicalBranches.log",
+      "sha256": "c69277c71507e9daf117d9e2c7460838d816dc933a7d2cb88f0673e5c85024de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05BootstrapUniformPhysicalBranch.log",
+      "sha256": "a14f8cec9c90468e3c118cea3b28d181c72ed340ae3b9d38e0e6764b29a877f6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05CutoffThirdBound.log",
+      "sha256": "e238e50cb30fa82f36df1b2ce020cff4633cc1879c70f2514e8000a53d4e6aba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05DivergenceZeroRegion.log",
+      "sha256": "bd202c8e95e81185244c145b7cfd791ab07238628865da31d03afeb47b6c6093"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05EventualChoice.log",
+      "sha256": "60f669cb9a3038a22adfe2a779819fcf60ff66c993fd3d297ba600a53d67375a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiniteFixedAtlas.log",
+      "sha256": "30a6611f566d0d15cd524ae58b47753a0e7a709287dfce7e5e421285c871baf8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FinitePhysicalCollar.log",
+      "sha256": "2762c0943cfa73b32cd268004ac4c161205304ed1c2d06aba594ae3045ac1a78"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiveCutoffLayout.log",
+      "sha256": "6d46c6cf5647bb4ab12e58bcb85efd3154f3882496525843c05c20e47e5aea74"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FiveNestedCutoffs.log",
+      "sha256": "de1b178679c4afb2b3386d3a3ff49e0996454d57c3bd507e24b073a2b425ea67"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartActualEquation.log",
+      "sha256": "9cba9d7656ee729da19731f36169281b550985d646f2c8965302df2d98862d8a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartBootstrap.log",
+      "sha256": "bcd927c0e771e009d62862feadc771394452a7f2649c9a736359ddb2485a34dd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartIteration.log",
+      "sha256": "8308b4ad6d25ce894a422a452d442ddf7d4e6a26bd8756f5026078add0bebd48"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformField.log",
+      "sha256": "348d91ff2bdd5ddc4fc84bd7f26682c377978ed09489948517864433e09f16ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformForcing.log",
+      "sha256": "02763091c296ee087ba1ac8ca440c93a77beb2e30e13a296ad3e17b44765565c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedChartUniformScalar.log",
+      "sha256": "88e8bed37890ccd6856ca117c6a91698d6c60bd90cbb80542e38a6665d7dd55b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05FixedSubchartEquation.log",
+      "sha256": "d7930ac5fa65f1814090da60a7e8e6a9622d3d6003350543006808db22769582"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05GivenAllCollars.log",
+      "sha256": "a083ee165bb2f0dbd6b830d570246ba08ab63d73627d8391b87ad5fd583ecc11"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05GivenTraceCollar.log",
+      "sha256": "20108b4be9541b20dec5ca2c826ae596e3b576858ff46b3141b75c2a579003c9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05IncidentUniformH2.log",
+      "sha256": "12b815770219b7244c71d96eae1ee6ecaad43c6d77aa8340cb6b07c0980b46c6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05MetricAllBounds.log",
+      "sha256": "338cee55e97bd9b8b8c4292efd85a8c111877103ea12323f3ef887742e8c5f16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05NestedBootstrapPhysicalBranch.log",
+      "sha256": "975a51ea245e4caa35ef97bb764257f31f1a9a58863ba7d688d0246673322091"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05OneSidedCollar.log",
+      "sha256": "cf4e3a216b8112f48bb01297b73de8d5749dd83b6e08cb98f568ecf090595314"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05PeakSphereAtlas.log",
+      "sha256": "37ee369828eb54f9715bb77a7f490c256777d06f856e55abec81a346405ecba6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalBootstrapCeiling.log",
+      "sha256": "1913f8a3afb15989716ee09247cfbd83c708978efdb90c99eb49aec9df151aa9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalFamilyBootstrap.log",
+      "sha256": "7b48ab571127124ab273941e0dc5208dba5bfe66a045590d8d682e42637dd6be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalFamilyChosenBootstrap.log",
+      "sha256": "346c6887e96bfc0ed1b91ba345f11088e25c5b016dd2b25379562a83beeb05a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05RegionalNormalFluxUniform.log",
+      "sha256": "503d014d2fc205e02f18aa9850a59fbeee49f41837c573241f354f4a82120713"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05SlopeUniformBounds.log",
+      "sha256": "0b8e52943c22cc264b476f1261d93e60d99213de22254e84753de14af75d0b5a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05TwoPhaseAEFieldBound.log",
+      "sha256": "d0ccf29998fe6ad6ab96ac8206c86b29335390215f64a53433805434fc8115d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformScalarIteration.log",
+      "sha256": "dbf1b5bbf59b8ac5574212ee15066d045f1f7ed0c35c96ee6b1351507886cb06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirection.log",
+      "sha256": "b6e4cab937fe49acd615cd292bed56bffb3ce927ef4bf2ade95cd298f2f4e7bb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirectionStrong.log",
+      "sha256": "33d71776fe2a3671c3815232041d111ac9bad9bf10571cce2731ec949e5fae64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet05UniformTwoDirectionStrongFamily.log",
+      "sha256": "7a9e75aa7bc7cebfffeb2666e7adbe39282268ac194e6ce7ff57b6da6ae9b90c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06ActualPeakFamily.log",
+      "sha256": "31cf2a23b098b971610ad8b24e84f764734ebe90472ca4db39776a39bb92cd0c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06CollaredHotspotFamily.log",
+      "sha256": "256f255a757667fcd8f81fd8edcfc5a2234274f023ca387e3645ed4d97872d76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06CollaredHotspotSelection.log",
+      "sha256": "ac937a5b95034f362f7c5c79a3175397a805d9b40683b608d7c40fe88a79cfa5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06GlobalElectricIdentification.log",
+      "sha256": "6522f4cdae326747a183c9cf3d388b5c2009e45ae7426cfb4168e0802e24f9d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06HotspotFamilyAssembly.log",
+      "sha256": "68a2a1e35e9b3a36d5bf4851333f71ce18d7b712fb8784b6da28a46abf51ca16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06ModalHotspotExistence.log",
+      "sha256": "0235a5d7194fd1f4040e9da59033ed9c571247de757ab5bf4cb60eefb5b05bac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PhysicalHotspotSelection.log",
+      "sha256": "2c3d503f94094d865f734a55f888a92deebfc9a3b1b31182e19ef725d39f8788"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PhysicalVolumeLimits.log",
+      "sha256": "db39683f6a3b7beb4ea644d55ba5cd31abd641335a9a516d5fcca5181ac4bd95"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedActualCollar.log",
+      "sha256": "a78caa00f72140d17f872f49b439490aef2eef4cf062c78abfe1404f07bdafcc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedMaterialGeometry.log",
+      "sha256": "1dd7fede754d2fc6d58094ed2ce91dbeb60e5f0f4f10b4c1907fef420c2264e4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedOneSidedCollar.log",
+      "sha256": "42d0c319921a63ccd8d951d76d70dcea7d1953eaca3b041419f5fc5b8223aa4e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedSmoothBoundary.log",
+      "sha256": "b219e17f242ba638c459688fdd485889cfe7d1f0ec70fe1fd0d21ab1e3b37874"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlacedTraceCollar.log",
+      "sha256": "1f6c201b2a083dc383e18e4cb063fc94e481ea7e5ea2a4cf2b01c8ef8efc6474"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06PlaceModeHotspots.log",
+      "sha256": "f30b59d387d1c1ef78b74353b88ffc7eee6e43875a9662ec94cf403c4be85ef2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06RoundedHotspotFamily.log",
+      "sha256": "68fea2435566d560916a83976de126816d66da2f0707c9ba49755b348a491042"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet06RoundedPlacedPole.log",
+      "sha256": "a0fa03b5094b2bd7651b3a7dc472652c071ca6209fca5990697273c7e232e12d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformActual.log",
+      "sha256": "65827ab737dba92e0afad4a65b2c47de0a99861b901cd9db56fccfe716180c5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllCharts.log",
+      "sha256": "38cbb1c5227416ddaed824920dca5a1a8c230ce525cce5c57466485b721428d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllHotspots.log",
+      "sha256": "7a1ea0f77e029324b777f80b02dc13d9c73f686e8a8539383dee470f3743d43d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAllTraceCollars.log",
+      "sha256": "9d7965f2fa15ed27a657ec51e3e3acb3eb876b6be10abc708cd52fdea681b5b7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAtlas.log",
+      "sha256": "bc0cb3383ef7fd3a72826747b27cda9b6771b1c41703c8c600c89c974da0ddc5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformAttained.log",
+      "sha256": "83176b3dd3325e453d75611c3c7c33d6a6876ca012f875196e6ca93bfc08716e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundary.log",
+      "sha256": "96a887723c248eaba99f641a2ed0365732cbb9dd5929ac8516f8ffa4236c0974"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundaryChart.log",
+      "sha256": "4a91408085e826cb58c83f589b902a56c90fab08af68bbaba0f15bcb9ec546a2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformBoundaryMaterial.log",
+      "sha256": "7d8e617ddec1b0067ef095cb553549865df7b3c0ad730cc02d06626918a54cb3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollar.log",
+      "sha256": "e32747562a8498992852172fcb8b8aa4ed4aafb2e16c5ffdef9439838c7b880d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollarChart.log",
+      "sha256": "9b03ec4f785a18a203ace1bb452cb18dcdc37bf23a363d07622d55ca9571d143"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCollarPhase.log",
+      "sha256": "7a0bcdd4e0767df2734de41aa16090a77aaa1f7c98c2d28b98ae478f04cef4e1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactActual.log",
+      "sha256": "5e426fc4f1caa5be5350057b7d2348dc078542e456707e3db79e9e1de7e8f2ed"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactBinary.log",
+      "sha256": "98cbc99e3f56c29fefe6e268d41ed88c5c484f68e93d61ee97031e2b63203d3e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCompactPhase.log",
+      "sha256": "a9c4ec5d475867ef63e67080263234e59131172b74001f4875265298b0d6cd16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformComponentPeak.log",
+      "sha256": "fa75d6e9a78b194349bc0911cddce35bb0f216fe25237a5eeee49f0b013955c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformCorrection.log",
+      "sha256": "8a68dcd604697eaa30508270e22a2788a513b9232a8609862e70f9b0d22b2eba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFamily.log",
+      "sha256": "ebf97478a8c19feb587cb8921c95de7d02a8b4e16c35708537a489a5c0cdac5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFamilyBootstrap.log",
+      "sha256": "3ad97c9a6490c94e5fd7c89689844ceffc2656da7d4a4506e258f1763c659cfe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFieldIdentity.log",
+      "sha256": "bc1cb0d3692972b9b5ebcdc795cf86e9427618d145bdcba25689ba52595d7de3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFields.log",
+      "sha256": "c54b3055efa0bf1c4e95750ed523db7de61b9a8635da4f800ef71592cf962eb7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFiniteAtlas.log",
+      "sha256": "0ba5a5b304ccba1e357d2e657a7f9131f979d9c0e0123b3ce355220e3d1f7e2c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedBootstrap.log",
+      "sha256": "0778799636cce618b74033fee5545f490781f36cf6fcc77785f9e55dab427254"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedField.log",
+      "sha256": "3be2bd8a2a6c24cbb7b13a6ae3e30ad51a1d00cf0391d6f14b8500718336cf70"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformFixedIteration.log",
+      "sha256": "e1fb81cebc20c7f0ccc5691cba2540cdc09dd4848580e7c14d7bad3490a83100"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformForcing.log",
+      "sha256": "d7e7736d6ec94c0976321b583951270b99115bdec1505bd5cec23b43d2586d87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformGraph.log",
+      "sha256": "3a09b357764a9b3c60d24b492183a1306d23de7c37f4f703f634314f16031b37"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHomogeneous.log",
+      "sha256": "618c0bde0bc3249a52751a5eb955e21573915890edb060f3a3bcf932dbdf5248"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHomogeneousChart.log",
+      "sha256": "029d58d1876cdfdaea3c34387f0715e2e98cc53f85d9fd83fc18061e1a008e76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHostGraph.log",
+      "sha256": "b68cfc505d462578f3302045f882621fcfa2365e2fe2d65367448c66726eed0c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformHotspot.log",
+      "sha256": "8a861b715aa0997df611edd5cef518e72b339fa9e9eb6491b1454f35a73b6f37"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformNamedInputs.log",
+      "sha256": "8012e555d6350c977418118a03ff46f63a61f52559e01b1e818f03c60702b3c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformOpenChart.log",
+      "sha256": "778f44cc23a11c406c117aad52c322788d844ba4d8cc5a8efbdb207128d7fe82"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformOriented.log",
+      "sha256": "e77d75affe92d1a0b06cf17d58d0974eebd952a63c8ec1cbc426659a68c5d730"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformPhaseBranches.log",
+      "sha256": "cfa3972dd3e732575497a66a92f81120f5547ae4856841c48ef3672cd72c1772"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformReference.log",
+      "sha256": "de467fb538f9d556a8ea4c1cd9e5cbe6285c59457c6c29583799d36b535ef7ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformSelectedHotspots.log",
+      "sha256": "1d46c01cd3e27e85d0c6b2881ac7198f53c132bd33019223dd1d91e46d3276c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/Packet07DrivenUniformTraceCollar.log",
+      "sha256": "b58867ac4738224b6100d7b1ef66263febc24602873f16e31dc1dee1354f54e8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-build.json",
+      "sha256": "839036f67d92a9b3915e6b5fbba0468ad5afe637b5e402405983e724910d0266"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-review.txt",
+      "sha256": "814c9a7ff86c15a44fbcfc14a5bf1f734673593e8903cbc92eee83d48ef08554"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-build.json",
+      "sha256": "d30062746ae576da9f74b1e2e6191318107f347610c9b7a1b84cb016b83ef64d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-review.txt",
+      "sha256": "d233622a001254a6a7887a678cf31fea8f1fd589ab80d211420f80a1022b600c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-build.json",
+      "sha256": "a42042c1c13d5ad9c28d329174272d4ac283e65e9ee39ceaed42da54c916ca9a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-review.txt",
+      "sha256": "bedfe74b10e252396e848682144f98ee8011e1792b53fe23269b14d372f500c9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json",
+      "sha256": "f021792b2890b00c85d6eba396a346009070300ed5b6d918ec4e8e35c3bc706d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-review.txt",
+      "sha256": "1f4e2c1b98e293a6b872c1f27c3328013c0731d43cc542e8fde779a61d093460"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/revised-selection-build.json",
+      "sha256": "1f9747f9d9e18d510282a9664dd06e78032bb20652b9c2f0c54c070b2ad1f325"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/revised-selection-review.txt",
+      "sha256": "09fa82a9c15396b418c53f8808da5fd8f618f39d1f2c4f74c12cb6700ce74bbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/rounded-family-build.json",
+      "sha256": "41458c2cc931ff550953dd8fa434c6beee2b914b640cc180afb199dd4f6d0384"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/rounded-family-review.txt",
+      "sha256": "00fed42f5e4bf46ec947c9b7779d98d9af7a0635121bdeb1866139490bb70d68"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/selection-build.json",
+      "sha256": "f378b5c85c02793db90df4009d340ea1a059e304b2e16a11a941167d9dfafad4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/selection-review.txt",
+      "sha256": "f226e64e7fdb71279061105cfacbb87a4c83659978a52a0bbf594b4c4256b692"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json",
+      "sha256": "ac1836e1a7a2db49d22fae94f3a90a9473bef4397cc42723f7776db48411b6cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-review.txt",
+      "sha256": "58d308d31086c8cdd8009792ec8090e145ccbee088f531353af2efc0a6ad2eb1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/volume-build.json",
+      "sha256": "95ab0150a903bf6871824ecc10f7828252c0a7cce2b35c2a88ad2198b2f1f033"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/volume-review.txt",
+      "sha256": "a5357ddd9ad5679eb4db0d6844bfdffdf35fb1e0429f5a5a5471663c0e045cc1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/scripts/audit_provenance.ps1",
+      "sha256": "feca5dbd16aae65b7b5651c695201e751e8423e0a458794acace2cf04e5c0299"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/scripts/check_chain.py",
+      "sha256": "373181c30b4d24e7725ed6c7057378c907179dc6d7be495408ad0f727b4c2816"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/scripts/freeze_checkpoint.py",
+      "sha256": "b1162103154694b35dfd759268af8dcd216e8a1029335feba55eaad984044fe9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-hotspot-existence/STAGE108.txt",
+      "sha256": "5df09020b7b5daf8430743231b4370996c879b1aacec0f520f12c0f5fae0437e"
+    },
+    {
+      "path": "lean/Packet05ActualChartFamilyBootstrap.lean",
+      "sha256": "0e7a884d59c5c9b31f2ea102d21a6f77f2e201fde7e22906f2d5a5b3286eee0e"
+    },
+    {
+      "path": "lean/Packet05ActualChartFields.lean",
+      "sha256": "ff1891c929fac3343581edef3a2d1ea7094e51fb798f185421177e90ea5219e8"
+    },
+    {
+      "path": "lean/Packet05ActualChartUniformInputs.lean",
+      "sha256": "5329f6ba9476b16924a4209ce730eb3a79f25a4d705f4b4e64106e70e4e1bd84"
+    },
+    {
+      "path": "lean/Packet05ActualFieldIdentity.lean",
+      "sha256": "55562d37e0b6de74f435c753108863e625b8bc4af110697b4554ecab95842314"
+    },
+    {
+      "path": "lean/Packet05ActualLocalCollarBound.lean",
+      "sha256": "6d2f265b0bc06c65cc9c4155d2ec214f4a211546be8c42f7301382debd0d66dd"
+    },
+    {
+      "path": "lean/Packet05ActualNamedUniformInputs.lean",
+      "sha256": "4b0788a3cde0b9ce69f0b8e149fb7c44bad59384297e00548277161141bd733d"
+    },
+    {
+      "path": "lean/Packet05ActualTraceCollar.lean",
+      "sha256": "99cdb461a8bc5506e7510342d772c170c89bcae0e6825e5f8b5d4cdc85e70ef9"
+    },
+    {
+      "path": "lean/Packet05ActualUniformCollar.lean",
+      "sha256": "12f7e5a11a93ac1fdafd83427e2d16e9fa577cf2335f4fe146820c7299cea58e"
+    },
+    {
+      "path": "lean/Packet05AllActualTraceCollars.lean",
+      "sha256": "9279324feb88ed4e2a1523b99dd79558da5a91e5371bd03011da360dd873d465"
+    },
+    {
+      "path": "lean/Packet05BootstrapPhysicalBranches.lean",
+      "sha256": "b265c5679ed103ccaebb2e62d3001540abc80bde4305a74346d5ddebc451300c"
+    },
+    {
+      "path": "lean/Packet05BootstrapUniformPhysicalBranch.lean",
+      "sha256": "1e8fab46e2aaba8c685dcd446e8cf9aca25f18e5d07dc364b9d18a55bfd2d52e"
+    },
+    {
+      "path": "lean/Packet05CutoffThirdBound.lean",
+      "sha256": "434e583e8418e1b6aeb4818fcf61f0bf98bcb17e8c0975a17e06c8807ce566ed"
+    },
+    {
+      "path": "lean/Packet05DivergenceZeroRegion.lean",
+      "sha256": "1dfa66c53058997aa44eb5d3cf6ab76d9ceb15e02ccf8011eeae803fe2a9d95b"
+    },
+    {
+      "path": "lean/Packet05EventualChoice.lean",
+      "sha256": "fe9c8f18db8510dba0dd05629ec50c71aa997dcda98ab61926ed6d2017d21925"
+    },
+    {
+      "path": "lean/Packet05FiniteFixedAtlas.lean",
+      "sha256": "2fc0d41c29b10069834a0b617a40531d94a6052e65359e5f37f28060c3a2178a"
+    },
+    {
+      "path": "lean/Packet05FinitePhysicalCollar.lean",
+      "sha256": "f5cdb83eae4aa080674462239a6edd3548c02f3ea3ef4e56214b009a030616f5"
+    },
+    {
+      "path": "lean/Packet05FiveCutoffLayout.lean",
+      "sha256": "a16bcefed64f1998e789e6cd15e0f5050ada7a609d69c0d3a4bfbda9f269962f"
+    },
+    {
+      "path": "lean/Packet05FiveNestedCutoffs.lean",
+      "sha256": "7cc017a98b45036087daf46ac770aa3308cbcb8a9834188728fe4a32a676f93f"
+    },
+    {
+      "path": "lean/Packet05FixedChartActualEquation.lean",
+      "sha256": "3fa51dddd44c8054b9ecbcc9e3772184d3bb262dc29dde937e4c799ee0d61e49"
+    },
+    {
+      "path": "lean/Packet05FixedChartBootstrap.lean",
+      "sha256": "498222b3d5d74d1201786904c1a6a09747f054178f2d38ebec74b67c0337afea"
+    },
+    {
+      "path": "lean/Packet05FixedChartIteration.lean",
+      "sha256": "2a54d7480610d66ea911030037f8257822865173bb8539b4b1aaaed5e192ad6b"
+    },
+    {
+      "path": "lean/Packet05FixedChartUniformField.lean",
+      "sha256": "e55d3fb8690c1f69c183c6e1e8cbe2cd3d7d746fac2310b34d58984dec59731e"
+    },
+    {
+      "path": "lean/Packet05FixedChartUniformForcing.lean",
+      "sha256": "f8897a16d043ab5113c98e1a976ef2ba0b3191f8a4aee2e271965b1f9e141f5d"
+    },
+    {
+      "path": "lean/Packet05FixedChartUniformScalar.lean",
+      "sha256": "970b71fec5ea4ec83fee6629823c8ce6f2b0afb478ad9315162243f2fb5c9316"
+    },
+    {
+      "path": "lean/Packet05FixedSubchartEquation.lean",
+      "sha256": "798506685b8fcb2313c6f73bb2ce6214625595d05cb42546b0d9776396266c19"
+    },
+    {
+      "path": "lean/Packet05GivenAllCollars.lean",
+      "sha256": "35a4f6de42744ff2f7ce30fe8d40ebc3cd82409833afb865ad2efae0a8acb223"
+    },
+    {
+      "path": "lean/Packet05GivenTraceCollar.lean",
+      "sha256": "2c760f1da6f94f17e519a14ab1de84a33793f8f53b70a6b05e200db2a12cba44"
+    },
+    {
+      "path": "lean/Packet05IncidentUniformH2.lean",
+      "sha256": "9c06a018171fb2d8cfdc75cc34b11e24d54ec3b48c71aa94dd4621ccb6e86bdb"
+    },
+    {
+      "path": "lean/Packet05MetricAllBounds.lean",
+      "sha256": "ed5a2f228190233af47da397d6ebab6d94bd5ae60858e58b3ae4c6403d7ceb99"
+    },
+    {
+      "path": "lean/Packet05NestedBootstrapPhysicalBranch.lean",
+      "sha256": "1d1a7c4f1358d7027e3b101c88c96c62595addd54547dab6445a075c9e8720d9"
+    },
+    {
+      "path": "lean/Packet05OneSidedCollar.lean",
+      "sha256": "c97edb73f6f4b8f904c8cb0001c081562db87f7424073f0b3298fd0be5461a25"
+    },
+    {
+      "path": "lean/Packet05PeakSphereAtlas.lean",
+      "sha256": "9c772df4706c9849e142cd4755bb47af5a7c30f3bd48cc8a37a79b5d8cbb08cf"
+    },
+    {
+      "path": "lean/Packet05RegionalBootstrapCeiling.lean",
+      "sha256": "2ac3609a27267d7aca898b0bffdb84c927c12558f5ab1f1c1a0de2c8dd8d3600"
+    },
+    {
+      "path": "lean/Packet05RegionalFamilyBootstrap.lean",
+      "sha256": "ab852de83a63006e6fd689b9a9ed37141ef92a84e3df31f787efe87ed0b845d0"
+    },
+    {
+      "path": "lean/Packet05RegionalFamilyChosenBootstrap.lean",
+      "sha256": "dac11d846bdd877f4c8768e54ae774903cf0d3cfb8ba2a3a62a2a16a91656282"
+    },
+    {
+      "path": "lean/Packet05RegionalNormalFluxUniform.lean",
+      "sha256": "608497a7cc1dcfa5d751bf6bab7567e42ce32cc1a41122c4ee48be07be3e153b"
+    },
+    {
+      "path": "lean/Packet05SlopeUniformBounds.lean",
+      "sha256": "1a9ed0b82d152df7afff5d8d6db0239d7416df817304188357a299f90a3145ad"
+    },
+    {
+      "path": "lean/Packet05TwoPhaseAEFieldBound.lean",
+      "sha256": "df057f07c79c62d40431e759d9a12b15de31ec334f79d98cc7989d94c6016f3e"
+    },
+    {
+      "path": "lean/Packet05UniformScalarIteration.lean",
+      "sha256": "9d8482d0cdc5f4edc32c67586d5436c980083a5215cb2b7b597aaec96cea1b0a"
+    },
+    {
+      "path": "lean/Packet05UniformTwoDirection.lean",
+      "sha256": "c5e38373ac17276db5b2f77bc5effdf8698e17363599687232dcef816dc43929"
+    },
+    {
+      "path": "lean/Packet05UniformTwoDirectionStrong.lean",
+      "sha256": "2aeb877a2f0ac5d57da94c7c4768efd6939dcd79af760f840d7fc93f6671e86b"
+    },
+    {
+      "path": "lean/Packet05UniformTwoDirectionStrongFamily.lean",
+      "sha256": "2ae1ec7f923c420acbb68e01a6e771cf6b118ea02e4b7fb778d43f4af71a0dd8"
+    },
+    {
+      "path": "lean/Packet06ActualPeakFamily.lean",
+      "sha256": "5b9d0977320d46c1da627f94a8e135a23ac219108390981dda2028a127488cac"
+    },
+    {
+      "path": "lean/Packet06CollaredHotspotFamily.lean",
+      "sha256": "53192bf708756cc50647671c7a73ea6c3b625b5e1ec474e675523dcdc7c1e453"
+    },
+    {
+      "path": "lean/Packet06CollaredHotspotSelection.lean",
+      "sha256": "961c847c9a7f61f90ee78a5154a9d6e8d7a7bec32d6b61abc82bc8cdf3640e9a"
+    },
+    {
+      "path": "lean/Packet06GlobalElectricIdentification.lean",
+      "sha256": "259e1b3b46c8fb58a636c1576073cbd7f0fe8b9b8b6d6d5ce78640ea339c313f"
+    },
+    {
+      "path": "lean/Packet06HotspotFamilyAssembly.lean",
+      "sha256": "548b5dea6d71693aa04718a6f28602795871036b5f253e0fed76760ce6bac495"
+    },
+    {
+      "path": "lean/Packet06ModalHotspotExistence.lean",
+      "sha256": "7156adb8ce18ae71bfe9c7a7c4df1b3232ec21f043c1c03392b86a121065fa73"
+    },
+    {
+      "path": "lean/Packet06PhysicalHotspotSelection.lean",
+      "sha256": "8f1774fb59690c9730291bcfac15f48c8bba7a410be35ad6fd8cf31058117b88"
+    },
+    {
+      "path": "lean/Packet06PhysicalVolumeLimits.lean",
+      "sha256": "7db688985b1120f379cdbf2bd88f61bf79e068181ac9b269983ab1c7c12c2510"
+    },
+    {
+      "path": "lean/Packet06PlacedActualCollar.lean",
+      "sha256": "61fc00ee05c98e40b856b53c7055979833160f208244ce94c0cff88440eb1955"
+    },
+    {
+      "path": "lean/Packet06PlacedMaterialGeometry.lean",
+      "sha256": "407c42d52059ad6cabfbebd5413d80db8f313a78f33255a56e387ba8347e5974"
+    },
+    {
+      "path": "lean/Packet06PlacedOneSidedCollar.lean",
+      "sha256": "20105905fbbc1266005c8a2b72c2fd5e365b8839fa47111d93dc6e505fe3a515"
+    },
+    {
+      "path": "lean/Packet06PlacedSmoothBoundary.lean",
+      "sha256": "a74efb48af456ea439ad97009660f5c3279fa8173c54a4a1519fae78f74e4da9"
+    },
+    {
+      "path": "lean/Packet06PlacedTraceCollar.lean",
+      "sha256": "a48b6f11b7d973bc0677c645ece698d071eb3386ea9f8febd99300bec191a2a5"
+    },
+    {
+      "path": "lean/Packet06PlaceModeHotspots.lean",
+      "sha256": "2aa443e1ddc881ca8e23e8ca959ff94670e624965d1cba9f8db1a51073c262ac"
+    },
+    {
+      "path": "lean/Packet06RoundedHotspotFamily.lean",
+      "sha256": "6bcc1faaf4c7bfbff7c65d76b0a5fda91ec12e73164898bb8ae1d91068f77f10"
+    },
+    {
+      "path": "lean/Packet06RoundedPlacedPole.lean",
+      "sha256": "962e5726346f1b8f635e548afdcf6ec56d9159b1ddfd104d6c189b394e598329"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformActual.lean",
+      "sha256": "69c07d773ef8bb11386d7a409d9c8066fd5d9c1764375b4ad90716b2528f5887"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformAllCharts.lean",
+      "sha256": "a926f4070dee7092147f2577ccbb17642d800510517bb74ca6f37be3f810e1be"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformAllHotspots.lean",
+      "sha256": "d228c284fdaf6a623c47569d92eba2f503ea48e2f0e209226a131f23a7c22dd4"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformAllTraceCollars.lean",
+      "sha256": "0e8505d8996b0e04cc373253c1518e4e4e52b9c37c634c25f00de58472671898"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformAtlas.lean",
+      "sha256": "393f357c49028c310caed0d0317b0210461e74b4841c2d474b14061c4dc99f76"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformAttained.lean",
+      "sha256": "96378209435db23845a1ecd1acd9fe7382f5772c5b02a79b25966ac61281dcde"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformBoundary.lean",
+      "sha256": "4a43840370435db3ba113d8ca90e59a4eca2894e33e24353e37b5ee15bf33ea2"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformBoundaryChart.lean",
+      "sha256": "5c11b288d81b3f443d139908a9c318f0ad1e3f28e49f838dc4e99d75314e3d8e"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformBoundaryMaterial.lean",
+      "sha256": "fdb474f7d534bb6bc8c96d2a5eea75af5053b893509340f47ac7938b0e38c9be"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCollar.lean",
+      "sha256": "f02cf45dff8e869b96480f47dd44a885b4fd5017c8006975bd872e9a79180d90"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCollarChart.lean",
+      "sha256": "86add9d07567676cdf9ba6abc42a6e8d083a47666896074487d09c78ef6a21cf"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCollarPhase.lean",
+      "sha256": "29390bc25a8a82b09442c0ce3cd2984e115ffbd0419c725eaf79e79578357cca"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCompactActual.lean",
+      "sha256": "af9dd1c07f753c7fd39a6e55f199f2373fb558d243bb6dd796eaa31740ad5259"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCompactBinary.lean",
+      "sha256": "971837518a0ea5dce08376baef88cd4ebb05d6e0784337a85ed44002120443c2"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCompactPhase.lean",
+      "sha256": "4fa5b0d6d8831f048c8909533bbd5c6515ea36e02d49140aefd35b02dcbb4834"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformComponentPeak.lean",
+      "sha256": "a9aab25ae175b3186282f7ada0f8079fcccff8f2a2bffb9440b4ae6b6a6c961a"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformCorrection.lean",
+      "sha256": "159eece0af8bd5169a19f4adeb33589b5e86ded3df4c9ea0bcd36699db0fa551"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFamily.lean",
+      "sha256": "b5f0e07fc16c3109e79fab24d90890d4aadc421ecea8c607efc2f3df87c213f7"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFamilyBootstrap.lean",
+      "sha256": "89f22288ae7bb22d0b9ab86644fdf6925bf1c7df2574bd952d5e7e82e57ef2c8"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFieldIdentity.lean",
+      "sha256": "da7120a68b64faf0d2d9f2742ff12c8b3b49a9c6cf1274e16bc456e85539e888"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFields.lean",
+      "sha256": "afde096410888e824cd0a8efcc76acb97dcd73c8cbadc3889989826a735e78b3"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFiniteAtlas.lean",
+      "sha256": "68007d3760b18ada5b01e73d3180db7f7d98d5a94188dbbc2de8edde1058d081"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFixedBootstrap.lean",
+      "sha256": "3b1e367d845df5a32c8198032d5fbcc1b083b33b5650842925fc9b2a3e53eb03"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFixedField.lean",
+      "sha256": "7486cd0748b7db5b1efb26bf1da080f56079de14cdc3e51b207184c71394fcb2"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformFixedIteration.lean",
+      "sha256": "149d2fffb0947d44e3c5344f0ded44f13617455d6bd66815b0d847c9b9bb0645"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformForcing.lean",
+      "sha256": "85c096a21b5cef1d3eb093ca9f34d463ca8fa5ba82c77cbeee2b18f5704c8573"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformGraph.lean",
+      "sha256": "9aa64510935e4a936c2d2bab29ebc741843675842ac91d2a982e8a98a15cce7a"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformHomogeneous.lean",
+      "sha256": "f5d328fa3a67895a7d942f8c7dfb1a6bf7d1396fdff33fd7c6208b9c0f2f2662"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformHomogeneousChart.lean",
+      "sha256": "7eee2e8fa848cb868a24e8207da8fbafcf491ae651dfd741cb73ca5ef79e092c"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformHostGraph.lean",
+      "sha256": "dccc7995e6f63d55a304acb9157b72f4ae8bbbe1ca4a60d756b52df5f3d2d830"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformHotspot.lean",
+      "sha256": "949fe483cc89579d25752e0c4d1b5219736fcf5b7a78d5c45cba151c8975c536"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformNamedInputs.lean",
+      "sha256": "4bee5bafb219caa56c3e8ce30ee86d4ffd167ea46d9db9394fe22790594cf126"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformOpenChart.lean",
+      "sha256": "59c577b0b2a361e64cc95b27b8dec555d287c3672a98f9d60ca220b837a09e98"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformOriented.lean",
+      "sha256": "a80103943779620dd0d1b0a70288c93c7ecf7ba7f546d1a0969a925d8f21169c"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformPhaseBranches.lean",
+      "sha256": "bf75c41f30b21da8542ca055564fc358cec84dac5500990219872335420f9260"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformReference.lean",
+      "sha256": "393f4d414f7d876828025ad199b935945cc783cad3c1ff39af8c791e0c10a5db"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformSelectedHotspots.lean",
+      "sha256": "5cafa2537a8586574ca320a06d17d6f138dd9ec544b5345ec633d18612b650a4"
+    },
+    {
+      "path": "lean/Packet07DrivenUniformTraceCollar.lean",
+      "sha256": "6b27873b81545828569c08d269e2716931953c780f79ce3b8c10b6a757763af1"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "6f72f3d0b4725674d35a97fff41e093d7a342fa54bd58ee5dfe11e8db6ffa8cb"
+    }
+  ],
+  "scope": "unconditional actual modal hotspots and uniform driven hotspot families. Unconditional coordinate-plane modal hotspots and actual driven small-frequency hotspot families are proved. General plane transport, fixed-frequency driven extension, modal-volume specialization, paper alignment and aggregate verification remain active."
+}

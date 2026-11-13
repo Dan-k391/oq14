@@ -1,0 +1,594 @@
+[
+  {
+    "module": "Packet05BootstrapPhysicalBranches",
+    "declarations": [
+      "OQ14.Packet05BootstrapPhysicalBranches.bootstrap_physical_branches"
+    ]
+  },
+  {
+    "module": "Packet05RegionalNormalFluxUniform",
+    "declarations": [
+      "OQ14.Packet05RegionalNormalFluxUniform.regional_normal_flux_uniform"
+    ]
+  },
+  {
+    "module": "Packet05NestedBootstrapPhysicalBranch",
+    "declarations": [
+      "OQ14.Packet05NestedBootstrapPhysicalBranch.nested_bootstrap_physical_branch"
+    ]
+  },
+  {
+    "module": "Packet05FiveNestedCutoffs",
+    "declarations": [
+      "OQ14.Packet05FiveNestedCutoffs.exists_five",
+      "OQ14.Packet05FiveNestedCutoffs.plateaus"
+    ]
+  },
+  {
+    "module": "Packet05FiveCutoffLayout",
+    "declarations": [
+      "OQ14.Packet05FiveCutoffLayout.layout"
+    ]
+  },
+  {
+    "module": "Packet05MetricAllBounds",
+    "declarations": [
+      "OQ14.Packet05MetricAllBounds.matrix_all_bounds"
+    ]
+  },
+  {
+    "module": "Packet05CutoffThirdBound",
+    "declarations": [
+      "OQ14.Packet05CutoffThirdBound.third_derivative_bound"
+    ]
+  },
+  {
+    "module": "Packet05FiniteFixedAtlas",
+    "declarations": [
+      "OQ14.Packet05FiniteFixedAtlas.finite_fixed_atlas"
+    ]
+  },
+  {
+    "module": "Packet05FixedSubchartEquation",
+    "declarations": [
+      "OQ14.Packet05FixedSubchartEquation.eventual_actual_subchart_equation"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartActualEquation",
+    "declarations": [
+      "OQ14.Packet05FixedChartActualEquation.eventual_actual_chart_equation"
+    ]
+  },
+  {
+    "module": "Packet05SlopeUniformBounds",
+    "declarations": [
+      "OQ14.Packet05SlopeUniformBounds.slope_uniform_bounds"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartUniformForcing",
+    "declarations": [
+      "OQ14.Packet05FixedChartUniformForcing.fixed_chart_uniform_forcing"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartUniformScalar",
+    "declarations": [
+      "OQ14.Packet05FixedChartUniformScalar.fixed_chart_uniform_scalar"
+    ]
+  },
+  {
+    "module": "Packet05ActualChartUniformInputs",
+    "declarations": [
+      "OQ14.Packet05ActualChartUniformInputs.actual_chart_uniform_inputs"
+    ]
+  },
+  {
+    "module": "Packet05ActualChartFields",
+    "declarations": [
+      "OQ14.Packet05ActualChartFields.correction_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ActualNamedUniformInputs",
+    "declarations": [
+      "OQ14.Packet05ActualNamedUniformInputs.actual_named_uniform_inputs"
+    ]
+  },
+  {
+    "module": "Packet05RegionalBootstrapCeiling",
+    "declarations": [
+      "OQ14.Packet05RegionalBootstrapCeiling.ceiling_nonneg"
+    ]
+  },
+  {
+    "module": "Packet05RegionalFamilyBootstrap",
+    "declarations": [
+      "OQ14.Packet05RegionalFamilyBootstrap.regional_family_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet05EventualChoice",
+    "declarations": [
+      "OQ14.Packet05EventualChoice.choose_eventually"
+    ]
+  },
+  {
+    "module": "Packet05RegionalFamilyChosenBootstrap",
+    "declarations": [
+      "OQ14.Packet05RegionalFamilyChosenBootstrap.regional_family_chosen_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet05ActualChartFamilyBootstrap",
+    "declarations": [
+      "OQ14.Packet05ActualChartFamilyBootstrap.actual_chart_family_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartBootstrap",
+    "declarations": [
+      "OQ14.Packet05FixedChartBootstrap.fixed_chart_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet05UniformScalarIteration",
+    "declarations": [
+      "OQ14.Packet05UniformScalarIteration.uniform_scalar_iteration"
+    ]
+  },
+  {
+    "module": "Packet05UniformTwoDirectionStrong",
+    "declarations": [
+      "OQ14.Packet05UniformTwoDirectionStrong.uniform_two_direction_strong"
+    ]
+  },
+  {
+    "module": "Packet05UniformTwoDirectionStrongFamily",
+    "declarations": [
+      "OQ14.Packet05UniformTwoDirectionStrongFamily.uniform_two_direction_strong_family"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartIteration",
+    "declarations": [
+      "OQ14.Packet05FixedChartIteration.fixed_chart_iteration"
+    ]
+  },
+  {
+    "module": "Packet05DivergenceZeroRegion",
+    "declarations": [
+      "OQ14.Packet05DivergenceZeroRegion.global_divergence_zero_on"
+    ]
+  },
+  {
+    "module": "Packet05ActualFieldIdentity",
+    "declarations": [
+      "OQ14.Packet05ActualFieldIdentity.actual_field_identity"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartUniformField",
+    "declarations": [
+      "OQ14.Packet05FixedChartUniformField.fixed_chart_uniform_field"
+    ]
+  },
+  {
+    "module": "Packet05BootstrapUniformPhysicalBranch",
+    "declarations": [
+      "OQ14.Packet05BootstrapUniformPhysicalBranch.bootstrap_uniform_physical_branch"
+    ]
+  },
+  {
+    "module": "Packet05PeakSphereAtlas",
+    "declarations": [
+      "OQ14.Packet05PeakSphereAtlas.peak_sphere_atlas"
+    ]
+  },
+  {
+    "module": "Packet05UniformTwoDirection",
+    "declarations": [
+      "OQ14.Packet05UniformTwoDirection.uniform_two_direction_iteration"
+    ]
+  },
+  {
+    "module": "Packet05FinitePhysicalCollar",
+    "declarations": [
+      "OQ14.Packet05FinitePhysicalCollar.amplitude_bound",
+      "OQ14.Packet05FinitePhysicalCollar.finite_physical_collar"
+    ]
+  },
+  {
+    "module": "Packet05ActualUniformCollar",
+    "declarations": [
+      "OQ14.Packet05ActualUniformCollar.local_actual_bound",
+      "OQ14.Packet05ActualUniformCollar.actual_uniform_collar"
+    ]
+  },
+  {
+    "module": "Packet05TwoPhaseAEFieldBound",
+    "declarations": [
+      "OQ14.Packet05TwoPhaseAEFieldBound.two_phase_ae_bound"
+    ]
+  },
+  {
+    "module": "Packet05ActualLocalCollarBound",
+    "declarations": [
+      "OQ14.Packet05ActualLocalCollarBound.actual_local_chart_bound"
+    ]
+  },
+  {
+    "module": "Packet05ActualTraceCollar",
+    "declarations": [
+      "OQ14.Packet05ActualTraceCollar.actual_uniform_trace_collar"
+    ]
+  },
+  {
+    "module": "Packet05GivenTraceCollar",
+    "declarations": [
+      "OQ14.Packet05GivenTraceCollar.given_uniform_trace_collar"
+    ]
+  },
+  {
+    "module": "Packet06PlacedTraceCollar",
+    "declarations": [
+      "OQ14.Packet06PlacedTraceCollar.placed_trace_collar"
+    ]
+  },
+  {
+    "module": "Packet05OneSidedCollar",
+    "declarations": [
+      "OQ14.Packet05OneSidedCollar.given_collar_eventually"
+    ]
+  },
+  {
+    "module": "Packet06PlacedOneSidedCollar",
+    "declarations": [
+      "OQ14.Packet06PlacedOneSidedCollar.placed_one_sided_collar"
+    ]
+  },
+  {
+    "module": "Packet05GivenAllCollars",
+    "declarations": [
+      "OQ14.Packet05GivenAllCollars.given_all_collars_eventually"
+    ]
+  },
+  {
+    "module": "Packet05AllActualTraceCollars",
+    "declarations": [
+      "OQ14.Packet05AllActualTraceCollars.all_uniform_trace_collars"
+    ]
+  },
+  {
+    "module": "Packet06HotspotFamilyAssembly",
+    "declarations": [
+      "OQ14.Packet06HotspotFamilyAssembly.hotspots_of_uniform_collars"
+    ]
+  },
+  {
+    "module": "Packet06PlacedSmoothBoundary",
+    "declarations": [
+      "OQ14.Packet06PlacedSmoothBoundary.smooth_boundary_image"
+    ]
+  },
+  {
+    "module": "Packet06PlaceModeHotspots",
+    "declarations": [
+      "OQ14.Packet06PlaceModeHotspots.threshold_mono",
+      "OQ14.Packet06PlaceModeHotspots.place_mode_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalHotspotSelection",
+    "declarations": [
+      "OQ14.Packet06PhysicalHotspotSelection.select_placed_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06ActualPeakFamily",
+    "declarations": [
+      "OQ14.Packet06ActualPeakFamily.actual_peak_family"
+    ]
+  },
+  {
+    "module": "Packet06PlacedActualCollar",
+    "declarations": [
+      "OQ14.Packet06PlacedActualCollar.placed_collar"
+    ]
+  },
+  {
+    "module": "Packet06CollaredHotspotFamily",
+    "declarations": [
+      "OQ14.Packet06CollaredHotspotFamily.collared_hotspots_of_uniform_collars"
+    ]
+  },
+  {
+    "module": "Packet06CollaredHotspotSelection",
+    "declarations": [
+      "OQ14.Packet06CollaredHotspotSelection.select_placed_collared_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06RoundedPlacedPole",
+    "declarations": [
+      "OQ14.Packet06RoundedPlacedPole.rounded_symmetries",
+      "OQ14.Packet06RoundedPlacedPole.rounded_placed_observed_pole"
+    ]
+  },
+  {
+    "module": "Packet06GlobalElectricIdentification",
+    "declarations": [
+      "OQ14.Packet06GlobalElectricIdentification.global_electric_ae",
+      "OQ14.Packet06GlobalElectricIdentification.global_phase_representative"
+    ]
+  },
+  {
+    "module": "Packet06RoundedHotspotFamily",
+    "declarations": [
+      "OQ14.Packet06RoundedHotspotFamily.rounded_hotspot_family"
+    ]
+  },
+  {
+    "module": "Packet06PlacedMaterialGeometry",
+    "declarations": [
+      "OQ14.Packet06PlacedMaterialGeometry.placed_material_values",
+      "OQ14.Packet06PlacedMaterialGeometry.unit_ball_smooth",
+      "OQ14.Packet06PlacedMaterialGeometry.placed_outer_smooth",
+      "OQ14.Packet06PlacedMaterialGeometry.placed_piecewise_smooth"
+    ]
+  },
+  {
+    "module": "Packet06ModalHotspotExistence",
+    "declarations": [
+      "OQ14.Packet06ModalHotspotExistence.exists_modal_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalVolumeLimits",
+    "declarations": [
+      "OQ14.Packet06PhysicalVolumeLimits.weighted_inverse_square",
+      "OQ14.Packet06PhysicalVolumeLimits.fixed_direction_subsequence",
+      "OQ14.Packet06PhysicalVolumeLimits.physical_and_directional_volumes"
+    ]
+  },
+  {
+    "module": "Packet05IncidentUniformH2",
+    "declarations": [
+      "OQ14.Packet05IncidentUniformH2.fixed_smooth_addition"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCorrection",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCorrection.driven_correction"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFamily",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFamily.actual_unknown_tendsto",
+      "OQ14.Packet07DrivenUniformFamily.actual_unknown_bounded"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformActual",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformActual.actual_driven_correction"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformGraph",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformGraph.actual_scalar_graph",
+      "OQ14.Packet07DrivenUniformGraph.actual_correction_pointwise"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformReference",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformReference.fixed_reference"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformForcing",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformForcing.actual_graph_forcing"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformOriented",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformOriented.oriented_driven_scalar"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformHostGraph",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformHostGraph.actual_host_driven_graph"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformPhaseBranches",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformPhaseBranches.actual_driven_phase_branches"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformOpenChart",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformOpenChart.open_driven_chart"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformBoundary",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformBoundary.actual_boundary_driven"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformHomogeneous",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformHomogeneous.actual_homogeneous_neighborhood"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCollarChart",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCollarChart.annulus_open",
+      "OQ14.Packet07DrivenUniformCollarChart.fixed_collar_chart"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCollarPhase",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCollarPhase.eventually_constant_on_phase"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformHomogeneousChart",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformHomogeneousChart.fixed_homogeneous_chart"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAllCharts",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAllCharts.fixed_chart_at_point"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAtlas",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAtlas.actual_fixed_collar_atlas"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformBoundaryChart",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformBoundaryChart.actual_boundary_chart"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformBoundaryMaterial",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformBoundaryMaterial.boundary_material_driven"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCompactPhase",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCompactPhase.compact_driven_phase"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCompactBinary",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCompactBinary.compact_binary_driven"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCompactActual",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCompactActual.eventually_compact_branches"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAttained",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAttained.eventually_attained_above_peak"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFiniteAtlas",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFiniteAtlas.finite_fixed_atlas"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFields",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFields.correction_continuous"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformNamedInputs",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformNamedInputs.actual_named_uniform_inputs"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFamilyBootstrap",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFamilyBootstrap.actual_chart_family_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFixedBootstrap",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFixedBootstrap.fixed_chart_bootstrap"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFieldIdentity",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFieldIdentity.actual_field_identity"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFixedIteration",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFixedIteration.fixed_chart_iteration"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformFixedField",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformFixedField.fixed_chart_uniform_field"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformCollar",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformCollar.local_actual_bound",
+      "OQ14.Packet07DrivenUniformCollar.actual_uniform_collar"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformTraceCollar",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformTraceCollar.actual_uniform_trace_collar"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAllTraceCollars",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAllTraceCollars.all_uniform_trace_collars"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformHotspot",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformHotspot.eventually_actual_hotspot"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformAllHotspots",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformAllHotspots.eventually_all_hotspots"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformComponentPeak",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformComponentPeak.component_le_amplitude",
+      "OQ14.Packet07DrivenUniformComponentPeak.positive_component_peak"
+    ]
+  },
+  {
+    "module": "Packet07DrivenUniformSelectedHotspots",
+    "declarations": [
+      "OQ14.Packet07DrivenUniformSelectedHotspots.one_input_all_hotspots"
+    ]
+  }
+]

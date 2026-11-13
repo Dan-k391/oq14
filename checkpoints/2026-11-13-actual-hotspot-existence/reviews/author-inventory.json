@@ -1,0 +1,580 @@
+{
+  "modules": [
+    {
+      "module": "Packet05BootstrapPhysicalBranches",
+      "source_sha256": "b265c5679ed103ccaebb2e62d3001540abc80bde4305a74346d5ddebc451300c",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json"
+    },
+    {
+      "module": "Packet05RegionalNormalFluxUniform",
+      "source_sha256": "608497a7cc1dcfa5d751bf6bab7567e42ce32cc1a41122c4ee48be07be3e153b",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json"
+    },
+    {
+      "module": "Packet05NestedBootstrapPhysicalBranch",
+      "source_sha256": "1d1a7c4f1358d7027e3b101c88c96c62595addd54547dab6445a075c9e8720d9",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FiveNestedCutoffs",
+      "source_sha256": "7cc017a98b45036087daf46ac770aa3308cbcb8a9834188728fe4a32a676f93f",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FiveCutoffLayout",
+      "source_sha256": "a16bcefed64f1998e789e6cd15e0f5050ada7a609d69c0d3a4bfbda9f269962f",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05MetricAllBounds",
+      "source_sha256": "ed5a2f228190233af47da397d6ebab6d94bd5ae60858e58b3ae4c6403d7ceb99",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05CutoffThirdBound",
+      "source_sha256": "434e583e8418e1b6aeb4818fcf61f0bf98bcb17e8c0975a17e06c8807ce566ed",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FiniteFixedAtlas",
+      "source_sha256": "2fc0d41c29b10069834a0b617a40531d94a6052e65359e5f37f28060c3a2178a",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05FixedSubchartEquation",
+      "source_sha256": "798506685b8fcb2313c6f73bb2ce6214625595d05cb42546b0d9776396266c19",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartActualEquation",
+      "source_sha256": "3fa51dddd44c8054b9ecbcc9e3772184d3bb262dc29dde937e4c799ee0d61e49",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05SlopeUniformBounds",
+      "source_sha256": "1a9ed0b82d152df7afff5d8d6db0239d7416df817304188357a299f90a3145ad",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartUniformForcing",
+      "source_sha256": "f8897a16d043ab5113c98e1a976ef2ba0b3191f8a4aee2e271965b1f9e141f5d",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartUniformScalar",
+      "source_sha256": "970b71fec5ea4ec83fee6629823c8ce6f2b0afb478ad9315162243f2fb5c9316",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05ActualChartUniformInputs",
+      "source_sha256": "5329f6ba9476b16924a4209ce730eb3a79f25a4d705f4b4e64106e70e4e1bd84",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05ActualChartFields",
+      "source_sha256": "ff1891c929fac3343581edef3a2d1ea7094e51fb798f185421177e90ea5219e8",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05ActualNamedUniformInputs",
+      "source_sha256": "4b0788a3cde0b9ce69f0b8e149fb7c44bad59384297e00548277161141bd733d",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05RegionalBootstrapCeiling",
+      "source_sha256": "2ac3609a27267d7aca898b0bffdb84c927c12558f5ab1f1c1a0de2c8dd8d3600",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05RegionalFamilyBootstrap",
+      "source_sha256": "ab852de83a63006e6fd689b9a9ed37141ef92a84e3df31f787efe87ed0b845d0",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05EventualChoice",
+      "source_sha256": "fe9c8f18db8510dba0dd05629ec50c71aa997dcda98ab61926ed6d2017d21925",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05RegionalFamilyChosenBootstrap",
+      "source_sha256": "dac11d846bdd877f4c8768e54ae774903cf0d3cfb8ba2a3a62a2a16a91656282",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05ActualChartFamilyBootstrap",
+      "source_sha256": "0e7a884d59c5c9b31f2ea102d21a6f77f2e201fde7e22906f2d5a5b3286eee0e",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartBootstrap",
+      "source_sha256": "498222b3d5d74d1201786904c1a6a09747f054178f2d38ebec74b67c0337afea",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05UniformScalarIteration",
+      "source_sha256": "9d8482d0cdc5f4edc32c67586d5436c980083a5215cb2b7b597aaec96cea1b0a",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05UniformTwoDirectionStrong",
+      "source_sha256": "2aeb877a2f0ac5d57da94c7c4768efd6939dcd79af760f840d7fc93f6671e86b",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05UniformTwoDirectionStrongFamily",
+      "source_sha256": "2ae1ec7f923c420acbb68e01a6e771cf6b118ea02e4b7fb778d43f4af71a0dd8",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartIteration",
+      "source_sha256": "2a54d7480610d66ea911030037f8257822865173bb8539b4b1aaaed5e192ad6b",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05DivergenceZeroRegion",
+      "source_sha256": "1dfa66c53058997aa44eb5d3cf6ab76d9ceb15e02ccf8011eeae803fe2a9d95b",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05ActualFieldIdentity",
+      "source_sha256": "55562d37e0b6de74f435c753108863e625b8bc4af110697b4554ecab95842314",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05FixedChartUniformField",
+      "source_sha256": "e55d3fb8690c1f69c183c6e1e8cbe2cd3d7d746fac2310b34d58984dec59731e",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/chart-build.json"
+    },
+    {
+      "module": "Packet05BootstrapUniformPhysicalBranch",
+      "source_sha256": "1e8fab46e2aaba8c685dcd446e8cf9aca25f18e5d07dc364b9d18a55bfd2d52e",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/bootstrap-build.json"
+    },
+    {
+      "module": "Packet05PeakSphereAtlas",
+      "source_sha256": "9c772df4706c9849e142cd4755bb47af5a7c30f3bd48cc8a37a79b5d8cbb08cf",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05UniformTwoDirection",
+      "source_sha256": "c5e38373ac17276db5b2f77bc5effdf8698e17363599687232dcef816dc43929",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/fixed-chart-build.json"
+    },
+    {
+      "module": "Packet05FinitePhysicalCollar",
+      "source_sha256": "f5cdb83eae4aa080674462239a6edd3548c02f3ea3ef4e56214b009a030616f5",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-build.json"
+    },
+    {
+      "module": "Packet05ActualUniformCollar",
+      "source_sha256": "12f7e5a11a93ac1fdafd83427e2d16e9fa577cf2335f4fe146820c7299cea58e",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collar-build.json"
+    },
+    {
+      "module": "Packet05TwoPhaseAEFieldBound",
+      "source_sha256": "df057f07c79c62d40431e759d9a12b15de31ec334f79d98cc7989d94c6016f3e",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json"
+    },
+    {
+      "module": "Packet05ActualLocalCollarBound",
+      "source_sha256": "6d2f265b0bc06c65cc9c4155d2ec214f4a211546be8c42f7301382debd0d66dd",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json"
+    },
+    {
+      "module": "Packet05ActualTraceCollar",
+      "source_sha256": "99cdb461a8bc5506e7510342d772c170c89bcae0e6825e5f8b5d4cdc85e70ef9",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/trace-build.json"
+    },
+    {
+      "module": "Packet05GivenTraceCollar",
+      "source_sha256": "2c760f1da6f94f17e519a14ab1de84a33793f8f53b70a6b05e200db2a12cba44",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet06PlacedTraceCollar",
+      "source_sha256": "a48b6f11b7d973bc0677c645ece698d071eb3386ea9f8febd99300bec191a2a5",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet05OneSidedCollar",
+      "source_sha256": "c97edb73f6f4b8f904c8cb0001c081562db87f7424073f0b3298fd0be5461a25",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet06PlacedOneSidedCollar",
+      "source_sha256": "20105905fbbc1266005c8a2b72c2fd5e365b8839fa47111d93dc6e505fe3a515",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet05GivenAllCollars",
+      "source_sha256": "35a4f6de42744ff2f7ce30fe8d40ebc3cd82409833afb865ad2efae0a8acb223",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet05AllActualTraceCollars",
+      "source_sha256": "9279324feb88ed4e2a1523b99dd79558da5a91e5371bd03011da360dd873d465",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/retained-trace-build.json"
+    },
+    {
+      "module": "Packet06HotspotFamilyAssembly",
+      "source_sha256": "548b5dea6d71693aa04718a6f28602795871036b5f253e0fed76760ce6bac495",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/family-build.json"
+    },
+    {
+      "module": "Packet06PlacedSmoothBoundary",
+      "source_sha256": "a74efb48af456ea439ad97009660f5c3279fa8173c54a4a1519fae78f74e4da9",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-build.json"
+    },
+    {
+      "module": "Packet06PlaceModeHotspots",
+      "source_sha256": "2aa443e1ddc881ca8e23e8ca959ff94670e624965d1cba9f8db1a51073c262ac",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/placed-mode-build.json"
+    },
+    {
+      "module": "Packet06PhysicalHotspotSelection",
+      "source_sha256": "8f1774fb59690c9730291bcfac15f48c8bba7a410be35ad6fd8cf31058117b88",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/selection-build.json"
+    },
+    {
+      "module": "Packet06ActualPeakFamily",
+      "source_sha256": "5b9d0977320d46c1da627f94a8e135a23ac219108390981dda2028a127488cac",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-build.json"
+    },
+    {
+      "module": "Packet06PlacedActualCollar",
+      "source_sha256": "61fc00ee05c98e40b856b53c7055979833160f208244ce94c0cff88440eb1955",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/peak-collar-build.json"
+    },
+    {
+      "module": "Packet06CollaredHotspotFamily",
+      "source_sha256": "53192bf708756cc50647671c7a73ea6c3b625b5e1ec474e675523dcdc7c1e453",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/collared-family-build.json"
+    },
+    {
+      "module": "Packet06CollaredHotspotSelection",
+      "source_sha256": "961c847c9a7f61f90ee78a5154a9d6e8d7a7bec32d6b61abc82bc8cdf3640e9a",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/revised-selection-build.json"
+    },
+    {
+      "module": "Packet06RoundedPlacedPole",
+      "source_sha256": "962e5726346f1b8f635e548afdcf6ec56d9159b1ddfd104d6c189b394e598329",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-build.json"
+    },
+    {
+      "module": "Packet06GlobalElectricIdentification",
+      "source_sha256": "259e1b3b46c8fb58a636c1576073cbd7f0fe8b9b8b6d6d5ce78640ea339c313f",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/pole-global-build.json"
+    },
+    {
+      "module": "Packet06RoundedHotspotFamily",
+      "source_sha256": "6bcc1faaf4c7bfbff7c65d76b0a5fda91ec12e73164898bb8ae1d91068f77f10",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/rounded-family-build.json"
+    },
+    {
+      "module": "Packet06PlacedMaterialGeometry",
+      "source_sha256": "407c42d52059ad6cabfbebd5413d80db8f313a78f33255a56e387ba8347e5974",
+      "reports": 4,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/material-build.json"
+    },
+    {
+      "module": "Packet06ModalHotspotExistence",
+      "source_sha256": "7156adb8ce18ae71bfe9c7a7c4df1b3232ec21f043c1c03392b86a121065fa73",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/modal-existence-build.json"
+    },
+    {
+      "module": "Packet06PhysicalVolumeLimits",
+      "source_sha256": "7db688985b1120f379cdbf2bd88f61bf79e068181ac9b269983ab1c7c12c2510",
+      "reports": 3,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/volume-build.json"
+    },
+    {
+      "module": "Packet05IncidentUniformH2",
+      "source_sha256": "9c06a018171fb2d8cfdc75cc34b11e24d54ec3b48c71aa94dd4621ccb6e86bdb",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCorrection",
+      "source_sha256": "159eece0af8bd5169a19f4adeb33589b5e86ded3df4c9ea0bcd36699db0fa551",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFamily",
+      "source_sha256": "b5f0e07fc16c3109e79fab24d90890d4aadc421ecea8c607efc2f3df87c213f7",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformActual",
+      "source_sha256": "69c07d773ef8bb11386d7a409d9c8066fd5d9c1764375b4ad90716b2528f5887",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformGraph",
+      "source_sha256": "9aa64510935e4a936c2d2bab29ebc741843675842ac91d2a982e8a98a15cce7a",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformReference",
+      "source_sha256": "393f4d414f7d876828025ad199b935945cc783cad3c1ff39af8c791e0c10a5db",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformForcing",
+      "source_sha256": "85c096a21b5cef1d3eb093ca9f34d463ca8fa5ba82c77cbeee2b18f5704c8573",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformOriented",
+      "source_sha256": "a80103943779620dd0d1b0a70288c93c7ecf7ba7f546d1a0969a925d8f21169c",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformHostGraph",
+      "source_sha256": "dccc7995e6f63d55a304acb9157b72f4ae8bbbe1ca4a60d756b52df5f3d2d830",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformPhaseBranches",
+      "source_sha256": "bf75c41f30b21da8542ca055564fc358cec84dac5500990219872335420f9260",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformOpenChart",
+      "source_sha256": "59c577b0b2a361e64cc95b27b8dec555d287c3672a98f9d60ca220b837a09e98",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformBoundary",
+      "source_sha256": "4a43840370435db3ba113d8ca90e59a4eca2894e33e24353e37b5ee15bf33ea2",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-chart-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformHomogeneous",
+      "source_sha256": "f5d328fa3a67895a7d942f8c7dfb1a6bf7d1396fdff33fd7c6208b9c0f2f2662",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCollarChart",
+      "source_sha256": "86add9d07567676cdf9ba6abc42a6e8d083a47666896074487d09c78ef6a21cf",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCollarPhase",
+      "source_sha256": "29390bc25a8a82b09442c0ce3cd2984e115ffbd0419c725eaf79e79578357cca",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformHomogeneousChart",
+      "source_sha256": "7eee2e8fa848cb868a24e8207da8fbafcf491ae651dfd741cb73ca5ef79e092c",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformAllCharts",
+      "source_sha256": "a926f4070dee7092147f2577ccbb17642d800510517bb74ca6f37be3f810e1be",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformAtlas",
+      "source_sha256": "393f357c49028c310caed0d0317b0210461e74b4841c2d474b14061c4dc99f76",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-atlas-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformBoundaryChart",
+      "source_sha256": "5c11b288d81b3f443d139908a9c318f0ad1e3f28e49f838dc4e99d75314e3d8e",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformBoundaryMaterial",
+      "source_sha256": "fdb474f7d534bb6bc8c96d2a5eea75af5053b893509340f47ac7938b0e38c9be",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCompactPhase",
+      "source_sha256": "4fa5b0d6d8831f048c8909533bbd5c6515ea36e02d49140aefd35b02dcbb4834",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCompactBinary",
+      "source_sha256": "971837518a0ea5dce08376baef88cd4ebb05d6e0784337a85ed44002120443c2",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCompactActual",
+      "source_sha256": "af9dd1c07f753c7fd39a6e55f199f2373fb558d243bb6dd796eaa31740ad5259",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-compact-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformAttained",
+      "source_sha256": "96378209435db23845a1ecd1acd9fe7382f5772c5b02a79b25966ac61281dcde",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-attained-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFiniteAtlas",
+      "source_sha256": "68007d3760b18ada5b01e73d3180db7f7d98d5a94188dbbc2de8edde1058d081",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFields",
+      "source_sha256": "afde096410888e824cd0a8efcc76acb97dcd73c8cbadc3889989826a735e78b3",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformNamedInputs",
+      "source_sha256": "4bee5bafb219caa56c3e8ce30ee86d4ffd167ea46d9db9394fe22790594cf126",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFamilyBootstrap",
+      "source_sha256": "89f22288ae7bb22d0b9ab86644fdf6925bf1c7df2574bd952d5e7e82e57ef2c8",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFixedBootstrap",
+      "source_sha256": "3b1e367d845df5a32c8198032d5fbcc1b083b33b5650842925fc9b2a3e53eb03",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFieldIdentity",
+      "source_sha256": "da7120a68b64faf0d2d9f2742ff12c8b3b49a9c6cf1274e16bc456e85539e888",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFixedIteration",
+      "source_sha256": "149d2fffb0947d44e3c5344f0ded44f13617455d6bd66815b0d847c9b9bb0645",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformFixedField",
+      "source_sha256": "7486cd0748b7db5b1efb26bf1da080f56079de14cdc3e51b207184c71394fcb2",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformCollar",
+      "source_sha256": "f02cf45dff8e869b96480f47dd44a885b4fd5017c8006975bd872e9a79180d90",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformTraceCollar",
+      "source_sha256": "6b27873b81545828569c08d269e2716931953c780f79ce3b8c10b6a757763af1",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformAllTraceCollars",
+      "source_sha256": "0e8505d8996b0e04cc373253c1518e4e4e52b9c37c634c25f00de58472671898",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformHotspot",
+      "source_sha256": "949fe483cc89579d25752e0c4d1b5219736fcf5b7a78d5c45cba151c8975c536",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformAllHotspots",
+      "source_sha256": "d228c284fdaf6a623c47569d92eba2f503ea48e2f0e209226a131f23a7c22dd4",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-selected-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformComponentPeak",
+      "source_sha256": "a9aab25ae175b3186282f7ada0f8079fcccff8f2a2bffb9440b4ae6b6a6c961a",
+      "reports": 2,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-component-build.json"
+    },
+    {
+      "module": "Packet07DrivenUniformSelectedHotspots",
+      "source_sha256": "5cafa2537a8586574ca320a06d17d6f138dd9ec544b5345ec633d18612b650a4",
+      "reports": 1,
+      "authenticated_author_evidence": "checkpoints/2026-11-13-actual-hotspot-existence/reviews/driven-path-correction-build.json"
+    }
+  ]
+}
