@@ -1,0 +1,179 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-hotspot-cutoffs/objects/adopted",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-hotspot-cutoffs\\objects\\adopted;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 3 hotspot topology and cutoff modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07HotspotComponent",
+      "source": "lean/Packet07HotspotComponent.lean",
+      "source_sha256": "431b5fb5cf4e07f96075201bd027514830f37872ace0a8a605a47da67d764972",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-hotspot-cutoffs\\objects\\adopted\\Packet07HotspotComponent.olean",
+        "D:\\oq14\\lean\\Packet07HotspotComponent.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 45.55,
+      "log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07HotspotComponent-chain.log",
+      "log_sha256": "55f44083627ff09764699f8848697e46abb58aff67e93e06d86a7f7c4cd4c54d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.connected_set_inside_of_no_sphere",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.closed_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.compact_component_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.locally_closed_component_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.branch_superlevel_closed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07HotspotComponent.branch_peak_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f605e741d663df39b9ae8b3f859757bff7b48a0499cc8d8535a8cdafd0af9335"
+    },
+    {
+      "module": "Packet07PeakAttainment",
+      "source": "lean/Packet07PeakAttainment.lean",
+      "source_sha256": "29492d8a3df10247cfc3bfe3765af6b696a1e2c9edc1aaf6a794928bac0a5f2e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-hotspot-cutoffs\\objects\\adopted\\Packet07PeakAttainment.olean",
+        "D:\\oq14\\lean\\Packet07PeakAttainment.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.9,
+      "log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07PeakAttainment-chain.log",
+      "log_sha256": "5439213d9d38bec21b4ffbd4f2f0aea3bcc1ac1cbb9c19c47a164f8b873d243d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PeakAttainment.positive_volume_exceeds_maximum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PeakAttainment.half_peak_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c045f9b85e773a5fdb9c226c5f17cbfd3cdd2ab4a3910025c601a84320cfabb4"
+    },
+    {
+      "module": "Packet05NestedChartCutoffs",
+      "source": "lean/Packet05NestedChartCutoffs.lean",
+      "source_sha256": "099cf72b828d4694ffd835841b99b358b8b0f237f5e0585ad6df0ffc2fd50f2d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-hotspot-cutoffs\\objects\\adopted\\Packet05NestedChartCutoffs.olean",
+        "D:\\oq14\\lean\\Packet05NestedChartCutoffs.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.93,
+      "log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet05NestedChartCutoffs-chain.log",
+      "log_sha256": "bcd18fcd9806de413c32013c9298dde6f390ded3ea0e9090558d8d1383445de1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.test_smooth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.test_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.test_one_eventually",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.test_value_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.test_derivative_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05NestedChartCutoffs.exists_nested",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fd411e05e6d25f1646ae9555ba4e236b0677781a8d12cb66c6b06c7fab245e1c"
+    }
+  ],
+  "module_count": 3,
+  "report_count": 14
+}

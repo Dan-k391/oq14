@@ -1,5 +1,38 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 100 is the latest verified incremental checkpoint:
+[STAGE100.txt](checkpoints/2026-11-13-hotspot-cutoffs/STAGE100.txt).
+
+A connected field superlevel that misses the boundary sphere and contains
+an interior peak stays inside the observation ball. Local closedness on the
+closed ball suffices for compactness of the full connected component.
+Finite continuous material-side branches and a peak above twice their
+boundary bound give a compact half-amplitude component. An actual positive-
+volume amplitude peak forces an attained branch maximum above its threshold.
+Actual continuous branches and boundary bounds remain explicit inputs.
+
+Inside every actual open chart neighborhood, nested smooth real cutoffs are
+constructed with the needed plateaus, support margins under translations in
+every coordinate direction, values at most one, and derived derivative bounds.
+This supplies geometric inputs to the regional transmission bootstrap.
+
+Independent source review and isolated fresh builds passed all three modules.
+Their retained objects were adopted with byte hashes checked and revalidated
+without duplicate compilation. Actual curved Maxwell continuity, quantitative
+collars and final hotspot assembly, placed Green verification, the final
+paper and aggregate validation remain active.
+
+3 modules / 14 reports passed independent root review and a fresh
+ordered build. 1082 upstream sources were authenticated, with cached objects.
+The ledger is 1101 modules / 5182 reports, all prior records unchanged:
+`checkpoints/2026-11-13-hotspot-cutoffs/evidence/audited_after_5238-stage100.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage100.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 99 is the latest verified incremental checkpoint:
 [STAGE99.txt](checkpoints/2026-11-13-flat-regional/STAGE99.txt).
 

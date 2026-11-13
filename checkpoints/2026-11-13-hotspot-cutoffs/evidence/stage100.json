@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "24c448e",
+  "modules": 1101,
+  "reports": 5182,
+  "new_modules": 3,
+  "new_reports": 14,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "04fccd8c5c5290f4f2df96cd8f54c62766d2a92e167adbadfac339b66e68dacb",
+  "ledger_sha256": "1ed3a02a34f2771839567d98902f6d403495c1d4fa4c579f97626e66bfea3663",
+  "raw_archive_sha256": "20302b6840e1217588f06e4546153aac8f0fba56a8f7c69980bd10454ff0e1b9",
+  "records": [
+    {
+      "module": "Packet07HotspotComponent",
+      "reports": 6,
+      "source_sha256": "431b5fb5cf4e07f96075201bd027514830f37872ace0a8a605a47da67d764972",
+      "audit_log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07HotspotComponent-chain.log",
+      "audit_log_sha256": "55f44083627ff09764699f8848697e46abb58aff67e93e06d86a7f7c4cd4c54d",
+      "independent_review": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-review.txt",
+      "independent_review_sha256": "7d55193ef4b0adf130fb91ae551b20b56c9247e9a54cee5e95fe84b015e36d39",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-build.json",
+      "independent_build_sha256": "f349bf3f113d77dce3d0fafd4e3a216829798c3271f9a6f227100a31a8d25e03",
+      "independent_log": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet07HotspotComponent.log",
+      "independent_log_sha256": "55f44083627ff09764699f8848697e46abb58aff67e93e06d86a7f7c4cd4c54d",
+      "declarations": [
+        "OQ14.Packet07HotspotComponent.connected_set_inside_of_no_sphere",
+        "OQ14.Packet07HotspotComponent.closed_component",
+        "OQ14.Packet07HotspotComponent.compact_component_inside",
+        "OQ14.Packet07HotspotComponent.locally_closed_component_inside",
+        "OQ14.Packet07HotspotComponent.branch_superlevel_closed",
+        "OQ14.Packet07HotspotComponent.branch_peak_component"
+      ]
+    },
+    {
+      "module": "Packet07PeakAttainment",
+      "reports": 2,
+      "source_sha256": "29492d8a3df10247cfc3bfe3765af6b696a1e2c9edc1aaf6a794928bac0a5f2e",
+      "audit_log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07PeakAttainment-chain.log",
+      "audit_log_sha256": "5439213d9d38bec21b4ffbd4f2f0aea3bcc1ac1cbb9c19c47a164f8b873d243d",
+      "independent_review": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-review.txt",
+      "independent_review_sha256": "7d55193ef4b0adf130fb91ae551b20b56c9247e9a54cee5e95fe84b015e36d39",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-build.json",
+      "independent_build_sha256": "f349bf3f113d77dce3d0fafd4e3a216829798c3271f9a6f227100a31a8d25e03",
+      "independent_log": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet07PeakAttainment.log",
+      "independent_log_sha256": "5439213d9d38bec21b4ffbd4f2f0aea3bcc1ac1cbb9c19c47a164f8b873d243d",
+      "declarations": [
+        "OQ14.Packet07PeakAttainment.positive_volume_exceeds_maximum",
+        "OQ14.Packet07PeakAttainment.half_peak_component"
+      ]
+    },
+    {
+      "module": "Packet05NestedChartCutoffs",
+      "reports": 6,
+      "source_sha256": "099cf72b828d4694ffd835841b99b358b8b0f237f5e0585ad6df0ffc2fd50f2d",
+      "audit_log": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet05NestedChartCutoffs-chain.log",
+      "audit_log_sha256": "bcd18fcd9806de413c32013c9298dde6f390ded3ea0e9090558d8d1383445de1",
+      "independent_review": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/cutoff-review.txt",
+      "independent_review_sha256": "de05de500d18f44c0d50e206a00881ccef486f571ffe5e6a28907691b26d2b42",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/cutoff-build.json",
+      "independent_build_sha256": "58120c3c987878c6362d9d3bdf6609427e68623a510ba0a6aaf5cac1eb2aec1e",
+      "independent_log": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet05NestedChartCutoffs.log",
+      "independent_log_sha256": "bcd18fcd9806de413c32013c9298dde6f390ded3ea0e9090558d8d1383445de1",
+      "declarations": [
+        "OQ14.Packet05NestedChartCutoffs.test_smooth",
+        "OQ14.Packet05NestedChartCutoffs.test_support",
+        "OQ14.Packet05NestedChartCutoffs.test_one_eventually",
+        "OQ14.Packet05NestedChartCutoffs.test_value_bound",
+        "OQ14.Packet05NestedChartCutoffs.test_derivative_bound",
+        "OQ14.Packet05NestedChartCutoffs.exists_nested"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/audited_after_5238-stage100.json",
+      "sha256": "1ed3a02a34f2771839567d98902f6d403495c1d4fa4c579f97626e66bfea3663"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/chain-build.json",
+      "sha256": "e7f4a071bef9f110ae625acb5ea637181ad95a9e0a11d0813b083e4ef089de0d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet05NestedChartCutoffs-chain.log",
+      "sha256": "bcd18fcd9806de413c32013c9298dde6f390ded3ea0e9090558d8d1383445de1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07HotspotComponent-chain.log",
+      "sha256": "55f44083627ff09764699f8848697e46abb58aff67e93e06d86a7f7c4cd4c54d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/evidence/Packet07PeakAttainment-chain.log",
+      "sha256": "5439213d9d38bec21b4ffbd4f2f0aea3bcc1ac1cbb9c19c47a164f8b873d243d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/modules.json",
+      "sha256": "85e88daaff6b409f59b1f8a0be222b67bc8747ae2b2f307aa7823b518eb0ff6c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/provenance-audit.json",
+      "sha256": "f01c98030d5d19725d5a77f130490f110a596376a3d5cb31b4d3e76cb4ad7696"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/author-inventory.json",
+      "sha256": "47d8e8c00bd181c2a23940a7956d05c08186609eefc743ead303aba87dbb152b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/cutoff-build.json",
+      "sha256": "58120c3c987878c6362d9d3bdf6609427e68623a510ba0a6aaf5cac1eb2aec1e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/cutoff-review.txt",
+      "sha256": "de05de500d18f44c0d50e206a00881ccef486f571ffe5e6a28907691b26d2b42"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-build.json",
+      "sha256": "f349bf3f113d77dce3d0fafd4e3a216829798c3271f9a6f227100a31a8d25e03"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/hotspot-review.txt",
+      "sha256": "7d55193ef4b0adf130fb91ae551b20b56c9247e9a54cee5e95fe84b015e36d39"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/metadata-normalization.json",
+      "sha256": "9824d4941501d1780ce2169ff3c97e72492e1316b9866a00bc926002f2aa50ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet05NestedChartCutoffs.log",
+      "sha256": "bcd18fcd9806de413c32013c9298dde6f390ded3ea0e9090558d8d1383445de1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet07HotspotComponent.log",
+      "sha256": "55f44083627ff09764699f8848697e46abb58aff67e93e06d86a7f7c4cd4c54d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/reviews/Packet07PeakAttainment.log",
+      "sha256": "5439213d9d38bec21b4ffbd4f2f0aea3bcc1ac1cbb9c19c47a164f8b873d243d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/scripts/audit_provenance.ps1",
+      "sha256": "e2ece9fe0de657db0ef719152f043729b0fecf2a1bf104fd793b36f166278a58"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/scripts/check_chain.py",
+      "sha256": "87e470fc4aab2831ba23e0d502a8bdeeaaffd5bd97a74af6127e7a643d02c184"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/scripts/freeze_checkpoint.py",
+      "sha256": "ff4345a0b9fb47443450b06446d16d21e066f69f0294070b613723b58ecf1066"
+    },
+    {
+      "path": "checkpoints/2026-11-13-hotspot-cutoffs/STAGE100.txt",
+      "sha256": "6bc58d299ae94cdefb6dd92ea4b5e149d963b9ee609726f5a63cb7d4773659a3"
+    },
+    {
+      "path": "lean/Packet05NestedChartCutoffs.lean",
+      "sha256": "099cf72b828d4694ffd835841b99b358b8b0f237f5e0585ad6df0ffc2fd50f2d"
+    },
+    {
+      "path": "lean/Packet07HotspotComponent.lean",
+      "sha256": "431b5fb5cf4e07f96075201bd027514830f37872ace0a8a605a47da67d764972"
+    },
+    {
+      "path": "lean/Packet07PeakAttainment.lean",
+      "sha256": "29492d8a3df10247cfc3bfe3765af6b696a1e2c9edc1aaf6a794928bac0a5f2e"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "1b6f1b37873f616537d161a8733d8ab55d09298b4165eb51b59d8c059c2cf635"
+    }
+  ],
+  "scope": "compact hotspot components and constructed chart cutoffs. Compact hotspot implications and actual chart cutoffs are proved; the actual field collars and full OQ14 remain active."
+}
