@@ -1,0 +1,601 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-032315-74516",
+  "object_directory": "checkpoints/2026-11-13-angular-convergence/objects/20261113-032315-74516",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 18 actual conical angular convergence modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06SphereConeContrast",
+      "source": "lean/Packet06SphereConeContrast.lean",
+      "source_sha256": "66d35431416a5a44ae352cb920d7706bd36c42f865405b8d1128b2128cc6d2f4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06SphereConeContrast.olean",
+        "D:\\oq14\\lean\\Packet06SphereConeContrast.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.391,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06SphereConeContrast-chain.log",
+      "log_sha256": "bc033de86af27f5ffb58dec3a97617251c0875611ea78ee4b87282b1c1f5fc37",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereConeContrast.inserted_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereConeContrast.inside_material",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "33316a58dd8afe53d092f7b02f5e2a20cf1bd103419eb28e4baf5ccd57ce5585"
+    },
+    {
+      "module": "Packet06ModalConeBranch",
+      "source": "lean/Packet06ModalConeBranch.lean",
+      "source_sha256": "f532798c2efb94ef81578d89afc8453f64f9357db7ddbe02a3192833b4f75dbf",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ModalConeBranch.olean",
+        "D:\\oq14\\lean\\Packet06ModalConeBranch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.704,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ModalConeBranch-chain.log",
+      "log_sha256": "339af168235866824201de7895013dd50e73489d091bf3f3efcaa6175b635637",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModalConeBranch.cone_contrast_relative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ModalConeBranch.local_dielectric_match",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ModalConeBranch.positive_contrast_angular_branch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2fef815c76a8c3a71998cb8acbc08275c0ecc62436fb480f5784f56c5db1c4da"
+    },
+    {
+      "module": "Packet06ActualConeBranch",
+      "source": "lean/Packet06ActualConeBranch.lean",
+      "source_sha256": "63359996d210d7c4c91d1448a4f53eb0fd262a068d290956643fe3d9e2bd80f1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ActualConeBranch.olean",
+        "D:\\oq14\\lean\\Packet06ActualConeBranch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.156,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ActualConeBranch-chain.log",
+      "log_sha256": "7627d013385a1844af735ec50818abd2efaf5badcad3999d30cbcae320530c48",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualConeBranch.local_dielectric_match",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "005e7a5154247131f2c4bb2297c97455e6f53d08b9da659270a41ba90c79448e"
+    },
+    {
+      "module": "Packet06ConeAngularLimit",
+      "source": "lean/Packet06ConeAngularLimit.lean",
+      "source_sha256": "a56d4986cea0094762c4aed6fd9910e8f9d0e0b101e272082f4ad8c7b816b9bf",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeAngularLimit.olean",
+        "D:\\oq14\\lean\\Packet06ConeAngularLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.14,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeAngularLimit-chain.log",
+      "log_sha256": "b5953bce1a1887aa0aeba80439ea167b46df0361b0adcb13e9cea2def9ee536e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeAngularLimit.exponent_tendsto_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeAngularLimit.profile_parameter_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeAngularLimit.profile_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeAngularLimit.normalized_profile_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "208e671c96d0c88f54351c0350ae1c34429795dbf3f2fa5f68665e9eef2fed76"
+    },
+    {
+      "module": "Packet06ConeGradientLimit",
+      "source": "lean/Packet06ConeGradientLimit.lean",
+      "source_sha256": "e6a5a8fd0a8cc788ce6a00b298a5c1b0e4b23c2fe93ed550b61437920a9739e2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeGradientLimit.olean",
+        "D:\\oq14\\lean\\Packet06ConeGradientLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.954,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeGradientLimit-chain.log",
+      "log_sha256": "d54b511e384f4d27299ccc70e7ac7f315ded677ba6c4e200e23777947265c958",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeGradientLimit.slope_parameter_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeGradientLimit.slope_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeGradientLimit.normalized_slope_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "00ff1a80e2c4fa22884f6fa7a1e6975d5ee18b57465e9c639c71a7a47229c259"
+    },
+    {
+      "module": "Packet06ConeProfileLimit",
+      "source": "lean/Packet06ConeProfileLimit.lean",
+      "source_sha256": "dbeacc49fc2b88c557df00394e6207c873e56700031ea7413396af5cd65a6cf7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeProfileLimit.olean",
+        "D:\\oq14\\lean\\Packet06ConeProfileLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.578,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeProfileLimit-chain.log",
+      "log_sha256": "8d1463c4d3e20cd61f405e63006d390126006e99307263dade069e61243d5877",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeProfileLimit.profile_parameter_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeProfileLimit.normalized_profile_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cc199e73f6789ae3ae5290ae6140e79beded8a24802f8b945ec0b9d6cc59aac5"
+    },
+    {
+      "module": "Packet06ConeFieldLimit",
+      "source": "lean/Packet06ConeFieldLimit.lean",
+      "source_sha256": "598ec5ec6f2c920c4650365dd9dd64443d5a19ea0fcf56a241b3f83f6632c97b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeFieldLimit.olean",
+        "D:\\oq14\\lean\\Packet06ConeFieldLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.828,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeFieldLimit-chain.log",
+      "log_sha256": "ad0820140ce85d1d2b2357ae34e683e9e431f1bc2b9d6781524a90d67e6e861e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeFieldLimit.normalized_angular_electric_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1b90c55cbd61ec1009c062aac8a8ba59e215684bae7c2ea555d7ec4c4bdbd772"
+    },
+    {
+      "module": "Packet06ConePolePositive",
+      "source": "lean/Packet06ConePolePositive.lean",
+      "source_sha256": "ed4dd530c39078b66274fc1bd8ec3cc2d792a63853959ea4c86213b9360e8bc1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConePolePositive.olean",
+        "D:\\oq14\\lean\\Packet06ConePolePositive.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.844,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConePolePositive-chain.log",
+      "log_sha256": "32d67158d826d66e893c2211aab6945fd7958627693ffa73f78a396da2c11192",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConePolePositive.pole_positive_near_north",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2fb50effebd1591fefcea88ab36ecc7e25c3f4ef9ffb466aa3452459c8fb1113"
+    },
+    {
+      "module": "Packet06ConeProfilePositive",
+      "source": "lean/Packet06ConeProfilePositive.lean",
+      "source_sha256": "7adb10551514432717b5317b93853f74b2c4493df2c6fb823e399cb46934698a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeProfilePositive.olean",
+        "D:\\oq14\\lean\\Packet06ConeProfilePositive.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.031,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeProfilePositive-chain.log",
+      "log_sha256": "12e76eac561b376a1d2872624649161dead75008fba5ca5fdef0949699e8c3b9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeProfilePositive.profile_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeProfilePositive.profile_mul_coordinate_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeProfilePositive.profile_axis_pair_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "88b5134ae06ec6cb8d28d300f2565b5f8010326ac7fecaacb5b251d462a6ed78"
+    },
+    {
+      "module": "Packet06ConeZeroRoot",
+      "source": "lean/Packet06ConeZeroRoot.lean",
+      "source_sha256": "9226d50311fa7f73fcf1d76828ed33f435271a2987929c9242c47d8d80b77d8b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeZeroRoot.olean",
+        "D:\\oq14\\lean\\Packet06ConeZeroRoot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.047,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeZeroRoot-chain.log",
+      "log_sha256": "fb6f2219f0ab0b5827eb5f72b8f44742e5dcb04ed970f4584a8eff8247b82bb8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeZeroRoot.zero_contrast_root_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c6097f600cd4ac39a26ca91424095f6ee858ae0581121fc438ae32c00b050ee2"
+    },
+    {
+      "module": "Packet06ConeRootLimit",
+      "source": "lean/Packet06ConeRootLimit.lean",
+      "source_sha256": "4cf2b11bfb45205ad1a127ac3b65b5f690904676358a8467f0dd67a02f62469f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeRootLimit.olean",
+        "D:\\oq14\\lean\\Packet06ConeRootLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.906,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeRootLimit-chain.log",
+      "log_sha256": "d4f9ee2c1f46d374a35ac13be02b60bde6c6e6bced276439ac6028e61c06b6d0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeRootLimit.eigenvalue_tendsto_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6f2afc046d56b7f7564455f5ddfc04a977d0e109def6621f9734d0e0cbfa614c"
+    },
+    {
+      "module": "Packet06ActualAngularBranch",
+      "source": "lean/Packet06ActualAngularBranch.lean",
+      "source_sha256": "cd4a34013a442856cce7fbac764c469952c4fe0788ef262d63161ac351ef29e9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ActualAngularBranch.olean",
+        "D:\\oq14\\lean\\Packet06ActualAngularBranch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.5,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ActualAngularBranch-chain.log",
+      "log_sha256": "f520c71c06d3d6fe4f0c72fd10f4c1531ab15425df1ab835425563e05d702bb4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualAngularBranch.convergent_positive_branch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "151af88c83f43e0d782423fe55af5b5d9fa2f22f716e1b0b92fbbf31810f4c15"
+    },
+    {
+      "module": "Packet06ConeUniformSeries",
+      "source": "lean/Packet06ConeUniformSeries.lean",
+      "source_sha256": "6eed7299accba0c56dd884e29d1ade4b84b53bb917568ef00253e8cc78283103",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeUniformSeries.olean",
+        "D:\\oq14\\lean\\Packet06ConeUniformSeries.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.922,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeUniformSeries-chain.log",
+      "log_sha256": "73be3f0be51d264c0929bd03a8efe154d9c3f35cc888c03d63518bd402d1ef65",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeUniformSeries.powerSum_uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "63f95d2d3ea79a245bc611fa8589e2e91ba7b27a8d5155fb4abbc0db967bca85"
+    },
+    {
+      "module": "Packet06ConeUniformBounds",
+      "source": "lean/Packet06ConeUniformBounds.lean",
+      "source_sha256": "75fd0908725652321338e8454bc3a75e2a8ff44bfe1029101b2cafbfb058aae8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeUniformBounds.olean",
+        "D:\\oq14\\lean\\Packet06ConeUniformBounds.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.485,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeUniformBounds-chain.log",
+      "log_sha256": "e8e804225d33f6f43a2ec5a8c19d95bbc16c237c0db12acb1d0e27e1cd3023aa",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeUniformBounds.majorant_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUniformBounds.pole_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUniformBounds.poleD_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUniformBounds.odd_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUniformBounds.oddD_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "58d5904497793132190cfdef0eace014699891c097158c34427e4d61fe03206e"
+    },
+    {
+      "module": "Packet06ConeProfileBounds",
+      "source": "lean/Packet06ConeProfileBounds.lean",
+      "source_sha256": "db0f610cb5a07ca71007ca06932cb08e50f38a6e693742eefc7d4f3205e2deb6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeProfileBounds.olean",
+        "D:\\oq14\\lean\\Packet06ConeProfileBounds.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.672,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeProfileBounds-chain.log",
+      "log_sha256": "408c021461653234d0dbef69d415ca155ceb2890f1f91cd85920588abc7e454b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeProfileBounds.profile_slope_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "39f2050efd89109ee6982368706b288a8d9d81899e0d5d5802465e558fe6dd9e"
+    },
+    {
+      "module": "Packet06ConeFieldL2Limit",
+      "source": "lean/Packet06ConeFieldL2Limit.lean",
+      "source_sha256": "6067f1e8b7dca513e541825f937219cdfa61f97ab3ae015180ae3aa0b437c651",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeFieldL2Limit.olean",
+        "D:\\oq14\\lean\\Packet06ConeFieldL2Limit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.89,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeFieldL2Limit-chain.log",
+      "log_sha256": "c3f17cc7b9ff072031348ff1cefdd941270b3203382246babe33f1287a5d540b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeFieldL2Limit.angular_electric_square_integral_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c289641cd3d61ae0164cacc5150ef34cc5db020ef1f37abbadfb39882c628e89"
+    },
+    {
+      "module": "Packet06ActualAngularL2",
+      "source": "lean/Packet06ActualAngularL2.lean",
+      "source_sha256": "1345f594e38168102541c49090b6374b974478972c6957665e65f44a805da723",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ActualAngularL2.olean",
+        "D:\\oq14\\lean\\Packet06ActualAngularL2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.516,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ActualAngularL2-chain.log",
+      "log_sha256": "ec55dde88c705f6ee9aedb57eed0ed8b17d7228481bb619077a60c5a3b616e9a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ActualAngularL2.convergent_positive_branch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a61ffb2374447116bf89664a170308f3b9eb10999edd2d5794a1b0013f9a74e9"
+    },
+    {
+      "module": "Packet06ConeTangentL2",
+      "source": "lean/Packet06ConeTangentL2.lean",
+      "source_sha256": "c54ba0bb68e0b5d5f6c6079bc35beb83e8a2feca2665e9192a1c17af715f263b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-angular-convergence\\objects\\20261113-032315-74516\\Packet06ConeTangentL2.olean",
+        "D:\\oq14\\lean\\Packet06ConeTangentL2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.953,
+      "log": "checkpoints/2026-11-13-angular-convergence/evidence/Packet06ConeTangentL2-chain.log",
+      "log_sha256": "a7890562302c2ca62a2acb8aea78ea097d5346fe09811327c8119c40712261be",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeTangentL2.gradient_square_integral_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cddf32088287a2e5ac5b7202f4ee11a4dc3cf8a10ad1a716ba92350b41480b2b"
+    }
+  ],
+  "module_count": 18,
+  "report_count": 33
+}

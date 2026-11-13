@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 84 is the latest verified incremental checkpoint:
+[STAGE84.txt](checkpoints/2026-11-13-angular-convergence/STAGE84.txt).
+Actual positive cone angular roots now provably converge to 2, their exponents
+to 1, and their normalized angular electric/tangential fields in L2 to the
+axial dipole fields, for a fixed aperture 1/2<=t<1.
+
+18 modules / 33 reports passed independent root semantic review and fresh
+ordered compilation. 982 upstream sources were authenticated, with cached
+objects. The ledger is 787 modules / 4570 reports, all prior records unchanged:
+`checkpoints/2026-11-13-angular-convergence/evidence/audited_after_5238-stage84.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: actual physically normalized high-Q insertion modes and
+a strictly-positive arbitrarily-small insertion corollary compile. The complex
+potential and Gauss bridge for actual fields compiles; curved scalar tangential
+weak derivatives compile under the stated localization conditions; rotation
+preserves actual reciprocal normalization. Retaining simple Schur data for
+subsequent rounding is in progress. Actual modal excitation, final curved
+regularity, attained hotspots/collars, packing, final manuscript and aggregate
+checks remain. Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage84.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 83 is the latest verified incremental checkpoint:
 [STAGE83.txt](checkpoints/2026-11-13-normalized-outgoing/STAGE83.txt).
 Actual global nonzero outgoing E/H modes now have physical reciprocal norm

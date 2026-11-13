@@ -1,0 +1,125 @@
+[
+  {
+    "module": "Packet06SphereConeContrast",
+    "declarations": [
+      "OQ14.Packet06SphereConeContrast.inserted_value",
+      "OQ14.Packet06SphereConeContrast.inside_material"
+    ]
+  },
+  {
+    "module": "Packet06ModalConeBranch",
+    "declarations": [
+      "OQ14.Packet06ModalConeBranch.cone_contrast_relative",
+      "OQ14.Packet06ModalConeBranch.local_dielectric_match",
+      "OQ14.Packet06ModalConeBranch.positive_contrast_angular_branch"
+    ]
+  },
+  {
+    "module": "Packet06ActualConeBranch",
+    "declarations": [
+      "OQ14.Packet06ActualConeBranch.local_dielectric_match"
+    ]
+  },
+  {
+    "module": "Packet06ConeAngularLimit",
+    "declarations": [
+      "OQ14.Packet06ConeAngularLimit.exponent_tendsto_one",
+      "OQ14.Packet06ConeAngularLimit.profile_parameter_continuousOn",
+      "OQ14.Packet06ConeAngularLimit.profile_two",
+      "OQ14.Packet06ConeAngularLimit.normalized_profile_tendsto"
+    ]
+  },
+  {
+    "module": "Packet06ConeGradientLimit",
+    "declarations": [
+      "OQ14.Packet06ConeGradientLimit.slope_parameter_continuousOn",
+      "OQ14.Packet06ConeGradientLimit.slope_two",
+      "OQ14.Packet06ConeGradientLimit.normalized_slope_tendsto"
+    ]
+  },
+  {
+    "module": "Packet06ConeProfileLimit",
+    "declarations": [
+      "OQ14.Packet06ConeProfileLimit.profile_parameter_continuousOn",
+      "OQ14.Packet06ConeProfileLimit.normalized_profile_tendsto"
+    ]
+  },
+  {
+    "module": "Packet06ConeFieldLimit",
+    "declarations": [
+      "OQ14.Packet06ConeFieldLimit.normalized_angular_electric_tendsto"
+    ]
+  },
+  {
+    "module": "Packet06ConePolePositive",
+    "declarations": [
+      "OQ14.Packet06ConePolePositive.pole_positive_near_north"
+    ]
+  },
+  {
+    "module": "Packet06ConeProfilePositive",
+    "declarations": [
+      "OQ14.Packet06ConeProfilePositive.profile_positive",
+      "OQ14.Packet06ConeProfilePositive.profile_mul_coordinate_nonnegative",
+      "OQ14.Packet06ConeProfilePositive.profile_axis_pair_positive"
+    ]
+  },
+  {
+    "module": "Packet06ConeZeroRoot",
+    "declarations": [
+      "OQ14.Packet06ConeZeroRoot.zero_contrast_root_unique"
+    ]
+  },
+  {
+    "module": "Packet06ConeRootLimit",
+    "declarations": [
+      "OQ14.Packet06ConeRootLimit.eigenvalue_tendsto_two"
+    ]
+  },
+  {
+    "module": "Packet06ActualAngularBranch",
+    "declarations": [
+      "OQ14.Packet06ActualAngularBranch.convergent_positive_branch"
+    ]
+  },
+  {
+    "module": "Packet06ConeUniformSeries",
+    "declarations": [
+      "OQ14.Packet06ConeUniformSeries.powerSum_uniform_bound"
+    ]
+  },
+  {
+    "module": "Packet06ConeUniformBounds",
+    "declarations": [
+      "OQ14.Packet06ConeUniformBounds.majorant_nonnegative",
+      "OQ14.Packet06ConeUniformBounds.pole_bound",
+      "OQ14.Packet06ConeUniformBounds.poleD_bound",
+      "OQ14.Packet06ConeUniformBounds.odd_bound",
+      "OQ14.Packet06ConeUniformBounds.oddD_bound"
+    ]
+  },
+  {
+    "module": "Packet06ConeProfileBounds",
+    "declarations": [
+      "OQ14.Packet06ConeProfileBounds.profile_slope_uniform"
+    ]
+  },
+  {
+    "module": "Packet06ConeFieldL2Limit",
+    "declarations": [
+      "OQ14.Packet06ConeFieldL2Limit.angular_electric_square_integral_tendsto"
+    ]
+  },
+  {
+    "module": "Packet06ActualAngularL2",
+    "declarations": [
+      "OQ14.Packet06ActualAngularL2.convergent_positive_branch"
+    ]
+  },
+  {
+    "module": "Packet06ConeTangentL2",
+    "declarations": [
+      "OQ14.Packet06ConeTangentL2.gradient_square_integral_tendsto"
+    ]
+  }
+]
