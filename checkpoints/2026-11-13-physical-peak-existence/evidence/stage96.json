@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "81d393a",
+  "modules": 1006,
+  "reports": 5011,
+  "new_modules": 4,
+  "new_reports": 11,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "091c4f9089cce6e8edc62a6c372a08b03bd2a42e2b1096ff333b753433e66380",
+  "ledger_sha256": "d0993c20a6c36d36eea743b4fdcebccfde4c14cee0051b4f426c188e66d72356",
+  "raw_archive_sha256": "9608cd9065b34c85fafff6778a141770f4f411fd99bf897e0a8809850331b8bd",
+  "records": [
+    {
+      "module": "Packet06PlanarProjection",
+      "reports": 8,
+      "source_sha256": "632b4ce980f92162232aa879f0c792f8ff8586d5393c322ccb3505fe88ced728",
+      "audit_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlanarProjection-chain.log",
+      "audit_log_sha256": "3091c75b7413424220f3a9578b39a25a0ac1f55015d8e2c847b83495c0f4fd3c",
+      "independent_review": "checkpoints/2026-11-13-physical-peak-existence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "6c02c080fe2af6ef34d2f0e175daf13e57e301e19129c80cc5e8a165cb15435f",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-physical-peak-existence/evidence/chain-build.json",
+      "independent_build_sha256": "c0de833f9b9bf8437da60263b092d953327ba2412aca4377a96043441515ad68",
+      "independent_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlanarProjection-chain.log",
+      "independent_log_sha256": "3091c75b7413424220f3a9578b39a25a0ac1f55015d8e2c847b83495c0f4fd3c",
+      "declarations": [
+        "OQ14.Packet06PlanarProjection.project_embed",
+        "OQ14.Packet06PlanarProjection.norm_project_le",
+        "OQ14.Packet06PlanarProjection.project_ball",
+        "OQ14.Packet06PlanarProjection.point_axial_planar",
+        "OQ14.Packet06PlanarProjection.placed_centers_in_patch",
+        "OQ14.Packet06PlanarProjection.inverse_point_right",
+        "OQ14.Packet06PlanarProjection.point_distance_pair",
+        "OQ14.Packet06PlanarProjection.point_ball_iff"
+      ]
+    },
+    {
+      "module": "Packet06PlacedModePeaks",
+      "reports": 1,
+      "source_sha256": "d32beda3a3ba61fc5f238b4d230ec2e40a2ec492753ce87e308660c3f9b5f15b",
+      "audit_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedModePeaks-chain.log",
+      "audit_log_sha256": "2776aec01d94f312b6c44e4ea05e9444c93f03dce457676948dbad1a84b95f57",
+      "independent_review": "checkpoints/2026-11-13-physical-peak-existence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "6c02c080fe2af6ef34d2f0e175daf13e57e301e19129c80cc5e8a165cb15435f",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-physical-peak-existence/evidence/chain-build.json",
+      "independent_build_sha256": "c0de833f9b9bf8437da60263b092d953327ba2412aca4377a96043441515ad68",
+      "independent_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedModePeaks-chain.log",
+      "independent_log_sha256": "2776aec01d94f312b6c44e4ea05e9444c93f03dce457676948dbad1a84b95f57",
+      "declarations": [
+        "OQ14.Packet06PlacedModePeaks.place_mode"
+      ]
+    },
+    {
+      "module": "Packet06PlacedClusterBalls",
+      "reports": 1,
+      "source_sha256": "9d4e5745bf5139371c43a5c4f74c441e05c685eb594e0cb9b4fd41c121cf5163",
+      "audit_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedClusterBalls-chain.log",
+      "audit_log_sha256": "7a3b63a993d839e075563579681529b36aa99aea8ec4522877092b5bb86b82c8",
+      "independent_review": "checkpoints/2026-11-13-physical-peak-existence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "6c02c080fe2af6ef34d2f0e175daf13e57e301e19129c80cc5e8a165cb15435f",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-physical-peak-existence/evidence/chain-build.json",
+      "independent_build_sha256": "c0de833f9b9bf8437da60263b092d953327ba2412aca4377a96043441515ad68",
+      "independent_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedClusterBalls-chain.log",
+      "independent_log_sha256": "7a3b63a993d839e075563579681529b36aa99aea8ec4522877092b5bb86b82c8",
+      "declarations": [
+        "OQ14.Packet06PlacedClusterBalls.placed_balls"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalPeakExistence",
+      "reports": 1,
+      "source_sha256": "431811b1a9e931e81d0ec7111c75993708523310f20348723c416f172a7d6bc9",
+      "audit_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PhysicalPeakExistence-chain.log",
+      "audit_log_sha256": "b8aedbd0c651c774f3c9b33fcf443de02fe2888585a6635eb525345d58ad095f",
+      "independent_review": "checkpoints/2026-11-13-physical-peak-existence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "6c02c080fe2af6ef34d2f0e175daf13e57e301e19129c80cc5e8a165cb15435f",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-physical-peak-existence/evidence/chain-build.json",
+      "independent_build_sha256": "c0de833f9b9bf8437da60263b092d953327ba2412aca4377a96043441515ad68",
+      "independent_log": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PhysicalPeakExistence-chain.log",
+      "independent_log_sha256": "b8aedbd0c651c774f3c9b33fcf443de02fe2888585a6635eb525345d58ad095f",
+      "declarations": [
+        "OQ14.Packet06PhysicalPeakExistence.exists_placed_rounded_peaks"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/audited_after_5238-stage96.json",
+      "sha256": "d0993c20a6c36d36eea743b4fdcebccfde4c14cee0051b4f426c188e66d72356"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/chain-build.json",
+      "sha256": "c0de833f9b9bf8437da60263b092d953327ba2412aca4377a96043441515ad68"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PhysicalPeakExistence-chain.log",
+      "sha256": "b8aedbd0c651c774f3c9b33fcf443de02fe2888585a6635eb525345d58ad095f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedClusterBalls-chain.log",
+      "sha256": "7a3b63a993d839e075563579681529b36aa99aea8ec4522877092b5bb86b82c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlacedModePeaks-chain.log",
+      "sha256": "2776aec01d94f312b6c44e4ea05e9444c93f03dce457676948dbad1a84b95f57"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/evidence/Packet06PlanarProjection-chain.log",
+      "sha256": "3091c75b7413424220f3a9578b39a25a0ac1f55015d8e2c847b83495c0f4fd3c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/modules.json",
+      "sha256": "84fe42b3902a6ca3cd4197c92abb24d5f9c46fdb6de11ebf920a34078819ee16"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/provenance-audit.json",
+      "sha256": "08f1f8158b05d41b4528cffa60da43636e94b9d9a1a3188d818fc00a84154ff7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/reviews/author-inventory.json",
+      "sha256": "b0f013b6f677ef29d8f8e854f0d241c89eed39e59c1e8305e368a970b272017c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/reviews/root-actual-review.txt",
+      "sha256": "6c02c080fe2af6ef34d2f0e175daf13e57e301e19129c80cc5e8a165cb15435f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/scripts/audit_provenance.ps1",
+      "sha256": "5545977dcddfff8944324646873dfb5b202a558568469ed1a64f405962b02c55"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/scripts/check_chain.py",
+      "sha256": "5c0c8b1ef079488466422ff76a7cf276b089a9ee800c5f49f6fd53439ae10355"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/scripts/freeze_checkpoint.py",
+      "sha256": "60a41a0cf7f0c898c34727963c3608abe9784c698eee94c1433e008d325a27fa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-physical-peak-existence/STAGE96.txt",
+      "sha256": "650847e8a0530becd0afcfe85683b8573ff91db215b2b13ca1df7747e4578a2b"
+    },
+    {
+      "path": "lean/Packet06PhysicalPeakExistence.lean",
+      "sha256": "431811b1a9e931e81d0ec7111c75993708523310f20348723c416f172a7d6bc9"
+    },
+    {
+      "path": "lean/Packet06PlacedClusterBalls.lean",
+      "sha256": "9d4e5745bf5139371c43a5c4f74c441e05c685eb594e0cb9b4fd41c121cf5163"
+    },
+    {
+      "path": "lean/Packet06PlacedModePeaks.lean",
+      "sha256": "d32beda3a3ba61fc5f238b4d230ec2e40a2ec492753ce87e308660c3f9b5f15b"
+    },
+    {
+      "path": "lean/Packet06PlanarProjection.lean",
+      "sha256": "632b4ce980f92162232aa879f0c792f8ff8586d5393c322ccb3505fe88ced728"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "3ba7053065c3b0cd008f94fcace057d0bef155684b5f6aacbbc7e45899baedc7"
+    }
+  ],
+  "scope": "finite physical modal peaks at arbitrary target frequency. Actual excitation and placed positive-volume peaks are proved; attained hotspots and full OQ14 remain active."
+}

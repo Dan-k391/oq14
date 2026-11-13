@@ -1,5 +1,35 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 96 is the latest verified incremental checkpoint:
+[STAGE96.txt](checkpoints/2026-11-13-physical-peak-existence/STAGE96.txt).
+
+For every finite number of regions, positive target real frequency,
+positive radius bound, index ceiling greater than one, quality threshold,
+amplitude level and nonempty open planar patch, one literal rounded placed
+material and one actual outgoing Maxwell mode meet all those parameters.
+The mode has true physical reciprocal normalization N=1 and exact target
+real frequency. Distinct centers lie in the reference plane; the balls are
+pairwise disjoint, have the requested radius bound, and their entire planar
+projections lie in the patch. Each has a positive-volume superlevel of the
+full Euclidean electric amplitude. The original rounded simple certificate
+and its N=1 normalization are retained for transported-pole integration.
+
+These are positive-volume peaks. Actual curved continuity, quantitative
+collars and attained hotspot components remain under construction, along
+with transported-sector pole and Green integration, the final paper and
+aggregate validation. Full OQ14 is not yet declared closed.
+
+4 modules / 11 reports passed independent root review and a fresh
+ordered build. 1172 upstream sources were authenticated, with cached objects.
+The ledger is 1006 modules / 5011 reports, all prior records unchanged:
+`checkpoints/2026-11-13-physical-peak-existence/evidence/audited_after_5238-stage96.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage96.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 95 is the latest verified incremental checkpoint:
 [STAGE95.txt](checkpoints/2026-11-13-placed-peaks/STAGE95.txt).
 
