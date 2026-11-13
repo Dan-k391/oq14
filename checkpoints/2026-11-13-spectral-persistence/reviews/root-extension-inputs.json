@@ -1,0 +1,69 @@
+[
+  {
+    "module": "Packet06LeftPreconditioner",
+    "sha256": "80a41110971871b21ebe086cd4646683fccd486393628daecc84ad7c3fc18730",
+    "reports": [
+      "OQ14.Packet06LeftPreconditioner.undo",
+      "OQ14.Packet06LeftPreconditioner.kernel_iff",
+      "OQ14.Packet06LeftPreconditioner.pairing_undo",
+      "OQ14.Packet06LeftPreconditioner.range_eq_kernel",
+      "OQ14.Packet06LeftPreconditioner.hasDerivAt",
+      "OQ14.Packet06LeftPreconditioner.crossing_preserved"
+    ]
+  },
+  {
+    "module": "Packet06ReducedPencil",
+    "sha256": "d582aa6173bf4e560da1a7f424d4f932baf51fb4abbe7b1f3cbf841485fd80d7",
+    "reports": [
+      "OQ14.Packet06ReducedPencil.unweighted_split",
+      "OQ14.Packet06ReducedPencil.actual_factorization",
+      "OQ14.Packet06ReducedPencil.reduced_isUnit_iff",
+      "OQ14.Packet06ReducedPencil.weighted_isUnit_iff_reduced",
+      "OQ14.Packet06ReducedPencil.kernel_iff",
+      "OQ14.Packet06ReducedPencil.reduced_differentiable",
+      "OQ14.Packet06ReducedPencil.reduced_locally_uniform"
+    ]
+  },
+  {
+    "module": "Packet06SphereReduced",
+    "sha256": "6fb7a70c29fdd722a16c999fbba068fc6d5c9cd872efc265d02e15cd0667c1d7",
+    "reports": [
+      "OQ14.Packet06SphereReduced.staticBlock_isUnit",
+      "OQ14.Packet06SphereReduced.staticBlock_actual",
+      "OQ14.Packet06SphereReduced.staticInverse_actual",
+      "OQ14.Packet06SphereReduced.pencil_actual",
+      "OQ14.Packet06SphereReduced.pencil_eq_compression",
+      "OQ14.Packet06SphereReduced.pencil_analyticAt",
+      "OQ14.Packet06SphereReduced.pencil_kernel_iff",
+      "OQ14.Packet06SphereReduced.pencil_hasDerivAt",
+      "OQ14.Packet06SphereReduced.crossing_preserved"
+    ]
+  },
+  {
+    "module": "Packet06SphereReducedSchur",
+    "sha256": "010f95ca127462105a359f0b511cd3a8c43185ca994d1e33b3f308938135aac3",
+    "reports": [
+      "OQ14.Packet06SphereReducedSchur.actual_scalar_reduction"
+    ]
+  },
+  {
+    "module": "Packet06SchurInverse",
+    "sha256": "174047048271d64f1d96d2a2cd75b951c9ef583f55ea8b650f749406bbecb3cb",
+    "reports": [
+      "OQ14.Packet06SchurInverse.repaired_left_product",
+      "OQ14.Packet06SchurInverse.inverse_formula",
+      "OQ14.Packet06SchurInverse.left_annihilates"
+    ]
+  },
+  {
+    "module": "Packet06SchurPole",
+    "sha256": "22651cc0310679fe2ed1d751907b6c1ca7d5d3ec15a3fd64b516d0cc37e05794",
+    "reports": [
+      "OQ14.Packet06SchurPole.inverse_repair_analyticAt",
+      "OQ14.Packet06SchurPole.polarNumerator_analyticAt",
+      "OQ14.Packet06SchurPole.punctured_units",
+      "OQ14.Packet06SchurPole.inverse_meromorphicAt",
+      "OQ14.Packet06SchurPole.simple_inverse_expansion"
+    ]
+  }
+]

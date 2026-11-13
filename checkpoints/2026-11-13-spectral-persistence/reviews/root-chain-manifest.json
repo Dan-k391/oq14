@@ -1,0 +1,56 @@
+{
+  "complete": true,
+  "scope": "Independent ordered four-module build using fresh objects and cached upstream dependencies.",
+  "records": [
+    {
+      "module": "Packet06RankOneRepair",
+      "source_sha256": "90b123f8fb90f887487a880664744a669b5903ed13e326a973145bbe31963198",
+      "log_sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad",
+      "object_sha256": "f8a1b9ae22c167b5d1710328b93c50c8210979605f18a12bcb377ba39a895dbe",
+      "exit_code": 0,
+      "reports": 5,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 8.73
+    },
+    {
+      "module": "Packet06ScalarSchur",
+      "source_sha256": "61c74ceba67464acba5d93b7189150b6f86227ac3e48992d6bad28952fade4bd",
+      "log_sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f",
+      "object_sha256": "a7f6d3b6dff7626670baf1b05b6db4a9557295379de861de2423fd0309fdc49e",
+      "exit_code": 0,
+      "reports": 4,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 9.86
+    },
+    {
+      "module": "Packet06SchurAnalytic",
+      "source_sha256": "1edc16bfc5ea6ea804bdec95711aee25ab7a298d96a56194ea5d9fc4e6a4fd70",
+      "log_sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3",
+      "object_sha256": "4b44eeea7197cbf33105609d3a30b1e27080d44f5dc9a25caccc0be45c2ab8be",
+      "exit_code": 0,
+      "reports": 4,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 9.99
+    },
+    {
+      "module": "Packet06SphereSchur",
+      "source_sha256": "b48574c4ff5da80764e66681b6bc89b29286b2134a1007bb94029c43421f7f9d",
+      "log_sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49",
+      "object_sha256": "b465c924d17793b4c10ef3858f411bc21939f9306ea26a0ef2a7d5bcd367e5d1",
+      "exit_code": 0,
+      "reports": 2,
+      "warnings": false,
+      "bad_axioms": false,
+      "seconds": 39.17
+    }
+  ],
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "report_count": 15
+}

@@ -1,0 +1,947 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-021238-51636",
+  "object_directory": "checkpoints/2026-11-13-spectral-persistence/objects/20261113-021238-51636",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 23 spectral persistence modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06RankOneRepair",
+      "source": "lean/Packet06RankOneRepair.lean",
+      "source_sha256": "90b123f8fb90f887487a880664744a669b5903ed13e326a973145bbe31963198",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06RankOneRepair.olean",
+        "D:\\oq14\\lean\\Packet06RankOneRepair.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.156,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RankOneRepair-chain.log",
+      "log_sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RankOneRepair.repair_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RankOneRepair.repair_bijective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RankOneRepair.repair_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RankOneRepair.repaired_inverse_vector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RankOneRepair.repaired_left_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f8a1b9ae22c167b5d1710328b93c50c8210979605f18a12bcb377ba39a895dbe"
+    },
+    {
+      "module": "Packet06ScalarSchur",
+      "source": "lean/Packet06ScalarSchur.lean",
+      "source_sha256": "61c74ceba67464acba5d93b7189150b6f86227ac3e48992d6bad28952fade4bd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06ScalarSchur.olean",
+        "D:\\oq14\\lean\\Packet06ScalarSchur.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.407,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ScalarSchur-chain.log",
+      "log_sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ScalarSchur.scalar_map_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ScalarSchur.isUnit_iff_scalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ScalarSchur.scalar_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ScalarSchur.scalar_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a7f6d3b6dff7626670baf1b05b6db4a9557295379de861de2423fd0309fdc49e"
+    },
+    {
+      "module": "Packet06SchurAnalytic",
+      "source": "lean/Packet06SchurAnalytic.lean",
+      "source_sha256": "1edc16bfc5ea6ea804bdec95711aee25ab7a298d96a56194ea5d9fc4e6a4fd70",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurAnalytic.olean",
+        "D:\\oq14\\lean\\Packet06SchurAnalytic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.172,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurAnalytic-chain.log",
+      "log_sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurAnalytic.inverse_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurAnalytic.scalar_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurAnalytic.scalar_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurAnalytic.scalar_crossing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4b44eeea7197cbf33105609d3a30b1e27080d44f5dc9a25caccc0be45c2ab8be"
+    },
+    {
+      "module": "Packet06SphereSchur",
+      "source": "lean/Packet06SphereSchur.lean",
+      "source_sha256": "b48574c4ff5da80764e66681b6bc89b29286b2134a1007bb94029c43421f7f9d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SphereSchur.olean",
+        "D:\\oq14\\lean\\Packet06SphereSchur.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 39.484,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereSchur-chain.log",
+      "log_sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereSchur.exists_normalizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereSchur.actual_scalar_reduction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b465c924d17793b4c10ef3858f411bc21939f9306ea26a0ef2a7d5bcd367e5d1"
+    },
+    {
+      "module": "Packet06SimpleZero",
+      "source": "lean/Packet06SimpleZero.lean",
+      "source_sha256": "be6fb1cbf3666f6b73969d78c4dcd88717afabcb102d41bf9e5a190282b0dc2c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SimpleZero.olean",
+        "D:\\oq14\\lean\\Packet06SimpleZero.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.391,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZero-chain.log",
+      "log_sha256": "05ff63842aadfd6ebb892515910238850c09296d4bab005ab8640933ae5ea3b5",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SimpleZero.unique_and_simple_of_small_derivative_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleZero.zero_of_small_derivative_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dbf4e4f2900a0ea45757c1d298bd0f2935d08cab72be818718c491421a678f86"
+    },
+    {
+      "module": "Packet06SimpleZeroLimit",
+      "source": "lean/Packet06SimpleZeroLimit.lean",
+      "source_sha256": "c24c9e456aa0aaa9762dab9ec6fa44ca6544c2d756c0fd84e2cac9430a1b2142",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SimpleZeroLimit.olean",
+        "D:\\oq14\\lean\\Packet06SimpleZeroLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.187,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroLimit-chain.log",
+      "log_sha256": "1c7eca300a3f1c9710e28ee2aa86bc57660ce5fa6ec48b51a86ad0e05baed877",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SimpleZero.unique_simple_zeros_normalized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleZero.zeros_tend_to_simple_normalized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "00d3dd08f261c87326d00e9ab236a8495178a098e5021b04f2ff7cf867caa81e"
+    },
+    {
+      "module": "Packet06SimpleZeroGeneral",
+      "source": "lean/Packet06SimpleZeroGeneral.lean",
+      "source_sha256": "7f1a1a0f5ef17cb13eae38ad4b59f4c45688cda430665264ff2b41d4aaeae110",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SimpleZeroGeneral.olean",
+        "D:\\oq14\\lean\\Packet06SimpleZeroGeneral.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.89,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroGeneral-chain.log",
+      "log_sha256": "2d0926b562b2fcc88db4f717f56f84f657e62cfc2133f2382d2bf9382e8be403",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SimpleZero.unique_simple_zeros_near",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleZero.zeros_near_simple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "660a617905abe0af2982eec934a9acfc03b24e4d3eb48d9276076054773693dd"
+    },
+    {
+      "module": "Packet06SimpleZeroSequence",
+      "source": "lean/Packet06SimpleZeroSequence.lean",
+      "source_sha256": "7900b093717632f14d3597425c11de16f2201344e7a63a7a565c999c338112b9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SimpleZeroSequence.olean",
+        "D:\\oq14\\lean\\Packet06SimpleZeroSequence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 44.672,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroSequence-chain.log",
+      "log_sha256": "9d130c0c9cedd9cc25ede1afc5a0e1c405c55b5e6be5616bcde2ad1ed70a4e5a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SimpleZero.simple_zero_sequence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dd87081422f6f63abf99342a996b734f5d1a8dd5e0bc9790c1bba0388ba53b90"
+    },
+    {
+      "module": "Packet06SchurLimit",
+      "source": "lean/Packet06SchurLimit.lean",
+      "source_sha256": "340d8a4dd5360bfbb3688039e0d1502ace6470faefd72ed3bafaf5d92b92026c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurLimit.olean",
+        "D:\\oq14\\lean\\Packet06SchurLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 85.11,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurLimit-chain.log",
+      "log_sha256": "a48764f4bb142d47134ee57ef1fef3bb7b766e875ffda1e23bb56fc198659a8f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurLimit.locally_uniform_comp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "87394fdd92b9a7ef6e3b18cdf636c8b13ba50ef97fe493b71f22fa04ed4965af"
+    },
+    {
+      "module": "Packet06RepairLimit",
+      "source": "lean/Packet06RepairLimit.lean",
+      "source_sha256": "ce90742461e7c5ca01a43690213c75eb191d7db978148ff84f4d5d62f5533d4c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06RepairLimit.olean",
+        "D:\\oq14\\lean\\Packet06RepairLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 61.14,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RepairLimit-chain.log",
+      "log_sha256": "40e4cdfd9c28bcd7f2cb3abe379beff0010edaf84737e175f0fc5dba76fd0824",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RepairLimit.locally_uniform_repairs",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5ab41aa962ca325419b64f6e1f2cae2392abae05773dd7725091fadc677f13c3"
+    },
+    {
+      "module": "Packet06SchurPersistence",
+      "source": "lean/Packet06SchurPersistence.lean",
+      "source_sha256": "6697fb4cd4271c2da4e3927d7aaaaa46350095f98a3d92c52edbab8238fc0ee4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurPersistence.olean",
+        "D:\\oq14\\lean\\Packet06SchurPersistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.969,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPersistence-chain.log",
+      "log_sha256": "7fc25bfd6c48355ada8350fff5bec7c81ab10a36725feb7371ea1cd8a1fbf9bd",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurPersistence.simple_schur_persistence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "342af54bd4a2d51bca9e8be7bd05f4349c797f5850bf57d441121f06f29c409a"
+    },
+    {
+      "module": "Packet06SchurModeLimit",
+      "source": "lean/Packet06SchurModeLimit.lean",
+      "source_sha256": "e178ae752f95659da8535327744b7fb06daf182d625435bed63bcd4681dd1a46",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurModeLimit.olean",
+        "D:\\oq14\\lean\\Packet06SchurModeLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.937,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurModeLimit-chain.log",
+      "log_sha256": "e0919a9fc4cb1a961b5a0fa7afae0b80eba85cfde261e1520bd7777fb72fc44d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurModeLimit.convergent_kernel_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a39b510dcc19cb4bb3c4d02be89ea11987b047754fa0e2e8bce33e0afa80bb2a"
+    },
+    {
+      "module": "Packet06MaterialHolomorphic",
+      "source": "lean/Packet06MaterialHolomorphic.lean",
+      "source_sha256": "00f98ac9fb95d2e85da1e5b71ea768d6a9c53e6130e17d08b3ff7f3c0b311a83",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06MaterialHolomorphic.olean",
+        "D:\\oq14\\lean\\Packet06MaterialHolomorphic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.0,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06MaterialHolomorphic-chain.log",
+      "log_sha256": "d31ede8e63914fad7cd40ab3a9f851e3a1e03331eeaff41ca1b14fe500be7796",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialHolomorphic.compactPart_differentiable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialHolomorphic.compactPart_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8f4ddba7500a028c8c4ad74fadb489feb6a189ebbf544c8b3fdce444b70ac0b4"
+    },
+    {
+      "module": "Packet06ReducedPencil",
+      "source": "lean/Packet06ReducedPencil.lean",
+      "source_sha256": "d582aa6173bf4e560da1a7f424d4f932baf51fb4abbe7b1f3cbf841485fd80d7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06ReducedPencil.olean",
+        "D:\\oq14\\lean\\Packet06ReducedPencil.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 55.844,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ReducedPencil-chain.log",
+      "log_sha256": "16146b13fa320bef8e343838086a67d49f5f9f64cfb4bf6d6c691cefe006a4c6",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.unweighted_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.actual_factorization",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.reduced_isUnit_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.weighted_isUnit_iff_reduced",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.kernel_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.reduced_differentiable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ReducedPencil.reduced_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9a9ec7fad4fad834475e27b3b753599f2ff87a283e0e76af59f7b96e3659ec4f"
+    },
+    {
+      "module": "Packet06LeftPreconditioner",
+      "source": "lean/Packet06LeftPreconditioner.lean",
+      "source_sha256": "80a41110971871b21ebe086cd4646683fccd486393628daecc84ad7c3fc18730",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06LeftPreconditioner.olean",
+        "D:\\oq14\\lean\\Packet06LeftPreconditioner.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 23.407,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06LeftPreconditioner-chain.log",
+      "log_sha256": "9e0e715c5f559cc70264e7b55d6fa1651e40116758f977a91b59d46b4c7259ac",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.undo",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.kernel_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.pairing_undo",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.range_eq_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06LeftPreconditioner.crossing_preserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "302f40820423136a44eebc3df345a37442978973d2a61506f811efb825d6e4ef"
+    },
+    {
+      "module": "Packet06SphereReduced",
+      "source": "lean/Packet06SphereReduced.lean",
+      "source_sha256": "6fb7a70c29fdd722a16c999fbba068fc6d5c9cd872efc265d02e15cd0667c1d7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SphereReduced.olean",
+        "D:\\oq14\\lean\\Packet06SphereReduced.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 108.843,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReduced-chain.log",
+      "log_sha256": "afb327669bd7bf8d369dab8cccedaa9a2c49f8a7cdab276c95b0afe3038fb656",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereReduced.staticBlock_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.staticBlock_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.staticInverse_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.pencil_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.pencil_eq_compression",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.pencil_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.pencil_kernel_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.pencil_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereReduced.crossing_preserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f02f032bf9f82ba047b1edc5601e55538fce164d02bbfb0651cede6837d651b2"
+    },
+    {
+      "module": "Packet06SphereReducedSchur",
+      "source": "lean/Packet06SphereReducedSchur.lean",
+      "source_sha256": "010f95ca127462105a359f0b511cd3a8c43185ca994d1e33b3f308938135aac3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SphereReducedSchur.olean",
+        "D:\\oq14\\lean\\Packet06SphereReducedSchur.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 54.844,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReducedSchur-chain.log",
+      "log_sha256": "199a303f0a5ea531d258546336aae0eaed0de845d40491b99ac88d72d2eebe47",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereReducedSchur.actual_scalar_reduction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "882c99464852aee61d9ac2883d455980954ab92e00f5435de6451f2d032e237c"
+    },
+    {
+      "module": "Packet06SchurInverse",
+      "source": "lean/Packet06SchurInverse.lean",
+      "source_sha256": "174047048271d64f1d96d2a2cd75b951c9ef583f55ea8b650f749406bbecb3cb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurInverse.olean",
+        "D:\\oq14\\lean\\Packet06SchurInverse.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.656,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurInverse-chain.log",
+      "log_sha256": "6a649579a304c1401144459d17312425fa0c6a6e874e59a8c1d7e365647ef764",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurInverse.repaired_left_product",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurInverse.inverse_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurInverse.left_annihilates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1a7e409bf164bb41588cd0e9936878b75895af91d2d642795d769302fbc90b71"
+    },
+    {
+      "module": "Packet06SchurPole",
+      "source": "lean/Packet06SchurPole.lean",
+      "source_sha256": "22651cc0310679fe2ed1d751907b6c1ca7d5d3ec15a3fd64b516d0cc37e05794",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06SchurPole.olean",
+        "D:\\oq14\\lean\\Packet06SchurPole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.969,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPole-chain.log",
+      "log_sha256": "1fbe786544e999d92df90f552781171cee09edcef8c84a0ecd3da3a3cdf08d36",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SchurPole.inverse_repair_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurPole.polarNumerator_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurPole.punctured_units",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurPole.inverse_meromorphicAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SchurPole.simple_inverse_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ed59c8ddbcb0e1dabeb097fdc1058b66d6e4b71be7855fc0fbb50f0e71117d25"
+    },
+    {
+      "module": "Packet06WeightedStaticLimit",
+      "source": "lean/Packet06WeightedStaticLimit.lean",
+      "source_sha256": "61b00d7deb17963a0739cddff2f1ba56c3e7911b1df33f1f981957d277ae3de4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06WeightedStaticLimit.olean",
+        "D:\\oq14\\lean\\Packet06WeightedStaticLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.438,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedStaticLimit-chain.log",
+      "log_sha256": "f55630fb9d76e76157c986709dd51ba067b0e81f72b16438fc5e56f333e98194",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06WeightedStaticLimit.weightedBlock_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedStaticLimit.weightedBlock_inverse_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0a176214b2747e3324e7f8a2fa64f0d41bb81b2357fbd38b65476689d7ac9d1e"
+    },
+    {
+      "module": "Packet06WeightedRemainderLimit",
+      "source": "lean/Packet06WeightedRemainderLimit.lean",
+      "source_sha256": "90eb5d87278a3c468e636261c4a951b1d88190cb761492e4fefdc50e27e2ef0b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06WeightedRemainderLimit.olean",
+        "D:\\oq14\\lean\\Packet06WeightedRemainderLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 34.797,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedRemainderLimit-chain.log",
+      "log_sha256": "4cd6e5685ff76e378f121a1a347b7b3039672ab311a5a36254902a0a55834c44",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06WeightedRemainderLimit.weightedRemainder_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "84fd3b6c077283a3d8d5387a2e22ce0cd0de9a993045df65b81da9f94ab7daaf"
+    },
+    {
+      "module": "Packet06WeightedPencilLimit",
+      "source": "lean/Packet06WeightedPencilLimit.lean",
+      "source_sha256": "9bbbc2a48867ff56fb5b4d92b4000b90972d8d91137743be16de2be222c440a9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06WeightedPencilLimit.olean",
+        "D:\\oq14\\lean\\Packet06WeightedPencilLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.828,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilLimit-chain.log",
+      "log_sha256": "3abd17844f74d89a35b9e4b7e93c3ba61dd17ea2fba6a6211fb7a9c2788c982a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06WeightedPencilLimit.compactPart_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06WeightedPencilLimit.compactPart_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d11eeabf24992ddc98b8b09a2ac3a3c2f4c304d390a65dcba699f5045adb52c5"
+    },
+    {
+      "module": "Packet06WeightedPencilHolomorphic",
+      "source": "lean/Packet06WeightedPencilHolomorphic.lean",
+      "source_sha256": "2d0b6727aac0787e20294397bb668291759151b94c346768150397a197e1801f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-spectral-persistence\\objects\\20261113-021238-51636\\Packet06WeightedPencilHolomorphic.olean",
+        "D:\\oq14\\lean\\Packet06WeightedPencilHolomorphic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.89,
+      "log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilHolomorphic-chain.log",
+      "log_sha256": "9949c2efefa1f46dcb197aebb7ea3fa3fc5efd196b70e65965f4a5d7eb5becf3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06WeightedPencilHolomorphic.pencil_locally_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5f5de501ebc1d34d09dbe57696bd3aa05f9ced9f8973e9dc63be5531c01c07c3"
+    }
+  ],
+  "module_count": 23,
+  "report_count": 65
+}

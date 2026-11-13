@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 77 is the latest verified incremental checkpoint:
+[STAGE77.txt](checkpoints/2026-11-13-spectral-persistence/STAGE77.txt).
+The checked chain now includes simple scalar/Schur zero persistence, convergent
+normalized kernel vectors, actual weighted material-pencil norm convergence,
+the exact reduced sphere pencil with preserved crossing, and a complete nonzero
+rank-one operator Laurent expansion from the Schur simple-zero hypotheses.
+
+23 modules / 65 reports passed independent semantic reviews and fresh ordered
+compilation, with separate fresh builds of all ten root-authored modules.
+707 upstream local sources were authenticated, with cached objects. The accepted
+ledger is 704 modules / 4377 reports, all 681 previous records unchanged:
+`checkpoints/2026-11-13-spectral-persistence/evidence/audited_after_5238-stage77.json`.
+Only standard axioms, no warnings. No whole-project clean rebuild is claimed.
+
+Full OQ14 remains active. New actual general material symmetries and sector
+restriction/persistence compile outside this ledger. The driven same-device
+smooth illumination/outgoing-field extension passed independent review and
+awaits a checkpoint. Curved graph transport is advancing; quantitative energy
+estimates, attained curved-device maxima/collars, complete modal insertion and
+packing, final manuscript and aggregate validation remain.
+
+Everything below is historical context, superseded by stage77.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 76 is the latest verified incremental checkpoint:
 [STAGE76.txt](checkpoints/2026-11-13-flat-continuity/STAGE76.txt).
 Actual flat-interface weak Maxwell fields now have a proved one-sided continuous

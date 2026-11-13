@@ -1,0 +1,766 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "9d696df",
+  "modules": 704,
+  "reports": 4377,
+  "new_modules": 23,
+  "new_reports": 65,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "9718c67bf93ac7a5b5b5240346fc868d7248262d38e6f6597787b013105293c4",
+  "ledger_sha256": "3ca8479695db648aab003c280fa214f7d57bf0ade0ff28c0fbe34f193c8301b6",
+  "raw_archive_sha256": "4dffc8e13ddc8862f03ded656d9f0b8cc9228ec5040083e98a537806bb737c75",
+  "records": [
+    {
+      "module": "Packet06RankOneRepair",
+      "reports": 5,
+      "source_sha256": "90b123f8fb90f887487a880664744a669b5903ed13e326a973145bbe31963198",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RankOneRepair-chain.log",
+      "audit_log_sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-review.txt",
+      "independent_review_sha256": "0d89251a30811f741d51603d311354fd660a978c525c6edad4698a1c243fb0a1",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-manifest.json",
+      "independent_build_sha256": "e0c78a89225cb5b6426c7dbb54bca1264dc8ff7f1c62d8e58cb75089bc77674e",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06RankOneRepair.log",
+      "independent_log_sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad",
+      "declarations": [
+        "OQ14.Packet06RankOneRepair.repair_apply",
+        "OQ14.Packet06RankOneRepair.repair_bijective",
+        "OQ14.Packet06RankOneRepair.repair_isUnit",
+        "OQ14.Packet06RankOneRepair.repaired_inverse_vector",
+        "OQ14.Packet06RankOneRepair.repaired_left_inverse"
+      ]
+    },
+    {
+      "module": "Packet06ScalarSchur",
+      "reports": 4,
+      "source_sha256": "61c74ceba67464acba5d93b7189150b6f86227ac3e48992d6bad28952fade4bd",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ScalarSchur-chain.log",
+      "audit_log_sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-review.txt",
+      "independent_review_sha256": "0d89251a30811f741d51603d311354fd660a978c525c6edad4698a1c243fb0a1",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-manifest.json",
+      "independent_build_sha256": "e0c78a89225cb5b6426c7dbb54bca1264dc8ff7f1c62d8e58cb75089bc77674e",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06ScalarSchur.log",
+      "independent_log_sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f",
+      "declarations": [
+        "OQ14.Packet06ScalarSchur.scalar_map_isUnit",
+        "OQ14.Packet06ScalarSchur.isUnit_iff_scalar",
+        "OQ14.Packet06ScalarSchur.scalar_zero",
+        "OQ14.Packet06ScalarSchur.scalar_kernel"
+      ]
+    },
+    {
+      "module": "Packet06SchurAnalytic",
+      "reports": 4,
+      "source_sha256": "1edc16bfc5ea6ea804bdec95711aee25ab7a298d96a56194ea5d9fc4e6a4fd70",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurAnalytic-chain.log",
+      "audit_log_sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-review.txt",
+      "independent_review_sha256": "0d89251a30811f741d51603d311354fd660a978c525c6edad4698a1c243fb0a1",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-manifest.json",
+      "independent_build_sha256": "e0c78a89225cb5b6426c7dbb54bca1264dc8ff7f1c62d8e58cb75089bc77674e",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06SchurAnalytic.log",
+      "independent_log_sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3",
+      "declarations": [
+        "OQ14.Packet06SchurAnalytic.inverse_hasDerivAt",
+        "OQ14.Packet06SchurAnalytic.scalar_analyticAt",
+        "OQ14.Packet06SchurAnalytic.scalar_hasDerivAt",
+        "OQ14.Packet06SchurAnalytic.scalar_crossing"
+      ]
+    },
+    {
+      "module": "Packet06SphereSchur",
+      "reports": 2,
+      "source_sha256": "b48574c4ff5da80764e66681b6bc89b29286b2134a1007bb94029c43421f7f9d",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereSchur-chain.log",
+      "audit_log_sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-review.txt",
+      "independent_review_sha256": "0d89251a30811f741d51603d311354fd660a978c525c6edad4698a1c243fb0a1",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-manifest.json",
+      "independent_build_sha256": "e0c78a89225cb5b6426c7dbb54bca1264dc8ff7f1c62d8e58cb75089bc77674e",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06SphereSchur.log",
+      "independent_log_sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49",
+      "declarations": [
+        "OQ14.Packet06SphereSchur.exists_normalizer",
+        "OQ14.Packet06SphereSchur.actual_scalar_reduction"
+      ]
+    },
+    {
+      "module": "Packet06SimpleZero",
+      "reports": 2,
+      "source_sha256": "be6fb1cbf3666f6b73969d78c4dcd88717afabcb102d41bf9e5a190282b0dc2c",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZero-chain.log",
+      "audit_log_sha256": "05ff63842aadfd6ebb892515910238850c09296d4bab005ab8640933ae5ea3b5",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZero-chain.log",
+      "independent_log_sha256": "05ff63842aadfd6ebb892515910238850c09296d4bab005ab8640933ae5ea3b5",
+      "declarations": [
+        "OQ14.Packet06SimpleZero.unique_and_simple_of_small_derivative_error",
+        "OQ14.Packet06SimpleZero.zero_of_small_derivative_error"
+      ]
+    },
+    {
+      "module": "Packet06SimpleZeroLimit",
+      "reports": 2,
+      "source_sha256": "c24c9e456aa0aaa9762dab9ec6fa44ca6544c2d756c0fd84e2cac9430a1b2142",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroLimit-chain.log",
+      "audit_log_sha256": "1c7eca300a3f1c9710e28ee2aa86bc57660ce5fa6ec48b51a86ad0e05baed877",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroLimit-chain.log",
+      "independent_log_sha256": "1c7eca300a3f1c9710e28ee2aa86bc57660ce5fa6ec48b51a86ad0e05baed877",
+      "declarations": [
+        "OQ14.Packet06SimpleZero.unique_simple_zeros_normalized",
+        "OQ14.Packet06SimpleZero.zeros_tend_to_simple_normalized"
+      ]
+    },
+    {
+      "module": "Packet06SimpleZeroGeneral",
+      "reports": 2,
+      "source_sha256": "7f1a1a0f5ef17cb13eae38ad4b59f4c45688cda430665264ff2b41d4aaeae110",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroGeneral-chain.log",
+      "audit_log_sha256": "2d0926b562b2fcc88db4f717f56f84f657e62cfc2133f2382d2bf9382e8be403",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroGeneral-chain.log",
+      "independent_log_sha256": "2d0926b562b2fcc88db4f717f56f84f657e62cfc2133f2382d2bf9382e8be403",
+      "declarations": [
+        "OQ14.Packet06SimpleZero.unique_simple_zeros_near",
+        "OQ14.Packet06SimpleZero.zeros_near_simple"
+      ]
+    },
+    {
+      "module": "Packet06SimpleZeroSequence",
+      "reports": 1,
+      "source_sha256": "7900b093717632f14d3597425c11de16f2201344e7a63a7a565c999c338112b9",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroSequence-chain.log",
+      "audit_log_sha256": "9d130c0c9cedd9cc25ede1afc5a0e1c405c55b5e6be5616bcde2ad1ed70a4e5a",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroSequence-chain.log",
+      "independent_log_sha256": "9d130c0c9cedd9cc25ede1afc5a0e1c405c55b5e6be5616bcde2ad1ed70a4e5a",
+      "declarations": [
+        "OQ14.Packet06SimpleZero.simple_zero_sequence"
+      ]
+    },
+    {
+      "module": "Packet06SchurLimit",
+      "reports": 1,
+      "source_sha256": "340d8a4dd5360bfbb3688039e0d1502ace6470faefd72ed3bafaf5d92b92026c",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurLimit-chain.log",
+      "audit_log_sha256": "a48764f4bb142d47134ee57ef1fef3bb7b766e875ffda1e23bb56fc198659a8f",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurLimit-chain.log",
+      "independent_log_sha256": "a48764f4bb142d47134ee57ef1fef3bb7b766e875ffda1e23bb56fc198659a8f",
+      "declarations": [
+        "OQ14.Packet06SchurLimit.locally_uniform_comp"
+      ]
+    },
+    {
+      "module": "Packet06RepairLimit",
+      "reports": 1,
+      "source_sha256": "ce90742461e7c5ca01a43690213c75eb191d7db978148ff84f4d5d62f5533d4c",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RepairLimit-chain.log",
+      "audit_log_sha256": "40e4cdfd9c28bcd7f2cb3abe379beff0010edaf84737e175f0fc5dba76fd0824",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RepairLimit-chain.log",
+      "independent_log_sha256": "40e4cdfd9c28bcd7f2cb3abe379beff0010edaf84737e175f0fc5dba76fd0824",
+      "declarations": [
+        "OQ14.Packet06RepairLimit.locally_uniform_repairs"
+      ]
+    },
+    {
+      "module": "Packet06SchurPersistence",
+      "reports": 1,
+      "source_sha256": "6697fb4cd4271c2da4e3927d7aaaaa46350095f98a3d92c52edbab8238fc0ee4",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPersistence-chain.log",
+      "audit_log_sha256": "7fc25bfd6c48355ada8350fff5bec7c81ab10a36725feb7371ea1cd8a1fbf9bd",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPersistence-chain.log",
+      "independent_log_sha256": "7fc25bfd6c48355ada8350fff5bec7c81ab10a36725feb7371ea1cd8a1fbf9bd",
+      "declarations": [
+        "OQ14.Packet06SchurPersistence.simple_schur_persistence"
+      ]
+    },
+    {
+      "module": "Packet06SchurModeLimit",
+      "reports": 1,
+      "source_sha256": "e178ae752f95659da8535327744b7fb06daf182d625435bed63bcd4681dd1a46",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurModeLimit-chain.log",
+      "audit_log_sha256": "e0919a9fc4cb1a961b5a0fa7afae0b80eba85cfde261e1520bd7777fb72fc44d",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurModeLimit-chain.log",
+      "independent_log_sha256": "e0919a9fc4cb1a961b5a0fa7afae0b80eba85cfde261e1520bd7777fb72fc44d",
+      "declarations": [
+        "OQ14.Packet06SchurModeLimit.convergent_kernel_modes"
+      ]
+    },
+    {
+      "module": "Packet06MaterialHolomorphic",
+      "reports": 2,
+      "source_sha256": "00f98ac9fb95d2e85da1e5b71ea768d6a9c53e6130e17d08b3ff7f3c0b311a83",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06MaterialHolomorphic-chain.log",
+      "audit_log_sha256": "d31ede8e63914fad7cd40ab3a9f851e3a1e03331eeaff41ca1b14fe500be7796",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06MaterialHolomorphic-chain.log",
+      "independent_log_sha256": "d31ede8e63914fad7cd40ab3a9f851e3a1e03331eeaff41ca1b14fe500be7796",
+      "declarations": [
+        "OQ14.Packet06MaterialHolomorphic.compactPart_differentiable",
+        "OQ14.Packet06MaterialHolomorphic.compactPart_locally_uniform"
+      ]
+    },
+    {
+      "module": "Packet06ReducedPencil",
+      "reports": 7,
+      "source_sha256": "d582aa6173bf4e560da1a7f424d4f932baf51fb4abbe7b1f3cbf841485fd80d7",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ReducedPencil-chain.log",
+      "audit_log_sha256": "16146b13fa320bef8e343838086a67d49f5f9f64cfb4bf6d6c691cefe006a4c6",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06ReducedPencil.log",
+      "independent_log_sha256": "ac9794bb27a58ff385f1c9ca9ebd8090b3324620800d435ef852b4fa1f9fa751",
+      "declarations": [
+        "OQ14.Packet06ReducedPencil.unweighted_split",
+        "OQ14.Packet06ReducedPencil.actual_factorization",
+        "OQ14.Packet06ReducedPencil.reduced_isUnit_iff",
+        "OQ14.Packet06ReducedPencil.weighted_isUnit_iff_reduced",
+        "OQ14.Packet06ReducedPencil.kernel_iff",
+        "OQ14.Packet06ReducedPencil.reduced_differentiable",
+        "OQ14.Packet06ReducedPencil.reduced_locally_uniform"
+      ]
+    },
+    {
+      "module": "Packet06LeftPreconditioner",
+      "reports": 6,
+      "source_sha256": "80a41110971871b21ebe086cd4646683fccd486393628daecc84ad7c3fc18730",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06LeftPreconditioner-chain.log",
+      "audit_log_sha256": "9e0e715c5f559cc70264e7b55d6fa1651e40116758f977a91b59d46b4c7259ac",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06LeftPreconditioner.log",
+      "independent_log_sha256": "524c54f9315ee3f228002305ecd013812f15f7e0ae86c14c5adc8faabcd22995",
+      "declarations": [
+        "OQ14.Packet06LeftPreconditioner.undo",
+        "OQ14.Packet06LeftPreconditioner.kernel_iff",
+        "OQ14.Packet06LeftPreconditioner.pairing_undo",
+        "OQ14.Packet06LeftPreconditioner.range_eq_kernel",
+        "OQ14.Packet06LeftPreconditioner.hasDerivAt",
+        "OQ14.Packet06LeftPreconditioner.crossing_preserved"
+      ]
+    },
+    {
+      "module": "Packet06SphereReduced",
+      "reports": 9,
+      "source_sha256": "6fb7a70c29fdd722a16c999fbba068fc6d5c9cd872efc265d02e15cd0667c1d7",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReduced-chain.log",
+      "audit_log_sha256": "afb327669bd7bf8d369dab8cccedaa9a2c49f8a7cdab276c95b0afe3038fb656",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SphereReduced.log",
+      "independent_log_sha256": "1f2574b589cfc4ceee7a57c03a54b4ce335740bc7f2d7638ef6f30b1997bd59b",
+      "declarations": [
+        "OQ14.Packet06SphereReduced.staticBlock_isUnit",
+        "OQ14.Packet06SphereReduced.staticBlock_actual",
+        "OQ14.Packet06SphereReduced.staticInverse_actual",
+        "OQ14.Packet06SphereReduced.pencil_actual",
+        "OQ14.Packet06SphereReduced.pencil_eq_compression",
+        "OQ14.Packet06SphereReduced.pencil_analyticAt",
+        "OQ14.Packet06SphereReduced.pencil_kernel_iff",
+        "OQ14.Packet06SphereReduced.pencil_hasDerivAt",
+        "OQ14.Packet06SphereReduced.crossing_preserved"
+      ]
+    },
+    {
+      "module": "Packet06SphereReducedSchur",
+      "reports": 1,
+      "source_sha256": "010f95ca127462105a359f0b511cd3a8c43185ca994d1e33b3f308938135aac3",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReducedSchur-chain.log",
+      "audit_log_sha256": "199a303f0a5ea531d258546336aae0eaed0de845d40491b99ac88d72d2eebe47",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SphereReducedSchur.log",
+      "independent_log_sha256": "733bbe3ca1a08d9a19ada320c1509c5953d4bc46a6d9006761c06f96bf86254e",
+      "declarations": [
+        "OQ14.Packet06SphereReducedSchur.actual_scalar_reduction"
+      ]
+    },
+    {
+      "module": "Packet06SchurInverse",
+      "reports": 3,
+      "source_sha256": "174047048271d64f1d96d2a2cd75b951c9ef583f55ea8b650f749406bbecb3cb",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurInverse-chain.log",
+      "audit_log_sha256": "6a649579a304c1401144459d17312425fa0c6a6e874e59a8c1d7e365647ef764",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SchurInverse.log",
+      "independent_log_sha256": "bb4c274bd6a1a59d7588153046fab587f5dfbe4fd2f4541dd03030610e7a055b",
+      "declarations": [
+        "OQ14.Packet06SchurInverse.repaired_left_product",
+        "OQ14.Packet06SchurInverse.inverse_formula",
+        "OQ14.Packet06SchurInverse.left_annihilates"
+      ]
+    },
+    {
+      "module": "Packet06SchurPole",
+      "reports": 5,
+      "source_sha256": "22651cc0310679fe2ed1d751907b6c1ca7d5d3ec15a3fd64b516d0cc37e05794",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPole-chain.log",
+      "audit_log_sha256": "1fbe786544e999d92df90f552781171cee09edcef8c84a0ecd3da3a3cdf08d36",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "independent_review_sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "independent_build_sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SchurPole.log",
+      "independent_log_sha256": "e769c8894641a9eaaad7a26179f8a5be3410669aadf8fa315ee5347cbc74f78d",
+      "declarations": [
+        "OQ14.Packet06SchurPole.inverse_repair_analyticAt",
+        "OQ14.Packet06SchurPole.polarNumerator_analyticAt",
+        "OQ14.Packet06SchurPole.punctured_units",
+        "OQ14.Packet06SchurPole.inverse_meromorphicAt",
+        "OQ14.Packet06SchurPole.simple_inverse_expansion"
+      ]
+    },
+    {
+      "module": "Packet06WeightedStaticLimit",
+      "reports": 2,
+      "source_sha256": "61b00d7deb17963a0739cddff2f1ba56c3e7911b1df33f1f981957d277ae3de4",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedStaticLimit-chain.log",
+      "audit_log_sha256": "f55630fb9d76e76157c986709dd51ba067b0e81f72b16438fc5e56f333e98194",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedStaticLimit-chain.log",
+      "independent_log_sha256": "f55630fb9d76e76157c986709dd51ba067b0e81f72b16438fc5e56f333e98194",
+      "declarations": [
+        "OQ14.Packet06WeightedStaticLimit.weightedBlock_strong",
+        "OQ14.Packet06WeightedStaticLimit.weightedBlock_inverse_strong"
+      ]
+    },
+    {
+      "module": "Packet06WeightedRemainderLimit",
+      "reports": 1,
+      "source_sha256": "90eb5d87278a3c468e636261c4a951b1d88190cb761492e4fefdc50e27e2ef0b",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedRemainderLimit-chain.log",
+      "audit_log_sha256": "4cd6e5685ff76e378f121a1a347b7b3039672ab311a5a36254902a0a55834c44",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedRemainderLimit-chain.log",
+      "independent_log_sha256": "4cd6e5685ff76e378f121a1a347b7b3039672ab311a5a36254902a0a55834c44",
+      "declarations": [
+        "OQ14.Packet06WeightedRemainderLimit.weightedRemainder_uniform"
+      ]
+    },
+    {
+      "module": "Packet06WeightedPencilLimit",
+      "reports": 2,
+      "source_sha256": "9bbbc2a48867ff56fb5b4d92b4000b90972d8d91137743be16de2be222c440a9",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilLimit-chain.log",
+      "audit_log_sha256": "3abd17844f74d89a35b9e4b7e93c3ba61dd17ea2fba6a6211fb7a9c2788c982a",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilLimit-chain.log",
+      "independent_log_sha256": "3abd17844f74d89a35b9e4b7e93c3ba61dd17ea2fba6a6211fb7a9c2788c982a",
+      "declarations": [
+        "OQ14.Packet06WeightedPencilLimit.compactPart_uniform",
+        "OQ14.Packet06WeightedPencilLimit.compactPart_locally_uniform"
+      ]
+    },
+    {
+      "module": "Packet06WeightedPencilHolomorphic",
+      "reports": 1,
+      "source_sha256": "2d0b6727aac0787e20294397bb668291759151b94c346768150397a197e1801f",
+      "audit_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilHolomorphic-chain.log",
+      "audit_log_sha256": "9949c2efefa1f46dcb197aebb7ea3fa3fc5efd196b70e65965f4a5d7eb5becf3",
+      "independent_review": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "independent_review_sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "independent_build_sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4",
+      "independent_log": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilHolomorphic-chain.log",
+      "independent_log_sha256": "9949c2efefa1f46dcb197aebb7ea3fa3fc5efd196b70e65965f4a5d7eb5becf3",
+      "declarations": [
+        "OQ14.Packet06WeightedPencilHolomorphic.pencil_locally_uniform"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/audited_after_5238-stage77.json",
+      "sha256": "3ca8479695db648aab003c280fa214f7d57bf0ade0ff28c0fbe34f193c8301b6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/chain-build.json",
+      "sha256": "d46d53ebe9157d491b5102c3da0fefe0ccf14a05f597ceb171eb933c9f4e85a4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06LeftPreconditioner-chain.log",
+      "sha256": "9e0e715c5f559cc70264e7b55d6fa1651e40116758f977a91b59d46b4c7259ac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06MaterialHolomorphic-chain.log",
+      "sha256": "d31ede8e63914fad7cd40ab3a9f851e3a1e03331eeaff41ca1b14fe500be7796"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RankOneRepair-chain.log",
+      "sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ReducedPencil-chain.log",
+      "sha256": "16146b13fa320bef8e343838086a67d49f5f9f64cfb4bf6d6c691cefe006a4c6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06RepairLimit-chain.log",
+      "sha256": "40e4cdfd9c28bcd7f2cb3abe379beff0010edaf84737e175f0fc5dba76fd0824"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06ScalarSchur-chain.log",
+      "sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurAnalytic-chain.log",
+      "sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurInverse-chain.log",
+      "sha256": "6a649579a304c1401144459d17312425fa0c6a6e874e59a8c1d7e365647ef764"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurLimit-chain.log",
+      "sha256": "a48764f4bb142d47134ee57ef1fef3bb7b766e875ffda1e23bb56fc198659a8f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurModeLimit-chain.log",
+      "sha256": "e0919a9fc4cb1a961b5a0fa7afae0b80eba85cfde261e1520bd7777fb72fc44d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPersistence-chain.log",
+      "sha256": "7fc25bfd6c48355ada8350fff5bec7c81ab10a36725feb7371ea1cd8a1fbf9bd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SchurPole-chain.log",
+      "sha256": "1fbe786544e999d92df90f552781171cee09edcef8c84a0ecd3da3a3cdf08d36"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZero-chain.log",
+      "sha256": "05ff63842aadfd6ebb892515910238850c09296d4bab005ab8640933ae5ea3b5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroGeneral-chain.log",
+      "sha256": "2d0926b562b2fcc88db4f717f56f84f657e62cfc2133f2382d2bf9382e8be403"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroLimit-chain.log",
+      "sha256": "1c7eca300a3f1c9710e28ee2aa86bc57660ce5fa6ec48b51a86ad0e05baed877"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SimpleZeroSequence-chain.log",
+      "sha256": "9d130c0c9cedd9cc25ede1afc5a0e1c405c55b5e6be5616bcde2ad1ed70a4e5a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReduced-chain.log",
+      "sha256": "afb327669bd7bf8d369dab8cccedaa9a2c49f8a7cdab276c95b0afe3038fb656"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereReducedSchur-chain.log",
+      "sha256": "199a303f0a5ea531d258546336aae0eaed0de845d40491b99ac88d72d2eebe47"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06SphereSchur-chain.log",
+      "sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilHolomorphic-chain.log",
+      "sha256": "9949c2efefa1f46dcb197aebb7ea3fa3fc5efd196b70e65965f4a5d7eb5becf3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedPencilLimit-chain.log",
+      "sha256": "3abd17844f74d89a35b9e4b7e93c3ba61dd17ea2fba6a6211fb7a9c2788c982a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedRemainderLimit-chain.log",
+      "sha256": "4cd6e5685ff76e378f121a1a347b7b3039672ab311a5a36254902a0a55834c44"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/evidence/Packet06WeightedStaticLimit-chain.log",
+      "sha256": "f55630fb9d76e76157c986709dd51ba067b0e81f72b16438fc5e56f333e98194"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/modules.json",
+      "sha256": "92cf3b9cf416659e76266c9593520a8ca37726c0ee4a5071dd2b6110d7d2f214"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/provenance-audit.json",
+      "sha256": "d777a2de5bf1dc924c881ef43f1c6f159cae460545bc9e061963e8d08687963a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/mode-author.json",
+      "sha256": "e33463bfc90327a378acdf953beb1fa3f9ab6be392c1779479ba8e70e0d0efca"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-actual-review.txt",
+      "sha256": "571b7a7ceb495237cceb41ad00468f54102616e01bf063f2782a2a2053f20032"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-build.py",
+      "sha256": "b92730fdc5d4242f25def35ab2199df4c81765f12829dff4cd846bf6740ba08e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-manifest.json",
+      "sha256": "e0c78a89225cb5b6426c7dbb54bca1264dc8ff7f1c62d8e58cb75089bc77674e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06RankOneRepair.log",
+      "sha256": "646417a6bc67b7571955316931b0215404bf0248329c72eabd3235ea7bd3f2ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06ScalarSchur.log",
+      "sha256": "ef47da5f7eb580977b09fa3425cb4ee81ea29c09b86a8cf66ccc51ca6db6599f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06SchurAnalytic.log",
+      "sha256": "80272f262b8161383674dc4f1ac71ee1e138ea5c8f0d910821c0b9e4693422c3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-Packet06SphereSchur.log",
+      "sha256": "b8d9ba25400cf53e7ad6f9a344b6cb18e6d703bd504531fa2122649a6e6abf49"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-chain-review.txt",
+      "sha256": "0d89251a30811f741d51603d311354fd660a978c525c6edad4698a1c243fb0a1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-inputs.json",
+      "sha256": "fbafb3690de1f7506f775ee1d9e10ad8288c785fd870c2abd0e6feba12db39e8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06LeftPreconditioner.log",
+      "sha256": "524c54f9315ee3f228002305ecd013812f15f7e0ae86c14c5adc8faabcd22995"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06ReducedPencil.log",
+      "sha256": "ac9794bb27a58ff385f1c9ca9ebd8090b3324620800d435ef852b4fa1f9fa751"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SchurInverse.log",
+      "sha256": "bb4c274bd6a1a59d7588153046fab587f5dfbe4fd2f4541dd03030610e7a055b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SchurPole.log",
+      "sha256": "e769c8894641a9eaaad7a26179f8a5be3410669aadf8fa315ee5347cbc74f78d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SphereReduced.log",
+      "sha256": "1f2574b589cfc4ceee7a57c03a54b4ce335740bc7f2d7638ef6f30b1997bd59b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-Packet06SphereReducedSchur.log",
+      "sha256": "733bbe3ca1a08d9a19ada320c1509c5953d4bc46a6d9006761c06f96bf86254e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-rebuild.ps1",
+      "sha256": "5a0447356f8944c3117877f53c3188548c20ce65554277cfddd24aec4b36c727"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-review-manifest.json",
+      "sha256": "ce088db12badb9708c66698d1d6855ed7732f6e033a33e7c1e459fb1ae543c6a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/root-extension-semantic-review.md",
+      "sha256": "b87dac84ccbc2402dbcb81a96f8dce9a2c29549718261252253f916d0e8f1650"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/schur-author.json",
+      "sha256": "3fa60cf4a5f6478fde7055e72f2025f636c0974b7bc7856c4a20ecba92d3bbe6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/simple-author.json",
+      "sha256": "8aff8f88bc3c636276b7359fd2125a55606fb45f8ac6fc39aba1e3fc78ff2d0b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/reviews/weighted-author.json",
+      "sha256": "7c3ff42d337009f228f9346276d25ed8e8a9d93e92620a64a85a93bbb47208a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/scripts/audit_provenance.ps1",
+      "sha256": "e7a832649a99aebbf99893aec20afdae570f05b35f568a37b537d707e3d7282d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/scripts/check_chain.py",
+      "sha256": "808c258c2f3848b18a51986485853595dabe945f5e955d31aeefd97421a0695e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/scripts/freeze_checkpoint.py",
+      "sha256": "baadbe69947bffefc1df649e6cfdcbb98ad8148dbfe05a3e8b0a4db79bc948ff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-spectral-persistence/STAGE77.txt",
+      "sha256": "6d05bee63662b60ad6b0c7b1d0428bb45e6b451f18486fec302bab3f71cdcdc6"
+    },
+    {
+      "path": "lean/Packet06LeftPreconditioner.lean",
+      "sha256": "80a41110971871b21ebe086cd4646683fccd486393628daecc84ad7c3fc18730"
+    },
+    {
+      "path": "lean/Packet06MaterialHolomorphic.lean",
+      "sha256": "00f98ac9fb95d2e85da1e5b71ea768d6a9c53e6130e17d08b3ff7f3c0b311a83"
+    },
+    {
+      "path": "lean/Packet06RankOneRepair.lean",
+      "sha256": "90b123f8fb90f887487a880664744a669b5903ed13e326a973145bbe31963198"
+    },
+    {
+      "path": "lean/Packet06ReducedPencil.lean",
+      "sha256": "d582aa6173bf4e560da1a7f424d4f932baf51fb4abbe7b1f3cbf841485fd80d7"
+    },
+    {
+      "path": "lean/Packet06RepairLimit.lean",
+      "sha256": "ce90742461e7c5ca01a43690213c75eb191d7db978148ff84f4d5d62f5533d4c"
+    },
+    {
+      "path": "lean/Packet06ScalarSchur.lean",
+      "sha256": "61c74ceba67464acba5d93b7189150b6f86227ac3e48992d6bad28952fade4bd"
+    },
+    {
+      "path": "lean/Packet06SchurAnalytic.lean",
+      "sha256": "1edc16bfc5ea6ea804bdec95711aee25ab7a298d96a56194ea5d9fc4e6a4fd70"
+    },
+    {
+      "path": "lean/Packet06SchurInverse.lean",
+      "sha256": "174047048271d64f1d96d2a2cd75b951c9ef583f55ea8b650f749406bbecb3cb"
+    },
+    {
+      "path": "lean/Packet06SchurLimit.lean",
+      "sha256": "340d8a4dd5360bfbb3688039e0d1502ace6470faefd72ed3bafaf5d92b92026c"
+    },
+    {
+      "path": "lean/Packet06SchurModeLimit.lean",
+      "sha256": "e178ae752f95659da8535327744b7fb06daf182d625435bed63bcd4681dd1a46"
+    },
+    {
+      "path": "lean/Packet06SchurPersistence.lean",
+      "sha256": "6697fb4cd4271c2da4e3927d7aaaaa46350095f98a3d92c52edbab8238fc0ee4"
+    },
+    {
+      "path": "lean/Packet06SchurPole.lean",
+      "sha256": "22651cc0310679fe2ed1d751907b6c1ca7d5d3ec15a3fd64b516d0cc37e05794"
+    },
+    {
+      "path": "lean/Packet06SimpleZero.lean",
+      "sha256": "be6fb1cbf3666f6b73969d78c4dcd88717afabcb102d41bf9e5a190282b0dc2c"
+    },
+    {
+      "path": "lean/Packet06SimpleZeroGeneral.lean",
+      "sha256": "7f1a1a0f5ef17cb13eae38ad4b59f4c45688cda430665264ff2b41d4aaeae110"
+    },
+    {
+      "path": "lean/Packet06SimpleZeroLimit.lean",
+      "sha256": "c24c9e456aa0aaa9762dab9ec6fa44ca6544c2d756c0fd84e2cac9430a1b2142"
+    },
+    {
+      "path": "lean/Packet06SimpleZeroSequence.lean",
+      "sha256": "7900b093717632f14d3597425c11de16f2201344e7a63a7a565c999c338112b9"
+    },
+    {
+      "path": "lean/Packet06SphereReduced.lean",
+      "sha256": "6fb7a70c29fdd722a16c999fbba068fc6d5c9cd872efc265d02e15cd0667c1d7"
+    },
+    {
+      "path": "lean/Packet06SphereReducedSchur.lean",
+      "sha256": "010f95ca127462105a359f0b511cd3a8c43185ca994d1e33b3f308938135aac3"
+    },
+    {
+      "path": "lean/Packet06SphereSchur.lean",
+      "sha256": "b48574c4ff5da80764e66681b6bc89b29286b2134a1007bb94029c43421f7f9d"
+    },
+    {
+      "path": "lean/Packet06WeightedPencilHolomorphic.lean",
+      "sha256": "2d0b6727aac0787e20294397bb668291759151b94c346768150397a197e1801f"
+    },
+    {
+      "path": "lean/Packet06WeightedPencilLimit.lean",
+      "sha256": "9bbbc2a48867ff56fb5b4d92b4000b90972d8d91137743be16de2be222c440a9"
+    },
+    {
+      "path": "lean/Packet06WeightedRemainderLimit.lean",
+      "sha256": "90eb5d87278a3c468e636261c4a951b1d88190cb761492e4fefdc50e27e2ef0b"
+    },
+    {
+      "path": "lean/Packet06WeightedStaticLimit.lean",
+      "sha256": "61b00d7deb17963a0739cddff2f1ba56c3e7911b1df33f1f981957d277ae3de4"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "9c36fc2c6c3b20084c67975bd6632cacf4dfdac18c48a262409db9c9798967c2"
+    }
+  ],
+  "scope": "Simple scalar/Schur persistence with convergent normalized kernels, actual material norm convergence, exact sphere preconditioning, and nonzero rank-one Laurent expansion. Full OQ14 remains active; actual material-family modal packing and curved hotspots not closed."
+}

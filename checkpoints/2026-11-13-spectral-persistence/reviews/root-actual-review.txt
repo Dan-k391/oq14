@@ -1,0 +1,46 @@
+Independent root review of thirteen Terra-authored scalar/material modules
+
+No mathematical findings. The complex simple-zero proofs use uniform derivative
+convergence on compact balls, a strict contraction with a proved invariant ball,
+and uniqueness; the selected sequence converges by comparing the same unique
+root with arbitrarily near roots. Scalar normalization divides only by a proved
+nonzero derivative. The repaired operator is invertible on a common neighborhood,
+and its inverses and scalar Schur functions converge locally uniformly there.
+SchurModeLimit evaluates those inverses along the same convergent roots, obtaining
+convergent nonzero normalized kernel vectors, exact one-dimensional kernels, and
+nonzero derivative crossing. These are conditional operator-family theorems;
+they do not assume an inverse pole, but they require the displayed norm convergence,
+analyticity, rank-one repair, and simple base crossing.
+
+The actual material chain separately establishes both unweighted and weighted
+compact-part convergence. The weighted proof uses bounded-a.e. sqrt-multiplier
+strong convergence, selfadjointness, a common support-ball cutoff, compact left
+and right composition, and a uniformly bounded static inverse. It does not
+incorrectly claim multiplier operator-norm convergence. Actual weighted pencils
+converge locally uniformly in frequency. MaterialHolomorphic similarly gives
+analyticity and local uniform convergence for the unweighted formulation.
+
+The root-authored sphere reduction and pole formulas have separate independent
+Terra reviews and fresh isolated builds, copied alongside this review. Root's
+ordered combined build uses fresh objects for all 23 modules and cached objects
+for 707 authenticated upstream local sources. No whole-project clean build.
+
+Theorems do not yet instantiate an actual rounded material family preserving
+the sector, nor prove modal hotspot excitation, curved-interface maxima/collars,
+or completed full OQ14. Later symmetry and physical normalization convergence
+modules remain outside this checkpoint.
+
+Reviewed Terra source hashes:
+Packet06SimpleZero be6fb1cbf3666f6b73969d78c4dcd88717afabcb102d41bf9e5a190282b0dc2c
+Packet06SimpleZeroLimit c24c9e456aa0aaa9762dab9ec6fa44ca6544c2d756c0fd84e2cac9430a1b2142
+Packet06SimpleZeroGeneral 7f1a1a0f5ef17cb13eae38ad4b59f4c45688cda430665264ff2b41d4aaeae110
+Packet06SimpleZeroSequence 7900b093717632f14d3597425c11de16f2201344e7a63a7a565c999c338112b9
+Packet06MaterialHolomorphic 00f98ac9fb95d2e85da1e5b71ea768d6a9c53e6130e17d08b3ff7f3c0b311a83
+Packet06SchurLimit 340d8a4dd5360bfbb3688039e0d1502ace6470faefd72ed3bafaf5d92b92026c
+Packet06RepairLimit ce90742461e7c5ca01a43690213c75eb191d7db978148ff84f4d5d62f5533d4c
+Packet06SchurPersistence 6697fb4cd4271c2da4e3927d7aaaaa46350095f98a3d92c52edbab8238fc0ee4
+Packet06SchurModeLimit e178ae752f95659da8535327744b7fb06daf182d625435bed63bcd4681dd1a46
+Packet06WeightedStaticLimit 61b00d7deb17963a0739cddff2f1ba56c3e7911b1df33f1f981957d277ae3de4
+Packet06WeightedRemainderLimit 90eb5d87278a3c468e636261c4a951b1d88190cb761492e4fefdc50e27e2ef0b
+Packet06WeightedPencilLimit 9bbbc2a48867ff56fb5b4d92b4000b90972d8d91137743be16de2be222c440a9
+Packet06WeightedPencilHolomorphic 2d0b6727aac0787e20294397bb668291759151b94c346768150397a197e1801f
