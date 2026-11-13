@@ -1,4 +1,16 @@
-# OQ14 completed release — November 13, 2026
+# Current repository state
+
+**Original OQ14 is not fully closed.** The completed statements below are the
+project's explicitly quantified versions. See the [scope summary](README.md)
+before continuing research or describing these results externally.
+
+The newer manuscript exposition and figures are saved at `f520a31`; the current
+PDF and provenance are in [paper/](paper/README.md). Formal source and frozen
+November 13 audit evidence were preserved during repository organization.
+Earlier release descriptions, including their original publication state and
+104-page PDF references, are historical records below.
+
+# Historical completed project release — November 13, 2026
 
 The repository's quantified primary targets are closed and the release is
 finished. [CLOSURE.txt](CLOSURE.txt) gives the exact outcomes and scope.

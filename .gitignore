@@ -16,3 +16,10 @@ lean/.lake/
 lean/build-logs/
 lean/toolchain/
 lean/vendor/
+
+# Generated Lean objects, including temporary checkpoint builds.
+*.olean
+*.ilean
+
+# An unrelated local site project is not part of the OQ14 repository.
+/sites/

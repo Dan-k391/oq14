@@ -1,5 +1,11 @@
 # Research change log
 
+- 2026-11-13, GitHub preparation: preserved the newer explanatory manuscript
+  and two figures in `f520a31`, saved its checked 111-page PDF in `paper/`,
+  and added repository navigation. Corrected stale README verification counts
+  and made the distinction between project-target results and original OQ14
+  explicit. Formal Lean source and frozen audit evidence are unchanged.
+
 - 2026-11-02, stage 66: implemented and independently audited the first complete
   Packet 01 actual electric-coefficient chain. Every genuine sphere-kernel vector
   has the same radial/tangential regular amplitude in each positive harmonic

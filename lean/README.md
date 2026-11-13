@@ -1,4 +1,45 @@
-# Lean verification of operator estimates and Maxwell foundations
+# Lean verification
+
+The current endpoint entry point is [OQ14Closure.lean](OQ14Closure.lean).
+It imports the final channel, modal hotspot, modal-volume, intrinsic phase-trace,
+driven hotspot, and regional H(curl) chains and prints their axiom dependencies.
+
+**These proofs concern the repository's explicitly quantified statements.
+They do not establish full closure of original OQ14.** The channel result uses
+`delta > eta` and complete outgoing scattering, including reflection. The modal
+result uses the project's reciprocal-residue normalization and a specified
+symmetry sector. See the [root scope summary](../README.md).
+
+## Final recorded audit
+
+The November 13 aggregate records 2,171 project modules, 10,946 inline reports,
+and 23,697 kernel-safe declarations, with only `propext`, `Classical.choice`,
+and `Quot.sound`. Unsafe executable implementation declarations are listed
+separately. Fourteen historical linter warnings remain. Lean and package
+objects are trusted; the final project aggregate excludes cached project
+objects from its search path.
+
+- [Audit and trust boundary](../checkpoints/2026-11-13-closure-release/AUDIT.txt)
+- [Frozen source inventory](../checkpoints/2026-11-13-closure-release/evidence/source-inventory.json)
+- [Build records](../checkpoints/2026-11-13-closure-release/evidence/fresh-build.json)
+- [Complete safe-declaration result](../checkpoints/2026-11-13-closure-release/evidence/all-safe-result.json)
+- [Archived replay scripts](../checkpoints/2026-11-13-closure-release/scripts/)
+
+The pins are Lean 4.19.0 and mathlib
+`c44e0c8ee63ca166450922a373c7409c5d26b00b`; keep `lake-manifest.json` unchanged.
+The archived aggregate scripts use the original `D:/oq14` paths and cached
+pinned packages. Read their path and resume-state assumptions before replaying
+them elsewhere. A portable one-command final aggregate runner is not supplied.
+
+## Historical foundation build and module guide
+
+The remainder of this file documents the earlier 627-module foundation build
+and its 5,238 exported theorem reports. `python build.py` and the root
+`make formal` target follow that earlier registered-target workflow; they are
+not a replacement for the final aggregate audit above. Earlier per-module
+coverage descriptions below are retained as a guide to the foundations.
+
+### Operator estimates and Maxwell foundations
 
 The formal sources are `OQ14.lean`, `Maxwell.lean`, `HCurl.lean`,
 `HCurlDomain.lean`, `HCurlCutoff.lean`, `WeakPoynting.lean`, and
