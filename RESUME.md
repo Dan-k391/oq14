@@ -1,5 +1,47 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 116 is the latest verified incremental checkpoint:
+[STAGE116.txt](checkpoints/2026-11-13-complete-physical-endpoints/STAGE116.txt).
+
+The final arbitrary-plane modal volume family is constructed without
+analytic, excitation, collar or maximum assumptions. It retains one actual
+rounded family, the same normalized outgoing Maxwell mode and physical
+selected-sector observed pole, exact target real frequency and quality,
+smooth three-value material, strict observation diameter, whole closed-ball
+patch projection and disjointness, and actual open collars.
+
+Every chosen weighted maximum uses the SAME physical phase representatives
+on a strictly larger ball. The strict radius and exact larger-ball identity
+survive the frame. Open-phase material identities justify the same-side
+weights, and representation independence includes tangencies. Positive
+weighted volume and fixed-Cartesian directional volume vanish at those same
+selected weighted maxima. The literal epsilon ceiling follows by the checked
+square-root identity in the public proof-valued wrapper, whose inferred type
+is exactly the complete core conclusion at K=sqrt(epsilon).
+
+OQ14Closure.lean imports the exact channel, modal, intrinsic volume and driven
+endpoints, including the actual driven H(curl) upgrade, and exposes eight
+standard-only reports. The unrestricted channel target is disproved for
+delta>eta with complete scattering output; stronger thresholds, receiving-only
+output and fixed total support remain distinct restricted questions. The
+modal pole is simple in the transported selected sector, not asserted ambient
+rank one. These are the exact primary targets frozen in the manuscript.
+
+All primary endpoint chains are compiled and independently reviewed. Final
+aggregate extension, the all-safe-declaration audit, clean paper build and
+release provenance are being completed before the final closure report.
+
+12 modules / 22 reports passed independent root review and a fresh
+ordered build. 2014 upstream sources were authenticated, with cached objects.
+The ledger is 1586 modules / 6001 reports, all prior records unchanged:
+`checkpoints/2026-11-13-complete-physical-endpoints/evidence/audited_after_5238-stage116.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage116.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 115 is the latest verified incremental checkpoint:
 [STAGE115.txt](checkpoints/2026-11-13-intrinsic-volume-traces/STAGE115.txt).
 

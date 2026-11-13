@@ -1,0 +1,5 @@
+Independent front-door and paper wrapper review — PASS.
+
+Packet06StrongAffineVolumePaper imports the independently reviewed strong affine core. Its proof-valued definition has the core theorem's exact full inferred conclusion specialized to K=sqrt(epsilon), with no extra premise; sqrt_ceiling and literal_bound give (sqrt epsilon)^2=epsilon and hence the literal material ceiling. The source hash matches its author manifest and the independent direct build uses the retained core object. Four standard-only reports, no warnings.
+
+OQ14Closure is an import and axiom-report module. Its documentation correctly limits the modal observed pole to the transported sector, retains the same larger-neighborhood phase representatives for weighted maxima, does not assert driven maxima lie on the plane, and describes the exact full-output channel scope. The exact root-author source hash was independently rebuilt using the retained paper/core objects: eight reports all [propext, Classical.choice, Quot.sound], with no warnings. It adds no theorem or custom axiom and the report module itself does not replace theorem statements.
