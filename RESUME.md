@@ -1,5 +1,31 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 88 is the latest verified incremental checkpoint:
+[STAGE88.txt](checkpoints/2026-11-13-rounded-modal-branch/STAGE88.txt).
+The actual fixed-contrast rounding sequence preserves the same selected
+certified physical unit high-Q mode through convergent outgoing modes and
+observed poles. The sphere response has its explicit interior dipole identity
+and a nonzero axial field near the center. Actual oriented C3 boundary charts
+are also checked for the scalar PDE second iteration.
+
+5 modules / 7 reports passed independent review and a combined fresh ordered
+build. 1086 upstream sources were authenticated, with cached objects. The ledger
+is 831 modules / 4673 reports, all prior records unchanged:
+`checkpoints/2026-11-13-rounded-modal-branch/evidence/audited_after_5238-stage88.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: exact constant-correction cancellation and uniform conical
+Holder remainder estimates compile. Actual scalar Green Holder control and
+the annular nonzero-excitation argument are in progress. The curved scalar
+second tangential iteration now has regional localization and forcing
+derivative lemmas. Actual excitation, final curved regularity, attained
+hotspots/collars, packing, final paper and aggregate validation remain.
+Full OQ14 is active.
+
+Everything below is historical context, superseded by stage88.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 87 is the latest verified incremental checkpoint:
 [STAGE87.txt](checkpoints/2026-11-13-actual-complex-system/STAGE87.txt).
 

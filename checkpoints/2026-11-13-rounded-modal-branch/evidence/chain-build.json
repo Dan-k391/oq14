@@ -1,0 +1,159 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-034620-70356",
+  "object_directory": "checkpoints/2026-11-13-rounded-modal-branch/objects/20261113-034620-70356",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 5 actual rounded mode and C3 chart modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06RoundedInsertion",
+      "source": "lean/Packet06RoundedInsertion.lean",
+      "source_sha256": "2892c326fb666191d83a0e2a45bb5e39bdbe68e634118dfdecedfa1fc72bee45",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356\\Packet06RoundedInsertion.olean",
+        "D:\\oq14\\lean\\Packet06RoundedInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.782,
+      "log": "checkpoints/2026-11-13-rounded-modal-branch/evidence/Packet06RoundedInsertion-chain.log",
+      "log_sha256": "30933c3f096fbe1e3487866c861537385c9b3d2375db4426f5978b7d1ddc68aa",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedInsertion.admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5a568a1428148dd41f7424932bcb12e56ca93ef2ad3ea05f1540db6cda165cb0"
+    },
+    {
+      "module": "Packet06RoundedMode",
+      "source": "lean/Packet06RoundedMode.lean",
+      "source_sha256": "2277b3bcada2fcb2442fe34bab6f7036311740634df307b63fa2587c9b9e3304",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356\\Packet06RoundedMode.olean",
+        "D:\\oq14\\lean\\Packet06RoundedMode.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.187,
+      "log": "checkpoints/2026-11-13-rounded-modal-branch/evidence/Packet06RoundedMode-chain.log",
+      "log_sha256": "11fb629de19931aa0c2cf5f6bde1ac49f5cb8ba50bfe0e231979b6d3b55d8b75",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RoundedMode.normalized_rounded_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cb181202cccf1d4f926d9c04fb967ca2136a08959dec63f8e436d09b4ec141da"
+    },
+    {
+      "module": "Packet06SphereLocalField",
+      "source": "lean/Packet06SphereLocalField.lean",
+      "source_sha256": "3180ded1b566b6c5ded02bc9c1d715f559bc4b76019f2c56436ff306cfcbce89",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356\\Packet06SphereLocalField.olean",
+        "D:\\oq14\\lean\\Packet06SphereLocalField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.047,
+      "log": "checkpoints/2026-11-13-rounded-modal-branch/evidence/Packet06SphereLocalField-chain.log",
+      "log_sha256": "7abe33abc584fbc1a42b8318f10137be9cceaffc7245f02fa97ac2faa55841cf",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereLocalField.response_inner_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SphereLocalField.axial_nonzero_near_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f40ed37c947ec8d6701975c05c892373a80b821c6af3056b34299b1f18635c0f"
+    },
+    {
+      "module": "Packet07BoundaryC3Refined",
+      "source": "lean/Packet07BoundaryC3Refined.lean",
+      "source_sha256": "6d23b521e3a3a7112bf320c02df1a9988319180d84280e8ac9cf56c2befea7a8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356\\Packet07BoundaryC3Refined.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryC3Refined.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.391,
+      "log": "checkpoints/2026-11-13-rounded-modal-branch/evidence/Packet07BoundaryC3Refined-chain.log",
+      "log_sha256": "afeb4ea451b98a9dc993837f4bab3ef60166f92fad4f6de340aa33c63592cf1a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryC3Refined.chart_of_regular_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5023a6927e64342d663098d60071fa3b24b27802e47a327b343cd3509ecfa751"
+    },
+    {
+      "module": "Packet07BoundaryC3Oriented",
+      "source": "lean/Packet07BoundaryC3Oriented.lean",
+      "source_sha256": "2ad25e8d23afd47ae836867fb3884b82cae1a71f75984e39b1cb57f9123385e5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rounded-modal-branch\\objects\\20261113-034620-70356\\Packet07BoundaryC3Oriented.olean",
+        "D:\\oq14\\lean\\Packet07BoundaryC3Oriented.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.64,
+      "log": "checkpoints/2026-11-13-rounded-modal-branch/evidence/Packet07BoundaryC3Oriented-chain.log",
+      "log_sha256": "754fa9d3a9dadaf79794dad5472b6c138a9150c4cd8260c1c6c888ab22b0b93a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BoundaryC3Oriented.oriented_chart_of_regular_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07BoundaryC3Oriented.actual_affine_body_oriented_charts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4e54ad85aa7068703747af17db4a71ea1d23d68d08c30352a3492d153b858d44"
+    }
+  ],
+  "module_count": 5,
+  "report_count": 7
+}
