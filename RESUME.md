@@ -1,5 +1,32 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 73 is the latest verified incremental checkpoint:
+[STAGE73.txt](checkpoints/2026-11-13-driven-frequency/STAGE73.txt).
+The fixed-frequency driven construction now has arbitrary simultaneous
+positive-volume peak heights under one exact unit-angular-power illumination,
+constructed finite binary geometry and smooth regular boundary, with whole
+peak-ball projections inside the prescribed open patch. The body is covered
+by 2N nonempty disjoint open lobes. Connectedness, attained maxima/collars,
+affine scattered-field radiation and translated-density smoothness remain
+separate formal obligations; this is not yet the complete driven theorem.
+
+21 modules / 67 reports passed root independent semantic review and ordered
+fresh-object compilation; 787 other local sources were authenticated, with
+cached objects. No warnings and only standard axioms. The accepted incremental
+ledger is 645 modules / 4222 reports; all 624 prior records are preserved:
+`checkpoints/2026-11-13-driven-frequency/evidence/audited_after_5238-stage73.json`.
+
+Full OQ14 remains active. Root's physical Green chain and Terra's material
+operator convergence have independently compiled and await the next checkpoint.
+Root is constructing scalar Schur reduction; Terra is proving persistence of
+simple zeros from locally uniform analytic convergence, curved scalar
+transmission estimates, and complete connected-lobe geometry/radiation.
+Final modal assembly, attained hotspots, manuscript and aggregate checks remain.
+
+Everything below is historical context, superseded by stage73.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 72 is the latest verified incremental checkpoint:
 [STAGE72.txt](checkpoints/2026-11-13-flat-h2/STAGE72.txt).
 The actual flat-interface weak Maxwell field now has all first and second

@@ -1,0 +1,174 @@
+[
+  {
+    "module": "Packet07BinaryAssembly",
+    "declarations": [
+      "OQ14.Packet07BinaryAssembly.component_pairwise_disjoint",
+      "OQ14.Packet07BinaryAssembly.one_smooth_binary_device"
+    ]
+  },
+  {
+    "module": "Packet07LobeGeometry",
+    "declarations": [
+      "OQ14.Packet07LobeGeometry.lobe_open",
+      "OQ14.Packet07LobeGeometry.lobe_split",
+      "OQ14.Packet07LobeGeometry.lobes_pairwise_disjoint"
+    ]
+  },
+  {
+    "module": "Packet07LobeNonempty",
+    "declarations": [
+      "OQ14.Packet07LobeNonempty.axial_point_inclusion",
+      "OQ14.Packet07LobeNonempty.eventually_all_lobes_nonempty"
+    ]
+  },
+  {
+    "module": "Packet07BinaryLobes",
+    "declarations": [
+      "OQ14.Packet07BinaryLobes.one_smooth_binary_lobes"
+    ]
+  },
+  {
+    "module": "Packet07PlanarCenters",
+    "declarations": [
+      "OQ14.Packet07PlanarCenters.planeEmbed_coord",
+      "OQ14.Packet07PlanarCenters.planeEmbed_injective",
+      "OQ14.Packet07PlanarCenters.offset_positive",
+      "OQ14.Packet07PlanarCenters.offset_le",
+      "OQ14.Packet07PlanarCenters.planarPoint_injective",
+      "OQ14.Packet07PlanarCenters.planarPoint_mem",
+      "OQ14.Packet07PlanarCenters.exists_planar_centers",
+      "OQ14.Packet07PlanarCenters.planeProject_embed",
+      "OQ14.Packet07PlanarCenters.planeProject_sub",
+      "OQ14.Packet07PlanarCenters.planeProject_norm_le",
+      "OQ14.Packet07PlanarCenters.planeProject_dist_le"
+    ]
+  },
+  {
+    "module": "Packet07FiniteSeparation",
+    "declarations": [
+      "OQ14.Packet07FiniteSeparation.finite_positive_lower",
+      "OQ14.Packet07FiniteSeparation.separated_radius",
+      "OQ14.Packet07FiniteSeparation.disjoint_outer_balls",
+      "OQ14.Packet07FiniteSeparation.disjoint_peak_balls"
+    ]
+  },
+  {
+    "module": "Packet07CommonConeData",
+    "declarations": [
+      "OQ14.Packet07CommonConeData.exists_common_cone"
+    ]
+  },
+  {
+    "module": "Packet07Enclosure",
+    "declarations": [
+      "OQ14.Packet07Enclosure.exists_enclosing_radius"
+    ]
+  },
+  {
+    "module": "Packet07PlanarConeGeometry",
+    "declarations": [
+      "OQ14.Packet07PlanarConeGeometry.exists_planar_cone_geometry"
+    ]
+  },
+  {
+    "module": "Packet07FrequencyScaling",
+    "declarations": [
+      "OQ14.Packet07FrequencyScaling.value_dilation",
+      "OQ14.Packet07FrequencyScaling.finiteAmplitude_smul",
+      "OQ14.Packet07FrequencyScaling.finite_electric_dilation",
+      "OQ14.Packet07FrequencyScaling.finite_magnetic_dilation",
+      "OQ14.Packet07FrequencyScaling.finite_unit_power_dilation"
+    ]
+  },
+  {
+    "module": "Packet07PlanarSetup",
+    "declarations": [
+      "OQ14.Packet07PlanarSetup.exists_setup",
+      "OQ14.Packet07PlanarSetup.Setup.contrast_bound",
+      "OQ14.Packet07PlanarSetup.Setup.radii_pos",
+      "OQ14.Packet07PlanarSetup.Setup.radii_outer",
+      "OQ14.Packet07PlanarSetup.Setup.outer_sep"
+    ]
+  },
+  {
+    "module": "Packet07PlanarPacking",
+    "declarations": [
+      "OQ14.Packet07PlanarPacking.planar_binary_peaks_small_frequency"
+    ]
+  },
+  {
+    "module": "Packet07ScaleMeasure",
+    "declarations": [
+      "OQ14.Packet07ScaleMeasure.positive_preimage_smul",
+      "OQ14.Packet07ScaleMeasure.positive_peak_dilation",
+      "OQ14.Packet07ScaleMeasure.positive_preimage_sub",
+      "OQ14.Packet07ScaleMeasure.positive_peak_translate"
+    ]
+  },
+  {
+    "module": "Packet07MaxwellTranslation",
+    "declarations": [
+      "OQ14.Packet07MaxwellTranslation.testMaxwell_translate"
+    ]
+  },
+  {
+    "module": "Packet07PatchDilation",
+    "declarations": [
+      "OQ14.Packet07PatchDilation.scaled_points_inside",
+      "OQ14.Packet07PatchDilation.choose_auxiliary_frequency"
+    ]
+  },
+  {
+    "module": "Packet07AffineMaxwell",
+    "declarations": [
+      "OQ14.Packet07AffineMaxwell.dielectric_affine",
+      "OQ14.Packet07AffineMaxwell.affine_maxwell",
+      "OQ14.Packet07AffineMaxwell.testMaxwell_scale_any",
+      "OQ14.Packet07AffineMaxwell.affine_peak"
+    ]
+  },
+  {
+    "module": "Packet07AffinePower",
+    "declarations": [
+      "OQ14.Packet07AffinePower.centered_power_eq",
+      "OQ14.Packet07AffinePower.centered_unit_power"
+    ]
+  },
+  {
+    "module": "Packet07AffineGeometry",
+    "declarations": [
+      "OQ14.Packet07AffineGeometry.map_place",
+      "OQ14.Packet07AffineGeometry.map_continuous",
+      "OQ14.Packet07AffineGeometry.preimage_open",
+      "OQ14.Packet07AffineGeometry.preimage_nonempty",
+      "OQ14.Packet07AffineGeometry.preimage_disjoint",
+      "OQ14.Packet07AffineGeometry.placed_center",
+      "OQ14.Packet07AffineGeometry.preimage_enclosed",
+      "OQ14.Packet07AffineGeometry.preimage_ball"
+    ]
+  },
+  {
+    "module": "Packet07AngularTranslation",
+    "declarations": [
+      "OQ14.Packet07AngularTranslation.phase_norm",
+      "OQ14.Packet07AngularTranslation.translated_norm",
+      "OQ14.Packet07AngularTranslation.translated_electric",
+      "OQ14.Packet07AngularTranslation.translated_magnetic",
+      "OQ14.Packet07AngularTranslation.translated_tangent",
+      "OQ14.Packet07AngularTranslation.translated_unit_angular_power"
+    ]
+  },
+  {
+    "module": "Packet07AffineSmooth",
+    "declarations": [
+      "OQ14.Packet07AffineSmooth.homeo_apply",
+      "OQ14.Packet07AffineSmooth.smooth_boundary_preimage"
+    ]
+  },
+  {
+    "module": "Packet07FixedFrequency",
+    "declarations": [
+      "OQ14.Packet07FixedFrequency.fixed_frequency_planar_superlevels"
+    ]
+  }
+]

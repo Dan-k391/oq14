@@ -1,0 +1,927 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-013620-63024",
+  "object_directory": "checkpoints/2026-11-13-driven-frequency/objects/20261113-013620-63024",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 21 fixed-frequency driven modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07BinaryAssembly",
+      "source": "lean/Packet07BinaryAssembly.lean",
+      "source_sha256": "173bce96257400da70f556ba4b9f8c7194b8c42bc389030ca8166165d2c10819",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07BinaryAssembly.olean",
+        "D:\\oq14\\lean\\Packet07BinaryAssembly.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.735,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07BinaryAssembly-chain.log",
+      "log_sha256": "fbdcf3ddcfea773cbd2289193cc8bbcdb86c02ccb30375dff7e69d2b84fcc7e6",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BinaryAssembly.component_pairwise_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07BinaryAssembly.one_smooth_binary_device",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a23bb30ea9f3f6906781163ace4166423e1780d2b07c7b1d14215c265f75aa81"
+    },
+    {
+      "module": "Packet07LobeGeometry",
+      "source": "lean/Packet07LobeGeometry.lean",
+      "source_sha256": "a1f74fc26cb1ba98eaa33761361dfd8df844ae37ee3d27b7eb7cf80c1a15caf2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07LobeGeometry.olean",
+        "D:\\oq14\\lean\\Packet07LobeGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.781,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07LobeGeometry-chain.log",
+      "log_sha256": "b58f1034c36116a9bf44224f13eb2f8eac002a82468b2652a0ad21a1b075d228",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07LobeGeometry.lobe_open",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07LobeGeometry.lobe_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07LobeGeometry.lobes_pairwise_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "86b43696140cb47e5d2a4ae5e9555f781636ac29f406079d7c78e3baa086796b"
+    },
+    {
+      "module": "Packet07LobeNonempty",
+      "source": "lean/Packet07LobeNonempty.lean",
+      "source_sha256": "09b5d970ac290b947bf399e8e48a369143c8b3feb35f849a80e40b0fcf0f7039",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07LobeNonempty.olean",
+        "D:\\oq14\\lean\\Packet07LobeNonempty.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.812,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07LobeNonempty-chain.log",
+      "log_sha256": "ab6767ed6cb621f95d65d30da989fb3c593e2b9051844052491c09cf2bae5cb8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07LobeNonempty.axial_point_inclusion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07LobeNonempty.eventually_all_lobes_nonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "df0f04cbf9c046dc9c51d7a621c57d5e79796c7c5d23d23f3c407b31b12c6340"
+    },
+    {
+      "module": "Packet07BinaryLobes",
+      "source": "lean/Packet07BinaryLobes.lean",
+      "source_sha256": "de7163f3913c465e0f603436ec49b8e7cba0d4fe259697105f1b9044e6d4be5c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07BinaryLobes.olean",
+        "D:\\oq14\\lean\\Packet07BinaryLobes.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.485,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07BinaryLobes-chain.log",
+      "log_sha256": "b37c0c32d960a949f200f972aedf29fac1dc608fe37a7c1586da660038abfd29",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BinaryLobes.one_smooth_binary_lobes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b7475c62387b943d54c81ee49abf68ffc08cb55c5cc606634223e43c151faab4"
+    },
+    {
+      "module": "Packet07PlanarCenters",
+      "source": "lean/Packet07PlanarCenters.lean",
+      "source_sha256": "5e278293063248c247eef7cc717a4008639f8f5e0ec6a81f7eebc0991db2c7a0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07PlanarCenters.olean",
+        "D:\\oq14\\lean\\Packet07PlanarCenters.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.719,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07PlanarCenters-chain.log",
+      "log_sha256": "ffe5c42d922e74a5ef8377a01eac8af57e84e1c07edec94d07a80c2b230cc54d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeEmbed_coord",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeEmbed_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.offset_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.offset_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planarPoint_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planarPoint_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.exists_planar_centers",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeProject_embed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeProject_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeProject_norm_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarCenters.planeProject_dist_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "665d71d0241aa8fe8f5347373500228dc1ce3e8b8e6e5dbb422e529fa5ecaa34"
+    },
+    {
+      "module": "Packet07FiniteSeparation",
+      "source": "lean/Packet07FiniteSeparation.lean",
+      "source_sha256": "4678eb5cde46584f433c6163ca70f8be56fd7e026488ae259a93c503ddec4dca",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07FiniteSeparation.olean",
+        "D:\\oq14\\lean\\Packet07FiniteSeparation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.796,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07FiniteSeparation-chain.log",
+      "log_sha256": "37a6db39315a0a526ec10e08aad4c022524be318f29f3c0948ce3799d23aece6",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FiniteSeparation.finite_positive_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FiniteSeparation.separated_radius",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FiniteSeparation.disjoint_outer_balls",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FiniteSeparation.disjoint_peak_balls",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "02c9ac0d9df0aa18df179cbbe3f40cc328a6f26dc6784f4b328c8e110ae066ce"
+    },
+    {
+      "module": "Packet07CommonConeData",
+      "source": "lean/Packet07CommonConeData.lean",
+      "source_sha256": "04c2b6ca28b551f1c849de6ff9ad68f2cb22a00bfd36be696c829b75e41dd2b5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07CommonConeData.olean",
+        "D:\\oq14\\lean\\Packet07CommonConeData.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.875,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07CommonConeData-chain.log",
+      "log_sha256": "dd92f2999fa0731b2080974a3eb86a53263fe4f9bb4590c79966ad96430f9004",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07CommonConeData.exists_common_cone",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5aaf7d5e289fedc3ce3fea3f46cea156b2641fa0ced52cb219a8d41824101f9f"
+    },
+    {
+      "module": "Packet07Enclosure",
+      "source": "lean/Packet07Enclosure.lean",
+      "source_sha256": "c8eb660860f03157075806304ab65e488757729202e427cb03508c9e300e3f4f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07Enclosure.olean",
+        "D:\\oq14\\lean\\Packet07Enclosure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.329,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07Enclosure-chain.log",
+      "log_sha256": "6b39fd6708031c4965376a5d2362c4b33baf23be64cf21038a262da666059bc2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07Enclosure.exists_enclosing_radius",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9263a704664ded0b75632a35b877ae3ea9609da02e57ee4080028b50fdfb1489"
+    },
+    {
+      "module": "Packet07PlanarConeGeometry",
+      "source": "lean/Packet07PlanarConeGeometry.lean",
+      "source_sha256": "de9bffe347a9305c130c5ebaa6cb1acbed48ca4924cb898d97c78f025c06eda9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07PlanarConeGeometry.olean",
+        "D:\\oq14\\lean\\Packet07PlanarConeGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.812,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07PlanarConeGeometry-chain.log",
+      "log_sha256": "1a7c356355cf489c8af53f97871dd86460516dcd08112a9d65323771fc4fe399",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanarConeGeometry.exists_planar_cone_geometry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9f112d1d8a36afae0102e21e10a25834cdfd200b49c8e8baaa0780cc0efdad99"
+    },
+    {
+      "module": "Packet07FrequencyScaling",
+      "source": "lean/Packet07FrequencyScaling.lean",
+      "source_sha256": "8816754aa5cbcd5eecd3bb13cbb2e5130414b71eee2b722fda90b854e4aadcd7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07FrequencyScaling.olean",
+        "D:\\oq14\\lean\\Packet07FrequencyScaling.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.109,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07FrequencyScaling-chain.log",
+      "log_sha256": "218889c5b52488e5b96688409dcecd7d6ed8d913839bb0c23603c39c1e132e4b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FrequencyScaling.value_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FrequencyScaling.finiteAmplitude_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FrequencyScaling.finite_electric_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FrequencyScaling.finite_magnetic_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07FrequencyScaling.finite_unit_power_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0b16db06bbd445a1e4f3be0e9fb1322ba3b5191f829c5de9783b83a304e2ae4b"
+    },
+    {
+      "module": "Packet07PlanarSetup",
+      "source": "lean/Packet07PlanarSetup.lean",
+      "source_sha256": "67f6b3402f76823292dfb1c28760e8bcc2a6da6c6fb2ad26b1b43ccfe6945d01",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07PlanarSetup.olean",
+        "D:\\oq14\\lean\\Packet07PlanarSetup.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.984,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07PlanarSetup-chain.log",
+      "log_sha256": "afe8804d5fa8bd5f942317ae9b832c73d2a6b9a60c81f581acb5305675b95f3e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanarSetup.exists_setup",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarSetup.Setup.contrast_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarSetup.Setup.radii_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarSetup.Setup.radii_outer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanarSetup.Setup.outer_sep",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fbbd4bc863a39c14d7e33b067d10905095e2c8727979e6ce7579bb27ded3b853"
+    },
+    {
+      "module": "Packet07PlanarPacking",
+      "source": "lean/Packet07PlanarPacking.lean",
+      "source_sha256": "6d104aa13bf5da4d85679314312d54b7eb897db4102f79e6c6e00a914fbb6fe3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07PlanarPacking.olean",
+        "D:\\oq14\\lean\\Packet07PlanarPacking.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.688,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07PlanarPacking-chain.log",
+      "log_sha256": "5c06132e5daf6e21c431620397b7837af33b45e221ee57acbe974619e59a4d59",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanarPacking.planar_binary_peaks_small_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ecc46ca40315da1247ce64035777e8448b4240e590f2ce22090d2a7a7bf41177"
+    },
+    {
+      "module": "Packet07ScaleMeasure",
+      "source": "lean/Packet07ScaleMeasure.lean",
+      "source_sha256": "c5ae2e5f14ccd7cf41fdf74d0ed218862c68ec5ac7d11d2295b723498924f8a6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07ScaleMeasure.olean",
+        "D:\\oq14\\lean\\Packet07ScaleMeasure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.875,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07ScaleMeasure-chain.log",
+      "log_sha256": "507baaed055934de59ffdfcbc6396cc7707340f2676859678cdb1ef29bd5a5b2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07ScaleMeasure.positive_preimage_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07ScaleMeasure.positive_peak_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07ScaleMeasure.positive_preimage_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07ScaleMeasure.positive_peak_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3b14a008a4730cbef91b49a6f82fb3dff1218f203f6fff3aa00eb95c66ae1082"
+    },
+    {
+      "module": "Packet07MaxwellTranslation",
+      "source": "lean/Packet07MaxwellTranslation.lean",
+      "source_sha256": "49b6d4ccc1a8253891befde29307cf4e250dabe8a725faa6817513df52b1fd84",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07MaxwellTranslation.olean",
+        "D:\\oq14\\lean\\Packet07MaxwellTranslation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.171,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07MaxwellTranslation-chain.log",
+      "log_sha256": "6fd667280a50b650902692a1577697a3322b15255ee200c2ab00072645a89453",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07MaxwellTranslation.testMaxwell_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5a0dbd322da2571146a7e62af3f6274bb1e34746556aef4a050e49a0ab9e9cb1"
+    },
+    {
+      "module": "Packet07PatchDilation",
+      "source": "lean/Packet07PatchDilation.lean",
+      "source_sha256": "f9ca97d75a784720a6be5f632db8c4a0e53d9e2200ecb45905935de4e2f4a6d9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07PatchDilation.olean",
+        "D:\\oq14\\lean\\Packet07PatchDilation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.922,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07PatchDilation-chain.log",
+      "log_sha256": "bbbd65cf4a09d81f86e5bc31cfd38b1f64ea82c7639b47891189b0ad9a2f4b68",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PatchDilation.scaled_points_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PatchDilation.choose_auxiliary_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "39fa4c8b6c4632a48c958e7b6db8a8e8bfdf4007bad9854b0cfb73add5e3d707"
+    },
+    {
+      "module": "Packet07AffineMaxwell",
+      "source": "lean/Packet07AffineMaxwell.lean",
+      "source_sha256": "19d4cf68bc80864279b4b2c40fdc9ab255dc689cd1a3efab969f2f3042cfa793",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07AffineMaxwell.olean",
+        "D:\\oq14\\lean\\Packet07AffineMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.172,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07AffineMaxwell-chain.log",
+      "log_sha256": "d211b34c4ff5ed2f15db94b4d64fc86ee0968b7b757ab81f749e6d4ff4c75e3c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffineMaxwell.dielectric_affine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineMaxwell.affine_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineMaxwell.testMaxwell_scale_any",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineMaxwell.affine_peak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "31eb92cff1566257ef4ff78266e27e5e763c8ca921af3d315fb43888d82b2df1"
+    },
+    {
+      "module": "Packet07AffinePower",
+      "source": "lean/Packet07AffinePower.lean",
+      "source_sha256": "77d531bcbe158c7b0f5811eea7be0d85741dcf8402056dc054d7ed468a2069ac",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07AffinePower.olean",
+        "D:\\oq14\\lean\\Packet07AffinePower.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.656,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07AffinePower-chain.log",
+      "log_sha256": "35ab8dee0919829ba7afcb834edd7ce83ddb82971e590d9583d30980d4855187",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffinePower.centered_power_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffinePower.centered_unit_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e603a83a81898de0e5577138cc2b1ef67dcd0a46fcc9cc1b81bc6bdaa9a1f21d"
+    },
+    {
+      "module": "Packet07AffineGeometry",
+      "source": "lean/Packet07AffineGeometry.lean",
+      "source_sha256": "0cf34c48c986c4167c1ec6f61dfb0b79c38004c405164a3268ae3ef329581ed4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07AffineGeometry.olean",
+        "D:\\oq14\\lean\\Packet07AffineGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.797,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07AffineGeometry-chain.log",
+      "log_sha256": "4b79d2d26021696aeaa7260976a7d5412a5459ca9c8f9cec7a5c382951bbe357",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.map_place",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.map_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.preimage_open",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.preimage_nonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.preimage_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.placed_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.preimage_enclosed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineGeometry.preimage_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7515aad190dcf48ba9f4970b55e5bd15adc8201150b8ebf7fdfccf2339892b5d"
+    },
+    {
+      "module": "Packet07AngularTranslation",
+      "source": "lean/Packet07AngularTranslation.lean",
+      "source_sha256": "dffe87f8bb74d6515bebb79a2ab37106fa1f2ae21bac214f57e89528ba549c43",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07AngularTranslation.olean",
+        "D:\\oq14\\lean\\Packet07AngularTranslation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.953,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07AngularTranslation-chain.log",
+      "log_sha256": "b6c6c929906b0a4a790073e142582f57ad2b08a3f63167a598ff26aad7666396",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.phase_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.translated_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.translated_electric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.translated_magnetic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.translated_tangent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AngularTranslation.translated_unit_angular_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5098d7bad690866052f4aa82457798f56759aa34dfbe6d5e97ce8d63e136ad15"
+    },
+    {
+      "module": "Packet07AffineSmooth",
+      "source": "lean/Packet07AffineSmooth.lean",
+      "source_sha256": "3ca8d7a2a6929bb3e6b5b3dcc09e607fbb60ceb0647ca3bb77749f73bcc69128",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07AffineSmooth.olean",
+        "D:\\oq14\\lean\\Packet07AffineSmooth.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.5,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07AffineSmooth-chain.log",
+      "log_sha256": "bd0da086617423b8a10a7e1f075b064f3e8f40ebee3d829ec0dbe9f625a8fe05",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffineSmooth.homeo_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineSmooth.smooth_boundary_preimage",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4fa30c98eaecfb4598fb982b36da6c12ef806b52c121f7baf0abcdb0ba8d7aa7"
+    },
+    {
+      "module": "Packet07FixedFrequency",
+      "source": "lean/Packet07FixedFrequency.lean",
+      "source_sha256": "b72b0540ad4f5389b62502b32451a57802d798ccc7c5f75331280ea940279265",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-frequency\\objects\\20261113-013620-63024\\Packet07FixedFrequency.olean",
+        "D:\\oq14\\lean\\Packet07FixedFrequency.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.515,
+      "log": "checkpoints/2026-11-13-driven-frequency/evidence/Packet07FixedFrequency-chain.log",
+      "log_sha256": "398737e3edcbd68334ced25287399c0fb210d82064eac1061dbf13e23f2bba0e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FixedFrequency.fixed_frequency_planar_superlevels",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7c8a9472067b1e342ddb764e45f0dacd7fb5619f11394d46c8512bf5e7a50172"
+    }
+  ],
+  "module_count": 21,
+  "report_count": 67
+}

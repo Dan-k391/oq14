@@ -1,0 +1,325 @@
+[
+  {
+    "module": "Packet07BinaryAssembly",
+    "sha256": "173bce96257400da70f556ba4b9f8c7194b8c42bc389030ca8166165d2c10819",
+    "theorems": [
+      "component_pairwise_disjoint",
+      "one_smooth_binary_device"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07BinaryAssembly.component_pairwise_disjoint",
+      "OQ14.Packet07BinaryAssembly.one_smooth_binary_device"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07LobeGeometry",
+    "sha256": "a1f74fc26cb1ba98eaa33761361dfd8df844ae37ee3d27b7eb7cf80c1a15caf2",
+    "theorems": [
+      "lobe_open",
+      "lobe_split",
+      "lobes_pairwise_disjoint"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07LobeGeometry.lobe_open",
+      "OQ14.Packet07LobeGeometry.lobe_split",
+      "OQ14.Packet07LobeGeometry.lobes_pairwise_disjoint"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07LobeNonempty",
+    "sha256": "09b5d970ac290b947bf399e8e48a369143c8b3feb35f849a80e40b0fcf0f7039",
+    "theorems": [
+      "axial_point_inclusion",
+      "eventually_all_lobes_nonempty"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07LobeNonempty.axial_point_inclusion",
+      "OQ14.Packet07LobeNonempty.eventually_all_lobes_nonempty"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07BinaryLobes",
+    "sha256": "de7163f3913c465e0f603436ec49b8e7cba0d4fe259697105f1b9044e6d4be5c",
+    "theorems": [
+      "one_smooth_binary_lobes"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07BinaryLobes.one_smooth_binary_lobes"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07PlanarCenters",
+    "sha256": "5e278293063248c247eef7cc717a4008639f8f5e0ec6a81f7eebc0991db2c7a0",
+    "theorems": [
+      "planeEmbed_coord",
+      "planeEmbed_injective",
+      "offset_positive",
+      "offset_le",
+      "planarPoint_injective",
+      "planarPoint_mem",
+      "exists_planar_centers",
+      "planeProject_embed",
+      "planeProject_sub",
+      "planeProject_norm_le",
+      "planeProject_dist_le"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07PlanarCenters.planeEmbed_coord",
+      "OQ14.Packet07PlanarCenters.planeEmbed_injective",
+      "OQ14.Packet07PlanarCenters.offset_positive",
+      "OQ14.Packet07PlanarCenters.offset_le",
+      "OQ14.Packet07PlanarCenters.planarPoint_injective",
+      "OQ14.Packet07PlanarCenters.planarPoint_mem",
+      "OQ14.Packet07PlanarCenters.exists_planar_centers",
+      "OQ14.Packet07PlanarCenters.planeProject_embed",
+      "OQ14.Packet07PlanarCenters.planeProject_sub",
+      "OQ14.Packet07PlanarCenters.planeProject_norm_le",
+      "OQ14.Packet07PlanarCenters.planeProject_dist_le"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07FiniteSeparation",
+    "sha256": "4678eb5cde46584f433c6163ca70f8be56fd7e026488ae259a93c503ddec4dca",
+    "theorems": [
+      "finite_positive_lower",
+      "separated_radius",
+      "disjoint_outer_balls",
+      "disjoint_peak_balls"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07FiniteSeparation.finite_positive_lower",
+      "OQ14.Packet07FiniteSeparation.separated_radius",
+      "OQ14.Packet07FiniteSeparation.disjoint_outer_balls",
+      "OQ14.Packet07FiniteSeparation.disjoint_peak_balls"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07CommonConeData",
+    "sha256": "6bbb847f063f16c2cd750ff5fc9bf5b9b3e25f54e7cd5c068802d7864b29d00e",
+    "theorems": [
+      "exists_common_cone"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07CommonConeData.exists_common_cone"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07Enclosure",
+    "sha256": "c8eb660860f03157075806304ab65e488757729202e427cb03508c9e300e3f4f",
+    "theorems": [
+      "exists_enclosing_radius"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07Enclosure.exists_enclosing_radius"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07PlanarConeGeometry",
+    "sha256": "a480188f4cf0b873e22846cacdc6e5b63e8f6c98a84de3d2bda52daa13010784",
+    "theorems": [
+      "exists_planar_cone_geometry"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07PlanarConeGeometry.exists_planar_cone_geometry"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07FrequencyScaling",
+    "sha256": "8816754aa5cbcd5eecd3bb13cbb2e5130414b71eee2b722fda90b854e4aadcd7",
+    "theorems": [
+      "value_dilation",
+      "finiteAmplitude_smul",
+      "finite_electric_dilation",
+      "finite_magnetic_dilation",
+      "finite_unit_power_dilation"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07FrequencyScaling.value_dilation",
+      "OQ14.Packet07FrequencyScaling.finiteAmplitude_smul",
+      "OQ14.Packet07FrequencyScaling.finite_electric_dilation",
+      "OQ14.Packet07FrequencyScaling.finite_magnetic_dilation",
+      "OQ14.Packet07FrequencyScaling.finite_unit_power_dilation"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07PlanarSetup",
+    "sha256": "67f6b3402f76823292dfb1c28760e8bcc2a6da6c6fb2ad26b1b43ccfe6945d01",
+    "theorems": [
+      "exists_setup",
+      "contrast_bound",
+      "radii_pos",
+      "radii_outer",
+      "outer_sep"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07PlanarSetup.exists_setup",
+      "OQ14.Packet07PlanarSetup.Setup.contrast_bound",
+      "OQ14.Packet07PlanarSetup.Setup.radii_pos",
+      "OQ14.Packet07PlanarSetup.Setup.radii_outer",
+      "OQ14.Packet07PlanarSetup.Setup.outer_sep"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07PlanarPacking",
+    "sha256": "b3a8b55560c519e7f95873be2f60aea8d4e961b86ff76d6ac9b31f984c5fc424",
+    "theorems": [
+      "planar_binary_peaks_small_frequency"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07PlanarPacking.planar_binary_peaks_small_frequency"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07ScaleMeasure",
+    "sha256": "c5ae2e5f14ccd7cf41fdf74d0ed218862c68ec5ac7d11d2295b723498924f8a6",
+    "theorems": [
+      "positive_preimage_smul",
+      "positive_peak_dilation",
+      "positive_preimage_sub",
+      "positive_peak_translate"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07ScaleMeasure.positive_preimage_smul",
+      "OQ14.Packet07ScaleMeasure.positive_peak_dilation",
+      "OQ14.Packet07ScaleMeasure.positive_preimage_sub",
+      "OQ14.Packet07ScaleMeasure.positive_peak_translate"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07MaxwellTranslation",
+    "sha256": "ad5334651ca1d182d04bf853ea0166c9fcf73076155ba5d66280664351c2e46e",
+    "theorems": [
+      "testMaxwell_translate"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07MaxwellTranslation.testMaxwell_translate"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07PatchDilation",
+    "sha256": "549e03ec8093d20b2be05312372053d7d8853aad5f9093c4bd65a8d54273d7f6",
+    "theorems": [
+      "scaled_points_inside",
+      "choose_auxiliary_frequency"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07PatchDilation.scaled_points_inside",
+      "OQ14.Packet07PatchDilation.choose_auxiliary_frequency"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07AffineMaxwell",
+    "sha256": "19d4cf68bc80864279b4b2c40fdc9ab255dc689cd1a3efab969f2f3042cfa793",
+    "theorems": [
+      "dielectric_affine",
+      "testMaxwell_scale_any",
+      "affine_maxwell",
+      "affine_peak"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07AffineMaxwell.dielectric_affine",
+      "OQ14.Packet07AffineMaxwell.affine_maxwell",
+      "OQ14.Packet07AffineMaxwell.testMaxwell_scale_any",
+      "OQ14.Packet07AffineMaxwell.affine_peak"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07AffinePower",
+    "sha256": "c5c11b3703a4f7723cbfb12d5c460ce8c236f0a456df213255b65e65dfaa45b3",
+    "theorems": [
+      "centered_power_eq",
+      "centered_unit_power"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07AffinePower.centered_power_eq",
+      "OQ14.Packet07AffinePower.centered_unit_power"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07AffineGeometry",
+    "sha256": "0cf34c48c986c4167c1ec6f61dfb0b79c38004c405164a3268ae3ef329581ed4",
+    "theorems": [
+      "map_place",
+      "map_continuous",
+      "preimage_open",
+      "preimage_nonempty",
+      "preimage_disjoint",
+      "placed_center",
+      "preimage_enclosed",
+      "preimage_ball"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07AffineGeometry.map_place",
+      "OQ14.Packet07AffineGeometry.map_continuous",
+      "OQ14.Packet07AffineGeometry.preimage_open",
+      "OQ14.Packet07AffineGeometry.preimage_nonempty",
+      "OQ14.Packet07AffineGeometry.preimage_disjoint",
+      "OQ14.Packet07AffineGeometry.placed_center",
+      "OQ14.Packet07AffineGeometry.preimage_enclosed",
+      "OQ14.Packet07AffineGeometry.preimage_ball"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07AngularTranslation",
+    "sha256": "dffe87f8bb74d6515bebb79a2ab37106fa1f2ae21bac214f57e89528ba549c43",
+    "theorems": [
+      "phase_norm",
+      "translated_norm",
+      "translated_electric",
+      "translated_magnetic",
+      "translated_tangent",
+      "translated_unit_angular_power"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07AngularTranslation.phase_norm",
+      "OQ14.Packet07AngularTranslation.translated_norm",
+      "OQ14.Packet07AngularTranslation.translated_electric",
+      "OQ14.Packet07AngularTranslation.translated_magnetic",
+      "OQ14.Packet07AngularTranslation.translated_tangent",
+      "OQ14.Packet07AngularTranslation.translated_unit_angular_power"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07AffineSmooth",
+    "sha256": "3ca8d7a2a6929bb3e6b5b3dcc09e607fbb60ceb0647ca3bb77749f73bcc69128",
+    "theorems": [
+      "homeo_apply",
+      "smooth_boundary_preimage"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07AffineSmooth.homeo_apply",
+      "OQ14.Packet07AffineSmooth.smooth_boundary_preimage"
+    ],
+    "missing_audits": []
+  },
+  {
+    "module": "Packet07FixedFrequency",
+    "sha256": "b72b0540ad4f5389b62502b32451a57802d798ccc7c5f75331280ea940279265",
+    "theorems": [
+      "fixed_frequency_planar_superlevels"
+    ],
+    "axiom_audits": [
+      "OQ14.Packet07FixedFrequency.fixed_frequency_planar_superlevels"
+    ],
+    "missing_audits": []
+  }
+]
