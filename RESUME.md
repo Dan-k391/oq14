@@ -1,5 +1,51 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 114 is the latest verified incremental checkpoint:
+[STAGE114.txt](checkpoints/2026-11-13-arbitrary-plane-endpoints/STAGE114.txt).
+
+Packet06FinalAffineModal.exists_physical_modal_hotspots now constructs the
+actual finite dielectric and normalized outgoing mode for every prescribed
+ordinary permittivity ceiling, target real frequency, quality, localization
+length, threshold and nonempty arbitrary affine-plane patch. It retains the
+same exact selected-sector physical observed pole, original/transported mode
+identity, smooth three-value material, support/kernel/N1, actual plane maxima,
+disjoint balls, open actual one-sided low collars and full compact connected
+half-amplitude components. No analytic, excitation or collar hypothesis remains.
+
+Packet07DrivenPlaneFinal.plane_final constructs one fixed smooth transverse
+unit-power illumination and one actual finite material family in any affine
+plane patch. Literal dielectric bounds, bounded support/vacuum exterior,
+exactly 2N nonempty smooth components, actual weak Maxwell and scattered
+outgoing E/H, projected whole disjoint closed balls and all-threshold attained
+isolated hotspots belong to the same witness. Driven maximizers need not lie
+in the plane. A separate explicit local-L2 admissibility helper is in progress.
+
+The root localized modal-volume family now retains the same fixed collars,
+all-threshold source hotspots, actual weighted maxima, exact normalized
+target-frequency modes, eventual closed-ball separation, strict diameter and
+patch projection. Its two modules passed independent Terra review. Generic
+full-frame weighted maxima preserve actual field identities and their exact
+value, yielding physical and fixed-component directional limits. The final
+unconditional arbitrary-plane volume-family assembly remains active.
+
+Fresh aggregate verification through stage113 passed 2093 project modules
+and 10821 inline printed reports, with 14 retained historical linter warnings.
+This is a fresh project build with cached Lean/mathlib/package dependencies,
+not a rebuild of the compiler and packages. The complete safe-declaration
+audit must be extended to the final accepted stage. Final paper/release checks
+remain active; full OQ14 is not yet declared closed.
+
+51 modules / 77 reports passed independent root review and a fresh
+ordered build. 1803 upstream sources were authenticated, with cached objects.
+The ledger is 1559 modules / 5953 reports, all prior records unchanged:
+`checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/audited_after_5238-stage114.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage114.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 113 is the latest verified incremental checkpoint:
 [STAGE113.txt](checkpoints/2026-11-13-rigid-fields-retained-host/STAGE113.txt).
 

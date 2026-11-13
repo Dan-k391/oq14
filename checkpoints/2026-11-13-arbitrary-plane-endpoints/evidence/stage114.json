@@ -1,0 +1,1663 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "871e8c5",
+  "modules": 1559,
+  "reports": 5953,
+  "new_modules": 51,
+  "new_reports": 77,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "694eb755f7951c57f9ad7ac770b9d1def4eadf2587e27ae27385dd37c17c4355",
+  "ledger_sha256": "5702c5ce842c040d4e6403433b7795184188016baa2c71669961559892bbd937",
+  "raw_archive_sha256": "6db9102e981c86f1654094ca27cb09988f590baffc006d0bc71c519551df01af",
+  "records": [
+    {
+      "module": "Packet06AxialHotspotStart",
+      "reports": 1,
+      "source_sha256": "01450e556a9074825df49cbde673819f5bc776f68416541ef3fd0a7158d30861",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AxialHotspotStart-chain.log",
+      "audit_log_sha256": "ce09e6a3e7decda91532c66a5810a7e4727bf3fc83e26e49359688415b84a6cf",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AxialHotspotStart.log",
+      "independent_log_sha256": "ce09e6a3e7decda91532c66a5810a7e4727bf3fc83e26e49359688415b84a6cf",
+      "declarations": [
+        "OQ14.Packet06AxialHotspotStart.coordinate_hotspot"
+      ]
+    },
+    {
+      "module": "Packet06RigidHotspotState",
+      "reports": 2,
+      "source_sha256": "7324e2b261ad52c728ee772b807c5969c4870cebda3e95ab79a09aa2c7be044d",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotState-chain.log",
+      "audit_log_sha256": "6af3ee1743c8f0b32dbf9aea6757d9609145dbeed0c8ce7f1aef44fa635604e2",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotState.log",
+      "independent_log_sha256": "6af3ee1743c8f0b32dbf9aea6757d9609145dbeed0c8ce7f1aef44fa635604e2",
+      "declarations": [
+        "OQ14.Packet06RigidHotspotState.axial",
+        "OQ14.Packet06RigidHotspotState.cyclic"
+      ]
+    },
+    {
+      "module": "Packet06RigidHotspotAffine",
+      "reports": 1,
+      "source_sha256": "df19b78d4c28ff6078a0252364852eacc4ef5fe5456dc52c0a6427c59fc08f03",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotAffine-chain.log",
+      "audit_log_sha256": "174d7e171bed69502b80f2d95f281d1721eb324c99adf1537ef738fa1bb15741",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotAffine.log",
+      "independent_log_sha256": "174d7e171bed69502b80f2d95f281d1721eb324c99adf1537ef738fa1bb15741",
+      "declarations": [
+        "OQ14.Packet06RigidHotspotState.affine"
+      ]
+    },
+    {
+      "module": "Packet06RigidHotspotFrame",
+      "reports": 5,
+      "source_sha256": "d5827fc4436c1e7a858a83dd5061d4875c8176f88c903afdb1d705999c1d34a2",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotFrame-chain.log",
+      "audit_log_sha256": "a2d0aea995f02e4cedf676cc531ce1ec87018d2ae17807cd45e90b3e37899edd",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotFrame.log",
+      "independent_log_sha256": "a2d0aea995f02e4cedf676cc531ce1ec87018d2ae17807cd45e90b3e37899edd",
+      "declarations": [
+        "OQ14.Packet06RigidHotspotFrame.cyclic_thrice",
+        "OQ14.Packet06RigidHotspotFrame.twice_rotate",
+        "OQ14.Packet06RigidHotspotFrame.frame_center",
+        "OQ14.Packet06RigidHotspotFrame.frame_plane",
+        "OQ14.Packet06RigidHotspotFrame.frame_body"
+      ]
+    },
+    {
+      "module": "Packet06RigidCollar",
+      "reports": 3,
+      "source_sha256": "1f3ea90d5b490638fd7586895142762709571aab4890d2c38c9e2a5aa2267cca",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidCollar-chain.log",
+      "audit_log_sha256": "1e34e6acbef2d34b8d3e3d768e230686475fc522c7a68787213aa5507ebcffe4",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidCollar.log",
+      "independent_log_sha256": "1e34e6acbef2d34b8d3e3d768e230686475fc522c7a68787213aa5507ebcffe4",
+      "declarations": [
+        "OQ14.Packet06RigidCollar.axial_collar",
+        "OQ14.Packet06RigidCollar.cyclic_collar",
+        "OQ14.Packet06RigidCollar.affine_collar"
+      ]
+    },
+    {
+      "module": "Packet06RigidCollarFrame",
+      "reports": 1,
+      "source_sha256": "bcdbb528d90256cedb3487a760b7fc5c355a0d319f541480b9609a068e676ebf",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidCollarFrame-chain.log",
+      "audit_log_sha256": "c33d626748ec395733acfe8dcf6ebcacdb6a267a8344a3318f6564b3e90b59e9",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidCollarFrame.log",
+      "independent_log_sha256": "c33d626748ec395733acfe8dcf6ebcacdb6a267a8344a3318f6564b3e90b59e9",
+      "declarations": [
+        "OQ14.Packet06RigidCollarFrame.transform_collars"
+      ]
+    },
+    {
+      "module": "Packet06RigidStateOutgoing",
+      "reports": 1,
+      "source_sha256": "1113d6e835ef72fa54b9cfaaa4e26e2c3a61e8a9653aad90afd2094d04192ebb",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateOutgoing-chain.log",
+      "audit_log_sha256": "e0fa6885ca31767f5b403974d419591f84508472f4e8f3cb6ca7eb94522f6bce",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateOutgoing.log",
+      "independent_log_sha256": "e0fa6885ca31767f5b403974d419591f84508472f4e8f3cb6ca7eb94522f6bce",
+      "declarations": [
+        "OQ14.Packet06RigidStateOutgoing.actual_outgoing"
+      ]
+    },
+    {
+      "module": "Packet06RigidMaterialValues",
+      "reports": 4,
+      "source_sha256": "04bdba28af1fa98466b43e55058e6922dff122b0bce57cf44e6aa7c49a958373",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidMaterialValues-chain.log",
+      "audit_log_sha256": "03fa56d4eb9d330bc1d71cedd62611e665f193b5c35087581b60d6b069baa262",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidMaterialValues.log",
+      "independent_log_sha256": "03fa56d4eb9d330bc1d71cedd62611e665f193b5c35087581b60d6b069baa262",
+      "declarations": [
+        "OQ14.Packet06RigidMaterialValues.axial_value",
+        "OQ14.Packet06RigidMaterialValues.cyclic_value",
+        "OQ14.Packet06RigidMaterialValues.affine_value",
+        "OQ14.Packet06RigidMaterialValues.frame_value"
+      ]
+    },
+    {
+      "module": "Packet06RigidFrameGeometry",
+      "reports": 4,
+      "source_sha256": "2a19cf05c252393c5b29ef5ee9d6ec0df4e74270a34cbf4d1996ca902bc2661d",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidFrameGeometry-chain.log",
+      "audit_log_sha256": "0ce550179187891032ee1b6f0093eff1cb0363560a74b0edc65da693038acfc6",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "independent_review_sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "independent_build_sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidFrameGeometry.log",
+      "independent_log_sha256": "0ce550179187891032ee1b6f0093eff1cb0363560a74b0edc65da693038acfc6",
+      "declarations": [
+        "OQ14.Packet06RigidFrameGeometry.frame_projection",
+        "OQ14.Packet06RigidFrameGeometry.plane_image",
+        "OQ14.Packet06RigidFrameGeometry.frame_balls",
+        "OQ14.Packet06RigidFrameGeometry.transformed_geometry"
+      ]
+    },
+    {
+      "module": "Packet06GenericObservedPole",
+      "reports": 1,
+      "source_sha256": "bd634b54161a8ded6f9a0d7d61c7f36c5f7ca3ced0b4fac0afda416dd4be8af1",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06GenericObservedPole-chain.log",
+      "audit_log_sha256": "060b2a583578b12966a078ad71b5fb5fe744eee0a364db17c0135eec1b15cb18",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06GenericObservedPole.log",
+      "independent_log_sha256": "060b2a583578b12966a078ad71b5fb5fe744eee0a364db17c0135eec1b15cb18",
+      "declarations": [
+        "OQ14.Packet06GenericObservedPole.observed_of_simple"
+      ]
+    },
+    {
+      "module": "Packet06TransportedObservedPole",
+      "reports": 1,
+      "source_sha256": "c26aa3d5949090372fda5d544cc80d2750c8973bfa0a57cee4b6d358ec20d81b",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06TransportedObservedPole-chain.log",
+      "audit_log_sha256": "4e8c2bce50ce84e93024745cfa6b276f08e102c6e7045f59564fcfd205b6366c",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06TransportedObservedPole.log",
+      "independent_log_sha256": "4e8c2bce50ce84e93024745cfa6b276f08e102c6e7045f59564fcfd205b6366c",
+      "declarations": [
+        "OQ14.Packet06TransportedObservedPole.certified_transport"
+      ]
+    },
+    {
+      "module": "Packet06CyclicAxialPencil",
+      "reports": 1,
+      "source_sha256": "aa99c9ff559cec7f9c6847b1b9b19d5550f6a6901be04fcb7b1eee53bc6507e3",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06CyclicAxialPencil-chain.log",
+      "audit_log_sha256": "9b43ca39219358900035a55541ed01d8e7928a59f1b2831631a0716520b9488f",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06CyclicAxialPencil.log",
+      "independent_log_sha256": "9b43ca39219358900035a55541ed01d8e7928a59f1b2831631a0716520b9488f",
+      "declarations": [
+        "OQ14.Packet06CyclicAxialPencil.pencil_eq"
+      ]
+    },
+    {
+      "module": "Packet06CyclicAxialKernel",
+      "reports": 3,
+      "source_sha256": "86069fe7db6ee3c8fe184b30f62013f1f639298e35d4813efa70e4b264895e16",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06CyclicAxialKernel-chain.log",
+      "audit_log_sha256": "f4e19ce336bc47b3cb1349a6da53d48b62324d9f245e280b8791198abefcfe40",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06CyclicAxialKernel.log",
+      "independent_log_sha256": "f4e19ce336bc47b3cb1349a6da53d48b62324d9f245e280b8791198abefcfe40",
+      "declarations": [
+        "OQ14.Packet06CyclicAxialKernel.axial_support",
+        "OQ14.Packet06CyclicAxialKernel.material_support",
+        "OQ14.Packet06CyclicAxialKernel.kernel_transport"
+      ]
+    },
+    {
+      "module": "Packet06RigidPencilState",
+      "reports": 1,
+      "source_sha256": "6ad6087d3c94adaf7c94ab8f4462b2023b98aa03669c0570b3bacfb744422d1d",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilState-chain.log",
+      "audit_log_sha256": "2fd4ef287a92082b0ae82631d8c01f509884176640f57bd7e893acdf5242dfd0",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilState.log",
+      "independent_log_sha256": "2fd4ef287a92082b0ae82631d8c01f509884176640f57bd7e893acdf5242dfd0",
+      "declarations": [
+        "OQ14.Packet06RigidPencilState.initial"
+      ]
+    },
+    {
+      "module": "Packet06RigidPencilAxial",
+      "reports": 1,
+      "source_sha256": "65401d95c05428ed9811b33129b0ef3decd86acf03bff3f972a25d3958797f98",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilAxial-chain.log",
+      "audit_log_sha256": "23e6af69935cef945a071c0c5f4b80f18e53b12a3e2fed59497a23b1265dfff2",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilAxial.log",
+      "independent_log_sha256": "23e6af69935cef945a071c0c5f4b80f18e53b12a3e2fed59497a23b1265dfff2",
+      "declarations": [
+        "OQ14.Packet06RigidPencilState.axial"
+      ]
+    },
+    {
+      "module": "Packet06RigidPencilAffine",
+      "reports": 1,
+      "source_sha256": "38f034543cd70bb1fb7664c9cb4dcc01bc8b465ea8110e9dc3f815e853a799a0",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilAffine-chain.log",
+      "audit_log_sha256": "f07ef528e811e400e1739ff930f5790b04f3367aa36ab9c8ee5bfd7912c24a2e",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilAffine.log",
+      "independent_log_sha256": "f07ef528e811e400e1739ff930f5790b04f3367aa36ab9c8ee5bfd7912c24a2e",
+      "declarations": [
+        "OQ14.Packet06RigidPencilState.affine"
+      ]
+    },
+    {
+      "module": "Packet06RigidStateSectorDefs",
+      "reports": 0,
+      "source_sha256": "734c25bd6502f9ed04fd3e0b6214c2a6a97ac3979171fd7e219432327daec760",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateSectorDefs-chain.log",
+      "audit_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateSectorDefs.log",
+      "independent_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declarations": []
+    },
+    {
+      "module": "Packet06RigidStateSector",
+      "reports": 1,
+      "source_sha256": "c2ffd2afc6ae21a2e04a35062721fb5698ddd7b2a8d704ae0b597057a1c174a7",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateSector-chain.log",
+      "audit_log_sha256": "de3dd5cc1f387b993b9361576135d5f85497533e76f6d4a69a5b5bba53a6e325",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateSector.log",
+      "independent_log_sha256": "de3dd5cc1f387b993b9361576135d5f85497533e76f6d4a69a5b5bba53a6e325",
+      "declarations": [
+        "OQ14.Packet06RigidStateSector.pencil_eq"
+      ]
+    },
+    {
+      "module": "Packet06RigidStateEmbedding",
+      "reports": 1,
+      "source_sha256": "c15ba9052e1080b64152058fb92f7955b42e4113ee1ccf3076aaaa6a0cad7375",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateEmbedding-chain.log",
+      "audit_log_sha256": "39d650c8bd10ecbfab28b929a23ea8b6a1d3799f2a0c71cbcd7bab3016c9e518",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateEmbedding.log",
+      "independent_log_sha256": "39d650c8bd10ecbfab28b929a23ea8b6a1d3799f2a0c71cbcd7bab3016c9e518",
+      "declarations": [
+        "OQ14.Packet06RigidStateSector.embedding_injective"
+      ]
+    },
+    {
+      "module": "Packet06RigidStateObservedPole",
+      "reports": 1,
+      "source_sha256": "99a5d7ddf0e06db737e8f6816b1a750833722d8daa2c14a24b5041fa15e0395c",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateObservedPole-chain.log",
+      "audit_log_sha256": "5f79d37e7a1e4ce406b08b57488b5e2a42babef1ac1646e913b499ea1b69e174",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateObservedPole.log",
+      "independent_log_sha256": "5f79d37e7a1e4ce406b08b57488b5e2a42babef1ac1646e913b499ea1b69e174",
+      "declarations": [
+        "OQ14.Packet06RigidStateObservedPole.certified_observed_pole"
+      ]
+    },
+    {
+      "module": "Packet06FullFrameObservedPole",
+      "reports": 1,
+      "source_sha256": "16d7585da58efd0cb295334c37d8084abc26bb1b531e02ca3dbf04c16fba1a7f",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FullFrameObservedPole-chain.log",
+      "audit_log_sha256": "4b7430cf0e525292945314605368b86713329fb631aafab46dcec09467932a7d",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "independent_review_sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "independent_build_sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FullFrameObservedPole.log",
+      "independent_log_sha256": "4b7430cf0e525292945314605368b86713329fb631aafab46dcec09467932a7d",
+      "declarations": [
+        "OQ14.Packet06FullFrameObservedPole.full_frame_observed_pole"
+      ]
+    },
+    {
+      "module": "Packet06RigidSyncDefs",
+      "reports": 0,
+      "source_sha256": "780f70ab4f5c973931a70707bfbe3b8629750953ee61d341decb12e7b36551f8",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncDefs-chain.log",
+      "audit_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncDefs.log",
+      "independent_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declarations": []
+    },
+    {
+      "module": "Packet06RigidSyncAxial",
+      "reports": 1,
+      "source_sha256": "a1b7c475489813832b731420186640c14abd96c1bb3eb4ab9e1991c800b483ba",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncAxial-chain.log",
+      "audit_log_sha256": "e79009cf562d851e3ffa61925788a186f8812e706a97533f8eff4c552acfda4f",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncAxial.log",
+      "independent_log_sha256": "e79009cf562d851e3ffa61925788a186f8812e706a97533f8eff4c552acfda4f",
+      "declarations": [
+        "OQ14.Packet06RigidStateSync.axial_sync"
+      ]
+    },
+    {
+      "module": "Packet06RigidStateProjection",
+      "reports": 3,
+      "source_sha256": "9483d926606f7f282e092a088d0182492bc253c7a4ad9c6c8ad603c777a97cac",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateProjection-chain.log",
+      "audit_log_sha256": "19ad13b7b76831266eb28fca3d0d7a07ac2d6db55e9c55b6fdc3130e6997fc10",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateProjection.log",
+      "independent_log_sha256": "19ad13b7b76831266eb28fca3d0d7a07ac2d6db55e9c55b6fdc3130e6997fc10",
+      "declarations": [
+        "OQ14.Packet06RigidStateProjection.pencil_affine_embedding",
+        "OQ14.Packet06RigidStateProjection.hotspot_affine_unknown",
+        "OQ14.Packet06RigidStateProjection.hotspot_cyclic_unknown"
+      ]
+    },
+    {
+      "module": "Packet06RigidSyncAffine",
+      "reports": 1,
+      "source_sha256": "61f56e83e596908ee454470ace7407cd3dfa05de2fcd948da7a3e45148fdc0aa",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncAffine-chain.log",
+      "audit_log_sha256": "d526536c29ea57c8efd0b2cbb6fe24f1c30212e1393fad556f0aaabcb11401c8",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncAffine.log",
+      "independent_log_sha256": "d526536c29ea57c8efd0b2cbb6fe24f1c30212e1393fad556f0aaabcb11401c8",
+      "declarations": [
+        "OQ14.Packet06RigidStateSync.affine_sync"
+      ]
+    },
+    {
+      "module": "Packet06RigidSyncCyclic",
+      "reports": 1,
+      "source_sha256": "dc9fe9e2fb55a83ab646f44c27e587bc18cde711e08018315ef841438230750c",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncCyclic-chain.log",
+      "audit_log_sha256": "9cca6fcc348b605672845c696c4fb05f91806717d8ae6e52120ec156a9fa04ff",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncCyclic.log",
+      "independent_log_sha256": "9cca6fcc348b605672845c696c4fb05f91806717d8ae6e52120ec156a9fa04ff",
+      "declarations": [
+        "OQ14.Packet06RigidStateSync.cyclic_sync"
+      ]
+    },
+    {
+      "module": "Packet06RigidFullSync",
+      "reports": 1,
+      "source_sha256": "4bacbe9756707b04d30e8073ffbf458e84e8f6fa0d7a258f636f0c6e836e2bd9",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidFullSync-chain.log",
+      "audit_log_sha256": "67bcac81675b2112798b2fa00f140434eb6bed0658156ed7611772943f298d46",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "independent_review_sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "independent_build_sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidFullSync.log",
+      "independent_log_sha256": "67bcac81675b2112798b2fa00f140434eb6bed0658156ed7611772943f298d46",
+      "declarations": [
+        "OQ14.Packet06RigidStateSync.full_sync"
+      ]
+    },
+    {
+      "module": "Packet07DrivenFrameAE",
+      "reports": 3,
+      "source_sha256": "c98149673bda0980e93833523e399e7b38b5da90d38fc2fab96e025578f6caa6",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenFrameAE-chain.log",
+      "audit_log_sha256": "4938b67e66dee0ef228594dac1f6a245e3b5e25dba91571fb1b0c121c641729e",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-review.txt",
+      "independent_review_sha256": "9dd6d95cd118d45cd010baae11a0cff74b15de6e29fa4ce2a923989cafba1cac",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-build.json",
+      "independent_build_sha256": "c8d09aea782b53b99a5d2422a91fd03929cd21fd16a7c5026d0e2247ffa508b3",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenFrameAE.log",
+      "independent_log_sha256": "4938b67e66dee0ef228594dac1f6a245e3b5e25dba91571fb1b0c121c641729e",
+      "declarations": [
+        "OQ14.Packet07DrivenFrameAE.axial",
+        "OQ14.Packet07DrivenFrameAE.cyclic",
+        "OQ14.Packet07DrivenFrameAE.frame"
+      ]
+    },
+    {
+      "module": "Packet07DrivenRigidAE",
+      "reports": 3,
+      "source_sha256": "97376e11e04d392a2885222b6d7be8722e3189650c155f2d3841eb9b56d42464",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenRigidAE-chain.log",
+      "audit_log_sha256": "a641bf862c2c84073757ea896202e4022b68fd374785104797c6eae3d85c7c8f",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-review.txt",
+      "independent_review_sha256": "9dd6d95cd118d45cd010baae11a0cff74b15de6e29fa4ce2a923989cafba1cac",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-build.json",
+      "independent_build_sha256": "c8d09aea782b53b99a5d2422a91fd03929cd21fd16a7c5026d0e2247ffa508b3",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenRigidAE.log",
+      "independent_log_sha256": "a641bf862c2c84073757ea896202e4022b68fd374785104797c6eae3d85c7c8f",
+      "declarations": [
+        "OQ14.Packet07DrivenRigidAE.field_add",
+        "OQ14.Packet07DrivenRigidAE.field_ae",
+        "OQ14.Packet07DrivenRigidAE.exterior_decomposition"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlaneHotspots",
+      "reports": 1,
+      "source_sha256": "6d1d9572d6d9c7d63410e852196c9cf557aff122957fed687e80f7efbe732098",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneHotspots-chain.log",
+      "audit_log_sha256": "09aac3b60e5de76d8ede0c365e814d58d54f6dbc5e572ed98ab6944e66f01fbf",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-review.txt",
+      "independent_review_sha256": "45cf65c885a3182a0c13c62684953190fbf04495bcf0e40ed12084eec0add37f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-build.json",
+      "independent_build_sha256": "5b3b070deb250f6953c8707c252e36905018ac79947ce2412d3c44401e2d99a1",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneHotspots.log",
+      "independent_log_sha256": "09aac3b60e5de76d8ede0c365e814d58d54f6dbc5e572ed98ab6944e66f01fbf",
+      "declarations": [
+        "OQ14.Packet07DrivenPlaneHotspots.plane_hotspots"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlaneComplete",
+      "reports": 1,
+      "source_sha256": "d430e4883bac72b922445e2f16b9093ccc026274c7ea58ab16e178cc36861418",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneComplete-chain.log",
+      "audit_log_sha256": "7bd3f4b2a0e3c7cf4a193e813a0c73f2bf708db4cfd511c1716c2e907642e185",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-review.txt",
+      "independent_review_sha256": "45cf65c885a3182a0c13c62684953190fbf04495bcf0e40ed12084eec0add37f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-build.json",
+      "independent_build_sha256": "5b3b070deb250f6953c8707c252e36905018ac79947ce2412d3c44401e2d99a1",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneComplete.log",
+      "independent_log_sha256": "7bd3f4b2a0e3c7cf4a193e813a0c73f2bf708db4cfd511c1716c2e907642e185",
+      "declarations": [
+        "OQ14.Packet07DrivenPlaneComplete.plane_complete"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlaneCeiling",
+      "reports": 1,
+      "source_sha256": "48cc912ecebba348f08474747e7f301e75918acf46d18e48e3a9f5b3c8e8e3b2",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneCeiling-chain.log",
+      "audit_log_sha256": "c2c52312ec11591ec63bc0f20233f62c3f60939c74a19c642f3b321856627aeb",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-review.txt",
+      "independent_review_sha256": "45cf65c885a3182a0c13c62684953190fbf04495bcf0e40ed12084eec0add37f",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-build.json",
+      "independent_build_sha256": "5b3b070deb250f6953c8707c252e36905018ac79947ce2412d3c44401e2d99a1",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneCeiling.log",
+      "independent_log_sha256": "c2c52312ec11591ec63bc0f20233f62c3f60939c74a19c642f3b321856627aeb",
+      "declarations": [
+        "OQ14.Packet07DrivenPlaneCeiling.plane_ceiling"
+      ]
+    },
+    {
+      "module": "Packet07DrivenPlaneFinal",
+      "reports": 1,
+      "source_sha256": "fa8f9ab04f3304f867650445395dd5e7d6da730580931f813b88c25fbe90e3c0",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneFinal-chain.log",
+      "audit_log_sha256": "477e6fe117b5eb740cbefcd484eb3bf0a3c1da55bb4d349d35c3171b5f29e430",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenfinal-review.txt",
+      "independent_review_sha256": "0fae82b7b2031f4ba9007e8569fa54235f74ae57b33328820a092be8f448b435",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenfinal-build.json",
+      "independent_build_sha256": "9a346c93ef8a94956f2f9e32122b1c090c47892545fe4777201ce888c879fdc8",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneFinal.log",
+      "independent_log_sha256": "477e6fe117b5eb740cbefcd484eb3bf0a3c1da55bb4d349d35c3171b5f29e430",
+      "declarations": [
+        "OQ14.Packet07DrivenPlaneFinal.plane_final"
+      ]
+    },
+    {
+      "module": "Packet06RigidInitial",
+      "reports": 2,
+      "source_sha256": "847766efde97f4a02c8dfff1db9f3a4b47271e4b81e8c4cb3c50751960fe7756",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidInitial-chain.log",
+      "audit_log_sha256": "e2b5a0a7b01153c88deb0343842e2a46cf4c26796c2bf4d4db1476ff7815bf32",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "independent_review_sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "independent_build_sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidInitial.log",
+      "independent_log_sha256": "e2b5a0a7b01153c88deb0343842e2a46cf4c26796c2bf4d4db1476ff7815bf32",
+      "declarations": [
+        "OQ14.Packet06RigidInitial.initial",
+        "OQ14.Packet06RigidInitial.initial_collars"
+      ]
+    },
+    {
+      "module": "Packet06RigidMaterialShape",
+      "reports": 1,
+      "source_sha256": "8e614a34cc2ce8ba4af9a7ccd8332f768efc1b4a686c0ee68182c8ea481c0dff",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidMaterialShape-chain.log",
+      "audit_log_sha256": "576df39c1c8b28d7231decebf1f790a67be43221d7d491c0a7e070049a65758d",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "independent_review_sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "independent_build_sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidMaterialShape.log",
+      "independent_log_sha256": "576df39c1c8b28d7231decebf1f790a67be43221d7d491c0a7e070049a65758d",
+      "declarations": [
+        "OQ14.Packet06RigidMaterialShape.material_shape"
+      ]
+    },
+    {
+      "module": "Packet06AffineModalExistence",
+      "reports": 1,
+      "source_sha256": "28f32ef9f9878df4f9645667ebfb0d52463c5a5bce9538752ea6685b9bc61ddb",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineModalExistence-chain.log",
+      "audit_log_sha256": "a2c9c614cd650a86aced55cfd7d93e8cfdb99f0ac49dcc22fc001a626f180232",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "independent_review_sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "independent_build_sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineModalExistence.log",
+      "independent_log_sha256": "a2c9c614cd650a86aced55cfd7d93e8cfdb99f0ac49dcc22fc001a626f180232",
+      "declarations": [
+        "OQ14.Packet06AffineModalExistence.exists_affine_modal_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06AffineModalPole",
+      "reports": 1,
+      "source_sha256": "99390a5fec6a254c1be2ff19e380068b124dde060b0c1a1edf9da9c8f6815e5d",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineModalPole-chain.log",
+      "audit_log_sha256": "c115cc85f8955004335710283d603aba6a6e9675201a8f6fb146e3f3a6370552",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "independent_review_sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "independent_build_sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineModalPole.log",
+      "independent_log_sha256": "c115cc85f8955004335710283d603aba6a6e9675201a8f6fb146e3f3a6370552",
+      "declarations": [
+        "OQ14.Packet06AffineModalPole.final_observed_pole"
+      ]
+    },
+    {
+      "module": "Packet06FinalAffineModal",
+      "reports": 1,
+      "source_sha256": "c6e121dd70a56ac9d1f7a55b15b73deff6d6918e9f82dc8bbb0ef4f2459c2a14",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FinalAffineModal-chain.log",
+      "audit_log_sha256": "503c3343a6fbec7d7b6cbfd395a20cb9d5a1d264374f57a01cadcf84734d351b",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "independent_review_sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "independent_build_sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FinalAffineModal.log",
+      "independent_log_sha256": "503c3343a6fbec7d7b6cbfd395a20cb9d5a1d264374f57a01cadcf84734d351b",
+      "declarations": [
+        "OQ14.Packet06FinalAffineModal.exists_physical_modal_hotspots"
+      ]
+    },
+    {
+      "module": "Packet06ModalTranslatedVolumeProperties",
+      "reports": 1,
+      "source_sha256": "aec33d9bf590ddcf7c92a9a036678ff91056d1734ae85c0b4c13f8cf8c369ce9",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06ModalTranslatedVolumeProperties-chain.log",
+      "audit_log_sha256": "3a320f9f35a3da6962afc95d92392f4bda09355b176ff3bc2f5a35187167c92f",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-review.txt",
+      "independent_review_sha256": "0d41ea66bb0a20d02eeefe50cdd396cceeb6c02c3c2d659383abb75ed39a93f5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-build.json",
+      "independent_build_sha256": "b023b8fae83a3798da34181e06060dd49377d6c6cd34db823cf29538896b4678",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06ModalTranslatedVolumeProperties.log",
+      "independent_log_sha256": "3a320f9f35a3da6962afc95d92392f4bda09355b176ff3bc2f5a35187167c92f",
+      "declarations": [
+        "OQ14.Packet06ModalTranslatedVolumeProperties.eventual_placed_properties"
+      ]
+    },
+    {
+      "module": "Packet06LocalizedVolumeFamily",
+      "reports": 1,
+      "source_sha256": "431ffb9b94ceb9ec3ccf017100bd7d3ec92affa43031d020447512d86498b376",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06LocalizedVolumeFamily-chain.log",
+      "audit_log_sha256": "aff7b03d8dfa21ea38b5b57eeb5ecc81a4d8a331d00942e367e121f6a3f8b49f",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-review.txt",
+      "independent_review_sha256": "0d41ea66bb0a20d02eeefe50cdd396cceeb6c02c3c2d659383abb75ed39a93f5",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-build.json",
+      "independent_build_sha256": "b023b8fae83a3798da34181e06060dd49377d6c6cd34db823cf29538896b4678",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06LocalizedVolumeFamily.log",
+      "independent_log_sha256": "aff7b03d8dfa21ea38b5b57eeb5ecc81a4d8a331d00942e367e121f6a3f8b49f",
+      "declarations": [
+        "OQ14.Packet06LocalizedVolumeFamily.exists_localized_volume_family"
+      ]
+    },
+    {
+      "module": "Packet06RigidWeightedMaximum",
+      "reports": 0,
+      "source_sha256": "99059f11b2c9505817cc5906bf7bea7bd132dafa8a37d77a7d7dc1bc95509503",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidWeightedMaximum-chain.log",
+      "audit_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidWeightedMaximum.log",
+      "independent_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declarations": []
+    },
+    {
+      "module": "Packet06AxialWeightedMaximum",
+      "reports": 1,
+      "source_sha256": "88b0804587b332c6f0ed82cbd539f1d201aabff6ac5b98172d97e5a59e181294",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AxialWeightedMaximum-chain.log",
+      "audit_log_sha256": "d3a43e11cf676955189a70035b8c3a5d2aaf8f44c6ad646368e45b172d917251",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AxialWeightedMaximum.log",
+      "independent_log_sha256": "d3a43e11cf676955189a70035b8c3a5d2aaf8f44c6ad646368e45b172d917251",
+      "declarations": [
+        "OQ14.Packet06AxialWeightedMaximum.axial_weighted"
+      ]
+    },
+    {
+      "module": "Packet06AffineWeightedMaximum",
+      "reports": 1,
+      "source_sha256": "9926f36adee2366a34587254d6a74833b8eaea33ce0a706f82be955423acdbdb",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineWeightedMaximum-chain.log",
+      "audit_log_sha256": "ee3f5e5db7a305f34b0183d5ae9eda2ff1123ade9d973bba27e6608cbbdd503a",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineWeightedMaximum.log",
+      "independent_log_sha256": "ee3f5e5db7a305f34b0183d5ae9eda2ff1123ade9d973bba27e6608cbbdd503a",
+      "declarations": [
+        "OQ14.Packet06AffineWeightedMaximum.affine_weighted"
+      ]
+    },
+    {
+      "module": "Packet06RigidWeightedStep",
+      "reports": 3,
+      "source_sha256": "8b069c9550a1564c72c16bc3086733088e605528af7e2e7e383243fb3ed0b141",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidWeightedStep-chain.log",
+      "audit_log_sha256": "158f8a5117f88a5248fc19fa11dda3d0fe5613ec64213f0f39df1cd1fb59b9c4",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidWeightedStep.log",
+      "independent_log_sha256": "158f8a5117f88a5248fc19fa11dda3d0fe5613ec64213f0f39df1cd1fb59b9c4",
+      "declarations": [
+        "OQ14.Packet06RigidWeightedStep.axial_step",
+        "OQ14.Packet06RigidWeightedStep.affine_step",
+        "OQ14.Packet06RigidWeightedStep.cyclic_step"
+      ]
+    },
+    {
+      "module": "Packet06FrameWeightedMaximum",
+      "reports": 4,
+      "source_sha256": "f33d02c3e1516ccf11e6fa79e8c6274ca15f35320a919abd6c092e91baa2c5cb",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FrameWeightedMaximum-chain.log",
+      "audit_log_sha256": "b1b6e10450afc9f9e5c233247ca4d1e796a1e64b567fe0e6b2ef3d16517e0c6b",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FrameWeightedMaximum.log",
+      "independent_log_sha256": "b1b6e10450afc9f9e5c233247ca4d1e796a1e64b567fe0e6b2ef3d16517e0c6b",
+      "declarations": [
+        "OQ14.Packet06FrameWeightedMaximum.axial_value",
+        "OQ14.Packet06FrameWeightedMaximum.affine_value",
+        "OQ14.Packet06FrameWeightedMaximum.cyclic_value",
+        "OQ14.Packet06FrameWeightedMaximum.full_frame_value"
+      ]
+    },
+    {
+      "module": "Packet06WeightedDirectionalFamily",
+      "reports": 1,
+      "source_sha256": "da75dbb6d318ea5236f9cb34186bbebe43a7fd766786a34654b376ab3f854e9e",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06WeightedDirectionalFamily-chain.log",
+      "audit_log_sha256": "256d3cdddece1d413f3421e39f5f9004a91e48d640bdcb112c751733cc35f73e",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06WeightedDirectionalFamily.log",
+      "independent_log_sha256": "256d3cdddece1d413f3421e39f5f9004a91e48d640bdcb112c751733cc35f73e",
+      "declarations": [
+        "OQ14.Packet06WeightedDirectionalFamily.directional_from_weighted"
+      ]
+    },
+    {
+      "module": "Packet06WeightedMaximumDivergence",
+      "reports": 1,
+      "source_sha256": "2057d81a0acbdfe62e5ebf979bd76243a644ee37db7afae84a495f35cfa140ee",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06WeightedMaximumDivergence-chain.log",
+      "audit_log_sha256": "db334d32b962d7b7b307f9c9c60026431da0ce946b832f0aa043f7f8ea26ec6e",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06WeightedMaximumDivergence.log",
+      "independent_log_sha256": "db334d32b962d7b7b307f9c9c60026431da0ce946b832f0aa043f7f8ea26ec6e",
+      "declarations": [
+        "OQ14.Packet06WeightedMaximumDivergence.weighted_diverges"
+      ]
+    },
+    {
+      "module": "Packet06PlacedWeightedState",
+      "reports": 1,
+      "source_sha256": "7fd4771a2c62cba1775af506c9d7f4e89b68fd02dfe8f936a11a00eff80f86e1",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06PlacedWeightedState-chain.log",
+      "audit_log_sha256": "ceab5db666c01565295f5d3670ca830c43a625fde5d3f910bb4bf78bd5d8a101",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06PlacedWeightedState.log",
+      "independent_log_sha256": "ceab5db666c01565295f5d3670ca830c43a625fde5d3f910bb4bf78bd5d8a101",
+      "declarations": [
+        "OQ14.Packet06PlacedWeightedState.placed_has_value"
+      ]
+    },
+    {
+      "module": "Packet06FrameWeightedFamily",
+      "reports": 1,
+      "source_sha256": "f5e592bc23c74db9d3474c2b3329b3bd22e6bb14e3be41fd7efe1534e326aca3",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FrameWeightedFamily-chain.log",
+      "audit_log_sha256": "25f1fcfcf1c3e4db8393c08ea74e3f844adf7e58ec388e0320ec54d696aa74f1",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "independent_review_sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "independent_build_sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FrameWeightedFamily.log",
+      "independent_log_sha256": "25f1fcfcf1c3e4db8393c08ea74e3f844adf7e58ec388e0320ec54d696aa74f1",
+      "declarations": [
+        "OQ14.Packet06FrameWeightedFamily.frame_family_volume"
+      ]
+    },
+    {
+      "module": "Packet06LocalizedVolumeState",
+      "reports": 1,
+      "source_sha256": "8c1b5138b914e7d1955a214ce1557835cebda4a2e6a3a55bcfeba680a3dfc078",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06LocalizedVolumeState-chain.log",
+      "audit_log_sha256": "768b72dc47c51d27f6e7e59a6d32505419ebdecc657ee0eede2f1b40b1c0918b",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localstate-review.txt",
+      "independent_review_sha256": "c6a53fb518c742f82dada27d4ef3e3e05e30377fff6525f553989d5b5b5e8f06",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localstate-build.json",
+      "independent_build_sha256": "a8e955cec5b04d62339ba6db0fc55649c8b1f4b5943a1f851a6860db066821a0",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06LocalizedVolumeState.log",
+      "independent_log_sha256": "768b72dc47c51d27f6e7e59a6d32505419ebdecc657ee0eede2f1b40b1c0918b",
+      "declarations": [
+        "OQ14.Packet06LocalizedVolumeState.initial"
+      ]
+    },
+    {
+      "module": "Packet06RigidPhasePermittivity",
+      "reports": 3,
+      "source_sha256": "bd601be64d3b97d903cf8f8b94d2c6bdd654616e8492f067098ac94e3ec61e4a",
+      "audit_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPhasePermittivity-chain.log",
+      "audit_log_sha256": "a00a0cd1902c50372484ee9077c7fd273f7bfd0b0f9854e5dbba68d790101f26",
+      "independent_review": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/phase-review.txt",
+      "independent_review_sha256": "675d4d848b074cda664766f0749c5ebc275c4b8eb4ad9e2d0431e83359a98143",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/phase-build.json",
+      "independent_build_sha256": "ca12740d3dda8f0c069d8744228089378b9bf3b11028fdac0ce7b4e05ee63cfe",
+      "independent_log": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPhasePermittivity.log",
+      "independent_log_sha256": "a00a0cd1902c50372484ee9077c7fd273f7bfd0b0f9854e5dbba68d790101f26",
+      "declarations": [
+        "OQ14.Packet06RigidPhasePermittivity.phase_ball_image",
+        "OQ14.Packet06RigidPhasePermittivity.same_side_values",
+        "OQ14.Packet06RigidPhasePermittivity.trace_weights_continuous"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/audited_after_5238-stage114.json",
+      "sha256": "5702c5ce842c040d4e6403433b7795184188016baa2c71669961559892bbd937"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/chain-build.json",
+      "sha256": "3717fa9744be0fb1efb25a93a597dfb0e93829521e8924076e9366cd655c5cd0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineModalExistence-chain.log",
+      "sha256": "a2c9c614cd650a86aced55cfd7d93e8cfdb99f0ac49dcc22fc001a626f180232"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineModalPole-chain.log",
+      "sha256": "c115cc85f8955004335710283d603aba6a6e9675201a8f6fb146e3f3a6370552"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AffineWeightedMaximum-chain.log",
+      "sha256": "ee3f5e5db7a305f34b0183d5ae9eda2ff1123ade9d973bba27e6608cbbdd503a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AxialHotspotStart-chain.log",
+      "sha256": "ce09e6a3e7decda91532c66a5810a7e4727bf3fc83e26e49359688415b84a6cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06AxialWeightedMaximum-chain.log",
+      "sha256": "d3a43e11cf676955189a70035b8c3a5d2aaf8f44c6ad646368e45b172d917251"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06CyclicAxialKernel-chain.log",
+      "sha256": "f4e19ce336bc47b3cb1349a6da53d48b62324d9f245e280b8791198abefcfe40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06CyclicAxialPencil-chain.log",
+      "sha256": "9b43ca39219358900035a55541ed01d8e7928a59f1b2831631a0716520b9488f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FinalAffineModal-chain.log",
+      "sha256": "503c3343a6fbec7d7b6cbfd395a20cb9d5a1d264374f57a01cadcf84734d351b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FrameWeightedFamily-chain.log",
+      "sha256": "25f1fcfcf1c3e4db8393c08ea74e3f844adf7e58ec388e0320ec54d696aa74f1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FrameWeightedMaximum-chain.log",
+      "sha256": "b1b6e10450afc9f9e5c233247ca4d1e796a1e64b567fe0e6b2ef3d16517e0c6b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06FullFrameObservedPole-chain.log",
+      "sha256": "4b7430cf0e525292945314605368b86713329fb631aafab46dcec09467932a7d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06GenericObservedPole-chain.log",
+      "sha256": "060b2a583578b12966a078ad71b5fb5fe744eee0a364db17c0135eec1b15cb18"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06LocalizedVolumeFamily-chain.log",
+      "sha256": "aff7b03d8dfa21ea38b5b57eeb5ecc81a4d8a331d00942e367e121f6a3f8b49f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06LocalizedVolumeState-chain.log",
+      "sha256": "768b72dc47c51d27f6e7e59a6d32505419ebdecc657ee0eede2f1b40b1c0918b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06ModalTranslatedVolumeProperties-chain.log",
+      "sha256": "3a320f9f35a3da6962afc95d92392f4bda09355b176ff3bc2f5a35187167c92f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06PlacedWeightedState-chain.log",
+      "sha256": "ceab5db666c01565295f5d3670ca830c43a625fde5d3f910bb4bf78bd5d8a101"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidCollar-chain.log",
+      "sha256": "1e34e6acbef2d34b8d3e3d768e230686475fc522c7a68787213aa5507ebcffe4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidCollarFrame-chain.log",
+      "sha256": "c33d626748ec395733acfe8dcf6ebcacdb6a267a8344a3318f6564b3e90b59e9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidFrameGeometry-chain.log",
+      "sha256": "0ce550179187891032ee1b6f0093eff1cb0363560a74b0edc65da693038acfc6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidFullSync-chain.log",
+      "sha256": "67bcac81675b2112798b2fa00f140434eb6bed0658156ed7611772943f298d46"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotAffine-chain.log",
+      "sha256": "174d7e171bed69502b80f2d95f281d1721eb324c99adf1537ef738fa1bb15741"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotFrame-chain.log",
+      "sha256": "a2d0aea995f02e4cedf676cc531ce1ec87018d2ae17807cd45e90b3e37899edd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidHotspotState-chain.log",
+      "sha256": "6af3ee1743c8f0b32dbf9aea6757d9609145dbeed0c8ce7f1aef44fa635604e2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidInitial-chain.log",
+      "sha256": "e2b5a0a7b01153c88deb0343842e2a46cf4c26796c2bf4d4db1476ff7815bf32"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidMaterialShape-chain.log",
+      "sha256": "576df39c1c8b28d7231decebf1f790a67be43221d7d491c0a7e070049a65758d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidMaterialValues-chain.log",
+      "sha256": "03fa56d4eb9d330bc1d71cedd62611e665f193b5c35087581b60d6b069baa262"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilAffine-chain.log",
+      "sha256": "f07ef528e811e400e1739ff930f5790b04f3367aa36ab9c8ee5bfd7912c24a2e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilAxial-chain.log",
+      "sha256": "23e6af69935cef945a071c0c5f4b80f18e53b12a3e2fed59497a23b1265dfff2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPencilState-chain.log",
+      "sha256": "2fd4ef287a92082b0ae82631d8c01f509884176640f57bd7e893acdf5242dfd0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidPhasePermittivity-chain.log",
+      "sha256": "a00a0cd1902c50372484ee9077c7fd273f7bfd0b0f9854e5dbba68d790101f26"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateEmbedding-chain.log",
+      "sha256": "39d650c8bd10ecbfab28b929a23ea8b6a1d3799f2a0c71cbcd7bab3016c9e518"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateObservedPole-chain.log",
+      "sha256": "5f79d37e7a1e4ce406b08b57488b5e2a42babef1ac1646e913b499ea1b69e174"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateOutgoing-chain.log",
+      "sha256": "e0fa6885ca31767f5b403974d419591f84508472f4e8f3cb6ca7eb94522f6bce"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateProjection-chain.log",
+      "sha256": "19ad13b7b76831266eb28fca3d0d7a07ac2d6db55e9c55b6fdc3130e6997fc10"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateSector-chain.log",
+      "sha256": "de3dd5cc1f387b993b9361576135d5f85497533e76f6d4a69a5b5bba53a6e325"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidStateSectorDefs-chain.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncAffine-chain.log",
+      "sha256": "d526536c29ea57c8efd0b2cbb6fe24f1c30212e1393fad556f0aaabcb11401c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncAxial-chain.log",
+      "sha256": "e79009cf562d851e3ffa61925788a186f8812e706a97533f8eff4c552acfda4f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncCyclic-chain.log",
+      "sha256": "9cca6fcc348b605672845c696c4fb05f91806717d8ae6e52120ec156a9fa04ff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidSyncDefs-chain.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidWeightedMaximum-chain.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06RigidWeightedStep-chain.log",
+      "sha256": "158f8a5117f88a5248fc19fa11dda3d0fe5613ec64213f0f39df1cd1fb59b9c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06TransportedObservedPole-chain.log",
+      "sha256": "4e8c2bce50ce84e93024745cfa6b276f08e102c6e7045f59564fcfd205b6366c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06WeightedDirectionalFamily-chain.log",
+      "sha256": "256d3cdddece1d413f3421e39f5f9004a91e48d640bdcb112c751733cc35f73e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet06WeightedMaximumDivergence-chain.log",
+      "sha256": "db334d32b962d7b7b307f9c9c60026431da0ce946b832f0aa043f7f8ea26ec6e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenFrameAE-chain.log",
+      "sha256": "4938b67e66dee0ef228594dac1f6a245e3b5e25dba91571fb1b0c121c641729e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneCeiling-chain.log",
+      "sha256": "c2c52312ec11591ec63bc0f20233f62c3f60939c74a19c642f3b321856627aeb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneComplete-chain.log",
+      "sha256": "7bd3f4b2a0e3c7cf4a193e813a0c73f2bf708db4cfd511c1716c2e907642e185"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneFinal-chain.log",
+      "sha256": "477e6fe117b5eb740cbefcd484eb3bf0a3c1da55bb4d349d35c3171b5f29e430"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenPlaneHotspots-chain.log",
+      "sha256": "09aac3b60e5de76d8ede0c365e814d58d54f6dbc5e572ed98ab6944e66f01fbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/evidence/Packet07DrivenRigidAE-chain.log",
+      "sha256": "a641bf862c2c84073757ea896202e4022b68fd374785104797c6eae3d85c7c8f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/modules.json",
+      "sha256": "102cd5c577f5c41b7b958049f1a8a933b61f668e5f5d684f014e139d0aea0b36"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/provenance-audit.json",
+      "sha256": "b73da47e214126706b08932e85d07fac80bbe057f35d58cc69db503e519fc921"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/author-inventory.json",
+      "sha256": "b6e8018766e8573ce7b46b557bcbdf119fb5a36126bc6263a51598138f0ea23b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-build.json",
+      "sha256": "c8d09aea782b53b99a5d2422a91fd03929cd21fd16a7c5026d0e2247ffa508b3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenae-review.txt",
+      "sha256": "9dd6d95cd118d45cd010baae11a0cff74b15de6e29fa4ce2a923989cafba1cac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenfinal-build.json",
+      "sha256": "9a346c93ef8a94956f2f9e32122b1c090c47892545fe4777201ce888c879fdc8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenfinal-review.txt",
+      "sha256": "0fae82b7b2031f4ba9007e8569fa54235f74ae57b33328820a092be8f448b435"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-build.json",
+      "sha256": "5b3b070deb250f6953c8707c252e36905018ac79947ce2412d3c44401e2d99a1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/drivenplane-review.txt",
+      "sha256": "45cf65c885a3182a0c13c62684953190fbf04495bcf0e40ed12084eec0add37f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/independent-index.json",
+      "sha256": "46bf1b4666aa26afeb654a7c3f460d7239c20118a0f50053c10e9ce557969693"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-build.json",
+      "sha256": "b023b8fae83a3798da34181e06060dd49377d6c6cd34db823cf29538896b4678"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localized-review.txt",
+      "sha256": "0d41ea66bb0a20d02eeefe50cdd396cceeb6c02c3c2d659383abb75ed39a93f5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localstate-build.json",
+      "sha256": "a8e955cec5b04d62339ba6db0fc55649c8b1f4b5943a1f851a6860db066821a0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/localstate-review.txt",
+      "sha256": "c6a53fb518c742f82dada27d4ef3e3e05e30377fff6525f553989d5b5b5e8f06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/metadata-normalization.json",
+      "sha256": "4305aa76623ff66a4230acb01ce1e0e62b4e6150f8136929676c2dd1c6e3727f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-build.json",
+      "sha256": "32123276cfe80294acc9f49cb69ad2c44a449fe82cf9569fb7294b5b21a84d17"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalfinal-review.txt",
+      "sha256": "684899001be684ca564f1c18d81f954c78b1c7adecf211e557bb9e00c79ac5d3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-build.json",
+      "sha256": "251f23421a3c1764fc683d4235631c4fd8561eb37f281956f0bdf0a620c2ffa4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/modalrigid-review.txt",
+      "sha256": "2ef6ebdf429bedc12a6604fdebf61cd8d3e3b9e9449bd3f2b47ab61726786fa6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineModalExistence.log",
+      "sha256": "a2c9c614cd650a86aced55cfd7d93e8cfdb99f0ac49dcc22fc001a626f180232"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineModalPole.log",
+      "sha256": "c115cc85f8955004335710283d603aba6a6e9675201a8f6fb146e3f3a6370552"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AffineWeightedMaximum.log",
+      "sha256": "ee3f5e5db7a305f34b0183d5ae9eda2ff1123ade9d973bba27e6608cbbdd503a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AxialHotspotStart.log",
+      "sha256": "ce09e6a3e7decda91532c66a5810a7e4727bf3fc83e26e49359688415b84a6cf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06AxialWeightedMaximum.log",
+      "sha256": "d3a43e11cf676955189a70035b8c3a5d2aaf8f44c6ad646368e45b172d917251"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06CyclicAxialKernel.log",
+      "sha256": "f4e19ce336bc47b3cb1349a6da53d48b62324d9f245e280b8791198abefcfe40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06CyclicAxialPencil.log",
+      "sha256": "9b43ca39219358900035a55541ed01d8e7928a59f1b2831631a0716520b9488f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FinalAffineModal.log",
+      "sha256": "503c3343a6fbec7d7b6cbfd395a20cb9d5a1d264374f57a01cadcf84734d351b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FrameWeightedFamily.log",
+      "sha256": "25f1fcfcf1c3e4db8393c08ea74e3f844adf7e58ec388e0320ec54d696aa74f1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FrameWeightedMaximum.log",
+      "sha256": "b1b6e10450afc9f9e5c233247ca4d1e796a1e64b567fe0e6b2ef3d16517e0c6b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06FullFrameObservedPole.log",
+      "sha256": "4b7430cf0e525292945314605368b86713329fb631aafab46dcec09467932a7d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06GenericObservedPole.log",
+      "sha256": "060b2a583578b12966a078ad71b5fb5fe744eee0a364db17c0135eec1b15cb18"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06LocalizedVolumeFamily.log",
+      "sha256": "aff7b03d8dfa21ea38b5b57eeb5ecc81a4d8a331d00942e367e121f6a3f8b49f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06LocalizedVolumeState.log",
+      "sha256": "768b72dc47c51d27f6e7e59a6d32505419ebdecc657ee0eede2f1b40b1c0918b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06ModalTranslatedVolumeProperties.log",
+      "sha256": "3a320f9f35a3da6962afc95d92392f4bda09355b176ff3bc2f5a35187167c92f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06PlacedWeightedState.log",
+      "sha256": "ceab5db666c01565295f5d3670ca830c43a625fde5d3f910bb4bf78bd5d8a101"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidCollar.log",
+      "sha256": "1e34e6acbef2d34b8d3e3d768e230686475fc522c7a68787213aa5507ebcffe4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidCollarFrame.log",
+      "sha256": "c33d626748ec395733acfe8dcf6ebcacdb6a267a8344a3318f6564b3e90b59e9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidFrameGeometry.log",
+      "sha256": "0ce550179187891032ee1b6f0093eff1cb0363560a74b0edc65da693038acfc6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidFullSync.log",
+      "sha256": "67bcac81675b2112798b2fa00f140434eb6bed0658156ed7611772943f298d46"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotAffine.log",
+      "sha256": "174d7e171bed69502b80f2d95f281d1721eb324c99adf1537ef738fa1bb15741"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotFrame.log",
+      "sha256": "a2d0aea995f02e4cedf676cc531ce1ec87018d2ae17807cd45e90b3e37899edd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidHotspotState.log",
+      "sha256": "6af3ee1743c8f0b32dbf9aea6757d9609145dbeed0c8ce7f1aef44fa635604e2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidInitial.log",
+      "sha256": "e2b5a0a7b01153c88deb0343842e2a46cf4c26796c2bf4d4db1476ff7815bf32"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidMaterialShape.log",
+      "sha256": "576df39c1c8b28d7231decebf1f790a67be43221d7d491c0a7e070049a65758d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidMaterialValues.log",
+      "sha256": "03fa56d4eb9d330bc1d71cedd62611e665f193b5c35087581b60d6b069baa262"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilAffine.log",
+      "sha256": "f07ef528e811e400e1739ff930f5790b04f3367aa36ab9c8ee5bfd7912c24a2e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilAxial.log",
+      "sha256": "23e6af69935cef945a071c0c5f4b80f18e53b12a3e2fed59497a23b1265dfff2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPencilState.log",
+      "sha256": "2fd4ef287a92082b0ae82631d8c01f509884176640f57bd7e893acdf5242dfd0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidPhasePermittivity.log",
+      "sha256": "a00a0cd1902c50372484ee9077c7fd273f7bfd0b0f9854e5dbba68d790101f26"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateEmbedding.log",
+      "sha256": "39d650c8bd10ecbfab28b929a23ea8b6a1d3799f2a0c71cbcd7bab3016c9e518"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateObservedPole.log",
+      "sha256": "5f79d37e7a1e4ce406b08b57488b5e2a42babef1ac1646e913b499ea1b69e174"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateOutgoing.log",
+      "sha256": "e0fa6885ca31767f5b403974d419591f84508472f4e8f3cb6ca7eb94522f6bce"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateProjection.log",
+      "sha256": "19ad13b7b76831266eb28fca3d0d7a07ac2d6db55e9c55b6fdc3130e6997fc10"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateSector.log",
+      "sha256": "de3dd5cc1f387b993b9361576135d5f85497533e76f6d4a69a5b5bba53a6e325"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidStateSectorDefs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncAffine.log",
+      "sha256": "d526536c29ea57c8efd0b2cbb6fe24f1c30212e1393fad556f0aaabcb11401c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncAxial.log",
+      "sha256": "e79009cf562d851e3ffa61925788a186f8812e706a97533f8eff4c552acfda4f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncCyclic.log",
+      "sha256": "9cca6fcc348b605672845c696c4fb05f91806717d8ae6e52120ec156a9fa04ff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidSyncDefs.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidWeightedMaximum.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06RigidWeightedStep.log",
+      "sha256": "158f8a5117f88a5248fc19fa11dda3d0fe5613ec64213f0f39df1cd1fb59b9c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06TransportedObservedPole.log",
+      "sha256": "4e8c2bce50ce84e93024745cfa6b276f08e102c6e7045f59564fcfd205b6366c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06WeightedDirectionalFamily.log",
+      "sha256": "256d3cdddece1d413f3421e39f5f9004a91e48d640bdcb112c751733cc35f73e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet06WeightedMaximumDivergence.log",
+      "sha256": "db334d32b962d7b7b307f9c9c60026431da0ce946b832f0aa043f7f8ea26ec6e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenFrameAE.log",
+      "sha256": "4938b67e66dee0ef228594dac1f6a245e3b5e25dba91571fb1b0c121c641729e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneCeiling.log",
+      "sha256": "c2c52312ec11591ec63bc0f20233f62c3f60939c74a19c642f3b321856627aeb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneComplete.log",
+      "sha256": "7bd3f4b2a0e3c7cf4a193e813a0c73f2bf708db4cfd511c1716c2e907642e185"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneFinal.log",
+      "sha256": "477e6fe117b5eb740cbefcd484eb3bf0a3c1da55bb4d349d35c3171b5f29e430"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenPlaneHotspots.log",
+      "sha256": "09aac3b60e5de76d8ede0c365e814d58d54f6dbc5e572ed98ab6944e66f01fbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/Packet07DrivenRigidAE.log",
+      "sha256": "a641bf862c2c84073757ea896202e4022b68fd374785104797c6eae3d85c7c8f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/phase-build.json",
+      "sha256": "ca12740d3dda8f0c069d8744228089378b9bf3b11028fdac0ce7b4e05ee63cfe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/phase-review.txt",
+      "sha256": "675d4d848b074cda664766f0749c5ebc275c4b8eb4ad9e2d0431e83359a98143"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-build.json",
+      "sha256": "ac06508a34c4d99ea3ef4cbc82780f5e36a17b506d20113eb415cbe253a7b8db"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/pole-review.txt",
+      "sha256": "2593b6db6383f93987f6c8a12e44ee844f74071aed3a9de0cce4bba4b0e561f0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-build.json",
+      "sha256": "a16661ca4dd8c976c570ce3f82ad5aeaff0432059a2bec06165556aa39b8b6f0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/sync-review.txt",
+      "sha256": "5c2602581f6780f64c0aa243e69c8dd3f422eab9e78b1f1076380060686baa87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-build.json",
+      "sha256": "908568e8b9b59822cdbf1e1aa736cd59ec805c2cb510044abef25b8998f61f01"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/reviews/weighted-review.txt",
+      "sha256": "4ad4d8c34ce27d9bdeffd8400ac503d89fa5e9ee2f113b9657be55b4b7e0d9fe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/scripts/audit_provenance.ps1",
+      "sha256": "1c3cfb1903825f1f52611c93978c4fc7e0c4d03058729d5837c175fae430936f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/scripts/check_chain.py",
+      "sha256": "a4365f29e2dfbf9bcf470d981e25ae7da5acc9f03a64de14a96ae54fc3a87e49"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/scripts/freeze_checkpoint.py",
+      "sha256": "c50423099be4f9c12e2790bb189eadceb51d61780325e54ec1726e9e4057c779"
+    },
+    {
+      "path": "checkpoints/2026-11-13-arbitrary-plane-endpoints/STAGE114.txt",
+      "sha256": "38783381950136db8f20485b380de39dba73f75b3b91894eea0c1bb9dca0c305"
+    },
+    {
+      "path": "lean/Packet06AffineModalExistence.lean",
+      "sha256": "28f32ef9f9878df4f9645667ebfb0d52463c5a5bce9538752ea6685b9bc61ddb"
+    },
+    {
+      "path": "lean/Packet06AffineModalPole.lean",
+      "sha256": "99390a5fec6a254c1be2ff19e380068b124dde060b0c1a1edf9da9c8f6815e5d"
+    },
+    {
+      "path": "lean/Packet06AffineWeightedMaximum.lean",
+      "sha256": "9926f36adee2366a34587254d6a74833b8eaea33ce0a706f82be955423acdbdb"
+    },
+    {
+      "path": "lean/Packet06AxialHotspotStart.lean",
+      "sha256": "01450e556a9074825df49cbde673819f5bc776f68416541ef3fd0a7158d30861"
+    },
+    {
+      "path": "lean/Packet06AxialWeightedMaximum.lean",
+      "sha256": "88b0804587b332c6f0ed82cbd539f1d201aabff6ac5b98172d97e5a59e181294"
+    },
+    {
+      "path": "lean/Packet06CyclicAxialKernel.lean",
+      "sha256": "86069fe7db6ee3c8fe184b30f62013f1f639298e35d4813efa70e4b264895e16"
+    },
+    {
+      "path": "lean/Packet06CyclicAxialPencil.lean",
+      "sha256": "aa99c9ff559cec7f9c6847b1b9b19d5550f6a6901be04fcb7b1eee53bc6507e3"
+    },
+    {
+      "path": "lean/Packet06FinalAffineModal.lean",
+      "sha256": "c6e121dd70a56ac9d1f7a55b15b73deff6d6918e9f82dc8bbb0ef4f2459c2a14"
+    },
+    {
+      "path": "lean/Packet06FrameWeightedFamily.lean",
+      "sha256": "f5e592bc23c74db9d3474c2b3329b3bd22e6bb14e3be41fd7efe1534e326aca3"
+    },
+    {
+      "path": "lean/Packet06FrameWeightedMaximum.lean",
+      "sha256": "f33d02c3e1516ccf11e6fa79e8c6274ca15f35320a919abd6c092e91baa2c5cb"
+    },
+    {
+      "path": "lean/Packet06FullFrameObservedPole.lean",
+      "sha256": "16d7585da58efd0cb295334c37d8084abc26bb1b531e02ca3dbf04c16fba1a7f"
+    },
+    {
+      "path": "lean/Packet06GenericObservedPole.lean",
+      "sha256": "bd634b54161a8ded6f9a0d7d61c7f36c5f7ca3ced0b4fac0afda416dd4be8af1"
+    },
+    {
+      "path": "lean/Packet06LocalizedVolumeFamily.lean",
+      "sha256": "431ffb9b94ceb9ec3ccf017100bd7d3ec92affa43031d020447512d86498b376"
+    },
+    {
+      "path": "lean/Packet06LocalizedVolumeState.lean",
+      "sha256": "8c1b5138b914e7d1955a214ce1557835cebda4a2e6a3a55bcfeba680a3dfc078"
+    },
+    {
+      "path": "lean/Packet06ModalTranslatedVolumeProperties.lean",
+      "sha256": "aec33d9bf590ddcf7c92a9a036678ff91056d1734ae85c0b4c13f8cf8c369ce9"
+    },
+    {
+      "path": "lean/Packet06PlacedWeightedState.lean",
+      "sha256": "7fd4771a2c62cba1775af506c9d7f4e89b68fd02dfe8f936a11a00eff80f86e1"
+    },
+    {
+      "path": "lean/Packet06RigidCollar.lean",
+      "sha256": "1f3ea90d5b490638fd7586895142762709571aab4890d2c38c9e2a5aa2267cca"
+    },
+    {
+      "path": "lean/Packet06RigidCollarFrame.lean",
+      "sha256": "bcdbb528d90256cedb3487a760b7fc5c355a0d319f541480b9609a068e676ebf"
+    },
+    {
+      "path": "lean/Packet06RigidFrameGeometry.lean",
+      "sha256": "2a19cf05c252393c5b29ef5ee9d6ec0df4e74270a34cbf4d1996ca902bc2661d"
+    },
+    {
+      "path": "lean/Packet06RigidFullSync.lean",
+      "sha256": "4bacbe9756707b04d30e8073ffbf458e84e8f6fa0d7a258f636f0c6e836e2bd9"
+    },
+    {
+      "path": "lean/Packet06RigidHotspotAffine.lean",
+      "sha256": "df19b78d4c28ff6078a0252364852eacc4ef5fe5456dc52c0a6427c59fc08f03"
+    },
+    {
+      "path": "lean/Packet06RigidHotspotFrame.lean",
+      "sha256": "d5827fc4436c1e7a858a83dd5061d4875c8176f88c903afdb1d705999c1d34a2"
+    },
+    {
+      "path": "lean/Packet06RigidHotspotState.lean",
+      "sha256": "7324e2b261ad52c728ee772b807c5969c4870cebda3e95ab79a09aa2c7be044d"
+    },
+    {
+      "path": "lean/Packet06RigidInitial.lean",
+      "sha256": "847766efde97f4a02c8dfff1db9f3a4b47271e4b81e8c4cb3c50751960fe7756"
+    },
+    {
+      "path": "lean/Packet06RigidMaterialShape.lean",
+      "sha256": "8e614a34cc2ce8ba4af9a7ccd8332f768efc1b4a686c0ee68182c8ea481c0dff"
+    },
+    {
+      "path": "lean/Packet06RigidMaterialValues.lean",
+      "sha256": "04bdba28af1fa98466b43e55058e6922dff122b0bce57cf44e6aa7c49a958373"
+    },
+    {
+      "path": "lean/Packet06RigidPencilAffine.lean",
+      "sha256": "38f034543cd70bb1fb7664c9cb4dcc01bc8b465ea8110e9dc3f815e853a799a0"
+    },
+    {
+      "path": "lean/Packet06RigidPencilAxial.lean",
+      "sha256": "65401d95c05428ed9811b33129b0ef3decd86acf03bff3f972a25d3958797f98"
+    },
+    {
+      "path": "lean/Packet06RigidPencilState.lean",
+      "sha256": "6ad6087d3c94adaf7c94ab8f4462b2023b98aa03669c0570b3bacfb744422d1d"
+    },
+    {
+      "path": "lean/Packet06RigidPhasePermittivity.lean",
+      "sha256": "bd601be64d3b97d903cf8f8b94d2c6bdd654616e8492f067098ac94e3ec61e4a"
+    },
+    {
+      "path": "lean/Packet06RigidStateEmbedding.lean",
+      "sha256": "c15ba9052e1080b64152058fb92f7955b42e4113ee1ccf3076aaaa6a0cad7375"
+    },
+    {
+      "path": "lean/Packet06RigidStateObservedPole.lean",
+      "sha256": "99a5d7ddf0e06db737e8f6816b1a750833722d8daa2c14a24b5041fa15e0395c"
+    },
+    {
+      "path": "lean/Packet06RigidStateOutgoing.lean",
+      "sha256": "1113d6e835ef72fa54b9cfaaa4e26e2c3a61e8a9653aad90afd2094d04192ebb"
+    },
+    {
+      "path": "lean/Packet06RigidStateProjection.lean",
+      "sha256": "9483d926606f7f282e092a088d0182492bc253c7a4ad9c6c8ad603c777a97cac"
+    },
+    {
+      "path": "lean/Packet06RigidStateSector.lean",
+      "sha256": "c2ffd2afc6ae21a2e04a35062721fb5698ddd7b2a8d704ae0b597057a1c174a7"
+    },
+    {
+      "path": "lean/Packet06RigidStateSectorDefs.lean",
+      "sha256": "734c25bd6502f9ed04fd3e0b6214c2a6a97ac3979171fd7e219432327daec760"
+    },
+    {
+      "path": "lean/Packet06RigidSyncAffine.lean",
+      "sha256": "61f56e83e596908ee454470ace7407cd3dfa05de2fcd948da7a3e45148fdc0aa"
+    },
+    {
+      "path": "lean/Packet06RigidSyncAxial.lean",
+      "sha256": "a1b7c475489813832b731420186640c14abd96c1bb3eb4ab9e1991c800b483ba"
+    },
+    {
+      "path": "lean/Packet06RigidSyncCyclic.lean",
+      "sha256": "dc9fe9e2fb55a83ab646f44c27e587bc18cde711e08018315ef841438230750c"
+    },
+    {
+      "path": "lean/Packet06RigidSyncDefs.lean",
+      "sha256": "780f70ab4f5c973931a70707bfbe3b8629750953ee61d341decb12e7b36551f8"
+    },
+    {
+      "path": "lean/Packet06RigidWeightedMaximum.lean",
+      "sha256": "99059f11b2c9505817cc5906bf7bea7bd132dafa8a37d77a7d7dc1bc95509503"
+    },
+    {
+      "path": "lean/Packet06RigidWeightedStep.lean",
+      "sha256": "8b069c9550a1564c72c16bc3086733088e605528af7e2e7e383243fb3ed0b141"
+    },
+    {
+      "path": "lean/Packet06TransportedObservedPole.lean",
+      "sha256": "c26aa3d5949090372fda5d544cc80d2750c8973bfa0a57cee4b6d358ec20d81b"
+    },
+    {
+      "path": "lean/Packet06WeightedDirectionalFamily.lean",
+      "sha256": "da75dbb6d318ea5236f9cb34186bbebe43a7fd766786a34654b376ab3f854e9e"
+    },
+    {
+      "path": "lean/Packet06WeightedMaximumDivergence.lean",
+      "sha256": "2057d81a0acbdfe62e5ebf979bd76243a644ee37db7afae84a495f35cfa140ee"
+    },
+    {
+      "path": "lean/Packet07DrivenFrameAE.lean",
+      "sha256": "c98149673bda0980e93833523e399e7b38b5da90d38fc2fab96e025578f6caa6"
+    },
+    {
+      "path": "lean/Packet07DrivenPlaneCeiling.lean",
+      "sha256": "48cc912ecebba348f08474747e7f301e75918acf46d18e48e3a9f5b3c8e8e3b2"
+    },
+    {
+      "path": "lean/Packet07DrivenPlaneComplete.lean",
+      "sha256": "d430e4883bac72b922445e2f16b9093ccc026274c7ea58ab16e178cc36861418"
+    },
+    {
+      "path": "lean/Packet07DrivenPlaneFinal.lean",
+      "sha256": "fa8f9ab04f3304f867650445395dd5e7d6da730580931f813b88c25fbe90e3c0"
+    },
+    {
+      "path": "lean/Packet07DrivenPlaneHotspots.lean",
+      "sha256": "6d1d9572d6d9c7d63410e852196c9cf557aff122957fed687e80f7efbe732098"
+    },
+    {
+      "path": "lean/Packet07DrivenRigidAE.lean",
+      "sha256": "97376e11e04d392a2885222b6d7be8722e3189650c155f2d3841eb9b56d42464"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "bd69609070304fb2423606728e5bc77da1f1b96e44db3a74a2988568afa63dc6"
+    }
+  ],
+  "scope": "unconditional arbitrary-plane modal and driven hotspot endpoints. Unconditional arbitrary-plane modal and driven hotspot endpoints are proved, including the same actual modal observed pole. The final arbitrary-plane modal-volume family, explicit driven local-L2 helper, final aggregate verification and paper release remain active."
+}

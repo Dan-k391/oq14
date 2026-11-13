@@ -1,0 +1,331 @@
+[
+  {
+    "module": "Packet06AxialHotspotStart",
+    "declarations": [
+      "OQ14.Packet06AxialHotspotStart.coordinate_hotspot"
+    ]
+  },
+  {
+    "module": "Packet06RigidHotspotState",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotState.axial",
+      "OQ14.Packet06RigidHotspotState.cyclic"
+    ]
+  },
+  {
+    "module": "Packet06RigidHotspotAffine",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotState.affine"
+    ]
+  },
+  {
+    "module": "Packet06RigidHotspotFrame",
+    "declarations": [
+      "OQ14.Packet06RigidHotspotFrame.cyclic_thrice",
+      "OQ14.Packet06RigidHotspotFrame.twice_rotate",
+      "OQ14.Packet06RigidHotspotFrame.frame_center",
+      "OQ14.Packet06RigidHotspotFrame.frame_plane",
+      "OQ14.Packet06RigidHotspotFrame.frame_body"
+    ]
+  },
+  {
+    "module": "Packet06RigidCollar",
+    "declarations": [
+      "OQ14.Packet06RigidCollar.axial_collar",
+      "OQ14.Packet06RigidCollar.cyclic_collar",
+      "OQ14.Packet06RigidCollar.affine_collar"
+    ]
+  },
+  {
+    "module": "Packet06RigidCollarFrame",
+    "declarations": [
+      "OQ14.Packet06RigidCollarFrame.transform_collars"
+    ]
+  },
+  {
+    "module": "Packet06RigidStateOutgoing",
+    "declarations": [
+      "OQ14.Packet06RigidStateOutgoing.actual_outgoing"
+    ]
+  },
+  {
+    "module": "Packet06RigidMaterialValues",
+    "declarations": [
+      "OQ14.Packet06RigidMaterialValues.axial_value",
+      "OQ14.Packet06RigidMaterialValues.cyclic_value",
+      "OQ14.Packet06RigidMaterialValues.affine_value",
+      "OQ14.Packet06RigidMaterialValues.frame_value"
+    ]
+  },
+  {
+    "module": "Packet06RigidFrameGeometry",
+    "declarations": [
+      "OQ14.Packet06RigidFrameGeometry.frame_projection",
+      "OQ14.Packet06RigidFrameGeometry.plane_image",
+      "OQ14.Packet06RigidFrameGeometry.frame_balls",
+      "OQ14.Packet06RigidFrameGeometry.transformed_geometry"
+    ]
+  },
+  {
+    "module": "Packet06GenericObservedPole",
+    "declarations": [
+      "OQ14.Packet06GenericObservedPole.observed_of_simple"
+    ]
+  },
+  {
+    "module": "Packet06TransportedObservedPole",
+    "declarations": [
+      "OQ14.Packet06TransportedObservedPole.certified_transport"
+    ]
+  },
+  {
+    "module": "Packet06CyclicAxialPencil",
+    "declarations": [
+      "OQ14.Packet06CyclicAxialPencil.pencil_eq"
+    ]
+  },
+  {
+    "module": "Packet06CyclicAxialKernel",
+    "declarations": [
+      "OQ14.Packet06CyclicAxialKernel.axial_support",
+      "OQ14.Packet06CyclicAxialKernel.material_support",
+      "OQ14.Packet06CyclicAxialKernel.kernel_transport"
+    ]
+  },
+  {
+    "module": "Packet06RigidPencilState",
+    "declarations": [
+      "OQ14.Packet06RigidPencilState.initial"
+    ]
+  },
+  {
+    "module": "Packet06RigidPencilAxial",
+    "declarations": [
+      "OQ14.Packet06RigidPencilState.axial"
+    ]
+  },
+  {
+    "module": "Packet06RigidPencilAffine",
+    "declarations": [
+      "OQ14.Packet06RigidPencilState.affine"
+    ]
+  },
+  {
+    "module": "Packet06RigidStateSectorDefs",
+    "declarations": []
+  },
+  {
+    "module": "Packet06RigidStateSector",
+    "declarations": [
+      "OQ14.Packet06RigidStateSector.pencil_eq"
+    ]
+  },
+  {
+    "module": "Packet06RigidStateEmbedding",
+    "declarations": [
+      "OQ14.Packet06RigidStateSector.embedding_injective"
+    ]
+  },
+  {
+    "module": "Packet06RigidStateObservedPole",
+    "declarations": [
+      "OQ14.Packet06RigidStateObservedPole.certified_observed_pole"
+    ]
+  },
+  {
+    "module": "Packet06FullFrameObservedPole",
+    "declarations": [
+      "OQ14.Packet06FullFrameObservedPole.full_frame_observed_pole"
+    ]
+  },
+  {
+    "module": "Packet06RigidSyncDefs",
+    "declarations": []
+  },
+  {
+    "module": "Packet06RigidSyncAxial",
+    "declarations": [
+      "OQ14.Packet06RigidStateSync.axial_sync"
+    ]
+  },
+  {
+    "module": "Packet06RigidStateProjection",
+    "declarations": [
+      "OQ14.Packet06RigidStateProjection.pencil_affine_embedding",
+      "OQ14.Packet06RigidStateProjection.hotspot_affine_unknown",
+      "OQ14.Packet06RigidStateProjection.hotspot_cyclic_unknown"
+    ]
+  },
+  {
+    "module": "Packet06RigidSyncAffine",
+    "declarations": [
+      "OQ14.Packet06RigidStateSync.affine_sync"
+    ]
+  },
+  {
+    "module": "Packet06RigidSyncCyclic",
+    "declarations": [
+      "OQ14.Packet06RigidStateSync.cyclic_sync"
+    ]
+  },
+  {
+    "module": "Packet06RigidFullSync",
+    "declarations": [
+      "OQ14.Packet06RigidStateSync.full_sync"
+    ]
+  },
+  {
+    "module": "Packet07DrivenFrameAE",
+    "declarations": [
+      "OQ14.Packet07DrivenFrameAE.axial",
+      "OQ14.Packet07DrivenFrameAE.cyclic",
+      "OQ14.Packet07DrivenFrameAE.frame"
+    ]
+  },
+  {
+    "module": "Packet07DrivenRigidAE",
+    "declarations": [
+      "OQ14.Packet07DrivenRigidAE.field_add",
+      "OQ14.Packet07DrivenRigidAE.field_ae",
+      "OQ14.Packet07DrivenRigidAE.exterior_decomposition"
+    ]
+  },
+  {
+    "module": "Packet07DrivenPlaneHotspots",
+    "declarations": [
+      "OQ14.Packet07DrivenPlaneHotspots.plane_hotspots"
+    ]
+  },
+  {
+    "module": "Packet07DrivenPlaneComplete",
+    "declarations": [
+      "OQ14.Packet07DrivenPlaneComplete.plane_complete"
+    ]
+  },
+  {
+    "module": "Packet07DrivenPlaneCeiling",
+    "declarations": [
+      "OQ14.Packet07DrivenPlaneCeiling.plane_ceiling"
+    ]
+  },
+  {
+    "module": "Packet07DrivenPlaneFinal",
+    "declarations": [
+      "OQ14.Packet07DrivenPlaneFinal.plane_final"
+    ]
+  },
+  {
+    "module": "Packet06RigidInitial",
+    "declarations": [
+      "OQ14.Packet06RigidInitial.initial",
+      "OQ14.Packet06RigidInitial.initial_collars"
+    ]
+  },
+  {
+    "module": "Packet06RigidMaterialShape",
+    "declarations": [
+      "OQ14.Packet06RigidMaterialShape.material_shape"
+    ]
+  },
+  {
+    "module": "Packet06AffineModalExistence",
+    "declarations": [
+      "OQ14.Packet06AffineModalExistence.exists_affine_modal_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06AffineModalPole",
+    "declarations": [
+      "OQ14.Packet06AffineModalPole.final_observed_pole"
+    ]
+  },
+  {
+    "module": "Packet06FinalAffineModal",
+    "declarations": [
+      "OQ14.Packet06FinalAffineModal.exists_physical_modal_hotspots"
+    ]
+  },
+  {
+    "module": "Packet06ModalTranslatedVolumeProperties",
+    "declarations": [
+      "OQ14.Packet06ModalTranslatedVolumeProperties.eventual_placed_properties"
+    ]
+  },
+  {
+    "module": "Packet06LocalizedVolumeFamily",
+    "declarations": [
+      "OQ14.Packet06LocalizedVolumeFamily.exists_localized_volume_family"
+    ]
+  },
+  {
+    "module": "Packet06RigidWeightedMaximum",
+    "declarations": []
+  },
+  {
+    "module": "Packet06AxialWeightedMaximum",
+    "declarations": [
+      "OQ14.Packet06AxialWeightedMaximum.axial_weighted"
+    ]
+  },
+  {
+    "module": "Packet06AffineWeightedMaximum",
+    "declarations": [
+      "OQ14.Packet06AffineWeightedMaximum.affine_weighted"
+    ]
+  },
+  {
+    "module": "Packet06RigidWeightedStep",
+    "declarations": [
+      "OQ14.Packet06RigidWeightedStep.axial_step",
+      "OQ14.Packet06RigidWeightedStep.affine_step",
+      "OQ14.Packet06RigidWeightedStep.cyclic_step"
+    ]
+  },
+  {
+    "module": "Packet06FrameWeightedMaximum",
+    "declarations": [
+      "OQ14.Packet06FrameWeightedMaximum.axial_value",
+      "OQ14.Packet06FrameWeightedMaximum.affine_value",
+      "OQ14.Packet06FrameWeightedMaximum.cyclic_value",
+      "OQ14.Packet06FrameWeightedMaximum.full_frame_value"
+    ]
+  },
+  {
+    "module": "Packet06WeightedDirectionalFamily",
+    "declarations": [
+      "OQ14.Packet06WeightedDirectionalFamily.directional_from_weighted"
+    ]
+  },
+  {
+    "module": "Packet06WeightedMaximumDivergence",
+    "declarations": [
+      "OQ14.Packet06WeightedMaximumDivergence.weighted_diverges"
+    ]
+  },
+  {
+    "module": "Packet06PlacedWeightedState",
+    "declarations": [
+      "OQ14.Packet06PlacedWeightedState.placed_has_value"
+    ]
+  },
+  {
+    "module": "Packet06FrameWeightedFamily",
+    "declarations": [
+      "OQ14.Packet06FrameWeightedFamily.frame_family_volume"
+    ]
+  },
+  {
+    "module": "Packet06LocalizedVolumeState",
+    "declarations": [
+      "OQ14.Packet06LocalizedVolumeState.initial"
+    ]
+  },
+  {
+    "module": "Packet06RigidPhasePermittivity",
+    "declarations": [
+      "OQ14.Packet06RigidPhasePermittivity.phase_ball_image",
+      "OQ14.Packet06RigidPhasePermittivity.same_side_values",
+      "OQ14.Packet06RigidPhasePermittivity.trace_weights_continuous"
+    ]
+  }
+]
