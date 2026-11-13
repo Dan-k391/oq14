@@ -1,0 +1,937 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "adopted",
+  "object_directory": "checkpoints/2026-11-13-passivity-plane-transport/objects/adopted",
+  "lean_path": null,
+  "scope": "Independent root or Terra source reviews and fresh direct-compiler isolated builds adopted by verified retained object hashes. Upstream sources authenticated with cached objects. No whole-project clean build claimed.",
+  "complete": true,
+  "records": [
+    {
+      "module": "FullChannelClosedTE",
+      "source": "lean/FullChannelClosedTE.lean",
+      "source_sha256": "bb2e07e7349879680d7cb966a8e63d8b757f5cafe24ffbdef9b12ef36d75aa9a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelClosedTE.olean",
+        "D:\\oq14\\lean\\FullChannelClosedTE.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.579,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelClosedTE-chain.log",
+      "log_sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelClosedTE.finite_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelClosedTE.sector_isometric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelClosedTE.sector_contractive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d6ed8849d699db34061457fa1f0000b0bc1895b03fed00558a74d8e448a358e8"
+    },
+    {
+      "module": "FullChannelCountedTEPassivity",
+      "source": "lean/FullChannelCountedTEPassivity.lean",
+      "source_sha256": "b92475c94c2986bfa411a7b2488c8cd5120492781f94d5d8a4f7e96d414ca4b6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelCountedTEPassivity.olean",
+        "D:\\oq14\\lean\\FullChannelCountedTEPassivity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.328,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelCountedTEPassivity-chain.log",
+      "log_sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelCountedTEPassivity.counted_device_sector_isometric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f96503ea27cc1521423fb00c68ae0f8365e7d83bdd5d5ad034f8185d29cecb67"
+    },
+    {
+      "module": "FullChannelPhysicalPassivity",
+      "source": "lean/FullChannelPhysicalPassivity.lean",
+      "source_sha256": "50211fda4cc7e17768854e6d44d3ab717daf31ba2840fc1f137f454e796e2b2d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPhysicalPassivity.olean",
+        "D:\\oq14\\lean\\FullChannelPhysicalPassivity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.922,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPhysicalPassivity-chain.log",
+      "log_sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelPhysicalPassivity.actual_witness_has_passive_sector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelPhysicalPassivity.unrestricted_counted_passive_sector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "983633da2aadd71ab4008e314e029178b0dcb150a19bbd7fb87e6cf22fb0ae09"
+    },
+    {
+      "module": "FullChannelTEHilbert",
+      "source": "lean/FullChannelTEHilbert.lean",
+      "source_sha256": "3bfef56ad5f66f7a581c5ba193f292dde4212052b7cb7787bf55ee19bc385aa4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEHilbert.olean",
+        "D:\\oq14\\lean\\FullChannelTEHilbert.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.875,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEHilbert-chain.log",
+      "log_sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelTEHilbert.transverse_closed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEHilbert.transverse_complete",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEHilbert.sector_complete",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "89c87371276cdce222c2def5e9b756f5be99648a2535377a81992bafd3e8dee2"
+    },
+    {
+      "module": "FullChannelTEAdjoint",
+      "source": "lean/FullChannelTEAdjoint.lean",
+      "source_sha256": "4677fba932c21a22a73ae038c793ccb9a48ffc28ae43b1b7351ee3bc2382b5b0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEAdjoint.olean",
+        "D:\\oq14\\lean\\FullChannelTEAdjoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.687,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEAdjoint-chain.log",
+      "log_sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelTEAdjoint.actual_scattering_adjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEAdjoint.isometry_adjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b540e8ff12997a8d66711035846ed05fc23ae82f28ce7daf61f9227f27d3d673"
+    },
+    {
+      "module": "FullChannelPassiveCountedFinal",
+      "source": "lean/FullChannelPassiveCountedFinal.lean",
+      "source_sha256": "6ff0f35771218517e0359ae69f5b404e99f253565dac94a1a25530fd767e2aa9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPassiveCountedFinal.olean",
+        "D:\\oq14\\lean\\FullChannelPassiveCountedFinal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 41.172,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPassiveCountedFinal-chain.log",
+      "log_sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelPassiveCountedFinal.unrestricted_counted_adjoint_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b7c987b00056d5cc6bc0753c4c50022735668dd0e8a99116828cb4df314983a8"
+    },
+    {
+      "module": "FullChannelExactPassiveWitness",
+      "source": "lean/FullChannelExactPassiveWitness.lean",
+      "source_sha256": "670831c67b90de293682b23409cdbd4ae1b2a30c0751c8c3ddfb14bcc8d8e1dd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelExactPassiveWitness.olean",
+        "D:\\oq14\\lean\\FullChannelExactPassiveWitness.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.875,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelExactPassiveWitness-chain.log",
+      "log_sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelExactPassiveWitness.witness_passive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelExactPassiveWitness.unrestricted_exact_passive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7d988b08b2b18d88940a89b73863dfe21ac46246041de44a3e09027c0a882ed7"
+    },
+    {
+      "module": "Packet07PlaneFrame",
+      "source": "lean/Packet07PlaneFrame.lean",
+      "source_sha256": "d934b8dc36b488e0860718b9b0c266100026173d4c5eb2d1d547be3de82e0036",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneFrame.olean",
+        "D:\\oq14\\lean\\Packet07PlaneFrame.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.671,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneFrame-chain.log",
+      "log_sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlaneFrame.normal_rotation_basis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneFrame.exists_frame",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ef8be4a31b7e20f17eb25510f634db3ede4f3a7b1be4b10a9451710fc7b4491d"
+    },
+    {
+      "module": "Packet07PlaneCoordinates",
+      "source": "lean/Packet07PlaneCoordinates.lean",
+      "source_sha256": "3c838fbeabdfe4a221c7f96ecbfbae5534aaaaaa4d1213dae9dfd4e0b0ae6337",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneCoordinates.olean",
+        "D:\\oq14\\lean\\Packet07PlaneCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 44.156,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneCoordinates-chain.log",
+      "log_sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.embed_plane",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.coordinates_embed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.embed_coordinates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.embed_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.embed_dist",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.coordinates_dist_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.projection_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlaneCoordinates.projection_dist_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ba959ebee3bc7a8708598e72233fb561ea2148ff365fab32f704c6cbe2baec5b"
+    },
+    {
+      "module": "Packet07PlanePatch",
+      "source": "lean/Packet07PlanePatch.lean",
+      "source_sha256": "dd2f3ba6ce092a03ac6f4041a092ac22c85380900884c22c513e5fe15255e4a6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlanePatch.olean",
+        "D:\\oq14\\lean\\Packet07PlanePatch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 43.281,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlanePatch-chain.log",
+      "log_sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanePatch.projection_remainder",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanePatch.projection_orthogonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanePatch.embed_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PlanePatch.patch_pullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c2e4cdc9ee15729eecbd3907971550e1d203aa30c3df07211663c615a67a4ce1"
+    },
+    {
+      "module": "Packet07PlaneArbitrary",
+      "source": "lean/Packet07PlaneArbitrary.lean",
+      "source_sha256": "f9179695ed403fc302c1f3f7f85efa027e3ae1b6cd3985086f674b2200987e13",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-plane-frame\\reviews\\root-objects\\Packet07PlaneArbitrary.olean",
+        "D:\\oq14\\lean\\Packet07PlaneArbitrary.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.25,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneArbitrary-chain.log",
+      "log_sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlaneArbitrary.arbitrary_plane_patch",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "13380d66ef2db7e0af68a6afe96d859696f7fadc42137c85f4bbc31141d829bf"
+    },
+    {
+      "module": "Packet06AxialActualField",
+      "source": "lean/Packet06AxialActualField.lean",
+      "source_sha256": "6435dc13c8fa4032c896c7941160287eba92f5c79b67438901f73455fc7772d5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialActualField.olean",
+        "D:\\oq14\\lean\\Packet06AxialActualField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.844,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualField-chain.log",
+      "log_sha256": "d7799178e8f809296859e231b993ed7b1efffe60a1523676031f0a18c0c47ed6",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialActualField.rotated_response_material_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialActualField.rotated_electric_material_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3530471ef964edafda38a9e9cfba96ffa493eb2858773b6f4cdde229cf5cbb00"
+    },
+    {
+      "module": "Packet06AxialPhaseField",
+      "source": "lean/Packet06AxialPhaseField.lean",
+      "source_sha256": "8f5835bb5252a7b48999135149f0728dc31987d9cf02b856066ddd9c1d4d7c05",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialPhaseField.olean",
+        "D:\\oq14\\lean\\Packet06AxialPhaseField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.485,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialPhaseField-chain.log",
+      "log_sha256": "cfa629fe5509fa0652c97e60f941c8e5886a102ed9d07bc6f533f9ac7d077941",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialPhaseField.amplitude_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialPhaseField.continuous_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialPhaseField.phase_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a71e73e04bc59adcd54dcbb4fe4fe64ecb593f51a8acb197e8cfeeb3b5f0277b"
+    },
+    {
+      "module": "Packet06AxialActualPhase",
+      "source": "lean/Packet06AxialActualPhase.lean",
+      "source_sha256": "a4a017f85702633887fbf0305506b868dae7546f1319eb92e2129ac027b2bc79",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialActualPhase.olean",
+        "D:\\oq14\\lean\\Packet06AxialActualPhase.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.312,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualPhase-chain.log",
+      "log_sha256": "eb298104dc417f75c10bf39d07b64e134eb322318ed9c9750e78becc28a1902e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialActualPhase.component_image_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialActualPhase.component_image_general_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f60604e9e9d11381d3d88951347e0b74c76f0bbd38e338a4f58cb53bcfadb4c9"
+    },
+    {
+      "module": "Packet06AxialTraceCollar",
+      "source": "lean/Packet06AxialTraceCollar.lean",
+      "source_sha256": "fde54507130068112729fe6523915a564cdb103469ef8b8f93f3fb7adeef060c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialTraceCollar.olean",
+        "D:\\oq14\\lean\\Packet06AxialTraceCollar.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.078,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialTraceCollar-chain.log",
+      "log_sha256": "b61d3e330503c582b5ba5bccaa021c5e082eb88c847e1375b5a44a28b658313d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialTraceCollar.rotated_trace_collar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialTraceCollar.rotated_trace_collar_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f7d9593d61a7bf6375aa32aa9b72e5a81768f25c7d3e4d98ba4822aeb756a500"
+    },
+    {
+      "module": "Packet06AxialHotspotGeometry",
+      "source": "lean/Packet06AxialHotspotGeometry.lean",
+      "source_sha256": "429d0b9a78524799e51a3f59d6702f55e6638b5e1e734b880f60364bd98fe387",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialHotspotGeometry.olean",
+        "D:\\oq14\\lean\\Packet06AxialHotspotGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.469,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspotGeometry-chain.log",
+      "log_sha256": "f75d36cb0781ed0a6909fa440a8cb1a97c7426e5d44e170f1138fcbca0f9a765",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.image_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.image_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.image_closedBall",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.phase_superlevel_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.maximum_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspotGeometry.half_component_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7a703503f8f0e410780b82536cb2ec35b22e70a1a34c709d92b0db59fb4e3907"
+    },
+    {
+      "module": "Packet06AxialHotspot",
+      "source": "lean/Packet06AxialHotspot.lean",
+      "source_sha256": "43574b4ba893d2c00c3933a096599762282383836170f2bb0f2c8339bb82a33d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-axial-hotspot-transport\\reviews\\root-objects\\Packet06AxialHotspot.olean",
+        "D:\\oq14\\lean\\Packet06AxialHotspot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.703,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspot-chain.log",
+      "log_sha256": "add329fcd55b58b0a2ba9358672456ac1cdb2e751b591c1aa65d63cea7f4c2ef",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06AxialHotspot.rotate_hotspot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06AxialHotspot.rotate_hotspot_general",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4f2c27b46818319410bc724095ba559d43b4d10c2f1cab4e3ef1cf6196689262"
+    },
+    {
+      "module": "Packet07DrivenAxialTests",
+      "source": "lean/Packet07DrivenAxialTests.lean",
+      "source_sha256": "8b48687b03dcd13f28fb3f430b46e7f94677533d7db2e90976e815094918a7e5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-axial\\reviews\\root-objects\\Packet07DrivenAxialTests.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialTests.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.281,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialTests-chain.log",
+      "log_sha256": "7a66b81fe79b377bde8b7ab108c5129bab7ae8988f74ece632e931d7a4dfa456",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotateTest_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotation_basis_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotation_basis_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotation_basis_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotateTest_partial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotateTest_partial_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.rotateTest_partial_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialTests.pairing_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ea03491e1848edaa9a0e86dab1a56c68792fc6c99f60945e1f5f2afa325ccb27"
+    },
+    {
+      "module": "Packet07DrivenAxialPair",
+      "source": "lean/Packet07DrivenAxialPair.lean",
+      "source_sha256": "277f6d2c78bc2622953c5dcb94dbf8425d3f35d318c987d1c18d603ae89b6639",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-axial\\reviews\\root-objects\\Packet07DrivenAxialPair.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialPair.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.641,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialPair-chain.log",
+      "log_sha256": "3cbd181d2aff054400cabab8718ef2ff9629bc37988f073ca9c611521ff036de",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialPair.rotated_component_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialPair.field_pair_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialPair.field_pair_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialPair.field_pair_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d6f98e91664454059802899b07c34034779f1c0b939281a816004df7ca31576c"
+    },
+    {
+      "module": "Packet07DrivenAxialDerivativePair",
+      "source": "lean/Packet07DrivenAxialDerivativePair.lean",
+      "source_sha256": "5770c557e22cc9f28083b746478270b4e1f71e3fc0e324d1ceb39c500549f249",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-axial\\reviews\\root-objects\\Packet07DrivenAxialDerivativePair.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialDerivativePair.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.656,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialDerivativePair-chain.log",
+      "log_sha256": "64fd2ac599256b68a48cc4658591d4ab4eb1d2a31bd5edcbbdea5cff563a8db4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "40908b679faa43c7955dbe04cd2ab2681dfba510f58d6476ffd7bd6ff4e4ebf9"
+    },
+    {
+      "module": "Packet07DrivenAxialCurl",
+      "source": "lean/Packet07DrivenAxialCurl.lean",
+      "source_sha256": "9abbcb99d4c674c14e0a9cb5f59e05c92413080d36997718af87fe75151fb31f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-axial\\reviews\\root-objects\\Packet07DrivenAxialCurl.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialCurl.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.094,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialCurl-chain.log",
+      "log_sha256": "7b587449bfba1c34e0f769185ca3be92c49bb58308935dc0977a49e959d4f873",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialCurl.curl_pair_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialCurl.curl_pair_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialCurl.curl_pair_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6024559a07db5193f64156bc66308ef4358cc69e68d959a4f76f61033c2d2c00"
+    },
+    {
+      "module": "Packet07DrivenAxialMaxwell",
+      "source": "lean/Packet07DrivenAxialMaxwell.lean",
+      "source_sha256": "13c7cc07cd3c8a8f09a3316b355e269335f881566dd719ff972bda6a2f72e972",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-axial\\reviews\\root-objects\\Packet07DrivenAxialMaxwell.olean",
+        "D:\\oq14\\lean\\Packet07DrivenAxialMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.734,
+      "log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialMaxwell-chain.log",
+      "log_sha256": "83c3f90636f4defc5337c652fa321b71bda355763a329c2b997287d640f375d9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07DrivenAxialMaxwell.dielectric_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07DrivenAxialMaxwell.complex_maxwell_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "24b027a921c41aadf7b6419a9847e07459918fe2e522db6b8196a8e0f72b29ab"
+    }
+  ],
+  "module_count": 22,
+  "report_count": 66
+}

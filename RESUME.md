@@ -1,5 +1,46 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 110 is the latest verified incremental checkpoint:
+[STAGE110.txt](checkpoints/2026-11-13-passivity-plane-transport/STAGE110.txt).
+
+The same exact physical unrestricted counted-channel witness now carries
+T* T = I for the complete physical output scattering map on the closed
+incoming TE Hilbert sector. Actual material, Maxwell, outgoing, passage,
+whole-plane absolute bypass and integrability formulas remain inside that
+same existential witness. Closure and completeness of the physical input
+space are proved. The theorem does not assert full-polarization surjectivity;
+the specified incoming sector is an admissible Hilbert input space.
+
+Proper axial rotations and a proper cyclic rotation give an actual frame
+for every unit plane normal, including both vertical cases. Its affine chart
+is an isometry onto the prescribed literal inner-product plane, with exact
+inverse and orthogonal projection. Arbitrary nonempty relatively open plane
+patches pull back to nonempty open coordinate patches.
+
+Axial rotations transport actual electric phase representatives with
+arbitrary compact support, requiring positive susceptibility only on the
+observation region. The true Euclidean amplitude, one-sided traces, whole
+collar bounds, actual maximum and full compact connected half-amplitude
+component are preserved. The driven rotation chain independently derives
+all three distributional curl identities and weak dielectric Maxwell
+covariance, with the required local integrability explicitly retained.
+
+Final arbitrary-affine-plane modal and driven existence endpoints are being
+composed from these physical transports. The aggregate rebuild, complete
+constant axiom audit and final paper alignment remain active. Full OQ14 is
+not yet declared closed.
+
+22 modules / 66 reports passed independent root review and a fresh
+ordered build. 1806 upstream sources were authenticated, with cached objects.
+The ledger is 1455 modules / 5759 reports, all prior records unchanged:
+`checkpoints/2026-11-13-passivity-plane-transport/evidence/audited_after_5238-stage110.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage110.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 109 is the latest verified incremental checkpoint:
 [STAGE109.txt](checkpoints/2026-11-13-physical-volume-driven-target/STAGE109.txt).
 

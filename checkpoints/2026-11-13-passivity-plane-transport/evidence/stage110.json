@@ -1,0 +1,787 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "44e2126",
+  "modules": 1455,
+  "reports": 5759,
+  "new_modules": 22,
+  "new_reports": 66,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "831a9d85ccf63688d0d0f9f8901ff9145c5489ca913bdd946b2320e484bfa87f",
+  "ledger_sha256": "e644ad2c3fe8bd95629e7fc04076c232615ac01c68ce462fe5a46e1743a0306b",
+  "raw_archive_sha256": "c0719588028410d632450001ce12cd94ad2afdce728926a97274f39519df9f40",
+  "records": [
+    {
+      "module": "FullChannelClosedTE",
+      "reports": 3,
+      "source_sha256": "bb2e07e7349879680d7cb966a8e63d8b757f5cafe24ffbdef9b12ef36d75aa9a",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelClosedTE-chain.log",
+      "audit_log_sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelClosedTE.log",
+      "independent_log_sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f",
+      "declarations": [
+        "OQ14.FullChannelClosedTE.finite_mem",
+        "OQ14.FullChannelClosedTE.sector_isometric",
+        "OQ14.FullChannelClosedTE.sector_contractive"
+      ]
+    },
+    {
+      "module": "FullChannelCountedTEPassivity",
+      "reports": 1,
+      "source_sha256": "b92475c94c2986bfa411a7b2488c8cd5120492781f94d5d8a4f7e96d414ca4b6",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelCountedTEPassivity-chain.log",
+      "audit_log_sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelCountedTEPassivity.log",
+      "independent_log_sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757",
+      "declarations": [
+        "OQ14.FullChannelCountedTEPassivity.counted_device_sector_isometric"
+      ]
+    },
+    {
+      "module": "FullChannelPhysicalPassivity",
+      "reports": 2,
+      "source_sha256": "50211fda4cc7e17768854e6d44d3ab717daf31ba2840fc1f137f454e796e2b2d",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPhysicalPassivity-chain.log",
+      "audit_log_sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelPhysicalPassivity.log",
+      "independent_log_sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b",
+      "declarations": [
+        "OQ14.FullChannelPhysicalPassivity.actual_witness_has_passive_sector",
+        "OQ14.FullChannelPhysicalPassivity.unrestricted_counted_passive_sector"
+      ]
+    },
+    {
+      "module": "FullChannelTEHilbert",
+      "reports": 3,
+      "source_sha256": "3bfef56ad5f66f7a581c5ba193f292dde4212052b7cb7787bf55ee19bc385aa4",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEHilbert-chain.log",
+      "audit_log_sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelTEHilbert.log",
+      "independent_log_sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963",
+      "declarations": [
+        "OQ14.FullChannelTEHilbert.transverse_closed",
+        "OQ14.FullChannelTEHilbert.transverse_complete",
+        "OQ14.FullChannelTEHilbert.sector_complete"
+      ]
+    },
+    {
+      "module": "FullChannelTEAdjoint",
+      "reports": 2,
+      "source_sha256": "4677fba932c21a22a73ae038c793ccb9a48ffc28ae43b1b7351ee3bc2382b5b0",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEAdjoint-chain.log",
+      "audit_log_sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelTEAdjoint.log",
+      "independent_log_sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611",
+      "declarations": [
+        "OQ14.FullChannelTEAdjoint.actual_scattering_adjoint",
+        "OQ14.FullChannelTEAdjoint.isometry_adjoint"
+      ]
+    },
+    {
+      "module": "FullChannelPassiveCountedFinal",
+      "reports": 1,
+      "source_sha256": "6ff0f35771218517e0359ae69f5b404e99f253565dac94a1a25530fd767e2aa9",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPassiveCountedFinal-chain.log",
+      "audit_log_sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelPassiveCountedFinal.log",
+      "independent_log_sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0",
+      "declarations": [
+        "OQ14.FullChannelPassiveCountedFinal.unrestricted_counted_adjoint_identity"
+      ]
+    },
+    {
+      "module": "FullChannelExactPassiveWitness",
+      "reports": 2,
+      "source_sha256": "670831c67b90de293682b23409cdbd4ae1b2a30c0751c8c3ddfb14bcc8d8e1dd",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelExactPassiveWitness-chain.log",
+      "audit_log_sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "independent_review_sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "independent_build_sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelExactPassiveWitness.log",
+      "independent_log_sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be",
+      "declarations": [
+        "OQ14.FullChannelExactPassiveWitness.witness_passive",
+        "OQ14.FullChannelExactPassiveWitness.unrestricted_exact_passive"
+      ]
+    },
+    {
+      "module": "Packet07PlaneFrame",
+      "reports": 2,
+      "source_sha256": "d934b8dc36b488e0860718b9b0c266100026173d4c5eb2d1d547be3de82e0036",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneFrame-chain.log",
+      "audit_log_sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-review.txt",
+      "independent_review_sha256": "65fd92d1c720fbea3c5bd2b7506426cf288939b397237949789469ac1f5dcb95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-build.json",
+      "independent_build_sha256": "d1c0107c3a303e95dc6c2335a102cc30a3e7326b762a4a481f4cdb271013278d",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneFrame.log",
+      "independent_log_sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d",
+      "declarations": [
+        "OQ14.Packet07PlaneFrame.normal_rotation_basis",
+        "OQ14.Packet07PlaneFrame.exists_frame"
+      ]
+    },
+    {
+      "module": "Packet07PlaneCoordinates",
+      "reports": 8,
+      "source_sha256": "3c838fbeabdfe4a221c7f96ecbfbae5534aaaaaa4d1213dae9dfd4e0b0ae6337",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneCoordinates-chain.log",
+      "audit_log_sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-review.txt",
+      "independent_review_sha256": "65fd92d1c720fbea3c5bd2b7506426cf288939b397237949789469ac1f5dcb95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-build.json",
+      "independent_build_sha256": "d1c0107c3a303e95dc6c2335a102cc30a3e7326b762a4a481f4cdb271013278d",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneCoordinates.log",
+      "independent_log_sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8",
+      "declarations": [
+        "OQ14.Packet07PlaneCoordinates.embed_plane",
+        "OQ14.Packet07PlaneCoordinates.coordinates_embed",
+        "OQ14.Packet07PlaneCoordinates.embed_coordinates",
+        "OQ14.Packet07PlaneCoordinates.embed_injective",
+        "OQ14.Packet07PlaneCoordinates.embed_dist",
+        "OQ14.Packet07PlaneCoordinates.coordinates_dist_le",
+        "OQ14.Packet07PlaneCoordinates.projection_fixed",
+        "OQ14.Packet07PlaneCoordinates.projection_dist_le"
+      ]
+    },
+    {
+      "module": "Packet07PlanePatch",
+      "reports": 4,
+      "source_sha256": "dd2f3ba6ce092a03ac6f4041a092ac22c85380900884c22c513e5fe15255e4a6",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlanePatch-chain.log",
+      "audit_log_sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-review.txt",
+      "independent_review_sha256": "65fd92d1c720fbea3c5bd2b7506426cf288939b397237949789469ac1f5dcb95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-build.json",
+      "independent_build_sha256": "d1c0107c3a303e95dc6c2335a102cc30a3e7326b762a4a481f4cdb271013278d",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlanePatch.log",
+      "independent_log_sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3",
+      "declarations": [
+        "OQ14.Packet07PlanePatch.projection_remainder",
+        "OQ14.Packet07PlanePatch.projection_orthogonal",
+        "OQ14.Packet07PlanePatch.embed_continuous",
+        "OQ14.Packet07PlanePatch.patch_pullback"
+      ]
+    },
+    {
+      "module": "Packet07PlaneArbitrary",
+      "reports": 1,
+      "source_sha256": "f9179695ed403fc302c1f3f7f85efa027e3ae1b6cd3985086f674b2200987e13",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneArbitrary-chain.log",
+      "audit_log_sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-review.txt",
+      "independent_review_sha256": "65fd92d1c720fbea3c5bd2b7506426cf288939b397237949789469ac1f5dcb95",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-build.json",
+      "independent_build_sha256": "d1c0107c3a303e95dc6c2335a102cc30a3e7326b762a4a481f4cdb271013278d",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneArbitrary.log",
+      "independent_log_sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592",
+      "declarations": [
+        "OQ14.Packet07PlaneArbitrary.arbitrary_plane_patch"
+      ]
+    },
+    {
+      "module": "Packet06AxialActualField",
+      "reports": 2,
+      "source_sha256": "6435dc13c8fa4032c896c7941160287eba92f5c79b67438901f73455fc7772d5",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualField-chain.log",
+      "audit_log_sha256": "d7799178e8f809296859e231b993ed7b1efffe60a1523676031f0a18c0c47ed6",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialActualField.log",
+      "independent_log_sha256": "d7799178e8f809296859e231b993ed7b1efffe60a1523676031f0a18c0c47ed6",
+      "declarations": [
+        "OQ14.Packet06AxialActualField.rotated_response_material_ae",
+        "OQ14.Packet06AxialActualField.rotated_electric_material_ae"
+      ]
+    },
+    {
+      "module": "Packet06AxialPhaseField",
+      "reports": 3,
+      "source_sha256": "8f5835bb5252a7b48999135149f0728dc31987d9cf02b856066ddd9c1d4d7c05",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialPhaseField-chain.log",
+      "audit_log_sha256": "cfa629fe5509fa0652c97e60f941c8e5886a102ed9d07bc6f533f9ac7d077941",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialPhaseField.log",
+      "independent_log_sha256": "cfa629fe5509fa0652c97e60f941c8e5886a102ed9d07bc6f533f9ac7d077941",
+      "declarations": [
+        "OQ14.Packet06AxialPhaseField.amplitude_transport",
+        "OQ14.Packet06AxialPhaseField.continuous_transport",
+        "OQ14.Packet06AxialPhaseField.phase_transport"
+      ]
+    },
+    {
+      "module": "Packet06AxialActualPhase",
+      "reports": 2,
+      "source_sha256": "a4a017f85702633887fbf0305506b868dae7546f1319eb92e2129ac027b2bc79",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualPhase-chain.log",
+      "audit_log_sha256": "eb298104dc417f75c10bf39d07b64e134eb322318ed9c9750e78becc28a1902e",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialActualPhase.log",
+      "independent_log_sha256": "eb298104dc417f75c10bf39d07b64e134eb322318ed9c9750e78becc28a1902e",
+      "declarations": [
+        "OQ14.Packet06AxialActualPhase.component_image_ae",
+        "OQ14.Packet06AxialActualPhase.component_image_general_ae"
+      ]
+    },
+    {
+      "module": "Packet06AxialTraceCollar",
+      "reports": 2,
+      "source_sha256": "fde54507130068112729fe6523915a564cdb103469ef8b8f93f3fb7adeef060c",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialTraceCollar-chain.log",
+      "audit_log_sha256": "b61d3e330503c582b5ba5bccaa021c5e082eb88c847e1375b5a44a28b658313d",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialTraceCollar.log",
+      "independent_log_sha256": "b61d3e330503c582b5ba5bccaa021c5e082eb88c847e1375b5a44a28b658313d",
+      "declarations": [
+        "OQ14.Packet06AxialTraceCollar.rotated_trace_collar",
+        "OQ14.Packet06AxialTraceCollar.rotated_trace_collar_general"
+      ]
+    },
+    {
+      "module": "Packet06AxialHotspotGeometry",
+      "reports": 6,
+      "source_sha256": "429d0b9a78524799e51a3f59d6702f55e6638b5e1e734b880f60364bd98fe387",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspotGeometry-chain.log",
+      "audit_log_sha256": "f75d36cb0781ed0a6909fa440a8cb1a97c7426e5d44e170f1138fcbca0f9a765",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialHotspotGeometry.log",
+      "independent_log_sha256": "f75d36cb0781ed0a6909fa440a8cb1a97c7426e5d44e170f1138fcbca0f9a765",
+      "declarations": [
+        "OQ14.Packet06AxialHotspotGeometry.image_phase",
+        "OQ14.Packet06AxialHotspotGeometry.image_ball",
+        "OQ14.Packet06AxialHotspotGeometry.image_closedBall",
+        "OQ14.Packet06AxialHotspotGeometry.phase_superlevel_image",
+        "OQ14.Packet06AxialHotspotGeometry.maximum_transport",
+        "OQ14.Packet06AxialHotspotGeometry.half_component_transport"
+      ]
+    },
+    {
+      "module": "Packet06AxialHotspot",
+      "reports": 2,
+      "source_sha256": "43574b4ba893d2c00c3933a096599762282383836170f2bb0f2c8339bb82a33d",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspot-chain.log",
+      "audit_log_sha256": "add329fcd55b58b0a2ba9358672456ac1cdb2e751b591c1aa65d63cea7f4c2ef",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "independent_review_sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "independent_build_sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialHotspot.log",
+      "independent_log_sha256": "add329fcd55b58b0a2ba9358672456ac1cdb2e751b591c1aa65d63cea7f4c2ef",
+      "declarations": [
+        "OQ14.Packet06AxialHotspot.rotate_hotspot",
+        "OQ14.Packet06AxialHotspot.rotate_hotspot_general"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialTests",
+      "reports": 8,
+      "source_sha256": "8b48687b03dcd13f28fb3f430b46e7f94677533d7db2e90976e815094918a7e5",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialTests-chain.log",
+      "audit_log_sha256": "7a66b81fe79b377bde8b7ab108c5129bab7ae8988f74ece632e931d7a4dfa456",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "independent_review_sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "independent_build_sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialTests.log",
+      "independent_log_sha256": "7a66b81fe79b377bde8b7ab108c5129bab7ae8988f74ece632e931d7a4dfa456",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialTests.rotateTest_apply",
+        "OQ14.Packet07DrivenAxialTests.rotation_basis_zero",
+        "OQ14.Packet07DrivenAxialTests.rotation_basis_one",
+        "OQ14.Packet07DrivenAxialTests.rotation_basis_two",
+        "OQ14.Packet07DrivenAxialTests.rotateTest_partial_zero",
+        "OQ14.Packet07DrivenAxialTests.rotateTest_partial_one",
+        "OQ14.Packet07DrivenAxialTests.rotateTest_partial_two",
+        "OQ14.Packet07DrivenAxialTests.pairing_rotate"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialPair",
+      "reports": 4,
+      "source_sha256": "277f6d2c78bc2622953c5dcb94dbf8425d3f35d318c987d1c18d603ae89b6639",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialPair-chain.log",
+      "audit_log_sha256": "3cbd181d2aff054400cabab8718ef2ff9629bc37988f073ca9c611521ff036de",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "independent_review_sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "independent_build_sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialPair.log",
+      "independent_log_sha256": "3cbd181d2aff054400cabab8718ef2ff9629bc37988f073ca9c611521ff036de",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialPair.rotated_component_integrable",
+        "OQ14.Packet07DrivenAxialPair.field_pair_zero",
+        "OQ14.Packet07DrivenAxialPair.field_pair_one",
+        "OQ14.Packet07DrivenAxialPair.field_pair_two"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialDerivativePair",
+      "reports": 3,
+      "source_sha256": "5770c557e22cc9f28083b746478270b4e1f71e3fc0e324d1ceb39c500549f249",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialDerivativePair-chain.log",
+      "audit_log_sha256": "64fd2ac599256b68a48cc4658591d4ab4eb1d2a31bd5edcbbdea5cff563a8db4",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "independent_review_sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "independent_build_sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialDerivativePair.log",
+      "independent_log_sha256": "64fd2ac599256b68a48cc4658591d4ab4eb1d2a31bd5edcbbdea5cff563a8db4",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_zero",
+        "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_one",
+        "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_two"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialCurl",
+      "reports": 3,
+      "source_sha256": "9abbcb99d4c674c14e0a9cb5f59e05c92413080d36997718af87fe75151fb31f",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialCurl-chain.log",
+      "audit_log_sha256": "7b587449bfba1c34e0f769185ca3be92c49bb58308935dc0977a49e959d4f873",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "independent_review_sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "independent_build_sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialCurl.log",
+      "independent_log_sha256": "7b587449bfba1c34e0f769185ca3be92c49bb58308935dc0977a49e959d4f873",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialCurl.curl_pair_zero",
+        "OQ14.Packet07DrivenAxialCurl.curl_pair_one",
+        "OQ14.Packet07DrivenAxialCurl.curl_pair_two"
+      ]
+    },
+    {
+      "module": "Packet07DrivenAxialMaxwell",
+      "reports": 2,
+      "source_sha256": "13c7cc07cd3c8a8f09a3316b355e269335f881566dd719ff972bda6a2f72e972",
+      "audit_log": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialMaxwell-chain.log",
+      "audit_log_sha256": "83c3f90636f4defc5337c652fa321b71bda355763a329c2b997287d640f375d9",
+      "independent_review": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "independent_review_sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8",
+      "independent_review_mode": "Independent root or Terra source review and direct-compiler isolated build; retained evidence identifies commands and source versions",
+      "independent_build": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "independent_build_sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8",
+      "independent_log": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialMaxwell.log",
+      "independent_log_sha256": "83c3f90636f4defc5337c652fa321b71bda355763a329c2b997287d640f375d9",
+      "declarations": [
+        "OQ14.Packet07DrivenAxialMaxwell.dielectric_rotate",
+        "OQ14.Packet07DrivenAxialMaxwell.complex_maxwell_rotate"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/audited_after_5238-stage110.json",
+      "sha256": "e644ad2c3fe8bd95629e7fc04076c232615ac01c68ce462fe5a46e1743a0306b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/chain-build.json",
+      "sha256": "323f91d8027351f10c97164d828f49d92575f30dbf05ae1617716fe9c360c0c9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelClosedTE-chain.log",
+      "sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelCountedTEPassivity-chain.log",
+      "sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelExactPassiveWitness-chain.log",
+      "sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPassiveCountedFinal-chain.log",
+      "sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelPhysicalPassivity-chain.log",
+      "sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEAdjoint-chain.log",
+      "sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/FullChannelTEHilbert-chain.log",
+      "sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualField-chain.log",
+      "sha256": "d7799178e8f809296859e231b993ed7b1efffe60a1523676031f0a18c0c47ed6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialActualPhase-chain.log",
+      "sha256": "eb298104dc417f75c10bf39d07b64e134eb322318ed9c9750e78becc28a1902e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspot-chain.log",
+      "sha256": "add329fcd55b58b0a2ba9358672456ac1cdb2e751b591c1aa65d63cea7f4c2ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialHotspotGeometry-chain.log",
+      "sha256": "f75d36cb0781ed0a6909fa440a8cb1a97c7426e5d44e170f1138fcbca0f9a765"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialPhaseField-chain.log",
+      "sha256": "cfa629fe5509fa0652c97e60f941c8e5886a102ed9d07bc6f533f9ac7d077941"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet06AxialTraceCollar-chain.log",
+      "sha256": "b61d3e330503c582b5ba5bccaa021c5e082eb88c847e1375b5a44a28b658313d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialCurl-chain.log",
+      "sha256": "7b587449bfba1c34e0f769185ca3be92c49bb58308935dc0977a49e959d4f873"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialDerivativePair-chain.log",
+      "sha256": "64fd2ac599256b68a48cc4658591d4ab4eb1d2a31bd5edcbbdea5cff563a8db4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialMaxwell-chain.log",
+      "sha256": "83c3f90636f4defc5337c652fa321b71bda355763a329c2b997287d640f375d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialPair-chain.log",
+      "sha256": "3cbd181d2aff054400cabab8718ef2ff9629bc37988f073ca9c611521ff036de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07DrivenAxialTests-chain.log",
+      "sha256": "7a66b81fe79b377bde8b7ab108c5129bab7ae8988f74ece632e931d7a4dfa456"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneArbitrary-chain.log",
+      "sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneCoordinates-chain.log",
+      "sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlaneFrame-chain.log",
+      "sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/evidence/Packet07PlanePatch-chain.log",
+      "sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/modules.json",
+      "sha256": "723f5ce3c6d3f99b7ef2619d890e19a7d8d44523754526aa848378d7de3d9e66"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/provenance-audit.json",
+      "sha256": "6facffd724b1c9e1e6220d8c09fc923609cb4c2c05cdd26b3684d5ce8f1d381a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/author-inventory.json",
+      "sha256": "73158e8d1a33fdb357408ffe6c03be75910eedd00818db4b7b10be6a216e5607"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-build.json",
+      "sha256": "0c9bb61bdad76754c16e50bbcb026a451811abf5fc52e8d41078a7d26b3fc7b3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/channel-review.txt",
+      "sha256": "6fc30859214212ccb47b37f6de0cd10c613e38a4897e2cd578e7b7735ff35410"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-build.json",
+      "sha256": "aaebaed3d2a56e8ff95a9530441cd6ea542ee181e741543f8a849edbcabb63a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/driven-review.txt",
+      "sha256": "da457a0c660dddc736ccc7988636d33e115079a2473c18fafe9e70215e6c63a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelClosedTE.log",
+      "sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelCountedTEPassivity.log",
+      "sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelExactPassiveWitness.log",
+      "sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelPassiveCountedFinal.log",
+      "sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelPhysicalPassivity.log",
+      "sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelTEAdjoint.log",
+      "sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/FullChannelTEHilbert.log",
+      "sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-build.json",
+      "sha256": "eda364cf5df0a60e4bb6399a9a55e9adb9f640fd36f635eb13fd27258508ce39"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/hotspot-review.txt",
+      "sha256": "5d0505b62a7a67f5764a777050fb506b9160e0257b471bf0d629fb7af59689de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/independent-index.json",
+      "sha256": "a1fbdc57e9e63d9061cd46c24ff00cca44cf218e668c86711fa2cba73ad221a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/metadata-normalization.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialActualField.log",
+      "sha256": "d7799178e8f809296859e231b993ed7b1efffe60a1523676031f0a18c0c47ed6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialActualPhase.log",
+      "sha256": "eb298104dc417f75c10bf39d07b64e134eb322318ed9c9750e78becc28a1902e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialHotspot.log",
+      "sha256": "add329fcd55b58b0a2ba9358672456ac1cdb2e751b591c1aa65d63cea7f4c2ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialHotspotGeometry.log",
+      "sha256": "f75d36cb0781ed0a6909fa440a8cb1a97c7426e5d44e170f1138fcbca0f9a765"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialPhaseField.log",
+      "sha256": "cfa629fe5509fa0652c97e60f941c8e5886a102ed9d07bc6f533f9ac7d077941"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet06AxialTraceCollar.log",
+      "sha256": "b61d3e330503c582b5ba5bccaa021c5e082eb88c847e1375b5a44a28b658313d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialCurl.log",
+      "sha256": "7b587449bfba1c34e0f769185ca3be92c49bb58308935dc0977a49e959d4f873"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialDerivativePair.log",
+      "sha256": "64fd2ac599256b68a48cc4658591d4ab4eb1d2a31bd5edcbbdea5cff563a8db4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialMaxwell.log",
+      "sha256": "83c3f90636f4defc5337c652fa321b71bda355763a329c2b997287d640f375d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialPair.log",
+      "sha256": "3cbd181d2aff054400cabab8718ef2ff9629bc37988f073ca9c611521ff036de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07DrivenAxialTests.log",
+      "sha256": "7a66b81fe79b377bde8b7ab108c5129bab7ae8988f74ece632e931d7a4dfa456"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneArbitrary.log",
+      "sha256": "5034c248f8a2c294ce8203d388ea3a7513b1a7761c2f305132336e2e29cb6592"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneCoordinates.log",
+      "sha256": "c9b1b65b6ddd349690437da30e889135144c0270f5926e458632dfb5114700b8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlaneFrame.log",
+      "sha256": "a2eac5542139cc1b7c0cff77fffd3fa9f807c6a9e94a0cd38dcd2ee71d0d4b9d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/Packet07PlanePatch.log",
+      "sha256": "b49dbc49665f9642bd4aba027bd1843dfc56c4438a78189dd888d8454d5081a3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-build.json",
+      "sha256": "d1c0107c3a303e95dc6c2335a102cc30a3e7326b762a4a481f4cdb271013278d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/reviews/plane-review.txt",
+      "sha256": "65fd92d1c720fbea3c5bd2b7506426cf288939b397237949789469ac1f5dcb95"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/scripts/audit_provenance.ps1",
+      "sha256": "c5360f7a9fbdc307eff3317e93e75b974e64faaf9f453c5747b6d4d67f5ca7ca"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/scripts/check_chain.py",
+      "sha256": "48382e8a4e12346e002fd7216c4225a069397fc5154fa7a16148f4b0bc82d9d0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/scripts/freeze_checkpoint.py",
+      "sha256": "7c2e56354dbbca9310eee15940f2cc7e942aa25dbba8757c70029a055875a761"
+    },
+    {
+      "path": "checkpoints/2026-11-13-passivity-plane-transport/STAGE110.txt",
+      "sha256": "87bc687ef6186dfbb4f467c0cce172ea4462a4c49924237d2b08a5cd7116b72d"
+    },
+    {
+      "path": "lean/FullChannelClosedTE.lean",
+      "sha256": "bb2e07e7349879680d7cb966a8e63d8b757f5cafe24ffbdef9b12ef36d75aa9a"
+    },
+    {
+      "path": "lean/FullChannelCountedTEPassivity.lean",
+      "sha256": "b92475c94c2986bfa411a7b2488c8cd5120492781f94d5d8a4f7e96d414ca4b6"
+    },
+    {
+      "path": "lean/FullChannelExactPassiveWitness.lean",
+      "sha256": "670831c67b90de293682b23409cdbd4ae1b2a30c0751c8c3ddfb14bcc8d8e1dd"
+    },
+    {
+      "path": "lean/FullChannelPassiveCountedFinal.lean",
+      "sha256": "6ff0f35771218517e0359ae69f5b404e99f253565dac94a1a25530fd767e2aa9"
+    },
+    {
+      "path": "lean/FullChannelPhysicalPassivity.lean",
+      "sha256": "50211fda4cc7e17768854e6d44d3ab717daf31ba2840fc1f137f454e796e2b2d"
+    },
+    {
+      "path": "lean/FullChannelTEAdjoint.lean",
+      "sha256": "4677fba932c21a22a73ae038c793ccb9a48ffc28ae43b1b7351ee3bc2382b5b0"
+    },
+    {
+      "path": "lean/FullChannelTEHilbert.lean",
+      "sha256": "3bfef56ad5f66f7a581c5ba193f292dde4212052b7cb7787bf55ee19bc385aa4"
+    },
+    {
+      "path": "lean/Packet06AxialActualField.lean",
+      "sha256": "6435dc13c8fa4032c896c7941160287eba92f5c79b67438901f73455fc7772d5"
+    },
+    {
+      "path": "lean/Packet06AxialActualPhase.lean",
+      "sha256": "a4a017f85702633887fbf0305506b868dae7546f1319eb92e2129ac027b2bc79"
+    },
+    {
+      "path": "lean/Packet06AxialHotspot.lean",
+      "sha256": "43574b4ba893d2c00c3933a096599762282383836170f2bb0f2c8339bb82a33d"
+    },
+    {
+      "path": "lean/Packet06AxialHotspotGeometry.lean",
+      "sha256": "429d0b9a78524799e51a3f59d6702f55e6638b5e1e734b880f60364bd98fe387"
+    },
+    {
+      "path": "lean/Packet06AxialPhaseField.lean",
+      "sha256": "8f5835bb5252a7b48999135149f0728dc31987d9cf02b856066ddd9c1d4d7c05"
+    },
+    {
+      "path": "lean/Packet06AxialTraceCollar.lean",
+      "sha256": "fde54507130068112729fe6523915a564cdb103469ef8b8f93f3fb7adeef060c"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialCurl.lean",
+      "sha256": "9abbcb99d4c674c14e0a9cb5f59e05c92413080d36997718af87fe75151fb31f"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialDerivativePair.lean",
+      "sha256": "5770c557e22cc9f28083b746478270b4e1f71e3fc0e324d1ceb39c500549f249"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialMaxwell.lean",
+      "sha256": "13c7cc07cd3c8a8f09a3316b355e269335f881566dd719ff972bda6a2f72e972"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialPair.lean",
+      "sha256": "277f6d2c78bc2622953c5dcb94dbf8425d3f35d318c987d1c18d603ae89b6639"
+    },
+    {
+      "path": "lean/Packet07DrivenAxialTests.lean",
+      "sha256": "8b48687b03dcd13f28fb3f430b46e7f94677533d7db2e90976e815094918a7e5"
+    },
+    {
+      "path": "lean/Packet07PlaneArbitrary.lean",
+      "sha256": "f9179695ed403fc302c1f3f7f85efa027e3ae1b6cd3985086f674b2200987e13"
+    },
+    {
+      "path": "lean/Packet07PlaneCoordinates.lean",
+      "sha256": "3c838fbeabdfe4a221c7f96ecbfbae5534aaaaaa4d1213dae9dfd4e0b0ae6337"
+    },
+    {
+      "path": "lean/Packet07PlaneFrame.lean",
+      "sha256": "d934b8dc36b488e0860718b9b0c266100026173d4c5eb2d1d547be3de82e0036"
+    },
+    {
+      "path": "lean/Packet07PlanePatch.lean",
+      "sha256": "dd2f3ba6ce092a03ac6f4041a092ac22c85380900884c22c513e5fe15255e4a6"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "d7bd9d40c30156b56a294c0ce8299c8015be0457efdce6d25e1e723fdd11f5f7"
+    }
+  ],
+  "scope": "exact passive channel witness and physical plane transport. The exact physical counted-channel witness includes complete-output passivity on its closed incoming TE Hilbert space. Actual axial phase/hotspot transport, driven weak Maxwell rotation and arbitrary plane geometry are proved. Final arbitrary-plane endpoints, paper alignment and aggregate verification remain active."
+}

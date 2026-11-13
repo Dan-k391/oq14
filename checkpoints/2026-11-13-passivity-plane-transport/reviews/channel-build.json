@@ -1,0 +1,160 @@
+{
+  "complete": true,
+  "scope": "Root fresh ordered isolated exact physical counted witness and complete-output passivity on its closed incoming TE Hilbert sector with cached upstream objects.",
+  "records": [
+    {
+      "module": "FullChannelClosedTE",
+      "source": "D:\\oq14\\lean\\FullChannelClosedTE.lean",
+      "source_sha256": "bb2e07e7349879680d7cb966a8e63d8b757f5cafe24ffbdef9b12ef36d75aa9a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelClosedTE.olean",
+        "D:\\oq14\\lean\\FullChannelClosedTE.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelClosedTE.log",
+      "log_sha256": "42774458b7d3bef191f837aeb5e4efa87a115656f1a2484267132e4631317e6f",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelClosedTE.olean",
+      "object_sha256": "d6ed8849d699db34061457fa1f0000b0bc1895b03fed00558a74d8e448a358e8",
+      "exit_code": 0,
+      "seconds": 15.579,
+      "reports": 3,
+      "declarations": [
+        "OQ14.FullChannelClosedTE.finite_mem",
+        "OQ14.FullChannelClosedTE.sector_isometric",
+        "OQ14.FullChannelClosedTE.sector_contractive"
+      ]
+    },
+    {
+      "module": "FullChannelCountedTEPassivity",
+      "source": "D:\\oq14\\lean\\FullChannelCountedTEPassivity.lean",
+      "source_sha256": "b92475c94c2986bfa411a7b2488c8cd5120492781f94d5d8a4f7e96d414ca4b6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelCountedTEPassivity.olean",
+        "D:\\oq14\\lean\\FullChannelCountedTEPassivity.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelCountedTEPassivity.log",
+      "log_sha256": "262bf5a5d590e1dcc062d3c0f7e7c70b34d2465a80e09b7c4f821b6b49606757",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelCountedTEPassivity.olean",
+      "object_sha256": "f96503ea27cc1521423fb00c68ae0f8365e7d83bdd5d5ad034f8185d29cecb67",
+      "exit_code": 0,
+      "seconds": 9.328,
+      "reports": 1,
+      "declarations": [
+        "OQ14.FullChannelCountedTEPassivity.counted_device_sector_isometric"
+      ]
+    },
+    {
+      "module": "FullChannelPhysicalPassivity",
+      "source": "D:\\oq14\\lean\\FullChannelPhysicalPassivity.lean",
+      "source_sha256": "50211fda4cc7e17768854e6d44d3ab717daf31ba2840fc1f137f454e796e2b2d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPhysicalPassivity.olean",
+        "D:\\oq14\\lean\\FullChannelPhysicalPassivity.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelPhysicalPassivity.log",
+      "log_sha256": "50cb23b6e9068562e579990e8df1c15a911860f16e17c685b19fd7bdbacc260b",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPhysicalPassivity.olean",
+      "object_sha256": "983633da2aadd71ab4008e314e029178b0dcb150a19bbd7fb87e6cf22fb0ae09",
+      "exit_code": 0,
+      "seconds": 16.922,
+      "reports": 2,
+      "declarations": [
+        "OQ14.FullChannelPhysicalPassivity.actual_witness_has_passive_sector",
+        "OQ14.FullChannelPhysicalPassivity.unrestricted_counted_passive_sector"
+      ]
+    },
+    {
+      "module": "FullChannelTEHilbert",
+      "source": "D:\\oq14\\lean\\FullChannelTEHilbert.lean",
+      "source_sha256": "3bfef56ad5f66f7a581c5ba193f292dde4212052b7cb7787bf55ee19bc385aa4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEHilbert.olean",
+        "D:\\oq14\\lean\\FullChannelTEHilbert.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelTEHilbert.log",
+      "log_sha256": "343f435ec01b61f6ddb448eeec87719ab09669861f5564dd6ad67c9940940963",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEHilbert.olean",
+      "object_sha256": "89c87371276cdce222c2def5e9b756f5be99648a2535377a81992bafd3e8dee2",
+      "exit_code": 0,
+      "seconds": 9.875,
+      "reports": 3,
+      "declarations": [
+        "OQ14.FullChannelTEHilbert.transverse_closed",
+        "OQ14.FullChannelTEHilbert.transverse_complete",
+        "OQ14.FullChannelTEHilbert.sector_complete"
+      ]
+    },
+    {
+      "module": "FullChannelTEAdjoint",
+      "source": "D:\\oq14\\lean\\FullChannelTEAdjoint.lean",
+      "source_sha256": "4677fba932c21a22a73ae038c793ccb9a48ffc28ae43b1b7351ee3bc2382b5b0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEAdjoint.olean",
+        "D:\\oq14\\lean\\FullChannelTEAdjoint.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelTEAdjoint.log",
+      "log_sha256": "e4e58f5364d5d763aa54d9baf435b79c1d9500d485c1c2ade748da4754210611",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelTEAdjoint.olean",
+      "object_sha256": "b540e8ff12997a8d66711035846ed05fc23ae82f28ce7daf61f9227f27d3d673",
+      "exit_code": 0,
+      "seconds": 12.687,
+      "reports": 2,
+      "declarations": [
+        "OQ14.FullChannelTEAdjoint.actual_scattering_adjoint",
+        "OQ14.FullChannelTEAdjoint.isometry_adjoint"
+      ]
+    },
+    {
+      "module": "FullChannelPassiveCountedFinal",
+      "source": "D:\\oq14\\lean\\FullChannelPassiveCountedFinal.lean",
+      "source_sha256": "6ff0f35771218517e0359ae69f5b404e99f253565dac94a1a25530fd767e2aa9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPassiveCountedFinal.olean",
+        "D:\\oq14\\lean\\FullChannelPassiveCountedFinal.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelPassiveCountedFinal.log",
+      "log_sha256": "710dcd4ed007a75d4c41543c771358e5617ad959fcd1539bfda88c19708345a0",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelPassiveCountedFinal.olean",
+      "object_sha256": "b7c987b00056d5cc6bc0753c4c50022735668dd0e8a99116828cb4df314983a8",
+      "exit_code": 0,
+      "seconds": 41.172,
+      "reports": 1,
+      "declarations": [
+        "OQ14.FullChannelPassiveCountedFinal.unrestricted_counted_adjoint_identity"
+      ]
+    },
+    {
+      "module": "FullChannelExactPassiveWitness",
+      "source": "D:\\oq14\\lean\\FullChannelExactPassiveWitness.lean",
+      "source_sha256": "670831c67b90de293682b23409cdbd4ae1b2a30c0751c8c3ddfb14bcc8d8e1dd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelExactPassiveWitness.olean",
+        "D:\\oq14\\lean\\FullChannelExactPassiveWitness.lean"
+      ],
+      "log": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\FullChannelExactPassiveWitness.log",
+      "log_sha256": "ff7b4b132dfb286ed84ffed1d5a5f55c422ce2a2d7005fa6c3b6714300fca9be",
+      "object": "D:\\oq14\\checkpoints\\2026-11-13-exact-channel-passivity\\reviews\\root-objects\\FullChannelExactPassiveWitness.olean",
+      "object_sha256": "7d988b08b2b18d88940a89b73863dfe21ac46246041de44a3e09027c0a882ed7",
+      "exit_code": 0,
+      "seconds": 18.875,
+      "reports": 2,
+      "declarations": [
+        "OQ14.FullChannelExactPassiveWitness.witness_passive",
+        "OQ14.FullChannelExactPassiveWitness.unrestricted_exact_passive"
+      ]
+    }
+  ]
+}

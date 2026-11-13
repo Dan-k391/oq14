@@ -1,0 +1,178 @@
+[
+  {
+    "module": "FullChannelClosedTE",
+    "declarations": [
+      "OQ14.FullChannelClosedTE.finite_mem",
+      "OQ14.FullChannelClosedTE.sector_isometric",
+      "OQ14.FullChannelClosedTE.sector_contractive"
+    ]
+  },
+  {
+    "module": "FullChannelCountedTEPassivity",
+    "declarations": [
+      "OQ14.FullChannelCountedTEPassivity.counted_device_sector_isometric"
+    ]
+  },
+  {
+    "module": "FullChannelPhysicalPassivity",
+    "declarations": [
+      "OQ14.FullChannelPhysicalPassivity.actual_witness_has_passive_sector",
+      "OQ14.FullChannelPhysicalPassivity.unrestricted_counted_passive_sector"
+    ]
+  },
+  {
+    "module": "FullChannelTEHilbert",
+    "declarations": [
+      "OQ14.FullChannelTEHilbert.transverse_closed",
+      "OQ14.FullChannelTEHilbert.transverse_complete",
+      "OQ14.FullChannelTEHilbert.sector_complete"
+    ]
+  },
+  {
+    "module": "FullChannelTEAdjoint",
+    "declarations": [
+      "OQ14.FullChannelTEAdjoint.actual_scattering_adjoint",
+      "OQ14.FullChannelTEAdjoint.isometry_adjoint"
+    ]
+  },
+  {
+    "module": "FullChannelPassiveCountedFinal",
+    "declarations": [
+      "OQ14.FullChannelPassiveCountedFinal.unrestricted_counted_adjoint_identity"
+    ]
+  },
+  {
+    "module": "FullChannelExactPassiveWitness",
+    "declarations": [
+      "OQ14.FullChannelExactPassiveWitness.witness_passive",
+      "OQ14.FullChannelExactPassiveWitness.unrestricted_exact_passive"
+    ]
+  },
+  {
+    "module": "Packet07PlaneFrame",
+    "declarations": [
+      "OQ14.Packet07PlaneFrame.normal_rotation_basis",
+      "OQ14.Packet07PlaneFrame.exists_frame"
+    ]
+  },
+  {
+    "module": "Packet07PlaneCoordinates",
+    "declarations": [
+      "OQ14.Packet07PlaneCoordinates.embed_plane",
+      "OQ14.Packet07PlaneCoordinates.coordinates_embed",
+      "OQ14.Packet07PlaneCoordinates.embed_coordinates",
+      "OQ14.Packet07PlaneCoordinates.embed_injective",
+      "OQ14.Packet07PlaneCoordinates.embed_dist",
+      "OQ14.Packet07PlaneCoordinates.coordinates_dist_le",
+      "OQ14.Packet07PlaneCoordinates.projection_fixed",
+      "OQ14.Packet07PlaneCoordinates.projection_dist_le"
+    ]
+  },
+  {
+    "module": "Packet07PlanePatch",
+    "declarations": [
+      "OQ14.Packet07PlanePatch.projection_remainder",
+      "OQ14.Packet07PlanePatch.projection_orthogonal",
+      "OQ14.Packet07PlanePatch.embed_continuous",
+      "OQ14.Packet07PlanePatch.patch_pullback"
+    ]
+  },
+  {
+    "module": "Packet07PlaneArbitrary",
+    "declarations": [
+      "OQ14.Packet07PlaneArbitrary.arbitrary_plane_patch"
+    ]
+  },
+  {
+    "module": "Packet06AxialActualField",
+    "declarations": [
+      "OQ14.Packet06AxialActualField.rotated_response_material_ae",
+      "OQ14.Packet06AxialActualField.rotated_electric_material_ae"
+    ]
+  },
+  {
+    "module": "Packet06AxialPhaseField",
+    "declarations": [
+      "OQ14.Packet06AxialPhaseField.amplitude_transport",
+      "OQ14.Packet06AxialPhaseField.continuous_transport",
+      "OQ14.Packet06AxialPhaseField.phase_transport"
+    ]
+  },
+  {
+    "module": "Packet06AxialActualPhase",
+    "declarations": [
+      "OQ14.Packet06AxialActualPhase.component_image_ae",
+      "OQ14.Packet06AxialActualPhase.component_image_general_ae"
+    ]
+  },
+  {
+    "module": "Packet06AxialTraceCollar",
+    "declarations": [
+      "OQ14.Packet06AxialTraceCollar.rotated_trace_collar",
+      "OQ14.Packet06AxialTraceCollar.rotated_trace_collar_general"
+    ]
+  },
+  {
+    "module": "Packet06AxialHotspotGeometry",
+    "declarations": [
+      "OQ14.Packet06AxialHotspotGeometry.image_phase",
+      "OQ14.Packet06AxialHotspotGeometry.image_ball",
+      "OQ14.Packet06AxialHotspotGeometry.image_closedBall",
+      "OQ14.Packet06AxialHotspotGeometry.phase_superlevel_image",
+      "OQ14.Packet06AxialHotspotGeometry.maximum_transport",
+      "OQ14.Packet06AxialHotspotGeometry.half_component_transport"
+    ]
+  },
+  {
+    "module": "Packet06AxialHotspot",
+    "declarations": [
+      "OQ14.Packet06AxialHotspot.rotate_hotspot",
+      "OQ14.Packet06AxialHotspot.rotate_hotspot_general"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialTests",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialTests.rotateTest_apply",
+      "OQ14.Packet07DrivenAxialTests.rotation_basis_zero",
+      "OQ14.Packet07DrivenAxialTests.rotation_basis_one",
+      "OQ14.Packet07DrivenAxialTests.rotation_basis_two",
+      "OQ14.Packet07DrivenAxialTests.rotateTest_partial_zero",
+      "OQ14.Packet07DrivenAxialTests.rotateTest_partial_one",
+      "OQ14.Packet07DrivenAxialTests.rotateTest_partial_two",
+      "OQ14.Packet07DrivenAxialTests.pairing_rotate"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialPair",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialPair.rotated_component_integrable",
+      "OQ14.Packet07DrivenAxialPair.field_pair_zero",
+      "OQ14.Packet07DrivenAxialPair.field_pair_one",
+      "OQ14.Packet07DrivenAxialPair.field_pair_two"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialDerivativePair",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_zero",
+      "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_one",
+      "OQ14.Packet07DrivenAxialDerivativePair.pair_partial_two"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialCurl",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialCurl.curl_pair_zero",
+      "OQ14.Packet07DrivenAxialCurl.curl_pair_one",
+      "OQ14.Packet07DrivenAxialCurl.curl_pair_two"
+    ]
+  },
+  {
+    "module": "Packet07DrivenAxialMaxwell",
+    "declarations": [
+      "OQ14.Packet07DrivenAxialMaxwell.dielectric_rotate",
+      "OQ14.Packet07DrivenAxialMaxwell.complex_maxwell_rotate"
+    ]
+  }
+]
