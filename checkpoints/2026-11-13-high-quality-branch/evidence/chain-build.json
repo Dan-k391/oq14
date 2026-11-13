@@ -1,0 +1,235 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-033657-36816",
+  "object_directory": "checkpoints/2026-11-13-high-quality-branch/objects/20261113-033657-36816",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 7 actual certified high-quality normalized branch modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06HighQualityBranch",
+      "source": "lean/Packet06HighQualityBranch.lean",
+      "source_sha256": "bfa052795bbdbb3bbba0da2803c431b90b23c978b9f67494405ab833584eb99a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06HighQualityBranch.olean",
+        "D:\\oq14\\lean\\Packet06HighQualityBranch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.0,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06HighQualityBranch-chain.log",
+      "log_sha256": "d29d1a66d670ecf7a93721e664b78b71a1948d52fc2fc7f6fd18e512cfed4f46",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06HighQualityBranch.quality_stable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06HighQualityBranch.normalized_inserted_highQ",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a637ae80fd5d72252ae5ee92663e2ee2cf5a0c7ac872b45dc2e2db3e91db6eda"
+    },
+    {
+      "module": "Packet06PositiveHighQuality",
+      "source": "lean/Packet06PositiveHighQuality.lean",
+      "source_sha256": "55b7f2835e3d861feb19a0e43e5cbd8bb274172a23f533fd1315b51e6c609a1c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06PositiveHighQuality.olean",
+        "D:\\oq14\\lean\\Packet06PositiveHighQuality.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.078,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06PositiveHighQuality-chain.log",
+      "log_sha256": "26667836dafa3a2149f1bab2134c12ff989fd07706c6b93d61bec720ebffd4cc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06PositiveHighQuality.positive_inserted_highQ",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6976848a562c24acce29d7950caed21c3d585571a9e41b957a6c113e3b8deaf0"
+    },
+    {
+      "module": "Packet06SimpleCertificate",
+      "source": "lean/Packet06SimpleCertificate.lean",
+      "source_sha256": "39e07b58e78e93288e29526be2e1c4bcbe650bf85876d6bc01a5b6b95bc17091",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06SimpleCertificate.olean",
+        "D:\\oq14\\lean\\Packet06SimpleCertificate.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.829,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06SimpleCertificate-chain.log",
+      "log_sha256": "db69191cce40a4f77bca1591a96033bc52dffe07b3930bc1c6e9a435b92b87c3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SimpleCertificate.certified_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleCertificate.repair_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleCertificate.scalar_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06SimpleCertificate.certified_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5ea61cba7c68574e2cff594861f08b4f3560ae82d723d22c35fc4c0f4903f11b"
+    },
+    {
+      "module": "Packet06CertifiedPersistence",
+      "source": "lean/Packet06CertifiedPersistence.lean",
+      "source_sha256": "5135a9bf375ff6b4093048eada5474855605562fa2a00597dcacd5624bb86cc7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06CertifiedPersistence.olean",
+        "D:\\oq14\\lean\\Packet06CertifiedPersistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.437,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedPersistence-chain.log",
+      "log_sha256": "1abf3b3ccd1ce431d5549fbf7d60b4606d307bf1d3dce01f12f83904397efd2a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CertifiedPersistence.actual_certified_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "edc902928f6bccbff4236927968e7b1d82b50b54d850a2bd44b7bc21371261d0"
+    },
+    {
+      "module": "Packet06CertifiedNormalization",
+      "source": "lean/Packet06CertifiedNormalization.lean",
+      "source_sha256": "b3f6622dc2d13dd8917b048d9254387000afe3c408d67a75ef186b92abe663df",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06CertifiedNormalization.olean",
+        "D:\\oq14\\lean\\Packet06CertifiedNormalization.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.375,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedNormalization-chain.log",
+      "log_sha256": "f2cf12f0836397b2e492cf16f46100016559d39e208f36af20151fb4b7c351c4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CertifiedNormalization.physical_certified_modes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "77e735b5dcd4e6e1cc129ecd7c9f15ff84d32ebfca1f1a740b9b4feb890f0937"
+    },
+    {
+      "module": "Packet06CertifiedSphere",
+      "source": "lean/Packet06CertifiedSphere.lean",
+      "source_sha256": "13df68e3623397f04ad195d52906174f0e9e1669c3421e9845224e9808a106d6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06CertifiedSphere.olean",
+        "D:\\oq14\\lean\\Packet06CertifiedSphere.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.75,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedSphere-chain.log",
+      "log_sha256": "5b4163b648d46f66ba0d3dce46297fa4ff1834cfa7828b7e54ed1c191cfa3b01",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CertifiedSphere.sphere_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CertifiedSphere.physically_normalized_highQ_sphere",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7119495b42b46eab94d935d2ada012670dea734ea29e50d5b921bc5f91633ff4"
+    },
+    {
+      "module": "Packet06CertifiedInsertion",
+      "source": "lean/Packet06CertifiedInsertion.lean",
+      "source_sha256": "93f88b17531804191c4ef6d04c623533e7cbeee1d91d6933f567193dd31c76cd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-high-quality-branch\\objects\\20261113-033657-36816\\Packet06CertifiedInsertion.olean",
+        "D:\\oq14\\lean\\Packet06CertifiedInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.484,
+      "log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedInsertion-chain.log",
+      "log_sha256": "329a404f4257aa71b913448c45cdc51a39a3db7ae700ae00032c07aa2b82e978",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CertifiedInsertion.normalized_certified_insertions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bc6d1ea2189be8d0f2ba73dcf691659ac349a472f8c62d0943da600e969d0d5f"
+    }
+  ],
+  "module_count": 7,
+  "report_count": 12
+}

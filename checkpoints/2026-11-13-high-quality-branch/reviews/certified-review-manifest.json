@@ -1,0 +1,56 @@
+{
+  "scope": "Independent isolated rebuild and semantic review of six certified persistence/positive insertion modules",
+  "modules": [
+    {
+      "module": "Packet06PositiveHighQuality",
+      "source_sha256": "55b7f2835e3d861feb19a0e43e5cbd8bb274172a23f533fd1315b51e6c609a1c",
+      "log_sha256": "b564cf11c82f8d601593059f3c087d1c6815e6bd7e307e66646e449dcf3592de",
+      "object_sha256": "6976848a562c24acce29d7950caed21c3d585571a9e41b957a6c113e3b8deaf0",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SimpleCertificate",
+      "source_sha256": "39e07b58e78e93288e29526be2e1c4bcbe650bf85876d6bc01a5b6b95bc17091",
+      "log_sha256": "cbf8afab34ee06769628810bc7af0c518ef3f8f4885ee566de7ec90cfc5717fb",
+      "object_sha256": "5ea61cba7c68574e2cff594861f08b4f3560ae82d723d22c35fc4c0f4903f11b",
+      "reports": 4,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06CertifiedPersistence",
+      "source_sha256": "5135a9bf375ff6b4093048eada5474855605562fa2a00597dcacd5624bb86cc7",
+      "log_sha256": "b103276cc729c514ae43de6efde8ebb88615ec2cb1eb34041dac0bcf16e28ecd",
+      "object_sha256": "edc902928f6bccbff4236927968e7b1d82b50b54d850a2bd44b7bc21371261d0",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06CertifiedNormalization",
+      "source_sha256": "b3f6622dc2d13dd8917b048d9254387000afe3c408d67a75ef186b92abe663df",
+      "log_sha256": "4b8ab1bd0146869cbbf13c56f5a64f1ffa572047658c2cf1225ff53c43557cde",
+      "object_sha256": "77e735b5dcd4e6e1cc129ecd7c9f15ff84d32ebfca1f1a740b9b4feb890f0937",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06CertifiedSphere",
+      "source_sha256": "13df68e3623397f04ad195d52906174f0e9e1669c3421e9845224e9808a106d6",
+      "log_sha256": "bc3cf8d584686f74c0dce6b700bb5bc1232f3d407869d250c7218273d5c6c2d5",
+      "object_sha256": "7119495b42b46eab94d935d2ada012670dea734ea29e50d5b921bc5f91633ff4",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06CertifiedInsertion",
+      "source_sha256": "93f88b17531804191c4ef6d04c623533e7cbeee1d91d6933f567193dd31c76cd",
+      "log_sha256": "3f2588492cdb9f06f01b023e62c1884a9d61e463d993f190c8531ed8aef6a5d6",
+      "object_sha256": "bc6d1ea2189be8d0f2ba73dcf691659ac349a472f8c62d0943da600e969d0d5f",
+      "reports": 1,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 10,
+  "status": "pass",
+  "review": "certified-semantic-review.md"
+}

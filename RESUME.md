@@ -1,5 +1,30 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 85 is the latest verified incremental checkpoint:
+[STAGE85.txt](checkpoints/2026-11-13-high-quality-branch/STAGE85.txt).
+The actual physical unit high-Q modal branch retains its kernel, invertible
+rank-one repair and simple Schur crossing data for subsequent rounding.
+Generic perturbations converge to the same physical unit base mode. A separate
+corollary selects arbitrarily small strictly positive insertion amplitudes.
+
+7 modules / 12 reports passed independent Terra review/build and a combined
+fresh ordered build. 1042 upstream sources were authenticated, with cached
+objects. The ledger is 794 modules / 4582 reports, all prior records unchanged:
+`checkpoints/2026-11-13-high-quality-branch/evidence/audited_after_5238-stage85.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: actual rigid volume/reciprocal transport and actual complex
+cone projection are undergoing fresh builds after root review. The cone
+coefficient limit requires exact constant-correction cancellation and uniform
+Holder control as the exponent tends to one. Curved scalar second derivatives
+and differentiated equations are advancing. Actual excitation, attained
+hotspots/collars, packing, final paper and aggregate checks remain.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage85.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 84 is the latest verified incremental checkpoint:
 [STAGE84.txt](checkpoints/2026-11-13-angular-convergence/STAGE84.txt).
 Actual positive cone angular roots now provably converge to 2, their exponents

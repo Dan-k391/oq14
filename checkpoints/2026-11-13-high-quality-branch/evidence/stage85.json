@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "4e32a69",
+  "modules": 794,
+  "reports": 4582,
+  "new_modules": 7,
+  "new_reports": 12,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "1f909009f5f91b8903d160d859364a1e39e18b2d4ee6dfed90e611b65aca2cea",
+  "ledger_sha256": "bcad114ba162a43da126fc46dd02f5eda3cf5d0ddd1dcaa95dfd3963e8a77327",
+  "raw_archive_sha256": "a0c099a1aba36bbbc96ae6e78e38b0ff2a92de3773485a70bda5fcc61a73b373",
+  "records": [
+    {
+      "module": "Packet06HighQualityBranch",
+      "reports": 2,
+      "source_sha256": "bfa052795bbdbb3bbba0da2803c431b90b23c978b9f67494405ab833584eb99a",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06HighQualityBranch-chain.log",
+      "audit_log_sha256": "d29d1a66d670ecf7a93721e664b78b71a1948d52fc2fc7f6fd18e512cfed4f46",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/semantic-review.md",
+      "independent_review_sha256": "d8527ca60a8e58ffe22763fbd8aaa3bd3e57663c0fe5d38e4f1e8b7a573d7b45",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/review-manifest.json",
+      "independent_build_sha256": "46755d71f74fd63cab315ae52813ada3a975eb1f9be9a3e7890c8f07b7cd34f9",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/Packet06HighQualityBranch.log",
+      "independent_log_sha256": "511f7d7a5fbdac245319fd8e93878029e05f73c078d1da1a5371936b313ca4d2",
+      "declarations": [
+        "OQ14.Packet06HighQualityBranch.quality_stable",
+        "OQ14.Packet06HighQualityBranch.normalized_inserted_highQ"
+      ]
+    },
+    {
+      "module": "Packet06PositiveHighQuality",
+      "reports": 1,
+      "source_sha256": "55b7f2835e3d861feb19a0e43e5cbd8bb274172a23f533fd1315b51e6c609a1c",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06PositiveHighQuality-chain.log",
+      "audit_log_sha256": "26667836dafa3a2149f1bab2134c12ff989fd07706c6b93d61bec720ebffd4cc",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06PositiveHighQuality.log",
+      "independent_log_sha256": "b564cf11c82f8d601593059f3c087d1c6815e6bd7e307e66646e449dcf3592de",
+      "declarations": [
+        "OQ14.Packet06PositiveHighQuality.positive_inserted_highQ"
+      ]
+    },
+    {
+      "module": "Packet06SimpleCertificate",
+      "reports": 4,
+      "source_sha256": "39e07b58e78e93288e29526be2e1c4bcbe650bf85876d6bc01a5b6b95bc17091",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06SimpleCertificate-chain.log",
+      "audit_log_sha256": "db69191cce40a4f77bca1591a96033bc52dffe07b3930bc1c6e9a435b92b87c3",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06SimpleCertificate.log",
+      "independent_log_sha256": "cbf8afab34ee06769628810bc7af0c518ef3f8f4885ee566de7ec90cfc5717fb",
+      "declarations": [
+        "OQ14.Packet06SimpleCertificate.certified_nonzero",
+        "OQ14.Packet06SimpleCertificate.repair_scale",
+        "OQ14.Packet06SimpleCertificate.scalar_scale",
+        "OQ14.Packet06SimpleCertificate.certified_scale"
+      ]
+    },
+    {
+      "module": "Packet06CertifiedPersistence",
+      "reports": 1,
+      "source_sha256": "5135a9bf375ff6b4093048eada5474855605562fa2a00597dcacd5624bb86cc7",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedPersistence-chain.log",
+      "audit_log_sha256": "1abf3b3ccd1ce431d5549fbf7d60b4606d307bf1d3dce01f12f83904397efd2a",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06CertifiedPersistence.log",
+      "independent_log_sha256": "b103276cc729c514ae43de6efde8ebb88615ec2cb1eb34041dac0bcf16e28ecd",
+      "declarations": [
+        "OQ14.Packet06CertifiedPersistence.actual_certified_modes"
+      ]
+    },
+    {
+      "module": "Packet06CertifiedNormalization",
+      "reports": 1,
+      "source_sha256": "b3f6622dc2d13dd8917b048d9254387000afe3c408d67a75ef186b92abe663df",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedNormalization-chain.log",
+      "audit_log_sha256": "f2cf12f0836397b2e492cf16f46100016559d39e208f36af20151fb4b7c351c4",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06CertifiedNormalization.log",
+      "independent_log_sha256": "4b8ab1bd0146869cbbf13c56f5a64f1ffa572047658c2cf1225ff53c43557cde",
+      "declarations": [
+        "OQ14.Packet06CertifiedNormalization.physical_certified_modes"
+      ]
+    },
+    {
+      "module": "Packet06CertifiedSphere",
+      "reports": 2,
+      "source_sha256": "13df68e3623397f04ad195d52906174f0e9e1669c3421e9845224e9808a106d6",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedSphere-chain.log",
+      "audit_log_sha256": "5b4163b648d46f66ba0d3dce46297fa4ff1834cfa7828b7e54ed1c191cfa3b01",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-Packet06CertifiedSphere.log",
+      "independent_log_sha256": "bc3cf8d584686f74c0dce6b700bb5bc1232f3d407869d250c7218273d5c6c2d5",
+      "declarations": [
+        "OQ14.Packet06CertifiedSphere.sphere_certificate",
+        "OQ14.Packet06CertifiedSphere.physically_normalized_highQ_sphere"
+      ]
+    },
+    {
+      "module": "Packet06CertifiedInsertion",
+      "reports": 1,
+      "source_sha256": "93f88b17531804191c4ef6d04c623533e7cbeee1d91d6933f567193dd31c76cd",
+      "audit_log": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedInsertion-chain.log",
+      "audit_log_sha256": "329a404f4257aa71b913448c45cdc51a39a3db7ae700ae00032c07aa2b82e978",
+      "independent_review": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "independent_review_sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "independent_build_sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4",
+      "independent_log": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-Packet06CertifiedInsertion.log",
+      "independent_log_sha256": "3f2588492cdb9f06f01b023e62c1884a9d61e463d993f190c8531ed8aef6a5d6",
+      "declarations": [
+        "OQ14.Packet06CertifiedInsertion.normalized_certified_insertions"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/audited_after_5238-stage85.json",
+      "sha256": "bcad114ba162a43da126fc46dd02f5eda3cf5d0ddd1dcaa95dfd3963e8a77327"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/chain-build.json",
+      "sha256": "e0bcab0d0eb32503c21e73a447248bbb9974339bc23fddc1a99fea599b3c7358"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedInsertion-chain.log",
+      "sha256": "329a404f4257aa71b913448c45cdc51a39a3db7ae700ae00032c07aa2b82e978"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedNormalization-chain.log",
+      "sha256": "f2cf12f0836397b2e492cf16f46100016559d39e208f36af20151fb4b7c351c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedPersistence-chain.log",
+      "sha256": "1abf3b3ccd1ce431d5549fbf7d60b4606d307bf1d3dce01f12f83904397efd2a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06CertifiedSphere-chain.log",
+      "sha256": "5b4163b648d46f66ba0d3dce46297fa4ff1834cfa7828b7e54ed1c191cfa3b01"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06HighQualityBranch-chain.log",
+      "sha256": "d29d1a66d670ecf7a93721e664b78b71a1948d52fc2fc7f6fd18e512cfed4f46"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06PositiveHighQuality-chain.log",
+      "sha256": "26667836dafa3a2149f1bab2134c12ff989fd07706c6b93d61bec720ebffd4cc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/evidence/Packet06SimpleCertificate-chain.log",
+      "sha256": "db69191cce40a4f77bca1591a96033bc52dffe07b3930bc1c6e9a435b92b87c3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/modules.json",
+      "sha256": "4827998d8bb61193b8a2e71301e9a90cd09a1548fb049f2a9c5c49efe08d002c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/provenance-audit.json",
+      "sha256": "c3d76e8123dfcc83e6831d903c0e1ac829284bc6c858f77b5a715360e6a8ac99"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-inputs.json",
+      "sha256": "0deb7124511dff4176c24926f9aacd92fc41a90e96bd78cb2e0aa7ac219177eb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06CertifiedNormalization.log",
+      "sha256": "4b8ab1bd0146869cbbf13c56f5a64f1ffa572047658c2cf1225ff53c43557cde"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06CertifiedPersistence.log",
+      "sha256": "b103276cc729c514ae43de6efde8ebb88615ec2cb1eb34041dac0bcf16e28ecd"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06PositiveHighQuality.log",
+      "sha256": "b564cf11c82f8d601593059f3c087d1c6815e6bd7e307e66646e449dcf3592de"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-Packet06SimpleCertificate.log",
+      "sha256": "cbf8afab34ee06769628810bc7af0c518ef3f8f4885ee566de7ec90cfc5717fb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-rebuild.ps1",
+      "sha256": "caeaec48ce7655e2d78ee24ebcc74446d5b05f74c1074cb91de2c23fd001aab7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-review-manifest.json",
+      "sha256": "080ebb00f20e67344cbee446e8adb05ab246a391225ff65a12b933d45d8e84c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/certified-semantic-review.md",
+      "sha256": "a749dca56a97763e2548846d205f65dd816a37c44b924194e52f1841484c5df0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/inputs.json",
+      "sha256": "b9cb00da59730f9324325e49efeafd699cf3e9a51eae96bbefee34530a695aaf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/metadata-normalization.json",
+      "sha256": "a59f72d21c7d7b1ee5d615aee69431ed8dc2194f9656dcf46c6cfb743c9c718e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/Packet06HighQualityBranch.log",
+      "sha256": "511f7d7a5fbdac245319fd8e93878029e05f73c078d1da1a5371936b313ca4d2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/rebuild.ps1",
+      "sha256": "f46f450a4892eb07a7a627cf5dd2af35be93fd48cb2e394cae81af35a4399ffb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/review-manifest.json",
+      "sha256": "46755d71f74fd63cab315ae52813ada3a975eb1f9be9a3e7890c8f07b7cd34f9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/semantic-review.md",
+      "sha256": "d8527ca60a8e58ffe22763fbd8aaa3bd3e57663c0fe5d38e4f1e8b7a573d7b45"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-inputs.json",
+      "sha256": "5e1a04e33d8b6eb5c497ab61871c65582637d9edbe0824177c330b8886b88114"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-Packet06CertifiedInsertion.log",
+      "sha256": "3f2588492cdb9f06f01b023e62c1884a9d61e463d993f190c8531ed8aef6a5d6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-Packet06CertifiedSphere.log",
+      "sha256": "bc3cf8d584686f74c0dce6b700bb5bc1232f3d407869d250c7218273d5c6c2d5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/reviews/sphere-rebuild.ps1",
+      "sha256": "22d49d024d455086e372e22e37cfa3901ed0400efd320abfd1acc47aad327861"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/scripts/audit_provenance.ps1",
+      "sha256": "e73248a139bd70963448305607b22581fb6d196ec4c0d4e00c32694c2e9ec3e6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/scripts/check_chain.py",
+      "sha256": "205b4b5d21cebb22b969b845088b10f6b77675c284663daac14ee2fc2d4779c5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/scripts/freeze_checkpoint.py",
+      "sha256": "9c9df713a887c07b3df5e7d1d0e5ffff94698b501963f576434d6555127ab433"
+    },
+    {
+      "path": "checkpoints/2026-11-13-high-quality-branch/STAGE85.txt",
+      "sha256": "5f45c46383ed05d7a26beff70b51466f34051b86bd1a5b0b40e93e08adcac53c"
+    },
+    {
+      "path": "lean/Packet06CertifiedInsertion.lean",
+      "sha256": "93f88b17531804191c4ef6d04c623533e7cbeee1d91d6933f567193dd31c76cd"
+    },
+    {
+      "path": "lean/Packet06CertifiedNormalization.lean",
+      "sha256": "b3f6622dc2d13dd8917b048d9254387000afe3c408d67a75ef186b92abe663df"
+    },
+    {
+      "path": "lean/Packet06CertifiedPersistence.lean",
+      "sha256": "5135a9bf375ff6b4093048eada5474855605562fa2a00597dcacd5624bb86cc7"
+    },
+    {
+      "path": "lean/Packet06CertifiedSphere.lean",
+      "sha256": "13df68e3623397f04ad195d52906174f0e9e1669c3421e9845224e9808a106d6"
+    },
+    {
+      "path": "lean/Packet06HighQualityBranch.lean",
+      "sha256": "bfa052795bbdbb3bbba0da2803c431b90b23c978b9f67494405ab833584eb99a"
+    },
+    {
+      "path": "lean/Packet06PositiveHighQuality.lean",
+      "sha256": "55b7f2835e3d861feb19a0e43e5cbd8bb274172a23f533fd1315b51e6c609a1c"
+    },
+    {
+      "path": "lean/Packet06SimpleCertificate.lean",
+      "sha256": "39e07b58e78e93288e29526be2e1c4bcbe650bf85876d6bc01a5b6b95bc17091"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "518c078057f15ad3a92f659e2f40978817ee70d03a5201d643939cfd46e8eef8"
+    }
+  ],
+  "scope": "Actual physical unit high-Q insertion modes with convergent fields and selected-sector observed poles retain a reusable actual kernel/simple Schur certificate for subsequent perturbations. A separate corollary permits arbitrarily small strictly positive profile amplitude. Full OQ14 remains active; actual conical excitation and attained hotspots remain incomplete."
+}
