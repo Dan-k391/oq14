@@ -1,5 +1,31 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 78 is the latest verified incremental checkpoint:
+[STAGE78.txt](checkpoints/2026-11-13-driven-physical/STAGE78.txt).
+The same driven fixed-frequency, exact-2N-component peak device now includes a
+proved smooth ambient extension of its normalized transverse angular density,
+actual compact-source field decomposition, and electric/magnetic outgoing
+far limits on spheres centered at the translated device. Electric exterior
+identification is a.e.; the magnetic representative identity is pointwise.
+
+5 modules / 9 reports passed independent source review and two fresh isolated
+builds. 822 upstream local sources were authenticated, with cached objects.
+The accepted ledger is 709 modules / 4386 reports, all prior records unchanged:
+`checkpoints/2026-11-13-driven-physical/evidence/audited_after_5238-stage78.json`.
+Standard axioms only, no warnings; no whole-project clean build claimed.
+
+Full OQ14 remains active. The new actual sphere-material perturbation chain
+compiles with convergent kernels, physical electric responses and reciprocal
+normalization, and is under independent review. Actual general material
+symmetry and concrete on-axis cone symmetries compile outside this ledger.
+Graph scalar PDE transport now compiles; quantitative regularity, Maxwell
+potential decomposition, attained curved-device maxima/collars, modal conical
+excitation/packing, final manuscript and aggregate validation remain.
+
+Everything below is historical context, superseded by stage78.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 77 is the latest verified incremental checkpoint:
 [STAGE77.txt](checkpoints/2026-11-13-spectral-persistence/STAGE77.txt).
 The checked chain now includes simple scalar/Schur zero persistence, convergent

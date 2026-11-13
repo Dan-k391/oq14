@@ -1,0 +1,175 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-022947-65308",
+  "object_directory": "checkpoints/2026-11-13-driven-physical/objects/20261113-022947-65308",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 5 driven physical-output modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07AffineRadiation",
+      "source": "lean/Packet07AffineRadiation.lean",
+      "source_sha256": "3197cd9f6437a82f443fdc4aefe4ed0c6884fd1336d3b9431dd1233b2e22c970",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308\\Packet07AffineRadiation.olean",
+        "D:\\oq14\\lean\\Packet07AffineRadiation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.765,
+      "log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07AffineRadiation-chain.log",
+      "log_sha256": "9dae93690e033764f613c6bccf92fc7c62a322732eebc05888b4906f5f61f078",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffineRadiation.factor_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineRadiation.centered_far_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineRadiation.centered_electric_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineRadiation.centered_magnetic_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "833ca8a6fcac8a6286f3eff7af52f737a48f658c0acdb4acd113d985e9bae650"
+    },
+    {
+      "module": "Packet07ActualRadiation",
+      "source": "lean/Packet07ActualRadiation.lean",
+      "source_sha256": "ddb9f1f091da358d5e2270b963f8d427d7958640707462f25ec3afb4c25f9579",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308\\Packet07ActualRadiation.olean",
+        "D:\\oq14\\lean\\Packet07ActualRadiation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.235,
+      "log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07ActualRadiation-chain.log",
+      "log_sha256": "fdd9adb5277c9f1c2f09b97adab5085d31d6ec43fa2da5126b739c2d9a50b3d9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07ActualRadiation.actual_affine_exterior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "87195f09eb905a60f442d58ba5b06c0772062574b01d43d23927989ab6ca6370"
+    },
+    {
+      "module": "Packet07SelectedRadiation",
+      "source": "lean/Packet07SelectedRadiation.lean",
+      "source_sha256": "1e9b6589f1c3e7b88de532124a4039f10f7e6ab8419d745680ea18741cc507da",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308\\Packet07SelectedRadiation.olean",
+        "D:\\oq14\\lean\\Packet07SelectedRadiation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.875,
+      "log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SelectedRadiation-chain.log",
+      "log_sha256": "ba2e25ebda8aaee90a77048b325b0d07349c94ab5ccc3377ec076ae5aa35d2b1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07SelectedRadiation.selected_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3c0898adc2c0c022e84328d1d8bbf535c5db7319254bd75688235e566d134a2e"
+    },
+    {
+      "module": "Packet07SmoothAngular",
+      "source": "lean/Packet07SmoothAngular.lean",
+      "source_sha256": "521135241666919b85b637333fafb3271e84f4489aeea6a18920eccf5a40273d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308\\Packet07SmoothAngular.olean",
+        "D:\\oq14\\lean\\Packet07SmoothAngular.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.469,
+      "log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SmoothAngular-chain.log",
+      "log_sha256": "26d70ad0960d9f4adf3482d62016aacc44a738ec94bced012c2366ff8bef6ef7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07SmoothAngular.extension_smooth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07SmoothAngular.extension_on_sphere",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6b3632025bd5118b049e89c9d5004ca6729541d7fb434cba88130ca32d07cf5c"
+    },
+    {
+      "module": "Packet07FixedPhysical",
+      "source": "lean/Packet07FixedPhysical.lean",
+      "source_sha256": "88653b1469edd3799351e285a5c1dcf77853843d406ee5d48e4d9921ea4b8987",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-physical\\objects\\20261113-022947-65308\\Packet07FixedPhysical.olean",
+        "D:\\oq14\\lean\\Packet07FixedPhysical.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.937,
+      "log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07FixedPhysical-chain.log",
+      "log_sha256": "4ba20c08b77e6a523d1148b54a4f338f704484b0f06a95301842ac1c13249bf7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FixedPhysical.fixed_frequency_planar_superlevels",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4737d60cd89bee7514cfedbd78021d939f1f20ca08c1f5cee5dc8498a2919d80"
+    }
+  ],
+  "module_count": 5,
+  "report_count": 9
+}

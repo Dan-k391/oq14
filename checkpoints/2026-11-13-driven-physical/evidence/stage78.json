@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "20c3be8",
+  "modules": 709,
+  "reports": 4386,
+  "new_modules": 5,
+  "new_reports": 9,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "3ca8479695db648aab003c280fa214f7d57bf0ade0ff28c0fbe34f193c8301b6",
+  "ledger_sha256": "814ef1c65a08c8d066b3038a1ac8c24e3f2f991632f342e7204dc12597337511",
+  "source_provenance_sha256": "8a1eb747618962a8dca568838771aadbe1dce13a26c1d229c9e8a840f7a9d0c3",
+  "chain_build_sha256": "8828eda8cfc5f429088c8c6a3df24cb2bd38d062197ae9feb6e535de59e04af2",
+  "raw_archive_sha256": "31d39d3b321922a4b36a1f6ca85b619226114c849a3caf2b6c66ef1a2063d159",
+  "records": [
+    {
+      "module": "Packet07AffineRadiation",
+      "reports": 4,
+      "source_sha256": "3197cd9f6437a82f443fdc4aefe4ed0c6884fd1336d3b9431dd1233b2e22c970",
+      "audit_log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07AffineRadiation-chain.log",
+      "audit_log_sha256": "9dae93690e033764f613c6bccf92fc7c62a322732eebc05888b4906f5f61f078",
+      "independent_review": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "independent_review_sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of channel-authored module",
+      "independent_build": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "independent_build_sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6",
+      "independent_log": "checkpoints/2026-11-13-driven-physical/reviews/Packet07AffineRadiation.log",
+      "independent_log_sha256": "9dae93690e033764f613c6bccf92fc7c62a322732eebc05888b4906f5f61f078",
+      "declarations": [
+        "OQ14.Packet07AffineRadiation.factor_dilation",
+        "OQ14.Packet07AffineRadiation.centered_far_dilation",
+        "OQ14.Packet07AffineRadiation.centered_electric_outgoing",
+        "OQ14.Packet07AffineRadiation.centered_magnetic_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07ActualRadiation",
+      "reports": 1,
+      "source_sha256": "ddb9f1f091da358d5e2270b963f8d427d7958640707462f25ec3afb4c25f9579",
+      "audit_log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07ActualRadiation-chain.log",
+      "audit_log_sha256": "fdd9adb5277c9f1c2f09b97adab5085d31d6ec43fa2da5126b739c2d9a50b3d9",
+      "independent_review": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "independent_review_sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of channel-authored module",
+      "independent_build": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "independent_build_sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6",
+      "independent_log": "checkpoints/2026-11-13-driven-physical/reviews/Packet07ActualRadiation.log",
+      "independent_log_sha256": "fdd9adb5277c9f1c2f09b97adab5085d31d6ec43fa2da5126b739c2d9a50b3d9",
+      "declarations": [
+        "OQ14.Packet07ActualRadiation.actual_affine_exterior"
+      ]
+    },
+    {
+      "module": "Packet07SelectedRadiation",
+      "reports": 1,
+      "source_sha256": "1e9b6589f1c3e7b88de532124a4039f10f7e6ab8419d745680ea18741cc507da",
+      "audit_log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SelectedRadiation-chain.log",
+      "audit_log_sha256": "ba2e25ebda8aaee90a77048b325b0d07349c94ab5ccc3377ec076ae5aa35d2b1",
+      "independent_review": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "independent_review_sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of channel-authored module",
+      "independent_build": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "independent_build_sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6",
+      "independent_log": "checkpoints/2026-11-13-driven-physical/reviews/Packet07SelectedRadiation.log",
+      "independent_log_sha256": "ba2e25ebda8aaee90a77048b325b0d07349c94ab5ccc3377ec076ae5aa35d2b1",
+      "declarations": [
+        "OQ14.Packet07SelectedRadiation.selected_outgoing"
+      ]
+    },
+    {
+      "module": "Packet07SmoothAngular",
+      "reports": 2,
+      "source_sha256": "521135241666919b85b637333fafb3271e84f4489aeea6a18920eccf5a40273d",
+      "audit_log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SmoothAngular-chain.log",
+      "audit_log_sha256": "26d70ad0960d9f4adf3482d62016aacc44a738ec94bced012c2366ff8bef6ef7",
+      "independent_review": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "independent_review_sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of channel-authored module",
+      "independent_build": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "independent_build_sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6",
+      "independent_log": "checkpoints/2026-11-13-driven-physical/reviews/Packet07SmoothAngular.log",
+      "independent_log_sha256": "26d70ad0960d9f4adf3482d62016aacc44a738ec94bced012c2366ff8bef6ef7",
+      "declarations": [
+        "OQ14.Packet07SmoothAngular.extension_smooth",
+        "OQ14.Packet07SmoothAngular.extension_on_sphere"
+      ]
+    },
+    {
+      "module": "Packet07FixedPhysical",
+      "reports": 1,
+      "source_sha256": "88653b1469edd3799351e285a5c1dcf77853843d406ee5d48e4d9921ea4b8987",
+      "audit_log": "checkpoints/2026-11-13-driven-physical/evidence/Packet07FixedPhysical-chain.log",
+      "audit_log_sha256": "4ba20c08b77e6a523d1148b54a4f338f704484b0f06a95301842ac1c13249bf7",
+      "independent_review": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "independent_review_sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc",
+      "independent_review_mode": "Independent Terra source review and separate fresh compilation of channel-authored module",
+      "independent_build": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "independent_build_sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6",
+      "independent_log": "checkpoints/2026-11-13-driven-physical/reviews/Packet07FixedPhysical.log",
+      "independent_log_sha256": "4ba20c08b77e6a523d1148b54a4f338f704484b0f06a95301842ac1c13249bf7",
+      "declarations": [
+        "OQ14.Packet07FixedPhysical.fixed_frequency_planar_superlevels"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/audited_after_5238-stage78.json",
+      "sha256": "814ef1c65a08c8d066b3038a1ac8c24e3f2f991632f342e7204dc12597337511"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/chain-build.json",
+      "sha256": "8828eda8cfc5f429088c8c6a3df24cb2bd38d062197ae9feb6e535de59e04af2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/Packet07ActualRadiation-chain.log",
+      "sha256": "fdd9adb5277c9f1c2f09b97adab5085d31d6ec43fa2da5126b739c2d9a50b3d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/Packet07AffineRadiation-chain.log",
+      "sha256": "9dae93690e033764f613c6bccf92fc7c62a322732eebc05888b4906f5f61f078"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/Packet07FixedPhysical-chain.log",
+      "sha256": "4ba20c08b77e6a523d1148b54a4f338f704484b0f06a95301842ac1c13249bf7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SelectedRadiation-chain.log",
+      "sha256": "ba2e25ebda8aaee90a77048b325b0d07349c94ab5ccc3377ec076ae5aa35d2b1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/evidence/Packet07SmoothAngular-chain.log",
+      "sha256": "26d70ad0960d9f4adf3482d62016aacc44a738ec94bced012c2366ff8bef6ef7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/modules.json",
+      "sha256": "5b97e2cbe9d47fcee1f3edc04fe3d430ee996ba75f772cdb8f611d9d400f6293"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/provenance-audit.json",
+      "sha256": "8a1eb747618962a8dca568838771aadbe1dce13a26c1d229c9e8a840f7a9d0c3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/author-inventory.json",
+      "sha256": "8079df95621e792476645f10163cd33ff2ab5bb7bf69fc41f343d7764724ec9c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/independent-build.json",
+      "sha256": "d7c53ff34de7726981fe01593165227321a71953a84708da6c3931ade6dedca6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/independent-review.txt",
+      "sha256": "221664e009d96e15b2b66d7c314f520341e239d05e5d841815002339275c12bc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/Packet07ActualRadiation.log",
+      "sha256": "fdd9adb5277c9f1c2f09b97adab5085d31d6ec43fa2da5126b739c2d9a50b3d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/Packet07AffineRadiation.log",
+      "sha256": "9dae93690e033764f613c6bccf92fc7c62a322732eebc05888b4906f5f61f078"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/Packet07FixedPhysical.log",
+      "sha256": "4ba20c08b77e6a523d1148b54a4f338f704484b0f06a95301842ac1c13249bf7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/Packet07SelectedRadiation.log",
+      "sha256": "ba2e25ebda8aaee90a77048b325b0d07349c94ab5ccc3377ec076ae5aa35d2b1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/Packet07SmoothAngular.log",
+      "sha256": "26d70ad0960d9f4adf3482d62016aacc44a738ec94bced012c2366ff8bef6ef7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/reviews/run-independent.py",
+      "sha256": "d4361957daa051f5a4f2f1ae812cbd81a801f5ed33f21e47281656c246d15ce0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/scripts/audit_provenance.ps1",
+      "sha256": "227e3a028e046dfb27fe0dd3138e819d2837a31e7200f996573fdce551743119"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/scripts/check_chain.py",
+      "sha256": "5fdaf3875f5db64b06c1b77ca2c689fe1222ffa2e35c7a0fab0305e2788750ff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/scripts/freeze_checkpoint.py",
+      "sha256": "a67d1e0fdfeadca04855b772ebe1f8bfa57443cee823b4895c1f638ba54b4cbf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-physical/STAGE78.txt",
+      "sha256": "f59bf2e375331fb33207111f02e3a38bcdebff0b2daeb321edc5a16141c79566"
+    },
+    {
+      "path": "lean/Packet07ActualRadiation.lean",
+      "sha256": "ddb9f1f091da358d5e2270b963f8d427d7958640707462f25ec3afb4c25f9579"
+    },
+    {
+      "path": "lean/Packet07AffineRadiation.lean",
+      "sha256": "3197cd9f6437a82f443fdc4aefe4ed0c6884fd1336d3b9431dd1233b2e22c970"
+    },
+    {
+      "path": "lean/Packet07FixedPhysical.lean",
+      "sha256": "88653b1469edd3799351e285a5c1dcf77853843d406ee5d48e4d9921ea4b8987"
+    },
+    {
+      "path": "lean/Packet07SelectedRadiation.lean",
+      "sha256": "1e9b6589f1c3e7b88de532124a4039f10f7e6ab8419d745680ea18741cc507da"
+    },
+    {
+      "path": "lean/Packet07SmoothAngular.lean",
+      "sha256": "521135241666919b85b637333fafb3271e84f4489aeea6a18920eccf5a40273d"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "d0f3053be8b66bdec5abf05cfc133838506e8eb855b3a3fdf6c6efe6c2d1f45f"
+    }
+  ],
+  "scope": "Same actual driven fixed-frequency device with smooth normalized angular input and actual source outgoing radiation. Five fresh isolated objects, 822 authenticated upstream sources with cached objects. Attained maxima/collars and full OQ14 remain incomplete."
+}
