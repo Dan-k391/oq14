@@ -1,0 +1,557 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-015727-10812",
+  "object_directory": "checkpoints/2026-11-13-driven-components/objects/20261113-015727-10812",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 16 connected-component modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet07LobeCorridor",
+      "source": "lean/Packet07LobeCorridor.lean",
+      "source_sha256": "6acf5afa0b26d64832c423a9c4af2f03ac3be4407457d25572c5917c2a63a3c0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07LobeCorridor.olean",
+        "D:\\oq14\\lean\\Packet07LobeCorridor.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.406,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobeCorridor-chain.log",
+      "log_sha256": "30fa3c504e3d3ec3bb7074bafcf02e1472b807333f87a0df62b828884c1389eb",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07LobeCorridor.positive_corridor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07LobeCorridor.corridor_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07LobeCorridor.corridor_subset_inclusion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b3aedd54c768949f7429789c463a4872436e99872d1d3015b03943746a5760c3"
+    },
+    {
+      "module": "Packet07CorridorEventually",
+      "source": "lean/Packet07CorridorEventually.lean",
+      "source_sha256": "1769c63e3946c5e4b53e7725c7ed640a725cc9e9925746bedbbb62d9229b1c50",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07CorridorEventually.olean",
+        "D:\\oq14\\lean\\Packet07CorridorEventually.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.532,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07CorridorEventually-chain.log",
+      "log_sha256": "e4bb3f804b66733230d1a7d7dd8d618cf5591cca30d504181d14a23379f83463",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07CorridorEventually.eventually_corridor_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07CorridorEventually.negative_corridor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "151fe6fe0e4e0baf224231366f4c3a7af1bc74249544637bce3b3686ad40e855"
+    },
+    {
+      "module": "Packet07RadialMonotone",
+      "source": "lean/Packet07RadialMonotone.lean",
+      "source_sha256": "7d83aad862db79ebdb9edf949553f3ca979d6757e7c5a23a87c9b0f98326796f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07RadialMonotone.olean",
+        "D:\\oq14\\lean\\Packet07RadialMonotone.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.14,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialMonotone-chain.log",
+      "log_sha256": "a4d733f5ccc6efda2c50417da3595b5dcf3944fbfe4c80456750f049972c9c76",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07RadialMonotone.radial_strictAnti",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07RadialMonotone.radial_positive_inward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07RadialMonotone.inclusion_inward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1ca739878dbe1e5d6c10f40883ff216f7ff82e804445befdd30efe95a40c5909"
+    },
+    {
+      "module": "Packet07VerticalAccess",
+      "source": "lean/Packet07VerticalAccess.lean",
+      "source_sha256": "ddd9a783da1b8ced591ab121440a062f784eea5198240985be77026af1e8501b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07VerticalAccess.olean",
+        "D:\\oq14\\lean\\Packet07VerticalAccess.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 25.156,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalAccess-chain.log",
+      "log_sha256": "75807f29dfd5e3d5fa01b4a7c21aed01493237f7ee4225147ad67611aedab42d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07VerticalAccess.inner_vertical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07VerticalAccess.eventually_vertical_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "364a664521e6678882ae76192a9ade8759026c288b042d936a8ddf4373f3ff7e"
+    },
+    {
+      "module": "Packet07VerticalPath",
+      "source": "lean/Packet07VerticalPath.lean",
+      "source_sha256": "eba27c7576b7b32745c64cd6a51d4012242a715cba5a5c3a511b6a6013c6d3ce",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07VerticalPath.olean",
+        "D:\\oq14\\lean\\Packet07VerticalPath.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.641,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalPath-chain.log",
+      "log_sha256": "76689cb41c2050b30311e601c9e8a5b7c02089013aa42d57c530e6febc3e836a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07VerticalPath.vertical_joined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a5ea611eb973da30a20e243f91f08e96e8060d2f36d0d10f8abca6c1ad332417"
+    },
+    {
+      "module": "Packet07RadialPath",
+      "source": "lean/Packet07RadialPath.lean",
+      "source_sha256": "cfaeca79286ca49d11fe536861a587a41a0a6a04812d0c37f039ef5478745a85",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07RadialPath.olean",
+        "D:\\oq14\\lean\\Packet07RadialPath.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.469,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialPath-chain.log",
+      "log_sha256": "c0c0c970257b6a92e21e9fd15ab35551f2141bc6da339e6a0ce3b1c86398e239",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07RadialPath.radial_joined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c8be2365fc089e4ed558c392075f8a7f96eab3fcad29aeb9d288a234abd1231f"
+    },
+    {
+      "module": "Packet07PositiveConnected",
+      "source": "lean/Packet07PositiveConnected.lean",
+      "source_sha256": "dccc39e73844a510a22dac1ff7c68176d99586fbe3395ff16f5624b46ee8edff",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07PositiveConnected.olean",
+        "D:\\oq14\\lean\\Packet07PositiveConnected.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.875,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PositiveConnected-chain.log",
+      "log_sha256": "2e1d28674cbf0805e109b8403f52fbfc9b7ac0433562a68610768b96ecb17ba7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PositiveConnected.positive_path_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "09ac25f2ff8839333340f61dab9a42dc3b7cc58b3a618704891f2c9c65c4bd2d"
+    },
+    {
+      "module": "Packet07SignedConnected",
+      "source": "lean/Packet07SignedConnected.lean",
+      "source_sha256": "5e1053b818fec5a7f4d3102eef808221269b6b447337c592da7e451513e88645",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07SignedConnected.olean",
+        "D:\\oq14\\lean\\Packet07SignedConnected.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.312,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07SignedConnected-chain.log",
+      "log_sha256": "979fa9cadcbb0100ad0f2ce256d74a80ff15ce1dd0ce6a36c226c5a12a39de5e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07SignedConnected.flip_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07SignedConnected.flip_inclusion_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07SignedConnected.negative_path_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ec807f2d7e55331a379262889aff29f7997a8cb5d595398e2631dffdb60eac00"
+    },
+    {
+      "module": "Packet07PhysicalLobes",
+      "source": "lean/Packet07PhysicalLobes.lean",
+      "source_sha256": "a3944ea14607784dff23f37e9f2f86c2b3addf5bb7fa8e9ed3d93bcc62411065",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07PhysicalLobes.olean",
+        "D:\\oq14\\lean\\Packet07PhysicalLobes.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.297,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PhysicalLobes-chain.log",
+      "log_sha256": "68a8d75478ca01c1ab90d3c08f445789f7ea189764b617f263bed8921eee762f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PhysicalLobes.unsplit_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PhysicalLobes.split_unsplit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PhysicalLobes.unsplit_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07PhysicalLobes.physical_lobe_path_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7f0c128af3c65fc409e8d157f615bef56c08e81538633f54243cb2a6f2d5ddfc"
+    },
+    {
+      "module": "Packet07LobesEventually",
+      "source": "lean/Packet07LobesEventually.lean",
+      "source_sha256": "4ea83172163d3d520bd0721a963692234afe901c20536abf50a354c7ae8b93d0",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07LobesEventually.olean",
+        "D:\\oq14\\lean\\Packet07LobesEventually.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.719,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobesEventually-chain.log",
+      "log_sha256": "66e6b6d736f776e1047c8f8749088df92f2446081084349f9cfa8976391c3ee9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07LobesEventually.eventually_lobes_path_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "094880061ea292ddf334c94feecf0539c20fc37a66f8420d61793c28ff711c80"
+    },
+    {
+      "module": "Packet07ComponentPartition",
+      "source": "lean/Packet07ComponentPartition.lean",
+      "source_sha256": "84df79c582009d74f7b54d70f9a12ffac5d8c318ffdab8235b19d8f388abee28",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07ComponentPartition.olean",
+        "D:\\oq14\\lean\\Packet07ComponentPartition.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.453,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ComponentPartition-chain.log",
+      "log_sha256": "aca1bdd92d78ab8808deb449cfcb7ffdc57b88a1fd54f978fd78c0c4c8b94ad1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07ComponentPartition.component_eq_piece",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07ComponentPartition.every_component_unique_piece",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "dc5f243dad358f22e5bbe7216d07e045038dcf8edaf577dcb6b9bcffa699c287"
+    },
+    {
+      "module": "Packet07ExactComponents",
+      "source": "lean/Packet07ExactComponents.lean",
+      "source_sha256": "9e4eec5d36393da197ea3ee6a93109e2cae17d30f99b66055bfb58703ec6ff4b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07ExactComponents.olean",
+        "D:\\oq14\\lean\\Packet07ExactComponents.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.25,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ExactComponents-chain.log",
+      "log_sha256": "2ca422c0b93499d3b732bb2942b58ea9186454d283c75110cdf0e27926007bea",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07ExactComponents.eventually_exact_components",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e220e561480ca650a118980bc927163ad76f608557e13dc1f7594e58b8990bd8"
+    },
+    {
+      "module": "Packet07BinaryExact",
+      "source": "lean/Packet07BinaryExact.lean",
+      "source_sha256": "f8ca0955910dbad5e99288062a047344626bac5548fdc03b6d944179ef37d31a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07BinaryExact.olean",
+        "D:\\oq14\\lean\\Packet07BinaryExact.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.344,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07BinaryExact-chain.log",
+      "log_sha256": "9a9880791805aa09ba2f57f7b29f595128d717f3020026e41636b3aee2cdce31",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07BinaryExact.one_smooth_binary_lobes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ff3f5e37b0fb584ca445e148c1e46800dc7aab0cc715c22fc6349169415fa912"
+    },
+    {
+      "module": "Packet07PlanarExact",
+      "source": "lean/Packet07PlanarExact.lean",
+      "source_sha256": "bfd4c38338f1435ffd28b0e13ec7f82aef71d6fdad785137f9d48d2c54855268",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07PlanarExact.olean",
+        "D:\\oq14\\lean\\Packet07PlanarExact.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.422,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PlanarExact-chain.log",
+      "log_sha256": "624beafc5a9c404131f72796b300f54b1f56e144354795168017335b1a01de6e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07PlanarExact.planar_binary_peaks_small_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "099fcae2c4df73cdd1048233382e87a57d3a91a08cecd534c67bc84c69232664"
+    },
+    {
+      "module": "Packet07AffineComponents",
+      "source": "lean/Packet07AffineComponents.lean",
+      "source_sha256": "90742016e2bb50125fed677de7247b41e71a158fca874733e1f5734070c37f7f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07AffineComponents.olean",
+        "D:\\oq14\\lean\\Packet07AffineComponents.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.937,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07AffineComponents-chain.log",
+      "log_sha256": "fce2505be6e3ffd95167fc31fe07219c4201f54736af61977870a83e07ab0713",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07AffineComponents.place_map",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineComponents.preimage_path_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineComponents.preimage_connected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineComponents.affine_partition",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet07AffineComponents.affine_exact_partition",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a86f40b048eea5f87a8f2d6f1cf61cbaae60e01f73250c63ae7c0908b51310fa"
+    },
+    {
+      "module": "Packet07FixedExact",
+      "source": "lean/Packet07FixedExact.lean",
+      "source_sha256": "0ec685facfe679f9034608d0dedff5fd2f683cdb671082281808a75ea370a089",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-driven-components\\objects\\20261113-015727-10812\\Packet07FixedExact.olean",
+        "D:\\oq14\\lean\\Packet07FixedExact.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.156,
+      "log": "checkpoints/2026-11-13-driven-components/evidence/Packet07FixedExact-chain.log",
+      "log_sha256": "f52fde13a6996072d70e2d78ebc142f7111cbac205af715e0302473be94e9b80",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet07FixedExact.fixed_frequency_planar_superlevels",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "457f3863e5e23ceb9dd4219cd608f656135dc473aa89376d157cc874038c9569"
+    }
+  ],
+  "module_count": 16,
+  "report_count": 32
+}

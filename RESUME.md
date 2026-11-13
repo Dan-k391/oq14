@@ -1,5 +1,29 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 75 is the latest verified incremental checkpoint:
+[STAGE75.txt](checkpoints/2026-11-13-driven-components/STAGE75.txt).
+The same fixed-frequency driven peak construction now has exactly 2N connected
+inclusions, with unique Fin N × Bool labels. This is a proved component partition
+of the actual selected smooth binary body, retaining the unit angular illumination
+and all simultaneous positive-volume peaks inside the prescribed planar patch.
+
+16 modules / 32 reports passed root independent semantic review and fresh isolated
+compilation. 807 upstream sources were authenticated, with cached objects. The
+accepted ledger is 673 modules / 4290 reports; all 657 previous records are unchanged:
+`checkpoints/2026-11-13-driven-components/evidence/audited_after_5238-stage75.json`.
+Only standard axioms and no warnings. No whole-project clean rebuild is claimed.
+
+Full OQ14 remains active. Root is joining actual sphere preconditioning and scalar
+Schur crossing to material convergence. Terra continues curved scalar transmission
+estimates, perturbed mode convergence, and actual affine scattered-field radiation.
+Flat continuous maxima and generic scalar persistence have separate reviews but
+are not promoted by this checkpoint. Actual curved maxima/collars, complete modal
+packing, final manuscript, and aggregate checks remain.
+
+Everything below is historical context, superseded by stage75.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 74 is the latest verified incremental checkpoint:
 [STAGE74.txt](checkpoints/2026-11-13-modal-transport/STAGE74.txt).
 The actual direct electric Green response now has a proved nonzero physical

@@ -1,0 +1,489 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "ebf68ac",
+  "modules": 673,
+  "reports": 4290,
+  "new_modules": 16,
+  "new_reports": 32,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "093920bfdf31503a53a3f9ac59a11517567b8187669cca94597b759b7c536ef4",
+  "ledger_sha256": "10c46e07d4fb0c8594d06358e2c05f484367e75e7970d0bfa21a8bf198ded459",
+  "raw_archive_sha256": "4a8d9847a6dab257dd730bc263840443fb9bb1a79335c0b1df809b019bfbb356",
+  "records": [
+    {
+      "module": "Packet07LobeCorridor",
+      "reports": 3,
+      "source_sha256": "6acf5afa0b26d64832c423a9c4af2f03ac3be4407457d25572c5917c2a63a3c0",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobeCorridor-chain.log",
+      "audit_log_sha256": "30fa3c504e3d3ec3bb7074bafcf02e1472b807333f87a0df62b828884c1389eb",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobeCorridor-chain.log",
+      "independent_log_sha256": "30fa3c504e3d3ec3bb7074bafcf02e1472b807333f87a0df62b828884c1389eb",
+      "declarations": [
+        "OQ14.Packet07LobeCorridor.positive_corridor",
+        "OQ14.Packet07LobeCorridor.corridor_connected",
+        "OQ14.Packet07LobeCorridor.corridor_subset_inclusion"
+      ]
+    },
+    {
+      "module": "Packet07CorridorEventually",
+      "reports": 2,
+      "source_sha256": "1769c63e3946c5e4b53e7725c7ed640a725cc9e9925746bedbbb62d9229b1c50",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07CorridorEventually-chain.log",
+      "audit_log_sha256": "e4bb3f804b66733230d1a7d7dd8d618cf5591cca30d504181d14a23379f83463",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07CorridorEventually-chain.log",
+      "independent_log_sha256": "e4bb3f804b66733230d1a7d7dd8d618cf5591cca30d504181d14a23379f83463",
+      "declarations": [
+        "OQ14.Packet07CorridorEventually.eventually_corridor_bounds",
+        "OQ14.Packet07CorridorEventually.negative_corridor"
+      ]
+    },
+    {
+      "module": "Packet07RadialMonotone",
+      "reports": 3,
+      "source_sha256": "7d83aad862db79ebdb9edf949553f3ca979d6757e7c5a23a87c9b0f98326796f",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialMonotone-chain.log",
+      "audit_log_sha256": "a4d733f5ccc6efda2c50417da3595b5dcf3944fbfe4c80456750f049972c9c76",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialMonotone-chain.log",
+      "independent_log_sha256": "a4d733f5ccc6efda2c50417da3595b5dcf3944fbfe4c80456750f049972c9c76",
+      "declarations": [
+        "OQ14.Packet07RadialMonotone.radial_strictAnti",
+        "OQ14.Packet07RadialMonotone.radial_positive_inward",
+        "OQ14.Packet07RadialMonotone.inclusion_inward"
+      ]
+    },
+    {
+      "module": "Packet07VerticalAccess",
+      "reports": 2,
+      "source_sha256": "ddd9a783da1b8ced591ab121440a062f784eea5198240985be77026af1e8501b",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalAccess-chain.log",
+      "audit_log_sha256": "75807f29dfd5e3d5fa01b4a7c21aed01493237f7ee4225147ad67611aedab42d",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalAccess-chain.log",
+      "independent_log_sha256": "75807f29dfd5e3d5fa01b4a7c21aed01493237f7ee4225147ad67611aedab42d",
+      "declarations": [
+        "OQ14.Packet07VerticalAccess.inner_vertical",
+        "OQ14.Packet07VerticalAccess.eventually_vertical_bounds"
+      ]
+    },
+    {
+      "module": "Packet07VerticalPath",
+      "reports": 1,
+      "source_sha256": "eba27c7576b7b32745c64cd6a51d4012242a715cba5a5c3a511b6a6013c6d3ce",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalPath-chain.log",
+      "audit_log_sha256": "76689cb41c2050b30311e601c9e8a5b7c02089013aa42d57c530e6febc3e836a",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalPath-chain.log",
+      "independent_log_sha256": "76689cb41c2050b30311e601c9e8a5b7c02089013aa42d57c530e6febc3e836a",
+      "declarations": [
+        "OQ14.Packet07VerticalPath.vertical_joined"
+      ]
+    },
+    {
+      "module": "Packet07RadialPath",
+      "reports": 1,
+      "source_sha256": "cfaeca79286ca49d11fe536861a587a41a0a6a04812d0c37f039ef5478745a85",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialPath-chain.log",
+      "audit_log_sha256": "c0c0c970257b6a92e21e9fd15ab35551f2141bc6da339e6a0ce3b1c86398e239",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialPath-chain.log",
+      "independent_log_sha256": "c0c0c970257b6a92e21e9fd15ab35551f2141bc6da339e6a0ce3b1c86398e239",
+      "declarations": [
+        "OQ14.Packet07RadialPath.radial_joined"
+      ]
+    },
+    {
+      "module": "Packet07PositiveConnected",
+      "reports": 1,
+      "source_sha256": "dccc39e73844a510a22dac1ff7c68176d99586fbe3395ff16f5624b46ee8edff",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PositiveConnected-chain.log",
+      "audit_log_sha256": "2e1d28674cbf0805e109b8403f52fbfc9b7ac0433562a68610768b96ecb17ba7",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PositiveConnected-chain.log",
+      "independent_log_sha256": "2e1d28674cbf0805e109b8403f52fbfc9b7ac0433562a68610768b96ecb17ba7",
+      "declarations": [
+        "OQ14.Packet07PositiveConnected.positive_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07SignedConnected",
+      "reports": 3,
+      "source_sha256": "5e1053b818fec5a7f4d3102eef808221269b6b447337c592da7e451513e88645",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07SignedConnected-chain.log",
+      "audit_log_sha256": "979fa9cadcbb0100ad0f2ce256d74a80ff15ce1dd0ce6a36c226c5a12a39de5e",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07SignedConnected-chain.log",
+      "independent_log_sha256": "979fa9cadcbb0100ad0f2ce256d74a80ff15ce1dd0ce6a36c226c5a12a39de5e",
+      "declarations": [
+        "OQ14.Packet07SignedConnected.flip_continuous",
+        "OQ14.Packet07SignedConnected.flip_inclusion_iff",
+        "OQ14.Packet07SignedConnected.negative_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07PhysicalLobes",
+      "reports": 4,
+      "source_sha256": "a3944ea14607784dff23f37e9f2f86c2b3addf5bb7fa8e9ed3d93bcc62411065",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PhysicalLobes-chain.log",
+      "audit_log_sha256": "68a8d75478ca01c1ab90d3c08f445789f7ea189764b617f263bed8921eee762f",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PhysicalLobes-chain.log",
+      "independent_log_sha256": "68a8d75478ca01c1ab90d3c08f445789f7ea189764b617f263bed8921eee762f",
+      "declarations": [
+        "OQ14.Packet07PhysicalLobes.unsplit_continuous",
+        "OQ14.Packet07PhysicalLobes.split_unsplit",
+        "OQ14.Packet07PhysicalLobes.unsplit_split",
+        "OQ14.Packet07PhysicalLobes.physical_lobe_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07LobesEventually",
+      "reports": 1,
+      "source_sha256": "4ea83172163d3d520bd0721a963692234afe901c20536abf50a354c7ae8b93d0",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobesEventually-chain.log",
+      "audit_log_sha256": "66e6b6d736f776e1047c8f8749088df92f2446081084349f9cfa8976391c3ee9",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobesEventually-chain.log",
+      "independent_log_sha256": "66e6b6d736f776e1047c8f8749088df92f2446081084349f9cfa8976391c3ee9",
+      "declarations": [
+        "OQ14.Packet07LobesEventually.eventually_lobes_path_connected"
+      ]
+    },
+    {
+      "module": "Packet07ComponentPartition",
+      "reports": 2,
+      "source_sha256": "84df79c582009d74f7b54d70f9a12ffac5d8c318ffdab8235b19d8f388abee28",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ComponentPartition-chain.log",
+      "audit_log_sha256": "aca1bdd92d78ab8808deb449cfcb7ffdc57b88a1fd54f978fd78c0c4c8b94ad1",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ComponentPartition-chain.log",
+      "independent_log_sha256": "aca1bdd92d78ab8808deb449cfcb7ffdc57b88a1fd54f978fd78c0c4c8b94ad1",
+      "declarations": [
+        "OQ14.Packet07ComponentPartition.component_eq_piece",
+        "OQ14.Packet07ComponentPartition.every_component_unique_piece"
+      ]
+    },
+    {
+      "module": "Packet07ExactComponents",
+      "reports": 1,
+      "source_sha256": "9e4eec5d36393da197ea3ee6a93109e2cae17d30f99b66055bfb58703ec6ff4b",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ExactComponents-chain.log",
+      "audit_log_sha256": "2ca422c0b93499d3b732bb2942b58ea9186454d283c75110cdf0e27926007bea",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07ExactComponents-chain.log",
+      "independent_log_sha256": "2ca422c0b93499d3b732bb2942b58ea9186454d283c75110cdf0e27926007bea",
+      "declarations": [
+        "OQ14.Packet07ExactComponents.eventually_exact_components"
+      ]
+    },
+    {
+      "module": "Packet07BinaryExact",
+      "reports": 1,
+      "source_sha256": "f8ca0955910dbad5e99288062a047344626bac5548fdc03b6d944179ef37d31a",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07BinaryExact-chain.log",
+      "audit_log_sha256": "9a9880791805aa09ba2f57f7b29f595128d717f3020026e41636b3aee2cdce31",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07BinaryExact-chain.log",
+      "independent_log_sha256": "9a9880791805aa09ba2f57f7b29f595128d717f3020026e41636b3aee2cdce31",
+      "declarations": [
+        "OQ14.Packet07BinaryExact.one_smooth_binary_lobes"
+      ]
+    },
+    {
+      "module": "Packet07PlanarExact",
+      "reports": 1,
+      "source_sha256": "bfd4c38338f1435ffd28b0e13ec7f82aef71d6fdad785137f9d48d2c54855268",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PlanarExact-chain.log",
+      "audit_log_sha256": "624beafc5a9c404131f72796b300f54b1f56e144354795168017335b1a01de6e",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07PlanarExact-chain.log",
+      "independent_log_sha256": "624beafc5a9c404131f72796b300f54b1f56e144354795168017335b1a01de6e",
+      "declarations": [
+        "OQ14.Packet07PlanarExact.planar_binary_peaks_small_frequency"
+      ]
+    },
+    {
+      "module": "Packet07AffineComponents",
+      "reports": 5,
+      "source_sha256": "90742016e2bb50125fed677de7247b41e71a158fca874733e1f5734070c37f7f",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07AffineComponents-chain.log",
+      "audit_log_sha256": "fce2505be6e3ffd95167fc31fe07219c4201f54736af61977870a83e07ab0713",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07AffineComponents-chain.log",
+      "independent_log_sha256": "fce2505be6e3ffd95167fc31fe07219c4201f54736af61977870a83e07ab0713",
+      "declarations": [
+        "OQ14.Packet07AffineComponents.place_map",
+        "OQ14.Packet07AffineComponents.preimage_path_connected",
+        "OQ14.Packet07AffineComponents.preimage_connected",
+        "OQ14.Packet07AffineComponents.affine_partition",
+        "OQ14.Packet07AffineComponents.affine_exact_partition"
+      ]
+    },
+    {
+      "module": "Packet07FixedExact",
+      "reports": 1,
+      "source_sha256": "0ec685facfe679f9034608d0dedff5fd2f683cdb671082281808a75ea370a089",
+      "audit_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07FixedExact-chain.log",
+      "audit_log_sha256": "f52fde13a6996072d70e2d78ebc142f7111cbac205af715e0302473be94e9b80",
+      "independent_review": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "independent_review_sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79",
+      "independent_review_mode": "Root semantic review and independent ordered fresh-object build of Terra sources",
+      "independent_build": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "independent_build_sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c",
+      "independent_log": "checkpoints/2026-11-13-driven-components/evidence/Packet07FixedExact-chain.log",
+      "independent_log_sha256": "f52fde13a6996072d70e2d78ebc142f7111cbac205af715e0302473be94e9b80",
+      "declarations": [
+        "OQ14.Packet07FixedExact.fixed_frequency_planar_superlevels"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-driven-components/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/audited_after_5238-stage75.json",
+      "sha256": "10c46e07d4fb0c8594d06358e2c05f484367e75e7970d0bfa21a8bf198ded459"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/chain-build.json",
+      "sha256": "09961aa9143ef8f76f1763b1bb659408cdc9730a017045fd9cf01082fe7f9f3c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07AffineComponents-chain.log",
+      "sha256": "fce2505be6e3ffd95167fc31fe07219c4201f54736af61977870a83e07ab0713"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07BinaryExact-chain.log",
+      "sha256": "9a9880791805aa09ba2f57f7b29f595128d717f3020026e41636b3aee2cdce31"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07ComponentPartition-chain.log",
+      "sha256": "aca1bdd92d78ab8808deb449cfcb7ffdc57b88a1fd54f978fd78c0c4c8b94ad1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07CorridorEventually-chain.log",
+      "sha256": "e4bb3f804b66733230d1a7d7dd8d618cf5591cca30d504181d14a23379f83463"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07ExactComponents-chain.log",
+      "sha256": "2ca422c0b93499d3b732bb2942b58ea9186454d283c75110cdf0e27926007bea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07FixedExact-chain.log",
+      "sha256": "f52fde13a6996072d70e2d78ebc142f7111cbac205af715e0302473be94e9b80"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobeCorridor-chain.log",
+      "sha256": "30fa3c504e3d3ec3bb7074bafcf02e1472b807333f87a0df62b828884c1389eb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07LobesEventually-chain.log",
+      "sha256": "66e6b6d736f776e1047c8f8749088df92f2446081084349f9cfa8976391c3ee9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07PhysicalLobes-chain.log",
+      "sha256": "68a8d75478ca01c1ab90d3c08f445789f7ea189764b617f263bed8921eee762f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07PlanarExact-chain.log",
+      "sha256": "624beafc5a9c404131f72796b300f54b1f56e144354795168017335b1a01de6e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07PositiveConnected-chain.log",
+      "sha256": "2e1d28674cbf0805e109b8403f52fbfc9b7ac0433562a68610768b96ecb17ba7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialMonotone-chain.log",
+      "sha256": "a4d733f5ccc6efda2c50417da3595b5dcf3944fbfe4c80456750f049972c9c76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07RadialPath-chain.log",
+      "sha256": "c0c0c970257b6a92e21e9fd15ab35551f2141bc6da339e6a0ce3b1c86398e239"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07SignedConnected-chain.log",
+      "sha256": "979fa9cadcbb0100ad0f2ce256d74a80ff15ce1dd0ce6a36c226c5a12a39de5e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalAccess-chain.log",
+      "sha256": "75807f29dfd5e3d5fa01b4a7c21aed01493237f7ee4225147ad67611aedab42d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/evidence/Packet07VerticalPath-chain.log",
+      "sha256": "76689cb41c2050b30311e601c9e8a5b7c02089013aa42d57c530e6febc3e836a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/modules.json",
+      "sha256": "de9953b30f7945d27c07c217946980aa15e6ce857022598c074cd571d7783ef4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/provenance-audit.json",
+      "sha256": "7cefb222cb7aa911536c367095f3bf7dc77d2d5e69db832d9d3e27c16d0797b2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/reviews/author-inventory.json",
+      "sha256": "7e9f783d02dde388cf50c31b9f73e094020791fe3df8727727969935bbdc851e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/reviews/normalization.json",
+      "sha256": "0aee04683e7877f719a11d7128ec6fca9adc425bae9cb625124f76cf1f08b34e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/reviews/root-review.txt",
+      "sha256": "47e8a6d03e06dd4f08a0073b95bdcfa9f87c6a3e2dc2bd115232d34e439cba79"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/scripts/audit_provenance.ps1",
+      "sha256": "a36cd9e7b03fc09ae2b213e83b50cdf20d98331ccb7c26857b7c1c2d47ca0a41"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/scripts/check_chain.py",
+      "sha256": "9e0f3a3820784bd2df12ee210f9c153a3ff442981b57918e27b1d2173e8350b1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/scripts/freeze_checkpoint.py",
+      "sha256": "d9cebe99568e311c521e7edea7b523273493056d3cd20d156396e5e50a9a25a2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-driven-components/STAGE75.txt",
+      "sha256": "3b5b47dbe5944a26dcefeb3b7f0a6ea4aa4d687434b6b87299541bd50bcc86aa"
+    },
+    {
+      "path": "lean/Packet07AffineComponents.lean",
+      "sha256": "90742016e2bb50125fed677de7247b41e71a158fca874733e1f5734070c37f7f"
+    },
+    {
+      "path": "lean/Packet07BinaryExact.lean",
+      "sha256": "f8ca0955910dbad5e99288062a047344626bac5548fdc03b6d944179ef37d31a"
+    },
+    {
+      "path": "lean/Packet07ComponentPartition.lean",
+      "sha256": "84df79c582009d74f7b54d70f9a12ffac5d8c318ffdab8235b19d8f388abee28"
+    },
+    {
+      "path": "lean/Packet07CorridorEventually.lean",
+      "sha256": "1769c63e3946c5e4b53e7725c7ed640a725cc9e9925746bedbbb62d9229b1c50"
+    },
+    {
+      "path": "lean/Packet07ExactComponents.lean",
+      "sha256": "9e4eec5d36393da197ea3ee6a93109e2cae17d30f99b66055bfb58703ec6ff4b"
+    },
+    {
+      "path": "lean/Packet07FixedExact.lean",
+      "sha256": "0ec685facfe679f9034608d0dedff5fd2f683cdb671082281808a75ea370a089"
+    },
+    {
+      "path": "lean/Packet07LobeCorridor.lean",
+      "sha256": "6acf5afa0b26d64832c423a9c4af2f03ac3be4407457d25572c5917c2a63a3c0"
+    },
+    {
+      "path": "lean/Packet07LobesEventually.lean",
+      "sha256": "4ea83172163d3d520bd0721a963692234afe901c20536abf50a354c7ae8b93d0"
+    },
+    {
+      "path": "lean/Packet07PhysicalLobes.lean",
+      "sha256": "a3944ea14607784dff23f37e9f2f86c2b3addf5bb7fa8e9ed3d93bcc62411065"
+    },
+    {
+      "path": "lean/Packet07PlanarExact.lean",
+      "sha256": "bfd4c38338f1435ffd28b0e13ec7f82aef71d6fdad785137f9d48d2c54855268"
+    },
+    {
+      "path": "lean/Packet07PositiveConnected.lean",
+      "sha256": "dccc39e73844a510a22dac1ff7c68176d99586fbe3395ff16f5624b46ee8edff"
+    },
+    {
+      "path": "lean/Packet07RadialMonotone.lean",
+      "sha256": "7d83aad862db79ebdb9edf949553f3ca979d6757e7c5a23a87c9b0f98326796f"
+    },
+    {
+      "path": "lean/Packet07RadialPath.lean",
+      "sha256": "cfaeca79286ca49d11fe536861a587a41a0a6a04812d0c37f039ef5478745a85"
+    },
+    {
+      "path": "lean/Packet07SignedConnected.lean",
+      "sha256": "5e1053b818fec5a7f4d3102eef808221269b6b447337c592da7e451513e88645"
+    },
+    {
+      "path": "lean/Packet07VerticalAccess.lean",
+      "sha256": "ddd9a783da1b8ced591ab121440a062f784eea5198240985be77026af1e8501b"
+    },
+    {
+      "path": "lean/Packet07VerticalPath.lean",
+      "sha256": "eba27c7576b7b32745c64cd6a51d4012242a715cba5a5c3a511b6a6013c6d3ce"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "a44252181ca1e63198b41f53bad3eb72d4d314baf4eaf6582e36d658d4f30027"
+    }
+  ],
+  "scope": "Exactly 2N connected inclusions in the same actual fixed-frequency driven binary peak device, with unique labels. No attained maxima/collars or radiation completion. Full OQ14 active and incomplete."
+}
