@@ -85,4 +85,4 @@ summary = dict(date='2026-11-13',previous_proof_checkpoint='f9232d3',
     records=records,files=manifest,
     scope='Actual sphere inverse simple pole, rank-one residue, analytic regular part, closed range/cokernel one, exact physical pairing and reciprocal normalization, local observation and weighted transport. 14 fresh isolated objects; 689 authenticated upstream sources with cached objects. Full OQ14 remains active and incomplete.')
 write(ev/'stage71.json',summary); write(root/'tmp/audited_after_5238.json',ledger)
-print('Stage69 frozen: 559 modules / 3890 reports; +26 / +105; 533 prior records unchanged.')
+print('Stage71 frozen: 590 modules / 4049 reports; +14 / +72; 576 prior records unchanged.')
