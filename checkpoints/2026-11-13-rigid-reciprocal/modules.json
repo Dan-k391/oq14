@@ -1,0 +1,158 @@
+[
+  {
+    "module": "Packet06CyclicPairing",
+    "declarations": [
+      "OQ14.Packet06CyclicPairing.vectorPair_rotation"
+    ]
+  },
+  {
+    "module": "Packet06CyclicL2",
+    "declarations": [
+      "OQ14.Packet06CyclicL2.pullback_ae",
+      "OQ14.Packet06CyclicL2.component_action",
+      "OQ14.Packet06CyclicL2.action_ae",
+      "OQ14.Packet06CyclicL2.vectorPair_invariant"
+    ]
+  },
+  {
+    "module": "Packet06CyclicMaterial",
+    "declarations": [
+      "OQ14.Packet06CyclicMaterial.coefficient_value",
+      "OQ14.Packet06CyclicMaterial.dielectric_value",
+      "OQ14.Packet06CyclicMaterial.multiplier_action"
+    ]
+  },
+  {
+    "module": "Packet06CyclicKernel",
+    "declarations": [
+      "OQ14.Packet06CyclicKernel.remainder_rotate"
+    ]
+  },
+  {
+    "module": "Packet06CyclicFourier",
+    "declarations": [
+      "OQ14.Packet06CyclicFourier.schwartzRot_apply",
+      "OQ14.Packet06CyclicFourier.pullback_embed",
+      "OQ14.Packet06CyclicFourier.fourier_schwartzRot",
+      "OQ14.Packet06CyclicFourier.fourier_pullback",
+      "OQ14.Packet06CyclicFourier.action_fourier"
+    ]
+  },
+  {
+    "module": "Packet06CyclicProjection",
+    "declarations": [
+      "OQ14.Packet06CyclicProjection.symbol_cov",
+      "OQ14.Packet06CyclicProjection.action_multiplier",
+      "OQ14.Packet06CyclicProjection.action_fourier_symm",
+      "OQ14.Packet06CyclicProjection.action_projection",
+      "OQ14.Packet06CyclicProjection.static_volume_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06CyclicSource",
+    "declarations": [
+      "OQ14.Packet06CyclicSource.source_action"
+    ]
+  },
+  {
+    "module": "Packet06CyclicPotential",
+    "declarations": [
+      "OQ14.Packet06CyclicPotential.potential_rotate"
+    ]
+  },
+  {
+    "module": "Packet06CyclicDynamic",
+    "declarations": [
+      "OQ14.Packet06CyclicDynamic.coefficient_support",
+      "OQ14.Packet06CyclicDynamic.weightedRemainder_conjugacy",
+      "OQ14.Packet06CyclicDynamic.real_volume_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06CyclicComplex",
+    "declarations": [
+      "OQ14.Packet06CyclicComplex.complex_conjugacy",
+      "OQ14.Packet06CyclicComplex.derivative_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06CyclicReciprocal",
+    "declarations": [
+      "OQ14.Packet06CyclicReciprocal.reciprocalNorm_rotation",
+      "OQ14.Packet06CyclicReciprocal.kernel_rotation"
+    ]
+  },
+  {
+    "module": "Packet06RadiusIndependence",
+    "declarations": [
+      "OQ14.Packet06RadiusIndependence.real_radius_independent",
+      "OQ14.Packet06RadiusIndependence.complex_radius_independent"
+    ]
+  },
+  {
+    "module": "Packet06TranslationL2",
+    "declarations": [
+      "OQ14.Packet06TranslationL2.component_action",
+      "OQ14.Packet06TranslationL2.action_ae",
+      "OQ14.Packet06TranslationL2.vectorPair_invariant"
+    ]
+  },
+  {
+    "module": "Packet06TranslationNewtonPairing",
+    "declarations": [
+      "OQ14.Packet06TranslationNewtonPairing.translate_comp",
+      "OQ14.Packet06TranslationNewtonPairing.weakConvolution_translate"
+    ]
+  },
+  {
+    "module": "Packet06TranslationSchwartz",
+    "declarations": [
+      "OQ14.Packet06TranslationSchwartz.action_schwartz"
+    ]
+  },
+  {
+    "module": "Packet06TranslationNewton",
+    "declarations": [
+      "OQ14.Packet06TranslationNewton.newton_action"
+    ]
+  },
+  {
+    "module": "Packet06TranslationMaterial",
+    "declarations": [
+      "OQ14.Packet06TranslationMaterial.coefficient_value",
+      "OQ14.Packet06TranslationMaterial.dielectric_value",
+      "OQ14.Packet06TranslationMaterial.coefficient_support",
+      "OQ14.Packet06TranslationMaterial.multiplier_action",
+      "OQ14.Packet06TranslationMaterial.newton_action",
+      "OQ14.Packet06TranslationMaterial.static_volume_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06TranslationPotential",
+    "declarations": [
+      "OQ14.Packet06TranslationPotential.source_action",
+      "OQ14.Packet06TranslationPotential.potential_translate"
+    ]
+  },
+  {
+    "module": "Packet06TranslationDynamic",
+    "declarations": [
+      "OQ14.Packet06TranslationDynamic.weightedRemainder_conjugacy",
+      "OQ14.Packet06TranslationDynamic.real_volume_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06TranslationComplex",
+    "declarations": [
+      "OQ14.Packet06TranslationComplex.complex_conjugacy",
+      "OQ14.Packet06TranslationComplex.derivative_conjugacy"
+    ]
+  },
+  {
+    "module": "Packet06TranslationReciprocal",
+    "declarations": [
+      "OQ14.Packet06TranslationReciprocal.reciprocalNorm_translation",
+      "OQ14.Packet06TranslationReciprocal.kernel_translation"
+    ]
+  }
+]

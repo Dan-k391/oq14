@@ -1,0 +1,799 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-033456-55748",
+  "object_directory": "checkpoints/2026-11-13-rigid-reciprocal/objects/20261113-033456-55748",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 21 actual rigid volume transport modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06CyclicPairing",
+      "source": "lean/Packet06CyclicPairing.lean",
+      "source_sha256": "480ce2495df26c78557144912687ff09efbbb3e786e26e8ef174a95bb9b82efc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicPairing.olean",
+        "D:\\oq14\\lean\\Packet06CyclicPairing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.719,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicPairing-chain.log",
+      "log_sha256": "0d0d204921da7e604863d12b08afe8399302d5cdcdea3f8b9f814b393cafb9ac",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicPairing.vectorPair_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e6fc76315314559e82218ae9a34d3a544053eff82cce08b1fac71a6c2d58b98a"
+    },
+    {
+      "module": "Packet06CyclicL2",
+      "source": "lean/Packet06CyclicL2.lean",
+      "source_sha256": "1b101d5c81370de259b258b301c8d04e0625307d8919614821ad72640ef2dcf8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicL2.olean",
+        "D:\\oq14\\lean\\Packet06CyclicL2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.5,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicL2-chain.log",
+      "log_sha256": "30d4f88decf4da0c6d34c62d18e887282baa0e4f37d8a4fba16286626b18e18f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicL2.pullback_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicL2.component_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicL2.action_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicL2.vectorPair_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f9e3e304e32bb4b51478a94db1ff8db07f7161fba03085200b0a85af73da4491"
+    },
+    {
+      "module": "Packet06CyclicMaterial",
+      "source": "lean/Packet06CyclicMaterial.lean",
+      "source_sha256": "deee30210b26d31ecf514f10f4ff0409ad4d3f8f560b2dcf1d9dba0ac99e2024",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicMaterial.olean",
+        "D:\\oq14\\lean\\Packet06CyclicMaterial.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.156,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicMaterial-chain.log",
+      "log_sha256": "a06d4bcff74198aa6a9d550a9bc84efe3ea671ef0ce6c2df6a76fc15adfc69b9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicMaterial.coefficient_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicMaterial.dielectric_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicMaterial.multiplier_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "81b4a376fbbcf7a26fc5873ed69a7a4ef0d446e23a699e8f7197ab92c3c36742"
+    },
+    {
+      "module": "Packet06CyclicKernel",
+      "source": "lean/Packet06CyclicKernel.lean",
+      "source_sha256": "cfea7acb805094eadac7356a8d70b82d836a6972c2c2af872730ff767e86b335",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicKernel.olean",
+        "D:\\oq14\\lean\\Packet06CyclicKernel.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.406,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicKernel-chain.log",
+      "log_sha256": "b5c0f446a933fc8d45debbd1c1966ae76aacaf10f39f3b0b8a3e1fc8f27e92ed",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicKernel.remainder_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a0f4eec625e0216facc3bc628ad75450c7f090acfa94366b4ad6e68928414f9b"
+    },
+    {
+      "module": "Packet06CyclicFourier",
+      "source": "lean/Packet06CyclicFourier.lean",
+      "source_sha256": "79c29e2344d2031c1057372ed6a76c498991991a7ed1502cd74091cdccece475",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicFourier.olean",
+        "D:\\oq14\\lean\\Packet06CyclicFourier.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.484,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicFourier-chain.log",
+      "log_sha256": "9ef7bd3ae39bc1c0b6f5a6f6e57339762ed2cf325ee41b2bd9e857fdc0a118a5",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicFourier.schwartzRot_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicFourier.pullback_embed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicFourier.fourier_schwartzRot",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicFourier.fourier_pullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicFourier.action_fourier",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e4228b8cdfb38e960f79d82f96c37a5f9070cc9f3d0db9ff880876d16b2e1edf"
+    },
+    {
+      "module": "Packet06CyclicProjection",
+      "source": "lean/Packet06CyclicProjection.lean",
+      "source_sha256": "a5cb6cae796ee561718b93157f96ee2fdc5dfc38b258378a3aab6ab2e328209c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicProjection.olean",
+        "D:\\oq14\\lean\\Packet06CyclicProjection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.579,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicProjection-chain.log",
+      "log_sha256": "8b7781829aa8b4ba8aeaca7d879f9e10eed034d888689349fc7f76457fd09102",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicProjection.symbol_cov",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicProjection.action_multiplier",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicProjection.action_fourier_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicProjection.action_projection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicProjection.static_volume_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "692e8843d2b3e7d5c24bfefc5447e70457da161df77ef4ac57f1505f862d0f86"
+    },
+    {
+      "module": "Packet06CyclicSource",
+      "source": "lean/Packet06CyclicSource.lean",
+      "source_sha256": "02dd277503957cc0a45307c4eccc77a8e59e1ffb01b14279726b1134751e1953",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicSource.olean",
+        "D:\\oq14\\lean\\Packet06CyclicSource.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.531,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicSource-chain.log",
+      "log_sha256": "24acb3f73df213d3f4f77569d0ef3e0811ea027af4a243b72340e698a9dc6e11",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicSource.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0709dd0ebfa4220d5cd0037d9091b8f5e3a273bfb7aafde97ef3431fff3515a4"
+    },
+    {
+      "module": "Packet06CyclicPotential",
+      "source": "lean/Packet06CyclicPotential.lean",
+      "source_sha256": "573d05bc6f6c0070a2b9463968830e8d28fed9961360c442e0ad5d0fd3eede85",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicPotential.olean",
+        "D:\\oq14\\lean\\Packet06CyclicPotential.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.704,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicPotential-chain.log",
+      "log_sha256": "f3067630410cd816340df379d0ac70bc721f11511792947b0aea92defaf472b2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicPotential.potential_rotate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9768ac358ec47eb01008cbe661f19a46e08899d93f121c0f97bb6962fb633974"
+    },
+    {
+      "module": "Packet06CyclicDynamic",
+      "source": "lean/Packet06CyclicDynamic.lean",
+      "source_sha256": "cbebe49ce3b47b67b7c376cedf9651f25cbd7033813bb21a6141b7ac290ae88c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicDynamic.olean",
+        "D:\\oq14\\lean\\Packet06CyclicDynamic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.188,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicDynamic-chain.log",
+      "log_sha256": "66ff6f570d8304b03947d29cdcb9af0b59f4861dce00b7ac091955f5fe8f5d1d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicDynamic.coefficient_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicDynamic.weightedRemainder_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicDynamic.real_volume_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0b784bad69bac3c97aaec314228ba3667ba56e8b42c63bde27127289aed1d9eb"
+    },
+    {
+      "module": "Packet06CyclicComplex",
+      "source": "lean/Packet06CyclicComplex.lean",
+      "source_sha256": "959c460ae30784e159bfafdd1a4666106d7c832a40c83e2ddaf99be3fa4793bf",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicComplex.olean",
+        "D:\\oq14\\lean\\Packet06CyclicComplex.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.547,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicComplex-chain.log",
+      "log_sha256": "5f81a5823363d9543f9a9cdbdea7a66c0e1492a5a5ec1dec197393ee1c3cd57a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicComplex.complex_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicComplex.derivative_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b97dcef7f64bca428b73c9560d799bb802accbe3a9430096b61a987ca8e766c7"
+    },
+    {
+      "module": "Packet06CyclicReciprocal",
+      "source": "lean/Packet06CyclicReciprocal.lean",
+      "source_sha256": "5917e1ea55e073bc24f6dc8bf6c41890834e75fe4f7357956a6d676aee55793d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06CyclicReciprocal.olean",
+        "D:\\oq14\\lean\\Packet06CyclicReciprocal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.625,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06CyclicReciprocal-chain.log",
+      "log_sha256": "721f7e7215f53c00a65e2a8f5df19cb4430960d080d9107a61d69325766a6d2f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CyclicReciprocal.reciprocalNorm_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06CyclicReciprocal.kernel_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6b0cf7d21dd0dc6f797d12ba288dc17b065ecb5c516d366c2a27e07058d63cc7"
+    },
+    {
+      "module": "Packet06RadiusIndependence",
+      "source": "lean/Packet06RadiusIndependence.lean",
+      "source_sha256": "a5a7066d968fc7198e0352be98e95623c48e7030a78ca36e388ac68c0e6501da",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06RadiusIndependence.olean",
+        "D:\\oq14\\lean\\Packet06RadiusIndependence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.547,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06RadiusIndependence-chain.log",
+      "log_sha256": "b60ed79c2952b9d5738585fe94e7a78fb385631732bb6faa492cd0b890703eef",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06RadiusIndependence.real_radius_independent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06RadiusIndependence.complex_radius_independent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ab1c94da0f3f75b0ed25130c30d8d6e8d8eda8939b30cea17053ac72ac25cfb1"
+    },
+    {
+      "module": "Packet06TranslationL2",
+      "source": "lean/Packet06TranslationL2.lean",
+      "source_sha256": "c9c6f7cf0b6d7fd54f7f8e295946066428b90f03b540e2a1129658ee3c6bcd30",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationL2.olean",
+        "D:\\oq14\\lean\\Packet06TranslationL2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.234,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationL2-chain.log",
+      "log_sha256": "b0631c7510262313aa21002ed51e2507513b6c0a91fc71b2c1175a5ee64effc2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationL2.component_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationL2.action_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationL2.vectorPair_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "94cdf61c829c33de9c2514df1e021c7901a50e600a137bc104a9bd6ca3bcd419"
+    },
+    {
+      "module": "Packet06TranslationNewtonPairing",
+      "source": "lean/Packet06TranslationNewtonPairing.lean",
+      "source_sha256": "eed0ab7e7004ac88a0a27d273bb977ccbdf916020e0d32c748756c5c72c246a8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationNewtonPairing.olean",
+        "D:\\oq14\\lean\\Packet06TranslationNewtonPairing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.875,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationNewtonPairing-chain.log",
+      "log_sha256": "d73c397c022b4dddf47c7b6ff0434a390bb7af5a390fe64fa0cf8dfdc1c6f3df",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationNewtonPairing.translate_comp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationNewtonPairing.weakConvolution_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "609eb936348f0c9ec952a954c22b102ab01eb5f0fa0cc5b6e25440f83a18dd9c"
+    },
+    {
+      "module": "Packet06TranslationSchwartz",
+      "source": "lean/Packet06TranslationSchwartz.lean",
+      "source_sha256": "7968b58a47c9f1c13da2076466ef76e87b41843c5f056878f4fbe3a4e627af25",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationSchwartz.olean",
+        "D:\\oq14\\lean\\Packet06TranslationSchwartz.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.75,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationSchwartz-chain.log",
+      "log_sha256": "b7cf4d422c654d4f555ed6285f72fb735beb6d16e307fa9faedff6d389caaae3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationSchwartz.action_schwartz",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9de6660254fef061a12f7286f23f7b419136147a6c31f32ee94cda7532476336"
+    },
+    {
+      "module": "Packet06TranslationNewton",
+      "source": "lean/Packet06TranslationNewton.lean",
+      "source_sha256": "4d12d05dfa881ab80461099b3e46da41f8521f66335515b6bbc98d3a841a722a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationNewton.olean",
+        "D:\\oq14\\lean\\Packet06TranslationNewton.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.172,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationNewton-chain.log",
+      "log_sha256": "d04622f3dad452aced30dce195b718900d7863c424a0f7c236dca0ba3faab68b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationNewton.newton_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "40b8627f991150a6cd818998028d261ad6c2694994f4ecb662096bbc981ddc9e"
+    },
+    {
+      "module": "Packet06TranslationMaterial",
+      "source": "lean/Packet06TranslationMaterial.lean",
+      "source_sha256": "6d57041740b94c3efb82ce15bab09a59c9e507912a1f8e359cf4e23255bfcd20",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationMaterial.olean",
+        "D:\\oq14\\lean\\Packet06TranslationMaterial.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.078,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationMaterial-chain.log",
+      "log_sha256": "81dfbf654b521d108b853da4534925093f971e58d8a7f248a7fecd38d92a9d54",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.coefficient_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.dielectric_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.coefficient_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.multiplier_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.newton_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationMaterial.static_volume_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7c4701b7e5b7329ced1aea887f7e177f2a0c7efef64ecc3b634523571ff64072"
+    },
+    {
+      "module": "Packet06TranslationPotential",
+      "source": "lean/Packet06TranslationPotential.lean",
+      "source_sha256": "55c1f099912ecf35cc91ec4fef7f6261fa03783c6ab72f54d0baadda7e6027ef",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationPotential.olean",
+        "D:\\oq14\\lean\\Packet06TranslationPotential.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.094,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationPotential-chain.log",
+      "log_sha256": "5188e27aa382b999a0735929fa0b7cf8e091515c2e9a25cb7cd785030ebf1c83",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationPotential.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationPotential.potential_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4464d3d87e59f33e604adf68f15bf073a97469217b9b083037d8a1b53ae8d447"
+    },
+    {
+      "module": "Packet06TranslationDynamic",
+      "source": "lean/Packet06TranslationDynamic.lean",
+      "source_sha256": "0659373d8d4bdb58b6e7745f955d2ec28982f39c1b197b511c2dfff05ae322a1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationDynamic.olean",
+        "D:\\oq14\\lean\\Packet06TranslationDynamic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.969,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationDynamic-chain.log",
+      "log_sha256": "c8601a52755be68dceee0f3d933ece2dc417867a8c8fd627868c5bc59fce71be",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationDynamic.weightedRemainder_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationDynamic.real_volume_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bbeca7727ef36825666912d1bab33b4d433ce0ba278ff4c712c0c9199abd78df"
+    },
+    {
+      "module": "Packet06TranslationComplex",
+      "source": "lean/Packet06TranslationComplex.lean",
+      "source_sha256": "145c98b5a7405fe38bf6fc237101095310d8d70aba4a16e6de74612106b98254",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationComplex.olean",
+        "D:\\oq14\\lean\\Packet06TranslationComplex.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.281,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationComplex-chain.log",
+      "log_sha256": "f78baeadd944481f58004e1220555d4046cabfc4bac576e2507d1f9c3b6cb6a1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationComplex.complex_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationComplex.derivative_conjugacy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a46d31e26b42e85c0037624c4eccc69c1bda2dcf694ea1ba4eff5b7fe028f557"
+    },
+    {
+      "module": "Packet06TranslationReciprocal",
+      "source": "lean/Packet06TranslationReciprocal.lean",
+      "source_sha256": "686fe54082928b2c74c824a1dfbd1ec55d4129a085477e14e976ebb2b4236ca4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-rigid-reciprocal\\objects\\20261113-033456-55748\\Packet06TranslationReciprocal.olean",
+        "D:\\oq14\\lean\\Packet06TranslationReciprocal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.25,
+      "log": "checkpoints/2026-11-13-rigid-reciprocal/evidence/Packet06TranslationReciprocal-chain.log",
+      "log_sha256": "48425ecc49d3be16895034ba8d277b18d528cc62c0a2ec3e89fa1a41c8927a01",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06TranslationReciprocal.reciprocalNorm_translation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06TranslationReciprocal.kernel_translation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5cb9bd0340b82de05fde1ec0c1f04873d23029aff560d771ea24e0f567136cd0"
+    }
+  ],
+  "module_count": 21,
+  "report_count": 51
+}

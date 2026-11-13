@@ -1,5 +1,37 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 86 is the latest verified incremental checkpoint:
+[STAGE86.txt](checkpoints/2026-11-13-rigid-reciprocal/STAGE86.txt).
+
+Actual L2 cyclic rotation and rigid translation intertwine with the actual
+material volume block at every complex frequency and with its spectral
+derivative. The constructed rotated/translated coefficients preserve the
+physical unconjugated reciprocal norm exactly and transport actual kernels.
+Rotation uses the proper cyclic 120-degree Cartesian isometry. Translation
+enlarges the enclosing support radius from R to R+norm(a). Enclosing-radius
+independence is proved for the actual compactly supported block.
+
+Static covariance is derived from the actual Fourier projection for rotation
+and Newton distributional test pairing plus density for translation. Dynamic
+covariance follows from exact material-source/dyadic convolution identities.
+Entire analytic continuation and derivative uniqueness give the complex
+identities. No material symmetry or abstract normalization law is assumed.
+
+This closes the rigid-transport normalization bridge. Full modal packing,
+the transformed selected-sector inverse, actual conical excitation, curved
+regularity and attained hotspots are not asserted by these results.
+
+21 modules / 51 reports passed independent root review and a fresh
+ordered build. 1000 upstream sources were authenticated, with cached objects.
+The ledger is 815 modules / 4633 reports, all prior records unchanged:
+`checkpoints/2026-11-13-rigid-reciprocal/evidence/audited_after_5238-stage86.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage86.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 85 is the latest verified incremental checkpoint:
 [STAGE85.txt](checkpoints/2026-11-13-high-quality-branch/STAGE85.txt).
 The actual physical unit high-Q modal branch retains its kernel, invertible
