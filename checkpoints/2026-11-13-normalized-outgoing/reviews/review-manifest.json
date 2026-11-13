@@ -1,0 +1,40 @@
+{
+  "scope": "Independent isolated rebuild and semantic review of four normalized actual outgoing mode modules",
+  "modules": [
+    {
+      "module": "Packet06GradientOutgoing",
+      "source_sha256": "32d526636aac8806c38005e3e3ea4f61fefd21946558ef5f9ea24403b5296004",
+      "log_sha256": "e7589d4997b302eda5afa041a2f9db03127c1e06b75d690beff598320e57e3a7",
+      "object_sha256": "30981488a4d0a64d9d2edcd2613998fdbfed1a94e249591a4db688c4a1f434d7",
+      "reports": 4,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06MagneticOutgoing",
+      "source_sha256": "d81d0a4bc1a964051cdf61ce6a5f30eea7bae03d36eaeb46673799fbaa91e6ce",
+      "log_sha256": "9988fd5a9db7290be13a9d724196a1dfdf654a3027528741ec7f314375ecac88",
+      "object_sha256": "a2f686d212cecc8a39fc70b1163d17934d50b3560db2e3ff919b4932deffeae3",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06PhysicalMode",
+      "source_sha256": "0a9d57bff67b58fc315de9aabcc917363afb02bb27d6337ca4db7a8032087f3c",
+      "log_sha256": "624aa361ef4b7504adc6be07eccf234a25f30ec4e1bddf138110846448f14004",
+      "object_sha256": "bee09c30330a97a7f32c6a3ac2486e5cc51961c1bc79b756e2c27d9bd32f1623",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06OutgoingMode",
+      "source_sha256": "cc8fb63be20b9dcc067669be4ba2b260f95961fbd346e3ffc93baf4b3ea698fb",
+      "log_sha256": "97c2330cc240218fbc95cfe56f973b47eb8c39e81cec245d18089cd3a76962dc",
+      "object_sha256": "10abbc49c133f3a593d4d49272a51682c727267b4c61601599536892ef1cf4be",
+      "reports": 2,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 10,
+  "status": "pass",
+  "review": "semantic-review.md"
+}

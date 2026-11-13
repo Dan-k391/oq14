@@ -1,0 +1,102 @@
+[
+  {
+    "module": "Packet06ComplexAffine",
+    "declarations": [
+      "OQ14.Packet06ComplexAffine.global_actual_test",
+      "OQ14.Packet06ComplexAffine.translate",
+      "OQ14.Packet06ComplexAffine.dilate"
+    ]
+  },
+  {
+    "module": "Packet06CyclicRotation",
+    "declarations": [
+      "OQ14.Packet06CyclicRotation.rotate_unrotate",
+      "OQ14.Packet06CyclicRotation.unrotate_rotate",
+      "OQ14.Packet06CyclicRotation.rotate_norm",
+      "OQ14.Packet06CyclicRotation.rotate_axis",
+      "OQ14.Packet06CyclicRotation.rotation_basis"
+    ]
+  },
+  {
+    "module": "Packet06CyclicRotationTests",
+    "declarations": [
+      "OQ14.Packet06CyclicRotationTests.rotateTest_apply",
+      "OQ14.Packet06CyclicRotationTests.rotateTest_partial",
+      "OQ14.Packet06CyclicRotationTests.pairing_rotate"
+    ]
+  },
+  {
+    "module": "Packet06CyclicRotationMaxwell",
+    "declarations": [
+      "OQ14.Packet06CyclicRotationMaxwell.rotateTest_partial_comm",
+      "OQ14.Packet06CyclicRotationMaxwell.fieldPair_rotate",
+      "OQ14.Packet06CyclicRotationMaxwell.curlPair_rotate",
+      "OQ14.Packet06CyclicRotationMaxwell.dielectric_pair_rotate",
+      "OQ14.Packet06CyclicRotationMaxwell.complex_maxwell_rotate"
+    ]
+  },
+  {
+    "module": "Packet06ComplexReciprocal",
+    "declarations": [
+      "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate",
+      "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate_rescale"
+    ]
+  },
+  {
+    "module": "Packet06FrequencyPlacement",
+    "declarations": [
+      "OQ14.Packet06FrequencyPlacement.positive_real_frequency"
+    ]
+  },
+  {
+    "module": "Packet06CyclicOutgoing",
+    "declarations": [
+      "OQ14.Packet06CyclicOutgoing.factor_scale",
+      "OQ14.Packet06CyclicOutgoing.rotated_scaled_centered_limit"
+    ]
+  },
+  {
+    "module": "Packet06CyclicAffine",
+    "declarations": [
+      "OQ14.Packet06CyclicAffine.placed_maxwell",
+      "OQ14.Packet06CyclicAffine.placed_frequency"
+    ]
+  },
+  {
+    "module": "Packet06GradientOutgoing",
+    "declarations": [
+      "OQ14.Packet06GradientOutgoing.gradient_factorization",
+      "OQ14.Packet06GradientOutgoing.unitCoordinate_limit",
+      "OQ14.Packet06GradientOutgoing.scaled_gradient_limit",
+      "OQ14.Packet06GradientOutgoing.scaled_gradient_bound"
+    ]
+  },
+  {
+    "module": "Packet06MagneticOutgoing",
+    "declarations": [
+      "OQ14.Packet06MagneticOutgoing.gradient_response_limit",
+      "OQ14.Packet06MagneticOutgoing.magnetic_outgoing"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalMode",
+    "declarations": [
+      "OQ14.Packet06PhysicalMode.weighted_electric_ae",
+      "OQ14.Packet06PhysicalMode.electric_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06OutgoingMode",
+    "declarations": [
+      "OQ14.Packet06OutgoingMode.actual_outgoing_mode",
+      "OQ14.Packet06OutgoingMode.physically_normalized_mode"
+    ]
+  },
+  {
+    "module": "Packet06PoleScale",
+    "declarations": [
+      "OQ14.Packet06PoleScale.observed_pole_scale",
+      "OQ14.Packet06PoleScale.physically_normalized_pole"
+    ]
+  }
+]

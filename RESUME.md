@@ -1,5 +1,28 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 83 is the latest verified incremental checkpoint:
+[STAGE83.txt](checkpoints/2026-11-13-normalized-outgoing/STAGE83.txt).
+Actual global nonzero outgoing E/H modes now have physical reciprocal norm
+one, while preserving the same selected-sector observed pole. Complex Maxwell
+rotation/affine transport and the true reciprocal dilation law are checked.
+
+13 modules / 35 reports passed independent source review and fresh ordered
+compilation. 1028 upstream sources were authenticated, with cached objects.
+The ledger is 769 modules / 4537 reports, all prior records unchanged:
+`checkpoints/2026-11-13-normalized-outgoing/evidence/audited_after_5238-stage83.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: actual angular root convergence and angular L2 limits
+compile; the actual curved scalar PDE now yields an absorbed localized
+difference-quotient estimate; complex potential identities and actual rotated
+volume conjugacy are advancing. Curved regularity, actual modal excitation,
+attained hotspots/collars, packing, final manuscript and aggregate checks
+remain. Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage83.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 82 is the latest verified incremental checkpoint:
 [STAGE82.txt](checkpoints/2026-11-13-boundary-null/STAGE82.txt).
 The same actual driven fixed-frequency device now includes zero frontier

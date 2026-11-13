@@ -1,0 +1,36 @@
+[
+  {
+    "module": "Packet06GradientOutgoing",
+    "sha256": "32d526636aac8806c38005e3e3ea4f61fefd21946558ef5f9ea24403b5296004",
+    "reports": [
+      "OQ14.Packet06GradientOutgoing.gradient_factorization",
+      "OQ14.Packet06GradientOutgoing.unitCoordinate_limit",
+      "OQ14.Packet06GradientOutgoing.scaled_gradient_limit",
+      "OQ14.Packet06GradientOutgoing.scaled_gradient_bound"
+    ]
+  },
+  {
+    "module": "Packet06MagneticOutgoing",
+    "sha256": "d81d0a4bc1a964051cdf61ce6a5f30eea7bae03d36eaeb46673799fbaa91e6ce",
+    "reports": [
+      "OQ14.Packet06MagneticOutgoing.gradient_response_limit",
+      "OQ14.Packet06MagneticOutgoing.magnetic_outgoing"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalMode",
+    "sha256": "0a9d57bff67b58fc315de9aabcc917363afb02bb27d6337ca4db7a8032087f3c",
+    "reports": [
+      "OQ14.Packet06PhysicalMode.weighted_electric_ae",
+      "OQ14.Packet06PhysicalMode.electric_nonzero"
+    ]
+  },
+  {
+    "module": "Packet06OutgoingMode",
+    "sha256": "cc8fb63be20b9dcc067669be4ba2b260f95961fbd346e3ffc93baf4b3ea698fb",
+    "reports": [
+      "OQ14.Packet06OutgoingMode.actual_outgoing_mode",
+      "OQ14.Packet06OutgoingMode.physically_normalized_mode"
+    ]
+  }
+]

@@ -1,0 +1,472 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "fd1bd36",
+  "modules": 769,
+  "reports": 4537,
+  "new_modules": 13,
+  "new_reports": 35,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "68df4f479ad50ca957b39ef2729de9811d6fad40af06e5e45f9a143e43bf7eee",
+  "ledger_sha256": "27585b97d132215c53c1e9b80dc9081dd56ffceaff162d2091ca295910498a76",
+  "raw_archive_sha256": "e306c74e6a4e516e9a91b63cdf3f22f9c09c98a9bc6095e036eb52677633a618",
+  "records": [
+    {
+      "module": "Packet06ComplexAffine",
+      "reports": 3,
+      "source_sha256": "fb4b5aa6a886666f46961163e5f947555bad6e9b29a2941bf5ee04dd63254b16",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexAffine-chain.log",
+      "audit_log_sha256": "507178b5711cce9a21b6f23496f0720c07a41c460ed61e2dd04af3b4b7b678f7",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexAffine-chain.log",
+      "independent_log_sha256": "507178b5711cce9a21b6f23496f0720c07a41c460ed61e2dd04af3b4b7b678f7",
+      "declarations": [
+        "OQ14.Packet06ComplexAffine.global_actual_test",
+        "OQ14.Packet06ComplexAffine.translate",
+        "OQ14.Packet06ComplexAffine.dilate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotation",
+      "reports": 5,
+      "source_sha256": "34d97f65c7a3cd8101ff12316496aa77e0a360bc997f0508ddc2c3348898e89a",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotation-chain.log",
+      "audit_log_sha256": "7626f3c8ad1386925844ec4deca0b6658752aa932cddedab87da06c5cea22b0b",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotation-chain.log",
+      "independent_log_sha256": "7626f3c8ad1386925844ec4deca0b6658752aa932cddedab87da06c5cea22b0b",
+      "declarations": [
+        "OQ14.Packet06CyclicRotation.rotate_unrotate",
+        "OQ14.Packet06CyclicRotation.unrotate_rotate",
+        "OQ14.Packet06CyclicRotation.rotate_norm",
+        "OQ14.Packet06CyclicRotation.rotate_axis",
+        "OQ14.Packet06CyclicRotation.rotation_basis"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotationTests",
+      "reports": 3,
+      "source_sha256": "e5bb1e3cd8f9422a2dbb300b56b4de14810b8ce511534560a593bd85f0161833",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationTests-chain.log",
+      "audit_log_sha256": "4f50c30217646cf5457935a9229cf5676d88b3ca48358e489e1ddcea293f683c",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationTests-chain.log",
+      "independent_log_sha256": "4f50c30217646cf5457935a9229cf5676d88b3ca48358e489e1ddcea293f683c",
+      "declarations": [
+        "OQ14.Packet06CyclicRotationTests.rotateTest_apply",
+        "OQ14.Packet06CyclicRotationTests.rotateTest_partial",
+        "OQ14.Packet06CyclicRotationTests.pairing_rotate"
+      ]
+    },
+    {
+      "module": "Packet06CyclicRotationMaxwell",
+      "reports": 5,
+      "source_sha256": "b711bf696f9a0aa672999184b988bbbd490d308c555f4f3d1607d2e6b629cd8c",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationMaxwell-chain.log",
+      "audit_log_sha256": "6ffdd042922f4f2b666c186542c015b1de6f2970a875b87d1f07ae56d9a3e192",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationMaxwell-chain.log",
+      "independent_log_sha256": "6ffdd042922f4f2b666c186542c015b1de6f2970a875b87d1f07ae56d9a3e192",
+      "declarations": [
+        "OQ14.Packet06CyclicRotationMaxwell.rotateTest_partial_comm",
+        "OQ14.Packet06CyclicRotationMaxwell.fieldPair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.curlPair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.dielectric_pair_rotate",
+        "OQ14.Packet06CyclicRotationMaxwell.complex_maxwell_rotate"
+      ]
+    },
+    {
+      "module": "Packet06ComplexReciprocal",
+      "reports": 2,
+      "source_sha256": "4f56d0beb7e099a4d5d0ec443a7dab27219def29d9edc50bb365941fad409399",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexReciprocal-chain.log",
+      "audit_log_sha256": "76ef9d1208e45289a8ee169333bdf7e00e01432c3d86009693bd38bbedd263d5",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexReciprocal-chain.log",
+      "independent_log_sha256": "76ef9d1208e45289a8ee169333bdf7e00e01432c3d86009693bd38bbedd263d5",
+      "declarations": [
+        "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate",
+        "OQ14.Packet06ComplexReciprocal.reciprocalNorm_dilate_rescale"
+      ]
+    },
+    {
+      "module": "Packet06FrequencyPlacement",
+      "reports": 1,
+      "source_sha256": "48abd1a6b060b9b32e7676930ebf67380750ab250b38531841121ae1f0cb03de",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06FrequencyPlacement-chain.log",
+      "audit_log_sha256": "ed7d68bd0aa03f7d920414ed2dc086fc48e1b42d048b00fb6c0d4760e95a7f76",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06FrequencyPlacement-chain.log",
+      "independent_log_sha256": "ed7d68bd0aa03f7d920414ed2dc086fc48e1b42d048b00fb6c0d4760e95a7f76",
+      "declarations": [
+        "OQ14.Packet06FrequencyPlacement.positive_real_frequency"
+      ]
+    },
+    {
+      "module": "Packet06CyclicOutgoing",
+      "reports": 2,
+      "source_sha256": "c565eb51d0d3a025e53dfdb913df50637cf8ca3dbd24f3ad56e484635aaeb1f4",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicOutgoing-chain.log",
+      "audit_log_sha256": "3274ca117304c082cb1ad5b133530527ccceae980750c212ed0e06101f0f2e3a",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicOutgoing-chain.log",
+      "independent_log_sha256": "3274ca117304c082cb1ad5b133530527ccceae980750c212ed0e06101f0f2e3a",
+      "declarations": [
+        "OQ14.Packet06CyclicOutgoing.factor_scale",
+        "OQ14.Packet06CyclicOutgoing.rotated_scaled_centered_limit"
+      ]
+    },
+    {
+      "module": "Packet06CyclicAffine",
+      "reports": 2,
+      "source_sha256": "15e9846c8b98f74c112b3de39f2fb9fd9dffd2258594820a0f4fd300929e6b0f",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicAffine-chain.log",
+      "audit_log_sha256": "37f35599280924f618b20e768e22d2ced5e654170a8c934cfed5d6ea13de0ab7",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "independent_review_sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "independent_build_sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicAffine-chain.log",
+      "independent_log_sha256": "37f35599280924f618b20e768e22d2ced5e654170a8c934cfed5d6ea13de0ab7",
+      "declarations": [
+        "OQ14.Packet06CyclicAffine.placed_maxwell",
+        "OQ14.Packet06CyclicAffine.placed_frequency"
+      ]
+    },
+    {
+      "module": "Packet06GradientOutgoing",
+      "reports": 4,
+      "source_sha256": "32d526636aac8806c38005e3e3ea4f61fefd21946558ef5f9ea24403b5296004",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06GradientOutgoing-chain.log",
+      "audit_log_sha256": "4192ea8c0ba7ab0dcf095a7ce48ad3caf592b570287cc2319cfbb63aa04421fb",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/semantic-review.md",
+      "independent_review_sha256": "b11671ec8068a0a4cc9192714e93136da43e32eb98b1c6363fbda4a5e7499670",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/reviews/review-manifest.json",
+      "independent_build_sha256": "da3a6374afb6234bce8f0d54a22fd3c6c42c4c12e4ec5257cc3792415063fbc0",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06GradientOutgoing.log",
+      "independent_log_sha256": "e7589d4997b302eda5afa041a2f9db03127c1e06b75d690beff598320e57e3a7",
+      "declarations": [
+        "OQ14.Packet06GradientOutgoing.gradient_factorization",
+        "OQ14.Packet06GradientOutgoing.unitCoordinate_limit",
+        "OQ14.Packet06GradientOutgoing.scaled_gradient_limit",
+        "OQ14.Packet06GradientOutgoing.scaled_gradient_bound"
+      ]
+    },
+    {
+      "module": "Packet06MagneticOutgoing",
+      "reports": 2,
+      "source_sha256": "d81d0a4bc1a964051cdf61ce6a5f30eea7bae03d36eaeb46673799fbaa91e6ce",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06MagneticOutgoing-chain.log",
+      "audit_log_sha256": "d8df97c661091c6d07b054c37aba12875b658216cbc282813e12015429670b2f",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/semantic-review.md",
+      "independent_review_sha256": "b11671ec8068a0a4cc9192714e93136da43e32eb98b1c6363fbda4a5e7499670",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/reviews/review-manifest.json",
+      "independent_build_sha256": "da3a6374afb6234bce8f0d54a22fd3c6c42c4c12e4ec5257cc3792415063fbc0",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06MagneticOutgoing.log",
+      "independent_log_sha256": "9988fd5a9db7290be13a9d724196a1dfdf654a3027528741ec7f314375ecac88",
+      "declarations": [
+        "OQ14.Packet06MagneticOutgoing.gradient_response_limit",
+        "OQ14.Packet06MagneticOutgoing.magnetic_outgoing"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalMode",
+      "reports": 2,
+      "source_sha256": "0a9d57bff67b58fc315de9aabcc917363afb02bb27d6337ca4db7a8032087f3c",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06PhysicalMode-chain.log",
+      "audit_log_sha256": "70786cbc4b51ea681f4b1633d1e038ec75959f9d615babf25dc7d7c8d50d2bf2",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/semantic-review.md",
+      "independent_review_sha256": "b11671ec8068a0a4cc9192714e93136da43e32eb98b1c6363fbda4a5e7499670",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/reviews/review-manifest.json",
+      "independent_build_sha256": "da3a6374afb6234bce8f0d54a22fd3c6c42c4c12e4ec5257cc3792415063fbc0",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06PhysicalMode.log",
+      "independent_log_sha256": "624aa361ef4b7504adc6be07eccf234a25f30ec4e1bddf138110846448f14004",
+      "declarations": [
+        "OQ14.Packet06PhysicalMode.weighted_electric_ae",
+        "OQ14.Packet06PhysicalMode.electric_nonzero"
+      ]
+    },
+    {
+      "module": "Packet06OutgoingMode",
+      "reports": 2,
+      "source_sha256": "cc8fb63be20b9dcc067669be4ba2b260f95961fbd346e3ffc93baf4b3ea698fb",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06OutgoingMode-chain.log",
+      "audit_log_sha256": "034dc25f0fdea36f2e1d490071bd0d7bf3d2b3791333d4b360d1273523eae15e",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/semantic-review.md",
+      "independent_review_sha256": "b11671ec8068a0a4cc9192714e93136da43e32eb98b1c6363fbda4a5e7499670",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/reviews/review-manifest.json",
+      "independent_build_sha256": "da3a6374afb6234bce8f0d54a22fd3c6c42c4c12e4ec5257cc3792415063fbc0",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06OutgoingMode.log",
+      "independent_log_sha256": "97c2330cc240218fbc95cfe56f973b47eb8c39e81cec245d18089cd3a76962dc",
+      "declarations": [
+        "OQ14.Packet06OutgoingMode.actual_outgoing_mode",
+        "OQ14.Packet06OutgoingMode.physically_normalized_mode"
+      ]
+    },
+    {
+      "module": "Packet06PoleScale",
+      "reports": 2,
+      "source_sha256": "03b01e2935bf954abc5ef6c213479c1a961f2c45a2df65d9f028dc6f2a54b163",
+      "audit_log": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06PoleScale-chain.log",
+      "audit_log_sha256": "83d6c9ac65f29d65d6add1f47459698343182ff174a30bc1f4928b345ec3036a",
+      "independent_review": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-semantic-review.md",
+      "independent_review_sha256": "138f5fa8fd4c1f51aca3a4b80595d775bf5ad5ee1b0b6b38a201fe1c4126d891",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-review-manifest.json",
+      "independent_build_sha256": "0b904d44c7ffa5a2d8592ae2bd9b89978edea6a0416429a1770de1f5466048a8",
+      "independent_log": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-Packet06PoleScale.log",
+      "independent_log_sha256": "5aa20ba229cf44c7df3d0557a6f71c092ac6c54e63b55169740458da38a82d65",
+      "declarations": [
+        "OQ14.Packet06PoleScale.observed_pole_scale",
+        "OQ14.Packet06PoleScale.physically_normalized_pole"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/audited_after_5238-stage83.json",
+      "sha256": "27585b97d132215c53c1e9b80dc9081dd56ffceaff162d2091ca295910498a76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/chain-build.json",
+      "sha256": "36d056301f96be813bb8a5c809129500b9e8d7f824e27de96fd057d514025147"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexAffine-chain.log",
+      "sha256": "507178b5711cce9a21b6f23496f0720c07a41c460ed61e2dd04af3b4b7b678f7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06ComplexReciprocal-chain.log",
+      "sha256": "76ef9d1208e45289a8ee169333bdf7e00e01432c3d86009693bd38bbedd263d5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicAffine-chain.log",
+      "sha256": "37f35599280924f618b20e768e22d2ced5e654170a8c934cfed5d6ea13de0ab7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicOutgoing-chain.log",
+      "sha256": "3274ca117304c082cb1ad5b133530527ccceae980750c212ed0e06101f0f2e3a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotation-chain.log",
+      "sha256": "7626f3c8ad1386925844ec4deca0b6658752aa932cddedab87da06c5cea22b0b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationMaxwell-chain.log",
+      "sha256": "6ffdd042922f4f2b666c186542c015b1de6f2970a875b87d1f07ae56d9a3e192"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06CyclicRotationTests-chain.log",
+      "sha256": "4f50c30217646cf5457935a9229cf5676d88b3ca48358e489e1ddcea293f683c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06FrequencyPlacement-chain.log",
+      "sha256": "ed7d68bd0aa03f7d920414ed2dc086fc48e1b42d048b00fb6c0d4760e95a7f76"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06GradientOutgoing-chain.log",
+      "sha256": "4192ea8c0ba7ab0dcf095a7ce48ad3caf592b570287cc2319cfbb63aa04421fb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06MagneticOutgoing-chain.log",
+      "sha256": "d8df97c661091c6d07b054c37aba12875b658216cbc282813e12015429670b2f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06OutgoingMode-chain.log",
+      "sha256": "034dc25f0fdea36f2e1d490071bd0d7bf3d2b3791333d4b360d1273523eae15e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06PhysicalMode-chain.log",
+      "sha256": "70786cbc4b51ea681f4b1633d1e038ec75959f9d615babf25dc7d7c8d50d2bf2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/evidence/Packet06PoleScale-chain.log",
+      "sha256": "83d6c9ac65f29d65d6add1f47459698343182ff174a30bc1f4928b345ec3036a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/modules.json",
+      "sha256": "3a4726861870b072bcc5df31f984f539b16de4237b4ec199001e4389d1e8ccf0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/provenance-audit.json",
+      "sha256": "3eee0f8224e7c5e8a6a18213a89455bccc108ecc823234b5644c8e225e2e36f8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/inputs.json",
+      "sha256": "94fd1bb8bc72c2dc93df2edd23887b91749a82f08d6f126088125a45c02bfcac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/metadata-normalization.json",
+      "sha256": "4b595d83cf2ccae0dea5ab437d93f5d09ba04353cd62730441f2d89d39027c1e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06GradientOutgoing.log",
+      "sha256": "e7589d4997b302eda5afa041a2f9db03127c1e06b75d690beff598320e57e3a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06MagneticOutgoing.log",
+      "sha256": "9988fd5a9db7290be13a9d724196a1dfdf654a3027528741ec7f314375ecac88"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06OutgoingMode.log",
+      "sha256": "97c2330cc240218fbc95cfe56f973b47eb8c39e81cec245d18089cd3a76962dc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/Packet06PhysicalMode.log",
+      "sha256": "624aa361ef4b7504adc6be07eccf234a25f30ec4e1bddf138110846448f14004"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-inputs.json",
+      "sha256": "fbb69e9f563565f9270de1c966c94c6bb9c35e507bc3a64effa9edcb7b8ed985"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-Packet06PoleScale.log",
+      "sha256": "5aa20ba229cf44c7df3d0557a6f71c092ac6c54e63b55169740458da38a82d65"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-rebuild.ps1",
+      "sha256": "77752e686a9721fbc41bca7b6ea89bf875a54a8100c3981611dd09c8bac2195c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-review-manifest.json",
+      "sha256": "0b904d44c7ffa5a2d8592ae2bd9b89978edea6a0416429a1770de1f5466048a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/pole-scale-semantic-review.md",
+      "sha256": "138f5fa8fd4c1f51aca3a4b80595d775bf5ad5ee1b0b6b38a201fe1c4126d891"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/rebuild.ps1",
+      "sha256": "cc40f1d117a08ae9db7bc5bd7ac9737bf9c62c1917b8bbfeff38d7de81c14190"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/review-manifest.json",
+      "sha256": "da3a6374afb6234bce8f0d54a22fd3c6c42c4c12e4ec5257cc3792415063fbc0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/root-actual-review.txt",
+      "sha256": "b649731893ca4637a22c8258a5e804ce37371ba9df7b4234d4bf05639eddb4e1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/semantic-review.md",
+      "sha256": "b11671ec8068a0a4cc9192714e93136da43e32eb98b1c6363fbda4a5e7499670"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/reviews/transport-author.json",
+      "sha256": "b88aa181c001388b50ac36177c4c8d25682f7dc4bc70b63b576aee6973e6c280"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/scripts/audit_provenance.ps1",
+      "sha256": "92697c3b820f2a7efee3ffd45235196e7729783ac5812755531149cb5e3d7ea7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/scripts/check_chain.py",
+      "sha256": "e55bff32d6bd969993e14975df297e9d0cd8c54470c50690b68b02d4c32a601b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/scripts/freeze_checkpoint.py",
+      "sha256": "88ce94449a27b6652de6709e90e1d2c76ff71a5552904fe94e2a6ab48ea01827"
+    },
+    {
+      "path": "checkpoints/2026-11-13-normalized-outgoing/STAGE83.txt",
+      "sha256": "1d628b351875a34b2eebe223bffe4af07ebe883ca44d13e22d48f83f96709450"
+    },
+    {
+      "path": "lean/Packet06ComplexAffine.lean",
+      "sha256": "fb4b5aa6a886666f46961163e5f947555bad6e9b29a2941bf5ee04dd63254b16"
+    },
+    {
+      "path": "lean/Packet06ComplexReciprocal.lean",
+      "sha256": "4f56d0beb7e099a4d5d0ec443a7dab27219def29d9edc50bb365941fad409399"
+    },
+    {
+      "path": "lean/Packet06CyclicAffine.lean",
+      "sha256": "15e9846c8b98f74c112b3de39f2fb9fd9dffd2258594820a0f4fd300929e6b0f"
+    },
+    {
+      "path": "lean/Packet06CyclicOutgoing.lean",
+      "sha256": "c565eb51d0d3a025e53dfdb913df50637cf8ca3dbd24f3ad56e484635aaeb1f4"
+    },
+    {
+      "path": "lean/Packet06CyclicRotation.lean",
+      "sha256": "34d97f65c7a3cd8101ff12316496aa77e0a360bc997f0508ddc2c3348898e89a"
+    },
+    {
+      "path": "lean/Packet06CyclicRotationMaxwell.lean",
+      "sha256": "b711bf696f9a0aa672999184b988bbbd490d308c555f4f3d1607d2e6b629cd8c"
+    },
+    {
+      "path": "lean/Packet06CyclicRotationTests.lean",
+      "sha256": "e5bb1e3cd8f9422a2dbb300b56b4de14810b8ce511534560a593bd85f0161833"
+    },
+    {
+      "path": "lean/Packet06FrequencyPlacement.lean",
+      "sha256": "48abd1a6b060b9b32e7676930ebf67380750ab250b38531841121ae1f0cb03de"
+    },
+    {
+      "path": "lean/Packet06GradientOutgoing.lean",
+      "sha256": "32d526636aac8806c38005e3e3ea4f61fefd21946558ef5f9ea24403b5296004"
+    },
+    {
+      "path": "lean/Packet06MagneticOutgoing.lean",
+      "sha256": "d81d0a4bc1a964051cdf61ce6a5f30eea7bae03d36eaeb46673799fbaa91e6ce"
+    },
+    {
+      "path": "lean/Packet06OutgoingMode.lean",
+      "sha256": "cc8fb63be20b9dcc067669be4ba2b260f95961fbd346e3ffc93baf4b3ea698fb"
+    },
+    {
+      "path": "lean/Packet06PhysicalMode.lean",
+      "sha256": "0a9d57bff67b58fc315de9aabcc917363afb02bb27d6337ca4db7a8032087f3c"
+    },
+    {
+      "path": "lean/Packet06PoleScale.lean",
+      "sha256": "03b01e2935bf954abc5ef6c213479c1a961f2c45a2df65d9f028dc6f2a54b163"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "59d7ecb53e79c22fd360130ae46f2610ed73b4e87099bdfc528f5bff19ab58c4"
+    }
+  ],
+  "scope": "Actual nonzero global outgoing E/H modes, true reciprocal unit normalization and preservation of the same selected-sector observed pole; proper cyclic/affine complex Maxwell and dilation reciprocal transport. Full OQ14 remains active; curved regularity, actual conical excitation and attained hotspots remain incomplete."
+}
