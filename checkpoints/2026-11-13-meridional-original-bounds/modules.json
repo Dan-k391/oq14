@@ -1,0 +1,224 @@
+[
+  {
+    "module": "Packet05DifferentiatedFluxNorm",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedFluxNorm.differentiated_source_norm"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxDataBounds",
+    "declarations": [
+      "OQ14.Packet05NormalFluxDataBounds.second_flux_original_bound"
+    ]
+  },
+  {
+    "module": "Packet05FirstNormalFluxDataBound",
+    "declarations": [
+      "OQ14.Packet05FirstNormalFluxDataBound.first_flux_original_bound"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxOriginalBound",
+    "declarations": [
+      "OQ14.Packet05NormalFluxOriginalBound.normal_flux_original_bound"
+    ]
+  },
+  {
+    "module": "Packet05PhysicalReconstructionBound",
+    "declarations": [
+      "OQ14.Packet05PhysicalReconstructionBound.physical_field_norm"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativePhaseBranches",
+    "declarations": [
+      "OQ14.Packet05QuantitativePhaseBranches.quantitative_phase_branches"
+    ]
+  },
+  {
+    "module": "Packet05FirstTangentialArrayBound",
+    "declarations": [
+      "OQ14.Packet05FirstTangentialArrayBound.first_tangential_array_bound"
+    ]
+  },
+  {
+    "module": "Packet05ForcingDerivativeUnique",
+    "declarations": [
+      "OQ14.Packet05ForcingDerivativeUnique.localized_forcing_derivative_eq"
+    ]
+  },
+  {
+    "module": "Packet05SecondTangentialExplicit",
+    "declarations": [
+      "OQ14.Packet05SecondTangentialExplicit.second_tangential_iteration_explicit"
+    ]
+  },
+  {
+    "module": "Packet05ForcingFamilyBound",
+    "declarations": [
+      "OQ14.Packet05ForcingFamilyBound.force_derivative_sum",
+      "OQ14.Packet05ForcingFamilyBound.differentiated_source_sum"
+    ]
+  },
+  {
+    "module": "Packet05ActualFirstSecondBounds",
+    "declarations": [
+      "OQ14.Packet05ActualFirstSecondBounds.actual_first_second_explicit_bounds"
+    ]
+  },
+  {
+    "module": "Packet05LocalPhaseSymmetry",
+    "declarations": [
+      "OQ14.Packet05LocalPhaseSymmetry.local_phase_symmetry"
+    ]
+  },
+  {
+    "module": "Packet06RoundedMaximumFamily",
+    "declarations": [
+      "OQ14.Packet06RoundedMaximumFamily.rounded_maximum_family"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeGraphReconstruction",
+    "declarations": [
+      "OQ14.Packet05QuantitativeGraphReconstruction.quantitative_graph_phase_reconstruction"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeChartBranches",
+    "declarations": [
+      "OQ14.Packet05QuantitativeChartBranches.quantitative_chart_branches"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativePhysicalChart",
+    "declarations": [
+      "OQ14.Packet05QuantitativePhysicalChart.quantitative_physical_chart_branches"
+    ]
+  },
+  {
+    "module": "Packet05ChartCorrectionBound",
+    "declarations": [
+      "OQ14.Packet05ChartCorrectionBound.chart_correction_bound"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativePhysicalBranches",
+    "declarations": [
+      "OQ14.Packet05QuantitativePhysicalBranches.quantitative_physical_branches"
+    ]
+  },
+  {
+    "module": "Packet05PhaseWeightBound",
+    "declarations": [
+      "OQ14.Packet05PhaseWeightBound.weight_inverse_bound"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativePhaseClosure",
+    "declarations": [
+      "OQ14.Packet05QuantitativePhaseClosure.continuous_bound_on_closure",
+      "OQ14.Packet05QuantitativePhaseClosure.bounded_phase_closure"
+    ]
+  },
+  {
+    "module": "Packet05PhaseCoverLocalBound",
+    "declarations": [
+      "OQ14.Packet05PhaseCoverLocalBound.local_phase_bound",
+      "OQ14.Packet05PhaseCoverLocalBound.family_phase_bound"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxPlateauBound",
+    "declarations": [
+      "OQ14.Packet05NormalFluxPlateauBound.normal_flux_plateau_bound"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartScalarAdapter",
+    "declarations": [
+      "OQ14.Packet05FixedChartScalarAdapter.fixed_chart_scalar_adapter"
+    ]
+  },
+  {
+    "module": "Packet05TangentialPlateauBound",
+    "declarations": [
+      "OQ14.Packet05TangentialPlateauBound.tangential_plateau_original_bound"
+    ]
+  },
+  {
+    "module": "Packet05FixedChartArrayAdapter",
+    "declarations": [
+      "OQ14.Packet05FixedChartArrayAdapter.fixed_chart_array_adapter"
+    ]
+  },
+  {
+    "module": "Packet06ActualAxialAmplitude",
+    "declarations": [
+      "OQ14.Packet06ActualAxialAmplitude.amplitude_eq_sqrt_energy",
+      "OQ14.Packet06ActualAxialAmplitude.actual_amplitude_ae",
+      "OQ14.Packet06ActualAxialAmplitude.rounded_amplitude_ae"
+    ]
+  },
+  {
+    "module": "Packet05PhaseRepresentativeSymmetry",
+    "declarations": [
+      "OQ14.Packet05PhaseRepresentativeSymmetry.representative_symmetry"
+    ]
+  },
+  {
+    "module": "Packet06RoundedPhaseRotation",
+    "declarations": [
+      "OQ14.Packet06RoundedPhaseRotation.body_rotation",
+      "OQ14.Packet06RoundedPhaseRotation.closure_rotation",
+      "OQ14.Packet06RoundedPhaseRotation.phase_rotation",
+      "OQ14.Packet06RoundedPhaseRotation.ball_rotation",
+      "OQ14.Packet06RoundedPhaseRotation.closedBall_rotation"
+    ]
+  },
+  {
+    "module": "Packet05SourceDerivativeFamilyBound",
+    "declarations": [
+      "OQ14.Packet05SourceDerivativeFamilyBound.differentiated_source_derivative_sum"
+    ]
+  },
+  {
+    "module": "Packet05CutoffFamilyBound",
+    "declarations": [
+      "OQ14.Packet05CutoffFamilyBound.cut_vector_sum",
+      "OQ14.Packet05CutoffFamilyBound.first_source_sum",
+      "OQ14.Packet05CutoffFamilyBound.mixed_source_sum"
+    ]
+  },
+  {
+    "module": "Packet05SecondForcingOriginalBound",
+    "declarations": [
+      "OQ14.Packet05SecondForcingOriginalBound.second_forcing_original_bound"
+    ]
+  },
+  {
+    "module": "Packet05ActualSecondOriginalBound",
+    "declarations": [
+      "OQ14.Packet05ActualSecondOriginalBound.actual_second_original_bound"
+    ]
+  },
+  {
+    "module": "Packet06RoundedBranchSymmetry",
+    "declarations": [
+      "OQ14.Packet06RoundedBranchSymmetry.phaseDomain_eq",
+      "OQ14.Packet06RoundedBranchSymmetry.branch_symmetry"
+    ]
+  },
+  {
+    "module": "Packet06RoundedMeridionalMaximum",
+    "declarations": [
+      "OQ14.Packet06RoundedMeridionalMaximum.eventually_meridional_maximum"
+    ]
+  },
+  {
+    "module": "Packet06MeridionalMaximumFamily",
+    "declarations": [
+      "OQ14.Packet06MeridionalMaximumFamily.meridional_maximum_family"
+    ]
+  }
+]

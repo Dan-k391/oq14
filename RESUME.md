@@ -1,5 +1,42 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 105 is the latest verified incremental checkpoint:
+[STAGE105.txt](checkpoints/2026-11-13-meridional-original-bounds/STAGE105.txt).
+
+One fixed physically normalized rounded mode family now has attained
+one-sided physical maxima above every prescribed threshold at all finite
+centers. Actual response convergence, the selected simple pole certificate,
+the outgoing Maxwell mode and the high-Q conditions are retained. Actual
+Euclidean amplitude symmetry follows from the sector kernel equation and
+positive susceptibility. It extends from the open material phases to their
+continuous one-sided traces on an open larger observation neighborhood.
+Each maximum on a strictly smaller closed ball can therefore be chosen on
+the meridian x1=0, which becomes the required plane under the proved placement.
+
+The quantitative scalar chain constructs both tangential iterations and
+eliminates the intermediate DC, TC and J norms from the displayed mixed
+derivative estimate. Its bound uses original scalar/forcing derivative norms
+and fixed chart/cutoff constants. Continuous tangential and normal-flux
+representatives retain explicit bounds, and the actual signed graph chart
+reconstructs the literal physical electric phase branches. Local bounds
+extend to phase closures in the form required by the finite-cover theorem.
+
+The family-uniform original-data bounds, fixed collar composition and final
+single-mode hotspot isolation/placement assembly are still active. Driven
+counterparts, paper alignment and aggregate verification also remain.
+These results do not yet constitute full OQ14 closure.
+
+35 modules / 47 reports passed independent root review and a fresh
+ordered build. 1503 upstream sources were authenticated, with cached objects.
+The ledger is 1237 modules / 5418 reports, all prior records unchanged:
+`checkpoints/2026-11-13-meridional-original-bounds/evidence/audited_after_5238-stage105.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage105.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 104 is the latest verified incremental checkpoint:
 [STAGE104.txt](checkpoints/2026-11-13-actual-phase-maxima/STAGE104.txt).
 
