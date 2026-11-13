@@ -1,4 +1,4 @@
-\section{Verification, remaining lemmas, and separate verdicts}
+\section{Verification, scope, and separate verdicts}
 \label{ver:section}
 
 \subsection{What was checked}
@@ -10,7 +10,7 @@ Dirichlet-to-Neumann multipliers, and made explicit the derivative
 asymptotic used in the radial angular-momentum obstruction. These are
 recorded in the review files and Git history. This is independent checking
 within an AI-assisted investigation, not independent human peer review or
-machine-checked continuum mathematics.
+a substitute for the separate Lean checks described below.
 
 The proofs use standard Hilbert-space spectral theory, Lax--Milgram,
 Fredholm theory, Sobolev compactness and local elliptic estimates. The
@@ -91,790 +91,149 @@ own source, pinned dependencies, successful compilation, and axiom audit.
 
 \subsection{Lean verification and its precise boundary}
 \label{ver:lean}
-The 627 registered modules in \texttt{lean/} cover operator estimates,
-classical and weak Maxwell identities, plane flux, radial and modal
-formulas, and the longitudinal frequency multiplier. The exact source
-list and build instructions are in \texttt{lean/README.md}.
-They use Lean~4.19.0. Their pinned
-mathlib commit is
+The formalization uses Lean~4.19.0 with mathlib pinned to
 \begin{center}\small\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b}.\end{center}
-5238 exported theorem declarations were compiled successfully.
-The descriptions below record successive formalization batches; later
-batches discharge some boundaries stated for earlier ones.
-The original ten are operator and integral statements. In namespace
-\texttt{OQ14}, the first five are:
-\begin{quote}\small\ttfamily
-approximation\_kernel\_trivial\\
-approximation\_injective\\
-finiteDimensional\_of\_approximation\\
-finite\_rank\_channel\_bound\\
-finite\_rank\_power\_channel\_bound
-\end{quote}
-They formalize Lemma~\ref{ch:ranklemma}, including the squared-power
-hypothesis, the strict error below $\sqrt\tau$, and actual finite
-dimensionality of the domain. The finite-dimensional range assumption is
-explicit; the proof does not misuse the natural-number dimension of an
-infinite-dimensional space.
-
-The next three declarations formalize the norm and power
-implications underlying Proposition~\ref{cx:compression}:
-\begin{quote}\small\ttfamily
-isometry\_perturbation\_lower\_bound\\
-isometry\_perturbation\_power\_threshold\\
-compression\_power\_threshold
-\end{quote}
-They apply to
-every vector and retain the strict $1-\sqrt\tau$ approximation margin.
-Finally two declarations formalize the pointwise
-complex quadratic-form estimate and its measure-theoretic integral
-consequence in Lemma~\ref{cx:absolute-bypass}:
-\begin{quote}\small\ttfamily
-quadratic\_flux\_norm\_bound\\
-absolute\_bypass\_certificate
-\end{quote}
-Integrability is a
-visible hypothesis; this is not merely a finite sample test.
-
-The additional eighteen declarations in namespace \texttt{OQ14.Maxwell}
-use genuine real Fr\'echet derivatives on Euclidean three-space,
-complex vector fields, and Lebesgue integrals. They include the product
-rule for $\operatorname{div}(E\times H)$, curl and conjugation,
-the complex Poynting identity and real local conservation,
-$\operatorname{curl}\nabla=0$, $\operatorname{div}\operatorname{curl}=0$,
-and the homogeneous curl--curl Maxwell equation. Compact-test integration
-by parts proves that classical $C^1$ Maxwell fields satisfy the
-distributional curl equations; compact support discharges integrability
-rather than leaving it as an unexplained assumption.
-
-Explicit differentiable plane waves and growing and decaying evanescent
-waves satisfy the actual curl equations. Each of the latter has zero
-normal real power everywhere, whereas a particular coherent pair is a
-Maxwell solution with constant positive normal power $3/4$ everywhere
-in normalized units. This is a local-field example: infinite transverse
-extent and exponential growth preclude treating it as a finite-power
-physical input. The formal source and its README list every exported
-name, hypothesis and scope.
-
-Eleven further declarations in \texttt{OQ14.WeakCurl} construct the
-actual whole-space $L^2$ distributional curl graph. Bounded test
-functionals are identified with Lebesgue integrals; their kernels form
-a closed complex subspace, giving a complete graph norm. Compact tests
-separate the $L^2$ classes, so the weak curl is unique. Simultaneous
-$L^2$ limits preserve the relation, and classical $C^1$ fields with
-field and curl in $L^2$ belong to the graph.
-
-The twelve declarations in \texttt{OQ14.DomainCurl} extend this
-construction to restricted Lebesgue measure and tests compactly
-supported inside an open region. No global $L^2$ or zero boundary
-condition is imposed. The classical bridge assumes global $C^1$
-regularity but requires $L^2$ only on the region. Its final theorem
-proves zero distributional divergence of a weak curl, using compact
-$C^2$ tests and symmetry of actual mixed derivatives; neither field
-nor curl is assumed differentiable. The inherited norms are maximum
-coordinate graph norms, not electromagnetic energy normalizations.
-
-The eleven declarations in \texttt{OQ14.CurlCutoff} prove actual
-$L^2$ multiplier bounds, the distributional rule
-$\operatorname{curl}(\chi E)=\chi\operatorname{curl}E+
-\nabla\chi\times E$, and its graph-norm estimate for compact $C^1$
-cutoffs. Isometric zero extension and its integral pairing are
-constructed explicitly. When the cutoff is supported inside the open
-region, its field and product-rule curl extend to the whole-space
-weak-curl graph. No boundary condition on the original field or
-unrestricted zero-extension theorem is assumed.
-
-Sixteen declarations in \texttt{OQ14.WeakPoynting} construct genuine
-smooth approximation in the whole-space weak-curl graph. Convolution
-smoothness and curl commutation follow from the actual integral and
-translated compact tests. Strong continuity of $L^2$ translations gives
-convergence of their Bochner bump averages. An absolute product-space
-estimate justifies Fubini and identifies these averages with the smooth
-pointwise convolution. Explicit shrinking bumps then prove graph-norm
-convergence, without assuming a density theorem.
-
-Six declarations in \texttt{OQ14.WeakGreen} use that proved approximation
-to establish the local bilinear Green identity
-\[
- \int \chi(\operatorname{curl}E\cdot F-E\cdot\operatorname{curl}F)
-       +\nabla\chi\cdot(E\times F)=0
-\]
-for arbitrary whole-space $H(\operatorname{curl})$ fields and compact
-$C^1$ tests. Every pairing is an actual integrable $L^2$ product.
-The next seventeen declarations establish conjugation of weak curl,
-the actual complex Poynting identity, and its localization to arbitrary
-open regions. A smooth interior cutoff equal to one near the test support
-is constructed explicitly, so the original fields need no global
-$L^2$ condition or boundary condition. For the actual regional weak
-Maxwell equations with real variable coefficients, the reactive term
-is purely imaginary. The real time-averaged flux therefore has zero
-distributional divergence against every compact real $C^1$ test.
-This verifies the weak conservation step in Lemma~\ref{ch:fluxlemma}.
-
-Sixteen declarations in \texttt{OQ14.FluxSlices} prove the actual
-volume-preserving coordinates separating $z$ from the transverse plane,
-Fubini, $L^1$ slice integrability and the compact tensor-test derivative
-calculation. Applied to regional weak Maxwell fields, they establish
-the one-dimensional weak derivative relation for the aperture-integrated
-flux, retaining the transverse-gradient term. The slices are a.e.
-integral functions; no representative or evaluation trace is assumed.
-Thirteen declarations in \texttt{OQ14.FluxRepresentative} then derive
-continuous representatives from actual weak derivatives, using convolution,
-Lebesgue differentiation, the integral primitive and smooth localization.
-The increment law and endpoint uniqueness are proved. Eight declarations
-in \texttt{OQ14.WeightedFlux} prove the distributional product rule,
-weighted endpoint identity and actual three-dimensional slab formula,
-including the transverse-gradient term. These give canonical scalar flux
-values for compact $C^1$ apertures and cutoffs; they do not construct
-general tangential field traces or arbitrary Lipschitz cutoffs.
-Twenty-eight declarations in \texttt{OQ14.CrossFlux} prove actual weak
-Maxwell closure under complex combinations and the physical Hermitian
-cross-input flux formula. Its integrable complex conservation, actual
-plane integrals, continuous canonical values, increments and full
-weighted slab identity are derived. Conjugate symmetry extends to all
-canonical values, including endpoints.
-
-Twenty-five declarations in \texttt{OQ14.ModalAlgebra} define the finite
-Riccati--Hankel Laurent expressions, prove their actual complex
-derivatives, and derive the exact TM determinant factorization, rational
-pole equation and multiple-zero derivative condition. The degree-one
-Wronskian and coefficient nonvanishing are checked explicitly. The
-twenty-six declarations in \texttt{OQ14.ModalWronskian} derive the
-factorial coefficient recurrence, actual radial ODE and Wronskian $-2i$
-in every degree. The normalization uses an entire inverse-coordinate
-polynomial. Matching coefficients cannot vanish together, discharging the
-general nonvanishing conditions. Transcendence, pole existence and
-Fredholm multiplicity identification are not thereby formalized.
-Seventeen declarations in \texttt{OQ14.ModalRational} construct explicit
-inverse-coordinate polynomials. Their nonzero values or first derivatives
-prove finite exceptional sets of multiple zeros at each fixed degree and
-common zeros at each distinct degree pair, for $n\notin\{0,1,-1\}$.
-Emptiness or avoidance of a countable union is not inferred.
-
-Twenty-four declarations in \texttt{OQ14.RadialGreen} verify outgoing
-continuation, the complex source coefficient, its strictly negative
-imaginary part and gain identity, and the source-load Wronskian
-cancellation. The radial ODEs give the load and state derivatives and
-barrier monotonicity on a closed interval. The full partial-wave
-expansion and all-angular-order convergence remain separate obligations.
-
-Ten declarations in \texttt{OQ14.StaticVolume} prove positivity and
-inverse estimates for the actual Hilbert-space block $I+S^*PS$,
-including actual orthogonal projections, perturbations of norm below one,
-and the polarization residual error bound. Identification of the
-projection with the physical longitudinal Newton operator is established
-by the spatial convolution modules described below. Twenty-two declarations in
-\texttt{OQ14.LongitudinalProjection} construct the actual frequency
-symbol $\xi\xi^{\mathsf T}/|\xi|^2$ and its vector-valued $L^2$ multiplier,
-including the zero frequency. Coordinate formula, measurability,
-contraction, idempotence, self-adjointness and positivity are proved.
-Physical-space Fourier
-conjugation and Newton-kernel identification are proved below.
-
-Twenty-three declarations in \texttt{OQ14.FourierL2} prove scalar
-Euclidean Plancherel from Fourier-integral Fubini and Schwartz inversion.
-Compact smooth test annihilation proves density; norm-preserving extension,
-closed range and inversion prove an onto isometry. Agreement with the
-actual integral and uniqueness are checked. Seventeen declarations in
-\texttt{OQ14.GreenKernel} derive the actual gradient, Hessian and
-three-dimensional Helmholtz equation of $e^{ik|x|}/(4\pi|x|)$ away from
-zero, smoothness there, and the radial Sommerfeld limit. The
-distributional source term and Maxwell convolution solvability are
-not thereby formalized.
-
-Thirty-one declarations in \texttt{OQ14.VectorFourier} construct actual
-vector Plancherel, its component integral formula and the physical
-projection $P=\mathcal F^{-1}M\mathcal F$. Fifteen in
-\texttt{OQ14.GradientProjection} identify actual gradient, curl and
-divergence Fourier formulas. Sixteen in \texttt{OQ14.HelmholtzProjection}
-prove the exact gradient annihilator, closed-gradient range and
-variational uniqueness of $P$, using actual inverse Fourier test functions.
-Twenty in \texttt{OQ14.StaticCoefficient} construct multiplication by
-$\sqrt\chi$ for a bounded measurable nonnegative coefficient and the
-coercive block $I+\sqrt\chi P\sqrt\chi$ with inverse norm at most one.
-The norm-small perturbation in its corollaries remains explicit abstract
-data. Nine in \texttt{OQ14.DyadicKernel} derive the exact dynamic-minus-static
-kernel and the component bound $14k^2/(4\pi|x|)$ for $0<|x|$ and
-$|k||x|\le1$. Distributional source terms and convolution identification
-are separate obligations.
-
-Twenty-four declarations in \texttt{OQ14.ModalAlgebraicity} prove that
-exceptional multiple or shared roots for algebraic $n$ would yield a
-nonzero algebraic number with algebraic exponential. The full
-transcendence step is not assumed. Eight in \texttt{OQ14.ModalExistence}
-construct arbitrarily large actual determinant zeros by an explicit
-inverse-coordinate contraction, then exclude the finite multiple-root
-set. Eleven in \texttt{OQ14.ModalAsymptotics} prove arbitrarily small
-displacement from the exact exponential centers. For real $n>1$ this
-gives simple zeros with negative imaginary part, imaginary coordinate
-approaching $-\log((n+1)/(n-1))/(2n)$, and arbitrarily large
-$\operatorname{Re}z/(-2\operatorname{Im}z)$. Infinite-degree separation
-and identification with full Maxwell operator poles remain separate.
-
-Sixteen declarations in \texttt{OQ14.LipschitzFlux} prove the actual
-compact Lipschitz-test extension of real and Hermitian weak conservation,
-using Rademacher integration by parts, convolution support control and
-dominated convergence. Eleven in \texttt{OQ14.LipschitzAperture} derive
-the weak plane derivative, integrable slices, continuous scalar flux and
-exact increments for compact Lipschitz apertures. Eight declarations in
-\texttt{OQ14.LipschitzLine} prove the actual one-dimensional weak-test
-extension, product rule and weighted endpoint identity. Fourteen in
-\texttt{OQ14.LipschitzBoundary} combine these with the aperture theorem
-into the actual Hermitian finite-slab gradient formula and canonical
-endpoint values for compact Lipschitz cutoffs in both directions. This
-does not assert general tangential field traces or a representative
-theorem for arbitrary bundled $W^{1,\infty}$ classes.
-
-Sixteen declarations in \texttt{OQ14.ModalMatching} construct and invert
-the actual two-amplitude matching map, identify its nontrivial kernel
-with determinant zeros, and prove a punctured inverse-residue limit with
-nonzero one-dimensional image at the constructed high-quality simple
-zeros. Full vector Maxwell operator identification remains separate.
-Ten in \texttt{OQ14.KernelIntegrability} use actual Haar polar coordinates
-to prove local integrability of $|x|^{-1}$ and $|x|^{-2}$ in three-space,
-and local $L^1$ and $L^2$ membership of the actual real-frequency scalar
-outgoing kernel. These do not yet prove its source distribution.
-
-Twenty-six declarations in \texttt{OQ14.HeatFourier} prove the actual
-convolution Fourier identity, Gaussian normalization and both Newton
-scale representations. Eleven in \texttt{OQ14.NewtonFourier} prove
-absolute scale-space integrability and the actual Newton Fourier identity
-on Schwartz tests. Ten in \texttt{OQ14.NewtonHessian} derive the full
-distributional Hessian multiplier and the exact source identity
-$\Delta N=-\delta_0$, retaining its contact term. The spatial convolution
-operator identification is proved by the subsequent modules.
-Five declarations in \texttt{OQ14.DynamicIntegrability} prove local
-$L^1$ and $L^2$ membership of each dynamic dyadic remainder entry.
-Four in \texttt{OQ14.KernelEstimates} give exact inverse-radius ball
-integrals and the resulting quadratic local $L^1$ mass bound per entry.
-
-Fourteen declarations in \texttt{OQ14.ModalDipole} prove actual
-complex-frequency Maxwell curl equations for the constructed regular and
-outgoing dipole fields away from the center. Twenty-three in
-\texttt{OQ14.ModalInterface} prove equivalence of their actual tangential
-transmission conditions with the matching matrix, nontriviality of both
-amplitudes and an exterior trace, and existence of such matching fields
-at arbitrarily high quality factor. Center regularity is established below;
-the complete outgoing operator remains a separate obligation.
-Ten declarations in \texttt{OQ14.WeakEnergy} prove the actual reactive
-energy identity and Caccioppoli estimate, including weighted electric
-energy integrability. Four in \texttt{OQ14.EnergyLocalization} derive
-the inner-set electric-to-magnetic estimate with coefficient
-$2+4d^2/(\omega^2m)$ for an actual compact $C^1$ cutoff. No derivative
-or upper bound of the real permittivity is required. Magnetic $H^1$
-regularity and compactness are not conclusions of these modules.
-
-Nine declarations in \texttt{OQ14.PointSingularity} derive integration by
-parts across a single point by coordinate Fubini. Seven in
-\texttt{OQ14.RealKernelBounds} establish the actual dynamic remainder
-bound at every real frequency and radius. Six in
-\texttt{OQ14.KernelGradient} prove gradient integrability and the actual
-first weak derivative. Thirteen in \texttt{OQ14.KernelSource} give the
-weak Hessian of $\phi_k-N$, the full outgoing Hessian decomposition,
-and $(\Delta+k^2)\phi_k=-\delta_0$. Seven in
-\texttt{OQ14.DynamicSource} derive the actual dyadic distributional
-decomposition and $(\operatorname{curl}\operatorname{curl}-k^2)K
-=k^2I\delta_0$. The Newton contact term is retained.
-
-Eleven declarations in \texttt{OQ14.NewtonConvolution} prove the actual
-spatial weak-convolution Fourier identity for $L^1$ sources. Twenty-one
-in \texttt{OQ14.NewtonL2} identify its unique bounded extension with
-$-P$, using actual Schwartz density. Eleven in
-\texttt{OQ14.NewtonL1L2} prove agreement of the integral Fourier transform
-and Plancherel on $L^1\cap L^2$, and the literal spatial response identity.
-Nine in \texttt{OQ14.StaticNewton} identify the actual compact-material
-static volume block with the positive block, transferring its inverse
-bound one. Dynamic operator bounds and the small-volume equation are established
-by the subsequent modules.
-
-Forty-four declarations in \texttt{OQ14.ModalOrigin} construct the entire
-regular dipole profile from exponential divided differences and prove
-Maxwell's equations at its center. The high-quality transmission fields
-thus have no missing center point. Global spherical weak assembly is established below; the full outgoing
-resolvent remains separate.
-
-Six declarations in \texttt{OQ14.DivCurl} establish the actual Schwartz
-div-curl energy identity. Seven in \texttt{OQ14.DivCurlCompact} give
-compact graph approximation. Eight in \texttt{OQ14.DivCurlRegularity}
-construct nine actual weak $L^2$ derivatives and their exact energy sum.
-
-Nine in \texttt{OQ14.LocalRegularity} derive local magnetic $H^1$
-regularity from regional weak Maxwell equations, nonzero real frequency
-and permeability one. Four in \texttt{OQ14.RegularityBounds} bound the
-cutoff derivatives using actual field norms and an upper permittivity
-bound, without coefficient derivatives. Compact embedding is established below. General field traces remain
-separate obligations.
-
-Sixteen declarations in \texttt{OQ14.L1Convolution} construct the actual
-$L^1$-kernel convolution operator on $L^2$. Thirteen in
-\texttt{OQ14.DynamicConvolution} derive the actual dyadic remainder
-operator. Fourteen in \texttt{OQ14.DynamicVolume} remove its cutoff exactly
-on the material support and prove the inverse and unique volume unknown.
-Two in \texttt{OQ14.DynamicVolume} give the sufficient explicit error bound
-$252\chi_{\max}k^2R^2<1$.
-
-Five declarations in \texttt{OQ14.NewtonWeak} prove zero weak curl of the
-actual Newton response. Six in \texttt{OQ14.KernelConvolution} justify
-absolute compact-source Fubini pairings. Three in \texttt{OQ14.WaveResponse}
-and five in \texttt{OQ14.FieldResponse} derive the full convolved Maxwell
-source and the actual spatial electric curl-curl equation. Ten in
-\texttt{OQ14.MagneticResponse} construct the magnetic field from outgoing
-gradient integrals and prove both first-order source equations.
-
-Seven declarations in \texttt{OQ14.LocalVolumeResponse} prove actual local
-$L^2$ membership of the electric response. Seven in
-\texttt{OQ14.MaterialField} derive $\rho=\chi E$ without dividing by contrast.
-Seven in \texttt{OQ14.MaterialMaxwell} then prove both dielectric Maxwell
-equations on compact smooth tests. Five in
-\texttt{OQ14.IncidentLocalization} construct the weighted incident datum
-from local $L^2$ data. The subsequent modules prove actual radiation and
-the regional compact-$C^1$ test upgrade.
-
-Eleven declarations in \texttt{OQ14.SphereRemovable} and twenty-three in
-\texttt{OQ14.RadialInterface} prove actual sphere-removal integration by
-parts and radial-profile derivatives. Thirty-four in
-\texttt{OQ14.ModalProfiles} construct a continuous scalar potential and
-axial decomposition. Twenty-one in \texttt{OQ14.ModalWeak} prove global
-weak Maxwell equations on compact $C^2$ tests, including the normal
-electric jump, and actual high-quality nonzero fields with the exact
-outgoing Hankel exterior. Full-resolvent pole isolation and normalization
-are not inferred.
-
-Nine declarations in \texttt{OQ14.PartialSmoothing} prove actual weak
-derivative approximation. Seven in \texttt{OQ14.WeakTranslations} derive
-translation and smoothing bounds. Ten in \texttt{OQ14.WeakCompactness}
-prove the supported weak-$H^1$ compact embedding. Six in
-\texttt{OQ14.MagneticCompactness} apply it to genuine regional Maxwell
-fields. Eight in \texttt{OQ14.ElectricControl} and eleven in
-\texttt{OQ14.MaxwellCompactness} give full local electric and magnetic
-$L^2$ compactness for one fixed positive bounded permittivity, with
-explicit a.e.\ agreement and strongly convergent subsequences.
-
-Five declarations in \texttt{OQ14.}\allowbreak\texttt{LocalConvolution} and three in
-\texttt{OQ14.}\allowbreak\texttt{MagneticLocal} prove actual local $L^2$ magnetic fields.
-Eight in \texttt{OQ14.}\allowbreak\texttt{InteriorTestDensity} and four in
-\texttt{OQ14.}\allowbreak\texttt{RegionalCurlUpgrade} establish interior compact-$C^1$ test
-approximation and the actual regional weak-curl identity. Six in
-\texttt{OQ14.}\allowbreak\texttt{SmallVolumeMaxwell}, eight in \texttt{OQ14.}\allowbreak\texttt{MaterialHCurl}
-and four in \texttt{OQ14.}\allowbreak\texttt{MaterialPower} construct the small-volume
-Maxwell fields, genuine regional graphs and local physical power law.
-Eight in \texttt{OQ14.}\allowbreak\texttt{MaterialCaccioppoli} control magnetic and
-electric-curl energy by outer electric energy.
-
-Seven declarations in \texttt{OQ14.}\allowbreak\texttt{NewtonExterior} and fifteen in
-\texttt{OQ14.}\allowbreak\texttt{NewtonExteriorResponse} identify the actual exterior dyadic
-integral. Nine in \texttt{OQ14.}\allowbreak\texttt{ExteriorContinuity} and nine in
-\texttt{OQ14.}\allowbreak\texttt{ExteriorMaterial} give continuous exterior representatives.
-Thirteen in \texttt{OQ14.}\allowbreak\texttt{ScalarRadiation}, eight in
-\texttt{OQ14.}\allowbreak\texttt{DyadicRadiation} and fourteen in \texttt{OQ14.}\allowbreak\texttt{MaxwellRadiation}
-prove explicit inverse-square defects and the actual Silver--M\"uller
-condition at spatial infinity. Three in \texttt{OQ14.}\allowbreak\texttt{OutgoingMaterial}
-combine these with the small-volume inverse and regional $H(\mathrm{curl})$
-equations for one actual outgoing solution. Arbitrary-size solvability and
-uniqueness among all outgoing PDE solutions are not inferred.
-
-Ten declarations in \texttt{OQ14.}\allowbreak\texttt{ScalarExterior}, eleven in
-\texttt{OQ14.}\allowbreak\texttt{ScalarExteriorSecond} and six in
-\texttt{OQ14.}\allowbreak\texttt{ScalarExteriorRegularity} prove actual exterior derivatives,
-the scalar Helmholtz equation and $C^2$ regularity. Fourteen in
-\texttt{OQ14.}\allowbreak\texttt{L2KernelCompact} prove compactness of actual convolution
-after a bounded input map with common compact support. Ten in
-\texttt{OQ14.}\allowbreak\texttt{DynamicVolumeCompact} derive compactness of the actual
-weighted dyadic remainder for every finite support radius.
-
-Twelve declarations in \texttt{OQ14.}\allowbreak\texttt{ModalLocal} and fourteen in
-\texttt{OQ14.}\allowbreak\texttt{ModalHCurl} give actual local integrability and nonzero
-regional $H(\mathrm{curl})$ modal graphs. Nine in \texttt{OQ14.}\allowbreak\texttt{ModalShell}
-construct the physical shell-$L^2$ field pair. Thirteen in
-\texttt{OQ14.}\allowbreak\texttt{ModalFieldResidue} prove its operator-norm residue and
-nonzero field image. Seventeen in \texttt{OQ14.}\allowbreak\texttt{ModalShellAnalytic} prove
-actual Banach-valued analyticity. Fourteen in \texttt{OQ14.}\allowbreak\texttt{ModalFieldPole}
-give an analytic regularization and standard meromorphic order $-1$ at
-the constructed high-quality zeros. This is the two-data spherical
-matching response with actual shell fields, not the full Maxwell resolvent.
-
-A further 348 declarations in 24 modules extend this coverage.
-The compact-operator alternative is proved in
-\texttt{OQ14.\allowbreak CompactPerturbation} (6 declarations) and
-\texttt{OQ14.\allowbreak CompactAlternative} (7).
-The actual volume preconditioner and compact remainder are assembled in
-\texttt{OQ14.\allowbreak VolumeFredholm} (7);
-\texttt{OQ14.\allowbreak VolumeAlternative} (8) gives arbitrary-data
-solvability conditional on explicit homogeneous volume uniqueness.
-This premise is not discharged by the compactness argument.
-
-The actual exterior fields are smooth and satisfy classical Maxwell and
-Gauss equations in \texttt{OQ14.\allowbreak ExteriorSmooth} (9) and
-\texttt{OQ14.\allowbreak ExteriorClassical} (18).
-\texttt{OQ14.\allowbreak ScalarFarField} (8),
-\texttt{OQ14.\allowbreak MaxwellFarField} (15), and
-\texttt{OQ14.\allowbreak FarFieldPower} (9) give the actual directional
-far-field and radial power limits. The 17 declarations of
-\texttt{OQ14.\allowbreak AngularPower} prove a uniform angular majorant
-and the genuine spherical power limit
-$\tfrac12\int_{\mathbb S^2}|E_\infty|^2$.
-The three declarations of \texttt{OQ14.\allowbreak SphereMeasure} prove
-positivity of the ordinary angular measure on every nonempty open patch.
-
-\texttt{OQ14.\allowbreak ComplexGreenKernel} (15) and
-\texttt{OQ14.\allowbreak ComplexDynamicKernel} (14) construct the actual
-complex kernel and local integrability bounds.
-\texttt{OQ14.\allowbreak L2Parametric} (2) proves Banach differentiation
-by dominated convergence of squared difference quotients.
-\texttt{OQ14.\allowbreak ComplexKernelAnalytic} (18) applies it to the
-actual truncated remainder. \texttt{OQ14.\allowbreak L1KernelOperator}
-(18) establishes bounded linear dependence of convolution on its kernel.
-\texttt{OQ14.\allowbreak ComplexConvolutionAnalytic} (37) constructs the
-genuine entire compact volume pencil, its exact real restriction, static
-factorization and invertible value at zero. The meromorphic-inverse
-construction is now proved in the continuation below.
-
-\texttt{OQ14.\allowbreak KernelReciprocity} (29) and
-\texttt{OQ14.\allowbreak NewtonReciprocity} (16) prove actual bilinear
-reciprocity, including the full singular Newton contribution and the
-untruncated compact-source electric response.
-\texttt{OQ14.\allowbreak ModalPoleMode} (9),
-\texttt{OQ14.\allowbreak ModalOutgoing} (22), and
-\texttt{OQ14.\allowbreak ModalPoleRadiation} (7) connect the same
-nonzero shell residue with global weak fields and actual radiation.
-\texttt{OQ14.\allowbreak ModalScaling} (24) prescribes the positive real
-frequency while preserving arbitrary quality factor.
-\texttt{OQ14.\allowbreak ModalScaledPole} (30) proves exact order $-1$
-and residue factor $1/s$ for the volume-weighted physical shell response,
-whose residue is the same dilated actual mode. This remains the spherical
-matching response; full-resolvent isolation is not inferred.
-
-A further 175 declarations in 18 modules close two analytic bridges.
-\texttt{OQ14.\allowbreak PolarIntegration} (5),
-\texttt{OQ14.\allowbreak RadialPowerTest} (27),
-\texttt{OQ14.\allowbreak RadialWeight} (19), and
-\texttt{OQ14.\allowbreak RadialFlux} (9) derive zero far-field power
-from actual weak Maxwell conservation, using genuine compact radial tests
-and exact Euclidean polar integration. A positive far limit contradicts
-the proved zero weighted integral. \texttt{OQ14.\allowbreak AngularPowerZero}
-(6) proves pointwise vanishing of both amplitudes.
-\texttt{OQ14.\allowbreak HomogeneousVolumePower} (11) applies this to
-any actual homogeneous volume solution without support smallness.
-\texttt{OQ14.\allowbreak AngularEnergy} (8) derives the actual surface
-squared-field limits, and \texttt{OQ14.\allowbreak ExteriorHelmholtz} (8)
-derives component Helmholtz equations from actual Maxwell and Gauss equations.
-Exterior Rellich and material continuation remain separate formal steps.
-
-\texttt{OQ14.\allowbreak HilbertFiniteRank} (3) constructs actual finite-rank
-approximations.
-
-\texttt{OQ14.\allowbreak FiniteRankSchur} (11) proves the
-exact Schur criterion and Woodbury inverse.
-
-\texttt{OQ14.\allowbreak FiniteDimensional\allowbreak Determinant} (3) proves analytic
-determinants and their invertibility criterion.
-\texttt{OQ14.\allowbreak LocalDichotomy} (3) and
-\texttt{OQ14.\allowbreak LocalFredholmReduction} (16) prove anchored
-punctured invertibility using connectedness and local finite reduction.
-\texttt{OQ14.\allowbreak FiniteMeromorphic\allowbreak Inverse} (14),
-\texttt{OQ14.\allowbreak Meromorphic\allowbreak Operator} (2), and
-\texttt{OQ14.\allowbreak AnalyticCompact\allowbreak Inverse} (2) construct the actual
-meromorphic inverse via the adjugate and Woodbury formulas.
-\texttt{OQ14.\allowbreak VolumeAnalyticAlternative} (12) proves that the
-actual volume inverse is meromorphic, its noninvertible frequencies are
-closed and discrete with finitely many in each bounded set, and those
-frequencies are genuine poles. The finite-rank Laurent coefficients are
-proved in the continuation below. \texttt{OQ14.\allowbreak ModalMatchingNorm} (16)
-proves the actual finite matching derivative pairing and normalized
-rank-one residue; the reciprocal physical-volume norm remains separate.
-
-A further 198 declarations in 24 modules complete the actual
-exterior Rellich argument and the finite-rank Laurent construction.
-The finite analytic jets and fixed finite-dimensional Schur factor give
-convergent principal-part expansions for the actual inverse with
-finite-rank coefficients. Actual complex-frequency volume reciprocity
-and its parameter derivative are also proved.
-
-The angular argument proves polynomial differentiation, Euler's formula,
-finite Fischer decomposition and uniform density of homogeneous harmonic
-restrictions. Local Green identities, actual compact annular tests and
-complex polar integration derive the weak radial moment equation from
-the spatial Helmholtz equation. Actual first and second moment derivatives
-and a proved one-dimensional fundamental lemma turn this into the
-classical radial flux equation. The genuine all-degree Hankel basis and
-its nondecay argument force each decaying harmonic moment to vanish.
-The proved angular density then gives pointwise exterior field vanishing.
-
-In particular, \texttt{OQ14.\allowbreak ScalarExteriorRellich} (3)
-proves exterior scalar uniqueness from the actual positive-frequency
-Helmholtz equation and vanishing surface mass.
-\texttt{OQ14.\allowbreak MaxwellExteriorRellich} (5) applies it to the
-actual electric and magnetic volume fields. Every homogeneous volume
-solution has both fields zero outside the material support, without
-support smallness. The following continuation proves global uniqueness
-for explicit material-cell geometry. Kernel analyticity away from the source is also
-proved; arbitrary-solution analyticity is not inferred from it.
-
-A further 150 declarations in 22 modules prove actual interior
-continuation and global volume uniqueness for explicit material-cell
-geometry. Finite-annulus Green tests give the actual radial moment
-equation. Genuine moment derivatives, finite-interval Hankel uniqueness
-and homogeneous harmonic density prove ball continuation for smooth
-Helmholtz fields. Literal translation and connectedness globalize it.
-
-For weak fields, actual normalized compact mollifiers solve the classical
-equation on fixed inner balls and inherit a zero germ. The proved smooth
-continuation and actual almost-everywhere convergence give weak
-continuation. A genuine countable open subcover globalizes the result.
-No solution analyticity or smooth-representative conclusion is assumed.
-
-Actual regional Maxwell tests imply Gauss and the scalar weak Helmholtz
-equation. Global variable-material tests localize whenever the weighted
-electric field agrees with a constant material. In an open bridge covered
-almost everywhere by two material cells, electric zero on one side gives
-this agreement with the other side's material. Actual weak continuation
-therefore propagates zero across the interface.
-
-The global theorem assumes only explicit geometric partition data in
-addition to the material and Maxwell hypotheses: open preconnected
-constant-material cells, almost-everywhere coverage, actual bridge
-reachability, and an exterior seed point. The actual exterior Rellich
-theorem supplies the homogeneous volume field's zero seed. Proven
-interface propagation gives global electric zero; actual material
-self-consistency then forces the original volume unknown to vanish.
-The proved Fredholm alternative gives an invertible volume operator and
-unique solutions at positive real frequency, without support smallness.
-Concrete construction geometries still need instances of the partition
-data. Magnetic zero from electric zero is also derived directly from
-weak Maxwell and the fundamental lemma.
-
-A further 51 declarations in five modules prove the actual finite-layer
-geometry, physical scattering assembly and positive-real spectral
-regularity. Balls, annuli and exteriors have proved connectivity; their
-sphere interfaces have measure zero. Explicit adjacent bridges, finite
-coverage, reachability and an exterior seed instantiate the global
-uniqueness theorem for every finite family of strictly ordered positive
-radial interfaces. No support smallness or supplied connectivity
-certificate is needed for this radial specialization.
-
-For the geometric-partition class, the unique volume unknown produces
-actual global weak Maxwell fields with local square integrability,
-material self-consistency, exterior continuity and an inverse-square
-Silver--Mueller defect bound. Uniqueness among arbitrary outgoing PDE
-fields still requires the converse volume representation. The actual
-complex volume pencil has no positive-real exceptional frequencies in
-this class, and its inverse and fixed-source solutions are analytic in
-genuine complex neighborhoods of these points. This does not supply full
-modal isolation or either complete device construction.
-
-A further 156 declarations in 14 modules establish actual angular estimates,
-concrete inclusion geometry and plane-flux tails. Orthogonal invariance of
-the angular measure follows from Euclidean volume. The literal cap-weighted
-coordinate trial has weighted mean zero, positive denominator and Rayleigh
-quotient below 2, with the tangent derivative explicitly identified. Actual
-eigenfunction construction is still required.
-
-The explicit all-degree Hankel functions satisfy a proved outgoing energy
-identity and limit 2. This yields low-range state bounds. Actual conjugation,
-the real Wronskian, reversed factorial estimates and exponential estimates
-give the corresponding intermediate-range bounds. High-barrier estimates
-and the complete all-order Green limit remain outside this batch.
-
-Finite separated-ball exteriors and bounded cavities have actual paths
-constructed by radial pushes and a continuous clamp. Null sphere interfaces,
-explicit crossing balls, coverage and reachability construct the Maxwell
-partition for inclusions and a single enclosing shell. No connectivity or
-PDE continuation conclusion is inserted as an unproved premise.
-
-Actual leading normal Maxwell flux cancels on the measurement plane. The
-remaining compact-source flux and its cross terms obey inverse-cube bounds.
-Genuine two-dimensional integration gives finite tails and inverse-radius
-integral estimates. The constants depend on the source support; whole-plane
-source continuity and uniform remote-stack convergence still require proof.
-
-A further 205 declarations in 12 modules derive the actual cap Legendre
-series and their derivatives, a matching exponent in $(0,1)$, and a normalized
-piecewise profile satisfying the genuine one-dimensional weighted weak
-equation. The later angular batch supplies sphere lifting; the Maxwell
-conical coefficient remains separate.
-Actual compact source kernels give whole-plane flux integrability and
-$L^1$ continuity for a fixed support radius and positive plane gap. Finite
-layered geometries now have literal indicator-sum material coefficients:
-common bounds, cell values and compact support are derived from the geometry,
-and the actual Maxwell solution and local positive-frequency analytic
-inverse follow. The actual dynamic remainder is bounded by the square root
-of material volume at a fixed enclosing radius, with quantitative smallness
-and inverse estimates. Finally, a third-order identity and recurrence for
-the actual finite Hankel product prove nonnegative coefficients and the
-nonpositive outgoing radial load in every degree. These results do not yet
-supply the uniform all-order spatial Green limit or either complete device
-construction; the later radial batches supply regular barrier estimates.
-
-A further 209 declarations in 18 modules derive actual spherical
-coordinates, their Jacobian and the surface measure formula by cones.
-The regular Riccati series is identified with the actual Hankel solution
-off zero, with genuine origin limits, barrier positivity and both
-logarithmic-derivative bounds. Actual homogeneous layer solutions give
-shared-radius stack energy and load estimates. Their outgoing core
-coefficients have a nonzero denominator, negative imaginary reaction and
-uniform low-order bounds. The core Green branches have derivative jump
-one; barrier reaction and normalized source bounds follow without supplied
-load-sign or positivity conclusions. Literal sphere-integral parity
-reactions define actual bounded material operators. For gain $b/a$,
-sufficiently small finite balls have a uniformly bounded inverse, and its
-solution satisfies the actual material relation for this explicit kernel.
-The later batch supplies arbitrary-test angular lifting and the sharp
-regular lower bound. Spatial Maxwell Green reconstruction, physical-stack
-identification and all-order spatial convergence remain subsequent steps.
-
-A further 358 declarations in 36 modules derive arbitrary-test spherical
-weak identities, all three actual tangential gradient components and an
-explicit distributional $H^1$ eigenfunction with positive mass from the
-shooting root. The literal conical potential and electric candidate have
-genuine Borel representatives and local $L^2$ bounds; their spatial weak
-equations and finite-frequency Maxwell correction remain subsequent work.
-Actual Riccati normalization gives the Gaussian lower bound, weighted
-high-degree summability and decay faster than each fixed inverse power of
-the radius. The literal scalar reaction and every fixed mixed derivative
-have corresponding compact-disk bounds, including the analytic origin.
-An actual intermediate-window exponential bound is also derived; its
-summation and the spatial dyadic reconstruction remain separate.
-Exact quarter-wave reference transfers, an actual $R^{-2}$ layer error,
-physical shared-radius lists, and both forward and backward finite-stack
-limits are proved for each fixed degree and finite stack. Their outgoing
-parity coefficient limit is a subsequent identification.
-The genuine uniform-ball potential, weak Hessian, Schwartz pairings and
-Fourier symbol identify the actual Newton operator and its interior action
-$-P/3$. Measure-preserving translation supplies every ball center. Exact
-static sphere polarization and the actual material-weighted block inverse
-follow, with weighted trial $3\sqrt{\chi}/(\chi+3)E$ and physical source
-$3\chi/(\chi+3)E$, including $\chi=0$. Multiple-ball, finite-frequency and
-shrinking-gap estimates remain separate.
-
-A further 242 declarations in 40 modules supply the actual outgoing parity
-coefficient limit for common physical finite-stack families and both
-polarizations. Low, intermediate and high degree estimates yield a fixed
-summable majorant. The complete scalar series and its actual mixed
-derivatives converge uniformly on compact complex disk products, with every
-fixed degree weight. Full spatial dyadic Maxwell reconstruction remains
-separate. The literal conical static field now has proved weak gradient,
-zero weak curl and zero weighted divergence, finite local energy, an
-exponent in $(0,1)$ and uniform blowup on an open cone of positive measure.
-Its positive-frequency correction and retained nonzero coefficient remain
-unfinished. Actual single and finite sphere residual estimates derive
-weighted and physical $L^2$ errors of order $a\sqrt a$ and coordinate $L^1$
-errors of order $a^3$, including moving centers under uniform separation
-and explicit incident bounds. These concern the actual parity limiting
-kernel; finite-stack identification and shrinking-gap whole-plane flux
-remain separate. Actual source moments and exact exterior Newton dipoles
-are also proved. Genuine local Debye calculus derives both vector Maxwell
-polarizations from actual scalar Helmholtz solutions. A radial harmonic
-bridge and actual entire-series differentiation support subsequent spatial
-wave construction; normalized angular addition and complete Green assembly
-are still required.
-
-A further 513 declarations in 70 modules construct actual all-degree
-regular and outgoing scalar and TE/TM Maxwell waves. Regular waves include
-the origin; actual neighboring radial layers satisfy tangential and normal
-transmission with the correct material factors. The actual normalized
-polynomial harmonic bases have dense union, rotation invariance, a diagonal
-addition identity and a cubic rank bound. Literal tensor interpolation
-derives their coefficient bounds and all-order compact spatial derivatives.
-Cross-degree orthogonality, the vector angular basis, global layer gluing
-and full spatial Green identification remain separate.
-
-The actual conical cutoff field now solves its static volume equation.
-Its positive-frequency volume inverse, including the frequency-dependent
-annular source response, converges in $L^2$ to that field, with an explicit
-$O(k^2)$ weighted error. Actual spatial fields satisfy both inner Maxwell
-curl equations and Gauss law, and belong to the genuine regional weak-curl
-graphs. Literal annular angular tests have proved weak gradients and smooth
-graph approximation. The scalar Green decomposition supplies an actual
-locally $H^1$ potential and continuous correction bounded by $k^2$ times the
-source norm. The actual singular projection and preservation of its nonzero
-coefficient still remain; $L^2$ convergence alone does not establish them.
-Runge approximation, rounding and complete modal normalization remain.
-
-Actual finite-sphere inverse reaction errors and exact Newton dipoles yield
-an $O(a^2)$ whole-plane static error. Continuity on an open gap region
-justifies the plane identity. Genuine plane inverse-distance and
-inverse-square integrals supply respectively gap-independent local dynamic
-bounds and logarithmic magnetic bounds, including finite sums and source
-differences. Whole-plane coherent Herglotz flux and finite physical-stack
-identification remain outside this formal coverage.
-
-A further 474 declarations in 76 modules derive actual Green coefficients,
-the conical radial system and whole-plane coherent errors. Cross-degree
-orthogonality supplies the complete complex scalar harmonic basis; actual
-vector harmonic normalization and orthonormality are also proved. The literal
-scalar Green kernel has regular interior and outgoing exterior moments.
-Actual compact tests derive their matching and source jump, and Wronskians
-fix the physical coefficient and reduced-Green sign. Its angular $L^2$
-expansion follows. Spatial derivative convergence, the dyadic normalization
-and complete finite-stack identification still require assembly.
-
-For literal finite-chain TM fields, normal electric jumps are handled by
-an actual scalar primitive. Locally integrable actual partials and integration
-by parts across spherical interfaces give both weak Maxwell equations for
-compact tests inside the layer annulus. This statement excludes the clipped
-core; global core and outgoing exterior assembly remain separate.
-
-Actual conical Gauss and potential identities, polar integration and radial
-energy bounds now yield the forced weak radial system. Genuine smooth-test
-representatives, with exact interval increments, convert it to a classical
-system on the finite inner interval. Wronskian classification and actual
-$L^2$ energy exclude its negative-power branch. The remaining expansion is
-$c r^\nu$ plus the literal particular solution. Preservation of nonzero $c$
-at positive frequency, Runge approximation, rounding and the complete modal
-normalization and maxima statement remain outside this formal coverage.
-
-Actual sphere-integral parity illuminations and finite sums satisfy both
-global vacuum Maxwell equations. Their coherent pairing with the actual
-volume response is integrable over the whole plane. Local singular bounds
-and inverse-cubic tails give vanishing coherent error for gap $\gamma a$,
-source error $O(a^3)$ and incident coefficient mass $O(1/a)$. The actual
-finite-ball inverse provides the source error and support conditions.
-Incident coefficient construction and final physical channel assembly remain.
-
-A further 847 independently audited declarations in 158 modules
-give actual vector harmonic completeness, normalized regular Maxwell dyad
-expansions of the spherical reaction integral, and literal outgoing
-ray/source coefficients. The paired vector series and every fixed finite
-derivative order converge uniformly on compact core regions, including
-origins and coincident points, to the central-inversion gain kernel.
-The radius threshold depends on derivative order. Actual half-turn
-covariance gives the plane-wall relation only in the invariant sector.
-Identification with the full outgoing spatial dyadic, summation through
-interfaces and the perturbed finite-stack response remain separate.
-
-For actual conical fields with sources zero on the whole material ball,
-the weak potential, projected radial system, finite energy and nonzero
-static annular pairing derive a nonzero singular coefficient at all
-sufficiently small positive frequencies. Actual vacuum Runge density,
-finite transverse plane-wave approximation, material inverse transfer
-and explicit rounded families with high positive-volume superlevel sets
-are also checked. Their final rounded finite-illumination assembly remains.
-These results do not supply the prescribed modal maxima or residue norm.
-
-The complete actual inverse plane flux for finite parity columns converges
-in whole-plane $L^1$ to the exact static dipole flux, with both coherent
-and quadratic contributions controlled. Symmetric scalar waves, actual
-Debye fields and finite scalar edge jets are constructed. The remaining
-restricted finite TE sector, physical power Gram matrix, complete channel
-assembly, reciprocal modal normalization and infinite-degree pole
-isolation are not replaced by these scoped results. Exact independent
-audit receipts and aggregate build provenance accompany the release.
-
-Only the following logical foundations occur in the audited declarations: propositional
-extensionality (\texttt{propext}), classical choice
-(\texttt{Classical.choice}), and quotient soundness (\texttt{Quot.sound}).
-These are the standard logical foundations used by these mathlib proofs. No
-project-specific axiom, \texttt{sorry}, or admitted proof occurs. The
-formal build records the exact source hashes and pinned dependencies.
-This formally verifies the listed operator, differential and integral
-theorems. Full geometric instances and physical scattering assembly for
-the final constructions, finite-frequency conical coefficient lifting, scattering density,
-interface rounding, the physical
-reciprocal modal norm, and the complete channel and hotspot constructions
-remain outside this coverage.
-In particular the full mathematical research problem cannot be closed by
-adding its missing assertions as axioms.
-
-\subsection{Smallest remaining research bridges}
+The source tree contains actual Lebesgue spaces, weak derivatives,
+compact test functions, distributional Maxwell equations, outgoing
+Green kernels and physical incoming and outgoing amplitudes.  The
+existence theorems below construct these objects; their missing
+analytic assertions are not supplied as project axioms.
+
+\subsubsection*{Unrestricted power channels}
+The endpoint in \texttt{FullChannelExactPassiveWitness.lean},
+\texttt{unrestricted\_exact\_passive}, takes only the fixed
+positive frequency, ordinary dielectric ceiling, square side,
+$0<\eta<\delta$, $0<\tau<1$, and finite dimension $N$.
+It constructs the actual finite shell-and-sphere material and an
+orthonormal physical incoming family.  The counted space has dimension
+$N$.  Its complete outgoing field, signed passage and whole-plane
+absolute bypass satisfy the stated inequalities for every coherent
+input, with the required flux integrability.  The volume operator is
+proved invertible, and an actual bounded scattering map on transverse
+angular inputs is identified with the counted fields. Its restriction
+to the closed physical TE incoming Hilbert space satisfies $T^*T=I$,
+with complete outgoing radiation selected. This adjoint identity is
+attached to the same material and scattering map inside the exact
+physical witness. The corollary that no uniform finite count
+exists uses this constructed witness.  No result for $\delta\leq\eta$
+or for receiving-only output is asserted.
+
+\subsubsection*{Normalized modal hotspots}
+The endpoint \texttt{Packet06FinalAffineModal.lean},
+\texttt{exists\_physical\_modal\_hotspots}, has no sharp-mode, excitation,
+regularity, collar or peak hypothesis.  Its device certificate retains
+the literal nested material law and smooth interfaces, compact support,
+the actual complex volume kernel, reciprocal normalization one,
+the outgoing Maxwell field, and a genuine simple pole observed in the
+transported selected sector.  All finite observation balls are
+disjoint, their projections lie in the requested patch, and actual
+continuous one-sided maxima lie on the prescribed affine plane.  The same
+selected index retains open low collars and compact connected full
+half-amplitude components inside the balls.
+The material ceiling is the literal $\varepsilon_+>1$, and the
+observation balls have strict diameter below $\ell$. The construction
+uses an exact proper spatial frame and translation for every unit plane
+normal. Its spectral and physical transports are explicitly identified:
+the observed pole belongs to the same final material, support radius
+and actual normalized mode as the hotspots. The pole is simple in the
+transported selected sector; ambient rank-one simplicity is not asserted.
+The general electric-field identification theorem equates the potential
+representative used for the hotspots with the global outgoing field
+almost everywhere.
+
+\subsubsection*{Physical modal volumes}
+The endpoint \texttt{Packet06StrongAffineVolumePaper.lean},
+\texttt{exists\_\allowbreak strong\_\allowbreak affine\_\allowbreak volume\_\allowbreak family}, constructs one common
+actual family for arbitrary finite $N$ in a prescribed affine-plane
+patch. It retains the literal dielectric ceiling, smooth three-value
+material, exact target real frequency, quality, normalization, outgoing
+behavior and the same selected-sector observed pole. Its closed
+observation balls are disjoint, project into the patch and have strict
+diameter below the requested length. The actual open collars are retained.
+The public wrapper instantiates the complete core construction at
+$K=\sqrt{\varepsilon_+}$; the separately checked scalar identity
+$K^2=\varepsilon_+$ gives the literal pointwise permittivity ceiling.
+
+For each weighted maximum, the same continuous phase representatives
+are certified against the actual field on a strictly larger closed ball
+before any maximum is chosen. These certificates survive dilation and
+the full spatial frame. The intrinsicness theorem proves that replacing
+them with any other such actual representatives leaves every smaller-ball
+trace value and the maximum unchanged, including at tangential interface
+contact. This strengthens the earlier small-ball-only predicates, which
+did not themselves justify that physical interpretation. The maximum
+uses the permittivity of the same material side at interfaces, and its
+reciprocal tends to zero. At these same selected weighted maxima, each
+tip has a fixed Cartesian component along a strictly increasing
+subsequence whose complex directional volume tends to zero. The exact
+normalized dilation factor is included in the proof.
+
+\subsubsection*{Driven finite-device hotspots}
+The endpoint \texttt{Packet07DrivenPlaneFinal.lean},
+\texttt{plane\_final}, constructs a prescribed-frequency
+family in an arbitrary affine-plane patch, with one smooth transverse Herglotz illumination of physical
+incoming power one.  The same actual electric and magnetic fields
+satisfy weak Maxwell and outgoing scattered-field limits.  The material
+is binary, obeys the prescribed positive permittivity ceiling, has
+bounded support and vacuum exterior, and has smooth boundary and
+exactly $2N$ nonempty disjoint connected lobes.  Disjoint closed observation balls have the prescribed
+strict diameter, and their projections and the support projection lie
+in the planar patch.  For every finite list of thresholds, all
+sufficiently late members have simultaneous attained maxima and
+compact connected half-amplitude regions inside the balls.  The
+maximizers themselves are not required to lie in the plane, in agreement
+with Theorem~\ref{hs:three-packing}.
+The exported Maxwell identity also yields actual $H(\operatorname{curl})$
+fields on every bounded open region, with almost-everywhere equality
+to those same electric and magnetic fields; local square integrability
+of $E$, $H$ and $\varepsilon E$ is proved through the physical placement.
+
+\subsubsection*{Proof and build audit}
+These endpoints are assembled from the actual global representation,
+source-response identification, sphere spectral branch, nonzero conical
+excitation, normalized continuation, regional scalar transmission
+estimates and finite physical collar covers.  The angular coefficient
+step uses a quantitative annular pairing; it does not assert analytic
+continuation of the intrinsic coefficient.  The collar proof derives
+its mixed derivatives from the regional weak equation before using
+them in the localized forcing.  It does not assume the unknown second
+derivatives on an outer cutoff annulus.
+
+Independent source review and separate direct-compiler builds accompany
+each accepted batch. The public entry point \texttt{OQ14Closure.lean}
+imports the channel, modal, volume and driven endpoints and prints their
+axiom dependencies. Exact ordered module lists, source and object hashes,
+compiler logs and reviews are retained under \texttt{checkpoints/}.
+Stage~116 contains 1586 incremental modules and 6001 standard-only
+reports beyond the earlier release. These are audit counts, not a measure
+of mathematical completeness.
+
+The aggregate project build passed 2171 modules and 10946 inline
+axiom reports. It excludes cached project objects, retaining earlier fresh
+objects only after source, log and object hash authentication. It records
+14 historical linter warnings in four old modules; all new accepted
+batches have no diagnostics. A separate matching-stage audit checks every
+kernel-safe declaration owned by these project modules, including private
+and unprinted declarations: 23697 declarations passed. Unsafe executable
+compiler implementations are listed separately; the axiom collector does
+not filter dependencies of any checked declaration. This audit therefore
+covers more than the explicitly printed theorem reports.
+
+Lean and package objects remain trusted dependencies. Compiler executable
+hashes, the pinned mathlib revision and the audit tools are recorded, but
+this is not a from-source rebuild of Lean or mathlib. These checks establish
+the formal statements under that trusted environment; the manuscript-to-
+theorem correspondence is a separate source review.
+
+The only permitted logical axioms are \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}.  No admitted proof,
+project-specific mathematical axiom or numerical experiment replaces
+any step of the formal endpoint chains.  The frozen earlier 5238-report
+release and its detailed batch history remain available as historical
+evidence; their earlier coverage limitations are superseded only where
+the new explicit endpoints discharge them.
+
+\subsection{Stricter questions outside the quantified targets}
 \label{ver:gaps}
 The unrestricted assertion has been disproved in
 Theorem~\ref{uc:counterexample} for every $\delta>\eta>0$ with full
@@ -975,7 +334,7 @@ Common positive lower bound below one & DISPROVED unrestricted count & Any such 
 Shape-varying, ENZ, ideal guides & Excluded from primary target & The prior report supplies a qualified broader counterexample. Its varying lower bound and section shape are retained; this manuscript does not promote it or independently certify its entire construction.\\[3pt]
 Real symmetric positive anisotropy & PROVED local extension & Corollary~\ref{ch:anisotropy} extends the local resource theorem. Tensor classes admitting the scalar examples inherit both hotspot constructions and the unrestricted channel counterexample; stricter channel regimes are not settled.\\[3pt]
 Fixed total support & OPEN here & The growing-support Bragg sequence does not refute this more restricted problem.\\
-Operator and Maxwell formalization & LEAN VERIFIED, partial scope & 5238 declarations in Section~\ref{ver:lean}, including actual weak energy and flux, Newton source identity, and dipole Maxwell/interface equations. No admitted proof or project-specific axiom. Complete hotspot and channel constructions remain outside this coverage.\\
+Operator and Maxwell formalization & LEAN VERIFIED endpoints & Section~\ref{ver:lean} identifies the actual unrestricted-channel, arbitrary-plane modal and driven hotspot, and common arbitrary-plane modal-volume existence chains, with matching aggregate and all-safe-declaration audits.\\
 \bottomrule
 \end{longtable}
 

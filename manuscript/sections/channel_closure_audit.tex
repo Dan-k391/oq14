@@ -322,11 +322,14 @@ does supply one for $\delta>\eta$, without completing these exact packets.
 Finite-dimensional Loewner consequences, norm perturbation certificates,
 and dimension lemmas can be formalized independently.  Such Lean
 statements do not formalize the existence of a Maxwell scattering
-realization.  The construction in Theorem~\ref{ca:localpackets} requires
-Fourier analysis, the stated Maxwell evolution, and flux integration;
-its proof here is a mathematical derivation, not a Lean verification.
-Introducing an axiom that supplies the global bridge in
-Remark~\ref{ca:decisivebridge} would assume the unresolved content rather
-than verify it. The later written counterexample has not yet been
-formalized in Lean either. Accordingly no full-OQ14 Lean closure is claimed.
+realization. The local packet argument requires Fourier analysis,
+the stated Maxwell evolution, and flux integration; finite-dimensional
+certificates alone cannot supply a global realization. The later
+edge-sphere construction in Theorem~\ref{uc:counterexample} supplies
+that realization through its actual material volume equation and
+whole-plane error estimates. Section~\ref{ver:lean} identifies its
+complete Lean existence endpoint, including the physical incoming
+Hilbert space and the same-device passivity identity. The global bridge
+is proved within this chain, rather than introduced as a mathematical
+axiom.
 \end{remark}

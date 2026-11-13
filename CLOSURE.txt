@@ -1,0 +1,95 @@
+OQ14 — closure of the repository's quantified primary targets
+13 November 2026
+
+The primary channel, modal-hotspot and driven-hotspot statements frozen in
+manuscript/sections/problem.tex now have complete checked endpoint chains.
+The physical modal-volume corollary is included. No analytic, excitation,
+regularity, collar or peak premise is left for the user to discharge in the
+public existence constructions.
+
+RESULTS
+
+1. Unrestricted power-channel finiteness is DISPROVED as quantified.
+For every fixed positive frequency, ordinary dielectric ceiling, square
+section, 0<eta<delta, 0<tau<1 and finite N, one actual finite dielectric has
+an N-dimensional counted physical input space. Every coherent input obeys
+the passage and whole-plane absolute-bypass inequalities. The full outgoing
+scattering map is selected, with exact T* T=I on its closed physical TE input
+Hilbert space, actual weak Maxwell fields, outgoing behavior and integrable flux.
+
+2. Modal hotspot packing is PROVED.
+For any finite peak count, ordinary permittivity ceiling, target real frequency,
+quality, threshold, localization length and nonempty affine-plane patch, one
+actual smooth finite dielectric and normalized outgoing mode have the required
+simultaneous attained plane maxima, low open collars and compact connected
+half-amplitude regions in disjoint small observation balls. The same mode has
+the actual transported selected-sector observed pole.
+
+3. Physical modal-volume limits are PROVED for one common actual family.
+The final arbitrary-plane family retains that same material/mode/pole and
+normalization, exact frequency/quality, smooth three-value material, closed-ball
+geometry and collars. Each phase-weighted maximum uses the SAME continuous
+actual representatives on a strictly larger neighborhood before selection.
+Their restriction is proved intrinsic even at tangential interface contact.
+The reciprocal weighted maximum tends to zero. At those same weighted maxima,
+a fixed Cartesian component along a subsequence has vanishing complex
+directional volume. Interface weights belong to the same side as the trace.
+
+4. Finite three-dimensional driven hotspots are PROVED.
+One fixed smooth transverse unit-power illumination drives a finite ordinary
+dielectric family at the prescribed frequency, with exactly 2N smooth connected
+lobes and eventual simultaneous peaks above every finite threshold vector.
+The actual E/H satisfy Maxwell, have outgoing scattered fields, and admit the
+proved regional H(curl) representatives. Observation and support projections
+lie in the chosen affine-plane patch; the maxima need not lie on the plane.
+
+FORMAL ENTRY POINTS
+
+lean/OQ14Closure.lean imports and reports the logical dependencies of:
+  FullChannelExactPassiveWitness.unrestricted_exact_passive
+  Packet06FinalAffineModal.exists_physical_modal_hotspots
+  Packet06StrongAffineVolumePaper.exists_strong_affine_volume_family
+  Packet06StrongFrameIntrinsic.intrinsic
+  Packet07DrivenPlaneFinal.plane_final
+  Packet07DrivenExportedHCurl.placed_regional_hcurl_of_maxwell
+
+The volume public wrapper is a proof-valued definition with the full core
+conclusion inferred at K=sqrt(epsilon+); its checked scalar lemmas convert
+the bound K^2 exactly to the literal permittivity ceiling epsilon+.
+
+VERIFICATION
+
+Lean 4.19.0; mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b.
+Proof checkpoint: 766b80e, stage116.
+Incremental ledger: 1586 modules / 6001 reports beyond the earlier release.
+Aggregate project build: 2171 modules / 10946 inline axiom reports.
+Complete kernel-safe declaration audit: 23697 declarations checked.
+Only propext, Classical.choice and Quot.sound occur. No admitted proof or
+project-specific mathematical axiom is used in these chains. The aggregate
+retains 14 historical linter warnings; all new accepted batches have no diagnostics.
+Unsafe executable compiler implementations are separately listed, with no
+filtering of the dependency closure of any checked safe declaration.
+
+Cached project build objects were excluded from the aggregate. Earlier fresh
+objects were reused only after source/log/object hash authentication. Lean and
+package objects remain trusted dependencies; this is not a compiler/mathlib
+from-source rebuild. Independent agent source/replay reviews are recorded;
+independent human peer review is not claimed. Numerical diagnostics are not
+continuum Maxwell simulations or proofs.
+
+Evidence and final release provenance:
+  checkpoints/2026-11-13-closure-release/
+Manuscript:
+  manuscript/main.tex
+  output/pdf/oq14-manuscript.pdf
+
+SCOPE
+
+This closes the primary targets explicitly quantified in this repository.
+The channel construction for delta>eta disproves the unrestricted universal
+claim. Stronger bypass thresholds (delta<=eta), specified receiving-only
+outputs, fixed total support, and scalar-electric variants are separate
+restricted questions. The modal pole is simple in the selected transported
+sector; full ambient rank-one simplicity is not asserted. The original broad
+OQ14 wording does not uniquely fix these quantifiers, so this record does not
+claim that every possible strengthened interpretation has been resolved.

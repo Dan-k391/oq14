@@ -1,3 +1,26 @@
+# OQ14 primary-target closure — November 13, 2026
+
+The primary quantified targets are closed. Read [CLOSURE.txt](CLOSURE.txt)
+for the exact conclusions and the stronger restricted questions outside scope.
+
+Proof checkpoint: `766b80e` (stage116). The final aggregate passed 2171
+project modules / 10946 inline axiom reports. All 23697 kernel-safe project
+declarations passed the complete dependency audit with only the three standard
+axioms. The 14 historical aggregate linter warnings and trusted cached package
+boundary are explicitly recorded. Independent final source, evidence and PDF
+reviews passed. All actual modal-volume traces retain the strictly larger
+neighborhood before selection, including tangential interface contact.
+
+Public Lean entry point: `lean/OQ14Closure.lean`.
+Audit: `checkpoints/2026-11-13-closure-release/AUDIT.txt`.
+Paper: `output/pdf/oq14-manuscript.pdf` (104-page visually reviewed preview).
+
+The next release step is a clean-checkout build of this exact committed paper
+source, diagnostic rerun, and recorded branch/tag/bundle. No further mathematics
+or Lean proof construction is pending for the primary targets.
+
+Everything below is historical, superseded by this closure record.
+
 # OQ14 active full-closure work — November 13, 2026
 
 Stage 116 is the latest verified incremental checkpoint:

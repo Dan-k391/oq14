@@ -1,4 +1,4 @@
-\section{Analytic excitation of conical points by one genuine resonance}
+\section{Excitation of conical points by one genuine resonance}
 \label{hs:modal-next-section}
 
 This section proves a local bridge that the driven-field construction
@@ -20,262 +20,150 @@ Fix an axis $e\in S^2$, a number $t\in(1/\sqrt3,1)$, and put
 \end{equation}
 The physical permittivity near a selected point is
 $\varepsilon_b q_\eta$, where $1<\varepsilon_b<\varepsilon_+$ is the
-permittivity of its initially homogeneous host.  The small parameter
-$\eta$ is real and positive for the physical construction.  Its
-complex extension below is only an analytic perturbation parameter.
+permittivity of its initially homogeneous host.  The contrast parameter is real and positive.  We need a convergent
+real angular family; analytic continuation of its singular coefficient
+or of its angular eigenfunction is not required.
 
-\begin{lemma}[PROVED: an analytic angular eigenbranch]
+\begin{lemma}[PROVED: a positive-contrast angular family]
 \label{hs:modal-angular-branch}
-For sufficiently small complex $\eta$ there are holomorphic functions
-$\nu_\eta$, $\lambda_\eta$, and
-$\phi_\eta\in H^1(S^2)$ satisfying
+Fix $1/2\leq t<1$ and any sequence $\eta_j>0$ tending to zero.
+There are real, axisymmetric, odd angular eigenfunctions $\phi_j$
+and numbers $0<\lambda_j<1$, $\nu_j=\lambda_j(\lambda_j+1)$,
+satisfying
 \begin{equation}
- -\operatorname{div}_{S^2}(q_\eta\nabla_{S^2}\phi_\eta)
-       =\nu_\eta q_\eta\phi_\eta,\qquad
- \nu_\eta=\lambda_\eta(\lambda_\eta+1),\qquad
- \int_{S^2}q_\eta\phi_\eta^2\,dS=1.
+ -\operatorname{div}_{S^2}(q_{\eta_j}\nabla_{S^2}\phi_j)
+       =\nu_j q_{\eta_j}\phi_j,
+ \qquad \int_{S^2}q_{\eta_j}\phi_j\,dS=0.
  \label{hs:modal-angular-branch-equation}
 \end{equation}
-The functions $\phi_\eta$ are axisymmetric about $e$ and odd under
-$\widehat x\cdot e\mapsto-\widehat x\cdot e$.  In particular their
-weighted means vanish.  With the continuous choice of sign,
-\begin{equation}
- \phi_0=\sqrt{\frac{3}{4\pi}}\,\widehat x\cdot e,
- \quad \nu_0=2,\quad \lambda_0=1,
- \quad \nu'_0=-3t(1-t^2),\quad
- \lambda'_0=-t(1-t^2).
- \label{hs:modal-angular-derivative}
-\end{equation}
-For sufficiently small real $\eta>0$, all these quantities are real
-and $0<\lambda_\eta<1$.
+They may be normalized so that $\nu_j\to2$, $\lambda_j\to1$,
+$\phi_j(\widehat x)\to\widehat x\cdot e$, and, almost everywhere on
+the sphere, the corresponding
+angular electric vector
+$\lambda_j\phi_j\widehat x+\nabla_{S^2}\phi_j$ tends to $e$.
+The angular bounds needed for dominated convergence are uniform
+along this family.  The construction below uses $t=3/4$.
 \end{lemma}
 
 \begin{proof}
-Work in the closed subspace of axisymmetric odd functions in
-$H^1(S^2)$.  At $\eta=0$, the eigenvalue two is simple in this
-subspace: the spherical harmonics in it have degrees
-$l=1,3,5,\ldots$, each with azimuthal index zero.  The stiffness and
-mass forms have a common domain and depend affinely on $\eta$.
-On this odd subspace the stiffness form is coercive at zero, and
-remains invertible for small complex $\eta$ by a Neumann series.
-Composing its inverse with the mass form gives a holomorphic compact
-operator on $H^1$, compactness following from
-$H^1(S^2)\hookrightarrow L^2(S^2)$.
-A small contour about its simple eigenvalue $1/2$ defines a
-holomorphic rank-one spectral projection.  Apply that projection to
-$\phi_0$ and divide by the analytic square root of its nonzero
-bilinear mass.  This constructs the displayed normalized eigenpair;
-the analytic square root of $1+4\nu_\eta$ selects
-$\lambda_\eta=(-1+\sqrt{1+4\nu_\eta})/2$ near one.
-Because $q_\eta$ is axisymmetric and even, the restricted weak
-eigenproblem is also the full-sphere weak eigenproblem.  Orthogonal
-angular symmetry sectors make the other test functions vanish.
+Use the regular polar and odd equatorial Legendre solutions of the
+angular equation, and impose potential continuity and weighted normal
+flux continuity at the cap boundary.  Their matching determinant
+$D(\eta,t,\nu)$ is continuous for $0\leq\nu\leq2$.
+It is negative at zero and equals $\eta t>0$ at two, so it has
+a root $\nu_j\in(0,2)$ for each positive contrast.  The associated
+piecewise profile and its weighted flux satisfy the full weak angular
+equation; odd symmetry gives the zero weighted mean.
 
-Differentiating the normalized eigenproblem at zero gives
-\begin{equation}
- \nu'_0=\int_{S^2}a
-       \bigl(|\nabla_{S^2}\phi_0|^2-2\phi_0^2\bigr)\,dS
-       =3\int_t^1(1-3s^2)\,ds=-3t(1-t^2).
-\end{equation}
-Differentiation of $\nu=\lambda(\lambda+1)$ gives
-$\lambda'_0=\nu'_0/3$.  Reality and the strict inequality follow
-by conjugation uniqueness and this negative derivative.
+At zero contrast the only determinant root in $[0,2]$ is two.
+Indeed, test its weak angular equation against $\widehat x\cdot e$
+and test the weak tangential gradient identity against the constant
+axial vector.  These give, for the same strictly positive profile-axis
+pairing $I$, the identity $2I=\nu I$.  Positivity follows from the
+polar and odd equatorial profiles for $t\geq1/2$.
+Every subsequential limit of the roots is a zero-contrast root by
+continuity of the determinant.  Compactness therefore gives
+$\nu_j\to2$ and $\lambda_j=(-1+\sqrt{1+4\nu_j})/2\to1$.
+The convergent Legendre series and their first derivatives give
+the stated normalized profile and electric-vector limits, together
+with the uniform angular majorants.  This supplies the real family
+used in the annular pairing argument.
 \end{proof}
 
-\subsection{A coefficient formula regular at the exponent one}
+\subsection{Nonvanishing from an annular pairing}
 
-The apparent difficulty at $\eta=0$ is the integral
-$\int_0^r s^{-\lambda_\eta}\,ds$ in the earlier coefficient
-formula.  Its singular denominator is removable after one subtracts
-the value of the regular curl lifting at the vertex.  The following
-argument carries out that subtraction before taking the limit.
+We use only positive real contrasts in the following excitation step.
+The singular coefficient need not be continued analytically, or even
+shown to converge, as the contrast tends to zero.
 
-\begin{theorem}[PROVED: analytic coefficient continuation from a smooth field]
+\begin{theorem}[PROVED: eventual excitation by a convergent mode family]
 \label{hs:modal-coefficient-continuation}
-Let $E_\eta$ be holomorphic with values in $L^2(B_{3R})^3$ for
-$\eta$ in a complex neighborhood of zero.  Suppose that, in
-$B_{3R}$, it belongs to $H_{\mathrm{loc}}(\operatorname{curl})$
-and is a weak Maxwell electric field satisfying
-\begin{equation}
- \operatorname{curl}\operatorname{curl}E_\eta
-   =k_\eta^2\varepsilon_b q_\eta E_\eta,
- \qquad k_\eta\ne0,
- \label{hs:modal-local-maxwell}
-\end{equation}
-where $k_\eta$ is holomorphic and $q_\eta$ is the radially constant
-coefficient in \eqref{hs:modal-angular-material}.  Then its intrinsic
-conical coefficient for small real $\eta>0$ extends to a holomorphic
-scalar $c_\eta$ near zero, with the exact value
-\begin{equation}
- c_0=\sqrt{\frac{4\pi}{3}}\,E_0(0)\cdot e.
- \label{hs:modal-coefficient-limit}
-\end{equation}
-In particular, if $E_0(0)\cdot e\ne0$, then $c_\eta\ne0$ for all
-sufficiently small real positive $\eta$, and the continued electric
-field is unbounded at ordinary points approaching the vertex.
+Let $\eta_j>0$ tend to zero and let $E_j$ be actual outgoing
+volume-response Maxwell fields in a fixed conical ball $B_b(p)$ with material
+$\varepsilon_bq_{\eta_j}$ as in \eqref{hs:modal-angular-material}.
+Assume their frequencies are nonzero and bounded, their compactly
+supported volume sources have uniformly bounded $L^2$ norms in one
+fixed containing ball, and $E_j\to E_0$ in $L^2(B_b(p))^3$.
+Suppose $E_0$ has a continuous representative near $p$ and
+$E_0(p)\cdot e\ne0$.  Then the intrinsic conical coefficients of
+$E_j$ are nonzero for all sufficiently large $j$.
 \end{theorem}
 
 \begin{proof}
-Fix $0<\gamma<1/2$ and decrease the parameter neighborhood so that
-$\operatorname{Re}\lambda_\eta<1+\gamma/2$ and
-$\operatorname{Re}\lambda_\eta>1/2$.  The local regular
-decomposition of Lemma~\ref{hs:three-decomposition} also applies at
-complex nonzero $k_\eta$: its cutoff estimates use only bounded
-$|k_\eta|$, bounded $q_\eta$, and a positive lower bound for
-$|k_\eta|$.  More explicitly, cutoff testing of
-\eqref{hs:modal-local-maxwell} controls $\operatorname{curl}E_\eta$
-in interior $L^2$.  Its divergence is zero and its curl is
-$k_\eta^2\varepsilon_bq_\eta E_\eta$, so the constant-coefficient
-curl/div identity controls it in a smaller interior $H^1$ space.
-Apply one fixed regularized Poincare lifting from $H^1$ to $H^2$,
-and fix the mean of the remaining scalar potential.  The result is
+The real angular eigenpairs in Lemma~\ref{hs:modal-angular-branch}
+have $\nu_j\to2$, $\lambda_j\to1$, and $\lambda_j<1$ for
+all sufficiently large $j$.  The actual compact-source volume
+representation supplies the decomposition used in
+Lemma~\ref{hs:three-coefficient}.  Its regular correction $W_j$
+has a common bound
 \begin{equation}
- E_\eta=\nabla v_\eta+W_\eta,
- \qquad v_\eta\in H^1(B_R),\quad W_\eta\in H^2(B_R)^3,
- \label{hs:modal-decomposition}
+ |W_j(x)-W_j(p)|\leq M|x-p|^\alpha
+ \qquad (x\in B_b(p)),
+ \label{hs:modal-holder-bound}
 \end{equation}
-holomorphically in those spaces, using slightly larger balls for
-the estimates if necessary.  Holomorphy of the interior derivatives
-follows from their distributional holomorphy and locally uniform
-bounds; equivalently, Cauchy's integral formula in distributions
-and the same local estimates gives the formula in the stronger
-spaces.  Thus $W_\eta$ is holomorphic in $C^{0,\gamma}$ on the
-final smaller closed ball.  From now on $R$ denotes that final
-radius.
+for some $M<\infty$ and $\alpha>0$.  Indeed, on the fixed source
+ball the difference of two scalar outgoing Green rows has squared
+$L^2$ norm $O(|x-p|)$: split the source ball into a near part and
+its complement and use the $1/r$ kernel and its $1/r^2$ derivative.
+Cauchy--Schwarz and the uniform source and frequency bounds give
+\eqref{hs:modal-holder-bound}, with $\alpha=1/2$.
 
-Set $w_\eta=W_\eta(0)$ and
-$\widetilde W_\eta(x)=W_\eta(x)-w_\eta$.  The uniform estimate
-$|\widetilde W_\eta(r\widehat x)|\leq C r^\gamma$ holds on a
-smaller closed parameter disk.  Define
-\begin{align}
- U_\eta(r)&=\int_{S^2}q_\eta v_\eta(r\widehat x)\phi_\eta\,dS,
- & A_{0,\eta}&=\int_{S^2}q_\eta(w_\eta\cdot\widehat x)
-                                      \phi_\eta\,dS,\\
- \widetilde A_\eta(r)&=\int_{S^2}q_\eta
-          (\widetilde W_\eta\cdot\widehat x)\phi_\eta\,dS,
- &\widetilde B_\eta(r)&=\int_{S^2}q_\eta
-           \widetilde W_{\eta,t}\cdot\nabla_{S^2}\phi_\eta\,dS.
- \label{hs:modal-subtracted-projections}
-\end{align}
-All angular pairings here are bilinear, without complex conjugation,
-as appropriate for holomorphic dependence.  The last two quantities
-are $O(r^\gamma)$ uniformly.  For the constant vector $w_\eta$,
-the eigenproblem gives the exact identity
+Let $P_j(\zeta)$ be the electric field's angularly projected pairing
+with a smooth nonnegative radial test $\zeta$ supported in $(0,b)$.
+Subtracting the constant $W_j(p)$ before solving the projected
+radial equation removes the apparent $1/(1-\lambda_j)$ singularity.
+The angular eigenvalue identity cancels the constant correction
+exactly.  The remaining forcing is $O(r^\alpha)$, and the regular
+particular solution is $O(r^{1+\alpha})$ uniformly as
+$\lambda_j\uparrow1$.  Finite local energy excludes the singular
+homogeneous solution.  Consequently, if the intrinsic coefficient
+is zero, there is a constant $C$ independent of $j$ such that
 \begin{equation}
- \int_{S^2}q_\eta w_{\eta,t}\cdot\nabla_{S^2}\phi_\eta\,dS
-       =\lambda_\eta(\lambda_\eta+1)A_{0,\eta}.
- \label{hs:modal-constant-identity}
+ |P_j(\zeta)|\leq CM\int_0^b r^{2+\alpha}|\zeta(r)|\,dr.
+ \label{hs:modal-zero-pair-bound}
 \end{equation}
-Indeed $w_{\eta,t}=\nabla_{S^2}(w_\eta\cdot\widehat x)$.
+This is the zero-coefficient consequence of the same radial
+projection and coefficient formula used in
+Lemma~\ref{hs:three-coefficient}.
 
-Taking the divergence of \eqref{hs:modal-local-maxwell} gives
-$\operatorname{div}(q_\eta E_\eta)=0$.  Its angular projection is
-the same radial equation as \eqref{hs:three-radial}.  A particular
-solution valid on the entire small complex parameter disk is
-\begin{align}
- p_\eta(r)&=-rA_{0,\eta}+\widetilde p_\eta(r),\notag\\
- \widetilde p_\eta(r)&=\frac{1}{2\lambda_\eta+1}
- \left[r^{\lambda_\eta}\int_0^r s^{-\lambda_\eta}
-       \{\widetilde B_\eta(s)
-                 -(\lambda_\eta+1)\widetilde A_\eta(s)\}\,ds
- \right.\notag\\[-2pt]
- &\hspace{22mm}\left.
- -r^{-\lambda_\eta-1}\int_0^r s^{\lambda_\eta+1}
-       \{\widetilde B_\eta(s)
-                      +\lambda_\eta\widetilde A_\eta(s)\}\,ds
- \right].
- \label{hs:modal-regular-particular}
-\end{align}
-We use $r^{\lambda}=\exp(\lambda\log r)$ for $r>0$.
-The integrals converge uniformly on compact parameter disks, because
-their respective small-$s$ powers have real parts greater than $-1$.
-They are holomorphic in $\eta$ by dominated integration, also after
-parameter differentiation on a smaller disk.  Direct estimates give
+For each fixed $\zeta$, the $L^2$ convergence of the actual fields
+and convergence of the real angular projections give
+$P_j(\zeta)\to P_0(\zeta)$.  The limiting pairing has the form
 \begin{equation}
- |\widetilde p_\eta(r)|\leq C r^{1+\gamma},\qquad
- |\widetilde p_\eta'(r)|\leq C r^\gamma.
- \label{hs:modal-regular-particular-bound}
+ P_0(\zeta)=c_t\int_0^b r^2\zeta(r)A(r)\,dr,
+ \qquad c_t>0,\quad A(r)\longrightarrow E_0(p)\cdot e
+ \quad(r\downarrow0),
 \end{equation}
-The first term $-rA_{0,\eta}$ is an exact particular solution for
-the constant-vector forcing by \eqref{hs:modal-constant-identity}.
-For $\lambda_\eta\ne1$ it is also exactly the result of performing
-the two constant-vector integrals in \eqref{hs:three-exact}; thus
-no additional homogeneous term has been inserted by this
-regularization.
-
-Variation of constants now gives
-\begin{equation}
- U_\eta(r)=c_\eta r^{\lambda_\eta}
-          +d_\eta r^{-\lambda_\eta-1}+p_\eta(r).
-\end{equation}
-Finite $H^1$ energy of $v_\eta$ excludes $d_\eta$: the radial
-derivative of the second term would have squared integral with
-weight $r^2$ proportional to
-$\int_0^R r^{-2\operatorname{Re}\lambda_\eta-2}\,dr$.
-The remaining coefficient has the annular formula
-\begin{equation}
- c_\eta=\frac{2}{R}\int_{R/2}^R
-          r^{-\lambda_\eta}\{U_\eta(r)-p_\eta(r)\}\,dr.
- \label{hs:modal-holomorphic-coefficient}
-\end{equation}
-The projection of $v_\eta$ on this annulus is a bounded linear
-operation in $L^2$, and all other factors were shown holomorphic.
-This proves holomorphy of $c_\eta$.  For positive real $\eta$,
-the exponent is below one, so this is exactly the intrinsic
-coefficient of Lemma~\ref{hs:three-coefficient}.
-
-At zero the medium is homogeneous, and the Maxwell field $E_0$ is
-smooth near the origin by the interior Helmholtz equation.  As
-$\nabla v_0=E_0-W_0\in C^{0,\gamma}$,
-\begin{equation}
- v_0(r\widehat x)=v_0(0)
-        +r\{E_0(0)-w_0\}\cdot\widehat x+O(r^{1+\gamma}).
-\end{equation}
-The zero angular mean removes $v_0(0)$.  Adding $rA_{0,0}$ to its
-projection and using the bound on $\widetilde p_0$ gives
-\begin{equation}
- c_0=\int_{S^2}(E_0(0)\cdot\widehat x)\phi_0\,dS
-     =\sqrt{\frac{4\pi}{3}}\,E_0(0)\cdot e.
-\end{equation}
-The nonvanishing and unboundedness conclusions follow from
-continuity and Lemma~\ref{hs:three-coefficient}.  In particular,
-closeness of fields in $L^2$ alone is not being used to infer
-nonvanishing of a singular coefficient; its explicit continuous
-extension has been established.
+where $A$ is the corresponding spherical average of the continuous
+limiting field.  Choose a nonzero nonnegative bump supported in a
+sufficiently small annulus.  Continuity and $A(0)\ne0$ give a
+strict lower bound on $|P_0(\zeta)|$ proportional to
+$\int r^2\zeta$, whereas the right side of
+\eqref{hs:modal-zero-pair-bound} has the extra factor $r^\alpha$.
+Thus the latter is strictly smaller than $|P_0(\zeta)|$.  The
+convergence of $P_j$ contradicts zero coefficient for every
+sufficiently large $j$.  The conclusion uses the actual fields and
+their local $L^2$ limit; it does not infer nonvanishing merely from
+$L^2$ closeness without this quantitative projection estimate.
 \end{proof}
 
-\begin{corollary}[PROVED: all finitely many coefficients of one continued mode]
+\begin{corollary}[PROVED: simultaneous excitation by one mode]
 \label{hs:modal-all-coefficients}
-Suppose a compact dielectric has a Maxwell resonance $k_0\ne0$
-with eigenfield $E_0$.  Let $p_1,\ldots,p_N$ have disjoint
-neighborhoods of constant permittivity $\varepsilon_b$, and choose
-axes $e_j$ such that $E_0(p_j)\cdot e_j\ne0$.
-In each neighborhood insert the angular material
-$\varepsilon_b q_\eta$ of
-\eqref{hs:modal-angular-material}, with that neighborhood's axis,
-and close the insertions outside its local conical ball.
-If the same resonance has a nonzero local-$L^2$ holomorphic
-continuation $E_\eta,k_\eta$ for this simultaneous material
-perturbation, with $E_\eta\vert_{\eta=0}=E_0$, then there is
-$\eta_N>0$ such that every $0<\eta<\eta_N$ has
-\begin{equation}
- c_j(E_\eta)\ne0\quad\hbox{for all }1\leq j\leq N.
- \label{hs:modal-all-coefficients-equation}
-\end{equation}
-These are coefficients of one eigenfield at one resonance, not of
-a sum of independent modes or separately selected illuminations.
-The physical material bound is respected by also requiring
-$\varepsilon_b(1+\eta)\leq\varepsilon_+$.
+Suppose one family of actual resonant fields satisfies the theorem
+at each of finitely many disjoint conical balls, with the same
+positive contrasts $\eta_j\downarrow0$, and that its limiting field
+has a nonzero axial component at each center.  Then one sufficiently
+large index $j$ gives one resonance whose intrinsic coefficient is
+nonzero at every selected vertex.  The contrast can also be chosen
+below any prescribed positive ceiling, including that required by
+$\varepsilon_b(1+\eta_j)\leq\varepsilon_+$.
 \end{corollary}
 
 \begin{proof}
-Translate and rotate Theorem~\ref{hs:modal-coefficient-continuation}
-at each $p_j$ and take the minimum of the finitely many positive
-nonvanishing radii in parameter space.  Scaling a chosen eigenfield
-by any holomorphic nonzero normalization factor multiplies all its
-coefficients by that same factor and does not affect the result.
+Apply the theorem at each center and take the maximum of the finitely
+many resulting indices.  The selected coefficients belong to the
+same actual eigenfield and the same complex resonance.
 \end{proof}
-
 \subsection{The exact remaining global hypotheses}
 
 \begin{proposition}[PROVED: transfer from a simple resonance to rounded modal peaks]
@@ -293,8 +181,8 @@ nonzero and continuous along that branch and under the rounded
 approximations below.
 \item Rounding the conical vertices while retaining the same
 material values gives a nearby resonance and normalized eigenfield
-converging locally in $L^2$, and uniformly one-sided on fixed
-smooth-interface collars away from the vertices.
+converging locally in $L^2$, with uniformly bounded one-sided fields
+on fixed smooth-interface collars away from the vertices.
 \end{enumerate}
 Then, for every finite $N$ and every $M,\ell>0$, one normalized
 resonance of a finite smooth dielectric has $N$ disjoint
@@ -317,12 +205,15 @@ subinterval and choose disjoint balls and insertions as small as
 necessary.  Axisymmetric insertions preserve the indicated sector.
 Choose one small positive contrast from
 Corollary~\ref{hs:modal-all-coefficients}.  Its one normalized sharp
-resonance is unbounded at every tip and bounded on each chosen
-fixed collar.  Select an ordinary high-field point inside each ball
-whose value exceeds twice the collar bound and the target $M$, with
-strict margins.  The hypothesized normalized rounding convergence
-preserves all these finitely many strict inequalities at one
-sufficiently small rounding scale.  Smooth-interface regularity
+resonance is unbounded at every tip.  The uniform collar hypothesis
+gives one bound for all sufficiently late rounded modes on the
+chosen collars.  In each ball, essential unboundedness gives a
+positive-volume superlevel above twice that common collar bound and
+the target $M$, with strict margins.  Local $L^2$ convergence
+preserves a positive-volume superlevel above these thresholds at
+every sufficiently small rounding scale.  The eventual collar bound
+and finiteness of the collection let one choose a common scale.
+Smooth-interface regularity
 makes the one-sided maxima on the closed balls finite and attained;
 each peak lies inside its ball because of the collar inequality.
 This is the same final compactness step as the driven construction,

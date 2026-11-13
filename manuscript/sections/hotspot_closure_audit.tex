@@ -454,10 +454,13 @@ Let $\chi_\rho,\chi$ be supported in the common comparison ball,
 $0\leq\chi_\rho,\chi\leq d$, with $\chi_\rho\to\chi$ almost
 everywhere.  For one fixed incident field, their total electric
 fields satisfy $E_\rho\to E$ in $L^2(B_L)^3$.
-On a fixed compact observation set avoiding all vertices and joining
-curves, and near which the coefficients are unchanged, convergence
-is uniform on each closed material side.  This includes fixed
-sphere collars intersecting smooth conical interfaces.
+For the smooth rounded conical family used here, suppose in addition
+that the coefficients agree exactly with one fixed smooth reference
+body on a neighborhood of each prescribed sphere collar, for every
+sufficiently small rounding parameter.  The collars avoid all vertices
+and joining curves.  Then the continuous electric fields on both closed
+material sides have one common finite bound on those collars.  This
+includes collars intersecting smooth conical interfaces.
 \end{lemma}
 
 \begin{proof}
@@ -471,34 +474,29 @@ Dominated convergence makes the last multiplication tend to zero
 in $L^2$, and Lemma~\ref{hs:three-volume} bounds both operators
 uniformly.  This proves the first claim.
 
-For the second, the field difference solves the same homogeneous
-Maxwell equation in every fixed observation neighborhood.
-Lemma~\ref{hs:three-decomposition} produces
-$E_\rho-E=\nabla v_\rho+W_\rho$ there, with
-$\|v_\rho\|_{H^1}+\|W_\rho\|_{H^2}\to0$ on smaller balls.
-The potential satisfies
-$\operatorname{div}(\varepsilon_r\nabla v_\rho)
-=-\operatorname{div}(\varepsilon_r W_\rho)$.
-Across a fixed smooth interface this is the scalar positive
-transmission problem with continuous potential and conormal jump
-$-[\varepsilon_r W_\rho\cdot n]$.
-Its local piecewise $H^3$ estimate is bounded by
-$C(\|v_\rho\|_{H^1}+\|W_\rho\|_{H^2})$.
-To see the required regularity, flatten the fixed smooth interface,
-apply tangential difference quotients twice to the scalar weak
-equation, and use ellipticity and cutoffs to estimate them.
-The equation then determines second normal derivatives; differentiating
-it once determines third normal derivatives.  The coefficient and
-flattening derivatives are bounded on this fixed neighborhood.
-The two material-side estimates include the displayed conormal
-data, whose trace has the required $H^{3/2}$ regularity from
-$W_\rho\in H^2$.  Thus
-$\nabla v_\rho+W_\rho\to0$ piecewise in $H^2$.
-Since $H^2$ embeds in $C^{0,\gamma}$ in three dimensions,
-uniform one-sided convergence follows.  A finite cover treats the
-observation set.  No estimate uniform at the shrinking tip is used.
-The same local argument gives bounded one-sided electric fields
-for each fixed smooth rounded geometry.
+For the collar bound, write the actual total field as
+$E_\rho=\nabla v_\rho+W_\rho$, retaining the same fixed smooth
+incident field.  The convergent volume unknowns have bounded source
+norms; the compact scalar Green operators give bounded local scalar
+potential and gradient norms, and bounded $H^2$ correction norms.
+Choose a fixed smooth rounded reference body that agrees with every
+later body near the collar.  Its regular interfaces supply fixed
+signed graph charts; homogeneous neighborhoods complete the cover.
+
+In each chart the actual scalar transmission equation is localized
+with nested smooth cutoffs.  A regional difference-quotient energy
+estimate first derives the mixed derivative entering the differentiated
+forcing.  Thus no second derivative of the original potential on an
+outer cutoff annulus is assumed.  Two tangential iterations and the
+normal-flux equation then give continuous tangential and flux
+representatives with bounds depending only on the original scalar and
+forcing norms and the fixed chart data.  Reconstructing the physical
+gradient gives uniformly bounded actual electric branches on both
+closed material sides.  A finite cover of the compact sphere gives
+one bound on an open collar, chosen before the rounding index.
+The same local regularity argument, without a uniform constant, gives
+continuous one-sided branches for every fixed smooth rounded device.
+No estimate uniform at a shrinking tip is used.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{hs:three-packing}]
@@ -524,22 +522,22 @@ Proposition~\ref{hs:simultaneous}, and divide by its $L^2(S^2)$ norm.
 All coefficients remain nonzero, and the incoming power is one.
 
 Fix disjoint observation balls $Q_j$ of diameter less than $\ell$
-inside the exact conical regions.  The field is bounded on their
-fixed interface collars by the regularity argument in
-Lemma~\ref{hs:three-rounding}; call a common bound $B$.
-Choose $S>\max\{M,2B\}$.  At each vertex the nonzero coefficient
-supplies an ordinary interior point $x_j$ with $|E(x_j)|>4S$.
-Now round all conical tips inward within radius $\rho$, leaving
-the interfaces elsewhere unchanged.  The result has $2N$ disjoint
-inclusions with smooth boundaries and the same two material values.
-The changed sets shrink to the finite collection of vertices.
+inside the exact conical regions, and round all tips inward while
+leaving their collars unchanged.  The result has $2N$ disjoint smooth
+inclusions and the same two material values.  The changed sets shrink
+to the finite vertex set.  Lemma~\ref{hs:three-rounding} gives a common
+bound $B$ for both actual material-side traces on all fixed collars,
+uniformly for sufficiently small rounding parameters.
 
-Lemma~\ref{hs:three-rounding} permits one sufficiently small common
-$\rho$ for which every $|E_\rho(x_j)|>3S$ and every collar amplitude
-is less than $S$.  One-sided maxima on the compact observation
-balls are finite and attained for the fixed smooth configuration.
-Each exceeds $3S>M$, and its half-amplitude component cannot cross
-its collar.  This proves \eqref{hs:three-peak} and the theorem.
+Choose $S>\max\{M,2B\}$.  Each nonzero conical coefficient supplies
+a positive-volume superlevel $|E|>2S$ inside its observation ball.
+Local $L^2$ convergence preserves a positive-volume superlevel
+$|E_\rho|>S$ in every ball for all sufficiently small $\rho$.
+The continuous one-sided branches attain their joint maximum on the
+compact ball.  Each maximum exceeds $S$ and twice the collar bound.
+The collar is therefore a strict low barrier for its half-amplitude
+superlevel set.  Its full connected component is compact and stays
+strictly inside the observation ball, proving \eqref{hs:three-peak}.
 All choices of illumination precede rounding; the same normalized
 input is used for every rounded field.
 \end{proof}
@@ -559,10 +557,11 @@ The electric $L^2$ norms are uniformly bounded by the volume inverse.
 The magnetic fields are bounded on fixed bounded regions by the
 Maxwell equations, the local curl estimate, and exterior vacuum
 regularity; a slightly larger comparison ball may be used for the
-cutoffs.  For every finite amplitude threshold, select high ordinary
-points in the sharp field first and then use rounding continuity.
-The finite diagonal argument makes the lower limit of each selected
-maximum infinite.  The material factors are bounded above and below.
+cutoffs.  For every finite amplitude threshold, the sharp field has a
+positive-volume superlevel in every selected ball.  Local $L^2$
+convergence preserves a smaller superlevel for every sufficiently late
+rounded device.  The attained one-sided maxima therefore diverge
+along the same family.  The material factors are bounded above and below.
 \end{proof}
 
 \subsection{What an exact mode can mean in a finite dielectric device}
@@ -624,9 +623,10 @@ illumination, whereas a pole's eigenfield is fixed by its homogeneous
 outgoing eigenproblem.  Strong local field convergence without a
 coefficient topology also does not prove nonzero singular coefficients.
 Sections~\ref{hs:modal-next-section} and~\ref{ms:section} now discharge
-these conditions by a separate argument.  The exact coefficient
-continuation through zero contrast is proved in
-Theorem~\ref{hs:modal-coefficient-continuation}; a simple pole,
+these conditions by a separate argument. Eventual nonzero excitation
+is proved by a strict annular pairing in
+Theorem~\ref{hs:modal-coefficient-continuation}, without requiring
+continuation of the intrinsic coefficient through zero contrast; a simple pole,
 its genuine reciprocal normalization and its rounded continuation
 are proved in Lemmas~\ref{ms:sphere-simple}--\ref{ms:rounding}.
 The resulting closed modal statement is

@@ -308,7 +308,7 @@ At a simple nonzero Maxwell pole in the selected sector,
 $\mathcal N(E)\ne0$.  Scaling $E$ by $a\in\C$ scales
 $\mathcal N$ by $a^2$.  The reciprocal electric Green operator for
 $\operatorname{curl}\operatorname{curl}-k^2\varepsilon_r$,
-restricted to this sector, has residue
+with both the source and output restricted to this sector, has residue
 \begin{equation}
  \operatorname*{Res}_{k=k_*}G(k;x,y)
        =-\frac{E(x)\otimes E(y)}{2k_*\mathcal N(E)}.
@@ -344,8 +344,12 @@ $K(k_*)\chi E=E$ give
 \begin{equation}
  \ell_E G_0(k_*)f=k_*^{-2}\int E(y)\cdot f(y)\,dy.
 \end{equation}
-The same identity for sources outside $B$ follows directly from
-the global volume representation and the symmetric kernel.
+For an arbitrary compact source, first project it onto the selected
+sector.  The same identity for sources outside $B$ follows from
+the global volume representation and the symmetric kernel.  Since
+$E$ lies in the sector, the projection can be removed from its
+bilinear pairing with $E$; the Maxwell source itself remains the
+projected source.
 Multiplying the two residue factors yields
 $E\otimes E/(k_*^2d)$, which is
 \eqref{ms:green-residue}.  This is a genuine pole normalization
@@ -364,7 +368,7 @@ the formulas.  A nonzero analytic square root of $\mathcal N$
 on a sufficiently small parameter disk normalizes the field.
 \end{proof}
 
-\begin{lemma}[PROVED: normalized resonance continuity away from rounded tips]
+\begin{lemma}[PROVED: normalized resonance convergence and fixed-collar bounds]
 \label{ms:rounding}
 Fix the finite axisymmetric conical construction and a simple
 sector pole with $\mathcal N=1$.  Round all its vertices
@@ -372,9 +376,10 @@ axisymmetrically within balls of radius $\rho$, leaving the material
 values and all other interfaces fixed.  For sufficiently small
 $\rho$, there is a simple sector pole $k_\rho\to k_*$ and
 eigenfield with $\mathcal N(E_\rho)=1$ converging to $E$ locally
-in $L^2$.  On any fixed compact set away from the vertices,
-including either side of a fixed smooth interface, the fields
-converge uniformly one-sided.
+in $L^2$.  On the fixed collars around the selected tips, contained
+in their conical neighborhoods and separated from the vertices,
+the one-sided fields have a common finite bound independent of
+the sufficiently small rounding radius.
 \end{lemma}
 
 \begin{proof}
@@ -384,31 +389,41 @@ Lemmas~\ref{ms:fredholm}--\ref{ms:normalization} and choose the
 square-root scale converging to the sharp field's scale.
 The volume representation supplies local $L^2$ convergence also
 on any larger fixed ball, by the same static and compact estimates.
-For local regularity write $U_\rho=E_\rho-E$.  Its equation is
-\begin{equation}
- \operatorname{curl}\operatorname{curl}U_\rho
- =k_\rho^2\varepsilon_\rho U_\rho
- +(k_\rho^2\varepsilon_\rho-k_*^2\varepsilon)E.
-\end{equation}
-The right-hand side tends to zero in local $L^2$ and $U_\rho$
-does likewise.  Cutoff testing gives
-$\operatorname{curl}U_\rho\to0$ in smaller interior $L^2$.
-The constant-coefficient curl/div estimate for
-$\operatorname{curl}U_\rho$ then gives convergence in interior
-$H^1$.  The fixed regularized curl lifting gives a difference
-$W_\rho-W\to0$ in $H^2$, and the corresponding mean-fixed
-potentials converge in $H^1$.
-On a neighborhood disjoint from the changing tips the coefficients
-are identical.  The scalar equation for the potential difference
-is $\operatorname{div}(\varepsilon\nabla(v_\rho-v))
-=-\operatorname{div}(\varepsilon(W_\rho-W))$.
-The piecewise $H^3$ scalar transmission estimate across a fixed
-smooth positive interface, used in
-Lemma~\ref{hs:three-rounding}, gives convergence of the potentials
-in smaller piecewise $H^3$ sets.  Hence the electric fields converge
-piecewise in $H^2$, and uniformly by the three-dimensional Sobolev
-embedding.  At ordinary interior points the same conclusion follows
-from the homogeneous interior estimates.
+For the collar estimate, the convergent normalized volume unknowns
+give uniformly bounded compact $L^2$ sources and frequencies.
+The scalar Green representation writes the actual electric field as
+$E_\rho=\nabla v_\rho+W_\rho$, with
+$W_\rho=k_\rho^2\Phi_{k_\rho}*(\chi_\rho E_\rho)$.
+On a fixed containing ball the scalar Green operator, its gradient,
+and the dynamic-minus-static Hessian have uniform operator bounds.
+The static Hessian is controlled by the Fourier Newton projection.
+After multiplication by a fixed smooth cutoff, $W_\rho$ therefore
+has uniformly bounded first and second weak derivatives.  The
+localized scalar potential and its first gradient are uniformly
+bounded in $L^2$ as well.
+
+Choose a smooth reference rounding before the final family index.
+Every sufficiently late rounded body agrees exactly with it on the
+fixed collars.  Cover those collars by finitely many fixed signed
+$C^4$ graph charts, including constant-material charts at points
+away from the interfaces.  The scalar Gauss equation becomes a
+positive binary transmission equation in each flattened chart.
+A regional difference-quotient estimate supplies the mixed scalar
+derivative needed in the outer-cutoff forcing.  Product rules then
+bound both tangential derivatives of that forcing from the original
+data and fixed cutoff constants.  Thus the subsequent localized
+iterations do not assume extra scalar regularity on the outer
+cutoff annulus.
+
+Two tangential iterations bound the tangential gradient components.
+The divergence equation gives the corresponding bounds for the
+normal flux.  The local Sobolev estimates for these derivative
+arrays yield continuous bounded representatives.  On the inner
+cutoff plateau they are the original tangential gradient and
+physical flux; the positive material values reconstruct the actual
+one-sided electric components.  Taking a finite cover gives a
+single collar bound chosen before the rounding index and the peak
+threshold.
 \end{proof}
 
 \subsection{Closed modal hotspot statement}
@@ -432,7 +447,8 @@ There are $N$ disjoint three-dimensional observation balls of
 diameter less than $\ell$, centered in $\mathcal P$ and with
 orthogonal projections contained in $\mathcal P$.  In each ball
 the one-sided electric-field maximum exceeds $M$ and is more than
-twice the maximum on a fixed collar of its boundary.  A point
+twice a uniform bound for both material-side fields on an open
+collar of its boundary.  A point
 attaining each maximum can be chosen in $\mathcal P$.
 Thus each peak's half-amplitude connected region stays in its
 small ball.  No uniform support-size bound, minimum feature size,
@@ -489,8 +505,9 @@ every desired inequality and sets the exact real frequency.
 \begin{corollary}[PROVED: vanishing residue-normalized localization ratios]
 \label{ms:modal-volume}
 For one fixed sharp modal construction with $N$ tips, its rounded
-normalized modes have uniformly finite nonzero residue norm, and
-the maximum in each selected ball tends to infinity.  Consequently
+normalized modes, with the frequency-adjusting dilations and corresponding
+observation balls, have reciprocal norm one, and the maximum in each
+selected ball tends to infinity. Consequently
 \begin{equation}
  \frac{|\mathcal N(E_\rho)|}
  {\displaystyle\max_{x\text{ in ball }j}
@@ -498,7 +515,14 @@ the maximum in each selected ball tends to infinity.  Consequently
  \quad (1\leq j\leq N).
 \end{equation}
 These are positive intensity ratios formed from the genuine
-reciprocal norm.  A directional complex mode volume uses
+reciprocal norm.  The displayed maximum is over both continuous
+material-side traces on the closed observation ball; at an interface,
+each trace is weighted by the permittivity of that same side.
+The same representatives are defined continuously on the phase closures
+in a strictly larger ball and agree almost everywhere there with the
+actual field. Thus their values on the observation ball are intrinsic,
+including at tangential contact between its sphere and an interface.
+A directional complex mode volume uses
 $\mathcal N/[\varepsilon(u\cdot E)^2]$ instead; selecting a
 Cartesian component of size at least $|E|/\sqrt3$ gives the same
 vanishing magnitude along a subsequence with a fixed component.
@@ -507,10 +531,20 @@ $\mathcal N$.
 \end{corollary}
 
 \begin{proof}
-For every finite amplitude threshold choose ordinary high points
-of the fixed sharp eigenfield at all tips, and then use the uniform
-convergence at those fixed points from Lemma~\ref{ms:rounding}.
-This proves divergence of every maximum as $\rho\downarrow0$.
+For every finite amplitude threshold, essential unboundedness of
+the fixed sharp eigenfield gives a positive-volume superlevel in
+each selected ball.  Local $L^2$ convergence preserves a
+positive-volume superlevel above any smaller threshold for every
+sufficiently late rounded field.  Its attained one-sided maximum
+is at least that threshold.  This proves divergence of every
+maximum along the fixed rounded family.
+For the maximum selection, first construct the two continuous phase
+representatives on a larger closed ball and then restrict these same
+functions to the smaller observation ball. Two such representatives
+agree on the open phase by continuity and almost-everywhere equality;
+taking phase limits proves equality on its closure in the smaller ball.
+This argument also handles tangencies, where continuity and
+almost-everywhere equality on the smaller ball alone would not suffice.
 The normalized numerator is one, and the positive permittivities
 have a common lower bound.  There are only three Cartesian
 components, so the indicated subsequence exists for a directional

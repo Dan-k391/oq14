@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-13",
+  "proof_commit": "766b80e",
+  "stage": 116,
+  "incremental_modules": 1586,
+  "incremental_reports": 6001,
+  "aggregate_modules": 2171,
+  "inline_reports": 10946,
+  "warnings": [
+    {
+      "module": "ModalAlgebra",
+      "warnings": [
+        "D:\\oq14\\lean\\ModalAlgebra.lean:77:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:78:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:85:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:86:51: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:137:51: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:157:2: warning: try 'simp at h' instead of 'simpa using h'",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:228:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:302:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalAlgebra.lean:302:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice"
+      ]
+    },
+    {
+      "module": "ModalWronskian",
+      "warnings": [
+        "D:\\oq14\\lean\\ModalWronskian.lean:187:70: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalWronskian.lean:255:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "D:\\oq14\\lean\\ModalWronskian.lean:255:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice"
+      ]
+    },
+    {
+      "module": "ScalarRadiation",
+      "warnings": [
+        "D:\\oq14\\lean\\ScalarRadiation.lean:233:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice"
+      ]
+    },
+    {
+      "module": "ModalDipole",
+      "warnings": [
+        "D:\\oq14\\lean\\ModalDipole.lean:162:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice"
+      ]
+    }
+  ],
+  "kernel_safe_declarations": 23697,
+  "unsafe_implementations_listed": 1476,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "inventory_sha256": "e0423a4d563882cf252e09a6370171e177eeeee8ae3cdde671afb8fa5548f4fd",
+  "build_sha256": "3bceb6041afbbb699997ee6b260a492c271f726efa3f0cd0deeeaa9ed4cd7f21",
+  "all_safe_result_sha256": "25da9cbfdb1c4300134a470d92df2e18fbb6bec7759056645d4b1494922390a9",
+  "raw_archive_sha256": "669103bef3e7cc857a94b1688eb8c7b09cf50635a88adb9adf25312e641e51bd",
+  "scope": "All accepted primary quantified endpoint chains and all kernel-safe declarations in their accepted project import closure. Fresh project objects; cached Lean/package objects. Stronger restricted channel variants remain separate; no human peer review or numerical continuum simulation claimed."
+}
