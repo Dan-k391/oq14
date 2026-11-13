@@ -1,0 +1,443 @@
+[
+  {
+    "module": "Packet05ComplexCorrectionRegularity",
+    "declarations": [
+      "OQ14.Packet05ComplexCorrectionRegularity.gradient_response_memLp_ball",
+      "OQ14.Packet05ComplexCorrectionRegularity.dynamic_hessian_response_memLp_ball"
+    ]
+  },
+  {
+    "module": "Packet05ComplexCorrectionWeakHessian",
+    "declarations": [
+      "OQ14.Packet05ComplexCorrectionWeakHessian.dynamic_hessian_weak_pairing"
+    ]
+  },
+  {
+    "module": "Packet05ScalarNewtonEmbedding",
+    "declarations": [
+      "OQ14.Packet05ScalarNewtonEmbedding.scalarSource_coordinate"
+    ]
+  },
+  {
+    "module": "Packet05ScalarNewtonPairing",
+    "declarations": [
+      "OQ14.Packet05ScalarNewtonPairing.scalar_newton_hessian_pairing"
+    ]
+  },
+  {
+    "module": "Packet05StaticGradientPairing",
+    "declarations": [
+      "OQ14.Packet05StaticGradientPairing.static_gradient_pairing"
+    ]
+  },
+  {
+    "module": "Packet05ComplexFullHessian",
+    "declarations": [
+      "OQ14.Packet05ComplexFullHessian.complex_hessian_weak_pairing"
+    ]
+  },
+  {
+    "module": "Packet05LocalGreenRepresentatives",
+    "declarations": [
+      "OQ14.Packet05LocalGreenRepresentatives.ballRepresentative_ae"
+    ]
+  },
+  {
+    "module": "Packet05LocalGreenHessian",
+    "declarations": [
+      "OQ14.Packet05LocalGreenHessian.gradient_local_hessian"
+    ]
+  },
+  {
+    "module": "Packet05LocalGreenGradient",
+    "declarations": [
+      "OQ14.Packet05LocalGreenGradient.potential_local_gradient"
+    ]
+  },
+  {
+    "module": "Packet05CompactGreenH2",
+    "declarations": [
+      "OQ14.Packet05CompactGreenH2.compact_green_h2"
+    ]
+  },
+  {
+    "module": "Packet05GreenSourceAE",
+    "declarations": [
+      "OQ14.Packet05GreenSourceAE.response_source_congr"
+    ]
+  },
+  {
+    "module": "Packet05ActualStaticGradient",
+    "declarations": [
+      "OQ14.Packet05ActualStaticGradient.actual_static_gradient_pairing"
+    ]
+  },
+  {
+    "module": "Packet05ActualComplexHessian",
+    "declarations": [
+      "OQ14.Packet05ActualComplexHessian.actual_complex_hessian_pairing"
+    ]
+  },
+  {
+    "module": "Packet05ActualLocalGreenHessian",
+    "declarations": [
+      "OQ14.Packet05ActualLocalGreenHessian.actual_gradient_local_hessian"
+    ]
+  },
+  {
+    "module": "Packet05ActualLocalGreenGradient",
+    "declarations": [
+      "OQ14.Packet05ActualLocalGreenGradient.actual_potential_local_gradient"
+    ]
+  },
+  {
+    "module": "Packet05ActualCompactGreenH2",
+    "declarations": [
+      "OQ14.Packet05ActualCompactGreenH2.actual_compact_green_h2"
+    ]
+  },
+  {
+    "module": "Packet05ActualCorrectionH2",
+    "declarations": [
+      "OQ14.Packet05ActualCorrectionH2.weak_partial_smul",
+      "OQ14.Packet05ActualCorrectionH2.correction_component_compact_h2"
+    ]
+  },
+  {
+    "module": "Packet05ModeCorrectionH2",
+    "declarations": [
+      "OQ14.Packet05ModeCorrectionH2.mode_correction_compact_h2"
+    ]
+  },
+  {
+    "module": "Packet05BoundedWeakMultiplier",
+    "declarations": [
+      "OQ14.Packet05BoundedWeakMultiplier.boundedMultiply_ae",
+      "OQ14.Packet05BoundedWeakMultiplier.bounded_multiplier_weak_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphH2Pullback",
+    "declarations": [
+      "OQ14.Packet05GraphH2Pullback.graph_pullback_h2"
+    ]
+  },
+  {
+    "module": "Packet05BoundedMultiplierH2",
+    "declarations": [
+      "OQ14.Packet05BoundedMultiplierH2.bounded_multiplier_h2"
+    ]
+  },
+  {
+    "module": "Packet05GraphPiolaH2",
+    "declarations": [
+      "OQ14.Packet05GraphPiolaH2.weak_partial_sub",
+      "OQ14.Packet05GraphPiolaH2.h2_sub",
+      "OQ14.Packet05GraphPiolaH2.slopeC_contDiff2",
+      "OQ14.Packet05GraphPiolaH2.graph_piola_h2"
+    ]
+  },
+  {
+    "module": "Packet05BinaryForcingTangential",
+    "declarations": [
+      "OQ14.Packet05BinaryForcingTangential.binary_h2_tangential"
+    ]
+  },
+  {
+    "module": "Packet05GraphPiolaCompact",
+    "declarations": [
+      "OQ14.Packet05GraphPiolaCompact.graph_pullback_compact",
+      "OQ14.Packet05GraphPiolaCompact.slope_mul_compact",
+      "OQ14.Packet05GraphPiolaCompact.compact_sub",
+      "OQ14.Packet05GraphPiolaCompact.graph_piola_compact"
+    ]
+  },
+  {
+    "module": "Packet05ActualGraphForcing",
+    "declarations": [
+      "OQ14.Packet05ActualGraphForcing.actual_graph_forcing"
+    ]
+  },
+  {
+    "module": "Packet05GraphCompactExtensionC4",
+    "declarations": [
+      "OQ14.Packet05GraphCompactExtensionC4.extend_graph_regular_c4",
+      "OQ14.Packet05GraphCompactExtensionC4.extend_graph_compact",
+      "OQ14.Packet05GraphCompactExtensionC4.extend_graph_eq"
+    ]
+  },
+  {
+    "module": "Packet05ActualGraphExtensionC4",
+    "declarations": [
+      "OQ14.Packet05ActualGraphExtensionC4.extend_actual_graph_c4"
+    ]
+  },
+  {
+    "module": "Packet05GraphCompactExtension",
+    "declarations": [
+      "OQ14.Packet05GraphCompactExtension.extend_graph_regular",
+      "OQ14.Packet05GraphCompactExtension.extend_graph_compact",
+      "OQ14.Packet05GraphCompactExtension.extend_graph_eq"
+    ]
+  },
+  {
+    "module": "Packet05CompactGraphBounds",
+    "declarations": [
+      "OQ14.Packet05CompactGraphBounds.compact_continuous_norm_bound",
+      "OQ14.Packet05CompactGraphBounds.compact_graph_derivative_bound",
+      "OQ14.Packet05CompactGraphBounds.compact_graph_second_derivative_bound"
+    ]
+  },
+  {
+    "module": "Packet05ActualGraphExtension",
+    "declarations": [
+      "OQ14.Packet05ActualGraphExtension.extend_actual_graph"
+    ]
+  },
+  {
+    "module": "Packet05GraphSlopeBounds",
+    "declarations": [
+      "OQ14.Packet05GraphSlopeBounds.slope_plane_formula",
+      "OQ14.Packet05GraphSlopeBounds.lifted_partial",
+      "OQ14.Packet05GraphSlopeBounds.planeSlope_regular",
+      "OQ14.Packet05GraphSlopeBounds.planeSlope_compact",
+      "OQ14.Packet05GraphSlopeBounds.slope_bounds"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricRegular",
+    "declarations": [
+      "OQ14.Packet05GraphMetricRegular.slope_c3",
+      "OQ14.Packet05GraphMetricRegular.graph_metric_c3"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricCompact",
+    "declarations": [
+      "OQ14.Packet05GraphMetricCompact.metric_test_c3",
+      "OQ14.Packet05GraphMetricCompact.metric_test_agrees",
+      "OQ14.Packet05GraphMetricCompact.metric_test_bounds"
+    ]
+  },
+  {
+    "module": "Packet05GraphMetricUniformBounds",
+    "declarations": [
+      "OQ14.Packet05GraphMetricUniformBounds.metric_uniform_bounds"
+    ]
+  },
+  {
+    "module": "Packet05BinaryPhaseDerivative",
+    "declarations": [
+      "OQ14.Packet05BinaryPhaseDerivative.binary_phase_partial"
+    ]
+  },
+  {
+    "module": "Packet05GraphNormalFluxH1",
+    "declarations": [
+      "OQ14.Packet05GraphNormalFluxH1.conserved_normal_flux_h1"
+    ]
+  },
+  {
+    "module": "Packet05GraphFluxTangential",
+    "declarations": [
+      "OQ14.Packet05GraphFluxTangential.graph_flux_tangential_partial"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedNormalFluxH1",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedNormalFluxH1.differentiated_normal_flux_h1"
+    ]
+  },
+  {
+    "module": "Packet05CutoffPlateauDerivative",
+    "declarations": [
+      "OQ14.Packet05CutoffPlateauDerivative.cutoff_derivative_plateau"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalUniformQuotients",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalUniformQuotients.local_uniform_gradient_quotient"
+    ]
+  },
+  {
+    "module": "Packet05ScalarLocalTangentialH2",
+    "declarations": [
+      "OQ14.Packet05ScalarLocalTangentialH2.local_tangential_gradient_derivative"
+    ]
+  },
+  {
+    "module": "Packet05TangentialGradientH1",
+    "declarations": [
+      "OQ14.Packet05TangentialGradientH1.localized_tangential_gradient_h1"
+    ]
+  },
+  {
+    "module": "Packet05ActualDirectionalGradientH1",
+    "declarations": [
+      "OQ14.Packet05ActualDirectionalGradientH1.actual_directional_gradient_h1"
+    ]
+  },
+  {
+    "module": "Packet05ScalarTransmissionH1",
+    "declarations": [
+      "OQ14.Packet05ScalarTransmissionH1.scalar_transmission_h1"
+    ]
+  },
+  {
+    "module": "Packet05GraphTransmissionReconstruction",
+    "declarations": [
+      "OQ14.Packet05GraphTransmissionReconstruction.normal_gradient_recovery",
+      "OQ14.Packet05GraphTransmissionReconstruction.reconstructed_field_continuous"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeAnisotropic",
+    "declarations": [
+      "OQ14.Packet05QuantitativeAnisotropic.continuous_weak_tangential_h1_bound"
+    ]
+  },
+  {
+    "module": "Packet05ScalarTangentialContinuity",
+    "declarations": [
+      "OQ14.Packet05ScalarTangentialContinuity.scalar_tangential_continuity"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxContinuity",
+    "declarations": [
+      "OQ14.Packet05NormalFluxContinuity.normal_flux_continuous"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedGradientPlateau",
+    "declarations": [
+      "OQ14.Packet05LocalizedGradientPlateau.localized_gradient_plateau"
+    ]
+  },
+  {
+    "module": "Packet05LocalSecondTangential",
+    "declarations": [
+      "OQ14.Packet05LocalSecondTangential.nested_to_local_second"
+    ]
+  },
+  {
+    "module": "Packet05LocalCutoffMixed",
+    "declarations": [
+      "OQ14.Packet05LocalCutoffMixed.local_cutoff_mixed"
+    ]
+  },
+  {
+    "module": "Packet05ActualLocalSecondDerivatives",
+    "declarations": [
+      "OQ14.Packet05ActualLocalSecondDerivatives.actual_local_second_derivatives"
+    ]
+  },
+  {
+    "module": "Packet05ActualAllTangential",
+    "declarations": [
+      "OQ14.Packet05ActualAllTangential.actual_all_tangential"
+    ]
+  },
+  {
+    "module": "Packet05CutoffLocalSecond",
+    "declarations": [
+      "OQ14.Packet05CutoffLocalSecond.cutoff_local_second"
+    ]
+  },
+  {
+    "module": "Packet05CutoffTangentialArrays",
+    "declarations": [
+      "OQ14.Packet05CutoffTangentialArrays.cutoff_tangential_arrays"
+    ]
+  },
+  {
+    "module": "Packet05LocalNormalFluxContinuity",
+    "declarations": [
+      "OQ14.Packet05LocalNormalFluxContinuity.local_normal_flux_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ActualNormalFluxContinuous",
+    "declarations": [
+      "OQ14.Packet05ActualNormalFluxContinuous.actual_normal_flux_continuous"
+    ]
+  },
+  {
+    "module": "Packet05RegionalGraphPiola",
+    "declarations": [
+      "OQ14.Packet05RegionalGraphPiola.inverse_test_support",
+      "OQ14.Packet05RegionalGraphPiola.regional_graph_piola"
+    ]
+  },
+  {
+    "module": "Packet05RegionalGraphConstitutive",
+    "declarations": [
+      "OQ14.Packet05RegionalGraphConstitutive.regional_graph_constitutive"
+    ]
+  },
+  {
+    "module": "Packet05RegionalBinaryScalar",
+    "declarations": [
+      "OQ14.Packet05RegionalBinaryScalar.regional_binary_scalar"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedForcingBootstrap",
+    "declarations": [
+      "OQ14.Packet05LocalizedForcingBootstrap.forcing_first_tangential",
+      "OQ14.Packet05LocalizedForcingBootstrap.forcing_second_tangential"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDifferenceTest",
+    "declarations": [
+      "OQ14.Packet05RegionalDifferenceTest.regional_difference_divergence_test"
+    ]
+  },
+  {
+    "module": "Packet05RegionalScalarFluxTest",
+    "declarations": [
+      "OQ14.Packet05RegionalScalarFluxTest.regional_differentiated_flux_test"
+    ]
+  },
+  {
+    "module": "Packet05RegionalScalarEnergy",
+    "declarations": [
+      "OQ14.Packet05RegionalScalarEnergy.regional_difference_energy_identity"
+    ]
+  },
+  {
+    "module": "Packet05RegionalScalarPreAbsorption",
+    "declarations": [
+      "OQ14.Packet05RegionalScalarPreAbsorption.regional_difference_preabsorption"
+    ]
+  },
+  {
+    "module": "Packet05RegionalScalarQuotientEstimate",
+    "declarations": [
+      "OQ14.Packet05RegionalScalarQuotientEstimate.regional_difference_quotient_estimate"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDirectionalUniform",
+    "declarations": [
+      "OQ14.Packet05RegionalDirectionalUniform.regional_uniform_gradient_quotient"
+    ]
+  },
+  {
+    "module": "Packet05RegionalDirectionalTangentialH2",
+    "declarations": [
+      "OQ14.Packet05RegionalDirectionalTangentialH2.regional_tangential_gradient_derivative"
+    ]
+  },
+  {
+    "module": "Packet05GreenUniformL2",
+    "declarations": [
+      "OQ14.Packet05GreenUniformL2.local_green_operator_bound",
+      "OQ14.Packet05GreenUniformL2.gradient_uniform_l2",
+      "OQ14.Packet05GreenUniformL2.dynamic_hessian_uniform_l2"
+    ]
+  }
+]

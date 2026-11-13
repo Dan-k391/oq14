@@ -1,0 +1,1006 @@
+{
+  "scope": "Author-only actual complex correction H2, compact graph construction, regional Piola/binary PDE, forcing bootstrap, and regional first tangential estimate. Physical-chart mode assembly, one-sided continuity and uniform collars remain unproved. Depends on prior Packet05 author manifests and external imports listed per module; Packet06 root adapters are independently reviewed separately.",
+  "seeds": [
+    "Packet05ActualGraphForcing",
+    "Packet05ActualGraphExtensionC4",
+    "Packet05GraphSlopeBounds",
+    "Packet05GraphMetricUniformBounds",
+    "Packet05RegionalBinaryScalar",
+    "Packet05LocalizedForcingBootstrap",
+    "Packet05RegionalDirectionalTangentialH2",
+    "Packet05GreenUniformL2"
+  ],
+  "external_dependencies": [
+    "LocalConvolution",
+    "NewtonL1L2",
+    "Packet06ComplexHessian",
+    "Packet06MaxwellScalarEquation",
+    "Packet06ResponseLinear"
+  ],
+  "modules": [
+    {
+      "module": "Packet05ComplexCorrectionRegularity",
+      "source": "lean/Packet05ComplexCorrectionRegularity.lean",
+      "source_sha256": "2024b8122bf481f92f75bfa6b9785d305d74b9037eb3242713f54d76caeafd0a",
+      "imports": [
+        "Packet06ComplexHessian",
+        "LocalConvolution"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ComplexCorrectionRegularity.log",
+      "log_sha256": "8e3897855c8aef5edecef1bf29cf403e25b2cf020a3495e90462840d440f036b",
+      "reports": [
+        "OQ14.Packet05ComplexCorrectionRegularity.gradient_response_memLp_ball",
+        "OQ14.Packet05ComplexCorrectionRegularity.dynamic_hessian_response_memLp_ball"
+      ]
+    },
+    {
+      "module": "Packet05ComplexCorrectionWeakHessian",
+      "source": "lean/Packet05ComplexCorrectionWeakHessian.lean",
+      "source_sha256": "929fcea00e778414ecd0d3794ff24b87349e747179b397a3c15e9e1025c063b3",
+      "imports": [
+        "Packet06ResponseLinear",
+        "Packet05ComplexCorrectionRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ComplexCorrectionWeakHessian.log",
+      "log_sha256": "b3011ddf33ac0ab95ed9fae644fda02a19228de3375a42e922605f3cebc7a5f5",
+      "reports": [
+        "OQ14.Packet05ComplexCorrectionWeakHessian.dynamic_hessian_weak_pairing"
+      ]
+    },
+    {
+      "module": "Packet05ScalarNewtonEmbedding",
+      "source": "lean/Packet05ScalarNewtonEmbedding.lean",
+      "source_sha256": "78cd03f6e949f69dbd8bb8cf6eb816b70340890fb55600548c5be0870e309a6c",
+      "imports": [
+        "Packet05ComplexCorrectionWeakHessian",
+        "NewtonL1L2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarNewtonEmbedding.log",
+      "log_sha256": "7e3b57f49fabcfae6db583d16b9021f059eee37ff8ba940d7a087c14337eba9a",
+      "reports": [
+        "OQ14.Packet05ScalarNewtonEmbedding.scalarSource_coordinate"
+      ]
+    },
+    {
+      "module": "Packet05ScalarNewtonPairing",
+      "source": "lean/Packet05ScalarNewtonPairing.lean",
+      "source_sha256": "ebfa29dbe5eed09aa544fec3374514bb3c8cf8f0222d3bca0e741001da7a4728",
+      "imports": [
+        "Packet05ScalarNewtonEmbedding"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarNewtonPairing.log",
+      "log_sha256": "668f2f081df6436144f9e4625a4a714fa489a6c6626a4d294b913c9ac8919ca2",
+      "reports": [
+        "OQ14.Packet05ScalarNewtonPairing.scalar_newton_hessian_pairing"
+      ]
+    },
+    {
+      "module": "Packet05StaticGradientPairing",
+      "source": "lean/Packet05StaticGradientPairing.lean",
+      "source_sha256": "6f1b77864e5fddb52a54c977a07bb3235db39bd62f4aeae5e55ecb30bdfd775f",
+      "imports": [
+        "Packet05ScalarNewtonPairing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05StaticGradientPairing.log",
+      "log_sha256": "d9932a9090441135f72edabe5f69d206513b81cbba3c3b5621e0e2b3d0ad50c9",
+      "reports": [
+        "OQ14.Packet05StaticGradientPairing.static_gradient_pairing"
+      ]
+    },
+    {
+      "module": "Packet05ComplexFullHessian",
+      "source": "lean/Packet05ComplexFullHessian.lean",
+      "source_sha256": "9318a8250d2895a74c06ac9f75d37985b08791a941d0c81a2483785fd4573d05",
+      "imports": [
+        "Packet05StaticGradientPairing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ComplexFullHessian.log",
+      "log_sha256": "89df951ee27b2975c0bbb8d108847e0db099933062e6de0c576ef048105f1939",
+      "reports": [
+        "OQ14.Packet05ComplexFullHessian.complex_hessian_weak_pairing"
+      ]
+    },
+    {
+      "module": "Packet05LocalGreenRepresentatives",
+      "source": "lean/Packet05LocalGreenRepresentatives.lean",
+      "source_sha256": "62f9da0ff2095e7c1cda48427b18337374675227ca43047e3b75143856c0d869",
+      "imports": [
+        "Packet05ComplexFullHessian",
+        "Packet05RegionalPartial"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalGreenRepresentatives.log",
+      "log_sha256": "bceee1faf7dbd85e01d738825dbf37fb533cc79e7586b058e62f8d9ad95731ea",
+      "reports": [
+        "OQ14.Packet05LocalGreenRepresentatives.ballRepresentative_ae"
+      ]
+    },
+    {
+      "module": "Packet05LocalGreenHessian",
+      "source": "lean/Packet05LocalGreenHessian.lean",
+      "source_sha256": "4d109b6c737c80bb6dfd2b4201107cf349fc4af61a90ede47f6a39034dba2616",
+      "imports": [
+        "Packet05LocalGreenRepresentatives"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalGreenHessian.log",
+      "log_sha256": "6df25644ec1777e35b6f3c2ff9bbf7fa4a420200a1ca89188f05d5cde64f9462",
+      "reports": [
+        "OQ14.Packet05LocalGreenHessian.gradient_local_hessian"
+      ]
+    },
+    {
+      "module": "Packet05LocalGreenGradient",
+      "source": "lean/Packet05LocalGreenGradient.lean",
+      "source_sha256": "24cd99797b3cdd8a722fcd8c13cd8c919d7e4c9856c4177020b71dcbc3f6c2e2",
+      "imports": [
+        "Packet05LocalGreenHessian"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalGreenGradient.log",
+      "log_sha256": "3e5aa5519e958ba95b0ac5331d8da5f753dcbaa3546bea30db174d32f813a8d9",
+      "reports": [
+        "OQ14.Packet05LocalGreenGradient.potential_local_gradient"
+      ]
+    },
+    {
+      "module": "Packet05CompactGreenH2",
+      "source": "lean/Packet05CompactGreenH2.lean",
+      "source_sha256": "9b6a809865d468982828d66bdbfd7a8888235d3605586e68f1a3ba7abdc95c9b",
+      "imports": [
+        "Packet05LocalGreenGradient",
+        "Packet05LocalPartialProduct",
+        "Packet05LocalizedAnisotropic"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CompactGreenH2.log",
+      "log_sha256": "1f520c374b10708cdba370266260ad7e2ca1bfc77dbdca1d386faad843f760aa",
+      "reports": [
+        "OQ14.Packet05CompactGreenH2.compact_green_h2"
+      ]
+    },
+    {
+      "module": "Packet05GreenSourceAE",
+      "source": "lean/Packet05GreenSourceAE.lean",
+      "source_sha256": "824fedf9ad6922e064020ebe6730663fdacb2b4b67408a25b471272c48b440f9",
+      "imports": [
+        "Packet05CompactGreenH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GreenSourceAE.log",
+      "log_sha256": "81626e584c9f1e9425e1b43968bedb03f3405c0b38e7f567d96168b0dc831ab1",
+      "reports": [
+        "OQ14.Packet05GreenSourceAE.response_source_congr"
+      ]
+    },
+    {
+      "module": "Packet05ActualStaticGradient",
+      "source": "lean/Packet05ActualStaticGradient.lean",
+      "source_sha256": "5396060e08776f390866f3605545b723028ff60551d1f1c8d9ce932da0b5eb55",
+      "imports": [
+        "Packet05GreenSourceAE"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualStaticGradient.log",
+      "log_sha256": "bc9597f97ab1bf2ccc50807abf9398617564fdec44cd4e94bb9e15e4e5194c12",
+      "reports": [
+        "OQ14.Packet05ActualStaticGradient.actual_static_gradient_pairing"
+      ]
+    },
+    {
+      "module": "Packet05ActualComplexHessian",
+      "source": "lean/Packet05ActualComplexHessian.lean",
+      "source_sha256": "b074653ddac4c9ff7dbf670bb57f67befe332aa95abb3d2bb088cac7ffd0e7fb",
+      "imports": [
+        "Packet05ActualStaticGradient"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualComplexHessian.log",
+      "log_sha256": "9dbd77da397a0501101e1d472d62da0f05b6a687487bcdc882eaffb70db9ab82",
+      "reports": [
+        "OQ14.Packet05ActualComplexHessian.actual_complex_hessian_pairing"
+      ]
+    },
+    {
+      "module": "Packet05ActualLocalGreenHessian",
+      "source": "lean/Packet05ActualLocalGreenHessian.lean",
+      "source_sha256": "9724d98530715f60c41495022f34b427dae65fed6c4a35f6d65ddf2472f06150",
+      "imports": [
+        "Packet05ActualComplexHessian"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualLocalGreenHessian.log",
+      "log_sha256": "5c7e91de56fa3ea7c49b67e024e7d0ed51ed1a1f3968447b306e1f7f3e12754e",
+      "reports": [
+        "OQ14.Packet05ActualLocalGreenHessian.actual_gradient_local_hessian"
+      ]
+    },
+    {
+      "module": "Packet05ActualLocalGreenGradient",
+      "source": "lean/Packet05ActualLocalGreenGradient.lean",
+      "source_sha256": "51794c7267b1c42442265eb7acef03caf4cc03ea03ecb7aee6d3dcea3eed69d5",
+      "imports": [
+        "Packet05ActualLocalGreenHessian"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualLocalGreenGradient.log",
+      "log_sha256": "9b3d51be85c4ba7ba83b91c70937228a35c55ef58008fa4248f5c649394d3eeb",
+      "reports": [
+        "OQ14.Packet05ActualLocalGreenGradient.actual_potential_local_gradient"
+      ]
+    },
+    {
+      "module": "Packet05ActualCompactGreenH2",
+      "source": "lean/Packet05ActualCompactGreenH2.lean",
+      "source_sha256": "fddc320bc22c03c04d2f7772995c9cf54c47de9df5f25740cfc5f843e8384eb1",
+      "imports": [
+        "Packet05ActualLocalGreenGradient",
+        "Packet05LocalPartialProduct",
+        "Packet05LocalizedAnisotropic"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualCompactGreenH2.log",
+      "log_sha256": "70927e931b417441df9ae122cebcd57431a92a86910b719b64f977f69f88cca7",
+      "reports": [
+        "OQ14.Packet05ActualCompactGreenH2.actual_compact_green_h2"
+      ]
+    },
+    {
+      "module": "Packet05ActualCorrectionH2",
+      "source": "lean/Packet05ActualCorrectionH2.lean",
+      "source_sha256": "13aff1344635a5258be73a8c5ea593e815292a4da739b759fa69a04b5a195883",
+      "imports": [
+        "Packet05ActualCompactGreenH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualCorrectionH2.log",
+      "log_sha256": "41cf8904a196811dae7ce914b3c20359a049e6debbcacaf0ecc6bb51ea905bfd",
+      "reports": [
+        "OQ14.Packet05ActualCorrectionH2.weak_partial_smul",
+        "OQ14.Packet05ActualCorrectionH2.correction_component_compact_h2"
+      ]
+    },
+    {
+      "module": "Packet05ModeCorrectionH2",
+      "source": "lean/Packet05ModeCorrectionH2.lean",
+      "source_sha256": "3c313ff9ac0a6e15ce77950cda08a28b189d2898a1ef509fe2ef339ecdd570e4",
+      "imports": [
+        "Packet05ActualCorrectionH2",
+        "Packet06MaxwellScalarEquation"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ModeCorrectionH2.log",
+      "log_sha256": "6bf2f9cc9426597593f13fb0963374436f3bc6c86c97b5d3be2ef329a89db032",
+      "reports": [
+        "OQ14.Packet05ModeCorrectionH2.mode_correction_compact_h2"
+      ]
+    },
+    {
+      "module": "Packet05BoundedWeakMultiplier",
+      "source": "lean/Packet05BoundedWeakMultiplier.lean",
+      "source_sha256": "8d805c5deb1e6d4e05c3a05c6afa6ccd695bdac3c4d1fb614e78192d07aa2db6",
+      "imports": [
+        "Packet05ModeCorrectionH2",
+        "Packet05GraphH1Pullback"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BoundedWeakMultiplier.log",
+      "log_sha256": "c34d154dc195f634487efe6610d96ed51e7d1715ccee517441dcf413472af5d6",
+      "reports": [
+        "OQ14.Packet05BoundedWeakMultiplier.boundedMultiply_ae",
+        "OQ14.Packet05BoundedWeakMultiplier.bounded_multiplier_weak_partial"
+      ]
+    },
+    {
+      "module": "Packet05GraphH2Pullback",
+      "source": "lean/Packet05GraphH2Pullback.lean",
+      "source_sha256": "c5649416cf690b2d90177158f2bd3b6a7d7eee3507b947b0f2d618cf22b09423",
+      "imports": [
+        "Packet05BoundedWeakMultiplier",
+        "Packet05LocalizedAnisotropic"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphH2Pullback.log",
+      "log_sha256": "94e08f2b56e2dd4a3dfaf69d8427b6b4ac621cbdaee591bfe5258350699dba64",
+      "reports": [
+        "OQ14.Packet05GraphH2Pullback.graph_pullback_h2"
+      ]
+    },
+    {
+      "module": "Packet05BoundedMultiplierH2",
+      "source": "lean/Packet05BoundedMultiplierH2.lean",
+      "source_sha256": "065aa145ae413e0cdf04955ca6b6009c227fbb3f94d5751ed8567fdbf0810dce",
+      "imports": [
+        "Packet05GraphH2Pullback"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BoundedMultiplierH2.log",
+      "log_sha256": "971fb8404d40385b8167bc84633fbc1c504b8e10ceea6db742b7f3c1cf3c8da2",
+      "reports": [
+        "OQ14.Packet05BoundedMultiplierH2.bounded_multiplier_h2"
+      ]
+    },
+    {
+      "module": "Packet05GraphPiolaH2",
+      "source": "lean/Packet05GraphPiolaH2.lean",
+      "source_sha256": "004317ce22964b7a8e069c1df4d0668f65ee822a32e6a8903975e49163fa4e52",
+      "imports": [
+        "Packet05BoundedMultiplierH2",
+        "Packet05GraphWeakDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPiolaH2.log",
+      "log_sha256": "39d31d8d5e7c14eae7a07d6e39357af36a631796ae96cb03db18f33882e84ea2",
+      "reports": [
+        "OQ14.Packet05GraphPiolaH2.weak_partial_sub",
+        "OQ14.Packet05GraphPiolaH2.h2_sub",
+        "OQ14.Packet05GraphPiolaH2.slopeC_contDiff2",
+        "OQ14.Packet05GraphPiolaH2.graph_piola_h2"
+      ]
+    },
+    {
+      "module": "Packet05BinaryForcingTangential",
+      "source": "lean/Packet05BinaryForcingTangential.lean",
+      "source_sha256": "5da8dc67ef6c88582e8beffefff537c223f77ef3a952694e1f0a9ad3fe60e618",
+      "imports": [
+        "Packet05GraphPiolaH2",
+        "Packet05DirectionalWeightDerivative",
+        "Packet05WeakFourier"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BinaryForcingTangential.log",
+      "log_sha256": "32cfce92ed02955116c82d900f760e2d87f62e16c1333ebede5515ca0558e19c",
+      "reports": [
+        "OQ14.Packet05BinaryForcingTangential.binary_h2_tangential"
+      ]
+    },
+    {
+      "module": "Packet05GraphPiolaCompact",
+      "source": "lean/Packet05GraphPiolaCompact.lean",
+      "source_sha256": "f7eb18149515fe34cd52884f3d5181b998cd0d46c692bb9ba10438978fcf5d0f",
+      "imports": [
+        "Packet05BinaryForcingTangential"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphPiolaCompact.log",
+      "log_sha256": "9aaf5d3256ec0f2bb1796982bdad9b66258288e72829398264739d356fb89ea7",
+      "reports": [
+        "OQ14.Packet05GraphPiolaCompact.graph_pullback_compact",
+        "OQ14.Packet05GraphPiolaCompact.slope_mul_compact",
+        "OQ14.Packet05GraphPiolaCompact.compact_sub",
+        "OQ14.Packet05GraphPiolaCompact.graph_piola_compact"
+      ]
+    },
+    {
+      "module": "Packet05ActualGraphForcing",
+      "source": "lean/Packet05ActualGraphForcing.lean",
+      "source_sha256": "b93467e574615a381ac5bef2e2489877ef8bf1d86ecd18fee53339164c13d935",
+      "imports": [
+        "Packet05GraphPiolaCompact",
+        "Packet05ModeCorrectionH2",
+        "Packet05DifferentiatedSourceRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualGraphForcing.log",
+      "log_sha256": "74bac10fa5c3f823d78e1808639f27a666e8696bcf3d72ae8aec0fb9181e8689",
+      "reports": [
+        "OQ14.Packet05ActualGraphForcing.actual_graph_forcing"
+      ]
+    },
+    {
+      "module": "Packet05GraphCompactExtensionC4",
+      "source": "lean/Packet05GraphCompactExtensionC4.lean",
+      "source_sha256": "863c25081dba07db30ca207cd9131cd22e293a7bbed7610df1b4276f4528b93f",
+      "imports": [
+        "Packet05ActualGraphForcing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphCompactExtensionC4.log",
+      "log_sha256": "4a2852bc436920ecc2f6c3088a06b32c482b11a8b4f75a23ad340eeda83a021f",
+      "reports": [
+        "OQ14.Packet05GraphCompactExtensionC4.extend_graph_regular_c4",
+        "OQ14.Packet05GraphCompactExtensionC4.extend_graph_compact",
+        "OQ14.Packet05GraphCompactExtensionC4.extend_graph_eq"
+      ]
+    },
+    {
+      "module": "Packet05ActualGraphExtensionC4",
+      "source": "lean/Packet05ActualGraphExtensionC4.lean",
+      "source_sha256": "085b1f0497c4af9aad87d0197be957f2545acf81a7f99d141c2d3d757121a420",
+      "imports": [
+        "Packet05GraphCompactExtensionC4"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualGraphExtensionC4.log",
+      "log_sha256": "40d6181b20894c0237a6275f48e2c3c3545092a7d218b318a04c94bf9df7c552",
+      "reports": [
+        "OQ14.Packet05ActualGraphExtensionC4.extend_actual_graph_c4"
+      ]
+    },
+    {
+      "module": "Packet05GraphCompactExtension",
+      "source": "lean/Packet05GraphCompactExtension.lean",
+      "source_sha256": "732080182a9faef9fed599cc36726026f368e1fb573634777dd5772ce8e80894",
+      "imports": [
+        "Packet05ActualGraphForcing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphCompactExtension.log",
+      "log_sha256": "fee69d45468deda5f80f825d94c6925d59d6115e18ea23363e6af98bc83c633e",
+      "reports": [
+        "OQ14.Packet05GraphCompactExtension.extend_graph_regular",
+        "OQ14.Packet05GraphCompactExtension.extend_graph_compact",
+        "OQ14.Packet05GraphCompactExtension.extend_graph_eq"
+      ]
+    },
+    {
+      "module": "Packet05CompactGraphBounds",
+      "source": "lean/Packet05CompactGraphBounds.lean",
+      "source_sha256": "c9b13ac7e2ebbbe7d4b9c9af27720012912e01fa90a7e4638959c50331df63a2",
+      "imports": [
+        "Packet05GraphCompactExtension"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CompactGraphBounds.log",
+      "log_sha256": "a4c7bd5c011300be57fc7524ee09e0a33789b59f02764e782c1a973a7569ce02",
+      "reports": [
+        "OQ14.Packet05CompactGraphBounds.compact_continuous_norm_bound",
+        "OQ14.Packet05CompactGraphBounds.compact_graph_derivative_bound",
+        "OQ14.Packet05CompactGraphBounds.compact_graph_second_derivative_bound"
+      ]
+    },
+    {
+      "module": "Packet05ActualGraphExtension",
+      "source": "lean/Packet05ActualGraphExtension.lean",
+      "source_sha256": "e833d0d87c5fe87a6d770d93d827578cf43f9c005b43819442c891f61d7ff4c1",
+      "imports": [
+        "Packet05CompactGraphBounds"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualGraphExtension.log",
+      "log_sha256": "a85eae7639e3cd2c6de6e703ff8dbf691ce02f5b2db385df7b50d8965718b567",
+      "reports": [
+        "OQ14.Packet05ActualGraphExtension.extend_actual_graph"
+      ]
+    },
+    {
+      "module": "Packet05GraphSlopeBounds",
+      "source": "lean/Packet05GraphSlopeBounds.lean",
+      "source_sha256": "e4cf3d00007744a4e638e75fce4c2bfc7462ee3c80b149ded220c4258dab4271",
+      "imports": [
+        "Packet05ActualGraphExtension",
+        "Packet05GraphPiolaH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphSlopeBounds.log",
+      "log_sha256": "91d0d64ba320c8504e164f7f2b4ce91801b4472bc2ca9e5bc3c575c9a982e2ed",
+      "reports": [
+        "OQ14.Packet05GraphSlopeBounds.slope_plane_formula",
+        "OQ14.Packet05GraphSlopeBounds.lifted_partial",
+        "OQ14.Packet05GraphSlopeBounds.planeSlope_regular",
+        "OQ14.Packet05GraphSlopeBounds.planeSlope_compact",
+        "OQ14.Packet05GraphSlopeBounds.slope_bounds"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetricRegular",
+      "source": "lean/Packet05GraphMetricRegular.lean",
+      "source_sha256": "bdb17e133066969a04843d4b9f5a90392ed47f86d072e81b852ef0bacdc49662",
+      "imports": [
+        "Packet05ActualGraphExtensionC4",
+        "Packet05GraphSlopeBounds"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetricRegular.log",
+      "log_sha256": "7e586c31c16f65881d3919bf16f8cfcf2c92c089b84a94d2557b3706c4b52484",
+      "reports": [
+        "OQ14.Packet05GraphMetricRegular.slope_c3",
+        "OQ14.Packet05GraphMetricRegular.graph_metric_c3"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetricCompact",
+      "source": "lean/Packet05GraphMetricCompact.lean",
+      "source_sha256": "2b351419a86b039dbbc111abd5a1896d676ff54fc754fcbfdbd4513c079d0750",
+      "imports": [
+        "Packet05GraphMetricRegular"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetricCompact.log",
+      "log_sha256": "6d74465895ce53dd31c7e812b925e526bb66b7f342688dff03a7f1307ac67282",
+      "reports": [
+        "OQ14.Packet05GraphMetricCompact.metric_test_c3",
+        "OQ14.Packet05GraphMetricCompact.metric_test_agrees",
+        "OQ14.Packet05GraphMetricCompact.metric_test_bounds"
+      ]
+    },
+    {
+      "module": "Packet05GraphMetricUniformBounds",
+      "source": "lean/Packet05GraphMetricUniformBounds.lean",
+      "source_sha256": "fa3914e80ba0dab736098244662f6c9d273b7aaf235a1db9af05e349df2c8bbb",
+      "imports": [
+        "Packet05GraphMetricCompact"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphMetricUniformBounds.log",
+      "log_sha256": "0dfb99ec0b27fdeb6112fab6096ba48f4b1ede0bf8833c267ca014ad72137b3a",
+      "reports": [
+        "OQ14.Packet05GraphMetricUniformBounds.metric_uniform_bounds"
+      ]
+    },
+    {
+      "module": "Packet05BinaryPhaseDerivative",
+      "source": "lean/Packet05BinaryPhaseDerivative.lean",
+      "source_sha256": "efc373206b6adf9970dfef2896077dff6eced11224571461f20cbe7bf84e8fb8",
+      "imports": [
+        "Packet05ActualGraphForcing",
+        "Packet05GraphMetricCompact"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05BinaryPhaseDerivative.log",
+      "log_sha256": "0ac683c314b987fc6b86fc375d0c7f9fb35a93d2461417ffce0ce8742439ea3c",
+      "reports": [
+        "OQ14.Packet05BinaryPhaseDerivative.binary_phase_partial"
+      ]
+    },
+    {
+      "module": "Packet05GraphNormalFluxH1",
+      "source": "lean/Packet05GraphNormalFluxH1.lean",
+      "source_sha256": "0c7385e85888a4114abe88ba1601c9d74469c0168c488d13cf15be2d7c7df158",
+      "imports": [
+        "Packet05BinaryPhaseDerivative",
+        "Packet05RegionalNormalFlux",
+        "Packet05LocalPartialProduct"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphNormalFluxH1.log",
+      "log_sha256": "cc3cf28fe5046ccefaad5bd95da8b98f085fe8b1333034a251dc958afe24c687",
+      "reports": [
+        "OQ14.Packet05GraphNormalFluxH1.conserved_normal_flux_h1"
+      ]
+    },
+    {
+      "module": "Packet05GraphFluxTangential",
+      "source": "lean/Packet05GraphFluxTangential.lean",
+      "source_sha256": "38bc8e58c091b45a8e3fada6c7f18d1e319a59f1aee3c2c74c12f1772bd65dfd",
+      "imports": [
+        "Packet05GraphNormalFluxH1",
+        "Packet05RegionalDifferentiatedScalar"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphFluxTangential.log",
+      "log_sha256": "f6066a5017a748e418c1d08602b839deb628eab6d2a72f925e6260c965e520e6",
+      "reports": [
+        "OQ14.Packet05GraphFluxTangential.graph_flux_tangential_partial"
+      ]
+    },
+    {
+      "module": "Packet05DifferentiatedNormalFluxH1",
+      "source": "lean/Packet05DifferentiatedNormalFluxH1.lean",
+      "source_sha256": "d08f34f290cf56e13e84152eac66eb8a0413c24a83d562be81fc3d0041d19e61",
+      "imports": [
+        "Packet05GraphFluxTangential",
+        "Packet05DifferentiatedSourceRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05DifferentiatedNormalFluxH1.log",
+      "log_sha256": "aa2e5a1ead610597fb24542aae6603910b05dc5e26cb0dc3df839b2aa53860ac",
+      "reports": [
+        "OQ14.Packet05DifferentiatedNormalFluxH1.differentiated_normal_flux_h1"
+      ]
+    },
+    {
+      "module": "Packet05CutoffPlateauDerivative",
+      "source": "lean/Packet05CutoffPlateauDerivative.lean",
+      "source_sha256": "3e569c7f8ce930c287455116d5814d2b2d1e6ebc607c2d9ce23cd5928d4bc377",
+      "imports": [
+        "Packet05DifferentiatedNormalFluxH1",
+        "Packet05CurlSourceH1"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CutoffPlateauDerivative.log",
+      "log_sha256": "e95829829358aaa2ec85c1d810be5b86f58397586c15f7e57d262c902cf3cbb3",
+      "reports": [
+        "OQ14.Packet05CutoffPlateauDerivative.cutoff_derivative_plateau"
+      ]
+    },
+    {
+      "module": "Packet05ScalarLocalUniformQuotients",
+      "source": "lean/Packet05ScalarLocalUniformQuotients.lean",
+      "source_sha256": "0127c0e1147da5a499ebba431e383ba25d95cc0982e26c1662debe2a3d0671fa",
+      "imports": [
+        "Packet05ScalarQuotientEstimate",
+        "Packet05ScalarLocalQuotientEstimate"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarLocalUniformQuotients.log",
+      "log_sha256": "e26e983647eb59582a30dc4b73c446b79353d7868a9d47a5329937ead47c68fd",
+      "reports": [
+        "OQ14.Packet05ScalarLocalUniformQuotients.local_uniform_gradient_quotient"
+      ]
+    },
+    {
+      "module": "Packet05ScalarLocalTangentialH2",
+      "source": "lean/Packet05ScalarLocalTangentialH2.lean",
+      "source_sha256": "cbb1861256b51c7502f938e92ef0cc235e153b7c8ec4115e3f64a0edab6c699f",
+      "imports": [
+        "Packet05ScalarLocalUniformQuotients",
+        "Packet05DifferenceConverse",
+        "MaxwellCutoffCommutator"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarLocalTangentialH2.log",
+      "log_sha256": "d467de585149da9722501f93b14843682cfb5dd4ddef469ca47d7c5e9e096713",
+      "reports": [
+        "OQ14.Packet05ScalarLocalTangentialH2.local_tangential_gradient_derivative"
+      ]
+    },
+    {
+      "module": "Packet05TangentialGradientH1",
+      "source": "lean/Packet05TangentialGradientH1.lean",
+      "source_sha256": "484aa276f513d961943bb3a93eadbc60eff0bbcfcf2d84d2df73f8caa2e3cd54",
+      "imports": [
+        "Packet05LocalPartialProduct",
+        "Packet05ScalarLocalTangentialH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05TangentialGradientH1.log",
+      "log_sha256": "35dda6bd84fd4ec8f4f6b44d76a290d08834025c1a23602baab5e9a802309979",
+      "reports": [
+        "OQ14.Packet05TangentialGradientH1.localized_tangential_gradient_h1"
+      ]
+    },
+    {
+      "module": "Packet05ActualDirectionalGradientH1",
+      "source": "lean/Packet05ActualDirectionalGradientH1.lean",
+      "source_sha256": "04771eb915e436134402a5727573ad9da30a772c9823d05839d970f4660e96f3",
+      "imports": [
+        "Packet05TangentialGradientH1",
+        "Packet05ScalarDirectionalTangentialH2"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualDirectionalGradientH1.log",
+      "log_sha256": "a9cf6f755801e3cf8dfddd59ef6327dcfb4c6d28ea3fac0880ce9c696783cdb2",
+      "reports": [
+        "OQ14.Packet05ActualDirectionalGradientH1.actual_directional_gradient_h1"
+      ]
+    },
+    {
+      "module": "Packet05ScalarTransmissionH1",
+      "source": "lean/Packet05ScalarTransmissionH1.lean",
+      "source_sha256": "60a350173a1bd6a21f64e396e60c754953b3bd15000880391a0a814bb0f3ff83",
+      "imports": [
+        "Packet05GraphNormalFluxH1",
+        "Packet05CurlSourceH1",
+        "Packet05ActualDirectionalGradientH1",
+        "Packet05RegionalDivergenceCongruence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarTransmissionH1.log",
+      "log_sha256": "df0c5ba0dfa6aae7683563a977b663365529f0b50362df04fdd8ce68e10e615e",
+      "reports": [
+        "OQ14.Packet05ScalarTransmissionH1.scalar_transmission_h1"
+      ]
+    },
+    {
+      "module": "Packet05GraphTransmissionReconstruction",
+      "source": "lean/Packet05GraphTransmissionReconstruction.lean",
+      "source_sha256": "a23a93ac36e888faedda688f5e98904dc38e12a5f3854ab33462449ca4827ed1",
+      "imports": [
+        "Packet05ScalarTransmissionH1"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GraphTransmissionReconstruction.log",
+      "log_sha256": "097e2127bca5b3dd82a9f715643c3f68de84db5ae69e65caa12f12b8568706f0",
+      "reports": [
+        "OQ14.Packet05GraphTransmissionReconstruction.normal_gradient_recovery",
+        "OQ14.Packet05GraphTransmissionReconstruction.reconstructed_field_continuous"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeAnisotropic",
+      "source": "lean/Packet05QuantitativeAnisotropic.lean",
+      "source_sha256": "a37d093ee4efc67bbecd362815e66b46869e44e087e7aac7b802b7c8849b9bc2",
+      "imports": [
+        "Packet05GraphNormalFluxH1",
+        "Packet05AnisotropicWeakEmbedding"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05QuantitativeAnisotropic.log",
+      "log_sha256": "f96d55aa17d45f3ba11b7ccf8670a4ae3861b679e599aa19526cb6036130cf2d",
+      "reports": [
+        "OQ14.Packet05QuantitativeAnisotropic.continuous_weak_tangential_h1_bound"
+      ]
+    },
+    {
+      "module": "Packet05ScalarTangentialContinuity",
+      "source": "lean/Packet05ScalarTangentialContinuity.lean",
+      "source_sha256": "e541becf3d8bb63fe7211b41855e1655241519f10b759bcbdadd24c59217cb60",
+      "imports": [
+        "Packet05GraphTransmissionReconstruction",
+        "Packet05QuantitativeAnisotropic"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ScalarTangentialContinuity.log",
+      "log_sha256": "3a7dbe6df3ed1169da78854cb1cd336f6651d3f9e1cab616cf8f411728aee381",
+      "reports": [
+        "OQ14.Packet05ScalarTangentialContinuity.scalar_tangential_continuity"
+      ]
+    },
+    {
+      "module": "Packet05NormalFluxContinuity",
+      "source": "lean/Packet05NormalFluxContinuity.lean",
+      "source_sha256": "fa2f2387ca3b76c2535852d132fa5d368d7d5222abcc233ffef63e3e48120827",
+      "imports": [
+        "Packet05CutoffPlateauDerivative",
+        "Packet05ScalarTangentialContinuity",
+        "Packet05GraphFluxTangential"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05NormalFluxContinuity.log",
+      "log_sha256": "9832544ff5bbeb562589f8f0ada67b6d3d6fc5d2a7d6325a1c1d7ae041e34d27",
+      "reports": [
+        "OQ14.Packet05NormalFluxContinuity.normal_flux_continuous"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedGradientPlateau",
+      "source": "lean/Packet05LocalizedGradientPlateau.lean",
+      "source_sha256": "e951c1fb7cb245dce73cce2fd548362cc64542fdc9ed875cf086adb0020fbe5f",
+      "imports": [
+        "Packet05NormalFluxContinuity",
+        "Packet05RegionalScalarLocalization"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalizedGradientPlateau.log",
+      "log_sha256": "0d984b1f2e2f9af74f302e9b786dfeb415b4f33d7450feae43c7c89a96324423",
+      "reports": [
+        "OQ14.Packet05LocalizedGradientPlateau.localized_gradient_plateau"
+      ]
+    },
+    {
+      "module": "Packet05LocalSecondTangential",
+      "source": "lean/Packet05LocalSecondTangential.lean",
+      "source_sha256": "d8c0d1c7499457eb9b0300be97996cde57e4937d319a1438aebd376680522b4f",
+      "imports": [
+        "Packet05LocalizedGradientPlateau"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalSecondTangential.log",
+      "log_sha256": "1c9a72602eda487298fb8c2264f2e6dcdd9316a24e2d5b92cf7e1933963b092c",
+      "reports": [
+        "OQ14.Packet05LocalSecondTangential.nested_to_local_second"
+      ]
+    },
+    {
+      "module": "Packet05LocalCutoffMixed",
+      "source": "lean/Packet05LocalCutoffMixed.lean",
+      "source_sha256": "f34a55d544b2c6a9c2e36652876fb7cb114d43cbcf1400b6fd3b18436620487e",
+      "imports": [
+        "Packet05LocalSecondTangential",
+        "Packet05CutoffDerivativeH1"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalCutoffMixed.log",
+      "log_sha256": "1f4d2d3c194a2c3fe98eef52555773703e7d3374134c274987552df4b1854c65",
+      "reports": [
+        "OQ14.Packet05LocalCutoffMixed.local_cutoff_mixed"
+      ]
+    },
+    {
+      "module": "Packet05ActualLocalSecondDerivatives",
+      "source": "lean/Packet05ActualLocalSecondDerivatives.lean",
+      "source_sha256": "3ad67fcbdc464ab77eeaf41910de6038313c9b6a044bf73e3a1b1a28ff943033",
+      "imports": [
+        "Packet05LocalCutoffMixed",
+        "Packet05ScalarActualSecondTangential"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualLocalSecondDerivatives.log",
+      "log_sha256": "8685119a03830ea4cf0a41cb42634134508a42d10587016170210f0aac039955",
+      "reports": [
+        "OQ14.Packet05ActualLocalSecondDerivatives.actual_local_second_derivatives"
+      ]
+    },
+    {
+      "module": "Packet05ActualAllTangential",
+      "source": "lean/Packet05ActualAllTangential.lean",
+      "source_sha256": "c7bc34ac6c4323eb21c08ba8fa61323b93231d439ad142c975e4299ea02dfcbe",
+      "imports": [
+        "Packet05ActualLocalSecondDerivatives"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualAllTangential.log",
+      "log_sha256": "e42b3dd880b6b7f0362023d15fc390b00b66126b926f472cd366f63902fac175",
+      "reports": [
+        "OQ14.Packet05ActualAllTangential.actual_all_tangential"
+      ]
+    },
+    {
+      "module": "Packet05CutoffLocalSecond",
+      "source": "lean/Packet05CutoffLocalSecond.lean",
+      "source_sha256": "09983f256373193a967f447fd470808be0d81f50d731844a54acf4f7665a1806",
+      "imports": [
+        "Packet05ActualLocalSecondDerivatives",
+        "Packet05LocalCutoffMixed"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CutoffLocalSecond.log",
+      "log_sha256": "4f49ff9cc56ff332649837d056d0891d1de6bb48c6a3040cfadb376550c08c48",
+      "reports": [
+        "OQ14.Packet05CutoffLocalSecond.cutoff_local_second"
+      ]
+    },
+    {
+      "module": "Packet05CutoffTangentialArrays",
+      "source": "lean/Packet05CutoffTangentialArrays.lean",
+      "source_sha256": "ad38f867220fa772a879d070a716ae90bb5eada1dad4f037f7e7d3421981c251",
+      "imports": [
+        "Packet05CutoffLocalSecond"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05CutoffTangentialArrays.log",
+      "log_sha256": "e510b17b89a86dda5d496d00b8d23cf946ea546bd5217d1ec492d7dd55def012",
+      "reports": [
+        "OQ14.Packet05CutoffTangentialArrays.cutoff_tangential_arrays"
+      ]
+    },
+    {
+      "module": "Packet05LocalNormalFluxContinuity",
+      "source": "lean/Packet05LocalNormalFluxContinuity.lean",
+      "source_sha256": "8ba298a24b8e9d37934f98b02473b670bde37fa6b3fe286ac1d465182fc28fa5",
+      "imports": [
+        "Packet05CutoffTangentialArrays",
+        "Packet05NormalFluxContinuity",
+        "Packet05RegionalDivergenceCongruence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalNormalFluxContinuity.log",
+      "log_sha256": "b661e75030e735ae4e98069ac07aeecbce7396bc97f5f69af72fbfa1aa143bae",
+      "reports": [
+        "OQ14.Packet05LocalNormalFluxContinuity.local_normal_flux_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualNormalFluxContinuous",
+      "source": "lean/Packet05ActualNormalFluxContinuous.lean",
+      "source_sha256": "09eb13e4b1f37b0c043a2bab5f49a065cc2c7df5ccbe6c49cb5c255df873e093",
+      "imports": [
+        "Packet05ActualAllTangential",
+        "Packet05LocalNormalFluxContinuity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05ActualNormalFluxContinuous.log",
+      "log_sha256": "2141d4b3c00bcdc6dfbbc653b8508ce85eda723cfa0069c14eba47db56d7ed30",
+      "reports": [
+        "OQ14.Packet05ActualNormalFluxContinuous.actual_normal_flux_continuous"
+      ]
+    },
+    {
+      "module": "Packet05RegionalGraphPiola",
+      "source": "lean/Packet05RegionalGraphPiola.lean",
+      "source_sha256": "c06979c5425762fbcbabb0553dd19c9b215b5a850b9d3dc174bfc7afec882fa2",
+      "imports": [
+        "Packet05ActualNormalFluxContinuous",
+        "Packet05GraphWeakDivergence"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalGraphPiola.log",
+      "log_sha256": "79a2d1611fbc0901bd3e7ca80ce879d4ba5de219ab12fdcc993aa10d753afa62",
+      "reports": [
+        "OQ14.Packet05RegionalGraphPiola.inverse_test_support",
+        "OQ14.Packet05RegionalGraphPiola.regional_graph_piola"
+      ]
+    },
+    {
+      "module": "Packet05RegionalGraphConstitutive",
+      "source": "lean/Packet05RegionalGraphConstitutive.lean",
+      "source_sha256": "06260e1fb18208b0fa55f283b3aed881dca6b830340bbecb0b904eda64cc13fe",
+      "imports": [
+        "Packet05RegionalGraphPiola",
+        "Packet05GraphL2Constitutive"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalGraphConstitutive.log",
+      "log_sha256": "fac37fd21a5541167fcbe060b6b66a6cfdc60a4c50acc78639bac0c233f3eeba",
+      "reports": [
+        "OQ14.Packet05RegionalGraphConstitutive.regional_graph_constitutive"
+      ]
+    },
+    {
+      "module": "Packet05RegionalBinaryScalar",
+      "source": "lean/Packet05RegionalBinaryScalar.lean",
+      "source_sha256": "2464b041fedc356ff5da1a1966795e15c8459116b5acc151580550b26f5b00ab",
+      "imports": [
+        "Packet05RegionalGraphConstitutive",
+        "Packet05RegionalDivergenceCongruence",
+        "Packet05ScalarDielectricFlux"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalBinaryScalar.log",
+      "log_sha256": "cb85dbe13ec1b5e9b25d6bcd83fbfba2e771e2aac45d9df2e32dfa5f673dc964",
+      "reports": [
+        "OQ14.Packet05RegionalBinaryScalar.regional_binary_scalar"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedForcingBootstrap",
+      "source": "lean/Packet05LocalizedForcingBootstrap.lean",
+      "source_sha256": "d733a47b204a1c0adc4da0ce41e04cbab878ff66090aebf531ddcf39142f8262",
+      "imports": [
+        "Packet05RegionalBinaryScalar",
+        "Packet05LocalizedScalarForcingDerivative",
+        "Packet05LocalCutoffMixed",
+        "Packet05DifferentiatedSourceRegularity"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05LocalizedForcingBootstrap.log",
+      "log_sha256": "889c393cfbd8cd463c9716bd3fb9aeed58b9b5f65103693385ff3a0e939c32c7",
+      "reports": [
+        "OQ14.Packet05LocalizedForcingBootstrap.forcing_first_tangential",
+        "OQ14.Packet05LocalizedForcingBootstrap.forcing_second_tangential"
+      ]
+    },
+    {
+      "module": "Packet05RegionalDifferenceTest",
+      "source": "lean/Packet05RegionalDifferenceTest.lean",
+      "source_sha256": "d258620752a0a384a17c116edf73d08219bf4b59f681390ff7307fc0c600e220",
+      "imports": [
+        "Packet05LocalizedForcingBootstrap",
+        "Packet05ScalarLocalDivergence",
+        "Packet05RegionalFluxCutoff"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalDifferenceTest.log",
+      "log_sha256": "7c88b00640eac56668535ef61a9d60937fe6fcd26a76a5936f04bf7cc072b58f",
+      "reports": [
+        "OQ14.Packet05RegionalDifferenceTest.regional_difference_divergence_test"
+      ]
+    },
+    {
+      "module": "Packet05RegionalScalarFluxTest",
+      "source": "lean/Packet05RegionalScalarFluxTest.lean",
+      "source_sha256": "69d54b9e4fe13fc9351fc906276b600808ebf9fb166521e83ea35628b49e40c1",
+      "imports": [
+        "Packet05RegionalDifferenceTest",
+        "Packet05ScalarTransmissionTest"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalScalarFluxTest.log",
+      "log_sha256": "ecbf3a3f10120836737424e956de82485ec450efe4efa075a26845de874f9a60",
+      "reports": [
+        "OQ14.Packet05RegionalScalarFluxTest.regional_differentiated_flux_test"
+      ]
+    },
+    {
+      "module": "Packet05RegionalScalarEnergy",
+      "source": "lean/Packet05RegionalScalarEnergy.lean",
+      "source_sha256": "c5396a753d217ed34d83e06e27ba2ec9b9ff71f4eff8b53934cfd75603208e38",
+      "imports": [
+        "Packet05RegionalScalarFluxTest",
+        "Packet05ScalarLocalizedEnergy"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalScalarEnergy.log",
+      "log_sha256": "0f7402aad2777597b370f074431d06ff93220a476db9108ac83d46bca515662c",
+      "reports": [
+        "OQ14.Packet05RegionalScalarEnergy.regional_difference_energy_identity"
+      ]
+    },
+    {
+      "module": "Packet05RegionalScalarPreAbsorption",
+      "source": "lean/Packet05RegionalScalarPreAbsorption.lean",
+      "source_sha256": "f37288f37981985a6d061fabdefc0ed5ea7cbdc914142bb1b0409dc3597fd136",
+      "imports": [
+        "Packet05ScalarLocalizedEnergy",
+        "Packet05RegionalScalarEnergy"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalScalarPreAbsorption.log",
+      "log_sha256": "71cabe9ae8d8dadb1e869058dbd4be4eaa737cab8e11377d4209b7c327e64d20",
+      "reports": [
+        "OQ14.Packet05RegionalScalarPreAbsorption.regional_difference_preabsorption"
+      ]
+    },
+    {
+      "module": "Packet05RegionalScalarQuotientEstimate",
+      "source": "lean/Packet05RegionalScalarQuotientEstimate.lean",
+      "source_sha256": "cce1c0925850edbdd7fc8fe45832fb426e7da47433d02e12a1431298beb4864f",
+      "imports": [
+        "Packet05ScalarAbsorption",
+        "Packet05RegionalScalarPreAbsorption"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalScalarQuotientEstimate.log",
+      "log_sha256": "51e910255c7cd9e9d371c7d35eca3bb228ecf1685398c7f6ba1ef8b515304453",
+      "reports": [
+        "OQ14.Packet05RegionalScalarQuotientEstimate.regional_difference_quotient_estimate"
+      ]
+    },
+    {
+      "module": "Packet05RegionalDirectionalUniform",
+      "source": "lean/Packet05RegionalDirectionalUniform.lean",
+      "source_sha256": "2f070735230e06ad8252f49d43aa8916a66c23fe6baa31df703c7f0a03c2f436",
+      "imports": [
+        "Packet05DirectionalQuotient",
+        "Packet05ScalarQuotientEstimate",
+        "Packet05RegionalScalarQuotientEstimate"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalDirectionalUniform.log",
+      "log_sha256": "f5faa3534f448f48a337622e96187ff61a50183844c010558ea1bf5bafa4da53",
+      "reports": [
+        "OQ14.Packet05RegionalDirectionalUniform.regional_uniform_gradient_quotient"
+      ]
+    },
+    {
+      "module": "Packet05RegionalDirectionalTangentialH2",
+      "source": "lean/Packet05RegionalDirectionalTangentialH2.lean",
+      "source_sha256": "8e34c6491b67c647da494c7df61b3191b3eeca27af23a0a2570737c86b6a76fe",
+      "imports": [
+        "Packet05RegionalDirectionalUniform",
+        "Packet05DifferenceConverse",
+        "MaxwellCutoffCommutator"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05RegionalDirectionalTangentialH2.log",
+      "log_sha256": "fd0a4ccecce5564dbca8cb1683e4a914608ce9670db89fc69b8a341340b680e9",
+      "reports": [
+        "OQ14.Packet05RegionalDirectionalTangentialH2.regional_tangential_gradient_derivative"
+      ]
+    },
+    {
+      "module": "Packet05GreenUniformL2",
+      "source": "lean/Packet05GreenUniformL2.lean",
+      "source_sha256": "695fce9cc9f0aa595a301a86a87ff61b457bc4008f9383801dd54c56271f4aad",
+      "imports": [
+        "Packet05ActualGraphForcing"
+      ],
+      "log": "checkpoints/2026-11-12-full-closure/Packet05GreenUniformL2.log",
+      "log_sha256": "98f4667635181bd6cace2d2b522d515fca1f2d1ecaba064f4a1c191f57e8a868",
+      "reports": [
+        "OQ14.Packet05GreenUniformL2.local_green_operator_bound",
+        "OQ14.Packet05GreenUniformL2.gradient_uniform_l2",
+        "OQ14.Packet05GreenUniformL2.dynamic_hessian_uniform_l2"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,39 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 99 is the latest verified incremental checkpoint:
+[STAGE99.txt](checkpoints/2026-11-13-flat-regional/STAGE99.txt).
+
+The actual compact-source complex Green correction has local H2
+representatives, including the actual material mode source. Compact C4 graph
+extensions, graph metric bounds, H2 pullback and Piola forcing are derived.
+The regional binary scalar equation follows from the physical regional
+divergence equation with its exact constitutive relation and forcing sign.
+
+Direct regional energy testing, absorption and the bounded difference-quotient
+converse derive first tangential derivatives without assuming scalar H2 on
+an outer cutoff annulus. The localized forcing includes its genuine cutoff
+and matrix commutators. The scalar transmission-variable continuity chain
+retains explicit chart, forcing and equation inputs. Fixed-frequency Green
+L2 estimates and fixed-chart metric bounds are proved.
+
+The 69 modules were independently source-reviewed and rebuilt in order in
+an isolated directory. Their fresh objects were retained byte-for-byte and
+verified before adoption; the standard checker revalidated the evidence
+without recompilation. Actual physical chart assembly, quantitative uniform
+collars and attained hotspot endpoints remain active, as do the final paper
+and aggregate validation. No full OQ14 closure is asserted.
+
+69 modules / 96 reports passed independent root review and a fresh
+ordered build. 1128 upstream sources were authenticated, with cached objects.
+The ledger is 1098 modules / 5168 reports, all prior records unchanged:
+`checkpoints/2026-11-13-flat-regional/evidence/audited_after_5238-stage99.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage99.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 98 is the latest verified incremental checkpoint:
 [STAGE98.txt](checkpoints/2026-11-13-selected-green/STAGE98.txt).
 
