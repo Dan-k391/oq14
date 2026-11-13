@@ -1,0 +1,39 @@
+Independent root semantic review of actual compact-source Green Holder control
+
+All thirteen source proofs reviewed. No defect found. The inverse fourth
+tail and inverse square near-ball masses are exact three-dimensional radial
+integrals, including genuine integrability proofs. Translation preserves the
+measure. The far Coulomb difference decays as h/r^2; the near region is
+contained in the radius 3h ball about the second source. Their squared
+integrals are bounded by 4hV and 10hV respectively, where V=3 volume(B1).
+
+The complex exponential has an explicit bound and Lipschitz factor for
+bounded frequency and spatial radii. The full scalar Green difference retains
+the physical 1/(4 pi) constant, separates Coulomb and exponential terms, and
+is squared and integrated with verified majorants. For h<=1 this yields an
+explicit C(Z,R,S)h bound for the squared kernel difference on the fixed
+source ball. Source-row definitions use a truncated L2 kernel, with an exact
+a.e. identification on the fixed source ball; no moving cutoff boundary
+term is omitted. Taking the square root and applying the actual unconjugated
+L2 scalar pairing yields the literal convolution Holder bound, including z^2.
+
+The final material specialization derives the source support and its correct
+L2 representative from the coefficient multiplier. The constant is uniform
+for bounded z, fixed nonnegative source/observation radii and bounded source
+L2 norm. It is local for point distance<=1. No claim of differentiability,
+nonzero singular excitation or attained hotspots follows from these bounds.
+
+Reviewed frozen source hashes:
+Packet06GreenHolderTail 29de25e532e70bed7c25250af8f64380736ddcf863b4ba1e5b784d2cc7bce733
+Packet06GreenHolderPointwise 0a5888f6a542d478270188978310bb6d4288f4c471e44c28f95036f53139ede1
+Packet06GreenHolderExponential 122b04f78c2dbd745b2e1f2481ee1e8d621dc5c9ec12300e27d290f049bc2a59
+Packet06GreenHolderTranslatedMass 37a3fccc5c87650d4692fadb47ebc7568c4746a6091a7756d99d8acf3067f1a2
+Packet06GreenHolderFar 49d44e42e80f6f969c84a7e379948f6a01ab2bbe86b4297a25ec1de1e411ec58
+Packet06GreenHolderNear 7ee5db43b427e33bbb9ba8e5cf047a95cd48b37627b71b90e435b4207b8f005b
+Packet06GreenHolderKernel 938fcdab212d1e04207d980790071264b3d8cbcde67f12b5b48a906db25cbd00
+Packet06GreenHolderSourceMass b4476b0c7e16a62b647b2edad48fb52c57999f7a8b811096c5fa5dd1765ed892
+Packet06GreenHolderTransfer 95fd123099467c727aad58d7ee2aa6382bd34902e7268dd42e80abf1240c9651
+Packet06GreenHolderSourceRows e333fcd073c143c5437db9e0c76145d12bd8a64e06d579e38b6642a1ea882411
+Packet06GreenHolderIntegral ee54c7a62ffab686685fed5b35a83d32053f4333dcff5b301aed70cbccfd5ee0
+Packet06GreenHolderEndpoint e3349c85c5ec9895997aa18ef6ea8eaadf7216f0d026fc05a27985c8a4317a50
+Packet06GreenHolderMaterial afc4d47d3e3c75fab2d98553e845aee5727ec8758aba1d3eaf519d602816f265

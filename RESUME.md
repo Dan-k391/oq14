@@ -1,5 +1,32 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 91 is the latest verified incremental checkpoint:
+[STAGE91.txt](checkpoints/2026-11-13-green-holder/STAGE91.txt).
+
+The literal complex scalar Green response of an actual compact L2 source
+has a derived uniform one-half Holder modulus on fixed observation balls.
+Its explicit constant depends only on the frequency bound, source/observation
+radii, and source L2 norm, including the actual z squared prefactor. The proof
+integrates the near and far Coulomb difference, controls the complex
+exponential, identifies fixed-source L2 kernel rows, and applies the physical
+scalar pairing. The material specialization derives its source support and
+representative from the actual coefficient multiplier.
+
+This discharges the correction regularity input for the conical excitation
+argument. Nonzero modal excitation, curved-interface continuity, attained
+hotspots, final packing, paper and aggregate validation are still active.
+
+13 modules / 29 reports passed independent root review and a fresh
+ordered build. 999 upstream sources were authenticated, with cached objects.
+The ledger is 858 modules / 4725 reports, all prior records unchanged:
+`checkpoints/2026-11-13-green-holder/evidence/audited_after_5238-stage91.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage91.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 90 is the latest verified incremental checkpoint:
 [STAGE90.txt](checkpoints/2026-11-13-sphere-excitation/STAGE90.txt).
 
