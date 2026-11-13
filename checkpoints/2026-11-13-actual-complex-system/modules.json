@@ -1,0 +1,90 @@
+[
+  {
+    "module": "Packet06ComplexScalarKernel",
+    "declarations": [
+      "OQ14.Packet06ComplexScalarKernel.phi_measurable",
+      "OQ14.Packet06ComplexScalarKernel.phi_bound_ball",
+      "OQ14.Packet06ComplexScalarKernel.phi_memLp_two_ball",
+      "OQ14.Packet06ComplexScalarKernel.phi_locallyIntegrable"
+    ]
+  },
+  {
+    "module": "Packet06ComplexScalarPotential",
+    "declarations": [
+      "OQ14.Packet06ComplexScalarPotential.cutoff_ae",
+      "OQ14.Packet06ComplexScalarPotential.value_eq_response",
+      "OQ14.Packet06ComplexScalarPotential.response_continuous"
+    ]
+  },
+  {
+    "module": "Packet06ComplexPotential",
+    "declarations": [
+      "OQ14.Packet06ComplexPotential.phi_weak_partial",
+      "OQ14.Packet06ComplexPotential.potential_memLp_ball",
+      "OQ14.Packet06ComplexPotential.correction_continuous",
+      "OQ14.Packet06ComplexPotential.correction_memLp_ball"
+    ]
+  },
+  {
+    "module": "Packet06ComplexPotentialPair",
+    "declarations": [
+      "OQ14.Packet06ComplexPotentialPair.potential_pairing",
+      "OQ14.Packet06ComplexPotentialPair.gradient_pairing",
+      "OQ14.Packet06ComplexPotentialPair.potential_gradient_test"
+    ]
+  },
+  {
+    "module": "Packet06ComplexHessian",
+    "declarations": [
+      "OQ14.Packet06ComplexHessian.gradient_differentiable",
+      "OQ14.Packet06ComplexHessian.hessian_weak_partial",
+      "OQ14.Packet06ComplexHessian.hessian_locallyIntegrable",
+      "OQ14.Packet06ComplexHessian.hessian_pairing"
+    ]
+  },
+  {
+    "module": "Packet06ResponseLinear",
+    "declarations": [
+      "OQ14.Packet06ResponseLinear.pairing_sub",
+      "OQ14.Packet06ResponseLinear.pairing_const_mul",
+      "OQ14.Packet06ResponseLinear.dynamic_pairing"
+    ]
+  },
+  {
+    "module": "Packet06ComplexElectric",
+    "declarations": [
+      "OQ14.Packet06ComplexElectric.static_pairing",
+      "OQ14.Packet06ComplexElectric.electric_pairing",
+      "OQ14.Packet06ComplexElectric.potential_weak_partial",
+      "OQ14.Packet06ComplexElectric.electric_ae_on_ball",
+      "OQ14.Packet06ComplexElectric.electric_memLp_ball"
+    ]
+  },
+  {
+    "module": "Packet06ComplexConePotential",
+    "declarations": [
+      "OQ14.Packet06ComplexConePotential.potentialData"
+    ]
+  },
+  {
+    "module": "Packet06ComplexGauss",
+    "declarations": [
+      "OQ14.Packet06ComplexGauss.dielectric_gauss",
+      "OQ14.Packet06ComplexGauss.electric_gauss",
+      "OQ14.Packet06ComplexGauss.centered_gauss"
+    ]
+  },
+  {
+    "module": "Packet06ComplexConeSystem",
+    "declarations": [
+      "OQ14.Packet06ComplexConeSystem.system",
+      "OQ14.Packet06ComplexConeSystem.system_actual"
+    ]
+  },
+  {
+    "module": "Packet06InsertedConeSystem",
+    "declarations": [
+      "OQ14.Packet06InsertedConeSystem.actual_local_match"
+    ]
+  }
+]

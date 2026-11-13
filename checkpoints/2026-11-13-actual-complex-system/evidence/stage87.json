@@ -1,0 +1,366 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "844ae44",
+  "modules": 826,
+  "reports": 4666,
+  "new_modules": 11,
+  "new_reports": 33,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "9773fada0ac063a61e1268ff3ff4f362d6fd8a5a194d56f96770cc062dd7a81a",
+  "ledger_sha256": "232d9235436420a3b9482e56c53700d037407dae44929ffaa6c1d04636e2607a",
+  "raw_archive_sha256": "232afacb181f4d31bb738d73e1b1545dfece6acb2aa0d9852ccb10a13f60fa2b",
+  "records": [
+    {
+      "module": "Packet06ComplexScalarKernel",
+      "reports": 4,
+      "source_sha256": "fc73f3ba268f43d7056c7d54daa64cf16a66e8d3545b28f2e42def8fe6d39120",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarKernel-chain.log",
+      "audit_log_sha256": "60d3f70f2ac0fc10c10a52b34ceefc9dd8fa06d985ae8324d439010ff3719cc9",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarKernel-chain.log",
+      "independent_log_sha256": "60d3f70f2ac0fc10c10a52b34ceefc9dd8fa06d985ae8324d439010ff3719cc9",
+      "declarations": [
+        "OQ14.Packet06ComplexScalarKernel.phi_measurable",
+        "OQ14.Packet06ComplexScalarKernel.phi_bound_ball",
+        "OQ14.Packet06ComplexScalarKernel.phi_memLp_two_ball",
+        "OQ14.Packet06ComplexScalarKernel.phi_locallyIntegrable"
+      ]
+    },
+    {
+      "module": "Packet06ComplexScalarPotential",
+      "reports": 3,
+      "source_sha256": "34f0815f4b9cede6043672a5e0306808585c289db88b52b9eee4789e190a2656",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarPotential-chain.log",
+      "audit_log_sha256": "2b04d0374ed6c8d9e9a3a832586f8e0f00b58ef795c60caa2839d36515f25265",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarPotential-chain.log",
+      "independent_log_sha256": "2b04d0374ed6c8d9e9a3a832586f8e0f00b58ef795c60caa2839d36515f25265",
+      "declarations": [
+        "OQ14.Packet06ComplexScalarPotential.cutoff_ae",
+        "OQ14.Packet06ComplexScalarPotential.value_eq_response",
+        "OQ14.Packet06ComplexScalarPotential.response_continuous"
+      ]
+    },
+    {
+      "module": "Packet06ComplexPotential",
+      "reports": 4,
+      "source_sha256": "cbbd204463dcd1b687b83ae03ac6db351b7dc252b76e91b89c128548bd3095c6",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotential-chain.log",
+      "audit_log_sha256": "3c693a7fe9704f4c7aa7dc93e3104b85694bcb46ccd5394857a39b3798860af2",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotential-chain.log",
+      "independent_log_sha256": "3c693a7fe9704f4c7aa7dc93e3104b85694bcb46ccd5394857a39b3798860af2",
+      "declarations": [
+        "OQ14.Packet06ComplexPotential.phi_weak_partial",
+        "OQ14.Packet06ComplexPotential.potential_memLp_ball",
+        "OQ14.Packet06ComplexPotential.correction_continuous",
+        "OQ14.Packet06ComplexPotential.correction_memLp_ball"
+      ]
+    },
+    {
+      "module": "Packet06ComplexPotentialPair",
+      "reports": 3,
+      "source_sha256": "6ea4ed2e1d7ba6b1dc7ff303ae78e9d5709efff481ba1b32b04bed74fa92a6e5",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotentialPair-chain.log",
+      "audit_log_sha256": "5976f4522f617af4e715f9ae289c059b9c8aee36a4205105d46a689ed5aa24d4",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotentialPair-chain.log",
+      "independent_log_sha256": "5976f4522f617af4e715f9ae289c059b9c8aee36a4205105d46a689ed5aa24d4",
+      "declarations": [
+        "OQ14.Packet06ComplexPotentialPair.potential_pairing",
+        "OQ14.Packet06ComplexPotentialPair.gradient_pairing",
+        "OQ14.Packet06ComplexPotentialPair.potential_gradient_test"
+      ]
+    },
+    {
+      "module": "Packet06ComplexHessian",
+      "reports": 4,
+      "source_sha256": "34302a69734dd645778a753bf07f3a464c138ff60c8d073bfb4eee742d902dfb",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexHessian-chain.log",
+      "audit_log_sha256": "0043178068bf99782ff385531afd587e366c792b5c8c412f342469228442ecff",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexHessian-chain.log",
+      "independent_log_sha256": "0043178068bf99782ff385531afd587e366c792b5c8c412f342469228442ecff",
+      "declarations": [
+        "OQ14.Packet06ComplexHessian.gradient_differentiable",
+        "OQ14.Packet06ComplexHessian.hessian_weak_partial",
+        "OQ14.Packet06ComplexHessian.hessian_locallyIntegrable",
+        "OQ14.Packet06ComplexHessian.hessian_pairing"
+      ]
+    },
+    {
+      "module": "Packet06ResponseLinear",
+      "reports": 3,
+      "source_sha256": "97fc28bfcd6db02cd620d26008f7b3e4317347faa36811907d1c552b46d5c6b8",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ResponseLinear-chain.log",
+      "audit_log_sha256": "fa9c63c3308a34835231fd5ccc3e0a4ad1e02fd169bddf094480315a1415bbc1",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ResponseLinear-chain.log",
+      "independent_log_sha256": "fa9c63c3308a34835231fd5ccc3e0a4ad1e02fd169bddf094480315a1415bbc1",
+      "declarations": [
+        "OQ14.Packet06ResponseLinear.pairing_sub",
+        "OQ14.Packet06ResponseLinear.pairing_const_mul",
+        "OQ14.Packet06ResponseLinear.dynamic_pairing"
+      ]
+    },
+    {
+      "module": "Packet06ComplexElectric",
+      "reports": 5,
+      "source_sha256": "ee65273d032c86ba7f7c76c338657ea84e13059e9d73d371d60df08b1e3b5be1",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexElectric-chain.log",
+      "audit_log_sha256": "e4afdbbdb67cbd09980a8521805103b3d5b6c110b0ed6fd522e6fa2ac4e058ba",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexElectric-chain.log",
+      "independent_log_sha256": "e4afdbbdb67cbd09980a8521805103b3d5b6c110b0ed6fd522e6fa2ac4e058ba",
+      "declarations": [
+        "OQ14.Packet06ComplexElectric.static_pairing",
+        "OQ14.Packet06ComplexElectric.electric_pairing",
+        "OQ14.Packet06ComplexElectric.potential_weak_partial",
+        "OQ14.Packet06ComplexElectric.electric_ae_on_ball",
+        "OQ14.Packet06ComplexElectric.electric_memLp_ball"
+      ]
+    },
+    {
+      "module": "Packet06ComplexConePotential",
+      "reports": 1,
+      "source_sha256": "8c4cb8f0eb6b9649f175162f199fb0b5faf0600e4e27b12805a9c5f45294e0b6",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConePotential-chain.log",
+      "audit_log_sha256": "18aba12c481f1b6679576523171d3f04273d822613c24ac1c4e18d27364ed561",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConePotential-chain.log",
+      "independent_log_sha256": "18aba12c481f1b6679576523171d3f04273d822613c24ac1c4e18d27364ed561",
+      "declarations": [
+        "OQ14.Packet06ComplexConePotential.potentialData"
+      ]
+    },
+    {
+      "module": "Packet06ComplexGauss",
+      "reports": 3,
+      "source_sha256": "b2b3fbc75eb5b9120e47f2163430bf2cae07daf8a9b5b40c716288a2d6acb331",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexGauss-chain.log",
+      "audit_log_sha256": "7918f734cbf9362653ab62b026dcd520661510ddf393e3ee1439d9ca2499345b",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexGauss-chain.log",
+      "independent_log_sha256": "7918f734cbf9362653ab62b026dcd520661510ddf393e3ee1439d9ca2499345b",
+      "declarations": [
+        "OQ14.Packet06ComplexGauss.dielectric_gauss",
+        "OQ14.Packet06ComplexGauss.electric_gauss",
+        "OQ14.Packet06ComplexGauss.centered_gauss"
+      ]
+    },
+    {
+      "module": "Packet06ComplexConeSystem",
+      "reports": 2,
+      "source_sha256": "4c59a062161e67d17af74e8be0d5fb7da96f85c010e3f27a58e3f4639a20f12f",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConeSystem-chain.log",
+      "audit_log_sha256": "ba9c08bdcb21df342b59c20c628d03b4ce07c7ebce5bf2367cc0100252486840",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConeSystem-chain.log",
+      "independent_log_sha256": "ba9c08bdcb21df342b59c20c628d03b4ce07c7ebce5bf2367cc0100252486840",
+      "declarations": [
+        "OQ14.Packet06ComplexConeSystem.system",
+        "OQ14.Packet06ComplexConeSystem.system_actual"
+      ]
+    },
+    {
+      "module": "Packet06InsertedConeSystem",
+      "reports": 1,
+      "source_sha256": "afcd9c1f1c94a8188f2acde86f371740af460f6a7181b25f57f2ea36cea1eb87",
+      "audit_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06InsertedConeSystem-chain.log",
+      "audit_log_sha256": "4e0ce65ce64432da79236b5b0ca1faf31910477932ad8a2fd2139d68c3b591b3",
+      "independent_review": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "independent_review_sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "independent_build_sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301",
+      "independent_log": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06InsertedConeSystem-chain.log",
+      "independent_log_sha256": "4e0ce65ce64432da79236b5b0ca1faf31910477932ad8a2fd2139d68c3b591b3",
+      "declarations": [
+        "OQ14.Packet06InsertedConeSystem.actual_local_match"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/audited_after_5238-stage87.json",
+      "sha256": "232d9235436420a3b9482e56c53700d037407dae44929ffaa6c1d04636e2607a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/chain-build.json",
+      "sha256": "a224174e7600b09f1a77a7ca755283c64e07020081750d1ddb5f60cc189d7301"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConePotential-chain.log",
+      "sha256": "18aba12c481f1b6679576523171d3f04273d822613c24ac1c4e18d27364ed561"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexConeSystem-chain.log",
+      "sha256": "ba9c08bdcb21df342b59c20c628d03b4ce07c7ebce5bf2367cc0100252486840"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexElectric-chain.log",
+      "sha256": "e4afdbbdb67cbd09980a8521805103b3d5b6c110b0ed6fd522e6fa2ac4e058ba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexGauss-chain.log",
+      "sha256": "7918f734cbf9362653ab62b026dcd520661510ddf393e3ee1439d9ca2499345b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexHessian-chain.log",
+      "sha256": "0043178068bf99782ff385531afd587e366c792b5c8c412f342469228442ecff"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotential-chain.log",
+      "sha256": "3c693a7fe9704f4c7aa7dc93e3104b85694bcb46ccd5394857a39b3798860af2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexPotentialPair-chain.log",
+      "sha256": "5976f4522f617af4e715f9ae289c059b9c8aee36a4205105d46a689ed5aa24d4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarKernel-chain.log",
+      "sha256": "60d3f70f2ac0fc10c10a52b34ceefc9dd8fa06d985ae8324d439010ff3719cc9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ComplexScalarPotential-chain.log",
+      "sha256": "2b04d0374ed6c8d9e9a3a832586f8e0f00b58ef795c60caa2839d36515f25265"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06InsertedConeSystem-chain.log",
+      "sha256": "4e0ce65ce64432da79236b5b0ca1faf31910477932ad8a2fd2139d68c3b591b3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/evidence/Packet06ResponseLinear-chain.log",
+      "sha256": "fa9c63c3308a34835231fd5ccc3e0a4ad1e02fd169bddf094480315a1415bbc1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/modules.json",
+      "sha256": "7e1856e42186fa8d365e613c1a71854dd34e12cbd318e1ef79a1c2f7cf7fa82f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/provenance-audit.json",
+      "sha256": "79ce780a87cd9ac06b299849d76ad02d09076000c6fff169cf944d33c987f39c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/reviews/author-inventory.json",
+      "sha256": "161eaf5dd42092820e97ead221072041e0fd23a193d9346b577a39f41746fb69"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/reviews/root-actual-review.txt",
+      "sha256": "a8ec345aeded9a1af271b4df2de3060a4eee262e0528983ca452f0e9335bc865"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/scripts/audit_provenance.ps1",
+      "sha256": "bd65e9e85995a42b76bac89adbe47c662d3e139a3feb3a39c9ee9f7946e7c8ae"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/scripts/check_chain.py",
+      "sha256": "c13ef91c5404949b8d990682ea76148f00ed27cc1dc135a26fba4dd57ea48506"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/scripts/freeze_checkpoint.py",
+      "sha256": "8a33b85adb1dcb3b77e52479d9c3506b1c0678ba700a5d643e996aa3cb003352"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-complex-system/STAGE87.txt",
+      "sha256": "627cd5ce60d329f654665b21f2c827f1659c5e3fca0399df6baf07b2f9595eb3"
+    },
+    {
+      "path": "lean/Packet06ComplexConePotential.lean",
+      "sha256": "8c4cb8f0eb6b9649f175162f199fb0b5faf0600e4e27b12805a9c5f45294e0b6"
+    },
+    {
+      "path": "lean/Packet06ComplexConeSystem.lean",
+      "sha256": "4c59a062161e67d17af74e8be0d5fb7da96f85c010e3f27a58e3f4639a20f12f"
+    },
+    {
+      "path": "lean/Packet06ComplexElectric.lean",
+      "sha256": "ee65273d032c86ba7f7c76c338657ea84e13059e9d73d371d60df08b1e3b5be1"
+    },
+    {
+      "path": "lean/Packet06ComplexGauss.lean",
+      "sha256": "b2b3fbc75eb5b9120e47f2163430bf2cae07daf8a9b5b40c716288a2d6acb331"
+    },
+    {
+      "path": "lean/Packet06ComplexHessian.lean",
+      "sha256": "34302a69734dd645778a753bf07f3a464c138ff60c8d073bfb4eee742d902dfb"
+    },
+    {
+      "path": "lean/Packet06ComplexPotential.lean",
+      "sha256": "cbbd204463dcd1b687b83ae03ac6db351b7dc252b76e91b89c128548bd3095c6"
+    },
+    {
+      "path": "lean/Packet06ComplexPotentialPair.lean",
+      "sha256": "6ea4ed2e1d7ba6b1dc7ff303ae78e9d5709efff481ba1b32b04bed74fa92a6e5"
+    },
+    {
+      "path": "lean/Packet06ComplexScalarKernel.lean",
+      "sha256": "fc73f3ba268f43d7056c7d54daa64cf16a66e8d3545b28f2e42def8fe6d39120"
+    },
+    {
+      "path": "lean/Packet06ComplexScalarPotential.lean",
+      "sha256": "34f0815f4b9cede6043672a5e0306808585c289db88b52b9eee4789e190a2656"
+    },
+    {
+      "path": "lean/Packet06InsertedConeSystem.lean",
+      "sha256": "afcd9c1f1c94a8188f2acde86f371740af460f6a7181b25f57f2ea36cea1eb87"
+    },
+    {
+      "path": "lean/Packet06ResponseLinear.lean",
+      "sha256": "97fc28bfcd6db02cd620d26008f7b3e4317347faa36811907d1c552b46d5c6b8"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "afff01ca8bbc68bd827f34f4f0db7ffb5fc9c5bbc51eb74b07b17353eafe1b7f"
+    }
+  ],
+  "scope": "actual complex potential and conical projection. Full OQ14 remains active; actual excitation and attained hotspots are not closed."
+}

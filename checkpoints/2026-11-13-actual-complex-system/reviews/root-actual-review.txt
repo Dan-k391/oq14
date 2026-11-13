@@ -1,0 +1,41 @@
+Independent root semantic review of actual complex cone projection
+
+All eleven frozen source proofs reviewed. No defect found. The complex scalar
+Green kernel is locally L2 and bounded by the static kernel times the explicit
+exponential factor on each ball. Compact L2 convolution supplies continuity
+of the actual scalar correction W=z^2*g_z*rho. The gradient potential is
+locally L2. Weak differentiation of the scalar kernel and of the complex-
+minus-static gradient is justified by local integrability and the removable
+point-singularity theorem. Only the Hessian difference is treated as an L1
+kernel; the static Newton Hessian remains distributional.
+
+Fubini/test pairing identities identify the actual static plus complex dynamic
+response with W plus the weak gradient of the constructed potential. The
+actual truncated L2 response agrees a.e. on each observation ball, giving
+locally L2 derivatives and a concrete PotentialData record for compact L2
+sources. The Gauss law follows from actual nonzero-frequency Maxwell and
+the true volume-kernel displacement identity, not from an assumed Gauss law.
+Translation of tests, exact compact support containment, and the pointwise
+local dielectric equality produce the centered conical Gauss identity.
+
+The constructed projection System uses that actual potential and continuous
+correction, and its total field equals the centered actual electric field a.e.
+inside the stated cone ball. The final material lemma discharges the dielectric
+equality for the literal sphere plus finite disjoint cone insertion, with
+relative contrast eta and background n^2. Its geometric and aperture matching
+hypotheses remain explicit. This proves the actual local projection bridge,
+not nonzero singular excitation. The varying-exponent coefficient convergence,
+uniform correction control and nonzero limit remain separate obligations.
+
+Reviewed frozen source hashes:
+Packet06ComplexScalarKernel fc73f3ba268f43d7056c7d54daa64cf16a66e8d3545b28f2e42def8fe6d39120
+Packet06ComplexScalarPotential 34f0815f4b9cede6043672a5e0306808585c289db88b52b9eee4789e190a2656
+Packet06ComplexPotential cbbd204463dcd1b687b83ae03ac6db351b7dc252b76e91b89c128548bd3095c6
+Packet06ComplexPotentialPair 6ea4ed2e1d7ba6b1dc7ff303ae78e9d5709efff481ba1b32b04bed74fa92a6e5
+Packet06ComplexHessian 34302a69734dd645778a753bf07f3a464c138ff60c8d073bfb4eee742d902dfb
+Packet06ResponseLinear 97fc28bfcd6db02cd620d26008f7b3e4317347faa36811907d1c552b46d5c6b8
+Packet06ComplexElectric ee65273d032c86ba7f7c76c338657ea84e13059e9d73d371d60df08b1e3b5be1
+Packet06ComplexConePotential 8c4cb8f0eb6b9649f175162f199fb0b5faf0600e4e27b12805a9c5f45294e0b6
+Packet06ComplexGauss b2b3fbc75eb5b9120e47f2163430bf2cae07daf8a9b5b40c716288a2d6acb331
+Packet06ComplexConeSystem 4c59a062161e67d17af74e8be0d5fb7da96f85c010e3f27a58e3f4639a20f12f
+Packet06InsertedConeSystem afcd9c1f1c94a8188f2acde86f371740af460f6a7181b25f57f2ea36cea1eb87

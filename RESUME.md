@@ -1,5 +1,37 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 87 is the latest verified incremental checkpoint:
+[STAGE87.txt](checkpoints/2026-11-13-actual-complex-system/STAGE87.txt).
+
+For actual compact L2 sources at arbitrary complex frequency, the electric
+field is the weak gradient of a constructed locally L2 scalar potential plus
+the continuous scalar Green correction W=z^2*g_z*rho. The proof handles the
+static Hessian distributionally and the complex-minus-static Hessian as a
+locally integrable kernel; their test pairings cancel exactly. The constructed
+field agrees a.e. with the actual local volume response on each ball.
+
+For a nonzero-frequency actual material kernel, Maxwell gives the true local
+dielectric Gauss law. Translation and an exact local dielectric match then
+construct a conical projection System whose total field equals the centered
+actual electric field a.e. The local dielectric match is proved for the literal
+finite disjoint positive-contrast cone insertion inside the sphere.
+
+This closes the actual potential/Gauss/projection bridge. It does not prove
+the physical mode has a nonzero singular coefficient. Uniform correction
+control and coefficient convergence as the exponent tends to one remain,
+along with curved regularity, attained hotspots, packing and final validation.
+
+11 modules / 33 reports passed independent root review and a fresh
+ordered build. 1007 upstream sources were authenticated, with cached objects.
+The ledger is 826 modules / 4666 reports, all prior records unchanged:
+`checkpoints/2026-11-13-actual-complex-system/evidence/audited_after_5238-stage87.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage87.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 86 is the latest verified incremental checkpoint:
 [STAGE86.txt](checkpoints/2026-11-13-rigid-reciprocal/STAGE86.txt).
 
