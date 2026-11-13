@@ -1,0 +1,234 @@
+[
+  {
+    "module": "Packet05QuantitativeCutoffRepresentative",
+    "declarations": [
+      "OQ14.Packet05QuantitativeCutoffRepresentative.cutoff_tangential_sup_bound",
+      "OQ14.Packet05QuantitativeCutoffRepresentative.tangential_plateau_sup_bound"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeCutoffNorms",
+    "declarations": [
+      "OQ14.Packet05QuantitativeCutoffNorms.first_array_norm",
+      "OQ14.Packet05QuantitativeCutoffNorms.second_array_norm",
+      "OQ14.Packet05QuantitativeCutoffNorms.cutoff_original_derivatives"
+    ]
+  },
+  {
+    "module": "Packet05EnergyEnvelope",
+    "declarations": [
+      "OQ14.Packet05EnergyEnvelope.directional_energy_le_envelope",
+      "OQ14.Packet05EnergyEnvelope.regional_energy_le_envelope",
+      "OQ14.Packet05EnergyEnvelope.derivative_bound_le_envelope"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedSourceBounds",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedSourceBounds.differentiated_source_norm",
+      "OQ14.Packet05DifferentiatedSourceBounds.cutoff_product_norm"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitLocalizedForcing",
+    "declarations": [
+      "OQ14.Packet05ExplicitLocalizedForcing.localized_forcing_tangential_derivative_explicit"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedForcingNorm",
+    "declarations": [
+      "OQ14.Packet05LocalizedForcingNorm.force_derivative_norm",
+      "OQ14.Packet05LocalizedForcingNorm.localized_gradient_norm"
+    ]
+  },
+  {
+    "module": "Packet05DifferentiatedSourceDerivativeBounds",
+    "declarations": [
+      "OQ14.Packet05DifferentiatedSourceDerivativeBounds.differentiated_source_derivative_norm"
+    ]
+  },
+  {
+    "module": "Packet05ActualBoundaryMode",
+    "declarations": [
+      "OQ14.Packet05ActualBoundaryMode.actual_boundary_mode"
+    ]
+  },
+  {
+    "module": "Packet05BoundaryPhaseChart",
+    "declarations": [
+      "OQ14.Packet05BoundaryPhaseChart.actual_boundary_chart"
+    ]
+  },
+  {
+    "module": "Packet05ChartMaterialPhases",
+    "declarations": [
+      "OQ14.Packet05ChartMaterialPhases.actual_material_phases"
+    ]
+  },
+  {
+    "module": "Packet05BoundaryMaterialMode",
+    "declarations": [
+      "OQ14.Packet05BoundaryMaterialMode.boundary_material_mode"
+    ]
+  },
+  {
+    "module": "Packet05RoundedModeMaterial",
+    "declarations": [
+      "OQ14.Packet05RoundedModeMaterial.local_cone_material",
+      "OQ14.Packet05RoundedModeMaterial.boundary_inside_sphere",
+      "OQ14.Packet05RoundedModeMaterial.eventually_boundary_certificate"
+    ]
+  },
+  {
+    "module": "Packet05RoundedModeBoundary",
+    "declarations": [
+      "OQ14.Packet05RoundedModeBoundary.eventually_rounded_cone_phase_representatives"
+    ]
+  },
+  {
+    "module": "Packet05QuantitativeNormalFlux",
+    "declarations": [
+      "OQ14.Packet05QuantitativeNormalFlux.normal_flux_sup_bound"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitNormalFluxDerivative",
+    "declarations": [
+      "OQ14.Packet05ExplicitNormalFluxDerivative.explicit_normal_flux_h1"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitDifferentiatedNormalFlux",
+    "declarations": [
+      "OQ14.Packet05ExplicitDifferentiatedNormalFlux.explicit_differentiated_normal_flux_h1"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxArrays",
+    "declarations": [
+      "OQ14.Packet05NormalFluxArrays.normal_flux_arrays"
+    ]
+  },
+  {
+    "module": "Packet05ExplicitNormalFluxBound",
+    "declarations": [
+      "OQ14.Packet05ExplicitNormalFluxBound.normal_flux_explicit_bound"
+    ]
+  },
+  {
+    "module": "Packet05NormalFluxNorms",
+    "declarations": [
+      "OQ14.Packet05NormalFluxNorms.tangent_flux_norm",
+      "OQ14.Packet05NormalFluxNorms.flux_norm",
+      "OQ14.Packet05NormalFluxNorms.source_derivative_norm",
+      "OQ14.Packet05NormalFluxNorms.normal_derivative_array_norm",
+      "OQ14.Packet05NormalFluxNorms.first_flux_array_norm",
+      "OQ14.Packet05NormalFluxNorms.second_flux_array_norm"
+    ]
+  },
+  {
+    "module": "Packet05MixedCutoffSourceBounds",
+    "declarations": [
+      "OQ14.Packet05MixedCutoffSourceBounds.mixed_cutoff_product_norm"
+    ]
+  },
+  {
+    "module": "Packet06RoundedPeakFamily",
+    "declarations": [
+      "OQ14.Packet06RoundedPeakFamily.rounded_peak_family"
+    ]
+  },
+  {
+    "module": "Packet05CompactPhaseRepresentative",
+    "declarations": [
+      "OQ14.Packet05CompactPhaseRepresentative.compact_phase_representative"
+    ]
+  },
+  {
+    "module": "Packet05HomogeneousChartGeometry",
+    "declarations": [
+      "OQ14.Packet05HomogeneousChartGeometry.graph_below",
+      "OQ14.Packet05HomogeneousChartGeometry.flat_inverse",
+      "OQ14.Packet05HomogeneousChartGeometry.flat_forward"
+    ]
+  },
+  {
+    "module": "Packet05HomogeneousActualMode",
+    "declarations": [
+      "OQ14.Packet05HomogeneousActualMode.actual_homogeneous_neighborhood"
+    ]
+  },
+  {
+    "module": "Packet05HomogeneousPhaseMode",
+    "declarations": [
+      "OQ14.Packet05HomogeneousPhaseMode.homogeneous_phase_mode"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenFarShift",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenFarShift.projected_shifted_limit",
+      "OQ14.Packet06PlacedGreenFarShift.electric_shifted_limit",
+      "OQ14.Packet06PlacedGreenFarShift.exterior_shifted_limit"
+    ]
+  },
+  {
+    "module": "Packet06PlacedGreenOriginOutgoing",
+    "declarations": [
+      "OQ14.Packet06PlacedGreenOriginOutgoing.origin_outgoing"
+    ]
+  },
+  {
+    "module": "Packet05RoundedModeSupport",
+    "declarations": [
+      "OQ14.Packet05RoundedModeSupport.rounded_support"
+    ]
+  },
+  {
+    "module": "Packet05RoundedModeActualPhases",
+    "declarations": [
+      "OQ14.Packet05RoundedModeActualPhases.eventually_actual_cone_phase_representatives"
+    ]
+  },
+  {
+    "module": "Packet05CompactModePhase",
+    "declarations": [
+      "OQ14.Packet05CompactModePhase.compact_mode_phase"
+    ]
+  },
+  {
+    "module": "Packet05CompactBinaryMode",
+    "declarations": [
+      "OQ14.Packet05CompactBinaryMode.compact_binary_mode"
+    ]
+  },
+  {
+    "module": "Packet05RoundedCompactBranches",
+    "declarations": [
+      "OQ14.Packet05RoundedCompactBranches.eventually_compact_branches"
+    ]
+  },
+  {
+    "module": "Packet05BinaryPhaseMaximum",
+    "declarations": [
+      "OQ14.Packet05BinaryPhaseMaximum.amplitude_continuousOn",
+      "OQ14.Packet05BinaryPhaseMaximum.phase_domains_cover",
+      "OQ14.Packet05BinaryPhaseMaximum.actual_amplitude_ae",
+      "OQ14.Packet05BinaryPhaseMaximum.attained_above_peak"
+    ]
+  },
+  {
+    "module": "Packet05RoundedModeMaximum",
+    "declarations": [
+      "OQ14.Packet05RoundedModeMaximum.eventually_attained_maxima"
+    ]
+  },
+  {
+    "module": "Packet06PhysicalAmplitudePeak",
+    "declarations": [
+      "OQ14.Packet06PhysicalAmplitudePeak.coordinate_peak",
+      "OQ14.Packet06PhysicalAmplitudePeak.actual_response_peak"
+    ]
+  }
+]

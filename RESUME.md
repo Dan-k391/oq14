@@ -1,5 +1,48 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 104 is the latest verified incremental checkpoint:
+[STAGE104.txt](checkpoints/2026-11-13-actual-phase-maxima/STAGE104.txt).
+
+The literal rounded modes now have continuous physical material-side
+branches on compact observation sets inside the sphere. Interior homogeneous
+regularity and actual regular-interface branches are derived from the mode
+equation. Their local representatives glue on the two phase closures; actual
+rounded boundary nullity gives a.e. agreement with the physical field. The
+Euclidean amplitude attains its one-sided maximum, and any actual positive-
+volume peak forces that maximum above the chosen threshold. Coordinate
+response peaks are transferred to the actual Euclidean field amplitude.
+
+One fixed normalized rounded mode family now retains actual response
+convergence and has eventual positive-volume peaks for every threshold.
+Thus the family is selected before any eventual collar bound is used.
+The quantitative cutoff and normal-flux derivative arrays are explicit and
+bounded by their stated input norms; the full uniform collar estimate for
+this actual family is still being assembled.
+
+The placed selected-source Green field has the ordinary origin-centered
+outgoing asymptotic, proved from translated compact-source integrals rather
+than inferred from centered-ray limits. Independent source reviews and fresh
+builds passed all 35 modules. Supplementary evidence corrects the earlier
+two-module phase-gluing search-path claim: those old builds were fresh per
+module but could import same-source cached dependencies. A direct-compiler
+repeat now places isolated objects first. Historical evidence and ledger
+records remain unchanged; the correction is explicitly archived here.
+
+Uniform collars, final single-mode hotspot and planar-maximum assembly,
+driven counterparts, paper alignment and aggregate verification remain
+active. Full OQ14 is not yet closed.
+
+35 modules / 57 reports passed independent root review and a fresh
+ordered build. 1494 upstream sources were authenticated, with cached objects.
+The ledger is 1202 modules / 5371 reports, all prior records unchanged:
+`checkpoints/2026-11-13-actual-phase-maxima/evidence/audited_after_5238-stage104.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage104.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 103 is the latest verified incremental checkpoint:
 [STAGE103.txt](checkpoints/2026-11-13-mode-chart-green/STAGE103.txt).
 

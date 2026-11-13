@@ -1,0 +1,5 @@
+# Independent build path correction
+
+The earlier review builds compiled each named source to a fresh retained object, but `lake env` prepended the standard build directory ahead of the requested isolated directory. Consequently a dependent module could have imported a same-source cached upstream object. Those original manifests, objects and logs remain unchanged.
+
+The new ordered repeat in independent-build.json derives the package search path from the pinned Lake environment, prepends this correction's objects directory, and invokes pinned lean.exe directly. Packet05PhaseGluing was compiled before Packet05PhaseCoverBound and Packet05CompactPhaseRepresentative, so those dependent imports use the retained isolated PhaseGluing object. Packet06RoundedPeakFamily was also independently repeated. Each source hash matches the original review, every report is standard-only, and object hashes and exact command/path evidence are retained. The three boundary material-phase modules are separately repeated in the quantitative-independent review, with Packet05ActualBoundaryMode and each previous boundary module built first.

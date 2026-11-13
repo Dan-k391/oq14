@@ -1,0 +1,1178 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "4aea523",
+  "modules": 1202,
+  "reports": 5371,
+  "new_modules": 35,
+  "new_reports": 57,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "33e376122c464fa19ceeaced581cae65d483b0ffe7ff67c463d5173edb067645",
+  "ledger_sha256": "da02d28bbfea36555ec8b42b7fc8e145da6f9dcb0da50870b61012c1ad007dea",
+  "raw_archive_sha256": "c1c2a698f3699060992200691ec74cd5246019c73588f8db49c7fc1fccd5d0a8",
+  "records": [
+    {
+      "module": "Packet05QuantitativeCutoffRepresentative",
+      "reports": 2,
+      "source_sha256": "ccc98932ea7280507e1c45a7ae043e138fdef8be0f2e2fc4e4af345ea6c7bf8d",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeCutoffRepresentative-chain.log",
+      "audit_log_sha256": "43b4220107c09e563b19d4bd9c50f53ff342a64b603d63d0899068fed4d298fc",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeCutoffRepresentative.log",
+      "independent_log_sha256": "43b4220107c09e563b19d4bd9c50f53ff342a64b603d63d0899068fed4d298fc",
+      "declarations": [
+        "OQ14.Packet05QuantitativeCutoffRepresentative.cutoff_tangential_sup_bound",
+        "OQ14.Packet05QuantitativeCutoffRepresentative.tangential_plateau_sup_bound"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeCutoffNorms",
+      "reports": 3,
+      "source_sha256": "07f89b091811de43543c48d2f615bd55c33c1cbe7ce07e175d83bdf979ead48e",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeCutoffNorms-chain.log",
+      "audit_log_sha256": "a1fa765c3d5d82765b6aa50f7f335bfcf9b2b46c1de9547c5b7c47f8b7693ff7",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeCutoffNorms.log",
+      "independent_log_sha256": "a1fa765c3d5d82765b6aa50f7f335bfcf9b2b46c1de9547c5b7c47f8b7693ff7",
+      "declarations": [
+        "OQ14.Packet05QuantitativeCutoffNorms.first_array_norm",
+        "OQ14.Packet05QuantitativeCutoffNorms.second_array_norm",
+        "OQ14.Packet05QuantitativeCutoffNorms.cutoff_original_derivatives"
+      ]
+    },
+    {
+      "module": "Packet05EnergyEnvelope",
+      "reports": 3,
+      "source_sha256": "4bc3d55fc2296d245d3c4f017f34c9341f0a69db96ce06ae7464633e52d324d7",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05EnergyEnvelope-chain.log",
+      "audit_log_sha256": "c81494e52bdd5ec87cb774a8b0e175e6b3cc65019ee1625c1b5faeb17d7d1f1d",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05EnergyEnvelope.log",
+      "independent_log_sha256": "c81494e52bdd5ec87cb774a8b0e175e6b3cc65019ee1625c1b5faeb17d7d1f1d",
+      "declarations": [
+        "OQ14.Packet05EnergyEnvelope.directional_energy_le_envelope",
+        "OQ14.Packet05EnergyEnvelope.regional_energy_le_envelope",
+        "OQ14.Packet05EnergyEnvelope.derivative_bound_le_envelope"
+      ]
+    },
+    {
+      "module": "Packet05DifferentiatedSourceBounds",
+      "reports": 2,
+      "source_sha256": "7f9643673006ba6bda4ffcfe1053066c648dece51f5987fc3f76303e8189e937",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05DifferentiatedSourceBounds-chain.log",
+      "audit_log_sha256": "8046a9661134045421fd353f2601d761d570cc3f14cfd9c68a20c76e49516533",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05DifferentiatedSourceBounds.log",
+      "independent_log_sha256": "8046a9661134045421fd353f2601d761d570cc3f14cfd9c68a20c76e49516533",
+      "declarations": [
+        "OQ14.Packet05DifferentiatedSourceBounds.differentiated_source_norm",
+        "OQ14.Packet05DifferentiatedSourceBounds.cutoff_product_norm"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitLocalizedForcing",
+      "reports": 1,
+      "source_sha256": "f3d5a511dbc587791c0c1ad86ccb782f17d101908f17af841184944903f522f0",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitLocalizedForcing-chain.log",
+      "audit_log_sha256": "4c4766b1de236a5d5cd961cf550158d51c7bd23036b07bc34270017ade82f849",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitLocalizedForcing.log",
+      "independent_log_sha256": "4c4766b1de236a5d5cd961cf550158d51c7bd23036b07bc34270017ade82f849",
+      "declarations": [
+        "OQ14.Packet05ExplicitLocalizedForcing.localized_forcing_tangential_derivative_explicit"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedForcingNorm",
+      "reports": 2,
+      "source_sha256": "b2ed2d843f015454a5125a2ce0e742c34dc6b6c0d61bbfc76fd53f55a8b4917f",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05LocalizedForcingNorm-chain.log",
+      "audit_log_sha256": "15349b59c26b02c6a9ef3bfde4626f3d3526b0ea88faf9df5c92f0943d5e8be8",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05LocalizedForcingNorm.log",
+      "independent_log_sha256": "15349b59c26b02c6a9ef3bfde4626f3d3526b0ea88faf9df5c92f0943d5e8be8",
+      "declarations": [
+        "OQ14.Packet05LocalizedForcingNorm.force_derivative_norm",
+        "OQ14.Packet05LocalizedForcingNorm.localized_gradient_norm"
+      ]
+    },
+    {
+      "module": "Packet05DifferentiatedSourceDerivativeBounds",
+      "reports": 1,
+      "source_sha256": "7c3b731871b45e5e61c349ffeb7c03c2c6e6f42d146c8be3adc5fafd1f30ace2",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05DifferentiatedSourceDerivativeBounds-chain.log",
+      "audit_log_sha256": "d47ad985e8f4bb01c6f2ef579fc36084fd21b54ade04c1ad343e02b6c543a784",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05DifferentiatedSourceDerivativeBounds.log",
+      "independent_log_sha256": "d47ad985e8f4bb01c6f2ef579fc36084fd21b54ade04c1ad343e02b6c543a784",
+      "declarations": [
+        "OQ14.Packet05DifferentiatedSourceDerivativeBounds.differentiated_source_derivative_norm"
+      ]
+    },
+    {
+      "module": "Packet05ActualBoundaryMode",
+      "reports": 1,
+      "source_sha256": "eb9cde41c3854f598242e1c17ca57e7ec4faa3fa7f2849819f0488219bffbab7",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ActualBoundaryMode-chain.log",
+      "audit_log_sha256": "49fd8a51d84a67f721b8c007224a0b94a24bd88be8cfa6fc640cc4f0b2f17951",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ActualBoundaryMode.log",
+      "independent_log_sha256": "49fd8a51d84a67f721b8c007224a0b94a24bd88be8cfa6fc640cc4f0b2f17951",
+      "declarations": [
+        "OQ14.Packet05ActualBoundaryMode.actual_boundary_mode"
+      ]
+    },
+    {
+      "module": "Packet05BoundaryPhaseChart",
+      "reports": 1,
+      "source_sha256": "05a238bdc70c71b0be5205d49c5a2f9d75abd9644d4ce78b350c55e3ead29a4f",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BoundaryPhaseChart-chain.log",
+      "audit_log_sha256": "a93d742a9cb8c74a02d59be125529c875907470e73c143da55621534e4d09dc4",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BoundaryPhaseChart.log",
+      "independent_log_sha256": "a93d742a9cb8c74a02d59be125529c875907470e73c143da55621534e4d09dc4",
+      "declarations": [
+        "OQ14.Packet05BoundaryPhaseChart.actual_boundary_chart"
+      ]
+    },
+    {
+      "module": "Packet05ChartMaterialPhases",
+      "reports": 1,
+      "source_sha256": "9b47bdb8d1582dded6b8b25189e871881288530064d3ebf5e0d5844bed212dd8",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ChartMaterialPhases-chain.log",
+      "audit_log_sha256": "2852057e43ea4a4492b2789956854913ba674960b454c79c2784a1c571651d7e",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ChartMaterialPhases.log",
+      "independent_log_sha256": "2852057e43ea4a4492b2789956854913ba674960b454c79c2784a1c571651d7e",
+      "declarations": [
+        "OQ14.Packet05ChartMaterialPhases.actual_material_phases"
+      ]
+    },
+    {
+      "module": "Packet05BoundaryMaterialMode",
+      "reports": 1,
+      "source_sha256": "49e544a40a30d0289cbaaf7911ca895458a3697c943dcb9afb71fc1ca841d01f",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BoundaryMaterialMode-chain.log",
+      "audit_log_sha256": "6a835578478da889932f7f4f4a494926211c5f54e66e4be3ac60f2182f0cc621",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BoundaryMaterialMode.log",
+      "independent_log_sha256": "6a835578478da889932f7f4f4a494926211c5f54e66e4be3ac60f2182f0cc621",
+      "declarations": [
+        "OQ14.Packet05BoundaryMaterialMode.boundary_material_mode"
+      ]
+    },
+    {
+      "module": "Packet05RoundedModeMaterial",
+      "reports": 3,
+      "source_sha256": "cddb9f12dd5267e4426f4f9770a56eb5865bef835ded18abe1e1034d52feef11",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeMaterial-chain.log",
+      "audit_log_sha256": "5c4c02dd9276177a9102860b5a715a5b2be55a985d28bf50264c56c4368bb927",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeMaterial.log",
+      "independent_log_sha256": "5c4c02dd9276177a9102860b5a715a5b2be55a985d28bf50264c56c4368bb927",
+      "declarations": [
+        "OQ14.Packet05RoundedModeMaterial.local_cone_material",
+        "OQ14.Packet05RoundedModeMaterial.boundary_inside_sphere",
+        "OQ14.Packet05RoundedModeMaterial.eventually_boundary_certificate"
+      ]
+    },
+    {
+      "module": "Packet05RoundedModeBoundary",
+      "reports": 1,
+      "source_sha256": "112f46346299ecc91993f125f0e6de87904626aa59aef82b077d097376ddd541",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeBoundary-chain.log",
+      "audit_log_sha256": "8f2118efcb86b6a4dfe9db800db2454520831573566ee38e744e0dbb10ed28aa",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeBoundary.log",
+      "independent_log_sha256": "8f2118efcb86b6a4dfe9db800db2454520831573566ee38e744e0dbb10ed28aa",
+      "declarations": [
+        "OQ14.Packet05RoundedModeBoundary.eventually_rounded_cone_phase_representatives"
+      ]
+    },
+    {
+      "module": "Packet05QuantitativeNormalFlux",
+      "reports": 1,
+      "source_sha256": "1e87f7d3d0a847112373ae53a44c0f314ff065e6a925477104660fc3e2c3fd34",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeNormalFlux-chain.log",
+      "audit_log_sha256": "1424f92a43243c9dd60ff56a29934aed5a5b568e72e84d0b634d5e7ee4d7be84",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeNormalFlux.log",
+      "independent_log_sha256": "1424f92a43243c9dd60ff56a29934aed5a5b568e72e84d0b634d5e7ee4d7be84",
+      "declarations": [
+        "OQ14.Packet05QuantitativeNormalFlux.normal_flux_sup_bound"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitNormalFluxDerivative",
+      "reports": 1,
+      "source_sha256": "0bed3753f41735bb5a0aa5ed924397238a3bc84693bb08dd35dc72ca8f0ab6ba",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitNormalFluxDerivative-chain.log",
+      "audit_log_sha256": "36ed623fa40b6be765773e9ddd820dd7c3455f0257ceff649c83a059b0eb599f",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitNormalFluxDerivative.log",
+      "independent_log_sha256": "36ed623fa40b6be765773e9ddd820dd7c3455f0257ceff649c83a059b0eb599f",
+      "declarations": [
+        "OQ14.Packet05ExplicitNormalFluxDerivative.explicit_normal_flux_h1"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitDifferentiatedNormalFlux",
+      "reports": 1,
+      "source_sha256": "be12011e75ee0733ac947f94ab5c66a60b937b0912181d40ced4490ef01d9fe9",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitDifferentiatedNormalFlux-chain.log",
+      "audit_log_sha256": "aff68066a850604c87e89c71b62696cda7ec9ef3a8d6315464493358490fcfb8",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitDifferentiatedNormalFlux.log",
+      "independent_log_sha256": "aff68066a850604c87e89c71b62696cda7ec9ef3a8d6315464493358490fcfb8",
+      "declarations": [
+        "OQ14.Packet05ExplicitDifferentiatedNormalFlux.explicit_differentiated_normal_flux_h1"
+      ]
+    },
+    {
+      "module": "Packet05NormalFluxArrays",
+      "reports": 1,
+      "source_sha256": "69d135d19f7dc50856774e3f06db707fb143a1b571e91c83909527db9dbe4aa8",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05NormalFluxArrays-chain.log",
+      "audit_log_sha256": "da3b704739a22b39aca825dbf0e486e0abe739a8daff0a9b25cfdf93fa6ec2a6",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05NormalFluxArrays.log",
+      "independent_log_sha256": "da3b704739a22b39aca825dbf0e486e0abe739a8daff0a9b25cfdf93fa6ec2a6",
+      "declarations": [
+        "OQ14.Packet05NormalFluxArrays.normal_flux_arrays"
+      ]
+    },
+    {
+      "module": "Packet05ExplicitNormalFluxBound",
+      "reports": 1,
+      "source_sha256": "dacbfde36c1b7815f91d83b73cd5f24f42f9ea4a9da55cc70dba39c80a4895f3",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitNormalFluxBound-chain.log",
+      "audit_log_sha256": "7a4efaf41135d9cee2bed5cfaf9e3fa39e729c5426d27183d672864ba994e561",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitNormalFluxBound.log",
+      "independent_log_sha256": "7a4efaf41135d9cee2bed5cfaf9e3fa39e729c5426d27183d672864ba994e561",
+      "declarations": [
+        "OQ14.Packet05ExplicitNormalFluxBound.normal_flux_explicit_bound"
+      ]
+    },
+    {
+      "module": "Packet05NormalFluxNorms",
+      "reports": 6,
+      "source_sha256": "36a45ccc7f97b148825db4e5d83056de19d8442432a5c29edd72c6187e0e8871",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05NormalFluxNorms-chain.log",
+      "audit_log_sha256": "5e6c88d0a351b87025b1ea40d0db25be99c7a9a6d0eb96567d162e3c7702e7f8",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "independent_build_sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05NormalFluxNorms.log",
+      "independent_log_sha256": "5e6c88d0a351b87025b1ea40d0db25be99c7a9a6d0eb96567d162e3c7702e7f8",
+      "declarations": [
+        "OQ14.Packet05NormalFluxNorms.tangent_flux_norm",
+        "OQ14.Packet05NormalFluxNorms.flux_norm",
+        "OQ14.Packet05NormalFluxNorms.source_derivative_norm",
+        "OQ14.Packet05NormalFluxNorms.normal_derivative_array_norm",
+        "OQ14.Packet05NormalFluxNorms.first_flux_array_norm",
+        "OQ14.Packet05NormalFluxNorms.second_flux_array_norm"
+      ]
+    },
+    {
+      "module": "Packet05MixedCutoffSourceBounds",
+      "reports": 1,
+      "source_sha256": "771eb59b948b7762f02d305c28e01d8cf64db130c701b91fb6a6b5ecc97d9870",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05MixedCutoffSourceBounds-chain.log",
+      "audit_log_sha256": "74474e709257ce522eb1152da09753d5107d219c8c7f0767f265858eba143389",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-extension-review.txt",
+      "independent_review_sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-extension-build.json",
+      "independent_build_sha256": "dae958c33a1a563568becf5fbb20d359ef06e8f00255b6199c9f9f65820049dc",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05MixedCutoffSourceBounds.log",
+      "independent_log_sha256": "74474e709257ce522eb1152da09753d5107d219c8c7f0767f265858eba143389",
+      "declarations": [
+        "OQ14.Packet05MixedCutoffSourceBounds.mixed_cutoff_product_norm"
+      ]
+    },
+    {
+      "module": "Packet06RoundedPeakFamily",
+      "reports": 1,
+      "source_sha256": "2ff21e4d399ded22dcc20e961c6c540012a4d0ff1999e6019129e8093145f964",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06RoundedPeakFamily-chain.log",
+      "audit_log_sha256": "7ece60018a29f9b1d761d3278321e0425cf1585fcae9174990904caae099c769",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-review.txt",
+      "independent_review_sha256": "db064757879caf0fd5d29393f38972747dfb74e20a92cfa383dd920fc7d571b3",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-build.json",
+      "independent_build_sha256": "0c7251a39aa3270dda4758a700ae9af55cc6d90814889f9506e8ad44b85c96be",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06RoundedPeakFamily.log",
+      "independent_log_sha256": "7ece60018a29f9b1d761d3278321e0425cf1585fcae9174990904caae099c769",
+      "declarations": [
+        "OQ14.Packet06RoundedPeakFamily.rounded_peak_family"
+      ]
+    },
+    {
+      "module": "Packet05CompactPhaseRepresentative",
+      "reports": 1,
+      "source_sha256": "05d466f8c012b33be2c2d9743c62b6c9a8c1fdad315e75df526912817d6de350",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactPhaseRepresentative-chain.log",
+      "audit_log_sha256": "42cdc9c48a057e2733349041f85ae18726c80f950ff122a6c36f211fa24bc899",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-review.txt",
+      "independent_review_sha256": "db064757879caf0fd5d29393f38972747dfb74e20a92cfa383dd920fc7d571b3",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-build.json",
+      "independent_build_sha256": "0c7251a39aa3270dda4758a700ae9af55cc6d90814889f9506e8ad44b85c96be",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactPhaseRepresentative.log",
+      "independent_log_sha256": "42cdc9c48a057e2733349041f85ae18726c80f950ff122a6c36f211fa24bc899",
+      "declarations": [
+        "OQ14.Packet05CompactPhaseRepresentative.compact_phase_representative"
+      ]
+    },
+    {
+      "module": "Packet05HomogeneousChartGeometry",
+      "reports": 3,
+      "source_sha256": "516a490c1671e86884d5152ee267279efb803fbdd271990c763d21b5af371b79",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousChartGeometry-chain.log",
+      "audit_log_sha256": "2c1cfe4d7045623325f5d6532e91a263cc829d5122cc38d0771fb235d57ac6f4",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousChartGeometry.log",
+      "independent_log_sha256": "2c1cfe4d7045623325f5d6532e91a263cc829d5122cc38d0771fb235d57ac6f4",
+      "declarations": [
+        "OQ14.Packet05HomogeneousChartGeometry.graph_below",
+        "OQ14.Packet05HomogeneousChartGeometry.flat_inverse",
+        "OQ14.Packet05HomogeneousChartGeometry.flat_forward"
+      ]
+    },
+    {
+      "module": "Packet05HomogeneousActualMode",
+      "reports": 1,
+      "source_sha256": "d6ea96724b84e635dca5b32835cf9735ab02b9309aafc3eab4232a9786d03905",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousActualMode-chain.log",
+      "audit_log_sha256": "6a72fcb4af8745f9a09cc6aeef3d8dfda674c285fa30d73c58b7a0a831ae72e3",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousActualMode.log",
+      "independent_log_sha256": "6a72fcb4af8745f9a09cc6aeef3d8dfda674c285fa30d73c58b7a0a831ae72e3",
+      "declarations": [
+        "OQ14.Packet05HomogeneousActualMode.actual_homogeneous_neighborhood"
+      ]
+    },
+    {
+      "module": "Packet05HomogeneousPhaseMode",
+      "reports": 1,
+      "source_sha256": "5d2d422b51b67ca17ae4a121b4883a3a7c475ba2f41734469f1649869ef390e9",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousPhaseMode-chain.log",
+      "audit_log_sha256": "0a040fd24ad082b681f1475f181e267cfd814f732a7345b9a5284b25535c8684",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/homogeneous-review.txt",
+      "independent_review_sha256": "d24c383ec2ca5c132f026d4a31be2eaab29c73db26035b8dd64451881296631e",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/homogeneous-build.json",
+      "independent_build_sha256": "83a5904c74bed86362fdf0c7b372ed5c025c683c2a176ba2402e7cd94ad1b82c",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousPhaseMode.log",
+      "independent_log_sha256": "0a040fd24ad082b681f1475f181e267cfd814f732a7345b9a5284b25535c8684",
+      "declarations": [
+        "OQ14.Packet05HomogeneousPhaseMode.homogeneous_phase_mode"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenFarShift",
+      "reports": 3,
+      "source_sha256": "a7291fe2ec5f5bf086e5eaaa05bbbdf8ee6599b4b00d2e29430602eb16a41fbe",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PlacedGreenFarShift-chain.log",
+      "audit_log_sha256": "ce6d21bbcac5e83ae773a5c588fd184895ac7179ea5b193ff0918b2dbc0f6197",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-review.txt",
+      "independent_review_sha256": "4906a955824a312612cd6748d2bcb34741e9911d786214b98e200840ae7c2941",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-build.json",
+      "independent_build_sha256": "8c8957a330106d7e92cf7c953e71631303da51beff717ebbf408e6b3fd8f0604",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PlacedGreenFarShift.log",
+      "independent_log_sha256": "ce6d21bbcac5e83ae773a5c588fd184895ac7179ea5b193ff0918b2dbc0f6197",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenFarShift.projected_shifted_limit",
+        "OQ14.Packet06PlacedGreenFarShift.electric_shifted_limit",
+        "OQ14.Packet06PlacedGreenFarShift.exterior_shifted_limit"
+      ]
+    },
+    {
+      "module": "Packet06PlacedGreenOriginOutgoing",
+      "reports": 1,
+      "source_sha256": "6177ab5cb658df3b7efa3ea52328d03794ad512dfd9baf856ea7527ba6d8ea19",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PlacedGreenOriginOutgoing-chain.log",
+      "audit_log_sha256": "846c936e321640323586c3a83bda4799b12336e8b1f7eb542e3492459ee37834",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-review.txt",
+      "independent_review_sha256": "4906a955824a312612cd6748d2bcb34741e9911d786214b98e200840ae7c2941",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-build.json",
+      "independent_build_sha256": "8c8957a330106d7e92cf7c953e71631303da51beff717ebbf408e6b3fd8f0604",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PlacedGreenOriginOutgoing.log",
+      "independent_log_sha256": "846c936e321640323586c3a83bda4799b12336e8b1f7eb542e3492459ee37834",
+      "declarations": [
+        "OQ14.Packet06PlacedGreenOriginOutgoing.origin_outgoing"
+      ]
+    },
+    {
+      "module": "Packet05RoundedModeSupport",
+      "reports": 1,
+      "source_sha256": "ff21a7740c43707a80da7757c86283b94fd1b68dfb9a3ab67a2f0a4c63a6f419",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeSupport-chain.log",
+      "audit_log_sha256": "9a6d38c3309d6b6269c1ac703ec801b24bc7d0f66882e2364fc3fa7e17ebea77",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeSupport.log",
+      "independent_log_sha256": "9a6d38c3309d6b6269c1ac703ec801b24bc7d0f66882e2364fc3fa7e17ebea77",
+      "declarations": [
+        "OQ14.Packet05RoundedModeSupport.rounded_support"
+      ]
+    },
+    {
+      "module": "Packet05RoundedModeActualPhases",
+      "reports": 1,
+      "source_sha256": "8fd09585f8e61eaf33cc2f158f61e975a6fc60d592973ee4917b8af60005292a",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeActualPhases-chain.log",
+      "audit_log_sha256": "b5ae0f31969b5444232212b64e67a591df45d368c7f69e0ba9677fb4ff3cafa2",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeActualPhases.log",
+      "independent_log_sha256": "b5ae0f31969b5444232212b64e67a591df45d368c7f69e0ba9677fb4ff3cafa2",
+      "declarations": [
+        "OQ14.Packet05RoundedModeActualPhases.eventually_actual_cone_phase_representatives"
+      ]
+    },
+    {
+      "module": "Packet05CompactModePhase",
+      "reports": 1,
+      "source_sha256": "0a31d3958e621215f7c8cbe640600eab258b9dc0512ad641c2e256cd8e0d2d9d",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactModePhase-chain.log",
+      "audit_log_sha256": "38cc512f0b27ae0ccc2ea4fe4ee177b1d5a0ee558797af6cece5f186ff45f99b",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactModePhase.log",
+      "independent_log_sha256": "38cc512f0b27ae0ccc2ea4fe4ee177b1d5a0ee558797af6cece5f186ff45f99b",
+      "declarations": [
+        "OQ14.Packet05CompactModePhase.compact_mode_phase"
+      ]
+    },
+    {
+      "module": "Packet05CompactBinaryMode",
+      "reports": 1,
+      "source_sha256": "f7e0b0bebced3092a0c1ba55d0724b5ae7dd8a1307f3ff44f8b8db5f186f1f3d",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactBinaryMode-chain.log",
+      "audit_log_sha256": "3b756f4beda423ecd0cc7dda3b017026e091c3e3a8b3171d99800162fa91229b",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactBinaryMode.log",
+      "independent_log_sha256": "3b756f4beda423ecd0cc7dda3b017026e091c3e3a8b3171d99800162fa91229b",
+      "declarations": [
+        "OQ14.Packet05CompactBinaryMode.compact_binary_mode"
+      ]
+    },
+    {
+      "module": "Packet05RoundedCompactBranches",
+      "reports": 1,
+      "source_sha256": "8ec8bb91517e43ea5eb16f6bade4e1b2a70ae2dafed0a726bb7bf71733f9dbf9",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedCompactBranches-chain.log",
+      "audit_log_sha256": "c0cea37208e50ab9600a25375afc5fb41ee1a218a0e4634b71c69422f2580cba",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedCompactBranches.log",
+      "independent_log_sha256": "c0cea37208e50ab9600a25375afc5fb41ee1a218a0e4634b71c69422f2580cba",
+      "declarations": [
+        "OQ14.Packet05RoundedCompactBranches.eventually_compact_branches"
+      ]
+    },
+    {
+      "module": "Packet05BinaryPhaseMaximum",
+      "reports": 4,
+      "source_sha256": "c3b87b52a7ff0fe3ea61df424476a2b5865b3de7e7268dfbcc047dfd77bb1380",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BinaryPhaseMaximum-chain.log",
+      "audit_log_sha256": "a1bed939def56a72d0db7b81a6358fa71408a424344354072743644189075be9",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BinaryPhaseMaximum.log",
+      "independent_log_sha256": "a1bed939def56a72d0db7b81a6358fa71408a424344354072743644189075be9",
+      "declarations": [
+        "OQ14.Packet05BinaryPhaseMaximum.amplitude_continuousOn",
+        "OQ14.Packet05BinaryPhaseMaximum.phase_domains_cover",
+        "OQ14.Packet05BinaryPhaseMaximum.actual_amplitude_ae",
+        "OQ14.Packet05BinaryPhaseMaximum.attained_above_peak"
+      ]
+    },
+    {
+      "module": "Packet05RoundedModeMaximum",
+      "reports": 1,
+      "source_sha256": "dc65b6ad112cd7852dc333c7c7c7ca1c6e429502e66d77f77c18478dffe989db",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeMaximum-chain.log",
+      "audit_log_sha256": "a357d76fd0c48cf2b0a210f715fc0a1ae50765a91fa41a825504707040f54bc6",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "independent_build_sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeMaximum.log",
+      "independent_log_sha256": "a357d76fd0c48cf2b0a210f715fc0a1ae50765a91fa41a825504707040f54bc6",
+      "declarations": [
+        "OQ14.Packet05RoundedModeMaximum.eventually_attained_maxima"
+      ]
+    },
+    {
+      "module": "Packet06PhysicalAmplitudePeak",
+      "reports": 2,
+      "source_sha256": "167fb3676dcc5d66296d2cbd20b56f0b8989f747160e08c78b511016d8d873ee",
+      "audit_log": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PhysicalAmplitudePeak-chain.log",
+      "audit_log_sha256": "ec70cd3e6ff8b3763cd5a71641dcea8191c21732b8835eb6b125c04d8c49f42c",
+      "independent_review": "checkpoints/2026-11-13-actual-phase-maxima/reviews/amplitude-review.txt",
+      "independent_review_sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef",
+      "independent_review_mode": "Independent root or Terra source review and fresh isolated build; retained evidence identifies reviewer, command and source versions",
+      "independent_build": "checkpoints/2026-11-13-actual-phase-maxima/reviews/amplitude-build.json",
+      "independent_build_sha256": "f8061717966c4c7597cfe10a95741a250d6f425e7fab22040ff6b7f3286a4533",
+      "independent_log": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PhysicalAmplitudePeak.log",
+      "independent_log_sha256": "ec70cd3e6ff8b3763cd5a71641dcea8191c21732b8835eb6b125c04d8c49f42c",
+      "declarations": [
+        "OQ14.Packet06PhysicalAmplitudePeak.coordinate_peak",
+        "OQ14.Packet06PhysicalAmplitudePeak.actual_response_peak"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/audited_after_5238-stage104.json",
+      "sha256": "da02d28bbfea36555ec8b42b7fc8e145da6f9dcb0da50870b61012c1ad007dea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/chain-build.json",
+      "sha256": "47819e9b4f0bbef980fb776676f14bc5f4ac7decd8d66a96ee82874de9d66d42"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ActualBoundaryMode-chain.log",
+      "sha256": "49fd8a51d84a67f721b8c007224a0b94a24bd88be8cfa6fc640cc4f0b2f17951"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BinaryPhaseMaximum-chain.log",
+      "sha256": "a1bed939def56a72d0db7b81a6358fa71408a424344354072743644189075be9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BoundaryMaterialMode-chain.log",
+      "sha256": "6a835578478da889932f7f4f4a494926211c5f54e66e4be3ac60f2182f0cc621"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05BoundaryPhaseChart-chain.log",
+      "sha256": "a93d742a9cb8c74a02d59be125529c875907470e73c143da55621534e4d09dc4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ChartMaterialPhases-chain.log",
+      "sha256": "2852057e43ea4a4492b2789956854913ba674960b454c79c2784a1c571651d7e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactBinaryMode-chain.log",
+      "sha256": "3b756f4beda423ecd0cc7dda3b017026e091c3e3a8b3171d99800162fa91229b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactModePhase-chain.log",
+      "sha256": "38cc512f0b27ae0ccc2ea4fe4ee177b1d5a0ee558797af6cece5f186ff45f99b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05CompactPhaseRepresentative-chain.log",
+      "sha256": "42cdc9c48a057e2733349041f85ae18726c80f950ff122a6c36f211fa24bc899"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05DifferentiatedSourceBounds-chain.log",
+      "sha256": "8046a9661134045421fd353f2601d761d570cc3f14cfd9c68a20c76e49516533"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05DifferentiatedSourceDerivativeBounds-chain.log",
+      "sha256": "d47ad985e8f4bb01c6f2ef579fc36084fd21b54ade04c1ad343e02b6c543a784"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05EnergyEnvelope-chain.log",
+      "sha256": "c81494e52bdd5ec87cb774a8b0e175e6b3cc65019ee1625c1b5faeb17d7d1f1d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitDifferentiatedNormalFlux-chain.log",
+      "sha256": "aff68066a850604c87e89c71b62696cda7ec9ef3a8d6315464493358490fcfb8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitLocalizedForcing-chain.log",
+      "sha256": "4c4766b1de236a5d5cd961cf550158d51c7bd23036b07bc34270017ade82f849"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitNormalFluxBound-chain.log",
+      "sha256": "7a4efaf41135d9cee2bed5cfaf9e3fa39e729c5426d27183d672864ba994e561"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05ExplicitNormalFluxDerivative-chain.log",
+      "sha256": "36ed623fa40b6be765773e9ddd820dd7c3455f0257ceff649c83a059b0eb599f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousActualMode-chain.log",
+      "sha256": "6a72fcb4af8745f9a09cc6aeef3d8dfda674c285fa30d73c58b7a0a831ae72e3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousChartGeometry-chain.log",
+      "sha256": "2c1cfe4d7045623325f5d6532e91a263cc829d5122cc38d0771fb235d57ac6f4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05HomogeneousPhaseMode-chain.log",
+      "sha256": "0a040fd24ad082b681f1475f181e267cfd814f732a7345b9a5284b25535c8684"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05LocalizedForcingNorm-chain.log",
+      "sha256": "15349b59c26b02c6a9ef3bfde4626f3d3526b0ea88faf9df5c92f0943d5e8be8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05MixedCutoffSourceBounds-chain.log",
+      "sha256": "74474e709257ce522eb1152da09753d5107d219c8c7f0767f265858eba143389"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05NormalFluxArrays-chain.log",
+      "sha256": "da3b704739a22b39aca825dbf0e486e0abe739a8daff0a9b25cfdf93fa6ec2a6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05NormalFluxNorms-chain.log",
+      "sha256": "5e6c88d0a351b87025b1ea40d0db25be99c7a9a6d0eb96567d162e3c7702e7f8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeCutoffNorms-chain.log",
+      "sha256": "a1fa765c3d5d82765b6aa50f7f335bfcf9b2b46c1de9547c5b7c47f8b7693ff7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeCutoffRepresentative-chain.log",
+      "sha256": "43b4220107c09e563b19d4bd9c50f53ff342a64b603d63d0899068fed4d298fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05QuantitativeNormalFlux-chain.log",
+      "sha256": "1424f92a43243c9dd60ff56a29934aed5a5b568e72e84d0b634d5e7ee4d7be84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedCompactBranches-chain.log",
+      "sha256": "c0cea37208e50ab9600a25375afc5fb41ee1a218a0e4634b71c69422f2580cba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeActualPhases-chain.log",
+      "sha256": "b5ae0f31969b5444232212b64e67a591df45d368c7f69e0ba9677fb4ff3cafa2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeBoundary-chain.log",
+      "sha256": "8f2118efcb86b6a4dfe9db800db2454520831573566ee38e744e0dbb10ed28aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeMaterial-chain.log",
+      "sha256": "5c4c02dd9276177a9102860b5a715a5b2be55a985d28bf50264c56c4368bb927"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeMaximum-chain.log",
+      "sha256": "a357d76fd0c48cf2b0a210f715fc0a1ae50765a91fa41a825504707040f54bc6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet05RoundedModeSupport-chain.log",
+      "sha256": "9a6d38c3309d6b6269c1ac703ec801b24bc7d0f66882e2364fc3fa7e17ebea77"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PhysicalAmplitudePeak-chain.log",
+      "sha256": "ec70cd3e6ff8b3763cd5a71641dcea8191c21732b8835eb6b125c04d8c49f42c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PlacedGreenFarShift-chain.log",
+      "sha256": "ce6d21bbcac5e83ae773a5c588fd184895ac7179ea5b193ff0918b2dbc0f6197"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06PlacedGreenOriginOutgoing-chain.log",
+      "sha256": "846c936e321640323586c3a83bda4799b12336e8b1f7eb542e3492459ee37834"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/evidence/Packet06RoundedPeakFamily-chain.log",
+      "sha256": "7ece60018a29f9b1d761d3278321e0425cf1585fcae9174990904caae099c769"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/modules.json",
+      "sha256": "a89b0387069de2a3471106b9a2d7d84df6e995700e764e6498b4e927cc4c71b9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/provenance-audit.json",
+      "sha256": "c152d335773a46d5862f062f36031571227625caeee27ba9ae199c194e4ff4da"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/amplitude-build.json",
+      "sha256": "f8061717966c4c7597cfe10a95741a250d6f425e7fab22040ff6b7f3286a4533"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/amplitude-review.txt",
+      "sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/author-inventory.json",
+      "sha256": "5be57a14d3ce8a076638e1e070a47e0d89a99785a4fd858ff7439c55481eab1c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-build.json",
+      "sha256": "0c7251a39aa3270dda4758a700ae9af55cc6d90814889f9506e8ad44b85c96be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/corrected-review.txt",
+      "sha256": "db064757879caf0fd5d29393f38972747dfb74e20a92cfa383dd920fc7d571b3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/homogeneous-build.json",
+      "sha256": "83a5904c74bed86362fdf0c7b372ed5c025c683c2a176ba2402e7cd94ad1b82c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/homogeneous-review.txt",
+      "sha256": "d24c383ec2ca5c132f026d4a31be2eaab29c73db26035b8dd64451881296631e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/independent-index.json",
+      "sha256": "ada9774055a57cb16da6614cadfc2f7308ae54d6ab96a1660bfb743cd2bd2676"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-build.json",
+      "sha256": "4eee8439956d3e25ccb3f3ff106d8c5ed648d503fd2139952e244d64cc31f10e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/maxima-review.txt",
+      "sha256": "72af841d769bbef5be945dbee95566cc60d1176bc93d693c3b83728f5345d2ef"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/metadata-normalization.json",
+      "sha256": "80429a4260e6ad194ff9e115e658ffa085d11758a0db5c2991a660e7e48b9b44"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-build.json",
+      "sha256": "8c8957a330106d7e92cf7c953e71631303da51beff717ebbf408e6b3fd8f0604"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/origin-review.txt",
+      "sha256": "4906a955824a312612cd6748d2bcb34741e9911d786214b98e200840ae7c2941"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ActualBoundaryMode.log",
+      "sha256": "49fd8a51d84a67f721b8c007224a0b94a24bd88be8cfa6fc640cc4f0b2f17951"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BinaryPhaseMaximum.log",
+      "sha256": "a1bed939def56a72d0db7b81a6358fa71408a424344354072743644189075be9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BoundaryMaterialMode.log",
+      "sha256": "6a835578478da889932f7f4f4a494926211c5f54e66e4be3ac60f2182f0cc621"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05BoundaryPhaseChart.log",
+      "sha256": "a93d742a9cb8c74a02d59be125529c875907470e73c143da55621534e4d09dc4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ChartMaterialPhases.log",
+      "sha256": "2852057e43ea4a4492b2789956854913ba674960b454c79c2784a1c571651d7e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactBinaryMode.log",
+      "sha256": "3b756f4beda423ecd0cc7dda3b017026e091c3e3a8b3171d99800162fa91229b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactModePhase.log",
+      "sha256": "38cc512f0b27ae0ccc2ea4fe4ee177b1d5a0ee558797af6cece5f186ff45f99b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05CompactPhaseRepresentative.log",
+      "sha256": "42cdc9c48a057e2733349041f85ae18726c80f950ff122a6c36f211fa24bc899"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05DifferentiatedSourceBounds.log",
+      "sha256": "8046a9661134045421fd353f2601d761d570cc3f14cfd9c68a20c76e49516533"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05DifferentiatedSourceDerivativeBounds.log",
+      "sha256": "d47ad985e8f4bb01c6f2ef579fc36084fd21b54ade04c1ad343e02b6c543a784"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05EnergyEnvelope.log",
+      "sha256": "c81494e52bdd5ec87cb774a8b0e175e6b3cc65019ee1625c1b5faeb17d7d1f1d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitDifferentiatedNormalFlux.log",
+      "sha256": "aff68066a850604c87e89c71b62696cda7ec9ef3a8d6315464493358490fcfb8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitLocalizedForcing.log",
+      "sha256": "4c4766b1de236a5d5cd961cf550158d51c7bd23036b07bc34270017ade82f849"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitNormalFluxBound.log",
+      "sha256": "7a4efaf41135d9cee2bed5cfaf9e3fa39e729c5426d27183d672864ba994e561"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05ExplicitNormalFluxDerivative.log",
+      "sha256": "36ed623fa40b6be765773e9ddd820dd7c3455f0257ceff649c83a059b0eb599f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousActualMode.log",
+      "sha256": "6a72fcb4af8745f9a09cc6aeef3d8dfda674c285fa30d73c58b7a0a831ae72e3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousChartGeometry.log",
+      "sha256": "2c1cfe4d7045623325f5d6532e91a263cc829d5122cc38d0771fb235d57ac6f4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05HomogeneousPhaseMode.log",
+      "sha256": "0a040fd24ad082b681f1475f181e267cfd814f732a7345b9a5284b25535c8684"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05LocalizedForcingNorm.log",
+      "sha256": "15349b59c26b02c6a9ef3bfde4626f3d3526b0ea88faf9df5c92f0943d5e8be8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05MixedCutoffSourceBounds.log",
+      "sha256": "74474e709257ce522eb1152da09753d5107d219c8c7f0767f265858eba143389"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05NormalFluxArrays.log",
+      "sha256": "da3b704739a22b39aca825dbf0e486e0abe739a8daff0a9b25cfdf93fa6ec2a6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05NormalFluxNorms.log",
+      "sha256": "5e6c88d0a351b87025b1ea40d0db25be99c7a9a6d0eb96567d162e3c7702e7f8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05PhaseCoverBound-corrected.log",
+      "sha256": "52b111dd4146258cf94c4c5714fbdbf79cd01d02192c33d3e986c7872b9fd276"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05PhaseGluing-corrected.log",
+      "sha256": "a5569b767873a9879bc9299c382b9403f31f356f60041398d67ed35335e8cebf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeCutoffNorms.log",
+      "sha256": "a1fa765c3d5d82765b6aa50f7f335bfcf9b2b46c1de9547c5b7c47f8b7693ff7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeCutoffRepresentative.log",
+      "sha256": "43b4220107c09e563b19d4bd9c50f53ff342a64b603d63d0899068fed4d298fc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05QuantitativeNormalFlux.log",
+      "sha256": "1424f92a43243c9dd60ff56a29934aed5a5b568e72e84d0b634d5e7ee4d7be84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedCompactBranches.log",
+      "sha256": "c0cea37208e50ab9600a25375afc5fb41ee1a218a0e4634b71c69422f2580cba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeActualPhases.log",
+      "sha256": "b5ae0f31969b5444232212b64e67a591df45d368c7f69e0ba9677fb4ff3cafa2"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeBoundary.log",
+      "sha256": "8f2118efcb86b6a4dfe9db800db2454520831573566ee38e744e0dbb10ed28aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeMaterial.log",
+      "sha256": "5c4c02dd9276177a9102860b5a715a5b2be55a985d28bf50264c56c4368bb927"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeMaximum.log",
+      "sha256": "a357d76fd0c48cf2b0a210f715fc0a1ae50765a91fa41a825504707040f54bc6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet05RoundedModeSupport.log",
+      "sha256": "9a6d38c3309d6b6269c1ac703ec801b24bc7d0f66882e2364fc3fa7e17ebea77"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PhysicalAmplitudePeak.log",
+      "sha256": "ec70cd3e6ff8b3763cd5a71641dcea8191c21732b8835eb6b125c04d8c49f42c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PlacedGreenFarShift.log",
+      "sha256": "ce6d21bbcac5e83ae773a5c588fd184895ac7179ea5b193ff0918b2dbc0f6197"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06PlacedGreenOriginOutgoing.log",
+      "sha256": "846c936e321640323586c3a83bda4799b12336e8b1f7eb542e3492459ee37834"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/Packet06RoundedPeakFamily.log",
+      "sha256": "7ece60018a29f9b1d761d3278321e0425cf1585fcae9174990904caae099c769"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/prior-build-correction.json",
+      "sha256": "dc6e6ca9dde69804bb4598c1f4caea6e7864d3dbabd24557bf23ffffb5057399"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-build.json",
+      "sha256": "616971705b0c4483b194186834c69066f58bb62060da7861579c758b64b53f3d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-extension-build.json",
+      "sha256": "dae958c33a1a563568becf5fbb20d359ef06e8f00255b6199c9f9f65820049dc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-extension-review.txt",
+      "sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/reviews/quantitative-review.txt",
+      "sha256": "31e3e5f2a0d4fb89e1cd2a47464cf2046d68a37ffd17a5d0d9fd5c46154ddc40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/scripts/audit_provenance.ps1",
+      "sha256": "ef9153fee9a608caa522195e2bc1d0b3a4b655a5c63a1ee444d2899427e65743"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/scripts/check_chain.py",
+      "sha256": "438f56a76c4242098a9e2ed55983eca79fa0b2bb9b4abcff4ae487ad92427933"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/scripts/freeze_checkpoint.py",
+      "sha256": "3cf3a21f8a491f723266ccabbd23a4d2fea4ae95d8a3b065238c927db1ff4ba9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-phase-maxima/STAGE104.txt",
+      "sha256": "5d7d07011e836ca25659511acd5da9f0fcc87e28965d8900034a9ab206a6aace"
+    },
+    {
+      "path": "lean/Packet05ActualBoundaryMode.lean",
+      "sha256": "eb9cde41c3854f598242e1c17ca57e7ec4faa3fa7f2849819f0488219bffbab7"
+    },
+    {
+      "path": "lean/Packet05BinaryPhaseMaximum.lean",
+      "sha256": "c3b87b52a7ff0fe3ea61df424476a2b5865b3de7e7268dfbcc047dfd77bb1380"
+    },
+    {
+      "path": "lean/Packet05BoundaryMaterialMode.lean",
+      "sha256": "49e544a40a30d0289cbaaf7911ca895458a3697c943dcb9afb71fc1ca841d01f"
+    },
+    {
+      "path": "lean/Packet05BoundaryPhaseChart.lean",
+      "sha256": "05a238bdc70c71b0be5205d49c5a2f9d75abd9644d4ce78b350c55e3ead29a4f"
+    },
+    {
+      "path": "lean/Packet05ChartMaterialPhases.lean",
+      "sha256": "9b47bdb8d1582dded6b8b25189e871881288530064d3ebf5e0d5844bed212dd8"
+    },
+    {
+      "path": "lean/Packet05CompactBinaryMode.lean",
+      "sha256": "f7e0b0bebced3092a0c1ba55d0724b5ae7dd8a1307f3ff44f8b8db5f186f1f3d"
+    },
+    {
+      "path": "lean/Packet05CompactModePhase.lean",
+      "sha256": "0a31d3958e621215f7c8cbe640600eab258b9dc0512ad641c2e256cd8e0d2d9d"
+    },
+    {
+      "path": "lean/Packet05CompactPhaseRepresentative.lean",
+      "sha256": "05d466f8c012b33be2c2d9743c62b6c9a8c1fdad315e75df526912817d6de350"
+    },
+    {
+      "path": "lean/Packet05DifferentiatedSourceBounds.lean",
+      "sha256": "7f9643673006ba6bda4ffcfe1053066c648dece51f5987fc3f76303e8189e937"
+    },
+    {
+      "path": "lean/Packet05DifferentiatedSourceDerivativeBounds.lean",
+      "sha256": "7c3b731871b45e5e61c349ffeb7c03c2c6e6f42d146c8be3adc5fafd1f30ace2"
+    },
+    {
+      "path": "lean/Packet05EnergyEnvelope.lean",
+      "sha256": "4bc3d55fc2296d245d3c4f017f34c9341f0a69db96ce06ae7464633e52d324d7"
+    },
+    {
+      "path": "lean/Packet05ExplicitDifferentiatedNormalFlux.lean",
+      "sha256": "be12011e75ee0733ac947f94ab5c66a60b937b0912181d40ced4490ef01d9fe9"
+    },
+    {
+      "path": "lean/Packet05ExplicitLocalizedForcing.lean",
+      "sha256": "f3d5a511dbc587791c0c1ad86ccb782f17d101908f17af841184944903f522f0"
+    },
+    {
+      "path": "lean/Packet05ExplicitNormalFluxBound.lean",
+      "sha256": "dacbfde36c1b7815f91d83b73cd5f24f42f9ea4a9da55cc70dba39c80a4895f3"
+    },
+    {
+      "path": "lean/Packet05ExplicitNormalFluxDerivative.lean",
+      "sha256": "0bed3753f41735bb5a0aa5ed924397238a3bc84693bb08dd35dc72ca8f0ab6ba"
+    },
+    {
+      "path": "lean/Packet05HomogeneousActualMode.lean",
+      "sha256": "d6ea96724b84e635dca5b32835cf9735ab02b9309aafc3eab4232a9786d03905"
+    },
+    {
+      "path": "lean/Packet05HomogeneousChartGeometry.lean",
+      "sha256": "516a490c1671e86884d5152ee267279efb803fbdd271990c763d21b5af371b79"
+    },
+    {
+      "path": "lean/Packet05HomogeneousPhaseMode.lean",
+      "sha256": "5d2d422b51b67ca17ae4a121b4883a3a7c475ba2f41734469f1649869ef390e9"
+    },
+    {
+      "path": "lean/Packet05LocalizedForcingNorm.lean",
+      "sha256": "b2ed2d843f015454a5125a2ce0e742c34dc6b6c0d61bbfc76fd53f55a8b4917f"
+    },
+    {
+      "path": "lean/Packet05MixedCutoffSourceBounds.lean",
+      "sha256": "771eb59b948b7762f02d305c28e01d8cf64db130c701b91fb6a6b5ecc97d9870"
+    },
+    {
+      "path": "lean/Packet05NormalFluxArrays.lean",
+      "sha256": "69d135d19f7dc50856774e3f06db707fb143a1b571e91c83909527db9dbe4aa8"
+    },
+    {
+      "path": "lean/Packet05NormalFluxNorms.lean",
+      "sha256": "36a45ccc7f97b148825db4e5d83056de19d8442432a5c29edd72c6187e0e8871"
+    },
+    {
+      "path": "lean/Packet05QuantitativeCutoffNorms.lean",
+      "sha256": "07f89b091811de43543c48d2f615bd55c33c1cbe7ce07e175d83bdf979ead48e"
+    },
+    {
+      "path": "lean/Packet05QuantitativeCutoffRepresentative.lean",
+      "sha256": "ccc98932ea7280507e1c45a7ae043e138fdef8be0f2e2fc4e4af345ea6c7bf8d"
+    },
+    {
+      "path": "lean/Packet05QuantitativeNormalFlux.lean",
+      "sha256": "1e87f7d3d0a847112373ae53a44c0f314ff065e6a925477104660fc3e2c3fd34"
+    },
+    {
+      "path": "lean/Packet05RoundedCompactBranches.lean",
+      "sha256": "8ec8bb91517e43ea5eb16f6bade4e1b2a70ae2dafed0a726bb7bf71733f9dbf9"
+    },
+    {
+      "path": "lean/Packet05RoundedModeActualPhases.lean",
+      "sha256": "8fd09585f8e61eaf33cc2f158f61e975a6fc60d592973ee4917b8af60005292a"
+    },
+    {
+      "path": "lean/Packet05RoundedModeBoundary.lean",
+      "sha256": "112f46346299ecc91993f125f0e6de87904626aa59aef82b077d097376ddd541"
+    },
+    {
+      "path": "lean/Packet05RoundedModeMaterial.lean",
+      "sha256": "cddb9f12dd5267e4426f4f9770a56eb5865bef835ded18abe1e1034d52feef11"
+    },
+    {
+      "path": "lean/Packet05RoundedModeMaximum.lean",
+      "sha256": "dc65b6ad112cd7852dc333c7c7c7ca1c6e429502e66d77f77c18478dffe989db"
+    },
+    {
+      "path": "lean/Packet05RoundedModeSupport.lean",
+      "sha256": "ff21a7740c43707a80da7757c86283b94fd1b68dfb9a3ab67a2f0a4c63a6f419"
+    },
+    {
+      "path": "lean/Packet06PhysicalAmplitudePeak.lean",
+      "sha256": "167fb3676dcc5d66296d2cbd20b56f0b8989f747160e08c78b511016d8d873ee"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenFarShift.lean",
+      "sha256": "a7291fe2ec5f5bf086e5eaaa05bbbdf8ee6599b4b00d2e29430602eb16a41fbe"
+    },
+    {
+      "path": "lean/Packet06PlacedGreenOriginOutgoing.lean",
+      "sha256": "6177ab5cb658df3b7efa3ea52328d03794ad512dfd9baf856ea7527ba6d8ea19"
+    },
+    {
+      "path": "lean/Packet06RoundedPeakFamily.lean",
+      "sha256": "2ff21e4d399ded22dcc20e961c6c540012a4d0ff1999e6019129e8093145f964"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "7a131ec0551f5c9ca5f548592252a974910e010a455df952533398ea6dbccd34"
+    }
+  ],
+  "scope": "actual rounded-mode maxima and origin-centered outgoing Green field. Actual rounded-mode one-sided maxima and origin-centered placed Green radiation are proved; uniform collars and full OQ14 remain active. Prior phase-gluing build-path evidence is corrected without modifying historical records."
+}
