@@ -1,0 +1,498 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "586a764",
+  "modules": 576,
+  "reports": 3977,
+  "new_modules": 17,
+  "new_reports": 87,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "0c726a2e26c8921acbfbac78b6e8cac7b5d3524d1ac2e79b6190226cd66c6d85",
+  "ledger_sha256": "8024f11410ed2846a8614ef391904c804702b661dfce818da0c1c7b7ab15d115",
+  "source_provenance_sha256": "8954195706f205012b62ec6fb687cf00c0ea69bb442f482a7c261abf700d199d",
+  "chain_build_sha256": "ef162324bfe11e43fb9e32c4c830e7743ff54a9156b5575d9aa56698ca0d8d2e",
+  "raw_archive_sha256": "05571db7e2c9d0172d3fbce93f780452b09843ff6619573c262c4f0d38c36383",
+  "records": [
+    {
+      "module": "FullChannelUnbounded",
+      "reports": 2,
+      "source_sha256": "c9d3f0a5bb738d3cfa061f57acb9d67d308b92e96f1d0ebba24abfce341c1bdd",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelUnbounded-chain.log",
+      "audit_log_sha256": "aa6f0857b858b75062de6b83fdfaa38cd826c73039b6ab023458a19e6f0c0ec7",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelUnbounded.achievable_every_dimension",
+        "OQ14.FullChannelUnbounded.no_uniform_bound"
+      ]
+    },
+    {
+      "module": "FullChannelHerglotz",
+      "reports": 6,
+      "source_sha256": "3f70c281751e0238b0f11d01fc405b674c88611a3082cd95e1964226b61eff1d",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelHerglotz-chain.log",
+      "audit_log_sha256": "76f5531024facf153635974a86795ef8420fb3cee2971f704b574faa36458aae",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelHerglotz.electric_continuous",
+        "OQ14.FullChannelHerglotz.electric_memLp",
+        "OQ14.FullChannelHerglotz.datum_actual",
+        "OQ14.FullChannelHerglotz.solution_equation",
+        "OQ14.FullChannelHerglotz.solution_material_relation",
+        "OQ14.FullChannelHerglotz.solution_source_integrable_compact"
+      ]
+    },
+    {
+      "module": "FullChannelTEMatch",
+      "reports": 12,
+      "source_sha256": "74c9462416c12271a23716c0107b311ba4e2dbc71803e55317672a97c732a280",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelTEMatch-chain.log",
+      "audit_log_sha256": "182ec2527faf04aca5bbb111ef1b11b441f567187cff0158710cf97c1cda3a36",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelTEMatch.densityMap_transverse",
+        "OQ14.FullChannelTEMatch.electric_value",
+        "OQ14.FullChannelTEMatch.density_transverse",
+        "OQ14.FullChannelTEMatch.datum_eq",
+        "OQ14.FullChannelTEMatch.solution_eq",
+        "OQ14.FullChannelTEMatch.input_eq_density",
+        "OQ14.FullChannelTEMatch.output_eq",
+        "OQ14.FullChannelTEMatch.electric_from_input",
+        "OQ14.FullChannelTEMatch.normalized_datum_eq",
+        "OQ14.FullChannelTEMatch.normalized_output_eq",
+        "OQ14.FullChannelTEMatch.normalized_datum_actual",
+        "OQ14.FullChannelTEMatch.normalized_material_relation"
+      ]
+    },
+    {
+      "module": "FullChannelFreeMap",
+      "reports": 14,
+      "source_sha256": "925a8b72825f30347ccfaa67923e98b26610098db95a4fc90f2b44cacc78d9ab",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFreeMap-chain.log",
+      "audit_log_sha256": "b1f3e78f1b089bd92c27bc114b2cba89ae4f3b0398efe2df7aadc8533a6ba6e8",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelFreeMap.antipode_preserving",
+        "OQ14.FullChannelFreeMap.free_norm",
+        "OQ14.FullChannelFreeMap.free_actual",
+        "OQ14.FullChannelFreeMap.free_on_TE",
+        "OQ14.FullChannelFreeMap.physicalScatter_on_TE",
+        "OQ14.FullChannelFreeMap.normalizedDatum_add",
+        "OQ14.FullChannelFreeMap.normalizedDatum_smul",
+        "OQ14.FullChannelFreeMap.scatteringLinear_apply",
+        "OQ14.FullChannelFreeMap.scatteringLinear_on_TE",
+        "OQ14.FullChannelFreeMap.scattering_comp_te",
+        "OQ14.FullChannelFreeMap.physical_span_finrank",
+        "OQ14.FullChannelFreeMap.free_tangential",
+        "OQ14.FullChannelFreeMap.radiated_tangential",
+        "OQ14.FullChannelFreeMap.scatteringLinear_tangential"
+      ]
+    },
+    {
+      "module": "FullChannelActualBridge",
+      "reports": 2,
+      "source_sha256": "f730ea15473b7ffc364c939b9136644c438a8d3eddb24e3180a082de4d0bfec2",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelActualBridge-chain.log",
+      "audit_log_sha256": "f827d5f0406776466b535accd34dd00128c61e2d072882505b122d04b5c9cca0",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelFreeMap.actualScatter_is_global",
+        "OQ14.FullChannelFreeMap.every_dimension_global"
+      ]
+    },
+    {
+      "module": "FullChannelBoundedDatum",
+      "reports": 6,
+      "source_sha256": "c5717b3f35a7a1decd501d1c8de66b35c6751b43d28448301c4575a305dc250b",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelBoundedDatum-chain.log",
+      "audit_log_sha256": "751936ccf896eaf094542ab84026d631ec6eff5f3e3e25b04bd8b5393a0b51bf",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelBoundedDatum.component_actual",
+        "OQ14.FullChannelBoundedDatum.component_add",
+        "OQ14.FullChannelBoundedDatum.component_smul",
+        "OQ14.FullChannelBoundedDatum.component_bound",
+        "OQ14.FullChannelBoundedDatum.ballCLM_actual",
+        "OQ14.FullChannelBoundedDatum.datumCLM_eq"
+      ]
+    },
+    {
+      "module": "FullChannelFarBound",
+      "reports": 5,
+      "source_sha256": "e72f9ddbf3711d3a4af090d796877d29004d12e4081868bb7cb6743a4a3663bf",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFarBound-chain.log",
+      "audit_log_sha256": "878d51697fca997e2e83c7f5fd220c621fa992f01fbf3d69c32ac8b1e72e70c8",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelFarBound.source_mass_bound",
+        "OQ14.FullChannelFarBound.scalar_far_bound",
+        "OQ14.FullChannelFarBound.electric_far_component_bound",
+        "OQ14.FullChannelFarBound.electric_far_vector_bound",
+        "OQ14.FullChannelFarBound.farMap_bound"
+      ]
+    },
+    {
+      "module": "FullChannelContinuous",
+      "reports": 3,
+      "source_sha256": "53da2e2c60e503f98958bd13cf3cdf9d21192cec7d21149a02f79ad4a6771e6e",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelContinuous-chain.log",
+      "audit_log_sha256": "0b8bc46a42b2743731210b66124d79ed412650ef61fd8d89895338a9706609bb",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelContinuous.scatteringCLM_eq",
+        "OQ14.FullChannelContinuous.scatteringLinear_continuous",
+        "OQ14.FullChannelContinuous.scatteringCLM_on_TE"
+      ]
+    },
+    {
+      "module": "FullChannelMagnetic",
+      "reports": 13,
+      "source_sha256": "5a67e83348a6798805a5c708a81e126d83f67592ca18445bfed5a18ac8af5324",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMagnetic-chain.log",
+      "audit_log_sha256": "e4ebc360063aa9c38a9c4c17b2b08b9bac06ccdb7f71acfedbc2c3ea17272a5c",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelMagnetic.crossVec_continuous",
+        "OQ14.FullChannelMagnetic.rotation_memLp",
+        "OQ14.FullChannelMagnetic.rotation_actual",
+        "OQ14.FullChannelMagnetic.rotation_tangential",
+        "OQ14.FullChannelMagnetic.rotation_add",
+        "OQ14.FullChannelMagnetic.rotation_smul",
+        "OQ14.FullChannelMagnetic.rotation_point_bound",
+        "OQ14.FullChannelMagnetic.rotation_norm",
+        "OQ14.FullChannelMagnetic.magneticMap_tangent",
+        "OQ14.FullChannelMagnetic.magneticMap_toLp",
+        "OQ14.FullChannelMagnetic.magnetic_value_toLp",
+        "OQ14.FullChannelMagnetic.magnetic_continuous",
+        "OQ14.FullChannelMagnetic.magnetic_difference_bound"
+      ]
+    },
+    {
+      "module": "FullChannelWeakLimit",
+      "reports": 7,
+      "source_sha256": "cb6e8a638fcf21d0d71d9ca7ac9993d9b6d138ca399d13bc0c545602b73046fa",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelWeakLimit-chain.log",
+      "audit_log_sha256": "a2afa08dd2c07871571eba514905bde32f543a3d3453da308df48d5537663a98",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelWeakLimit.test_integrable",
+        "OQ14.FullChannelWeakLimit.pair_difference_bound",
+        "OQ14.FullChannelWeakLimit.curl_difference_bound",
+        "OQ14.FullChannelWeakLimit.weak_curl_closed",
+        "OQ14.FullChannelWeakLimit.finite_magnetic_value",
+        "OQ14.FullChannelWeakLimit.simultaneous_finite_approximation",
+        "OQ14.FullChannelWeakLimit.herglotz_testMaxwell"
+      ]
+    },
+    {
+      "module": "FullChannelMaterialMaxwell",
+      "reports": 2,
+      "source_sha256": "17a0993638a8ae11329c871e0cd1a9c0f53b5a462bb19e51e0cdeed65178dc4f",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMaterialMaxwell-chain.log",
+      "audit_log_sha256": "35d27dbd731f7ab15d04a7eb1b3e21341a90374fe165957d357e362de2e4abee",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelMaterialMaxwell.normalized_incident_maxwell",
+        "OQ14.FullChannelMaterialMaxwell.normalized_material_maxwell"
+      ]
+    },
+    {
+      "module": "FullChannelFrequency",
+      "reports": 7,
+      "source_sha256": "f4c49db54379800f8e5d8cc891e353c937648dcc3c7eeb0d0777b8ab0f3d4565",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFrequency-chain.log",
+      "audit_log_sha256": "7361cac1c5b3138b1524a21da0bd9a7fedd9f5c05025224290caea8fd2976fce",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelFrequency.value_dilation",
+        "OQ14.FullChannelFrequency.electricAt_dilation",
+        "OQ14.FullChannelFrequency.magneticAt_dilation",
+        "OQ14.FullChannelFrequency.material_maxwell_at_frequency",
+        "OQ14.FullChannelFrequency.scaled_incident_electric",
+        "OQ14.FullChannelFrequency.scaled_incident_magnetic",
+        "OQ14.FullChannelFrequency.radiated_far_at_frequency"
+      ]
+    },
+    {
+      "module": "FullChannelEndpoint",
+      "reports": 2,
+      "source_sha256": "3f9cea6357614fa70bc724c247d10ad1ce601f997f69c34e6bf0d0db0091905b",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelEndpoint-chain.log",
+      "audit_log_sha256": "18626fdb8ca18b8d1a5e3270281b758fd31cf781b88bc4f9bbe371885b89118b",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelEndpoint.full_unrestricted",
+        "OQ14.FullChannelEndpoint.no_uniform_bound"
+      ]
+    },
+    {
+      "module": "FullChannelDeviceUnit",
+      "reports": 1,
+      "source_sha256": "10f6f68c43d1527a23be37210f690dc4f7e324b1492ad98e9cb2fca578579ffc",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelDeviceUnit-chain.log",
+      "audit_log_sha256": "3953851d29e4ae71b971cfb71abf5864b7ec4325e4cdcbf524e0477d7980be31",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelDeviceUnit.counted_subspaces_physical_unit"
+      ]
+    },
+    {
+      "module": "FullChannelFinal",
+      "reports": 2,
+      "source_sha256": "df759b46168c953ed7d9c467613d34c6528b467f18c5d82962d530d2cf05263a",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFinal-chain.log",
+      "audit_log_sha256": "c6e0caf1444c82b4ea7c98c336984e6e82810ccf6c0df53b61be8fe98d2301be",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelFinal.unrestricted_counted_global",
+        "OQ14.FullChannelFinal.no_uniform_bound"
+      ]
+    },
+    {
+      "module": "FullChannelPowerFrequency",
+      "reports": 1,
+      "source_sha256": "bd08e14d49a2ff2ec2acb6fe5af2cfb2bcfc69584853a32797ff2e86953ee2a3",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFrequency-chain.log",
+      "audit_log_sha256": "dfdc40483b5505925e8928be0909d927059eeaa7e6492f77ce32143dbca82a51",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelPowerFrequency.power_scaled_material_maxwell"
+      ]
+    },
+    {
+      "module": "FullChannelPowerFinal",
+      "reports": 2,
+      "source_sha256": "caf2d896f4b0f8c24d76fd8a50643ab96a102aa5b2c76dd0f8583bea272fffde",
+      "audit_log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFinal-chain.log",
+      "audit_log_sha256": "09487b390c220e367633189f9135cac242ae1d8962a1449e825f5b20a7d7346e",
+      "independent_review": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "independent_review_sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483",
+      "independent_review_mode": "Root source review and fresh isolated chain compilation, independent of Terra author",
+      "declarations": [
+        "OQ14.FullChannelPowerFinal.unrestricted_counted_power_global",
+        "OQ14.FullChannelPowerFinal.no_uniform_bound"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-full-channel/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/author-inventory.json",
+      "sha256": "1edddf208a60a3f38e8329c8a209f4da7a32e06e4b47b36c21d3fd8228cebcfb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/audited_after_5238-stage70.json",
+      "sha256": "8024f11410ed2846a8614ef391904c804702b661dfce818da0c1c7b7ab15d115"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/chain-build.json",
+      "sha256": "ef162324bfe11e43fb9e32c4c830e7743ff54a9156b5575d9aa56698ca0d8d2e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelActualBridge-chain.log",
+      "sha256": "f827d5f0406776466b535accd34dd00128c61e2d072882505b122d04b5c9cca0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelBoundedDatum-chain.log",
+      "sha256": "751936ccf896eaf094542ab84026d631ec6eff5f3e3e25b04bd8b5393a0b51bf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelContinuous-chain.log",
+      "sha256": "0b8bc46a42b2743731210b66124d79ed412650ef61fd8d89895338a9706609bb"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelDeviceUnit-chain.log",
+      "sha256": "3953851d29e4ae71b971cfb71abf5864b7ec4325e4cdcbf524e0477d7980be31"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelEndpoint-chain.log",
+      "sha256": "18626fdb8ca18b8d1a5e3270281b758fd31cf781b88bc4f9bbe371885b89118b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFarBound-chain.log",
+      "sha256": "878d51697fca997e2e83c7f5fd220c621fa992f01fbf3d69c32ac8b1e72e70c8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFinal-chain.log",
+      "sha256": "c6e0caf1444c82b4ea7c98c336984e6e82810ccf6c0df53b61be8fe98d2301be"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFreeMap-chain.log",
+      "sha256": "b1f3e78f1b089bd92c27bc114b2cba89ae4f3b0398efe2df7aadc8533a6ba6e8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFrequency-chain.log",
+      "sha256": "7361cac1c5b3138b1524a21da0bd9a7fedd9f5c05025224290caea8fd2976fce"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelHerglotz-chain.log",
+      "sha256": "76f5531024facf153635974a86795ef8420fb3cee2971f704b574faa36458aae"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMagnetic-chain.log",
+      "sha256": "e4ebc360063aa9c38a9c4c17b2b08b9bac06ccdb7f71acfedbc2c3ea17272a5c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMaterialMaxwell-chain.log",
+      "sha256": "35d27dbd731f7ab15d04a7eb1b3e21341a90374fe165957d357e362de2e4abee"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFinal-chain.log",
+      "sha256": "09487b390c220e367633189f9135cac242ae1d8962a1449e825f5b20a7d7346e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFrequency-chain.log",
+      "sha256": "dfdc40483b5505925e8928be0909d927059eeaa7e6492f77ce32143dbca82a51"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelTEMatch-chain.log",
+      "sha256": "182ec2527faf04aca5bbb111ef1b11b441f567187cff0158710cf97c1cda3a36"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelUnbounded-chain.log",
+      "sha256": "aa6f0857b858b75062de6b83fdfaa38cd826c73039b6ab023458a19e6f0c0ec7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/evidence/FullChannelWeakLimit-chain.log",
+      "sha256": "a2afa08dd2c07871571eba514905bde32f543a3d3453da308df48d5537663a98"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/modules.json",
+      "sha256": "c5b58a19aeb1f87ac0de9eee644bb1a7609de57a6ba39231ec0e7ecf26a8037f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/provenance-audit.json",
+      "sha256": "8954195706f205012b62ec6fb687cf00c0ea69bb442f482a7c261abf700d199d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/reviews/root-independent-review.txt",
+      "sha256": "287c4f676ff9c52215373069a9e0961bb345a90807f2f64aa7c4d854aa442483"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/scripts/audit_provenance.ps1",
+      "sha256": "fd7c1562f9bb98bea6c652611529ec1256a16faa9c53a275a42a124f473fe861"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/scripts/check_chain.py",
+      "sha256": "5ca04c8eef37d7bd4afcd0a90b1a37e9fc7e504de68d6aa685eb2b37f64748f6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/scripts/freeze_checkpoint.py",
+      "sha256": "57a00ed77154cb20eff5288bc42a3072fcd2ee8701f58d86f7f0a3fe25e78147"
+    },
+    {
+      "path": "checkpoints/2026-11-13-full-channel/STAGE70.txt",
+      "sha256": "eb0caf96ceeb7735b439a31feaf31c9843fcc39c5de0c12aa0ea6923484c8e9d"
+    },
+    {
+      "path": "lean/FullChannelActualBridge.lean",
+      "sha256": "f730ea15473b7ffc364c939b9136644c438a8d3eddb24e3180a082de4d0bfec2"
+    },
+    {
+      "path": "lean/FullChannelBoundedDatum.lean",
+      "sha256": "c5717b3f35a7a1decd501d1c8de66b35c6751b43d28448301c4575a305dc250b"
+    },
+    {
+      "path": "lean/FullChannelContinuous.lean",
+      "sha256": "53da2e2c60e503f98958bd13cf3cdf9d21192cec7d21149a02f79ad4a6771e6e"
+    },
+    {
+      "path": "lean/FullChannelDeviceUnit.lean",
+      "sha256": "10f6f68c43d1527a23be37210f690dc4f7e324b1492ad98e9cb2fca578579ffc"
+    },
+    {
+      "path": "lean/FullChannelEndpoint.lean",
+      "sha256": "3f9cea6357614fa70bc724c247d10ad1ce601f997f69c34e6bf0d0db0091905b"
+    },
+    {
+      "path": "lean/FullChannelFarBound.lean",
+      "sha256": "e72f9ddbf3711d3a4af090d796877d29004d12e4081868bb7cb6743a4a3663bf"
+    },
+    {
+      "path": "lean/FullChannelFinal.lean",
+      "sha256": "df759b46168c953ed7d9c467613d34c6528b467f18c5d82962d530d2cf05263a"
+    },
+    {
+      "path": "lean/FullChannelFreeMap.lean",
+      "sha256": "925a8b72825f30347ccfaa67923e98b26610098db95a4fc90f2b44cacc78d9ab"
+    },
+    {
+      "path": "lean/FullChannelFrequency.lean",
+      "sha256": "f4c49db54379800f8e5d8cc891e353c937648dcc3c7eeb0d0777b8ab0f3d4565"
+    },
+    {
+      "path": "lean/FullChannelHerglotz.lean",
+      "sha256": "3f70c281751e0238b0f11d01fc405b674c88611a3082cd95e1964226b61eff1d"
+    },
+    {
+      "path": "lean/FullChannelMagnetic.lean",
+      "sha256": "5a67e83348a6798805a5c708a81e126d83f67592ca18445bfed5a18ac8af5324"
+    },
+    {
+      "path": "lean/FullChannelMaterialMaxwell.lean",
+      "sha256": "17a0993638a8ae11329c871e0cd1a9c0f53b5a462bb19e51e0cdeed65178dc4f"
+    },
+    {
+      "path": "lean/FullChannelPowerFinal.lean",
+      "sha256": "caf2d896f4b0f8c24d76fd8a50643ab96a102aa5b2c76dd0f8583bea272fffde"
+    },
+    {
+      "path": "lean/FullChannelPowerFrequency.lean",
+      "sha256": "bd08e14d49a2ff2ec2acb6fe5af2cfb2bcfc69584853a32797ff2e86953ee2a3"
+    },
+    {
+      "path": "lean/FullChannelTEMatch.lean",
+      "sha256": "74c9462416c12271a23716c0107b311ba4e2dbc71803e55317672a97c732a280"
+    },
+    {
+      "path": "lean/FullChannelUnbounded.lean",
+      "sha256": "c9d3f0a5bb738d3cfa061f57acb9d67d308b92e96f1d0ebba24abfce341c1bdd"
+    },
+    {
+      "path": "lean/FullChannelWeakLimit.lean",
+      "sha256": "cb6e8a638fcf21d0d71d9ca7ac9993d9b6d138ca399d13bc0c545602b73046fa"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "03e3c2a72dea8def29891664352a55ad92990cd975f5cd13641c44c62c360f6f"
+    }
+  ],
+  "scope": "Unrestricted all-N physical counted-channel endpoint for delta>eta and full selected outgoing amplitude, actual same-device bounded full-input map and power-preserving Maxwell dilation. 17 fresh isolated objects, 791 authenticated upstream sources with cached objects. Full OQ14 remains incomplete and active."
+}

@@ -1,0 +1,1015 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-004939-72580",
+  "object_directory": "checkpoints/2026-11-13-full-channel/objects/20261113-004939-72580",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 17 full-channel modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "FullChannelUnbounded",
+      "source": "lean/FullChannelUnbounded.lean",
+      "source_sha256": "c9d3f0a5bb738d3cfa061f57acb9d67d308b92e96f1d0ebba24abfce341c1bdd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelUnbounded.olean",
+        "D:\\oq14\\lean\\FullChannelUnbounded.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.406,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelUnbounded-chain.log",
+      "log_sha256": "aa6f0857b858b75062de6b83fdfaa38cd826c73039b6ab023458a19e6f0c0ec7",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelUnbounded.achievable_every_dimension",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelUnbounded.no_uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "18d85998ef5b85a59f56fbc710de3484c05a99e5fb130c4e861639e93bd4bd15"
+    },
+    {
+      "module": "FullChannelHerglotz",
+      "source": "lean/FullChannelHerglotz.lean",
+      "source_sha256": "3f70c281751e0238b0f11d01fc405b674c88611a3082cd95e1964226b61eff1d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelHerglotz.olean",
+        "D:\\oq14\\lean\\FullChannelHerglotz.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.265,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelHerglotz-chain.log",
+      "log_sha256": "76f5531024facf153635974a86795ef8420fb3cee2971f704b574faa36458aae",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelHerglotz.electric_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelHerglotz.electric_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelHerglotz.datum_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelHerglotz.solution_equation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelHerglotz.solution_material_relation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelHerglotz.solution_source_integrable_compact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4b7bc69f6a5646eb70a19f7fcc5eeb4c2684b7e88c11487364e8660d57b8013a"
+    },
+    {
+      "module": "FullChannelTEMatch",
+      "source": "lean/FullChannelTEMatch.lean",
+      "source_sha256": "74c9462416c12271a23716c0107b311ba4e2dbc71803e55317672a97c732a280",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelTEMatch.olean",
+        "D:\\oq14\\lean\\FullChannelTEMatch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.875,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelTEMatch-chain.log",
+      "log_sha256": "182ec2527faf04aca5bbb111ef1b11b441f567187cff0158710cf97c1cda3a36",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelTEMatch.densityMap_transverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.electric_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.density_transverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.datum_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.solution_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.input_eq_density",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.output_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.electric_from_input",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.normalized_datum_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.normalized_output_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.normalized_datum_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelTEMatch.normalized_material_relation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cd24c40e48b025e65eed8ef68fa93e5db915c24afd664660a033c751218f9db9"
+    },
+    {
+      "module": "FullChannelFreeMap",
+      "source": "lean/FullChannelFreeMap.lean",
+      "source_sha256": "925a8b72825f30347ccfaa67923e98b26610098db95a4fc90f2b44cacc78d9ab",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelFreeMap.olean",
+        "D:\\oq14\\lean\\FullChannelFreeMap.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 33.704,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFreeMap-chain.log",
+      "log_sha256": "b1f3e78f1b089bd92c27bc114b2cba89ae4f3b0398efe2df7aadc8533a6ba6e8",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelFreeMap.antipode_preserving",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.free_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.free_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.free_on_TE",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.physicalScatter_on_TE",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.normalizedDatum_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.normalizedDatum_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.scatteringLinear_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.scatteringLinear_on_TE",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.scattering_comp_te",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.physical_span_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.free_tangential",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.radiated_tangential",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.scatteringLinear_tangential",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "aa723dfe0f9fcb2769b4c112a55b3eb1e4cd81f42ccd9b1fa3238321c61d630c"
+    },
+    {
+      "module": "FullChannelActualBridge",
+      "source": "lean/FullChannelActualBridge.lean",
+      "source_sha256": "f730ea15473b7ffc364c939b9136644c438a8d3eddb24e3180a082de4d0bfec2",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelActualBridge.olean",
+        "D:\\oq14\\lean\\FullChannelActualBridge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.813,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelActualBridge-chain.log",
+      "log_sha256": "f827d5f0406776466b535accd34dd00128c61e2d072882505b122d04b5c9cca0",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelFreeMap.actualScatter_is_global",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFreeMap.every_dimension_global",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3b2d72a21040f91a9e2d56821fd20c5895d0c7edb2ae6bf385cd0ab632f199d4"
+    },
+    {
+      "module": "FullChannelBoundedDatum",
+      "source": "lean/FullChannelBoundedDatum.lean",
+      "source_sha256": "c5717b3f35a7a1decd501d1c8de66b35c6751b43d28448301c4575a305dc250b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelBoundedDatum.olean",
+        "D:\\oq14\\lean\\FullChannelBoundedDatum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.047,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelBoundedDatum-chain.log",
+      "log_sha256": "751936ccf896eaf094542ab84026d631ec6eff5f3e3e25b04bd8b5393a0b51bf",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.component_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.component_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.component_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.component_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.ballCLM_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelBoundedDatum.datumCLM_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "67c727d8f3bc27fb7b36dc15c3534520bbe84c35319b1928d53743202eb6d769"
+    },
+    {
+      "module": "FullChannelFarBound",
+      "source": "lean/FullChannelFarBound.lean",
+      "source_sha256": "e72f9ddbf3711d3a4af090d796877d29004d12e4081868bb7cb6743a4a3663bf",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelFarBound.olean",
+        "D:\\oq14\\lean\\FullChannelFarBound.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.625,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFarBound-chain.log",
+      "log_sha256": "878d51697fca997e2e83c7f5fd220c621fa992f01fbf3d69c32ac8b1e72e70c8",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelFarBound.source_mass_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFarBound.scalar_far_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFarBound.electric_far_component_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFarBound.electric_far_vector_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFarBound.farMap_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "db30d24368339f5657e273a5b18efbdffb7d1b44e1d3e102c1794ed6c164c3fc"
+    },
+    {
+      "module": "FullChannelContinuous",
+      "source": "lean/FullChannelContinuous.lean",
+      "source_sha256": "53da2e2c60e503f98958bd13cf3cdf9d21192cec7d21149a02f79ad4a6771e6e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelContinuous.olean",
+        "D:\\oq14\\lean\\FullChannelContinuous.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.531,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelContinuous-chain.log",
+      "log_sha256": "0b8bc46a42b2743731210b66124d79ed412650ef61fd8d89895338a9706609bb",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelContinuous.scatteringCLM_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelContinuous.scatteringLinear_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelContinuous.scatteringCLM_on_TE",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "78c9b4b3d01ad7df0244a63af35f644622a6ceb4298f5bd16e4a61ae88ac78b3"
+    },
+    {
+      "module": "FullChannelMagnetic",
+      "source": "lean/FullChannelMagnetic.lean",
+      "source_sha256": "5a67e83348a6798805a5c708a81e126d83f67592ca18445bfed5a18ac8af5324",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelMagnetic.olean",
+        "D:\\oq14\\lean\\FullChannelMagnetic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.282,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMagnetic-chain.log",
+      "log_sha256": "e4ebc360063aa9c38a9c4c17b2b08b9bac06ccdb7f71acfedbc2c3ea17272a5c",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelMagnetic.crossVec_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_tangential",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_point_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.rotation_norm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.magneticMap_tangent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.magneticMap_toLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.magnetic_value_toLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.magnetic_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMagnetic.magnetic_difference_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bdffec86cb452cd31b653a0a3fd4f4fce4b92d04f90e8f070f9c6304f82e7724"
+    },
+    {
+      "module": "FullChannelWeakLimit",
+      "source": "lean/FullChannelWeakLimit.lean",
+      "source_sha256": "cb6e8a638fcf21d0d71d9ca7ac9993d9b6d138ca399d13bc0c545602b73046fa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelWeakLimit.olean",
+        "D:\\oq14\\lean\\FullChannelWeakLimit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.39,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelWeakLimit-chain.log",
+      "log_sha256": "a2afa08dd2c07871571eba514905bde32f543a3d3453da308df48d5537663a98",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.test_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.pair_difference_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.curl_difference_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.weak_curl_closed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.finite_magnetic_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.simultaneous_finite_approximation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelWeakLimit.herglotz_testMaxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4ef3541037a6ef3519b22657d414dab9c8a47674d48d91918101090361323b00"
+    },
+    {
+      "module": "FullChannelMaterialMaxwell",
+      "source": "lean/FullChannelMaterialMaxwell.lean",
+      "source_sha256": "17a0993638a8ae11329c871e0cd1a9c0f53b5a462bb19e51e0cdeed65178dc4f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelMaterialMaxwell.olean",
+        "D:\\oq14\\lean\\FullChannelMaterialMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.578,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelMaterialMaxwell-chain.log",
+      "log_sha256": "35d27dbd731f7ab15d04a7eb1b3e21341a90374fe165957d357e362de2e4abee",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelMaterialMaxwell.normalized_incident_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelMaterialMaxwell.normalized_material_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "65aa0a8660a60e1db413c00ac58afd238a904a80e29c99320fcd09c4d1109ac5"
+    },
+    {
+      "module": "FullChannelFrequency",
+      "source": "lean/FullChannelFrequency.lean",
+      "source_sha256": "f4c49db54379800f8e5d8cc891e353c937648dcc3c7eeb0d0777b8ab0f3d4565",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelFrequency.olean",
+        "D:\\oq14\\lean\\FullChannelFrequency.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.312,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFrequency-chain.log",
+      "log_sha256": "7361cac1c5b3138b1524a21da0bd9a7fedd9f5c05025224290caea8fd2976fce",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelFrequency.value_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.electricAt_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.magneticAt_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.material_maxwell_at_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.scaled_incident_electric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.scaled_incident_magnetic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFrequency.radiated_far_at_frequency",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "96dc0633aecc1124ba033f23ac7eb2866a608007e41c5ea48f22b1ad57325432"
+    },
+    {
+      "module": "FullChannelEndpoint",
+      "source": "lean/FullChannelEndpoint.lean",
+      "source_sha256": "3f9cea6357614fa70bc724c247d10ad1ce601f997f69c34e6bf0d0db0091905b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelEndpoint.olean",
+        "D:\\oq14\\lean\\FullChannelEndpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 16.281,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelEndpoint-chain.log",
+      "log_sha256": "18626fdb8ca18b8d1a5e3270281b758fd31cf781b88bc4f9bbe371885b89118b",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelEndpoint.full_unrestricted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelEndpoint.no_uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d4ea0b4738d656e70fffb8fb5c1361ae3fb0b5d7860f2e106ea0cadc1ae1575e"
+    },
+    {
+      "module": "FullChannelDeviceUnit",
+      "source": "lean/FullChannelDeviceUnit.lean",
+      "source_sha256": "10f6f68c43d1527a23be37210f690dc4f7e324b1492ad98e9cb2fca578579ffc",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelDeviceUnit.olean",
+        "D:\\oq14\\lean\\FullChannelDeviceUnit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.468,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelDeviceUnit-chain.log",
+      "log_sha256": "3953851d29e4ae71b971cfb71abf5864b7ec4325e4cdcbf524e0477d7980be31",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelDeviceUnit.counted_subspaces_physical_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1c1a48e49fcc85b56429d437ea97e6c61223c5dbdc429043df5ae2e97162adbb"
+    },
+    {
+      "module": "FullChannelFinal",
+      "source": "lean/FullChannelFinal.lean",
+      "source_sha256": "df759b46168c953ed7d9c467613d34c6528b467f18c5d82962d530d2cf05263a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelFinal.olean",
+        "D:\\oq14\\lean\\FullChannelFinal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.016,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelFinal-chain.log",
+      "log_sha256": "c6e0caf1444c82b4ea7c98c336984e6e82810ccf6c0df53b61be8fe98d2301be",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelFinal.unrestricted_counted_global",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelFinal.no_uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "045bd300c7d8e5e7a29d2ec705abff8c702e0212b4555f05e92e0458048c62ae"
+    },
+    {
+      "module": "FullChannelPowerFrequency",
+      "source": "lean/FullChannelPowerFrequency.lean",
+      "source_sha256": "bd08e14d49a2ff2ec2acb6fe5af2cfb2bcfc69584853a32797ff2e86953ee2a3",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelPowerFrequency.olean",
+        "D:\\oq14\\lean\\FullChannelPowerFrequency.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.968,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFrequency-chain.log",
+      "log_sha256": "dfdc40483b5505925e8928be0909d927059eeaa7e6492f77ce32143dbca82a51",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelPowerFrequency.power_scaled_material_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4cc6b64b92bd29f5d8867c441d466a3abcd9bd92f406869248e9fea26b8a6198"
+    },
+    {
+      "module": "FullChannelPowerFinal",
+      "source": "lean/FullChannelPowerFinal.lean",
+      "source_sha256": "caf2d896f4b0f8c24d76fd8a50643ab96a102aa5b2c76dd0f8583bea272fffde",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-full-channel\\objects\\20261113-004939-72580\\FullChannelPowerFinal.olean",
+        "D:\\oq14\\lean\\FullChannelPowerFinal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.578,
+      "log": "checkpoints/2026-11-13-full-channel/evidence/FullChannelPowerFinal-chain.log",
+      "log_sha256": "09487b390c220e367633189f9135cac242ae1d8962a1449e825f5b20a7d7346e",
+      "reports": [
+        {
+          "declaration": "OQ14.FullChannelPowerFinal.unrestricted_counted_power_global",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.FullChannelPowerFinal.no_uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "605d1065110d20209e08d3bd76b25d9adbda5140c6a99a167af8c1e19f4f825c"
+    }
+  ],
+  "module_count": 17,
+  "report_count": 87
+}

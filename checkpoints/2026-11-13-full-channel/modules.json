@@ -1,0 +1,174 @@
+[
+  {
+    "module": "FullChannelUnbounded",
+    "declarations": [
+      "OQ14.FullChannelUnbounded.achievable_every_dimension",
+      "OQ14.FullChannelUnbounded.no_uniform_bound"
+    ]
+  },
+  {
+    "module": "FullChannelHerglotz",
+    "declarations": [
+      "OQ14.FullChannelHerglotz.electric_continuous",
+      "OQ14.FullChannelHerglotz.electric_memLp",
+      "OQ14.FullChannelHerglotz.datum_actual",
+      "OQ14.FullChannelHerglotz.solution_equation",
+      "OQ14.FullChannelHerglotz.solution_material_relation",
+      "OQ14.FullChannelHerglotz.solution_source_integrable_compact"
+    ]
+  },
+  {
+    "module": "FullChannelTEMatch",
+    "declarations": [
+      "OQ14.FullChannelTEMatch.densityMap_transverse",
+      "OQ14.FullChannelTEMatch.electric_value",
+      "OQ14.FullChannelTEMatch.density_transverse",
+      "OQ14.FullChannelTEMatch.datum_eq",
+      "OQ14.FullChannelTEMatch.solution_eq",
+      "OQ14.FullChannelTEMatch.input_eq_density",
+      "OQ14.FullChannelTEMatch.output_eq",
+      "OQ14.FullChannelTEMatch.electric_from_input",
+      "OQ14.FullChannelTEMatch.normalized_datum_eq",
+      "OQ14.FullChannelTEMatch.normalized_output_eq",
+      "OQ14.FullChannelTEMatch.normalized_datum_actual",
+      "OQ14.FullChannelTEMatch.normalized_material_relation"
+    ]
+  },
+  {
+    "module": "FullChannelFreeMap",
+    "declarations": [
+      "OQ14.FullChannelFreeMap.antipode_preserving",
+      "OQ14.FullChannelFreeMap.free_norm",
+      "OQ14.FullChannelFreeMap.free_actual",
+      "OQ14.FullChannelFreeMap.free_on_TE",
+      "OQ14.FullChannelFreeMap.physicalScatter_on_TE",
+      "OQ14.FullChannelFreeMap.normalizedDatum_add",
+      "OQ14.FullChannelFreeMap.normalizedDatum_smul",
+      "OQ14.FullChannelFreeMap.scatteringLinear_apply",
+      "OQ14.FullChannelFreeMap.scatteringLinear_on_TE",
+      "OQ14.FullChannelFreeMap.scattering_comp_te",
+      "OQ14.FullChannelFreeMap.physical_span_finrank",
+      "OQ14.FullChannelFreeMap.free_tangential",
+      "OQ14.FullChannelFreeMap.radiated_tangential",
+      "OQ14.FullChannelFreeMap.scatteringLinear_tangential"
+    ]
+  },
+  {
+    "module": "FullChannelActualBridge",
+    "declarations": [
+      "OQ14.FullChannelFreeMap.actualScatter_is_global",
+      "OQ14.FullChannelFreeMap.every_dimension_global"
+    ]
+  },
+  {
+    "module": "FullChannelBoundedDatum",
+    "declarations": [
+      "OQ14.FullChannelBoundedDatum.component_actual",
+      "OQ14.FullChannelBoundedDatum.component_add",
+      "OQ14.FullChannelBoundedDatum.component_smul",
+      "OQ14.FullChannelBoundedDatum.component_bound",
+      "OQ14.FullChannelBoundedDatum.ballCLM_actual",
+      "OQ14.FullChannelBoundedDatum.datumCLM_eq"
+    ]
+  },
+  {
+    "module": "FullChannelFarBound",
+    "declarations": [
+      "OQ14.FullChannelFarBound.source_mass_bound",
+      "OQ14.FullChannelFarBound.scalar_far_bound",
+      "OQ14.FullChannelFarBound.electric_far_component_bound",
+      "OQ14.FullChannelFarBound.electric_far_vector_bound",
+      "OQ14.FullChannelFarBound.farMap_bound"
+    ]
+  },
+  {
+    "module": "FullChannelContinuous",
+    "declarations": [
+      "OQ14.FullChannelContinuous.scatteringCLM_eq",
+      "OQ14.FullChannelContinuous.scatteringLinear_continuous",
+      "OQ14.FullChannelContinuous.scatteringCLM_on_TE"
+    ]
+  },
+  {
+    "module": "FullChannelMagnetic",
+    "declarations": [
+      "OQ14.FullChannelMagnetic.crossVec_continuous",
+      "OQ14.FullChannelMagnetic.rotation_memLp",
+      "OQ14.FullChannelMagnetic.rotation_actual",
+      "OQ14.FullChannelMagnetic.rotation_tangential",
+      "OQ14.FullChannelMagnetic.rotation_add",
+      "OQ14.FullChannelMagnetic.rotation_smul",
+      "OQ14.FullChannelMagnetic.rotation_point_bound",
+      "OQ14.FullChannelMagnetic.rotation_norm",
+      "OQ14.FullChannelMagnetic.magneticMap_tangent",
+      "OQ14.FullChannelMagnetic.magneticMap_toLp",
+      "OQ14.FullChannelMagnetic.magnetic_value_toLp",
+      "OQ14.FullChannelMagnetic.magnetic_continuous",
+      "OQ14.FullChannelMagnetic.magnetic_difference_bound"
+    ]
+  },
+  {
+    "module": "FullChannelWeakLimit",
+    "declarations": [
+      "OQ14.FullChannelWeakLimit.test_integrable",
+      "OQ14.FullChannelWeakLimit.pair_difference_bound",
+      "OQ14.FullChannelWeakLimit.curl_difference_bound",
+      "OQ14.FullChannelWeakLimit.weak_curl_closed",
+      "OQ14.FullChannelWeakLimit.finite_magnetic_value",
+      "OQ14.FullChannelWeakLimit.simultaneous_finite_approximation",
+      "OQ14.FullChannelWeakLimit.herglotz_testMaxwell"
+    ]
+  },
+  {
+    "module": "FullChannelMaterialMaxwell",
+    "declarations": [
+      "OQ14.FullChannelMaterialMaxwell.normalized_incident_maxwell",
+      "OQ14.FullChannelMaterialMaxwell.normalized_material_maxwell"
+    ]
+  },
+  {
+    "module": "FullChannelFrequency",
+    "declarations": [
+      "OQ14.FullChannelFrequency.value_dilation",
+      "OQ14.FullChannelFrequency.electricAt_dilation",
+      "OQ14.FullChannelFrequency.magneticAt_dilation",
+      "OQ14.FullChannelFrequency.material_maxwell_at_frequency",
+      "OQ14.FullChannelFrequency.scaled_incident_electric",
+      "OQ14.FullChannelFrequency.scaled_incident_magnetic",
+      "OQ14.FullChannelFrequency.radiated_far_at_frequency"
+    ]
+  },
+  {
+    "module": "FullChannelEndpoint",
+    "declarations": [
+      "OQ14.FullChannelEndpoint.full_unrestricted",
+      "OQ14.FullChannelEndpoint.no_uniform_bound"
+    ]
+  },
+  {
+    "module": "FullChannelDeviceUnit",
+    "declarations": [
+      "OQ14.FullChannelDeviceUnit.counted_subspaces_physical_unit"
+    ]
+  },
+  {
+    "module": "FullChannelFinal",
+    "declarations": [
+      "OQ14.FullChannelFinal.unrestricted_counted_global",
+      "OQ14.FullChannelFinal.no_uniform_bound"
+    ]
+  },
+  {
+    "module": "FullChannelPowerFrequency",
+    "declarations": [
+      "OQ14.FullChannelPowerFrequency.power_scaled_material_maxwell"
+    ]
+  },
+  {
+    "module": "FullChannelPowerFinal",
+    "declarations": [
+      "OQ14.FullChannelPowerFinal.unrestricted_counted_power_global",
+      "OQ14.FullChannelPowerFinal.no_uniform_bound"
+    ]
+  }
+]

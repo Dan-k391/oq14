@@ -1,0 +1,74 @@
+Independent root source review of the Terra full-channel chain
+Date: 2026-11-13
+
+Reviewed all 17 new modules, including definitions, normalization, endpoint
+hypotheses, proof composition and the final PowerGlobalWitness. No actionable
+mathematical or implementation defect found in the claimed scope.
+
+The arbitrary transverse L2 incident datum is the actual Herglotz field,
+localized with sqrt(chi). Uniform finite transverse-harmonic approximation
+gives spatial continuity and, by simultaneous E/H approximation in compact
+test pairings, both weak vacuum Maxwell equations. The negative wave sign in
+the Herglotz API is corrected in normalizedMagnetic. The factor
+sqrt(2)/(2*pi*i) matches the established physical TE incoming convention.
+The exact coefficient-one datum and finite-TE output identifications are
+proved from a.e. representatives, rather than postulated.
+
+The free outgoing map is minus antipodal pullback; its measure preservation,
+norm preservation, transversality and exact outgoing-Hankel TE restriction
+are verified. Actual volume radiation is bounded using compact-source L1
+mass and uniform direction bounds. Their sum is a bounded linear scattering
+operator on the full transverse angular L2 input space and its output is
+transverse. It agrees exactly with the existing actual physical TE map.
+No arbitrary-L2 pointwise free-field far limit or full-space unitarity is
+claimed. The actual compact-source radiated term has its established far
+limit. Selected finite TE inputs retain the complete physical field/power
+identifications and unit throughput on every coherent coefficient vector.
+
+FullChannelDeviceUnit repeats the actual counted-device selection and
+intersects the eventual good sets with actual effective/combined volume
+invertibility. It retains invertibility for the SAME selected shell/sphere
+device; this is not an added hypothesis on an arbitrary device. SupportData
+in the final adapter has exactly that volume radius. The final bounded map
+therefore generates actual material Maxwell fields for every angular input.
+
+Frequency scaling is checked twice with scope distinguished: Final uses
+F(k*x), while PowerFinal uses k*F(k*x), matching incoming/outgoing power.
+PowerFinal retains all original passage/bypass clauses on the full coherent
+span, both coefficient and physical incoming span dimension N, exact
+material bounds, integrable whole-plane flux, and actual field identities.
+The radiated amplitude is invariant under the power-preserving scaling.
+The no_uniform_bound corollary quantifies over this exact complete witness.
+
+The final hypotheses are k>0, eps_plus>1, L>0, 0<eta<delta, 0<tau<1,
+and arbitrary N. The output selected is the full outgoing angular sphere.
+There is no conclusion here for delta<=eta or a receiving-only output.
+Finite compact material geometry comes from the actual shell/sphere
+constructors and SupportData; no common diameter bound is claimed.
+
+Independent compilation: scripts/check_chain.py rebuilds all 17 modules into
+fresh isolated objects, using cached upstream objects. Provenance audit
+authenticates 791 other local sources against stage69/release5238. Promotion
+requires complete chain-build.json, exact source/log hashes, warning-free
+exit zero, all 87 declaration reports and only the three standard axioms.
+This is not a clean whole-project rebuild. Source normalization only changed
+line endings/terminal whitespace; author raw and frozen hashes are retained.
+
+Exact reviewed source hashes:
+FullChannelUnbounded c9d3f0a5bb738d3cfa061f57acb9d67d308b92e96f1d0ebba24abfce341c1bdd
+FullChannelHerglotz 3f70c281751e0238b0f11d01fc405b674c88611a3082cd95e1964226b61eff1d
+FullChannelTEMatch 74c9462416c12271a23716c0107b311ba4e2dbc71803e55317672a97c732a280
+FullChannelFreeMap 925a8b72825f30347ccfaa67923e98b26610098db95a4fc90f2b44cacc78d9ab
+FullChannelActualBridge f730ea15473b7ffc364c939b9136644c438a8d3eddb24e3180a082de4d0bfec2
+FullChannelBoundedDatum c5717b3f35a7a1decd501d1c8de66b35c6751b43d28448301c4575a305dc250b
+FullChannelFarBound e72f9ddbf3711d3a4af090d796877d29004d12e4081868bb7cb6743a4a3663bf
+FullChannelContinuous 53da2e2c60e503f98958bd13cf3cdf9d21192cec7d21149a02f79ad4a6771e6e
+FullChannelMagnetic 5a67e83348a6798805a5c708a81e126d83f67592ca18445bfed5a18ac8af5324
+FullChannelWeakLimit cb6e8a638fcf21d0d71d9ca7ac9993d9b6d138ca399d13bc0c545602b73046fa
+FullChannelMaterialMaxwell 17a0993638a8ae11329c871e0cd1a9c0f53b5a462bb19e51e0cdeed65178dc4f
+FullChannelFrequency f4c49db54379800f8e5d8cc891e353c937648dcc3c7eeb0d0777b8ab0f3d4565
+FullChannelEndpoint 3f9cea6357614fa70bc724c247d10ad1ce601f997f69c34e6bf0d0db0091905b
+FullChannelDeviceUnit 10f6f68c43d1527a23be37210f690dc4f7e324b1492ad98e9cb2fca578579ffc
+FullChannelFinal df759b46168c953ed7d9c467613d34c6528b467f18c5d82962d530d2cf05263a
+FullChannelPowerFrequency bd08e14d49a2ff2ec2acb6fe5af2cfb2bcfc69584853a32797ff2e86953ee2a3
+FullChannelPowerFinal caf2d896f4b0f8c24d76fd8a50643ab96a102aa5b2c76dd0f8583bea272fffde

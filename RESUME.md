@@ -1,6 +1,33 @@
 # OQ14 active full-closure work — November 13, 2026
 
-Stage 69 is the latest verified incremental checkpoint:
+Stage 70 is the latest verified incremental checkpoint:
+[STAGE70.txt](checkpoints/2026-11-13-full-channel/STAGE70.txt).
+The unrestricted physical counted-channel endpoint is compiled and independently
+reviewed for the exact delta>eta>0, full-outgoing-selection regime. It constructs
+arbitrary dimension N at common k, material bound, square and thresholds, with
+the actual same device's bounded full-transverse L2 scattering map, actual
+volume invertibility, power-preserving frequency-scaled material Maxwell fields,
+exact finite-TE restriction, whole-plane flux and all-coherent counting clauses.
+The no-uniform-bound corollary uses the full witness. No delta<=eta or
+receiving-only result, all-input pointwise free-field far asymptotics, or
+full-space unitarity is asserted.
+
+Seventeen modules / 87 reports bring the accepted ledger to 576 modules /
+3977 reports. Root independently reviewed the Terra sources and rebuilt all
+17 into fresh isolated objects, with 791 authenticated upstream sources and
+cached objects. All reports use standard axioms only, with no warnings.
+Current ledger: `checkpoints/2026-11-13-full-channel/evidence/audited_after_5238-stage70.json`.
+Full OQ14 remains active. Packet06 actual sphere pole/residue and cokernel
+drafts have compiled; root is connecting physical normalization and transport.
+Packet05 actual flat phasewise H2 drafts have compiled; one-sided continuity,
+quantitative estimates and curved/complex extension remain. Packet07 is joining
+one-input binary smooth geometry and simultaneous peak constructions; actual
+maxima and full fixed-frequency arbitrary-N assembly remain. These drafts
+are not yet ledger-promoted. Final manuscript and aggregate rebuild remain.
+
+Everything below is historical context, superseded by stage70.
+
+Stage 69 was the previous verified incremental checkpoint:
 [STAGE69.txt](checkpoints/2026-11-13-sphere-classification/STAGE69.txt).
 The complete actual electric-sector sphere kernel is exactly the complex span
 of the nonzero physical numerator, with a unique coefficient and dimension one.
