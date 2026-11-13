@@ -1,0 +1,32 @@
+{
+  "scope": "Independent isolated rebuild and semantic review of three insertion-pole/global-field extensions, using previously reviewed fresh four-module objects",
+  "modules": [
+    {
+      "module": "Packet06SphereInsertionPole",
+      "source_sha256": "b0a89546f5c07bdb1e2f3c65421a01e44f61e33e31e8d5fee434654783871c86",
+      "log_sha256": "19ed03b2b480a5298ec382cb15afa2476708e36510a89af74cd77d3edf3967ac",
+      "object_sha256": "62aaaa8c51bb903b3f9fd996ed67cfb91f89da35b97dbe184f177c8a00ea2cc7",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06GlobalField",
+      "source_sha256": "0a36d8af1bb192607e4106cd65143aef1cad71acf0e27c0421a688a5c60e37d8",
+      "log_sha256": "ff03b6393192ebb2c52b8ceee8359a165de22e5b3a0a1dd8b09a1551584f773e",
+      "object_sha256": "fd32b12ea73cbde32b9a0323b557e107133d7702bb0568865447da51c54f7cc4",
+      "reports": 4,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06GlobalMaxwell",
+      "source_sha256": "e4cc6b4f60eadcd69f1d8de60f29130166cfd819c3638495f9631b38757b2375",
+      "log_sha256": "c2ab1ecc742019fe84900bfb1926471e8333628ddac5be3afbe1a15221eb1305",
+      "object_sha256": "2a9b6b317f2c4999070caa9652e5ba72c892e610e54581a288ec42533f10dcaf",
+      "reports": 2,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 7,
+  "status": "pass",
+  "review": "extension-semantic-review.md"
+}

@@ -1,5 +1,31 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 80 is the latest verified incremental checkpoint:
+[STAGE80.txt](checkpoints/2026-11-13-actual-mode-poles/STAGE80.txt).
+Actual fixed-geometry positive-contrast insertion preserves convergent selected
+sphere modes and nonzero simple electric observation poles. One global locally
+L2 electric field and the actual magnetic convolution satisfy both first-order
+Maxwell equations against every compact test; the electric far limit is proved.
+
+14 modules / 42 reports passed independent source review and fresh ordered
+compilation; all seven root modules have separate independent fresh builds.
+985 upstream sources were authenticated, with cached objects. The ledger is
+737 modules / 4471 reports, all prior records unchanged:
+`checkpoints/2026-11-13-actual-mode-poles/evidence/audited_after_5238-stage80.json`.
+Standard axioms only, no warnings; no whole-project clean build claimed.
+
+Outside this ledger: actual oriented boundary charts passed root fresh build;
+actual frontier nullity and same-device integration compile. The positive cone
+angular roots now provably tend to 2 at fixed aperture >=1/2, and normalized
+angular fields converge pointwise. Complex magnetic far-field limits compile.
+Curved quantitative regularity, actual modal cone excitation, attained device
+maxima/collars, modal packing, final manuscript and aggregate checks remain.
+Full OQ14 remains active; no full ambient simple-kernel claim is made.
+
+Everything below is historical context, superseded by stage80.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 79 is the latest verified incremental checkpoint:
 [STAGE79.txt](checkpoints/2026-11-13-actual-mode-persistence/STAGE79.txt).
 Actual symmetric material perturbations preserve a selected simple sphere

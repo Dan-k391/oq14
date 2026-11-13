@@ -1,0 +1,511 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "0bd0780",
+  "modules": 737,
+  "reports": 4471,
+  "new_modules": 14,
+  "new_reports": 42,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "f602a6a97cd2014eae05502f76d32dfb8cdaf7bec4a1e774b721c285ab507266",
+  "ledger_sha256": "7158080dcba800b34010a6b6f8967305f06b69b7ecad4c72e7e9ce3344bcb08a",
+  "raw_archive_sha256": "4e6b5760d6d10b90be7cbe7d9dff34a003cfb8754ccfb3a3b9edb9490d48db04",
+  "records": [
+    {
+      "module": "Packet06ConeUnionSymmetry",
+      "reports": 8,
+      "source_sha256": "93d378ccc2beadd406560f792e63a7db2346e5897504502321ccc60e35150e61",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConeUnionSymmetry-chain.log",
+      "audit_log_sha256": "dbba1e31abda7b1bba19e3eb1980ad1c143a60aea9b260fb8704031a93edce93",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConeUnionSymmetry-chain.log",
+      "independent_log_sha256": "dbba1e31abda7b1bba19e3eb1980ad1c143a60aea9b260fb8704031a93edce93",
+      "declarations": [
+        "OQ14.Packet06ConeUnionSymmetry.rotation_center",
+        "OQ14.Packet06ConeUnionSymmetry.reflection_center",
+        "OQ14.Packet06ConeUnionSymmetry.rotation_norm_axis",
+        "OQ14.Packet06ConeUnionSymmetry.reflection_norm_axis",
+        "OQ14.Packet06ConeUnionSymmetry.literal_axial",
+        "OQ14.Packet06ConeUnionSymmetry.literal_meridional",
+        "OQ14.Packet06ConeUnionSymmetry.rounded_axial",
+        "OQ14.Packet06ConeUnionSymmetry.rounded_meridional"
+      ]
+    },
+    {
+      "module": "Packet06MaterialInsertion",
+      "reports": 5,
+      "source_sha256": "bf6d65fa9e4967c0a562829ebccd08fa16b3b3abd9183446a667041d80b12647",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialInsertion-chain.log",
+      "audit_log_sha256": "b666a9e4ee2fa571423a9546549b3a286917e84b8aa144c3f1633400f080e64b",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialInsertion-chain.log",
+      "independent_log_sha256": "b666a9e4ee2fa571423a9546549b3a286917e84b8aa144c3f1633400f080e64b",
+      "declarations": [
+        "OQ14.Packet06MaterialInsertion.union_axial",
+        "OQ14.Packet06MaterialInsertion.union_meridional",
+        "OQ14.Packet06MaterialInsertion.union_support",
+        "OQ14.Packet06MaterialInsertion.union_spatial",
+        "OQ14.Packet06MaterialInsertion.union_binary"
+      ]
+    },
+    {
+      "module": "Packet06ShrinkingInsertion",
+      "reports": 2,
+      "source_sha256": "9ca58a5569a1ce76586b34724d464fbca0fc1bca75f3e74d8bf2836ea6d4f057",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ShrinkingInsertion-chain.log",
+      "audit_log_sha256": "2d1e71ac929c5548e07610853153855e91500811b548f151aa3dd4ab87715eee",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ShrinkingInsertion-chain.log",
+      "independent_log_sha256": "2d1e71ac929c5548e07610853153855e91500811b548f151aa3dd4ab87715eee",
+      "declarations": [
+        "OQ14.Packet06ShrinkingInsertion.shrinking_support_eventually_zero",
+        "OQ14.Packet06ShrinkingInsertion.union_eventually_eq"
+      ]
+    },
+    {
+      "module": "Packet06ConcreteInsertion",
+      "reports": 3,
+      "source_sha256": "46bc67adf8a9fc8c35a2568011f0c895e9aa6f98007b48dae2a7b363a255ccac",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConcreteInsertion-chain.log",
+      "audit_log_sha256": "fdd92afdc46f9d82a7e52bace941826ccf76a48caf3ec209f1cecf0f592bdac3",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConcreteInsertion-chain.log",
+      "independent_log_sha256": "fdd92afdc46f9d82a7e52bace941826ccf76a48caf3ec209f1cecf0f592bdac3",
+      "declarations": [
+        "OQ14.Packet06ConcreteInsertion.rounded_support_small",
+        "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_axial",
+        "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_meridional"
+      ]
+    },
+    {
+      "module": "Packet06ContrastInsertion",
+      "reports": 6,
+      "source_sha256": "22a01baee13754ac6fd01e0125cf03015aed164d96e3db344328b24b785ecdf8",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ContrastInsertion-chain.log",
+      "audit_log_sha256": "fe37f6320a8408aa184dcb82571269c5800c5414ef0a8b98c8f1e3e6d8627107",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ContrastInsertion-chain.log",
+      "independent_log_sha256": "fe37f6320a8408aa184dcb82571269c5800c5414ef0a8b98c8f1e3e6d8627107",
+      "declarations": [
+        "OQ14.Packet06ContrastInsertion.axial",
+        "OQ14.Packet06ContrastInsertion.meridional",
+        "OQ14.Packet06ContrastInsertion.support",
+        "OQ14.Packet06ContrastInsertion.tends_pointwise",
+        "OQ14.Packet06ContrastInsertion.uniform_bound",
+        "OQ14.Packet06ContrastInsertion.strictly_increases"
+      ]
+    },
+    {
+      "module": "Packet06SphereInsertion",
+      "reports": 1,
+      "source_sha256": "1ad701ea33ef6a21ec356e15bf9acd3b8f66d028ba3f92963ce574de8899551f",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertion-chain.log",
+      "audit_log_sha256": "276fd02e85515321a00605288086e12357a1beb7478043964d95fbc279b8ea56",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertion-chain.log",
+      "independent_log_sha256": "276fd02e85515321a00605288086e12357a1beb7478043964d95fbc279b8ea56",
+      "declarations": [
+        "OQ14.Packet06SphereInsertion.admissible"
+      ]
+    },
+    {
+      "module": "Packet06SphereInsertionMode",
+      "reports": 1,
+      "source_sha256": "9ddb26d4f7255d33c0bb90cca53153bd732f6d956b37cc61d4572baec797d645",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionMode-chain.log",
+      "audit_log_sha256": "f035f55d42464456f107122ed0dc0ce337329fe08f395e954aac8a87d78147c0",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "independent_review_sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6",
+      "independent_review_mode": "Root semantic review and ordered fresh-object compilation of Terra module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "independent_build_sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionMode-chain.log",
+      "independent_log_sha256": "f035f55d42464456f107122ed0dc0ce337329fe08f395e954aac8a87d78147c0",
+      "declarations": [
+        "OQ14.Packet06SphereInsertionMode.fixed_contrast_mode_persistence"
+      ]
+    },
+    {
+      "module": "Packet06KernelMaxwell",
+      "reports": 3,
+      "source_sha256": "e7cb54357c3e872e8969ee75d03ba4287284e27f7eac9b9689fcca47a0ba0292",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06KernelMaxwell-chain.log",
+      "audit_log_sha256": "d43277e992f58d6b7c2dc67ae7fbe38c19e42675a20376a5b54e6610bf48f732",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/semantic-review.md",
+      "independent_review_sha256": "7b93e069d3a1f491e0d79b3cdc38e86077e8b90f03edc715fafb8163fe19c6b9",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/review-manifest.json",
+      "independent_build_sha256": "17d0725fe7d540f020af193ce39edbe1163402d01fbfae8d9113d804568296b1",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06KernelMaxwell.log",
+      "independent_log_sha256": "add95f2f2599a93e182dd582aa96c9f6e2c87af2fe818918a36750e71db77332",
+      "declarations": [
+        "OQ14.Packet06KernelMaxwell.source_testPair",
+        "OQ14.Packet06KernelMaxwell.kernel_displacement",
+        "OQ14.Packet06KernelMaxwell.actual_first_order"
+      ]
+    },
+    {
+      "module": "Packet06MaterialPole",
+      "reports": 3,
+      "source_sha256": "30df5acda10e96c8067f382115fed98e1a4cef35a0fa39dd9268be5ec16e5bec",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialPole-chain.log",
+      "audit_log_sha256": "52cdb623cffc6909f0d5b32d1b66044487f54b4b290375d36e24385c4b1e67d1",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/semantic-review.md",
+      "independent_review_sha256": "7b93e069d3a1f491e0d79b3cdc38e86077e8b90f03edc715fafb8163fe19c6b9",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/review-manifest.json",
+      "independent_build_sha256": "17d0725fe7d540f020af193ce39edbe1163402d01fbfae8d9113d804568296b1",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06MaterialPole.log",
+      "independent_log_sha256": "6501f7632cc267bd7fa8e9a07d84124a66ef9b788c3b2ff8ffa0c441d2d876ba",
+      "declarations": [
+        "OQ14.Packet06MaterialPole.observation_analyticAt",
+        "OQ14.Packet06MaterialPole.actual_inverse_expansion",
+        "OQ14.Packet06MaterialPole.actual_observed_expansion"
+      ]
+    },
+    {
+      "module": "Packet06ModePolePersistence",
+      "reports": 2,
+      "source_sha256": "c40218ede90ca4849d2156c2c414515f930794f241310327e751a5f0d763b43f",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ModePolePersistence-chain.log",
+      "audit_log_sha256": "6c3ea5fb861a980cb8a3590f39a32bf3f2bef707208f9bdd9122740b6b1139d9",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/semantic-review.md",
+      "independent_review_sha256": "7b93e069d3a1f491e0d79b3cdc38e86077e8b90f03edc715fafb8163fe19c6b9",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/review-manifest.json",
+      "independent_build_sha256": "17d0725fe7d540f020af193ce39edbe1163402d01fbfae8d9113d804568296b1",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06ModePolePersistence.log",
+      "independent_log_sha256": "b03816e0e7f5683c757354e66120cf6c53a96f10aa7783e95459c38b5c91dc40",
+      "declarations": [
+        "OQ14.Packet06ModePolePersistence.repair_units_along",
+        "OQ14.Packet06ModePolePersistence.actual_mode_poles"
+      ]
+    },
+    {
+      "module": "Packet06SpherePolePersistence",
+      "reports": 1,
+      "source_sha256": "8cd6ffcec4442cb86e39bc3bc601b53755354253d75300fda92f5dcb57331a2f",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SpherePolePersistence-chain.log",
+      "audit_log_sha256": "ec76394b8931f5f24e35bcf82aaa9a080861f4b74b63ffdbc9ca9005f4251f8c",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/semantic-review.md",
+      "independent_review_sha256": "7b93e069d3a1f491e0d79b3cdc38e86077e8b90f03edc715fafb8163fe19c6b9",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/review-manifest.json",
+      "independent_build_sha256": "17d0725fe7d540f020af193ce39edbe1163402d01fbfae8d9113d804568296b1",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06SpherePolePersistence.log",
+      "independent_log_sha256": "90f11d5e0b40a93569dcf941cadde0680c1f641089be51c5b329b367be98cead",
+      "declarations": [
+        "OQ14.Packet06SpherePolePersistence.actual_sphere_pole_persistence"
+      ]
+    },
+    {
+      "module": "Packet06SphereInsertionPole",
+      "reports": 1,
+      "source_sha256": "b0a89546f5c07bdb1e2f3c65421a01e44f61e33e31e8d5fee434654783871c86",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionPole-chain.log",
+      "audit_log_sha256": "4b0f90f8ad8fa69ad75fb64db6feae3ef39bd17e1dd0d585e93e80ca5cf428ad",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-semantic-review.md",
+      "independent_review_sha256": "e863f97612f84603dd167d8701a650cb1b0c1a44c20598f68872647a4e26697e",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-review-manifest.json",
+      "independent_build_sha256": "768212b6236c80713722b5409c158c89f88828db816ad2c3749a46c81ac4f2af",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06SphereInsertionPole.log",
+      "independent_log_sha256": "19ed03b2b480a5298ec382cb15afa2476708e36510a89af74cd77d3edf3967ac",
+      "declarations": [
+        "OQ14.Packet06SphereInsertionPole.fixed_contrast_pole_persistence"
+      ]
+    },
+    {
+      "module": "Packet06GlobalField",
+      "reports": 4,
+      "source_sha256": "0a36d8af1bb192607e4106cd65143aef1cad71acf0e27c0421a688a5c60e37d8",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalField-chain.log",
+      "audit_log_sha256": "be29bf590338d9b7e64e8d01f0adbc62a0286e992f971971765bea992e45b115",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-semantic-review.md",
+      "independent_review_sha256": "e863f97612f84603dd167d8701a650cb1b0c1a44c20598f68872647a4e26697e",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-review-manifest.json",
+      "independent_build_sha256": "768212b6236c80713722b5409c158c89f88828db816ad2c3749a46c81ac4f2af",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06GlobalField.log",
+      "independent_log_sha256": "ff03b6393192ebb2c52b8ceee8359a165de22e5b3a0a1dd8b09a1551584f773e",
+      "declarations": [
+        "OQ14.Packet06GlobalField.electric_matches_response",
+        "OQ14.Packet06GlobalField.electric_memLp_ball",
+        "OQ14.Packet06GlobalField.electric_test_integral",
+        "OQ14.Packet06GlobalField.electric_outgoing"
+      ]
+    },
+    {
+      "module": "Packet06GlobalMaxwell",
+      "reports": 2,
+      "source_sha256": "e4cc6b4f60eadcd69f1d8de60f29130166cfd819c3638495f9631b38757b2375",
+      "audit_log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalMaxwell-chain.log",
+      "audit_log_sha256": "cc55d98d005be8335b129f602572d6517b3fc221844a143d58a89067abdb2f96",
+      "independent_review": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-semantic-review.md",
+      "independent_review_sha256": "e863f97612f84603dd167d8701a650cb1b0c1a44c20598f68872647a4e26697e",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-review-manifest.json",
+      "independent_build_sha256": "768212b6236c80713722b5409c158c89f88828db816ad2c3749a46c81ac4f2af",
+      "independent_log": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06GlobalMaxwell.log",
+      "independent_log_sha256": "c2ab1ecc742019fe84900bfb1926471e8333628ddac5be3afbe1a15221eb1305",
+      "declarations": [
+        "OQ14.Packet06GlobalMaxwell.magnetic_memLp_ball",
+        "OQ14.Packet06GlobalMaxwell.global_first_order"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/audited_after_5238-stage80.json",
+      "sha256": "7158080dcba800b34010a6b6f8967305f06b69b7ecad4c72e7e9ce3344bcb08a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/chain-build.json",
+      "sha256": "7ab153965ceb47f5157492a2c11a69a2cfbb935fcdc7342454505dfa57a4264c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConcreteInsertion-chain.log",
+      "sha256": "fdd92afdc46f9d82a7e52bace941826ccf76a48caf3ec209f1cecf0f592bdac3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConeUnionSymmetry-chain.log",
+      "sha256": "dbba1e31abda7b1bba19e3eb1980ad1c143a60aea9b260fb8704031a93edce93"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ContrastInsertion-chain.log",
+      "sha256": "fe37f6320a8408aa184dcb82571269c5800c5414ef0a8b98c8f1e3e6d8627107"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalField-chain.log",
+      "sha256": "be29bf590338d9b7e64e8d01f0adbc62a0286e992f971971765bea992e45b115"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalMaxwell-chain.log",
+      "sha256": "cc55d98d005be8335b129f602572d6517b3fc221844a143d58a89067abdb2f96"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06KernelMaxwell-chain.log",
+      "sha256": "d43277e992f58d6b7c2dc67ae7fbe38c19e42675a20376a5b54e6610bf48f732"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialInsertion-chain.log",
+      "sha256": "b666a9e4ee2fa571423a9546549b3a286917e84b8aa144c3f1633400f080e64b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialPole-chain.log",
+      "sha256": "52cdb623cffc6909f0d5b32d1b66044487f54b4b290375d36e24385c4b1e67d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ModePolePersistence-chain.log",
+      "sha256": "6c3ea5fb861a980cb8a3590f39a32bf3f2bef707208f9bdd9122740b6b1139d9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ShrinkingInsertion-chain.log",
+      "sha256": "2d1e71ac929c5548e07610853153855e91500811b548f151aa3dd4ab87715eee"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertion-chain.log",
+      "sha256": "276fd02e85515321a00605288086e12357a1beb7478043964d95fbc279b8ea56"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionMode-chain.log",
+      "sha256": "f035f55d42464456f107122ed0dc0ce337329fe08f395e954aac8a87d78147c0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionPole-chain.log",
+      "sha256": "4b0f90f8ad8fa69ad75fb64db6feae3ef39bd17e1dd0d585e93e80ca5cf428ad"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SpherePolePersistence-chain.log",
+      "sha256": "ec76394b8931f5f24e35bcf82aaa9a080861f4b74b63ffdbc9ca9005f4251f8c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/modules.json",
+      "sha256": "ead639b788877ceecb900ee54c347c9b064aed39adb5c3e17693829b7e45efe0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/provenance-audit.json",
+      "sha256": "1748e9f5fc99ec40117ec7a5d14282d4f61bb68760935d60b5c0223581aaf7a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-inputs.json",
+      "sha256": "8b7b252c7a0be956f1a4c6fb8c726422927199bf6b0abc0ff92be6cf98129e37"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06GlobalField.log",
+      "sha256": "ff03b6393192ebb2c52b8ceee8359a165de22e5b3a0a1dd8b09a1551584f773e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06GlobalMaxwell.log",
+      "sha256": "c2ab1ecc742019fe84900bfb1926471e8333628ddac5be3afbe1a15221eb1305"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-Packet06SphereInsertionPole.log",
+      "sha256": "19ed03b2b480a5298ec382cb15afa2476708e36510a89af74cd77d3edf3967ac"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-rebuild.ps1",
+      "sha256": "64c3b396b1cded64469c1a035e24b0ea7795420f94ef14e35fcf84112017d8e3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-review-manifest.json",
+      "sha256": "768212b6236c80713722b5409c158c89f88828db816ad2c3749a46c81ac4f2af"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/extension-semantic-review.md",
+      "sha256": "e863f97612f84603dd167d8701a650cb1b0c1a44c20598f68872647a4e26697e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/inputs.json",
+      "sha256": "5bb4fc4d423c9f74a4d89d99b2ec3445a85943fb859ff8dc8c5f293b4269fea4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/insertion-author.json",
+      "sha256": "919b3046f9affb544f3837f55afb041ddea4f599f2f01d0d114d8e5347ed1f87"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/metadata-normalization.json",
+      "sha256": "8e89927cd24cbbf17f6a0b3c16061e5d3bb4931af28ba8752c82959f6aeee400"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06KernelMaxwell.log",
+      "sha256": "add95f2f2599a93e182dd582aa96c9f6e2c87af2fe818918a36750e71db77332"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06MaterialPole.log",
+      "sha256": "6501f7632cc267bd7fa8e9a07d84124a66ef9b788c3b2ff8ffa0c441d2d876ba"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06ModePolePersistence.log",
+      "sha256": "b03816e0e7f5683c757354e66120cf6c53a96f10aa7783e95459c38b5c91dc40"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/Packet06SpherePolePersistence.log",
+      "sha256": "90f11d5e0b40a93569dcf941cadde0680c1f641089be51c5b329b367be98cead"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/rebuild.ps1",
+      "sha256": "0c2008067ca73910e38236e1c6a94d617d25896d0427579e11427dc595c0f0bc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/review-manifest.json",
+      "sha256": "17d0725fe7d540f020af193ce39edbe1163402d01fbfae8d9113d804568296b1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/root-actual-review.txt",
+      "sha256": "5a921a4ab2f2289faba6a122da4c94cae7e1de10b0b1592ca68d96c7e1cca0e6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/reviews/semantic-review.md",
+      "sha256": "7b93e069d3a1f491e0d79b3cdc38e86077e8b90f03edc715fafb8163fe19c6b9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/scripts/audit_provenance.ps1",
+      "sha256": "517623ea449cf962c37e36c65548d6216dbaefa65a9ff7a367e6014efd95103d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/scripts/check_chain.py",
+      "sha256": "31a8462f03d3aaa774a8ba72708b82c76086aa7f1852c91436d2b5c6d3145ef5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/scripts/freeze_checkpoint.py",
+      "sha256": "cdaebe45f4460358a9d7ed5d5f7d49d03bbe6d0f8623c342931fc6281f0349ea"
+    },
+    {
+      "path": "checkpoints/2026-11-13-actual-mode-poles/STAGE80.txt",
+      "sha256": "9ed153bc578258f2bdb09b1b12602c4e3aa92a3accf6995ce20d7a533ee885b2"
+    },
+    {
+      "path": "lean/Packet06ConcreteInsertion.lean",
+      "sha256": "46bc67adf8a9fc8c35a2568011f0c895e9aa6f98007b48dae2a7b363a255ccac"
+    },
+    {
+      "path": "lean/Packet06ConeUnionSymmetry.lean",
+      "sha256": "93d378ccc2beadd406560f792e63a7db2346e5897504502321ccc60e35150e61"
+    },
+    {
+      "path": "lean/Packet06ContrastInsertion.lean",
+      "sha256": "22a01baee13754ac6fd01e0125cf03015aed164d96e3db344328b24b785ecdf8"
+    },
+    {
+      "path": "lean/Packet06GlobalField.lean",
+      "sha256": "0a36d8af1bb192607e4106cd65143aef1cad71acf0e27c0421a688a5c60e37d8"
+    },
+    {
+      "path": "lean/Packet06GlobalMaxwell.lean",
+      "sha256": "e4cc6b4f60eadcd69f1d8de60f29130166cfd819c3638495f9631b38757b2375"
+    },
+    {
+      "path": "lean/Packet06KernelMaxwell.lean",
+      "sha256": "e7cb54357c3e872e8969ee75d03ba4287284e27f7eac9b9689fcca47a0ba0292"
+    },
+    {
+      "path": "lean/Packet06MaterialInsertion.lean",
+      "sha256": "bf6d65fa9e4967c0a562829ebccd08fa16b3b3abd9183446a667041d80b12647"
+    },
+    {
+      "path": "lean/Packet06MaterialPole.lean",
+      "sha256": "30df5acda10e96c8067f382115fed98e1a4cef35a0fa39dd9268be5ec16e5bec"
+    },
+    {
+      "path": "lean/Packet06ModePolePersistence.lean",
+      "sha256": "c40218ede90ca4849d2156c2c414515f930794f241310327e751a5f0d763b43f"
+    },
+    {
+      "path": "lean/Packet06ShrinkingInsertion.lean",
+      "sha256": "9ca58a5569a1ce76586b34724d464fbca0fc1bca75f3e74d8bf2836ea6d4f057"
+    },
+    {
+      "path": "lean/Packet06SphereInsertion.lean",
+      "sha256": "1ad701ea33ef6a21ec356e15bf9acd3b8f66d028ba3f92963ce574de8899551f"
+    },
+    {
+      "path": "lean/Packet06SphereInsertionMode.lean",
+      "sha256": "9ddb26d4f7255d33c0bb90cca53153bd732f6d956b37cc61d4572baec797d645"
+    },
+    {
+      "path": "lean/Packet06SphereInsertionPole.lean",
+      "sha256": "b0a89546f5c07bdb1e2f3c65421a01e44f61e33e31e8d5fee434654783871c86"
+    },
+    {
+      "path": "lean/Packet06SpherePolePersistence.lean",
+      "sha256": "8cd6ffcec4442cb86e39bc3bc601b53755354253d75300fda92f5dcb57331a2f"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "8f3ce40a5d181fde71885a8fb85aaf889e15e032c5eb9ecf3be4a87681b4eb52"
+    }
+  ],
+  "scope": "Actual fixed-geometry contrast insertion preserves selected-sector simple observed inverse poles; global physical locally L2 fields satisfy both first-order Maxwell equations, with electric outgoing limit. Full OQ14 remains active; conical excitation, curved hotspots and modal packing remain incomplete."
+}

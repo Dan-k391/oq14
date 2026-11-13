@@ -1,0 +1,114 @@
+[
+  {
+    "module": "Packet06ConeUnionSymmetry",
+    "declarations": [
+      "OQ14.Packet06ConeUnionSymmetry.rotation_center",
+      "OQ14.Packet06ConeUnionSymmetry.reflection_center",
+      "OQ14.Packet06ConeUnionSymmetry.rotation_norm_axis",
+      "OQ14.Packet06ConeUnionSymmetry.reflection_norm_axis",
+      "OQ14.Packet06ConeUnionSymmetry.literal_axial",
+      "OQ14.Packet06ConeUnionSymmetry.literal_meridional",
+      "OQ14.Packet06ConeUnionSymmetry.rounded_axial",
+      "OQ14.Packet06ConeUnionSymmetry.rounded_meridional"
+    ]
+  },
+  {
+    "module": "Packet06MaterialInsertion",
+    "declarations": [
+      "OQ14.Packet06MaterialInsertion.union_axial",
+      "OQ14.Packet06MaterialInsertion.union_meridional",
+      "OQ14.Packet06MaterialInsertion.union_support",
+      "OQ14.Packet06MaterialInsertion.union_spatial",
+      "OQ14.Packet06MaterialInsertion.union_binary"
+    ]
+  },
+  {
+    "module": "Packet06ShrinkingInsertion",
+    "declarations": [
+      "OQ14.Packet06ShrinkingInsertion.shrinking_support_eventually_zero",
+      "OQ14.Packet06ShrinkingInsertion.union_eventually_eq"
+    ]
+  },
+  {
+    "module": "Packet06ConcreteInsertion",
+    "declarations": [
+      "OQ14.Packet06ConcreteInsertion.rounded_support_small",
+      "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_axial",
+      "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_meridional"
+    ]
+  },
+  {
+    "module": "Packet06ContrastInsertion",
+    "declarations": [
+      "OQ14.Packet06ContrastInsertion.axial",
+      "OQ14.Packet06ContrastInsertion.meridional",
+      "OQ14.Packet06ContrastInsertion.support",
+      "OQ14.Packet06ContrastInsertion.tends_pointwise",
+      "OQ14.Packet06ContrastInsertion.uniform_bound",
+      "OQ14.Packet06ContrastInsertion.strictly_increases"
+    ]
+  },
+  {
+    "module": "Packet06SphereInsertion",
+    "declarations": [
+      "OQ14.Packet06SphereInsertion.admissible"
+    ]
+  },
+  {
+    "module": "Packet06SphereInsertionMode",
+    "declarations": [
+      "OQ14.Packet06SphereInsertionMode.fixed_contrast_mode_persistence"
+    ]
+  },
+  {
+    "module": "Packet06KernelMaxwell",
+    "declarations": [
+      "OQ14.Packet06KernelMaxwell.source_testPair",
+      "OQ14.Packet06KernelMaxwell.kernel_displacement",
+      "OQ14.Packet06KernelMaxwell.actual_first_order"
+    ]
+  },
+  {
+    "module": "Packet06MaterialPole",
+    "declarations": [
+      "OQ14.Packet06MaterialPole.observation_analyticAt",
+      "OQ14.Packet06MaterialPole.actual_inverse_expansion",
+      "OQ14.Packet06MaterialPole.actual_observed_expansion"
+    ]
+  },
+  {
+    "module": "Packet06ModePolePersistence",
+    "declarations": [
+      "OQ14.Packet06ModePolePersistence.repair_units_along",
+      "OQ14.Packet06ModePolePersistence.actual_mode_poles"
+    ]
+  },
+  {
+    "module": "Packet06SpherePolePersistence",
+    "declarations": [
+      "OQ14.Packet06SpherePolePersistence.actual_sphere_pole_persistence"
+    ]
+  },
+  {
+    "module": "Packet06SphereInsertionPole",
+    "declarations": [
+      "OQ14.Packet06SphereInsertionPole.fixed_contrast_pole_persistence"
+    ]
+  },
+  {
+    "module": "Packet06GlobalField",
+    "declarations": [
+      "OQ14.Packet06GlobalField.electric_matches_response",
+      "OQ14.Packet06GlobalField.electric_memLp_ball",
+      "OQ14.Packet06GlobalField.electric_test_integral",
+      "OQ14.Packet06GlobalField.electric_outgoing"
+    ]
+  },
+  {
+    "module": "Packet06GlobalMaxwell",
+    "declarations": [
+      "OQ14.Packet06GlobalMaxwell.magnetic_memLp_ball",
+      "OQ14.Packet06GlobalMaxwell.global_first_order"
+    ]
+  }
+]

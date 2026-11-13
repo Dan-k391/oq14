@@ -1,0 +1,40 @@
+{
+  "scope": "Independent isolated rebuild and semantic review of four actual selected-sector mode-pole modules",
+  "modules": [
+    {
+      "module": "Packet06KernelMaxwell",
+      "source_sha256": "e7cb54357c3e872e8969ee75d03ba4287284e27f7eac9b9689fcca47a0ba0292",
+      "log_sha256": "add95f2f2599a93e182dd582aa96c9f6e2c87af2fe818918a36750e71db77332",
+      "object_sha256": "5ee087f4bf53181f31fe89cc0aadb649db3e10f84e559ed195ad932ccf25ec29",
+      "reports": 3,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06MaterialPole",
+      "source_sha256": "30df5acda10e96c8067f382115fed98e1a4cef35a0fa39dd9268be5ec16e5bec",
+      "log_sha256": "6501f7632cc267bd7fa8e9a07d84124a66ef9b788c3b2ff8ffa0c441d2d876ba",
+      "object_sha256": "4513774e793077c161f20f06eeced0937b8f4abdfca5bfb1d61d4ea23b408a37",
+      "reports": 3,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06ModePolePersistence",
+      "source_sha256": "c40218ede90ca4849d2156c2c414515f930794f241310327e751a5f0d763b43f",
+      "log_sha256": "b03816e0e7f5683c757354e66120cf6c53a96f10aa7783e95459c38b5c91dc40",
+      "object_sha256": "fc885fa745d4c658374906fddf1e6b76faffb8592038636017e90e372c6f1973",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet06SpherePolePersistence",
+      "source_sha256": "8cd6ffcec4442cb86e39bc3bc601b53755354253d75300fda92f5dcb57331a2f",
+      "log_sha256": "90f11d5e0b40a93569dcf941cadde0680c1f641089be51c5b329b367be98cead",
+      "object_sha256": "c3bf8f1a4822454dd5e06c51f729e68118e6c24d06f65466824c8010e22ff70b",
+      "reports": 1,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 9,
+  "status": "pass",
+  "review": "semantic-review.md"
+}

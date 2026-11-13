@@ -1,0 +1,601 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-025148-80852",
+  "object_directory": "checkpoints/2026-11-13-actual-mode-poles/objects/20261113-025148-80852",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 14 physical-mode modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06ConeUnionSymmetry",
+      "source": "lean/Packet06ConeUnionSymmetry.lean",
+      "source_sha256": "93d378ccc2beadd406560f792e63a7db2346e5897504502321ccc60e35150e61",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06ConeUnionSymmetry.olean",
+        "D:\\oq14\\lean\\Packet06ConeUnionSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.156,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConeUnionSymmetry-chain.log",
+      "log_sha256": "dbba1e31abda7b1bba19e3eb1980ad1c143a60aea9b260fb8704031a93edce93",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.rotation_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.reflection_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.rotation_norm_axis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.reflection_norm_axis",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.literal_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.literal_meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.rounded_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConeUnionSymmetry.rounded_meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "3d4e2cca7553677821007527303b47547e5062b845c7acaeee3c37968f6116e5"
+    },
+    {
+      "module": "Packet06MaterialInsertion",
+      "source": "lean/Packet06MaterialInsertion.lean",
+      "source_sha256": "bf6d65fa9e4967c0a562829ebccd08fa16b3b3abd9183446a667041d80b12647",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06MaterialInsertion.olean",
+        "D:\\oq14\\lean\\Packet06MaterialInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.61,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialInsertion-chain.log",
+      "log_sha256": "b666a9e4ee2fa571423a9546549b3a286917e84b8aa144c3f1633400f080e64b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialInsertion.union_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialInsertion.union_meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialInsertion.union_support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialInsertion.union_spatial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialInsertion.union_binary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0ccec8b1171d3076ec6d3c374f73dbf6ddad9ccc46953b34094a072e825c1316"
+    },
+    {
+      "module": "Packet06ShrinkingInsertion",
+      "source": "lean/Packet06ShrinkingInsertion.lean",
+      "source_sha256": "9ca58a5569a1ce76586b34724d464fbca0fc1bca75f3e74d8bf2836ea6d4f057",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06ShrinkingInsertion.olean",
+        "D:\\oq14\\lean\\Packet06ShrinkingInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.203,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ShrinkingInsertion-chain.log",
+      "log_sha256": "2d1e71ac929c5548e07610853153855e91500811b548f151aa3dd4ab87715eee",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ShrinkingInsertion.shrinking_support_eventually_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ShrinkingInsertion.union_eventually_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f39c7bb25fd9c98bc359f3bc3eda6011e6f0ebfe25aae7e787a558aa5f71862c"
+    },
+    {
+      "module": "Packet06ConcreteInsertion",
+      "source": "lean/Packet06ConcreteInsertion.lean",
+      "source_sha256": "46bc67adf8a9fc8c35a2568011f0c895e9aa6f98007b48dae2a7b363a255ccac",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06ConcreteInsertion.olean",
+        "D:\\oq14\\lean\\Packet06ConcreteInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.344,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ConcreteInsertion-chain.log",
+      "log_sha256": "fdd92afdc46f9d82a7e52bace941826ccf76a48caf3ec209f1cecf0f592bdac3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ConcreteInsertion.rounded_support_small",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ConcreteInsertion.sphere_plus_rounded_meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2de9572dc21163bccfe2e11a3f08f9c2d7abffbd477111891a1df9e09e3bed9f"
+    },
+    {
+      "module": "Packet06ContrastInsertion",
+      "source": "lean/Packet06ContrastInsertion.lean",
+      "source_sha256": "22a01baee13754ac6fd01e0125cf03015aed164d96e3db344328b24b785ecdf8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06ContrastInsertion.olean",
+        "D:\\oq14\\lean\\Packet06ContrastInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.375,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ContrastInsertion-chain.log",
+      "log_sha256": "fe37f6320a8408aa184dcb82571269c5800c5414ef0a8b98c8f1e3e6d8627107",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.meridional",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.support",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.tends_pointwise",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.uniform_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ContrastInsertion.strictly_increases",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f0c12d50bf47be4719ebad4bf4d4b87dbf96d9339d79ab4d9c5d7b77075cff06"
+    },
+    {
+      "module": "Packet06SphereInsertion",
+      "source": "lean/Packet06SphereInsertion.lean",
+      "source_sha256": "1ad701ea33ef6a21ec356e15bf9acd3b8f66d028ba3f92963ce574de8899551f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06SphereInsertion.olean",
+        "D:\\oq14\\lean\\Packet06SphereInsertion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.563,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertion-chain.log",
+      "log_sha256": "276fd02e85515321a00605288086e12357a1beb7478043964d95fbc279b8ea56",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereInsertion.admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "555f8c69758c2bf8659b34c7c1699660dcb820ce5ee410a3cf31aa9d81b3b1fa"
+    },
+    {
+      "module": "Packet06SphereInsertionMode",
+      "source": "lean/Packet06SphereInsertionMode.lean",
+      "source_sha256": "9ddb26d4f7255d33c0bb90cca53153bd732f6d956b37cc61d4572baec797d645",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06SphereInsertionMode.olean",
+        "D:\\oq14\\lean\\Packet06SphereInsertionMode.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.672,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionMode-chain.log",
+      "log_sha256": "f035f55d42464456f107122ed0dc0ce337329fe08f395e954aac8a87d78147c0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereInsertionMode.fixed_contrast_mode_persistence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b54bb93401318e53ce0c5306c6f2ac42c972b0cfdb2453cd38719cb7ff9f4211"
+    },
+    {
+      "module": "Packet06KernelMaxwell",
+      "source": "lean/Packet06KernelMaxwell.lean",
+      "source_sha256": "e7cb54357c3e872e8969ee75d03ba4287284e27f7eac9b9689fcca47a0ba0292",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06KernelMaxwell.olean",
+        "D:\\oq14\\lean\\Packet06KernelMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.078,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06KernelMaxwell-chain.log",
+      "log_sha256": "d43277e992f58d6b7c2dc67ae7fbe38c19e42675a20376a5b54e6610bf48f732",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06KernelMaxwell.source_testPair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06KernelMaxwell.kernel_displacement",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06KernelMaxwell.actual_first_order",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5ee087f4bf53181f31fe89cc0aadb649db3e10f84e559ed195ad932ccf25ec29"
+    },
+    {
+      "module": "Packet06MaterialPole",
+      "source": "lean/Packet06MaterialPole.lean",
+      "source_sha256": "30df5acda10e96c8067f382115fed98e1a4cef35a0fa39dd9268be5ec16e5bec",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06MaterialPole.olean",
+        "D:\\oq14\\lean\\Packet06MaterialPole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 28.391,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06MaterialPole-chain.log",
+      "log_sha256": "52cdb623cffc6909f0d5b32d1b66044487f54b4b290375d36e24385c4b1e67d1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialPole.observation_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialPole.actual_inverse_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialPole.actual_observed_expansion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4513774e793077c161f20f06eeced0937b8f4abdfca5bfb1d61d4ea23b408a37"
+    },
+    {
+      "module": "Packet06ModePolePersistence",
+      "source": "lean/Packet06ModePolePersistence.lean",
+      "source_sha256": "c40218ede90ca4849d2156c2c414515f930794f241310327e751a5f0d763b43f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06ModePolePersistence.olean",
+        "D:\\oq14\\lean\\Packet06ModePolePersistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.703,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06ModePolePersistence-chain.log",
+      "log_sha256": "6c3ea5fb861a980cb8a3590f39a32bf3f2bef707208f9bdd9122740b6b1139d9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06ModePolePersistence.repair_units_along",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06ModePolePersistence.actual_mode_poles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fc885fa745d4c658374906fddf1e6b76faffb8592038636017e90e372c6f1973"
+    },
+    {
+      "module": "Packet06SpherePolePersistence",
+      "source": "lean/Packet06SpherePolePersistence.lean",
+      "source_sha256": "8cd6ffcec4442cb86e39bc3bc601b53755354253d75300fda92f5dcb57331a2f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06SpherePolePersistence.olean",
+        "D:\\oq14\\lean\\Packet06SpherePolePersistence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.515,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SpherePolePersistence-chain.log",
+      "log_sha256": "ec76394b8931f5f24e35bcf82aaa9a080861f4b74b63ffdbc9ca9005f4251f8c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SpherePolePersistence.actual_sphere_pole_persistence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c3bf8f1a4822454dd5e06c51f729e68118e6c24d06f65466824c8010e22ff70b"
+    },
+    {
+      "module": "Packet06SphereInsertionPole",
+      "source": "lean/Packet06SphereInsertionPole.lean",
+      "source_sha256": "b0a89546f5c07bdb1e2f3c65421a01e44f61e33e31e8d5fee434654783871c86",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06SphereInsertionPole.olean",
+        "D:\\oq14\\lean\\Packet06SphereInsertionPole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.25,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06SphereInsertionPole-chain.log",
+      "log_sha256": "4b0f90f8ad8fa69ad75fb64db6feae3ef39bd17e1dd0d585e93e80ca5cf428ad",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06SphereInsertionPole.fixed_contrast_pole_persistence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "62aaaa8c51bb903b3f9fd996ed67cfb91f89da35b97dbe184f177c8a00ea2cc7"
+    },
+    {
+      "module": "Packet06GlobalField",
+      "source": "lean/Packet06GlobalField.lean",
+      "source_sha256": "0a36d8af1bb192607e4106cd65143aef1cad71acf0e27c0421a688a5c60e37d8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06GlobalField.olean",
+        "D:\\oq14\\lean\\Packet06GlobalField.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.078,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalField-chain.log",
+      "log_sha256": "be29bf590338d9b7e64e8d01f0adbc62a0286e992f971971765bea992e45b115",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GlobalField.electric_matches_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GlobalField.electric_memLp_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GlobalField.electric_test_integral",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GlobalField.electric_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fd32b12ea73cbde32b9a0323b557e107133d7702bb0568865447da51c54f7cc4"
+    },
+    {
+      "module": "Packet06GlobalMaxwell",
+      "source": "lean/Packet06GlobalMaxwell.lean",
+      "source_sha256": "e4cc6b4f60eadcd69f1d8de60f29130166cfd819c3638495f9631b38757b2375",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-actual-mode-poles\\objects\\20261113-025148-80852\\Packet06GlobalMaxwell.olean",
+        "D:\\oq14\\lean\\Packet06GlobalMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.782,
+      "log": "checkpoints/2026-11-13-actual-mode-poles/evidence/Packet06GlobalMaxwell-chain.log",
+      "log_sha256": "cc55d98d005be8335b129f602572d6517b3fc221844a143d58a89067abdb2f96",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GlobalMaxwell.magnetic_memLp_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GlobalMaxwell.global_first_order",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2a9b6b317f2c4999070caa9652e5ba72c892e610e54581a288ec42533f10dcaf"
+    }
+  ],
+  "module_count": 14,
+  "report_count": 42
+}
