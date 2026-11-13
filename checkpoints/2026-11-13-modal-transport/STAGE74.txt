@@ -1,0 +1,35 @@
+OQ14 stage74: actual physical Green transport and material norm convergence
+
+Date: November 13, 2026. Previous checkpoint: 3d90e0f (stage73).
+
+The actual electric-sector sphere inverse pole now has a nonzero residue on
+genuine bounded physical BallL2 observation spaces. For the direct equation
+(curl curl - z^2 epsilon) E = J and material-supported sector sources J=Sg,
+the Green response is z^(-2) Q W^(-1)g. Its physical weak equation, exact source
+dictionary and local observation restriction are proved. Its simple residue
+is -E beta(E,J)/(2 z N), with the unconjugated physical pairing and proved
+nonzero reciprocal derivative normalization. Source-unit normalization is
+distinct from physical-unit normalization. Arbitrary external compact sources
+are not covered by this adapter; no rank-one full-sphere Green claim is made.
+
+Bounded a.e. material convergence with common bounded support now gives norm
+convergence of the actual unweighted preconditioned dynamic compact part,
+uniformly on every compact frequency set. Actual static invertibility and the
+inverse bound/strong convergence, compact-right and compact-left convergence,
+adjoint compactness, and the support cutoff are proved. Multiplier norm
+convergence is not assumed. Pole persistence and actual symmetry-sector
+perturbation are later obligations, not conclusions of this checkpoint.
+
+12 modules / 36 reports passed fresh isolated compilation and independent
+semantic review. Root reviewed/rebuilt the seven Terra material modules;
+Terra independently reviewed/rebuilt the five root Green modules. The combined
+12-module chain was rebuilt into fresh objects. Only propext, Classical.choice
+and Quot.sound occur; no warnings or errors. 712 other local sources were
+authenticated against stage73/release5238, with cached upstream objects.
+This is not a clean whole-project build.
+
+Accepted incremental ledger: 657 modules / 4258 standard-only reports.
+All 645 previous records remain unchanged. Full OQ14 remains active and
+incomplete. Scalar Schur/pole persistence, curved and complex regularity,
+connected-body driven completion and actual attained maxima/collars, modal
+packing, final manuscript and aggregate verification remain in progress.

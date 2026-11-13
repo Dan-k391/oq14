@@ -1,0 +1,33 @@
+Independent root review of actual material operator convergence
+
+No defect found in the seven-module statements reviewed. The multiplier is
+actual multiplication by susceptibility; its a.e. dictionary, norm bound and
+strong convergence follow from the actual square-root multiplier and dominated
+L2 convergence. The unweighted positive static block is invertible by the exact
+weighted/unweighted switch, with norm bound 1+contrast_bound. Its inverse strong
+convergence follows from a residual identity and that uniform bound, without
+assuming multiplier convergence in operator norm. Strong bounded operators
+composed on the right with a compact map converge in norm by finite covers;
+the argument is uniform over compact continuous frequency families. Compactness
+of the adjoint is proved by finite-dimensional approximation, and self-adjoint
+material multipliers justify compact-left convergence. The common support ball
+provides the actual indicator cutoff needed to make the dynamic source operator
+compact. The final norm estimate separately controls both material and static-
+inverse variations and is uniform on arbitrary compact frequency sets.
+
+The endpoint is the actual unweighted preconditioned compact part. It is not
+itself a simple-pole persistence theorem, nor a claim of norm convergence of
+material multipliers or unrestricted sector invariance. These are subsequent
+obligations. Root independently rebuilt all seven modules and the combined
+12-module Green/material chain using fresh isolated objects and cached upstream
+objects. The common provenance authenticates 712 upstream local sources; this
+is not a full-project clean build.
+
+Reviewed source hashes:
+Packet06MaterialStatic e05a40ec0fc9bd284b8ecdf7d329478657ba5748736b937ebc4c7ede094edb5b
+Packet06StrongCompact 4fb808b36990d0cfb99723ea9d9c5b8cb22c41f0bac59eae847aa664985013bb
+Packet06CompactAdjoint 22cdc231af210ab5b5a90a34e0c5b3dd8f6613d86c6f99285744af85b6dd93f7
+Packet06CompactLeft e095071f09bb6d67a364b587d0a893b3322a77db19dd94129d0d7bb11976d590
+Packet06MaterialCompact 0bfd52e47c637bbd7677c1e95757b97e68b0b77f0a13849218a58623c628cf38
+Packet06MaterialDynamic fbf32f967ba7cf0c1e63b6f993fb0bba12f41667e0788a38bb805088a425381d
+Packet06MaterialPencil 5095beb67ac21d3e6693b066436c4f3f4e0b1c25d7e1d06dce92cd40b81e99b7

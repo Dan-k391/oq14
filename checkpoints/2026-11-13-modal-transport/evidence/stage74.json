@@ -1,0 +1,423 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "3d90e0f",
+  "modules": 657,
+  "reports": 4258,
+  "new_modules": 12,
+  "new_reports": 36,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "e3fb1092dbfd79682f84567cfd9ef3a00dc65a097ae2feb1448f3f6379590888",
+  "ledger_sha256": "093920bfdf31503a53a3f9ac59a11517567b8187669cca94597b759b7c536ef4",
+  "source_provenance_sha256": "d9342caca0acf2414ef6f60e56bcefb9ae7e72f74a8630b1230957f213ea3aec",
+  "chain_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+  "raw_archive_sha256": "c2b8acbf7908b9532180ceba3924b641c1c506b63b5b395320e878f43ac6e3af",
+  "records": [
+    {
+      "module": "Packet06MaterialStatic",
+      "reports": 7,
+      "source_sha256": "e05a40ec0fc9bd284b8ecdf7d329478657ba5748736b937ebc4c7ede094edb5b",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialStatic-chain.log",
+      "audit_log_sha256": "0285a978c3f9b0d368b5f25acc8da41f3fe9fa69669a0d2c1ea84346d71d1df5",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialStatic-chain.log",
+      "independent_log_sha256": "0285a978c3f9b0d368b5f25acc8da41f3fe9fa69669a0d2c1ea84346d71d1df5",
+      "declarations": [
+        "OQ14.Packet06MaterialStatic.materialMultiplier_ae",
+        "OQ14.Packet06MaterialStatic.materialMultiplier_strong",
+        "OQ14.Packet06MaterialStatic.materialMultiplier_norm_le",
+        "OQ14.Packet06MaterialStatic.staticBlock_isUnit",
+        "OQ14.Packet06MaterialStatic.staticBlock_inverse_norm_le",
+        "OQ14.Packet06MaterialStatic.staticBlock_strong",
+        "OQ14.Packet06MaterialStatic.staticBlock_inverse_strong"
+      ]
+    },
+    {
+      "module": "Packet06StrongCompact",
+      "reports": 2,
+      "source_sha256": "4fb808b36990d0cfb99723ea9d9c5b8cb22c41f0bac59eae847aa664985013bb",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06StrongCompact-chain.log",
+      "audit_log_sha256": "2fef4e09ba5c02c8b631b2a4e9106344547adc5beb5fb1fe10ede66e30b9789e",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06StrongCompact-chain.log",
+      "independent_log_sha256": "2fef4e09ba5c02c8b631b2a4e9106344547adc5beb5fb1fe10ede66e30b9789e",
+      "declarations": [
+        "OQ14.Packet06StrongCompact.compact_right_norm_tendsto",
+        "OQ14.Packet06StrongCompact.compact_family_uniform"
+      ]
+    },
+    {
+      "module": "Packet06CompactAdjoint",
+      "reports": 1,
+      "source_sha256": "22cdc231af210ab5b5a90a34e0c5b3dd8f6613d86c6f99285744af85b6dd93f7",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactAdjoint-chain.log",
+      "audit_log_sha256": "ae60d09718c671fd04c7884b579506e7cab97cb8813bbfd914d353756b72691b",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactAdjoint-chain.log",
+      "independent_log_sha256": "ae60d09718c671fd04c7884b579506e7cab97cb8813bbfd914d353756b72691b",
+      "declarations": [
+        "OQ14.Packet06CompactAdjoint.compact_adjoint"
+      ]
+    },
+    {
+      "module": "Packet06CompactLeft",
+      "reports": 1,
+      "source_sha256": "e095071f09bb6d67a364b587d0a893b3322a77db19dd94129d0d7bb11976d590",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactLeft-chain.log",
+      "audit_log_sha256": "4c8509402b881a7e7104bf65368c83d64da477e7666fd9c1720c987919ab28b9",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactLeft-chain.log",
+      "independent_log_sha256": "4c8509402b881a7e7104bf65368c83d64da477e7666fd9c1720c987919ab28b9",
+      "declarations": [
+        "OQ14.Packet06CompactAdjoint.compact_left_family_uniform"
+      ]
+    },
+    {
+      "module": "Packet06MaterialCompact",
+      "reports": 2,
+      "source_sha256": "0bfd52e47c637bbd7677c1e95757b97e68b0b77f0a13849218a58623c628cf38",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialCompact-chain.log",
+      "audit_log_sha256": "a67af42041d5baa6a98cbc7ebabe56ab77633e34cdee34b280feac965eacf92a",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialCompact-chain.log",
+      "independent_log_sha256": "a67af42041d5baa6a98cbc7ebabe56ab77633e34cdee34b280feac965eacf92a",
+      "declarations": [
+        "OQ14.Packet06MaterialCompact.material_selfAdjoint",
+        "OQ14.Packet06MaterialCompact.compact_material_family_uniform"
+      ]
+    },
+    {
+      "module": "Packet06MaterialDynamic",
+      "reports": 2,
+      "source_sha256": "fbf32f967ba7cf0c1e63b6f993fb0bba12f41667e0788a38bb805088a425381d",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialDynamic-chain.log",
+      "audit_log_sha256": "4ce28310bdf262331532d4397b5306b2b7fc5954f8887f402c4429c125e38297",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialDynamic-chain.log",
+      "independent_log_sha256": "4ce28310bdf262331532d4397b5306b2b7fc5954f8887f402c4429c125e38297",
+      "declarations": [
+        "OQ14.Packet06MaterialDynamic.ball_cut_sqrt",
+        "OQ14.Packet06MaterialDynamic.dynamic_material_uniform"
+      ]
+    },
+    {
+      "module": "Packet06MaterialPencil",
+      "reports": 1,
+      "source_sha256": "5095beb67ac21d3e6693b066436c4f3f4e0b1c25d7e1d06dce92cd40b81e99b7",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialPencil-chain.log",
+      "audit_log_sha256": "fe85c4ae5b3a5cace7ac2f270fd0159cd196e68478e923f217790481611117a7",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "independent_review_sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38",
+      "independent_review_mode": "Root source review and fresh chain compilation, independent of Terra author",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "independent_build_sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialPencil-chain.log",
+      "independent_log_sha256": "fe85c4ae5b3a5cace7ac2f270fd0159cd196e68478e923f217790481611117a7",
+      "declarations": [
+        "OQ14.Packet06MaterialPencil.compactPart_uniform"
+      ]
+    },
+    {
+      "module": "Packet06BallObservation",
+      "reports": 3,
+      "source_sha256": "d9e3f1675a2fc2379f7068965aa7bea255752455124295c87028787f158b5b74",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06BallObservation-chain.log",
+      "audit_log_sha256": "4053f3d1b88d23c72374b88baf2784bdd7a5d3b2f32ee66311e9b255f8c19fc3",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "independent_review_sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "independent_build_sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/reviews/Packet06BallObservation.log",
+      "independent_log_sha256": "4053f3d1b88d23c72374b88baf2784bdd7a5d3b2f32ee66311e9b255f8c19fc3",
+      "declarations": [
+        "OQ14.Packet06BallObservation.weighted_zero_of_ball_zero",
+        "OQ14.Packet06BallObservation.kernel_ball_observation_nonzero",
+        "OQ14.Packet06BallObservation.actual_ball_simple_pole"
+      ]
+    },
+    {
+      "module": "Packet06GreenSource",
+      "reports": 4,
+      "source_sha256": "a9036b05ca0dfb4dddde51dd46f8712fcb353c037ffca5cd4297b9ec0f5ea583",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSource-chain.log",
+      "audit_log_sha256": "f18e3e2df427e70b5dc5ae1c6e17f6759809a5d8d554d979d242a666bf76f617",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "independent_review_sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "independent_build_sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenSource.log",
+      "independent_log_sha256": "f18e3e2df427e70b5dc5ae1c6e17f6759809a5d8d554d979d242a666bf76f617",
+      "declarations": [
+        "OQ14.Packet06GreenSource.response_source_test",
+        "OQ14.Packet06GreenSource.solved_weighted_response",
+        "OQ14.Packet06GreenSource.solved_maxwell_test",
+        "OQ14.Packet06GreenSource.direct_source_green"
+      ]
+    },
+    {
+      "module": "Packet06GreenPhysical",
+      "reports": 3,
+      "source_sha256": "fc2e362657dbd7e98963db76347d06861dca42695a845ee17c332b9d01d4b26c",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenPhysical-chain.log",
+      "audit_log_sha256": "932f7ce2e7027de6dbf7141eb24c22cd7bb4b1cf3f7f2c40477559d58bcfe347",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "independent_review_sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "independent_build_sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenPhysical.log",
+      "independent_log_sha256": "932f7ce2e7027de6dbf7141eb24c22cd7bb4b1cf3f7f2c40477559d58bcfe347",
+      "declarations": [
+        "OQ14.Packet06GreenPhysical.dielectric_test_integral",
+        "OQ14.Packet06GreenPhysical.maxwell_test_physical",
+        "OQ14.Packet06GreenPhysical.physical_direct_source"
+      ]
+    },
+    {
+      "module": "Packet06GreenResidue",
+      "reports": 5,
+      "source_sha256": "27d3388cd1893a1822d6cd4ae289a9c1c4769268072c5fe27138370830d72aa4",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenResidue-chain.log",
+      "audit_log_sha256": "0f4e1f016346017eb9514807da68967ca569cf117036844d4713a76a042e4333",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "independent_review_sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "independent_build_sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenResidue.log",
+      "independent_log_sha256": "0f4e1f016346017eb9514807da68967ca569cf117036844d4713a76a042e4333",
+      "declarations": [
+        "OQ14.Packet06GreenResidue.greenObservation_analyticAt",
+        "OQ14.Packet06GreenResidue.source_pairing",
+        "OQ14.Packet06GreenResidue.source_pairing_physical",
+        "OQ14.Packet06GreenResidue.norm_eq_sector_crossing",
+        "OQ14.Packet06GreenResidue.actual_direct_green_pole"
+      ]
+    },
+    {
+      "module": "Packet06GreenSector",
+      "reports": 5,
+      "source_sha256": "abd975fec52c324606d2332d192b4c560b8cd32b3fc7f9cf85464503e6d4c62c",
+      "audit_log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSector-chain.log",
+      "audit_log_sha256": "043f93f7272416819b1cbaa4d4143a22c0a40c331f6f42253e2af6bb0e078a10",
+      "independent_review": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "independent_review_sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe",
+      "independent_review_mode": "Terra source review and separate fresh compilation of root-authored module",
+      "independent_build": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "independent_build_sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961",
+      "independent_log": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenSector.log",
+      "independent_log_sha256": "043f93f7272416819b1cbaa4d4143a22c0a40c331f6f42253e2af6bb0e078a10",
+      "declarations": [
+        "OQ14.Packet06GreenSector.greenField_restriction",
+        "OQ14.Packet06GreenSector.sector_inverse_solves",
+        "OQ14.Packet06GreenSector.greenField_maxwell_test",
+        "OQ14.Packet06GreenSector.greenField_physical",
+        "OQ14.Packet06GreenSector.punctured_actual_source"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/audited_after_5238-stage74.json",
+      "sha256": "093920bfdf31503a53a3f9ac59a11517567b8187669cca94597b759b7c536ef4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/chain-build.json",
+      "sha256": "14331653a6f1cb03197a2d96dd27ea5859cad862f56b807cbec1f9b81c05763b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06BallObservation-chain.log",
+      "sha256": "4053f3d1b88d23c72374b88baf2784bdd7a5d3b2f32ee66311e9b255f8c19fc3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactAdjoint-chain.log",
+      "sha256": "ae60d09718c671fd04c7884b579506e7cab97cb8813bbfd914d353756b72691b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactLeft-chain.log",
+      "sha256": "4c8509402b881a7e7104bf65368c83d64da477e7666fd9c1720c987919ab28b9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenPhysical-chain.log",
+      "sha256": "932f7ce2e7027de6dbf7141eb24c22cd7bb4b1cf3f7f2c40477559d58bcfe347"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenResidue-chain.log",
+      "sha256": "0f4e1f016346017eb9514807da68967ca569cf117036844d4713a76a042e4333"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSector-chain.log",
+      "sha256": "043f93f7272416819b1cbaa4d4143a22c0a40c331f6f42253e2af6bb0e078a10"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSource-chain.log",
+      "sha256": "f18e3e2df427e70b5dc5ae1c6e17f6759809a5d8d554d979d242a666bf76f617"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialCompact-chain.log",
+      "sha256": "a67af42041d5baa6a98cbc7ebabe56ab77633e34cdee34b280feac965eacf92a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialDynamic-chain.log",
+      "sha256": "4ce28310bdf262331532d4397b5306b2b7fc5954f8887f402c4429c125e38297"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialPencil-chain.log",
+      "sha256": "fe85c4ae5b3a5cace7ac2f270fd0159cd196e68478e923f217790481611117a7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialStatic-chain.log",
+      "sha256": "0285a978c3f9b0d368b5f25acc8da41f3fe9fa69669a0d2c1ea84346d71d1df5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/evidence/Packet06StrongCompact-chain.log",
+      "sha256": "2fef4e09ba5c02c8b631b2a4e9106344547adc5beb5fb1fe10ede66e30b9789e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/modules.json",
+      "sha256": "d2f7730a6826212cc278418c1762d4dcbbfde63a42c05c06864af582bfa9e276"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/provenance-audit.json",
+      "sha256": "d9342caca0acf2414ef6f60e56bcefb9ae7e72f74a8630b1230957f213ea3aec"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/independent-build.json",
+      "sha256": "550db8cec8ca382320b52030ce417a707a23508f47119af059ea85af1ec0b961"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/independent-review.txt",
+      "sha256": "02bf07a6564f92fb47a7948a11e81890a90474916ab0ae051c6a13e8adafadfe"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/Packet06BallObservation.log",
+      "sha256": "4053f3d1b88d23c72374b88baf2784bdd7a5d3b2f32ee66311e9b255f8c19fc3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenPhysical.log",
+      "sha256": "932f7ce2e7027de6dbf7141eb24c22cd7bb4b1cf3f7f2c40477559d58bcfe347"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenResidue.log",
+      "sha256": "0f4e1f016346017eb9514807da68967ca569cf117036844d4713a76a042e4333"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenSector.log",
+      "sha256": "043f93f7272416819b1cbaa4d4143a22c0a40c331f6f42253e2af6bb0e078a10"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/Packet06GreenSource.log",
+      "sha256": "f18e3e2df427e70b5dc5ae1c6e17f6759809a5d8d554d979d242a666bf76f617"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/root-actual-review.txt",
+      "sha256": "84e18c5296f6e1a2d55debe62c57cd08e36269fb8d4c05b1e7321261fe1edb38"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/reviews/run-independent.py",
+      "sha256": "63169d490d1d784724a8ffbb2d7a304c7b5715ae4cd81271eb3f369b35e685b3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/scripts/audit_provenance.ps1",
+      "sha256": "6e92f499bd401dc9ffa33e484ac2709428ed9e2d1f7b99f9f034f0cfd8e0d2a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/scripts/check_chain.py",
+      "sha256": "33429c09895fe97c524a5dd64207ad7db2e0ae3e726c525f0a9f34c69d011f5f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/scripts/freeze_checkpoint.py",
+      "sha256": "70c95c5209cb5335261164ff8279e0a4651008dc21b88384277e6c2e79048ce7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-modal-transport/STAGE74.txt",
+      "sha256": "c49c43e0060923e8adf718848ae619b8ee1c4d49ca7986e32edd6fae52d52bf1"
+    },
+    {
+      "path": "lean/Packet06BallObservation.lean",
+      "sha256": "d9e3f1675a2fc2379f7068965aa7bea255752455124295c87028787f158b5b74"
+    },
+    {
+      "path": "lean/Packet06CompactAdjoint.lean",
+      "sha256": "22cdc231af210ab5b5a90a34e0c5b3dd8f6613d86c6f99285744af85b6dd93f7"
+    },
+    {
+      "path": "lean/Packet06CompactLeft.lean",
+      "sha256": "e095071f09bb6d67a364b587d0a893b3322a77db19dd94129d0d7bb11976d590"
+    },
+    {
+      "path": "lean/Packet06GreenPhysical.lean",
+      "sha256": "fc2e362657dbd7e98963db76347d06861dca42695a845ee17c332b9d01d4b26c"
+    },
+    {
+      "path": "lean/Packet06GreenResidue.lean",
+      "sha256": "27d3388cd1893a1822d6cd4ae289a9c1c4769268072c5fe27138370830d72aa4"
+    },
+    {
+      "path": "lean/Packet06GreenSector.lean",
+      "sha256": "abd975fec52c324606d2332d192b4c560b8cd32b3fc7f9cf85464503e6d4c62c"
+    },
+    {
+      "path": "lean/Packet06GreenSource.lean",
+      "sha256": "a9036b05ca0dfb4dddde51dd46f8712fcb353c037ffca5cd4297b9ec0f5ea583"
+    },
+    {
+      "path": "lean/Packet06MaterialCompact.lean",
+      "sha256": "0bfd52e47c637bbd7677c1e95757b97e68b0b77f0a13849218a58623c628cf38"
+    },
+    {
+      "path": "lean/Packet06MaterialDynamic.lean",
+      "sha256": "fbf32f967ba7cf0c1e63b6f993fb0bba12f41667e0788a38bb805088a425381d"
+    },
+    {
+      "path": "lean/Packet06MaterialPencil.lean",
+      "sha256": "5095beb67ac21d3e6693b066436c4f3f4e0b1c25d7e1d06dce92cd40b81e99b7"
+    },
+    {
+      "path": "lean/Packet06MaterialStatic.lean",
+      "sha256": "e05a40ec0fc9bd284b8ecdf7d329478657ba5748736b937ebc4c7ede094edb5b"
+    },
+    {
+      "path": "lean/Packet06StrongCompact.lean",
+      "sha256": "4fb808b36990d0cfb99723ea9d9c5b8cb22c41f0bac59eae847aa664985013bb"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "01aad8bcb6cb7d4dc701c2d9a52406578ceda09d035b78343987d648e8087d26"
+    }
+  ],
+  "scope": "Actual bounded-ball direct electric Green residue for material-supported sector sources and bounded-a.e. material convergence of the actual preconditioned compact part, uniform on compact frequency sets. 12 fresh isolated objects; 712 authenticated upstream sources with cached objects. Full OQ14 remains active and incomplete."
+}

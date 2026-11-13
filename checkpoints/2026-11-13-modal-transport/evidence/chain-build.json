@@ -1,0 +1,517 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-014518-29880",
+  "object_directory": "checkpoints/2026-11-13-modal-transport/objects/20261113-014518-29880",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 12 Green and material-continuity modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet06MaterialStatic",
+      "source": "lean/Packet06MaterialStatic.lean",
+      "source_sha256": "e05a40ec0fc9bd284b8ecdf7d329478657ba5748736b937ebc4c7ede094edb5b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06MaterialStatic.olean",
+        "D:\\oq14\\lean\\Packet06MaterialStatic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 25.641,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialStatic-chain.log",
+      "log_sha256": "0285a978c3f9b0d368b5f25acc8da41f3fe9fa69669a0d2c1ea84346d71d1df5",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.materialMultiplier_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.materialMultiplier_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.materialMultiplier_norm_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.staticBlock_isUnit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.staticBlock_inverse_norm_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.staticBlock_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialStatic.staticBlock_inverse_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6e3d022259c5e115e82859fe83e3b12aeb14ca7285813e675e47ece842c2f35c"
+    },
+    {
+      "module": "Packet06StrongCompact",
+      "source": "lean/Packet06StrongCompact.lean",
+      "source_sha256": "4fb808b36990d0cfb99723ea9d9c5b8cb22c41f0bac59eae847aa664985013bb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06StrongCompact.olean",
+        "D:\\oq14\\lean\\Packet06StrongCompact.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.5,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06StrongCompact-chain.log",
+      "log_sha256": "2fef4e09ba5c02c8b631b2a4e9106344547adc5beb5fb1fe10ede66e30b9789e",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06StrongCompact.compact_right_norm_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06StrongCompact.compact_family_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e55ef221102d25751473fefd9e0a4cddbce1d04351ea69a2e77b4dfc58cf47a6"
+    },
+    {
+      "module": "Packet06CompactAdjoint",
+      "source": "lean/Packet06CompactAdjoint.lean",
+      "source_sha256": "22cdc231af210ab5b5a90a34e0c5b3dd8f6613d86c6f99285744af85b6dd93f7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06CompactAdjoint.olean",
+        "D:\\oq14\\lean\\Packet06CompactAdjoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.094,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactAdjoint-chain.log",
+      "log_sha256": "ae60d09718c671fd04c7884b579506e7cab97cb8813bbfd914d353756b72691b",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CompactAdjoint.compact_adjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "20eee2adf0b7ad37fac30e9350b5ce0f8575022d225d6ff753b68ecd60e7ff8d"
+    },
+    {
+      "module": "Packet06CompactLeft",
+      "source": "lean/Packet06CompactLeft.lean",
+      "source_sha256": "e095071f09bb6d67a364b587d0a893b3322a77db19dd94129d0d7bb11976d590",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06CompactLeft.olean",
+        "D:\\oq14\\lean\\Packet06CompactLeft.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.781,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06CompactLeft-chain.log",
+      "log_sha256": "4c8509402b881a7e7104bf65368c83d64da477e7666fd9c1720c987919ab28b9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06CompactAdjoint.compact_left_family_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9e89b9b1731048265092a1a6d0d083143ab01098d88f24698becf9e5188a4aff"
+    },
+    {
+      "module": "Packet06MaterialCompact",
+      "source": "lean/Packet06MaterialCompact.lean",
+      "source_sha256": "0bfd52e47c637bbd7677c1e95757b97e68b0b77f0a13849218a58623c628cf38",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06MaterialCompact.olean",
+        "D:\\oq14\\lean\\Packet06MaterialCompact.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.109,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialCompact-chain.log",
+      "log_sha256": "a67af42041d5baa6a98cbc7ebabe56ab77633e34cdee34b280feac965eacf92a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialCompact.material_selfAdjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialCompact.compact_material_family_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "b1bd8f19783f37232655b94b6017329ad723b780aeb8e2aa6e0f6b6d434ea48f"
+    },
+    {
+      "module": "Packet06MaterialDynamic",
+      "source": "lean/Packet06MaterialDynamic.lean",
+      "source_sha256": "fbf32f967ba7cf0c1e63b6f993fb0bba12f41667e0788a38bb805088a425381d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06MaterialDynamic.olean",
+        "D:\\oq14\\lean\\Packet06MaterialDynamic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.172,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialDynamic-chain.log",
+      "log_sha256": "4ce28310bdf262331532d4397b5306b2b7fc5954f8887f402c4429c125e38297",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialDynamic.ball_cut_sqrt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06MaterialDynamic.dynamic_material_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1eac9a59a2226c491a65bcf3490835aba8f79870d2e580d205705e026ffbcf70"
+    },
+    {
+      "module": "Packet06MaterialPencil",
+      "source": "lean/Packet06MaterialPencil.lean",
+      "source_sha256": "5095beb67ac21d3e6693b066436c4f3f4e0b1c25d7e1d06dce92cd40b81e99b7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06MaterialPencil.olean",
+        "D:\\oq14\\lean\\Packet06MaterialPencil.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.922,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06MaterialPencil-chain.log",
+      "log_sha256": "fe85c4ae5b3a5cace7ac2f270fd0159cd196e68478e923f217790481611117a7",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06MaterialPencil.compactPart_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2c253ccd2c9d363700faa80eee42b93ebb73f59f858d41290f314ff50c892d0b"
+    },
+    {
+      "module": "Packet06BallObservation",
+      "source": "lean/Packet06BallObservation.lean",
+      "source_sha256": "d9e3f1675a2fc2379f7068965aa7bea255752455124295c87028787f158b5b74",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06BallObservation.olean",
+        "D:\\oq14\\lean\\Packet06BallObservation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.469,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06BallObservation-chain.log",
+      "log_sha256": "4053f3d1b88d23c72374b88baf2784bdd7a5d3b2f32ee66311e9b255f8c19fc3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06BallObservation.weighted_zero_of_ball_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06BallObservation.kernel_ball_observation_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06BallObservation.actual_ball_simple_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ed769e83098edeb7517c8c22f2bd41108f7c13f0a2d98e814a6925d93d322961"
+    },
+    {
+      "module": "Packet06GreenSource",
+      "source": "lean/Packet06GreenSource.lean",
+      "source_sha256": "a9036b05ca0dfb4dddde51dd46f8712fcb353c037ffca5cd4297b9ec0f5ea583",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06GreenSource.olean",
+        "D:\\oq14\\lean\\Packet06GreenSource.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.515,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSource-chain.log",
+      "log_sha256": "f18e3e2df427e70b5dc5ae1c6e17f6759809a5d8d554d979d242a666bf76f617",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GreenSource.response_source_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSource.solved_weighted_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSource.solved_maxwell_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSource.direct_source_green",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "52c223825818fa7a912b32adf579209f742df4d9f12e52cf858d9b1aa935f0b1"
+    },
+    {
+      "module": "Packet06GreenPhysical",
+      "source": "lean/Packet06GreenPhysical.lean",
+      "source_sha256": "fc2e362657dbd7e98963db76347d06861dca42695a845ee17c332b9d01d4b26c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06GreenPhysical.olean",
+        "D:\\oq14\\lean\\Packet06GreenPhysical.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.063,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenPhysical-chain.log",
+      "log_sha256": "932f7ce2e7027de6dbf7141eb24c22cd7bb4b1cf3f7f2c40477559d58bcfe347",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GreenPhysical.dielectric_test_integral",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenPhysical.maxwell_test_physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenPhysical.physical_direct_source",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "848e1811378b695fb1ac4d3804e808bbb6207d67f473cd588f0dde87f9854974"
+    },
+    {
+      "module": "Packet06GreenResidue",
+      "source": "lean/Packet06GreenResidue.lean",
+      "source_sha256": "27d3388cd1893a1822d6cd4ae289a9c1c4769268072c5fe27138370830d72aa4",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06GreenResidue.olean",
+        "D:\\oq14\\lean\\Packet06GreenResidue.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 44.375,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenResidue-chain.log",
+      "log_sha256": "0f4e1f016346017eb9514807da68967ca569cf117036844d4713a76a042e4333",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GreenResidue.greenObservation_analyticAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenResidue.source_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenResidue.source_pairing_physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenResidue.norm_eq_sector_crossing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenResidue.actual_direct_green_pole",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2b5e3dc6c6eff2d11b5c91b1cc7fc4eff590e787d0f05862f7a26f3c58f06954"
+    },
+    {
+      "module": "Packet06GreenSector",
+      "source": "lean/Packet06GreenSector.lean",
+      "source_sha256": "abd975fec52c324606d2332d192b4c560b8cd32b3fc7f9cf85464503e6d4c62c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-modal-transport\\objects\\20261113-014518-29880\\Packet06GreenSector.olean",
+        "D:\\oq14\\lean\\Packet06GreenSector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.141,
+      "log": "checkpoints/2026-11-13-modal-transport/evidence/Packet06GreenSector-chain.log",
+      "log_sha256": "043f93f7272416819b1cbaa4d4143a22c0a40c331f6f42253e2af6bb0e078a10",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet06GreenSector.greenField_restriction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSector.sector_inverse_solves",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSector.greenField_maxwell_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSector.greenField_physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet06GreenSector.punctured_actual_source",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "be2bf672560347b1ab9af8ac265f6710c53542937612f952f242f16e6ee489c2"
+    }
+  ],
+  "module_count": 12,
+  "report_count": 36
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "module": "Packet06MaterialStatic",
+    "declarations": [
+      "OQ14.Packet06MaterialStatic.materialMultiplier_ae",
+      "OQ14.Packet06MaterialStatic.materialMultiplier_strong",
+      "OQ14.Packet06MaterialStatic.materialMultiplier_norm_le",
+      "OQ14.Packet06MaterialStatic.staticBlock_isUnit",
+      "OQ14.Packet06MaterialStatic.staticBlock_inverse_norm_le",
+      "OQ14.Packet06MaterialStatic.staticBlock_strong",
+      "OQ14.Packet06MaterialStatic.staticBlock_inverse_strong"
+    ]
+  },
+  {
+    "module": "Packet06StrongCompact",
+    "declarations": [
+      "OQ14.Packet06StrongCompact.compact_right_norm_tendsto",
+      "OQ14.Packet06StrongCompact.compact_family_uniform"
+    ]
+  },
+  {
+    "module": "Packet06CompactAdjoint",
+    "declarations": [
+      "OQ14.Packet06CompactAdjoint.compact_adjoint"
+    ]
+  },
+  {
+    "module": "Packet06CompactLeft",
+    "declarations": [
+      "OQ14.Packet06CompactAdjoint.compact_left_family_uniform"
+    ]
+  },
+  {
+    "module": "Packet06MaterialCompact",
+    "declarations": [
+      "OQ14.Packet06MaterialCompact.material_selfAdjoint",
+      "OQ14.Packet06MaterialCompact.compact_material_family_uniform"
+    ]
+  },
+  {
+    "module": "Packet06MaterialDynamic",
+    "declarations": [
+      "OQ14.Packet06MaterialDynamic.ball_cut_sqrt",
+      "OQ14.Packet06MaterialDynamic.dynamic_material_uniform"
+    ]
+  },
+  {
+    "module": "Packet06MaterialPencil",
+    "declarations": [
+      "OQ14.Packet06MaterialPencil.compactPart_uniform"
+    ]
+  },
+  {
+    "module": "Packet06BallObservation",
+    "declarations": [
+      "OQ14.Packet06BallObservation.weighted_zero_of_ball_zero",
+      "OQ14.Packet06BallObservation.kernel_ball_observation_nonzero",
+      "OQ14.Packet06BallObservation.actual_ball_simple_pole"
+    ]
+  },
+  {
+    "module": "Packet06GreenSource",
+    "declarations": [
+      "OQ14.Packet06GreenSource.response_source_test",
+      "OQ14.Packet06GreenSource.solved_weighted_response",
+      "OQ14.Packet06GreenSource.solved_maxwell_test",
+      "OQ14.Packet06GreenSource.direct_source_green"
+    ]
+  },
+  {
+    "module": "Packet06GreenPhysical",
+    "declarations": [
+      "OQ14.Packet06GreenPhysical.dielectric_test_integral",
+      "OQ14.Packet06GreenPhysical.maxwell_test_physical",
+      "OQ14.Packet06GreenPhysical.physical_direct_source"
+    ]
+  },
+  {
+    "module": "Packet06GreenResidue",
+    "declarations": [
+      "OQ14.Packet06GreenResidue.greenObservation_analyticAt",
+      "OQ14.Packet06GreenResidue.source_pairing",
+      "OQ14.Packet06GreenResidue.source_pairing_physical",
+      "OQ14.Packet06GreenResidue.norm_eq_sector_crossing",
+      "OQ14.Packet06GreenResidue.actual_direct_green_pole"
+    ]
+  },
+  {
+    "module": "Packet06GreenSector",
+    "declarations": [
+      "OQ14.Packet06GreenSector.greenField_restriction",
+      "OQ14.Packet06GreenSector.sector_inverse_solves",
+      "OQ14.Packet06GreenSector.greenField_maxwell_test",
+      "OQ14.Packet06GreenSector.greenField_physical",
+      "OQ14.Packet06GreenSector.punctured_actual_source"
+    ]
+  }
+]

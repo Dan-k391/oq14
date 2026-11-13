@@ -1,5 +1,33 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 74 is the latest verified incremental checkpoint:
+[STAGE74.txt](checkpoints/2026-11-13-modal-transport/STAGE74.txt).
+The actual direct electric Green response now has a proved nonzero physical
+BallL2 residue and weak Maxwell source identity for J=sqrt(chi)g in the selected
+sector, with exact z^(-2) and -E beta(E,J)/(2 z N) conventions. Arbitrary external
+compact source adapters remain. Actual bounded-a.e. material perturbations now
+converge in the norm of the unweighted preconditioned compact part, uniformly
+on compact frequency sets; this is not yet pole persistence or sector transport.
+
+12 modules / 36 reports passed independent review and fresh isolated compilation,
+with 712 authenticated upstream local sources and cached objects. Only standard
+axioms, no warnings. The accepted ledger is 657 modules / 4258 reports:
+`checkpoints/2026-11-13-modal-transport/evidence/audited_after_5238-stage74.json`.
+All 645 previous records remain unchanged. No full clean rebuild is claimed.
+
+Full OQ14 remains active. Root is joining actual sphere rank-one repair and
+scalar Schur crossing to the actual material pencil. Terra has compiled scalar
+simple-zero persistence and is proving uniform repaired-inverse convergence;
+other Terra agents continue curved scalar transmission regularity and the
+same-device fixed-frequency connected-body/radiation assembly. Flat continuous
+maxima, later connected-lobe geometry and scalar persistence modules are still
+outside the accepted ledger. Final modal packing, attained maxima/collars,
+manuscript and aggregate verification remain.
+
+Everything below is historical context, superseded by stage74.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 73 is the latest verified incremental checkpoint:
 [STAGE73.txt](checkpoints/2026-11-13-driven-frequency/STAGE73.txt).
 The fixed-frequency driven construction now has arbitrary simultaneous
