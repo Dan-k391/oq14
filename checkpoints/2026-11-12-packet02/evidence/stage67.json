@@ -1,0 +1,791 @@
+{
+  "date": "2026-11-12",
+  "previous_proof_checkpoint": "8160201",
+  "starting_handoff_commit": "b54a1e4",
+  "intermediate_foundation_commit": "6f35912",
+  "modules": 527,
+  "reports": 3756,
+  "new_modules": 24,
+  "new_reports": 102,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "7464133c180618d9c0705f44366ee3b33ba95427dc6fe68a2daa347f1961c224",
+  "ledger_sha256": "aa169b5611b4fa7bad32bfafcc8d20565aeaadf61963f079664485afd0b8ed38",
+  "source_provenance_sha256": "362982c7b969dda8c19f1b4d47996f1c1917b48a5279947308fc1e1b71bcf3df",
+  "chain_build_sha256": "e8327f296c65695af29e42556caebd00da54feddf17232533424e10240b37bce",
+  "raw_archive_sha256": "30ecbf77718c98e921425c38fd41a54c9f79ae93c09ddf5be249b62dfa5a83bc",
+  "records": [
+    {
+      "module": "ComplexSphereMaxwell",
+      "reports": 3,
+      "source_sha256": "ae9189d967c339c5a9047865b9840562c18161b4df79d973e4493d137e73ed3d",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/ComplexSphereMaxwell-chain.log",
+      "audit_log_sha256": "c2f78fa79a0ee541f249a48081c423a024e9e9967d0c43125098614af21e1cd5",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.ComplexSphereMaxwell.exterior_maxwell",
+        "OQ14.ComplexSphereMaxwell.interior_maxwell",
+        "OQ14.ComplexSphereMaxwell.source_pair_interior"
+      ]
+    },
+    {
+      "module": "ComplexMagneticHelmholtz",
+      "reports": 5,
+      "source_sha256": "3287196d7fe196ab401df63183651abea1cc181e3c89cb57b85fc5ee019df703",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticHelmholtz-chain.log",
+      "audit_log_sha256": "790f51963b64a6c62123210698dcc5057164a2658872519d1714968b4f61e3cd",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.ComplexMagneticHelmholtz.interior",
+        "OQ14.ComplexMagneticHelmholtz.exterior",
+        "OQ14.ComplexMagneticHelmholtz.magnetic_lapPair",
+        "OQ14.ComplexMagneticHelmholtz.magnetic_weak_helmholtz",
+        "OQ14.ComplexMagneticHelmholtz.magnetic_local"
+      ]
+    },
+    {
+      "module": "ComplexMagneticDivergence",
+      "reports": 3,
+      "source_sha256": "01a7471451a6b0cdf549f47ecd80300588bde5730ff75dbe355df8b66cc15047",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDivergence-chain.log",
+      "audit_log_sha256": "ae83505703d3f8232fdb383ef6774f252a6b0e7bac54ad44146c1d10f016cef7",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.ComplexMagneticDivergence.interior",
+        "OQ14.ComplexMagneticDivergence.exterior",
+        "OQ14.ComplexMagneticDivergence.magnetic_divergence"
+      ]
+    },
+    {
+      "module": "ComplexMagneticDebye",
+      "reports": 7,
+      "source_sha256": "ec7ae6e1df405e2a060e625049d3e851cce3efe1bb6a7c73de12acd50ad0bab8",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDebye-chain.log",
+      "audit_log_sha256": "e6a760f78bfc5d1f6e0f9f6bd90e3dfaa6c3a61e192bc03ce2ca29b8466cd801",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.ComplexMagneticDebye.coordinate_helmholtz",
+        "OQ14.ComplexMagneticDebye.divergence",
+        "OQ14.ComplexMagneticDebye.scalar_weak",
+        "OQ14.ComplexMagneticDebye.regular_radial_coefficient",
+        "OQ14.ComplexMagneticDebye.coordinates_ae",
+        "OQ14.ComplexMagneticDebye.scalar_actual",
+        "OQ14.ComplexMagneticDebye.moment_actual"
+      ]
+    },
+    {
+      "module": "ComplexMagneticReflection",
+      "reports": 5,
+      "source_sha256": "9522ad2fd8de85a34dd96166cbeff546c0651870682b9660cf2c01b8fab12fa6",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticReflection-chain.log",
+      "audit_log_sha256": "44c38822123f165ad3106bdb0687c6b0a138ce8ed5a9f8eaeacdd97b2450d99e",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.ComplexMagneticReflection.radialDot_odd",
+        "OQ14.ComplexMagneticReflection.gradient_reflection",
+        "OQ14.ComplexMagneticReflection.magnetic_reflection",
+        "OQ14.ComplexMagneticReflection.gradient_response_reflection",
+        "OQ14.ComplexMagneticReflection.sector_magnetic_axial"
+      ]
+    },
+    {
+      "module": "Packet02SourceSymmetry",
+      "reports": 2,
+      "source_sha256": "468be759ca382a1d637f424cd5c2d08b7593d6f5a1708445f7e142fd16d71513",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02SourceSymmetry-chain.log",
+      "audit_log_sha256": "d7400b3ee8989bebd11a27fda928c4f0307f5ea7286c35b5511aa93072c63a1a",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.Packet02SourceSymmetry.source_action",
+        "OQ14.Packet02SourceSymmetry.source_covariant"
+      ]
+    },
+    {
+      "module": "Packet02MagneticRotation",
+      "reports": 3,
+      "source_sha256": "1511ab216cdf854ffbac82e5894a8b6323eb807a09c440e1f042f9f0834dbeab",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticRotation-chain.log",
+      "audit_log_sha256": "13e1bcbd913ae8d8a0ea9e58294756000402cd6ea66f4bdfad029036081f4d1a",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.Packet02MagneticRotation.gradient_covariant",
+        "OQ14.Packet02MagneticRotation.response_rotation",
+        "OQ14.Packet02MagneticRotation.magnetic_covariant"
+      ]
+    },
+    {
+      "module": "Packet02GoodSet",
+      "reports": 4,
+      "source_sha256": "d4f18bb697fa691a6de45fbc9c76f1e6b87eadabce3335d78c613b69777eba64",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodSet-chain.log",
+      "audit_log_sha256": "0849ea0ef67dca1c913a5c3a86779f45845bdf1e5947e261b6211a7a49503c82",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "independent_review_sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97",
+      "declarations": [
+        "OQ14.Packet02GoodSet.inverseSquare_locallyIntegrable",
+        "OQ14.Packet02GoodSet.good_ae",
+        "OQ14.Packet02GoodSet.gradient_bound_inverseSquare",
+        "OQ14.Packet02GoodSet.good_gradient_integrable"
+      ]
+    },
+    {
+      "module": "Packet02GoodRotation",
+      "reports": 4,
+      "source_sha256": "d236f4e660f9a3f1cf7516a727d02031fdf6d2846aad6dd9937b289a77a40297",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodRotation-chain.log",
+      "audit_log_sha256": "43e7f5519ee51a699991e6fc511c860df196358b432ca72515a7aca228452462",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.Packet02GoodRotation.integrable_rotation",
+        "OQ14.Packet02GoodRotation.integrable_reflection",
+        "OQ14.Packet02GoodRotation.good_rotation",
+        "OQ14.Packet02GoodRotation.good_reflection"
+      ]
+    },
+    {
+      "module": "Packet02VanishingAlgebra",
+      "reports": 4,
+      "source_sha256": "fb1bf9a18a94c2583086b226f93596e7a24b351e73833390fb5b89fc579b433d",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02VanishingAlgebra-chain.log",
+      "audit_log_sha256": "689a0e9e68c5e280f610ba45cd05ff671ce91031aac22dcad0417b495a925e50",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "independent_review_sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45",
+      "declarations": [
+        "OQ14.Packet02VanishingAlgebra.radial_rotation",
+        "OQ14.Packet02VanishingAlgebra.rotate_to_plane",
+        "OQ14.Packet02VanishingAlgebra.plane_radial_zero",
+        "OQ14.Packet02VanishingAlgebra.radial_zero"
+      ]
+    },
+    {
+      "module": "Packet02MagneticVanishing",
+      "reports": 7,
+      "source_sha256": "c25d1543d44ef0a0ff3b7fe0fb9251bc05dde289593f77e9bf5c4801bba2911e",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticVanishing-chain.log",
+      "audit_log_sha256": "5c70137684fe6dba925e58ef95ecebccb2b7e38060946fb975af23b69ac90a37",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "independent_review_sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97",
+      "declarations": [
+        "OQ14.Packet02MagneticVanishing.magnetic_rotation",
+        "OQ14.Packet02MagneticVanishing.radial_zero_good",
+        "OQ14.Packet02MagneticVanishing.radial_zero_ae",
+        "OQ14.Packet02MagneticVanishing.representative_ae",
+        "OQ14.Packet02MagneticVanishing.representative_radial_zero",
+        "OQ14.Packet02MagneticVanishing.representative_rotation",
+        "OQ14.Packet02MagneticVanishing.representative_reflection"
+      ]
+    },
+    {
+      "module": "Packet02DebyeVanishing",
+      "reports": 2,
+      "source_sha256": "66675a1f7306572e7c9f1d66d4b978b8730fb9fe62e53d60a20364fec956d8fa",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02DebyeVanishing-chain.log",
+      "audit_log_sha256": "3fa802860ca3843a31fa4ff03c400a310cc6dffbe7a77b1a010f19cd75caf07d",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "independent_review_sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97",
+      "declarations": [
+        "OQ14.Packet02DebyeVanishing.datum_zero",
+        "OQ14.Packet02DebyeVanishing.representative_memLp_ball"
+      ]
+    },
+    {
+      "module": "Packet02ExteriorGood",
+      "reports": 1,
+      "source_sha256": "fa665c779935dab494adcfe74a533c0ec3dc7768ac0bbf17eb87a976e2a27580",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorGood-chain.log",
+      "audit_log_sha256": "c1862c1f3080af5bfb55ec752b7902929697de4861b5a83b0c43c940ad6c1c99",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "independent_review_sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97",
+      "declarations": [
+        "OQ14.Packet02ExteriorGood.exterior_good"
+      ]
+    },
+    {
+      "module": "Packet02Axis",
+      "reports": 5,
+      "source_sha256": "5cb100d7318719cdfec0b0e7c9215821c2a5ad4336e6b89c7c8c2b798ddbda71",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02Axis-chain.log",
+      "audit_log_sha256": "2bee4ae814ee69c19b4ddb2ca8092f2a2ff37bbe037ce3739b5e524a964ee06a",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "independent_review_sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97",
+      "declarations": [
+        "OQ14.Packet02Axis.source_halfturn",
+        "OQ14.Packet02Axis.gradient_halfturn",
+        "OQ14.Packet02Axis.response_halfturn",
+        "OQ14.Packet02Axis.magnetic_halfturn",
+        "OQ14.Packet02Axis.axis_vector_zero"
+      ]
+    },
+    {
+      "module": "Packet02ExteriorSmooth",
+      "reports": 3,
+      "source_sha256": "b65db2935fe8604597fc30e44ebd3e72a9b4e76ad933e9acf6da23d91cc22ebb",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorSmooth-chain.log",
+      "audit_log_sha256": "a4fe8be8ec36afa22fb44544b510e13dc4a37f9f69f3077bd4a9ff026d5ca222",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/root-independent.txt",
+      "independent_review_sha256": "66c8b7b880cafd2e72c592251d81c3371e6b91ccc5cf790bf3a50c89a615d915",
+      "declarations": [
+        "OQ14.Packet02ExteriorSmooth.gradient_contDiffAt",
+        "OQ14.Packet02ExteriorSmooth.magnetic_contDiffAt",
+        "OQ14.Packet02ExteriorSmooth.magnetic_contDiffOn"
+      ]
+    },
+    {
+      "module": "Packet02LogSquare",
+      "reports": 4,
+      "source_sha256": "b360763e73acaa2349045c0ae22c6d8375f1d0613a7eaecb219b042159b43589",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02LogSquare-chain.log",
+      "audit_log_sha256": "bc260d5b1e1faf84e2eedb9eef02aada2db508ed6bf13a29d298a367f84339c8",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/root-independent.txt",
+      "independent_review_sha256": "66c8b7b880cafd2e72c592251d81c3371e6b91ccc5cf790bf3a50c89a615d915",
+      "declarations": [
+        "OQ14.Packet02LogSquare.locallyIntegrable_log_sq",
+        "OQ14.Packet02LogSquare.positive_bound",
+        "OQ14.Packet02LogSquare.interval_log_sq",
+        "OQ14.Packet02LogSquare.translated_log_sq_integrable"
+      ]
+    },
+    {
+      "module": "Packet02RadialLog",
+      "reports": 5,
+      "source_sha256": "a6cd3ccb3648fd044006d84170f5fc2629a06237d8061baa5e94142a3bc27f4a",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02RadialLog-chain.log",
+      "audit_log_sha256": "5dccf41aee96324f951722fad06f273c71fff38ddcb7557718f1ae904aed01a9",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "independent_review_sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc",
+      "declarations": [
+        "OQ14.Packet02RadialLog.ratioLog_tail_bound",
+        "OQ14.Packet02RadialLog.ratioLog_sq_tail",
+        "OQ14.Packet02RadialLog.ratioLog_sq_local",
+        "OQ14.Packet02RadialLog.ratioLog_sq_integrable",
+        "OQ14.Packet02RadialLog.profile_memLp"
+      ]
+    },
+    {
+      "module": "Packet02Surface",
+      "reports": 3,
+      "source_sha256": "9bf6dcd23adbae4918178823953078a7ac093a8a642068cd56e580b00f2a4e73",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02Surface-chain.log",
+      "audit_log_sha256": "19bc62223c546f4c6e1f34b5feff93d1bfcff4983eb9c72bd099cab4ec6b1cf8",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "independent_review_sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc",
+      "declarations": [
+        "OQ14.Packet02Surface.entries_ae_of_joint",
+        "OQ14.Packet02Surface.magnetic_integrable_of_joint",
+        "OQ14.Packet02Surface.response_integrable_of_joint"
+      ]
+    },
+    {
+      "module": "Packet02Majorant",
+      "reports": 10,
+      "source_sha256": "8b10f2940a57d03b4299fc35b7001e66f815867b3a59559655671c760814470f",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02Majorant-chain.log",
+      "audit_log_sha256": "79fde1c27f399e7265395d202d977f81c8358df9be2b3dd78b0a622fdad896b4",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "independent_review_sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc",
+      "declarations": [
+        "OQ14.Packet02Majorant.joint_integrable",
+        "OQ14.Packet02Majorant.slice_integrable_ae",
+        "OQ14.Packet02Majorant.good_ae_of_angular_memLp",
+        "OQ14.Packet02Majorant.good_ae_of_angular_memLp'",
+        "OQ14.Packet02Majorant.angular_isometry",
+        "OQ14.Packet02Majorant.angular_radial",
+        "OQ14.Packet02Majorant.kernel_nonneg",
+        "OQ14.Packet02Majorant.kernel_measurable",
+        "OQ14.Packet02Majorant.slice_integrable_of_norm_ne",
+        "OQ14.Packet02Majorant.joint_complex_integrable"
+      ]
+    },
+    {
+      "module": "Packet02SurfaceGeometry",
+      "reports": 5,
+      "source_sha256": "4aed3bda5b7cf1ee219a7a55e2bd9f1e0535235b7d7b5d48a1ef12c9fb0ed953",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceGeometry-chain.log",
+      "audit_log_sha256": "174b33dbd72226f5402373480d1a6e5c7f4ee4887b7fbfced431f294b40d5c95",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "independent_review_sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc",
+      "declarations": [
+        "OQ14.Packet02SurfaceGeometry.norm_axis_sq",
+        "OQ14.Packet02SurfaceGeometry.angular_axis_integral",
+        "OQ14.Packet02SurfaceGeometry.angular_axis_formula",
+        "OQ14.Packet02SurfaceGeometry.angular_formula_ae",
+        "OQ14.Packet02SurfaceGeometry.angular_formula"
+      ]
+    },
+    {
+      "module": "Packet02SurfaceL2",
+      "reports": 3,
+      "source_sha256": "83f5ac5aa496f4fd8fa4d08d86495ea2fb1f1db7c558c7b516b5322aa4e00eae",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceL2-chain.log",
+      "audit_log_sha256": "403762805210b2ec9c5fbb17341e65f87546c3533a2bea69739d49b46f0b9ee3",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "independent_review_sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc",
+      "declarations": [
+        "OQ14.Packet02SurfaceL2.angular_memLp",
+        "OQ14.Packet02SurfaceL2.source_memLp",
+        "OQ14.Packet02SurfaceL2.inverseSquare_joint"
+      ]
+    },
+    {
+      "module": "Packet02GoodMeasurable",
+      "reports": 2,
+      "source_sha256": "f295c08eb1f0fdf200941194c429886b576c8b8730249897daf2954fc2f0ca02",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodMeasurable-chain.log",
+      "audit_log_sha256": "b70080b95167c9c4888686dab1a816c8bbbcf7b28b1525874fb5bb0547b345db",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/endpoint-independent.txt",
+      "independent_review_sha256": "ca0b545be54ac1bc3137c3c3add23f4843084c23edd12e6fc910b12d20a50958",
+      "declarations": [
+        "OQ14.Packet02GoodMeasurable.source_measurable",
+        "OQ14.Packet02GoodMeasurable.good_measurable"
+      ]
+    },
+    {
+      "module": "Packet02SphereVanishing",
+      "reports": 9,
+      "source_sha256": "65e2e3ed9ce415f76d56b461f4c7dabfae2969f7cad59805d16e93cb5e5fddbd",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02SphereVanishing-chain.log",
+      "audit_log_sha256": "631baf5818a6cc1b5f5adcf3b1978f892db3fad3cb81070c28ed3a3cb44801f8",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/endpoint-independent.txt",
+      "independent_review_sha256": "ca0b545be54ac1bc3137c3c3add23f4843084c23edd12e6fc910b12d20a50958",
+      "declarations": [
+        "OQ14.Packet02SphereVanishing.good_sphere_ae",
+        "OQ14.Packet02SphereVanishing.sphere_radial_zero",
+        "OQ14.Packet02SphereVanishing.radialCoefficient_zero",
+        "OQ14.Packet02SphereVanishing.magnetic_integrable",
+        "OQ14.Packet02SphereVanishing.gradient_joint_of_inverseSquare",
+        "OQ14.Packet02SphereVanishing.sphere_radial_zero_of_good_ae",
+        "OQ14.Packet02SphereVanishing.radialCoefficient_zero_of_good_ae",
+        "OQ14.Packet02SphereVanishing.good_ae_of_joint",
+        "OQ14.Packet02SphereVanishing.magnetic_integrable_of_joint"
+      ]
+    },
+    {
+      "module": "Packet02Chain",
+      "reports": 3,
+      "source_sha256": "5fc0ce209a2768d6e4fbc17252e4ae3a6f71cc5c92a4501b484463c59707a806",
+      "audit_log": "checkpoints/2026-11-12-packet02/evidence/Packet02Chain-chain.log",
+      "audit_log_sha256": "09f62e3defc0ec0e7258b31a16b3c4f8a39fd4051cf673b78943d113e244ee51",
+      "independent_review": "checkpoints/2026-11-12-packet02/reviews/endpoint-independent.txt",
+      "independent_review_sha256": "ca0b545be54ac1bc3137c3c3add23f4843084c23edd12e6fc910b12d20a50958",
+      "declarations": [
+        "OQ14.Packet02Chain.exterior_radial_zero",
+        "OQ14.Packet02Chain.exterior_rotation",
+        "OQ14.Packet02Chain.complete"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-12-packet02/ComplexMagneticDebye.log",
+      "sha256": "b723478606e96ddd24417436acd92d8983a56ad629e64def08c94f0dcb81bad9"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/ComplexMagneticDivergence.log",
+      "sha256": "66173870c261b5ecfe8cf6d996965f316bd339847a3c4e67dd2de80b07779221"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/ComplexMagneticHelmholtz.log",
+      "sha256": "259c47ff60cedffbc3258bf5cc3469a3e9b2e1faca6070b5874b26071aa29ef7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/ComplexMagneticReflection.log",
+      "sha256": "a856f8cbeb66777a1b0babcbc7b1fe4cda130ab88327bb736a598c723ff9dc09"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/ComplexSphereMaxwell.log",
+      "sha256": "8ce848c67e4b55edb68238f375f3496d8c5cd5e6e35474bf25fbf70975a732b7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/audited_after_5238-stage67.json",
+      "sha256": "aa169b5611b4fa7bad32bfafcc8d20565aeaadf61963f079664485afd0b8ed38"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/chain-build.json",
+      "sha256": "e8327f296c65695af29e42556caebd00da54feddf17232533424e10240b37bce"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDebye-chain.log",
+      "sha256": "e6a760f78bfc5d1f6e0f9f6bd90e3dfaa6c3a61e192bc03ce2ca29b8466cd801"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDivergence-chain.log",
+      "sha256": "ae83505703d3f8232fdb383ef6774f252a6b0e7bac54ad44146c1d10f016cef7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticHelmholtz-chain.log",
+      "sha256": "790f51963b64a6c62123210698dcc5057164a2658872519d1714968b4f61e3cd"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticReflection-chain.log",
+      "sha256": "44c38822123f165ad3106bdb0687c6b0a138ce8ed5a9f8eaeacdd97b2450d99e"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/ComplexSphereMaxwell-chain.log",
+      "sha256": "c2f78fa79a0ee541f249a48081c423a024e9e9967d0c43125098614af21e1cd5"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02Axis-chain.log",
+      "sha256": "2bee4ae814ee69c19b4ddb2ca8092f2a2ff37bbe037ce3739b5e524a964ee06a"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02Chain-chain.log",
+      "sha256": "09f62e3defc0ec0e7258b31a16b3c4f8a39fd4051cf673b78943d113e244ee51"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02DebyeVanishing-chain.log",
+      "sha256": "3fa802860ca3843a31fa4ff03c400a310cc6dffbe7a77b1a010f19cd75caf07d"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorGood-chain.log",
+      "sha256": "c1862c1f3080af5bfb55ec752b7902929697de4861b5a83b0c43c940ad6c1c99"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorSmooth-chain.log",
+      "sha256": "a4fe8be8ec36afa22fb44544b510e13dc4a37f9f69f3077bd4a9ff026d5ca222"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodMeasurable-chain.log",
+      "sha256": "b70080b95167c9c4888686dab1a816c8bbbcf7b28b1525874fb5bb0547b345db"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodRotation-chain.log",
+      "sha256": "43e7f5519ee51a699991e6fc511c860df196358b432ca72515a7aca228452462"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodSet-chain.log",
+      "sha256": "0849ea0ef67dca1c913a5c3a86779f45845bdf1e5947e261b6211a7a49503c82"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02LogSquare-chain.log",
+      "sha256": "bc260d5b1e1faf84e2eedb9eef02aada2db508ed6bf13a29d298a367f84339c8"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticRotation-chain.log",
+      "sha256": "13e1bcbd913ae8d8a0ea9e58294756000402cd6ea66f4bdfad029036081f4d1a"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticVanishing-chain.log",
+      "sha256": "5c70137684fe6dba925e58ef95ecebccb2b7e38060946fb975af23b69ac90a37"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02Majorant-chain.log",
+      "sha256": "79fde1c27f399e7265395d202d977f81c8358df9be2b3dd78b0a622fdad896b4"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02RadialLog-chain.log",
+      "sha256": "5dccf41aee96324f951722fad06f273c71fff38ddcb7557718f1ae904aed01a9"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02SourceSymmetry-chain.log",
+      "sha256": "d7400b3ee8989bebd11a27fda928c4f0307f5ea7286c35b5511aa93072c63a1a"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02SphereVanishing-chain.log",
+      "sha256": "631baf5818a6cc1b5f5adcf3b1978f892db3fad3cb81070c28ed3a3cb44801f8"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02Surface-chain.log",
+      "sha256": "19bc62223c546f4c6e1f34b5feff93d1bfcff4983eb9c72bd099cab4ec6b1cf8"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceGeometry-chain.log",
+      "sha256": "174b33dbd72226f5402373480d1a6e5c7f4ee4887b7fbfced431f294b40d5c95"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceL2-chain.log",
+      "sha256": "403762805210b2ec9c5fbb17341e65f87546c3533a2bea69739d49b46f0b9ee3"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/evidence/Packet02VanishingAlgebra-chain.log",
+      "sha256": "689a0e9e68c5e280f610ba45cd05ff671ce91031aac22dcad0417b495a925e50"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/modules.json",
+      "sha256": "bea5857947cfc1facf1d81e7291d6a2bb0ea15b37eaf9f036de5a6f10f0c74dd"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02Axis.log",
+      "sha256": "6aed8acf87e625a6593e02508b61508717361e45334a970e657890ccb0767f47"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02DebyeVanishing.log",
+      "sha256": "81c2a4508e99567f4fbf0a2859bfdd686d08ad4f5874aa4ce25cc3e9040d457c"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02ExteriorGood.log",
+      "sha256": "cf34a98d4cac5c01b362308e4d33ca647526f380a9c21e48cd2f146c55a9e67e"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02ExteriorSmooth.log",
+      "sha256": "634ba5a445090402c10fc12b0d3c792a20ed958ce77df4b2684274d19622eade"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02GoodMeasurable.log",
+      "sha256": "6c51a55eba3d472359639053b45629af7db3d16fa02d9e9315a2331b85c72c98"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02GoodRotation.log",
+      "sha256": "332c60f09467829d43f0218965cec7df4d0bc8ccae578c3d984bb77adad0a620"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02LogSquare.log",
+      "sha256": "7f818fd8c58fa9400982d63da7b53f5ea79d4a5d73591a4c18994a9084cf12f0"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02MagneticRotation.log",
+      "sha256": "e063e79c09b8bf0304ead30b1dfb7ab50e8a045e1fd5b8b559fdda4d99616fde"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02Majorant.independent.log",
+      "sha256": "0719317d682a55a2bda2cde66fa06bdb970d9f80be5afdc38b9e8dabbec4c99b"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02RadialLog.independent.log",
+      "sha256": "2ff47dfd0db072b4fa3e816b8e744776815d8e48505e925d9ad2e78ddee1fd6f"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02SourceSymmetry.log",
+      "sha256": "cfd661bbdfee214a76a904673665e63ec618b727d5995f9acd638889f8bb19da"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02SphereVanishing.log",
+      "sha256": "0db6bcddcd4c16c5bb63e6b6da441c062df5f9185dae1a15f528c23644430520"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02Surface.independent.log",
+      "sha256": "893e7f1095176303003ea98be1c30a1676ec718b236ad8c5641378b578a59c56"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02SurfaceGeometry.independent.log",
+      "sha256": "6958819a86bfb7d6910a0746d240e7fb5b123eb8e458db67f644c3e8d9b3c9ef"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02SurfaceL2.independent.log",
+      "sha256": "d0e0284b52b8abc69fd6c36fde4c4b8ff74b93682c7e4917e739f36aa6dbed26"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/Packet02VanishingAlgebra.log",
+      "sha256": "a7858ab478b26b5894715bb988483e701a9854e852530d206e75a9a540e52fbe"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/provenance-audit.json",
+      "sha256": "362982c7b969dda8c19f1b4d47996f1c1917b48a5279947308fc1e1b71bcf3df"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/ComplexMagneticDebye.log",
+      "sha256": "b723478606e96ddd24417436acd92d8983a56ad629e64def08c94f0dcb81bad9"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/ComplexMagneticDivergence.log",
+      "sha256": "66173870c261b5ecfe8cf6d996965f316bd339847a3c4e67dd2de80b07779221"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/ComplexMagneticHelmholtz.log",
+      "sha256": "259c47ff60cedffbc3258bf5cc3469a3e9b2e1faca6070b5874b26071aa29ef7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/ComplexMagneticReflection.log",
+      "sha256": "a856f8cbeb66777a1b0babcbc7b1fe4cda130ab88327bb736a598c723ff9dc09"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/ComplexSphereMaxwell.log",
+      "sha256": "8ce848c67e4b55edb68238f375f3496d8c5cd5e6e35474bf25fbf70975a732b7"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/endpoint-chain.log",
+      "sha256": "b9f603fec2f51170411242eb32176732177f05f3494b74f5d30a52fc77c36ecf"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/endpoint-good-measurable.log",
+      "sha256": "6c51a55eba3d472359639053b45629af7db3d16fa02d9e9315a2331b85c72c98"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/endpoint-independent.txt",
+      "sha256": "ca0b545be54ac1bc3137c3c3add23f4843084c23edd12e6fc910b12d20a50958"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/endpoint-sphere-vanishing.log",
+      "sha256": "0db6bcddcd4c16c5bb63e6b6da441c062df5f9185dae1a15f528c23644430520"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02Axis.independent.log",
+      "sha256": "6aed8acf87e625a6593e02508b61508717361e45334a970e657890ccb0767f47"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02DebyeVanishing.independent.log",
+      "sha256": "81c2a4508e99567f4fbf0a2859bfdd686d08ad4f5874aa4ce25cc3e9040d457c"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02ExteriorGood.independent.log",
+      "sha256": "cf34a98d4cac5c01b362308e4d33ca647526f380a9c21e48cd2f146c55a9e67e"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02GoodSet.independent.log",
+      "sha256": "d92681400141c9d66799d3b366c2db3ff2a49ba52fde1691a5bbb9c61a3e2223"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02MagneticVanishing.independent.log",
+      "sha256": "d75e1ce03bb7975912bfa2b088ba3a93d7595d1b04000d6c62e79af0ac961f31"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/Packet02VanishingAlgebra.log",
+      "sha256": "a7858ab478b26b5894715bb988483e701a9854e852530d206e75a9a540e52fbe"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/root-independent.txt",
+      "sha256": "66c8b7b880cafd2e72c592251d81c3371e6b91ccc5cf790bf3a50c89a615d915"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/rotation-independent.txt",
+      "sha256": "b32866e86738f110d04f9fba80aa39d9ef37cabca1f720d7a6fdb36bb654ba45"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/surface-independent.txt",
+      "sha256": "dcd91d1af02c99af35b3725426875403c676a9de2df1f0f1276c49e0bbf735bc"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/reviews/vanishing-independent.txt",
+      "sha256": "5829ef443cd17de4e36fc892d8727f3ea41b9a7c6090d8e6a8c099893dc97f97"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/audit_foundation_provenance.ps1",
+      "sha256": "f06cfe17cadf14f3272f74665cfc8d9c4214b2c1cc17be512e9fa96f920f7611"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/audit_provenance.ps1",
+      "sha256": "e44e0f9ed5bdaa6b7e62fc286765efd634622bc5df0929ba134643c6e6802d9b"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/check_chain.py",
+      "sha256": "4158ba2afa1f2f0bf298c62c120411de824de7ed8fb86ba124060532c5e9b5f4"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/check_foundations.py",
+      "sha256": "50ca2251e8ec1d58a3a3f674f80367fe447f7b2070818105d90b5fe9b651da50"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/configure_chain.py",
+      "sha256": "1a11bc9e26676cb2f306f926aadb8fe45b2cb3b31a301e38a4670e9fbb57d439"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/scripts/freeze_checkpoint.py",
+      "sha256": "2ee661a8b6a5929d60e0a1f054b33b8831b275b33ee4845bce3d330d0dfc187b"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/STAGE67.txt",
+      "sha256": "62a715f4c10820dd93ec91bcd2280d8928052d268ff62a54801bfcb7e517d211"
+    },
+    {
+      "path": "checkpoints/2026-11-12-packet02/START.txt",
+      "sha256": "42ef643158db2ed69cc8f5b7ecfe51c06bf4d4911cc36e8bd5d542083c9a32e7"
+    },
+    {
+      "path": "lean/ComplexMagneticDebye.lean",
+      "sha256": "ec7ae6e1df405e2a060e625049d3e851cce3efe1bb6a7c73de12acd50ad0bab8"
+    },
+    {
+      "path": "lean/ComplexMagneticDivergence.lean",
+      "sha256": "01a7471451a6b0cdf549f47ecd80300588bde5730ff75dbe355df8b66cc15047"
+    },
+    {
+      "path": "lean/ComplexMagneticHelmholtz.lean",
+      "sha256": "3287196d7fe196ab401df63183651abea1cc181e3c89cb57b85fc5ee019df703"
+    },
+    {
+      "path": "lean/ComplexMagneticReflection.lean",
+      "sha256": "9522ad2fd8de85a34dd96166cbeff546c0651870682b9660cf2c01b8fab12fa6"
+    },
+    {
+      "path": "lean/ComplexSphereMaxwell.lean",
+      "sha256": "ae9189d967c339c5a9047865b9840562c18161b4df79d973e4493d137e73ed3d"
+    },
+    {
+      "path": "lean/Packet02Axis.lean",
+      "sha256": "5cb100d7318719cdfec0b0e7c9215821c2a5ad4336e6b89c7c8c2b798ddbda71"
+    },
+    {
+      "path": "lean/Packet02Chain.lean",
+      "sha256": "5fc0ce209a2768d6e4fbc17252e4ae3a6f71cc5c92a4501b484463c59707a806"
+    },
+    {
+      "path": "lean/Packet02DebyeVanishing.lean",
+      "sha256": "66675a1f7306572e7c9f1d66d4b978b8730fb9fe62e53d60a20364fec956d8fa"
+    },
+    {
+      "path": "lean/Packet02ExteriorGood.lean",
+      "sha256": "fa665c779935dab494adcfe74a533c0ec3dc7768ac0bbf17eb87a976e2a27580"
+    },
+    {
+      "path": "lean/Packet02ExteriorSmooth.lean",
+      "sha256": "b65db2935fe8604597fc30e44ebd3e72a9b4e76ad933e9acf6da23d91cc22ebb"
+    },
+    {
+      "path": "lean/Packet02GoodMeasurable.lean",
+      "sha256": "f295c08eb1f0fdf200941194c429886b576c8b8730249897daf2954fc2f0ca02"
+    },
+    {
+      "path": "lean/Packet02GoodRotation.lean",
+      "sha256": "d236f4e660f9a3f1cf7516a727d02031fdf6d2846aad6dd9937b289a77a40297"
+    },
+    {
+      "path": "lean/Packet02GoodSet.lean",
+      "sha256": "d4f18bb697fa691a6de45fbc9c76f1e6b87eadabce3335d78c613b69777eba64"
+    },
+    {
+      "path": "lean/Packet02LogSquare.lean",
+      "sha256": "b360763e73acaa2349045c0ae22c6d8375f1d0613a7eaecb219b042159b43589"
+    },
+    {
+      "path": "lean/Packet02MagneticRotation.lean",
+      "sha256": "1511ab216cdf854ffbac82e5894a8b6323eb807a09c440e1f042f9f0834dbeab"
+    },
+    {
+      "path": "lean/Packet02MagneticVanishing.lean",
+      "sha256": "c25d1543d44ef0a0ff3b7fe0fb9251bc05dde289593f77e9bf5c4801bba2911e"
+    },
+    {
+      "path": "lean/Packet02Majorant.lean",
+      "sha256": "8b10f2940a57d03b4299fc35b7001e66f815867b3a59559655671c760814470f"
+    },
+    {
+      "path": "lean/Packet02RadialLog.lean",
+      "sha256": "a6cd3ccb3648fd044006d84170f5fc2629a06237d8061baa5e94142a3bc27f4a"
+    },
+    {
+      "path": "lean/Packet02SourceSymmetry.lean",
+      "sha256": "468be759ca382a1d637f424cd5c2d08b7593d6f5a1708445f7e142fd16d71513"
+    },
+    {
+      "path": "lean/Packet02SphereVanishing.lean",
+      "sha256": "65e2e3ed9ce415f76d56b461f4c7dabfae2969f7cad59805d16e93cb5e5fddbd"
+    },
+    {
+      "path": "lean/Packet02Surface.lean",
+      "sha256": "9bf6dcd23adbae4918178823953078a7ac093a8a642068cd56e580b00f2a4e73"
+    },
+    {
+      "path": "lean/Packet02SurfaceGeometry.lean",
+      "sha256": "4aed3bda5b7cf1ee219a7a55e2bd9f1e0535235b7d7b5d48a1ef12c9fb0ed953"
+    },
+    {
+      "path": "lean/Packet02SurfaceL2.lean",
+      "sha256": "83f5ac5aa496f4fd8fa4d08d86495ea2fb1f1db7c558c7b516b5322aa4e00eae"
+    },
+    {
+      "path": "lean/Packet02VanishingAlgebra.lean",
+      "sha256": "fb1bf9a18a94c2583086b226f93596e7a24b351e73833390fb5b89fc579b433d"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "2fbcb8af8fe6748a6677e096668e960d3fe3f664a004852cb48658f4dec4971e"
+    }
+  ],
+  "scope": "Complete Packet02 actual magnetic symmetry and vanishing chain: every complex frequency, all positive real sphere radii, L2 Debye zero. Fresh isolated objects for 24 modules; 485 frozen upstream source dependencies authenticated, cached upstream objects. Not a clean full-project rebuild or full OQ14 closure."
+}

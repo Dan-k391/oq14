@@ -1,0 +1,224 @@
+[
+  {
+    "module": "ComplexSphereMaxwell",
+    "declarations": [
+      "OQ14.ComplexSphereMaxwell.exterior_maxwell",
+      "OQ14.ComplexSphereMaxwell.interior_maxwell",
+      "OQ14.ComplexSphereMaxwell.source_pair_interior"
+    ]
+  },
+  {
+    "module": "ComplexMagneticHelmholtz",
+    "declarations": [
+      "OQ14.ComplexMagneticHelmholtz.interior",
+      "OQ14.ComplexMagneticHelmholtz.exterior",
+      "OQ14.ComplexMagneticHelmholtz.magnetic_lapPair",
+      "OQ14.ComplexMagneticHelmholtz.magnetic_weak_helmholtz",
+      "OQ14.ComplexMagneticHelmholtz.magnetic_local"
+    ]
+  },
+  {
+    "module": "ComplexMagneticDivergence",
+    "declarations": [
+      "OQ14.ComplexMagneticDivergence.interior",
+      "OQ14.ComplexMagneticDivergence.exterior",
+      "OQ14.ComplexMagneticDivergence.magnetic_divergence"
+    ]
+  },
+  {
+    "module": "ComplexMagneticDebye",
+    "declarations": [
+      "OQ14.ComplexMagneticDebye.coordinate_helmholtz",
+      "OQ14.ComplexMagneticDebye.divergence",
+      "OQ14.ComplexMagneticDebye.scalar_weak",
+      "OQ14.ComplexMagneticDebye.regular_radial_coefficient",
+      "OQ14.ComplexMagneticDebye.coordinates_ae",
+      "OQ14.ComplexMagneticDebye.scalar_actual",
+      "OQ14.ComplexMagneticDebye.moment_actual"
+    ]
+  },
+  {
+    "module": "ComplexMagneticReflection",
+    "declarations": [
+      "OQ14.ComplexMagneticReflection.radialDot_odd",
+      "OQ14.ComplexMagneticReflection.gradient_reflection",
+      "OQ14.ComplexMagneticReflection.magnetic_reflection",
+      "OQ14.ComplexMagneticReflection.gradient_response_reflection",
+      "OQ14.ComplexMagneticReflection.sector_magnetic_axial"
+    ]
+  },
+  {
+    "module": "Packet02SourceSymmetry",
+    "declarations": [
+      "OQ14.Packet02SourceSymmetry.source_action",
+      "OQ14.Packet02SourceSymmetry.source_covariant"
+    ]
+  },
+  {
+    "module": "Packet02MagneticRotation",
+    "declarations": [
+      "OQ14.Packet02MagneticRotation.gradient_covariant",
+      "OQ14.Packet02MagneticRotation.response_rotation",
+      "OQ14.Packet02MagneticRotation.magnetic_covariant"
+    ]
+  },
+  {
+    "module": "Packet02GoodSet",
+    "declarations": [
+      "OQ14.Packet02GoodSet.inverseSquare_locallyIntegrable",
+      "OQ14.Packet02GoodSet.good_ae",
+      "OQ14.Packet02GoodSet.gradient_bound_inverseSquare",
+      "OQ14.Packet02GoodSet.good_gradient_integrable"
+    ]
+  },
+  {
+    "module": "Packet02GoodRotation",
+    "declarations": [
+      "OQ14.Packet02GoodRotation.integrable_rotation",
+      "OQ14.Packet02GoodRotation.integrable_reflection",
+      "OQ14.Packet02GoodRotation.good_rotation",
+      "OQ14.Packet02GoodRotation.good_reflection"
+    ]
+  },
+  {
+    "module": "Packet02VanishingAlgebra",
+    "declarations": [
+      "OQ14.Packet02VanishingAlgebra.radial_rotation",
+      "OQ14.Packet02VanishingAlgebra.rotate_to_plane",
+      "OQ14.Packet02VanishingAlgebra.plane_radial_zero",
+      "OQ14.Packet02VanishingAlgebra.radial_zero"
+    ]
+  },
+  {
+    "module": "Packet02MagneticVanishing",
+    "declarations": [
+      "OQ14.Packet02MagneticVanishing.magnetic_rotation",
+      "OQ14.Packet02MagneticVanishing.radial_zero_good",
+      "OQ14.Packet02MagneticVanishing.radial_zero_ae",
+      "OQ14.Packet02MagneticVanishing.representative_ae",
+      "OQ14.Packet02MagneticVanishing.representative_radial_zero",
+      "OQ14.Packet02MagneticVanishing.representative_rotation",
+      "OQ14.Packet02MagneticVanishing.representative_reflection"
+    ]
+  },
+  {
+    "module": "Packet02DebyeVanishing",
+    "declarations": [
+      "OQ14.Packet02DebyeVanishing.datum_zero",
+      "OQ14.Packet02DebyeVanishing.representative_memLp_ball"
+    ]
+  },
+  {
+    "module": "Packet02ExteriorGood",
+    "declarations": [
+      "OQ14.Packet02ExteriorGood.exterior_good"
+    ]
+  },
+  {
+    "module": "Packet02Axis",
+    "declarations": [
+      "OQ14.Packet02Axis.source_halfturn",
+      "OQ14.Packet02Axis.gradient_halfturn",
+      "OQ14.Packet02Axis.response_halfturn",
+      "OQ14.Packet02Axis.magnetic_halfturn",
+      "OQ14.Packet02Axis.axis_vector_zero"
+    ]
+  },
+  {
+    "module": "Packet02ExteriorSmooth",
+    "declarations": [
+      "OQ14.Packet02ExteriorSmooth.gradient_contDiffAt",
+      "OQ14.Packet02ExteriorSmooth.magnetic_contDiffAt",
+      "OQ14.Packet02ExteriorSmooth.magnetic_contDiffOn"
+    ]
+  },
+  {
+    "module": "Packet02LogSquare",
+    "declarations": [
+      "OQ14.Packet02LogSquare.locallyIntegrable_log_sq",
+      "OQ14.Packet02LogSquare.positive_bound",
+      "OQ14.Packet02LogSquare.interval_log_sq",
+      "OQ14.Packet02LogSquare.translated_log_sq_integrable"
+    ]
+  },
+  {
+    "module": "Packet02RadialLog",
+    "declarations": [
+      "OQ14.Packet02RadialLog.ratioLog_tail_bound",
+      "OQ14.Packet02RadialLog.ratioLog_sq_tail",
+      "OQ14.Packet02RadialLog.ratioLog_sq_local",
+      "OQ14.Packet02RadialLog.ratioLog_sq_integrable",
+      "OQ14.Packet02RadialLog.profile_memLp"
+    ]
+  },
+  {
+    "module": "Packet02Surface",
+    "declarations": [
+      "OQ14.Packet02Surface.entries_ae_of_joint",
+      "OQ14.Packet02Surface.magnetic_integrable_of_joint",
+      "OQ14.Packet02Surface.response_integrable_of_joint"
+    ]
+  },
+  {
+    "module": "Packet02Majorant",
+    "declarations": [
+      "OQ14.Packet02Majorant.joint_integrable",
+      "OQ14.Packet02Majorant.slice_integrable_ae",
+      "OQ14.Packet02Majorant.good_ae_of_angular_memLp",
+      "OQ14.Packet02Majorant.good_ae_of_angular_memLp'",
+      "OQ14.Packet02Majorant.angular_isometry",
+      "OQ14.Packet02Majorant.angular_radial",
+      "OQ14.Packet02Majorant.kernel_nonneg",
+      "OQ14.Packet02Majorant.kernel_measurable",
+      "OQ14.Packet02Majorant.slice_integrable_of_norm_ne",
+      "OQ14.Packet02Majorant.joint_complex_integrable"
+    ]
+  },
+  {
+    "module": "Packet02SurfaceGeometry",
+    "declarations": [
+      "OQ14.Packet02SurfaceGeometry.norm_axis_sq",
+      "OQ14.Packet02SurfaceGeometry.angular_axis_integral",
+      "OQ14.Packet02SurfaceGeometry.angular_axis_formula",
+      "OQ14.Packet02SurfaceGeometry.angular_formula_ae",
+      "OQ14.Packet02SurfaceGeometry.angular_formula"
+    ]
+  },
+  {
+    "module": "Packet02SurfaceL2",
+    "declarations": [
+      "OQ14.Packet02SurfaceL2.angular_memLp",
+      "OQ14.Packet02SurfaceL2.source_memLp",
+      "OQ14.Packet02SurfaceL2.inverseSquare_joint"
+    ]
+  },
+  {
+    "module": "Packet02GoodMeasurable",
+    "declarations": [
+      "OQ14.Packet02GoodMeasurable.source_measurable",
+      "OQ14.Packet02GoodMeasurable.good_measurable"
+    ]
+  },
+  {
+    "module": "Packet02SphereVanishing",
+    "declarations": [
+      "OQ14.Packet02SphereVanishing.good_sphere_ae",
+      "OQ14.Packet02SphereVanishing.sphere_radial_zero",
+      "OQ14.Packet02SphereVanishing.radialCoefficient_zero",
+      "OQ14.Packet02SphereVanishing.magnetic_integrable",
+      "OQ14.Packet02SphereVanishing.gradient_joint_of_inverseSquare",
+      "OQ14.Packet02SphereVanishing.sphere_radial_zero_of_good_ae",
+      "OQ14.Packet02SphereVanishing.radialCoefficient_zero_of_good_ae",
+      "OQ14.Packet02SphereVanishing.good_ae_of_joint",
+      "OQ14.Packet02SphereVanishing.magnetic_integrable_of_joint"
+    ]
+  },
+  {
+    "module": "Packet02Chain",
+    "declarations": [
+      "OQ14.Packet02Chain.exterior_radial_zero",
+      "OQ14.Packet02Chain.exterior_rotation",
+      "OQ14.Packet02Chain.complete"
+    ]
+  }
+]

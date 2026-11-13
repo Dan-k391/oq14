@@ -1,0 +1,28 @@
+Root independent mathematical review, 2026-11-12
+
+Packet02LogSquare.lean
+SHA256 b360763e73acaa2349045c0ae22c6d8375f1d0613a7eaecb219b042159b43589
+Four public theorems and four standard-only reports in the isolated chain build.
+The little-o estimate is used only near zero on the positive half-line, with
+the integrable exponent -1/2. Continuity supplies the remaining positive compact
+interval, evenness supplies negative arguments, and interval translation plus
+log_abs gives the exact log(|r-s|)^2 lemma. The zero value of the totalized real
+logarithm does not change the integral. The locally integrable wrapper follows
+from compact containment in a finite interval. No unproved bound is assumed.
+
+Packet02ExteriorSmooth.lean
+SHA256 b65db2935fe8604597fc30e44ebd3e72a9b4e76ad933e9acf6da23d91cc22ebb
+Three public theorems and three standard-only reports in the isolated chain build.
+The proof differentiates the explicit complex Green gradient away from zero,
+where the Euclidean norm and its reciprocals are smooth. The accepted general
+exterior-convolution theorem applies to each actual compactly supported L1 source
+coordinate. The actual magnetic field is a scalar multiple of the difference
+of two such responses. The conclusion is C-infinity on norm x > 1, without a
+kernel-vector premise, a sector premise, or a nonzero-frequency premise.
+
+The root also inspected the source/magnetic rotation, Good-set invariance,
+radial algebra, all-radius geometry, actual sphere endpoint and final aggregate.
+Integrals are split only with explicit integrability; diagonal sign changes use
+scalar multiplication alone. The source is the actual DynamicVolume.source,
+the radial pairing is bilinear, and every fixed positive real radius is covered.
+The final isolated build validates all 24 modules and every public theorem report.

@@ -1,3 +1,42 @@
+# OQ14 resume state — November 12, 2026
+
+Stage 67 is the latest verified incremental proof checkpoint. The full record is
+[STAGE67.txt](checkpoints/2026-11-12-packet02/STAGE67.txt). The requested Packet 02
+actual magnetic symmetry and vanishing chain is complete. All proof tasks and
+compiler runs are finished at handoff.
+
+`OQ14.Packet02Chain.complete` in `lean/Packet02Chain.lean` proves the common Borel
+convergence set, actual magnetic rotation/reflection covariance and radial zero,
+global locally L2 representative, raw axis zero, smooth exterior, and magnetic
+Debye datum zero. Every positive real sphere radius is covered, including r=1:
+actual magnetic components are angular L1, the radial component vanishes a.e.,
+and every polynomial radial coefficient is zero. The only assumptions are n>1
+and electricSector membership; complex frequency is arbitrary, including zero,
+and there is no kernel-vector premise. The all-radius logarithmic majorant has
+been proved, rather than retained as a hypothesis.
+
+24 modules and 102 standard-only theorem reports were checked, bringing the
+incremental ledger to 527 modules / 3756 reports. All 503 stage66 records remain
+unchanged. The complete new chain compiled into isolated fresh objects, with
+485 other local source dependencies authenticated against frozen evidence.
+Upstream objects were cached; this is not a clean full-project rebuild.
+Clean aggregate release 5238 remains unchanged. Full OQ14 closure is unfinished.
+
+Current ledger:
+`checkpoints/2026-11-12-packet02/evidence/audited_after_5238-stage67.json`.
+Rebuild with `scripts/check_chain.py` in that checkpoint. The same folder holds
+independent reviews, exact source/log hashes, and the raw evidence archive.
+Intermediate magnetic-foundation rollback commit: `6f35912`.
+
+Next useful stage: Packet 04 vector angular reconstruction and sphere-kernel
+classification, using Packet 01 electric coefficients and Packet 02 magnetic
+vanishing. Interface estimates, residue/continuation, modal/driven assembly,
+unrestricted-channel formalization, and final paper/aggregate integration remain.
+The five ComplexSphereMaxwell/ComplexMagnetic* foundations listed in stage67 are
+now accepted. Other pending drafts and sites/ remain untouched and unaccepted.
+
+Everything below is historical context, superseded by stage67.
+
 # OQ14 resume state — November 2, 2026
 
 Stage 66 is the latest verified incremental proof checkpoint. Its full record

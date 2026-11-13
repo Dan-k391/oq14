@@ -1,0 +1,19 @@
+Independent surface and radial audit, 2026-11-12
+Pinned toolchain: Lean 4.19.0, mathlib c44e0c8ee63ca166450922a373c7409c5d26b00b.
+Five surface/radial modules independently compiled in dependency order; checkpoint independent logs and oleans are retained. Packet02LogSquare source inspected, compiled separately by author.
+Formula: angular r y = (2*pi/(r*norm y))*log((r+norm y)/abs(r-norm y)), almost everywhere for every r>0. The axis integral runs from -1 to 1 with azimuth factor 2*pi, and the log square factor cancels the 2 in the denominator.
+Singular sphere and origin are volume-null in the angular formula. The logarithmic local estimate excludes s=r almost everywhere, and the tail on s>2r is bounded by 4r/s, whose square is integrable. The radial Jacobian cancels the 1/s squared. No r=1 exception occurs.
+The source L2 result transfers from the physicalCoordinate representative by StaticNewton.material_source_ae. Joint complex measurability uses the AE strongly measurable source and product projection, while integrability is dominated by the real nonnegative kernel and Holder. No pointwise representative identity is asserted.
+The good-sphere claim and angular integral are AE claims; nothing here asserts finiteness of every slice at the singular sphere.
+
+Packet02Surface source SHA256 9BF6DCD23ADBAE4918178823953078A7AC093A8A642068CD56E580B00F2A4E73; theorem reports 3/3
+  Independent log lines 3; unexpected output lines 0.
+Packet02Majorant source SHA256 8B10F2940A57D03B4299FC35B7001E66F815867B3A59559655671C760814470F; theorem reports 10/10
+  Independent log lines 10; unexpected output lines 0.
+Packet02SurfaceGeometry source SHA256 4AED3BDA5B7CF1EE219A7A55E2BD9F1E0535235B7D7B5D48A1EF12C9FB0ED953; theorem reports 5/5
+  Independent log lines 5; unexpected output lines 0.
+Packet02RadialLog source SHA256 A6CD3CCB3648FD044006D84170F5FC2629A06237D8061BAA5E94142A3BC27F4A; theorem reports 5/5
+  Independent log lines 5; unexpected output lines 0.
+Packet02SurfaceL2 source SHA256 83F5AC5AA496F4FD8FA4D08D86495EA2FB1F1DB7C558C7B516B5322AA4E00EAE; theorem reports 3/3
+  Independent log lines 3; unexpected output lines 0.
+Packet02LogSquare source SHA256 B360763E73ACAA2349045C0AE22C6D8375F1D0613A7EAECB219B042159B43589; theorem reports 4/4

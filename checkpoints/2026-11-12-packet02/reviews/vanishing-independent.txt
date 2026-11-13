@@ -1,0 +1,17 @@
+Independent vanishing and axis review, 2026-11-12
+
+SHA-256 of reviewed source files:
+D4F18BB697FA691A6DE45FBC9C76F1E6B87EADABCE3335D78C613B69777EBA64  Packet02GoodSet.lean
+C25D1543D44EF0A0FF3B7FE0FB9251BC05DDE289593F77E9BF5C4801BBA2911E  Packet02MagneticVanishing.lean
+66675A1F7306572E7C9F1D66D4B978B8730FB9FE62E53D60A20364FEC956D8FA  Packet02DebyeVanishing.lean
+FA665C779935DAB494ADCFE74A533C0EC3DC7768AC0BBF17EB87A976E2A27580  Packet02ExteriorGood.lean
+5CB100D7318719CDFEC0B0E7C9215821C2A5AD4336E6B89C7C8C2B798DDBDA71  Packet02Axis.lean
+
+Review:
+Good is the frequency-independent conjunction of absolute integrability for each source coordinate multiplied by the totalized inverse-square kernel. good_ae applies the existing convolution existence theorem on each bounded ball, then a countable intersection; the source support makes the truncated kernel equal to the actual kernel. No uncountable intersection is used.
+good_gradient_integrable bounds each gradient-source product by its integrable Good majorant on the compact source support. The kernel value at zero is consistently totalized to zero, and outside the source ball the integrand vanishes. The result supplies all nine integrability assumptions required by magnetic_rotation.
+radial_zero_good uses pointwise Good invariance and actual field covariance for every angle; thus the subsequent point-dependent angle is valid. The representative is the actual field on Good and zero off it. representative_ae uses good_ae and covariance outside Good uses invariance. No measurable Good set is needed to assert an a.e. equality with the actual field; local MemLp transfers through this equality.
+datum_zero uses response_actual on the closed ball, radial_zero_ae on the ambient volume, and the actual indicator clipping of the datum. It does not assume the volume equation or any nonzero-frequency hypothesis. The proof handles the boundary using the closed-ball response directly.
+exterior_good bounds inverse distance by the positive source-observation separation when norm x > 1, so there is no singularity and no assertion at norm x = 1.
+axis_vector_zero handles the raw totalized convolution even where Good might fail. Half-turn acts diagonally on each scalar response, so the proof uses integral congruence, substitution, and a scalar multiple only; it does not split a totalized integral. Reflection kills the axial coordinate. All axis points, including the origin, are covered.
+All listed public theorem declarations have #print axioms. Independent compile outputs are recorded in neighboring *.independent.log files. This review does not claim the all-radius surface estimate or moment endpoint.

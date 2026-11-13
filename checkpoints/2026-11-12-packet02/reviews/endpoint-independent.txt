@@ -1,0 +1,21 @@
+Independent endpoint review — 2026-11-12
+
+All three files compiled independently with the pinned Lean toolchain, exit 0; logs:
+endpoint-chain.log, endpoint-sphere-vanishing.log, endpoint-good-measurable.log.
+All printed theorem axiom lists contain only propext, Classical.choice, and Quot.sound.
+
+Packet02Chain.complete assumes n > 1 and electricSector membership only. Frequency z is arbitrary,
+including zero; no kernel equation is assumed. Its magnetic field unfolds to the actual
+ComplexMagneticLocal.magnetic applied to the actual DynamicVolume.source.
+The same measurable (Borel on Space) Good set is frequency independent, volume conull,
+rotation/reflection invariant, and angular-conull for each positive real radius, including 1.
+It records all-point covariance/radial-zero for the representative and its local L2
+coordinate bounds and a.e. agreement with the actual field; raw axis zero, exterior
+smoothness and pointwise exterior laws; and every-radius magnetic sphere L1, radial
+vanishing and radial coefficient zero, plus the Debye datum zero. SphereVanishing
+derives joint integrability of all gradient/source entries from the inverse-square bound.
+
+SHA-256 of audited source files:
+Packet02Chain.lean  5fc0ce209a2768d6e4fbc17252e4ae3a6f71cc5c92a4501b484463c59707a806
+Packet02SphereVanishing.lean  65e2e3ed9ce415f76d56b461f4c7dabfae2969f7cad59805d16e93cb5e5fddbd
+Packet02GoodMeasurable.lean  f295c08eb1f0fdf200941194c429886b576c8b8730249897daf2954fc2f0ca02

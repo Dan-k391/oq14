@@ -1,0 +1,1261 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261112-213337-68712",
+  "object_directory": "checkpoints/2026-11-12-packet02/objects/20261112-213337-68712",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 24 Packet02 chain modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "ComplexSphereMaxwell",
+      "source": "lean/ComplexSphereMaxwell.lean",
+      "source_sha256": "ae9189d967c339c5a9047865b9840562c18161b4df79d973e4493d137e73ed3d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\ComplexSphereMaxwell.olean",
+        "D:\\oq14\\lean\\ComplexSphereMaxwell.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.485,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexSphereMaxwell-chain.log",
+      "log_sha256": "c2f78fa79a0ee541f249a48081c423a024e9e9967d0c43125098614af21e1cd5",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.exterior_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.interior_maxwell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexSphereMaxwell.source_pair_interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "cfb45f69271d7a9b0cc88f275a9e49ca0d73e4015016318f031ca114a16cabf5"
+    },
+    {
+      "module": "ComplexMagneticHelmholtz",
+      "source": "lean/ComplexMagneticHelmholtz.lean",
+      "source_sha256": "3287196d7fe196ab401df63183651abea1cc181e3c89cb57b85fc5ee019df703",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\ComplexMagneticHelmholtz.olean",
+        "D:\\oq14\\lean\\ComplexMagneticHelmholtz.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.296,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticHelmholtz-chain.log",
+      "log_sha256": "790f51963b64a6c62123210698dcc5057164a2658872519d1714968b4f61e3cd",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.exterior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_lapPair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_weak_helmholtz",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticHelmholtz.magnetic_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "bbb666bde8c7b07b1a39bf0d6c3fc0840b9644b8d2588cec19377c1b532be893"
+    },
+    {
+      "module": "ComplexMagneticDivergence",
+      "source": "lean/ComplexMagneticDivergence.lean",
+      "source_sha256": "01a7471451a6b0cdf549f47ecd80300588bde5730ff75dbe355df8b66cc15047",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\ComplexMagneticDivergence.olean",
+        "D:\\oq14\\lean\\ComplexMagneticDivergence.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.407,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDivergence-chain.log",
+      "log_sha256": "ae83505703d3f8232fdb383ef6774f252a6b0e7bac54ad44146c1d10f016cef7",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.exterior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDivergence.magnetic_divergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "7b456f1c279688f4ddfe2459d2c00131810e58262e501f02a3ff47bee79df2fb"
+    },
+    {
+      "module": "ComplexMagneticDebye",
+      "source": "lean/ComplexMagneticDebye.lean",
+      "source_sha256": "ec7ae6e1df405e2a060e625049d3e851cce3efe1bb6a7c73de12acd50ad0bab8",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\ComplexMagneticDebye.olean",
+        "D:\\oq14\\lean\\ComplexMagneticDebye.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.734,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticDebye-chain.log",
+      "log_sha256": "e6a760f78bfc5d1f6e0f9f6bd90e3dfaa6c3a61e192bc03ce2ca29b8466cd801",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.coordinate_helmholtz",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.divergence",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.scalar_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.regular_radial_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.coordinates_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.scalar_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticDebye.moment_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4689ecf588080897e79b3ff1dcda86d6beabbf71c31a51b74f69fcc917f95641"
+    },
+    {
+      "module": "ComplexMagneticReflection",
+      "source": "lean/ComplexMagneticReflection.lean",
+      "source_sha256": "9522ad2fd8de85a34dd96166cbeff546c0651870682b9660cf2c01b8fab12fa6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\ComplexMagneticReflection.olean",
+        "D:\\oq14\\lean\\ComplexMagneticReflection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.25,
+      "log": "checkpoints/2026-11-12-packet02/evidence/ComplexMagneticReflection-chain.log",
+      "log_sha256": "44c38822123f165ad3106bdb0687c6b0a138ce8ed5a9f8eaeacdd97b2450d99e",
+      "reports": [
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.radialDot_odd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.gradient_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.magnetic_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.gradient_response_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.ComplexMagneticReflection.sector_magnetic_axial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "72b4548d92d82e14e9824d4128eb02d87487cd7976ddc8166c43396c3899629e"
+    },
+    {
+      "module": "Packet02SourceSymmetry",
+      "source": "lean/Packet02SourceSymmetry.lean",
+      "source_sha256": "468be759ca382a1d637f424cd5c2d08b7593d6f5a1708445f7e142fd16d71513",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02SourceSymmetry.olean",
+        "D:\\oq14\\lean\\Packet02SourceSymmetry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.453,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02SourceSymmetry-chain.log",
+      "log_sha256": "d7400b3ee8989bebd11a27fda928c4f0307f5ea7286c35b5511aa93072c63a1a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02SourceSymmetry.source_action",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SourceSymmetry.source_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "c6de1891824a54d88ca1fe978eac482e86b5868ca67dcc6ad7ff5be5bebe11e2"
+    },
+    {
+      "module": "Packet02MagneticRotation",
+      "source": "lean/Packet02MagneticRotation.lean",
+      "source_sha256": "1511ab216cdf854ffbac82e5894a8b6323eb807a09c440e1f042f9f0834dbeab",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02MagneticRotation.olean",
+        "D:\\oq14\\lean\\Packet02MagneticRotation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.188,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticRotation-chain.log",
+      "log_sha256": "13e1bcbd913ae8d8a0ea9e58294756000402cd6ea66f4bdfad029036081f4d1a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.gradient_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.response_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticRotation.magnetic_covariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d78e725d2236e2b50b7f6a9dc5e4920ec20944945e6cbf84a9b91c6719e78f24"
+    },
+    {
+      "module": "Packet02GoodSet",
+      "source": "lean/Packet02GoodSet.lean",
+      "source_sha256": "d4f18bb697fa691a6de45fbc9c76f1e6b87eadabce3335d78c613b69777eba64",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02GoodSet.olean",
+        "D:\\oq14\\lean\\Packet02GoodSet.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.547,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodSet-chain.log",
+      "log_sha256": "0849ea0ef67dca1c913a5c3a86779f45845bdf1e5947e261b6211a7a49503c82",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02GoodSet.inverseSquare_locallyIntegrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodSet.good_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodSet.gradient_bound_inverseSquare",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodSet.good_gradient_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0145ce6424c966b8e8ca4682d29489d7c29e529e0d31a860c898423a72d3b934"
+    },
+    {
+      "module": "Packet02GoodRotation",
+      "source": "lean/Packet02GoodRotation.lean",
+      "source_sha256": "d236f4e660f9a3f1cf7516a727d02031fdf6d2846aad6dd9937b289a77a40297",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02GoodRotation.olean",
+        "D:\\oq14\\lean\\Packet02GoodRotation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.906,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodRotation-chain.log",
+      "log_sha256": "43e7f5519ee51a699991e6fc511c860df196358b432ca72515a7aca228452462",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02GoodRotation.integrable_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodRotation.integrable_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodRotation.good_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodRotation.good_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5bc5dcce8dac18ff9a043d1547ede52d7164439d92570c9e456629730e0e992a"
+    },
+    {
+      "module": "Packet02VanishingAlgebra",
+      "source": "lean/Packet02VanishingAlgebra.lean",
+      "source_sha256": "fb1bf9a18a94c2583086b226f93596e7a24b351e73833390fb5b89fc579b433d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02VanishingAlgebra.olean",
+        "D:\\oq14\\lean\\Packet02VanishingAlgebra.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.657,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02VanishingAlgebra-chain.log",
+      "log_sha256": "689a0e9e68c5e280f610ba45cd05ff671ce91031aac22dcad0417b495a925e50",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.radial_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.rotate_to_plane",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.plane_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02VanishingAlgebra.radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "97a950257927f3254d17eb950b7191680bc1275af76f6cdfd9cab925fbb6501f"
+    },
+    {
+      "module": "Packet02MagneticVanishing",
+      "source": "lean/Packet02MagneticVanishing.lean",
+      "source_sha256": "c25d1543d44ef0a0ff3b7fe0fb9251bc05dde289593f77e9bf5c4801bba2911e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02MagneticVanishing.olean",
+        "D:\\oq14\\lean\\Packet02MagneticVanishing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.484,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02MagneticVanishing-chain.log",
+      "log_sha256": "5c70137684fe6dba925e58ef95ecebccb2b7e38060946fb975af23b69ac90a37",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.magnetic_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.radial_zero_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.radial_zero_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.representative_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.representative_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.representative_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02MagneticVanishing.representative_reflection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8922c50013a086bee4eab186c02be78aa6414665e794d52f33560ce956a02629"
+    },
+    {
+      "module": "Packet02DebyeVanishing",
+      "source": "lean/Packet02DebyeVanishing.lean",
+      "source_sha256": "66675a1f7306572e7c9f1d66d4b978b8730fb9fe62e53d60a20364fec956d8fa",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02DebyeVanishing.olean",
+        "D:\\oq14\\lean\\Packet02DebyeVanishing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.156,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02DebyeVanishing-chain.log",
+      "log_sha256": "3fa802860ca3843a31fa4ff03c400a310cc6dffbe7a77b1a010f19cd75caf07d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02DebyeVanishing.datum_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02DebyeVanishing.representative_memLp_ball",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "de153207c5964bf70856cf0a130ae27ff0af153c47caa09c3eae327e2fd25ea7"
+    },
+    {
+      "module": "Packet02ExteriorGood",
+      "source": "lean/Packet02ExteriorGood.lean",
+      "source_sha256": "fa665c779935dab494adcfe74a533c0ec3dc7768ac0bbf17eb87a976e2a27580",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02ExteriorGood.olean",
+        "D:\\oq14\\lean\\Packet02ExteriorGood.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.797,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorGood-chain.log",
+      "log_sha256": "c1862c1f3080af5bfb55ec752b7902929697de4861b5a83b0c43c940ad6c1c99",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02ExteriorGood.exterior_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "9b9e58d2b60fce6b3e8d36065796cf64ceb84a48b6c461de069d06c302c46531"
+    },
+    {
+      "module": "Packet02Axis",
+      "source": "lean/Packet02Axis.lean",
+      "source_sha256": "5cb100d7318719cdfec0b0e7c9215821c2a5ad4336e6b89c7c8c2b798ddbda71",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02Axis.olean",
+        "D:\\oq14\\lean\\Packet02Axis.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.953,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02Axis-chain.log",
+      "log_sha256": "2bee4ae814ee69c19b4ddb2ca8092f2a2ff37bbe037ce3739b5e524a964ee06a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02Axis.source_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Axis.gradient_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Axis.response_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Axis.magnetic_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Axis.axis_vector_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "780ce4e89f19e516571e21f4d2ce30d6d7e9d056199604608b5e1215d131ced4"
+    },
+    {
+      "module": "Packet02ExteriorSmooth",
+      "source": "lean/Packet02ExteriorSmooth.lean",
+      "source_sha256": "b65db2935fe8604597fc30e44ebd3e72a9b4e76ad933e9acf6da23d91cc22ebb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02ExteriorSmooth.olean",
+        "D:\\oq14\\lean\\Packet02ExteriorSmooth.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.563,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02ExteriorSmooth-chain.log",
+      "log_sha256": "a4fe8be8ec36afa22fb44544b510e13dc4a37f9f69f3077bd4a9ff026d5ca222",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02ExteriorSmooth.gradient_contDiffAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02ExteriorSmooth.magnetic_contDiffAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02ExteriorSmooth.magnetic_contDiffOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5f28f83161d15c111dfafdaa2bf58f9f771401252b7c8729410c020b3c4149f6"
+    },
+    {
+      "module": "Packet02LogSquare",
+      "source": "lean/Packet02LogSquare.lean",
+      "source_sha256": "b360763e73acaa2349045c0ae22c6d8375f1d0613a7eaecb219b042159b43589",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02LogSquare.olean",
+        "D:\\oq14\\lean\\Packet02LogSquare.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.078,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02LogSquare-chain.log",
+      "log_sha256": "bc260d5b1e1faf84e2eedb9eef02aada2db508ed6bf13a29d298a367f84339c8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02LogSquare.locallyIntegrable_log_sq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02LogSquare.positive_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02LogSquare.interval_log_sq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02LogSquare.translated_log_sq_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "598e0d441b3a9188356dbfb3feee1f6741461b8e3fa2101e7c45e927fcf68e2e"
+    },
+    {
+      "module": "Packet02RadialLog",
+      "source": "lean/Packet02RadialLog.lean",
+      "source_sha256": "a6cd3ccb3648fd044006d84170f5fc2629a06237d8061baa5e94142a3bc27f4a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02RadialLog.olean",
+        "D:\\oq14\\lean\\Packet02RadialLog.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.812,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02RadialLog-chain.log",
+      "log_sha256": "5dccf41aee96324f951722fad06f273c71fff38ddcb7557718f1ae904aed01a9",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02RadialLog.ratioLog_tail_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02RadialLog.ratioLog_sq_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02RadialLog.ratioLog_sq_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02RadialLog.ratioLog_sq_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02RadialLog.profile_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "31581f76b7779385c789e06a5df580de7b50aceee1ec5842c16012131ae3fc79"
+    },
+    {
+      "module": "Packet02Surface",
+      "source": "lean/Packet02Surface.lean",
+      "source_sha256": "9bf6dcd23adbae4918178823953078a7ac093a8a642068cd56e580b00f2a4e73",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02Surface.olean",
+        "D:\\oq14\\lean\\Packet02Surface.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.313,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02Surface-chain.log",
+      "log_sha256": "19bc62223c546f4c6e1f34b5feff93d1bfcff4983eb9c72bd099cab4ec6b1cf8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02Surface.entries_ae_of_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Surface.magnetic_integrable_of_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Surface.response_integrable_of_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "1732b3c1d46d26c6802c796f8c19146079b023432ac9a76fcd93b243036e8e18"
+    },
+    {
+      "module": "Packet02Majorant",
+      "source": "lean/Packet02Majorant.lean",
+      "source_sha256": "8b10f2940a57d03b4299fc35b7001e66f815867b3a59559655671c760814470f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02Majorant.olean",
+        "D:\\oq14\\lean\\Packet02Majorant.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.437,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02Majorant-chain.log",
+      "log_sha256": "79fde1c27f399e7265395d202d977f81c8358df9be2b3dd78b0a622fdad896b4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02Majorant.joint_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.slice_integrable_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.good_ae_of_angular_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.good_ae_of_angular_memLp'",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.angular_isometry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.angular_radial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.kernel_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.kernel_measurable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.slice_integrable_of_norm_ne",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Majorant.joint_complex_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f562f90608656c998637268a190ee7782a03b9d3d6fbcd6b06c4cc96e6f8e35d"
+    },
+    {
+      "module": "Packet02SurfaceGeometry",
+      "source": "lean/Packet02SurfaceGeometry.lean",
+      "source_sha256": "4aed3bda5b7cf1ee219a7a55e2bd9f1e0535235b7d7b5d48a1ef12c9fb0ed953",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02SurfaceGeometry.olean",
+        "D:\\oq14\\lean\\Packet02SurfaceGeometry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.438,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceGeometry-chain.log",
+      "log_sha256": "174b33dbd72226f5402373480d1a6e5c7f4ee4887b7fbfced431f294b40d5c95",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02SurfaceGeometry.norm_axis_sq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceGeometry.angular_axis_integral",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceGeometry.angular_axis_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceGeometry.angular_formula_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceGeometry.angular_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "632e1223a0dcb082f6544fc453e1fe9e586f301d2f6bc0b47f31727a05ddb5ea"
+    },
+    {
+      "module": "Packet02SurfaceL2",
+      "source": "lean/Packet02SurfaceL2.lean",
+      "source_sha256": "83f5ac5aa496f4fd8fa4d08d86495ea2fb1f1db7c558c7b516b5322aa4e00eae",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02SurfaceL2.olean",
+        "D:\\oq14\\lean\\Packet02SurfaceL2.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.437,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02SurfaceL2-chain.log",
+      "log_sha256": "403762805210b2ec9c5fbb17341e65f87546c3533a2bea69739d49b46f0b9ee3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02SurfaceL2.angular_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceL2.source_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SurfaceL2.inverseSquare_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "204150dd5fe04c723e45b5be1580a232aa8bb14dfd8ddb2dcd0995de352fb16a"
+    },
+    {
+      "module": "Packet02GoodMeasurable",
+      "source": "lean/Packet02GoodMeasurable.lean",
+      "source_sha256": "f295c08eb1f0fdf200941194c429886b576c8b8730249897daf2954fc2f0ca02",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02GoodMeasurable.olean",
+        "D:\\oq14\\lean\\Packet02GoodMeasurable.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.5,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02GoodMeasurable-chain.log",
+      "log_sha256": "b70080b95167c9c4888686dab1a816c8bbbcf7b28b1525874fb5bb0547b345db",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02GoodMeasurable.source_measurable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02GoodMeasurable.good_measurable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8f19cd389e6681cfd55b6bcc744a3176c8281257bcbe08fad5b7f52ba4d613e5"
+    },
+    {
+      "module": "Packet02SphereVanishing",
+      "source": "lean/Packet02SphereVanishing.lean",
+      "source_sha256": "65e2e3ed9ce415f76d56b461f4c7dabfae2969f7cad59805d16e93cb5e5fddbd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02SphereVanishing.olean",
+        "D:\\oq14\\lean\\Packet02SphereVanishing.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.672,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02SphereVanishing-chain.log",
+      "log_sha256": "631baf5818a6cc1b5f5adcf3b1978f892db3fad3cb81070c28ed3a3cb44801f8",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.good_sphere_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.sphere_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.radialCoefficient_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.magnetic_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.gradient_joint_of_inverseSquare",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.sphere_radial_zero_of_good_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.radialCoefficient_zero_of_good_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.good_ae_of_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02SphereVanishing.magnetic_integrable_of_joint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5cb7943b330c9b1441566c6207267dc7e1bf2200b326619638f17452ca6d2a65"
+    },
+    {
+      "module": "Packet02Chain",
+      "source": "lean/Packet02Chain.lean",
+      "source_sha256": "5fc0ce209a2768d6e4fbc17252e4ae3a6f71cc5c92a4501b484463c59707a806",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-12-packet02\\objects\\20261112-213337-68712\\Packet02Chain.olean",
+        "D:\\oq14\\lean\\Packet02Chain.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.969,
+      "log": "checkpoints/2026-11-12-packet02/evidence/Packet02Chain-chain.log",
+      "log_sha256": "09f62e3defc0ec0e7258b31a16b3c4f8a39fd4051cf673b78943d113e244ee51",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet02Chain.exterior_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Chain.exterior_rotation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet02Chain.complete",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2997fe1e23d8bf6e85bb1daa93098299a62aacb6e20bdb28df5cdc7ef0b8eea7"
+    }
+  ],
+  "module_count": 24,
+  "report_count": 102
+}
