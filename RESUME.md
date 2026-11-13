@@ -1,3 +1,26 @@
+# OQ14 completed release — November 13, 2026
+
+The repository's quantified primary targets are closed and the release is
+finished. [CLOSURE.txt](CLOSURE.txt) gives the exact outcomes and scope.
+
+- Lean entry point: `lean/OQ14Closure.lean`.
+- Final paper: `output/pdf/oq14-manuscript.pdf` (104 pages).
+- Release record: `checkpoints/2026-11-13-closure-release/release.json`.
+- Clean source commit: `b6c8917`; proof checkpoint: `766b80e` (stage116).
+- Aggregate: 2171 modules / 10946 inline reports; all 23697 kernel-safe
+  project declarations checked with only the three standard axioms.
+- All 15 numerical diagnostic groups passed; these are not continuum proofs.
+- Clean-checkout PDF is byte-identical to the visually reviewed PDF.
+- Release branch: `codex/oq14-closure-2026-11-13`.
+- Release tag: `oq14-closure-2026-11-13`.
+- Full rollback/source bundle: `output/oq14-closure-2026-11-13.bundle`.
+
+No requested primary-target proof or release task remains. Stronger channel
+restrictions, scalar-electric variants and ambient rank-one modal simplicity
+remain outside these quantified conclusions. No repository was published.
+
+Historical checkpoints below are preserved for provenance and rollback.
+
 # OQ14 primary-target closure — November 13, 2026
 
 The primary quantified targets are closed. Read [CLOSURE.txt](CLOSURE.txt)
