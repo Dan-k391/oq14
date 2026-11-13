@@ -1,0 +1,43 @@
+Independent root review of the analytic modal excitation argument
+
+All eleven Terra modules reviewed. The aperture-normalized weighted angular
+tests converge by dominated convergence to the tangential projection of the
+axial unit vector, retaining the dielectric multiplier. A genuine L2 dominated
+convergence lemma transports this to compactly supported spatial annular tests.
+Continuity of unconjugated L2 pairing yields the actual field pairing limit,
+including the non-unit factor t. The exact polar integral is the radial r^2
+weighted limiting spherical average. All almost-everywhere field identifications
+are made on the relevant ball, with the test vanishing outside it.
+
+The lower bound uses closeness to a nonzero complex average and a nonnegative
+radial weight; no unjustified comparison of complex integrals is used. A genuine
+positive annular smooth bump is constructed in an arbitrarily small annulus.
+The O(R^alpha) relative remainder is strictly smaller than the limiting pairing.
+Together with the uniform zero-coefficient estimate this forces eventual
+nonzero intrinsic coefficients. The required exponent lower bound is eventual.
+
+The physical correction estimate is derived from the actual complex Green
+Holder theorem, with the cone cutoff identically one on the projection ball.
+The centered restriction is an actual bounded linear map on L2, and its physical
+field and base sphere identities are proved almost everywhere, not asserted as
+pointwise facts about arbitrary L2 representatives.
+
+These modules establish the analytic implication, with bounded actual sources,
+local response convergence and the nonzero sphere average as explicit inputs.
+The separate geometry/branch modules choose the sphere mode first and retain
+the same certified physically normalized branch through insertion and rounding.
+The final finite-center existential selection, attained hotspots, physical
+placement and full OQ14 closure are not claimed by this checkpoint.
+
+Reviewed Terra source hashes:
+Packet06WeightedAngularLimit 53182f521f7c88a24d0d514adaafb70c35d6b55f9ab715b822fb4f38a41b4264
+Packet06DominatedL2 71d6889167572f30574f29e5b996c32d72b744a52b380b30e8ee7b709e8d5bdd
+Packet06SpatialAngularLimit ef6d309f54ddff6049f1c7cf685dd2f3de0787e13ae76fe4adf21fc467d40650
+Packet06PhysicalPairLimit a77bcf58a9b0235a84d9903561fc829854204bd5b08790822374bd165cc102ad
+Packet06ActualConeHolder 2bcfe73093857a43a4c20691db4fb874d3eca8063473811bd8aab2d6c8762fa5
+Packet06AnnularLowerBound f488d4d9b561f02ae3945a9e1f77a28723dc970eb35bf6988ca486ba324bcb9f
+Packet06StrictAnnulus 61c5116d760cbcdb0fc16b4d538243ce1ddb769e13b76b2759e5101f38422de3
+Packet06SpherePairIntegral 71f7fc98f0693234ea0cd4fb6fccb616bb95649cda860f2ebc10b927b2d92990
+Packet06ConeExcitationCriterion 456d4de69d45cec533423126eaa4f40132394dfc71a19a965a5889b0517ee812
+Packet06ModeExcitation 5bfaa6ad027e5393b65f9b455b1ba240d2e598114ac4aec5af695618f8c92fd0
+Packet06CenteredBall e32247339a607e82edf5b3ead93f57b5606d88197fb4dbbde3f70058bbcfa04d
