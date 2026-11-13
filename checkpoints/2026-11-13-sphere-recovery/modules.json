@@ -1,0 +1,128 @@
+[
+  {
+    "module": "Packet04RaisingPolynomial",
+    "declarations": [
+      "OQ14.Packet04RaisingPolynomial.raised_homogeneous",
+      "OQ14.Packet04RaisingPolynomial.raised_harmonic",
+      "OQ14.Packet04RaisingPolynomial.raised_angular_value"
+    ]
+  },
+  {
+    "module": "Packet04RaisingMoments",
+    "declarations": [
+      "OQ14.Packet04RaisingMoments.raised_radial_gradient",
+      "OQ14.Packet04RaisingMoments.raised_radial_tangential",
+      "OQ14.Packet04RaisingMoments.actual_raised_outgoing"
+    ]
+  },
+  {
+    "module": "Packet04RaisingSelection",
+    "declarations": [
+      "OQ14.Packet04RaisingSelection.outgoing_raising",
+      "OQ14.Packet04RaisingSelection.incoming_raising",
+      "OQ14.Packet04RaisingSelection.incoming_coefficient_zero",
+      "OQ14.Packet04RaisingSelection.ode_raised_outgoing_selection"
+    ]
+  },
+  {
+    "module": "Packet04RaisingPhysical",
+    "declarations": [
+      "OQ14.Packet04RaisingPhysical.actual_TM_outgoing"
+    ]
+  },
+  {
+    "module": "Packet04TMMatching",
+    "declarations": [
+      "OQ14.Packet04TMMatching.determinant_identity",
+      "OQ14.Packet04TMMatching.physical_matching_eq",
+      "OQ14.Packet04TMMatching.matching_zero_of_traces",
+      "OQ14.Packet04TMMatching.amplitudes_zero_of_nonzero_determinant",
+      "OQ14.Packet04TMMatching.non_dipole_amplitudes_zero"
+    ]
+  },
+  {
+    "module": "Packet04AngularDictionary",
+    "declarations": [
+      "OQ14.Packet04AngularDictionary.polynomial_mode_pairing",
+      "OQ14.Packet04AngularDictionary.radial_pairing",
+      "OQ14.Packet04AngularDictionary.poloidal_pairing",
+      "OQ14.Packet04AngularDictionary.toroidal_pairing",
+      "OQ14.Packet04AngularDictionary.actual_moments_separate"
+    ]
+  },
+  {
+    "module": "Packet04AxialDipole",
+    "declarations": [
+      "OQ14.Packet04AxialDipole.rotation_neg_pi",
+      "OQ14.Packet04AxialDipole.action_pi",
+      "OQ14.Packet04AxialDipole.axial_halfturn",
+      "OQ14.Packet04AxialDipole.radial_halfturn",
+      "OQ14.Packet04AxialDipole.transverse_weighted_moment_zero"
+    ]
+  },
+  {
+    "module": "Packet04TMWeakReduction",
+    "declarations": [
+      "OQ14.Packet04TMWeakReduction.div_radial_pow_test",
+      "OQ14.Packet04TMWeakReduction.radial_tangential_weak",
+      "OQ14.Packet04TMWeakReduction.weak_derivative"
+    ]
+  },
+  {
+    "module": "Packet04SliceRecovery",
+    "declarations": [
+      "OQ14.Packet04SliceRecovery.eq_of_slices",
+      "OQ14.Packet04SliceRecovery.modeMoment_actual",
+      "OQ14.Packet04SliceRecovery.supportedInUnit_smul",
+      "OQ14.Packet04SliceRecovery.slice_smul",
+      "OQ14.Packet04SliceRecovery.slices_zero_outside",
+      "OQ14.Packet04SliceRecovery.eq_of_slices_inside",
+      "OQ14.Packet04SliceRecovery.eq_of_mode_moments"
+    ]
+  },
+  {
+    "module": "Packet04AxialRecovery",
+    "declarations": [
+      "OQ14.Packet04AxialRecovery.transverse_radial_zero"
+    ]
+  },
+  {
+    "module": "Packet04KernelRecovery",
+    "declarations": [
+      "OQ14.Packet04KernelRecovery.kernel_supported",
+      "OQ14.Packet04KernelRecovery.numerator_supported",
+      "OQ14.Packet04KernelRecovery.kernel_eq_numerator_of_inner_slices"
+    ]
+  },
+  {
+    "module": "Packet04PolynomialCoordinates",
+    "declarations": [
+      "OQ14.Packet04PolynomialCoordinates.degree_zero",
+      "OQ14.Packet04PolynomialCoordinates.degree_one",
+      "OQ14.Packet04PolynomialCoordinates.poloidalLinear_apply",
+      "OQ14.Packet04PolynomialCoordinates.radial_actual",
+      "OQ14.Packet04PolynomialCoordinates.poloidal_actual",
+      "OQ14.Packet04PolynomialCoordinates.toroidal_actual",
+      "OQ14.Packet04PolynomialCoordinates.degree_one_coordinate",
+      "OQ14.Packet04PolynomialCoordinates.separate_with_dipole_coordinates"
+    ]
+  },
+  {
+    "module": "Packet04KernelMomentBridge",
+    "declarations": [
+      "OQ14.Packet04KernelMomentBridge.slice_recovery",
+      "OQ14.Packet04KernelMomentBridge.weighted_moment",
+      "OQ14.Packet04KernelMomentBridge.radial_coordinate_actual",
+      "OQ14.Packet04KernelMomentBridge.poloidal_coordinate_actual",
+      "OQ14.Packet04KernelMomentBridge.toroidal_coordinate_zero"
+    ]
+  },
+  {
+    "module": "Packet04KernelZero",
+    "declarations": [
+      "OQ14.Packet04KernelZero.poloidal_zero_of_radial_zero",
+      "OQ14.Packet04KernelZero.poloidal_degree_zero",
+      "OQ14.Packet04KernelZero.zero_of_radial_moments"
+    ]
+  }
+]

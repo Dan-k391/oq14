@@ -1,4 +1,16 @@
-# OQ14 active full-closure work — November 12, 2026
+# OQ14 active full-closure work — November 13, 2026
+
+Latest rollback build checkpoint (author checked, not ledger promoted):
+[sphere recovery checkpoint](checkpoints/2026-11-13-sphere-recovery/CHECKPOINT.txt).
+Fourteen root modules / 56 standard-only reports were built into isolated fresh
+objects. Actual electric-sector kernel vanishing now follows from vanishing
+of all radial electric moments, using actual Maxwell and weighted recovery.
+Physical outgoing selection, matching algebra, axial transverse elimination
+and countable angular-to-global L2 reconstruction are included. Independent
+review remains pending. The accepted stage68 ledger below is unchanged.
+Concurrent Terra work has derived actual continuous TM traces/classical side
+ODEs and the outgoing profiles, and a bounded full-angular-input scattering
+map; those drafts still require endpoint integration and independent checks.
 
 Stage 68 is the latest verified incremental checkpoint:
 [STAGE68.txt](checkpoints/2026-11-12-vector-chain/STAGE68.txt).
