@@ -1,5 +1,38 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 98 is the latest verified incremental checkpoint:
+[STAGE98.txt](checkpoints/2026-11-13-selected-green/STAGE98.txt).
+
+For every compact ambient L2 source, the selected electric-sector Green
+operator satisfies the local weak Maxwell equation with its actual orthogonal
+source projection. This equation holds throughout a punctured neighborhood
+of each certified selected-sector pole. The source projection preserves its
+containing centered ball, and the induced material datum has the required
+sector symmetry as a derived fact.
+
+The actual unconjugated dyadic reciprocity and static inverse identities give
+the physical N=1 residue -E_obs integral(f dot E_mode)/(2z). Symmetry of the
+compact localized physical mode removes the source projector from this
+bilinear coupling. The earlier full-free-plus-selected-scatter hybrid retains
+its explicit generally nonzero source defect, so it is not misidentified as
+the full-source Green operator. No ambient rank-one simplicity is asserted.
+
+The present endpoint uses compatible bounded-ball fields and local weak
+tests. Global outgoing selected Green assembly and placed-coordinate Green
+transport, actual curved continuity and collars, attained hotspot components,
+the final paper and aggregate validation remain active.
+
+18 modules / 43 reports passed independent root review and a fresh
+ordered build. 748 upstream sources were authenticated, with cached objects.
+The ledger is 1029 modules / 5072 reports, all prior records unchanged:
+`checkpoints/2026-11-13-selected-green/evidence/audited_after_5238-stage98.json`.
+Only standard axioms, no warnings; no whole-project clean build claimed.
+Full OQ14 remains active.
+
+Everything below is historical context, superseded by stage98.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 97 is the latest verified incremental checkpoint:
 [STAGE97.txt](checkpoints/2026-11-13-placed-pole/STAGE97.txt).
 

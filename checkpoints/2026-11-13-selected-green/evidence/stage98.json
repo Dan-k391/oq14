@@ -1,0 +1,624 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "2aac440",
+  "modules": 1029,
+  "reports": 5072,
+  "new_modules": 18,
+  "new_reports": 43,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "f1c92a35427a2c42198149b151ab0d43cb51934d987fbfab5ff7b207c77303ec",
+  "ledger_sha256": "fe9f45bc8458b31062e681e15c0b00d74d7f889a6f0d8a5f8413c0ad3970f893",
+  "raw_archive_sha256": "7880238168b5fe9359e39f6817d653a39d351aab4c0bfa6913c0db20b020ed6b",
+  "records": [
+    {
+      "module": "Packet06ExternalKernelReciprocity",
+      "reports": 2,
+      "source_sha256": "986045982ebe4f82b75fbae84a19c8fd319d8372fde11faa74854c70515e295c",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalKernelReciprocity-chain.log",
+      "audit_log_sha256": "a0f1a8b6e29f7bd0af7c2258e554ff05cffcd1b46325f2f38a50797007b40337",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalKernelReciprocity.log",
+      "independent_log_sha256": "a0f1a8b6e29f7bd0af7c2258e554ff05cffcd1b46325f2f38a50797007b40337",
+      "declarations": [
+        "OQ14.Packet06ExternalKernelReciprocity.kernel_reciprocity",
+        "OQ14.Packet06ExternalKernelReciprocity.incident_mode_pairing"
+      ]
+    },
+    {
+      "module": "Packet06ExternalResidue",
+      "reports": 3,
+      "source_sha256": "b4df153c051393fbbb2351e5f2669cd31c7f6abd655a8ac99794698dab5b49e6",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalResidue-chain.log",
+      "audit_log_sha256": "abb3dd26a9970aaabc9c8a51c6c35236f4f125f39a6c0322427665f5ded03d68",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalResidue.log",
+      "independent_log_sha256": "abb3dd26a9970aaabc9c8a51c6c35236f4f125f39a6c0322427665f5ded03d68",
+      "declarations": [
+        "OQ14.Packet06ExternalResidue.incidentDatum_analyticAt",
+        "OQ14.Packet06ExternalResidue.localIncident_analyticAt",
+        "OQ14.Packet06ExternalResidue.selected_residue_limit"
+      ]
+    },
+    {
+      "module": "Packet06ExternalLeft",
+      "reports": 3,
+      "source_sha256": "828e7ffe72ad6478ac9e683f61e27fdee3881b1294743f7df4cae665e8bc7972",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalLeft-chain.log",
+      "audit_log_sha256": "cfe6d73152a64965337de9455f2bde37edbf7d5b69e63cf2951b32ba910493a5",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalLeft.log",
+      "independent_log_sha256": "cfe6d73152a64965337de9455f2bde37edbf7d5b69e63cf2951b32ba910493a5",
+      "declarations": [
+        "OQ14.Packet06ExternalLeft.physicalLeft_crossing",
+        "OQ14.Packet06ExternalLeft.physicalLeft_annihilates",
+        "OQ14.Packet06ExternalLeft.left_ratio"
+      ]
+    },
+    {
+      "module": "Packet06ExternalCanonical",
+      "reports": 1,
+      "source_sha256": "9a58dc5e0a536bd8e62f81cc69ff96eeb163689545aa0960ce6f683d38e4e29e",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalCanonical-chain.log",
+      "audit_log_sha256": "e661a63906a9f0c8373aca8f9821db8d29127a6ea0b5726884c2d1581f206f06",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalCanonical.log",
+      "independent_log_sha256": "e661a63906a9f0c8373aca8f9821db8d29127a6ea0b5726884c2d1581f206f06",
+      "declarations": [
+        "OQ14.Packet06ExternalCanonical.selected_physical_left_residue"
+      ]
+    },
+    {
+      "module": "Packet06SectorConjugate",
+      "reports": 7,
+      "source_sha256": "67079ccd6af7988be4df0acc8148d2dbb4a0ec411ca3db85a3607e408dbdd0df",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06SectorConjugate-chain.log",
+      "audit_log_sha256": "861dfcce5c53574afe3f9cd31a3851ca5ac4104db1c0a568ae388517b8c21e64",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06SectorConjugate.log",
+      "independent_log_sha256": "861dfcce5c53574afe3f9cd31a3851ca5ac4104db1c0a568ae388517b8c21e64",
+      "declarations": [
+        "OQ14.Packet06SectorConjugate.conjugate_mem_sector",
+        "OQ14.Packet06SectorConjugate.projection_pair_right",
+        "OQ14.Packet06SectorConjugate.conjugate_ae",
+        "OQ14.Packet06SectorConjugate.conjugate_rotation",
+        "OQ14.Packet06SectorConjugate.conjugate_reflection",
+        "OQ14.Packet06SectorConjugate.component_conjugate",
+        "OQ14.Packet06SectorConjugate.vectorPair_inner"
+      ]
+    },
+    {
+      "module": "Packet06ExternalPairing",
+      "reports": 2,
+      "source_sha256": "337f48f7fa90890bd87a3820318feba1a58125086e5eb2c59634f9c551f7d1c0",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalPairing-chain.log",
+      "audit_log_sha256": "41f68d048e963a9183bede1cc6c9d7eee05acf685118ca366e167d96e0234241",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalPairing.log",
+      "independent_log_sha256": "41f68d048e963a9183bede1cc6c9d7eee05acf685118ca366e167d96e0234241",
+      "declarations": [
+        "OQ14.Packet06ExternalPairing.static_mem_sector",
+        "OQ14.Packet06ExternalPairing.incident_physical_pairing"
+      ]
+    },
+    {
+      "module": "Packet06ExternalGreen",
+      "reports": 1,
+      "source_sha256": "f550361e21776b7120afb71397d4f692d6d978e962f803fce98fa463569d47ae",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalGreen-chain.log",
+      "audit_log_sha256": "7e1d324f1248dc37aeadc80cbfbd48635bd82057abe86bf58df33692ae469019",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalGreen.log",
+      "independent_log_sha256": "7e1d324f1248dc37aeadc80cbfbd48635bd82057abe86bf58df33692ae469019",
+      "declarations": [
+        "OQ14.Packet06ExternalGreen.selected_residue_representative"
+      ]
+    },
+    {
+      "module": "Packet06ExternalFreeMaxwell",
+      "reports": 4,
+      "source_sha256": "3b7676f53d73d6b4fe3e960ff9f7c1b8e66a7f5a4c53a1000c67d8539fea88f8",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalFreeMaxwell-chain.log",
+      "audit_log_sha256": "977e4d611d20867163b8f03a9ca769813f8d22d3215e48957d3c5352a0ffe714",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalFreeMaxwell.log",
+      "independent_log_sha256": "977e4d611d20867163b8f03a9ca769813f8d22d3215e48957d3c5352a0ffe714",
+      "declarations": [
+        "OQ14.Packet06ExternalFreeMaxwell.supportCoefficient_spatial",
+        "OQ14.Packet06ExternalFreeMaxwell.supportCoefficient_support",
+        "OQ14.Packet06ExternalFreeMaxwell.supported_multiplier_identity",
+        "OQ14.Packet06ExternalFreeMaxwell.free_maxwell_test"
+      ]
+    },
+    {
+      "module": "Packet06ExternalHybridEquation",
+      "reports": 2,
+      "source_sha256": "5a6c2ea92237f335ec9faf45e5ce2665d780042e799de36866decf22ee7ed825",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalHybridEquation-chain.log",
+      "audit_log_sha256": "011b36ad347859b085da98d6d84b1ff0d4a7251b490cd20b454b5a50c0e2b154",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalHybridEquation.log",
+      "independent_log_sha256": "011b36ad347859b085da98d6d84b1ff0d4a7251b490cd20b454b5a50c0e2b154",
+      "declarations": [
+        "OQ14.Packet06ExternalHybridEquation.hybrid_restriction",
+        "OQ14.Packet06ExternalHybridEquation.hybrid_maxwell_test"
+      ]
+    },
+    {
+      "module": "Packet06ExternalOverlap",
+      "reports": 1,
+      "source_sha256": "ab0da55ae1a13237a4ee747eb2b2729e3bf12fa19d0dc2b6f4cd85bd8045131a",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalOverlap-chain.log",
+      "audit_log_sha256": "20f80b227f62e0afe211a9f3c65b34d7a2a891f3fcf4e23c3446fb4266e4b8a8",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalOverlap.log",
+      "independent_log_sha256": "20f80b227f62e0afe211a9f3c65b34d7a2a891f3fcf4e23c3446fb4266e4b8a8",
+      "declarations": [
+        "OQ14.Packet06ExternalOverlap.weighted_free_overlap"
+      ]
+    },
+    {
+      "module": "Packet06ExternalStaticSector",
+      "reports": 1,
+      "source_sha256": "7623e64bc2fdebfae1ff4eddcc24b86986c4bef67c5bf73698fe1121c1ed1169",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalStaticSector-chain.log",
+      "audit_log_sha256": "d419d39987dcbe4c3cfcd3a0723cd668a40e560da45c52ad464c59e2d9ecc10c",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalStaticSector.log",
+      "independent_log_sha256": "d419d39987dcbe4c3cfcd3a0723cd668a40e560da45c52ad464c59e2d9ecc10c",
+      "declarations": [
+        "OQ14.Packet06ExternalStaticSector.static_inverse_mem_sector"
+      ]
+    },
+    {
+      "module": "Packet06ExternalSectorMaxwell",
+      "reports": 1,
+      "source_sha256": "b7586ab4889eb1e03b9e030d757b7d62bdc66f9d0e637ab36296da2d6afee03c",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalSectorMaxwell-chain.log",
+      "audit_log_sha256": "9924e03f96364955545ce88ed7b7946be54d094f6a410103e804677654096690",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalSectorMaxwell.log",
+      "independent_log_sha256": "9924e03f96364955545ce88ed7b7946be54d094f6a410103e804677654096690",
+      "declarations": [
+        "OQ14.Packet06ExternalSectorMaxwell.induced_sector_maxwell_test"
+      ]
+    },
+    {
+      "module": "Packet06ExternalSymmetry",
+      "reports": 4,
+      "source_sha256": "56a27cbddcb08285b2a7272466557b1aa218d3f37ee75f350915a3343c3a7f14",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalSymmetry-chain.log",
+      "audit_log_sha256": "16cabbae565223e18bd7d8b23639b24e89106825c4c815be9e1bb160788ceabc",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalSymmetry.log",
+      "independent_log_sha256": "16cabbae565223e18bd7d8b23639b24e89106825c4c815be9e1bb160788ceabc",
+      "declarations": [
+        "OQ14.Packet06ExternalSymmetry.volume_mem_sector",
+        "OQ14.Packet06ExternalSymmetry.supportCoefficient_axial",
+        "OQ14.Packet06ExternalSymmetry.supportCoefficient_meridional",
+        "OQ14.Packet06ExternalSymmetry.sqrt_mem_sector"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedSupport",
+      "reports": 2,
+      "source_sha256": "08884a2043388319e23cd4ac43a5222965b2fd272572d6b565cca78455176837",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedSupport-chain.log",
+      "audit_log_sha256": "699725cc1ec23a3f6ccc194fb5e942b1511c2fd05de075aa466a5dad00076a0e",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedSupport.log",
+      "independent_log_sha256": "699725cc1ec23a3f6ccc194fb5e942b1511c2fd05de075aa466a5dad00076a0e",
+      "declarations": [
+        "OQ14.Packet06ProjectedSupport.symmetric_multiplier_projection",
+        "OQ14.Packet06ProjectedSupport.projected_supported"
+      ]
+    },
+    {
+      "module": "Packet06ExternalInducedSector",
+      "reports": 2,
+      "source_sha256": "eecf9c77df8b870d96c32c0705815ab9cd21d0d80efe04b111e57a9bf6f7d895",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalInducedSector-chain.log",
+      "audit_log_sha256": "2066bcf0e6c5694088d81e4e378d34823d3d95dec653e7fcd8d3241626de7bd8",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalInducedSector.log",
+      "independent_log_sha256": "2066bcf0e6c5694088d81e4e378d34823d3d95dec653e7fcd8d3241626de7bd8",
+      "declarations": [
+        "OQ14.Packet06ExternalInducedSector.support_multiplier_absorbed",
+        "OQ14.Packet06ExternalInducedSector.weighted_free_mem_sector"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedGreen",
+      "reports": 4,
+      "source_sha256": "8ee03636849500b1d3a13152d4533ec6f63a27b4f8613c67b2c560a876ad8181",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedGreen-chain.log",
+      "audit_log_sha256": "6c1919d2b64be0a70ad28dcab1676c20cd8df8ed6afa4e6af01f3a003cca828a",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedGreen.log",
+      "independent_log_sha256": "6c1919d2b64be0a70ad28dcab1676c20cd8df8ed6afa4e6af01f3a003cca828a",
+      "declarations": [
+        "OQ14.Packet06ProjectedGreen.projected_source_punctured",
+        "OQ14.Packet06ProjectedGreen.projected_restriction",
+        "OQ14.Packet06ProjectedGreen.projected_source_maxwell",
+        "OQ14.Packet06ProjectedGreen.projected_green_residue"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedModePairing",
+      "reports": 2,
+      "source_sha256": "d10b222357b6e505d4a3d36c5174b731ec236d5a54be20eefdf97bb32ac81acf",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedModePairing-chain.log",
+      "audit_log_sha256": "dbb3539259041e2014d89dd21ac89f40280c51c77bb3a482307a40966bc81523",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedModePairing.log",
+      "independent_log_sha256": "dbb3539259041e2014d89dd21ac89f40280c51c77bb3a482307a40966bc81523",
+      "declarations": [
+        "OQ14.Packet06ProjectedModePairing.material_source_supported",
+        "OQ14.Packet06ProjectedModePairing.source_projection_pair"
+      ]
+    },
+    {
+      "module": "Packet06ProjectedPhysicalResidue",
+      "reports": 1,
+      "source_sha256": "6327df2124ffd1c532bb051278fdbce8a55bfb2ca8b68f64088b314134bd6fb8",
+      "audit_log": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedPhysicalResidue-chain.log",
+      "audit_log_sha256": "9cb19bf0056be5947ec7657545480ac58a9687521f1ca3fa5e9ef845acf284a0",
+      "independent_review": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "independent_review_sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3",
+      "independent_review_mode": "Independent Terra source review and separate fresh-object build of root module",
+      "independent_build": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "independent_build_sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53",
+      "independent_log": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedPhysicalResidue.log",
+      "independent_log_sha256": "9cb19bf0056be5947ec7657545480ac58a9687521f1ca3fa5e9ef845acf284a0",
+      "declarations": [
+        "OQ14.Packet06ProjectedPhysicalResidue.projected_green_physical_residue"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-selected-green/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/audited_after_5238-stage98.json",
+      "sha256": "fe9f45bc8458b31062e681e15c0b00d74d7f889a6f0d8a5f8413c0ad3970f893"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/chain-build.json",
+      "sha256": "2158317518d8c1483273c3675e16e512d41155244c6e007ded16f1b9749a338c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalCanonical-chain.log",
+      "sha256": "e661a63906a9f0c8373aca8f9821db8d29127a6ea0b5726884c2d1581f206f06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalFreeMaxwell-chain.log",
+      "sha256": "977e4d611d20867163b8f03a9ca769813f8d22d3215e48957d3c5352a0ffe714"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalGreen-chain.log",
+      "sha256": "7e1d324f1248dc37aeadc80cbfbd48635bd82057abe86bf58df33692ae469019"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalHybridEquation-chain.log",
+      "sha256": "011b36ad347859b085da98d6d84b1ff0d4a7251b490cd20b454b5a50c0e2b154"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalInducedSector-chain.log",
+      "sha256": "2066bcf0e6c5694088d81e4e378d34823d3d95dec653e7fcd8d3241626de7bd8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalKernelReciprocity-chain.log",
+      "sha256": "a0f1a8b6e29f7bd0af7c2258e554ff05cffcd1b46325f2f38a50797007b40337"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalLeft-chain.log",
+      "sha256": "cfe6d73152a64965337de9455f2bde37edbf7d5b69e63cf2951b32ba910493a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalOverlap-chain.log",
+      "sha256": "20f80b227f62e0afe211a9f3c65b34d7a2a891f3fcf4e23c3446fb4266e4b8a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalPairing-chain.log",
+      "sha256": "41f68d048e963a9183bede1cc6c9d7eee05acf685118ca366e167d96e0234241"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalResidue-chain.log",
+      "sha256": "abb3dd26a9970aaabc9c8a51c6c35236f4f125f39a6c0322427665f5ded03d68"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalSectorMaxwell-chain.log",
+      "sha256": "9924e03f96364955545ce88ed7b7946be54d094f6a410103e804677654096690"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalStaticSector-chain.log",
+      "sha256": "d419d39987dcbe4c3cfcd3a0723cd668a40e560da45c52ad464c59e2d9ecc10c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ExternalSymmetry-chain.log",
+      "sha256": "16cabbae565223e18bd7d8b23639b24e89106825c4c815be9e1bb160788ceabc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedGreen-chain.log",
+      "sha256": "6c1919d2b64be0a70ad28dcab1676c20cd8df8ed6afa4e6af01f3a003cca828a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedModePairing-chain.log",
+      "sha256": "dbb3539259041e2014d89dd21ac89f40280c51c77bb3a482307a40966bc81523"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedPhysicalResidue-chain.log",
+      "sha256": "9cb19bf0056be5947ec7657545480ac58a9687521f1ca3fa5e9ef845acf284a0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06ProjectedSupport-chain.log",
+      "sha256": "699725cc1ec23a3f6ccc194fb5e942b1511c2fd05de075aa466a5dad00076a0e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/evidence/Packet06SectorConjugate-chain.log",
+      "sha256": "861dfcce5c53574afe3f9cd31a3851ca5ac4104db1c0a568ae388517b8c21e64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/modules.json",
+      "sha256": "6b9f897dfc2a6c53b437ddc4538b3669773ca8b7326673db7462c74cec327bb6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/provenance-audit.json",
+      "sha256": "3cb50ea97cc56ea1ffd5a2a80c543f040fa681a98b9e02316d49772a11fdfd83"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/author-inventory.json",
+      "sha256": "51aff8794dd4362df2cd07172f34173d835baef6ab31aa43e0b9138c46d98df1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/independent-build.json",
+      "sha256": "9a4b586d588ceaa94cfa56d0670274e76241f7344739dbfd2b9406dd23344c53"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/independent-review.txt",
+      "sha256": "8ca88b34d91a481922b4aa2168a228cb5f40064c70329b468e8114ea36acbfb3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/metadata-normalization.json",
+      "sha256": "e312fe720ee91065e0e6d3bc8000889a159c310e20514a7b3d6a3774ed4ee67c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalCanonical.log",
+      "sha256": "e661a63906a9f0c8373aca8f9821db8d29127a6ea0b5726884c2d1581f206f06"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalFreeMaxwell.log",
+      "sha256": "977e4d611d20867163b8f03a9ca769813f8d22d3215e48957d3c5352a0ffe714"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalGreen.log",
+      "sha256": "7e1d324f1248dc37aeadc80cbfbd48635bd82057abe86bf58df33692ae469019"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalHybridEquation.log",
+      "sha256": "011b36ad347859b085da98d6d84b1ff0d4a7251b490cd20b454b5a50c0e2b154"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalInducedSector.log",
+      "sha256": "2066bcf0e6c5694088d81e4e378d34823d3d95dec653e7fcd8d3241626de7bd8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalKernelReciprocity.log",
+      "sha256": "a0f1a8b6e29f7bd0af7c2258e554ff05cffcd1b46325f2f38a50797007b40337"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalLeft.log",
+      "sha256": "cfe6d73152a64965337de9455f2bde37edbf7d5b69e63cf2951b32ba910493a5"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalOverlap.log",
+      "sha256": "20f80b227f62e0afe211a9f3c65b34d7a2a891f3fcf4e23c3446fb4266e4b8a8"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalPairing.log",
+      "sha256": "41f68d048e963a9183bede1cc6c9d7eee05acf685118ca366e167d96e0234241"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalResidue.log",
+      "sha256": "abb3dd26a9970aaabc9c8a51c6c35236f4f125f39a6c0322427665f5ded03d68"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalSectorMaxwell.log",
+      "sha256": "9924e03f96364955545ce88ed7b7946be54d094f6a410103e804677654096690"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalStaticSector.log",
+      "sha256": "d419d39987dcbe4c3cfcd3a0723cd668a40e560da45c52ad464c59e2d9ecc10c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ExternalSymmetry.log",
+      "sha256": "16cabbae565223e18bd7d8b23639b24e89106825c4c815be9e1bb160788ceabc"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedGreen.log",
+      "sha256": "6c1919d2b64be0a70ad28dcab1676c20cd8df8ed6afa4e6af01f3a003cca828a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedModePairing.log",
+      "sha256": "dbb3539259041e2014d89dd21ac89f40280c51c77bb3a482307a40966bc81523"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedPhysicalResidue.log",
+      "sha256": "9cb19bf0056be5947ec7657545480ac58a9687521f1ca3fa5e9ef845acf284a0"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06ProjectedSupport.log",
+      "sha256": "699725cc1ec23a3f6ccc194fb5e942b1511c2fd05de075aa466a5dad00076a0e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/reviews/Packet06SectorConjugate.log",
+      "sha256": "861dfcce5c53574afe3f9cd31a3851ca5ac4104db1c0a568ae388517b8c21e64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/scripts/audit_provenance.ps1",
+      "sha256": "e03460944dc2f9d3823ddf1aacf4a2d0cbb11a28cd759f19273a27d4cd6314a4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/scripts/check_chain.py",
+      "sha256": "9460aa9390eda5a5f76ad44ef7698a0b4510e99577c9cf266cb673de9e458a5f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/scripts/freeze_checkpoint.py",
+      "sha256": "6887d4f6ed4c604c63be09d6778112f0a8e0ad5b48841d29aa6ee8ade741864b"
+    },
+    {
+      "path": "checkpoints/2026-11-13-selected-green/STAGE98.txt",
+      "sha256": "f16ee959dc5939d1a755a25ee2b1d5328521395e5807269982158f40e670de74"
+    },
+    {
+      "path": "lean/Packet06ExternalCanonical.lean",
+      "sha256": "9a58dc5e0a536bd8e62f81cc69ff96eeb163689545aa0960ce6f683d38e4e29e"
+    },
+    {
+      "path": "lean/Packet06ExternalFreeMaxwell.lean",
+      "sha256": "3b7676f53d73d6b4fe3e960ff9f7c1b8e66a7f5a4c53a1000c67d8539fea88f8"
+    },
+    {
+      "path": "lean/Packet06ExternalGreen.lean",
+      "sha256": "f550361e21776b7120afb71397d4f692d6d978e962f803fce98fa463569d47ae"
+    },
+    {
+      "path": "lean/Packet06ExternalHybridEquation.lean",
+      "sha256": "5a6c2ea92237f335ec9faf45e5ce2665d780042e799de36866decf22ee7ed825"
+    },
+    {
+      "path": "lean/Packet06ExternalInducedSector.lean",
+      "sha256": "eecf9c77df8b870d96c32c0705815ab9cd21d0d80efe04b111e57a9bf6f7d895"
+    },
+    {
+      "path": "lean/Packet06ExternalKernelReciprocity.lean",
+      "sha256": "986045982ebe4f82b75fbae84a19c8fd319d8372fde11faa74854c70515e295c"
+    },
+    {
+      "path": "lean/Packet06ExternalLeft.lean",
+      "sha256": "828e7ffe72ad6478ac9e683f61e27fdee3881b1294743f7df4cae665e8bc7972"
+    },
+    {
+      "path": "lean/Packet06ExternalOverlap.lean",
+      "sha256": "ab0da55ae1a13237a4ee747eb2b2729e3bf12fa19d0dc2b6f4cd85bd8045131a"
+    },
+    {
+      "path": "lean/Packet06ExternalPairing.lean",
+      "sha256": "337f48f7fa90890bd87a3820318feba1a58125086e5eb2c59634f9c551f7d1c0"
+    },
+    {
+      "path": "lean/Packet06ExternalResidue.lean",
+      "sha256": "b4df153c051393fbbb2351e5f2669cd31c7f6abd655a8ac99794698dab5b49e6"
+    },
+    {
+      "path": "lean/Packet06ExternalSectorMaxwell.lean",
+      "sha256": "b7586ab4889eb1e03b9e030d757b7d62bdc66f9d0e637ab36296da2d6afee03c"
+    },
+    {
+      "path": "lean/Packet06ExternalStaticSector.lean",
+      "sha256": "7623e64bc2fdebfae1ff4eddcc24b86986c4bef67c5bf73698fe1121c1ed1169"
+    },
+    {
+      "path": "lean/Packet06ExternalSymmetry.lean",
+      "sha256": "56a27cbddcb08285b2a7272466557b1aa218d3f37ee75f350915a3343c3a7f14"
+    },
+    {
+      "path": "lean/Packet06ProjectedGreen.lean",
+      "sha256": "8ee03636849500b1d3a13152d4533ec6f63a27b4f8613c67b2c560a876ad8181"
+    },
+    {
+      "path": "lean/Packet06ProjectedModePairing.lean",
+      "sha256": "d10b222357b6e505d4a3d36c5174b731ec236d5a54be20eefdf97bb32ac81acf"
+    },
+    {
+      "path": "lean/Packet06ProjectedPhysicalResidue.lean",
+      "sha256": "6327df2124ffd1c532bb051278fdbce8a55bfb2ca8b68f64088b314134bd6fb8"
+    },
+    {
+      "path": "lean/Packet06ProjectedSupport.lean",
+      "sha256": "08884a2043388319e23cd4ac43a5222965b2fd272572d6b565cca78455176837"
+    },
+    {
+      "path": "lean/Packet06SectorConjugate.lean",
+      "sha256": "67079ccd6af7988be4df0acc8148d2dbb4a0ec411ca3db85a3607e408dbdd0df"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "f0f4b211a52b0744f9693294c1251879a7e9c420472158f80be7677ec68c0b7a"
+    }
+  ],
+  "scope": "actual projected-source Maxwell Green residue. The selected-source local Maxwell equation and physical residue are proved; full OQ14 remains active."
+}
