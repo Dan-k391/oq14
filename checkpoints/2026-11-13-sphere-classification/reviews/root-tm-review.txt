@@ -1,0 +1,46 @@
+Independent source review of the nine Terra-authored TM modules
+Reviewer: root (author of the separate recovery/integration modules)
+Date: 2026-11-13
+
+No actionable mathematical, hypothesis, sign, or representative defect found.
+
+The compact radial, toroidal and gradient tests are genuine smooth finite
+vector tests; their supports may cross r=1 and avoid r=0. The actual curl-H
+equation retains epsilon E. The magnetic toroidal convention is grad(P) cross
+x, so the recovered coefficient is -iz r D_rad. All polar substitutions use
+actual locally L2 representatives and justify integral sum/constant operations.
+
+The two distributional derivatives are U'=r D_tan and
+V'=L(L+1)E_rad-z^2 r^2 D_rad, for U=r^2 D_rad, V=r E_tan.
+Their locally integrable right sides give continuous representatives on all
+(0,T) with exact integral increments. No interface traces are premises of
+actual_nondipole_radial_zero. Epsilon factors are established from the actual
+material response, so on each open phase the representatives obey the classical
+TM system, without differentiation of a jump.
+
+Exterior outgoing selection uses the separately checked physical-degree
+raising theorem, valid for every complex z != 0 with no decay assumption.
+Interior selection uses the accepted actual regular-origin coefficient theorem
+and response overlap. Both common interface values follow from continuity at 1.
+The matching equations have the exact -z/n times tmDet normalization and
+therefore the established algebraic-index noncoincidence kills every positive
+degree other than 1. The final radial exclusion retains n>1, IsAlgebraic Q n,
+z!=0, tmDet 1 n z=0 and the actual volume-kernel equation; no symmetry premise
+is needed for that radial exclusion.
+
+Independent compilation is the root-run fresh isolated 26-module chain in
+evidence/chain-build.json. It rebuilds all nine reviewed modules and all new
+dependencies in that chain. Frozen upstream dependency objects remain cached;
+this is not a full clean project rebuild. Exact hashes below identify the
+reviewed source bytes. Compilation success/standard axioms must be checked in
+the completed build manifest before this review is promoted.
+
+Packet04TMProjection 78572960054b136f027f337c00479c409d75103c319ced0de17399808a514fd7
+Packet04TMMoments 3f660609160ae638278a82e189737a8f448c68f357dbce23f471f2f185c73e0d
+Packet04TMFirstDerivative 102065185f3ebf966e220ab749278b2e1050889df55f2f1a46347469efc2a7bd
+Packet04TMSecondDerivative a0e382766763b4f641c065b1e12747032b71ec63bd45a10154f1c6a610347ffb
+Packet04TMTraces 92bbe4fc2a883fc9f8d07e3e83c0dddb0e8f74a1c8ae63adcde1352fd715f2b9
+Packet04TMDielectric 038f1f931d67a895ad2a18a68b6c12b652f13af9531ff458a37d177e6b0f686b
+Packet04TMGlobalTraces 289cb6c65eee267fc2c3c4164f54974b45ca7fe78e1e5c8bdf1390ca35b0dede
+Packet04TMClassical 143f19895f2edf850acc977b633a948f090583a90c1f12a5b4b1c84d7bc7ddb5
+Packet04TMProfiles 1e1fdbfc28e360b7a4e5376f3f971396f49a56a98380641b13646987ef08ecd5

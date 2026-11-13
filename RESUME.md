@@ -1,6 +1,31 @@
 # OQ14 active full-closure work — November 13, 2026
 
-Latest rollback build checkpoint (author checked, not ledger promoted):
+Stage 69 is the latest verified incremental checkpoint:
+[STAGE69.txt](checkpoints/2026-11-13-sphere-classification/STAGE69.txt).
+The complete actual electric-sector sphere kernel is exactly the complex span
+of the nonzero physical numerator, with a unique coefficient and dimension one.
+For real algebraic n>1 and nonzero complex z with tmDet 1 n z=0, no radial
+expansion, outgoing, trace or kernel-classification premise remains.
+The actual weak TM equations, continuous interface traces, regular and outgoing
+profiles, all-degree elimination, vector recovery and final uniqueness have
+compiled and passed independent review. The 26 new modules / 105 axiom reports
+bring the ledger to 559 modules / 3890 reports, preserving all prior records.
+All new objects were built fresh in isolation, with 556 authenticated local
+upstream source dependencies and cached upstream objects. Only standard axioms
+occur; no warnings. This is not a clean full-project build.
+
+Current ledger: `checkpoints/2026-11-13-sphere-classification/evidence/audited_after_5238-stage69.json`.
+Full OQ14 work remains active. Root is deriving actual simple inverse poles and
+residue normalization. Terra agents are constructing restricted operator and
+cokernel adapters, actual one-sided interface regularity, and the full physical
+channel endpoint. Concurrent Packet05, Packet06 and FullChannel drafts remain
+outside the accepted ledger. Remaining work includes actual simple pole/residue
+and continuation, curved-interface continuous representatives and maxima,
+modal/driven assembly, channel endpoint audit, final manuscript and aggregate.
+
+Everything below is historical context, superseded by stage69.
+
+Previous rollback build checkpoint (author checked, not ledger promoted then):
 [sphere recovery checkpoint](checkpoints/2026-11-13-sphere-recovery/CHECKPOINT.txt).
 Fourteen root modules / 56 standard-only reports were built into isolated fresh
 objects. Actual electric-sector kernel vanishing now follows from vanishing

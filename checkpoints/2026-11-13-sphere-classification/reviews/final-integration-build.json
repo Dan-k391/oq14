@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "module_count": 3,
+  "report_count": 12,
+  "scope": "3 fresh final integration objects using independently built recovery objects and cached upstream and TM dependencies; not a clean full rebuild",
+  "records": [
+    {
+      "module": "Packet04AxisKernelZero",
+      "source_sha256": "98bb469d1ffb50482aecaba8d461ba2427f20218d27ac65c8b0ba94db2546d4d",
+      "log_sha256": "02aac885e2d9e6c2f10a4a22bf58f7244665a5b3b73bcbedb92a96800fc0e3f4",
+      "object_sha256": "5196888065e7ab683a586395a1872145cd861271d5c8ff0a939ae55b06ae54fb",
+      "exit_code": 0,
+      "elapsed_s": 12.19,
+      "reports": 3
+    },
+    {
+      "module": "Packet04MomentLinearity",
+      "source_sha256": "9a7c5c6941884610ea91b4ed48ad1f8c0e211b9b1873f54db7f0cd544e29ff7c",
+      "log_sha256": "53aa39ceb1f331e15eb01a6c282afe553c6b7e4eea099b25a75436b09cf4dad2",
+      "object_sha256": "67e5a9b33e7942689b9f8c02ee62a2bfc0f4f94fed5976e248bfaa4a84e0656d",
+      "exit_code": 0,
+      "elapsed_s": 11.52,
+      "reports": 4
+    },
+    {
+      "module": "Packet04KernelClassification",
+      "source_sha256": "7307da906b2330f0141a565f70c6ec0ff0146c1ae3711b26449017810bc5db7d",
+      "log_sha256": "d8039223e576eebc65d632ae9e5c59dc003bc0d5c0a2f5ed1aefc9f6f4e41503",
+      "object_sha256": "36d386166ef1e6fbc58f5a54719231ab2479b0c37b74bd8a7548aaa228832ece",
+      "exit_code": 0,
+      "elapsed_s": 23.68,
+      "reports": 5
+    }
+  ]
+}

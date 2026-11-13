@@ -1,0 +1,1321 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-003259-61076",
+  "object_directory": "checkpoints/2026-11-13-sphere-classification/objects/20261113-003259-61076",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all 26 Packet04 sphere-classification modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet04RaisingPolynomial",
+      "source": "lean/Packet04RaisingPolynomial.lean",
+      "source_sha256": "9ec143d9b3641935a32b798085031fbc5a00c6d443b17dd146bc4189ba86d65b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04RaisingPolynomial.olean",
+        "D:\\oq14\\lean\\Packet04RaisingPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.219,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04RaisingPolynomial-chain.log",
+      "log_sha256": "f57dedeb04858366e2da85111811a5868e750fc3c2d8ce372e9ea17c8fdd868f",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04RaisingPolynomial.raised_homogeneous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingPolynomial.raised_harmonic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingPolynomial.raised_angular_value",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f5e73e3e27efb69405eedccf730e80a9a1ab25645280d3c2925b00f2e4e0f5e8"
+    },
+    {
+      "module": "Packet04RaisingMoments",
+      "source": "lean/Packet04RaisingMoments.lean",
+      "source_sha256": "9ca88698a075e7f13253acec9e2bdd5a44767833fd91cd27203b244793757ee1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04RaisingMoments.olean",
+        "D:\\oq14\\lean\\Packet04RaisingMoments.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.422,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04RaisingMoments-chain.log",
+      "log_sha256": "bd7f7e0b79f49d07aa1d0c6b4be11901179f418c1ab167699a813456639734fd",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04RaisingMoments.raised_radial_gradient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingMoments.raised_radial_tangential",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingMoments.actual_raised_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "467a3cee0a0395a64411f8c6259672cf5a2ce1840320d2e423336beeed7bbde9"
+    },
+    {
+      "module": "Packet04RaisingSelection",
+      "source": "lean/Packet04RaisingSelection.lean",
+      "source_sha256": "8c2dcc7df81de2feb2de82b905bfbf47e194d226bb82f9357c441ad30241a5b1",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04RaisingSelection.olean",
+        "D:\\oq14\\lean\\Packet04RaisingSelection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.718,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04RaisingSelection-chain.log",
+      "log_sha256": "ec485795f3bfef9dc07837259dbaa7309fb7cb84c8078166b9c0332956c813e3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04RaisingSelection.outgoing_raising",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingSelection.incoming_raising",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingSelection.incoming_coefficient_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04RaisingSelection.ode_raised_outgoing_selection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "24312fc13fc9a4307a8cdd6f712219265edf46cf3342382a71ee637d20e1b9e4"
+    },
+    {
+      "module": "Packet04RaisingPhysical",
+      "source": "lean/Packet04RaisingPhysical.lean",
+      "source_sha256": "9a3e36d3c29a1e5f1d686459014efac33125e04b239b5d1ee9d20ddf806a5e5e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04RaisingPhysical.olean",
+        "D:\\oq14\\lean\\Packet04RaisingPhysical.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.188,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04RaisingPhysical-chain.log",
+      "log_sha256": "a73e5084435be5ea78cb5af61acf1e9542e86e39a3ecc457d824d55acba817da",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04RaisingPhysical.actual_TM_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "8560a2453f26e9f0bf31dfbcda8a66c679c216764e2265e050ad02218333ef45"
+    },
+    {
+      "module": "Packet04TMMatching",
+      "source": "lean/Packet04TMMatching.lean",
+      "source_sha256": "b4372d938cd9808dda61ef1e1afb23b1691f5b1224373f3b76455398c50ebbcb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMMatching.olean",
+        "D:\\oq14\\lean\\Packet04TMMatching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.359,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMMatching-chain.log",
+      "log_sha256": "d8cb9a915bdbe7828c9b9c9242107bd6c2142668e8b0aaa199893920c6479f92",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMMatching.determinant_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMatching.physical_matching_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMatching.matching_zero_of_traces",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMatching.amplitudes_zero_of_nonzero_determinant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMatching.non_dipole_amplitudes_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "634afca2876a6b923ee8d51febcafcde1129c812bb20a54aedc07b85453ccbd8"
+    },
+    {
+      "module": "Packet04AngularDictionary",
+      "source": "lean/Packet04AngularDictionary.lean",
+      "source_sha256": "58ddee386cd2a1805bd7711a66d845a3c88eeb2508dbc40ad520a6d9be1a4205",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04AngularDictionary.olean",
+        "D:\\oq14\\lean\\Packet04AngularDictionary.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.281,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04AngularDictionary-chain.log",
+      "log_sha256": "11b8c6fcffeba095e0733b8ce414830cf0665690282bc05f379e9271a0327a44",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04AngularDictionary.polynomial_mode_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AngularDictionary.radial_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AngularDictionary.poloidal_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AngularDictionary.toroidal_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AngularDictionary.actual_moments_separate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2fe0f69cbae09f63660e380e2233fa2b216ceaf71f41a8d5271d17faed819126"
+    },
+    {
+      "module": "Packet04AxialDipole",
+      "source": "lean/Packet04AxialDipole.lean",
+      "source_sha256": "757f26fde4b07d1b694c76216a3ffe7672347d2f62d76cd9e05fa8c5e5e16e91",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04AxialDipole.olean",
+        "D:\\oq14\\lean\\Packet04AxialDipole.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.188,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04AxialDipole-chain.log",
+      "log_sha256": "6f1c7dd1335c7c2adef9e59992979402ceeca6281d739152e553a6eecc361efb",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04AxialDipole.rotation_neg_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxialDipole.action_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxialDipole.axial_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxialDipole.radial_halfturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxialDipole.transverse_weighted_moment_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "4419e60fbac1d8729f20a5576e0969b3ff80cb77e767e1d80fc19d96a48429d1"
+    },
+    {
+      "module": "Packet04TMWeakReduction",
+      "source": "lean/Packet04TMWeakReduction.lean",
+      "source_sha256": "94ab601c6400ef99d5c1d445994e96f4aca1bbc900b6c2b5675c98fad455ec1c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMWeakReduction.olean",
+        "D:\\oq14\\lean\\Packet04TMWeakReduction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.734,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMWeakReduction-chain.log",
+      "log_sha256": "f96697d254bf742c623240f885afecdf57d81df86e6ff79a4869de228442dba0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMWeakReduction.div_radial_pow_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMWeakReduction.radial_tangential_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMWeakReduction.weak_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6efc5acd3601c0e0cc66adb489215903536594a86ccbbd2b03546b991899bdec"
+    },
+    {
+      "module": "Packet04SliceRecovery",
+      "source": "lean/Packet04SliceRecovery.lean",
+      "source_sha256": "bc27c55f7b954fdb4f852d201d8d53f47294a9c37518875b72a40c2492390145",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04SliceRecovery.olean",
+        "D:\\oq14\\lean\\Packet04SliceRecovery.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.969,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04SliceRecovery-chain.log",
+      "log_sha256": "87cb522639daf05724cd9f77af41dff14e85be759152e7fb7548599c582ceb3c",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.eq_of_slices",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.modeMoment_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.supportedInUnit_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.slice_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.slices_zero_outside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.eq_of_slices_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04SliceRecovery.eq_of_mode_moments",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6b5df2b10e5a838f3e1fcabd5e2ee176758b83c578609a3c8dd6299f6d644ec5"
+    },
+    {
+      "module": "Packet04AxialRecovery",
+      "source": "lean/Packet04AxialRecovery.lean",
+      "source_sha256": "99cbe7e9f8bc6ebfead38b1ffea2818275bd380a4f44588f0b96d0e97da58c12",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04AxialRecovery.olean",
+        "D:\\oq14\\lean\\Packet04AxialRecovery.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.859,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04AxialRecovery-chain.log",
+      "log_sha256": "935445ed35c6a5a57a59a175b2674c3ef6382e987b222a6d63ecbb463a86cece",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04AxialRecovery.transverse_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "86c4cc2d78ffd1158bb09514ab13863c898e2ba169aa2551ae3d000c312dc8eb"
+    },
+    {
+      "module": "Packet04KernelRecovery",
+      "source": "lean/Packet04KernelRecovery.lean",
+      "source_sha256": "43306b3fd0ead9b2325d1e3c533207c248a535eecd795bca68d83471b357ed5f",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04KernelRecovery.olean",
+        "D:\\oq14\\lean\\Packet04KernelRecovery.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.641,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04KernelRecovery-chain.log",
+      "log_sha256": "a52cfaeb0443eb78d7426a6096cc99837a38b004ec107e1d584fede852b7dc40",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04KernelRecovery.kernel_supported",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelRecovery.numerator_supported",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelRecovery.kernel_eq_numerator_of_inner_slices",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "779e12dc72e061752ed82ff96ce77e5c4112c9fd3757681a40b48d89035bea5e"
+    },
+    {
+      "module": "Packet04PolynomialCoordinates",
+      "source": "lean/Packet04PolynomialCoordinates.lean",
+      "source_sha256": "5baba2c8a2c133ac3dcae91e748d2c64b4ea26661c38fd30324c0c64122c02c5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04PolynomialCoordinates.olean",
+        "D:\\oq14\\lean\\Packet04PolynomialCoordinates.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.14,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04PolynomialCoordinates-chain.log",
+      "log_sha256": "ab45f88731b0787df674b14d49cb5bffac39b1c3e057c6567eb4feccc068b842",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.degree_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.degree_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.poloidalLinear_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.radial_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.poloidal_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.toroidal_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.degree_one_coordinate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04PolynomialCoordinates.separate_with_dipole_coordinates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d4412cff0da19b5a823f1f8180126a0937911514a5c7027df0e28dcb69dadc6b"
+    },
+    {
+      "module": "Packet04KernelMomentBridge",
+      "source": "lean/Packet04KernelMomentBridge.lean",
+      "source_sha256": "885a9407a95727cc4b2aba129b60c042e795d061bb22c63e374245f5a9f5e43e",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04KernelMomentBridge.olean",
+        "D:\\oq14\\lean\\Packet04KernelMomentBridge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.078,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04KernelMomentBridge-chain.log",
+      "log_sha256": "8e47b1864b9e28554038cc81ef4ad9b53c07af29a44d146024c20ba2d6c7ea54",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04KernelMomentBridge.slice_recovery",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelMomentBridge.weighted_moment",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelMomentBridge.radial_coordinate_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelMomentBridge.poloidal_coordinate_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelMomentBridge.toroidal_coordinate_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d9a848298aa85e0f84275fa18e03368a0d7129f7eb5e45b3afec02f70b169835"
+    },
+    {
+      "module": "Packet04KernelZero",
+      "source": "lean/Packet04KernelZero.lean",
+      "source_sha256": "e3ae97608398e40a9426b31dd262c8d16b7efbb5e6d45501f2b74f02b16dca97",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04KernelZero.olean",
+        "D:\\oq14\\lean\\Packet04KernelZero.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.797,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04KernelZero-chain.log",
+      "log_sha256": "0f4ce4dab605bfb2493a36fdc1521442e83b1a7a4019ea06e38796227fb84482",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04KernelZero.poloidal_zero_of_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelZero.poloidal_degree_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelZero.zero_of_radial_moments",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "14516afc935fcdf242d77055f7fa8a19ca4c399ac50e0e3680f2cd0ae7f5ca7f"
+    },
+    {
+      "module": "Packet04TMProjection",
+      "source": "lean/Packet04TMProjection.lean",
+      "source_sha256": "78572960054b136f027f337c00479c409d75103c319ced0de17399808a514fd7",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMProjection.olean",
+        "D:\\oq14\\lean\\Packet04TMProjection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 23.735,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMProjection-chain.log",
+      "log_sha256": "1e1ef30980648059e94a273c6bdc2555e33f4eab015ab7783a713ed1ba2222bc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMProjection.gradientVectorTest",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_magnetic_gradient_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_toroidal_polar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_magnetic_radial_polar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.displacement_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_magnetic_radial_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.toroidalVectorTest",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_toroidal_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.radialVectorTest",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProjection.actual_radial_test",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "24639c7e1b7a2f757f71285bb376f24e5880f79abc3937451e371ac6dc95f86b"
+    },
+    {
+      "module": "Packet04TMMoments",
+      "source": "lean/Packet04TMMoments.lean",
+      "source_sha256": "3f660609160ae638278a82e189737a8f448c68f357dbce23f471f2f185c73e0d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMMoments.olean",
+        "D:\\oq14\\lean\\Packet04TMMoments.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 39.922,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMMoments-chain.log",
+      "log_sha256": "c79bd8cec1add957e1da4b88fb7e46fa776300cb84faa59d097a79d2e5e903de",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMMoments.electric_toroidal_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.electricRadial_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.electricGradient_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.magnetic_gradient_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.displacementGradient_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.displacementGradient_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.magnetic_displacement_coefficient",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.magnetic_displacement_weak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.displacementRadial_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.displacementCoordinates_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.displacementRadial_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.magneticCoefficient_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMMoments.magneticCoefficient_actual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "fb58657a724eb1e36bc2b493a85699218c110a06e0b2f0b5b2a5b24013bacc01"
+    },
+    {
+      "module": "Packet04TMFirstDerivative",
+      "source": "lean/Packet04TMFirstDerivative.lean",
+      "source_sha256": "102065185f3ebf966e220ab749278b2e1050889df55f2f1a46347469efc2a7bd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMFirstDerivative.olean",
+        "D:\\oq14\\lean\\Packet04TMFirstDerivative.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.046,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMFirstDerivative-chain.log",
+      "log_sha256": "2afd80c2e03842cc180d71dcdddfd1aa056812e3c834a7a4f9ceb32478ed5ff0",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMFirstDerivative.actual_first_weak_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "37e4c7025162aa7a03dde0df521b340509a82296985717a6278d52ca318fc24b"
+    },
+    {
+      "module": "Packet04TMSecondDerivative",
+      "source": "lean/Packet04TMSecondDerivative.lean",
+      "source_sha256": "a0e382766763b4f641c065b1e12747032b71ec63bd45a10154f1c6a610347ffb",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMSecondDerivative.olean",
+        "D:\\oq14\\lean\\Packet04TMSecondDerivative.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.063,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMSecondDerivative-chain.log",
+      "log_sha256": "941720a9a75f7e269eb5c9ebd8ce0bf6da6bdfb06ee0d361a1fbaa95afca996d",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMSecondDerivative.actual_second_weak_derivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "_private.Packet04TMSecondDerivative.0.OQ14.Packet04TMSecondDerivative.test_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "11b41433b63cfee069a56337cc69b18acd99995a2de34f4b2af5c8776c849906"
+    },
+    {
+      "module": "Packet04TMTraces",
+      "source": "lean/Packet04TMTraces.lean",
+      "source_sha256": "92bbe4fc2a883fc9f8d07e3e83c0dddb0e8f74a1c8ae63adcde1352fd715f2b9",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMTraces.olean",
+        "D:\\oq14\\lean\\Packet04TMTraces.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.484,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMTraces-chain.log",
+      "log_sha256": "5b91ea87a96c9dd4c8d78b86a461bf29523c4c4b1f30c46665818c5cb67594fc",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMTraces.actual_continuous_representatives",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5e9f38379828d0a2f160ecfa4b4b543cc74e841bbb9319d62419aa543a085e28"
+    },
+    {
+      "module": "Packet04TMDielectric",
+      "source": "lean/Packet04TMDielectric.lean",
+      "source_sha256": "038f1f931d67a895ad2a18a68b6c12b652f13af9531ff458a37d177e6b0f686b",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMDielectric.olean",
+        "D:\\oq14\\lean\\Packet04TMDielectric.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.359,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMDielectric-chain.log",
+      "log_sha256": "d4007f751a01ee3e08d92a3213e013207053e08f849f7eb7968d331e37f6c3ae",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMDielectric.displacement_radial_factor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMDielectric.displacement_gradient_factor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMDielectric.displacement_tangential_factor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "6546011267beb58db8ca7a318d3ad969f4d03adbbd9c005f13734ed7c7df2207"
+    },
+    {
+      "module": "Packet04TMGlobalTraces",
+      "source": "lean/Packet04TMGlobalTraces.lean",
+      "source_sha256": "289cb6c65eee267fc2c3c4164f54974b45ca7fe78e1e5c8bdf1390ca35b0dede",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMGlobalTraces.olean",
+        "D:\\oq14\\lean\\Packet04TMGlobalTraces.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.86,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMGlobalTraces-chain.log",
+      "log_sha256": "164ed39f465c6d690f170e1fa8f119dd6bc80f565599adc3a41887b295f13906",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMGlobalTraces.actual_global_representatives",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "ab7cf6d5e6834aa16998c680c13e133be59f2641dbd246cf24be9d361475cc1d"
+    },
+    {
+      "module": "Packet04TMClassical",
+      "source": "lean/Packet04TMClassical.lean",
+      "source_sha256": "143f19895f2edf850acc977b633a948f090583a90c1f12a5b4b1c84d7bc7ddb5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMClassical.olean",
+        "D:\\oq14\\lean\\Packet04TMClassical.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.656,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMClassical-chain.log",
+      "log_sha256": "aba6927ae8e400617ae0c5a8cbc10516266067d13de019fcaf2d01f41392fc57",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMClassical.region_ode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "2d15f2b1d44cf0f0064e602eaaa4f6a7021f12099edef645478769971ffe296e"
+    },
+    {
+      "module": "Packet04TMProfiles",
+      "source": "lean/Packet04TMProfiles.lean",
+      "source_sha256": "1e1fdbfc28e360b7a4e5376f3f971396f49a56a98380641b13646987ef08ecd5",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04TMProfiles.olean",
+        "D:\\oq14\\lean\\Packet04TMProfiles.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 19.016,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04TMProfiles-chain.log",
+      "log_sha256": "e85a15a938450766bf1f03beb41d8c5899e8e1a95e9c5b7f8b9f94e1bbab63cb",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04TMProfiles.actual_nondipole_radial_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProfiles.actual_matching_traces",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProfiles.actual_interior_regular",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProfiles.actual_exterior_outgoing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04TMProfiles.electricRadial_inner",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "019ac479d70f7a0d381f43c7536058ca8f6cdb1da28d401470b653783441f406"
+    },
+    {
+      "module": "Packet04AxisKernelZero",
+      "source": "lean/Packet04AxisKernelZero.lean",
+      "source_sha256": "98bb469d1ffb50482aecaba8d461ba2427f20218d27ac65c8b0ba94db2546d4d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04AxisKernelZero.olean",
+        "D:\\oq14\\lean\\Packet04AxisKernelZero.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.984,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04AxisKernelZero-chain.log",
+      "log_sha256": "02aac885e2d9e6c2f10a4a22bf58f7244665a5b3b73bcbedb92a96800fc0e3f4",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04AxisKernelZero.radial_degree_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxisKernelZero.radial_degree_one_of_axis_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04AxisKernelZero.zero_of_axis_and_nondipoles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "5196888065e7ab683a586395a1872145cd861271d5c8ff0a939ae55b06ae54fb"
+    },
+    {
+      "module": "Packet04MomentLinearity",
+      "source": "lean/Packet04MomentLinearity.lean",
+      "source_sha256": "9a7c5c6941884610ea91b4ed48ad1f8c0e211b9b1873f54db7f0cd544e29ff7c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04MomentLinearity.olean",
+        "D:\\oq14\\lean\\Packet04MomentLinearity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.109,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04MomentLinearity-chain.log",
+      "log_sha256": "53aa39ceb1f331e15eb01a6c282afe553c6b7e4eea099b25a75436b09cf4dad2",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04MomentLinearity.slice_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04MomentLinearity.radial_coordinate_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04MomentLinearity.radial_coordinate_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04MomentLinearity.kernel_radial_sub_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "67e5a9b33e7942689b9f8c02ee62a2bfc0f4f94fed5976e248bfaa4a84e0656d"
+    },
+    {
+      "module": "Packet04KernelClassification",
+      "source": "lean/Packet04KernelClassification.lean",
+      "source_sha256": "7307da906b2330f0141a565f70c6ec0ff0146c1ae3711b26449017810bc5db7d",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-sphere-classification\\objects\\20261113-003259-61076\\Packet04KernelClassification.olean",
+        "D:\\oq14\\lean\\Packet04KernelClassification.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 24.141,
+      "log": "checkpoints/2026-11-13-sphere-classification/evidence/Packet04KernelClassification-chain.log",
+      "log_sha256": "d8039223e576eebc65d632ae9e5c59dc003bc0d5c0a2f5ed1aefc9f6f4e41503",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet04KernelClassification.zero_of_axis_radial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelClassification.kernel_is_numerator_multiple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelClassification.kernel_iff_unique_multiple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelClassification.selectedKernel_eq_span",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet04KernelClassification.selectedKernel_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "36d386166ef1e6fbc58f5a54719231ab2479b0c37b74bd8a7548aaa228832ece"
+    }
+  ],
+  "module_count": 26,
+  "report_count": 105
+}

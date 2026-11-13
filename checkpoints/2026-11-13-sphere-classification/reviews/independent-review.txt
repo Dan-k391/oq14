@@ -1,0 +1,34 @@
+Independent review — Packet 04 sphere-recovery checkpoint
+Date: 2026-11-13
+
+Scope: 14 modules and 56 public theorem reports listed in
+checkpoints/2026-11-13-sphere-recovery/modules.json at checkpoint 7bfe426.
+Each current source matched its saved source snapshot byte-for-byte. Each
+module was compiled independently into the fresh review object directory,
+in dependency order, using the pinned Lean 4.19.0 and mathlib revision
+c44e0c8ee63ca166450922a373c7409c5d26b00b. All fourteen runs exited zero,
+without warnings. Every requested #print axioms report contained only
+propext, Classical.choice and Quot.sound. Source, log, and fresh object
+SHA-256 hashes and exact module/report counts are in independent-build.json.
+The build used cached upstream dependency objects and is not a clean
+whole-project build or independent audit of all upstream dependencies.
+
+Mathematical and scope review: no actionable defect found. The raising
+polynomial has degree L+1 and is harmonic; its angular identity retains the
+radial/tangential normalization. The outgoing selection for arbitrary
+nonzero complex z derives exclusion of the incoming coefficient from the
+outgoing/incoming Wronskian; it does not assume Im(z) sign or spatial decay.
+The proper half-turn has signs (-1,-1,+1), so both coordinates transverse to
+axis 2 cancel; weighted kernel recovery divides only by positive interior
+sqrt(n^2-1). Countable sphere-harmonic indices are combined using
+countable a.e. intersections, with the radial/poloidal/toroidal completeness
+and global support recovery explicitly invoked. The kernel-zero theorem
+requires genuine sector membership, genuine kernel equality, nonzero z and
+all specified actual radial moments; it derives poloidal and toroidal zero
+rather than assuming them. The 14-module checkpoint alone does not prove
+the full dimension-one classification: its ODE profiles, physical traces,
+and non-dipole vanishing were conditional inputs at that checkpoint.
+
+Separate actual-TM source modules and the final classification were not part
+of this 14-module build. The 3 final integration modules are reviewed and
+built separately following source normalization.
