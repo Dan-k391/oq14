@@ -1,0 +1,319 @@
+{
+  "date": "2026-11-13",
+  "previous_proof_checkpoint": "bc28631",
+  "modules": 681,
+  "reports": 4312,
+  "new_modules": 8,
+  "new_reports": 22,
+  "all_previous_records_unchanged": true,
+  "prior_ledger_sha256": "10c46e07d4fb0c8594d06358e2c05f484367e75e7970d0bfa21a8bf198ded459",
+  "ledger_sha256": "9718c67bf93ac7a5b5b5240346fc868d7248262d38e6f6597787b013105293c4",
+  "raw_archive_sha256": "bbe689d8c1e6ae50ba8f096730475ea163db32346fc8d3303a2639abfe9c54cb",
+  "records": [
+    {
+      "module": "Packet05AnisotropicEmbedding",
+      "reports": 6,
+      "source_sha256": "88993f5dd0a48e1542dfa857e8a47cfce46ff23a107c7e87df0606019b74d887",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicEmbedding-chain.log",
+      "audit_log_sha256": "a17bb3dcb0529cada11c05149a2780249950ed862945c7a12231aad95409bb64",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05AnisotropicEmbedding.log",
+      "independent_log_sha256": "ce81d4b45d2ae7f0f4276418a09a11066b93d0bb500a5187afad44d2bb54b6c7",
+      "declarations": [
+        "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_le_majorant",
+        "OQ14.Packet05AnisotropicEmbedding.coordinateMajorant_integrable",
+        "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_integrable",
+        "OQ14.Packet05AnisotropicEmbedding.spectralFactor_pos",
+        "OQ14.Packet05AnisotropicEmbedding.spectralInverse_memLp",
+        "OQ14.Packet05AnisotropicEmbedding.continuous_of_anisotropic_fourier"
+      ]
+    },
+    {
+      "module": "Packet05WeakFourier",
+      "reports": 4,
+      "source_sha256": "29dfa20009813b78f57e791cd7da485eba417e53e9d7826b3131bd10d8ea7d58",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05WeakFourier-chain.log",
+      "audit_log_sha256": "f2f4095f07b872d45b3b7a290aaf54c235d01d7afc9c808b3c31ae25ca711c2a",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05WeakFourier.log",
+      "independent_log_sha256": "d48cd9fd68ca896c98ffdde4231c8512b5fd3d3677cca8e9fa723b0a5a60572c",
+      "declarations": [
+        "OQ14.Packet05WeakFourier.inverse_fourier_weak_partial",
+        "OQ14.Packet05WeakFourier.weak_partial_compact",
+        "OQ14.Packet05WeakFourier.frequency_coordinate_memLp",
+        "OQ14.Packet05WeakFourier.frequency_mixed_memLp"
+      ]
+    },
+    {
+      "module": "Packet05AnisotropicWeakEmbedding",
+      "reports": 2,
+      "source_sha256": "542a21762e49607d54ce29a2061a977db9383a8c4fa61d4417a1d3da692b5066",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicWeakEmbedding-chain.log",
+      "audit_log_sha256": "f87757d1603a5251126aa44f70246976667da66a8b4b9f52c3b4c57c411a9aaf",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05AnisotropicWeakEmbedding.log",
+      "independent_log_sha256": "64a190b26d9615db9b5c26ce9c47700cca9051801ed9623efb04d44b0ded331a",
+      "declarations": [
+        "OQ14.Packet05AnisotropicWeakEmbedding.anisotropic_weight_memLp_of_weak_partials",
+        "OQ14.Packet05AnisotropicWeakEmbedding.continuous_of_weak_tangential_h1"
+      ]
+    },
+    {
+      "module": "Packet05LocalizedAnisotropic",
+      "reports": 2,
+      "source_sha256": "ccb7f89a1e7ab44058b61fd9d95bf622b61a7f4ccde685f5d5b60c37cbc7be1a",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05LocalizedAnisotropic-chain.log",
+      "audit_log_sha256": "c625ac48173e96e4ef57fb218190b8ffba587bb47293bf6340a170416db34969",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05LocalizedAnisotropic.log",
+      "independent_log_sha256": "f6f5ce409376941933d2776384772367be9c34c51e45f5e4369120b6dac43520",
+      "declarations": [
+        "OQ14.Packet05LocalizedAnisotropic.weak_partial_add",
+        "OQ14.Packet05LocalizedAnisotropic.cutoff_continuous_of_tangential_h1"
+      ]
+    },
+    {
+      "module": "Packet05TransmissionContinuity",
+      "reports": 2,
+      "source_sha256": "fdae9dc763156fbbe55d3ff5c4a63a5dc15640dd5ec42b9085250b3536f65b19",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05TransmissionContinuity-chain.log",
+      "audit_log_sha256": "f9e04b82953e5830d43559deae4da68e2c041ad845fa3816931e373282c092d1",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05TransmissionContinuity.log",
+      "independent_log_sha256": "dc13c8537988dd9d0dd2c9cc4fd18e0a595a070466897c16cfde9d4f6c54fa07",
+      "declarations": [
+        "OQ14.Packet05TransmissionContinuity.weight_scale_commute",
+        "OQ14.Packet05TransmissionContinuity.cutoff_transmission_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualContinuous",
+      "reports": 1,
+      "source_sha256": "f681166b31e0f7623c2d542a3db4b9735a32f94b1f0994336bbb08c1ab87fbb6",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualContinuous-chain.log",
+      "audit_log_sha256": "c31de5eabde45bbdd7db8f1066d2e86419b9dd0fc40844c9a03b1febd2b88072",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05ActualContinuous.log",
+      "independent_log_sha256": "ab8ab4072d4d5536fc2a6e3d42c36a396e36bc5fdc908e4153928e7be0d51ab3",
+      "declarations": [
+        "OQ14.Packet05ActualContinuous.actual_flat_one_sided_continuous"
+      ]
+    },
+    {
+      "module": "Packet05ActualMaximum",
+      "reports": 2,
+      "source_sha256": "d5363e5bc477f44a8bfc451ec437bbb50341e5f1e2574b4340e96d795cd223dd",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualMaximum-chain.log",
+      "audit_log_sha256": "ddb3eca4be1470856fb58cea843c9f405037bf3b38be7ef638ec5d44b340629a",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05ActualMaximum.log",
+      "independent_log_sha256": "69ef72856a3df9937ad2a1ed5ece6431776bf2e386645036a3b8c7c768dcdd18",
+      "declarations": [
+        "OQ14.Packet05ActualMaximum.actual_flat_two_sided_maximum",
+        "OQ14.Packet05ActualMaximum.physicalAmplitude_continuous"
+      ]
+    },
+    {
+      "module": "Packet05HighMaximum",
+      "reports": 3,
+      "source_sha256": "ca6e759804aab778a253c2c6d46acf243cf5db853350704853e2b9b36943887c",
+      "audit_log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05HighMaximum-chain.log",
+      "audit_log_sha256": "533ec96a907b41697388bae1a7476104bd9f4e1933b740619c98e7f0ea4fbca3",
+      "independent_review": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "independent_review_sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887",
+      "independent_review_mode": "Independent semantic review and separate isolated ordered rebuild",
+      "independent_build": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "independent_build_sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f",
+      "independent_log": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05HighMaximum.log",
+      "independent_log_sha256": "a8f991dc7be324a10ba100236bb1251f2725bdd3fe80e1b2b69cabf7b0f52bd9",
+      "declarations": [
+        "OQ14.Packet05HighMaximum.component_le_physicalAmplitude",
+        "OQ14.Packet05HighMaximum.flat_phase_cover_ae",
+        "OQ14.Packet05HighMaximum.attained_max_exceeds_positive_volume_peak"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/.gitattributes",
+      "sha256": "5fa85cf355d19712ee18b111269fdca7fd5e4926c699207da54f6d655d1b8a84"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/.gitignore",
+      "sha256": "883fd9d818bd063079d0ecebcc7092e735a18adad9df6f64e5a0b7ba5cc1c4aa"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/audited_after_5238-stage76.json",
+      "sha256": "9718c67bf93ac7a5b5b5240346fc868d7248262d38e6f6597787b013105293c4"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/chain-build.json",
+      "sha256": "ac488d03f70f2dbc4a9cc141c29b7971413fc33a42785a889d33e16d3a78c336"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualContinuous-chain.log",
+      "sha256": "c31de5eabde45bbdd7db8f1066d2e86419b9dd0fc40844c9a03b1febd2b88072"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualMaximum-chain.log",
+      "sha256": "ddb3eca4be1470856fb58cea843c9f405037bf3b38be7ef638ec5d44b340629a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicEmbedding-chain.log",
+      "sha256": "a17bb3dcb0529cada11c05149a2780249950ed862945c7a12231aad95409bb64"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicWeakEmbedding-chain.log",
+      "sha256": "f87757d1603a5251126aa44f70246976667da66a8b4b9f52c3b4c57c411a9aaf"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05HighMaximum-chain.log",
+      "sha256": "533ec96a907b41697388bae1a7476104bd9f4e1933b740619c98e7f0ea4fbca3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05LocalizedAnisotropic-chain.log",
+      "sha256": "c625ac48173e96e4ef57fb218190b8ffba587bb47293bf6340a170416db34969"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05TransmissionContinuity-chain.log",
+      "sha256": "f9e04b82953e5830d43559deae4da68e2c041ad845fa3816931e373282c092d1"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05WeakFourier-chain.log",
+      "sha256": "f2f4095f07b872d45b3b7a290aaf54c235d01d7afc9c808b3c31ae25ca711c2a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/modules.json",
+      "sha256": "e7061f8dafc8494a4aa185f5ea63eba2725a6f93ef56a53d9cea00ff137b6eb6"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/provenance-audit.json",
+      "sha256": "9281380e0bd4f35fc85fc7a667fc4bdfd45a6cb621b07d46a05310e0cd99f45d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05ActualContinuous.log",
+      "sha256": "ab8ab4072d4d5536fc2a6e3d42c36a396e36bc5fdc908e4153928e7be0d51ab3"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05ActualMaximum.log",
+      "sha256": "69ef72856a3df9937ad2a1ed5ece6431776bf2e386645036a3b8c7c768dcdd18"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05AnisotropicEmbedding.log",
+      "sha256": "ce81d4b45d2ae7f0f4276418a09a11066b93d0bb500a5187afad44d2bb54b6c7"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05AnisotropicWeakEmbedding.log",
+      "sha256": "64a190b26d9615db9b5c26ce9c47700cca9051801ed9623efb04d44b0ded331a"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05HighMaximum.log",
+      "sha256": "a8f991dc7be324a10ba100236bb1251f2725bdd3fe80e1b2b69cabf7b0f52bd9"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05LocalizedAnisotropic.log",
+      "sha256": "f6f5ce409376941933d2776384772367be9c34c51e45f5e4369120b6dac43520"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05TransmissionContinuity.log",
+      "sha256": "dc13c8537988dd9d0dd2c9cc4fd18e0a595a070466897c16cfde9d4f6c54fa07"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/Packet05WeakFourier.log",
+      "sha256": "d48cd9fd68ca896c98ffdde4231c8512b5fd3d3677cca8e9fa723b0a5a60572c"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/rebuild.ps1",
+      "sha256": "6da091e26733d1d2d2ca83efec70cb501eb5f80ebaa2842c112ce75c841c157f"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/review-manifest.json",
+      "sha256": "b915c27776fd7bec8d5d5055b814bbb136228d80811d2c235de7dba2b154b887"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/reviews/semantic-review.md",
+      "sha256": "b7fd31dd4f01f67ee3644e980f90f5e3405f11278d82451207817b12c0100379"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/scripts/audit_provenance.ps1",
+      "sha256": "e25df6e8825cc2f39e93473b27d4bffa7bc68ce3f02f9f9478aa86e31e5637ab"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/scripts/check_chain.py",
+      "sha256": "7c2678dd71b59411b79e05c0194e083839bfc3b30c294818af1864c04db3515e"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/scripts/freeze_checkpoint.py",
+      "sha256": "a441af170d2043631de8af65a185c863a74be56c91fdce38b2bff8281824af1d"
+    },
+    {
+      "path": "checkpoints/2026-11-13-flat-continuity/STAGE76.txt",
+      "sha256": "1912b075d6312dff23cce2443fd3ebb3986f33b137ca5744f51d0d2f1164f040"
+    },
+    {
+      "path": "lean/Packet05ActualContinuous.lean",
+      "sha256": "f681166b31e0f7623c2d542a3db4b9735a32f94b1f0994336bbb08c1ab87fbb6"
+    },
+    {
+      "path": "lean/Packet05ActualMaximum.lean",
+      "sha256": "d5363e5bc477f44a8bfc451ec437bbb50341e5f1e2574b4340e96d795cd223dd"
+    },
+    {
+      "path": "lean/Packet05AnisotropicEmbedding.lean",
+      "sha256": "88993f5dd0a48e1542dfa857e8a47cfce46ff23a107c7e87df0606019b74d887"
+    },
+    {
+      "path": "lean/Packet05AnisotropicWeakEmbedding.lean",
+      "sha256": "542a21762e49607d54ce29a2061a977db9383a8c4fa61d4417a1d3da692b5066"
+    },
+    {
+      "path": "lean/Packet05HighMaximum.lean",
+      "sha256": "ca6e759804aab778a253c2c6d46acf243cf5db853350704853e2b9b36943887c"
+    },
+    {
+      "path": "lean/Packet05LocalizedAnisotropic.lean",
+      "sha256": "ccb7f89a1e7ab44058b61fd9d95bf622b61a7f4ccde685f5d5b60c37cbc7be1a"
+    },
+    {
+      "path": "lean/Packet05TransmissionContinuity.lean",
+      "sha256": "fdae9dc763156fbbe55d3ff5c4a63a5dc15640dd5ec42b9085250b3536f65b19"
+    },
+    {
+      "path": "lean/Packet05WeakFourier.lean",
+      "sha256": "29dfa20009813b78f57e791cd7da485eba417e53e9d7826b3131bd10d8ea7d58"
+    },
+    {
+      "path": "RESUME.md",
+      "sha256": "a03e26fd414c01cee4f9a331a4bfd2a11ab13be22dd421999ba14f2ea95e4820"
+    }
+  ],
+  "scope": "Flat-interface weak-Maxwell a.e. one-sided continuity and attained two-branch maximum; no curved-interface conclusion. Full OQ14 remains active and incomplete."
+}

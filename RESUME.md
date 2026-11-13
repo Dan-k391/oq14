@@ -1,5 +1,29 @@
 # OQ14 active full-closure work — November 13, 2026
 
+Stage 76 is the latest verified incremental checkpoint:
+[STAGE76.txt](checkpoints/2026-11-13-flat-continuity/STAGE76.txt).
+Actual flat-interface weak Maxwell fields now have a proved one-sided continuous
+electric representative and an attained compact two-branch physical-amplitude
+maximum. Positive-volume peaks imply that maximum exceeds the same threshold.
+The theorem retains explicit nested cutoff and flat-interface hypotheses.
+
+8 modules / 22 reports passed independent semantic review and two isolated ordered
+builds. 120 upstream local sources were authenticated, with cached objects.
+The accepted ledger is 681 modules / 4312 reports, all 673 previous records unchanged:
+`checkpoints/2026-11-13-flat-continuity/evidence/audited_after_5238-stage76.json`.
+Only standard axioms, no warnings. No whole-project clean build is claimed.
+
+Full OQ14 remains active. This checkpoint does not establish curved-interface
+regularity or attained hotspots for the Packet07 devices. Curved scalar PDE chart
+transport and estimates continue. Modal scalar persistence, actual weighted
+material convergence, sphere preconditioning and generic simple-pole expansion
+compile and are entering combined independent verification. Actual symmetry,
+modal packing, collars, final manuscript, and aggregate checks remain.
+
+Everything below is historical context, superseded by stage76.
+
+# OQ14 active full-closure work — November 13, 2026
+
 Stage 75 is the latest verified incremental checkpoint:
 [STAGE75.txt](checkpoints/2026-11-13-driven-components/STAGE75.txt).
 The same fixed-frequency driven peak construction now has exactly 2N connected

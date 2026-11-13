@@ -1,0 +1,333 @@
+{
+  "compiler": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "run_id": "20261113-020637-31908",
+  "object_directory": "checkpoints/2026-11-13-flat-continuity/objects/20261113-020637-31908",
+  "lean_path": "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908;.\\.\\.lake/packages\\Cli\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\batteries\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\Qq\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\aesop\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\proofwidgets\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\importGraph\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\LeanSearchClient\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\plausible\\.lake\\build\\lib\\lean;.\\.\\.lake/packages\\mathlib\\.lake\\build\\lib\\lean;.\\.\\.lake\\build\\lib\\lean;d:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\lib\\lean",
+  "scope": "Fresh isolated objects for all eight flat-continuity modules; cached frozen upstream dependencies. Not a full-project clean build.",
+  "complete": true,
+  "records": [
+    {
+      "module": "Packet05AnisotropicEmbedding",
+      "source": "lean/Packet05AnisotropicEmbedding.lean",
+      "source_sha256": "88993f5dd0a48e1542dfa857e8a47cfce46ff23a107c7e87df0606019b74d887",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05AnisotropicEmbedding.olean",
+        "D:\\oq14\\lean\\Packet05AnisotropicEmbedding.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.291,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicEmbedding-chain.log",
+      "log_sha256": "a17bb3dcb0529cada11c05149a2780249950ed862945c7a12231aad95409bb64",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_le_majorant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.coordinateMajorant_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_integrable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.spectralFactor_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.spectralInverse_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicEmbedding.continuous_of_anisotropic_fourier",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "45459692df32e5720a371d620490d72b8e734e2d1365271e55ec198866bdf142"
+    },
+    {
+      "module": "Packet05WeakFourier",
+      "source": "lean/Packet05WeakFourier.lean",
+      "source_sha256": "29dfa20009813b78f57e791cd7da485eba417e53e9d7826b3131bd10d8ea7d58",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05WeakFourier.olean",
+        "D:\\oq14\\lean\\Packet05WeakFourier.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.958,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05WeakFourier-chain.log",
+      "log_sha256": "f2f4095f07b872d45b3b7a290aaf54c235d01d7afc9c808b3c31ae25ca711c2a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05WeakFourier.inverse_fourier_weak_partial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05WeakFourier.weak_partial_compact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05WeakFourier.frequency_coordinate_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05WeakFourier.frequency_mixed_memLp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f2d52584673aa7eb2cef370e31df851e39bd3f79cad3a5eb576d65f7cdafd9c6"
+    },
+    {
+      "module": "Packet05AnisotropicWeakEmbedding",
+      "source": "lean/Packet05AnisotropicWeakEmbedding.lean",
+      "source_sha256": "542a21762e49607d54ce29a2061a977db9383a8c4fa61d4417a1d3da692b5066",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05AnisotropicWeakEmbedding.olean",
+        "D:\\oq14\\lean\\Packet05AnisotropicWeakEmbedding.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.256,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05AnisotropicWeakEmbedding-chain.log",
+      "log_sha256": "f87757d1603a5251126aa44f70246976667da66a8b4b9f52c3b4c57c411a9aaf",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05AnisotropicWeakEmbedding.anisotropic_weight_memLp_of_weak_partials",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05AnisotropicWeakEmbedding.continuous_of_weak_tangential_h1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "d8bf48d270286d6a3356cfd52676e60d3d689cfb6b4777eb267d12b27e2ecbdc"
+    },
+    {
+      "module": "Packet05LocalizedAnisotropic",
+      "source": "lean/Packet05LocalizedAnisotropic.lean",
+      "source_sha256": "ccb7f89a1e7ab44058b61fd9d95bf622b61a7f4ccde685f5d5b60c37cbc7be1a",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05LocalizedAnisotropic.olean",
+        "D:\\oq14\\lean\\Packet05LocalizedAnisotropic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.676,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05LocalizedAnisotropic-chain.log",
+      "log_sha256": "c625ac48173e96e4ef57fb218190b8ffba587bb47293bf6340a170416db34969",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05LocalizedAnisotropic.weak_partial_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05LocalizedAnisotropic.cutoff_continuous_of_tangential_h1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "f25d4e2a16ab252742b89e9f55ba7861461cee29f5d88db9343d1e6b8f6a73c6"
+    },
+    {
+      "module": "Packet05TransmissionContinuity",
+      "source": "lean/Packet05TransmissionContinuity.lean",
+      "source_sha256": "fdae9dc763156fbbe55d3ff5c4a63a5dc15640dd5ec42b9085250b3536f65b19",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05TransmissionContinuity.olean",
+        "D:\\oq14\\lean\\Packet05TransmissionContinuity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.869,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05TransmissionContinuity-chain.log",
+      "log_sha256": "f9e04b82953e5830d43559deae4da68e2c041ad845fa3816931e373282c092d1",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05TransmissionContinuity.weight_scale_commute",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05TransmissionContinuity.cutoff_transmission_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "a0a958bfcdb0fe65d6cfb03ebd9749b4faff6d66853b0fe6fb5ca132107e647b"
+    },
+    {
+      "module": "Packet05ActualContinuous",
+      "source": "lean/Packet05ActualContinuous.lean",
+      "source_sha256": "f681166b31e0f7623c2d542a3db4b9735a32f94b1f0994336bbb08c1ab87fbb6",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05ActualContinuous.olean",
+        "D:\\oq14\\lean\\Packet05ActualContinuous.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.739,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualContinuous-chain.log",
+      "log_sha256": "c31de5eabde45bbdd7db8f1066d2e86419b9dd0fc40844c9a03b1febd2b88072",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualContinuous.actual_flat_one_sided_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "0d05c846cb5ac1f9a9bb89b4fd3aef65677ed407fe7211da75832da3ab9e4bab"
+    },
+    {
+      "module": "Packet05ActualMaximum",
+      "source": "lean/Packet05ActualMaximum.lean",
+      "source_sha256": "d5363e5bc477f44a8bfc451ec437bbb50341e5f1e2574b4340e96d795cd223dd",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05ActualMaximum.olean",
+        "D:\\oq14\\lean\\Packet05ActualMaximum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.824,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05ActualMaximum-chain.log",
+      "log_sha256": "ddb3eca4be1470856fb58cea843c9f405037bf3b38be7ef638ec5d44b340629a",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05ActualMaximum.actual_flat_two_sided_maximum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05ActualMaximum.physicalAmplitude_continuous",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "346de6781f4656e6d7fed3c4a76f8682162880b3d0530e1551e7b99dff51f1c2"
+    },
+    {
+      "module": "Packet05HighMaximum",
+      "source": "lean/Packet05HighMaximum.lean",
+      "source_sha256": "ca6e759804aab778a253c2c6d46acf243cf5db853350704853e2b9b36943887c",
+      "command": [
+        "D:\\oq14\\.tools\\lean\\lean-4.19.0-windows\\bin\\lean.exe",
+        "-o",
+        "D:\\oq14\\checkpoints\\2026-11-13-flat-continuity\\objects\\20261113-020637-31908\\Packet05HighMaximum.olean",
+        "D:\\oq14\\lean\\Packet05HighMaximum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.182,
+      "log": "checkpoints/2026-11-13-flat-continuity/evidence/Packet05HighMaximum-chain.log",
+      "log_sha256": "533ec96a907b41697388bae1a7476104bd9f4e1933b740619c98e7f0ea4fbca3",
+      "reports": [
+        {
+          "declaration": "OQ14.Packet05HighMaximum.component_le_physicalAmplitude",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05HighMaximum.flat_phase_cover_ae",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "OQ14.Packet05HighMaximum.attained_max_exceeds_positive_volume_peak",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "object_sha256": "e9874d018abe7b5867013ccc861992d23812d7fcda751b4e77fa9ba46ad95908"
+    }
+  ],
+  "module_count": 8,
+  "report_count": 22
+}

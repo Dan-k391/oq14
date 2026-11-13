@@ -1,0 +1,64 @@
+[
+  {
+    "module": "Packet05AnisotropicEmbedding",
+    "declarations": [
+      "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_le_majorant",
+      "OQ14.Packet05AnisotropicEmbedding.coordinateMajorant_integrable",
+      "OQ14.Packet05AnisotropicEmbedding.anisotropic_inverse_integrable",
+      "OQ14.Packet05AnisotropicEmbedding.spectralFactor_pos",
+      "OQ14.Packet05AnisotropicEmbedding.spectralInverse_memLp",
+      "OQ14.Packet05AnisotropicEmbedding.continuous_of_anisotropic_fourier"
+    ]
+  },
+  {
+    "module": "Packet05WeakFourier",
+    "declarations": [
+      "OQ14.Packet05WeakFourier.inverse_fourier_weak_partial",
+      "OQ14.Packet05WeakFourier.weak_partial_compact",
+      "OQ14.Packet05WeakFourier.frequency_coordinate_memLp",
+      "OQ14.Packet05WeakFourier.frequency_mixed_memLp"
+    ]
+  },
+  {
+    "module": "Packet05AnisotropicWeakEmbedding",
+    "declarations": [
+      "OQ14.Packet05AnisotropicWeakEmbedding.anisotropic_weight_memLp_of_weak_partials",
+      "OQ14.Packet05AnisotropicWeakEmbedding.continuous_of_weak_tangential_h1"
+    ]
+  },
+  {
+    "module": "Packet05LocalizedAnisotropic",
+    "declarations": [
+      "OQ14.Packet05LocalizedAnisotropic.weak_partial_add",
+      "OQ14.Packet05LocalizedAnisotropic.cutoff_continuous_of_tangential_h1"
+    ]
+  },
+  {
+    "module": "Packet05TransmissionContinuity",
+    "declarations": [
+      "OQ14.Packet05TransmissionContinuity.weight_scale_commute",
+      "OQ14.Packet05TransmissionContinuity.cutoff_transmission_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ActualContinuous",
+    "declarations": [
+      "OQ14.Packet05ActualContinuous.actual_flat_one_sided_continuous"
+    ]
+  },
+  {
+    "module": "Packet05ActualMaximum",
+    "declarations": [
+      "OQ14.Packet05ActualMaximum.actual_flat_two_sided_maximum",
+      "OQ14.Packet05ActualMaximum.physicalAmplitude_continuous"
+    ]
+  },
+  {
+    "module": "Packet05HighMaximum",
+    "declarations": [
+      "OQ14.Packet05HighMaximum.component_le_physicalAmplitude",
+      "OQ14.Packet05HighMaximum.flat_phase_cover_ae",
+      "OQ14.Packet05HighMaximum.attained_max_exceeds_positive_volume_peak"
+    ]
+  }
+]

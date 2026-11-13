@@ -1,0 +1,64 @@
+{
+  "scope": "Independent isolated build and semantic review of eight flat-continuity modules",
+  "modules": [
+    {
+      "module": "Packet05AnisotropicEmbedding",
+      "source_sha256": "88993f5dd0a48e1542dfa857e8a47cfce46ff23a107c7e87df0606019b74d887",
+      "isolated_log_sha256": "ce81d4b45d2ae7f0f4276418a09a11066b93d0bb500a5187afad44d2bb54b6c7",
+      "reports": 6,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05WeakFourier",
+      "source_sha256": "29dfa20009813b78f57e791cd7da485eba417e53e9d7826b3131bd10d8ea7d58",
+      "isolated_log_sha256": "d48cd9fd68ca896c98ffdde4231c8512b5fd3d3677cca8e9fa723b0a5a60572c",
+      "reports": 4,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05AnisotropicWeakEmbedding",
+      "source_sha256": "542a21762e49607d54ce29a2061a977db9383a8c4fa61d4417a1d3da692b5066",
+      "isolated_log_sha256": "64a190b26d9615db9b5c26ce9c47700cca9051801ed9623efb04d44b0ded331a",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05LocalizedAnisotropic",
+      "source_sha256": "ccb7f89a1e7ab44058b61fd9d95bf622b61a7f4ccde685f5d5b60c37cbc7be1a",
+      "isolated_log_sha256": "f6f5ce409376941933d2776384772367be9c34c51e45f5e4369120b6dac43520",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05TransmissionContinuity",
+      "source_sha256": "fdae9dc763156fbbe55d3ff5c4a63a5dc15640dd5ec42b9085250b3536f65b19",
+      "isolated_log_sha256": "dc13c8537988dd9d0dd2c9cc4fd18e0a595a070466897c16cfde9d4f6c54fa07",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05ActualContinuous",
+      "source_sha256": "f681166b31e0f7623c2d542a3db4b9735a32f94b1f0994336bbb08c1ab87fbb6",
+      "isolated_log_sha256": "ab8ab4072d4d5536fc2a6e3d42c36a396e36bc5fdc908e4153928e7be0d51ab3",
+      "reports": 1,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05ActualMaximum",
+      "source_sha256": "d5363e5bc477f44a8bfc451ec437bbb50341e5f1e2574b4340e96d795cd223dd",
+      "isolated_log_sha256": "69ef72856a3df9937ad2a1ed5ece6431776bf2e386645036a3b8c7c768dcdd18",
+      "reports": 2,
+      "status": "pass"
+    },
+    {
+      "module": "Packet05HighMaximum",
+      "source_sha256": "ca6e759804aab778a253c2c6d46acf243cf5db853350704853e2b9b36943887c",
+      "isolated_log_sha256": "a8f991dc7be324a10ba100236bb1251f2725bdd3fe80e1b2b69cabf7b0f52bd9",
+      "reports": 3,
+      "status": "pass"
+    }
+  ],
+  "total_reports": 22,
+  "status": "pass",
+  "review": "semantic-review.md"
+}

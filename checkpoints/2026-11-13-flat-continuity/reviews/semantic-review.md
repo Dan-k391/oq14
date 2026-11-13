@@ -1,0 +1,9 @@
+# Independent review: flat continuity and maxima
+
+Scope reviewed: eight sources and 22 axiom reports in `packet05-continuity-author-manifest.json`. The rebuild uses a separate object directory prepended to `LEAN_PATH`, checks each frozen source SHA-256 before and after compilation, checks every declared axiom report, and rejects compiler warnings, errors, and `sorryAx`. Individual compiler logs and the reproducible rebuild script are in this directory.
+
+The anisotropic Fourier weight has two tangential directions and one normal direction. The chain derives continuous representatives from actual weak L² derivatives and the nested cutoff transmission estimates, then uses the actual flat-jump weak Maxwell hypotheses to identify each representative almost everywhere with the electric field on each specified open, constant-permittivity side. The identity is a.e. with respect to restricted volume, not pointwise for an arbitrary L² representative.
+
+The two-sided maximum is attained over a nonempty compact K intersected separately with each side closure, with the corresponding one-sided continuous representatives; the assumptions explicitly require K to be covered by the two closures. The amplitude is `sqrt(sum_j ‖R_j‖²)`, the Euclidean complex-vector amplitude. The positive-volume bridge bounds a physical component by that amplitude and requires the stated almost-everywhere phase cover and sidewise a.e. identities. It does not silently replace an essential supremum by a pointwise maximum.
+
+These results are for the specific planar jump `FlatDifferenceCoercivity.dielectric d` and explicit nested cutoff and regional weak-Maxwell hypotheses. They do not establish curved-boundary interface regularity, a global maximum over an arbitrary device, or applicability to the Packet07 curved bodies without an additional adapter.
